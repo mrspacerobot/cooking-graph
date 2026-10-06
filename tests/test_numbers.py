@@ -3,7 +3,7 @@
 import unittest
 
 from tests.small_kitchen import SmallKitchen
-from tools import check, numbers
+from tools import check, numbers, reading
 
 
 class NumbersTest(unittest.TestCase):
@@ -41,7 +41,8 @@ class NumbersTest(unittest.TestCase):
         self.assertEqual(1, self.count()["recipe_steps"])
 
     def test_the_table_is_markdown(self):
-        table = numbers.render(self.count())
+        model, words = reading.read_schema(self.kitchen.root)
+        table = numbers.render(self.count(), model, words)
         self.assertIn("| technique | 2 | 2 | 0 | 0 | 0 | 0 |", table)
         self.assertIn("| statements | 26 | 26 | 0 | 0 | 0 | 0 |", table)
         self.assertIn("growing", table)

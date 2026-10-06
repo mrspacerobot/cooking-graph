@@ -20,8 +20,8 @@ DISH = "graph/dish/buttered-onions.json"
 RECIPE = "graph/recipe/buttered-onions.json"
 ROUX = "graph/preparation/roux.json"
 PROGRAM = "graph/program/small-program.json"
-PROBE = "probes/dish-probe/onion-tart.json"
-EM_DASH = "—"
+PROBE = "probes/dish-probe/creamed-onions.json"
+EM_DASH = chr(0x2014)  # written as a number so that this file holds none
 
 
 class CheckerTest(unittest.TestCase):

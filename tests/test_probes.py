@@ -6,7 +6,7 @@ from tests.small_kitchen import SmallKitchen
 from tools import check, names, probes
 
 ANSWERED = "probes/dish-probe/buttered-onions.json"
-OTHER = "probes/dish-probe/onion-tart.json"
+OTHER = "probes/dish-probe/creamed-onions.json"
 
 
 class PlainWords(unittest.TestCase):
@@ -40,7 +40,7 @@ class TheHeldBackRule(unittest.TestCase):
 
     def test_the_choice_is_the_same_every_time(self):
         chosen = probes.held_back_ids(["dish-probe/a", "dish-probe/b", "dish-probe/c", "dish-probe/d", "dish-probe/e"])
-        self.assertEqual({"dish-probe/e"}, chosen)
+        self.assertEqual({"dish-probe/a"}, chosen)
 
 
 class ProbeRunnerTest(unittest.TestCase):

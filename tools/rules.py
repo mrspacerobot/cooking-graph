@@ -1,0 +1,335 @@
+"""The rules that need more than one field, or more than one file, to decide.
+
+Each rule takes the sound things (the files whose shape is right), by id, and
+returns the issues it finds. A rule never reads a file whose shape is wrong:
+the shape issue is reported first and the rest follows once it is fixed.
+"""
+
+import os
+
+from tools import names, probes
+from tools.reading import Issue, join, nested
+
+LOWEST_TIER = "drafted"
+EM_DASH = chr(0x2014)  # written as a number so that this file holds none
+FOLDERS_NOT_READ = {".git", "__pycache__", ".venv", "out"}
+
+
+def of_kind(things, kind):
+    return [(thing_id, thing) for thing_id, thing in sorted(things.items()) if thing.kind == kind]
+
+
+def linked(links):
+    return [link["thing"] for link in links]
+
+
+def tiers_earned(things):
+    """Nothing is above drafted yet. There is no record of who reviewed what, so nothing can have earned more."""
+    issues = []
+    for thing_id, thing in sorted(things.items()):
+        for where, node in nested(thing.data):
+            tier = node.get("tier", LOWEST_TIER)
+            if tier != LOWEST_TIER:
+                message = "'%s' was not earned: nothing is above drafted until a review is on record" % tier
+                issues.append(Issue(thing.path, join(where, "tier"), "tier-not-earned", message))
+    return issues
+
+
+def safety_earned(things):
+    """No safety fact is verified yet. Only a person can verify one, against an authoritative source."""
+    issues = []
+    for thing_id, thing in of_kind(things, "ingredient"):
+        if thing.data["safety"]["state"] != "unverified":
+            message = "no safety fact is verified until a person checked it and that is on record"
+            issues.append(Issue(thing.path, "safety.state", "safety-not-earned", message))
+    return issues
+
+
+def facts_answered(things):
+    """An ingredient answers every fact, yes or no. A fact nobody thought of is never read as 'free of'."""
+    every_fact = {thing_id for thing_id, thing in of_kind(things, "fact")}
+    issues = []
+    for thing_id, thing in of_kind(things, "ingredient"):
+        contains = set(thing.data["safety"]["contains"])
+        free_of = set(thing.data["safety"]["free_of"])
+        for fact in sorted(contains & free_of):
+            message = "'%s' is answered both ways" % fact
+            issues.append(Issue(thing.path, "safety", "fact-answered-twice", message))
+        for fact in sorted(every_fact - contains - free_of):
+            message = "'%s' is not answered: list it under contains or free_of" % fact
+            issues.append(Issue(thing.path, "safety", "fact-not-answered", message))
+    return issues
+
+
+def classes_as_strict_as_members(things):
+    """What a member holds, its class holds too. Stock is at least as strict as chicken stock."""
+    issues = []
+    for thing_id, thing in of_kind(things, "ingredient"):
+        held = set(thing.data["safety"]["contains"])
+        for parent_id in linked(thing.data["is_a"]):
+            parent = things.get(parent_id)
+            if parent is None:
+                continue
+            for fact in sorted(held - set(parent.data["safety"]["contains"])):
+                message = "holds '%s' but its class '%s' does not" % (fact, parent_id)
+                issues.append(Issue(thing.path, "safety.contains", "class-less-strict", message))
+    return issues
+
+
+def steps_use_what_is_listed(things):
+    """A step works only on what the recipe lists, and everything listed is used by a step."""
+    issues = []
+    for thing_id, thing in of_kind(things, "recipe"):
+        listed = [line["thing"] for line in thing.data["ingredients"]]
+        used = set()
+        for index, step in enumerate(thing.data["steps"]):
+            for worked_on in step["works_on"]:
+                used.add(worked_on)
+                if worked_on not in listed:
+                    where = "steps[%d].works_on" % index
+                    message = "'%s' is not in the ingredients of this recipe" % worked_on
+                    issues.append(Issue(thing.path, where, "step-works-on-unlisted", message))
+        for index, listed_thing in enumerate(listed):
+            if listed_thing not in used:
+                where = "ingredients[%d]" % index
+                message = "no step works on '%s'" % listed_thing
+                issues.append(Issue(thing.path, where, "ingredient-never-used", message))
+    return issues
+
+
+def everything_inside(thing_id, things, found=None):
+    """Every ingredient and preparation a dish or a preparation may hold, through all its options."""
+    if found is None:
+        found = set()
+    whole = things.get(thing_id)
+    if whole is None:
+        return found
+    for part in whole.data["parts"]:
+        for option in part["options"]:
+            if option not in found:
+                found.add(option)
+                if option.startswith("preparation/"):
+                    everything_inside(option, things, found)
+    return found
+
+
+def recipes_stay_inside_their_dish(things):
+    """A recipe uses nothing its dish does not name, so what a dish holds covers every way to make it."""
+    issues = []
+    for thing_id, thing in of_kind(things, "recipe"):
+        allowed = everything_inside(thing.data["makes"], things)
+        for index, line in enumerate(thing.data["ingredients"]):
+            if line["thing"] not in allowed:
+                where = "ingredients[%d].thing" % index
+                message = "'%s' is no part of '%s', which this recipe makes" % (line["thing"], thing.data["makes"])
+                issues.append(Issue(thing.path, where, "not-in-the-dish", message))
+    return issues
+
+
+def names_once_per_kind(things):
+    """Two things of one kind never share a name. That would be two nodes for one thing."""
+    owners = {}
+    for thing_id, thing in sorted(things.items()):
+        if thing.kind == "dish-probe":
+            continue
+        for name in names.plain_names(thing.data):
+            owners.setdefault((thing.kind, name), []).append(thing_id)
+    issues = []
+    for (kind, name), sharing in sorted(owners.items()):
+        if len(sharing) < 2:
+            continue
+        for thing_id in sharing:
+            others = ", ".join(other for other in sharing if other != thing_id)
+            message = "the name '%s' is also a name of %s" % (name, others)
+            issues.append(Issue(things[thing_id].path, "names", "same-name-twice", message))
+    return issues
+
+
+def can_reach_themselves(follows):
+    """The things that come back to themselves by following the links."""
+
+    def comes_back(start):
+        seen = set()
+        waiting = list(follows.get(start, []))
+        while waiting:
+            current = waiting.pop()
+            if current == start:
+                return True
+            if current not in seen:
+                seen.add(current)
+                waiting.extend(follows.get(current, []))
+        return False
+
+    return [start for start in sorted(follows) if comes_back(start)]
+
+
+def links_of(things, kind, field):
+    """What each thing of a kind points at through one field."""
+    follows = {}
+    for thing_id, thing in of_kind(things, kind):
+        value = thing.data[field]
+        if value is None:
+            follows[thing_id] = []
+        elif isinstance(value, dict):
+            follows[thing_id] = [value["thing"]]
+        else:
+            follows[thing_id] = linked(value)
+    return follows
+
+
+LOOPS_THAT_MAKE_NO_SENSE = [
+    ("ingredient", "is_a"),
+    ("cuisine", "within"),
+    ("technique", "comes_after"),
+    ("technique", "variant_of"),
+]
+
+
+def no_loops(things):
+    """Nothing is a kind of itself, lies within itself or comes after itself."""
+    issues = []
+    for kind, field in LOOPS_THAT_MAKE_NO_SENSE:
+        for thing_id in can_reach_themselves(links_of(things, kind, field)):
+            message = "following '%s' from here leads back here" % field
+            issues.append(Issue(things[thing_id].path, field, "cycle", message))
+    return issues
+
+
+def skills_of(program):
+    return [skill for course in program["courses"] for skill in course["skills"]]
+
+
+def program_issues(thing):
+    """A program holds together: one slug per skill, skills that exist, levels numbered from one."""
+    found = []
+    skills = skills_of(thing.data)
+    slugs = [skill["slug"] for skill in skills]
+    course_slugs = [course["slug"] for course in thing.data["courses"]]
+    for slug in sorted(set(slugs)):
+        if slugs.count(slug) > 1:
+            found.append(("courses", "slug-twice", "the skill slug '%s' is used twice" % slug))
+    for slug in sorted(set(course_slugs)):
+        if course_slugs.count(slug) > 1:
+            found.append(("courses", "slug-twice", "the course slug '%s' is used twice" % slug))
+    follows = {}
+    for skill in skills:
+        follows[skill["slug"]] = [earlier["skill"] for earlier in skill["comes_after"]]
+        for earlier in follows[skill["slug"]]:
+            if earlier not in slugs:
+                found.append((skill["slug"], "skill-unknown", "comes after '%s', which is no skill here" % earlier))
+        numbers = [level["number"] for level in skill["levels"]]
+        if numbers != list(range(1, len(numbers) + 1)):
+            found.append((skill["slug"], "level-numbers", "levels must be numbered from 1, in order"))
+    for slug in can_reach_themselves(follows):
+        found.append((slug, "cycle", "this skill comes after itself"))
+    return [Issue(thing.path, where, rule, message) for where, rule, message in found]
+
+
+def programs_hold_together(things):
+    issues = []
+    for thing_id, thing in of_kind(things, "program"):
+        issues.extend(program_issues(thing))
+    return issues
+
+
+def every_skill(things):
+    slugs = set()
+    for thing_id, thing in of_kind(things, "program"):
+        slugs.update(skill["slug"] for skill in skills_of(thing.data))
+    return slugs
+
+
+def probes_name_a_skill(things):
+    """A probe is written for a skill of a program."""
+    skills = every_skill(things)
+    issues = []
+    for thing_id, thing in of_kind(things, "dish-probe"):
+        if thing.data["written_for"] not in skills:
+            message = "'%s' is no skill of any program" % thing.data["written_for"]
+            issues.append(Issue(thing.path, "written_for", "skill-unknown", message))
+    return issues
+
+
+def held_back_by_the_rule(things):
+    """Which probes are held back is decided by the rule in tools/probes.py, never by hand."""
+    batches = {}
+    for thing_id, thing in of_kind(things, "dish-probe"):
+        batches.setdefault(thing.data["batch"], []).append(thing_id)
+    issues = []
+    for batch, probe_ids in sorted(batches.items()):
+        held_back = probes.held_back_ids(probe_ids)
+        for probe_id in probe_ids:
+            expected = "held-back" if probe_id in held_back else "growing"
+            if things[probe_id].data["set"] != expected:
+                message = "the rule puts this probe of batch '%s' in the set '%s'" % (batch, expected)
+                issues.append(Issue(things[probe_id].path, "set", "held-back-rule", message))
+    return issues
+
+
+def one_probe_per_dish(things):
+    owners = {}
+    for thing_id, thing in of_kind(things, "dish-probe"):
+        for name in probes.dish_names(thing.data):
+            owners.setdefault(name, []).append(thing_id)
+    issues = []
+    for name, sharing in sorted(owners.items()):
+        if len(sharing) < 2:
+            continue
+        for probe_id in sharing:
+            message = "another probe already asks about '%s'" % name
+            issues.append(Issue(things[probe_id].path, "dish", "same-dish-twice", message))
+    return issues
+
+
+def nothing_drafted_towards_held_back(things):
+    """No dish or recipe is written for a held-back probe. Held-back probes test the graph, they never grow it."""
+    held_back_names = set()
+    for thing_id, thing in of_kind(things, "dish-probe"):
+        if thing.data["set"] == "held-back":
+            held_back_names.update(probes.dish_names(thing.data))
+    issues = []
+    for kind in ("dish", "recipe"):
+        for thing_id, thing in of_kind(things, kind):
+            if names.plain_names(thing.data) & held_back_names:
+                message = "a held-back probe asks about this dish, so it may not be written"
+                issues.append(Issue(thing.path, "names", "drafted-towards-held-back", message))
+    return issues
+
+
+def em_dashes(root):
+    """The em dash appears in no file of the repository. A plain hyphen does its work."""
+    issues = []
+    for folder, folders, files in os.walk(root):
+        folders[:] = sorted(name for name in folders if name not in FOLDERS_NOT_READ)
+        for name in sorted(files):
+            path = os.path.join(folder, name)
+            for number in lines_with_an_em_dash(path):
+                shown = os.path.relpath(path, root).replace(os.sep, "/")
+                issues.append(Issue(shown, "line %d" % number, "em-dash", "holds an em dash: use a plain hyphen"))
+    return issues
+
+
+def lines_with_an_em_dash(path):
+    try:
+        with open(path, encoding="utf-8") as handle:
+            lines = handle.read().split("\n")
+    except UnicodeDecodeError:
+        return []
+    return [number for number, line in enumerate(lines, start=1) if EM_DASH in line]
+
+
+EVERY_RULE = [
+    tiers_earned,
+    safety_earned,
+    facts_answered,
+    classes_as_strict_as_members,
+    steps_use_what_is_listed,
+    recipes_stay_inside_their_dish,
+    names_once_per_kind,
+    no_loops,
+    programs_hold_together,
+    probes_name_a_skill,
+    held_back_by_the_rule,
+    one_probe_per_dish,
+    nothing_drafted_towards_held_back,
+]

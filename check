@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+"""check: run the tests of the tools, then read every file strictly and list every issue."""
+
+import os
+import sys
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+
+from tools import check  # noqa: E402
+
+sys.exit(check.main(ROOT))

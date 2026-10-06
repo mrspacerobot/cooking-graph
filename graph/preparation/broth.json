@@ -1,0 +1,10 @@
+{
+  "id": "preparation/broth",
+  "tier": "drafted",
+  "names": {"en": "Broth", "fr": "Bouillon"},
+  "aliases": {"en": ["cooking broth"]},
+  "is": "The liquid left when meat, poultry or vegetables have simmered in water: the stock a dish makes for itself.",
+  "parts": [],
+  "teaches": [],
+  "belongs_to": []
+}

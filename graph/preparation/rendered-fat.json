@@ -1,0 +1,10 @@
+{
+  "id": "preparation/rendered-fat",
+  "tier": "drafted",
+  "names": {"en": "Rendered fat"},
+  "aliases": {"en": ["bacon fat", "duck fat"]},
+  "is": "The clear fat left in the pan when bacon or duck skin has been rendered. It carries their flavour and is good for frying.",
+  "parts": [],
+  "teaches": [],
+  "belongs_to": []
+}

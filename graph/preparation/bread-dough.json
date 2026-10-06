@@ -1,0 +1,16 @@
+{
+  "id": "preparation/bread-dough",
+  "tier": "drafted",
+  "names": {"en": "Bread dough", "fr": "Pâte à pain"},
+  "aliases": {"en": ["yeast dough"]},
+  "is": "Flour, water, yeast and salt kneaded until elastic and left to rise.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "base", "options": ["ingredient/yeast"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"}
+  ],
+  "teaches": [],
+  "belongs_to": []
+}

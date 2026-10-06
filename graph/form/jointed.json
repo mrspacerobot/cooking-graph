@@ -1,0 +1,8 @@
+{
+  "id": "form/jointed",
+  "tier": "drafted",
+  "names": {"en": "Jointed", "fr": "Découpé"},
+  "aliases": {"en": ["cut into pieces", "cut up"]},
+  "looks_like": "A bird cut into serving pieces on the bone, the legs and the breasts apart.",
+  "size": []
+}

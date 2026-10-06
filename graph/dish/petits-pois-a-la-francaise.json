@@ -1,0 +1,22 @@
+{
+  "id": "dish/petits-pois-a-la-francaise",
+  "tier": "drafted",
+  "names": {"en": "Petits pois à la française", "fr": "Petits pois à la française"},
+  "aliases": {"en": ["French-style peas", "peas braised with lettuce"]},
+  "is": "Young peas stewed gently in butter with spring onions and shredded lettuce, in the little water the lettuce gives up.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/peas"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/spring-onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/lettuce"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "sweetener", "options": ["ingredient/sugar"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

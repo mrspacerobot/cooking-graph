@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/sole",
+  "tier": "drafted",
+  "names": {"en": "Sole", "fr": "Sole"},
+  "aliases": {"en": ["Dover sole"]},
+  "is_a": [
+    {"thing": "ingredient/white-fish", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A fine, firm flatfish that cooks quickly on the bone and lifts off it in clean fillets.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/fish"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/gluten", "fact/meat", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

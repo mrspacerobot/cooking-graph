@@ -35,7 +35,8 @@
     {"thing": "ingredient/celery", "tier": "drafted"},
     {"thing": "ingredient/fennel", "tier": "drafted"},
     {"thing": "ingredient/bell-pepper", "tier": "drafted"},
-    {"thing": "preparation/mirepoix", "tier": "drafted"}
+    {"thing": "preparation/mirepoix", "tier": "drafted"},
+    {"thing": "ingredient/spring-onion", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/sweated", "tier": "drafted"}

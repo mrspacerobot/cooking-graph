@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/beef-steak",
+  "tier": "drafted",
+  "names": {"en": "Beef steak", "fr": "Steak"},
+  "aliases": {"en": ["steak", "sirloin steak", "rump steak"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A tender cut that wants fierce heat for a short time, and a rest before it is cut. It toughens as it cooks past pink.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

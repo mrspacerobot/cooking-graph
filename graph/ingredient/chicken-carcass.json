@@ -4,7 +4,9 @@
   "names": {"en": "Chicken carcass", "fr": "Carcasse de poulet"},
   "aliases": {"en": ["chicken bones", "chicken frame"]},
   "is_a": [],
-  "part_of": [],
+  "part_of": [
+    {"thing": "ingredient/chicken", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "The bones and scraps of a bird, which give a stock its flavour and its gelatine.",
   "safety": {

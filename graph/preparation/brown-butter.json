@@ -1,0 +1,16 @@
+{
+  "id": "preparation/brown-butter",
+  "tier": "drafted",
+  "names": {"en": "Brown butter", "fr": "Beurre noisette"},
+  "aliases": {"en": ["nut-brown butter"]},
+  "is": "Butter cooked until its milk solids turn nut-brown and it smells of hazelnuts.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/butter"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-brown-butter", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

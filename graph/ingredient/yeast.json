@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/yeast",
+  "tier": "drafted",
+  "names": {"en": "Yeast", "fr": "Levure de boulanger"},
+  "aliases": {"en": ["baker's yeast", "fresh yeast"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Feeds on the flour of a dough and fills it with gas, so that it rises. Heat above blood warmth kills it.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

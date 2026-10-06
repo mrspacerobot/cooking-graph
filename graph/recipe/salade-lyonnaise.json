@@ -28,11 +28,11 @@
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
-      "makes": []
+      "makes": ["preparation/rendered-fat"]
     },
     {
       "technique": "technique/saute",
-      "works_on": ["ingredient/baguette"],
+      "works_on": ["ingredient/baguette", "preparation/rendered-fat"],
       "text": "Fry the bread cubes in the hot bacon fat until golden and crisp on all sides.",
       "time": {"from": 3, "to": 4, "unit": "minute"},
       "temperature": null,
@@ -42,7 +42,7 @@
     {
       "technique": "technique/whisk",
       "works_on": [
-        "ingredient/dijon-mustard", "ingredient/red-wine-vinegar", "ingredient/black-pepper", "ingredient/bacon"
+        "ingredient/dijon-mustard", "ingredient/red-wine-vinegar", "ingredient/black-pepper", "preparation/rendered-fat"
       ],
       "text": "Whisk the mustard, the red wine vinegar and the pepper in a large salad bowl, then whisk in the warm fat left in the pan.",
       "time": null,

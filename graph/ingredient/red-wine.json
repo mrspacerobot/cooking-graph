@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/red-wine",
+  "tier": "drafted",
+  "names": {"en": "Red wine", "fr": "Vin rouge"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Brings colour, acidity and tannin. It tastes harsh and raw until it has boiled down, then deep and rounded.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/alcohol", "fact/slaughter-product", "fact/egg", "fact/dairy"],
+    "free_of": [
+      "fact/animal-product", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts", "fact/pork", "fact/sesame",
+      "fact/shellfish", "fact/soy"
+    ],
+    "note": "Wine is often cleared with gelatine, isinglass, egg white or milk protein. Egg and dairy are recorded as the stricter answer. Tomi's white wine row records neither."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

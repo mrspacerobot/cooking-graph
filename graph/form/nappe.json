@@ -1,0 +1,8 @@
+{
+  "id": "form/nappe",
+  "tier": "drafted",
+  "names": {"en": "Coats a spoon", "fr": "À la nappe"},
+  "aliases": {"en": ["nappe", "coats the back of a spoon"]},
+  "looks_like": "Thick enough to coat the back of a spoon, so that a finger drawn through the coating leaves a clear line.",
+  "size": []
+}

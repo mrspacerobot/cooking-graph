@@ -1,0 +1,12 @@
+{
+  "id": "preparation/pan-sauce",
+  "tier": "drafted",
+  "names": {"en": "Pan sauce"},
+  "aliases": {"en": ["deglazed pan juices"]},
+  "is": "The sauce a pan makes for itself: its fond dissolved in a liquid, boiled down, and often finished with butter or cream.",
+  "parts": [],
+  "teaches": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

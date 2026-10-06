@@ -1,0 +1,19 @@
+{
+  "id": "dish/cold-poached-salmon",
+  "tier": "drafted",
+  "names": {"en": "Cold poached salmon with mayonnaise", "fr": "Saumon froid mayonnaise"},
+  "aliases": {"en": ["poached salmon", "cold salmon mayonnaise"], "fr": ["saumon poché"]},
+  "is": "Salmon poached gently in court-bouillon, left to cool in the liquid so that it stays moist, and served cold with mayonnaise and lemon.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/salmon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["preparation/court-bouillon"], "tier": "drafted"},
+    {"role": "sauce", "options": ["preparation/mayonnaise"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

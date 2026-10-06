@@ -1,0 +1,25 @@
+{
+  "id": "dish/french-onion-soup",
+  "tier": "drafted",
+  "names": {"en": "French onion soup", "fr": "Soupe à l'oignon"},
+  "aliases": {"en": ["onion soup gratinée"], "fr": ["soupe à l'oignon gratinée", "gratinée"]},
+  "is": "Onions caramelized slowly in butter, simmered in beef stock with a little white wine, and served under toasted bread and a crust of browned cheese.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "thickener", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "liquid", "options": ["preparation/brown-stock", "ingredient/beef-stock"], "tier": "drafted"},
+    {"role": "topping", "options": ["ingredient/baguette"], "tier": "drafted"},
+    {"role": "topping", "options": ["ingredient/gruyere"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/caramelize", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

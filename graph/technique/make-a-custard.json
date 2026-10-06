@@ -1,0 +1,53 @@
+{
+  "id": "technique/make-a-custard",
+  "tier": "drafted",
+  "names": {"en": "Make a custard", "fr": "Cuire une crème anglaise"},
+  "aliases": {"en": ["cook a custard", "stirred custard", "cook to nappe"]},
+  "does": "Thickens sweetened milk with egg yolks over gentle heat, stirring until it coats a spoon and before the yolks scramble.",
+  "how": [
+    "Whisk the yolks with the sugar until pale.",
+    "Heat the milk with the vanilla until it steams, and pour it slowly onto the yolks while whisking.",
+    "Return it to the pan over low heat and stir without stopping, sweeping the whole bottom and the corners.",
+    "Take it off the heat the moment it coats the back of the spoon, and strain it at once into a cold bowl."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "It coats the back of the spoon, and a finger drawn through the coating leaves a clear line that does not close."
+    },
+    {"sense": "feel", "text": "The spoon moves through something a little heavier than milk."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting it get too hot, so that the yolks scramble into grains.",
+      "fix": "Take it off early and strain it straight into a bowl set in iced water. If it has only just started to grain, blending can rescue it."
+    },
+    {
+      "mistake": "Stopping too soon for fear of scrambling, which leaves a thin sauce.",
+      "fix": "Trust the line on the spoon, not the clock."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"},
+    {"thing": "ingredient/milk", "tier": "drafted"},
+    {"thing": "ingredient/sugar", "tier": "drafted"},
+    {"thing": "ingredient/vanilla", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/creme-anglaise", "tier": "drafted"},
+    {"thing": "form/nappe", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/spatula"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/fine-sieve"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/whisk", "why": "The yolks and the sugar are whisked first.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

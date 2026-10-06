@@ -1,0 +1,27 @@
+{
+  "id": "dish/poule-au-pot",
+  "tier": "drafted",
+  "names": {"en": "Poule au pot", "fr": "Poule au pot"},
+  "aliases": {"en": ["chicken in the pot"]},
+  "is": "A whole chicken poached gently with carrots, leeks, turnips and celery. The broth is served first and the bird after, carved, with its vegetables.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/chicken"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/leek"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/turnip"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/celery"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/clove"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/skim", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

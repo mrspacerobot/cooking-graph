@@ -1,0 +1,50 @@
+{
+  "id": "technique/cook-pilaf",
+  "tier": "drafted",
+  "names": {"en": "Cook pilaf", "fr": "Cuire en pilaf"},
+  "aliases": {"en": ["pilaf", "pilaf method"]},
+  "does": "Cooks rice by coating it in hot fat with sweated onion, then letting it absorb a measured amount of hot stock under a lid.",
+  "how": [
+    "Sweat finely cut onion in butter without colour.",
+    "Stir in the rice until every grain is coated and turns glassy at the edges.",
+    "Pour in the hot stock all at once, add a bouquet garni and bring to a boil.",
+    "Cover closely with paper and a lid, and finish in the oven or over the lowest heat, without stirring.",
+    "Rest it off the heat, then fluff it with a fork and a little butter."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The grains are separate and dry, with small steam holes across the surface and no liquid left."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring or lifting the lid while it cooks, which breaks the grains and lets the steam out.",
+      "fix": "Leave it shut until the time is up."
+    },
+    {
+      "mistake": "Guessing the liquid.",
+      "fix": "Measure the rice by volume and the stock against it. With too much, it turns to porridge."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/onion", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "preparation/white-chicken-stock", "ingredient/vegetable-stock"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/oven", "equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/sweat", "why": "A pilaf begins by sweating onion.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

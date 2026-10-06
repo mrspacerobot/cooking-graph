@@ -1,0 +1,7 @@
+{
+  "id": "equipment/tongs",
+  "tier": "drafted",
+  "names": {"en": "Tongs", "fr": "Pince"},
+  "aliases": {"en": ["kitchen tongs"]},
+  "use": "Grip and turn a hot piece of food without piercing it."
+}

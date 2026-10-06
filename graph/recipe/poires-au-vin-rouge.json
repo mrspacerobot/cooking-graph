@@ -1,0 +1,74 @@
+{
+  "id": "recipe/poires-au-vin-rouge",
+  "tier": "drafted",
+  "names": {"en": "Poires au vin rouge"},
+  "aliases": {},
+  "makes": "dish/poires-au-vin-rouge",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pear", "amount": {"value": 4, "unit": "piece"}, "forms": []},
+    {"thing": "ingredient/red-wine", "amount": {"value": 750, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/sugar", "amount": {"value": 150, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 1, "unit": "piece"}, "forms": []}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/vegetable-peeler", "equipment/parchment-paper",
+    "equipment/slotted-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/red-wine", "ingredient/sugar", "ingredient/cinnamon"],
+      "text": "Bring the wine, the sugar and the cinnamon to a simmer in a pan that will hold the pears snugly, and stir until the sugar has dissolved.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/pear"],
+      "text": "Peel the pears and leave the stalks on. Cut a thin slice off each base so that they stand.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/pear", "ingredient/red-wine"],
+      "text": "Lower the pears into the wine and cover them with a round of paper. Poach at a bare tremble, turning them now and then, until the tip of a knife slides in with no resistance.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/poaching-liquid"]
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/poaching-liquid"],
+      "text": "Lift the pears out. Boil the wine down until it is syrupy and coats a spoon.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chill",
+      "works_on": ["ingredient/pear", "preparation/poaching-liquid"],
+      "text": "Pour the syrup over the pears and chill them, turning them once or twice so that they colour evenly.",
+      "time": {"value": 4, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pear", "preparation/poaching-liquid"],
+      "text": "Serve each pear standing in a pool of its syrup.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

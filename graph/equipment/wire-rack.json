@@ -1,0 +1,7 @@
+{
+  "id": "equipment/wire-rack",
+  "tier": "drafted",
+  "names": {"en": "Wire rack", "fr": "Grille"},
+  "aliases": {"en": ["cooling rack", "rack"]},
+  "use": "Holds food up off a flat surface, so that air reaches the underside and a crust stays crisp."
+}

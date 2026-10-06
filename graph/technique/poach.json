@@ -30,12 +30,28 @@
   ],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"},
-    {"thing": "ingredient/white-fish", "tier": "drafted"}
+    {"thing": "ingredient/white-fish", "tier": "drafted"},
+    {"thing": "ingredient/chicken", "tier": "drafted"},
+    {"thing": "ingredient/salmon", "tier": "drafted"},
+    {"thing": "ingredient/skate", "tier": "drafted"},
+    {"thing": "ingredient/sole", "tier": "drafted"},
+    {"thing": "ingredient/pear", "tier": "drafted"},
+    {"thing": "ingredient/marrow-bone", "tier": "drafted"}
   ],
-  "makes": [],
+  "makes": [
+    {"thing": "preparation/poaching-liquid", "tier": "drafted"},
+    {"thing": "preparation/broth", "tier": "drafted"}
+  ],
   "needs": [
     {"role": "vessel", "options": ["equipment/saute-pan", "equipment/saucepan"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/water", "ingredient/stock"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": [
+        "ingredient/water", "ingredient/stock", "preparation/court-bouillon", "preparation/white-chicken-stock",
+        "ingredient/red-wine", "ingredient/milk"
+      ],
+      "tier": "drafted"
+    },
     {"role": "acid", "options": ["ingredient/white-wine-vinegar"], "tier": "drafted"},
     {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
     {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}

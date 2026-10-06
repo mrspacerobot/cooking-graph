@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/rib-steak",
+  "tier": "drafted",
+  "names": {"en": "Rib steak", "fr": "Entrecôte"},
+  "aliases": {"en": ["ribeye", "entrecote"]},
+  "is_a": [
+    {"thing": "ingredient/beef-steak", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A well-marbled steak whose fat melts in the pan and bastes it.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

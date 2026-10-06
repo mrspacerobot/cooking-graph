@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/salt-cod",
+  "tier": "drafted",
+  "names": {"en": "Salt cod", "fr": "Morue"},
+  "aliases": {"en": ["salted cod"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Cod preserved in salt. It must soak in several changes of water before it is cooked, and flakes into large, firm pieces.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/fish"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/gluten", "fact/meat", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

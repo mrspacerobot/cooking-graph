@@ -1,0 +1,43 @@
+{
+  "id": "recipe/saumon-a-l-unilaterale",
+  "tier": "drafted",
+  "names": {"en": "Saumon à l'unilatérale"},
+  "aliases": {},
+  "makes": "dish/saumon-a-l-unilaterale",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/salmon", "amount": {"value": 300, "unit": "gram"}, "forms": ["form/skin-on"]},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/frying-pan", "equipment/fish-slice"],
+  "steps": [
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/salmon", "ingredient/salt", "ingredient/olive-oil"],
+      "text": "Dry the skin very well and salt the fillets. Heat the oil in a heavy pan over medium-high heat. Lay the fillets in skin side down and press each one flat for a moment, so that the skin does not curl.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/salmon"],
+      "text": "Turn the heat down to medium and leave them alone. Watch the colour change climb up the side of the fish. Take them off when only the top is still glossy and deep pink. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/salmon"],
+      "text": "Serve skin side up on warm plates, so that the skin stays crisp.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/scallop",
+  "tier": "drafted",
+  "names": {"en": "Scallop", "fr": "Noix de Saint-Jacques"},
+  "aliases": {"en": ["sea scallop"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Sweet, tender muscle that browns fast when dry and turns rubbery when it is cooked a moment too long.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/shellfish"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dish/green-beans-with-garlic",
+  "tier": "drafted",
+  "names": {"en": "Green beans with garlic", "fr": "Haricots verts à l'ail"},
+  "aliases": {"en": ["garlic green beans"], "fr": ["haricots verts sautés à l'ail"]},
+  "is": "Green beans boiled until just tender, cooled in iced water to keep their colour, then tossed in hot butter with garlic and parsley.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/green-beans"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/parsley"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/boil", "tier": "drafted"},
+    {"thing": "technique/refresh", "tier": "drafted"},
+    {"thing": "technique/saute", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

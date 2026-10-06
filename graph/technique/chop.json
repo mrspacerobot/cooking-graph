@@ -28,7 +28,8 @@
     {"thing": "ingredient/basil", "tier": "drafted"},
     {"thing": "ingredient/capers", "tier": "drafted"},
     {"thing": "ingredient/cornichons", "tier": "drafted"},
-    {"thing": "ingredient/beef-fillet", "tier": "drafted"}
+    {"thing": "ingredient/beef-fillet", "tier": "drafted"},
+    {"thing": "ingredient/tarragon", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/chopped", "tier": "drafted"}

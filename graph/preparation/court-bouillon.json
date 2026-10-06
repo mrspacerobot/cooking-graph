@@ -1,0 +1,22 @@
+{
+  "id": "preparation/court-bouillon",
+  "tier": "drafted",
+  "names": {"en": "Court-bouillon", "fr": "Court-bouillon"},
+  "aliases": {"en": ["court bouillon"]},
+  "is": "Water simmered briefly with wine or vinegar, vegetables, herbs and salt: a quick, sharp, scented liquid for poaching fish.",
+  "parts": [
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/white-wine", "ingredient/white-wine-vinegar"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

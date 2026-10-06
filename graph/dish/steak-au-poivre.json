@@ -1,0 +1,29 @@
+{
+  "id": "dish/steak-au-poivre",
+  "tier": "drafted",
+  "names": {"en": "Steak au poivre", "fr": "Steak au poivre"},
+  "aliases": {"en": ["pepper steak", "peppercorn steak"]},
+  "is": "A steak crusted with coarsely crushed black pepper, seared and rested, with a sauce made in its pan from cognac and cream.",
+  "parts": [
+    {
+      "role": "main",
+      "options": ["ingredient/beef-steak", "ingredient/rib-steak", "ingredient/beef-fillet"],
+      "tier": "drafted"
+    },
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/cognac"], "tier": "drafted"},
+    {"role": "enrichment", "options": ["ingredient/cream"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

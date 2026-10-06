@@ -145,9 +145,37 @@
             {"skill": "knife-cuts", "tier": "drafted"}
           ],
           "levels": [
-            {"number": 1, "names": {"en": "Sweat without color"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "Sauté in a hot pan"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Caramelized onions"}, "teaches": [], "through": []}
+            {
+              "number": 1,
+              "names": {"en": "Sweat without color"},
+              "teaches": [
+                {"thing": "technique/sweat", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/petits-pois-a-la-francaise", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Sauté in a hot pan"},
+              "teaches": [
+                {"thing": "technique/saute", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/mushrooms-with-garlic-and-parsley", "tier": "drafted"},
+                {"thing": "dish/green-beans-with-garlic", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Caramelized onions"},
+              "teaches": [
+                {"thing": "technique/caramelize", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/french-onion-soup", "tier": "drafted"}
+              ]
+            }
           ]
         },
         {
@@ -157,9 +185,37 @@
             {"skill": "saute", "tier": "drafted"}
           ],
           "levels": [
-            {"number": 1, "names": {"en": "Chicken thighs, skin down"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "Steak to temperature"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Crisp fish skin"}, "teaches": [], "through": []}
+            {
+              "number": 1,
+              "names": {"en": "Chicken thighs, skin down"},
+              "teaches": [
+                {"thing": "technique/sear", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Steak to temperature"},
+              "teaches": [
+                {"thing": "technique/sear", "tier": "drafted"},
+                {"thing": "technique/rest", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/steak-au-poivre", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Crisp fish skin"},
+              "teaches": [
+                {"thing": "technique/sear", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/saumon-a-l-unilaterale", "tier": "drafted"}
+              ]
+            }
           ]
         },
         {
@@ -169,9 +225,40 @@
             {"skill": "stocks", "tier": "drafted"}
           ],
           "levels": [
-            {"number": 1, "names": {"en": "Chicken in stock"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "Fish in court-bouillon"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Pears in syrup"}, "teaches": [], "through": []}
+            {
+              "number": 1,
+              "names": {"en": "Chicken in stock"},
+              "teaches": [
+                {"thing": "technique/poach", "tier": "drafted"},
+                {"thing": "technique/skim", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/poule-au-pot", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Fish in court-bouillon"},
+              "teaches": [
+                {"thing": "technique/poach", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/court-bouillon", "tier": "drafted"},
+                {"thing": "dish/cold-poached-salmon", "tier": "drafted"},
+                {"thing": "dish/raie-au-beurre-noisette", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Pears in syrup"},
+              "teaches": [
+                {"thing": "technique/poach", "tier": "drafted"},
+                {"thing": "technique/reduce", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/poires-au-vin-rouge", "tier": "drafted"}
+              ]
+            }
           ]
         }
       ]

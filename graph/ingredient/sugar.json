@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/sugar",
+  "tier": "drafted",
+  "names": {"en": "Sugar", "fr": "Sucre"},
+  "aliases": {"en": ["white sugar", "caster sugar", "granulated sugar"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Dissolves in liquid, thickens it into a syrup as it boils down, and browns to caramel in dry heat.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/slaughter-product"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    ],
+    "note": "Some cane sugar is whitened with bone char. Beet sugar is not. The stricter answer is recorded until a sugar that is known to be free of it is its own ingredient."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

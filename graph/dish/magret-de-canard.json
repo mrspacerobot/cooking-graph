@@ -1,0 +1,20 @@
+{
+  "id": "dish/magret-de-canard",
+  "tier": "drafted",
+  "names": {"en": "Magret de canard", "fr": "Magret de canard"},
+  "aliases": {"en": ["pan-seared duck breast", "seared duck breast", "duck magret"]},
+  "is": "A duck breast cooked almost wholly on its scored skin, so that the fat melts out and the skin turns crisp, then rested and sliced.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/duck-breast"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/score", "tier": "drafted"},
+    {"thing": "technique/render", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/gascon", "tier": "drafted"}
+  ]
+}

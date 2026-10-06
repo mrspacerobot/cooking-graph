@@ -44,7 +44,7 @@
       "time": {"value": 2, "unit": "hour"},
       "temperature": null,
       "safety_points": [],
-      "makes": []
+      "makes": ["preparation/broth"]
     },
     {
       "technique": "technique/simmer",
@@ -57,7 +57,7 @@
     },
     {
       "technique": "technique/poach",
-      "works_on": ["ingredient/marrow-bone"],
+      "works_on": ["ingredient/marrow-bone", "preparation/broth"],
       "text": "Poach the marrow bones apart, in a ladleful of the broth in a small pan, so that the marrow does not melt away into the pot.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
@@ -66,7 +66,7 @@
     },
     {
       "technique": "technique/season",
-      "works_on": ["ingredient/salt"],
+      "works_on": ["preparation/broth", "ingredient/salt"],
       "text": "Skim the fat from the broth, taste it and add salt if it needs it.",
       "time": null,
       "temperature": null,
@@ -76,8 +76,8 @@
     {
       "technique": "technique/plate",
       "works_on": [
-        "ingredient/stewing-beef", "ingredient/marrow-bone", "ingredient/carrot", "ingredient/turnip",
-        "ingredient/leek", "ingredient/dijon-mustard", "ingredient/cornichons"
+        "preparation/broth", "ingredient/stewing-beef", "ingredient/marrow-bone", "ingredient/carrot",
+        "ingredient/turnip", "ingredient/leek", "ingredient/dijon-mustard", "ingredient/cornichons"
       ],
       "text": "Serve the broth first, in warm bowls. Then slice the beef across the grain and serve it with the vegetables and the marrow bones, moistened with a little broth, with the mustard and the cornichons on the side.",
       "time": null,

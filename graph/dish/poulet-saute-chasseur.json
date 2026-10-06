@@ -1,0 +1,31 @@
+{
+  "id": "dish/poulet-saute-chasseur",
+  "tier": "drafted",
+  "names": {"en": "Poulet sauté chasseur", "fr": "Poulet sauté chasseur"},
+  "aliases": {"en": ["chicken chasseur", "hunter's chicken"]},
+  "is": "Chicken pieces browned in a sauté pan, then finished in a sauce made in the same pan from mushrooms, shallots, white wine, tomato and stock, with tarragon.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/chicken", "ingredient/chicken-thigh"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/mushroom"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock", "preparation/brown-stock"],
+      "tier": "drafted"
+    },
+    {"role": "aromatic", "options": ["ingredient/tomato"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/tarragon"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

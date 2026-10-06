@@ -1,0 +1,19 @@
+{
+  "id": "preparation/creme-anglaise",
+  "tier": "drafted",
+  "names": {"en": "Crème anglaise", "fr": "Crème anglaise"},
+  "aliases": {"en": ["custard sauce", "pouring custard", "custard"]},
+  "is": "A pouring custard: sweetened milk thickened gently with egg yolks until it coats a spoon.",
+  "parts": [
+    {"role": "thickener", "options": ["ingredient/egg-yolk"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/milk"], "tier": "drafted"},
+    {"role": "sweetener", "options": ["ingredient/sugar"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/vanilla"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-a-custard", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -4,7 +4,9 @@
   "names": {"en": "Chicken thigh", "fr": "Haut de cuisse de poulet"},
   "aliases": {"en": ["bone-in chicken thigh"]},
   "is_a": [],
-  "part_of": [],
+  "part_of": [
+    {"thing": "ingredient/chicken", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Dark meat with enough fat and connective tissue to stay juicy through long cooking. Its skin crisps as the fat under it melts away.",
   "safety": {

@@ -35,7 +35,9 @@
     {"thing": "ingredient/cabbage", "tier": "drafted"},
     {"thing": "ingredient/pumpkin", "tier": "drafted"}
   ],
-  "makes": [],
+  "makes": [
+    {"thing": "preparation/broth", "tier": "drafted"}
+  ],
   "needs": [
     {
       "role": "vessel",

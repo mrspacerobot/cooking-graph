@@ -1,0 +1,57 @@
+{
+  "id": "technique/caramelize",
+  "tier": "drafted",
+  "names": {"en": "Caramelize", "fr": "Caraméliser"},
+  "aliases": {"en": ["caramelize onions", "caramelise", "brown slowly"]},
+  "does": "Cooks onions slowly until their water is gone and their sugars turn deep brown, soft and sweet.",
+  "how": [
+    "Sweat sliced onions in butter with a little salt until soft.",
+    "Take the lid off and keep the heat at medium-low.",
+    "Stir every little while, scraping up the brown film that forms on the bottom of the pan.",
+    "Add a spoonful of water whenever the film darkens faster than the onions.",
+    "Stop when they are the colour of dark honey all the way through."
+  ],
+  "cues": [
+    {"sense": "see", "text": "An even, deep amber, a fraction of the raw heap, with no black edges."},
+    {"sense": "smell", "text": "Sweet and nutty, like toast and caramel. A sharp, acrid smell means they are burning."},
+    {"sense": "taste", "text": "As sweet as jam, with no sharpness left."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Rushing with high heat, which burns the edges and leaves the middle pale and bitter.",
+      "fix": "Keep the heat low and give it the time it takes. There is no shortcut."
+    },
+    {
+      "mistake": "Crowding a small pan, so that the onions steam and never brown.",
+      "fix": "Use the widest pan you have."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/onion", "tier": "drafted"},
+    {"thing": "ingredient/shallot", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/caramelized", "tier": "drafted"},
+    {"thing": "preparation/fond", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saute-pan", "equipment/dutch-oven", "equipment/frying-pan"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/sweat",
+      "why": "Onions sweat before they caramelize. The first stage is the same move.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

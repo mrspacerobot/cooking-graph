@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/black-olive",
+  "tier": "drafted",
+  "names": {"en": "Black olive", "fr": "Olive noire"},
+  "aliases": {"en": ["black olives", "niçoise olive"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Salty and slightly bitter. It keeps its shape in the oven and seasons what is around it.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -25,7 +25,8 @@
     {"thing": "ingredient/peas", "tier": "drafted"},
     {"thing": "ingredient/carrot", "tier": "drafted"},
     {"thing": "ingredient/turnip", "tier": "drafted"},
-    {"thing": "ingredient/egg", "tier": "drafted"}
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/leek", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

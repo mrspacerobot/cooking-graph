@@ -37,12 +37,18 @@
     {"thing": "ingredient/courgette", "tier": "drafted"},
     {"thing": "ingredient/aubergine", "tier": "drafted"},
     {"thing": "ingredient/bell-pepper", "tier": "drafted"},
-    {"thing": "ingredient/tomato", "tier": "drafted"}
+    {"thing": "ingredient/tomato", "tier": "drafted"},
+    {"thing": "ingredient/ham", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/bacon", "tier": "drafted"},
+    {"thing": "ingredient/green-beans", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/diced", "tier": "drafted"},
     {"thing": "form/small-dice", "tier": "drafted"},
-    {"thing": "preparation/mirepoix", "tier": "drafted"}
+    {"thing": "preparation/mirepoix", "tier": "drafted"},
+    {"thing": "form/large-pieces", "tier": "drafted"},
+    {"thing": "form/lardons", "tier": "drafted"}
   ],
   "needs": [
     {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},

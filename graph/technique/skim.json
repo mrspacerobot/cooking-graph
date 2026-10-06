@@ -27,7 +27,9 @@
     {"thing": "ingredient/stock", "tier": "drafted"},
     {"thing": "preparation/white-chicken-stock", "tier": "drafted"},
     {"thing": "preparation/brown-stock", "tier": "drafted"},
-    {"thing": "preparation/braising-liquid", "tier": "drafted"}
+    {"thing": "preparation/braising-liquid", "tier": "drafted"},
+    {"thing": "preparation/clarified-butter", "tier": "drafted"},
+    {"thing": "preparation/broth", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

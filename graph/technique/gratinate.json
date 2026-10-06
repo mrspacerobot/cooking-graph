@@ -26,7 +26,8 @@
     {"thing": "preparation/bechamel", "tier": "drafted"},
     {"thing": "preparation/breadcrumbs", "tier": "drafted"},
     {"thing": "preparation/mashed-potato", "tier": "drafted"},
-    {"thing": "ingredient/reblochon", "tier": "drafted"}
+    {"thing": "ingredient/reblochon", "tier": "drafted"},
+    {"thing": "ingredient/baguette", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

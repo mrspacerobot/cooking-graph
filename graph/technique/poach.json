@@ -37,7 +37,10 @@
     {"thing": "ingredient/sole", "tier": "drafted"},
     {"thing": "ingredient/pear", "tier": "drafted"},
     {"thing": "ingredient/marrow-bone", "tier": "drafted"},
-    {"thing": "ingredient/pike", "tier": "drafted"}
+    {"thing": "ingredient/pike", "tier": "drafted"},
+    {"thing": "ingredient/carrot", "tier": "drafted"},
+    {"thing": "ingredient/leek", "tier": "drafted"},
+    {"thing": "ingredient/turnip", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/poaching-liquid", "tier": "drafted"},

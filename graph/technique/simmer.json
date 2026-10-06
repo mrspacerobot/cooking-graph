@@ -37,7 +37,11 @@
     {"thing": "ingredient/veal-shoulder", "tier": "drafted"},
     {"thing": "ingredient/green-lentils", "tier": "drafted"},
     {"thing": "preparation/bechamel", "tier": "drafted"},
-    {"thing": "preparation/veloute", "tier": "drafted"}
+    {"thing": "preparation/veloute", "tier": "drafted"},
+    {"thing": "ingredient/butter", "tier": "drafted"},
+    {"thing": "ingredient/chicken", "tier": "drafted"},
+    {"thing": "preparation/broth", "tier": "drafted"},
+    {"thing": "preparation/pan-sauce", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/broth", "tier": "drafted"}

@@ -24,7 +24,12 @@
     {"thing": "preparation/white-chicken-stock", "tier": "drafted"},
     {"thing": "preparation/vegetable-stock", "tier": "drafted"},
     {"thing": "preparation/brown-stock", "tier": "drafted"},
-    {"thing": "preparation/court-bouillon", "tier": "drafted"}
+    {"thing": "preparation/court-bouillon", "tier": "drafted"},
+    {"thing": "ingredient/salmon", "tier": "drafted"},
+    {"thing": "ingredient/pear", "tier": "drafted"},
+    {"thing": "ingredient/potato", "tier": "drafted"},
+    {"thing": "preparation/mayonnaise", "tier": "drafted"},
+    {"thing": "preparation/poaching-liquid", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

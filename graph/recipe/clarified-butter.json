@@ -1,0 +1,41 @@
+{
+  "id": "recipe/clarified-butter",
+  "tier": "drafted",
+  "names": {"en": "Clarified butter"},
+  "aliases": {},
+  "makes": "preparation/clarified-butter",
+  "yields": {"value": 180, "unit": "gram"},
+  "ingredients": [
+    {"thing": "ingredient/butter", "amount": {"value": 250, "unit": "gram"}, "forms": []}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saucepan", "equipment/spoon", "equipment/fine-sieve"],
+  "steps": [
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/butter"],
+      "text": "Melt the butter in a small pan over low heat and let it bubble gently. Its water boils off, a foam rises to the top and the milky solids sink.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/skim",
+      "works_on": ["preparation/clarified-butter"],
+      "text": "Lift off the foam with a spoon.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/strain",
+      "works_on": ["preparation/clarified-butter"],
+      "text": "Pour the clear yellow fat slowly through a fine sieve lined with a cloth, and leave the milky residue behind in the pan. It keeps far longer than butter.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -29,7 +29,10 @@
     {"thing": "ingredient/courgette", "tier": "drafted"},
     {"thing": "ingredient/aubergine", "tier": "drafted"},
     {"thing": "ingredient/tomato", "tier": "drafted"},
-    {"thing": "preparation/shortcrust-pastry", "tier": "drafted"}
+    {"thing": "preparation/shortcrust-pastry", "tier": "drafted"},
+    {"thing": "ingredient/baguette", "tier": "drafted"},
+    {"thing": "ingredient/sandwich-bread", "tier": "drafted"},
+    {"thing": "ingredient/reblochon", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

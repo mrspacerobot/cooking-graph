@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/bouchees-a-la-reine",
+  "tier": "drafted",
+  "batch": "roux-1",
+  "set": "growing",
+  "written_for": "roux",
+  "dish": "Bouchées à la reine",
+  "also_called": ["vol-au-vent"],
+  "techniques": ["poach", "make a roux", "simmer"],
+  "ingredients": ["puff pastry", "chicken", "mushroom", "chicken stock", "butter", "flour", "cream"]
+}

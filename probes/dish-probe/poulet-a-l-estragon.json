@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/poulet-a-l-estragon",
+  "tier": "drafted",
+  "batch": "pan-sauce-1",
+  "set": "growing",
+  "written_for": "pan-sauce",
+  "dish": "Poulet à l'estragon",
+  "also_called": ["tarragon chicken"],
+  "techniques": ["sear", "deglaze", "simmer", "reduce"],
+  "ingredients": ["chicken", "tarragon", "shallot", "white wine", "chicken stock", "cream", "butter"]
+}

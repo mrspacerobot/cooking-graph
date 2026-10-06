@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/poisson-poche-hollandaise",
+  "tier": "drafted",
+  "batch": "emulsions-1",
+  "set": "growing",
+  "written_for": "emulsions",
+  "dish": "Poisson poché sauce hollandaise",
+  "also_called": ["poached fish with hollandaise"],
+  "techniques": ["poach", "emulsify"],
+  "ingredients": ["white fish", "court-bouillon", "egg yolk", "butter", "lemon"]
+}

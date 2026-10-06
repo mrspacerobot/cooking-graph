@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/saint-jacques-au-beurre-blanc",
+  "tier": "drafted",
+  "batch": "emulsions-1",
+  "set": "held-back",
+  "written_for": "emulsions",
+  "dish": "Saint-Jacques au beurre blanc",
+  "also_called": ["scallops with beurre blanc"],
+  "techniques": ["sear", "reduce", "mount with butter"],
+  "ingredients": ["scallop", "shallot", "white wine", "white wine vinegar", "butter"]
+}

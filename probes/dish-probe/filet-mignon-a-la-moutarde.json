@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/filet-mignon-a-la-moutarde",
+  "tier": "drafted",
+  "batch": "pan-sauce-1",
+  "set": "growing",
+  "written_for": "pan-sauce",
+  "dish": "Filet mignon de porc à la moutarde",
+  "also_called": ["pork tenderloin with mustard sauce"],
+  "techniques": ["sear", "deglaze", "reduce"],
+  "ingredients": ["pork tenderloin", "shallot", "white wine", "cream", "Dijon mustard", "butter"]
+}

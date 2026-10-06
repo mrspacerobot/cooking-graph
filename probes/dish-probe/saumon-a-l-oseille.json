@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/saumon-a-l-oseille",
+  "tier": "drafted",
+  "batch": "pan-sauce-1",
+  "set": "held-back",
+  "written_for": "pan-sauce",
+  "dish": "Saumon à l'oseille",
+  "also_called": ["salmon with sorrel sauce", "escalope de saumon à l'oseille"],
+  "techniques": ["sear", "reduce", "mount with butter"],
+  "ingredients": ["salmon", "sorrel", "shallot", "white wine", "fish stock", "cream", "butter"]
+}

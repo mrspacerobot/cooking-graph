@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/salade-de-foies-de-volaille",
+  "tier": "drafted",
+  "batch": "pan-sauce-1",
+  "set": "held-back",
+  "written_for": "pan-sauce",
+  "dish": "Salade de foies de volaille",
+  "also_called": ["warm chicken liver salad"],
+  "techniques": ["sear", "deglaze", "toss"],
+  "ingredients": ["chicken liver", "shallot", "red wine vinegar", "butter", "lettuce"]
+}

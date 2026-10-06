@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/salade-verte",
+  "tier": "drafted",
+  "batch": "emulsions-1",
+  "set": "held-back",
+  "written_for": "emulsions",
+  "dish": "Salade verte",
+  "also_called": ["green salad", "green salad with vinaigrette"],
+  "techniques": ["emulsify", "toss"],
+  "ingredients": ["lettuce", "Dijon mustard", "red wine vinegar", "sunflower oil", "shallot"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/coquilles-saint-jacques-gratinees",
+  "tier": "drafted",
+  "batch": "roux-1",
+  "set": "growing",
+  "written_for": "roux",
+  "dish": "Coquilles Saint-Jacques gratinées",
+  "also_called": ["coquilles Saint-Jacques à la parisienne", "scallops gratin"],
+  "techniques": ["poach", "make a roux", "reduce", "gratinate"],
+  "ingredients": ["scallop", "mushroom", "shallot", "white wine", "butter", "flour", "cream", "breadcrumbs"]
+}

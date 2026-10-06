@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/endives-au-jambon",
+  "tier": "drafted",
+  "batch": "roux-1",
+  "set": "held-back",
+  "written_for": "roux",
+  "dish": "Endives au jambon",
+  "also_called": ["chicory with ham", "endives au gratin"],
+  "techniques": ["boil", "make a roux", "gratinate"],
+  "ingredients": ["chicory", "ham", "milk", "butter", "flour", "gruyère", "nutmeg"]
+}

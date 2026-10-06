@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/tournedos-rossini",
+  "tier": "drafted",
+  "batch": "pan-sauce-1",
+  "set": "growing",
+  "written_for": "pan-sauce",
+  "dish": "Tournedos Rossini",
+  "also_called": [],
+  "techniques": ["sear", "pan-fry", "deglaze", "reduce", "mount with butter"],
+  "ingredients": ["beef fillet", "foie gras", "sandwich bread", "Madeira", "brown stock", "butter", "truffle"]
+}

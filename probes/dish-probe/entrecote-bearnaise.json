@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/entrecote-bearnaise",
+  "tier": "drafted",
+  "batch": "emulsions-1",
+  "set": "growing",
+  "written_for": "emulsions",
+  "dish": "Entrecôte béarnaise",
+  "also_called": ["steak béarnaise", "steak with béarnaise sauce"],
+  "techniques": ["sear", "rest", "reduce", "emulsify"],
+  "ingredients": ["rib steak", "egg yolk", "butter", "shallot", "tarragon", "white wine vinegar"]
+}

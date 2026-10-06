@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/fricassee-de-poulet",
+  "tier": "drafted",
+  "batch": "roux-1",
+  "set": "growing",
+  "written_for": "roux",
+  "dish": "Fricassée de poulet à l'ancienne",
+  "also_called": ["chicken fricassee", "fricassée de poulet"],
+  "techniques": ["sweat", "sprinkle with flour", "simmer", "thicken with egg yolk"],
+  "ingredients": [
+    "chicken",
+    "butter",
+    "onion",
+    "flour",
+    "white wine",
+    "chicken stock",
+    "mushroom",
+    "cream",
+    "egg yolk",
+    "lemon"
+  ]
+}

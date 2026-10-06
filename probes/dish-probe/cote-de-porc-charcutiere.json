@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/cote-de-porc-charcutiere",
+  "tier": "drafted",
+  "batch": "pan-sauce-1",
+  "set": "growing",
+  "written_for": "pan-sauce",
+  "dish": "Côte de porc charcutière",
+  "also_called": ["pork chop charcutière"],
+  "techniques": ["sear", "sweat", "deglaze", "reduce"],
+  "ingredients": ["pork chop", "onion", "white wine", "brown stock", "Dijon mustard", "cornichons", "butter"]
+}

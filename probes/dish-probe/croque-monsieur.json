@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/croque-monsieur",
+  "tier": "drafted",
+  "batch": "roux-1",
+  "set": "growing",
+  "written_for": "roux",
+  "dish": "Croque monsieur",
+  "also_called": [],
+  "techniques": ["make a roux", "gratinate"],
+  "ingredients": ["sandwich bread", "ham", "gruyère", "milk", "butter", "flour", "nutmeg"]
+}

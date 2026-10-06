@@ -6,12 +6,11 @@ model changes, this is the one place in the tests that changes with it.
 """
 
 import copy
-import json
 import os
 import shutil
 import tempfile
 
-from tools import probes
+from tools import probes, writing
 
 REPOSITORY = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DRAFTED = "drafted"
@@ -196,7 +195,7 @@ class SmallKitchen:
             self.write(path, content)
 
     def write(self, path, content):
-        self.write_text(path, json.dumps(content, indent=2, ensure_ascii=False) + "\n")
+        self.write_text(path, writing.as_text(content))
 
     def write_text(self, path, text):
         full = os.path.join(self.root, path)

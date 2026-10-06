@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""tidy: rewrite every file of the graph and the probes in the one way a file is written."""
+
+import os
+import sys
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+
+from tools import writing  # noqa: E402
+
+for path in writing.tidy(ROOT):
+    print("tidied " + path)

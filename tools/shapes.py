@@ -116,6 +116,9 @@ class ShapeCheck:
                 self.report(join(where, name), "missing-field", "'%s' is missing" % name)
             else:
                 self.check(value[name], field_rule, join(where, name))
+        written = [name for name in value if name in fields]
+        if written != [name for name in fields if name in value]:
+            self.report(where, "field-order", "fields must come in the order of the model")
 
     def check_shape(self, value, rule, where):
         self.check(value, self.model["shapes"][rule["name"]], where)

@@ -3,7 +3,7 @@
 import os
 import unittest
 
-from tools import reading, rules, shapes
+from tools import reading, rules, shapes, writing
 from tools.reading import Issue, Thing
 
 
@@ -22,12 +22,17 @@ def place_of(path, model):
 def read_content(root, path, issues):
     """The content of one file, or None with an issue when it cannot be read as JSON."""
     try:
-        return reading.read_json(os.path.join(root, path))
+        data = reading.read_json(os.path.join(root, path))
     except reading.DuplicateField as twice:
         issues.append(Issue(path, "", "duplicate-field", "the field '%s' is written twice" % twice))
+        return None
     except ValueError as broken:
         issues.append(Issue(path, "", "not-json", "is not JSON: %s" % broken))
-    return None
+        return None
+    with open(os.path.join(root, path), encoding="utf-8") as handle:
+        if handle.read() != writing.as_text(data):
+            issues.append(Issue(path, "", "not-tidy", "is not written the one way: run ./tidy"))
+    return data
 
 
 def read_files(root, model, issues):

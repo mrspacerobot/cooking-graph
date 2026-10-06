@@ -1,0 +1,277 @@
+{
+  "about": "Every kind of file, its fields in order, and what each field may hold. The checker reads this file and nothing else decides what a file may contain. A change here is a change to the model and is logged in docs/model-changes.md.",
+  "shapes": {
+    "part": {
+      "is": "object",
+      "fields": {
+        "role": {"is": "word", "from": "part_roles"},
+        "options": {"is": "list", "at_least": 1, "of": {"is": "ref", "kinds": ["ingredient", "preparation"]}},
+        "tier": {"is": "word", "from": "tiers"}
+      }
+    }
+  },
+  "kinds": {
+    "fact": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "means": {"is": "text"}
+      }
+    },
+    "cuisine": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "within": {"is": "link", "to": ["cuisine"], "or_null": true}
+      }
+    },
+    "equipment": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "use": {"is": "text"}
+      }
+    },
+    "form": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "looks_like": {"is": "text"}
+      }
+    },
+    "ingredient": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "is_a": {"is": "list", "of": {"is": "link", "to": ["ingredient"]}},
+        "forms": {"is": "list", "of": {"is": "link", "to": ["form"]}},
+        "behaviour": {"is": "text"},
+        "safety": {
+          "is": "object",
+          "fields": {
+            "state": {"is": "word", "from": "safety_states"},
+            "contains": {"is": "list", "of": {"is": "ref", "kinds": ["fact"]}},
+            "free_of": {"is": "list", "of": {"is": "ref", "kinds": ["fact"]}},
+            "note": {"is": "text", "or_null": true}
+          }
+        },
+        "stands_in_for": {
+          "is": "list",
+          "of": {
+            "is": "link",
+            "to": ["ingredient", "preparation"],
+            "with": {
+              "when": {"is": "list", "of": {"is": "ref", "kinds": ["technique", "preparation", "dish"]}},
+              "not_when": {"is": "list", "of": {"is": "ref", "kinds": ["technique", "preparation", "dish"]}},
+              "ratio": {
+                "is": "object",
+                "or_null": true,
+                "fields": {
+                  "stand_in": {"is": "number"},
+                  "original": {"is": "number"},
+                  "by": {"is": "word", "from": "ratio_measures"}
+                }
+              },
+              "caveat": {"is": "text"}
+            }
+          }
+        },
+        "in_pantry_of": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
+      }
+    },
+    "technique": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "does": {"is": "text"},
+        "how": {"is": "list", "at_least": 2, "of": {"is": "text"}},
+        "cues": {
+          "is": "list",
+          "at_least": 1,
+          "of": {
+            "is": "object",
+            "fields": {
+              "sense": {"is": "word", "from": "senses"},
+              "text": {"is": "text"}
+            }
+          }
+        },
+        "mistakes": {
+          "is": "list",
+          "at_least": 1,
+          "of": {
+            "is": "object",
+            "fields": {
+              "mistake": {"is": "text"},
+              "fix": {"is": "text"}
+            }
+          }
+        },
+        "works_on": {"is": "list", "of": {"is": "link", "to": ["ingredient", "preparation"]}},
+        "makes": {"is": "list", "of": {"is": "link", "to": ["form"]}},
+        "needs": {
+          "is": "list",
+          "of": {
+            "is": "object",
+            "fields": {
+              "options": {"is": "list", "at_least": 1, "of": {"is": "ref", "kinds": ["equipment"]}},
+              "tier": {"is": "word", "from": "tiers"}
+            }
+          }
+        },
+        "comes_after": {"is": "list", "of": {"is": "link", "to": ["technique"], "with": {"why": {"is": "text"}}}},
+        "variant_of": {"is": "list", "of": {"is": "link", "to": ["technique"], "with": {"differs": {"is": "text"}}}},
+        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
+      }
+    },
+    "preparation": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "is": {"is": "text"},
+        "parts": {"is": "list", "of": {"is": "shape", "name": "part"}},
+        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
+      }
+    },
+    "dish": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "is": {"is": "text"},
+        "parts": {"is": "list", "at_least": 1, "of": {"is": "shape", "name": "part"}},
+        "teaches": {"is": "list", "of": {"is": "link", "to": ["technique"]}},
+        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
+      }
+    },
+    "recipe": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "makes": {"is": "ref", "kinds": ["dish"]},
+        "yields": {"is": "quantity", "units": "yield_units"},
+        "ingredients": {
+          "is": "list",
+          "at_least": 1,
+          "of": {
+            "is": "object",
+            "fields": {
+              "thing": {"is": "ref", "kinds": ["ingredient", "preparation"]},
+              "amount": {"is": "quantity", "units": "amount_units"}
+            }
+          }
+        },
+        "equipment": {"is": "list", "of": {"is": "ref", "kinds": ["equipment"]}},
+        "steps": {
+          "is": "list",
+          "at_least": 1,
+          "of": {
+            "is": "object",
+            "fields": {
+              "technique": {"is": "ref", "kinds": ["technique"]},
+              "works_on": {"is": "list", "of": {"is": "ref", "kinds": ["ingredient", "preparation"]}},
+              "text": {"is": "text"},
+              "time": {"is": "quantity", "units": "time_units", "or_null": true},
+              "temperature": {"is": "quantity", "units": "temperature_units", "or_null": true}
+            }
+          }
+        }
+      }
+    },
+    "program": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}},
+        "courses": {
+          "is": "list",
+          "at_least": 1,
+          "of": {
+            "is": "object",
+            "fields": {
+              "slug": {"is": "slug"},
+              "names": {"is": "names"},
+              "skills": {
+                "is": "list",
+                "at_least": 1,
+                "of": {
+                  "is": "object",
+                  "fields": {
+                    "slug": {"is": "slug"},
+                    "names": {"is": "names"},
+                    "comes_after": {
+                      "is": "list",
+                      "of": {
+                        "is": "object",
+                        "fields": {
+                          "skill": {"is": "slug"},
+                          "tier": {"is": "word", "from": "tiers"}
+                        }
+                      }
+                    },
+                    "levels": {
+                      "is": "list",
+                      "at_least": 1,
+                      "of": {
+                        "is": "object",
+                        "fields": {
+                          "number": {"is": "integer", "at_least": 1},
+                          "names": {"is": "names"},
+                          "teaches": {"is": "list", "of": {"is": "link", "to": ["technique"]}},
+                          "through": {"is": "list", "of": {"is": "link", "to": ["dish", "preparation"]}}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "dish-probe": {
+      "home": "probes",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "batch": {"is": "slug"},
+        "set": {"is": "word", "from": "probe_sets"},
+        "written_for": {"is": "slug"},
+        "dish": {"is": "label"},
+        "also_called": {"is": "list", "of": {"is": "label"}},
+        "techniques": {"is": "list", "at_least": 1, "of": {"is": "label"}},
+        "ingredients": {"is": "list", "at_least": 1, "of": {"is": "label"}}
+      }
+    }
+  }
+}

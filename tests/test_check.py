@@ -1,0 +1,402 @@
+"""The checker's rules, one failing file per rule.
+
+Every test starts from the small kitchen, which is valid, breaks one rule in
+one file, and expects the checker to name that file and that rule and nothing
+else.
+"""
+
+import unittest
+
+from tests.small_kitchen import BATCH, DRAFTED, SmallKitchen, link
+from tools import check
+
+SWEAT = "graph/technique/sweat.json"
+MINCE = "graph/technique/mince.json"
+BUTTER = "graph/ingredient/butter.json"
+ONION = "graph/ingredient/onion.json"
+ALLIUM = "graph/ingredient/allium.json"
+FRENCH = "graph/cuisine/french.json"
+DISH = "graph/dish/buttered-onions.json"
+RECIPE = "graph/recipe/buttered-onions.json"
+ROUX = "graph/preparation/roux.json"
+PROGRAM = "graph/program/small-program.json"
+PROBE = "probes/dish-probe/onion-tart.json"
+EM_DASH = "—"
+
+
+class CheckerTest(unittest.TestCase):
+    def setUp(self):
+        self.kitchen = SmallKitchen()
+        self.addCleanup(self.kitchen.close)
+
+    def issues(self):
+        return check.check_repository(self.kitchen.root)
+
+    def expect(self, path, rule):
+        """The checker reports this rule for this file, and reports nothing else."""
+        found = [(issue.path, issue.rule) for issue in self.issues()]
+        self.assertIn((path, rule), found)
+        self.assertEqual({(path, rule)}, set(found))
+
+    def break_file(self, path, change):
+        self.kitchen.change(path, change)
+
+
+class TheSmallKitchenIsValid(CheckerTest):
+    def test_no_issue_before_anything_is_broken(self):
+        self.assertEqual([], self.issues())
+
+
+class ReadingFiles(CheckerTest):
+    def test_a_file_that_is_not_json(self):
+        self.kitchen.write_text(SWEAT, "{ not json")
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((SWEAT, "not-json"), found)
+
+    def test_a_field_written_twice(self):
+        self.kitchen.write_text(FRENCH, '{"id": "cuisine/french", "id": "cuisine/french"}')
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((FRENCH, "duplicate-field"), found)
+
+    def test_a_folder_that_is_no_kind(self):
+        self.kitchen.write("graph/gadget/whisk.json", {"id": "gadget/whisk"})
+        self.expect("graph/gadget/whisk.json", "bad-path")
+
+    def test_a_file_outside_a_kind_folder(self):
+        self.kitchen.write("graph/loose.json", {"id": "loose"})
+        self.expect("graph/loose.json", "bad-path")
+
+    def test_a_kind_in_the_wrong_home(self):
+        self.kitchen.write("probes/cuisine/italian.json", {"id": "cuisine/italian"})
+        self.expect("probes/cuisine/italian.json", "bad-path")
+
+    def test_an_id_that_is_not_the_path(self):
+        self.break_file(SWEAT, lambda thing: thing.update(id="technique/sweating"))
+        self.expect(SWEAT, "bad-id")
+
+    def test_a_slug_that_is_not_lowercase(self):
+        self.kitchen.write("graph/fact/Soy.json", {"id": "fact/Soy"})
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn(("graph/fact/Soy.json", "bad-id"), found)
+
+
+class Shapes(CheckerTest):
+    def test_an_unknown_field(self):
+        self.break_file(SWEAT, lambda thing: thing.update(colour="blue"))
+        self.expect(SWEAT, "unknown-field")
+
+    def test_an_unknown_field_deep_inside(self):
+        self.break_file(SWEAT, lambda thing: thing["cues"][0].update(loud=True))
+        self.expect(SWEAT, "unknown-field")
+
+    def test_a_missing_field(self):
+        self.break_file(SWEAT, lambda thing: thing.pop("does"))
+        self.expect(SWEAT, "missing-field")
+
+    def test_a_missing_field_deep_inside(self):
+        self.break_file(SWEAT, lambda thing: thing["mistakes"][0].pop("fix"))
+        self.expect(SWEAT, "missing-field")
+
+    def test_a_value_of_the_wrong_type(self):
+        self.break_file(SWEAT, lambda thing: thing.update(how="Stir."))
+        self.expect(SWEAT, "wrong-type")
+
+    def test_null_where_null_is_not_allowed(self):
+        self.break_file(SWEAT, lambda thing: thing.update(does=None))
+        self.expect(SWEAT, "wrong-type")
+
+    def test_an_empty_text(self):
+        self.break_file(SWEAT, lambda thing: thing.update(does="  "))
+        self.expect(SWEAT, "empty")
+
+    def test_a_tier_that_is_not_one_of_the_five(self):
+        self.break_file(SWEAT, lambda thing: thing.update(tier="approved"))
+        self.expect(SWEAT, "not-in-tiers")
+
+    def test_a_statement_tier_that_is_not_one_of_the_five(self):
+        self.break_file(SWEAT, lambda thing: thing["works_on"][0].update(tier="fine"))
+        self.expect(SWEAT, "not-in-tiers")
+
+    def test_a_word_outside_its_closed_list(self):
+        self.break_file(SWEAT, lambda thing: thing["cues"][0].update(sense="guess"))
+        self.expect(SWEAT, "not-in-senses")
+
+    def test_a_reference_to_nothing(self):
+        self.break_file(SWEAT, lambda thing: thing.update(works_on=[link("ingredient/leek")]))
+        self.expect(SWEAT, "missing-reference")
+
+    def test_a_reference_to_the_wrong_kind(self):
+        self.break_file(SWEAT, lambda thing: thing.update(works_on=[link("cuisine/french")]))
+        self.expect(SWEAT, "wrong-kind")
+
+    def test_a_reference_that_is_no_id(self):
+        self.break_file(SWEAT, lambda thing: thing.update(works_on=[link("the onion")]))
+        self.expect(SWEAT, "bad-id")
+
+    def test_the_same_thing_listed_twice(self):
+        self.break_file(RECIPE, lambda thing: thing.update(equipment=["equipment/pan", "equipment/pan"]))
+        self.expect(RECIPE, "listed-twice")
+
+    def test_a_technique_without_a_cue(self):
+        self.break_file(SWEAT, lambda thing: thing.update(cues=[]))
+        self.expect(SWEAT, "too-few")
+
+    def test_a_technique_without_a_mistake(self):
+        self.break_file(SWEAT, lambda thing: thing.update(mistakes=[]))
+        self.expect(SWEAT, "too-few")
+
+    def test_a_technique_with_no_how(self):
+        self.break_file(SWEAT, lambda thing: thing.update(how=[]))
+        self.expect(SWEAT, "too-few")
+
+    def test_an_amount_with_a_unit_outside_the_list(self):
+        def use_a_handful(thing):
+            thing["ingredients"][0]["amount"] = {"value": 1, "unit": "handful"}
+
+        self.break_file(RECIPE, use_a_handful)
+        self.expect(RECIPE, "not-in-amount_units")
+
+    def test_an_amount_that_is_no_quantity(self):
+        def use_words(thing):
+            thing["ingredients"][0]["amount"] = {"value": "some", "unit": "gram"}
+
+        self.break_file(RECIPE, use_words)
+        self.expect(RECIPE, "bad-quantity")
+
+    def test_a_range_that_runs_backwards(self):
+        def reverse(thing):
+            thing["steps"][0]["time"] = {"from": 10, "to": 8, "unit": "minute"}
+
+        self.break_file(RECIPE, reverse)
+        self.expect(RECIPE, "bad-quantity")
+
+    def test_a_level_number_below_one(self):
+        def zero(thing):
+            thing["courses"][0]["skills"][0]["levels"][0]["number"] = 0
+
+        self.break_file(PROGRAM, zero)
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((PROGRAM, "too-small"), found)
+
+
+class Names(CheckerTest):
+    def test_no_english_name(self):
+        self.break_file(SWEAT, lambda thing: thing.update(names={"fr": "Suer"}))
+        self.expect(SWEAT, "english-name-missing")
+
+    def test_a_language_outside_the_list(self):
+        self.break_file(SWEAT, lambda thing: thing["names"].update(xx="Sweat"))
+        self.expect(SWEAT, "not-in-languages")
+
+    def test_another_script_without_its_romanization(self):
+        self.break_file(SWEAT, lambda thing: thing["names"].update(fr="出汁"))
+        self.expect(SWEAT, "romanization-missing")
+
+    def test_another_script_with_its_romanization(self):
+        def both(thing):
+            thing["names"]["fr"] = "出汁"
+            thing["names"]["fr-Latn"] = "dashi"
+
+        self.break_file(SWEAT, both)
+        self.assertEqual([], self.issues())
+
+    def test_two_things_of_a_kind_with_one_name(self):
+        self.break_file(MINCE, lambda thing: thing.update(aliases={"en": ["sweat"]}))
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertEqual({(MINCE, "same-name-twice"), (SWEAT, "same-name-twice")}, found)
+
+
+class Sentences(CheckerTest):
+    def test_a_number_in_a_sentence(self):
+        self.break_file(SWEAT, lambda thing: thing.update(does="Softens onions in 10 turns."))
+        self.expect(SWEAT, "number-in-sentence")
+
+    def test_a_number_word_in_a_sentence(self):
+        self.break_file(SWEAT, lambda thing: thing.update(does="Softens three onions."))
+        self.expect(SWEAT, "number-in-sentence")
+
+    def test_a_unit_in_a_sentence(self):
+        self.break_file(SWEAT, lambda thing: thing.update(does="Softens onions for a few minutes."))
+        self.expect(SWEAT, "unit-in-sentence")
+
+    def test_a_temperature_in_a_sentence(self):
+        self.break_file(SWEAT, lambda thing: thing.update(does="Softens onions at low degrees."))
+        self.expect(SWEAT, "unit-in-sentence")
+
+    def test_a_claim_that_food_is_cooked_through(self):
+        self.break_file(SWEAT, lambda thing: thing.update(does="Cooks until cooked through."))
+        self.expect(SWEAT, "claim-in-sentence")
+
+    def test_a_claim_that_food_is_safe(self):
+        def claim(thing):
+            thing["steps"][0]["text"] = "Now it is safe to eat."
+
+        self.break_file(RECIPE, claim)
+        self.expect(RECIPE, "claim-in-sentence")
+
+    def test_a_word_that_only_looks_like_a_unit(self):
+        self.break_file(SWEAT, lambda thing: thing.update(does="Softens the second onion in a cupboard."))
+        self.assertEqual([], self.issues())
+
+    def test_an_em_dash_in_a_file_of_the_graph(self):
+        self.break_file(SWEAT, lambda thing: thing.update(does="Softens" + EM_DASH + "slowly."))
+        self.expect(SWEAT, "em-dash")
+
+    def test_an_em_dash_in_any_other_file(self):
+        self.kitchen.write_text("docs/notes.md", "A note " + EM_DASH + " with a dash.\n")
+        self.expect("docs/notes.md", "em-dash")
+
+
+class Trust(CheckerTest):
+    def test_a_tier_nobody_earned(self):
+        self.break_file(SWEAT, lambda thing: thing.update(tier="reviewed"))
+        self.expect(SWEAT, "tier-not-earned")
+
+    def test_a_statement_tier_nobody_earned(self):
+        self.break_file(SWEAT, lambda thing: thing["works_on"][0].update(tier="sourced"))
+        self.expect(SWEAT, "tier-not-earned")
+
+    def test_a_safety_fact_nobody_verified(self):
+        self.break_file(BUTTER, lambda thing: thing["safety"].update(state="verified"))
+        self.expect(BUTTER, "safety-not-earned")
+
+
+class Safety(CheckerTest):
+    def test_a_fact_left_unanswered(self):
+        self.break_file(BUTTER, lambda thing: thing["safety"].update(free_of=[]))
+        self.expect(BUTTER, "fact-not-answered")
+
+    def test_a_fact_answered_both_ways(self):
+        self.break_file(BUTTER, lambda thing: thing["safety"].update(free_of=["fact/gluten", "fact/dairy"]))
+        self.expect(BUTTER, "fact-answered-twice")
+
+    def test_a_member_that_holds_what_its_class_does_not(self):
+        self.break_file(ONION, lambda thing: thing["safety"].update(contains=["fact/gluten"], free_of=["fact/dairy"]))
+        self.expect(ONION, "class-less-strict")
+
+
+class Recipes(CheckerTest):
+    def test_a_step_that_works_on_something_not_listed(self):
+        def add_flour(thing):
+            thing["steps"][0]["works_on"].append("ingredient/flour")
+
+        self.break_file(RECIPE, add_flour)
+        self.expect(RECIPE, "step-works-on-unlisted")
+
+    def test_an_ingredient_no_step_uses(self):
+        def forget_the_butter(thing):
+            thing["steps"][0]["works_on"] = ["ingredient/onion"]
+
+        self.break_file(RECIPE, forget_the_butter)
+        self.expect(RECIPE, "ingredient-never-used")
+
+    def test_an_ingredient_the_dish_does_not_name(self):
+        def cook_in_roux_no_more(thing):
+            thing["parts"] = thing["parts"][:1]
+
+        self.break_file(DISH, cook_in_roux_no_more)
+        self.expect(RECIPE, "not-in-the-dish")
+
+    def test_a_step_with_a_technique_that_does_not_exist(self):
+        def name_a_ghost(thing):
+            thing["steps"][0]["technique"] = "technique/caramelize"
+
+        self.break_file(RECIPE, name_a_ghost)
+        self.expect(RECIPE, "missing-reference")
+
+    def test_a_step_that_works_on_an_equipment(self):
+        def cook_the_pan(thing):
+            thing["steps"][0]["works_on"].append("equipment/pan")
+
+        self.break_file(RECIPE, cook_the_pan)
+        self.expect(RECIPE, "wrong-kind")
+
+
+class Order(CheckerTest):
+    def test_two_techniques_that_each_come_after_the_other(self):
+        def after_mince(thing):
+            thing["comes_after"] = [link("technique/mince", why="It is a loop.")]
+
+        self.break_file(SWEAT, after_mince)
+        found = {issue.rule for issue in self.issues()}
+        self.assertEqual({"cycle"}, found)
+
+    def test_a_cuisine_within_itself(self):
+        self.break_file(FRENCH, lambda thing: thing.update(within=link("cuisine/provencal")))
+        found = {issue.rule for issue in self.issues()}
+        self.assertEqual({"cycle"}, found)
+
+    def test_a_class_that_is_its_own_member(self):
+        self.break_file(ALLIUM, lambda thing: thing.update(is_a=[link("ingredient/onion")]))
+        found = {issue.rule for issue in self.issues()}
+        self.assertEqual({"cycle"}, found)
+
+
+class Programs(CheckerTest):
+    def skill(self, thing, index):
+        return thing["courses"][0]["skills"][index]
+
+    def test_a_skill_that_comes_after_an_unknown_skill(self):
+        def after_nothing(thing):
+            self.skill(thing, 1)["comes_after"] = [{"skill": "frying", "tier": DRAFTED}]
+
+        self.break_file(PROGRAM, after_nothing)
+        self.expect(PROGRAM, "skill-unknown")
+
+    def test_two_skills_with_one_slug(self):
+        def same_slug(thing):
+            self.skill(thing, 1)["slug"] = "sweating"
+            self.skill(thing, 1)["comes_after"] = []
+
+        self.break_file(PROGRAM, same_slug)
+        self.expect(PROGRAM, "slug-twice")
+
+    def test_levels_that_skip_a_number(self):
+        def skip(thing):
+            self.skill(thing, 0)["levels"][0]["number"] = 2
+
+        self.break_file(PROGRAM, skip)
+        self.expect(PROGRAM, "level-numbers")
+
+    def test_skills_that_each_come_after_the_other(self):
+        def loop(thing):
+            self.skill(thing, 0)["comes_after"] = [{"skill": "mincing", "tier": DRAFTED}]
+
+        self.break_file(PROGRAM, loop)
+        self.expect(PROGRAM, "cycle")
+
+
+class Probes(CheckerTest):
+    def test_a_probe_written_for_an_unknown_skill(self):
+        self.break_file(PROBE, lambda probe: probe.update(written_for="frying"))
+        self.expect(PROBE, "skill-unknown")
+
+    def test_a_probe_moved_out_of_the_held_back_set(self):
+        path = self.kitchen.held_back_path()
+        self.break_file(path, lambda probe: probe.update(set="growing"))
+        self.expect(path, "held-back-rule")
+
+    def test_a_probe_moved_into_the_held_back_set(self):
+        self.assertNotEqual(PROBE, self.kitchen.held_back_path())
+        self.break_file(PROBE, lambda probe: probe.update(set="held-back"))
+        self.expect(PROBE, "held-back-rule")
+
+    def test_a_dish_drafted_towards_a_held_back_probe(self):
+        path = self.kitchen.held_back_path()
+        self.break_file(path, lambda probe: probe.update(dish="Buttered onions baked"))
+        self.break_file(DISH, lambda thing: thing.update(aliases={"en": ["buttered onions baked"]}))
+        self.expect(DISH, "drafted-towards-held-back")
+
+    def test_two_probes_about_one_dish(self):
+        self.break_file(PROBE, lambda probe: probe.update(dish="Onion soup"))
+        found = {issue.rule for issue in self.issues()}
+        self.assertEqual({"same-dish-twice"}, found)
+
+    def test_the_batch_of_the_small_kitchen_holds_one_probe_back(self):
+        held_back = [f for f in self.kitchen.files.values() if f.get("set") == "held-back"]
+        self.assertEqual(1, len(held_back))
+        self.assertEqual(BATCH, held_back[0]["batch"])
+
+
+if __name__ == "__main__":
+    unittest.main()

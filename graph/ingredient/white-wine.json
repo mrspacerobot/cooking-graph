@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/white-wine",
+  "tier": "drafted",
+  "names": {"en": "White wine", "fr": "Vin blanc"},
+  "aliases": {"en": ["dry white wine"]},
+  "is_a": [],
+  "forms": [],
+  "behaviour": "Brings acidity and aroma, and dissolves the browned bits in a pan. It tastes raw and sharp until it has boiled down.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/alcohol", "fact/slaughter-product"],
+    "free_of": [
+      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    ],
+    "note": "Wine is often cleared with gelatine or isinglass, which come from slaughtered animals or fish."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

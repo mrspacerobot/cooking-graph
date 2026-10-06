@@ -1,0 +1,7 @@
+{
+  "id": "fact/gluten",
+  "tier": "drafted",
+  "names": {"en": "Gluten", "fr": "Gluten"},
+  "aliases": {},
+  "means": "Wheat, barley, rye and oats, or anything made from them."
+}

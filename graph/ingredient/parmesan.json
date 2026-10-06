@@ -1,0 +1,20 @@
+{
+  "id": "ingredient/parmesan",
+  "tier": "drafted",
+  "names": {"en": "Parmesan", "fr": "Parmesan"},
+  "aliases": {"en": ["Parmigiano Reggiano"]},
+  "is_a": [],
+  "forms": [],
+  "behaviour": "A hard, dry, salty cheese that melts into sauces and browns to a crisp crust.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/dairy", "fact/slaughter-product"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    ],
+    "note": "Made with animal rennet, which is taken from the stomach of a calf."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/tinned-tomatoes",
+  "tier": "drafted",
+  "names": {"en": "Tinned tomatoes", "fr": "Tomates en conserve"},
+  "aliases": {"en": ["canned tomatoes", "tinned plum tomatoes"]},
+  "is_a": [],
+  "forms": [],
+  "behaviour": "Break down into a sauce as they simmer, turning sweeter and thicker as their water cooks off.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

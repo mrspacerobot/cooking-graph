@@ -1,0 +1,20 @@
+{
+  "id": "ingredient/soy-sauce",
+  "tier": "drafted",
+  "names": {"en": "Soy sauce", "fr": "Sauce soja"},
+  "aliases": {},
+  "is_a": [],
+  "forms": [],
+  "behaviour": "Adds salt and savoury depth. It scorches fast in a dry, hot pan.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/soy", "fact/gluten"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product"
+    ],
+    "note": "Most soy sauce is brewed with wheat."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

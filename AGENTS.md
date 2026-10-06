@@ -13,8 +13,10 @@ The plan is in mrspacerobot/tomi#106.
 
 ## Content is data
 
-- **One JSON file per thing,** in a folder for its kind.
+- **One JSON file per thing,** in a folder for its kind: `graph/<kind>/<slug>.json`. Probes live apart, in `probes/`.
+- **The model is `schema/model.json`,** with its closed word lists in `schema/words.json`. The checker reads them and nothing else decides what a file may hold. A change to `schema/model.json` is a change to the model: log it in `docs/model-changes.md` with the example that forced it, in the same commit.
 - **Files are read strictly.** An unknown field is an error. A missing field is an error. A reference to something that does not exist is an error.
+- **Files are written one way.** `./tidy` rewrites them, and `./check` fails on a file written another way.
 - **Ids are permanent.** An id is its kind and an English slug, lowercase, such as `technique/deglaze`. Never rename or reuse one.
 - **Names travel with the thing,** in every language they are known in, English required. A local name is kept in its own script with a romanization.
 - **Numbers are data.** An amount, a time or a temperature is a number with a unit from a closed list, never words in a sentence.
@@ -33,6 +35,7 @@ Every thing and every statement carries one tier:
 
 - Nothing is marked higher than it earned. A model alone never raises a tier above sourced.
 - **Safety fails closed.** A safety fact (an allergen, an animal product, alcohol) is unverified until a person checked it against an authoritative source. Nothing unverified is ever exported.
+- **Only an ingredient carries safety facts, and it answers every fact,** as `contains` or `free_of`. What a dish holds follows from its ingredients and is never typed. When unsure, the stricter answer is recorded.
 - No text may claim that food is cooked through or safe to eat.
 
 ## Where knowledge may come from
@@ -47,6 +50,8 @@ Every thing and every statement carries one tier:
 - **Only the owner merges into `main`.** An agent works on a branch, pushes it, opens a pull request and stops. Never push to `main`, never merge, never rewrite its history.
 - **Tests first** for every tool. A rule of the checker has a test with a file that breaks it.
 - **`./check` must pass** before anything is called done. Report honestly: if it fails or a step was skipped, say so.
+- **The graph grows against probes.** `./probe` lists what the growing probes lack. One probe in five is held back by a rule, not by a person. Never write a dish, a name or an alias to please a held-back probe: `./probe` does not show what they lack, and it must stay that way.
+- **`./numbers` gives the numbers** for a round's notes and a pull request: counts by kind and tier, and the share of probes answered, growing and held back apart.
 - **A pull request that adds or changes content says how much and of what,** and lists what its author doubts.
 - Commit subjects are in the imperative and name the issue. No co-author lines for agents.
 - No secrets in the repository, ever.

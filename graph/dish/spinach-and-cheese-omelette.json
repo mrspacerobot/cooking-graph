@@ -1,0 +1,23 @@
+{
+  "id": "dish/spinach-and-cheese-omelette",
+  "tier": "drafted",
+  "names": {"en": "Spinach and cheese omelette"},
+  "aliases": {"en": ["spinach and hard cheese omelette"]},
+  "is": "A rolled omelette of softly set eggs, filled with wilted spinach and grated hard cheese.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/egg"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "filling", "options": ["ingredient/spinach"], "tier": "drafted"},
+    {
+      "role": "filling",
+      "options": ["ingredient/vegetarian-hard-cheese", "ingredient/parmesan"],
+      "tier": "drafted"
+    },
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

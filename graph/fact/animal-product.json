@@ -1,0 +1,7 @@
+{
+  "id": "fact/animal-product",
+  "tier": "drafted",
+  "names": {"en": "Animal product"},
+  "aliases": {},
+  "means": "Something an animal made that is neither meat, fish, shellfish, dairy nor egg, such as honey."
+}

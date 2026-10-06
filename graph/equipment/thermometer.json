@@ -1,0 +1,7 @@
+{
+  "id": "equipment/thermometer",
+  "tier": "drafted",
+  "names": {"en": "Thermometer", "fr": "Thermomètre"},
+  "aliases": {"en": ["probe thermometer", "instant-read thermometer"]},
+  "use": "Reads the temperature inside food or a liquid, so that heat is measured and not guessed."
+}

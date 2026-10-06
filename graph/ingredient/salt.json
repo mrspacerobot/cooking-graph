@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/salt",
+  "tier": "drafted",
+  "names": {"en": "Salt", "fr": "Sel"},
+  "aliases": {"en": ["fine salt", "sea salt"]},
+  "is_a": [],
+  "forms": [],
+  "behaviour": "Draws water out of food, and seasons deeper the earlier it goes in. A liquid that boils down grows saltier.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

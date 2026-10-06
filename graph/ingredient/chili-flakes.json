@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/chili-flakes",
+  "tier": "drafted",
+  "names": {"en": "Chili flakes"},
+  "aliases": {"en": ["chilli flakes", "red pepper flakes", "crushed red pepper"]},
+  "is_a": [],
+  "forms": [],
+  "behaviour": "Give a dry heat that opens up in warm fat and burns bitter in a pan that is too hot.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

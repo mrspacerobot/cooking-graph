@@ -1,0 +1,200 @@
+{
+  "id": "program/french-foundations",
+  "tier": "drafted",
+  "names": {"en": "French foundations"},
+  "aliases": {},
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "courses": [
+    {
+      "slug": "foundations",
+      "names": {"en": "Foundations"},
+      "skills": [
+        {
+          "slug": "knife-cuts",
+          "names": {"en": "Knife cuts"},
+          "comes_after": [],
+          "levels": [
+            {"number": 1, "names": {"en": "Mirepoix"}, "teaches": [], "through": []},
+            {"number": 2, "names": {"en": "Brunoise"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Julienne"}, "teaches": [], "through": []}
+          ]
+        },
+        {
+          "slug": "eggs",
+          "names": {"en": "Eggs"},
+          "comes_after": [],
+          "levels": [
+            {"number": 1, "names": {"en": "Soft scramble"}, "teaches": [], "through": []},
+            {"number": 2, "names": {"en": "Poached egg"}, "teaches": [], "through": []},
+            {
+              "number": 3,
+              "names": {"en": "Rolled omelette"},
+              "teaches": [],
+              "through": [
+                {"thing": "dish/spinach-and-cheese-omelette", "tier": "drafted"}
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "stocks",
+          "names": {"en": "Stocks"},
+          "comes_after": [
+            {"skill": "knife-cuts", "tier": "drafted"}
+          ],
+          "levels": [
+            {"number": 1, "names": {"en": "Vegetable stock"}, "teaches": [], "through": []},
+            {"number": 2, "names": {"en": "White chicken stock"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Brown stock"}, "teaches": [], "through": []}
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heat",
+      "names": {"en": "Heat control"},
+      "skills": [
+        {
+          "slug": "saute",
+          "names": {"en": "Sauté"},
+          "comes_after": [
+            {"skill": "knife-cuts", "tier": "drafted"}
+          ],
+          "levels": [
+            {"number": 1, "names": {"en": "Sweat without color"}, "teaches": [], "through": []},
+            {"number": 2, "names": {"en": "Sauté in a hot pan"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Caramelized onions"}, "teaches": [], "through": []}
+          ]
+        },
+        {
+          "slug": "sear",
+          "names": {"en": "Sear"},
+          "comes_after": [
+            {"skill": "saute", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Chicken thighs, skin down"},
+              "teaches": [],
+              "through": []
+            },
+            {"number": 2, "names": {"en": "Steak to temperature"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Crisp fish skin"}, "teaches": [], "through": []}
+          ]
+        },
+        {
+          "slug": "poach",
+          "names": {"en": "Poach"},
+          "comes_after": [
+            {"skill": "stocks", "tier": "drafted"}
+          ],
+          "levels": [
+            {"number": 1, "names": {"en": "Chicken in stock"}, "teaches": [], "through": []},
+            {"number": 2, "names": {"en": "Fish in court-bouillon"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Pears in syrup"}, "teaches": [], "through": []}
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sauces",
+      "names": {"en": "Sauces"},
+      "skills": [
+        {
+          "slug": "roux",
+          "names": {"en": "Roux"},
+          "comes_after": [
+            {"skill": "stocks", "tier": "drafted"}
+          ],
+          "levels": [
+            {"number": 1, "names": {"en": "White roux for béchamel"}, "teaches": [], "through": []},
+            {"number": 2, "names": {"en": "Blond roux for velouté"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Brown roux"}, "teaches": [], "through": []}
+          ]
+        },
+        {
+          "slug": "pan-sauce",
+          "names": {"en": "Pan sauces"},
+          "comes_after": [
+            {"skill": "sear", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Deglaze the fond"},
+              "teaches": [],
+              "through": [
+                {
+                  "thing": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce",
+                  "tier": "drafted"
+                }
+              ]
+            },
+            {"number": 2, "names": {"en": "Reduce to coat a spoon"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Monter au beurre"}, "teaches": [], "through": []}
+          ]
+        },
+        {
+          "slug": "emulsions",
+          "names": {"en": "Emulsions"},
+          "comes_after": [
+            {"skill": "eggs", "tier": "drafted"}
+          ],
+          "levels": [
+            {"number": 1, "names": {"en": "Vinaigrette"}, "teaches": [], "through": []},
+            {"number": 2, "names": {"en": "Mayonnaise"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Hollandaise"}, "teaches": [], "through": []},
+            {"number": 4, "names": {"en": "Beurre blanc"}, "teaches": [], "through": []}
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "together",
+      "names": {"en": "Putting it together"},
+      "skills": [
+        {
+          "slug": "braise",
+          "names": {"en": "Braise"},
+          "comes_after": [
+            {"skill": "stocks", "tier": "drafted"},
+            {"skill": "pan-sauce", "tier": "drafted"}
+          ],
+          "levels": [
+            {"number": 1, "names": {"en": "Braised leeks"}, "teaches": [], "through": []},
+            {"number": 2, "names": {"en": "Chicken in wine"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Beef in red wine"}, "teaches": [], "through": []}
+          ]
+        },
+        {
+          "slug": "roast",
+          "names": {"en": "Roast"},
+          "comes_after": [
+            {"skill": "sear", "tier": "drafted"}
+          ],
+          "levels": [
+            {"number": 1, "names": {"en": "Roasted roots"}, "teaches": [], "through": []},
+            {"number": 2, "names": {"en": "Roast chicken and jus"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Butter-basted pork chop"}, "teaches": [], "through": []}
+          ]
+        },
+        {
+          "slug": "gratin",
+          "names": {"en": "Gratin"},
+          "comes_after": [
+            {"skill": "knife-cuts", "tier": "drafted"},
+            {"skill": "roux", "tier": "drafted"}
+          ],
+          "levels": [
+            {"number": 1, "names": {"en": "Potato gratin"}, "teaches": [], "through": []},
+            {"number": 2, "names": {"en": "Cauliflower in béchamel"}, "teaches": [], "through": []},
+            {"number": 3, "names": {"en": "Crumb crust"}, "teaches": [], "through": []}
+          ]
+        }
+      ]
+    }
+  ]
+}

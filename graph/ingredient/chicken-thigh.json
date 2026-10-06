@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/chicken-thigh",
+  "tier": "drafted",
+  "names": {"en": "Chicken thigh", "fr": "Haut de cuisse de poulet"},
+  "aliases": {"en": ["bone-in chicken thigh"]},
+  "is_a": [],
+  "forms": [],
+  "behaviour": "Dark meat with enough fat and connective tissue to stay juicy through long cooking. Its skin crisps as the fat under it melts away.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product",
+      "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

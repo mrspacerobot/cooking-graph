@@ -1,0 +1,7 @@
+{
+  "id": "fact/meat",
+  "tier": "drafted",
+  "names": {"en": "Meat", "fr": "Viande"},
+  "aliases": {},
+  "means": "The flesh of a land animal or a bird, or anything made from it, such as stock or dripping."
+}

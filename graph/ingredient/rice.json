@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/rice",
+  "tier": "drafted",
+  "names": {"en": "Rice", "fr": "Riz"},
+  "aliases": {"en": ["white rice"]},
+  "is_a": [],
+  "forms": [],
+  "behaviour": "Swells as it takes up liquid, and its starch thickens whatever it is stirred in.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

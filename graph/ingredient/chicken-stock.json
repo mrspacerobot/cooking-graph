@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/chicken-stock",
+  "tier": "drafted",
+  "names": {"en": "Chicken stock", "fr": "Bouillon de volaille"},
+  "aliases": {"en": ["chicken broth"], "fr": ["fond blanc de volaille"]},
+  "is_a": [
+    {"thing": "ingredient/stock", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A light, savoury liquid that takes on other flavours easily. A homemade one sets to a soft jelly when cold and gives a sauce body as it boils down.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat", "fact/gluten"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": "Bought stock and stock cubes often hold wheat."
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/white-wine",
+      "when": ["dish/seared-chicken-thighs-with-lemon-butter-pan-sauce"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "Stock has none of the sharpness of wine. A squeeze of lemon at the end brings some of it back.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

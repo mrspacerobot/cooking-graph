@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/stock",
+  "tier": "drafted",
+  "names": {"en": "Stock", "fr": "Bouillon"},
+  "aliases": {"en": ["broth"], "fr": ["fond"]},
+  "is_a": [],
+  "forms": [],
+  "behaviour": "Gives body and savoury depth. As it boils down it thickens and grows saltier.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat", "fact/gluten"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": "A stock of unknown kind is taken to be a meat stock. Bought stock and stock cubes often hold wheat."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

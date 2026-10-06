@@ -1,0 +1,34 @@
+{
+  "id": "ingredient/olive-oil",
+  "tier": "drafted",
+  "names": {"en": "Olive oil", "fr": "Huile d'olive"},
+  "aliases": {"en": ["extra virgin olive oil"]},
+  "is_a": [],
+  "forms": [],
+  "behaviour": "Carries flavour and browns food at moderate heat. Its fruity taste fades, and turns bitter if it is heated until it smokes.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/butter",
+      "when": [
+        "dish/spinach-and-cheese-omelette", "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce"
+      ],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "Oil has none of the nutty taste of butter, and a sauce finished with it stays thinner and does not turn creamy.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

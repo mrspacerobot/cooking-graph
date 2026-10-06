@@ -1,0 +1,7 @@
+{
+  "id": "fact/fish",
+  "tier": "drafted",
+  "names": {"en": "Fish", "fr": "Poisson"},
+  "aliases": {},
+  "means": "Fish with fins, or anything made from it, such as anchovy paste or fish stock."
+}

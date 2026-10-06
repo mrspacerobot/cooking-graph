@@ -17,7 +17,8 @@ Night one. Everything in this repository was drafted by a model and reviewed by 
 | `schema/model.json` | The model: every kind, its fields and what each may hold |
 | `schema/words.json` | The closed word lists: tiers, units, roles |
 | `tools/`, `tests/` | The commands and their tests. Python standard library only |
-| `docs/model-changes.md` | Every change to the starting model, with the example that forced it |
+| `docs/model.md` | The model in words, and every change to the starting model with the example that forced it |
+| `docs/night-one.md` | The report of the first night: what to open first, the numbers, the doubts, the open questions |
 | `docs/rounds/` | The numbers and notes of each round |
 
 ## Commands

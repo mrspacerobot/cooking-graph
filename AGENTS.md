@@ -14,7 +14,7 @@ The plan is in mrspacerobot/tomi#106.
 ## Content is data
 
 - **One JSON file per thing,** in a folder for its kind: `graph/<kind>/<slug>.json`. Probes live apart, in `probes/`.
-- **The model is `schema/model.json`,** with its closed word lists in `schema/words.json`. The checker reads them and nothing else decides what a file may hold. A change to `schema/model.json` is a change to the model: log it in `docs/model-changes.md` with the example that forced it, in the same commit.
+- **The model is `schema/model.json`,** with its closed word lists in `schema/words.json`. The checker reads them and nothing else decides what a file may hold. A change to `schema/model.json` is a change to the model: log it in `docs/model.md` with the example that forced it, in the same commit. `./check` fails when `docs/model.md` does not name a kind or a field of the model.
 - **Files are read strictly.** An unknown field is an error. A missing field is an error. A reference to something that does not exist is an error.
 - **Files are written one way.** `./tidy` rewrites them, and `./check` fails on a file written another way.
 - **Ids are permanent.** An id is its kind and an English slug, lowercase, such as `technique/deglaze`. Never rename or reuse one.

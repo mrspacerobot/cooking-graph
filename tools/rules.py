@@ -348,6 +348,41 @@ def nothing_drafted_towards_held_back(things):
     return issues
 
 
+def field_names(rule, found):
+    """Every field name a rule of the model mentions, however deep."""
+    for name, inner in list(rule.get("fields", {}).items()) + list(rule.get("with", {}).items()):
+        found.add(name)
+        field_names(inner, found)
+    if "of" in rule:
+        field_names(rule["of"], found)
+    return found
+
+
+def names_of_the_model(model):
+    """Every kind and every field of the model, in a fixed order."""
+    found = set(model["kinds"])
+    for kind in model["kinds"].values():
+        field_names(kind, found)
+    for shape in model["shapes"].values():
+        field_names(shape, found)
+    return sorted(found)
+
+
+def model_document(root, model):
+    """docs/model.md names every kind and every field, so that the document cannot fall behind the model."""
+    path = os.path.join(root, "docs", "model.md")
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as handle:
+        text = handle.read()
+    issues = []
+    for name in names_of_the_model(model):
+        if "`%s`" % name not in text:
+            message = "the model has '%s' and the document does not name it" % name
+            issues.append(Issue("docs/model.md", "", "not-in-the-model-document", message))
+    return issues
+
+
 def em_dashes(root):
     """The em dash appears in no file of the repository. A plain hyphen does its work."""
     issues = []

@@ -1,5 +1,5 @@
 {
-  "about": "Every kind of file, its fields in order, and what each field may hold. The checker reads this file and nothing else decides what a file may contain. A change here is a change to the model and is logged in docs/model-changes.md.",
+  "about": "Every kind of file, its fields in order, and what each field may hold. The checker reads this file and nothing else decides what a file may contain. A change here is a change to the model and is logged in docs/model.md.",
   "shapes": {
     "stand_in": {
       "is": "link",

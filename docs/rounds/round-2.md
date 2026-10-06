@@ -56,7 +56,7 @@ Of the six probes held back in round 1, four are answered now without anything h
 
 ## Changes to the model: 1
 
-Change 15 in `docs/model-changes.md`: a step says what it leaves behind. Round 1 had named this gap. The fond made it impossible to go on without it.
+Change 15 in `docs/model.md`: a step says what it leaves behind. Round 1 had named this gap. The fond made it impossible to go on without it.
 
 ## Changes to the vocabulary
 

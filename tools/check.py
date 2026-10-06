@@ -74,6 +74,7 @@ def read_repository(root):
             sound[thing_id] = thing
     for rule in rules.EVERY_RULE:
         issues.extend(rule(sound))
+    issues.extend(rules.model_document(root, model))
     issues.extend(rules.em_dashes(root))
     return sound, sorted(issues)
 

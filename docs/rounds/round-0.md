@@ -59,7 +59,7 @@ No probes yet. Levels of the program that name a technique: 0 of 37.
 
 ## What the model could not express
 
-- **"Holds nothing" as a safety answer.** See change 2 in `docs/model-changes.md`.
+- **"Holds nothing" as a safety answer.** See change 2 in `docs/model.md`.
 - **What a level is practised on.** See change 6.
 - Nothing else yet: no technique, form, preparation or recipe has been written, so those kinds are still the starting model, untested.
 

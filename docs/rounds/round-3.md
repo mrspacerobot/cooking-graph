@@ -55,7 +55,7 @@ The held-back share did not move this round: it was 50% after round 2 and is 50%
 
 ## Changes to the model: 1
 
-Change 16 in `docs/model-changes.md`: a preparation can stand in for something. It took the epic's own example, ghee for butter, to show that the model could not say it once clarified butter was a preparation.
+Change 16 in `docs/model.md`: a preparation can stand in for something. It took the epic's own example, ghee for butter, to show that the model could not say it once clarified butter was a preparation.
 
 ## Changes to the vocabulary
 

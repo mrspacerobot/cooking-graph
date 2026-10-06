@@ -58,7 +58,7 @@ Levels of the program that name a technique: 9 of 37. Recipe steps: 72. Safety p
 
 ## Changes to the model: 8
 
-Changes 7 to 14 in `docs/model-changes.md`: what a technique needs and makes, the size of a form, a part of an ingredient, what a preparation teaches, recipes for preparations, forms on an ingredient line, and safety points on a step. One rule of the checker changed with change 12: a step may work on the thing its recipe is making, so that a stock can be strained.
+Changes 7 to 14 in `docs/model.md`: what a technique needs and makes, the size of a form, a part of an ingredient, what a preparation teaches, recipes for preparations, forms on an ingredient line, and safety points on a step. One rule of the checker changed with change 12: a step may work on the thing its recipe is making, so that a stock can be strained.
 
 ## Changes to the vocabulary
 

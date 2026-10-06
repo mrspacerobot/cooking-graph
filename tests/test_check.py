@@ -8,7 +8,8 @@ else.
 import unittest
 
 from tests.small_kitchen import BATCH, DRAFTED, SmallKitchen, link
-from tools import check
+from tools import check, reading
+from tools.rules import names_of_the_model as check_names
 
 SWEAT = "graph/technique/sweat.json"
 MINCE = "graph/technique/mince.json"
@@ -456,6 +457,30 @@ class Programs(CheckerTest):
 
         self.break_file(PROGRAM, loop)
         self.expect(PROGRAM, "cycle")
+
+
+class TheModelDocument(CheckerTest):
+    """docs/model.md describes the model. When it exists, it names every kind and every field."""
+
+    def write_document(self, leave_out=()):
+        model, _ = reading.read_schema(self.kitchen.root)
+        words = [word for word in check_names(model) if word not in leave_out]
+        self.kitchen.write_text("docs/model.md", "# The model\n\n" + " ".join("`%s`" % word for word in words) + "\n")
+
+    def test_a_document_that_names_everything(self):
+        self.write_document()
+        self.assertEqual([], self.issues())
+
+    def test_a_document_that_forgets_a_field(self):
+        self.write_document(leave_out=["safety_points"])
+        self.expect("docs/model.md", "not-in-the-model-document")
+
+    def test_a_document_that_forgets_a_kind(self):
+        self.write_document(leave_out=["cuisine"])
+        self.expect("docs/model.md", "not-in-the-model-document")
+
+    def test_no_document_yet_is_no_issue(self):
+        self.assertEqual([], self.issues())
 
 
 class Probes(CheckerTest):

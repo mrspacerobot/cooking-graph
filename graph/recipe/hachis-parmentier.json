@@ -59,7 +59,7 @@
     {
       "technique": "technique/saute",
       "works_on": ["ingredient/minced-beef", "ingredient/salt", "ingredient/black-pepper"],
-      "text": "Turn the heat up, add the beef and break it up. Brown it until the liquid it gives off has cooked away. Season it. Check the thickest part against a trusted guide to doneness.",
+      "text": "Turn the heat up, add the beef and break it up. Brown it until the liquid it gives off has cooked away. Season it. Check it against a trusted guide to doneness.",
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
       "safety_points": ["doneness"],

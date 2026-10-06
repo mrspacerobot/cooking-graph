@@ -44,10 +44,10 @@ class OneWayToWriteAFile(unittest.TestCase):
         lines = writing.as_text({"free_of": facts}).split("\n")
         self.assertEqual('  "free_of": [', lines[1])
         self.assertTrue(lines[2].startswith('    "fact/number-0", "fact/number-1", '))
-        self.assertTrue(all(len(line) <= 100 for line in lines))
+        self.assertTrue(all(len(line) <= writing.WIDTH for line in lines))
 
     def test_what_does_not_fit_on_a_line_is_broken_up(self):
-        long_sentence = "A cue that runs on for so long that the object holding it cannot sit on a line of the file."
+        long_sentence = "A cue that runs on and on for so long that the object which holds it can never sit on a single line of the file."
         text = writing.as_text({"cue": {"sense": "see", "text": long_sentence}})
         self.assertEqual('{\n  "cue": {\n    "sense": "see",\n    "text": "%s"\n  }\n}\n' % long_sentence, text)
 

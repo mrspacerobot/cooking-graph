@@ -11,8 +11,8 @@
     "state": "unverified",
     "contains": ["fact/dairy", "fact/slaughter-product"],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
-      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
     ],
     "note": "Made with animal rennet, which is taken from the stomach of a calf."
   },

@@ -8,22 +8,13 @@
   "ingredients": [
     {"thing": "ingredient/egg", "amount": {"value": 3, "unit": "piece"}, "forms": []},
     {"thing": "ingredient/spinach", "amount": {"value": 60, "unit": "gram"}, "forms": []},
-    {
-      "thing": "ingredient/vegetarian-hard-cheese",
-      "amount": {"value": 30, "unit": "gram"},
-      "forms": ["form/grated"]
-    },
+    {"thing": "ingredient/vegetarian-hard-cheese", "amount": {"value": 30, "unit": "gram"}, "forms": ["form/grated"]},
     {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": []},
     {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []},
-    {
-      "thing": "ingredient/black-pepper",
-      "amount": {"value": 0.25, "unit": "teaspoon"},
-      "forms": []
-    }
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
   ],
   "equipment": [
-    "equipment/stovetop", "equipment/non-stick-pan", "equipment/mixing-bowl", "equipment/whisk",
-    "equipment/spatula"
+    "equipment/stovetop", "equipment/non-stick-pan", "equipment/mixing-bowl", "equipment/whisk", "equipment/spatula"
   ],
   "steps": [
     {

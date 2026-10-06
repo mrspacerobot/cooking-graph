@@ -13,8 +13,8 @@
     "state": "unverified",
     "contains": ["fact/gluten", "fact/dairy", "fact/egg", "fact/soy"],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/fish", "fact/meat", "fact/nuts", "fact/pork",
-      "fact/sesame", "fact/shellfish", "fact/slaughter-product"
+      "fact/alcohol", "fact/animal-product", "fact/fish", "fact/meat", "fact/nuts", "fact/pork", "fact/sesame",
+      "fact/shellfish", "fact/slaughter-product"
     ],
     "note": "Usually enriched with milk or butter. Egg and soy flour are recorded because many bought loaves hold them."
   },

@@ -10,25 +10,13 @@
     {"thing": "ingredient/courgette", "amount": {"value": 400, "unit": "gram"}, "forms": []},
     {"thing": "ingredient/bell-pepper", "amount": {"value": 2, "unit": "piece"}, "forms": []},
     {"thing": "ingredient/tomato", "amount": {"value": 500, "unit": "gram"}, "forms": []},
-    {
-      "thing": "ingredient/onion",
-      "amount": {"value": 1, "unit": "piece"},
-      "forms": ["form/peeled"]
-    },
-    {
-      "thing": "ingredient/garlic",
-      "amount": {"value": 3, "unit": "clove"},
-      "forms": ["form/minced"]
-    },
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"]},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": ["form/minced"]},
     {"thing": "ingredient/thyme", "amount": {"value": 3, "unit": "sprig"}, "forms": []},
     {"thing": "ingredient/bay-leaf", "amount": {"value": 1, "unit": "leaf"}, "forms": []},
     {"thing": "ingredient/olive-oil", "amount": {"value": 6, "unit": "tablespoon"}, "forms": []},
     {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": []},
-    {
-      "thing": "ingredient/black-pepper",
-      "amount": {"value": 0.25, "unit": "teaspoon"},
-      "forms": []
-    }
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
   ],
   "equipment": [
     "equipment/stovetop", "equipment/frying-pan", "equipment/dutch-oven", "equipment/chefs-knife",
@@ -37,9 +25,7 @@
   "steps": [
     {
       "technique": "technique/dice",
-      "works_on": [
-        "ingredient/aubergine", "ingredient/courgette", "ingredient/bell-pepper", "ingredient/onion"
-      ],
+      "works_on": ["ingredient/aubergine", "ingredient/courgette", "ingredient/bell-pepper", "ingredient/onion"],
       "text": "Cut the aubergine, the courgettes, the peppers and the onion into even dice, each in its own pile. Leave the skin on the aubergine and the courgettes.",
       "time": null,
       "temperature": null,
@@ -71,9 +57,7 @@
     },
     {
       "technique": "technique/sweat",
-      "works_on": [
-        "ingredient/olive-oil", "ingredient/onion", "ingredient/bell-pepper", "ingredient/salt"
-      ],
+      "works_on": ["ingredient/olive-oil", "ingredient/onion", "ingredient/bell-pepper", "ingredient/salt"],
       "text": "Soften the onion and the peppers in the rest of the oil in a heavy pot over low heat, with a little salt, until limp and sweet.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": null,
@@ -82,8 +66,8 @@
     {
       "technique": "technique/simmer",
       "works_on": [
-        "ingredient/garlic", "ingredient/tomato", "ingredient/thyme", "ingredient/bay-leaf",
-        "ingredient/aubergine", "ingredient/courgette"
+        "ingredient/garlic", "ingredient/tomato", "ingredient/thyme", "ingredient/bay-leaf", "ingredient/aubergine",
+        "ingredient/courgette"
       ],
       "text": "Stir in the garlic until it smells sweet. Add the tomatoes, the thyme and the bay leaf, then the browned vegetables. Simmer gently, lid ajar, until everything is soft and the juices have thickened.",
       "time": {"from": 35, "to": 45, "unit": "minute"},

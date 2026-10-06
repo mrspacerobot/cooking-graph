@@ -7,11 +7,7 @@
   "parts": [
     {"role": "main", "options": ["ingredient/egg"], "tier": "drafted"},
     {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {
-      "role": "enrichment",
-      "options": ["ingredient/cream", "ingredient/creme-fraiche"],
-      "tier": "drafted"
-    },
+    {"role": "enrichment", "options": ["ingredient/cream", "ingredient/creme-fraiche"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
   ],
   "teaches": [

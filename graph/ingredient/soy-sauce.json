@@ -11,8 +11,8 @@
     "state": "unverified",
     "contains": ["fact/soy", "fact/gluten"],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/meat",
-      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product"
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/meat", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product"
     ],
     "note": "Most soy sauce is brewed with wheat."
   },

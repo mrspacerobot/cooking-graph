@@ -2,25 +2,15 @@
   "id": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce",
   "tier": "drafted",
   "names": {"en": "Seared chicken thighs with lemon butter pan sauce"},
-  "aliases": {
-    "en": ["seared chicken thighs with lemon-butter pan sauce", "chicken thighs with pan sauce"]
-  },
+  "aliases": {"en": ["seared chicken thighs with lemon-butter pan sauce", "chicken thighs with pan sauce"]},
   "is": "Chicken thighs seared skin side down until crisp, with a sauce made in the same pan from the browned bits, white wine, butter and lemon, and wilted spinach on the side.",
   "parts": [
     {"role": "main", "options": ["ingredient/chicken-thigh"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
     {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
     {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
-    {
-      "role": "liquid",
-      "options": ["ingredient/white-wine", "ingredient/chicken-stock"],
-      "tier": "drafted"
-    },
-    {
-      "role": "enrichment",
-      "options": ["ingredient/butter", "ingredient/olive-oil"],
-      "tier": "drafted"
-    },
+    {"role": "liquid", "options": ["ingredient/white-wine", "ingredient/chicken-stock"], "tier": "drafted"},
+    {"role": "enrichment", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"},
     {"role": "acid", "options": ["ingredient/lemon"], "tier": "drafted"},
     {"role": "side", "options": ["ingredient/spinach"], "tier": "drafted"}
   ],

@@ -11,20 +11,14 @@
     "Stir, wait a moment and taste again."
   ],
   "cues": [
-    {
-      "sense": "taste",
-      "text": "The dish tastes more of itself and not of salt. It is bright, and nothing sticks out."
-    }
+    {"sense": "taste", "text": "The dish tastes more of itself and not of salt. It is bright, and nothing sticks out."}
   ],
   "mistakes": [
     {
       "mistake": "Salting a liquid fully before it has boiled down, so that it ends up too salty.",
       "fix": "Salt lightly anything that will reduce, and correct it at the end."
     },
-    {
-      "mistake": "Seasoning without tasting.",
-      "fix": "Taste every time. No amount on paper replaces it."
-    }
+    {"mistake": "Seasoning without tasting.", "fix": "Taste every time. No amount on paper replaces it."}
   ],
   "works_on": [],
   "makes": [],
@@ -33,9 +27,7 @@
     {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"},
     {
       "role": "acid",
-      "options": [
-        "ingredient/lemon", "ingredient/red-wine-vinegar", "ingredient/white-wine-vinegar"
-      ],
+      "options": ["ingredient/lemon", "ingredient/red-wine-vinegar", "ingredient/white-wine-vinegar"],
       "tier": "drafted"
     }
   ],

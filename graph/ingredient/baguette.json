@@ -13,9 +13,8 @@
     "state": "unverified",
     "contains": ["fact/gluten"],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/meat",
-      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product",
-      "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/meat", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
     ],
     "note": "By tradition made of flour, water, salt and yeast only."
   },

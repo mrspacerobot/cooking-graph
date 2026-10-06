@@ -11,18 +11,15 @@
     "state": "unverified",
     "contains": [],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
-      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
-      "fact/slaughter-product", "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
     ],
     "note": null
   },
   "stands_in_for": [
     {
       "thing": "ingredient/butter",
-      "when": [
-        "dish/spinach-and-cheese-omelette", "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce"
-      ],
+      "when": ["dish/spinach-and-cheese-omelette", "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce"],
       "not_when": [],
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "Oil has none of the nutty taste of butter, and a sauce finished with it stays thinner and does not turn creamy.",

@@ -11,9 +11,8 @@
     "state": "unverified",
     "contains": [],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
-      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
-      "fact/slaughter-product", "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
     ],
     "note": "Despite its name, nutmeg is the seed of a fruit and not a tree nut."
   },

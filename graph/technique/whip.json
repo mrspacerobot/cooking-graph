@@ -11,10 +11,7 @@
     "Stop as soon as the foam stands in a peak when the whisk is lifted."
   ],
   "cues": [
-    {
-      "sense": "see",
-      "text": "Glossy and smooth. A peak stands on the lifted whisk, its tip bending slightly."
-    },
+    {"sense": "see", "text": "Glossy and smooth. A peak stands on the lifted whisk, its tip bending slightly."},
     {"sense": "feel", "text": "The bowl can be tipped without the foam sliding."}
   ],
   "mistakes": [

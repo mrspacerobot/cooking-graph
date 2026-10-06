@@ -6,38 +6,21 @@
   "makes": "preparation/white-chicken-stock",
   "yields": {"value": 2, "unit": "litre"},
   "ingredients": [
-    {
-      "thing": "ingredient/chicken-carcass",
-      "amount": {"value": 1.5, "unit": "kilogram"},
-      "forms": []
-    },
-    {
-      "thing": "ingredient/onion",
-      "amount": {"value": 1, "unit": "piece"},
-      "forms": ["form/peeled", "form/halved"]
-    },
+    {"thing": "ingredient/chicken-carcass", "amount": {"value": 1.5, "unit": "kilogram"}, "forms": []},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled", "form/halved"]},
     {
       "thing": "ingredient/carrot",
       "amount": {"value": 2, "unit": "piece"},
       "forms": ["form/peeled", "form/large-pieces"]
     },
-    {
-      "thing": "ingredient/celery",
-      "amount": {"value": 1, "unit": "piece"},
-      "forms": ["form/large-pieces"]
-    },
-    {
-      "thing": "ingredient/leek",
-      "amount": {"value": 1, "unit": "piece"},
-      "forms": ["form/large-pieces"]
-    },
+    {"thing": "ingredient/celery", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/large-pieces"]},
+    {"thing": "ingredient/leek", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/large-pieces"]},
     {"thing": "preparation/bouquet-garni", "amount": {"value": 1, "unit": "piece"}, "forms": []},
     {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
     {"thing": "ingredient/water", "amount": {"value": 3, "unit": "litre"}, "forms": []}
   ],
   "equipment": [
-    "equipment/stovetop", "equipment/stockpot", "equipment/ladle", "equipment/fine-sieve",
-    "equipment/mixing-bowl"
+    "equipment/stovetop", "equipment/stockpot", "equipment/ladle", "equipment/fine-sieve", "equipment/mixing-bowl"
   ],
   "steps": [
     {
@@ -59,8 +42,8 @@
     {
       "technique": "technique/simmer",
       "works_on": [
-        "ingredient/onion", "ingredient/carrot", "ingredient/celery", "ingredient/leek",
-        "preparation/bouquet-garni", "ingredient/black-pepper"
+        "ingredient/onion", "ingredient/carrot", "ingredient/celery", "ingredient/leek", "preparation/bouquet-garni",
+        "ingredient/black-pepper"
       ],
       "text": "Add the vegetables, the bouquet garni and the pepper. Simmer very gently, uncovered, skimming now and then. It must never boil, and it is not salted.",
       "time": {"from": 2.5, "to": 3, "unit": "hour"},

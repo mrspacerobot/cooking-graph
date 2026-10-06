@@ -11,8 +11,8 @@
     "state": "unverified",
     "contains": ["fact/gluten", "fact/dairy", "fact/egg", "fact/sesame", "fact/soy", "fact/nuts"],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/fish", "fact/meat", "fact/pork",
-      "fact/shellfish", "fact/slaughter-product"
+      "fact/alcohol", "fact/animal-product", "fact/fish", "fact/meat", "fact/pork", "fact/shellfish",
+      "fact/slaughter-product"
     ],
     "note": "Bread of unknown kind. Enriched loaves hold milk, butter or egg, and many loaves hold seeds, nuts or soy flour."
   },

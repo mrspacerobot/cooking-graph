@@ -2,10 +2,7 @@
   "id": "technique/puree",
   "tier": "drafted",
   "names": {"en": "Puree", "fr": "Mixer"},
-  "aliases": {
-    "en": ["blend", "blend until smooth", "purée", "liquidise"],
-    "fr": ["réduire en purée"]
-  },
+  "aliases": {"en": ["blend", "blend until smooth", "purée", "liquidise"], "fr": ["réduire en purée"]},
   "does": "Breaks cooked food down until it is smooth, in a blender or through a sieve.",
   "how": [
     "Cook the food until it is completely soft. Nothing firm will blend smooth.",
@@ -14,10 +11,7 @@
     "Pass it through a fine sieve for a truly smooth finish."
   ],
   "cues": [
-    {
-      "sense": "see",
-      "text": "It falls from the spoon in a smooth ribbon, with no grains or strings."
-    },
+    {"sense": "see", "text": "It falls from the spoon in a smooth ribbon, with no grains or strings."},
     {"sense": "feel", "text": "Nothing gritty between finger and thumb."}
   ],
   "mistakes": [
@@ -48,11 +42,7 @@
     {"role": "tool", "options": ["equipment/blender", "equipment/fine-sieve"], "tier": "drafted"}
   ],
   "comes_after": [
-    {
-      "thing": "technique/simmer",
-      "why": "Food is simmered soft before it is pureed.",
-      "tier": "drafted"
-    }
+    {"thing": "technique/simmer", "why": "Food is simmered soft before it is pureed.", "tier": "drafted"}
   ],
   "variant_of": [],
   "belongs_to": []

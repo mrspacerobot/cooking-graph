@@ -5,11 +5,7 @@
   "aliases": {"en": ["brown veal stock", "brown beef stock"]},
   "is": "A dark, full-bodied stock made from bones and vegetables that are roasted until deeply browned before they are simmered.",
   "parts": [
-    {
-      "role": "main",
-      "options": ["ingredient/veal-bones", "ingredient/beef-bones"],
-      "tier": "drafted"
-    },
+    {"role": "main", "options": ["ingredient/veal-bones", "ingredient/beef-bones"], "tier": "drafted"},
     {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
     {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
     {"role": "aromatic", "options": ["ingredient/celery"], "tier": "drafted"},

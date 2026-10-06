@@ -12,14 +12,8 @@
     "Add the liquid cold to a hot roux, or hot to a cold one, a little at a time, whisking each addition smooth."
   ],
   "cues": [
-    {
-      "sense": "smell",
-      "text": "The smell changes from raw flour to biscuit, then to toasted nuts as it darkens."
-    },
-    {
-      "sense": "see",
-      "text": "A smooth paste that froths like wet sand and pulls away from the pan."
-    }
+    {"sense": "smell", "text": "The smell changes from raw flour to biscuit, then to toasted nuts as it darkens."},
+    {"sense": "see", "text": "A smooth paste that froths like wet sand and pulls away from the pan."}
   ],
   "mistakes": [
     {

@@ -11,11 +11,7 @@
     {"role": "seasoning", "options": ["ingredient/cornichons"], "tier": "drafted"},
     {"role": "aromatic", "options": ["ingredient/parsley"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
-    {
-      "role": "fat",
-      "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"],
-      "tier": "drafted"
-    },
+    {"role": "fat", "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"], "tier": "drafted"},
     {"role": "enrichment", "options": ["ingredient/egg-yolk"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}

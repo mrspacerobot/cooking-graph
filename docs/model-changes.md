@@ -76,7 +76,7 @@ What counts as a change: a change to `schema/model.json`, which is the model as 
 
 - **Example:** white chicken stock.
 - **What did not fit:** a recipe was "one way to make a dish". A stock is not served, yet it is the thing a cook most needs a recipe for.
-- **Now:** a recipe `makes` a dish or a preparation. A recipe may also list a preparation among its ingredients, made ahead by its own recipe.
+- **Now:** a recipe `makes` a dish or a preparation. A recipe may also list a preparation among its ingredients, made ahead by its own recipe. A step may work on the thing its recipe is making, so that a stock can be strained and cooled.
 
 ### 13. An ingredient line says what form the ingredient is in (round 1)
 

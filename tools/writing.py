@@ -10,7 +10,7 @@ import os
 
 from tools import reading
 
-WIDTH = 100
+WIDTH = 120
 INDENT = "  "
 
 

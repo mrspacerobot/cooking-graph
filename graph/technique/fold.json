@@ -32,11 +32,7 @@
     {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
   ],
   "comes_after": [
-    {
-      "thing": "technique/whip",
-      "why": "There is nothing to fold until something has been whipped.",
-      "tier": "drafted"
-    }
+    {"thing": "technique/whip", "why": "There is nothing to fold until something has been whipped.", "tier": "drafted"}
   ],
   "variant_of": [],
   "belongs_to": []

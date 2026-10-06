@@ -2,9 +2,7 @@
   "id": "technique/refresh",
   "tier": "drafted",
   "names": {"en": "Refresh", "fr": "Rafraîchir"},
-  "aliases": {
-    "en": ["shock", "refresh in iced water", "cool in iced water", "plunge into iced water"]
-  },
+  "aliases": {"en": ["shock", "refresh in iced water", "cool in iced water", "plunge into iced water"]},
   "does": "Stops the cooking at once by plunging hot food into iced water, which keeps green vegetables bright and firm.",
   "how": [
     "Have a large bowl of water and ice ready before the food is cooked.",
@@ -35,11 +33,7 @@
     {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
   ],
   "comes_after": [
-    {
-      "thing": "technique/boil",
-      "why": "Refreshing is how boiling or blanching ends.",
-      "tier": "drafted"
-    }
+    {"thing": "technique/boil", "why": "Refreshing is how boiling or blanching ends.", "tier": "drafted"}
   ],
   "variant_of": [],
   "belongs_to": []

@@ -8,15 +8,9 @@
   "ingredients": [
     {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": []},
     {"thing": "preparation/mayonnaise", "amount": {"value": 100, "unit": "gram"}, "forms": []},
-    {
-      "thing": "ingredient/chives",
-      "amount": {"value": 1, "unit": "teaspoon"},
-      "forms": ["form/chopped"]
-    }
+    {"thing": "ingredient/chives", "amount": {"value": 1, "unit": "teaspoon"}, "forms": ["form/chopped"]}
   ],
-  "equipment": [
-    "equipment/stovetop", "equipment/saucepan", "equipment/slotted-spoon", "equipment/mixing-bowl"
-  ],
+  "equipment": ["equipment/stovetop", "equipment/saucepan", "equipment/slotted-spoon", "equipment/mixing-bowl"],
   "steps": [
     {
       "technique": "technique/boil-an-egg",

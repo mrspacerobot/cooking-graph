@@ -12,8 +12,7 @@
     {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
   ],
   "equipment": [
-    "equipment/stovetop", "equipment/saucepan", "equipment/mixing-bowl", "equipment/whisk",
-    "equipment/spatula"
+    "equipment/stovetop", "equipment/saucepan", "equipment/mixing-bowl", "equipment/whisk", "equipment/spatula"
   ],
   "steps": [
     {

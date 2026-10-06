@@ -33,11 +33,7 @@
     {"role": "tool", "options": ["equipment/ladle", "equipment/slotted-spoon"], "tier": "drafted"}
   ],
   "comes_after": [
-    {
-      "thing": "technique/simmer",
-      "why": "Skimming only works on a pot held at a simmer.",
-      "tier": "drafted"
-    }
+    {"thing": "technique/simmer", "why": "Skimming only works on a pot held at a simmer.", "tier": "drafted"}
   ],
   "variant_of": [],
   "belongs_to": []

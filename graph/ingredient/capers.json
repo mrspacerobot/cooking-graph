@@ -11,9 +11,8 @@
     "state": "unverified",
     "contains": ["fact/alcohol"],
     "free_of": [
-      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
-      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product",
-      "fact/soy"
+      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
     ],
     "note": "Vinegar is made from alcohol and keeps a trace of it. Whether that counts is for a person to decide. The stricter answer is recorded."
   },

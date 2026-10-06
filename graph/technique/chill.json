@@ -18,10 +18,7 @@
       "mistake": "Leaving a large pot of stock to cool by itself on the stove, where its middle stays warm for a long time.",
       "fix": "Divide it into shallow containers and cool them in iced water."
     },
-    {
-      "mistake": "Seasoning a soup while it is hot and serving it cold.",
-      "fix": "Taste it again when it is cold."
-    }
+    {"mistake": "Seasoning a soup while it is hot and serving it cold.", "fix": "Taste it again when it is cold."}
   ],
   "works_on": [
     {"thing": "preparation/white-chicken-stock", "tier": "drafted"},

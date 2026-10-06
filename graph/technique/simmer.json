@@ -22,10 +22,7 @@
       "mistake": "Letting it boil, which toughens meat and turns a stock cloudy.",
       "fix": "Turn the heat down, or move the pot half off the burner."
     },
-    {
-      "mistake": "Covering the pot tightly, so that it climbs to a boil unseen.",
-      "fix": "Leave the lid ajar."
-    }
+    {"mistake": "Covering the pot tightly, so that it climbs to a boil unseen.", "fix": "Leave the lid ajar."}
   ],
   "works_on": [
     {"thing": "ingredient/stock", "tier": "drafted"},
@@ -47,10 +44,7 @@
     },
     {
       "role": "liquid",
-      "options": [
-        "ingredient/water", "ingredient/stock", "ingredient/chicken-stock",
-        "ingredient/vegetable-stock"
-      ],
+      "options": ["ingredient/water", "ingredient/stock", "ingredient/chicken-stock", "ingredient/vegetable-stock"],
       "tier": "drafted"
     },
     {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}

@@ -8,11 +8,7 @@
     {"role": "main", "options": ["ingredient/egg"], "tier": "drafted"},
     {"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"},
     {"role": "filling", "options": ["ingredient/spinach"], "tier": "drafted"},
-    {
-      "role": "filling",
-      "options": ["ingredient/vegetarian-hard-cheese", "ingredient/parmesan"],
-      "tier": "drafted"
-    },
+    {"role": "filling", "options": ["ingredient/vegetarian-hard-cheese", "ingredient/parmesan"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
   ],

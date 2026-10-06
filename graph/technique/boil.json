@@ -2,10 +2,7 @@
   "id": "technique/boil",
   "tier": "drafted",
   "names": {"en": "Boil", "fr": "Bouillir"},
-  "aliases": {
-    "en": ["boil in salted water", "cook in boiling water"],
-    "fr": ["cuire à l'anglaise"]
-  },
+  "aliases": {"en": ["boil in salted water", "cook in boiling water"], "fr": ["cuire à l'anglaise"]},
   "does": "Cooks food in plenty of fast-bubbling salted water, so that it is done quickly and evenly.",
   "how": [
     "Fill a large pot with far more water than the food needs.",
@@ -15,10 +12,7 @@
   ],
   "cues": [
     {"sense": "see", "text": "Big bubbles that keep rolling even when you stir."},
-    {
-      "sense": "feel",
-      "text": "The tip of a knife slides into a vegetable with only slight resistance."
-    }
+    {"sense": "feel", "text": "The tip of a knife slides into a vegetable with only slight resistance."}
   ],
   "mistakes": [
     {

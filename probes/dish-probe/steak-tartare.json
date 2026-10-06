@@ -7,13 +7,5 @@
   "dish": "Steak tartare",
   "also_called": ["tartare de bœuf", "beef tartare"],
   "techniques": ["chop", "brunoise"],
-  "ingredients": [
-    "beef fillet",
-    "shallot",
-    "capers",
-    "cornichons",
-    "parsley",
-    "egg yolk",
-    "Dijon mustard"
-  ]
+  "ingredients": ["beef fillet", "shallot", "capers", "cornichons", "parsley", "egg yolk", "Dijon mustard"]
 }

@@ -11,8 +11,8 @@
     "state": "unverified",
     "contains": ["fact/alcohol", "fact/slaughter-product"],
     "free_of": [
-      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
-      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
     ],
     "note": "Wine is often cleared with gelatine or isinglass, which come from slaughtered animals or fish."
   },

@@ -8,11 +8,7 @@
     {"role": "main", "options": ["ingredient/aubergine"], "tier": "drafted"},
     {"role": "main", "options": ["ingredient/courgette"], "tier": "drafted"},
     {"role": "main", "options": ["ingredient/bell-pepper"], "tier": "drafted"},
-    {
-      "role": "main",
-      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
-      "tier": "drafted"
-    },
+    {"role": "main", "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"], "tier": "drafted"},
     {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
     {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
     {"role": "aromatic", "options": ["ingredient/thyme"], "tier": "drafted"},

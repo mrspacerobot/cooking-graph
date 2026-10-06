@@ -157,12 +157,7 @@
             {"skill": "saute", "tier": "drafted"}
           ],
           "levels": [
-            {
-              "number": 1,
-              "names": {"en": "Chicken thighs, skin down"},
-              "teaches": [],
-              "through": []
-            },
+            {"number": 1, "names": {"en": "Chicken thighs, skin down"}, "teaches": [], "through": []},
             {"number": 2, "names": {"en": "Steak to temperature"}, "teaches": [], "through": []},
             {"number": 3, "names": {"en": "Crisp fish skin"}, "teaches": [], "through": []}
           ]
@@ -209,10 +204,7 @@
               "names": {"en": "Deglaze the fond"},
               "teaches": [],
               "through": [
-                {
-                  "thing": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce",
-                  "tier": "drafted"
-                }
+                {"thing": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce", "tier": "drafted"}
               ]
             },
             {"number": 2, "names": {"en": "Reduce to coat a spoon"}, "teaches": [], "through": []},

@@ -5,18 +5,10 @@
   "aliases": {"en": ["mayo"]},
   "is": "A thick, cold sauce of oil whisked drop by drop into egg yolk, sharpened with mustard and vinegar or lemon.",
   "parts": [
-    {"role": "thickener", "options": ["ingredient/egg-yolk"], "tier": "drafted"},
-    {
-      "role": "fat",
-      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
-      "tier": "drafted"
-    },
+    {"role": "emulsifier", "options": ["ingredient/egg-yolk"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
-    {
-      "role": "acid",
-      "options": ["ingredient/white-wine-vinegar", "ingredient/lemon"],
-      "tier": "drafted"
-    },
+    {"role": "acid", "options": ["ingredient/white-wine-vinegar", "ingredient/lemon"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
   ],
   "teaches": [],

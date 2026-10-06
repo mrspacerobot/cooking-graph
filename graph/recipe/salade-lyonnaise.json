@@ -7,38 +7,18 @@
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
     {"thing": "ingredient/frisee", "amount": {"value": 200, "unit": "gram"}, "forms": []},
-    {
-      "thing": "ingredient/bacon",
-      "amount": {"value": 150, "unit": "gram"},
-      "forms": ["form/lardons"]
-    },
-    {
-      "thing": "ingredient/baguette",
-      "amount": {"value": 60, "unit": "gram"},
-      "forms": ["form/diced"]
-    },
+    {"thing": "ingredient/bacon", "amount": {"value": 150, "unit": "gram"}, "forms": ["form/lardons"]},
+    {"thing": "ingredient/baguette", "amount": {"value": 60, "unit": "gram"}, "forms": ["form/diced"]},
     {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": []},
-    {
-      "thing": "ingredient/red-wine-vinegar",
-      "amount": {"value": 2, "unit": "tablespoon"},
-      "forms": []
-    },
+    {"thing": "ingredient/red-wine-vinegar", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},
     {"thing": "ingredient/dijon-mustard", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},
-    {
-      "thing": "ingredient/white-wine-vinegar",
-      "amount": {"value": 1, "unit": "tablespoon"},
-      "forms": []
-    },
+    {"thing": "ingredient/white-wine-vinegar", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
     {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []},
-    {
-      "thing": "ingredient/black-pepper",
-      "amount": {"value": 0.25, "unit": "teaspoon"},
-      "forms": []
-    }
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
   ],
   "equipment": [
-    "equipment/stovetop", "equipment/frying-pan", "equipment/saute-pan", "equipment/mixing-bowl",
-    "equipment/whisk", "equipment/slotted-spoon"
+    "equipment/stovetop", "equipment/frying-pan", "equipment/saute-pan", "equipment/mixing-bowl", "equipment/whisk",
+    "equipment/slotted-spoon"
   ],
   "steps": [
     {
@@ -60,8 +40,7 @@
     {
       "technique": "technique/whisk",
       "works_on": [
-        "ingredient/dijon-mustard", "ingredient/red-wine-vinegar", "ingredient/black-pepper",
-        "ingredient/bacon"
+        "ingredient/dijon-mustard", "ingredient/red-wine-vinegar", "ingredient/black-pepper", "ingredient/bacon"
       ],
       "text": "Whisk the mustard, the red wine vinegar and the pepper in a large salad bowl, then whisk in the warm fat left in the pan.",
       "time": null,
@@ -78,10 +57,8 @@
     },
     {
       "technique": "technique/toss",
-      "works_on": [
-        "ingredient/frisee", "ingredient/bacon", "ingredient/baguette", "ingredient/salt"
-      ],
-      "text": "Add the frisée, the lardons and the croutons to the bowl and toss until every leaf is coated. Taste for salt.",
+      "works_on": ["ingredient/frisee", "ingredient/bacon", "ingredient/baguette", "ingredient/salt"],
+      "text": "Wash the frisée, dry it well and tear it into pieces. Add it to the bowl with the lardons and the croutons, and toss until every leaf is coated. Taste for salt.",
       "time": null,
       "temperature": null,
       "safety_points": []

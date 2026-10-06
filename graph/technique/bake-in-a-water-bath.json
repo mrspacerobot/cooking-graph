@@ -11,10 +11,7 @@
     "Lift the dishes out of the water at once."
   ],
   "cues": [
-    {
-      "sense": "see",
-      "text": "The edges are set and the middle wobbles like jelly when the dish is nudged."
-    }
+    {"sense": "see", "text": "The edges are set and the middle wobbles like jelly when the dish is nudged."}
   ],
   "mistakes": [
     {

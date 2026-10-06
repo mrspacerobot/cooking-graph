@@ -6,16 +6,8 @@
   "makes": "dish/macedoine-de-legumes",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {
-      "thing": "ingredient/carrot",
-      "amount": {"value": 200, "unit": "gram"},
-      "forms": ["form/peeled"]
-    },
-    {
-      "thing": "ingredient/turnip",
-      "amount": {"value": 150, "unit": "gram"},
-      "forms": ["form/peeled"]
-    },
+    {"thing": "ingredient/carrot", "amount": {"value": 200, "unit": "gram"}, "forms": ["form/peeled"]},
+    {"thing": "ingredient/turnip", "amount": {"value": 150, "unit": "gram"}, "forms": ["form/peeled"]},
     {"thing": "ingredient/green-beans", "amount": {"value": 150, "unit": "gram"}, "forms": []},
     {"thing": "ingredient/peas", "amount": {"value": 150, "unit": "gram"}, "forms": []},
     {"thing": "preparation/mayonnaise", "amount": {"value": 100, "unit": "gram"}, "forms": []},
@@ -37,8 +29,7 @@
     {
       "technique": "technique/boil",
       "works_on": [
-        "ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas",
-        "ingredient/salt"
+        "ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas", "ingredient/salt"
       ],
       "text": "Boil each vegetable on its own in well-salted water until just tender. Each takes a different time, so test a piece.",
       "time": {"from": 2, "to": 8, "unit": "minute"},
@@ -47,9 +38,7 @@
     },
     {
       "technique": "technique/refresh",
-      "works_on": [
-        "ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas"
-      ],
+      "works_on": ["ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas"],
       "text": "Lift each batch straight into iced water. When it is cold, drain it and dry it well on a cloth.",
       "time": null,
       "temperature": null,
@@ -58,8 +47,7 @@
     {
       "technique": "technique/toss",
       "works_on": [
-        "ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas",
-        "preparation/mayonnaise"
+        "ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas", "preparation/mayonnaise"
       ],
       "text": "Fold the mayonnaise through the vegetables a spoonful at a time, until they are lightly bound and no more.",
       "time": null,

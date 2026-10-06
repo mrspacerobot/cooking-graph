@@ -26,11 +26,7 @@
     {"thing": "form/wilted", "tier": "drafted"}
   ],
   "needs": [
-    {
-      "role": "vessel",
-      "options": ["equipment/frying-pan", "equipment/saute-pan"],
-      "tier": "drafted"
-    },
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
     {"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"},
     {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
   ],

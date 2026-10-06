@@ -7,14 +7,5 @@
   "dish": "Pot-au-feu",
   "also_called": [],
   "techniques": ["simmer", "skim"],
-  "ingredients": [
-    "stewing beef",
-    "marrow bone",
-    "carrot",
-    "leek",
-    "turnip",
-    "onion",
-    "clove",
-    "bouquet garni"
-  ]
+  "ingredients": ["stewing beef", "marrow bone", "carrot", "leek", "turnip", "onion", "clove", "bouquet garni"]
 }

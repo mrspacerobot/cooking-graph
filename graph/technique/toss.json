@@ -2,10 +2,7 @@
   "id": "technique/toss",
   "tier": "drafted",
   "names": {"en": "Toss", "fr": "Mélanger"},
-  "aliases": {
-    "en": ["toss a salad", "dress", "bind", "mix", "combine"],
-    "fr": ["fatiguer la salade"]
-  },
+  "aliases": {"en": ["toss a salad", "dress", "bind", "mix", "combine"], "fr": ["fatiguer la salade"]},
   "does": "Coats every piece evenly with a dressing or a sauce by lifting and turning.",
   "how": [
     "Put the food in a bowl far larger than it needs.",

@@ -6,11 +6,7 @@
   "is": "Eggs baked in small buttered dishes with a spoonful of cream, in a water bath, until the white is just set and the yolk still runs.",
   "parts": [
     {"role": "main", "options": ["ingredient/egg"], "tier": "drafted"},
-    {
-      "role": "enrichment",
-      "options": ["ingredient/creme-fraiche", "ingredient/cream"],
-      "tier": "drafted"
-    },
+    {"role": "enrichment", "options": ["ingredient/creme-fraiche", "ingredient/cream"], "tier": "drafted"},
     {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
     {"role": "garnish", "options": ["ingredient/chives"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},

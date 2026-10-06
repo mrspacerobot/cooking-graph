@@ -8,19 +8,11 @@
   "ingredients": [
     {"thing": "ingredient/white-fish", "amount": {"value": 300, "unit": "gram"}, "forms": []},
     {"thing": "ingredient/leek", "amount": {"value": 1, "unit": "piece"}, "forms": []},
-    {
-      "thing": "ingredient/carrot",
-      "amount": {"value": 1, "unit": "piece"},
-      "forms": ["form/peeled"]
-    },
+    {"thing": "ingredient/carrot", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"]},
     {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": []},
     {"thing": "ingredient/white-wine", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},
     {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
-    {
-      "thing": "ingredient/black-pepper",
-      "amount": {"value": 0.25, "unit": "teaspoon"},
-      "forms": []
-    }
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
   ],
   "equipment": [
     "equipment/oven", "equipment/stovetop", "equipment/saute-pan", "equipment/parchment-paper",
@@ -46,8 +38,8 @@
     {
       "technique": "technique/bake-in-parchment",
       "works_on": [
-        "ingredient/leek", "ingredient/carrot", "ingredient/white-fish", "ingredient/butter",
-        "ingredient/white-wine", "ingredient/salt", "ingredient/black-pepper"
+        "ingredient/leek", "ingredient/carrot", "ingredient/white-fish", "ingredient/butter", "ingredient/white-wine",
+        "ingredient/salt", "ingredient/black-pepper"
       ],
       "text": "Fold a large sheet of paper for each person. Lay the julienne on one side of the fold and a piece of fish on top. Season, dot with the rest of the butter and add the wine. Seal the parcels tightly and bake them on a tray until they puff up.",
       "time": {"from": 10, "to": 12, "unit": "minute"},

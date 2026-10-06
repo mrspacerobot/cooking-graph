@@ -7,14 +7,5 @@
   "dish": "Ratatouille",
   "also_called": [],
   "techniques": ["dice", "saute", "simmer"],
-  "ingredients": [
-    "aubergine",
-    "courgette",
-    "bell pepper",
-    "tomato",
-    "onion",
-    "garlic",
-    "olive oil",
-    "thyme"
-  ]
+  "ingredients": ["aubergine", "courgette", "bell pepper", "tomato", "onion", "garlic", "olive oil", "thyme"]
 }

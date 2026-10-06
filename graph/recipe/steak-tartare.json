@@ -6,16 +6,8 @@
   "makes": "dish/steak-tartare",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
-    {
-      "thing": "ingredient/beef-fillet",
-      "amount": {"value": 300, "unit": "gram"},
-      "forms": ["form/cold"]
-    },
-    {
-      "thing": "ingredient/shallot",
-      "amount": {"value": 1, "unit": "piece"},
-      "forms": ["form/peeled"]
-    },
+    {"thing": "ingredient/beef-fillet", "amount": {"value": 300, "unit": "gram"}, "forms": ["form/cold"]},
+    {"thing": "ingredient/shallot", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"]},
     {"thing": "ingredient/capers", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
     {"thing": "ingredient/cornichons", "amount": {"value": 4, "unit": "piece"}, "forms": []},
     {"thing": "ingredient/parsley", "amount": {"value": 4, "unit": "sprig"}, "forms": []},
@@ -23,11 +15,7 @@
     {"thing": "ingredient/olive-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
     {"thing": "ingredient/egg-yolk", "amount": {"value": 2, "unit": "piece"}, "forms": []},
     {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
-    {
-      "thing": "ingredient/black-pepper",
-      "amount": {"value": 0.25, "unit": "teaspoon"},
-      "forms": []
-    }
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
   ],
   "equipment": ["equipment/mixing-bowl", "equipment/chefs-knife", "equipment/cutting-board"],
   "steps": [
@@ -58,9 +46,9 @@
     {
       "technique": "technique/toss",
       "works_on": [
-        "ingredient/beef-fillet", "ingredient/shallot", "ingredient/capers",
-        "ingredient/cornichons", "ingredient/parsley", "ingredient/dijon-mustard",
-        "ingredient/olive-oil", "ingredient/salt", "ingredient/black-pepper"
+        "ingredient/beef-fillet", "ingredient/shallot", "ingredient/capers", "ingredient/cornichons",
+        "ingredient/parsley", "ingredient/dijon-mustard", "ingredient/olive-oil", "ingredient/salt",
+        "ingredient/black-pepper"
       ],
       "text": "Just before serving, turn the beef with the shallot, the capers, the cornichons, the parsley, the mustard and the oil until evenly mixed. Season with the salt and the pepper, and taste.",
       "time": null,

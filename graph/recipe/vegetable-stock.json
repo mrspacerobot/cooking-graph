@@ -6,42 +6,25 @@
   "makes": "preparation/vegetable-stock",
   "yields": {"value": 1.5, "unit": "litre"},
   "ingredients": [
-    {
-      "thing": "ingredient/onion",
-      "amount": {"value": 2, "unit": "piece"},
-      "forms": ["form/peeled", "form/sliced"]
-    },
-    {
-      "thing": "ingredient/carrot",
-      "amount": {"value": 2, "unit": "piece"},
-      "forms": ["form/peeled", "form/sliced"]
-    },
-    {
-      "thing": "ingredient/celery",
-      "amount": {"value": 2, "unit": "piece"},
-      "forms": ["form/sliced"]
-    },
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/peeled", "form/sliced"]},
+    {"thing": "ingredient/carrot", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/peeled", "form/sliced"]},
+    {"thing": "ingredient/celery", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/sliced"]},
     {"thing": "ingredient/leek", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/sliced"]},
-    {
-      "thing": "ingredient/mushroom",
-      "amount": {"value": 100, "unit": "gram"},
-      "forms": ["form/sliced"]
-    },
+    {"thing": "ingredient/mushroom", "amount": {"value": 100, "unit": "gram"}, "forms": ["form/sliced"]},
     {"thing": "preparation/bouquet-garni", "amount": {"value": 1, "unit": "piece"}, "forms": []},
     {"thing": "ingredient/olive-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
     {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
     {"thing": "ingredient/water", "amount": {"value": 2, "unit": "litre"}, "forms": []}
   ],
   "equipment": [
-    "equipment/stovetop", "equipment/stockpot", "equipment/fine-sieve", "equipment/ladle",
-    "equipment/mixing-bowl"
+    "equipment/stovetop", "equipment/stockpot", "equipment/fine-sieve", "equipment/ladle", "equipment/mixing-bowl"
   ],
   "steps": [
     {
       "technique": "technique/sweat",
       "works_on": [
-        "ingredient/olive-oil", "ingredient/onion", "ingredient/carrot", "ingredient/celery",
-        "ingredient/leek", "ingredient/mushroom"
+        "ingredient/olive-oil", "ingredient/onion", "ingredient/carrot", "ingredient/celery", "ingredient/leek",
+        "ingredient/mushroom"
       ],
       "text": "Sweat all the vegetables in the oil over low heat until soft and fragrant, without colour.",
       "time": {"value": 10, "unit": "minute"},

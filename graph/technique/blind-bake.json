@@ -11,10 +11,7 @@
     "Bake a little longer, until the base looks dry and pale gold."
   ],
   "cues": [
-    {
-      "sense": "see",
-      "text": "A dry, matt base with no grey, greasy patches, and edges of pale gold."
-    }
+    {"sense": "see", "text": "A dry, matt base with no grey, greasy patches, and edges of pale gold."}
   ],
   "mistakes": [
     {

@@ -11,8 +11,8 @@
     {
       "role": "liquid",
       "options": [
-        "preparation/white-chicken-stock", "ingredient/chicken-stock",
-        "preparation/vegetable-stock", "ingredient/vegetable-stock"
+        "preparation/white-chicken-stock", "ingredient/chicken-stock", "preparation/vegetable-stock",
+        "ingredient/vegetable-stock"
       ],
       "tier": "drafted"
     },

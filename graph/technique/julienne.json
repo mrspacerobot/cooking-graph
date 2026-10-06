@@ -11,10 +11,7 @@
     "For a leek, split a length open, lay the layers flat and slice along the grain."
   ],
   "cues": [
-    {
-      "sense": "see",
-      "text": "Fine strips of one length that bend without snapping and fall apart from each other."
-    }
+    {"sense": "see", "text": "Fine strips of one length that bend without snapping and fall apart from each other."}
   ],
   "mistakes": [
     {
@@ -36,11 +33,7 @@
     {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
   ],
   "comes_after": [
-    {
-      "thing": "technique/slice",
-      "why": "A julienne starts as thin, even slices.",
-      "tier": "drafted"
-    }
+    {"thing": "technique/slice", "why": "A julienne starts as thin, even slices.", "tier": "drafted"}
   ],
   "variant_of": [],
   "belongs_to": [

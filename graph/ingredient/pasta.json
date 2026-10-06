@@ -11,8 +11,8 @@
     "state": "unverified",
     "contains": ["fact/gluten", "fact/egg"],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/fish", "fact/meat", "fact/nuts",
-      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/fish", "fact/meat", "fact/nuts", "fact/pork",
+      "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
     ],
     "note": "Fresh pasta is usually made with egg and dried pasta sometimes is, so egg is recorded."
   },

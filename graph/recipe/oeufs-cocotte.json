@@ -7,17 +7,9 @@
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
     {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": []},
-    {
-      "thing": "ingredient/creme-fraiche",
-      "amount": {"value": 2, "unit": "tablespoon"},
-      "forms": []
-    },
+    {"thing": "ingredient/creme-fraiche", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},
     {"thing": "ingredient/butter", "amount": {"value": 10, "unit": "gram"}, "forms": []},
-    {
-      "thing": "ingredient/chives",
-      "amount": {"value": 1, "unit": "teaspoon"},
-      "forms": ["form/chopped"]
-    },
+    {"thing": "ingredient/chives", "amount": {"value": 1, "unit": "teaspoon"}, "forms": ["form/chopped"]},
     {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": []},
     {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": []}
   ],
@@ -26,8 +18,7 @@
     {
       "technique": "technique/bake-in-a-water-bath",
       "works_on": [
-        "ingredient/butter", "ingredient/creme-fraiche", "ingredient/egg", "ingredient/salt",
-        "ingredient/black-pepper"
+        "ingredient/butter", "ingredient/creme-fraiche", "ingredient/egg", "ingredient/salt", "ingredient/black-pepper"
       ],
       "text": "Butter the ramekins. Put a spoonful of crème fraîche in each, crack an egg on top and season. Stand them in a deep tin and pour in hot water to come half way up their sides.",
       "time": null,

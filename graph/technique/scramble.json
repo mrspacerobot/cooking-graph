@@ -12,10 +12,7 @@
     "Stop while the eggs still look wet, and stir in a little cold butter or cream to halt the cooking."
   ],
   "cues": [
-    {
-      "sense": "see",
-      "text": "Small, glossy curds held in a thick, creamy sauce, with no dry or browned bits."
-    },
+    {"sense": "see", "text": "Small, glossy curds held in a thick, creamy sauce, with no dry or browned bits."},
     {"sense": "feel", "text": "The spoon leaves a trail that closes slowly."}
   ],
   "mistakes": [
@@ -35,21 +32,13 @@
     {"thing": "form/soft-curds", "tier": "drafted"}
   ],
   "needs": [
-    {
-      "role": "vessel",
-      "options": ["equipment/saucepan", "equipment/non-stick-pan"],
-      "tier": "drafted"
-    },
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/non-stick-pan"], "tier": "drafted"},
     {"role": "tool", "options": ["equipment/spatula", "equipment/wooden-spoon"], "tier": "drafted"},
     {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
     {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
   ],
   "comes_after": [
-    {
-      "thing": "technique/whisk",
-      "why": "The eggs are whisked before they are scrambled.",
-      "tier": "drafted"
-    }
+    {"thing": "technique/whisk", "why": "The eggs are whisked before they are scrambled.", "tier": "drafted"}
   ],
   "variant_of": [],
   "belongs_to": []

@@ -12,10 +12,7 @@
   ],
   "cues": [
     {"sense": "see", "text": "An even, golden underside."},
-    {
-      "sense": "hear",
-      "text": "A steady, gentle sizzle. Spitting means the heat is too high or the food is wet."
-    }
+    {"sense": "hear", "text": "A steady, gentle sizzle. Spitting means the heat is too high or the food is wet."}
   ],
   "mistakes": [
     {
@@ -30,11 +27,7 @@
   ],
   "makes": [],
   "needs": [
-    {
-      "role": "vessel",
-      "options": ["equipment/frying-pan", "equipment/non-stick-pan"],
-      "tier": "drafted"
-    },
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/non-stick-pan"], "tier": "drafted"},
     {
       "role": "fat",
       "options": ["ingredient/butter", "ingredient/sunflower-oil", "preparation/clarified-butter"],

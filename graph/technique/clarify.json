@@ -19,10 +19,7 @@
       "mistake": "Stirring after the raft has formed, or letting it boil, which breaks the raft and clouds the stock again.",
       "fix": "Leave it alone and keep the heat very low."
     },
-    {
-      "mistake": "Starting with a warm or fatty stock.",
-      "fix": "Chill the stock and lift off all the fat first."
-    }
+    {"mistake": "Starting with a warm or fatty stock.", "fix": "Chill the stock and lift off all the fat first."}
   ],
   "works_on": [
     {"thing": "ingredient/beef-stock", "tier": "drafted"},

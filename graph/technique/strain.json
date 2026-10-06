@@ -2,10 +2,7 @@
   "id": "technique/strain",
   "tier": "drafted",
   "names": {"en": "Strain", "fr": "Passer"},
-  "aliases": {
-    "en": ["sieve", "pass through a sieve", "strain through a sieve"],
-    "fr": ["passer au chinois"]
-  },
+  "aliases": {"en": ["sieve", "pass through a sieve", "strain through a sieve"], "fr": ["passer au chinois"]},
   "does": "Pours a liquid through a sieve, so that the solids stay behind and the liquid comes out clear.",
   "how": [
     "Set a fine sieve over a pot or a bowl large enough for all the liquid.",

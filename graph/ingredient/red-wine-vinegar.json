@@ -11,8 +11,8 @@
     "state": "unverified",
     "contains": ["fact/alcohol", "fact/slaughter-product"],
     "free_of": [
-      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
-      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
     ],
     "note": "Made from wine, which is often cleared with products of slaughtered animals, and keeps a trace of its alcohol. The stricter answer is recorded."
   },

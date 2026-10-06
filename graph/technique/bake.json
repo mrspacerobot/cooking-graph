@@ -11,10 +11,7 @@
     "Turn the dish if the oven browns one side faster, and check before the time is up."
   ],
   "cues": [
-    {
-      "sense": "see",
-      "text": "An even colour across the top, with the edges just darker than the middle."
-    },
+    {"sense": "see", "text": "An even colour across the top, with the edges just darker than the middle."},
     {"sense": "smell", "text": "A toasty smell that reaches the next room is the sign to check."}
   ],
   "mistakes": [
@@ -37,11 +34,7 @@
   "makes": [],
   "needs": [
     {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"},
-    {
-      "role": "vessel",
-      "options": ["equipment/baking-dish", "equipment/baking-sheet"],
-      "tier": "drafted"
-    }
+    {"role": "vessel", "options": ["equipment/baking-dish", "equipment/baking-sheet"], "tier": "drafted"}
   ],
   "comes_after": [],
   "variant_of": [],

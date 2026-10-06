@@ -9,16 +9,10 @@
     {"thing": "ingredient/celeriac", "amount": {"value": 500, "unit": "gram"}, "forms": []},
     {"thing": "ingredient/lemon", "amount": {"value": 0.5, "unit": "piece"}, "forms": []},
     {"thing": "preparation/mayonnaise", "amount": {"value": 120, "unit": "gram"}, "forms": []},
-    {
-      "thing": "ingredient/dijon-mustard",
-      "amount": {"value": 1, "unit": "tablespoon"},
-      "forms": []
-    },
+    {"thing": "ingredient/dijon-mustard", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
     {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []}
   ],
-  "equipment": [
-    "equipment/mixing-bowl", "equipment/whisk", "equipment/chefs-knife", "equipment/cutting-board"
-  ],
+  "equipment": ["equipment/mixing-bowl", "equipment/whisk", "equipment/chefs-knife", "equipment/cutting-board"],
   "steps": [
     {
       "technique": "technique/peel",

@@ -6,33 +6,16 @@
   "makes": "dish/vichyssoise",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {
-      "thing": "ingredient/leek",
-      "amount": {"value": 400, "unit": "gram"},
-      "forms": ["form/sliced"]
-    },
-    {
-      "thing": "ingredient/potato",
-      "amount": {"value": 300, "unit": "gram"},
-      "forms": ["form/peeled", "form/diced"]
-    },
+    {"thing": "ingredient/leek", "amount": {"value": 400, "unit": "gram"}, "forms": ["form/sliced"]},
+    {"thing": "ingredient/potato", "amount": {"value": 300, "unit": "gram"}, "forms": ["form/peeled", "form/diced"]},
     {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": []},
-    {
-      "thing": "preparation/white-chicken-stock",
-      "amount": {"value": 1, "unit": "litre"},
-      "forms": []
-    },
+    {"thing": "preparation/white-chicken-stock", "amount": {"value": 1, "unit": "litre"}, "forms": []},
     {"thing": "ingredient/cream", "amount": {"value": 200, "unit": "millilitre"}, "forms": []},
-    {
-      "thing": "ingredient/chives",
-      "amount": {"value": 1, "unit": "tablespoon"},
-      "forms": ["form/chopped"]
-    },
+    {"thing": "ingredient/chives", "amount": {"value": 1, "unit": "tablespoon"}, "forms": ["form/chopped"]},
     {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": []}
   ],
   "equipment": [
-    "equipment/stovetop", "equipment/saucepan", "equipment/blender", "equipment/fine-sieve",
-    "equipment/mixing-bowl"
+    "equipment/stovetop", "equipment/saucepan", "equipment/blender", "equipment/fine-sieve", "equipment/mixing-bowl"
   ],
   "steps": [
     {
@@ -54,7 +37,7 @@
     {
       "technique": "technique/puree",
       "works_on": ["ingredient/leek", "ingredient/potato"],
-      "text": "Blend the soup until smooth, in batches, and pass it through a fine sieve.",
+      "text": "Blend the soup in short bursts, in batches, only until it is smooth, and pass it through a fine sieve. Long blending turns potato to glue.",
       "time": null,
       "temperature": null,
       "safety_points": []

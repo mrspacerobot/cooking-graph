@@ -12,10 +12,7 @@
   ],
   "cues": [
     {"sense": "hear", "text": "A slow sizzle that grows as the fat pools."},
-    {
-      "sense": "see",
-      "text": "Clear fat in the pan, and pieces that have shrunk and turned golden at the edges."
-    }
+    {"sense": "see", "text": "Clear fat in the pan, and pieces that have shrunk and turned golden at the edges."}
   ],
   "mistakes": [
     {

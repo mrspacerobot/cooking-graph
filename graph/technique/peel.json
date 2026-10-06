@@ -33,11 +33,7 @@
     {"thing": "form/peeled", "tier": "drafted"}
   ],
   "needs": [
-    {
-      "role": "tool",
-      "options": ["equipment/vegetable-peeler", "equipment/paring-knife"],
-      "tier": "drafted"
-    }
+    {"role": "tool", "options": ["equipment/vegetable-peeler", "equipment/paring-knife"], "tier": "drafted"}
   ],
   "comes_after": [],
   "variant_of": [],

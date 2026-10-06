@@ -6,18 +6,10 @@
   "makes": "dish/chicken-broth-with-vermicelli",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {
-      "thing": "preparation/white-chicken-stock",
-      "amount": {"value": 1.2, "unit": "litre"},
-      "forms": []
-    },
+    {"thing": "preparation/white-chicken-stock", "amount": {"value": 1.2, "unit": "litre"}, "forms": []},
     {"thing": "ingredient/vermicelli", "amount": {"value": 80, "unit": "gram"}, "forms": []},
     {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},
-    {
-      "thing": "ingredient/parsley",
-      "amount": {"value": 1, "unit": "tablespoon"},
-      "forms": ["form/chopped"]
-    }
+    {"thing": "ingredient/parsley", "amount": {"value": 1, "unit": "tablespoon"}, "forms": ["form/chopped"]}
   ],
   "equipment": ["equipment/stovetop", "equipment/saucepan", "equipment/ladle"],
   "steps": [

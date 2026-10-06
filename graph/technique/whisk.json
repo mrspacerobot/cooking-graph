@@ -10,10 +10,7 @@
     "Keep going until the mixture is one colour and one texture."
   ],
   "cues": [
-    {
-      "sense": "see",
-      "text": "No streaks. Beaten eggs are an even yellow that runs off the whisk in a thin stream."
-    }
+    {"sense": "see", "text": "No streaks. Beaten eggs are an even yellow that runs off the whisk in a thin stream."}
   ],
   "mistakes": [
     {

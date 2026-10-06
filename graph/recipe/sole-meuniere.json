@@ -20,7 +20,7 @@
     {
       "technique": "technique/dredge",
       "works_on": ["ingredient/sole", "ingredient/salt", "ingredient/black-pepper", "ingredient/flour"],
-      "text": "Dry the fish and season it. When the pan is already heating, turn each fish in the flour and tap off all that does not cling.",
+      "text": "Have the soles skinned and trimmed. Dry them and season them. When the pan is already heating, turn each fish in the flour and tap off all that does not cling.",
       "time": null,
       "temperature": null,
       "safety_points": [],

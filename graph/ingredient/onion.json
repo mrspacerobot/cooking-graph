@@ -18,7 +18,16 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/shallot",
+      "when": ["technique/deglaze"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Stronger and less sweet. Cut it finer and sweat it a little longer.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/truffle",
+  "tier": "drafted",
+  "names": {"en": "Truffle", "fr": "Truffe"},
+  "aliases": {"en": ["black truffle"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A fungus with a strong, earthy scent that fat carries and long heat destroys.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

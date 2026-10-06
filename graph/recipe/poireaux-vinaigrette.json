@@ -1,0 +1,47 @@
+{
+  "id": "recipe/poireaux-vinaigrette",
+  "tier": "drafted",
+  "names": {"en": "Poireaux vinaigrette"},
+  "aliases": {},
+  "makes": "dish/poireaux-vinaigrette",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/leek", "amount": {"value": 8, "unit": "piece"}, "forms": []},
+    {"thing": "preparation/vinaigrette", "amount": {"value": 100, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/parsley", "amount": {"value": 1, "unit": "tablespoon"}, "forms": ["form/chopped"]},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/kitchen-string", "equipment/mixing-bowl",
+    "equipment/slotted-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/leek", "ingredient/salt"],
+      "text": "Trim the leeks to their white and pale green parts, split the tops and wash out the grit. Tie them in a bundle. Boil them in well-salted water until the tip of a knife meets no resistance at all.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/refresh",
+      "works_on": ["ingredient/leek"],
+      "text": "Lift them into iced water for a moment, just to stop the cooking, then drain them. Squeeze them gently in a cloth: a watery leek thins the dressing.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/leek", "preparation/vinaigrette", "ingredient/parsley"],
+      "text": "Halve them lengthwise, lay them on a dish and spoon the vinaigrette over while they are still just warm. Scatter with the parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

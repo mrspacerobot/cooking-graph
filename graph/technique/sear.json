@@ -45,7 +45,11 @@
     {"thing": "ingredient/duck-breast", "tier": "drafted"},
     {"thing": "ingredient/veal-escalope", "tier": "drafted"},
     {"thing": "ingredient/salmon", "tier": "drafted"},
-    {"thing": "ingredient/scallop", "tier": "drafted"}
+    {"thing": "ingredient/scallop", "tier": "drafted"},
+    {"thing": "ingredient/pork-chop", "tier": "drafted"},
+    {"thing": "ingredient/pork-tenderloin", "tier": "drafted"},
+    {"thing": "ingredient/veal-chop", "tier": "drafted"},
+    {"thing": "ingredient/veal-kidney", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/seared", "tier": "drafted"},

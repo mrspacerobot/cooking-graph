@@ -4,7 +4,9 @@
   "names": {"en": "Duck breast", "fr": "Magret de canard"},
   "aliases": {"en": ["magret"]},
   "is_a": [],
-  "part_of": [],
+  "part_of": [
+    {"thing": "ingredient/duck", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Lean, dark meat under a thick layer of fat, which must melt out slowly before the skin can crisp.",
   "safety": {

@@ -28,7 +28,9 @@
     {"thing": "ingredient/shallot", "tier": "drafted"},
     {"thing": "ingredient/garlic", "tier": "drafted"},
     {"thing": "ingredient/egg", "tier": "drafted"},
-    {"thing": "ingredient/pear", "tier": "drafted"}
+    {"thing": "ingredient/pear", "tier": "drafted"},
+    {"thing": "ingredient/asparagus", "tier": "drafted"},
+    {"thing": "ingredient/pearl-onion", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/peeled", "tier": "drafted"}

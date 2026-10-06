@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/green-lentils",
+  "tier": "drafted",
+  "names": {"en": "Green lentils", "fr": "Lentilles vertes"},
+  "aliases": {"en": ["Puy lentils", "French lentils"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Small lentils that keep their shape when simmered gently. Salt goes in at the end, so that their skins do not toughen.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

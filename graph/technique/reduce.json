@@ -35,7 +35,8 @@
     {"thing": "ingredient/white-wine", "tier": "drafted"},
     {"thing": "ingredient/cream", "tier": "drafted"},
     {"thing": "preparation/white-chicken-stock", "tier": "drafted"},
-    {"thing": "preparation/brown-stock", "tier": "drafted"}
+    {"thing": "preparation/brown-stock", "tier": "drafted"},
+    {"thing": "ingredient/shallot", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/nappe", "tier": "drafted"}

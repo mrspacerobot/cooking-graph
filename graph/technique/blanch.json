@@ -28,7 +28,8 @@
     {"thing": "ingredient/beef-bones", "tier": "drafted"},
     {"thing": "ingredient/green-beans", "tier": "drafted"},
     {"thing": "ingredient/peas", "tier": "drafted"},
-    {"thing": "ingredient/bacon", "tier": "drafted"}
+    {"thing": "ingredient/bacon", "tier": "drafted"},
+    {"thing": "ingredient/veal-shoulder", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

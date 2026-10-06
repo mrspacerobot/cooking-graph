@@ -274,9 +274,41 @@
             {"skill": "stocks", "tier": "drafted"}
           ],
           "levels": [
-            {"number": 1, "names": {"en": "White roux for béchamel"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "Blond roux for velouté"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Brown roux"}, "teaches": [], "through": []}
+            {
+              "number": 1,
+              "names": {"en": "White roux for béchamel"},
+              "teaches": [
+                {"thing": "technique/make-a-roux", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/bechamel", "tier": "drafted"},
+                {"thing": "dish/croque-monsieur", "tier": "drafted"},
+                {"thing": "dish/oeufs-a-la-tripe", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Blond roux for velouté"},
+              "teaches": [
+                {"thing": "technique/make-a-roux", "tier": "drafted"},
+                {"thing": "technique/thicken-with-egg-yolk", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/veloute", "tier": "drafted"},
+                {"thing": "dish/blanquette-de-veau", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Brown roux"},
+              "teaches": [
+                {"thing": "technique/make-a-roux", "tier": "drafted"},
+                {"thing": "technique/sprinkle-with-flour", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/boeuf-miroton", "tier": "drafted"}
+              ]
+            }
           ]
         },
         {
@@ -289,13 +321,36 @@
             {
               "number": 1,
               "names": {"en": "Deglaze the fond"},
-              "teaches": [],
+              "teaches": [
+                {"thing": "technique/deglaze", "tier": "drafted"}
+              ],
               "through": [
-                {"thing": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce", "tier": "drafted"}
+                {"thing": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce", "tier": "drafted"},
+                {"thing": "dish/cote-de-porc-charcutiere", "tier": "drafted"}
               ]
             },
-            {"number": 2, "names": {"en": "Reduce to coat a spoon"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Monter au beurre"}, "teaches": [], "through": []}
+            {
+              "number": 2,
+              "names": {"en": "Reduce to coat a spoon"},
+              "teaches": [
+                {"thing": "technique/reduce", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/filet-mignon-a-la-moutarde", "tier": "drafted"},
+                {"thing": "dish/poulet-a-l-estragon", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Monter au beurre"},
+              "teaches": [
+                {"thing": "technique/mount-with-butter", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/saucisses-au-vin-blanc", "tier": "drafted"},
+                {"thing": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce", "tier": "drafted"}
+              ]
+            }
           ]
         },
         {
@@ -305,10 +360,53 @@
             {"skill": "eggs", "tier": "drafted"}
           ],
           "levels": [
-            {"number": 1, "names": {"en": "Vinaigrette"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "Mayonnaise"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Hollandaise"}, "teaches": [], "through": []},
-            {"number": 4, "names": {"en": "Beurre blanc"}, "teaches": [], "through": []}
+            {
+              "number": 1,
+              "names": {"en": "Vinaigrette"},
+              "teaches": [
+                {"thing": "technique/emulsify", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/vinaigrette", "tier": "drafted"},
+                {"thing": "dish/poireaux-vinaigrette", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Mayonnaise"},
+              "teaches": [
+                {"thing": "technique/emulsify", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/mayonnaise", "tier": "drafted"},
+                {"thing": "dish/salade-piemontaise", "tier": "drafted"},
+                {"thing": "dish/oeufs-mayonnaise", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Hollandaise"},
+              "teaches": [
+                {"thing": "technique/make-a-sabayon", "tier": "drafted"},
+                {"thing": "technique/emulsify", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/hollandaise", "tier": "drafted"},
+                {"thing": "dish/asperges-hollandaise", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 4,
+              "names": {"en": "Beurre blanc"},
+              "teaches": [
+                {"thing": "technique/reduce", "tier": "drafted"},
+                {"thing": "technique/mount-with-butter", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/beurre-blanc", "tier": "drafted"},
+                {"thing": "dish/brochet-au-beurre-blanc", "tier": "drafted"}
+              ]
+            }
           ]
         }
       ]

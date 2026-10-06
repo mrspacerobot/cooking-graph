@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/veal-chop",
+  "tier": "drafted",
+  "names": {"en": "Veal chop", "fr": "Côte de veau"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A thick, lean chop on the bone that browns well and dries out if it is cooked hard all the way.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

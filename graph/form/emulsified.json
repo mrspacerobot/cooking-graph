@@ -1,0 +1,8 @@
+{
+  "id": "form/emulsified",
+  "tier": "drafted",
+  "names": {"en": "Emulsified", "fr": "Émulsionné"},
+  "aliases": {"en": ["holding", "bound"]},
+  "looks_like": "Smooth, opaque and glossy, with no beads of clear fat at the edge.",
+  "size": []
+}

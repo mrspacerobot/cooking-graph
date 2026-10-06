@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/morel",
+  "tier": "drafted",
+  "names": {"en": "Morel", "fr": "Morille"},
+  "aliases": {"en": ["morels"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A honeycombed wild mushroom with a deep, smoky taste that carries into cream. Dried ones need soaking, and grit hides in the caps.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

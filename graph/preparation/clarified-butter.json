@@ -8,7 +8,16 @@
     {"role": "main", "options": ["ingredient/butter"], "tier": "drafted"}
   ],
   "teaches": [],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/butter",
+      "when": ["technique/sear", "technique/pan-fry", "technique/saute"],
+      "not_when": ["technique/mount-with-butter", "technique/make-brown-butter"],
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "caveat": "It has no milk solids, so it stands far more heat before it burns. For the same reason it cannot thicken a sauce or brown to a nutty butter.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

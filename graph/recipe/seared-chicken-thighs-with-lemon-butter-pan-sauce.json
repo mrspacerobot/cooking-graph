@@ -1,0 +1,104 @@
+{
+  "id": "recipe/seared-chicken-thighs-with-lemon-butter-pan-sauce",
+  "tier": "drafted",
+  "names": {"en": "Seared chicken thighs with lemon butter pan sauce"},
+  "aliases": {},
+  "makes": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 4, "unit": "piece"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"]},
+    {"thing": "ingredient/white-wine", "amount": {"value": 120, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": ["form/cold", "form/diced"]},
+    {"thing": "ingredient/lemon", "amount": {"value": 0.5, "unit": "piece"}, "forms": []},
+    {"thing": "ingredient/spinach", "amount": {"value": 150, "unit": "gram"}, "forms": []}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/wooden-spoon", "equipment/whisk", "equipment/tongs"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/salt", "ingredient/sunflower-oil"],
+      "text": "Pat the thighs dry and salt both sides. Lay them skin side down in the hot oil and leave them alone until the skin is deep golden and lifts off the pan by itself.",
+      "time": {"from": 7, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/chicken-thigh"],
+      "text": "Turn the thighs, lower the heat and cook the other side. Check the thickest thigh against a trusted guide to doneness, then move them to a warm plate.",
+      "time": {"from": 5, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/garlic"],
+      "text": "Pour off most of the fat and keep every brown bit. Stir the garlic in the pan just until it smells sweet.",
+      "time": {"value": 30, "unit": "second"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond", "ingredient/white-wine"],
+      "text": "Pour in the wine and scrape the pan with a wooden spoon until the brown bits have dissolved.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pan-sauce"]
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/pan-sauce"],
+      "text": "Let it boil until about half is left.",
+      "time": {"value": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mount-with-butter",
+      "works_on": ["preparation/pan-sauce", "ingredient/butter", "ingredient/lemon"],
+      "text": "Take the pan off the heat. Whisk in the cold butter a few cubes at a time, then the juice of the lemon. The sauce turns glossy.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/pan-sauce", "ingredient/salt"],
+      "text": "Taste, and add salt if it needs it. Pour the sauce into a warm jug.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/wilt",
+      "works_on": ["ingredient/spinach"],
+      "text": "Wilt the spinach in the same pan.",
+      "time": {"value": 1, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/spinach", "ingredient/chicken-thigh", "preparation/pan-sauce"],
+      "text": "Plate the spinach with the chicken, skin side up, and spoon the sauce around it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

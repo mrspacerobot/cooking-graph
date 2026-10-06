@@ -1,0 +1,18 @@
+{
+  "id": "preparation/puff-pastry",
+  "tier": "drafted",
+  "names": {"en": "Puff pastry", "fr": "Pâte feuilletée"},
+  "aliases": {},
+  "is": "A pastry of thin layers of dough and butter, folded many times, which rise apart into crisp leaves in the oven.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "teaches": [],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

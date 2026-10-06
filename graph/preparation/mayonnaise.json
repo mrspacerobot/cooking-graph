@@ -11,7 +11,9 @@
     {"role": "acid", "options": ["ingredient/white-wine-vinegar", "ingredient/lemon"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
   ],
-  "teaches": [],
+  "teaches": [
+    {"thing": "technique/emulsify", "tier": "drafted"}
+  ],
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}

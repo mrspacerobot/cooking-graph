@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/foie-gras",
+  "tier": "drafted",
+  "names": {"en": "Foie gras", "fr": "Foie gras"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "The fattened liver of a duck or a goose. It melts fast in a hot pan and needs only a moment on each side.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

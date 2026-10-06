@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/pearl-onion",
+  "tier": "drafted",
+  "names": {"en": "Pearl onion", "fr": "Oignon grelot"},
+  "aliases": {"en": ["pearl onions", "button onion"]},
+  "is_a": [
+    {"thing": "ingredient/allium", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A small, mild onion that is cooked whole and turns sweet and tender.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

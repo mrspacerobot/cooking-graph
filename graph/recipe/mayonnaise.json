@@ -1,0 +1,54 @@
+{
+  "id": "recipe/mayonnaise",
+  "tier": "drafted",
+  "names": {"en": "Mayonnaise"},
+  "aliases": {},
+  "makes": "preparation/mayonnaise",
+  "yields": {"value": 250, "unit": "gram"},
+  "ingredients": [
+    {"thing": "ingredient/egg-yolk", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/room-temperature"]},
+    {"thing": "ingredient/dijon-mustard", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 200, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/white-wine-vinegar", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": ["equipment/mixing-bowl", "equipment/whisk"],
+  "steps": [
+    {
+      "technique": "technique/whisk",
+      "works_on": ["ingredient/egg-yolk", "ingredient/dijon-mustard", "ingredient/salt"],
+      "text": "Whisk the yolk with the mustard and the salt in a bowl set on a damp cloth, so that it does not slide.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/emulsify",
+      "works_on": ["ingredient/sunflower-oil"],
+      "text": "Add the oil drop by drop, whisking all the time, until the sauce thickens. Then pour it in a thin stream, still whisking. Stop pouring and whisk whenever oil gathers on the surface.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/mayonnaise", "ingredient/white-wine-vinegar"],
+      "text": "Whisk in the vinegar, which loosens and whitens it. Taste and adjust.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chill",
+      "works_on": ["preparation/mayonnaise"],
+      "text": "Keep it covered in the fridge and use it the same day.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg", "cooling-and-keeping"],
+      "makes": []
+    }
+  ]
+}

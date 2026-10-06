@@ -30,7 +30,10 @@
     {"thing": "ingredient/flour", "tier": "drafted"}
   ],
   "makes": [
-    {"thing": "preparation/roux", "tier": "drafted"}
+    {"thing": "preparation/roux", "tier": "drafted"},
+    {"thing": "form/white-roux", "tier": "drafted"},
+    {"thing": "form/blond-roux", "tier": "drafted"},
+    {"thing": "form/brown-roux", "tier": "drafted"}
   ],
   "needs": [
     {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},

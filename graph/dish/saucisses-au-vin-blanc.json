@@ -1,0 +1,22 @@
+{
+  "id": "dish/saucisses-au-vin-blanc",
+  "tier": "drafted",
+  "names": {"en": "Saucisses au vin blanc", "fr": "Saucisses au vin blanc"},
+  "aliases": {"en": ["sausages in white wine"]},
+  "is": "Pork sausages browned slowly in a pan, with a short sauce made on their fond from shallot and white wine and finished with cold butter.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/pork-sausage"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "enrichment", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/parsley"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/mount-with-butter", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/asparagus",
+  "tier": "drafted",
+  "names": {"en": "Asparagus", "fr": "Asperge"},
+  "aliases": {"en": ["asparagus spears"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Tender tips and woody ends on one spear. The thick end needs peeling, and takes longer than the tip.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

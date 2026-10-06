@@ -1,0 +1,77 @@
+{
+  "id": "recipe/poulet-a-l-estragon",
+  "tier": "drafted",
+  "names": {"en": "Poulet à l'estragon"},
+  "aliases": {},
+  "makes": "dish/poulet-a-l-estragon",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken", "amount": {"value": 1.4, "unit": "kilogram"}, "forms": ["form/jointed"]},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/shallot", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/peeled", "form/minced"]},
+    {"thing": "ingredient/white-wine", "amount": {"value": 150, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 200, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/tarragon", "amount": {"value": 4, "unit": "sprig"}, "forms": []},
+    {"thing": "ingredient/cream", "amount": {"value": 150, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saute-pan", "equipment/tongs", "equipment/wooden-spoon"],
+  "steps": [
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/chicken", "ingredient/salt", "ingredient/sunflower-oil", "ingredient/butter"],
+      "text": "Dry the chicken pieces and salt them. Brown them in the oil and the butter in a wide sauté pan, skin side down first, without moving them, then turn them. Lift them out.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/shallot"],
+      "text": "Pour off all but a film of fat. Soften the shallots in it over low heat.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond", "ingredient/white-wine"],
+      "text": "Pour in the wine and scrape the pan clean. Boil until about half is left.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pan-sauce"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["preparation/pan-sauce", "ingredient/chicken-stock", "ingredient/tarragon", "ingredient/chicken"],
+      "text": "Add the stock and the stalks of the tarragon, and keep the leaves. Put the chicken back, skin side up, cover and simmer gently, taking the breast pieces out before the legs. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/pan-sauce", "ingredient/cream"],
+      "text": "Lift the chicken onto a warm dish and take out the stalks. Add the cream and boil the sauce down until it coats a spoon.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/pan-sauce", "ingredient/tarragon", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Chop the tarragon leaves and stir them in off the heat. Taste, season, and spoon the sauce over the chicken.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -16,7 +16,16 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/white-wine-vinegar",
+      "when": ["preparation/mayonnaise", "preparation/vinaigrette", "preparation/hollandaise"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Softer and fruitier than vinegar.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

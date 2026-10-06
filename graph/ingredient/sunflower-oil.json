@@ -16,7 +16,16 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/olive-oil",
+      "when": ["preparation/mayonnaise"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "Tastes of nothing. Olive oil whisked hard can turn bitter, so a plain oil gives a milder mayonnaise.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

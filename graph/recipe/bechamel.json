@@ -1,0 +1,45 @@
+{
+  "id": "recipe/bechamel",
+  "tier": "drafted",
+  "names": {"en": "Béchamel"},
+  "aliases": {},
+  "makes": "preparation/bechamel",
+  "yields": {"value": 500, "unit": "millilitre"},
+  "ingredients": [
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/flour", "amount": {"value": 30, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/milk", "amount": {"value": 500, "unit": "millilitre"}, "forms": ["form/cold"]},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": []}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saucepan", "equipment/whisk", "equipment/wooden-spoon"],
+  "steps": [
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/butter", "ingredient/flour"],
+      "text": "Melt the butter in a saucepan over medium-low heat. Add the flour all at once and stir until smooth. Cook it, stirring, until it froths and smells of biscuit. It must stay pale.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["preparation/roux", "ingredient/milk"],
+      "text": "Take the pan off the heat. Whisk in the cold milk a little at a time, and make each addition smooth before the next.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["preparation/bechamel", "ingredient/salt", "ingredient/nutmeg"],
+      "text": "Put the pan back on the heat and bring it to a simmer, whisking. Simmer gently, stirring into the corners, until the sauce coats a spoon and has lost any taste of flour. Season with the salt and a little nutmeg.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

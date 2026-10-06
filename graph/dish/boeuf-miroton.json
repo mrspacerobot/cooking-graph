@@ -1,0 +1,25 @@
+{
+  "id": "dish/boeuf-miroton",
+  "tier": "drafted",
+  "names": {"en": "Bœuf miroton", "fr": "Bœuf miroton"},
+  "aliases": {"en": ["miroton", "beef miroton"]},
+  "is": "Slices of boiled beef left from a pot-au-feu, reheated under a sharp sauce of browned onions, vinegar and stock, with a crust of breadcrumbs.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/boiled-beef"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "thickener", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/red-wine-vinegar"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/beef-stock", "preparation/brown-stock"], "tier": "drafted"},
+    {"role": "topping", "options": ["preparation/breadcrumbs"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sprinkle-with-flour", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/madeira",
+  "tier": "drafted",
+  "names": {"en": "Madeira", "fr": "Madère"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A sweet, nutty fortified wine that gives a sauce depth and a little sweetness once it has boiled down.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/alcohol", "fact/slaughter-product", "fact/egg", "fact/dairy"],
+    "free_of": [
+      "fact/animal-product", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts", "fact/pork", "fact/sesame",
+      "fact/shellfish", "fact/soy"
+    ],
+    "note": "A fortified wine. Wine is often cleared with gelatine, isinglass, egg white or milk protein. Egg and dairy are recorded as the stricter answer."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

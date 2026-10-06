@@ -1,0 +1,27 @@
+{
+  "id": "dish/poulet-a-l-estragon",
+  "tier": "drafted",
+  "names": {"en": "Poulet à l'estragon", "fr": "Poulet à l'estragon"},
+  "aliases": {"en": ["tarragon chicken", "chicken with tarragon"]},
+  "is": "Chicken pieces browned and then simmered with white wine, stock and tarragon, in a sauce finished with cream and fresh tarragon leaves.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/chicken", "ingredient/chicken-thigh"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "liquid", "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/tarragon"], "tier": "drafted"},
+    {"role": "enrichment", "options": ["ingredient/cream", "ingredient/creme-fraiche"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

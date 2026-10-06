@@ -26,7 +26,9 @@
     {"thing": "ingredient/potato", "tier": "drafted"},
     {"thing": "ingredient/sole", "tier": "drafted"},
     {"thing": "ingredient/veal-escalope", "tier": "drafted"},
-    {"thing": "ingredient/calfs-liver", "tier": "drafted"}
+    {"thing": "ingredient/calfs-liver", "tier": "drafted"},
+    {"thing": "ingredient/pork-sausage", "tier": "drafted"},
+    {"thing": "ingredient/foie-gras", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

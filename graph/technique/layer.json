@@ -1,0 +1,35 @@
+{
+  "id": "technique/layer",
+  "tier": "drafted",
+  "names": {"en": "Layer"},
+  "aliases": {"en": ["build in layers", "layer up", "assemble in layers"]},
+  "does": "Builds a dish in even layers, so that it cooks evenly and holds together when it is served.",
+  "how": [
+    "Have every part ready and within reach before you start.",
+    "Spread each layer to the edges, in one even thickness.",
+    "Season lightly between the layers, not only on top.",
+    "Finish with the layer that should brown."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A level top, and layers of the same thickness when the dish is cut."}
+  ],
+  "mistakes": [
+    {"mistake": "Thick and thin patches, which cook at different speeds.", "fix": "Take a moment to level each layer."},
+    {"mistake": "Seasoning only the top, which leaves the inside bland.", "fix": "Season lightly as you go."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/sandwich-bread", "tier": "drafted"},
+    {"thing": "ingredient/ham", "tier": "drafted"},
+    {"thing": "ingredient/gruyere", "tier": "drafted"},
+    {"thing": "ingredient/potato", "tier": "drafted"},
+    {"thing": "ingredient/boiled-beef", "tier": "drafted"},
+    {"thing": "preparation/bechamel", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish", "equipment/baking-sheet"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

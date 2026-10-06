@@ -1,0 +1,19 @@
+{
+  "id": "dish/brochet-au-beurre-blanc",
+  "tier": "drafted",
+  "names": {"en": "Brochet au beurre blanc", "fr": "Brochet au beurre blanc"},
+  "aliases": {"en": ["pike with beurre blanc", "poached fish with beurre blanc"]},
+  "is": "Pike poached in court-bouillon and served under beurre blanc, a dish of the Loire.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/pike", "ingredient/white-fish"], "tier": "drafted"},
+    {"role": "liquid", "options": ["preparation/court-bouillon"], "tier": "drafted"},
+    {"role": "sauce", "options": ["preparation/beurre-blanc"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/mount-with-butter", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

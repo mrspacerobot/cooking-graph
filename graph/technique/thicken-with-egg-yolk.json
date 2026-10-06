@@ -1,0 +1,48 @@
+{
+  "id": "technique/thicken-with-egg-yolk",
+  "tier": "drafted",
+  "names": {"en": "Thicken with egg yolk", "fr": "Lier au jaune d'œuf"},
+  "aliases": {"en": ["liaison", "egg yolk liaison", "thicken with a liaison", "bind with egg yolk"], "fr": ["liaison"]},
+  "does": "Enriches and lightly thickens a hot sauce with egg yolks beaten with cream, without letting the yolks scramble.",
+  "how": [
+    "Beat the yolks with the cream in a bowl.",
+    "Take the sauce off the boil.",
+    "Whisk a ladle of the hot sauce into the yolks to warm them, then another.",
+    "Pour the mixture back into the pan, stirring all the time.",
+    "Heat gently, stirring, just until the sauce thickens a little. It must not boil again."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sauce turns ivory and velvety, and coats the spoon more thickly than before."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring the yolks straight into a boiling sauce, which sets them into threads.",
+      "fix": "Warm the yolks with a little hot sauce first."
+    },
+    {
+      "mistake": "Boiling the sauce after the yolks have gone in.",
+      "fix": "Keep it below a simmer. A sauce that has started to grain can sometimes be rescued through a fine sieve."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"},
+    {"thing": "ingredient/cream", "tier": "drafted"},
+    {"thing": "preparation/veloute", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk", "equipment/ladle"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-a-custard",
+      "why": "It asks for the same judgment as a custard: yolks thickening a liquid just short of scrambling.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "dish/salade-piemontaise",
+  "tier": "drafted",
+  "names": {"en": "Salade piémontaise", "fr": "Salade piémontaise"},
+  "aliases": {"en": ["piémontaise", "French potato salad with ham"]},
+  "is": "A cold salad of boiled potatoes, tomato, ham, hard-boiled egg and cornichons, bound with mayonnaise.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/potato"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/tomato"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/ham"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/egg"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/cornichons"], "tier": "drafted"},
+    {"role": "sauce", "options": ["preparation/mayonnaise"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/dice", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

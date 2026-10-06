@@ -1,0 +1,8 @@
+{
+  "id": "form/room-temperature",
+  "tier": "drafted",
+  "names": {"en": "At room temperature", "fr": "À température ambiante"},
+  "aliases": {"en": ["room temperature"]},
+  "looks_like": "Left out of the fridge until it no longer feels cold to the hand.",
+  "size": []
+}

@@ -33,7 +33,11 @@
     {"thing": "ingredient/leek", "tier": "drafted"},
     {"thing": "ingredient/carrot", "tier": "drafted"},
     {"thing": "ingredient/cabbage", "tier": "drafted"},
-    {"thing": "ingredient/pumpkin", "tier": "drafted"}
+    {"thing": "ingredient/pumpkin", "tier": "drafted"},
+    {"thing": "ingredient/veal-shoulder", "tier": "drafted"},
+    {"thing": "ingredient/green-lentils", "tier": "drafted"},
+    {"thing": "preparation/bechamel", "tier": "drafted"},
+    {"thing": "preparation/veloute", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/broth", "tier": "drafted"}

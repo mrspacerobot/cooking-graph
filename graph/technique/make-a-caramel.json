@@ -1,0 +1,40 @@
+{
+  "id": "technique/make-a-caramel",
+  "tier": "drafted",
+  "names": {"en": "Make a caramel", "fr": "Faire un caramel"},
+  "aliases": {"en": ["caramelize sugar", "cook sugar to caramel", "caramel"]},
+  "does": "Cooks sugar until it melts and browns to an amber syrup with a bittersweet taste.",
+  "how": [
+    "Put the sugar in a clean, heavy, pale pan with just enough water to wet it.",
+    "Heat it without stirring. Swirl the pan if it colours unevenly.",
+    "Watch as it turns from clear to straw to amber.",
+    "Stop it the moment it is the colour of dark honey, by adding the liquid the recipe calls for, standing well back.",
+    "For a sweet and sour base, stop it with vinegar and boil until syrupy."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A clear, deep amber, like dark honey. Smoke means it has gone too far."},
+    {"sense": "smell", "text": "Toasted sugar. An acrid smell means a bitter caramel."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring the sugar as it melts, which makes it seize into crystals.",
+      "fix": "Leave it alone and swirl the pan."
+    },
+    {
+      "mistake": "Walking away. Caramel goes from amber to burnt in moments.",
+      "fix": "Stay with it, and have the liquid ready beside the stove."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/sugar", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

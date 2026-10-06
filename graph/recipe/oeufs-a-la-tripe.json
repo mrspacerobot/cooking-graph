@@ -1,0 +1,77 @@
+{
+  "id": "recipe/oeufs-a-la-tripe",
+  "tier": "drafted",
+  "names": {"en": "Œufs à la tripe"},
+  "aliases": {},
+  "makes": "dish/oeufs-a-la-tripe",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 6, "unit": "piece"}, "forms": []},
+    {"thing": "ingredient/onion", "amount": {"value": 300, "unit": "gram"}, "forms": ["form/peeled", "form/sliced"]},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/flour", "amount": {"value": 30, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/milk", "amount": {"value": 500, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 0.75, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/saute-pan", "equipment/wooden-spoon",
+    "equipment/slotted-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil-an-egg",
+      "works_on": ["ingredient/egg"],
+      "text": "Boil the eggs gently until the yolks are firm, then cool them under cold water.",
+      "time": {"from": 9, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/egg"],
+      "text": "Peel the eggs and cut them into thick slices.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/butter", "ingredient/onion", "ingredient/salt"],
+      "text": "Sweat the onions in the butter with a little of the salt over low heat, covered, until completely soft. They must not colour.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sprinkle-with-flour",
+      "works_on": ["ingredient/flour", "ingredient/onion"],
+      "text": "Scatter the flour over the onions and stir for a moment over the heat, without colour.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/milk", "ingredient/nutmeg", "ingredient/salt"],
+      "text": "Stir in the milk a little at a time, and make each addition smooth. Simmer gently, stirring, until the sauce coats a spoon. Season with the rest of the salt and a little nutmeg.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/bechamel"]
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/egg", "preparation/bechamel"],
+      "text": "Fold the sliced eggs gently into the sauce, warm them for a moment and serve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

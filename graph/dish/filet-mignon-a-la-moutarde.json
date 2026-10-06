@@ -1,0 +1,25 @@
+{
+  "id": "dish/filet-mignon-a-la-moutarde",
+  "tier": "drafted",
+  "names": {"en": "Filet mignon de porc à la moutarde", "fr": "Filet mignon de porc à la moutarde"},
+  "aliases": {"en": ["pork tenderloin with mustard sauce", "pork fillet in mustard cream"]},
+  "is": "Pork tenderloin browned in a pan, with a sauce of shallot, white wine and cream made on its fond and finished with mustard.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/pork-tenderloin"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "enrichment", "options": ["ingredient/cream", "ingredient/creme-fraiche"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

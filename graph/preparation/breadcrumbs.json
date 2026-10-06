@@ -1,0 +1,13 @@
+{
+  "id": "preparation/breadcrumbs",
+  "tier": "drafted",
+  "names": {"en": "Breadcrumbs", "fr": "Chapelure"},
+  "aliases": {"en": ["dried breadcrumbs"]},
+  "is": "Stale bread dried and crushed to fine crumbs, which brown to a crisp crust.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/bread", "ingredient/baguette"], "tier": "drafted"}
+  ],
+  "teaches": [],
+  "stands_in_for": [],
+  "belongs_to": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "dish/blanquette-de-veau",
+  "tier": "drafted",
+  "names": {"en": "Blanquette de veau", "fr": "Blanquette de veau"},
+  "aliases": {"en": ["veal blanquette", "veal in white sauce"]},
+  "is": "Veal simmered without browning with vegetables and herbs, then served in a sauce made from its own broth, thickened with a pale roux and finished with cream and egg yolk, with mushrooms and small onions.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/veal-shoulder"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/mushroom"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/pearl-onion"], "tier": "drafted"},
+    {"role": "thickener", "options": ["preparation/roux"], "tier": "drafted"},
+    {"role": "enrichment", "options": ["ingredient/cream"], "tier": "drafted"},
+    {"role": "thickener", "options": ["ingredient/egg-yolk"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/make-a-roux", "tier": "drafted"},
+    {"thing": "technique/thicken-with-egg-yolk", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

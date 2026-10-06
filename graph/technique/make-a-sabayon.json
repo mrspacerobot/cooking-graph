@@ -1,0 +1,53 @@
+{
+  "id": "technique/make-a-sabayon",
+  "tier": "drafted",
+  "names": {"en": "Make a sabayon", "fr": "Monter un sabayon"},
+  "aliases": {"en": ["whisk yolks over heat", "cook the yolks to a ribbon", "sabayon"]},
+  "does": "Whisks egg yolks with a little liquid over gentle heat until they are thick, pale and foamy, ready to take butter.",
+  "how": [
+    "Put the yolks and a spoonful of water for each in a round-bottomed bowl.",
+    "Set it over a pan of barely simmering water, or over the lowest heat.",
+    "Whisk without stopping, and lift the bowl off the heat whenever it feels hot to the hand.",
+    "Stop when the whisk leaves a trail that shows the bottom of the bowl."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Pale, thick and foamy. The whisk draws lines that hold for a moment, and the mixture falls from it in a ribbon."
+    },
+    {"sense": "feel", "text": "The bowl is warm to the hand, never hot."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Too much heat, which scrambles the yolks at the edge of the bowl.",
+      "fix": "Lift the bowl off the heat and keep whisking. If grains have formed, start again."
+    },
+    {
+      "mistake": "Stopping early, so that the sauce stays thin however much butter goes in.",
+      "fix": "Whisk until the trail holds."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/ribbon", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/whisk",
+      "differs": "The whisking is done over gentle heat, which cooks the yolks as it fills them with air.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

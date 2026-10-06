@@ -1,0 +1,55 @@
+{
+  "id": "recipe/veloute",
+  "tier": "drafted",
+  "names": {"en": "Velouté"},
+  "aliases": {},
+  "makes": "preparation/veloute",
+  "yields": {"value": 500, "unit": "millilitre"},
+  "ingredients": [
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/flour", "amount": {"value": 30, "unit": "gram"}, "forms": []},
+    {"thing": "preparation/white-chicken-stock", "amount": {"value": 600, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/whisk", "equipment/wooden-spoon", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/butter", "ingredient/flour"],
+      "text": "Melt the butter over medium-low heat, add the flour all at once and stir until smooth. Cook it, stirring, a little longer than for a white sauce, until it turns the colour of sand.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["preparation/roux", "preparation/white-chicken-stock"],
+      "text": "Off the heat, whisk in the stock a little at a time, and make each addition smooth before the next.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["preparation/veloute"],
+      "text": "Bring it to a simmer and cook gently with the pan half off the heat. Lift off the skin that gathers on the cooler side. It is ready when it is smooth and coats a spoon.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/veloute", "ingredient/salt"],
+      "text": "Taste, and salt it only now.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

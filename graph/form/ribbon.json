@@ -1,0 +1,8 @@
+{
+  "id": "form/ribbon",
+  "tier": "drafted",
+  "names": {"en": "Ribbon", "fr": "Au ruban"},
+  "aliases": {"en": ["to the ribbon"]},
+  "looks_like": "Pale and thick enough to fall from the whisk in a ribbon that lies on the surface for a moment before it sinks.",
+  "size": []
+}

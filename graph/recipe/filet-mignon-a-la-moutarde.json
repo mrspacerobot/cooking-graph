@@ -1,0 +1,76 @@
+{
+  "id": "recipe/filet-mignon-a-la-moutarde",
+  "tier": "drafted",
+  "names": {"en": "Filet mignon de porc à la moutarde"},
+  "aliases": {},
+  "makes": "dish/filet-mignon-a-la-moutarde",
+  "yields": {"value": 3, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-tenderloin", "amount": {"value": 500, "unit": "gram"}, "forms": ["form/sliced"]},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/shallot", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/peeled", "form/minced"]},
+    {"thing": "ingredient/white-wine", "amount": {"value": 100, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/cream", "amount": {"value": 200, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/dijon-mustard", "amount": {"value": 1.5, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 0.75, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/frying-pan", "equipment/wooden-spoon", "equipment/tongs"],
+  "steps": [
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/pork-tenderloin", "ingredient/salt", "ingredient/sunflower-oil", "ingredient/butter"],
+      "text": "Dry the thick slices of pork and salt them. Sear them in the oil and the butter in a hot pan until golden on both sides. Lift them out.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/shallot"],
+      "text": "Soften the shallots in the fat left in the pan over low heat.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond", "ingredient/white-wine"],
+      "text": "Pour in the wine, scrape the pan clean and boil until about half is left.",
+      "time": {"value": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pan-sauce"]
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/pan-sauce", "ingredient/cream"],
+      "text": "Add the cream and boil until the sauce coats a spoon.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/pork-tenderloin", "preparation/pan-sauce"],
+      "text": "Put the pork and its juices back into the sauce and simmer very gently until it is done. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/pan-sauce", "ingredient/dijon-mustard", "ingredient/black-pepper"],
+      "text": "Off the heat, stir in the mustard and the pepper. Taste. Do not let the sauce boil again, or the mustard loses its bite.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

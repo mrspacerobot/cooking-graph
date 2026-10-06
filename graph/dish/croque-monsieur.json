@@ -1,0 +1,21 @@
+{
+  "id": "dish/croque-monsieur",
+  "tier": "drafted",
+  "names": {"en": "Croque monsieur", "fr": "Croque-monsieur"},
+  "aliases": {"en": ["croque"]},
+  "is": "A sandwich of ham and gruyère on white bread, spread with béchamel, topped with more cheese and browned until it bubbles.",
+  "parts": [
+    {"role": "base", "options": ["ingredient/sandwich-bread"], "tier": "drafted"},
+    {"role": "filling", "options": ["ingredient/ham"], "tier": "drafted"},
+    {"role": "filling", "options": ["ingredient/gruyere"], "tier": "drafted"},
+    {"role": "sauce", "options": ["preparation/bechamel"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/gratinate", "tier": "drafted"},
+    {"thing": "technique/layer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

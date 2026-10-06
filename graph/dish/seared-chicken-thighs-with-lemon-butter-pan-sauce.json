@@ -14,7 +14,11 @@
     {"role": "acid", "options": ["ingredient/lemon"], "tier": "drafted"},
     {"role": "side", "options": ["ingredient/spinach"], "tier": "drafted"}
   ],
-  "teaches": [],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/mount-with-butter", "tier": "drafted"}
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

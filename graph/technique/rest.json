@@ -29,7 +29,9 @@
     {"thing": "ingredient/rib-steak", "tier": "drafted"},
     {"thing": "ingredient/flank-steak", "tier": "drafted"},
     {"thing": "ingredient/duck-breast", "tier": "drafted"},
-    {"thing": "ingredient/chicken", "tier": "drafted"}
+    {"thing": "ingredient/chicken", "tier": "drafted"},
+    {"thing": "ingredient/pork-chop", "tier": "drafted"},
+    {"thing": "ingredient/veal-chop", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

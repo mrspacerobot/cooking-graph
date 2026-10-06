@@ -36,7 +36,8 @@
     {"thing": "ingredient/skate", "tier": "drafted"},
     {"thing": "ingredient/sole", "tier": "drafted"},
     {"thing": "ingredient/pear", "tier": "drafted"},
-    {"thing": "ingredient/marrow-bone", "tier": "drafted"}
+    {"thing": "ingredient/marrow-bone", "tier": "drafted"},
+    {"thing": "ingredient/pike", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/poaching-liquid", "tier": "drafted"},

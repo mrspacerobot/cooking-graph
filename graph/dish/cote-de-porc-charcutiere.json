@@ -1,0 +1,31 @@
+{
+  "id": "dish/cote-de-porc-charcutiere",
+  "tier": "drafted",
+  "names": {"en": "Côte de porc charcutière", "fr": "Côte de porc charcutière"},
+  "aliases": {"en": ["pork chop charcutière", "pork chops with charcutière sauce"]},
+  "is": "A pork chop seared and rested, with a sauce made in its pan from onion, white wine and stock, finished off the heat with mustard and strips of cornichon.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/pork-chop"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": ["preparation/brown-stock", "ingredient/beef-stock", "ingredient/chicken-stock"],
+      "tier": "drafted"
+    },
+    {"role": "seasoning", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/cornichons"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "recipe/asperges-hollandaise",
+  "tier": "drafted",
+  "names": {"en": "Asperges sauce hollandaise"},
+  "aliases": {},
+  "makes": "dish/asperges-hollandaise",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/asparagus", "amount": {"value": 1, "unit": "kilogram"}, "forms": []},
+    {"thing": "preparation/hollandaise", "amount": {"value": 250, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saute-pan", "equipment/vegetable-peeler", "equipment/slotted-spoon"],
+  "steps": [
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/asparagus"],
+      "text": "Cut off the woody ends. Peel each spear from just below the tip to the base.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/asparagus", "ingredient/salt"],
+      "text": "Boil the spears in well-salted water until the tip of a knife slides into the thick end.",
+      "time": {"from": 6, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/asparagus", "preparation/hollandaise"],
+      "text": "Drain them on a cloth and serve them warm, with the hollandaise beside them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    }
+  ]
+}

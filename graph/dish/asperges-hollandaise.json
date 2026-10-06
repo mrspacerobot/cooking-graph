@@ -1,0 +1,19 @@
+{
+  "id": "dish/asperges-hollandaise",
+  "tier": "drafted",
+  "names": {"en": "Asperges sauce hollandaise", "fr": "Asperges sauce hollandaise"},
+  "aliases": {"en": ["asparagus with hollandaise", "asparagus hollandaise"]},
+  "is": "Asparagus peeled, boiled until just tender, and served warm with hollandaise sauce.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/asparagus"], "tier": "drafted"},
+    {"role": "sauce", "options": ["preparation/hollandaise"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/peel", "tier": "drafted"},
+    {"thing": "technique/boil", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

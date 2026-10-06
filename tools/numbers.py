@@ -68,6 +68,7 @@ def count(things):
         "statements": count_statements(things),
         "safety": count_safety(things),
         "probes": probes.shares(probes.run(things)),
+        "probe_words": probes.word_shares(probes.run(things)),
         "levels_with_a_technique": count_levels(things),
         "recipe_steps": count_steps(things),
         "safety_points": count_safety_points(things),
@@ -106,13 +107,16 @@ def safety_table(counts):
 
 
 def probe_table(counts):
-    lines = [row(["Dish probes", "Answered", "Share"]), row(["---"] * 3)]
+    """The probes answered, and the words answered. A probe fails on a single word, so both are shown."""
+    lines = [row(["Dish probes", "Answered", "Share", "Technique words", "Ingredient words"]), row(["---"] * 5)]
     for name in ("growing", "held-back"):
         answered, total = counts["probes"][name]
         percent = "none yet"
         if total > 0:
             percent = "%d%%" % round(100 * answered / total)
-        lines.append(row([name, "%d of %d" % (answered, total), percent]))
+        words = counts["probe_words"][name]
+        cells = [name, "%d of %d" % (answered, total), percent, "%d of %d" % words["techniques"], "%d of %d" % words["ingredients"]]
+        lines.append(row(cells))
     return lines
 
 

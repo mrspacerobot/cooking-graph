@@ -181,7 +181,7 @@ A question the graph must be able to answer: can this well-known dish be written
 | `techniques` | The techniques it needs, in plain words, at least one |
 | `ingredients` | Its main ingredients, in plain words, at least one |
 
-A probe is answered when every one of its technique words is a name of a technique, and every one of its ingredient words is a name of an ingredient or a preparation. `./probe` lists what the growing probes lack. It counts the held-back probes and never shows what they lack. No dish, recipe or preparation may carry the name of a held-back probe.
+A probe is answered when every one of its technique words is a name of a technique, and every one of its ingredient words is a name of an ingredient or a preparation. One missing word fails the probe, so `./probe` also counts the words answered, for each set. It lists what the growing probes lack. Of the held-back probes it gives counts only and never a word. No dish, recipe or preparation may carry the name of a held-back probe.
 
 ## The statements of the plan, and where they went
 

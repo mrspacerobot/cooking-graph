@@ -34,6 +34,11 @@ class NumbersTest(unittest.TestCase):
         self.assertEqual((4, 4), counts["probes"]["growing"])
         self.assertEqual((1, 1), counts["probes"]["held-back"])
 
+    def test_probe_words_are_counted_apart(self):
+        words = self.count()["probe_words"]
+        self.assertEqual({"techniques": (4, 4), "ingredients": (8, 8)}, words["growing"])
+        self.assertEqual({"techniques": (1, 1), "ingredients": (2, 2)}, words["held-back"])
+
     def test_levels_that_name_a_technique_are_counted(self):
         self.assertEqual((1, 2), self.count()["levels_with_a_technique"])
 
@@ -53,6 +58,7 @@ class NumbersTest(unittest.TestCase):
         self.assertIn("held-back", table)
         self.assertIn("4 of 4", table)
         self.assertIn("100%", table)
+        self.assertIn("| held-back | 1 of 1 | 100% | 1 of 1 | 2 of 2 |", table)
 
 
 if __name__ == "__main__":

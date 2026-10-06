@@ -108,6 +108,22 @@ class Reporting(ProbeRunnerTest):
         self.assertEqual((4, 4), shares["growing"])
         self.assertEqual((1, 1), shares["held-back"])
 
+    def test_the_words_of_each_set_are_counted(self):
+        path = self.kitchen.held_back_path()
+        self.kitchen.change(path, lambda probe: probe.update(techniques=["sweat", "flambe"], ingredients=["onion", "butter", "truffle"]))
+        words = probes.word_shares(self.run_probes())
+        self.assertEqual({"techniques": (1, 2), "ingredients": (2, 3)}, words["held-back"])
+        self.assertEqual({"techniques": (4, 4), "ingredients": (8, 8)}, words["growing"])
+
+    def test_the_word_counts_are_in_the_report_and_no_word_is(self):
+        path = self.kitchen.held_back_path()
+        self.kitchen.change(path, lambda probe: probe.update(techniques=["sweat", "flambe"], ingredients=["onion", "butter", "truffle"]))
+        report = probes.report(self.run_probes())
+        self.assertIn("1 of 2", report)
+        self.assertIn("2 of 3", report)
+        self.assertNotIn("flambe", report)
+        self.assertNotIn("truffle", report)
+
     def test_what_a_growing_probe_lacks_is_listed(self):
         self.kitchen.change(OTHER, lambda probe: probe.update(techniques=["caramelize"]))
         report = probes.report(self.run_probes())

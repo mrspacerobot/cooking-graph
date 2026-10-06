@@ -23,7 +23,10 @@ KINDS_THAT_ANSWER = {
 Result = namedtuple("Result", ["growing", "held_back"])
 
 
-class Answer(namedtuple("Answer", ["probe_id", "skill", "dish", "missing_techniques", "missing_ingredients", "dishes"])):
+ANSWER_FIELDS = ["probe_id", "skill", "dish", "techniques", "ingredients", "missing_techniques", "missing_ingredients", "dishes"]
+
+
+class Answer(namedtuple("Answer", ANSWER_FIELDS)):
     """What the graph says to one probe: the words it has no thing for, and the dish files that match."""
 
     @property
@@ -72,6 +75,8 @@ def answer(probe, indexes):
         probe_id=probe["id"],
         skill=probe["written_for"],
         dish=probe["dish"],
+        techniques=list(probe["techniques"]),
+        ingredients=list(probe["ingredients"]),
         missing_techniques=missing(probe["techniques"], indexes["techniques"]),
         missing_ingredients=missing(probe["ingredients"], indexes["ingredients"]),
         dishes=sorted(dishes),
@@ -99,6 +104,21 @@ def share(answers):
 
 def shares(result):
     return {"growing": share(result.growing), "held-back": share(result.held_back)}
+
+
+def words_answered(answers):
+    """How many technique words and ingredient words the graph has a name for, and out of how many."""
+    techniques = sum(len(one.techniques) for one in answers)
+    ingredients = sum(len(one.ingredients) for one in answers)
+    return {
+        "techniques": (techniques - sum(len(one.missing_techniques) for one in answers), techniques),
+        "ingredients": (ingredients - sum(len(one.missing_ingredients) for one in answers), ingredients),
+    }
+
+
+def word_shares(result):
+    """The words answered, for each set. A count names no word, so it may be shown for the held-back set too."""
+    return {"growing": words_answered(result.growing), "held-back": words_answered(result.held_back)}
 
 
 def as_share(pair):
@@ -142,6 +162,13 @@ def report(result):
         "Dish probes that grow the graph: %s answered" % as_share(share(result.growing)),
         "Dish probes held back: %s answered. What they lack is never listed." % as_share(share(result.held_back)),
         "Growing probes whose dish is written: %d of %d" % (len(written), len(result.growing)),
+        "",
+        "Words the graph has a name for:",
+    ]
+    for name, words in word_shares(result).items():
+        counted = (name, as_share(words["techniques"]), as_share(words["ingredients"]))
+        lines.append("  %s: techniques %s, ingredients %s" % counted)
+    lines += [
         "",
         "By skill:",
     ]

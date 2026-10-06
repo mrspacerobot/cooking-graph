@@ -29,7 +29,8 @@
       "text": "Cut the aubergine, the courgettes, the peppers and the onion into even dice, each in its own pile. Leave the skin on the aubergine and the courgettes.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/dice",
@@ -37,7 +38,8 @@
       "text": "Cut the tomatoes into rough dice and keep their juice.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/saute",
@@ -45,7 +47,8 @@
       "text": "Heat a third of the oil in a wide pan over high heat. Brown the aubergine with a little of the salt, then tip it into a bowl.",
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/saute",
@@ -53,7 +56,8 @@
       "text": "Brown the courgettes in the same pan with a little more oil, and add them to the bowl.",
       "time": {"from": 5, "to": 6, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/sweat",
@@ -61,7 +65,8 @@
       "text": "Soften the onion and the peppers in the rest of the oil in a heavy pot over low heat, with a little salt, until limp and sweet.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/simmer",
@@ -72,7 +77,8 @@
       "text": "Stir in the garlic until it smells sweet. Add the tomatoes, the thyme and the bay leaf, then the browned vegetables. Simmer gently, lid ajar, until everything is soft and the juices have thickened.",
       "time": {"from": 35, "to": 45, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/season",
@@ -80,7 +86,8 @@
       "text": "Take out the thyme stalks and the bay leaf. Taste, and season with the rest of the salt and the pepper. Serve warm or at room temperature.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     }
   ]
 }

@@ -25,7 +25,8 @@
       "text": "Cut the shallot into a fine brunoise.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/chop",
@@ -33,7 +34,8 @@
       "text": "Chop the capers, the cornichons and the parsley leaves finely, each on its own.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/chop",
@@ -41,7 +43,8 @@
       "text": "Trim the beef of any sinew. With a sharp knife, cut it into thin slices, then strips, then small cubes. Keep it cold and work fast.",
       "time": null,
       "temperature": null,
-      "safety_points": ["raw-meat-or-fish"]
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
     },
     {
       "technique": "technique/toss",
@@ -53,7 +56,8 @@
       "text": "Just before serving, turn the beef with the shallot, the capers, the cornichons, the parsley, the mustard and the oil until evenly mixed. Season with the salt and the pepper, and taste.",
       "time": null,
       "temperature": null,
-      "safety_points": ["raw-meat-or-fish"]
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
     },
     {
       "technique": "technique/plate",
@@ -61,7 +65,8 @@
       "text": "Shape each portion into a thick disc on a cold plate, press a hollow into the top and set an egg yolk in it.",
       "time": null,
       "temperature": null,
-      "safety_points": ["raw-meat-or-fish", "raw-or-lightly-cooked-egg"]
+      "safety_points": ["raw-meat-or-fish", "raw-or-lightly-cooked-egg"],
+      "makes": []
     }
   ]
 }

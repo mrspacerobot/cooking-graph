@@ -94,18 +94,24 @@ def wholes_as_strict_as_parts(things):
 
 
 def steps_use_what_is_listed(things):
-    """A step works only on what the recipe lists or on the thing it is making, and everything listed is used."""
+    """A step works only on what is at hand, and everything the recipe lists is used.
+
+    At hand are the ingredients the recipe lists, the thing the recipe is
+    making, and whatever an earlier step left behind.
+    """
     issues = []
     for thing_id, thing in of_kind(things, "recipe"):
         listed = [line["thing"] for line in thing.data["ingredients"]]
+        at_hand = set(listed) | {thing.data["makes"]}
         used = set()
         for index, step in enumerate(thing.data["steps"]):
             for worked_on in step["works_on"]:
                 used.add(worked_on)
-                if worked_on not in listed and worked_on != thing.data["makes"]:
+                if worked_on not in at_hand:
                     where = "steps[%d].works_on" % index
-                    message = "'%s' is not in the ingredients of this recipe" % worked_on
+                    message = "'%s' is neither an ingredient of this recipe nor left behind by an earlier step" % worked_on
                     issues.append(Issue(thing.path, where, "step-works-on-unlisted", message))
+            at_hand.update(step["makes"])
         for index, listed_thing in enumerate(listed):
             if listed_thing not in used:
                 where = "ingredients[%d]" % index
@@ -140,6 +146,34 @@ def recipes_stay_inside_their_dish(things):
                 where = "ingredients[%d].thing" % index
                 message = "'%s' is no part of '%s', which this recipe makes" % (line["thing"], thing.data["makes"])
                 issues.append(Issue(thing.path, where, "not-in-the-dish", message))
+    return issues
+
+
+def by_products(things):
+    """The preparations with no parts of their own: what a step leaves behind, such as the fond of a seared pan."""
+    return {thing_id for thing_id, thing in of_kind(things, "preparation") if not thing.data["parts"]}
+
+
+def by_products_stay_inside_recipes(things):
+    """A by-product has no ingredients to answer for it, so it is never bought, listed or named as a part.
+
+    What a dish holds follows from its parts. A part with nothing inside
+    would be read as holding nothing, and safety never reads a gap that way.
+    """
+    left_behind = by_products(things)
+    issues = []
+    for kind in ("dish", "preparation"):
+        for thing_id, thing in of_kind(things, kind):
+            for index, part in enumerate(thing.data["parts"]):
+                for option in part["options"]:
+                    if option in left_behind:
+                        message = "'%s' has no parts of its own, so it cannot be a part here" % option
+                        issues.append(Issue(thing.path, "parts[%d]" % index, "by-product-as-part", message))
+    for thing_id, thing in of_kind(things, "recipe"):
+        for index, line in enumerate(thing.data["ingredients"]):
+            if line["thing"] in left_behind:
+                message = "'%s' is what a step leaves behind, not something a recipe starts from" % line["thing"]
+                issues.append(Issue(thing.path, "ingredients[%d]" % index, "by-product-as-ingredient", message))
     return issues
 
 
@@ -344,6 +378,7 @@ EVERY_RULE = [
     wholes_as_strict_as_parts,
     steps_use_what_is_listed,
     recipes_stay_inside_their_dish,
+    by_products_stay_inside_recipes,
     names_once_per_kind,
     no_loops,
     programs_hold_together,

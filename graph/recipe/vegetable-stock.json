@@ -29,7 +29,8 @@
       "text": "Sweat all the vegetables in the oil over low heat until soft and fragrant, without colour.",
       "time": {"value": 10, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/simmer",
@@ -37,7 +38,8 @@
       "text": "Add the cold water, the bouquet garni and the pepper. Bring to a simmer and cook gently, uncovered. A vegetable stock gives all it has quickly, and turns dull if it cooks much longer.",
       "time": {"from": 40, "to": 45, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/strain",
@@ -45,7 +47,8 @@
       "text": "Ladle the stock through a fine sieve and let the vegetables drain without pressing on them.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/chill",
@@ -53,7 +56,8 @@
       "text": "Use it at once, or cool it quickly in a bowl set in iced water and keep it in the fridge.",
       "time": null,
       "temperature": null,
-      "safety_points": ["cooling-and-keeping"]
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
     }
   ]
 }

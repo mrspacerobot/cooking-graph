@@ -23,7 +23,8 @@
       "text": "Butter the ramekins. Put a spoonful of crème fraîche in each, crack an egg on top and season. Stand them in a deep tin and pour in hot water to come half way up their sides.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/bake-in-a-water-bath",
@@ -31,7 +32,8 @@
       "text": "Bake until the white is just set and the yolk still trembles.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": {"value": 180, "unit": "celsius"},
-      "safety_points": ["raw-or-lightly-cooked-egg"]
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
     },
     {
       "technique": "technique/plate",
@@ -39,7 +41,8 @@
       "text": "Lift the ramekins out of the water, scatter with the chives and serve at once.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     }
   ]
 }

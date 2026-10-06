@@ -90,6 +90,12 @@ What counts as a change: a change to `schema/model.json`, which is the model as 
 - **What did not fit:** no text may claim food is cooked through or safe to eat, and no safe temperature or time may be given. But a recipe that says nothing at the point where it matters is worse. The model had no way to say "a verified fact belongs here".
 - **Now:** a step has `safety_points`, from a closed list: `doneness`, `raw-meat-or-fish`, `raw-or-lightly-cooked-egg`, `cooling-and-keeping`. A point claims nothing. It marks the place where an export must put a fact a person has verified, and a recipe with an open point cannot be exported.
 
+### 15. A step says what it leaves behind (round 2)
+
+- **Example:** steak au poivre. Searing leaves a fond on the pan, and the next step deglazes it. Round 1 had met the same thing twice already: the broth of the pot-au-feu and the bacon fat of the salade lyonnaise.
+- **What did not fit:** a step could work only on what the recipe lists. A fond is not bought and has no amount. Yet it is the thing a pan sauce is made of, and "deglazing works on the fond" is the centre of that skill.
+- **Now:** a step has `makes`: the preparations it leaves behind. A later step may work on them. Such a by-product (fond, pan sauce, broth, rendered fat) is a preparation with no parts of its own. Because it has no ingredients to answer for it, the check refuses it as an ingredient of a recipe and as a part of a dish or of another preparation: what a dish holds must always be found by following parts down to ingredients.
+
 ## Decisions where the starting model was silent
 
 These are not changes. The starting model names kinds and statements, not files, so the first files had to settle them.

@@ -24,7 +24,8 @@
       "text": "Wash the sliced leeks well and drain them. Sweat them in the butter with a little of the salt over low heat, covered, until soft. They must not colour.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/simmer",
@@ -32,7 +33,8 @@
       "text": "Add the potatoes and most of the stock. Bring to a simmer and cook until a piece of potato crushes easily against the side of the pan.",
       "time": {"from": 20, "to": 25, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/puree",
@@ -40,7 +42,8 @@
       "text": "Blend the soup in short bursts, in batches, only until it is smooth, and pass it through a fine sieve. Long blending turns potato to glue.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/chill",
@@ -48,7 +51,8 @@
       "text": "Stir in the cream. Cool the soup quickly in a bowl set in iced water, then chill it until really cold.",
       "time": {"value": 3, "unit": "hour"},
       "temperature": null,
-      "safety_points": ["cooling-and-keeping"]
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
     },
     {
       "technique": "technique/season",
@@ -56,7 +60,8 @@
       "text": "Taste it cold and add the rest of the salt: cold dulls seasoning. Thin it with the cold stock you kept back if it has set too thick.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/plate",
@@ -64,7 +69,8 @@
       "text": "Ladle into chilled bowls and scatter with the chives.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     }
   ]
 }

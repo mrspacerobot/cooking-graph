@@ -19,7 +19,8 @@
       "text": "Bring the stock to a simmer.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/season",
@@ -27,7 +28,8 @@
       "text": "Season it now: a homemade stock has no salt in it. Add the salt in stages and taste until the broth tastes full.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/simmer",
@@ -35,7 +37,8 @@
       "text": "Scatter in the vermicelli, stir once so that they do not clump, and simmer until just tender.",
       "time": {"from": 2, "to": 3, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/plate",
@@ -43,7 +46,8 @@
       "text": "Ladle into warm bowls at once, before the vermicelli swell, and scatter with the parsley.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     }
   ]
 }

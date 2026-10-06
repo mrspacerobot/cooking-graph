@@ -217,7 +217,8 @@
               "text": {"is": "text"},
               "time": {"is": "quantity", "units": "time_units", "or_null": true},
               "temperature": {"is": "quantity", "units": "temperature_units", "or_null": true},
-              "safety_points": {"is": "list", "of": {"is": "word", "from": "safety_points"}}
+              "safety_points": {"is": "list", "of": {"is": "word", "from": "safety_points"}},
+              "makes": {"is": "list", "of": {"is": "ref", "kinds": ["preparation"]}}
             }
           }
         }

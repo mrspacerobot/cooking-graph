@@ -18,7 +18,8 @@
       "text": "Bring a pan of water to a gentle boil. Lower in the eggs, straight from the fridge, and boil them gently until the yolks are firm.",
       "time": {"from": 9, "to": 10, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/refresh",
@@ -26,7 +27,8 @@
       "text": "Lift the eggs into cold water and leave them until cold.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/peel",
@@ -34,7 +36,8 @@
       "text": "Crack the shells all over and peel the eggs under a thin stream of water.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/plate",
@@ -42,7 +45,8 @@
       "text": "Halve the eggs lengthwise and lay them cut side down. Spoon mayonnaise over each half until it is coated, and scatter with the chives.",
       "time": null,
       "temperature": null,
-      "safety_points": ["raw-or-lightly-cooked-egg"]
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
     }
   ]
 }

@@ -175,7 +175,8 @@ def line(thing_id, value, unit, *forms):
     return {"thing": full(thing_id), "amount": amount(value, unit), "forms": all_full(forms)}
 
 
-def step(technique_id, works_on, text, time=None, temperature=None, safety=()):
+def step(technique_id, works_on, text, time=None, temperature=None, safety=(), makes=()):
+    """One step of a recipe. `makes` names what the step leaves behind for a later step to work on."""
     return {
         "technique": full(technique_id),
         "works_on": all_full(works_on),
@@ -183,6 +184,7 @@ def step(technique_id, works_on, text, time=None, temperature=None, safety=()):
         "time": time,
         "temperature": temperature,
         "safety_points": list(safety),
+        "makes": all_full(makes),
     }
 
 

@@ -21,6 +21,7 @@ FRENCH = "graph/cuisine/french.json"
 DISH = "graph/dish/buttered-onions.json"
 RECIPE = "graph/recipe/buttered-onions.json"
 ROUX = "graph/preparation/roux.json"
+JUICES = "preparation/onion-juices"
 PROGRAM = "graph/program/small-program.json"
 PROBE = "probes/dish-probe/creamed-onions.json"
 EM_DASH = chr(0x2014)  # written as a number so that this file holds none
@@ -330,6 +331,39 @@ class Recipes(CheckerTest):
 
         self.break_file(RECIPE, make_the_roux)
         self.assertEqual([], self.issues())
+
+    def second_step_on_the_juices(self, thing, first_step_makes):
+        thing["steps"][0]["makes"] = first_step_makes
+        thing["steps"].append(dict(thing["steps"][0], works_on=[JUICES], makes=[]))
+
+    def test_a_step_may_work_on_what_an_earlier_step_left_behind(self):
+        self.break_file(RECIPE, lambda thing: self.second_step_on_the_juices(thing, [JUICES]))
+        self.assertEqual([], self.issues())
+
+    def test_a_step_that_works_on_what_no_step_left_behind(self):
+        self.break_file(RECIPE, lambda thing: self.second_step_on_the_juices(thing, []))
+        self.expect(RECIPE, "step-works-on-unlisted")
+
+    def test_a_step_that_works_on_what_a_later_step_makes(self):
+        def too_early(thing):
+            thing["steps"][0]["works_on"].append(JUICES)
+            thing["steps"].append(dict(thing["steps"][0], works_on=["ingredient/onion"], makes=[JUICES]))
+
+        self.break_file(RECIPE, too_early)
+        self.expect(RECIPE, "step-works-on-unlisted")
+
+    def test_a_by_product_listed_as_an_ingredient(self):
+        def list_the_juices(thing):
+            thing["ingredients"].append({"thing": JUICES, "amount": {"value": 1, "unit": "tablespoon"}, "forms": []})
+            thing["steps"][0]["works_on"].append(JUICES)
+
+        self.break_file(RECIPE, list_the_juices)
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((RECIPE, "by-product-as-ingredient"), found)
+
+    def test_a_by_product_named_as_a_part_of_a_dish(self):
+        self.break_file(DISH, lambda thing: thing["parts"].append({"role": "liquid", "options": [JUICES], "tier": DRAFTED}))
+        self.expect(DISH, "by-product-as-part")
 
     def test_an_ingredient_no_step_uses(self):
         def forget_the_butter(thing):

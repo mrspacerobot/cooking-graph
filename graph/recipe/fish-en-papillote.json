@@ -25,7 +25,8 @@
       "text": "Cut the white of the leek and the carrot into fine julienne. Wash the leek strips and drain them.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/sweat",
@@ -33,7 +34,8 @@
       "text": "Soften the julienne in half the butter with a little of the salt over low heat, without colour.",
       "time": {"from": 5, "to": 6, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/bake-in-parchment",
@@ -44,7 +46,8 @@
       "text": "Fold a large sheet of paper for each person. Lay the julienne on one side of the fold and a piece of fish on top. Season, dot with the rest of the butter and add the wine. Seal the parcels tightly and bake them on a tray until they puff up.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": {"value": 200, "unit": "celsius"},
-      "safety_points": ["doneness"]
+      "safety_points": ["doneness"],
+      "makes": []
     },
     {
       "technique": "technique/plate",
@@ -52,7 +55,8 @@
       "text": "Carry the parcels to the table on warm plates and cut them open there.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     }
   ]
 }

@@ -91,6 +91,16 @@ def preparation():
     return thing
 
 
+def by_product():
+    """A preparation with no parts of its own: it is whatever a step leaves behind."""
+    thing = head("preparation/onion-juices", "Onion juices")
+    thing["is"] = "The sweet liquid onions leave in the pan."
+    thing["parts"] = []
+    thing["teaches"] = []
+    thing["belongs_to"] = []
+    return thing
+
+
 def recipe():
     thing = head("recipe/buttered-onions", "Buttered onions")
     thing["makes"] = "dish/buttered-onions"
@@ -108,6 +118,7 @@ def recipe():
             "time": {"from": 8, "to": 10, "unit": "minute"},
             "temperature": None,
             "safety_points": ["cooling-and-keeping"],
+            "makes": [],
         }
     ]
     return thing
@@ -183,6 +194,7 @@ def graph_files():
         technique("sweat", "Sweat"),
         mince,
         preparation(),
+        by_product(),
         dish(),
         recipe(),
         program(),

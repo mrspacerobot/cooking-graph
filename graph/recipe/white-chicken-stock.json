@@ -29,7 +29,8 @@
       "text": "Cover the carcasses with cold water, bring it just to a boil, then drain them and rinse off the scum under cold water.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/skim",
@@ -37,7 +38,8 @@
       "text": "Put the bones back in the clean pot with the measured cold water. Bring it up slowly and skim off the foam as it rises.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/simmer",
@@ -48,7 +50,8 @@
       "text": "Add the vegetables, the bouquet garni and the pepper. Simmer very gently, uncovered, skimming now and then. It must never boil, and it is not salted.",
       "time": {"from": 2.5, "to": 3, "unit": "hour"},
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/strain",
@@ -56,7 +59,8 @@
       "text": "Ladle the stock through a fine sieve without pressing on the bones, and leave the cloudy dregs in the pot.",
       "time": null,
       "temperature": null,
-      "safety_points": []
+      "safety_points": [],
+      "makes": []
     },
     {
       "technique": "technique/chill",
@@ -64,7 +68,8 @@
       "text": "Cool it quickly in shallow containers set in iced water, then keep it in the fridge. Lift off the fat once it has set on top.",
       "time": null,
       "temperature": null,
-      "safety_points": ["cooling-and-keeping"]
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
     }
   ]
 }

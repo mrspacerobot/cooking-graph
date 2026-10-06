@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/chicken-carcass",
+  "tier": "drafted",
+  "names": {"en": "Chicken carcass", "fr": "Carcasse de poulet"},
+  "aliases": {"en": ["chicken bones", "chicken frame"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "The bones and scraps of a bird, which give a stock its flavour and its gelatine.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product",
+      "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/bell-pepper",
+  "tier": "drafted",
+  "names": {"en": "Bell pepper", "fr": "Poivron"},
+  "aliases": {"en": ["sweet pepper", "capsicum"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Softens and sweetens slowly, and its skin loosens when it is blistered.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

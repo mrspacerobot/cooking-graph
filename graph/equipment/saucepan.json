@@ -1,0 +1,7 @@
+{
+  "id": "equipment/saucepan",
+  "tier": "drafted",
+  "names": {"en": "Saucepan", "fr": "Casserole"},
+  "aliases": {},
+  "use": "A deep pan with a handle, for liquids, sauces and small amounts of boiling."
+}

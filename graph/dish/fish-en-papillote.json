@@ -1,0 +1,23 @@
+{
+  "id": "dish/fish-en-papillote",
+  "tier": "drafted",
+  "names": {"en": "Fish en papillote", "fr": "Poisson en papillote"},
+  "aliases": {"en": ["fish baked in parchment", "fish in a parcel"]},
+  "is": "A fillet of white fish sealed in a paper parcel on a bed of julienned leek and carrot, and steamed in the oven with butter and a splash of white wine.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/white-fish"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/leek"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/julienne", "tier": "drafted"},
+    {"thing": "technique/bake-in-parchment", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

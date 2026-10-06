@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/saffron",
+  "tier": "drafted",
+  "names": {"en": "Saffron", "fr": "Safran"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Colours a liquid gold and gives a honeyed, slightly bitter scent. It needs warm liquid and time to open up.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "technique/make-a-roux",
+  "tier": "drafted",
+  "names": {"en": "Make a roux", "fr": "Faire un roux"},
+  "aliases": {"en": ["cook a roux", "cook flour in butter"]},
+  "does": "Cooks flour in melted butter to a paste that thickens a liquid without lumps or a raw taste.",
+  "how": [
+    "Melt the butter over medium-low heat until it foams.",
+    "Tip in an equal weight of flour, all at once, and stir until smooth.",
+    "Keep stirring as the paste bubbles, until the raw smell of flour is gone.",
+    "Go on to the colour the sauce needs: pale for a white sauce, sandy for a blond one, nut-brown for a brown one.",
+    "Add the liquid cold to a hot roux, or hot to a cold one, a little at a time, whisking each addition smooth."
+  ],
+  "cues": [
+    {
+      "sense": "smell",
+      "text": "The smell changes from raw flour to biscuit, then to toasted nuts as it darkens."
+    },
+    {
+      "sense": "see",
+      "text": "A smooth paste that froths like wet sand and pulls away from the pan."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the liquid before the flour has cooked, which leaves a pasty taste that no simmering removes.",
+      "fix": "Give the roux time, until it smells of biscuit."
+    },
+    {
+      "mistake": "Pouring in all the liquid at once, which makes lumps.",
+      "fix": "Add it in stages and whisk each one smooth. A lumpy sauce can be rescued through a sieve."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/butter", "tier": "drafted"},
+    {"thing": "ingredient/flour", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/roux", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/whisk"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

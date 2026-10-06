@@ -1,0 +1,26 @@
+{
+  "id": "preparation/vegetable-stock",
+  "tier": "drafted",
+  "names": {"en": "Vegetable stock", "fr": "Bouillon de légumes"},
+  "aliases": {"en": ["homemade vegetable stock"]},
+  "is": "A light, clear stock made by simmering sweated vegetables and herbs in water, then straining them out.",
+  "parts": [
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/celery"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/leek"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/mushroom"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil", "ingredient/butter"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/strain", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

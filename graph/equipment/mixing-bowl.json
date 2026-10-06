@@ -1,0 +1,7 @@
+{
+  "id": "equipment/mixing-bowl",
+  "tier": "drafted",
+  "names": {"en": "Mixing bowl", "fr": "Cul-de-poule"},
+  "aliases": {"en": ["bowl"]},
+  "use": "Holds food while it is whisked, tossed or folded."
+}

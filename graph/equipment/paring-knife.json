@@ -1,0 +1,7 @@
+{
+  "id": "equipment/paring-knife",
+  "tier": "drafted",
+  "names": {"en": "Paring knife", "fr": "Couteau d'office"},
+  "aliases": {},
+  "use": "Peels, trims and shapes small things held in the hand."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "equipment/grill",
+  "tier": "drafted",
+  "names": {"en": "Grill", "fr": "Gril du four"},
+  "aliases": {"en": ["broiler", "oven grill", "salamander"]},
+  "use": "Browns the top of a dish with fierce heat from above."
+}

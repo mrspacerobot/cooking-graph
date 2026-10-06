@@ -1,0 +1,39 @@
+{
+  "id": "technique/grate",
+  "tier": "drafted",
+  "names": {"en": "Grate", "fr": "Râper"},
+  "aliases": {"en": ["shred"]},
+  "does": "Rubs firm food against a rough surface to turn it into fine shreds.",
+  "how": [
+    "Chill a soft cheese first, so that it shreds and does not smear.",
+    "Hold the grater steady on the board or over a bowl.",
+    "Push the food down the grater in long strokes with the flat of your hand.",
+    "Stop while there is still enough left to hold."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Loose, separate shreds that do not clump."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Grating the last small piece and catching a knuckle.",
+      "fix": "Stop early and chop the end with a knife."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/gruyere", "tier": "drafted"},
+    {"thing": "ingredient/parmesan", "tier": "drafted"},
+    {"thing": "ingredient/vegetarian-hard-cheese", "tier": "drafted"},
+    {"thing": "ingredient/carrot", "tier": "drafted"},
+    {"thing": "ingredient/celeriac", "tier": "drafted"},
+    {"thing": "ingredient/nutmeg", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/grated", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/grater"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

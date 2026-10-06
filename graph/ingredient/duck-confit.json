@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/duck-confit",
+  "tier": "drafted",
+  "names": {"en": "Duck confit", "fr": "Confit de canard"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Duck cooked and kept in its own fat. The flesh is soft and salty, and the skin crisps fast in a hot pan.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product",
+      "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

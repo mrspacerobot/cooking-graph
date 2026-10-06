@@ -1,0 +1,31 @@
+{
+  "id": "dish/ratatouille",
+  "tier": "drafted",
+  "names": {"en": "Ratatouille", "fr": "Ratatouille"},
+  "aliases": {"en": ["ratatouille niçoise"]},
+  "is": "A stew of aubergine, courgette, peppers, onion and tomato, each softened in olive oil before they are simmered together with garlic and herbs.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/aubergine"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/courgette"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/bell-pepper"], "tier": "drafted"},
+    {
+      "role": "main",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
+      "tier": "drafted"
+    },
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/thyme"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/bay-leaf"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/dice", "tier": "drafted"},
+    {"thing": "technique/saute", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/provencal", "tier": "drafted"}
+  ]
+}

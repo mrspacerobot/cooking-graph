@@ -1,0 +1,22 @@
+{
+  "id": "dish/macedoine-de-legumes",
+  "tier": "drafted",
+  "names": {"en": "Macédoine de légumes", "fr": "Macédoine de légumes"},
+  "aliases": {"en": ["vegetable macedoine", "macedoine of vegetables"]},
+  "is": "Carrot, turnip, green beans and peas, cut to the size of a pea, boiled until just tender and bound cold with mayonnaise.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/turnip"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/green-beans"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/peas"], "tier": "drafted"},
+    {"role": "sauce", "options": ["preparation/mayonnaise"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/dice", "tier": "drafted"},
+    {"thing": "technique/boil", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

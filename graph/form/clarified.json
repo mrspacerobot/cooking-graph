@@ -1,0 +1,8 @@
+{
+  "id": "form/clarified",
+  "tier": "drafted",
+  "names": {"en": "Clarified", "fr": "Clarifié"},
+  "aliases": {},
+  "looks_like": "Clear enough to see the bottom of the ladle through it.",
+  "size": []
+}

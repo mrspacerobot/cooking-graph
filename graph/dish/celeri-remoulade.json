@@ -1,0 +1,20 @@
+{
+  "id": "dish/celeri-remoulade",
+  "tier": "drafted",
+  "names": {"en": "Céleri rémoulade", "fr": "Céleri rémoulade"},
+  "aliases": {"en": ["celeriac remoulade", "celery root remoulade"]},
+  "is": "Raw celeriac cut into fine strips and bound with a mustardy mayonnaise sharpened with lemon.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/celeriac"], "tier": "drafted"},
+    {"role": "sauce", "options": ["preparation/mayonnaise"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/julienne", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

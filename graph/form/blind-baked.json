@@ -1,0 +1,8 @@
+{
+  "id": "form/blind-baked",
+  "tier": "drafted",
+  "names": {"en": "Blind-baked", "fr": "Cuit à blanc"},
+  "aliases": {"en": ["pre-baked"]},
+  "looks_like": "A pastry case baked empty: dry, matt and pale gold.",
+  "size": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/turnip",
+  "tier": "drafted",
+  "names": {"en": "Turnip", "fr": "Navet"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Peppery when raw, mild and slightly sweet once cooked, and quick to turn watery if overcooked.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

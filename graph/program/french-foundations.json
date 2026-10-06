@@ -16,9 +16,38 @@
           "names": {"en": "Knife cuts"},
           "comes_after": [],
           "levels": [
-            {"number": 1, "names": {"en": "Mirepoix"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "Brunoise"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Julienne"}, "teaches": [], "through": []}
+            {
+              "number": 1,
+              "names": {"en": "Mirepoix"},
+              "teaches": [
+                {"thing": "technique/dice", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/mirepoix", "tier": "drafted"},
+                {"thing": "dish/ratatouille", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Brunoise"},
+              "teaches": [
+                {"thing": "technique/brunoise", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/steak-tartare", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Julienne"},
+              "teaches": [
+                {"thing": "technique/julienne", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/celeri-remoulade", "tier": "drafted"},
+                {"thing": "dish/fish-en-papillote", "tier": "drafted"}
+              ]
+            }
           ]
         },
         {
@@ -26,12 +55,32 @@
           "names": {"en": "Eggs"},
           "comes_after": [],
           "levels": [
-            {"number": 1, "names": {"en": "Soft scramble"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "Poached egg"}, "teaches": [], "through": []},
+            {
+              "number": 1,
+              "names": {"en": "Soft scramble"},
+              "teaches": [
+                {"thing": "technique/scramble", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/soft-scrambled-eggs", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Poached egg"},
+              "teaches": [
+                {"thing": "technique/poach", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/salade-lyonnaise", "tier": "drafted"}
+              ]
+            },
             {
               "number": 3,
               "names": {"en": "Rolled omelette"},
-              "teaches": [],
+              "teaches": [
+                {"thing": "technique/roll-an-omelette", "tier": "drafted"}
+              ],
               "through": [
                 {"thing": "dish/spinach-and-cheese-omelette", "tier": "drafted"}
               ]
@@ -45,9 +94,42 @@
             {"skill": "knife-cuts", "tier": "drafted"}
           ],
           "levels": [
-            {"number": 1, "names": {"en": "Vegetable stock"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "White chicken stock"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Brown stock"}, "teaches": [], "through": []}
+            {
+              "number": 1,
+              "names": {"en": "Vegetable stock"},
+              "teaches": [
+                {"thing": "technique/sweat", "tier": "drafted"},
+                {"thing": "technique/simmer", "tier": "drafted"},
+                {"thing": "technique/strain", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/vegetable-stock", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "White chicken stock"},
+              "teaches": [
+                {"thing": "technique/skim", "tier": "drafted"},
+                {"thing": "technique/simmer", "tier": "drafted"},
+                {"thing": "technique/strain", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/white-chicken-stock", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Brown stock"},
+              "teaches": [
+                {"thing": "technique/skim", "tier": "drafted"},
+                {"thing": "technique/simmer", "tier": "drafted"},
+                {"thing": "technique/strain", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/brown-stock", "tier": "drafted"}
+              ]
+            }
           ]
         }
       ]

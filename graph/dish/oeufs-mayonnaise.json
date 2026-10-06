@@ -1,0 +1,18 @@
+{
+  "id": "dish/oeufs-mayonnaise",
+  "tier": "drafted",
+  "names": {"en": "Œufs mayonnaise", "fr": "Œufs mayonnaise"},
+  "aliases": {"en": ["egg mayonnaise", "eggs mayonnaise"], "fr": ["œufs mayo"]},
+  "is": "Hard-boiled eggs, halved and coated with mayonnaise, the plainest starter of the French bistro.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/egg"], "tier": "drafted"},
+    {"role": "sauce", "options": ["preparation/mayonnaise"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/chives", "ingredient/parsley"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/boil-an-egg", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

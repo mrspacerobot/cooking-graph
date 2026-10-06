@@ -1,0 +1,7 @@
+{
+  "id": "equipment/baking-beans",
+  "tier": "drafted",
+  "names": {"en": "Baking beans", "fr": "Billes de cuisson"},
+  "aliases": {"en": ["pie weights", "baking weights"]},
+  "use": "Weigh pastry down so that it keeps its shape while it bakes empty."
+}

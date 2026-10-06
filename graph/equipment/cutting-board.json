@@ -1,0 +1,7 @@
+{
+  "id": "equipment/cutting-board",
+  "tier": "drafted",
+  "names": {"en": "Cutting board", "fr": "Planche à découper"},
+  "aliases": {"en": ["chopping board"]},
+  "use": "Gives the knife a flat, steady surface that does not blunt it."
+}

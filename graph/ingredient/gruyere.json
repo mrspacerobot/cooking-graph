@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/gruyere",
+  "tier": "drafted",
+  "names": {"en": "Gruyère", "fr": "Gruyère"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A firm, nutty cheese that melts smoothly and browns to a golden crust.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/dairy", "fact/slaughter-product"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    ],
+    "note": "Made with animal rennet, which is taken from the stomach of a calf."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

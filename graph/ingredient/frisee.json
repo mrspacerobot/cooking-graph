@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/frisee",
+  "tier": "drafted",
+  "names": {"en": "Frisée", "fr": "Frisée"},
+  "aliases": {"en": ["curly endive"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A bitter, frilly leaf, sturdy enough to stand a warm dressing without wilting at once.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

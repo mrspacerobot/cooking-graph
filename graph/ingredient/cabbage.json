@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/cabbage",
+  "tier": "drafted",
+  "names": {"en": "Cabbage", "fr": "Chou"},
+  "aliases": {"en": ["green cabbage", "savoy cabbage"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Softens and sweetens with long simmering, and gives a strong smell if it is boiled hard for long.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

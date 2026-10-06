@@ -1,0 +1,7 @@
+{
+  "id": "equipment/non-stick-pan",
+  "tier": "drafted",
+  "names": {"en": "Non-stick pan", "fr": "Poêle antiadhésive"},
+  "aliases": {"en": ["non-stick frying pan"]},
+  "use": "A frying pan with a coating that eggs do not stick to."
+}

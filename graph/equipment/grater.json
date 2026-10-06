@@ -1,0 +1,7 @@
+{
+  "id": "equipment/grater",
+  "tier": "drafted",
+  "names": {"en": "Grater", "fr": "Râpe"},
+  "aliases": {},
+  "use": "Shreds firm food into fine or coarse strands."
+}

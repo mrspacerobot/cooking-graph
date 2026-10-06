@@ -318,6 +318,19 @@ class Recipes(CheckerTest):
         self.break_file(RECIPE, add_flour)
         self.expect(RECIPE, "step-works-on-unlisted")
 
+    def test_a_step_may_work_on_what_the_recipe_makes(self):
+        def make_the_roux(thing):
+            thing["makes"] = "preparation/roux"
+            thing["ingredients"] = [
+                {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": []},
+                {"thing": "ingredient/flour", "amount": {"value": 20, "unit": "gram"}, "forms": []},
+            ]
+            thing["steps"][0]["works_on"] = ["ingredient/butter", "ingredient/flour"]
+            thing["steps"].append(dict(thing["steps"][0], works_on=["preparation/roux"]))
+
+        self.break_file(RECIPE, make_the_roux)
+        self.assertEqual([], self.issues())
+
     def test_an_ingredient_no_step_uses(self):
         def forget_the_butter(thing):
             thing["steps"][0]["works_on"] = ["ingredient/onion"]

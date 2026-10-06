@@ -1,0 +1,7 @@
+{
+  "id": "equipment/tart-tin",
+  "tier": "drafted",
+  "names": {"en": "Tart tin", "fr": "Moule à tarte"},
+  "aliases": {"en": ["tart pan", "flan tin"]},
+  "use": "A shallow tin, often with a loose base, that shapes a pastry case."
+}

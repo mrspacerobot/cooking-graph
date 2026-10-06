@@ -1,0 +1,8 @@
+{
+  "id": "form/sweated",
+  "tier": "drafted",
+  "names": {"en": "Sweated", "fr": "Sué"},
+  "aliases": {"en": ["softened", "translucent"]},
+  "looks_like": "Soft, limp and glassy, with no brown anywhere.",
+  "size": []
+}

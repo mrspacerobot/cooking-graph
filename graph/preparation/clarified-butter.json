@@ -1,0 +1,14 @@
+{
+  "id": "preparation/clarified-butter",
+  "tier": "drafted",
+  "names": {"en": "Clarified butter", "fr": "Beurre clarifié"},
+  "aliases": {},
+  "is": "Butter with its water and milk solids taken out. What is left is pure fat, which stands much more heat before it burns.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/butter"], "tier": "drafted"}
+  ],
+  "teaches": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

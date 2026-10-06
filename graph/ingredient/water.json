@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/water",
+  "tier": "drafted",
+  "names": {"en": "Water", "fr": "Eau"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Carries heat and dissolves flavour, and adds none of its own.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

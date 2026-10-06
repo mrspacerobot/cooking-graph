@@ -1,0 +1,39 @@
+{
+  "id": "technique/strain",
+  "tier": "drafted",
+  "names": {"en": "Strain", "fr": "Passer"},
+  "aliases": {
+    "en": ["sieve", "pass through a sieve", "strain through a sieve"],
+    "fr": ["passer au chinois"]
+  },
+  "does": "Pours a liquid through a sieve, so that the solids stay behind and the liquid comes out clear.",
+  "how": [
+    "Set a fine sieve over a pot or a bowl large enough for all the liquid.",
+    "Ladle the liquid in, a little at a time at first.",
+    "Let it drain by its own weight. For a clear stock, do not press on the solids.",
+    "For a soup or a sauce that should be thick, press the solids through with the back of a ladle."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A clear stock shows the bottom of the ladle through it."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Tipping a full stockpot over the sieve in one go, which stirs up the sediment and clouds the stock.",
+      "fix": "Ladle from the top and leave the last cloudy part in the pot."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/stock", "tier": "drafted"},
+    {"thing": "preparation/white-chicken-stock", "tier": "drafted"},
+    {"thing": "preparation/vegetable-stock", "tier": "drafted"},
+    {"thing": "preparation/brown-stock", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/fine-sieve"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/ladle"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

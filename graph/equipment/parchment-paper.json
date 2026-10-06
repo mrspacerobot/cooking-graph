@@ -1,0 +1,7 @@
+{
+  "id": "equipment/parchment-paper",
+  "tier": "drafted",
+  "names": {"en": "Parchment paper", "fr": "Papier sulfurisé"},
+  "aliases": {"en": ["baking paper", "baking parchment"]},
+  "use": "Paper that neither sticks nor burns in the oven, for lining trays and wrapping food."
+}

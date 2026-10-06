@@ -1,0 +1,79 @@
+{
+  "id": "recipe/steak-tartare",
+  "tier": "drafted",
+  "names": {"en": "Steak tartare"},
+  "aliases": {},
+  "makes": "dish/steak-tartare",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/beef-fillet",
+      "amount": {"value": 300, "unit": "gram"},
+      "forms": ["form/cold"]
+    },
+    {
+      "thing": "ingredient/shallot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled"]
+    },
+    {"thing": "ingredient/capers", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/cornichons", "amount": {"value": 4, "unit": "piece"}, "forms": []},
+    {"thing": "ingredient/parsley", "amount": {"value": 4, "unit": "sprig"}, "forms": []},
+    {"thing": "ingredient/dijon-mustard", "amount": {"value": 2, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/egg-yolk", "amount": {"value": 2, "unit": "piece"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": []
+    }
+  ],
+  "equipment": ["equipment/mixing-bowl", "equipment/chefs-knife", "equipment/cutting-board"],
+  "steps": [
+    {
+      "technique": "technique/brunoise",
+      "works_on": ["ingredient/shallot"],
+      "text": "Cut the shallot into a fine brunoise.",
+      "time": null,
+      "temperature": null,
+      "safety_points": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/capers", "ingredient/cornichons", "ingredient/parsley"],
+      "text": "Chop the capers, the cornichons and the parsley leaves finely, each on its own.",
+      "time": null,
+      "temperature": null,
+      "safety_points": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/beef-fillet"],
+      "text": "Trim the beef of any sinew. With a sharp knife, cut it into thin slices, then strips, then small cubes. Keep it cold and work fast.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"]
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": [
+        "ingredient/beef-fillet", "ingredient/shallot", "ingredient/capers",
+        "ingredient/cornichons", "ingredient/parsley", "ingredient/dijon-mustard",
+        "ingredient/olive-oil", "ingredient/salt", "ingredient/black-pepper"
+      ],
+      "text": "Just before serving, turn the beef with the shallot, the capers, the cornichons, the parsley, the mustard and the oil until evenly mixed. Season with the salt and the pepper, and taste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"]
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/beef-fillet", "ingredient/egg-yolk"],
+      "text": "Shape each portion into a thick disc on a cold plate, press a hollow into the top and set an egg yolk in it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish", "raw-or-lightly-cooked-egg"]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "preparation/brown-stock",
+  "tier": "drafted",
+  "names": {"en": "Brown stock", "fr": "Fond brun"},
+  "aliases": {"en": ["brown veal stock", "brown beef stock"]},
+  "is": "A dark, full-bodied stock made from bones and vegetables that are roasted until deeply browned before they are simmered.",
+  "parts": [
+    {
+      "role": "main",
+      "options": ["ingredient/veal-bones", "ingredient/beef-bones"],
+      "tier": "drafted"
+    },
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/celery"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/tomato-paste"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/skim", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/strain", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "technique/bake-in-a-water-bath",
+  "tier": "drafted",
+  "names": {"en": "Bake in a water bath", "fr": "Cuire au bain-marie"},
+  "aliases": {"en": ["bain-marie", "cook in a water bath", "water bath"]},
+  "does": "Bakes a delicate mixture in a dish that stands in hot water, so that it sets softly and evenly.",
+  "how": [
+    "Stand the filled dishes in a deep tin.",
+    "Pour hot water into the tin until it comes about half way up their sides.",
+    "Bake until the mixture is just set at the edges and still trembles in the middle.",
+    "Lift the dishes out of the water at once."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The edges are set and the middle wobbles like jelly when the dish is nudged."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Baking until the middle is firm, by which time the edges are rubbery and full of holes.",
+      "fix": "Take it out while it still wobbles. It goes on setting."
+    },
+    {
+      "mistake": "Starting with cold water, which slows everything down and gives an uneven result.",
+      "fix": "Fill the tin with hot water from the kettle."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/cream", "tier": "drafted"},
+    {"thing": "ingredient/creme-fraiche", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/ramekin"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/roasting-tin"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/bake",
+      "differs": "The dish stands in hot water, which shields it from the full heat of the oven, so that eggs and custards set gently.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

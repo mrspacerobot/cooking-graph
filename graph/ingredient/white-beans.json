@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/white-beans",
+  "tier": "drafted",
+  "names": {"en": "White beans", "fr": "Haricots blancs"},
+  "aliases": {"en": ["haricot beans", "cannellini beans"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Turn creamy with long, gentle simmering. Salt and acid added early keep their skins firm.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

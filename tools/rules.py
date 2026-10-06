@@ -94,7 +94,7 @@ def wholes_as_strict_as_parts(things):
 
 
 def steps_use_what_is_listed(things):
-    """A step works only on what the recipe lists, and everything listed is used by a step."""
+    """A step works only on what the recipe lists or on the thing it is making, and everything listed is used."""
     issues = []
     for thing_id, thing in of_kind(things, "recipe"):
         listed = [line["thing"] for line in thing.data["ingredients"]]
@@ -102,7 +102,7 @@ def steps_use_what_is_listed(things):
         for index, step in enumerate(thing.data["steps"]):
             for worked_on in step["works_on"]:
                 used.add(worked_on)
-                if worked_on not in listed:
+                if worked_on not in listed and worked_on != thing.data["makes"]:
                     where = "steps[%d].works_on" % index
                     message = "'%s' is not in the ingredients of this recipe" % worked_on
                     issues.append(Issue(thing.path, where, "step-works-on-unlisted", message))

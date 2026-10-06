@@ -1,0 +1,52 @@
+{
+  "id": "technique/boil",
+  "tier": "drafted",
+  "names": {"en": "Boil", "fr": "Bouillir"},
+  "aliases": {
+    "en": ["boil in salted water", "cook in boiling water"],
+    "fr": ["cuire à l'anglaise"]
+  },
+  "does": "Cooks food in plenty of fast-bubbling salted water, so that it is done quickly and evenly.",
+  "how": [
+    "Fill a large pot with far more water than the food needs.",
+    "Bring it to a rolling boil and salt it until it tastes pleasantly salty.",
+    "Add the food and bring the water back to the boil as fast as you can.",
+    "Test a piece often, and lift the food out the moment it is tender."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Big bubbles that keep rolling even when you stir."},
+    {
+      "sense": "feel",
+      "text": "The tip of a knife slides into a vegetable with only slight resistance."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Too little water, so it stops boiling when the food goes in and green vegetables turn dull.",
+      "fix": "Use a bigger pot and more water, and cook in batches."
+    },
+    {
+      "mistake": "Salting the water too lightly.",
+      "fix": "Salt it well. Food boiled in plain water tastes flat, however it is seasoned later."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/carrot", "tier": "drafted"},
+    {"thing": "ingredient/turnip", "tier": "drafted"},
+    {"thing": "ingredient/green-beans", "tier": "drafted"},
+    {"thing": "ingredient/peas", "tier": "drafted"},
+    {"thing": "ingredient/potato", "tier": "drafted"},
+    {"thing": "ingredient/pasta", "tier": "drafted"},
+    {"thing": "ingredient/vermicelli", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/stockpot", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

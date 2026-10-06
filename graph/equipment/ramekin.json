@@ -1,0 +1,7 @@
+{
+  "id": "equipment/ramekin",
+  "tier": "drafted",
+  "names": {"en": "Ramekin", "fr": "Ramequin"},
+  "aliases": {},
+  "use": "A small, straight-sided dish that holds a single portion in the oven."
+}

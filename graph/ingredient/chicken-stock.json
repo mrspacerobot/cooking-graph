@@ -2,7 +2,7 @@
   "id": "ingredient/chicken-stock",
   "tier": "drafted",
   "names": {"en": "Chicken stock", "fr": "Bouillon de volaille"},
-  "aliases": {"en": ["chicken broth"], "fr": ["fond blanc de volaille"]},
+  "aliases": {"en": ["chicken broth", "bought chicken stock"]},
   "is_a": [
     {"thing": "ingredient/stock", "tier": "drafted"}
   ],
@@ -25,6 +25,14 @@
       "not_when": [],
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "Stock has none of the sharpness of wine. A squeeze of lemon at the end brings some of it back.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "preparation/white-chicken-stock",
+      "when": [],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "Bought stock is salted and has little gelatine. Season at the end, and do not expect a sauce made by boiling it down to thicken or set.",
       "tier": "drafted"
     }
   ],

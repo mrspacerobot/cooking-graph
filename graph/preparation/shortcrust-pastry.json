@@ -1,0 +1,17 @@
+{
+  "id": "preparation/shortcrust-pastry",
+  "tier": "drafted",
+  "names": {"en": "Shortcrust pastry", "fr": "Pâte brisée"},
+  "aliases": {"en": ["shortcrust", "pie pastry"]},
+  "is": "A crisp, crumbly pastry of flour rubbed with cold butter and bound with a little water or egg.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/egg"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "teaches": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

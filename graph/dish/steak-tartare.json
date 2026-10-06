@@ -1,0 +1,30 @@
+{
+  "id": "dish/steak-tartare",
+  "tier": "drafted",
+  "names": {"en": "Steak tartare", "fr": "Steak tartare"},
+  "aliases": {"en": ["beef tartare"], "fr": ["tartare de bœuf"]},
+  "is": "Raw beef chopped by hand and seasoned at the last moment with shallot, capers, cornichons, parsley and mustard, with a raw egg yolk on top.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/beef-fillet"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/capers"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/cornichons"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/parsley"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "tier": "drafted"
+    },
+    {"role": "enrichment", "options": ["ingredient/egg-yolk"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/brunoise", "tier": "drafted"},
+    {"thing": "technique/chop", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

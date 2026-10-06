@@ -1,0 +1,54 @@
+{
+  "id": "technique/clarify",
+  "tier": "drafted",
+  "names": {"en": "Clarify", "fr": "Clarifier"},
+  "aliases": {"en": ["clarify a stock", "clarify a consommé"]},
+  "does": "Clears a cloudy stock by simmering it with egg white and minced meat, which rise as a raft and trap what clouds it.",
+  "how": [
+    "Mix egg white, minced lean meat and finely cut vegetables into a cold stock with no fat on it.",
+    "Heat slowly, stirring gently, until the mixture starts to rise and clump.",
+    "Stop stirring the moment a raft forms on top.",
+    "Make a small hole in the raft and simmer very gently, so that the liquid bubbles up through it.",
+    "Ladle the clear liquid out through the hole and strain it through a cloth."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The liquid seen through the hole is as clear as tea."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring after the raft has formed, or letting it boil, which breaks the raft and clouds the stock again.",
+      "fix": "Leave it alone and keep the heat very low."
+    },
+    {
+      "mistake": "Starting with a warm or fatty stock.",
+      "fix": "Chill the stock and lift off all the fat first."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/beef-stock", "tier": "drafted"},
+    {"thing": "preparation/brown-stock", "tier": "drafted"},
+    {"thing": "preparation/white-chicken-stock", "tier": "drafted"},
+    {"thing": "ingredient/egg-white", "tier": "drafted"},
+    {"thing": "ingredient/minced-beef", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/clarified", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/stockpot"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/ladle"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/fine-sieve"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/skim",
+      "why": "A stock is skimmed clean before it is clarified. Clarifying is the last and finest step.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

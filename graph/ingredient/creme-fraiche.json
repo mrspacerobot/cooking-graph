@@ -1,0 +1,24 @@
+{
+  "id": "ingredient/creme-fraiche",
+  "tier": "drafted",
+  "names": {"en": "Crème fraîche", "fr": "Crème fraîche"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A thick, lightly sour cream that can be boiled in a sauce without splitting.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/dairy"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product",
+      "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

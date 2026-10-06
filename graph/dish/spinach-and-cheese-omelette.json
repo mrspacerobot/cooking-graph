@@ -16,7 +16,10 @@
     {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
     {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
   ],
-  "teaches": [],
+  "teaches": [
+    {"thing": "technique/roll-an-omelette", "tier": "drafted"},
+    {"thing": "technique/wilt", "tier": "drafted"}
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

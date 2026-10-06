@@ -1,0 +1,24 @@
+{
+  "id": "ingredient/egg-yolk",
+  "tier": "drafted",
+  "names": {"en": "Egg yolk", "fr": "Jaune d'œuf"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Thickens a warm liquid as it heats and scrambles if it gets too hot. It holds oil and water together in a sauce.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/egg"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product",
+      "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "dish/chicken-broth-with-vermicelli",
+  "tier": "drafted",
+  "names": {"en": "Chicken broth with vermicelli", "fr": "Bouillon aux vermicelles"},
+  "aliases": {"en": ["chicken soup with vermicelli"], "fr": ["bouillon de poule aux vermicelles"]},
+  "is": "A clear chicken stock, seasoned and brought to a simmer, with fine vermicelli cooked in it at the last moment.",
+  "parts": [
+    {
+      "role": "liquid",
+      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock"],
+      "tier": "drafted"
+    },
+    {"role": "main", "options": ["ingredient/vermicelli"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/parsley", "ingredient/chives"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/season", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

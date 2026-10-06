@@ -1,0 +1,51 @@
+{
+  "id": "technique/boil-an-egg",
+  "tier": "drafted",
+  "names": {"en": "Boil an egg"},
+  "aliases": {"en": ["soft-boil", "hard-boil", "boil eggs", "cook eggs in the shell"]},
+  "does": "Cooks an egg in its shell in gently boiling water, to a runny, soft or firm yolk.",
+  "how": [
+    "Bring a pan of water to a gentle boil.",
+    "Lower the eggs in on a spoon, straight from the fridge.",
+    "Start a timer at once. The time alone decides how far the yolk sets.",
+    "Lift the eggs out and cool them under cold running water to stop the cooking."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "For a soft egg, a set white and a yolk that runs. For a hard one, a yolk that is firm and still bright yellow."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling a hard egg too long, which leaves a grey-green ring around the yolk and a smell of sulphur.",
+      "fix": "Time it, and cool it at once."
+    },
+    {
+      "mistake": "Dropping eggs into hard-boiling water, so that they crack on the bottom.",
+      "fix": "Lower them in on a spoon and keep the boil gentle."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/soft-boiled", "tier": "drafted"},
+    {"thing": "form/hard-boiled", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/boil",
+      "differs": "The egg stays in its shell, the water bubbles gently so that the shell does not crack, and only the clock tells when it is done.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "preparation/mirepoix",
+  "tier": "drafted",
+  "names": {"en": "Mirepoix", "fr": "Mirepoix"},
+  "aliases": {},
+  "is": "Onion, carrot and celery cut to one size, the aromatic base of stocks, braises and sauces. The longer the cooking, the larger the cut.",
+  "parts": [
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/celery"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/dice", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

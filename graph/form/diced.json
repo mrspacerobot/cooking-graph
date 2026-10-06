@@ -1,0 +1,10 @@
+{
+  "id": "form/diced",
+  "tier": "drafted",
+  "names": {"en": "Diced", "fr": "En dés"},
+  "aliases": {"en": ["dice", "medium dice", "cubed"]},
+  "looks_like": "Even cubes, small enough to cook quickly and large enough to keep their shape.",
+  "size": [
+    {"measure": "side", "length": {"from": 8, "to": 12, "unit": "millimetre"}}
+  ]
+}

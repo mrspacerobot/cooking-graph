@@ -3,7 +3,9 @@
   "tier": "drafted",
   "names": {"en": "Onion", "fr": "Oignon"},
   "aliases": {"en": ["yellow onion", "brown onion"]},
-  "is_a": [],
+  "is_a": [
+    {"thing": "ingredient/allium", "tier": "drafted"}
+  ],
   "part_of": [],
   "forms": [],
   "behaviour": "Gives up its water and softens over low heat, then browns and sweetens as that water cooks away.",

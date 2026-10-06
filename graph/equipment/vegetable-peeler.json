@@ -1,0 +1,7 @@
+{
+  "id": "equipment/vegetable-peeler",
+  "tier": "drafted",
+  "names": {"en": "Vegetable peeler", "fr": "Économe"},
+  "aliases": {"en": ["peeler"]},
+  "use": "Takes a thin skin off firm vegetables and fruit."
+}

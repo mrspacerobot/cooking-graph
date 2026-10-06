@@ -1,0 +1,7 @@
+{
+  "id": "equipment/baking-dish",
+  "tier": "drafted",
+  "names": {"en": "Baking dish", "fr": "Plat à gratin"},
+  "aliases": {"en": ["gratin dish", "ovenproof dish"]},
+  "use": "A shallow dish that goes in the oven, for gratins and bakes."
+}

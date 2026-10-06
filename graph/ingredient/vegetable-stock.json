@@ -2,7 +2,7 @@
   "id": "ingredient/vegetable-stock",
   "tier": "drafted",
   "names": {"en": "Vegetable stock", "fr": "Bouillon de légumes"},
-  "aliases": {"en": ["vegetable broth"]},
+  "aliases": {"en": ["vegetable broth", "bought vegetable stock"]},
   "is_a": [
     {"thing": "ingredient/stock", "tier": "drafted"}
   ],
@@ -19,7 +19,16 @@
     ],
     "note": "Bought stock and stock cubes often hold wheat."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/vegetable-stock",
+      "when": [],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "Bought stock is salted. Season at the end.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

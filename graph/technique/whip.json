@@ -1,0 +1,50 @@
+{
+  "id": "technique/whip",
+  "tier": "drafted",
+  "names": {"en": "Whip", "fr": "Monter"},
+  "aliases": {"en": ["whip egg whites", "whisk to peaks", "beat egg whites", "whip cream"]},
+  "does": "Beats air into egg whites or cream until they hold a peak.",
+  "how": [
+    "Start with a clean, dry bowl, with no trace of fat or yolk in it.",
+    "Whisk slowly at first, until the whites are a loose foam.",
+    "Speed up, lifting the whisk through the foam in big circles.",
+    "Stop as soon as the foam stands in a peak when the whisk is lifted."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Glossy and smooth. A peak stands on the lifted whisk, its tip bending slightly."
+    },
+    {"sense": "feel", "text": "The bowl can be tipped without the foam sliding."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Whipping past the peak, so that the foam turns dry and grainy and leaks water.",
+      "fix": "Stop at a glossy peak. Whites that have gone grainy cannot be brought back."
+    },
+    {
+      "mistake": "A trace of yolk or grease in the bowl, so that the whites never rise.",
+      "fix": "Separate each egg over a small bowl first, and wipe the mixing bowl clean."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg-white", "tier": "drafted"},
+    {"thing": "ingredient/cream", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/stiff-peaks", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/whisk",
+      "differs": "The aim is air. Whisking goes on until the foam holds a peak.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

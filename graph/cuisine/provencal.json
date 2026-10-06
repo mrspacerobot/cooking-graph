@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/provencal",
+  "tier": "drafted",
+  "names": {"en": "Provençal", "fr": "Provençale"},
+  "aliases": {"en": ["Provençal cooking"]},
+  "within": {"thing": "cuisine/french", "tier": "drafted"}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ingredient/nutmeg",
+  "tier": "drafted",
+  "names": {"en": "Nutmeg", "fr": "Noix de muscade"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Warm and sweet. It fades fast once grated, so it is grated at the last moment and used sparingly.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": "Despite its name, nutmeg is the seed of a fruit and not a tree nut."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

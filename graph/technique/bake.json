@@ -1,0 +1,49 @@
+{
+  "id": "technique/bake",
+  "tier": "drafted",
+  "names": {"en": "Bake", "fr": "Cuire au four"},
+  "aliases": {"en": ["bake in the oven", "oven-bake"]},
+  "does": "Cooks food with the dry, even heat of an oven.",
+  "how": [
+    "Heat the oven fully before the food goes in.",
+    "Set the dish on the middle shelf, with space around it for the air to move.",
+    "Leave the door shut for the first part of the cooking.",
+    "Turn the dish if the oven browns one side faster, and check before the time is up."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "An even colour across the top, with the edges just darker than the middle."
+    },
+    {"sense": "smell", "text": "A toasty smell that reaches the next room is the sign to check."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Putting food into an oven that is still heating, so that it dries out before it colours.",
+      "fix": "Wait until the oven has reached its heat."
+    },
+    {
+      "mistake": "Trusting the dial.",
+      "fix": "Ovens run hot or cold. Learn yours, and judge by colour and feel as well as by time."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/potato", "tier": "drafted"},
+    {"thing": "ingredient/courgette", "tier": "drafted"},
+    {"thing": "ingredient/aubergine", "tier": "drafted"},
+    {"thing": "ingredient/tomato", "tier": "drafted"},
+    {"thing": "preparation/shortcrust-pastry", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"},
+    {
+      "role": "vessel",
+      "options": ["equipment/baking-dish", "equipment/baking-sheet"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

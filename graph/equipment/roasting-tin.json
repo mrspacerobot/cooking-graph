@@ -1,0 +1,7 @@
+{
+  "id": "equipment/roasting-tin",
+  "tier": "drafted",
+  "names": {"en": "Roasting tin", "fr": "Plat à rôtir"},
+  "aliases": {"en": ["roasting pan"]},
+  "use": "A deep metal tray for roasting, and for holding a water bath."
+}

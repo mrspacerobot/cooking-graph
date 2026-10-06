@@ -1,0 +1,25 @@
+{
+  "id": "dish/salade-lyonnaise",
+  "tier": "drafted",
+  "names": {"en": "Salade lyonnaise", "fr": "Salade lyonnaise"},
+  "aliases": {"en": ["Lyonnaise salad"], "fr": ["frisée aux lardons"]},
+  "is": "Bitter frisée dressed warm with bacon lardons, their fat, vinegar and mustard, with croutons and a poached egg on top.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/frisee"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/bacon"], "tier": "drafted"},
+    {"role": "topping", "options": ["ingredient/egg"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/baguette"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/red-wine-vinegar"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/white-wine-vinegar"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/render", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lyonnais", "tier": "drafted"}
+  ]
+}

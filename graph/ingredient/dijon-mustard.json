@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/dijon-mustard",
+  "tier": "drafted",
+  "names": {"en": "Dijon mustard", "fr": "Moutarde de Dijon"},
+  "aliases": {"en": ["mustard"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Sharp and hot. It helps oil and vinegar hold together, and loses its bite when boiled.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/alcohol", "fact/slaughter-product"],
+    "free_of": [
+      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    ],
+    "note": "Often made with white wine or wine vinegar. Mustard is itself a common allergen, and this graph has no fact for it yet."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

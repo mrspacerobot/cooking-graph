@@ -1,0 +1,44 @@
+{
+  "id": "technique/skim",
+  "tier": "drafted",
+  "names": {"en": "Skim", "fr": "Écumer"},
+  "aliases": {"en": ["skim off the scum", "skim the fat", "degrease"], "fr": ["dégraisser"]},
+  "does": "Lifts off the foam and fat that rise to the top of a simmering liquid, so that it stays clear and tastes clean.",
+  "how": [
+    "Bring the pot up slowly. The grey foam rises as it nears a simmer.",
+    "Hold a ladle flat, just under the surface, and let the foam flow into it.",
+    "Move the pot half off the heat, so that the foam gathers on the cooler side.",
+    "Skim often at the start, then now and then as fat collects."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A clear surface with a few bright beads of fat and no grey foam."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting the pot boil before skimming, which churns the foam and fat back in and clouds the liquid for good.",
+      "fix": "Keep it at a bare simmer and skim as soon as foam appears."
+    },
+    {
+      "mistake": "Stirring a stock.",
+      "fix": "Leave it still. Stirring spreads through the liquid what was rising to be skimmed."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/stock", "tier": "drafted"},
+    {"thing": "preparation/white-chicken-stock", "tier": "drafted"},
+    {"thing": "preparation/brown-stock", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/ladle", "equipment/slotted-spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "Skimming only works on a pot held at a simmer.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

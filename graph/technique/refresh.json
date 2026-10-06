@@ -1,0 +1,46 @@
+{
+  "id": "technique/refresh",
+  "tier": "drafted",
+  "names": {"en": "Refresh", "fr": "Rafraîchir"},
+  "aliases": {
+    "en": ["shock", "refresh in iced water", "cool in iced water", "plunge into iced water"]
+  },
+  "does": "Stops the cooking at once by plunging hot food into iced water, which keeps green vegetables bright and firm.",
+  "how": [
+    "Have a large bowl of water and ice ready before the food is cooked.",
+    "Lift the food straight from the pot into the iced water.",
+    "Leave it only until it is cold to the middle.",
+    "Drain it well, so that it does not soak."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "A piece is cold to the middle when it is squeezed."},
+    {"sense": "see", "text": "The colour stays as bright as it was in the pot."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving food to soak in the water, which washes out its taste.",
+      "fix": "Take it out as soon as it is cold and drain it on a cloth."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/green-beans", "tier": "drafted"},
+    {"thing": "ingredient/peas", "tier": "drafted"},
+    {"thing": "ingredient/carrot", "tier": "drafted"},
+    {"thing": "ingredient/turnip", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/boil",
+      "why": "Refreshing is how boiling or blanching ends.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

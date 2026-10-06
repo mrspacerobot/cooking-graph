@@ -1,0 +1,42 @@
+{
+  "id": "technique/toss",
+  "tier": "drafted",
+  "names": {"en": "Toss", "fr": "Mélanger"},
+  "aliases": {
+    "en": ["toss a salad", "dress", "bind", "mix", "combine"],
+    "fr": ["fatiguer la salade"]
+  },
+  "does": "Coats every piece evenly with a dressing or a sauce by lifting and turning.",
+  "how": [
+    "Put the food in a bowl far larger than it needs.",
+    "Add the dressing a little at a time, around the edge and not on top.",
+    "Lift from the bottom and let the pieces fall, with clean hands or a pair of spoons.",
+    "Taste a piece and adjust before serving."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Every piece glistens, and nothing pools in the bottom of the bowl."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Dressing leaves long before serving, so that the acid and salt make them limp.",
+      "fix": "Toss at the last moment."
+    },
+    {
+      "mistake": "Pouring on all the dressing at once, which drowns the food.",
+      "fix": "Add it in stages and stop when everything is lightly coated."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/frisee", "tier": "drafted"},
+    {"thing": "ingredient/celeriac", "tier": "drafted"},
+    {"thing": "ingredient/carrot", "tier": "drafted"},
+    {"thing": "ingredient/green-beans", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

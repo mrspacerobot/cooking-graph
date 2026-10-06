@@ -1,0 +1,7 @@
+{
+  "id": "equipment/saute-pan",
+  "tier": "drafted",
+  "names": {"en": "Sauté pan", "fr": "Sauteuse"},
+  "aliases": {},
+  "use": "A wide pan with straight sides, for sweating, sautéing and sauces that need room."
+}

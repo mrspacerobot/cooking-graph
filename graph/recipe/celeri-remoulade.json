@@ -1,0 +1,64 @@
+{
+  "id": "recipe/celeri-remoulade",
+  "tier": "drafted",
+  "names": {"en": "Céleri rémoulade"},
+  "aliases": {},
+  "makes": "dish/celeri-remoulade",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/celeriac", "amount": {"value": 500, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/lemon", "amount": {"value": 0.5, "unit": "piece"}, "forms": []},
+    {"thing": "preparation/mayonnaise", "amount": {"value": 120, "unit": "gram"}, "forms": []},
+    {
+      "thing": "ingredient/dijon-mustard",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": []
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": [
+    "equipment/mixing-bowl", "equipment/whisk", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/celeriac"],
+      "text": "Cut a flat base on the celeriac and take off its thick, knobbly skin with a knife, following the curve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": []
+    },
+    {
+      "technique": "technique/julienne",
+      "works_on": ["ingredient/celeriac"],
+      "text": "Cut the celeriac into thin sheets, then into fine julienne strips.",
+      "time": null,
+      "temperature": null,
+      "safety_points": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/celeriac", "ingredient/lemon", "ingredient/salt"],
+      "text": "Toss the strips at once with the juice of the lemon and the salt, so that they stay white. Leave them to soften a little.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["preparation/mayonnaise", "ingredient/dijon-mustard"],
+      "text": "Whisk the mustard into the mayonnaise. It should taste sharp.",
+      "time": null,
+      "temperature": null,
+      "safety_points": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/celeriac", "preparation/mayonnaise"],
+      "text": "Drain off any liquid and fold the sauce through the celeriac until every strip is coated. Taste and adjust. It is better after a short rest in the fridge.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"]
+    }
+  ]
+}

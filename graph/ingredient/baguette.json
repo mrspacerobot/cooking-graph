@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/baguette",
+  "tier": "drafted",
+  "names": {"en": "Baguette", "fr": "Baguette"},
+  "aliases": {},
+  "is_a": [
+    {"thing": "ingredient/bread", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A lean loaf with a crisp crust. A day old, it makes good croutons and soaks up soup without falling apart.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/gluten"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product",
+      "fact/soy"
+    ],
+    "note": "By tradition made of flour, water, salt and yeast only."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

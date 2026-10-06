@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/green-beans",
+  "tier": "drafted",
+  "names": {"en": "Green beans", "fr": "Haricots verts"},
+  "aliases": {"en": ["French beans", "green bean"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Turn bright green in boiling salted water and dull olive if they are held hot or meet acid.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

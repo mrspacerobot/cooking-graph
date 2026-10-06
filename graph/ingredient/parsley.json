@@ -1,0 +1,24 @@
+{
+  "id": "ingredient/parsley",
+  "tier": "drafted",
+  "names": {"en": "Parsley", "fr": "Persil"},
+  "aliases": {"en": ["flat-leaf parsley"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Fresh and grassy. The leaves go on at the end and the stalks flavour a stock.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

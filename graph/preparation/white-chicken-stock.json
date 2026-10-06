@@ -1,0 +1,25 @@
+{
+  "id": "preparation/white-chicken-stock",
+  "tier": "drafted",
+  "names": {"en": "White chicken stock", "fr": "Fond blanc de volaille"},
+  "aliases": {"en": ["homemade chicken stock", "white stock"]},
+  "is": "A pale, clear stock made by simmering chicken bones and vegetables in water without browning anything, skimming as it goes.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/chicken-carcass"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/celery"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/leek"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/skim", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/strain", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

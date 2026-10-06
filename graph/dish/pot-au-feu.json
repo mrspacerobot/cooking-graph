@@ -1,0 +1,29 @@
+{
+  "id": "dish/pot-au-feu",
+  "tier": "drafted",
+  "names": {"en": "Pot-au-feu", "fr": "Pot-au-feu"},
+  "aliases": {},
+  "is": "Beef and marrow bones simmered for a long time with carrots, leeks, turnips and an onion stuck with cloves. The broth is served first, then the meat and the vegetables, with mustard and cornichons.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/stewing-beef"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/marrow-bone"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/leek"], "tier": "drafted"},
+    {"role": "main", "options": ["ingredient/turnip"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/clove"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"},
+    {"role": "side", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
+    {"role": "side", "options": ["ingredient/cornichons"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/skim", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

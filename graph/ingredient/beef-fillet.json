@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/beef-fillet",
+  "tier": "drafted",
+  "names": {"en": "Beef fillet", "fr": "Filet de bœuf"},
+  "aliases": {"en": ["beef tenderloin"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Very lean and tender, with little flavour of its own. It toughens and dries the moment it is overcooked.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product",
+      "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

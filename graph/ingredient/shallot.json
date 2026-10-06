@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/shallot",
+  "tier": "drafted",
+  "names": {"en": "Shallot", "fr": "Échalote"},
+  "aliases": {},
+  "is_a": [
+    {"thing": "ingredient/allium", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Finer and sweeter than onion, and quick to burn. Cut small, it melts into a sauce.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

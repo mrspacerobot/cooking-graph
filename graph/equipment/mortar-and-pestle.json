@@ -1,0 +1,7 @@
+{
+  "id": "equipment/mortar-and-pestle",
+  "tier": "drafted",
+  "names": {"en": "Mortar and pestle", "fr": "Mortier et pilon"},
+  "aliases": {"en": ["mortar", "pestle and mortar"]},
+  "use": "Crushes garlic, herbs and spices to a paste."
+}

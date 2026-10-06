@@ -1,0 +1,59 @@
+{
+  "id": "technique/puree",
+  "tier": "drafted",
+  "names": {"en": "Puree", "fr": "Mixer"},
+  "aliases": {
+    "en": ["blend", "blend until smooth", "purée", "liquidise"],
+    "fr": ["réduire en purée"]
+  },
+  "does": "Breaks cooked food down until it is smooth, in a blender or through a sieve.",
+  "how": [
+    "Cook the food until it is completely soft. Nothing firm will blend smooth.",
+    "Blend with only part of the cooking liquid at first.",
+    "Add more liquid little by little until the texture is right.",
+    "Pass it through a fine sieve for a truly smooth finish."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "It falls from the spoon in a smooth ribbon, with no grains or strings."
+    },
+    {"sense": "feel", "text": "Nothing gritty between finger and thumb."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Filling a blender to the top with hot soup, so that the steam blows the lid off.",
+      "fix": "Fill it less than half way, hold the lid down with a cloth and start slowly."
+    },
+    {
+      "mistake": "Adding all the liquid at once and ending with a thin soup.",
+      "fix": "Hold liquid back. It is easy to thin a puree and hard to thicken one."
+    },
+    {
+      "mistake": "Blending potatoes hard, which turns them to glue.",
+      "fix": "Blend a potato soup only briefly, or push it through a sieve."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/leek", "tier": "drafted"},
+    {"thing": "ingredient/potato", "tier": "drafted"},
+    {"thing": "ingredient/pumpkin", "tier": "drafted"},
+    {"thing": "ingredient/carrot", "tier": "drafted"},
+    {"thing": "ingredient/mushroom", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/pureed", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/blender", "equipment/fine-sieve"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "Food is simmered soft before it is pureed.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

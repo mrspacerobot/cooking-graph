@@ -1,0 +1,24 @@
+{
+  "id": "ingredient/rockfish",
+  "tier": "drafted",
+  "names": {"en": "Rockfish", "fr": "Rascasse"},
+  "aliases": {"en": ["scorpionfish"]},
+  "is_a": [
+    {"thing": "ingredient/white-fish", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A firm, bony white fish, with a head and bones that give a soup its body.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/fish"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product",
+      "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

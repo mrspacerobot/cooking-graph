@@ -1,0 +1,22 @@
+{
+  "id": "ingredient/celeriac",
+  "tier": "drafted",
+  "names": {"en": "Celeriac", "fr": "Céleri-rave"},
+  "aliases": {"en": ["celery root"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Firm and earthy, crisp when raw and creamy when cooked. Its cut flesh browns in air unless it meets acid.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/meat", "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
+    ],
+    "note": "Celery is a common allergen, and this graph has no fact for it yet."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

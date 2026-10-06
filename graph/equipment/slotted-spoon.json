@@ -1,0 +1,7 @@
+{
+  "id": "equipment/slotted-spoon",
+  "tier": "drafted",
+  "names": {"en": "Slotted spoon", "fr": "Écumoire"},
+  "aliases": {"en": ["skimmer"]},
+  "use": "Lifts food out of a liquid and leaves the liquid behind."
+}

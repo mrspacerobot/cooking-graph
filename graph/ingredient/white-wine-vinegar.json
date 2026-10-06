@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/white-wine-vinegar",
+  "tier": "drafted",
+  "names": {"en": "White wine vinegar", "fr": "Vinaigre de vin blanc"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Sharp and clean. A little in poaching water helps egg white set, and it sharpens a sauce without colouring it.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/alcohol", "fact/slaughter-product"],
+    "free_of": [
+      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    ],
+    "note": "Made from wine, which is often cleared with products of slaughtered animals, and keeps a trace of its alcohol. The stricter answer is recorded."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

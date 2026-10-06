@@ -1,0 +1,40 @@
+{
+  "id": "technique/wilt",
+  "tier": "drafted",
+  "names": {"en": "Wilt", "fr": "Tomber"},
+  "aliases": {"en": ["wilt down"]},
+  "does": "Collapses tender leaves with brief heat, so that they turn soft and dark and lose most of their bulk.",
+  "how": [
+    "Wash the leaves and leave the water that clings to them.",
+    "Melt a little fat in a wide pan over medium heat.",
+    "Add the leaves by the handful, turning them as they fall.",
+    "Take them off the heat as soon as the last leaf has collapsed, and press out the water."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Dark green, glossy and limp, a fraction of the raw heap."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the leaves on the heat, so that they go on shedding water and turn slimy.",
+      "fix": "Stop the moment they collapse, and drain them."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/spinach", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/wilted", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/frying-pan", "equipment/saute-pan"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

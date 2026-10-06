@@ -1,0 +1,45 @@
+{
+  "id": "technique/gratinate",
+  "tier": "drafted",
+  "names": {"en": "Gratinate", "fr": "Gratiner"},
+  "aliases": {"en": ["gratin", "brown under the grill", "broil", "glaze under the grill"]},
+  "does": "Browns the top of a dish under strong heat from above, until it forms a golden crust.",
+  "how": [
+    "Cover the dish with what will brown: cheese, crumbs, or a sauce rich in butter or cream.",
+    "Set it on a high shelf, under a grill that is already hot.",
+    "Stay beside it. The crust goes from pale to burnt very fast.",
+    "Turn the dish for an even colour, and take it out when it is golden and bubbling at the edges."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A blistered, golden-brown crust that bubbles at the rim."},
+    {"sense": "smell", "text": "Toasted cheese. A sharp, bitter smell means it has gone too far."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Walking away from the grill.",
+      "fix": "Watch it the whole time, with the oven door ajar."
+    },
+    {
+      "mistake": "Grilling a dish that is cold in the middle, so that the top burns before the inside is hot.",
+      "fix": "Warm the dish in the oven first, then brown the top."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/gruyere", "tier": "drafted"},
+    {"thing": "preparation/bechamel", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "heat", "options": ["equipment/grill"], "tier": "drafted"},
+    {
+      "role": "vessel",
+      "options": ["equipment/baking-dish", "equipment/baking-sheet"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

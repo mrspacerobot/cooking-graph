@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/vermicelli",
+  "tier": "drafted",
+  "names": {"en": "Vermicelli", "fr": "Vermicelles"},
+  "aliases": {},
+  "is_a": [
+    {"thing": "ingredient/pasta", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Very thin pasta that cooks in moments and goes on swelling in hot soup.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/gluten", "fact/egg"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/fish", "fact/meat", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": "Usually plain wheat. Egg is recorded because pasta of unknown make may hold it."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

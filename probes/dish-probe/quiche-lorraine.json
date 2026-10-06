@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/quiche-lorraine",
+  "tier": "drafted",
+  "batch": "eggs-1",
+  "set": "growing",
+  "written_for": "eggs",
+  "dish": "Quiche lorraine",
+  "also_called": [],
+  "techniques": ["blind bake", "whisk", "bake"],
+  "ingredients": ["shortcrust pastry", "egg", "crème fraîche", "bacon", "nutmeg"]
+}

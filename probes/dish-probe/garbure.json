@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/garbure",
+  "tier": "drafted",
+  "batch": "stocks-1",
+  "set": "growing",
+  "written_for": "stocks",
+  "dish": "Garbure",
+  "also_called": [],
+  "techniques": ["dice", "simmer"],
+  "ingredients": ["cabbage", "white beans", "potato", "carrot", "leek", "duck confit", "garlic"]
+}

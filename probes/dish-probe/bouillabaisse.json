@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/bouillabaisse",
+  "tier": "drafted",
+  "batch": "stocks-1",
+  "set": "growing",
+  "written_for": "stocks",
+  "dish": "Bouillabaisse",
+  "also_called": [],
+  "techniques": ["sweat", "boil", "strain"],
+  "ingredients": ["rockfish", "fennel", "onion", "tomato", "garlic", "saffron", "olive oil"]
+}

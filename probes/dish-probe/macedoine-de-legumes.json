@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/macedoine-de-legumes",
+  "tier": "drafted",
+  "batch": "knife-cuts-1",
+  "set": "growing",
+  "written_for": "knife-cuts",
+  "dish": "Macédoine de légumes",
+  "also_called": ["vegetable macedoine"],
+  "techniques": ["dice", "boil"],
+  "ingredients": ["carrot", "turnip", "green beans", "peas", "mayonnaise"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/oeufs-en-meurette",
+  "tier": "drafted",
+  "batch": "eggs-1",
+  "set": "held-back",
+  "written_for": "eggs",
+  "dish": "Œufs en meurette",
+  "also_called": ["eggs in red wine sauce"],
+  "techniques": ["poach", "reduce", "saute"],
+  "ingredients": ["egg", "red wine", "bacon", "mushroom", "shallot", "butter", "bread"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/salmon-tartare",
+  "tier": "drafted",
+  "batch": "knife-cuts-1",
+  "set": "held-back",
+  "written_for": "knife-cuts",
+  "dish": "Salmon tartare",
+  "also_called": ["tartare de saumon"],
+  "techniques": ["dice", "brunoise", "chop"],
+  "ingredients": ["salmon", "shallot", "chives", "lemon", "olive oil"]
+}

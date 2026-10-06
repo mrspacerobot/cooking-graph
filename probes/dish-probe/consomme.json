@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/consomme",
+  "tier": "drafted",
+  "batch": "stocks-1",
+  "set": "growing",
+  "written_for": "stocks",
+  "dish": "Consommé",
+  "also_called": ["beef consommé"],
+  "techniques": ["simmer", "clarify", "strain"],
+  "ingredients": ["beef stock", "egg white", "minced beef", "carrot", "leek", "celery", "tomato"]
+}

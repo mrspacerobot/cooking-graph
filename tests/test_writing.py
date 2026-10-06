@@ -23,9 +23,28 @@ class OneWayToWriteAFile(unittest.TestCase):
         text = writing.as_text({"contains": ["fact/dairy", "fact/egg"], "free_of": []})
         self.assertEqual('{\n  "contains": ["fact/dairy", "fact/egg"],\n  "free_of": []\n}\n', text)
 
-    def test_sentences_take_a_line_each(self):
-        text = writing.as_text({"how": ["Warm the fat.", "Stir now and then."]})
-        self.assertEqual('{\n  "how": [\n    "Warm the fat.",\n    "Stir now and then."\n  ]\n}\n', text)
+    def test_sentences_that_do_not_fit_on_a_line_take_a_line_each(self):
+        first = "Warm the fat in a wide pan over low heat until it runs."
+        second = "Stir now and then, so that nothing sits long enough to colour."
+        text = writing.as_text({"how": [first, second]})
+        self.assertEqual('{\n  "how": [\n    "%s",\n    "%s"\n  ]\n}\n' % (first, second), text)
+
+    def test_a_part_with_its_options_stays_on_one_line(self):
+        part = {"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"}
+        text = writing.as_text({"parts": [part]})
+        expected = '{"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"}'
+        self.assertEqual('{\n  "parts": [\n    %s\n  ]\n}\n' % expected, text)
+
+    def test_short_aliases_stay_on_one_line(self):
+        text = writing.as_text({"aliases": {"en": ["chicken broth"], "fr": ["fond blanc de volaille"]}})
+        self.assertEqual('{\n  "aliases": {"en": ["chicken broth"], "fr": ["fond blanc de volaille"]}\n}\n', text)
+
+    def test_a_long_list_of_ids_is_wrapped_like_a_paragraph(self):
+        facts = ["fact/number-%d" % number for number in range(12)]
+        lines = writing.as_text({"free_of": facts}).split("\n")
+        self.assertEqual('  "free_of": [', lines[1])
+        self.assertTrue(lines[2].startswith('    "fact/number-0", "fact/number-1", '))
+        self.assertTrue(all(len(line) <= 100 for line in lines))
 
     def test_what_does_not_fit_on_a_line_is_broken_up(self):
         long_sentence = "A cue that runs on for so long that the object holding it cannot sit on a line of the file."

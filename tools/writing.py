@@ -36,11 +36,19 @@ def write_value(value, depth, room):
     return on_one_line(value)
 
 
+def may_sit_on_one_line(value):
+    """Anything may, except what holds a list of objects: that reads better with a line for each object."""
+    if isinstance(value, list):
+        return all(is_plain(inner) for inner in value)
+    if isinstance(value, dict):
+        return all(may_sit_on_one_line(inner) for inner in value.values())
+    return True
+
+
 def write_object(value, depth, room):
     if not value:
         return "{}"
-    holds_plain_values_only = all(is_plain(inner) for inner in value.values())
-    if depth > 0 and holds_plain_values_only and len(on_one_line(value)) <= room:
+    if depth > 0 and may_sit_on_one_line(value) and len(on_one_line(value)) <= room:
         return on_one_line(value)
     lines = []
     for name, inner in value.items():
@@ -52,17 +60,17 @@ def write_object(value, depth, room):
 def write_list(value, depth, room):
     if not value:
         return "[]"
+    if may_sit_on_one_line(value) and len(on_one_line(value)) <= room:
+        return on_one_line(value)
     if all(is_word(inner) for inner in value):
-        return write_words(value, depth, room)
+        return write_words(value, depth)
     lead = INDENT * (depth + 1)
     lines = [lead + write_value(inner, depth + 1, WIDTH - len(lead) - 1) for inner in value]
     return "[\n" + ",\n".join(lines) + "\n" + INDENT * depth + "]"
 
 
-def write_words(words, depth, room):
-    """A list of words on one line, or wrapped like a paragraph when it is too long for one."""
-    if len(on_one_line(words)) <= room:
-        return on_one_line(words)
+def write_words(words, depth):
+    """A list of words that is too long for one line, wrapped like a paragraph."""
     lead = INDENT * (depth + 1)
     lines = [lead]
     for index, word in enumerate(words):

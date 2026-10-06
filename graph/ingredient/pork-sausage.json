@@ -9,12 +9,12 @@
   "behaviour": "Coarse pork in a skin. Cooked slowly it stays juicy, and it bursts if it is pricked or rushed.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/meat", "fact/pork", "fact/gluten"],
+    "contains": ["fact/meat", "fact/pork", "fact/gluten", "fact/dairy"],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/nuts", "fact/sesame",
-      "fact/shellfish", "fact/slaughter-product", "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/nuts", "fact/sesame", "fact/shellfish",
+      "fact/slaughter-product", "fact/soy"
     ],
-    "note": "Many sausages are bound with breadcrumbs or rusk, so gluten is recorded."
+    "note": "Many sausages are bound with breadcrumbs or rusk and made with milk protein, so gluten and dairy are recorded."
   },
   "stands_in_for": [],
   "in_pantry_of": []

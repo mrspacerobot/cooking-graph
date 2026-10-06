@@ -9,12 +9,12 @@
   "behaviour": "Gives a stew a malty bitterness, which long cooking rounds and a little sugar balances.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/alcohol", "fact/gluten"],
+    "contains": ["fact/alcohol", "fact/gluten", "fact/slaughter-product"],
     "free_of": [
       "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/meat", "fact/nuts", "fact/pork",
-      "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+      "fact/sesame", "fact/shellfish", "fact/soy"
     ],
-    "note": "Brewed from barley."
+    "note": "Brewed from barley. Beer is often cleared with isinglass, which comes from fish, so a slaughter product is recorded as for wine."
   },
   "stands_in_for": [],
   "in_pantry_of": []

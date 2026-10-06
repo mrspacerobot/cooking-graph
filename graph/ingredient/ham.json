@@ -9,12 +9,12 @@
   "behaviour": "Already cooked and salty. It only needs warming, and dries out if heated for long.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/meat", "fact/pork"],
+    "contains": ["fact/meat", "fact/pork", "fact/dairy"],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/nuts",
-      "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/gluten", "fact/nuts", "fact/sesame",
+      "fact/shellfish", "fact/slaughter-product", "fact/soy"
     ],
-    "note": null
+    "note": "Cured and cooked pork is often made with lactose or milk protein, so dairy is recorded."
   },
   "stands_in_for": [],
   "in_pantry_of": []

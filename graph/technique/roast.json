@@ -30,7 +30,12 @@
     {"thing": "ingredient/potato", "tier": "drafted"},
     {"thing": "ingredient/turnip", "tier": "drafted"},
     {"thing": "ingredient/veal-bones", "tier": "drafted"},
-    {"thing": "ingredient/beef-bones", "tier": "drafted"}
+    {"thing": "ingredient/beef-bones", "tier": "drafted"},
+    {"thing": "ingredient/parsnip", "tier": "drafted"},
+    {"thing": "ingredient/leg-of-lamb", "tier": "drafted"},
+    {"thing": "ingredient/pork-loin", "tier": "drafted"},
+    {"thing": "ingredient/rack-of-lamb", "tier": "drafted"},
+    {"thing": "ingredient/beef-roasting-joint", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/fond", "tier": "drafted"}

@@ -1,0 +1,95 @@
+{
+  "id": "recipe/brown-stock",
+  "tier": "drafted",
+  "names": {"en": "Brown stock"},
+  "aliases": {},
+  "makes": "preparation/brown-stock",
+  "yields": {"value": 2, "unit": "litre"},
+  "ingredients": [
+    {"thing": "ingredient/veal-bones", "amount": {"value": 2, "unit": "kilogram"}, "forms": []},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/large-pieces"]
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/large-pieces"]
+    },
+    {"thing": "ingredient/celery", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/large-pieces"]},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
+    {"thing": "preparation/bouquet-garni", "amount": {"value": 1, "unit": "piece"}, "forms": []},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": []}
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/stovetop", "equipment/roasting-tin", "equipment/stockpot", "equipment/ladle",
+    "equipment/fine-sieve", "equipment/mixing-bowl"
+  ],
+  "steps": [
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/veal-bones"],
+      "text": "Spread the bones in a roasting tin and roast them in a hot oven, turning them once, until deep brown all over.",
+      "time": {"from": 40, "to": 45, "unit": "minute"},
+      "temperature": {"value": 220, "unit": "celsius"},
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery", "ingredient/tomato-paste"],
+      "text": "Add the vegetables, smear the tomato paste over the bones, and roast until the vegetables have browned at the edges and the paste has darkened.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": {"value": 220, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond", "ingredient/water"],
+      "text": "Move the bones and the vegetables to a stockpot. Pour off the fat from the tin, set it over the heat with a ladle of the water and scrape up every brown bit. Pour this into the pot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/skim",
+      "works_on": ["ingredient/veal-bones", "ingredient/water"],
+      "text": "Add the rest of the cold water. Bring it up slowly, and skim off the foam and the fat as they rise.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["preparation/bouquet-garni", "ingredient/black-pepper"],
+      "text": "Add the bouquet garni and the pepper. Simmer very gently, uncovered, skimming now and then. It must never boil, and it is not salted.",
+      "time": {"from": 5, "to": 6, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/strain",
+      "works_on": ["preparation/brown-stock"],
+      "text": "Ladle the stock through a fine sieve without pressing on the bones.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chill",
+      "works_on": ["preparation/brown-stock"],
+      "text": "Cool it quickly in shallow containers set in iced water, then keep it in the fridge. Lift off the fat once it has set on top.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    }
+  ]
+}

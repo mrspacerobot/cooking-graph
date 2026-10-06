@@ -1,0 +1,23 @@
+{
+  "id": "ingredient/brown-sugar",
+  "tier": "drafted",
+  "names": {"en": "Brown sugar", "fr": "Cassonade"},
+  "aliases": {},
+  "is_a": [
+    {"thing": "ingredient/sugar", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Sugar with some of its molasses, which adds a taste of caramel and browns sooner than white sugar.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/slaughter-product"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    ],
+    "note": "Some cane sugar is whitened with bone char. The stricter answer is recorded, as for sugar."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

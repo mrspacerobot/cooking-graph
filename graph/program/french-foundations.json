@@ -122,6 +122,8 @@
               "number": 3,
               "names": {"en": "Brown stock"},
               "teaches": [
+                {"thing": "technique/roast", "tier": "drafted"},
+                {"thing": "technique/deglaze", "tier": "drafted"},
                 {"thing": "technique/skim", "tier": "drafted"},
                 {"thing": "technique/simmer", "tier": "drafted"},
                 {"thing": "technique/strain", "tier": "drafted"}
@@ -423,9 +425,40 @@
             {"skill": "pan-sauce", "tier": "drafted"}
           ],
           "levels": [
-            {"number": 1, "names": {"en": "Braised leeks"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "Chicken in wine"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Beef in red wine"}, "teaches": [], "through": []}
+            {
+              "number": 1,
+              "names": {"en": "Braised leeks"},
+              "teaches": [
+                {"thing": "technique/braise", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/poireaux-braises", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Chicken in wine"},
+              "teaches": [
+                {"thing": "technique/braise", "tier": "drafted"},
+                {"thing": "technique/sear", "tier": "drafted"},
+                {"thing": "technique/deglaze", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/coq-au-vin", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Beef in red wine"},
+              "teaches": [
+                {"thing": "technique/braise", "tier": "drafted"},
+                {"thing": "technique/sear", "tier": "drafted"},
+                {"thing": "technique/sprinkle-with-flour", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/boeuf-bourguignon", "tier": "drafted"}
+              ]
+            }
           ]
         },
         {
@@ -435,9 +468,40 @@
             {"skill": "sear", "tier": "drafted"}
           ],
           "levels": [
-            {"number": 1, "names": {"en": "Roasted roots"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "Roast chicken and jus"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Butter-basted pork chop"}, "teaches": [], "through": []}
+            {
+              "number": 1,
+              "names": {"en": "Roasted roots"},
+              "teaches": [
+                {"thing": "technique/roast", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/roasted-root-vegetables", "tier": "drafted"},
+                {"thing": "dish/roast-potatoes", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Roast chicken and jus"},
+              "teaches": [
+                {"thing": "technique/roast", "tier": "drafted"},
+                {"thing": "technique/baste", "tier": "drafted"},
+                {"thing": "technique/rest", "tier": "drafted"},
+                {"thing": "technique/deglaze", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/poulet-roti", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Butter-basted pork chop"},
+              "teaches": [
+                {"thing": "technique/sear", "tier": "drafted"},
+                {"thing": "technique/baste", "tier": "drafted"},
+                {"thing": "technique/rest", "tier": "drafted"}
+              ],
+              "through": []
+            }
           ]
         },
         {
@@ -448,9 +512,37 @@
             {"skill": "roux", "tier": "drafted"}
           ],
           "levels": [
-            {"number": 1, "names": {"en": "Potato gratin"}, "teaches": [], "through": []},
-            {"number": 2, "names": {"en": "Cauliflower in béchamel"}, "teaches": [], "through": []},
-            {"number": 3, "names": {"en": "Crumb crust"}, "teaches": [], "through": []}
+            {
+              "number": 1,
+              "names": {"en": "Potato gratin"},
+              "teaches": [
+                {"thing": "technique/layer", "tier": "drafted"},
+                {"thing": "technique/bake", "tier": "drafted"}
+              ],
+              "through": []
+            },
+            {
+              "number": 2,
+              "names": {"en": "Cauliflower in béchamel"},
+              "teaches": [
+                {"thing": "technique/make-a-roux", "tier": "drafted"},
+                {"thing": "technique/gratinate", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/gratin-de-chou-fleur", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Crumb crust"},
+              "teaches": [
+                {"thing": "technique/gratinate", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/hachis-parmentier", "tier": "drafted"},
+                {"thing": "dish/parmentier-de-canard", "tier": "drafted"}
+              ]
+            }
           ]
         }
       ]

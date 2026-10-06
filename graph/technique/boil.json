@@ -33,7 +33,9 @@
     {"thing": "ingredient/pasta", "tier": "drafted"},
     {"thing": "ingredient/vermicelli", "tier": "drafted"},
     {"thing": "ingredient/leek", "tier": "drafted"},
-    {"thing": "ingredient/asparagus", "tier": "drafted"}
+    {"thing": "ingredient/asparagus", "tier": "drafted"},
+    {"thing": "ingredient/cauliflower", "tier": "drafted"},
+    {"thing": "ingredient/macaroni", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

@@ -23,7 +23,10 @@
   ],
   "works_on": [
     {"thing": "ingredient/gruyere", "tier": "drafted"},
-    {"thing": "preparation/bechamel", "tier": "drafted"}
+    {"thing": "preparation/bechamel", "tier": "drafted"},
+    {"thing": "preparation/breadcrumbs", "tier": "drafted"},
+    {"thing": "preparation/mashed-potato", "tier": "drafted"},
+    {"thing": "ingredient/reblochon", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

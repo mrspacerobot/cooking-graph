@@ -17,7 +17,9 @@
   "teaches": [
     {"thing": "technique/skim", "tier": "drafted"},
     {"thing": "technique/simmer", "tier": "drafted"},
-    {"thing": "technique/strain", "tier": "drafted"}
+    {"thing": "technique/strain", "tier": "drafted"},
+    {"thing": "technique/roast", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"}
   ],
   "stands_in_for": [],
   "belongs_to": [

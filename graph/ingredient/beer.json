@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/beer",
+  "tier": "drafted",
+  "names": {"en": "Beer", "fr": "Bière"},
+  "aliases": {"en": ["ale"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Gives a stew a malty bitterness, which long cooking rounds and a little sugar balances.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/alcohol", "fact/gluten"],
+    "free_of": [
+      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/meat", "fact/nuts", "fact/pork",
+      "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": "Brewed from barley."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

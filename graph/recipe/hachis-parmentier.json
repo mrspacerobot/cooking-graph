@@ -1,0 +1,98 @@
+{
+  "id": "recipe/hachis-parmentier",
+  "tier": "drafted",
+  "names": {"en": "Hachis parmentier"},
+  "aliases": {},
+  "makes": "dish/hachis-parmentier",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 1, "unit": "kilogram"},
+      "forms": ["form/peeled", "form/large-pieces"]
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 80, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/milk", "amount": {"value": 200, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": []},
+    {"thing": "ingredient/minced-beef", "amount": {"value": 500, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/peeled", "form/diced"]},
+    {"thing": "ingredient/garlic", "amount": {"value": 1, "unit": "clove"}, "forms": ["form/minced"]},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/beef-stock", "amount": {"value": 150, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/parsley", "amount": {"value": 2, "unit": "tablespoon"}, "forms": ["form/chopped"]},
+    {"thing": "preparation/breadcrumbs", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/baking-dish", "equipment/stockpot", "equipment/saute-pan",
+    "equipment/potato-masher"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/potato", "ingredient/salt"],
+      "text": "Boil the potatoes, starting in cold salted water, until a knife slides in easily. Drain them and let them steam dry.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mash",
+      "works_on": ["ingredient/potato", "ingredient/butter", "ingredient/milk", "ingredient/nutmeg", "ingredient/salt"],
+      "text": "Push the potatoes through a ricer while they are hot. Beat in most of the butter, then the milk, heated, little by little, until the purée is smooth and soft. Season with salt and a little nutmeg.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/mashed-potato"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/sunflower-oil", "ingredient/onion", "ingredient/garlic"],
+      "text": "Soften the onions in the oil over low heat, then stir in the garlic.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/minced-beef", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Turn the heat up, add the beef and break it up. Brown it until the liquid it gives off has cooked away. Season it. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/beef-stock", "ingredient/parsley"],
+      "text": "Add the stock and simmer until the mixture is moist but not wet. Stir in the parsley.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": [
+        "ingredient/minced-beef", "preparation/mashed-potato", "preparation/breadcrumbs", "ingredient/butter"
+      ],
+      "text": "Spread the meat in a buttered gratin dish. Cover it with the purée, rough up the top with a fork, scatter with the breadcrumbs and dot with the rest of the butter.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["preparation/mashed-potato"],
+      "text": "Bake in a hot oven until the top is golden and crisp.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

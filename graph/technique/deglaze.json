@@ -31,7 +31,8 @@
     {"thing": "ingredient/red-wine-vinegar", "tier": "drafted"}
   ],
   "makes": [
-    {"thing": "preparation/pan-sauce", "tier": "drafted"}
+    {"thing": "preparation/pan-sauce", "tier": "drafted"},
+    {"thing": "preparation/jus", "tier": "drafted"}
   ],
   "needs": [
     {

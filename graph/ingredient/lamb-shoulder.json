@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/lamb-shoulder",
+  "tier": "drafted",
+  "names": {"en": "Lamb shoulder", "fr": "Épaule d'agneau"},
+  "aliases": {"en": ["stewing lamb"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A fatty, well-worked cut with a strong taste, which turns tender and rich with long, gentle cooking.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/meat"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

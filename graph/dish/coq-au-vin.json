@@ -1,0 +1,36 @@
+{
+  "id": "dish/coq-au-vin",
+  "tier": "drafted",
+  "names": {"en": "Coq au vin", "fr": "Coq au vin"},
+  "aliases": {"en": ["chicken in red wine"]},
+  "is": "Chicken pieces browned and then braised in red wine with bacon, mushrooms and small onions, until the meat is tender and the wine has become a dark, glossy sauce.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/chicken", "ingredient/chicken-thigh"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/red-wine"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock", "preparation/brown-stock"],
+      "tier": "drafted"
+    },
+    {"role": "garnish", "options": ["ingredient/bacon"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/mushroom"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/pearl-onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
+    {"role": "thickener", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/braise", "tier": "drafted"},
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/burgundian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "technique/carve",
+  "tier": "drafted",
+  "names": {"en": "Carve", "fr": "Découper"},
+  "aliases": {"en": ["carve a chicken", "carve a roast", "slice a roast"]},
+  "does": "Cuts a rested roast or bird into portions, following the joints and cutting across the grain.",
+  "how": [
+    "Rest the meat first, and catch its juices for the sauce.",
+    "For a bird, cut through the skin between the leg and the body, bend the leg out and cut through the joint.",
+    "Cut down along one side of the breastbone and follow the ribs to free each breast, then slice it across.",
+    "For a joint, hold it with a fork and slice across the grain with long strokes of a sharp knife."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Clean slices with the skin still on, and joints that part where the knife finds them, without sawing."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Sawing through bone when the joint is a finger away.",
+      "fix": "Wiggle the leg or the wing to find the joint, and cut through that."
+    },
+    {
+      "mistake": "Slicing with the grain, which makes tender meat chewy.",
+      "fix": "Look for the lines of the fibres and cut across them."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/chicken", "tier": "drafted"},
+    {"thing": "ingredient/duck", "tier": "drafted"},
+    {"thing": "ingredient/leg-of-lamb", "tier": "drafted"},
+    {"thing": "ingredient/pork-loin", "tier": "drafted"},
+    {"thing": "ingredient/beef-roasting-joint", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/rest", "why": "A roast is rested before it is carved.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

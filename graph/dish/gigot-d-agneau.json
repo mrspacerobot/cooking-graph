@@ -1,0 +1,25 @@
+{
+  "id": "dish/gigot-d-agneau",
+  "tier": "drafted",
+  "names": {"en": "Gigot d'agneau rôti", "fr": "Gigot d'agneau rôti"},
+  "aliases": {"en": ["roast leg of lamb"], "fr": ["gigot d'agneau", "gigot rôti"]},
+  "is": "A leg of lamb studded with slivers of garlic, roasted pink, rested for a long time, and served with a jus made from the tin.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/leg-of-lamb"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/thyme"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/roast", "tier": "drafted"},
+    {"thing": "technique/baste", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

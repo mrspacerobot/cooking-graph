@@ -1,0 +1,44 @@
+{
+  "id": "technique/marinate",
+  "tier": "drafted",
+  "names": {"en": "Marinate", "fr": "Mariner"},
+  "aliases": {"en": ["steep in a marinade", "marinade"]},
+  "does": "Steeps food in a seasoned liquid before it is cooked, so that its surface takes on the flavour.",
+  "how": [
+    "Mix the wine or the acid with the aromatics and a little oil.",
+    "Turn the food in it until it is coated, in a bowl that acid does not attack.",
+    "Cover it and keep it in the fridge, turning it once or twice.",
+    "Lift the food out and dry it well before browning it. Keep the marinade for the pot."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Meat from a wine marinade is stained on the outside. The colour does not reach far inside."
+    },
+    {"sense": "smell", "text": "The meat smells of the wine and the herbs."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Browning meat straight from the marinade, wet, so that it steams and will not colour.",
+      "fix": "Drain it and pat it dry first."
+    },
+    {
+      "mistake": "Expecting a marinade to make a tough cut tender.",
+      "fix": "It flavours the surface. Only long, gentle cooking makes a tough cut tender."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/stewing-beef", "tier": "drafted"},
+    {"thing": "ingredient/chicken", "tier": "drafted"},
+    {"thing": "ingredient/lamb-shoulder", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/red-wine", "ingredient/white-wine"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/red-wine-vinegar", "ingredient/lemon"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

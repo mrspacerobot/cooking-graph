@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/chicory",
+  "tier": "drafted",
+  "names": {"en": "Chicory", "fr": "Endive"},
+  "aliases": {"en": ["Belgian endive", "witloof"]},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "Crisp and bitter when raw. Slow cooking softens it and turns the bitterness mellow and sweet.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
+      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

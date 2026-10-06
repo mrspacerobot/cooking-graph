@@ -26,7 +26,8 @@
   "works_on": [
     {"thing": "ingredient/stock", "tier": "drafted"},
     {"thing": "preparation/white-chicken-stock", "tier": "drafted"},
-    {"thing": "preparation/brown-stock", "tier": "drafted"}
+    {"thing": "preparation/brown-stock", "tier": "drafted"},
+    {"thing": "preparation/braising-liquid", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

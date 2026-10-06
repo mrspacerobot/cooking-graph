@@ -1,0 +1,25 @@
+{
+  "id": "dish/tartiflette",
+  "tier": "drafted",
+  "names": {"en": "Tartiflette", "fr": "Tartiflette"},
+  "aliases": {},
+  "is": "Sliced boiled potatoes baked with onions, bacon lardons, a splash of white wine and cream, under a halved reblochon that melts over them and browns.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/potato"], "tier": "drafted"},
+    {"role": "topping", "options": ["ingredient/reblochon"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/bacon"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "enrichment", "options": ["ingredient/creme-fraiche", "ingredient/cream"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/layer", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"},
+    {"thing": "technique/render", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/savoyard", "tier": "drafted"}
+  ]
+}

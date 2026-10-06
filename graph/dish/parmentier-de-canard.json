@@ -1,0 +1,23 @@
+{
+  "id": "dish/parmentier-de-canard",
+  "tier": "drafted",
+  "names": {"en": "Parmentier de canard", "fr": "Parmentier de canard"},
+  "aliases": {"en": ["duck parmentier", "duck confit parmentier"]},
+  "is": "Shredded duck confit with softened shallots under a layer of potato purée and a crust of breadcrumbs, baked until golden.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/duck-confit"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/parsley"], "tier": "drafted"},
+    {"role": "topping", "options": ["preparation/mashed-potato"], "tier": "drafted"},
+    {"role": "topping", "options": ["preparation/breadcrumbs"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/mash", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/gascon", "tier": "drafted"}
+  ]
+}

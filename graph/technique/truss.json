@@ -1,0 +1,42 @@
+{
+  "id": "technique/truss",
+  "tier": "drafted",
+  "names": {"en": "Truss", "fr": "Brider"},
+  "aliases": {"en": ["tie a chicken", "truss a bird", "tie a joint"]},
+  "does": "Ties a bird or a joint into a compact shape, so that it cooks evenly and keeps its form.",
+  "how": [
+    "Tuck the wing tips under the back of the bird.",
+    "Pass a length of string under the tail, cross it over the ends of the drumsticks and pull them together.",
+    "Run the string along the sides, between the legs and the breast, and tie it at the neck.",
+    "For a joint, tie loops of string along it at even spaces, snug but not tight."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "A neat, plump shape with nothing sticking out, and string that is snug without cutting in."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Tying so tightly that the string cuts into the flesh and squeezes the juice out.",
+      "fix": "Pull it snug and no more."
+    },
+    {
+      "mistake": "Leaving the legs splayed, so that the breast dries before the thighs are done.",
+      "fix": "Draw the legs in against the breast."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/chicken", "tier": "drafted"},
+    {"thing": "ingredient/duck", "tier": "drafted"},
+    {"thing": "ingredient/pork-loin", "tier": "drafted"},
+    {"thing": "ingredient/leg-of-lamb", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/kitchen-string"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

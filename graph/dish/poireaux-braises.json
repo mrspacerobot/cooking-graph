@@ -1,0 +1,28 @@
+{
+  "id": "dish/poireaux-braises",
+  "tier": "drafted",
+  "names": {"en": "Poireaux braisés", "fr": "Poireaux braisés"},
+  "aliases": {"en": ["braised leeks"]},
+  "is": "Leeks softened in butter and then cooked slowly, covered, in a little stock until they are silky and the liquid has become a glaze.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/leek"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": [
+        "preparation/white-chicken-stock", "ingredient/chicken-stock", "preparation/vegetable-stock",
+        "ingredient/vegetable-stock"
+      ],
+      "tier": "drafted"
+    },
+    {"role": "aromatic", "options": ["ingredient/thyme"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/braise", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

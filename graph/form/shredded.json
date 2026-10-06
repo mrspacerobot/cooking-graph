@@ -1,0 +1,8 @@
+{
+  "id": "form/shredded",
+  "tier": "drafted",
+  "names": {"en": "Shredded", "fr": "Effiloché"},
+  "aliases": {"en": ["pulled"]},
+  "looks_like": "Taken off the bone and pulled apart along the grain into loose strands.",
+  "size": []
+}

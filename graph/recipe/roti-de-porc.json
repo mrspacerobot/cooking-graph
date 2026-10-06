@@ -1,0 +1,93 @@
+{
+  "id": "recipe/roti-de-porc",
+  "tier": "drafted",
+  "names": {"en": "Rôti de porc"},
+  "aliases": {},
+  "makes": "dish/roti-de-porc",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-loin", "amount": {"value": 1.2, "unit": "kilogram"}, "forms": []},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": []},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/large-pieces"]
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": []},
+    {"thing": "ingredient/thyme", "amount": {"value": 4, "unit": "sprig"}, "forms": []},
+    {"thing": "ingredient/white-wine", "amount": {"value": 150, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/water", "amount": {"value": 100, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/dutch-oven", "equipment/wooden-spoon", "equipment/tongs",
+    "equipment/kitchen-string", "equipment/thermometer", "equipment/chefs-knife", "equipment/fine-sieve"
+  ],
+  "steps": [
+    {
+      "technique": "technique/truss",
+      "works_on": ["ingredient/pork-loin", "ingredient/salt"],
+      "text": "Tie the loin at even spaces if the butcher has not done it. Dry it and salt it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/pork-loin", "ingredient/sunflower-oil", "ingredient/butter"],
+      "text": "Brown it on all sides in the oil and the butter, in a heavy pot that can go in the oven.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/pork-loin", "ingredient/onion", "ingredient/garlic", "ingredient/thyme"],
+      "text": "Tuck the onion, the whole cloves of garlic and the thyme around it. Roast it, uncovered, basting it now and then. Check the middle with a thermometer against a trusted guide to doneness.",
+      "time": {"from": 50, "to": 60, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/rest",
+      "works_on": ["ingredient/pork-loin"],
+      "text": "Rest it on a board, loosely covered.",
+      "time": {"value": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond", "ingredient/white-wine", "ingredient/water"],
+      "text": "Set the pot over the heat. Add the wine and scrape it clean, then the water, and boil it down by about half. Strain it, pressing on the onions.",
+      "time": {"from": 5, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/jus"]
+    },
+    {
+      "technique": "technique/carve",
+      "works_on": ["ingredient/pork-loin"],
+      "text": "Cut off the string and slice the pork across.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pork-loin", "preparation/jus", "ingredient/black-pepper"],
+      "text": "Serve the slices on warm plates with the jus and a little pepper.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

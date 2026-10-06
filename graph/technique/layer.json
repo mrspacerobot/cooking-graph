@@ -23,7 +23,10 @@
     {"thing": "ingredient/gruyere", "tier": "drafted"},
     {"thing": "ingredient/potato", "tier": "drafted"},
     {"thing": "ingredient/boiled-beef", "tier": "drafted"},
-    {"thing": "preparation/bechamel", "tier": "drafted"}
+    {"thing": "preparation/bechamel", "tier": "drafted"},
+    {"thing": "ingredient/cauliflower", "tier": "drafted"},
+    {"thing": "ingredient/macaroni", "tier": "drafted"},
+    {"thing": "preparation/mashed-potato", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

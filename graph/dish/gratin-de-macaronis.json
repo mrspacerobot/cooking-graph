@@ -1,0 +1,21 @@
+{
+  "id": "dish/gratin-de-macaronis",
+  "tier": "drafted",
+  "names": {"en": "Gratin de macaronis", "fr": "Gratin de macaronis"},
+  "aliases": {"en": ["macaroni gratin"], "fr": ["macaronis au gratin"]},
+  "is": "Macaroni boiled, bound with béchamel and cheese, and baked until the top is golden and crisp.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/macaroni"], "tier": "drafted"},
+    {"role": "sauce", "options": ["preparation/bechamel"], "tier": "drafted"},
+    {"role": "topping", "options": ["ingredient/gruyere"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/gratinate", "tier": "drafted"},
+    {"thing": "technique/boil", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

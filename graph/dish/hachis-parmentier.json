@@ -1,0 +1,27 @@
+{
+  "id": "dish/hachis-parmentier",
+  "tier": "drafted",
+  "names": {"en": "Hachis parmentier", "fr": "Hachis parmentier"},
+  "aliases": {"en": ["French shepherd's pie", "parmentier"]},
+  "is": "Minced beef cooked with onion under a thick layer of potato purée, baked until the top is golden and crisp.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/minced-beef", "ingredient/boiled-beef"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/parsley"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/beef-stock", "preparation/brown-stock"], "tier": "drafted"},
+    {"role": "topping", "options": ["preparation/mashed-potato"], "tier": "drafted"},
+    {"role": "topping", "options": ["preparation/breadcrumbs"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/mash", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

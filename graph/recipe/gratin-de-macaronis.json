@@ -1,0 +1,56 @@
+{
+  "id": "recipe/gratin-de-macaronis",
+  "tier": "drafted",
+  "names": {"en": "Gratin de macaronis"},
+  "aliases": {},
+  "makes": "dish/gratin-de-macaronis",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/macaroni", "amount": {"value": 300, "unit": "gram"}, "forms": []},
+    {"thing": "preparation/bechamel", "amount": {"value": 500, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/gruyere", "amount": {"value": 150, "unit": "gram"}, "forms": ["form/grated"]},
+    {"thing": "ingredient/butter", "amount": {"value": 10, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/baking-dish", "equipment/stockpot", "equipment/colander"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/macaroni", "ingredient/salt"],
+      "text": "Boil the macaroni in plenty of well-salted water until just tender, with a little bite left. Drain it.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/macaroni", "preparation/bechamel", "ingredient/gruyere"],
+      "text": "Fold the macaroni into the warm béchamel with most of the cheese.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/macaroni", "ingredient/butter", "ingredient/gruyere"],
+      "text": "Butter a gratin dish, tip the macaroni in, level it and scatter with the rest of the cheese.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["ingredient/gruyere"],
+      "text": "Bake in a hot oven until the top is golden and crisp at the edges.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

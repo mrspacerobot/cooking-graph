@@ -1,0 +1,27 @@
+{
+  "id": "dish/roti-de-porc",
+  "tier": "drafted",
+  "names": {"en": "Rôti de porc", "fr": "Rôti de porc"},
+  "aliases": {"en": ["roast pork", "roast loin of pork"]},
+  "is": "A tied loin of pork browned on the stove, roasted gently on a bed of onion and garlic, rested, and served with a jus made in the pot.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/pork-loin"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/thyme"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/roast", "tier": "drafted"},
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

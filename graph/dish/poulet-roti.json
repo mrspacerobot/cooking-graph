@@ -1,0 +1,29 @@
+{
+  "id": "dish/poulet-roti",
+  "tier": "drafted",
+  "names": {"en": "Poulet rôti", "fr": "Poulet rôti"},
+  "aliases": {"en": ["roast chicken", "roast chicken with jus"]},
+  "is": "A whole chicken rubbed with butter, roasted until the skin is crisp and golden, rested, and served with a jus made from what it leaves in the tin.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/chicken"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/thyme"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock", "ingredient/water"],
+      "tier": "drafted"
+    },
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/roast", "tier": "drafted"},
+    {"thing": "technique/baste", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

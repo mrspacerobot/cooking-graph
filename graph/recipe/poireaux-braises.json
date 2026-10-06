@@ -1,0 +1,55 @@
+{
+  "id": "recipe/poireaux-braises",
+  "tier": "drafted",
+  "names": {"en": "Poireaux braisés"},
+  "aliases": {},
+  "makes": "dish/poireaux-braises",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/leek", "amount": {"value": 6, "unit": "piece"}, "forms": []},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": []},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 250, "unit": "millilitre"}, "forms": []},
+    {"thing": "ingredient/thyme", "amount": {"value": 2, "unit": "sprig"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saute-pan", "equipment/parchment-paper"],
+  "steps": [
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/butter", "ingredient/leek", "ingredient/salt"],
+      "text": "Trim the leeks to their white and pale green parts, halve them lengthwise and wash out the grit, keeping each half in one piece. Lay them cut side down in the butter in a wide pan over low heat, with the salt, and let them soften a little without colour.",
+      "time": {"from": 5, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/leek", "ingredient/chicken-stock", "ingredient/thyme"],
+      "text": "Add the stock and the thyme. The liquid should come about half way up the leeks. Cover with a round of paper and a lid, and cook very gently until the tip of a knife meets no resistance.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/braising-liquid"],
+      "text": "Take off the lid and the paper. Boil the liquid down around the leeks until it is syrupy and coats them.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/black-pepper", "ingredient/salt"],
+      "text": "Season with the pepper, taste for salt and serve warm.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

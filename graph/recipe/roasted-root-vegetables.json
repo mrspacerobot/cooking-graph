@@ -1,0 +1,63 @@
+{
+  "id": "recipe/roasted-root-vegetables",
+  "tier": "drafted",
+  "names": {"en": "Roasted root vegetables"},
+  "aliases": {},
+  "makes": "dish/roasted-root-vegetables",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 400, "unit": "gram"},
+      "forms": ["form/peeled", "form/large-pieces"]
+    },
+    {
+      "thing": "ingredient/parsnip",
+      "amount": {"value": 300, "unit": "gram"},
+      "forms": ["form/peeled", "form/large-pieces"]
+    },
+    {
+      "thing": "ingredient/turnip",
+      "amount": {"value": 300, "unit": "gram"},
+      "forms": ["form/peeled", "form/large-pieces"]
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": []},
+    {"thing": "ingredient/thyme", "amount": {"value": 4, "unit": "sprig"}, "forms": []},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": []},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+  ],
+  "equipment": ["equipment/oven", "equipment/roasting-tin", "equipment/mixing-bowl"],
+  "steps": [
+    {
+      "technique": "technique/toss",
+      "works_on": [
+        "ingredient/carrot", "ingredient/parsnip", "ingredient/turnip", "ingredient/olive-oil", "ingredient/salt",
+        "ingredient/thyme", "ingredient/garlic"
+      ],
+      "text": "Dry the cut vegetables. Turn them with the oil, the salt, the thyme and the whole cloves of garlic until every piece is coated.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/carrot", "ingredient/parsnip", "ingredient/turnip"],
+      "text": "Spread them in a tin in a single layer, with space between the pieces, and roast them in a hot oven. Turn them once, when the undersides have browned. They are ready when a knife slides in and the edges are deep brown.",
+      "time": {"from": 35, "to": 45, "unit": "minute"},
+      "temperature": {"value": 210, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/black-pepper"],
+      "text": "Season with the pepper and serve hot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

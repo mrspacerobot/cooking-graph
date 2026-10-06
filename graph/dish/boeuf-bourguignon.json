@@ -1,0 +1,32 @@
+{
+  "id": "dish/boeuf-bourguignon",
+  "tier": "drafted",
+  "names": {"en": "Bœuf bourguignon", "fr": "Bœuf bourguignon"},
+  "aliases": {"en": ["beef bourguignon", "beef Burgundy"], "fr": ["bœuf à la bourguignonne"]},
+  "is": "Chunks of beef browned and then braised for a long time in red wine with bacon, onions and carrots, finished with mushrooms and small onions.",
+  "parts": [
+    {"role": "main", "options": ["ingredient/stewing-beef"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/red-wine"], "tier": "drafted"},
+    {"role": "liquid", "options": ["preparation/brown-stock", "ingredient/beef-stock"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/bacon"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/mushroom"], "tier": "drafted"},
+    {"role": "garnish", "options": ["ingredient/pearl-onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
+    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
+    {"role": "thickener", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/braise", "tier": "drafted"},
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/sprinkle-with-flour", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/burgundian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ingredient/reblochon",
+  "tier": "drafted",
+  "names": {"en": "Reblochon", "fr": "Reblochon"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "forms": [],
+  "behaviour": "A soft, washed-rind cheese that melts to a rich cream and whose rind browns in the oven.",
+  "safety": {
+    "state": "unverified",
+    "contains": ["fact/dairy", "fact/slaughter-product"],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts",
+      "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    ],
+    "note": "Made with animal rennet, which is taken from the stomach of a calf."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

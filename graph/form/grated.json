@@ -2,7 +2,7 @@
   "id": "form/grated",
   "tier": "drafted",
   "names": {"en": "Grated", "fr": "Râpé"},
-  "aliases": {"en": ["shredded"]},
+  "aliases": {},
   "looks_like": "Loose shreds, fine or coarse.",
   "size": []
 }

@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/endives-braisees",
+  "tier": "drafted",
+  "batch": "braise-1",
+  "set": "growing",
+  "written_for": "braise",
+  "dish": "Endives braisées",
+  "also_called": ["braised chicory", "braised endives"],
+  "techniques": ["sear", "braise"],
+  "ingredients": ["chicory", "butter", "sugar", "lemon"]
+}

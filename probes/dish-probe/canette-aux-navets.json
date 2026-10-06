@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/canette-aux-navets",
+  "tier": "drafted",
+  "batch": "roast-1",
+  "set": "growing",
+  "written_for": "roast",
+  "dish": "Canette rôtie aux navets",
+  "also_called": ["roast duckling with turnips", "canard aux navets"],
+  "techniques": ["roast", "baste", "rest", "glaze"],
+  "ingredients": ["duck", "turnip", "butter", "sugar", "chicken stock"]
+}

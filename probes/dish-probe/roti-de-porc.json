@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/roti-de-porc",
+  "tier": "drafted",
+  "batch": "roast-1",
+  "set": "growing",
+  "written_for": "roast",
+  "dish": "Rôti de porc",
+  "also_called": ["roast pork", "roast loin of pork"],
+  "techniques": ["sear", "roast", "rest", "deglaze"],
+  "ingredients": ["pork loin", "garlic", "thyme", "onion", "white wine", "butter"]
+}

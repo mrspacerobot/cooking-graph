@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/gratin-de-chou-fleur",
+  "tier": "drafted",
+  "batch": "gratin-1",
+  "set": "growing",
+  "written_for": "gratin",
+  "dish": "Gratin de chou-fleur",
+  "also_called": ["cauliflower gratin", "cauliflower cheese"],
+  "techniques": ["boil", "make a roux", "gratinate"],
+  "ingredients": ["cauliflower", "milk", "butter", "flour", "gruyère", "nutmeg"]
+}

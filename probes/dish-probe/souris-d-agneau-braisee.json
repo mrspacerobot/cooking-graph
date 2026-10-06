@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/souris-d-agneau-braisee",
+  "tier": "drafted",
+  "batch": "braise-1",
+  "set": "growing",
+  "written_for": "braise",
+  "dish": "Souris d'agneau braisée",
+  "also_called": ["braised lamb shank"],
+  "techniques": ["sear", "sweat", "deglaze", "braise"],
+  "ingredients": ["lamb shank", "onion", "carrot", "garlic", "white wine", "brown stock", "thyme", "tomato paste"]
+}

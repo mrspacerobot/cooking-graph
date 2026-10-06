@@ -1,0 +1,21 @@
+{
+  "id": "dish-probe/cassoulet",
+  "tier": "drafted",
+  "batch": "gratin-1",
+  "set": "growing",
+  "written_for": "gratin",
+  "dish": "Cassoulet",
+  "also_called": [],
+  "techniques": ["simmer", "sear", "bake", "gratinate"],
+  "ingredients": [
+    "white beans",
+    "duck confit",
+    "pork sausage",
+    "bacon",
+    "onion",
+    "garlic",
+    "tomato",
+    "bouquet garni",
+    "breadcrumbs"
+  ]
+}

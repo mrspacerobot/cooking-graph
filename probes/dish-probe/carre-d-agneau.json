@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/carre-d-agneau",
+  "tier": "drafted",
+  "batch": "roast-1",
+  "set": "growing",
+  "written_for": "roast",
+  "dish": "Carré d'agneau en croûte d'herbes",
+  "also_called": ["rack of lamb with a herb crust", "herb-crusted rack of lamb"],
+  "techniques": ["sear", "roast", "rest"],
+  "ingredients": ["rack of lamb", "Dijon mustard", "breadcrumbs", "parsley", "garlic", "thyme", "butter"]
+}

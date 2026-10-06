@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/gratin-dauphinois",
+  "tier": "drafted",
+  "batch": "gratin-1",
+  "set": "held-back",
+  "written_for": "gratin",
+  "dish": "Gratin dauphinois",
+  "also_called": ["potato gratin", "pommes dauphinoises"],
+  "techniques": ["slice", "layer", "bake"],
+  "ingredients": ["potato", "cream", "milk", "garlic", "nutmeg", "butter"]
+}

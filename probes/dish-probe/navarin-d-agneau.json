@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/navarin-d-agneau",
+  "tier": "drafted",
+  "batch": "braise-1",
+  "set": "growing",
+  "written_for": "braise",
+  "dish": "Navarin d'agneau",
+  "also_called": ["lamb navarin", "navarin printanier"],
+  "techniques": ["sear", "sprinkle with flour", "deglaze", "braise"],
+  "ingredients": [
+    "lamb shoulder",
+    "onion",
+    "garlic",
+    "tomato paste",
+    "white wine",
+    "brown stock",
+    "carrot",
+    "turnip",
+    "potato",
+    "peas",
+    "bouquet garni"
+  ]
+}

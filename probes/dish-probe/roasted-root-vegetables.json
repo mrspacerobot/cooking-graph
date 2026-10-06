@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/roasted-root-vegetables",
+  "tier": "drafted",
+  "batch": "roast-1",
+  "set": "growing",
+  "written_for": "roast",
+  "dish": "Roasted root vegetables",
+  "also_called": ["légumes racines rôtis", "légumes rôtis au four"],
+  "techniques": ["peel", "roast"],
+  "ingredients": ["carrot", "parsnip", "turnip", "olive oil", "thyme", "garlic"]
+}

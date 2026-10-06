@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/tomates-a-la-provencale",
+  "tier": "drafted",
+  "batch": "roast-1",
+  "set": "held-back",
+  "written_for": "roast",
+  "dish": "Tomates à la provençale",
+  "also_called": ["tomates provençales", "Provençal tomatoes"],
+  "techniques": ["roast", "chop"],
+  "ingredients": ["tomato", "garlic", "parsley", "breadcrumbs", "olive oil"]
+}

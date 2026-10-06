@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/tartiflette",
+  "tier": "drafted",
+  "batch": "gratin-1",
+  "set": "growing",
+  "written_for": "gratin",
+  "dish": "Tartiflette",
+  "also_called": [],
+  "techniques": ["boil", "slice", "render", "sweat", "bake"],
+  "ingredients": ["potato", "reblochon", "bacon", "onion", "white wine", "crème fraîche"]
+}

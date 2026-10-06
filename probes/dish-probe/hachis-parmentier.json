@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/hachis-parmentier",
+  "tier": "drafted",
+  "batch": "gratin-1",
+  "set": "growing",
+  "written_for": "gratin",
+  "dish": "Hachis parmentier",
+  "also_called": ["French shepherd's pie"],
+  "techniques": ["boil", "mash", "sweat", "saute", "gratinate"],
+  "ingredients": ["potato", "minced beef", "onion", "butter", "milk", "breadcrumbs", "parsley"]
+}

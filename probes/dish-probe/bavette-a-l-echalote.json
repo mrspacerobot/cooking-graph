@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/bavette-a-l-echalote",
+  "tier": "drafted",
+  "batch": "sear-1",
+  "set": "growing",
+  "written_for": "sear",
+  "dish": "Bavette à l'échalote",
+  "also_called": ["flank steak with shallots"],
+  "techniques": ["sear", "rest", "sweat", "deglaze"],
+  "ingredients": ["flank steak", "shallot", "butter", "red wine vinegar", "parsley"]
+}

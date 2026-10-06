@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/cold-poached-salmon",
+  "tier": "drafted",
+  "batch": "poach-1",
+  "set": "growing",
+  "written_for": "poach",
+  "dish": "Cold poached salmon with mayonnaise",
+  "also_called": ["saumon froid mayonnaise", "saumon poché"],
+  "techniques": ["poach", "chill"],
+  "ingredients": ["salmon", "court-bouillon", "mayonnaise", "lemon"]
+}

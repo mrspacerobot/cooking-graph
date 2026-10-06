@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/poires-au-vin-rouge",
+  "tier": "drafted",
+  "batch": "poach-1",
+  "set": "growing",
+  "written_for": "poach",
+  "dish": "Poires au vin rouge",
+  "also_called": ["pears poached in red wine", "poires au vin"],
+  "techniques": ["peel", "poach", "reduce"],
+  "ingredients": ["pear", "red wine", "sugar", "cinnamon"]
+}

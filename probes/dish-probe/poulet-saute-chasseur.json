@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/poulet-saute-chasseur",
+  "tier": "drafted",
+  "batch": "saute-1",
+  "set": "growing",
+  "written_for": "saute",
+  "dish": "Poulet sauté chasseur",
+  "also_called": ["chicken chasseur", "hunter's chicken"],
+  "techniques": ["saute", "deglaze", "simmer"],
+  "ingredients": ["chicken", "mushroom", "shallot", "white wine", "tomato", "chicken stock", "tarragon", "butter"]
+}

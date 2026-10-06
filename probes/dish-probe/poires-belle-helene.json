@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/poires-belle-helene",
+  "tier": "drafted",
+  "batch": "poach-1",
+  "set": "held-back",
+  "written_for": "poach",
+  "dish": "Poires Belle-Hélène",
+  "also_called": ["pears Belle Hélène"],
+  "techniques": ["peel", "poach"],
+  "ingredients": ["pear", "sugar", "vanilla", "dark chocolate", "vanilla ice cream"]
+}

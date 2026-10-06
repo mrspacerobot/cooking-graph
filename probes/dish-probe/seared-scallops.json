@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/seared-scallops",
+  "tier": "drafted",
+  "batch": "sear-1",
+  "set": "growing",
+  "written_for": "sear",
+  "dish": "Seared scallops",
+  "also_called": ["noix de Saint-Jacques poêlées", "coquilles Saint-Jacques poêlées"],
+  "techniques": ["sear"],
+  "ingredients": ["scallop", "butter", "sunflower oil", "lemon"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/grand-aioli",
+  "tier": "drafted",
+  "batch": "poach-1",
+  "set": "growing",
+  "written_for": "poach",
+  "dish": "Aïoli garni",
+  "also_called": ["le grand aïoli", "grand aioli"],
+  "techniques": ["poach", "boil", "emulsify"],
+  "ingredients": ["salt cod", "potato", "carrot", "green beans", "egg", "garlic", "olive oil"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/sole-meuniere",
+  "tier": "drafted",
+  "batch": "sear-1",
+  "set": "growing",
+  "written_for": "sear",
+  "dish": "Sole meunière",
+  "also_called": [],
+  "techniques": ["dredge", "pan-fry", "brown butter"],
+  "ingredients": ["sole", "flour", "butter", "lemon", "parsley"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/saumon-a-l-unilaterale",
+  "tier": "drafted",
+  "batch": "sear-1",
+  "set": "growing",
+  "written_for": "sear",
+  "dish": "Saumon à l'unilatérale",
+  "also_called": ["salmon cooked on the skin", "crisp-skinned salmon"],
+  "techniques": ["sear"],
+  "ingredients": ["salmon", "olive oil", "salt"]
+}

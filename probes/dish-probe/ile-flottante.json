@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/ile-flottante",
+  "tier": "drafted",
+  "batch": "poach-1",
+  "set": "growing",
+  "written_for": "poach",
+  "dish": "Île flottante",
+  "also_called": ["floating island", "œufs à la neige"],
+  "techniques": ["whip", "poach", "make a custard"],
+  "ingredients": ["egg white", "sugar", "milk", "egg yolk", "vanilla"]
+}

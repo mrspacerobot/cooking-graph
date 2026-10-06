@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/sole-bonne-femme",
+  "tier": "drafted",
+  "batch": "poach-1",
+  "set": "growing",
+  "written_for": "poach",
+  "dish": "Sole bonne femme",
+  "also_called": ["filets de sole bonne femme"],
+  "techniques": ["poach", "reduce", "gratinate"],
+  "ingredients": ["sole", "mushroom", "shallot", "white wine", "fish stock", "butter", "cream"]
+}

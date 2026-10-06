@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/tarte-a-l-oignon",
+  "tier": "drafted",
+  "batch": "saute-1",
+  "set": "growing",
+  "written_for": "saute",
+  "dish": "Tarte à l'oignon",
+  "also_called": ["Alsatian onion tart", "onion tart"],
+  "techniques": ["slice", "sweat", "blind bake", "bake"],
+  "ingredients": ["onion", "butter", "shortcrust pastry", "egg", "cream", "nutmeg"]
+}

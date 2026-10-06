@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/magret-de-canard",
+  "tier": "drafted",
+  "batch": "sear-1",
+  "set": "growing",
+  "written_for": "sear",
+  "dish": "Magret de canard",
+  "also_called": ["pan-seared duck breast", "duck magret"],
+  "techniques": ["score", "render", "sear", "rest"],
+  "ingredients": ["duck breast", "salt", "black pepper"]
+}

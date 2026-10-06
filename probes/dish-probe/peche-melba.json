@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/peche-melba",
+  "tier": "drafted",
+  "batch": "poach-1",
+  "set": "held-back",
+  "written_for": "poach",
+  "dish": "Pêche Melba",
+  "also_called": ["peach Melba"],
+  "techniques": ["poach", "puree"],
+  "ingredients": ["peach", "sugar", "vanilla", "raspberry", "vanilla ice cream"]
+}

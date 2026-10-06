@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/steak-frites",
+  "tier": "drafted",
+  "batch": "sear-1",
+  "set": "held-back",
+  "written_for": "sear",
+  "dish": "Steak frites",
+  "also_called": ["steak and chips"],
+  "techniques": ["sear", "rest", "deep-fry"],
+  "ingredients": ["beef steak", "potato", "butter", "sunflower oil"]
+}

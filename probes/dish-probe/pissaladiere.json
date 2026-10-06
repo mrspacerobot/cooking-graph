@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/pissaladiere",
+  "tier": "drafted",
+  "batch": "saute-1",
+  "set": "growing",
+  "written_for": "saute",
+  "dish": "Pissaladière",
+  "also_called": [],
+  "techniques": ["slice", "caramelize", "bake"],
+  "ingredients": ["onion", "olive oil", "anchovy", "black olive", "bread dough", "thyme"]
+}

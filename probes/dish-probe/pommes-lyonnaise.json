@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/pommes-lyonnaise",
+  "tier": "drafted",
+  "batch": "saute-1",
+  "set": "held-back",
+  "written_for": "saute",
+  "dish": "Pommes lyonnaise",
+  "also_called": ["Lyonnaise potatoes", "pommes de terre à la lyonnaise"],
+  "techniques": ["boil", "slice", "saute"],
+  "ingredients": ["potato", "onion", "butter", "parsley"]
+}

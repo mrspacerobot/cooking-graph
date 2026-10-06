@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/foie-de-veau-a-la-lyonnaise",
+  "tier": "drafted",
+  "batch": "saute-1",
+  "set": "growing",
+  "written_for": "saute",
+  "dish": "Foie de veau à la lyonnaise",
+  "also_called": ["calf's liver with onions"],
+  "techniques": ["slice", "saute", "deglaze"],
+  "ingredients": ["calf's liver", "onion", "butter", "red wine vinegar", "flour", "parsley"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/entrecote-bordelaise",
+  "tier": "drafted",
+  "batch": "sear-1",
+  "set": "growing",
+  "written_for": "sear",
+  "dish": "Entrecôte à la bordelaise",
+  "also_called": ["entrecôte bordelaise"],
+  "techniques": ["sear", "rest", "reduce"],
+  "ingredients": ["rib steak", "shallot", "red wine", "butter", "marrow bone", "thyme"]
+}

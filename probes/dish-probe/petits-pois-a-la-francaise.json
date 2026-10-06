@@ -1,0 +1,11 @@
+{
+  "id": "dish-probe/petits-pois-a-la-francaise",
+  "tier": "drafted",
+  "batch": "saute-1",
+  "set": "growing",
+  "written_for": "saute",
+  "dish": "Petits pois à la française",
+  "also_called": ["French-style peas"],
+  "techniques": ["sweat", "simmer"],
+  "ingredients": ["peas", "lettuce", "spring onion", "butter", "sugar"]
+}

@@ -4,6 +4,7 @@
   "names": {"en": "Stock", "fr": "Bouillon"},
   "aliases": {"en": ["broth"], "fr": ["fond"]},
   "is_a": [],
+  "part_of": [],
   "forms": [],
   "behaviour": "Gives body and savoury depth. As it boils down it thickens and grows saltier.",
   "safety": {

@@ -12,6 +12,30 @@ DRAFTED = "drafted"
 UNVERIFIED = "unverified"
 
 
+# A drafter may write i/butter for ingredient/butter. Every helper below writes the id out in full.
+SHORT_KINDS = {
+    "i": "ingredient",
+    "p": "preparation",
+    "t": "technique",
+    "e": "equipment",
+    "f": "form",
+    "c": "cuisine",
+    "d": "dish",
+    "r": "recipe",
+    "x": "fact",
+}
+
+
+def full(thing_id):
+    """The id written out: i/butter is ingredient/butter."""
+    kind, slug = thing_id.split("/")
+    return SHORT_KINDS.get(kind, kind) + "/" + slug
+
+
+def all_full(thing_ids):
+    return [full(thing_id) for thing_id in thing_ids]
+
+
 def thing(thing_id, english, fr=None, also=None):
     """The head every thing starts with: its id, its tier, its names and its aliases."""
     names = {"en": english}
@@ -34,7 +58,7 @@ def links(*thing_ids):
 
 def part(role, *options):
     """One part of a dish or a preparation: a role, and the things a cook may choose for it."""
-    return {"role": role, "options": list(options), "tier": DRAFTED}
+    return {"role": role, "options": all_full(options), "tier": DRAFTED}
 
 
 def amount(value, unit):
@@ -69,3 +93,104 @@ def safety(root, contains, note=None):
 def put(root, data):
     """Write a drafted thing to its file."""
     return writing.write_thing(root, data)
+
+
+def full_links(thing_ids):
+    return links(*all_full(thing_ids))
+
+
+def equipment(slug, english, use, fr=None, also=None):
+    tool = thing("equipment/" + slug, english, fr=fr, also=also)
+    tool["use"] = use
+    return tool
+
+
+def form(slug, english, looks_like, fr=None, also=None, size=()):
+    """A form. `size` is a list of (measure, length) pairs, for a cut that is defined by its size."""
+    state = thing("form/" + slug, english, fr=fr, also=also)
+    state["looks_like"] = looks_like
+    state["size"] = [{"measure": measure, "length": length} for measure, length in size]
+    return state
+
+
+def stand_in(original, caveat, when=(), not_when=(), ratio=None):
+    """A stands-in-for row. `ratio` is (stand_in, original, measured by), or None when it is not known."""
+    row = {"when": all_full(when), "not_when": all_full(not_when), "ratio": None, "caveat": caveat}
+    if ratio is not None:
+        row["ratio"] = {"stand_in": ratio[0], "original": ratio[1], "by": ratio[2]}
+    return link(full(original), **row)
+
+
+def ingredient(root, slug, english, behaviour, fr=None, also=None, contains=(), note=None,
+               is_a=(), part_of=(), forms=(), stands=(), pantry=()):
+    food = thing("ingredient/" + slug, english, fr=fr, also=also)
+    food["is_a"] = full_links(is_a)
+    food["part_of"] = full_links(part_of)
+    food["forms"] = full_links(forms)
+    food["behaviour"] = behaviour
+    food["safety"] = safety(root, all_full(contains), note=note)
+    food["stands_in_for"] = list(stands)
+    food["in_pantry_of"] = full_links(pantry)
+    return food
+
+
+def technique(slug, english, does, how, cues, mistakes, fr=None, also=None, works_on=(), makes=(),
+              needs=(), comes_after=(), variant_of=(), belongs_to=()):
+    """A technique card. Cues are (sense, text), mistakes (mistake, fix), needs (role, options),
+    comes_after (technique, why) and variant_of (technique, what differs)."""
+    move = thing("technique/" + slug, english, fr=fr, also=also)
+    move["does"] = does
+    move["how"] = list(how)
+    move["cues"] = [{"sense": sense, "text": text} for sense, text in cues]
+    move["mistakes"] = [{"mistake": mistake, "fix": fix} for mistake, fix in mistakes]
+    move["works_on"] = full_links(works_on)
+    move["makes"] = full_links(makes)
+    move["needs"] = [{"role": role, "options": all_full(options), "tier": DRAFTED} for role, options in needs]
+    move["comes_after"] = [link(full(earlier), why=why) for earlier, why in comes_after]
+    move["variant_of"] = [link(full(other), differs=differs) for other, differs in variant_of]
+    move["belongs_to"] = full_links(belongs_to)
+    return move
+
+
+def preparation(slug, english, what_it_is, parts, fr=None, also=None, teaches=(), belongs_to=()):
+    block = thing("preparation/" + slug, english, fr=fr, also=also)
+    block["is"] = what_it_is
+    block["parts"] = list(parts)
+    block["teaches"] = full_links(teaches)
+    block["belongs_to"] = full_links(belongs_to)
+    return block
+
+
+def dish(slug, english, what_it_is, parts, fr=None, also=None, teaches=(), belongs_to=()):
+    plate = thing("dish/" + slug, english, fr=fr, also=also)
+    plate["is"] = what_it_is
+    plate["parts"] = list(parts)
+    plate["teaches"] = full_links(teaches)
+    plate["belongs_to"] = full_links(belongs_to)
+    return plate
+
+
+def line(thing_id, value, unit, *forms):
+    """One ingredient line of a recipe: the thing, how much, and the forms it is in before the first step."""
+    return {"thing": full(thing_id), "amount": amount(value, unit), "forms": all_full(forms)}
+
+
+def step(technique_id, works_on, text, time=None, temperature=None, safety=()):
+    return {
+        "technique": full(technique_id),
+        "works_on": all_full(works_on),
+        "text": text,
+        "time": time,
+        "temperature": temperature,
+        "safety_points": list(safety),
+    }
+
+
+def recipe(slug, english, makes, yields, ingredients, equipment, steps, fr=None, also=None):
+    way = thing("recipe/" + slug, english, fr=fr, also=also)
+    way["makes"] = full(makes)
+    way["yields"] = yields
+    way["ingredients"] = list(ingredients)
+    way["equipment"] = all_full(equipment)
+    way["steps"] = list(steps)
+    return way

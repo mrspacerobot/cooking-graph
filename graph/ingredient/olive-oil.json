@@ -4,6 +4,7 @@
   "names": {"en": "Olive oil", "fr": "Huile d'olive"},
   "aliases": {"en": ["extra virgin olive oil"]},
   "is_a": [],
+  "part_of": [],
   "forms": [],
   "behaviour": "Carries flavour and browns food at moderate heat. Its fruity taste fades, and turns bitter if it is heated until it smokes.",
   "safety": {

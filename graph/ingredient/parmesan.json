@@ -4,6 +4,7 @@
   "names": {"en": "Parmesan", "fr": "Parmesan"},
   "aliases": {"en": ["Parmigiano Reggiano"]},
   "is_a": [],
+  "part_of": [],
   "forms": [],
   "behaviour": "A hard, dry, salty cheese that melts into sauces and browns to a crisp crust.",
   "safety": {

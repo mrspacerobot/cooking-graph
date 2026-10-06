@@ -34,9 +34,10 @@ def fact(slug, english, means):
     return thing
 
 
-def ingredient(slug, english, contains, free_of, is_a=()):
+def ingredient(slug, english, contains, free_of, is_a=(), part_of=()):
     thing = head("ingredient/" + slug, english)
     thing["is_a"] = [link(parent) for parent in is_a]
+    thing["part_of"] = [link(whole) for whole in part_of]
     thing["forms"] = []
     thing["behaviour"] = "Softens over gentle heat."
     thing["safety"] = {
@@ -58,7 +59,10 @@ def technique(slug, english):
     thing["mistakes"] = [{"mistake": "The heat is too high.", "fix": "Turn it down."}]
     thing["works_on"] = [link("ingredient/onion")]
     thing["makes"] = [link("form/minced")]
-    thing["needs"] = [{"options": ["equipment/pan"], "tier": DRAFTED}]
+    thing["needs"] = [
+        {"role": "vessel", "options": ["equipment/pan"], "tier": DRAFTED},
+        {"role": "fat", "options": ["ingredient/butter", "preparation/roux"], "tier": DRAFTED},
+    ]
     thing["comes_after"] = []
     thing["variant_of"] = []
     thing["belongs_to"] = [link("cuisine/french")]
@@ -82,6 +86,7 @@ def preparation():
     thing = head("preparation/roux", "Roux")
     thing["is"] = "Flour cooked in butter."
     thing["parts"] = [part("fat", ["ingredient/butter"]), part("main", ["ingredient/flour"])]
+    thing["teaches"] = [link("technique/sweat")]
     thing["belongs_to"] = [link("cuisine/french")]
     return thing
 
@@ -91,8 +96,8 @@ def recipe():
     thing["makes"] = "dish/buttered-onions"
     thing["yields"] = {"value": 2, "unit": "serving"}
     thing["ingredients"] = [
-        {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}},
-        {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}},
+        {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/minced"]},
+        {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": []},
     ]
     thing["equipment"] = ["equipment/pan"]
     thing["steps"] = [
@@ -102,6 +107,7 @@ def recipe():
             "text": "Soften the onions in the butter over low heat.",
             "time": {"from": 8, "to": 10, "unit": "minute"},
             "temperature": None,
+            "safety_points": ["cooling-and-keeping"],
         }
     ]
     return thing
@@ -159,6 +165,7 @@ def graph_files():
     pan["use"] = "Cooking over a flame."
     minced = head("form/minced", "Minced")
     minced["looks_like"] = "Very small, uneven pieces."
+    minced["size"] = [{"measure": "side", "length": {"from": 1, "to": 2, "unit": "millimetre"}}]
     mince = technique("mince", "Mince")
     mince["comes_after"] = [link("technique/sweat", why="A soft onion is easier to judge.")]
     things = [
@@ -170,6 +177,7 @@ def graph_files():
         minced,
         ingredient("allium", "Allium", [], ["fact/dairy", "fact/gluten"]),
         ingredient("onion", "Onion", [], ["fact/dairy", "fact/gluten"], is_a=["ingredient/allium"]),
+        ingredient("onion-skin", "Onion skin", [], ["fact/dairy", "fact/gluten"], part_of=["ingredient/onion"]),
         ingredient("butter", "Butter", ["fact/dairy"], ["fact/gluten"]),
         ingredient("flour", "Flour", ["fact/gluten"], ["fact/dairy"]),
         technique("sweat", "Sweat"),

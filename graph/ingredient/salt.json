@@ -4,6 +4,7 @@
   "names": {"en": "Salt", "fr": "Sel"},
   "aliases": {"en": ["fine salt", "sea salt"]},
   "is_a": [],
+  "part_of": [],
   "forms": [],
   "behaviour": "Draws water out of food, and seasons deeper the earlier it goes in. A liquid that boils down grows saltier.",
   "safety": {

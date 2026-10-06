@@ -61,18 +61,35 @@ def facts_answered(things):
     return issues
 
 
+def facts_missing_above(thing, things, field):
+    """The facts a thing holds that something it points at through `field` does not hold, with that thing."""
+    held = set(thing.data["safety"]["contains"])
+    found = []
+    for above_id in linked(thing.data[field]):
+        above = things.get(above_id)
+        if above is not None:
+            for fact in sorted(held - set(above.data["safety"]["contains"])):
+                found.append((fact, above_id))
+    return found
+
+
 def classes_as_strict_as_members(things):
     """What a member holds, its class holds too. Stock is at least as strict as chicken stock."""
     issues = []
     for thing_id, thing in of_kind(things, "ingredient"):
-        held = set(thing.data["safety"]["contains"])
-        for parent_id in linked(thing.data["is_a"]):
-            parent = things.get(parent_id)
-            if parent is None:
-                continue
-            for fact in sorted(held - set(parent.data["safety"]["contains"])):
-                message = "holds '%s' but its class '%s' does not" % (fact, parent_id)
-                issues.append(Issue(thing.path, "safety.contains", "class-less-strict", message))
+        for fact, class_id in facts_missing_above(thing, things, "is_a"):
+            message = "holds '%s' but its class '%s' does not" % (fact, class_id)
+            issues.append(Issue(thing.path, "safety.contains", "class-less-strict", message))
+    return issues
+
+
+def wholes_as_strict_as_parts(things):
+    """What a part holds, its whole holds too. An egg is at least as strict as its yolk."""
+    issues = []
+    for thing_id, thing in of_kind(things, "ingredient"):
+        for fact, whole_id in facts_missing_above(thing, things, "part_of"):
+            message = "holds '%s' but the whole it is part of, '%s', does not" % (fact, whole_id)
+            issues.append(Issue(thing.path, "safety.contains", "whole-less-strict", message))
     return issues
 
 
@@ -179,6 +196,7 @@ def links_of(things, kind, field):
 
 LOOPS_THAT_MAKE_NO_SENSE = [
     ("ingredient", "is_a"),
+    ("ingredient", "part_of"),
     ("cuisine", "within"),
     ("technique", "comes_after"),
     ("technique", "variant_of"),
@@ -282,13 +300,13 @@ def one_probe_per_dish(things):
 
 
 def nothing_drafted_towards_held_back(things):
-    """No dish or recipe is written for a held-back probe. Held-back probes test the graph, they never grow it."""
+    """Nothing is written for a held-back probe. Held-back probes test the graph, they never grow it."""
     held_back_names = set()
     for thing_id, thing in of_kind(things, "dish-probe"):
         if thing.data["set"] == "held-back":
             held_back_names.update(probes.dish_names(thing.data))
     issues = []
-    for kind in ("dish", "recipe"):
+    for kind in ("dish", "recipe", "preparation"):
         for thing_id, thing in of_kind(things, kind):
             if names.plain_names(thing.data) & held_back_names:
                 message = "a held-back probe asks about this dish, so it may not be written"
@@ -323,6 +341,7 @@ EVERY_RULE = [
     safety_earned,
     facts_answered,
     classes_as_strict_as_members,
+    wholes_as_strict_as_parts,
     steps_use_what_is_listed,
     recipes_stay_inside_their_dish,
     names_once_per_kind,

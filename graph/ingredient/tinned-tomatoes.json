@@ -4,6 +4,7 @@
   "names": {"en": "Tinned tomatoes", "fr": "Tomates en conserve"},
   "aliases": {"en": ["canned tomatoes", "tinned plum tomatoes"]},
   "is_a": [],
+  "part_of": [],
   "forms": [],
   "behaviour": "Break down into a sauce as they simmer, turning sweeter and thicker as their water cooks off.",
   "safety": {

@@ -62,6 +62,7 @@ class SafetyRecords(unittest.TestCase):
     def test_a_drafted_thing_is_written_and_passes_the_check(self):
         cream = drafting.thing("ingredient/cream", "Cream", fr="Crème")
         cream["is_a"] = []
+        cream["part_of"] = []
         cream["forms"] = []
         cream["behaviour"] = "Thickens as it boils down."
         cream["safety"] = drafting.safety(self.kitchen.root, ["fact/dairy"])
@@ -73,3 +74,65 @@ class SafetyRecords(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ShortIds(unittest.TestCase):
+    def test_a_short_id_is_written_out(self):
+        self.assertEqual("ingredient/butter", drafting.full("i/butter"))
+        self.assertEqual("technique/sweat", drafting.full("t/sweat"))
+        self.assertEqual("fact/dairy", drafting.full("x/dairy"))
+
+    def test_a_full_id_stays_as_it_is(self):
+        self.assertEqual("ingredient/butter", drafting.full("ingredient/butter"))
+
+
+class OneOfEachKind(unittest.TestCase):
+    """Whatever the helpers build has the shape the model asks for."""
+
+    def setUp(self):
+        self.kitchen = SmallKitchen()
+        self.addCleanup(self.kitchen.close)
+
+    def test_everything_the_helpers_build_passes_the_check(self):
+        root = self.kitchen.root
+        built = [
+            drafting.equipment("whisk", "Whisk", "Beats air into a liquid.", fr="Fouet"),
+            drafting.form("diced", "Diced", "Even cubes.", size=[("side", drafting.span(8, 12, "millimetre"))]),
+            drafting.ingredient(root, "leek", "Leek", "Softens slowly.", is_a=["i/allium"], pantry=["c/french"]),
+            drafting.ingredient(
+                root, "ghee", "Ghee", "Stands high heat.", contains=["x/dairy"], note="Made from butter.",
+                stands=[drafting.stand_in("i/butter", "Tastes nuttier.", when=["t/sweat"], ratio=(1, 1, "weight"))],
+            ),
+            drafting.technique(
+                "dice", "Dice", "Cuts food into even cubes.",
+                how=["Square off the piece.", "Cut it into planks, then sticks, then cubes."],
+                cues=[("see", "The cubes are all one size.")],
+                mistakes=[("The pieces are uneven.", "Cut the planks to one thickness first.")],
+                works_on=["i/leek"], makes=["f/diced"], needs=[("tool", ["e/pan"])],
+                comes_after=[("t/mince", "A steady grip comes first.")], variant_of=[("t/mince", "Larger pieces.")],
+                belongs_to=["c/french"],
+            ),
+            drafting.preparation(
+                "leek-butter", "Leek butter", "Leeks softened in butter.",
+                parts=[drafting.part("main", "i/leek"), drafting.part("fat", "i/butter")], teaches=["t/dice"],
+            ),
+            drafting.dish(
+                "buttered-leeks", "Buttered leeks", "Leeks softened in butter.",
+                parts=[drafting.part("main", "p/leek-butter")], teaches=["t/dice"], belongs_to=["c/french"],
+            ),
+            drafting.recipe(
+                "buttered-leeks", "Buttered leeks", "d/buttered-leeks", drafting.amount(2, "serving"),
+                ingredients=[drafting.line("i/leek", 2, "piece", "f/diced"), drafting.line("i/butter", 20, "gram")],
+                equipment=["e/pan"],
+                steps=[
+                    drafting.step("t/dice", ["i/leek"], "Cut the leeks into even cubes."),
+                    drafting.step(
+                        "t/sweat", ["i/butter", "i/leek"], "Soften the leeks in the butter.",
+                        time=drafting.span(8, 10, "minute"), safety=["cooling-and-keeping"],
+                    ),
+                ],
+            ),
+        ]
+        for thing in built:
+            drafting.put(root, thing)
+        self.assertEqual([], check.check_repository(root))

@@ -4,6 +4,7 @@
   "names": {"en": "Butter", "fr": "Beurre"},
   "aliases": {"en": ["unsalted butter"]},
   "is_a": [],
+  "part_of": [],
   "forms": [],
   "behaviour": "Melts, foams as its water boils off, then its milk solids brown and soon burn. Whisked cold into a hot liquid, it thickens it and makes it glossy.",
   "safety": {

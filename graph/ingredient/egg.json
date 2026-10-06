@@ -4,6 +4,7 @@
   "names": {"en": "Egg", "fr": "Œuf"},
   "aliases": {"en": ["whole egg", "hen's egg"]},
   "is_a": [],
+  "part_of": [],
   "forms": [],
   "behaviour": "Sets as it heats, the white before the yolk, and keeps setting from its own heat after it leaves the pan.",
   "safety": {

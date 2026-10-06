@@ -15,6 +15,8 @@ MINCE = "graph/technique/mince.json"
 BUTTER = "graph/ingredient/butter.json"
 ONION = "graph/ingredient/onion.json"
 ALLIUM = "graph/ingredient/allium.json"
+SKIN = "graph/ingredient/onion-skin.json"
+MINCED = "graph/form/minced.json"
 FRENCH = "graph/cuisine/french.json"
 DISH = "graph/dish/buttered-onions.json"
 RECIPE = "graph/recipe/buttered-onions.json"
@@ -136,6 +138,35 @@ class Shapes(CheckerTest):
     def test_the_same_thing_listed_twice(self):
         self.break_file(RECIPE, lambda thing: thing.update(equipment=["equipment/pan", "equipment/pan"]))
         self.expect(RECIPE, "listed-twice")
+
+    def test_a_need_with_a_role_outside_the_list(self):
+        self.break_file(SWEAT, lambda thing: thing["needs"][0].update(role="gadget"))
+        self.expect(SWEAT, "not-in-need_roles")
+
+    def test_a_need_that_names_a_dish(self):
+        self.break_file(SWEAT, lambda thing: thing["needs"][0].update(options=["dish/buttered-onions"]))
+        self.expect(SWEAT, "wrong-kind")
+
+    def test_a_safety_point_outside_the_list(self):
+        def worry(thing):
+            thing["steps"][0]["safety_points"] = ["looks-fine"]
+
+        self.break_file(RECIPE, worry)
+        self.expect(RECIPE, "not-in-safety_points")
+
+    def test_a_size_in_a_unit_that_is_no_length(self):
+        def weigh(thing):
+            thing["size"][0]["length"] = {"value": 2, "unit": "gram"}
+
+        self.break_file(MINCED, weigh)
+        self.expect(MINCED, "not-in-length_units")
+
+    def test_a_form_on_a_line_that_is_no_form(self):
+        def name_a_technique(thing):
+            thing["ingredients"][0]["forms"] = ["technique/mince"]
+
+        self.break_file(RECIPE, name_a_technique)
+        self.expect(RECIPE, "wrong-kind")
 
     def test_a_technique_without_a_cue(self):
         self.break_file(SWEAT, lambda thing: thing.update(cues=[]))
@@ -274,6 +305,10 @@ class Safety(CheckerTest):
         self.break_file(ONION, lambda thing: thing["safety"].update(contains=["fact/gluten"], free_of=["fact/dairy"]))
         self.expect(ONION, "class-less-strict")
 
+    def test_a_part_that_holds_what_its_whole_does_not(self):
+        self.break_file(SKIN, lambda thing: thing["safety"].update(contains=["fact/gluten"], free_of=["fact/dairy"]))
+        self.expect(SKIN, "whole-less-strict")
+
 
 class Recipes(CheckerTest):
     def test_a_step_that_works_on_something_not_listed(self):
@@ -323,6 +358,11 @@ class Order(CheckerTest):
 
     def test_a_cuisine_within_itself(self):
         self.break_file(FRENCH, lambda thing: thing.update(within=link("cuisine/provencal")))
+        found = {issue.rule for issue in self.issues()}
+        self.assertEqual({"cycle"}, found)
+
+    def test_a_whole_that_is_part_of_its_part(self):
+        self.break_file(ONION, lambda thing: thing.update(part_of=[link("ingredient/onion-skin")]))
         found = {issue.rule for issue in self.issues()}
         self.assertEqual({"cycle"}, found)
 
@@ -386,6 +426,12 @@ class Probes(CheckerTest):
         self.break_file(path, lambda probe: probe.update(dish="Buttered onions baked"))
         self.break_file(DISH, lambda thing: thing.update(aliases={"en": ["buttered onions baked"]}))
         self.expect(DISH, "drafted-towards-held-back")
+
+    def test_a_preparation_drafted_towards_a_held_back_probe(self):
+        path = self.kitchen.held_back_path()
+        self.break_file(path, lambda probe: probe.update(dish="Brown roux"))
+        self.break_file(ROUX, lambda thing: thing.update(aliases={"en": ["brown roux"]}))
+        self.expect(ROUX, "drafted-towards-held-back")
 
     def test_two_probes_about_one_dish(self):
         self.break_file(PROBE, lambda probe: probe.update(dish="Onion soup"))

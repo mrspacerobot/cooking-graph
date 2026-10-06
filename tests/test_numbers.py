@@ -19,15 +19,15 @@ class NumbersTest(unittest.TestCase):
     def test_things_are_counted_by_kind_and_tier(self):
         counts = self.count()
         self.assertEqual({"drafted": 2}, counts["things"]["technique"])
-        self.assertEqual({"drafted": 4}, counts["things"]["ingredient"])
+        self.assertEqual({"drafted": 5}, counts["things"]["ingredient"])
         self.assertEqual({"drafted": 1}, counts["things"]["recipe"])
         self.assertEqual({"drafted": 5}, counts["things"]["dish-probe"])
 
     def test_statements_are_counted_by_tier(self):
-        self.assertEqual({"drafted": 26}, self.count()["statements"])
+        self.assertEqual({"drafted": 31}, self.count()["statements"])
 
     def test_safety_records_are_counted_by_state(self):
-        self.assertEqual({"unverified": 4}, self.count()["safety"])
+        self.assertEqual({"unverified": 5}, self.count()["safety"])
 
     def test_probe_shares_are_counted_apart(self):
         counts = self.count()
@@ -40,11 +40,15 @@ class NumbersTest(unittest.TestCase):
     def test_recipe_steps_are_counted(self):
         self.assertEqual(1, self.count()["recipe_steps"])
 
+    def test_safety_points_that_wait_for_a_fact_are_counted(self):
+        self.assertEqual(1, self.count()["safety_points"])
+
     def test_the_table_is_markdown(self):
         model, words = reading.read_schema(self.kitchen.root)
         table = numbers.render(self.count(), model, words)
         self.assertIn("| technique | 2 | 2 | 0 | 0 | 0 | 0 |", table)
-        self.assertIn("| statements | 26 | 26 | 0 | 0 | 0 | 0 |", table)
+        self.assertIn("| statements | 31 | 31 | 0 | 0 | 0 | 0 |", table)
+        self.assertIn("Safety points in recipe steps that wait for a verified fact: 1", table)
         self.assertIn("growing", table)
         self.assertIn("held-back", table)
         self.assertIn("4 of 4", table)

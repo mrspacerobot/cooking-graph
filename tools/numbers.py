@@ -56,6 +56,12 @@ def count_steps(things):
     return sum(len(thing.data["steps"]) for thing in things.values() if thing.kind == "recipe")
 
 
+def count_safety_points(things):
+    """How many places in recipe steps wait for a safety fact a person has verified."""
+    recipes = [thing for thing in things.values() if thing.kind == "recipe"]
+    return sum(len(step["safety_points"]) for recipe in recipes for step in recipe.data["steps"])
+
+
 def count(things):
     return {
         "things": count_things(things),
@@ -64,6 +70,7 @@ def count(things):
         "probes": probes.shares(probes.run(things)),
         "levels_with_a_technique": count_levels(things),
         "recipe_steps": count_steps(things),
+        "safety_points": count_safety_points(things),
     }
 
 
@@ -120,4 +127,5 @@ def render(counts, model, words):
     lines.append("")
     lines.append("Levels of the programs that name a technique: %d of %d" % (with_a_technique, levels))
     lines.append("Recipe steps: %d" % counts["recipe_steps"])
+    lines.append("Safety points in recipe steps that wait for a verified fact: %d" % counts["safety_points"])
     return "\n".join(lines)

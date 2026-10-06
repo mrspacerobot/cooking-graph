@@ -6,6 +6,7 @@
   "is_a": [
     {"thing": "ingredient/stock", "tier": "drafted"}
   ],
+  "part_of": [],
   "forms": [],
   "behaviour": "A light, savoury liquid that takes on other flavours easily. A homemade one sets to a soft jelly when cold and gives a sauce body as it boils down.",
   "safety": {

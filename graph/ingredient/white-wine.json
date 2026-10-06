@@ -4,6 +4,7 @@
   "names": {"en": "White wine", "fr": "Vin blanc"},
   "aliases": {"en": ["dry white wine"]},
   "is_a": [],
+  "part_of": [],
   "forms": [],
   "behaviour": "Brings acidity and aroma, and dissolves the browned bits in a pan. It tastes raw and sharp until it has boiled down.",
   "safety": {

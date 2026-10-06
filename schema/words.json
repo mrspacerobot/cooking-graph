@@ -4,33 +4,18 @@
   "safety_states": ["unverified", "verified"],
   "languages": ["en", "fr"],
   "senses": ["see", "hear", "smell", "feel", "taste"],
-  "part_roles": ["main", "fat", "filling", "seasoning", "aromatic", "liquid", "enrichment", "acid", "side"],
+  "part_roles": ["main", "fat", "filling", "seasoning", "aromatic", "liquid", "enrichment", "acid", "side", "thickener", "garnish", "sauce", "base", "topping", "sweetener"],
+  "need_roles": ["vessel", "tool", "heat", "liquid", "fat", "acid", "seasoning"],
+  "measures": ["side", "width", "length", "thickness"],
+  "safety_points": ["doneness", "raw-meat-or-fish", "raw-or-lightly-cooked-egg", "cooling-and-keeping"],
   "ratio_measures": ["weight", "volume", "count"],
   "probe_sets": ["growing", "held-back"],
-  "amount_units": ["gram", "millilitre", "piece", "teaspoon", "tablespoon"],
+  "amount_units": ["gram", "kilogram", "millilitre", "litre", "piece", "teaspoon", "tablespoon", "pinch", "clove", "sprig", "leaf", "slice"],
   "time_units": ["second", "minute", "hour"],
   "temperature_units": ["celsius"],
-  "yield_units": ["serving"],
-  "sentence_units": [
-    "gram", "grams", "kilogram", "kilograms", "kilo", "kilos", "kg", "mg",
-    "millilitre", "millilitres", "milliliter", "milliliters", "ml", "cl", "dl",
-    "litre", "litres", "liter", "liters",
-    "teaspoon", "teaspoons", "tsp", "tablespoon", "tablespoons", "tbsp",
-    "cup", "cups", "pinch", "pinches",
-    "ounce", "ounces", "oz", "pounds", "lb", "lbs", "pint", "pints", "quart", "quarts", "gallon", "gallons",
-    "inch", "inches", "centimetre", "centimetres", "centimeter", "centimeters", "cm",
-    "millimetre", "millimetres", "millimeter", "millimeters", "mm",
-    "seconds", "sec", "secs", "minute", "minutes", "min", "mins", "hour", "hours", "hr", "hrs",
-    "degree", "degrees", "celsius", "fahrenheit", "centigrade", "percent"
-  ],
-  "sentence_numbers": [
-    "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
-    "fifteen", "twenty", "thirty", "forty", "fifty", "sixty", "hundred", "thousand", "dozen"
-  ],
-  "sentence_claims": [
-    "safe", "safely", "safety", "unsafe",
-    "cooked through", "cook through", "cooks through", "cooking through", "fully cooked",
-    "cooked all the way", "no pink", "no longer pink", "run clear", "runs clear",
-    "bacteria", "germs", "food poisoning"
-  ]
+  "length_units": ["millimetre", "centimetre"],
+  "yield_units": ["serving", "litre", "millilitre", "gram"],
+  "sentence_units": ["gram", "grams", "kilogram", "kilograms", "kilo", "kilos", "kg", "mg", "millilitre", "millilitres", "milliliter", "milliliters", "ml", "cl", "dl", "litre", "litres", "liter", "liters", "teaspoon", "teaspoons", "tsp", "tablespoon", "tablespoons", "tbsp", "cup", "cups", "pinch", "pinches", "ounce", "ounces", "oz", "pounds", "lb", "lbs", "pint", "pints", "quart", "quarts", "gallon", "gallons", "inch", "inches", "centimetre", "centimetres", "centimeter", "centimeters", "cm", "millimetre", "millimetres", "millimeter", "millimeters", "mm", "seconds", "sec", "secs", "minute", "minutes", "min", "mins", "hour", "hours", "hr", "hrs", "degree", "degrees", "celsius", "fahrenheit", "centigrade", "percent"],
+  "sentence_numbers": ["two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "fifteen", "twenty", "thirty", "forty", "fifty", "sixty", "hundred", "thousand", "dozen"],
+  "sentence_claims": ["safe", "safely", "safety", "unsafe", "cooked through", "cook through", "cooks through", "cooking through", "fully cooked", "cooked all the way", "no pink", "no longer pink", "run clear", "runs clear", "bacteria", "germs", "food poisoning"]
 }

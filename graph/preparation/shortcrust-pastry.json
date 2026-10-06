@@ -11,6 +11,7 @@
     {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
   ],
   "teaches": [],
+  "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

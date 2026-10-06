@@ -96,6 +96,12 @@ What counts as a change: a change to `schema/model.json`, which is the model as 
 - **What did not fit:** a step could work only on what the recipe lists. A fond is not bought and has no amount. Yet it is the thing a pan sauce is made of, and "deglazing works on the fond" is the centre of that skill.
 - **Now:** a step has `makes`: the preparations it leaves behind. A later step may work on them. Such a by-product (fond, pan sauce, broth, rendered fat) is a preparation with no parts of its own. Because it has no ingredients to answer for it, the check refuses it as an ingredient of a recipe and as a part of a dish or of another preparation: what a dish holds must always be found by following parts down to ingredients.
 
+### 16. A preparation can stand in for something too (round 3)
+
+- **Example:** clarified butter stands in for butter when searing, and not when mounting a sauce. This is the epic's own example, ghee for butter, and in this graph clarified butter is a preparation.
+- **What did not fit:** only an ingredient could stand in for something.
+- **Now:** a preparation has `stands_in_for`, with the same shape as an ingredient's.
+
 ## Decisions where the starting model was silent
 
 These are not changes. The starting model names kinds and statements, not files, so the first files had to settle them.

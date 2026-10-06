@@ -169,6 +169,11 @@ class Shapes(CheckerTest):
         self.break_file(RECIPE, name_a_technique)
         self.expect(RECIPE, "wrong-kind")
 
+    def test_a_preparation_that_stands_in_without_a_caveat(self):
+        self.break_file(ROUX, lambda thing: thing["stands_in_for"][0].pop("caveat"))
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((ROUX, "missing-field"), found)
+
     def test_a_technique_without_a_cue(self):
         self.break_file(SWEAT, lambda thing: thing.update(cues=[]))
         self.expect(SWEAT, "too-few")

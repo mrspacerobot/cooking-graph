@@ -152,11 +152,12 @@ def technique(slug, english, does, how, cues, mistakes, fr=None, also=None, work
     return move
 
 
-def preparation(slug, english, what_it_is, parts, fr=None, also=None, teaches=(), belongs_to=()):
+def preparation(slug, english, what_it_is, parts, fr=None, also=None, teaches=(), stands=(), belongs_to=()):
     block = thing("preparation/" + slug, english, fr=fr, also=also)
     block["is"] = what_it_is
     block["parts"] = list(parts)
     block["teaches"] = full_links(teaches)
+    block["stands_in_for"] = list(stands)
     block["belongs_to"] = full_links(belongs_to)
     return block
 

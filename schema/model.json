@@ -1,6 +1,24 @@
 {
   "about": "Every kind of file, its fields in order, and what each field may hold. The checker reads this file and nothing else decides what a file may contain. A change here is a change to the model and is logged in docs/model-changes.md.",
   "shapes": {
+    "stand_in": {
+      "is": "link",
+      "to": ["ingredient", "preparation"],
+      "with": {
+        "when": {"is": "list", "of": {"is": "ref", "kinds": ["technique", "preparation", "dish"]}},
+        "not_when": {"is": "list", "of": {"is": "ref", "kinds": ["technique", "preparation", "dish"]}},
+        "ratio": {
+          "is": "object",
+          "or_null": true,
+          "fields": {
+            "stand_in": {"is": "number"},
+            "original": {"is": "number"},
+            "by": {"is": "word", "from": "ratio_measures"}
+          }
+        },
+        "caveat": {"is": "text"}
+      }
+    },
     "part": {
       "is": "object",
       "fields": {
@@ -81,27 +99,7 @@
             "note": {"is": "text", "or_null": true}
           }
         },
-        "stands_in_for": {
-          "is": "list",
-          "of": {
-            "is": "link",
-            "to": ["ingredient", "preparation"],
-            "with": {
-              "when": {"is": "list", "of": {"is": "ref", "kinds": ["technique", "preparation", "dish"]}},
-              "not_when": {"is": "list", "of": {"is": "ref", "kinds": ["technique", "preparation", "dish"]}},
-              "ratio": {
-                "is": "object",
-                "or_null": true,
-                "fields": {
-                  "stand_in": {"is": "number"},
-                  "original": {"is": "number"},
-                  "by": {"is": "word", "from": "ratio_measures"}
-                }
-              },
-              "caveat": {"is": "text"}
-            }
-          }
-        },
+        "stands_in_for": {"is": "list", "of": {"is": "shape", "name": "stand_in"}},
         "in_pantry_of": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
       }
     },
@@ -168,6 +166,7 @@
         "is": {"is": "text"},
         "parts": {"is": "list", "of": {"is": "shape", "name": "part"}},
         "teaches": {"is": "list", "of": {"is": "link", "to": ["technique"]}},
+        "stands_in_for": {"is": "list", "of": {"is": "shape", "name": "stand_in"}},
         "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
       }
     },

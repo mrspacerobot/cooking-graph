@@ -12,6 +12,7 @@
   "teaches": [
     {"thing": "technique/dice", "tier": "drafted"}
   ],
+  "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

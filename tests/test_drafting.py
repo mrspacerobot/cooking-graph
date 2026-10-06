@@ -115,6 +115,7 @@ class OneOfEachKind(unittest.TestCase):
             drafting.preparation(
                 "leek-butter", "Leek butter", "Leeks softened in butter.",
                 parts=[drafting.part("main", "i/leek"), drafting.part("fat", "i/butter")], teaches=["t/dice"],
+                stands=[drafting.stand_in("i/leek", "It is richer.", not_when=["t/sweat"])],
             ),
             drafting.dish(
                 "buttered-leeks", "Buttered leeks", "Leeks softened in butter.",

@@ -87,6 +87,9 @@ def preparation():
     thing["is"] = "Flour cooked in butter."
     thing["parts"] = [part("fat", ["ingredient/butter"]), part("main", ["ingredient/flour"])]
     thing["teaches"] = [link("technique/sweat")]
+    thing["stands_in_for"] = [
+        link("ingredient/flour", when=["technique/sweat"], not_when=[], ratio=None, caveat="It is already cooked.")
+    ]
     thing["belongs_to"] = [link("cuisine/french")]
     return thing
 
@@ -97,6 +100,7 @@ def by_product():
     thing["is"] = "The sweet liquid onions leave in the pan."
     thing["parts"] = []
     thing["teaches"] = []
+    thing["stands_in_for"] = []
     thing["belongs_to"] = []
     return thing
 

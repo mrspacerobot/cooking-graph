@@ -12,5 +12,6 @@
     {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"}
   ],
   "teaches": [],
+  "stands_in_for": [],
   "belongs_to": []
 }

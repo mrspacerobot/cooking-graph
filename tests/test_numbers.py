@@ -24,7 +24,7 @@ class NumbersTest(unittest.TestCase):
         self.assertEqual({"drafted": 5}, counts["things"]["dish-probe"])
 
     def test_statements_are_counted_by_tier(self):
-        self.assertEqual({"drafted": 31}, self.count()["statements"])
+        self.assertEqual({"drafted": 32}, self.count()["statements"])
 
     def test_safety_records_are_counted_by_state(self):
         self.assertEqual({"unverified": 5}, self.count()["safety"])
@@ -47,7 +47,7 @@ class NumbersTest(unittest.TestCase):
         model, words = reading.read_schema(self.kitchen.root)
         table = numbers.render(self.count(), model, words)
         self.assertIn("| technique | 2 | 2 | 0 | 0 | 0 | 0 |", table)
-        self.assertIn("| statements | 31 | 31 | 0 | 0 | 0 | 0 |", table)
+        self.assertIn("| statements | 32 | 32 | 0 | 0 | 0 | 0 |", table)
         self.assertIn("Safety points in recipe steps that wait for a verified fact: 1", table)
         self.assertIn("growing", table)
         self.assertIn("held-back", table)

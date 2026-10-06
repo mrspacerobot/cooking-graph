@@ -20,6 +20,7 @@
     {"thing": "technique/simmer", "tier": "drafted"},
     {"thing": "technique/strain", "tier": "drafted"}
   ],
+  "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

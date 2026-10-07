@@ -6,6 +6,8 @@ The plan is [issue 2](https://github.com/mrspacerobot/cooking-graph/issues/2).
 Progress and next work are in `docs/handover.md`; the active first slice is
 [issue 3](https://github.com/mrspacerobot/cooking-graph/issues/3), and repository
 setup is [issue 4](https://github.com/mrspacerobot/cooking-graph/issues/4).
+Follow-up work is [cycle two, issue 5](https://github.com/mrspacerobot/cooking-graph/issues/5)
+and [content review, issue 6](https://github.com/mrspacerobot/cooking-graph/issues/6).
 Keep work tracking in this repository so a colleague needs access to no other one.
 
 ## What the graph is

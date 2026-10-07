@@ -36,11 +36,18 @@ unverified. Nothing here may be shown to a cook or exported to an app.
 
 ## Explore in your browser
 
-For this draft, clone the working branch and open the graph:
+Clone the repository:
 
 ```sh
-git clone --branch 1-first-slice https://github.com/mrspacerobot/cooking-graph.git
+git clone https://github.com/mrspacerobot/cooking-graph.git
 cd cooking-graph
+```
+
+Until [PR #1](https://github.com/mrspacerobot/cooking-graph/pull/1) is merged,
+run `git checkout 1-first-slice`. After it is merged, the default branch has
+the viewer. Then open the graph:
+
+```sh
 ./view
 ```
 
@@ -124,7 +131,8 @@ recipe ids. Equipment is not part of the kitchen input yet.
 ## Where the plan is
 
 - [Epic #2](https://github.com/mrspacerobot/cooking-graph/issues/2) holds the starting model, the growth loop, stopping rules and future stories.
-- [First slice #3](https://github.com/mrspacerobot/cooking-graph/issues/3) tracks completed work, the unfinished `fresh-3` round and the owner's review, in [draft PR #1](https://github.com/mrspacerobot/cooking-graph/pull/1).
+- [First slice #3](https://github.com/mrspacerobot/cooking-graph/issues/3) establishes the internal draft baseline in [PR #1](https://github.com/mrspacerobot/cooking-graph/pull/1), pending the owner's review and merge.
+- [Cycle two #5](https://github.com/mrspacerobot/cooking-graph/issues/5) tracks the unfinished `fresh-3` round and report. [Content review #6](https://github.com/mrspacerobot/cooking-graph/issues/6) tracks culinary claims, strict facts and safety disagreements. Both remain open after the first slice is merged.
 - [Repository setup #4](https://github.com/mrspacerobot/cooking-graph/issues/4) covers the stack decision, CI, agent workflow and later backlog.
 - [docs/handover.md](docs/handover.md) records the current state and next steps. Start there after `AGENTS.md`; measured results are in [docs/question-cycle.md](docs/question-cycle.md), with history in `docs/rounds/`.
 

@@ -5,10 +5,11 @@ Written on 7 October 2026 for an agent or a person picking this up cold. Read `A
 ## Current status and next steps
 
 - Work is on `1-first-slice`, in [draft PR 1](https://github.com/mrspacerobot/cooking-graph/pull/1). The owner reviews and merges; an agent never merges.
+- The owner asked whether the first slice can be merged as an internal draft baseline. Technical checks pass; the unfinished cycle and content review are separate follow-ups below. The PR remains draft for the owner's decision. A merge does not promote any tier, verify safety records or permit an export.
 - Completed: the first graph slice, strict checker and schema; the question commands, independent probes and one stand-in growth round; the standalone interactive browser viewer. `./view` builds the current working files and opens the browser. See `README.md` for a fresh clone.
 - Current validation: `./check` passes 262 tests and reads 906 content files strictly. Content remains drafted except for the inherited sourced facts; every ingredient safety record is unverified.
-- Next coding work, in order: finish the `fresh-3` growing round, write `docs/rounds/cycle-two-round-3.md`, write `docs/cycle-two.md`, update the draft PR description, then post the final cycle numbers on [issue 3](https://github.com/mrspacerobot/cooking-graph/issues/3). The detailed instructions and volume limits are in "What is left, in order" below.
-- Owner review still needed: the disputed milk/cream exclusion, the courgette-heavy ratatouille option, the strict ingredient answers and the safety disagreements. The graph is not ready for export to cooks.
+- Next coding work is [issue 5](https://github.com/mrspacerobot/cooking-graph/issues/5), in order: finish the `fresh-3` growing round, write `docs/rounds/cycle-two-round-3.md`, write `docs/cycle-two.md`, update its draft PR description, then post the final cycle numbers on issue 5. After the first slice is merged, use a new branch and PR for that issue. The detailed instructions and volume limits are in "What is left, in order" below.
+- Owner review is [issue 6](https://github.com/mrspacerobot/cooking-graph/issues/6): the disputed milk/cream exclusion, the courgette-heavy ratatouille option, strict ingredient answers and safety disagreements. The graph is not ready for export to cooks.
 - Work tracking lives here: [epic 2](https://github.com/mrspacerobot/cooking-graph/issues/2), [first slice 3](https://github.com/mrspacerobot/cooking-graph/issues/3), and [repository setup 4](https://github.com/mrspacerobot/cooking-graph/issues/4). All are open. They were transferred from Tomi issues 106, 119 and 120 with their history, so a colleague needs access only to this repository. Issue 4 creates the later backlog and CI after the owner decides the stack.
 
 `README.md` is the entry point and commands, `AGENTS.md` is the working rules,
@@ -18,7 +19,8 @@ this current-status section when work finishes or priorities change.
 
 The sections below retain the earlier cycle history. Old Tomi issue references
 in past reports and commits are historical; current work uses issues 2, 3 and 4
-here. Reading the Tomi repository is not required to continue this graph work.
+here, with follow-ups 5 and 6. Reading the Tomi repository is not required to
+continue this graph work. Issues 5 and 6 remain open when PR 1 closes issue 3.
 
 ## Update after the question cycle
 
@@ -45,8 +47,8 @@ disagreement was settled. No held-back file was opened by the graph drafter.
 The pull request remains a draft and nothing was merged.
 
 The original sections below describe the starting point and retained cycle-two
-backlog. Its `fresh-3` round and `docs/cycle-two.md` remain outstanding; the new
-owner priority was completed first, as requested.
+backlog. Its `fresh-3` round and `docs/cycle-two.md` remain outstanding under
+issue 5; the new owner priority was completed first, as requested.
 
 ## What the owner wants next
 
@@ -127,10 +129,14 @@ The owner asked for four fixes to the model, a better allergen list from real so
 
 ## What is left, in order
 
+This is now [issue 5](https://github.com/mrspacerobot/cooking-graph/issues/5),
+separate from the first-slice PR. Use a new branch after the owner merges the
+baseline; do not reopen or reuse the first-slice PR for this follow-up.
+
 1. **The round on `fresh-3`.** `./probe` lists what its growing probes lack: about five technique words and 22 ingredient words. Draft what is missing: techniques, ingredients, groups, preparations. Keep the volume down. A probe only needs its techniques and ingredients to exist. A full dish file with a recipe is written for at most two fresh dishes per skill in the whole cycle, so read the notes of rounds 1 and 2 for what each skill already got. Then `./check` clean, read ten of the new files again with fresh eyes and fix what is wrong, write `docs/rounds/cycle-two-round-3.md` like the earlier notes, commit and push.
 2. **The report `docs/cycle-two.md`:** what changed in the model, the sources and what each allows, the numbers, each stopping rule with its measured value, what is doubtful, and the open questions, each with a default.
-3. **The pull request's description,** brought up to date. It stays a draft.
-4. **A comment on [issue 3](https://github.com/mrspacerobot/cooking-graph/issues/3)** with the final numbers of the cycle.
+3. **The follow-up pull request's description,** brought up to date. It stays a draft.
+4. **A comment on [issue 5](https://github.com/mrspacerobot/cooking-graph/issues/5)** with the final numbers of the cycle.
 
 ## Rules that are easy to break
 
@@ -140,7 +146,7 @@ The owner asked for four fixes to the model, a better allergen list from real so
 - **A safety disagreement is never settled by editing either side.** They are for the owner.
 - **No amount, time or temperature in a sentence,** and no claim that food is safe to eat.
 - **Python standard library only.** Install nothing. No em dash anywhere.
-- **Never push to `main`, never merge.** Commit subjects are in the imperative and end with `(#3)` for this first slice. Earlier commits named its original Tomi issue; never rewrite them.
+- **Never push to `main`, never merge.** Commit subjects are in the imperative and name the active issue: `(#3)` for the first slice, `(#5)` for the cycle-two follow-up. Earlier commits named the original Tomi issue; never rewrite them.
 
 ## The commands
 

@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/oregano",
+  "tier": "drafted",
+  "names": {"en": "Oregano", "fr": "Origan"},
+  "aliases": {"en": ["rigani"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/woody-herbs", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A sturdy herb with a warm, sharp, peppery smell. It is most often used dried, rubbed between the fingers over meat, cheese, salads and roasting vegetables, and it stands up to long cooking and to the grill.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

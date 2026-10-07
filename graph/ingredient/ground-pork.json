@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/ground-pork",
+  "tier": "drafted",
+  "names": {"en": "Ground pork", "fr": "Porc haché"},
+  "aliases": {"en": ["minced pork", "pork mince"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Pork cut or ground fine, with enough fat to stay moist. It binds when it is worked with the hands, takes any shape, and cooks fast.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is the flesh of a pig.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is the meat of a pig.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

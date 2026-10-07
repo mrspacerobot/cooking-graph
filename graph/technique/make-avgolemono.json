@@ -1,0 +1,65 @@
+{
+  "id": "technique/make-avgolemono",
+  "tier": "drafted",
+  "names": {"en": "Make avgolemono"},
+  "aliases": {"en": ["egg-lemon liaison", "thicken with egg and lemon"]},
+  "does": "Beats eggs with lemon juice until frothy, warms them with ladles of hot broth, and stirs them back into the pot off the boil, where they turn the broth into a pale, creamy, sharp sauce.",
+  "how": [
+    "Take the pot off the heat and let the liquid stop bubbling, because a boiling pot sets the eggs into threads.",
+    "Beat the eggs in a bowl until pale and frothy, then beat in the lemon juice a little at a time.",
+    "Beat in a ladle of the hot liquid, then another, and go on until the egg mixture is warm to the finger.",
+    "Pour the warm mixture back into the pot in a thin stream, stirring, or swirl the pot to mix it in.",
+    "If the sauce needs more body, set the pot on the lowest heat and stir until it thickens a little. It must never bubble.",
+    "Taste, and add salt or more lemon juice. Serve soon, and warm it only gently if it must wait."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sauce turns pale yellow and creamy, and coats the back of a spoon."},
+    {"sense": "taste", "text": "A clean sharpness of lemon, rounded by the egg, with no trace of grain on the tongue."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring the eggs straight into a boiling pot, which sets them into strings.",
+      "fix": "Take the pot off the heat and warm the eggs with a few ladles of the liquid first."
+    },
+    {
+      "mistake": "Letting the sauce bubble after the eggs have gone in, so that it splits and grains.",
+      "fix": "Keep the heat below a bubble. A sauce that has started to grain can sometimes be rescued with a whisk, off the heat."
+    },
+    {
+      "mistake": "Adding the lemon juice to the hot pot and not to the eggs, which can make the sauce curdle.",
+      "fix": "Beat the lemon juice into the eggs first."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/broth", "tier": "drafted"},
+    {"thing": "preparation/braising-liquid", "tier": "drafted"},
+    {"thing": "ingredient/chicken-stock", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/avgolemono", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/ladle"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon-juice", "ingredient/lemon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/whisk",
+      "why": "The eggs are beaten frothy before any hot liquid reaches them.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/thicken-with-egg-yolk",
+      "differs": "The lemon juice is beaten into the eggs, whole or yolks only, and there is no cream. The hot liquid is the broth of the dish itself, and the sauce is stirred back in off the boil and never boiled again, where the French liaison is made with cream.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/feta",
+  "tier": "drafted",
+  "names": {"en": "Feta", "fr": "Feta"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A white, salty, tangy cheese kept in brine, made from the milk of sheep or of sheep and goats together. It crumbles and slices rather than melts, and in the oven it softens and browns at the edges without running. It is salty, so a dish that holds it needs little more salt.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from the milk of sheep or goats.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "Many fetas are set with animal rennet.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "Animal rennet is taken from the stomach of a young calf, kid or lamb."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

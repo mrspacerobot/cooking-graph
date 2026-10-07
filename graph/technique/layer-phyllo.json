@@ -1,0 +1,60 @@
+{
+  "id": "technique/layer-phyllo",
+  "tier": "drafted",
+  "names": {"en": "Layer phyllo"},
+  "aliases": {"en": ["layer filo", "layer phyllo sheets"]},
+  "does": "Builds a pie from paper-thin sheets of phyllo laid one on another, each brushed with oil or melted butter, so that the baked pie is made of many crisp, flaky layers around its filling.",
+  "how": [
+    "Keep the stack of sheets under a barely damp cloth and lift out only the sheet in hand, because open sheets dry and crack within moments.",
+    "Brush the dish lightly with fat. Lay a sheet in, let the edges hang over the sides, and brush the whole sheet with fat right to the edges.",
+    "Add the next sheet at a slight turn, so that the hanging edges reach all round the dish, and brush it in the same way. Go on until the base is thick enough to hold the filling.",
+    "Spread the filling in an even layer and fold the hanging edges back over it.",
+    "Lay the top sheets one at a time, brushing each with fat. Tuck the edges down inside the dish and brush the top.",
+    "Cut through the top layers into portions before the pie goes in the oven. A baked crust shatters under the knife."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Every sheet shines evenly with fat, and none is left dry at the edges."},
+    {"sense": "hear", "text": "The baked pie crackles under the knife and the top breaks into fine flakes."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the stack uncovered, so that the sheets dry out, crack and crumble.",
+      "fix": "Keep them under a barely damp cloth and take out one sheet at a time."
+    },
+    {
+      "mistake": "Brushing too lightly, so that the sheets stick together and bake leathery, or too heavily, so that the pie turns greasy.",
+      "fix": "Brush a thin, even coat on every sheet, right to the edges."
+    },
+    {
+      "mistake": "Putting a wet filling on the base sheets, which turns them soggy.",
+      "fix": "Drain the filling well and let it cool before it goes in."
+    },
+    {
+      "mistake": "Cutting the pie only after it is baked, so that the crust shatters.",
+      "fix": "Cut through the top layers before baking."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/phyllo", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish", "equipment/baking-sheet"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/butter", "preparation/clarified-butter"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/layer",
+      "differs": "The layers are the dough itself, paper-thin sheets each brushed with fat so that they bake crisp and stay apart, and the filling is closed between them. A plain layer stacks cooked food in turn with its sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

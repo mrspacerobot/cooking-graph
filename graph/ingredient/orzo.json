@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/orzo",
+  "tier": "drafted",
+  "names": {"en": "Orzo"},
+  "aliases": {"en": ["kritharaki", "risoni"]},
+  "is_a": [
+    {"thing": "ingredient/pasta", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Small pasta shaped like grains of rice. It cooks in plenty of boiling water or straight in the dish, where it drinks up the sauce and swells, and it sticks together if it is left unstirred.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/egg", "basis": "Pasta of unknown make may hold egg.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

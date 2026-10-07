@@ -1,0 +1,44 @@
+{
+  "id": "technique/set",
+  "tier": "drafted",
+  "names": {"en": "Set"},
+  "aliases": {"en": ["let set", "leave to set", "set in a mould"]},
+  "does": "Leaves a hot, cooked mixture to cool undisturbed in its mould or tin until it firms enough to hold its shape and be cut.",
+  "how": [
+    "Pour or spoon the mixture into the mould or tin while it is still hot. Press it into the corners and smooth the top.",
+    "Leave it somewhere cool and still. Do not stir it, shake it or cut it while it sets.",
+    "Let it cool right through before it is cut or turned out. Chill it only if the dish asks for it.",
+    "Cut with a thin knife dipped in hot water, or run the knife round the edge and turn it out onto a plate."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The surface loses its wet shine and the edge pulls cleanly from the tin."},
+    {"sense": "feel", "text": "A light press on the middle springs back, and a cut leaves a clean face."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting or turning it out while it is still warm, so that it slumps.",
+      "fix": "Wait until it has cooled right through."
+    },
+    {"mistake": "Moving the tin while it sets, which cracks the surface.", "fix": "Leave it still in a cool place."},
+    {
+      "mistake": "Pouring in a mixture that was cooked too little, so that it never firms.",
+      "fix": "Cook it longer next time, until it comes away from the sides of the pan before it is poured."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/semolina", "tier": "drafted"},
+    {"thing": "ingredient/gelatin", "tier": "drafted"},
+    {"thing": "ingredient/cornstarch", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/baking-dish", "equipment/terrine", "equipment/ramekin"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

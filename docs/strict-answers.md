@@ -3,7 +3,7 @@
 Written by `./safety strict`. An ingredient holds a fact for certain, or the fact is recorded strictly because a common form of the ingredient may hold it.
 The rows below are the strict ones. How strict to be is for the owner to rule, reason by reason. Every safety record is unverified either way.
 
-192 of the 377 facts that ingredients hold are strict.
+199 of the 396 facts that ingredients hold are strict.
 
 | Fact | Basis | Ingredients |
 |---|---|---|
@@ -25,7 +25,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/egg` | Made from wine, which may be cleared with egg white. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
 | `fact/egg` | Many bought loaves hold egg. | sandwich-bread |
 | `fact/egg` | Often made with wine, which may be cleared with egg white. | dijon-mustard |
-| `fact/egg` | Pasta of unknown make may hold egg. | macaroni, vermicelli |
+| `fact/egg` | Pasta of unknown make may hold egg. | macaroni, orzo, vermicelli |
 | `fact/egg` | Some bought pita holds egg. | pita-bread |
 | `fact/egg` | Wine may be cleared with egg white. | madeira, red-wine, riesling, vin-jaune, white-wine |
 | `fact/fish` | Beer may be cleared with isinglass, which comes from fish. | beer |
@@ -74,9 +74,10 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/slaughter-product` | Brawn is set in the jelly of the pig, which comes from animal bones and skin. | pork-brawn |
 | `fact/slaughter-product` | By tradition it is made with animal rennet. | beaufort, gruyere, reblochon |
 | `fact/slaughter-product` | Cider may be cleared with gelatine or isinglass. | cider |
-| `fact/slaughter-product` | It is traditionally made with animal rennet. | roquefort |
+| `fact/slaughter-product` | It is traditionally made with animal rennet. | kefalotyri, roquefort |
 | `fact/slaughter-product` | Made from wine, which may be cleared with gelatine or isinglass. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
 | `fact/slaughter-product` | Many are set with animal rennet. | kashkaval-cheese |
+| `fact/slaughter-product` | Many fetas are set with animal rennet. | feta |
 | `fact/slaughter-product` | Many goat cheeses are made with animal rennet. | goat-cheese |
 | `fact/slaughter-product` | Many such cheeses are set with animal rennet. | kolot-cheese |
 | `fact/slaughter-product` | Many white cheeses are set with animal rennet. | white-cheese |
@@ -84,6 +85,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/slaughter-product` | Some cane sugar is whitened with bone char. | brown-sugar, sugar |
 | `fact/slaughter-product` | Some cheese for the filling is set with animal rennet. | ravioles |
 | `fact/slaughter-product` | Some fresh cheeses are set with animal rennet. | fromage-blanc |
+| `fact/slaughter-product` | The whey it is made from comes from cheeses set with animal rennet. | anthotyro, mizithra |
 | `fact/slaughter-product` | Traditional versions use animal rennet; the maker has not been checked. | comte, emmental |
 | `fact/slaughter-product` | Wine may be cleared with gelatine or isinglass. | madeira, red-wine, riesling, vin-jaune, white-wine |
 | `fact/soy` | Bought sausage meat may hold soy protein. | sausage-meat |
@@ -91,6 +93,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/soy` | Most chocolate is made with soy lecithin. | dark-chocolate |
 | `fact/soy` | Oil sold only as vegetable oil is often pressed from soybeans. | oil |
 | `fact/soy` | Some bought pita holds soy flour. | pita-bread |
+| `fact/soy` | Some bought sheets hold soy flour. | phyllo |
 | `fact/soy` | Some sausages are made with soy protein. | pork-sausage |
 | `fact/sulphites` | Bought pastes may be kept with a preservative of sulphites. | red-pepper-paste |
 | `fact/sulphites` | Bought sauerkraut is sometimes kept with sulphites. | sauerkraut |
@@ -125,6 +128,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/wheat` | Bought stock and stock cubes often hold wheat. | beef-stock, chicken-stock, fish-stock, stock, vegetable-stock |
 | `fact/wheat` | Chopped dates are often rolled in flour so that they do not stick, and the flour may be of wheat. | date |
 | `fact/wheat` | Ground asafoetida is commonly cut with wheat flour to keep it from lumping. | asafoetida |
+| `fact/wheat` | Many rusks are made with a mix of barley and wheat flour. | barley-rusk |
 | `fact/wheat` | Many sausages are bound with breadcrumbs or rusk. | pork-sausage |
 | `fact/wheat` | Most crozets are made of wheat flour, though some are made of buckwheat. | crozets |
 | `fact/wheat` | Most soy sauce is brewed with wheat. | soy-sauce |

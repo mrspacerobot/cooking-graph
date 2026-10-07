@@ -1,0 +1,44 @@
+{
+  "id": "ingredient/pork-brawn",
+  "tier": "drafted",
+  "names": {"en": "Pork brawn", "fr": "Fromage de tête"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/cooked-meats", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Cooked meat from the head of a pig, set in its own jelly and sold cold. It is cut in thin slices and eaten with a sharp dressing, never heated for long. The snout, museau, is sold and sliced the same way but is another cut.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is cooked pork.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is cooked pork.", "certain": true},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Brawn is set in the jelly of the pig, which comes from animal bones and skin.",
+        "certain": false
+      },
+      {
+        "fact": "fact/alcohol",
+        "basis": "It is often kept in vinegar, which keeps a trace of the alcohol it is made from.",
+        "certain": false
+      },
+      {
+        "fact": "fact/celery",
+        "basis": "Cooked meats are often made with a stock or an extract that holds celery.",
+        "certain": false
+      },
+      {"fact": "fact/milk", "basis": "Cooked meats are sometimes made with lactose or milk protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Cooked meats are often kept with sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish", "fact/gluten", "fact/lupin",
+      "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

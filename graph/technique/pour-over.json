@@ -1,0 +1,42 @@
+{
+  "id": "technique/pour-over",
+  "tier": "drafted",
+  "names": {"en": "Pour over", "fr": "Verser sur"},
+  "aliases": {"en": ["pour on", "pour the sauce over", "pour the cream over"]},
+  "does": "Pours a liquid or a loose sauce onto food laid in a dish, slowly and from the side, so that it settles into the gaps without washing off the top.",
+  "how": [
+    "Lay the food out in the dish first, in the way it is to be served.",
+    "Pour from low down near the rim, in a thin steady stream, and not straight onto the middle.",
+    "Stop when the liquid has reached the level the dish asks for. Leave the top of the food showing if it is to brown.",
+    "Tap the dish gently so that the liquid settles into every gap."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The liquid stands at one level all round, and the tops of the pieces show above it."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring from high up, which splashes and washes off the seasoning or the topping.",
+      "fix": "Pour low, from the side, in a thin stream."
+    },
+    {"mistake": "Filling the dish to the brim, so that it spills in the oven.", "fix": "Leave a gap below the rim."}
+  ],
+  "works_on": [
+    {"thing": "group/creams", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "ingredient/milk", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/ladle", "equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/layer",
+      "why": "The food is laid out in the dish first, and the liquid goes over it last.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

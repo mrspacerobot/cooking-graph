@@ -1,0 +1,35 @@
+{
+  "id": "ingredient/ravioles",
+  "tier": "drafted",
+  "names": {"en": "Ravioles", "fr": "Ravioles"},
+  "aliases": {"en": ["Dauphiné ravioli", "ravioles du Dauphiné"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Tiny pillows of thin pasta filled with a soft cheese, from the Dauphiné. They are poached for a very short time and are also baked in a cream gratin.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/wheat", "basis": "The pasta is made of wheat flour.", "certain": true},
+      {"fact": "fact/gluten", "basis": "The pasta is made of wheat flour.", "certain": true},
+      {"fact": "fact/milk", "basis": "The filling is made of cheese.", "certain": true},
+      {"fact": "fact/egg", "basis": "Fresh pasta is usually made with egg.", "certain": false},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Some cheese for the filling is set with animal rennet.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/salsify",
+  "tier": "drafted",
+  "names": {"en": "Salsify", "fr": "Salsifis"},
+  "aliases": {"en": ["salsify root"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A long, thin, dark root with white flesh and a mild taste between artichoke and oyster. Its peeled flesh turns brown in the air, so it goes straight into acidulated water, then it is simmered until tender and finished in a sauce or in butter.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

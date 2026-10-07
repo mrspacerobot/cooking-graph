@@ -1,0 +1,24 @@
+{
+  "id": "ingredient/redcurrant",
+  "tier": "drafted",
+  "names": {"en": "Redcurrant", "fr": "Groseille"},
+  "aliases": {"en": ["redcurrants", "red currant"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A small, glossy red berry that is very sharp and holds a lot of pectin. It is eaten fresh with sugar, or cooked to give sharpness to a sauce, a jelly or a gratin.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "technique/make-a-duxelles",
+  "tier": "drafted",
+  "names": {"en": "Make a duxelles", "fr": "Faire une duxelles"},
+  "aliases": {"en": ["cook a duxelles", "make a mushroom paste"]},
+  "does": "Cooks finely minced mushrooms and shallot in butter until all their water has gone, to a dark, dry paste that is spread or stuffed for its deep flavour.",
+  "how": [
+    "Wipe the mushrooms clean with a cloth. Do not soak them.",
+    "Mince the mushrooms and the shallot very fine, with a knife.",
+    "Cook them in butter in a wide pan over a medium heat, stirring often, until the water has cooked off and the paste starts to brown.",
+    "Season with salt, then let the paste cool before it is used."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The paste is dark and dry, and holds a line when a spoon is drawn through it."},
+    {"sense": "smell", "text": "A deep, roasted mushroom smell."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stopping while the paste is still wet, so that it steams grey and makes a filling soggy.",
+      "fix": "Keep cooking until the pan is dry."
+    },
+    {"mistake": "Chopping the mushrooms coarse, so that the filling falls apart.", "fix": "Mince them very fine."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/mushroom", "tier": "drafted"},
+    {"thing": "ingredient/shallot", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/duxelles", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/saute-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/mince",
+      "why": "The mushrooms must be minced very fine before they are cooked down.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

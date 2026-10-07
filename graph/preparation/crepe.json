@@ -1,0 +1,22 @@
+{
+  "id": "preparation/crepe",
+  "tier": "drafted",
+  "names": {"en": "Crepe", "fr": "Crêpe"},
+  "aliases": {"en": ["crepes", "French pancake"], "fr": ["crêpes"]},
+  "is": "A thin pancake of runny batter of flour, egg and milk, cooked in a hot buttered pan. It is served flat, folded, or rolled round a sweet or savoury filling.",
+  "parts": [
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "base", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-crepes", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

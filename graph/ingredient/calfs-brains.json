@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/calfs-brains",
+  "tier": "drafted",
+  "names": {"en": "Calf's brains", "fr": "Cervelle de veau"},
+  "aliases": {"en": ["veal brains"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/offal", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A pale, soft and delicate organ, mild in taste, which firms in gentle heat and breaks up when it is handled roughly. It is soaked, peeled of its thin skin and cooked gently, then floured and fried or served in a sharp butter sauce.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is the brain of a calf.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

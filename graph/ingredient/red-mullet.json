@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/red-mullet",
+  "tier": "drafted",
+  "names": {"en": "Red mullet", "fr": "Rouget"},
+  "aliases": {"fr": ["rouget barbet"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/round-fish", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A small, firm fish with a thin skin, a pink-red colour and a distinct, sweet taste. It cooks in moments in a hot pan, and dries out if it is left there.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "It is a fish.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

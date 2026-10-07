@@ -2,7 +2,7 @@
   "id": "ingredient/cornichons",
   "tier": "drafted",
   "names": {"en": "Cornichons", "fr": "Cornichons"},
-  "aliases": {"en": ["gherkins"]},
+  "aliases": {"en": ["gherkins", "cornichon"]},
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -1,0 +1,45 @@
+{
+  "id": "technique/gut-a-fish",
+  "tier": "drafted",
+  "names": {"en": "Gut a fish", "fr": "Vider le poisson"},
+  "aliases": {"en": ["gut", "gut the fish", "draw a fish"], "fr": ["vider"]},
+  "does": "Opens the belly of a whole fish and takes out the guts and the gills, then rinses the cavity, so that the fish can be cooked whole or filleted without a bitter taste.",
+  "how": [
+    "Lay the fish on a board with the belly towards you.",
+    "Slide the tip of the knife in at the vent near the tail and slit the belly up to the gills, shallow, with the blade pointing up so that the guts are not pierced.",
+    "Reach in, loosen the guts at the throat and pull them out in one piece.",
+    "Lift the gill cover and cut the gills away at both ends. They taste bitter if they are left in.",
+    "Rinse the cavity under cold running water, rubbing away the dark blood along the backbone, and pat the fish dry."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The cavity is pale and clean, with no dark blood left along the backbone."},
+    {"sense": "smell", "text": "A clean fish smells of the sea and of nothing sour or sharp."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting too deep and piercing the guts, which taints the flesh with bitterness.",
+      "fix": "Cut shallow, with the tip of the knife pointing up."
+    },
+    {
+      "mistake": "Leaving the gills in, which turn a stock or a sauce bitter.",
+      "fix": "Cut them out at both ends and rinse the cavity."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/round-fish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/filleting-knife", "equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/scale-a-fish",
+      "why": "A fish is scaled first, so that loose scales do not stick to the flesh when the belly is opened.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

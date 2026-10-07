@@ -27,7 +27,8 @@
     {"thing": "group/green-vegetables", "tier": "drafted"},
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/braising-cuts", "tier": "drafted"},
-    {"thing": "group/fatty-cuts", "tier": "drafted"}
+    {"thing": "group/fatty-cuts", "tier": "drafted"},
+    {"thing": "ingredient/beef-tripe", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

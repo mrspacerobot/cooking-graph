@@ -2,7 +2,7 @@
   "id": "technique/whisk",
   "tier": "drafted",
   "names": {"en": "Whisk", "fr": "Fouetter"},
-  "aliases": {"en": ["beat", "beat eggs", "whisk together"]},
+  "aliases": {"en": ["beat", "beat eggs", "whisk together", "whisk in"]},
   "does": "Beats a liquid with a whisk until it is blended and smooth.",
   "how": [
     "Use a bowl large enough that nothing slops over.",

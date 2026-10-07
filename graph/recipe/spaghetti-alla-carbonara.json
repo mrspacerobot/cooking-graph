@@ -1,0 +1,97 @@
+{
+  "id": "recipe/spaghetti-alla-carbonara",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti alla carbonara", "fr": "Spaghetti à la carbonara"},
+  "aliases": {},
+  "makes": "dish/spaghetti-alla-carbonara",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/spaghetti", "amount": {"value": 360, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {
+      "thing": "ingredient/guanciale",
+      "amount": {"value": 150, "unit": "gram"},
+      "forms": ["form/lardons"],
+      "part": "pork"
+    },
+    {"thing": "ingredient/egg", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/egg-yolk", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "egg"},
+    {
+      "thing": "ingredient/pecorino",
+      "amount": {"value": 60, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/black-pepper", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/frying-pan", "equipment/mixing-bowl", "equipment/whisk",
+    "equipment/colander", "equipment/tongs"
+  ],
+  "steps": [
+    {
+      "technique": "technique/render",
+      "works_on": ["ingredient/guanciale"],
+      "with": [],
+      "text": "Put the guanciale, cut into short, thick sticks with any hard rind taken off, in a cold, dry frying pan and set it over low heat. Let the fat melt out slowly, stirring now and then, until the pieces are golden and crisp and sit in clear fat. Take the pan off the heat.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/rendered-fat"]
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Bring a large pot of water to a rolling boil and salt it well. Cook the spaghetti until it is tender with a firm bite at the centre. Before draining, scoop out a mug of the cooking water.",
+      "time": {"from": 9, "to": 11, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/egg-yolk", "ingredient/pecorino", "ingredient/black-pepper"],
+      "text": "In a bowl, whisk the egg and the yolks with most of the grated pecorino and plenty of freshly ground pepper into a thick, pale paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss-pasta-with-sauce",
+      "works_on": ["ingredient/spaghetti"],
+      "with": [
+        "ingredient/guanciale", "preparation/rendered-fat", "ingredient/egg", "ingredient/egg-yolk",
+        "ingredient/pecorino", "ingredient/water"
+      ],
+      "text": "Lift the spaghetti straight into the pan with the guanciale and its fat, off the heat. Pour in the egg mixture and toss quickly, adding the cooking water a splash at a time, until the egg has warmed into a glossy cream that clings to every strand. Do not return the pan to the heat.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/black-pepper"],
+      "text": "Taste, and add more pepper if it is wanted.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/pecorino"],
+      "text": "Twirl the spaghetti into warm bowls and scatter over the rest of the pecorino and a little more pepper.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

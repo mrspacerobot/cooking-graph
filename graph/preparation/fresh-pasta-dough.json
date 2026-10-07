@@ -1,0 +1,34 @@
+{
+  "id": "preparation/fresh-pasta-dough",
+  "tier": "drafted",
+  "names": {"en": "Fresh pasta dough", "fr": "Pâte à pâtes fraîches"},
+  "aliases": {"en": ["pasta dough", "pasta fresca dough"]},
+  "is": "A firm, smooth dough of flour with egg or with water, kneaded and rested, then rolled thin and cut. Egg doughs are rich and silky. Doughs of buckwheat and wheat flour with water, such as the pizzoccheri of the Valtellina, are short and tender.",
+  "parts": [
+    {
+      "id": "flour",
+      "role": "base",
+      "options": ["ingredient/flour", "ingredient/semolina", "ingredient/buckwheat-flour"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": true, "tier": "drafted"},
+    {
+      "id": "water",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/milk"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/cut-pasta", "tier": "drafted"},
+    {"thing": "technique/knead", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

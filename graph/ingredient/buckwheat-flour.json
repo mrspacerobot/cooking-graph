@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/buckwheat-flour",
+  "tier": "drafted",
+  "names": {"en": "Buckwheat flour", "fr": "Farine de sarrasin"},
+  "aliases": {"en": ["farina di grano saraceno"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A grey-brown flour milled from the seeds of buckwheat, a plant that is not a grain. It tastes nutty and earthy, has no gluten of its own, and makes a short, tender dough that does not stretch.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/buckwheat", "basis": "It is milled from buckwheat.", "certain": true},
+      {"fact": "fact/gluten", "basis": "Buckwheat flour is often milled or mixed with wheat.", "certain": false},
+      {"fact": "fact/wheat", "basis": "Buckwheat flour is often milled or mixed with wheat.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/celery", "fact/crustaceans", "fact/egg", "fact/fish", "fact/lupin",
+      "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "ingredient/savoiardi",
+  "tier": "drafted",
+  "names": {"en": "Savoiardi", "fr": "Biscuits à la cuillère"},
+  "aliases": {"en": ["ladyfingers", "lady fingers", "sponge fingers"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Dry, crisp, finger-shaped sponge biscuits, light with egg and sugar. They soak up liquid fast, so they are dipped for a moment, and they are the base of tiramisu.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/egg", "basis": "The sponge is made with egg.", "certain": true},
+      {"fact": "fact/wheat", "basis": "The sponge is made with wheat flour.", "certain": true},
+      {"fact": "fact/gluten", "basis": "The sponge is made with wheat flour.", "certain": true},
+      {"fact": "fact/milk", "basis": "Some are made with milk powder.", "certain": false},
+      {"fact": "fact/soy", "basis": "Some hold soy lecithin.", "certain": false},
+      {"fact": "fact/slaughter-product", "basis": "Some cane sugar is whitened with bone char.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

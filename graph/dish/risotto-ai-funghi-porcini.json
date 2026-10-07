@@ -1,0 +1,52 @@
+{
+  "id": "dish/risotto-ai-funghi-porcini",
+  "tier": "drafted",
+  "names": {"en": "Risotto ai funghi porcini", "fr": "Risotto aux cèpes"},
+  "aliases": {"en": ["porcini risotto"]},
+  "is": "A northern Italian risotto of short-grained rice cooked with hot stock added a ladle at a time, with porcini mushrooms and the water they were soaked in, and finished off the heat with butter and cheese until it flows like a slow wave.",
+  "parts": [
+    {
+      "id": "rice",
+      "role": "main",
+      "options": ["ingredient/carnaroli-rice", "ingredient/vialone-nano-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "mushroom",
+      "role": "filling",
+      "options": ["ingredient/porcini-mushroom"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/vegetable-stock", "ingredient/chicken-stock", "ingredient/beef-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "wine", "role": "acid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {"id": "finish", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "cheese", "role": "enrichment", "options": ["ingredient/parmesan"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/toast-rice", "tier": "drafted"},
+    {"thing": "technique/add-stock-gradually", "tier": "drafted"},
+    {"thing": "technique/mantecare", "tier": "drafted"},
+    {"thing": "technique/soak-dried-mushrooms", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

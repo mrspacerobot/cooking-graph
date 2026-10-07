@@ -2,7 +2,10 @@
   "id": "technique/batter",
   "tier": "drafted",
   "names": {"en": "Batter", "fr": "Frire en pâte"},
-  "aliases": {"en": ["coat in batter", "dip in batter", "batter and fry"], "fr": ["tremper dans la pâte à frire"]},
+  "aliases": {
+    "en": ["coat in batter", "dip in batter", "batter and fry", "make a batter"],
+    "fr": ["tremper dans la pâte à frire"]
+  },
   "does": "Dips food in a thin, wet mixture of flour and cold liquid, so that it fries with a light, crisp, airy coat that is lighter than a crumb coat.",
   "how": [
     "Stir the flour into cold liquid just until it is smooth enough to coat a spoon. A few lumps do no harm.",
@@ -33,7 +36,8 @@
     {"thing": "group/lean-fish", "tier": "drafted"},
     {"thing": "group/crustaceans", "tier": "drafted"},
     {"thing": "ingredient/aubergine", "tier": "drafted"},
-    {"thing": "ingredient/courgette", "tier": "drafted"}
+    {"thing": "ingredient/courgette", "tier": "drafted"},
+    {"thing": "ingredient/courgette-flower", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

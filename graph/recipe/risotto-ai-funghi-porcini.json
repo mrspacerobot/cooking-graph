@@ -1,0 +1,121 @@
+{
+  "id": "recipe/risotto-ai-funghi-porcini",
+  "tier": "drafted",
+  "names": {"en": "Risotto ai funghi porcini", "fr": "Risotto aux cèpes"},
+  "aliases": {},
+  "makes": "dish/risotto-ai-funghi-porcini",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/carnaroli-rice", "amount": {"value": 320, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/porcini-mushroom", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "mushroom"},
+    {"thing": "ingredient/water", "amount": {"value": 400, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/vegetable-stock", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/minced"], "part": "onion"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/white-wine", "amount": {"value": 120, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "finish"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 60, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/saute-pan", "equipment/mixing-bowl", "equipment/fine-sieve",
+    "equipment/ladle", "equipment/wooden-spoon", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak-dried-mushrooms",
+      "works_on": ["ingredient/porcini-mushroom"],
+      "with": ["ingredient/water"],
+      "text": "Rinse the dried porcini quickly, then cover them with warm water and leave them until they are plump and soft. Lift them out, squeeze them gently over the bowl, and pour the dark soaking water slowly through a fine sieve, leaving the grit behind. Keep the water to add to the stock.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/vegetable-stock"],
+      "with": ["ingredient/water"],
+      "text": "Pour the stock and the strained soaking water into a saucepan and keep it at a bare simmer beside the risotto pan.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/porcini-mushroom"],
+      "with": ["ingredient/butter"],
+      "text": "Slice the soaked porcini and sauté them in a little of the butter over fairly high heat until they take colour at the edges. Set them aside.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter", "ingredient/salt"],
+      "text": "Soften the onion in the rest of the butter in a wide, heavy pan over low heat, with a little salt, until it is soft and glassy and has taken no colour.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast-rice",
+      "works_on": ["ingredient/carnaroli-rice"],
+      "with": ["ingredient/white-wine", "ingredient/butter"],
+      "text": "Tip the dry rice into the onion and stir over medium heat until the edges of the grains turn translucent and the rice is hot. Pour in the wine and stir until it has been taken up.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/add-stock-gradually",
+      "works_on": ["ingredient/carnaroli-rice"],
+      "with": ["ingredient/vegetable-stock", "ingredient/porcini-mushroom"],
+      "text": "Add the hot stock a ladle at a time, stirring, and give each ladle time to be taken up before the next goes in. Stir in the sautéed porcini a little before the end. Stop when the grains are tender with a small bite at the centre and the rice flows loosely.",
+      "time": {"from": 16, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mantecare",
+      "works_on": ["ingredient/carnaroli-rice"],
+      "with": ["ingredient/butter", "ingredient/parmesan"],
+      "text": "Take the pan off the heat. Add the cold butter in cubes and most of the cheese, and beat hard, shaking the pan, until the risotto turns glossy and creamy. Cover for a short rest.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/carnaroli-rice"],
+      "with": ["ingredient/salt"],
+      "text": "Taste, and adjust the salt.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/carnaroli-rice"],
+      "with": ["ingredient/parmesan"],
+      "text": "Spoon the risotto into warm, shallow bowls and scatter over the rest of the cheese.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

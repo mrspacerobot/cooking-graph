@@ -1,0 +1,32 @@
+{
+  "id": "ingredient/ricotta-salata",
+  "tier": "drafted",
+  "names": {"en": "Ricotta salata", "fr": "Ricotta salée"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A firm, white ricotta that has been salted and pressed, milky and tangy. It is sliced, crumbled or grated over a dish at the end, and it does not melt.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from milk.", "certain": true},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Ricotta is made from the whey of cheese that was set with animal rennet.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

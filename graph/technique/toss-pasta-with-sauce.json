@@ -1,0 +1,62 @@
+{
+  "id": "technique/toss-pasta-with-sauce",
+  "tier": "drafted",
+  "names": {"en": "Toss pasta with sauce"},
+  "aliases": {"en": ["finish pasta in the sauce", "toss the pasta", "saltare la pasta", "ripassare la pasta"]},
+  "does": "Moves just-drained pasta into the sauce and tosses it over the heat with a splash of the starchy cooking water, so that sauce and water bind into a glossy coat that clings to every piece. The pasta is dressed in the pan and not on the plate.",
+  "how": [
+    "Have the sauce ready in a wide pan before the pasta is drained, with a mug of the cooking water set aside.",
+    "Lift the pasta straight from the pot into the pan, still wet and hot, a little before it is ready.",
+    "Toss and stir over the heat, adding the cooking water a splash at a time, until the sauce turns glossy and clings in a thin coat.",
+    "For a sauce that holds egg or cheese, take the pan off the heat first, so that the egg warms into a cream and does not scramble.",
+    "Serve at once, while the sauce still flows."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The sauce is glossy and clings to the pasta, with no loose liquid and no dry patches in the pan."
+    },
+    {"sense": "feel", "text": "The pieces slide freely against each other and do not clump."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Spooning sauce on top of dry, drained pasta at the table, so that it slides off.",
+      "fix": "Finish the pasta in the pan with a splash of the cooking water."
+    },
+    {
+      "mistake": "Tossing an egg sauce over strong heat, so that the egg scrambles.",
+      "fix": "Take the pan off the heat and loosen with the cooking water."
+    },
+    {
+      "mistake": "Pouring in all the water at once, so that the sauce turns thin.",
+      "fix": "Add it a splash at a time and watch the sauce."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs", "equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/boil-pasta",
+      "why": "The pasta is taken from the pot a little early, with some of its water kept back, to finish in the sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/toss",
+      "differs": "The pasta is tossed over heat and not in a cold bowl, and the starchy cooking water is added so that the sauce and the starch bind together.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "technique/make-agrodolce",
+  "tier": "drafted",
+  "names": {"en": "Make agrodolce"},
+  "aliases": {"en": ["agrodolce", "make an agrodolce"]},
+  "does": "Melts sugar into hot vinegar and cooks it down to a glossy sweet-sour syrup, which is poured over fried vegetables, fish or meat, or cooked into them. It is a balance and not a caramel: the sugar is never taken to colour. Sicilian kitchens use it for caponata.",
+  "how": [
+    "Warm the vinegar in a small pan over medium heat with the sugar, and stir until the sugar has dissolved.",
+    "Let it bubble gently until it thickens a little and smells mellow and not sharp.",
+    "Pour it over the fried vegetables, or add them to the pan, and stir over low heat until they are glazed.",
+    "Taste. Add sugar if it bites and vinegar if it cloys, until sweet and sour are in balance, then let it cool in the pan so that the flavours settle."
+  ],
+  "cues": [
+    {"sense": "taste", "text": "Sharpness and sweetness arrive together, and neither wins."},
+    {"sense": "see", "text": "The syrup coats a spoon in a thin, shining layer."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling it hard until the sugar browns, which turns it bitter and takes away the balance.",
+      "fix": "Keep it at a gentle bubble and stop while the syrup is pale."
+    },
+    {
+      "mistake": "Pouring raw vinegar and sugar over the food without cooking them together, so that it tastes sharp and grainy.",
+      "fix": "Dissolve and cook them together first."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/sugars", "tier": "drafted"},
+    {"thing": "ingredient/vinegar", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/agrodolce", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/frying-pan"], "tier": "drafted"},
+    {
+      "role": "acid",
+      "options": ["ingredient/vinegar", "ingredient/red-wine-vinegar", "ingredient/white-wine-vinegar"],
+      "tier": "drafted"
+    },
+    {"role": "seasoning", "options": ["ingredient/sugar", "ingredient/honey"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/make-a-caramel",
+      "differs": "The sugar is melted into vinegar and boiled down to a sweet-sour syrup. It is never taken to colour, and it is cooked to dress food and not to be a caramel.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

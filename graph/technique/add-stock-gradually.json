@@ -1,0 +1,67 @@
+{
+  "id": "technique/add-stock-gradually",
+  "tier": "drafted",
+  "names": {"en": "Add stock gradually"},
+  "aliases": {"en": ["add stock a ladle at a time", "ladle in the stock", "add the stock gradually"]},
+  "does": "Adds hot stock to rice a ladle at a time, stirring as each addition is taken up, so that the grains cook evenly and rub their starch off into a creamy sauce.",
+  "how": [
+    "Keep the stock hot in a pot beside the pan, at a bare simmer, so that it never stops the rice from cooking.",
+    "Add enough stock to just cover the rice and stir. Keep the heat at a lively bubble.",
+    "When the pan is nearly dry and a spoon drawn across it leaves a trail, add the next ladle. Stir often and scrape the corners.",
+    "Taste along the way. Stop adding stock when the grains are tender with a small bite at the centre and the whole pan flows loosely when it is shaken."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A spoon drawn across the pan leaves a trail that fills in slowly."},
+    {
+      "sense": "feel",
+      "text": "The grains are tender outside with a small firm centre, and the whole pan flows like a thick, loose cream."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using cold stock, which stops the cooking each time it goes in.",
+      "fix": "Keep the stock at a bare simmer beside the pan."
+    },
+    {
+      "mistake": "Pouring in all the stock at once, so that the rice boils and the sauce stays thin.",
+      "fix": "Add it a ladle at a time and stir."
+    },
+    {
+      "mistake": "Letting the pan dry out between ladles, so that the rice catches.",
+      "fix": "Add the next ladle as soon as the trail from the spoon stays open."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/risotto-rices", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/dutch-oven"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": [
+        "ingredient/stock", "ingredient/vegetable-stock", "ingredient/chicken-stock", "ingredient/beef-stock"
+      ],
+      "tier": "drafted"
+    },
+    {"role": "tool", "options": ["equipment/ladle", "equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/toast-rice",
+      "why": "The grains are coated in hot fat before any stock goes in.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/cook-pilaf",
+      "differs": "A pilaf takes all its hot stock at once and is covered and left alone. A risotto takes its stock in small lots and is stirred throughout, so that the starch is rubbed off the grains into a sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

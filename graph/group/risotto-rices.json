@@ -1,0 +1,9 @@
+{
+  "id": "group/risotto-rices",
+  "tier": "drafted",
+  "names": {"en": "Risotto rices", "fr": "Riz à risotto"},
+  "aliases": {},
+  "shares": "Short, plump Italian rices whose outer starch is rubbed off into a creamy sauce as they are stirred, while the centre of each grain stays firm. They are not rinsed, and they cook by taking hot stock a little at a time.",
+  "within": {"thing": "group/starches", "tier": "drafted"},
+  "stands_alone": null
+}

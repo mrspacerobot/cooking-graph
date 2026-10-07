@@ -1,0 +1,61 @@
+{
+  "id": "technique/mantecare",
+  "tier": "drafted",
+  "names": {"en": "Beat in butter and cheese"},
+  "aliases": {"en": ["mantecatura", "mantecare", "finish a risotto", "finish with butter and cheese"]},
+  "does": "Takes the pan off the heat and beats cold butter and grated hard cheese hard into the rice, so that fat and starch blend into a creamy, glossy, flowing finish. The Italian name is mantecatura.",
+  "how": [
+    "When the rice is a few moments from ready, take the pan off the heat. The risotto should still be loose, because it tightens as it rests.",
+    "Add cold butter in cubes and a generous handful of finely grated cheese.",
+    "Beat hard with a wooden spoon and shake the pan with a quick circular motion, until the fat has vanished and the rice turns glossy and flows.",
+    "Cover for a short rest, then serve in warm bowls at once."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The risotto turns glossy and creamy and spreads out slowly like a wave when it is spooned onto a plate."
+    },
+    {"sense": "feel", "text": "The spoon moves easily through the rice, which flows and does not stand in a lump."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Beating it in over strong heat, so that the cheese turns stringy and the butter runs to oil.",
+      "fix": "Take the pan off the heat first, and loosen it with a splash of hot stock if it is too tight."
+    },
+    {
+      "mistake": "Using soft or melted butter, which goes straight to oil.",
+      "fix": "Use butter cold from the fridge, cut small."
+    },
+    {
+      "mistake": "Leaving the risotto stiff before the butter goes in, so that it ends as a stiff lump.",
+      "fix": "Keep the pan loose and wet before the finish."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/risotto-rices", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/parmesan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/dutch-oven"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/add-stock-gradually",
+      "why": "The rice must be nearly done and still loose before the finish.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/mount-with-butter",
+      "differs": "French mounting whisks butter into a reduced liquid, to thicken a sauce. Here butter and grated cheese are beaten into rice, and it is the starch of the rice, not a reduced liquid, that holds the fat in a creamy sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

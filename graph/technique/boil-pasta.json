@@ -1,0 +1,61 @@
+{
+  "id": "technique/boil-pasta",
+  "tier": "drafted",
+  "names": {"en": "Boil pasta", "fr": "Cuire les pâtes"},
+  "aliases": {"en": ["cook pasta", "cook pasta al dente", "cuocere la pasta"], "fr": ["cuire les pâtes al dente"]},
+  "does": "Cooks pasta in a large pot of fast-bubbling water that is salted well, and stops while the heart of each piece still has a little bite. It is lifted out with some of its starchy water kept back, and goes to its sauce without rinsing.",
+  "how": [
+    "Fill the biggest pot to hand with water, so that the pasta can move freely, and bring it to a rolling boil.",
+    "Salt the water generously once it boils. It should taste lightly of the sea, because this is the only chance to season the pasta itself.",
+    "Slide in the pasta and stir at once, so that it does not stick. Keep the water bubbling and stir now and then.",
+    "Start tasting a little before the packet says it is ready. Stop when the pasta is tender outside and has a small firm bite at the centre, which is called al dente.",
+    "Scoop out a mug of the cooking water, then drain the pasta. Do not rinse it, and do not leave it waiting: it goes into the sauce while it is still wet and hot."
+  ],
+  "cues": [
+    {"sense": "taste", "text": "A bitten piece is tender, with a small firm core that is neither chalky nor soft."},
+    {
+      "sense": "see",
+      "text": "A piece snapped in half shows a faint pale dot at the very centre when it is a moment from ready."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using a small pot, so that the water falls off the boil and the pasta clumps and turns gluey.",
+      "fix": "Use a large pot with plenty of water and keep it bubbling."
+    },
+    {
+      "mistake": "Adding oil to the water, which makes the pasta slippery so that the sauce slides off.",
+      "fix": "Leave the oil out and stir well at the start."
+    },
+    {
+      "mistake": "Rinsing the pasta, which washes away the starch that helps the sauce cling.",
+      "fix": "Drain it and move it straight to the sauce, keeping a little of the cooking water."
+    },
+    {
+      "mistake": "Cooking the pasta to the end before it meets the sauce, so that it turns soft as it finishes in the pan.",
+      "fix": "Take it out a little early when it is to finish in the sauce."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/stockpot", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/colander"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/boil",
+      "differs": "The water is salted much more heavily, the pasta is stopped while it still has bite, and some of the starchy water is kept to loosen the sauce. It is never cooled in cold water.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

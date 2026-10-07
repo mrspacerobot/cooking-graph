@@ -2,7 +2,7 @@
   "id": "technique/flatten",
   "tier": "drafted",
   "names": {"en": "Flatten", "fr": "Aplatir"},
-  "aliases": {"en": ["flatten the escalopes", "beat thin", "pound thin"], "fr": ["battre les escalopes"]},
+  "aliases": {"en": ["flatten the escalopes", "beat thin", "pound thin", "pound meat"], "fr": ["battre les escalopes"]},
   "does": "Beats a slice of meat to an even, thin sheet between layers of paper, so that it cooks in moments and stays tender.",
   "how": [
     "Trim away any sinew or skin from the slice, and nick the edge in a few places so that it does not curl.",

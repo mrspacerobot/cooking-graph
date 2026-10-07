@@ -3,7 +3,7 @@
   "tier": "drafted",
   "names": {"en": "Soak", "fr": "Tremper"},
   "aliases": {
-    "en": ["steep", "soak overnight", "soak in milk", "soak beans", "soak chickpeas", "soak bread"],
+    "en": ["steep", "soak overnight", "soak in milk", "soak beans", "soak chickpeas", "soak bread", "soak salt cod"],
     "fr": ["faire tremper", "dessaler"]
   },
   "does": "Leaves food in a liquid until it has taken the liquid up, softened, or given up its salt.",

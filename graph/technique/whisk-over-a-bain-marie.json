@@ -1,0 +1,61 @@
+{
+  "id": "technique/whisk-over-a-bain-marie",
+  "tier": "drafted",
+  "names": {"en": "Whisk over a bain marie"},
+  "aliases": {"en": ["whisk over simmering water", "make a zabaione", "make a zabaglione"]},
+  "does": "Whisks egg yolks, sugar and a sweet wine such as Marsala in a bowl set over barely simmering water, until they swell into a thick, pale, warm foam that holds a ribbon. This is the Italian zabaione, also spelt zabaglione, served warm as it is or chilled and folded into mascarpone cream.",
+  "how": [
+    "Set a heatproof bowl over a pan of water at a bare simmer. The bowl must not touch the water.",
+    "Whisk the yolks with the sugar in the bowl until pale, then add the wine.",
+    "Keep whisking steadily, scraping the sides and the bottom, as the mixture warms and swells. Lift the bowl off the heat now and then if it gets too hot.",
+    "Stop when the foam is thick and holds a ribbon on its surface.",
+    "Serve warm at once, or keep whisking over ice until it is cool."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The foam is pale and thick and leaves a ribbon on its surface when the whisk is lifted."},
+    {
+      "sense": "feel",
+      "text": "The whisk meets a light, steady resistance, and the sides of the bowl are warm but not hot."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting the water boil hard, so that the yolks scramble into lumps.",
+      "fix": "Keep the water at a bare simmer and lift the bowl off now and then."
+    },
+    {"mistake": "Stopping too soon, so that the foam collapses in the bowl.", "fix": "Whisk until it holds a ribbon."},
+    {
+      "mistake": "Leaving it still, so that the edges set against the bowl.",
+      "fix": "Whisk without a pause, scraping the sides."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/ribbon", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/marsala"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/whisk",
+      "why": "The foam is built by steady whisking, so a cook has to know how to whisk first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/make-a-sabayon",
+      "differs": "The yolks are whisked with sugar and Marsala, and the foam is eaten warm as a dessert or folded into cream. It is not taken on to carry butter or to sauce fish.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

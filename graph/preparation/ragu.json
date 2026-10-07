@@ -1,0 +1,48 @@
+{
+  "id": "preparation/ragu",
+  "tier": "drafted",
+  "names": {"en": "Ragu", "fr": "Ragù"},
+  "aliases": {"en": ["ragù"]},
+  "is": "A thick sauce of minced or chopped meat cooked very slowly with a soffritto, wine and tomato until it clings to pasta or fills a rice ball. Each region has its own, such as the ragu of Bologna and the ragu of Sicily.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/minced-beef", "ingredient/sausage-meat"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soffritto", "role": "aromatic", "options": ["preparation/soffritto"], "optional": false, "tier": "drafted"},
+    {
+      "id": "wine",
+      "role": "liquid",
+      "options": ["ingredient/red-wine", "ingredient/white-wine"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tomato-paste", "ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "milk", "role": "enrichment", "options": ["ingredient/milk"], "optional": true, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/stock", "ingredient/beef-stock", "ingredient/vegetable-stock"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-ragu", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

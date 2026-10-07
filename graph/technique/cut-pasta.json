@@ -1,0 +1,51 @@
+{
+  "id": "technique/cut-pasta",
+  "tier": "drafted",
+  "names": {"en": "Cut pasta"},
+  "aliases": {"en": ["cut the pasta", "tagliare la pasta", "cut pasta into ribbons"]},
+  "does": "Cuts a thin sheet of rolled pasta dough into ribbons, strips or squares of even size, so that they cook at the same speed.",
+  "how": [
+    "Roll the dough out thin and let the sheet dry for a short while, until it feels leathery and no longer sticks.",
+    "Dust the sheet lightly with flour, then fold it loosely into a flat roll, or leave it as a sheet.",
+    "With a long, sharp knife cut straight across at the width the dish needs: narrow for ribbons, broad for short strips.",
+    "Shake the cut pieces loose, toss them in a little flour and lay them in loose heaps or nests on a floured tray."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The strips are of even width, with clean edges, and they fall apart when shaken."},
+    {"sense": "feel", "text": "The sheet folds without sticking to itself."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting a sheet that is still sticky, so that the pieces glue together.",
+      "fix": "Let it dry a little and dust it with flour."
+    },
+    {
+      "mistake": "Cutting strips of uneven width, so that the thin ones are soft before the wide ones are ready.",
+      "fix": "Cut with a long knife and a steady hand, in straight lines."
+    },
+    {
+      "mistake": "Leaving cut pasta in a damp heap, so that it sticks into a lump.",
+      "fix": "Toss it in flour and lay it loosely in nests."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/fresh-pasta-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/cutting-board"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/flour"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/roll-out",
+      "why": "Pasta is cut from a sheet that has first been rolled evenly thin.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "technique/render",
   "tier": "drafted",
   "names": {"en": "Render", "fr": "Faire fondre"},
-  "aliases": {"en": ["render the fat", "render bacon"]},
+  "aliases": {"en": ["render the fat", "render bacon", "render fat"]},
   "does": "Melts the fat out of bacon or skin over gentle heat, leaving the meat crisp and the fat clear for cooking.",
   "how": [
     "Start with a cold pan and no added fat.",

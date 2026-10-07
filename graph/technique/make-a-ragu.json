@@ -1,0 +1,64 @@
+{
+  "id": "technique/make-a-ragu",
+  "tier": "drafted",
+  "names": {"en": "Make a ragu", "fr": "Ragù"},
+  "aliases": {"en": ["make a ragù", "make ragu", "make a meat ragu"]},
+  "does": "Cooks minced meat very slowly with a soffritto, wine and tomato until it turns into a thick, rich sauce that clings to pasta or fills a rice ball. Every region has its own ragu, and this card holds the common method.",
+  "how": [
+    "Make a soffritto in a wide, heavy pot and cook it until it is soft and golden.",
+    "Add the minced meat in small lots and break it up with a spoon. Let it brown before moving on, and stir so that it cooks in fine crumbs.",
+    "Pour in the wine and let it bubble away almost completely.",
+    "Add the tomato and a little stock or milk, then turn the heat low and leave it to simmer with the lid ajar, stirring now and then, until the meat is very tender and the fat shows at the edge.",
+    "Season at the end."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The fat gathers in a glossy red ring at the edge, and the sauce is thick enough to hold the trail of a spoon."
+    },
+    {"sense": "smell", "text": "Rich and sweet, with the raw smell of tomato gone."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Crowding the pan, so that the meat steams grey and does not brown.",
+      "fix": "Add the meat in small lots and let each brown."
+    },
+    {
+      "mistake": "Rushing it, so that the sauce is thin and tastes raw.",
+      "fix": "Keep the heat low and give it time to cook down."
+    },
+    {
+      "mistake": "Leaving the meat in lumps, which makes a coarse sauce that does not cling.",
+      "fix": "Break it up as it browns."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/ragu", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/red-wine", "ingredient/white-wine"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-a-soffritto",
+      "why": "A ragu is built on a soffritto that has been cooked until it is soft and golden.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/braise",
+      "differs": "The meat is minced and browned loose in crumbs and not left in pieces, and the pot is left with the lid ajar so that the sauce thickens and does not stay a thin liquid.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

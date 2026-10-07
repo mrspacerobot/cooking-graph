@@ -1,0 +1,61 @@
+{
+  "id": "technique/butterfly",
+  "tier": "drafted",
+  "names": {"en": "Butterfly", "fr": "Ouvrir en papillon"},
+  "aliases": {"en": ["butterfly a fish", "open a fish flat"]},
+  "does": "Cuts a small fish open along the belly, takes out the backbone and opens the flesh flat like a book, so that it cooks fast and evenly and takes a marinade, a paste or a stuffing on its whole inner face.",
+  "how": [
+    "Scale and gut the fish, rinse the belly and pat it dry.",
+    "Open the belly from the gut cut to the tail with a small sharp knife and lay the fish open, skin side up, on the board.",
+    "Press along the middle of the back with the heel of the hand, so that the backbone loosens and lies flat.",
+    "Turn the fish over, lift the backbone from the head end and snip or cut it free at the tail, with the small bones that come with it.",
+    "Pull out any bones left in the flesh with the fingertips, and lay the fish flat, skin side down."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Both sides lie open in one piece, joined by the skin down the back, with no backbone left."
+    },
+    {"sense": "feel", "text": "No bone catches on a fingertip run over the flesh."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting through the skin of the back, so that the halves part.",
+      "fix": "Keep the knife on the belly side and ease the bone out with the fingers."
+    },
+    {
+      "mistake": "Pulling the backbone out fast, which tears the soft flesh.",
+      "fix": "Lift it slowly from the head end, and cut it free at the tail."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/sardine", "tier": "drafted"},
+    {"thing": "ingredient/mackerel", "tier": "drafted"},
+    {"thing": "ingredient/trout", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/paring-knife", "equipment/filleting-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/scale-a-fish",
+      "why": "The fish is scaled before it is opened, or the scales get everywhere.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/gut-a-fish",
+      "why": "The belly is already opened and cleaned when the fish is butterflied.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/fillet",
+      "differs": "A fillet is cut off the bone as a separate piece, a piece for each side. A butterflied fish stays whole, with both sides joined by the skin along the back, and only the bones are taken out.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

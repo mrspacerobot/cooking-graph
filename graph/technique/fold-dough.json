@@ -1,0 +1,52 @@
+{
+  "id": "technique/fold-dough",
+  "tier": "drafted",
+  "names": {"en": "Fold dough"},
+  "aliases": {"en": ["fold the dough", "fold over the dough"]},
+  "does": "Folds a sheet or a round of dough over itself, from the sides and into a square or a letter, so that it stacks into layers or gains strength, and so that any fat or oil brushed between the layers stays shut in them.",
+  "how": [
+    "Rest the dough first, so that it relaxes and does not spring back.",
+    "Stretch or roll it into an even sheet on a lightly oiled or floured surface.",
+    "Brush or sprinkle the surface with the fat or the dusting the dish asks for, right to the edges.",
+    "Lift one edge and fold it over towards the middle, then bring the opposite edge over it, as when folding a letter. For a square, fold the other sides in as well.",
+    "Press the folded shape lightly, turn it, and rest it before it is rolled or stretched again."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The layers show along a cut edge as fine, even lines."},
+    {"sense": "feel", "text": "The dough is supple and springs back slowly, and tears only when it is pulled hard."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Folding dough that is still tense, which tears and shrinks back.",
+      "fix": "Let it rest until it relaxes."
+    },
+    {
+      "mistake": "Leaving the corners and edges bare, so that the layers weld together there.",
+      "fix": "Brush the fat right to the edges."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/msemen-dough", "tier": "drafted"},
+    {"thing": "preparation/puff-pastry", "tier": "drafted"},
+    {"thing": "preparation/bread-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/rolling-pin"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil", "ingredient/butter", "ingredient/smen"],
+      "tier": "drafted"
+    },
+    {"role": "coating", "options": ["ingredient/flour", "ingredient/semolina"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/roll-out",
+      "why": "A dough is rolled or stretched into an even sheet before it is folded.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

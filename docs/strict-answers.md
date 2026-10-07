@@ -3,7 +3,7 @@
 Written by `./safety strict`. An ingredient holds a fact for certain, or the fact is recorded strictly because a common form of the ingredient may hold it.
 The rows below are the strict ones. How strict to be is for the owner to rule, reason by reason. Every safety record is unverified either way.
 
-213 of the 424 facts that ingredients hold are strict.
+217 of the 441 facts that ingredients hold are strict.
 
 | Fact | Basis | Ingredients |
 |---|---|---|
@@ -27,6 +27,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/egg` | Often made with wine, which may be cleared with egg white. | dijon-mustard |
 | `fact/egg` | Pasta of unknown make may hold egg. | macaroni, orzo, vermicelli |
 | `fact/egg` | Some bought pita holds egg. | pita-bread |
+| `fact/egg` | Some makers add egg to thin pastry sheets. | warqa |
 | `fact/egg` | Some wines are cleared with egg white. | dry-sherry |
 | `fact/egg` | Wine may be cleared with egg white. | madeira, red-wine, riesling, vin-jaune, white-wine |
 | `fact/fish` | Beer may be cleared with isinglass, which comes from fish. | beer |
@@ -44,6 +45,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/gluten` | Most crozets are made of wheat flour, though some are made of buckwheat. | crozets |
 | `fact/gluten` | Most soy sauce is brewed with wheat. | soy-sauce |
 | `fact/gluten` | Some are bound with bread or flour. | andouillette |
+| `fact/gluten` | Some baking powder is bulked with wheat starch. | baking-powder |
 | `fact/gluten` | Some black pudding is bound with cereal or bread. | black-pudding |
 | `fact/gluten` | Some cured meats are made with a cereal filler. | serrano-ham |
 | `fact/gluten` | Some sausages are bound with bread or flour. | morcilla |
@@ -73,6 +75,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/mustard` | Often pickled with mustard seed. | cornichons |
 | `fact/mustard` | Spice mixes for sausages often hold mustard. | andouillette |
 | `fact/peanuts` | Oil sold only as vegetable oil may be pressed from peanuts. | oil |
+| `fact/pork` | It may come from a pig or from a lamb, so the stricter answer is recorded. | caul-fat |
 | `fact/pork` | Most cervelas hold pork, though some are made of beef alone. | cervelas |
 | `fact/pork` | Most gelatin is made from pig skin. | gelatin |
 | `fact/sesame` | Many loaves carry sesame seeds. | bread |
@@ -146,6 +149,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/wheat` | Nearly all bread is made with wheat flour. | bread |
 | `fact/wheat` | Nearly all pita is made with wheat flour. | pita-bread |
 | `fact/wheat` | Some are bound with bread or flour. | andouillette |
+| `fact/wheat` | Some baking powder is bulked with wheat starch. | baking-powder |
 | `fact/wheat` | Some beer is brewed with wheat. | beer |
 | `fact/wheat` | Some black pudding is bound with cereal or bread. | black-pudding |
 | `fact/wheat` | The mould that veins it is traditionally grown on bread. | roquefort |

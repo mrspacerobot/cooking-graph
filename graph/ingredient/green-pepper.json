@@ -2,7 +2,7 @@
   "id": "ingredient/green-pepper",
   "tier": "drafted",
   "names": {"en": "Green pepper", "fr": "Poivron vert"},
-  "aliases": {"en": ["sivri biber", "pimiento verde"]},
+  "aliases": {"en": ["sivri biber", "pimiento verde", "green bell pepper"]},
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -1,0 +1,7 @@
+{
+  "id": "equipment/earthenware-jar",
+  "tier": "drafted",
+  "names": {"en": "Earthenware jar", "fr": "Jarre en terre cuite"},
+  "aliases": {"en": ["tangia jar", "clay jar"]},
+  "use": "A tall clay jar with a narrow mouth, in which meat is packed, sealed and left at the lowest heat for a very long time."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/smen",
+  "tier": "drafted",
+  "names": {"en": "Smen"},
+  "aliases": {"en": ["Moroccan preserved butter"]},
+  "is_a": [
+    {"thing": "ingredient/butter", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Salted butter, melted and cooked, then aged in a jar until it turns strong, sharp and cheesy. A little goes into stews, couscous and pastry for a deep, funky savour. It is added in small amounts, and it burns easily if it is fried hot.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is made from butter.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

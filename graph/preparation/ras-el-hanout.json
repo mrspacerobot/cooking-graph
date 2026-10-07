@@ -1,0 +1,54 @@
+{
+  "id": "preparation/ras-el-hanout",
+  "tier": "drafted",
+  "names": {"en": "Ras el hanout"},
+  "aliases": {"en": ["ras al hanout"]},
+  "is": "A blend of many ground spices, which differs from cook to cook and from shop to shop. It is warm, floral and gently hot, and it is stirred into a dish early or rubbed onto meat.",
+  "parts": [
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander-seed",
+      "role": "seasoning",
+      "options": ["ingredient/coriander-seed"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "ginger", "role": "seasoning", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {"id": "cinnamon", "role": "seasoning", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "paprika", "role": "seasoning", "options": ["ingredient/paprika"], "optional": true, "tier": "drafted"},
+    {
+      "id": "cayenne-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/cayenne-pepper"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "clove", "role": "seasoning", "options": ["ingredient/clove"], "optional": true, "tier": "drafted"},
+    {"id": "nutmeg", "role": "seasoning", "options": ["ingredient/nutmeg"], "optional": true, "tier": "drafted"},
+    {"id": "allspice", "role": "seasoning", "options": ["ingredient/allspice"], "optional": true, "tier": "drafted"},
+    {
+      "id": "seeds",
+      "role": "seasoning",
+      "options": ["ingredient/anise", "ingredient/sesame-seed"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/grind", "tier": "drafted"},
+    {"thing": "technique/toast", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "technique/rehydrate-couscous",
+  "tier": "drafted",
+  "names": {"en": "Rehydrate couscous", "fr": "Réhydrater le couscous"},
+  "aliases": {"en": ["soak couscous", "hydrate couscous", "make instant couscous"]},
+  "does": "Swells precooked, dried couscous grains in hot liquid poured over them off the heat, and lets them stand covered until the liquid is taken up, so that no steaming is needed.",
+  "how": [
+    "Put the grains in a wide bowl with a little salt and a spoonful of oil or butter, and rub until every grain is coated, so that they do not clump when the liquid arrives.",
+    "Bring the liquid, plain water or a well-flavoured stock, to a boil. Measure it by volume against the grains: about the same amount, a little more for a softer grain.",
+    "Pour the boiling liquid over the grains all at once, stir once, and cover the bowl tightly with a plate or a lid.",
+    "Leave it off the heat until the liquid has gone and the grains have swollen. Then uncover and fluff."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "No liquid pools at the bottom of the bowl, and the grains have swollen to about double their size."
+    },
+    {
+      "sense": "feel",
+      "text": "The grains are tender with at most a little bite, and fall apart when they are pressed lightly between the fingers."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring on too much liquid, which leaves a wet, gluey mass.",
+      "fix": "Measure the liquid against the grains. If it is already wet, spread the grains on a tray and let the steam go."
+    },
+    {
+      "mistake": "Pouring on liquid that is not hot, so that the centres of the grains stay hard.",
+      "fix": "Bring the liquid to a boil first."
+    },
+    {
+      "mistake": "Leaving the bowl uncovered, so that the steam escapes and the top layer stays dry.",
+      "fix": "Cover it tightly while the grains drink."
+    },
+    {
+      "mistake": "Skipping the oil, so that the grains stick in clumps.",
+      "fix": "Coat the dry grains with oil or butter before the liquid goes on."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/instant-couscous", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl", "equipment/saucepan"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/chicken-stock", "ingredient/vegetable-stock", "ingredient/stock"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/olive-oil", "ingredient/butter", "ingredient/smen"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/steam-couscous",
+      "differs": "The grains are precooked and dried, so they only need to drink hot liquid. There is no couscoussier, no steam over a stew, and no rounds of sprinkling and raking: the grain is ready in the time it takes to stand covered. The result is a little denser and less airy than grain steamed by hand, and it tastes of its liquid alone and not of the stew's steam.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

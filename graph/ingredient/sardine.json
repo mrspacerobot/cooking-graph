@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/sardine",
+  "tier": "drafted",
+  "names": {"en": "Sardine", "fr": "Sardine"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/round-fish", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A small, oily, silvery fish with soft flesh and fine bones that turn brittle in the heat. It is scaled and gutted, then grilled or fried whole, or opened flat and spread with a paste. It goes off fast and smells strong when it is old.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "It is a fish.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

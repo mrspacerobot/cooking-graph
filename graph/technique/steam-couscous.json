@@ -1,0 +1,59 @@
+{
+  "id": "technique/steam-couscous",
+  "tier": "drafted",
+  "names": {"en": "Steam couscous", "fr": "Cuire le couscous à la vapeur"},
+  "aliases": {"en": ["steam the couscous", "couscous steaming"]},
+  "does": "Swells dry couscous grains in the steam of a simmering stew, in rounds, so that each grain turns light and separate. The grains are rubbed with water and oil, steamed, tipped out, sprinkled again and raked apart, then steamed once more until they are tender.",
+  "how": [
+    "Tip the dry grains into a wide dish, sprinkle them with salted water and rub them between the palms until every grain is damp and nothing is clumped. Work in a little oil.",
+    "Bring the stew, or plain water, to a simmer in the base of the couscoussier. Seal the seam between the base and the top with a strip of damp cloth or a paste of flour and water, so that no steam escapes there.",
+    "Pile the damp grains loosely in the perforated top. Do not press them down, and do not cover them until steam rises through the whole pile.",
+    "Steam until the steam shows through the top, then tip the grains back into the dish.",
+    "Sprinkle them with a little cold salted water, rake them with the fingertips to break every lump, let them swell for a while, and steam them again in the same way.",
+    "Tip them out for the last time and rake in butter or smen until the grains shine. Heap them on a dish and serve with the stew."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Steam shows through the whole pile of grains before the steaming is counted."},
+    {"sense": "feel", "text": "The finished grains are tender, swollen and separate, and none sticks to the fingers."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pressing the grains down in the top, which blocks the steam and leaves a hard core.",
+      "fix": "Pile them loosely and let the steam find its way."
+    },
+    {
+      "mistake": "Letting steam leak at the seam, so that the grains stay dry and the stew goes thin.",
+      "fix": "Seal the seam with damp cloth or a paste of flour and water."
+    },
+    {
+      "mistake": "Sprinkling on too much water at once, which turns the grains gluey.",
+      "fix": "Add water a little at a time and rake after each sprinkling."
+    },
+    {
+      "mistake": "Cooking the grains in the stew liquid itself, which makes a paste.",
+      "fix": "Keep them above the liquid, where only the steam reaches them."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/couscous", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/couscoussier"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil", "ingredient/butter", "ingredient/smen"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/steam",
+      "differs": "Steam cooks fresh food in the steam of a little boiling water. Here the food is dry grain, wetted by hand between rounds, steamed over a stew in several rounds and raked apart each time, so that it never sets into a block.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

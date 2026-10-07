@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/baking-powder",
+  "tier": "drafted",
+  "names": {"en": "Baking powder", "fr": "Levure chimique"},
+  "aliases": {"en": ["chemical raising agent"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A dry mix of an alkaline salt, an acid and a little starch, which gives off gas once it is wet and warm, so that a batter or a dough rises without yeast. Mixed in early and left to stand, it loses its lift.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Some baking powder is bulked with wheat starch.", "certain": false},
+      {"fact": "fact/wheat", "basis": "Some baking powder is bulked with wheat starch.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -2,6 +2,39 @@
 
 Written on 7 October 2026 for an agent or a person picking this up cold. Read `AGENTS.md` first. Its rules apply to you.
 
+## What the owner wants next
+
+Added later on 7 October 2026. The owner's concern is the graph itself, not the app. The graph must answer three questions:
+
+1. **For this recipe, what can stand in for this ingredient,** and what must not?
+2. **For this technique, which recipes practise it?**
+3. **For this technique and what I have at home, which recipes can I make,** with which stand-ins, and what is missing?
+
+Where the graph stands on them today, counted from the files:
+
+| | Count |
+|---|---|
+| Parts of dishes | 479 |
+| Parts that offer more than one option | 46 |
+| Statements that one thing stands in for another | 11 |
+| Recipe lines, and those that name the part they fill | 564, 564 |
+| Recipe steps, and distinct techniques they use | 401, 57 |
+| Dishes that say which techniques they teach | 65 of 65 |
+
+So question 2 can already be worked out from the files. Questions 1 and 3 have their shape (parts with options, lines that name their part) but little knowledge behind them, and no command answers any of the three.
+
+**What to do, in this order. It comes before the leftovers of cycle two below.**
+
+1. **Three commands,** tests first, standard library only, no model involved, the same input always giving the same output:
+   - the stand-ins for a recipe: for each line, the other options of its part and whatever stands in for the ingredient, with the context, the ratio and the caveat where the graph has them. Asked to avoid a fact, it leaves out what holds it, and always says the safety records are unverified;
+   - the recipes for a technique: those whose steps use it, the ones whose dish teaches it first;
+   - what to cook for a technique with what is at home: the recipes ranked by how little is missing, and for each part the option the cook has, the stand-in, or "missing".
+2. **Probes for these questions, written by another model** than the one that drafts, with one in five held back as always:
+   - stand-in probes: a recipe, an ingredient, a candidate, and whether it works, works with a caveat, or does not, and why;
+   - kitchen probes: a technique, what is at home, and the dishes a good cook would make of it.
+3. **A cycle on stand-ins.** Run the probes, list the gaps, and draft what is missing: more options on the parts of dishes, statements that one thing stands in for another with its context, ratio and caveat, and statements that something does not stand in where a cook would wrongly assume it does. A stand-in gives the same result by the same technique in about the same time. If the method changes, it is another recipe, not a stand-in.
+4. **Numbers for it:** the share of parts with more than one option, and the share of each kind of probe answered, the held-back ones apart.
+
 ## Where things are
 
 - Branch `1-first-slice`, draft pull request 1 into `main`. Everything is pushed and nothing is merged.

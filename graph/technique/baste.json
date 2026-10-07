@@ -1,0 +1,49 @@
+{
+  "id": "technique/baste",
+  "tier": "drafted",
+  "names": {"en": "Baste", "fr": "Arroser"},
+  "aliases": {"en": ["spoon over", "baste with butter", "butter-baste"]},
+  "does": "Spoons hot fat or juices over food as it cooks, so that the top browns and stays moist.",
+  "how": [
+    "Tilt the pan so that the fat pools at the near edge.",
+    "Scoop it up with a spoon and pour it over the food, again and again.",
+    "In a pan, add butter, garlic and thyme near the end and baste with the foaming butter.",
+    "For a roast, baste quickly and shut the oven door again."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The surface glistens, and browns evenly from edge to edge."},
+    {
+      "sense": "hear",
+      "text": "The butter foams and hisses as it runs over the meat. When the foam dies down and darkens, stop."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Basting with butter that has turned dark, which leaves a bitter taste.",
+      "fix": "Add the butter late, and take the pan off the heat when the foam subsides."
+    },
+    {
+      "mistake": "Leaving the oven door open while basting a roast, so that the oven loses its heat.",
+      "fix": "Take the tin out, baste, and put it straight back."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/roasting-joints", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/steaks-and-chops", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/sear",
+      "why": "Basting with butter is how a sear ends, once the crust is already there.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

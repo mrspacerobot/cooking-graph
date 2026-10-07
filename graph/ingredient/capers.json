@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/capers",
+  "tier": "drafted",
+  "names": {"en": "Capers", "fr": "Câpres"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pickles", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Small, salty, sour buds that cut through fat. They are rinsed before use.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "Vinegar keeps a trace of the alcohol it is made from.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Pickles are sometimes kept with sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "Whether a trace of alcohol in vinegar counts is for a person to decide."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

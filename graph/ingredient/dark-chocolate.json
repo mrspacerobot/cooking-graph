@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/dark-chocolate",
+  "tier": "drafted",
+  "names": {"en": "Dark chocolate", "fr": "Chocolat noir"},
+  "aliases": {"en": ["plain chocolate", "bittersweet chocolate"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Melts smooth over gentle heat, seizes into a grainy paste if a drop of water gets in, and sets firm again as it cools.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "Much dark chocolate holds milk fat or milk powder.", "certain": false},
+      {"fact": "fact/soy", "basis": "Most chocolate is made with soy lecithin.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

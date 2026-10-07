@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/carottes-rapees",
+  "tier": "drafted",
+  "batch": "emulsions-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "emulsions",
+  "dish": "Carottes râpées",
+  "also_called": ["grated carrot salad"],
+  "techniques": ["grate", "emulsify", "toss"],
+  "ingredients": ["carrot", "lemon", "olive oil", "parsley"]
+}

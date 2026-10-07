@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/chicken-broth-with-vermicelli",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Chicken broth with vermicelli",
+  "also_called": ["bouillon aux vermicelles", "bouillon de poule aux vermicelles"],
+  "holds": ["gluten", "wheat", "celery"],
+  "does_not_hold": ["fish", "milk"],
+  "why": "Vermicelli is wheat pasta, so the soup has gluten even though it looks like a plain broth. The bouquet garni and vegetables often include celery."
+}

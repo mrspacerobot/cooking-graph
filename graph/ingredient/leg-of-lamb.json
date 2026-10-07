@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/leg-of-lamb",
+  "tier": "drafted",
+  "names": {"en": "Leg of lamb", "fr": "Gigot d'agneau"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/roasting-joints", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A large, lean joint that roasts best left pink, and needs a long rest before it is carved.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is lamb.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

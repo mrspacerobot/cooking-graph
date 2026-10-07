@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/coq-au-vin",
+  "tier": "drafted",
+  "batch": "braise-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "braise",
+  "dish": "Coq au vin",
+  "also_called": ["chicken in red wine"],
+  "techniques": ["sear", "render", "sprinkle with flour", "deglaze", "braise"],
+  "ingredients": [
+    "chicken",
+    "red wine",
+    "bacon",
+    "mushroom",
+    "pearl onion",
+    "carrot",
+    "garlic",
+    "bouquet garni",
+    "flour",
+    "butter"
+  ]
+}

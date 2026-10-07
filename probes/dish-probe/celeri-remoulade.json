@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/celeri-remoulade",
+  "tier": "drafted",
+  "batch": "knife-cuts-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Céleri rémoulade",
+  "also_called": ["celeriac remoulade"],
+  "techniques": ["julienne"],
+  "ingredients": ["celeriac", "mayonnaise", "Dijon mustard", "lemon"]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "technique/rest",
+  "tier": "drafted",
+  "names": {"en": "Rest", "fr": "Reposer"},
+  "aliases": {"en": ["rest the meat", "let it rest"]},
+  "does": "Leaves cooked meat alone off the heat for a while, so that its juices settle and stay in when it is cut.",
+  "how": [
+    "Lift the meat out of the pan onto a rack or a warm plate.",
+    "Leave it uncovered, or loosely tented, somewhere warm.",
+    "Wait about as long as it took to sear a steak, and much longer for a large roast.",
+    "Pour the juices it gives up back into the sauce."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Little juice runs out when it is sliced, and the cut face is evenly coloured."},
+    {"sense": "feel", "text": "The meat has relaxed and gives a little under a finger."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting it straight away, so that the juice floods the board and the meat eats dry.",
+      "fix": "Wait. The meat stays hot inside for longer than you think."
+    },
+    {
+      "mistake": "Wrapping it tightly in foil, which steams the crust soft.",
+      "fix": "Leave it open, or tent the foil loosely."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/roasting-joints", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/wire-rack"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/sear", "why": "Resting is how a sear ends.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

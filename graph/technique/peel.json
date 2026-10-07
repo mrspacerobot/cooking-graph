@@ -1,0 +1,40 @@
+{
+  "id": "technique/peel",
+  "tier": "drafted",
+  "names": {"en": "Peel", "fr": "Éplucher"},
+  "aliases": {"en": ["skin", "shell"], "fr": ["décortiquer"]},
+  "does": "Takes off the skin or the shell, and as little as possible of what lies under it.",
+  "how": [
+    "Wash the vegetable first, so that dirt does not travel from the skin to the flesh.",
+    "Draw a peeler along its length in long strokes, turning it as you go.",
+    "Use a knife for a thick or knobbly skin: cut a flat base, then follow the curve from top to bottom.",
+    "For a boiled egg, crack the shell all over and peel from the wide end under a thin stream of water.",
+    "For a cooked lobster or crab, crack the shell and ease the flesh out in whole pieces."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Smooth flesh, with no skin left and no deep gouges."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Peeling long before cooking, so that potato and celeriac turn brown.",
+      "fix": "Peel just before use, or hold the pieces under water with a little lemon juice."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/asparagus", "tier": "drafted"},
+    {"thing": "group/firm-fruits", "tier": "drafted"},
+    {"thing": "group/crustaceans", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/peeled", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/vegetable-peeler", "equipment/paring-knife"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

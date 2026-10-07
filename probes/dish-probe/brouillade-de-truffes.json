@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/brouillade-de-truffes",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "eggs",
+  "dish": "Brouillade de truffes",
+  "also_called": ["scrambled eggs with truffle", "œufs brouillés aux truffes"],
+  "techniques": ["whisk", "scramble"],
+  "ingredients": ["egg", "truffle", "butter"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/poulet-au-vin-jaune-et-aux-morilles",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "pan-sauce",
+  "dish": "Poulet au vin jaune et aux morilles",
+  "also_called": ["chicken with vin jaune and morels", "poulet au vin jaune"],
+  "techniques": ["sear", "deglaze", "reduce"],
+  "ingredients": ["chicken", "vin jaune", "morel", "shallot", "cream", "butter"]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/white-fish",
+  "tier": "drafted",
+  "names": {"en": "White fish", "fr": "Poisson blanc"},
+  "aliases": {"en": ["white fish fillet", "white-fleshed fish"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/lean-fish", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Lean, pale flesh that sets fast, flakes when done and dries out soon after.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "It is fish.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

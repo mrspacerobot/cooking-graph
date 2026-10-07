@@ -1,0 +1,8 @@
+{
+  "id": "form/fork-tender",
+  "tier": "drafted",
+  "names": {"en": "Fork-tender", "fr": "Fondant"},
+  "aliases": {"en": ["tender", "meltingly tender"]},
+  "looks_like": "A fork slides in and out with no resistance, and the piece still holds its shape.",
+  "size": []
+}

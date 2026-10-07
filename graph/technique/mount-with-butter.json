@@ -1,0 +1,64 @@
+{
+  "id": "technique/mount-with-butter",
+  "tier": "drafted",
+  "names": {"en": "Mount with butter", "fr": "Monter au beurre"},
+  "aliases": {"en": ["monter au beurre", "finish with butter", "swirl in butter", "whisk in cold butter"]},
+  "does": "Whisks cold butter into a hot liquid off the boil, so that it melts into a smooth, glossy, lightly thickened sauce and not into a layer of fat.",
+  "how": [
+    "Boil the liquid down first, until only a few syrupy, strong spoonfuls are left in the pan.",
+    "Take the pan off the heat, or turn the heat to its lowest.",
+    "Add cold butter in small cubes, a few at a time, and whisk or swirl the pan until each lot has vanished before the next goes in.",
+    "Stop when the sauce is glossy and coats a spoon. Season it and serve it at once: it can be neither boiled nor kept."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sauce turns opaque, glossy and creamy, with no beads of clear fat at the edge."},
+    {"sense": "feel", "text": "It coats a spoon lightly, like thin cream."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the butter over high heat, or letting the sauce boil afterwards, which melts the butter to oil and leaves the sauce greasy.",
+      "fix": "Take the pan off the heat. If the sauce splits, whisk in a spoonful of cold water or cream off the heat."
+    },
+    {
+      "mistake": "Using soft or melted butter, which goes straight to oil.",
+      "fix": "Use butter cold from the fridge, cut small."
+    },
+    {
+      "mistake": "Too much liquid left in the pan, so that the butter cannot thicken it.",
+      "fix": "Reduce further before the butter goes in."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/cooking-liquors", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/beurre-blanc", "tier": "drafted"},
+    {"thing": "form/emulsified", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {
+      "role": "vessel",
+      "options": ["equipment/saucepan", "equipment/saute-pan", "equipment/frying-pan"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/reduce",
+      "why": "Butter can only be mounted into a liquid that has been boiled down first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/emulsify",
+      "differs": "The fat is cold butter, the liquid is hot, and nothing but the butter's own milk solids holds the sauce together.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

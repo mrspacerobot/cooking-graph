@@ -1,0 +1,7 @@
+{
+  "id": "equipment/baking-sheet",
+  "tier": "drafted",
+  "names": {"en": "Baking sheet", "fr": "Plaque à pâtisserie"},
+  "aliases": {"en": ["baking tray", "sheet pan"]},
+  "use": "A flat metal tray that slides into the oven."
+}

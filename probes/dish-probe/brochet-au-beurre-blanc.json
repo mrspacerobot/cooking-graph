@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/brochet-au-beurre-blanc",
+  "tier": "drafted",
+  "batch": "emulsions-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "emulsions",
+  "dish": "Brochet au beurre blanc",
+  "also_called": ["pike with beurre blanc"],
+  "techniques": ["poach", "reduce", "mount with butter"],
+  "ingredients": ["pike", "court-bouillon", "shallot", "white wine", "white wine vinegar", "butter"]
+}

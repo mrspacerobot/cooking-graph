@@ -1,0 +1,47 @@
+{
+  "id": "dish/blanquette-de-veau",
+  "tier": "drafted",
+  "names": {"en": "Blanquette de veau", "fr": "Blanquette de veau"},
+  "aliases": {"en": ["veal blanquette", "veal in white sauce"]},
+  "is": "Veal simmered without browning with vegetables and herbs, then served in a sauce made from its own broth, thickened with a pale roux and finished with cream and egg yolk, with mushrooms and small onions.",
+  "parts": [
+    {
+      "id": "veal-shoulder",
+      "role": "main",
+      "options": ["ingredient/veal-shoulder"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bouquet-garni",
+      "role": "aromatic",
+      "options": ["preparation/bouquet-garni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "mushroom", "role": "garnish", "options": ["ingredient/mushroom"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pearl-onion",
+      "role": "garnish",
+      "options": ["ingredient/pearl-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "roux", "role": "thickener", "options": ["preparation/roux"], "optional": false, "tier": "drafted"},
+    {"id": "cream", "role": "enrichment", "options": ["ingredient/cream"], "optional": false, "tier": "drafted"},
+    {"id": "egg-yolk", "role": "thickener", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/make-a-roux", "tier": "drafted"},
+    {"thing": "technique/thicken-with-egg-yolk", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

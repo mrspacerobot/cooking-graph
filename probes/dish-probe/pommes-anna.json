@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/pommes-anna",
+  "tier": "drafted",
+  "batch": "knife-cuts-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Pommes Anna",
+  "also_called": [],
+  "techniques": ["slice", "bake"],
+  "ingredients": ["potato", "clarified butter"]
+}

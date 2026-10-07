@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/knife-cuts-julienne",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "held-back",
+  "written_by": "gpt-6-luna",
+  "technique": "vegetable cuts",
+  "at_home": ["carrot", "leek", "celery", "potato", "butter", "chicken stock", "salt", "black pepper", "parsley"],
+  "dishes": ["Potage julienne d’Arblay", "Potage Parmentier"],
+  "why": "The vegetables and stock support a julienne vegetable soup as well as a simple leek and potato soup."
+}

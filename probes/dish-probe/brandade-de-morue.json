@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/brandade-de-morue",
+  "tier": "drafted",
+  "batch": "gratin-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "written_for": "gratin",
+  "dish": "Brandade de morue",
+  "also_called": ["salt cod brandade", "brandade"],
+  "techniques": ["poach", "pound", "emulsify", "gratinate"],
+  "ingredients": ["salt cod", "potato", "olive oil", "milk", "garlic", "breadcrumbs"]
+}

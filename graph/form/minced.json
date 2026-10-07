@@ -1,0 +1,8 @@
+{
+  "id": "form/minced",
+  "tier": "drafted",
+  "names": {"en": "Minced"},
+  "aliases": {"en": ["finely chopped"]},
+  "looks_like": "Cut so fine that it is nearly a paste, with no piece standing out.",
+  "size": []
+}

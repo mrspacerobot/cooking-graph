@@ -1,0 +1,51 @@
+{
+  "id": "dish/cote-de-porc-charcutiere",
+  "tier": "drafted",
+  "names": {"en": "Côte de porc charcutière", "fr": "Côte de porc charcutière"},
+  "aliases": {"en": ["pork chop charcutière", "pork chops with charcutière sauce"]},
+  "is": "A pork chop seared and rested, with a sauce made in its pan from onion, white wine and stock, finished off the heat with mustard and strips of cornichon.",
+  "parts": [
+    {"id": "pork-chop", "role": "main", "options": ["ingredient/pork-chop"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "white-wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["preparation/brown-stock", "ingredient/beef-stock", "ingredient/chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "dijon-mustard",
+      "role": "seasoning",
+      "options": ["ingredient/dijon-mustard"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cornichons", "role": "garnish", "options": ["ingredient/cornichons"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

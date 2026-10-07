@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/lapin-aux-pruneaux",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "braise",
+  "dish": "Lapin aux pruneaux",
+  "also_called": ["rabbit with prunes"],
+  "techniques": ["marinate", "sear", "deglaze", "braise"],
+  "ingredients": ["rabbit", "prune", "white wine", "shallot", "bacon", "butter"]
+}

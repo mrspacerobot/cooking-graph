@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/rabbit",
+  "tier": "drafted",
+  "names": {"en": "Rabbit", "fr": "Lapin"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Lean, pale and mild. The legs braise well, and the saddle dries out fast.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is rabbit.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

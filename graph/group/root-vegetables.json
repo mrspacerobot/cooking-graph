@@ -1,0 +1,9 @@
+{
+  "id": "group/root-vegetables",
+  "tier": "drafted",
+  "names": {"en": "Root vegetables", "fr": "Légumes racines"},
+  "aliases": {},
+  "shares": "Dense, firm roots and tubers that hold a clean cut and their shape, cook slowly and evenly, and turn sweet as they brown.",
+  "within": {"thing": "group/vegetables", "tier": "drafted"},
+  "stands_alone": null
+}

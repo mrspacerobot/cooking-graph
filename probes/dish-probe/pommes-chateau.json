@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/pommes-chateau",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Pommes château",
+  "also_called": ["château potatoes", "turned potatoes"],
+  "techniques": ["turn", "blanch", "saute"],
+  "ingredients": ["potato", "clarified butter", "parsley"]
+}

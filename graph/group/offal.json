@@ -1,0 +1,9 @@
+{
+  "id": "group/offal",
+  "tier": "drafted",
+  "names": {"en": "Offal", "fr": "Abats"},
+  "aliases": {},
+  "shares": "Organs that are tender and mild when cooked fast and left pink, and grainy or tough when cooked longer.",
+  "within": {"thing": "group/meat", "tier": "drafted"},
+  "stands_alone": null
+}

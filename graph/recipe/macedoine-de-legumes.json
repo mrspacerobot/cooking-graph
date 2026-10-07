@@ -1,0 +1,82 @@
+{
+  "id": "recipe/macedoine-de-legumes",
+  "tier": "drafted",
+  "names": {"en": "Macédoine de légumes"},
+  "aliases": {},
+  "makes": "dish/macedoine-de-legumes",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 200, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "carrot"
+    },
+    {
+      "thing": "ingredient/turnip",
+      "amount": {"value": 150, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "turnip"
+    },
+    {"thing": "ingredient/green-beans", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "green-beans"},
+    {"thing": "ingredient/peas", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "peas"},
+    {"thing": "preparation/mayonnaise", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "mayonnaise"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/slotted-spoon", "equipment/mixing-bowl",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/carrot", "ingredient/turnip", "ingredient/green-beans"],
+      "with": [],
+      "text": "Cut the carrots and the turnips into small, even dice, the size of a pea. Top and tail the beans and cut them across to match. Keep each vegetable apart.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas"],
+      "with": ["ingredient/salt"],
+      "text": "Boil each vegetable on its own in well-salted water until just tender. Each takes a different time, so test a piece.",
+      "time": {"from": 2, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/refresh",
+      "works_on": ["ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas"],
+      "with": [],
+      "text": "Lift each batch straight into iced water. When it is cold, drain it and dry it well on a cloth.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas"],
+      "with": ["preparation/mayonnaise"],
+      "text": "Fold the mayonnaise through the vegetables a spoonful at a time, until they are lightly bound and no more.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": [],
+      "with": ["ingredient/salt"],
+      "text": "Taste, add salt if it needs it, and keep it cold until it is served.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

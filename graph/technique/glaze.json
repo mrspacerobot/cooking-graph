@@ -1,0 +1,45 @@
+{
+  "id": "technique/glaze",
+  "tier": "drafted",
+  "names": {"en": "Glaze", "fr": "Glacer"},
+  "aliases": {"en": ["glaze vegetables", "glaze in butter"]},
+  "does": "Cooks small vegetables in a little water, butter and sugar until the water has gone and they are left tender and coated in a shiny syrup.",
+  "how": [
+    "Put the vegetables in a wide pan in a single layer.",
+    "Add water to come half way up them, with butter, a little sugar and salt.",
+    "Cover with a round of paper and simmer until the vegetables are nearly tender.",
+    "Take the paper off and boil away the last of the liquid, rolling the vegetables in the syrup as it forms.",
+    "Stop there for a pale glaze, or go on a moment for a golden one."
+  ],
+  "cues": [
+    {"sense": "see", "text": "No liquid is left: a shiny film coats each piece and the pan."},
+    {"sense": "hear", "text": "The bubbling turns to a sizzle as the last of the water goes."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Too much water, so that the vegetables are overcooked before it has gone.",
+      "fix": "Use less, and pour some off if they are tender before the glaze forms."
+    },
+    {"mistake": "Walking away at the end, when the syrup burns.", "fix": "Stay, and keep them rolling."}
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/glazed", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/sugar"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/parchment-paper"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

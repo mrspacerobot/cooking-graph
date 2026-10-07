@@ -1,0 +1,48 @@
+{
+  "id": "ingredient/shallot",
+  "tier": "drafted",
+  "names": {"en": "Shallot", "fr": "Échalote"},
+  "aliases": {"en": ["shallots"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Finer and sweeter than onion, and quick to burn. Cut small, it melts into a sauce.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/pearl-onion",
+      "allows": true,
+      "when": ["dish/coq-au-vin"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "caveat": "Use peeled small shallots. Their shape and sharper flavour differ from the round onion garnish.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/garlic",
+      "allows": true,
+      "when": ["dish/mushrooms-with-garlic-and-parsley"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Mince it finely and add it near the finish. It gives a sweeter, milder garnish than garlic.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

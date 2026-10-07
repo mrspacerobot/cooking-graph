@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/salade-verte",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Salade verte",
+  "also_called": ["green salad", "green salad with vinaigrette"],
+  "holds": ["mustard", "sulphites"],
+  "does_not_hold": ["egg", "milk"],
+  "why": "A classic vinaigrette is Dijon mustard, red wine vinegar and oil. The mustard is the surprise, and the vinegar carries sulphites."
+}

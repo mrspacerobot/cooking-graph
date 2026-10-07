@@ -1,0 +1,8 @@
+{
+  "id": "form/seared",
+  "tier": "drafted",
+  "names": {"en": "Seared", "fr": "Saisi"},
+  "aliases": {"en": ["browned"]},
+  "looks_like": "A deep brown crust on the outside, while the inside is still as underdone as the cook wants it.",
+  "size": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/bar-en-croute-de-sel",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "roast",
+  "dish": "Bar en croûte de sel",
+  "also_called": ["sea bass in a salt crust", "salt-crusted sea bass", "loup en croûte de sel"],
+  "techniques": ["roast", "bake in a salt crust", "fillet"],
+  "ingredients": ["sea bass", "egg white", "thyme", "lemon", "olive oil"]
+}

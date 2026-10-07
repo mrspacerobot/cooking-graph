@@ -1,0 +1,555 @@
+{
+  "id": "program/french-foundations",
+  "tier": "drafted",
+  "names": {"en": "French foundations"},
+  "aliases": {},
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "courses": [
+    {
+      "slug": "foundations",
+      "names": {"en": "Foundations"},
+      "skills": [
+        {
+          "slug": "knife-cuts",
+          "names": {"en": "Knife cuts"},
+          "comes_after": [],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Mirepoix"},
+              "teaches": [
+                {"thing": "technique/dice", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/mirepoix", "tier": "drafted"},
+                {"thing": "dish/ratatouille", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Brunoise"},
+              "teaches": [
+                {"thing": "technique/brunoise", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/steak-tartare", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Julienne"},
+              "teaches": [
+                {"thing": "technique/julienne", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/celeri-remoulade", "tier": "drafted"},
+                {"thing": "dish/fish-en-papillote", "tier": "drafted"}
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "eggs",
+          "names": {"en": "Eggs"},
+          "comes_after": [],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Soft scramble"},
+              "teaches": [
+                {"thing": "technique/scramble", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/soft-scrambled-eggs", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Poached egg"},
+              "teaches": [
+                {"thing": "technique/poach", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/salade-lyonnaise", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Rolled omelette"},
+              "teaches": [
+                {"thing": "technique/roll-an-omelette", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/spinach-and-cheese-omelette", "tier": "drafted"}
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "stocks",
+          "names": {"en": "Stocks"},
+          "comes_after": [
+            {"skill": "knife-cuts", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Vegetable stock"},
+              "teaches": [
+                {"thing": "technique/sweat", "tier": "drafted"},
+                {"thing": "technique/simmer", "tier": "drafted"},
+                {"thing": "technique/strain", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/vegetable-stock", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "White chicken stock"},
+              "teaches": [
+                {"thing": "technique/skim", "tier": "drafted"},
+                {"thing": "technique/simmer", "tier": "drafted"},
+                {"thing": "technique/strain", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/white-chicken-stock", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Brown stock"},
+              "teaches": [
+                {"thing": "technique/roast", "tier": "drafted"},
+                {"thing": "technique/deglaze", "tier": "drafted"},
+                {"thing": "technique/skim", "tier": "drafted"},
+                {"thing": "technique/simmer", "tier": "drafted"},
+                {"thing": "technique/strain", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/brown-stock", "tier": "drafted"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heat",
+      "names": {"en": "Heat control"},
+      "skills": [
+        {
+          "slug": "saute",
+          "names": {"en": "Sauté"},
+          "comes_after": [
+            {"skill": "knife-cuts", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Sweat without color"},
+              "teaches": [
+                {"thing": "technique/sweat", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/petits-pois-a-la-francaise", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Sauté in a hot pan"},
+              "teaches": [
+                {"thing": "technique/saute", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/mushrooms-with-garlic-and-parsley", "tier": "drafted"},
+                {"thing": "dish/green-beans-with-garlic", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Caramelized onions"},
+              "teaches": [
+                {"thing": "technique/caramelize", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/french-onion-soup", "tier": "drafted"}
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "sear",
+          "names": {"en": "Sear"},
+          "comes_after": [
+            {"skill": "saute", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Chicken thighs, skin down"},
+              "teaches": [
+                {"thing": "technique/sear", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Steak to temperature"},
+              "teaches": [
+                {"thing": "technique/sear", "tier": "drafted"},
+                {"thing": "technique/rest", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/steak-au-poivre", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Crisp fish skin"},
+              "teaches": [
+                {"thing": "technique/sear", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/saumon-a-l-unilaterale", "tier": "drafted"}
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "poach",
+          "names": {"en": "Poach"},
+          "comes_after": [
+            {"skill": "stocks", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Chicken in stock"},
+              "teaches": [
+                {"thing": "technique/poach", "tier": "drafted"},
+                {"thing": "technique/skim", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/poule-au-pot", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Fish in court-bouillon"},
+              "teaches": [
+                {"thing": "technique/poach", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/court-bouillon", "tier": "drafted"},
+                {"thing": "dish/cold-poached-salmon", "tier": "drafted"},
+                {"thing": "dish/raie-au-beurre-noisette", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Pears in syrup"},
+              "teaches": [
+                {"thing": "technique/poach", "tier": "drafted"},
+                {"thing": "technique/reduce", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/poires-au-vin-rouge", "tier": "drafted"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sauces",
+      "names": {"en": "Sauces"},
+      "skills": [
+        {
+          "slug": "roux",
+          "names": {"en": "Roux"},
+          "comes_after": [
+            {"skill": "stocks", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "White roux for béchamel"},
+              "teaches": [
+                {"thing": "technique/make-a-roux", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/bechamel", "tier": "drafted"},
+                {"thing": "dish/croque-monsieur", "tier": "drafted"},
+                {"thing": "dish/oeufs-a-la-tripe", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Blond roux for velouté"},
+              "teaches": [
+                {"thing": "technique/make-a-roux", "tier": "drafted"},
+                {"thing": "technique/thicken-with-egg-yolk", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/veloute", "tier": "drafted"},
+                {"thing": "dish/blanquette-de-veau", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Brown roux"},
+              "teaches": [
+                {"thing": "technique/make-a-roux", "tier": "drafted"},
+                {"thing": "technique/sprinkle-with-flour", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/boeuf-miroton", "tier": "drafted"}
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "pan-sauce",
+          "names": {"en": "Pan sauces"},
+          "comes_after": [
+            {"skill": "sear", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Deglaze the fond"},
+              "teaches": [
+                {"thing": "technique/deglaze", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce", "tier": "drafted"},
+                {"thing": "dish/cote-de-porc-charcutiere", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Reduce to coat a spoon"},
+              "teaches": [
+                {"thing": "technique/reduce", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/filet-mignon-a-la-moutarde", "tier": "drafted"},
+                {"thing": "dish/poulet-a-l-estragon", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Monter au beurre"},
+              "teaches": [
+                {"thing": "technique/mount-with-butter", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/saucisses-au-vin-blanc", "tier": "drafted"},
+                {"thing": "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce", "tier": "drafted"}
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "emulsions",
+          "names": {"en": "Emulsions"},
+          "comes_after": [
+            {"skill": "eggs", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Vinaigrette"},
+              "teaches": [
+                {"thing": "technique/emulsify", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/vinaigrette", "tier": "drafted"},
+                {"thing": "dish/poireaux-vinaigrette", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Mayonnaise"},
+              "teaches": [
+                {"thing": "technique/emulsify", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/mayonnaise", "tier": "drafted"},
+                {"thing": "dish/salade-piemontaise", "tier": "drafted"},
+                {"thing": "dish/oeufs-mayonnaise", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Hollandaise"},
+              "teaches": [
+                {"thing": "technique/make-a-sabayon", "tier": "drafted"},
+                {"thing": "technique/emulsify", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/hollandaise", "tier": "drafted"},
+                {"thing": "dish/asperges-hollandaise", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 4,
+              "names": {"en": "Beurre blanc"},
+              "teaches": [
+                {"thing": "technique/reduce", "tier": "drafted"},
+                {"thing": "technique/mount-with-butter", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "preparation/beurre-blanc", "tier": "drafted"},
+                {"thing": "dish/brochet-au-beurre-blanc", "tier": "drafted"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "together",
+      "names": {"en": "Putting it together"},
+      "skills": [
+        {
+          "slug": "braise",
+          "names": {"en": "Braise"},
+          "comes_after": [
+            {"skill": "stocks", "tier": "drafted"},
+            {"skill": "pan-sauce", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Braised leeks"},
+              "teaches": [
+                {"thing": "technique/braise", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/poireaux-braises", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Chicken in wine"},
+              "teaches": [
+                {"thing": "technique/braise", "tier": "drafted"},
+                {"thing": "technique/sear", "tier": "drafted"},
+                {"thing": "technique/deglaze", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/coq-au-vin", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Beef in red wine"},
+              "teaches": [
+                {"thing": "technique/braise", "tier": "drafted"},
+                {"thing": "technique/sear", "tier": "drafted"},
+                {"thing": "technique/sprinkle-with-flour", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/boeuf-bourguignon", "tier": "drafted"}
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "roast",
+          "names": {"en": "Roast"},
+          "comes_after": [
+            {"skill": "sear", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Roasted roots"},
+              "teaches": [
+                {"thing": "technique/roast", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/roasted-root-vegetables", "tier": "drafted"},
+                {"thing": "dish/roast-potatoes", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Roast chicken and jus"},
+              "teaches": [
+                {"thing": "technique/roast", "tier": "drafted"},
+                {"thing": "technique/baste", "tier": "drafted"},
+                {"thing": "technique/rest", "tier": "drafted"},
+                {"thing": "technique/deglaze", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/poulet-roti", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Butter-basted pork chop"},
+              "teaches": [
+                {"thing": "technique/sear", "tier": "drafted"},
+                {"thing": "technique/baste", "tier": "drafted"},
+                {"thing": "technique/rest", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/butter-basted-pork-chop", "tier": "drafted"}
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "gratin",
+          "names": {"en": "Gratin"},
+          "comes_after": [
+            {"skill": "knife-cuts", "tier": "drafted"},
+            {"skill": "roux", "tier": "drafted"}
+          ],
+          "levels": [
+            {
+              "number": 1,
+              "names": {"en": "Potato gratin"},
+              "teaches": [
+                {"thing": "technique/layer", "tier": "drafted"},
+                {"thing": "technique/bake", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/gratin-dauphinois", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 2,
+              "names": {"en": "Cauliflower in béchamel"},
+              "teaches": [
+                {"thing": "technique/make-a-roux", "tier": "drafted"},
+                {"thing": "technique/gratinate", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/gratin-de-chou-fleur", "tier": "drafted"}
+              ]
+            },
+            {
+              "number": 3,
+              "names": {"en": "Crumb crust"},
+              "teaches": [
+                {"thing": "technique/gratinate", "tier": "drafted"}
+              ],
+              "through": [
+                {"thing": "dish/hachis-parmentier", "tier": "drafted"},
+                {"thing": "dish/parmentier-de-canard", "tier": "drafted"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

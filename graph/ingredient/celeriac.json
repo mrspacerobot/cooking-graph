@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/celeriac",
+  "tier": "drafted",
+  "names": {"en": "Celeriac", "fr": "Céleri-rave"},
+  "aliases": {"en": ["celery root"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Firm and earthy, crisp when raw and creamy when cooked. Its cut flesh browns in air unless it meets acid.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/celery", "basis": "It is a kind of celery grown for its root.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

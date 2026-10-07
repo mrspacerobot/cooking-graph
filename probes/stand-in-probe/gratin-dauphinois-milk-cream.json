@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/gratin-dauphinois-milk-cream",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Gratin dauphinois",
+  "ingredient": "heavy cream",
+  "candidate": "whole milk",
+  "verdict": "works-with-caveat",
+  "why": "Milk can soften the potatoes but makes the gratin less rich and less creamy."
+}

@@ -1,0 +1,48 @@
+{
+  "id": "technique/bake-in-parchment",
+  "tier": "drafted",
+  "names": {"en": "Bake in parchment", "fr": "Cuire en papillote"},
+  "aliases": {"en": ["en papillote", "cook en papillote", "bake in a parcel", "bake in paper"]},
+  "does": "Seals food in a paper parcel, so that it steams in its own juices in the oven.",
+  "how": [
+    "Cut a large sheet of paper and fold it in half.",
+    "Lay the vegetables and then the fish on one side of the fold, with butter, seasoning and a splash of liquid.",
+    "Fold the paper over and crimp the edges in small, tight, overlapping folds.",
+    "Bake on a tray until the parcel puffs up.",
+    "Open it at the table, away from your face."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The parcel swells like a pillow and the paper browns lightly."},
+    {"sense": "smell", "text": "A burst of scented steam when the paper is cut."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "A loose seal, so that the steam escapes and the fish dries out.",
+      "fix": "Make the folds small and tight, and twist the ends."
+    },
+    {
+      "mistake": "Thick, raw vegetables under the fish, still hard when the fish is done.",
+      "fix": "Cut them fine and soften them in butter first."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/parchment-paper"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-sheet"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/bake",
+      "differs": "The food is sealed in a paper parcel and cooks in its own steam.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

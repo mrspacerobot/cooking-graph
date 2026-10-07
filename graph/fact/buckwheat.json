@@ -1,0 +1,19 @@
+{
+  "id": "fact/buckwheat",
+  "tier": "sourced",
+  "names": {"en": "Buckwheat", "fr": "Sarrasin"},
+  "aliases": {},
+  "means": "Buckwheat, or anything made from it, such as buckwheat flour and soba noodles.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "japan",
+      "source": "source/japan-caa-allergen-labelling",
+      "name": "そば (buckwheat)",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    }
+  ]
+}

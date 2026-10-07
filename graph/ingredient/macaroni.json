@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/macaroni",
+  "tier": "drafted",
+  "names": {"en": "Macaroni", "fr": "Macaronis"},
+  "aliases": {},
+  "is_a": [
+    {"thing": "ingredient/pasta", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Short tubes of pasta that hold a sauce inside them, and go on softening in it as they bake.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/egg", "basis": "Pasta of unknown make may hold egg.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

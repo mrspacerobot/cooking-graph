@@ -1,0 +1,7 @@
+{
+  "id": "equipment/whisk",
+  "tier": "drafted",
+  "names": {"en": "Whisk", "fr": "Fouet"},
+  "aliases": {"en": ["balloon whisk"]},
+  "use": "Beats air into a liquid, and blends liquids that resist mixing."
+}

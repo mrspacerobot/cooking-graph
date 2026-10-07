@@ -1,0 +1,9 @@
+{
+  "id": "group/mushrooms",
+  "tier": "drafted",
+  "names": {"en": "Mushrooms", "fr": "Champignons"},
+  "aliases": {},
+  "shares": "Spongy caps that give up their water as they heat, and brown only once it has cooked off.",
+  "within": {"thing": "group/vegetables", "tier": "drafted"},
+  "stands_alone": null
+}

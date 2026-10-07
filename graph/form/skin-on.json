@@ -1,0 +1,8 @@
+{
+  "id": "form/skin-on",
+  "tier": "drafted",
+  "names": {"en": "Skin on", "fr": "Avec la peau"},
+  "aliases": {"en": ["with its skin"]},
+  "looks_like": "With the skin left on, scaled and dry.",
+  "size": []
+}

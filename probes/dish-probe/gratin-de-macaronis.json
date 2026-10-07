@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gratin-de-macaronis",
+  "tier": "drafted",
+  "batch": "gratin-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "gratin",
+  "dish": "Gratin de macaronis",
+  "also_called": ["macaroni gratin", "macaronis au gratin"],
+  "techniques": ["boil", "make a roux", "gratinate"],
+  "ingredients": ["macaroni", "milk", "butter", "flour", "gruyère", "nutmeg"]
+}

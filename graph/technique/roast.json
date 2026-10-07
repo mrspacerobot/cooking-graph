@@ -1,0 +1,54 @@
+{
+  "id": "technique/roast",
+  "tier": "drafted",
+  "names": {"en": "Roast", "fr": "Rôtir"},
+  "aliases": {"en": ["roast in the oven", "oven-roast", "roasting"]},
+  "does": "Cooks food uncovered in the dry heat of a hot oven, so that the outside browns while the inside cooks in its own juices.",
+  "how": [
+    "Dry the surface of the food well.",
+    "Season it, and rub it with a little fat.",
+    "Set it in a tin that fits it without crowding, in an oven that is fully hot.",
+    "Turn it or baste it now and then, so that it browns evenly.",
+    "Rest it before carving, and make a jus from what is left in the tin."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A deep golden-brown surface, and browned juices stuck to the tin."},
+    {"sense": "smell", "text": "A rich roasting smell fills the kitchen well before the food is done."},
+    {"sense": "hear", "text": "A steady sizzle from the tin."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Crowding the tin, so that the food steams and stays pale.",
+      "fix": "Leave space around every piece, or use a second tin."
+    },
+    {"mistake": "Carving a roast straight from the oven.", "fix": "Rest it first, loosely covered."}
+  ],
+  "works_on": [
+    {"thing": "group/roasting-joints", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/bones", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/fond", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/roasting-tin", "equipment/baking-sheet"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil", "ingredient/butter"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/sear",
+      "why": "Roasting is searing done by an oven: the same dry surface and the same patience, on a larger piece.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

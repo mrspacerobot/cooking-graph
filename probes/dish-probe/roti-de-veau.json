@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/roti-de-veau",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "roast",
+  "dish": "Rôti de veau",
+  "also_called": ["roast veal", "roast loin of veal"],
+  "techniques": ["sear", "roast", "baste", "rest", "deglaze"],
+  "ingredients": ["veal roasting joint", "butter", "onion", "carrot", "thyme", "white wine"]
+}

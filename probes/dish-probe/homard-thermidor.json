@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/homard-thermidor",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "roux",
+  "dish": "Homard Thermidor",
+  "also_called": ["lobster Thermidor"],
+  "techniques": ["boil", "reduce", "make a roux", "gratinate"],
+  "ingredients": ["lobster", "white wine", "butter", "flour", "milk", "egg yolk", "Dijon mustard", "gruyère"]
+}

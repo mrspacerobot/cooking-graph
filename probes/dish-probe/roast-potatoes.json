@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/roast-potatoes",
+  "tier": "drafted",
+  "batch": "roast-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "roast",
+  "dish": "Roast potatoes",
+  "also_called": ["pommes de terre rôties"],
+  "techniques": ["blanch", "roast"],
+  "ingredients": ["potato", "duck fat", "garlic", "thyme"]
+}

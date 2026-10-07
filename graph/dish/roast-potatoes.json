@@ -1,0 +1,25 @@
+{
+  "id": "dish/roast-potatoes",
+  "tier": "drafted",
+  "names": {"en": "Roast potatoes", "fr": "Pommes de terre rôties"},
+  "aliases": {},
+  "is": "Potatoes boiled briefly, roughed up, and roasted in hot fat until the outside is crisp and deep gold and the inside is soft.",
+  "parts": [
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/duck-fat", "ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "thyme", "role": "aromatic", "options": ["ingredient/thyme"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/roast", "tier": "drafted"},
+    {"thing": "technique/blanch", "tier": "drafted"}
+  ],
+  "belongs_to": []
+}

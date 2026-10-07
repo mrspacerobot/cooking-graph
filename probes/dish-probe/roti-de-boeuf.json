@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/roti-de-boeuf",
+  "tier": "drafted",
+  "batch": "roast-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "roast",
+  "dish": "Rôti de bœuf",
+  "also_called": ["roast beef"],
+  "techniques": ["sear", "roast", "rest", "deglaze"],
+  "ingredients": ["beef roasting joint", "butter", "thyme", "garlic", "brown stock"]
+}

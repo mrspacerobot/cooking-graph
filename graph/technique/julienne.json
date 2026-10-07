@@ -1,0 +1,41 @@
+{
+  "id": "technique/julienne",
+  "tier": "drafted",
+  "names": {"en": "Julienne", "fr": "Tailler en julienne"},
+  "aliases": {"en": ["cut into julienne", "cut into matchsticks"]},
+  "does": "Cuts food into fine, even strips the length of a matchstick.",
+  "how": [
+    "Cut the vegetable into lengths as long as the strips you want.",
+    "Slice each length into thin, flat sheets.",
+    "Stack a few sheets and slice them lengthwise into strips as wide as the sheets are thick.",
+    "For a leek, split a length open, lay the layers flat and slice along the grain."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Fine strips of one length that bend without snapping and fall apart from each other."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stacking too many sheets, so the pile slides and the strips come out as wedges.",
+      "fix": "Stack only a few sheets at a time and keep the pile flat."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/julienne", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/slice", "why": "A julienne starts as thin, even slices.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

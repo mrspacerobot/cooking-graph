@@ -1,0 +1,36 @@
+{
+  "id": "ingredient/lemon",
+  "tier": "drafted",
+  "names": {"en": "Lemon", "fr": "Citron"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Its juice sharpens and brightens a dish and dulls when boiled long, so it goes in at the end. It can curdle hot milk or cream.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/white-wine-vinegar",
+      "allows": true,
+      "when": ["preparation/mayonnaise", "preparation/vinaigrette", "preparation/hollandaise"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Softer and fruitier than vinegar.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/pork-sausage",
+  "tier": "drafted",
+  "names": {"en": "Pork sausage", "fr": "Saucisse"},
+  "aliases": {"en": ["fresh pork sausage", "Toulouse sausage"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Coarse pork in a skin. Cooked slowly it stays juicy, and it bursts if it is pricked or rushed.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is made of pork.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is made of pork.", "certain": true},
+      {"fact": "fact/gluten", "basis": "Many sausages are bound with breadcrumbs or rusk.", "certain": false},
+      {"fact": "fact/wheat", "basis": "Many sausages are bound with breadcrumbs or rusk.", "certain": false},
+      {"fact": "fact/milk", "basis": "Many sausages are made with milk protein.", "certain": false},
+      {"fact": "fact/soy", "basis": "Some sausages are made with soy protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Fresh sausages are often kept with sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame",
+      "fact/slaughter-product", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

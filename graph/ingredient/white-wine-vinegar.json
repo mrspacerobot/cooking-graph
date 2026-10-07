@@ -1,0 +1,50 @@
+{
+  "id": "ingredient/white-wine-vinegar",
+  "tier": "drafted",
+  "names": {"en": "White wine vinegar", "fr": "Vinaigre de vin blanc"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Sharp and clean. A little in poaching water helps egg white set, and it sharpens a sauce without colouring it.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "Vinegar keeps a trace of the alcohol it is made from.", "certain": false},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Made from wine, which may be cleared with gelatine or isinglass.",
+        "certain": false
+      },
+      {
+        "fact": "fact/fish",
+        "basis": "Made from wine, which may be cleared with isinglass from fish.",
+        "certain": false
+      },
+      {"fact": "fact/egg", "basis": "Made from wine, which may be cleared with egg white.", "certain": false},
+      {"fact": "fact/milk", "basis": "Made from wine, which may be cleared with milk protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Made from wine, which nearly always holds sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/gluten", "fact/lupin",
+      "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "Whether what cleared the wine is still in the vinegar is for a person to decide."
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/lemon-juice",
+      "allows": true,
+      "when": ["preparation/mayonnaise", "preparation/vinaigrette"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It tastes sharper and lacks the citrus fragrance. Adjust the sharpness at the finish.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "recipe/tourteau-mayonnaise",
+  "tier": "drafted",
+  "names": {"en": "Tourteau mayonnaise"},
+  "aliases": {},
+  "makes": "dish/tourteau-mayonnaise",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/brown-crab", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "main"},
+    {
+      "thing": "preparation/court-bouillon",
+      "amount": {"value": 3, "unit": "litre"},
+      "forms": [],
+      "part": "court-bouillon"
+    },
+    {
+      "thing": "ingredient/egg-yolk",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/room-temperature"],
+      "part": "mayonnaise"
+    },
+    {
+      "thing": "ingredient/dijon-mustard",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "mayonnaise"
+    },
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 200, "unit": "millilitre"},
+      "forms": [],
+      "part": "mayonnaise"
+    },
+    {"thing": "ingredient/lemon", "amount": {"value": 0.5, "unit": "piece"}, "forms": [], "part": "mayonnaise"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "mayonnaise"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/mixing-bowl", "equipment/whisk", "equipment/thermometer"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/brown-crab"],
+      "with": ["preparation/court-bouillon"],
+      "text": "Bring the court-bouillon to a rolling boil in a large pot. Lower the crab in, bring the liquid back to the boil and cook it at a steady simmer. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/chill",
+      "works_on": ["ingredient/brown-crab"],
+      "with": [],
+      "text": "Lift the crab out and let it cool in the air, then chill it. Do not leave it to cool in the liquid, which makes the meat watery.",
+      "time": {"value": 2, "unit": "hour"},
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    },
+    {
+      "technique": "technique/emulsify",
+      "works_on": ["preparation/mayonnaise"],
+      "with": [
+        "ingredient/egg-yolk", "ingredient/dijon-mustard", "ingredient/salt", "ingredient/sunflower-oil",
+        "ingredient/lemon"
+      ],
+      "text": "Whisk the egg yolk with the mustard and the salt. Add the oil drop by drop at first, whisking all the time, then in a thin stream once the sauce has thickened. Sharpen it with the juice of the lemon.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": ["preparation/mayonnaise"]
+    },
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/brown-crab"],
+      "with": [],
+      "text": "Twist off the claws and the legs and crack them. Pull the body out of the shell and throw away the grey gills. Pick the white meat from the body and the claws, and spoon the brown meat from the shell.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/brown-crab", "preparation/mayonnaise"],
+      "with": [],
+      "text": "Serve the crab cold, cracked or picked, with the mayonnaise beside it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

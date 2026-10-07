@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/tete-de-veau-sauce-gribiche",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Tête de veau sauce gribiche",
+  "also_called": ["calf's head with gribiche sauce", "tête de veau"],
+  "holds": ["egg", "mustard", "sulphites"],
+  "does_not_hold": ["milk"],
+  "why": "Gribiche is a cold sauce of hard-boiled egg yolk, mustard and oil with capers and cornichons. The vinegar and the brined capers and cornichons often carry sulphites."
+}

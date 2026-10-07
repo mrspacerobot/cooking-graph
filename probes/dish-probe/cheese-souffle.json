@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/cheese-souffle",
+  "tier": "drafted",
+  "batch": "eggs-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "eggs",
+  "dish": "Cheese soufflé",
+  "also_called": ["soufflé au fromage"],
+  "techniques": ["make a roux", "whip", "fold", "bake"],
+  "ingredients": ["egg", "butter", "flour", "milk", "gruyère"]
+}

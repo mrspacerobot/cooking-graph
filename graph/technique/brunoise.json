@@ -1,0 +1,56 @@
+{
+  "id": "technique/brunoise",
+  "tier": "drafted",
+  "names": {"en": "Brunoise", "fr": "Tailler en brunoise"},
+  "aliases": {"en": ["cut into brunoise", "dice finely"]},
+  "does": "Cuts food into tiny, even cubes that melt into a sauce or sit as a neat garnish.",
+  "how": [
+    "Cut the vegetable into thin slabs, then into julienne strips.",
+    "Gather the strips into a tight bundle.",
+    "Cut across the bundle at the same spacing as the strips are wide.",
+    "For a shallot, halve it, make fine cuts towards the root and a few flat cuts into it, then slice across."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Cubes so small and even that they look like coarse grains."},
+    {"sense": "see", "text": "The pile stays dry on the board."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Rocking the knife back over the pile to make it finer, which bruises it into a wet mash.",
+      "fix": "Cut each piece once. If the cubes are too big, cut the strips thinner next time."
+    },
+    {
+      "mistake": "A blunt knife crushes instead of cutting, so the shallot weeps and turns bitter.",
+      "fix": "Sharpen the knife. A clean cut stays dry."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/brunoise", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/julienne",
+      "why": "A brunoise is a julienne cut across, so the strips come first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/dice",
+      "differs": "Far smaller. The food is first cut into julienne, then across into cubes that cook in moments.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

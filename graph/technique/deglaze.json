@@ -1,0 +1,59 @@
+{
+  "id": "technique/deglaze",
+  "tier": "drafted",
+  "names": {"en": "Deglaze", "fr": "Déglacer"},
+  "aliases": {"en": ["deglaze the pan", "deglaze the fond"]},
+  "does": "Dissolves the browned layer stuck to a hot pan with a splash of liquid, turning it into the base of a sauce.",
+  "how": [
+    "Pour off the fat, and keep everything brown that sticks to the pan.",
+    "Soften a little shallot or garlic in the pan first, if the sauce calls for it.",
+    "Take the pan off the flame to add wine or spirits, then put it back.",
+    "Scrape the bottom with a wooden spoon as the liquid boils, until the pan is clean and the liquid has turned brown."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A sharp hiss and a burst of steam when the liquid hits the pan."},
+    {"sense": "see", "text": "The bottom of the pan comes clean under the spoon and the liquid darkens."},
+    {"sense": "smell", "text": "The raw smell of the wine goes as it boils."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Deglazing a pan whose fond has burnt black, which makes a bitter sauce.",
+      "fix": "Taste a scrap of the fond first. If it is bitter, wipe the pan out and build the sauce without it."
+    },
+    {
+      "mistake": "Leaving all the fat in, so that the sauce is greasy and will not come together.",
+      "fix": "Pour the fat off first. The flavour is in the brown bits, not in the fat."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/fond", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/pan-sauce", "tier": "drafted"},
+    {"thing": "preparation/jus", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "liquid",
+      "options": [
+        "ingredient/white-wine", "ingredient/red-wine", "ingredient/cognac", "ingredient/red-wine-vinegar",
+        "ingredient/stock", "ingredient/chicken-stock", "preparation/white-chicken-stock", "ingredient/water"
+      ],
+      "tier": "drafted"
+    },
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {
+      "role": "vessel",
+      "options": ["equipment/frying-pan", "equipment/saute-pan", "equipment/dutch-oven"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/sear", "why": "There is nothing to deglaze until a sear has left a fond.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

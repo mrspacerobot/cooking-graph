@@ -1,0 +1,7 @@
+{
+  "id": "equipment/filleting-knife",
+  "tier": "drafted",
+  "names": {"en": "Filleting knife", "fr": "Couteau à filets de sole"},
+  "aliases": {"en": ["fillet knife"]},
+  "use": "A thin, flexible blade that bends along the bones of a fish."
+}

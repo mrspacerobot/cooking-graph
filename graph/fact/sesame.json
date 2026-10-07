@@ -1,0 +1,64 @@
+{
+  "id": "fact/sesame",
+  "tier": "sourced",
+  "names": {"en": "Sesame", "fr": "Sésame"},
+  "aliases": {"en": ["sesame seeds", "sesame seed"]},
+  "means": "Sesame seeds, or anything made from them, such as tahini and sesame oil.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "european-union",
+      "source": "source/eu-regulation-1169-2011-annex-ii",
+      "name": "Sesame seeds and products thereof",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-kingdom",
+      "source": "source/uk-fsa-food-allergy-advice",
+      "name": "sesame",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-states",
+      "source": "source/us-fda-food-allergies",
+      "name": "sesame",
+      "standing": "mandatory",
+      "exemptions": "The labelling law leaves out highly refined oils, raw agricultural commodities, alcoholic drinks labelled under the Alcohol and Tobacco Tax and Trade Bureau, and the meat, poultry and egg products another department regulates.",
+      "note": "Named the ninth major food allergen by a law of 2021, in force since 1 January 2023.",
+      "tier": "sourced"
+    },
+    {
+      "where": "canada",
+      "source": "source/health-canada-common-food-allergens",
+      "name": "Sesame seeds",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "australia-and-new-zealand",
+      "source": "source/fsanz-allergen-labelling",
+      "name": "sesame",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "japan",
+      "source": "source/japan-caa-allergen-labelling",
+      "name": "ごま (sesame)",
+      "standing": "recommended",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    }
+  ]
+}

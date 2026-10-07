@@ -1,0 +1,9 @@
+{
+  "id": "group/lean-fish",
+  "tier": "drafted",
+  "names": {"en": "Lean fish", "fr": "Poissons maigres"},
+  "aliases": {},
+  "shares": "White-fleshed fish with little fat, which sets fast and dries fast. It is poached, steamed in a parcel, or floured and fried.",
+  "within": {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+  "stands_alone": null
+}

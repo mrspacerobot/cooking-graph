@@ -1,0 +1,7 @@
+{
+  "id": "equipment/steamer-basket",
+  "tier": "drafted",
+  "names": {"en": "Steamer basket", "fr": "Panier vapeur"},
+  "aliases": {"en": ["steamer"]},
+  "use": "Holds food above boiling water in a covered pot."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-roast-chicken",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "roast",
+  "at_home": ["whole chicken", "butter", "olive oil", "lemon", "thyme", "garlic", "salt", "black pepper"],
+  "dishes": ["Poulet rôti"],
+  "why": "Butter, lemon, garlic and thyme season a whole chicken for a straightforward oven roast."
+}

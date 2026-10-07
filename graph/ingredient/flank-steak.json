@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/flank-steak",
+  "tier": "drafted",
+  "names": {"en": "Flank steak", "fr": "Bavette"},
+  "aliases": {"en": ["bavette", "skirt steak"]},
+  "is_a": [
+    {"thing": "ingredient/beef-steak", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A loose-grained, full-flavoured steak that is tender only when cooked fast and sliced across the grain.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is beef.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

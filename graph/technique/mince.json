@@ -1,0 +1,42 @@
+{
+  "id": "technique/mince",
+  "tier": "drafted",
+  "names": {"en": "Mince"},
+  "aliases": {"en": ["mince finely", "chop to a paste"]},
+  "does": "Cuts food so fine that it melts into a dish and leaves no piece to bite on.",
+  "how": [
+    "Slice the food thinly, then cut across the slices.",
+    "Rock the knife over the pile, scraping it together now and then, until no piece stands out.",
+    "For garlic, crush the clove under the flat of the blade first, so that the skin slips off and the flesh breaks open."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A fine, moist pile with no piece larger than a grain."},
+    {"sense": "smell", "text": "Garlic smells sharp and strong the moment it is cut this fine."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Mincing garlic long before it is needed, so that it turns harsh.",
+      "fix": "Mince it last, just before it goes into the pan."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/minced", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/chop",
+      "differs": "It goes on much longer, until the pieces are almost a paste and vanish into the dish.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

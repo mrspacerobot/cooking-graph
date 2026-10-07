@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/soupe-au-pistou",
+  "tier": "drafted",
+  "batch": "knife-cuts-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Soupe au pistou",
+  "also_called": ["pistou soup"],
+  "techniques": ["dice", "simmer", "pound"],
+  "ingredients": [
+    "white beans",
+    "green beans",
+    "courgette",
+    "potato",
+    "tomato",
+    "pasta",
+    "basil",
+    "garlic",
+    "olive oil",
+    "parmesan"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-whisk-mayonnaise",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "whisk an emulsion",
+  "at_home": ["egg yolk", "Dijon mustard", "olive oil", "lemon juice", "salt", "black pepper"],
+  "dishes": ["Mayonnaise"],
+  "why": "Whisking oil gradually into yolk, mustard and lemon juice creates a thick cold emulsion."
+}

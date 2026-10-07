@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/asperges-hollandaise",
+  "tier": "drafted",
+  "batch": "emulsions-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "emulsions",
+  "dish": "Asperges sauce hollandaise",
+  "also_called": ["asparagus with hollandaise"],
+  "techniques": ["boil", "emulsify"],
+  "ingredients": ["asparagus", "egg yolk", "butter", "lemon"]
+}

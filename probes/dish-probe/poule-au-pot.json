@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/poule-au-pot",
+  "tier": "drafted",
+  "batch": "poach-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "poach",
+  "dish": "Poule au pot",
+  "also_called": [],
+  "techniques": ["poach", "skim"],
+  "ingredients": ["chicken", "carrot", "leek", "turnip", "celery", "onion", "clove", "bouquet garni"]
+}

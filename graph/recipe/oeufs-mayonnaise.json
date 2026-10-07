@@ -1,0 +1,61 @@
+{
+  "id": "recipe/oeufs-mayonnaise",
+  "tier": "drafted",
+  "names": {"en": "Œufs mayonnaise"},
+  "aliases": {},
+  "makes": "dish/oeufs-mayonnaise",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "preparation/mayonnaise", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "mayonnaise"},
+    {
+      "thing": "ingredient/chives",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": ["form/chopped"],
+      "part": "garnish"
+    }
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saucepan", "equipment/slotted-spoon", "equipment/mixing-bowl"],
+  "steps": [
+    {
+      "technique": "technique/boil-an-egg",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Bring a pan of water to a gentle boil. Lower in the eggs, straight from the fridge, and boil them gently until the yolks are firm.",
+      "time": {"from": 9, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/refresh",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Lift the eggs into cold water and leave them until cold.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Crack the shells all over and peel the eggs under a thin stream of water.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/egg", "preparation/mayonnaise"],
+      "with": ["ingredient/chives"],
+      "text": "Halve the eggs lengthwise and lay them cut side down. Spoon mayonnaise over each half until it is coated, and scatter with the chives.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    }
+  ]
+}

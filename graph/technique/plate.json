@@ -1,0 +1,43 @@
+{
+  "id": "technique/plate",
+  "tier": "drafted",
+  "names": {"en": "Plate", "fr": "Dresser"},
+  "aliases": {"en": ["serve", "dish up", "plate up"]},
+  "does": "Arranges the finished parts on a plate, so that each reaches the table at its best.",
+  "how": [
+    "Warm the plates for hot food and chill them for cold.",
+    "Have every part ready before the first one is plated.",
+    "Set the main part down first, then build around it without crowding the rim.",
+    "Sauce last, beside or under anything crisp, and wipe the rim clean."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A clean rim, and each part easy to tell from the others."},
+    {"sense": "feel", "text": "A plate for hot food is warm to the hand."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Plating hot food on cold plates, so that a sauce sets and eggs cool before they reach the table.",
+      "fix": "Warm the plates in a low oven or under hot water."
+    },
+    {
+      "mistake": "Pouring sauce over crisp skin or crust, which softens it at once.",
+      "fix": "Put the sauce beside it or under it."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/starches", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"},
+    {"thing": "group/firm-fruits", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/quiche-lorraine-creme-fraiche",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Quiche Lorraine",
+  "ingredient": "heavy cream",
+  "candidate": "crème fraîche",
+  "verdict": "works-with-caveat",
+  "why": "Both enrich the custard; crème fraîche adds tang and a slightly denser set."
+}

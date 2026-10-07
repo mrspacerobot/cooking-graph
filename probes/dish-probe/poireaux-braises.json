@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/poireaux-braises",
+  "tier": "drafted",
+  "batch": "braise-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "braise",
+  "dish": "Poireaux braisés",
+  "also_called": ["braised leeks"],
+  "techniques": ["sweat", "braise"],
+  "ingredients": ["leek", "butter", "chicken stock", "thyme"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gratin-de-courge",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "gratin",
+  "dish": "Gratin de courge",
+  "also_called": ["pumpkin gratin", "squash gratin", "gratin de potimarron"],
+  "techniques": ["peel", "slice", "bake", "gratinate"],
+  "ingredients": ["pumpkin", "cream", "garlic", "gruyère", "nutmeg", "butter"]
+}

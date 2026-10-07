@@ -1,0 +1,10 @@
+{
+  "id": "form/brunoise",
+  "tier": "drafted",
+  "names": {"en": "Brunoise", "fr": "Brunoise"},
+  "aliases": {"en": ["fine dice"]},
+  "looks_like": "Tiny, even cubes, like coarse grains.",
+  "size": [
+    {"measure": "side", "length": {"from": 2, "to": 3, "unit": "millimetre"}}
+  ]
+}

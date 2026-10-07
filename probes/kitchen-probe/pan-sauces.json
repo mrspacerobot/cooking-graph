@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/pan-sauces",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "held-back",
+  "written_by": "gpt-6-luna",
+  "technique": "pan sauces",
+  "at_home": ["beef steak", "butter", "shallot", "red wine", "beef stock", "Dijon mustard", "salt", "black pepper"],
+  "dishes": ["Steak sauce marchand de vin", "Steak à la moutarde"],
+  "why": "Fond, shallot, wine, stock and butter build a reduced pan sauce, with mustard for another classic finish."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "kitchen-probe/focused-deglaze-steak",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "deglaze",
+  "at_home": [
+    "beef steak",
+    "cognac",
+    "heavy cream",
+    "butter",
+    "olive oil",
+    "green peppercorns",
+    "shallot",
+    "salt",
+    "black pepper"
+  ],
+  "dishes": ["Steak au poivre"],
+  "why": "After searing steak, cognac loosens the browned pan residue and cream carries the green peppercorn pan sauce."
+}

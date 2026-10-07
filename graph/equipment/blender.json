@@ -1,0 +1,7 @@
+{
+  "id": "equipment/blender",
+  "tier": "drafted",
+  "names": {"en": "Blender", "fr": "Mixeur"},
+  "aliases": {"en": ["stick blender", "immersion blender"]},
+  "use": "Purees soups and sauces until smooth."
+}

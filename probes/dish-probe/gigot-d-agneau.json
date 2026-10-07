@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gigot-d-agneau",
+  "tier": "drafted",
+  "batch": "roast-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "roast",
+  "dish": "Gigot d'agneau rôti",
+  "also_called": ["roast leg of lamb", "gigot d'agneau"],
+  "techniques": ["roast", "baste", "rest", "deglaze"],
+  "ingredients": ["leg of lamb", "garlic", "thyme", "olive oil", "white wine"]
+}

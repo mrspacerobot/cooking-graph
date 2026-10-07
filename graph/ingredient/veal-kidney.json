@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/veal-kidney",
+  "tier": "drafted",
+  "names": {"en": "Veal kidney", "fr": "Rognon de veau"},
+  "aliases": {"en": ["calf's kidney"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/offal", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Tender and mild when seared fast and left pink inside, tough and strong when cooked long.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is the kidney of a calf.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

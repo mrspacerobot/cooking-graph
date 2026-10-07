@@ -1,0 +1,37 @@
+{
+  "id": "ingredient/sausage-meat",
+  "tier": "drafted",
+  "names": {"en": "Sausage meat", "fr": "Chair à saucisse"},
+  "aliases": {"en": ["sausagemeat", "pork sausage meat"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Seasoned minced pork with enough fat to stay moist. It binds a stuffing and firms as it cooks.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is minced pork.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is minced pork.", "certain": true},
+      {
+        "fact": "fact/gluten",
+        "basis": "Bought sausage meat is often bound with breadcrumbs or rusk.",
+        "certain": false
+      },
+      {"fact": "fact/wheat", "basis": "Bought sausage meat is often bound with breadcrumbs or rusk.", "certain": false},
+      {"fact": "fact/milk", "basis": "Bought sausage meat may hold milk protein.", "certain": false},
+      {"fact": "fact/soy", "basis": "Bought sausage meat may hold soy protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Bought sausage meat is often kept with sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame",
+      "fact/slaughter-product", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

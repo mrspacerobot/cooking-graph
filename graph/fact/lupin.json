@@ -1,0 +1,37 @@
+{
+  "id": "fact/lupin",
+  "tier": "sourced",
+  "names": {"en": "Lupin", "fr": "Lupin"},
+  "aliases": {"en": ["lupine", "lupins"]},
+  "means": "Lupin seeds or flour, or anything made from them.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "european-union",
+      "source": "source/eu-regulation-1169-2011-annex-ii",
+      "name": "Lupin and products thereof",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-kingdom",
+      "source": "source/uk-fsa-food-allergy-advice",
+      "name": "lupin",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "australia-and-new-zealand",
+      "source": "source/fsanz-allergen-labelling",
+      "name": "lupin",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/soupe-a-loignon-beef-stock-vegetable-stock",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "held-back",
+  "written_by": "gpt-6-luna",
+  "recipe": "French onion soup",
+  "ingredient": "beef stock",
+  "candidate": "vegetable stock",
+  "verdict": "works-with-caveat",
+  "why": "Vegetable stock supports the same onion soup structure but gives less savory depth."
+}

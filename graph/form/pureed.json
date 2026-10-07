@@ -1,0 +1,8 @@
+{
+  "id": "form/pureed",
+  "tier": "drafted",
+  "names": {"en": "Pureed", "fr": "En purée"},
+  "aliases": {"en": ["blended", "puréed"]},
+  "looks_like": "Smooth all the way, with no grains, lumps or strings.",
+  "size": []
+}

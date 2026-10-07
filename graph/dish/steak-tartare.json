@@ -1,0 +1,50 @@
+{
+  "id": "dish/steak-tartare",
+  "tier": "drafted",
+  "names": {"en": "Steak tartare", "fr": "Steak tartare"},
+  "aliases": {"en": ["beef tartare"], "fr": ["tartare de bœuf"]},
+  "is": "Raw beef chopped by hand and seasoned at the last moment with shallot, capers, cornichons, parsley and mustard, with a raw egg yolk on top.",
+  "parts": [
+    {"id": "beef-fillet", "role": "main", "options": ["ingredient/beef-fillet"], "optional": false, "tier": "drafted"},
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "capers", "role": "seasoning", "options": ["ingredient/capers"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cornichons",
+      "role": "seasoning",
+      "options": ["ingredient/cornichons"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dijon-mustard",
+      "role": "seasoning",
+      "options": ["ingredient/dijon-mustard"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg-yolk", "role": "enrichment", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/brunoise", "tier": "drafted"},
+    {"thing": "technique/chop", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

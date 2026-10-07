@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/poulet-basquaise",
+  "tier": "drafted",
+  "batch": "braise-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "written_for": "braise",
+  "dish": "Poulet basquaise",
+  "also_called": ["Basque chicken", "poulet à la basquaise"],
+  "techniques": ["sear", "sweat", "braise"],
+  "ingredients": ["chicken", "bell pepper", "tomato", "onion", "garlic", "white wine", "Espelette pepper", "olive oil"]
+}

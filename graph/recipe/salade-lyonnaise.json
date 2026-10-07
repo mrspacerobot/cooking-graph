@@ -1,0 +1,112 @@
+{
+  "id": "recipe/salade-lyonnaise",
+  "tier": "drafted",
+  "names": {"en": "Salade lyonnaise"},
+  "aliases": {},
+  "makes": "dish/salade-lyonnaise",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/frisee", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "frisee"},
+    {"thing": "ingredient/bacon", "amount": {"value": 150, "unit": "gram"}, "forms": ["form/lardons"], "part": "bacon"},
+    {
+      "thing": "ingredient/baguette",
+      "amount": {"value": 60, "unit": "gram"},
+      "forms": ["form/diced"],
+      "part": "baguette"
+    },
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {
+      "thing": "ingredient/red-wine-vinegar",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "red-wine-vinegar"
+    },
+    {
+      "thing": "ingredient/dijon-mustard",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "dijon-mustard"
+    },
+    {
+      "thing": "ingredient/white-wine-vinegar",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "white-wine-vinegar"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/saute-pan", "equipment/mixing-bowl", "equipment/whisk",
+    "equipment/slotted-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/render",
+      "works_on": ["ingredient/bacon"],
+      "with": [],
+      "text": "Put the lardons in a cold frying pan and set it over medium heat. Let the fat run, then brown them until crisp at the edges. Lift them out and leave the fat in the pan.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/rendered-fat"]
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/baguette"],
+      "with": ["preparation/rendered-fat"],
+      "text": "Fry the bread cubes in the hot bacon fat until golden and crisp on all sides.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["preparation/vinaigrette"],
+      "with": [
+        "ingredient/dijon-mustard", "ingredient/red-wine-vinegar", "ingredient/black-pepper", "preparation/rendered-fat"
+      ],
+      "text": "Whisk the mustard, the red wine vinegar and the pepper in a large salad bowl, then whisk in the warm fat left in the pan.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/vinaigrette"]
+    },
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/white-wine-vinegar"],
+      "text": "Bring a wide pan of water to a bare tremble and add the white wine vinegar. Crack each egg into a small bowl and slide it in. Poach until the white is set and the yolk still soft, then lift out and drain.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/frisee", "ingredient/bacon", "ingredient/baguette"],
+      "with": ["preparation/vinaigrette", "ingredient/salt"],
+      "text": "Wash the frisée, dry it well and tear it into pieces. Add it to the bowl with the lardons and the croutons, and toss until every leaf is coated. Taste for salt.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/frisee", "ingredient/egg"],
+      "with": [],
+      "text": "Divide the salad between warm plates and set a poached egg on each.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

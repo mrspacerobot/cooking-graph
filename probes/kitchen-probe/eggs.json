@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/eggs",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "egg cookery",
+  "at_home": ["eggs", "butter", "salt", "black pepper", "cream", "Gruyère", "chives"],
+  "dishes": ["Omelette aux fines herbes", "Œufs brouillés", "Omelette au fromage"],
+  "why": "Eggs with butter and basic seasoning cover soft scrambling and folded omelettes, with cream, cheese and chives for familiar variations."
+}

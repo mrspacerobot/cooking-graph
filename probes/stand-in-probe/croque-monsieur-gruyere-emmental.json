@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/croque-monsieur-gruyere-emmental",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Croque monsieur",
+  "ingredient": "Gruyère",
+  "candidate": "Emmental",
+  "verdict": "works-with-caveat",
+  "why": "Emmental melts well, with a milder and less nutty flavor than Gruyère."
+}

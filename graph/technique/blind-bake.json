@@ -1,0 +1,47 @@
+{
+  "id": "technique/blind-bake",
+  "tier": "drafted",
+  "names": {"en": "Blind bake", "fr": "Cuire à blanc"},
+  "aliases": {"en": ["bake blind", "pre-bake"]},
+  "does": "Bakes an empty pastry case, so that a wet filling does not leave the base raw and soggy.",
+  "how": [
+    "Line the tin with the pastry and chill it until firm.",
+    "Prick the base with a fork, cover it with paper and fill it with baking beans.",
+    "Bake until the edges are set, then lift out the paper and the beans.",
+    "Bake a little longer, until the base looks dry and pale gold."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A dry, matt base with no grey, greasy patches, and edges of pale gold."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Skipping the chill, so that the pastry shrinks down the sides of the tin.",
+      "fix": "Rest the lined tin in the fridge until the pastry is firm."
+    },
+    {
+      "mistake": "Taking the beans out too soon, so that the base puffs up.",
+      "fix": "Wait until the edges hold their shape."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pastry", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/blind-baked", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/tart-tin"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/baking-beans"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/parchment-paper"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/bake",
+      "differs": "A pastry case is baked empty and weighed down, before any filling goes in.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

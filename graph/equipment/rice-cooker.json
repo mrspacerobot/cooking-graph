@@ -1,0 +1,7 @@
+{
+  "id": "equipment/rice-cooker",
+  "tier": "drafted",
+  "names": {"en": "Rice cooker", "fr": "Cuiseur à riz"},
+  "aliases": {},
+  "use": "Steams rice and keeps it warm without watching."
+}

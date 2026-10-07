@@ -1,0 +1,43 @@
+{
+  "id": "dish/steak-au-poivre",
+  "tier": "drafted",
+  "names": {"en": "Steak au poivre", "fr": "Steak au poivre"},
+  "aliases": {"en": ["pepper steak", "peppercorn steak"]},
+  "is": "A steak crusted with coarsely crushed black pepper, seared and rested, with a sauce made in its pan from cognac and cream.",
+  "parts": [
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/beef-steak", "ingredient/rib-steak", "ingredient/beef-fillet"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "cognac", "role": "liquid", "options": ["ingredient/cognac"], "optional": false, "tier": "drafted"},
+    {"id": "cream", "role": "enrichment", "options": ["ingredient/cream"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

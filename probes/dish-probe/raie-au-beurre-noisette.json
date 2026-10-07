@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/raie-au-beurre-noisette",
+  "tier": "drafted",
+  "batch": "poach-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "poach",
+  "dish": "Raie au beurre noisette",
+  "also_called": ["skate with brown butter", "raie aux câpres"],
+  "techniques": ["poach", "brown butter"],
+  "ingredients": ["skate", "court-bouillon", "butter", "capers", "red wine vinegar", "parsley"]
+}

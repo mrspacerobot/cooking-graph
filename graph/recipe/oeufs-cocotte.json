@@ -1,0 +1,59 @@
+{
+  "id": "recipe/oeufs-cocotte",
+  "tier": "drafted",
+  "names": {"en": "Œufs cocotte"},
+  "aliases": {},
+  "makes": "dish/oeufs-cocotte",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {
+      "thing": "ingredient/creme-fraiche",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "enrichment"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "butter"},
+    {
+      "thing": "ingredient/chives",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": ["form/chopped"],
+      "part": "chives"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "black-pepper"}
+  ],
+  "equipment": ["equipment/oven", "equipment/ramekin", "equipment/roasting-tin"],
+  "steps": [
+    {
+      "technique": "technique/bake-in-a-water-bath",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/butter", "ingredient/creme-fraiche", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Butter the ramekins. Put a spoonful of crème fraîche in each, crack an egg on top and season. Stand them in a deep tin and pour in hot water to come half way up their sides.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-in-a-water-bath",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Bake until the white is just set and the yolk still trembles.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/chives"],
+      "text": "Lift the ramekins out of the water, scatter with the chives and serve at once.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

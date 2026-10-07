@@ -1,0 +1,44 @@
+{
+  "id": "technique/slice",
+  "tier": "drafted",
+  "names": {"en": "Slice", "fr": "Émincer"},
+  "aliases": {"en": ["cut into slices", "slice thinly"]},
+  "does": "Cuts food into flat pieces of one thickness.",
+  "how": [
+    "Give the food a flat side to rest on.",
+    "Hold it with your fingertips tucked back and your knuckles against the side of the blade.",
+    "Push the knife forward and down in one stroke, and let its length do the cutting.",
+    "Move the guiding hand back by the thickness of a slice after each cut."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Slices of the same thickness from the first to the last."},
+    {
+      "sense": "hear",
+      "text": "A quiet stroke. A knock on the board at every cut means you are chopping down, not slicing forward."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pressing straight down, which crushes soft food such as a tomato.",
+      "fix": "Slide the blade forward as it goes down. Sharpen it if it still crushes."
+    },
+    {"mistake": "Slices that grow thicker as the hand tires.", "fix": "Slow down. Even matters more than fast."}
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/mushrooms", "tier": "drafted"},
+    {"thing": "group/leafy-heads", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/sliced", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

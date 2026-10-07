@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/veal-roasting-joint",
+  "tier": "drafted",
+  "names": {"en": "Veal roasting joint", "fr": "Rôti de veau"},
+  "aliases": {"en": ["veal roast", "roasting joint of veal"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/roasting-joints", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Pale, lean and mild. It dries out easily, so it is roasted gently, basted often and rested well.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is veal.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

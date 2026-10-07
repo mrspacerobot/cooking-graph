@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/epinards-a-la-bechamel",
+  "tier": "drafted",
+  "batch": "roux-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "written_for": "roux",
+  "dish": "Épinards à la béchamel",
+  "also_called": ["creamed spinach", "spinach in béchamel"],
+  "techniques": ["blanch", "make a roux"],
+  "ingredients": ["spinach", "milk", "butter", "flour", "nutmeg"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "form/lardons",
+  "tier": "drafted",
+  "names": {"en": "Lardons", "fr": "Lardons"},
+  "aliases": {"en": ["bacon batons"]},
+  "looks_like": "Short, thick sticks, cut across the slab.",
+  "size": [
+    {"measure": "width", "length": {"from": 5, "to": 6, "unit": "millimetre"}},
+    {"measure": "length", "length": {"from": 2, "to": 3, "unit": "centimetre"}}
+  ]
+}

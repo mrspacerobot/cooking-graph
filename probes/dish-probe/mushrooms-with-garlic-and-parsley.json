@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/mushrooms-with-garlic-and-parsley",
+  "tier": "drafted",
+  "batch": "saute-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "saute",
+  "dish": "Sautéed mushrooms with garlic and parsley",
+  "also_called": ["champignons à la persillade", "champignons sautés"],
+  "techniques": ["slice", "saute", "chop"],
+  "ingredients": ["mushroom", "butter", "garlic", "parsley"]
+}

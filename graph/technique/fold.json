@@ -1,0 +1,39 @@
+{
+  "id": "technique/fold",
+  "tier": "drafted",
+  "names": {"en": "Fold", "fr": "Incorporer"},
+  "aliases": {"en": ["fold in", "fold together"]},
+  "does": "Combines a light, airy mixture with a heavier one while keeping as much of the air as possible.",
+  "how": [
+    "Stir a small part of the whipped mixture into the heavy one to loosen it.",
+    "Tip the rest on top.",
+    "Cut down through the middle with a spatula, sweep along the bottom, and bring it up and over.",
+    "Turn the bowl a little and repeat, stopping when only a few streaks remain."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "An even, light mixture that still stands in soft mounds and has lost little of its volume."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring in circles, which knocks the air out and leaves a flat batter.",
+      "fix": "Cut, lift and turn. Stop early: a few streaks do less harm than more folding."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg-white", "tier": "drafted"},
+    {"thing": "ingredient/cream", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spatula"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/whip", "why": "There is nothing to fold until something has been whipped.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

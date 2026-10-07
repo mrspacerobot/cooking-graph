@@ -1,0 +1,80 @@
+{
+  "id": "recipe/court-bouillon",
+  "tier": "drafted",
+  "names": {"en": "Court-bouillon"},
+  "aliases": {},
+  "makes": "preparation/court-bouillon",
+  "yields": {"value": 2, "unit": "litre"},
+  "ingredients": [
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/white-wine", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "acid"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "onion"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "carrot"
+    },
+    {
+      "thing": "preparation/bouquet-garni",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": [],
+      "part": "bouquet-garni"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": ["equipment/stovetop", "equipment/stockpot", "equipment/fine-sieve"],
+  "steps": [
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/onion", "ingredient/carrot"],
+      "with": ["ingredient/water", "ingredient/white-wine", "preparation/bouquet-garni", "ingredient/salt"],
+      "text": "Put everything except the pepper in a pot, bring it to a simmer and cook gently. A court-bouillon is quick: it only has to take the flavour of the vegetables.",
+      "time": {"value": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["preparation/court-bouillon"],
+      "with": ["ingredient/black-pepper"],
+      "text": "Add the pepper near the end. Simmered for long, pepper turns bitter.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/strain",
+      "works_on": ["preparation/court-bouillon"],
+      "with": [],
+      "text": "Strain it through a fine sieve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chill",
+      "works_on": ["preparation/court-bouillon"],
+      "with": [],
+      "text": "Let it cool before a large fish goes in: a fish started in cold liquid cooks evenly. Use it the same day.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    }
+  ]
+}

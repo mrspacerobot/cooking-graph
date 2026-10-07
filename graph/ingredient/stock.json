@@ -1,0 +1,36 @@
+{
+  "id": "ingredient/stock",
+  "tier": "drafted",
+  "names": {"en": "Stock", "fr": "Bouillon"},
+  "aliases": {"en": ["broth"], "fr": ["fond"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Gives body and savoury depth. As it boils down it thickens and grows saltier.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "A stock of unknown kind is taken to be a meat stock.", "certain": false},
+      {"fact": "fact/gluten", "basis": "Bought stock and stock cubes often hold wheat.", "certain": false},
+      {"fact": "fact/wheat", "basis": "Bought stock and stock cubes often hold wheat.", "certain": false},
+      {
+        "fact": "fact/celery",
+        "basis": "Stock is usually made with celery, and stock cubes often hold it.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

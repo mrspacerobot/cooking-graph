@@ -1,0 +1,11 @@
+{
+  "id": "source/foodon",
+  "tier": "drafted",
+  "title": "FoodOn, the food ontology",
+  "publisher": "FoodOn, in the OBO Foundry",
+  "url": "https://github.com/FoodOntology/foodon",
+  "read_on": "2026-10-07",
+  "reuse": "The repository's licence badge says CC BY 4.0.",
+  "commercial_use": "allowed",
+  "taken": "Nothing was imported. A search for allergen at the EBI Ontology Lookup Service found 24 terms, among them labelling classes named after the entries of the European list. It names foods and what they come from, so it could back a reason such as a milk product or a fish. Whether it ties a generic ingredient to an allergen was not checked."
+}

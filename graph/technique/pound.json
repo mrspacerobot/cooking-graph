@@ -1,0 +1,36 @@
+{
+  "id": "technique/pound",
+  "tier": "drafted",
+  "names": {"en": "Pound", "fr": "Piler"},
+  "aliases": {"en": ["pound in a mortar", "crush in a mortar", "pound to a paste"]},
+  "does": "Crushes food in a mortar until it becomes a paste.",
+  "how": [
+    "Start with the hardest thing: garlic, with a little coarse salt to grip it.",
+    "Pound straight down to break it, then grind in circles against the wall of the mortar.",
+    "Add soft leaves a few at a time, and grind each lot to a paste before the next.",
+    "Work in oil or cheese last, a little at a time."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A thick, glossy paste with no whole pieces of leaf."},
+    {"sense": "smell", "text": "The scent of garlic and basil rises sharply as they break down."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Filling the mortar with leaves, which slide about and bruise without breaking down.",
+      "fix": "Add a few leaves at a time."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/whole-spices", "tier": "drafted"},
+    {"thing": "group/tender-herbs", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/mortar-and-pestle"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

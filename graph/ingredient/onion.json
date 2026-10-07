@@ -1,0 +1,39 @@
+{
+  "id": "ingredient/onion",
+  "tier": "drafted",
+  "names": {"en": "Onion", "fr": "Oignon"},
+  "aliases": {"en": ["yellow onion", "brown onion"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Gives up its water and softens over low heat, then browns and sweetens as that water cooks away.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/shallot",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Stronger and less sweet. Cut it finer and sweat it a little longer.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

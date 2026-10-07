@@ -1,0 +1,42 @@
+{
+  "id": "technique/stuff",
+  "tier": "drafted",
+  "names": {"en": "Stuff", "fr": "Farcir"},
+  "aliases": {"en": ["fill", "stuff with a filling", "stuff and roll"]},
+  "does": "Fills a hollow, a pocket or a rolled slice with a seasoned mixture, which flavours the food from inside and keeps it moist.",
+  "how": [
+    "Season the filling well and let it cool before it goes in.",
+    "Fill loosely. A filling swells as it cooks, and one that is packed tight bursts its wrapper.",
+    "Close the opening by folding, tying or pinning, so that the filling stays inside.",
+    "For a rolled slice, flatten the slice, spread the filling short of the edges, roll it up and tie it.",
+    "Check the centre of the filling against a trusted guide to doneness. It is the last part to heat."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A plump, even shape with no filling showing at the seams."},
+    {"sense": "feel", "text": "It gives a little when it is pressed. It is not drum-tight."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Packing the filling in tightly, so that the wrapper splits as it cooks.",
+      "fix": "Leave room for it to swell."
+    },
+    {
+      "mistake": "Stuffing with a warm filling long before cooking.",
+      "fix": "Cool the filling first, and stuff just before the food goes on the heat."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/leafy-heads", "tier": "drafted"},
+    {"thing": "ingredient/veal-escalope", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/kitchen-string"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

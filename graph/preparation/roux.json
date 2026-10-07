@@ -1,0 +1,19 @@
+{
+  "id": "preparation/roux",
+  "tier": "drafted",
+  "names": {"en": "Roux", "fr": "Roux"},
+  "aliases": {},
+  "is": "Flour cooked in an equal weight of butter. It thickens a liquid without lumps or a raw taste.",
+  "parts": [
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-roux", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

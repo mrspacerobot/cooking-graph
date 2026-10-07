@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-baste-seared-steak",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "baste",
+  "at_home": ["beef steak", "butter", "olive oil", "thyme", "garlic", "salt", "black pepper"],
+  "dishes": ["Steak au beurre noisette"],
+  "why": "Foaming butter spooned over a seared steak carries thyme and garlic across its surface as it finishes in the pan."
+}

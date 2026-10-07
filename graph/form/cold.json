@@ -1,0 +1,8 @@
+{
+  "id": "form/cold",
+  "tier": "drafted",
+  "names": {"en": "Cold", "fr": "Froid"},
+  "aliases": {"en": ["chilled", "fridge-cold"]},
+  "looks_like": "Straight from the fridge, and firm to the touch if it is butter.",
+  "size": []
+}

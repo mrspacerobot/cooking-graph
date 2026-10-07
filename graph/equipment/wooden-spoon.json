@@ -1,0 +1,7 @@
+{
+  "id": "equipment/wooden-spoon",
+  "tier": "drafted",
+  "names": {"en": "Wooden spoon", "fr": "Cuillère en bois"},
+  "aliases": {},
+  "use": "Stirs and scrapes without scratching the pan or carrying heat to the hand."
+}

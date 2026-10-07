@@ -1,0 +1,7 @@
+{
+  "id": "equipment/frying-pan",
+  "tier": "drafted",
+  "names": {"en": "Frying pan", "fr": "Poêle"},
+  "aliases": {"en": ["skillet"]},
+  "use": "A shallow pan with sloping sides, for searing, frying and eggs."
+}

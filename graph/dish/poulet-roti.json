@@ -1,0 +1,37 @@
+{
+  "id": "dish/poulet-roti",
+  "tier": "drafted",
+  "names": {"en": "Poulet rôti", "fr": "Poulet rôti"},
+  "aliases": {"en": ["roast chicken", "roast chicken with jus"]},
+  "is": "A whole chicken rubbed with butter, roasted until the skin is crisp and golden, rested, and served with a jus made from what it leaves in the tin.",
+  "parts": [
+    {"id": "chicken", "role": "main", "options": ["ingredient/chicken"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "thyme", "role": "aromatic", "options": ["ingredient/thyme"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "liquid",
+      "role": "liquid",
+      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock", "ingredient/water"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/roast", "tier": "drafted"},
+    {"thing": "technique/baste", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

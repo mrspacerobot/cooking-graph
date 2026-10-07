@@ -1,0 +1,8 @@
+{
+  "id": "form/sliced",
+  "tier": "drafted",
+  "names": {"en": "Sliced", "fr": "Émincé"},
+  "aliases": {"en": ["slices", "thinly sliced"]},
+  "looks_like": "Flat pieces of one even thickness.",
+  "size": []
+}

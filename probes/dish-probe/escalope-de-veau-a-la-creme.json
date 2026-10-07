@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/escalope-de-veau-a-la-creme",
+  "tier": "drafted",
+  "batch": "sear-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "sear",
+  "dish": "Escalope de veau à la crème",
+  "also_called": ["veal escalope with cream"],
+  "techniques": ["pan-fry", "deglaze", "reduce"],
+  "ingredients": ["veal escalope", "mushroom", "white wine", "cream", "butter", "flour"]
+}

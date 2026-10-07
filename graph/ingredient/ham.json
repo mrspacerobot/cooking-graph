@@ -1,0 +1,34 @@
+{
+  "id": "ingredient/ham",
+  "tier": "drafted",
+  "names": {"en": "Ham", "fr": "Jambon"},
+  "aliases": {"en": ["cooked ham", "jambon blanc"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/cooked-meats", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Already cooked and salty. It only needs warming, and dries out if heated for long.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is cured pork.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is cured pork.", "certain": true},
+      {"fact": "fact/milk", "basis": "Cured pork is often made with lactose or milk protein.", "certain": false},
+      {
+        "fact": "fact/celery",
+        "basis": "Cooked ham is often made with a stock or an extract that holds celery.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/gluten", "fact/lupin", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

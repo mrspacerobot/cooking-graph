@@ -1,0 +1,39 @@
+{
+  "id": "dish/poule-au-pot",
+  "tier": "drafted",
+  "names": {"en": "Poule au pot", "fr": "Poule au pot"},
+  "aliases": {"en": ["chicken in the pot"]},
+  "is": "A whole chicken poached gently with carrots, leeks, turnips and celery. The broth is served first and the bird after, carved, with its vegetables.",
+  "parts": [
+    {"id": "chicken", "role": "main", "options": ["ingredient/chicken"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "main", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "leek", "role": "main", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"},
+    {"id": "turnip", "role": "main", "options": ["ingredient/turnip"], "optional": false, "tier": "drafted"},
+    {"id": "celery", "role": "aromatic", "options": ["ingredient/celery"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "clove", "role": "aromatic", "options": ["ingredient/clove"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bouquet-garni",
+      "role": "aromatic",
+      "options": ["preparation/bouquet-garni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/skim", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "technique/saute",
+  "tier": "drafted",
+  "names": {"en": "Sauté", "fr": "Sauter"},
+  "aliases": {"en": ["saute", "sauté in a hot pan", "sautéing"]},
+  "does": "Cooks small pieces fast in a hot pan with a little fat, moving them so that they brown on all sides.",
+  "how": [
+    "Heat the pan first, then the fat, until the fat shimmers.",
+    "Add the food in a single layer, with room between the pieces.",
+    "Leave it a moment to take colour, then toss or stir.",
+    "Keep the heat high and the food moving until it is browned outside and just tender inside."
+  ],
+  "cues": [
+    {
+      "sense": "hear",
+      "text": "A lively sizzle from the moment the food goes in. If it falls silent, the pan is too full or too cool."
+    },
+    {"sense": "see", "text": "Golden-brown edges, and a dry pan with no liquid pooling in it."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Crowding the pan, so the food steams and turns grey.",
+      "fix": "Cook in batches, and let the pan heat up again between them."
+    },
+    {
+      "mistake": "Salting watery vegetables at the start, which draws their water into the pan.",
+      "fix": "Salt mushrooms, courgette and aubergine near the end."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/mushrooms", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/breads", "tier": "drafted"},
+    {"thing": "group/offal", "tier": "drafted"},
+    {"thing": "ingredient/minced-beef", "tier": "drafted"},
+    {"thing": "group/firm-fruits", "tier": "drafted"},
+    {"thing": "ingredient/frogs-legs", "tier": "drafted"},
+    {"thing": "group/crustaceans", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": [
+        "ingredient/olive-oil", "ingredient/sunflower-oil", "ingredient/butter", "preparation/clarified-butter"
+      ],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/sweat",
+      "why": "Sweating teaches how a pan sounds and looks on low heat. Sautéing asks for the same watchfulness at speed.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

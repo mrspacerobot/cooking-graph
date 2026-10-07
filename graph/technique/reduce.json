@@ -1,0 +1,58 @@
+{
+  "id": "technique/reduce",
+  "tier": "drafted",
+  "names": {"en": "Reduce", "fr": "Réduire"},
+  "aliases": {"en": ["boil down", "reduce by half", "reduce to a glaze"]},
+  "does": "Boils a liquid down, so that its water leaves as steam and what remains is thicker and stronger.",
+  "how": [
+    "Use a wide pan. The wider the surface, the faster the water leaves.",
+    "Boil steadily, uncovered.",
+    "Watch the level against the side of the pan, and the size of the bubbles.",
+    "Stop when it coats the back of a spoon, and season only then."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The bubbles grow larger and slower, and a finger drawn across the back of a coated spoon leaves a clear path."
+    },
+    {"sense": "hear", "text": "The boil deepens from a rattle to a slow, thick plop."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Salting before reducing, so that the salt is concentrated with everything else.",
+      "fix": "Season at the end."
+    },
+    {
+      "mistake": "Walking away near the end, when a sauce goes from syrup to scorched in moments.",
+      "fix": "Stay with it once it starts to thicken, and pull it off the heat early."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/cooking-liquors", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "group/wines", "tier": "drafted"},
+    {"thing": "group/creams", "tier": "drafted"},
+    {"thing": "ingredient/cider", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/nappe", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saute-pan", "equipment/frying-pan", "equipment/saucepan"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/deglaze", "why": "A pan sauce is deglazed first and reduced second.", "tier": "drafted"},
+    {
+      "thing": "technique/simmer",
+      "why": "A cook who can hold a simmer can judge a boil that must not scorch.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

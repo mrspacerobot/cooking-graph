@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/black-pudding",
+  "tier": "drafted",
+  "names": {"en": "Black pudding", "fr": "Boudin noir"},
+  "aliases": {"en": ["blood sausage"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/cooked-meats", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A soft, cooked sausage of pork blood and fat. It needs only gentle heating, and its skin bursts when it is fried hard.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is made of pork blood and fat.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is made of pork blood and fat.", "certain": true},
+      {"fact": "fact/milk", "basis": "Some black pudding is made with cream or milk.", "certain": false},
+      {"fact": "fact/gluten", "basis": "Some black pudding is bound with cereal or bread.", "certain": false},
+      {"fact": "fact/wheat", "basis": "Some black pudding is bound with cereal or bread.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/lyonnais",
+  "tier": "drafted",
+  "names": {"en": "Lyonnaise", "fr": "Lyonnaise"},
+  "aliases": {"en": ["Lyonnaise cooking"]},
+  "within": {"thing": "cuisine/french", "tier": "drafted"}
+}

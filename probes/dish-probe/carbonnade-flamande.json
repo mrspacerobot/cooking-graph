@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/carbonnade-flamande",
+  "tier": "drafted",
+  "batch": "braise-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "braise",
+  "dish": "Carbonnade flamande",
+  "also_called": ["carbonade", "Flemish beef stew"],
+  "techniques": ["sear", "caramelize", "deglaze", "braise"],
+  "ingredients": ["stewing beef", "onion", "beer", "brown sugar", "Dijon mustard", "bread", "bouquet garni"]
+}

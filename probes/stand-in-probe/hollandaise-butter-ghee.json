@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/hollandaise-butter-ghee",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Hollandaise sauce",
+  "ingredient": "clarified butter",
+  "candidate": "ghee",
+  "verdict": "works",
+  "why": "Ghee is clarified butter and can be whisked into the yolk emulsion in the same way."
+}

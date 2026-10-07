@@ -1,0 +1,7 @@
+{
+  "id": "equipment/fine-sieve",
+  "tier": "drafted",
+  "names": {"en": "Fine sieve", "fr": "Chinois"},
+  "aliases": {"en": ["sieve", "strainer", "fine-mesh strainer"]},
+  "use": "Holds back solids so that a liquid passes through clear."
+}

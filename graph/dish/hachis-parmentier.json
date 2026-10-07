@@ -1,0 +1,63 @@
+{
+  "id": "dish/hachis-parmentier",
+  "tier": "drafted",
+  "names": {"en": "Hachis parmentier", "fr": "Hachis parmentier"},
+  "aliases": {"en": ["French shepherd's pie", "parmentier"]},
+  "is": "Minced beef cooked with onion under a thick layer of potato purée, baked until the top is golden and crisp.",
+  "parts": [
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/minced-beef", "ingredient/boiled-beef"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/beef-stock", "preparation/brown-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "mashed-potato",
+      "role": "topping",
+      "options": ["preparation/mashed-potato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "breadcrumbs",
+      "role": "topping",
+      "options": ["preparation/breadcrumbs"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/mash", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

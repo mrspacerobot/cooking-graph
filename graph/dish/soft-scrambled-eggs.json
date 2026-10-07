@@ -1,0 +1,25 @@
+{
+  "id": "dish/soft-scrambled-eggs",
+  "tier": "drafted",
+  "names": {"en": "Soft scrambled eggs", "fr": "Œufs brouillés"},
+  "aliases": {"en": ["scrambled eggs", "French scrambled eggs"]},
+  "is": "Eggs stirred over gentle heat with butter until they form small, creamy curds, and taken off the heat while still soft.",
+  "parts": [
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "enrichment",
+      "role": "enrichment",
+      "options": ["ingredient/cream", "ingredient/creme-fraiche"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/scramble", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

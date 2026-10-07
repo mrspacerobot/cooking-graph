@@ -1,0 +1,7 @@
+{
+  "id": "equipment/colander",
+  "tier": "drafted",
+  "names": {"en": "Colander", "fr": "Passoire"},
+  "aliases": {},
+  "use": "Drains boiled food fast."
+}

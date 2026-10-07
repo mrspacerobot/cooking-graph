@@ -1,0 +1,106 @@
+{
+  "id": "recipe/saucisses-au-vin-blanc",
+  "tier": "drafted",
+  "names": {"en": "Saucisses au vin blanc"},
+  "aliases": {},
+  "makes": "dish/saucisses-au-vin-blanc",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-sausage", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "pork-sausage"},
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "sunflower-oil"
+    },
+    {
+      "thing": "ingredient/shallot",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "shallot"
+    },
+    {
+      "thing": "ingredient/white-wine",
+      "amount": {"value": 150, "unit": "millilitre"},
+      "forms": [],
+      "part": "white-wine"
+    },
+    {
+      "thing": "ingredient/butter",
+      "amount": {"value": 30, "unit": "gram"},
+      "forms": ["form/cold", "form/diced"],
+      "part": "butter"
+    },
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/wooden-spoon", "equipment/tongs", "equipment/whisk"
+  ],
+  "steps": [
+    {
+      "technique": "technique/pan-fry",
+      "works_on": ["ingredient/pork-sausage"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Do not prick the sausages. Brown them slowly in the oil in a heavy pan over medium-low heat, turning them often, until deep golden all round. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 15, "to": 18, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/shallot"],
+      "with": [],
+      "text": "Lift the sausages out and pour off all but a film of fat. Soften the shallots in it.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine"],
+      "text": "Pour in the wine and scrape the pan clean.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pan-sauce"]
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/pan-sauce"],
+      "with": [],
+      "text": "Boil the wine down until only a few syrupy spoonfuls are left.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mount-with-butter",
+      "works_on": ["preparation/pan-sauce"],
+      "with": ["ingredient/butter"],
+      "text": "Take the pan off the heat. Whisk in the cold butter a few cubes at a time, until the sauce is glossy.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pork-sausage", "preparation/pan-sauce"],
+      "with": ["ingredient/parsley"],
+      "text": "Roll the sausages in the sauce, scatter with the parsley and serve at once.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

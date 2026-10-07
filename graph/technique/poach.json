@@ -1,0 +1,67 @@
+{
+  "id": "technique/poach",
+  "tier": "drafted",
+  "names": {"en": "Poach", "fr": "Pocher"},
+  "aliases": {"en": ["poach gently", "poaching"]},
+  "does": "Cooks delicate food gently in liquid that is hot but never boils.",
+  "how": [
+    "Heat the liquid until it trembles, with small bubbles on the bottom of the pan and almost none rising.",
+    "Slide the food in gently.",
+    "Hold the heat there. Turn it down the moment bubbles start to break the surface.",
+    "Lift the food out with a slotted spoon and drain it well.",
+    "For an egg, add a little vinegar to the water, crack the egg into a small bowl first, and tip it in at the surface."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The surface shivers and steams, and nothing rolls."},
+    {
+      "sense": "feel",
+      "text": "A poached egg feels like a soft cushion when pressed: the white is set and the yolk is loose inside."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting the liquid boil, which tears an egg apart and toughens fish and chicken.",
+      "fix": "Turn the heat down, or add a splash of cold liquid."
+    },
+    {
+      "mistake": "Using an old egg, whose thin white spreads into rags.",
+      "fix": "Use the freshest eggs you have, and drain off the watery part of the white through a sieve."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/marrow-bone", "tier": "drafted"},
+    {"thing": "group/firm-fruits", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/poaching-liquid", "tier": "drafted"},
+    {"thing": "preparation/broth", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/saucepan"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": [
+        "ingredient/water", "ingredient/stock", "preparation/court-bouillon", "preparation/white-chicken-stock",
+        "ingredient/red-wine", "ingredient/milk"
+      ],
+      "tier": "drafted"
+    },
+    {"role": "acid", "options": ["ingredient/white-wine-vinegar"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "Poaching sits just under a simmer, so a cook has to be able to find a simmer first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

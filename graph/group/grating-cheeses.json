@@ -1,0 +1,9 @@
+{
+  "id": "group/grating-cheeses",
+  "tier": "drafted",
+  "names": {"en": "Grating cheeses", "fr": "Fromages à râper"},
+  "aliases": {},
+  "shares": "Firm cheeses that grate into fine shreds, melt smoothly into a sauce and brown to a golden crust.",
+  "within": null,
+  "stands_alone": null
+}

@@ -1,0 +1,10 @@
+{
+  "id": "form/large-pieces",
+  "tier": "drafted",
+  "names": {"en": "Large pieces", "fr": "En gros morceaux"},
+  "aliases": {"en": ["chunks", "large chunks", "roughly cut"]},
+  "looks_like": "Big pieces of about one size, cut to stand long simmering without falling apart.",
+  "size": [
+    {"measure": "side", "length": {"from": 3, "to": 5, "unit": "centimetre"}}
+  ]
+}

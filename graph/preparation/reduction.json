@@ -1,0 +1,16 @@
+{
+  "id": "preparation/reduction",
+  "tier": "drafted",
+  "names": {"en": "Reduction", "fr": "Réduction"},
+  "aliases": {"en": ["shallot reduction"]},
+  "is": "Wine or vinegar boiled down with shallots until only a sharp, syrupy spoonful is left: the base a butter sauce is mounted on.",
+  "parts": [],
+  "groups": [
+    {"thing": "group/cooking-liquors", "tier": "drafted"}
+  ],
+  "teaches": [],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

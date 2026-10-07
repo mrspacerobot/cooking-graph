@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/oeuf-a-la-coque",
+  "tier": "drafted",
+  "batch": "eggs-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "eggs",
+  "dish": "Œuf à la coque",
+  "also_called": ["soft-boiled egg with soldiers"],
+  "techniques": ["boil"],
+  "ingredients": ["egg", "bread", "butter"]
+}

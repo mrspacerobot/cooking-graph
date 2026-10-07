@@ -1,0 +1,34 @@
+{
+  "id": "ingredient/fish-stock",
+  "tier": "drafted",
+  "names": {"en": "Fish stock", "fr": "Fumet de poisson"},
+  "aliases": {"en": ["fish fumet"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A light, quick stock from fish bones. It turns bitter if it is simmered for long.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "Made from the bones of fish.", "certain": true},
+      {"fact": "fact/gluten", "basis": "Bought stock and stock cubes often hold wheat.", "certain": false},
+      {"fact": "fact/wheat", "basis": "Bought stock and stock cubes often hold wheat.", "certain": false},
+      {
+        "fact": "fact/celery",
+        "basis": "Stock is usually made with celery, and stock cubes often hold it.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/lupin",
+      "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -1,0 +1,88 @@
+{
+  "id": "recipe/jardiniere-de-legumes",
+  "tier": "drafted",
+  "names": {"en": "Jardinière de légumes"},
+  "aliases": {},
+  "makes": "dish/jardiniere-de-legumes",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 200, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "carrot"
+    },
+    {
+      "thing": "ingredient/turnip",
+      "amount": {"value": 200, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "turnip"
+    },
+    {"thing": "ingredient/green-beans", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "green-beans"},
+    {"thing": "ingredient/peas", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "peas"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "butter"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/saute-pan", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/colander", "equipment/slotted-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cut-into-batons",
+      "works_on": ["ingredient/carrot", "ingredient/turnip"],
+      "with": [],
+      "text": "Cut the carrots and the turnips into batons of one size, and cut the beans to the same length.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas"],
+      "with": ["ingredient/salt"],
+      "text": "Boil each vegetable on its own in well-salted water until it is just tender. Each takes a different time, so none is left to wait for another.",
+      "time": {"from": 3, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/refresh",
+      "works_on": ["ingredient/green-beans", "ingredient/peas"],
+      "with": [],
+      "text": "Lift the beans and the peas straight into iced water to set their colour, then drain them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas"],
+      "with": ["ingredient/butter"],
+      "text": "Warm all the vegetables together in the butter over a gentle heat, turning them until they are hot and glossy. Do not let them colour.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/carrot", "ingredient/turnip", "ingredient/green-beans", "ingredient/peas"],
+      "with": ["ingredient/parsley"],
+      "text": "Scatter with the parsley and serve at once.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

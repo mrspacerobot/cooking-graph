@@ -1,0 +1,38 @@
+{
+  "id": "technique/chill",
+  "tier": "drafted",
+  "names": {"en": "Chill", "fr": "Refroidir"},
+  "aliases": {"en": ["cool", "cool down", "cool quickly"]},
+  "does": "Brings hot food down to the cold of the fridge quickly, so that it keeps well and so that a cold dish is truly cold.",
+  "how": [
+    "Move the hot food out of its pot into a wide, shallow container.",
+    "Stand the container in iced water and stir now and then.",
+    "Put it in the fridge, uncovered, once it has stopped steaming.",
+    "Cover it when it is cold. Taste a cold dish again before serving, because cold dulls salt."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The container is cold to the hand all over, with no warm core."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving a large pot of stock to cool by itself on the stove, where its middle stays warm for a long time.",
+      "fix": "Divide it into shallow containers and cool them in iced water."
+    },
+    {"mistake": "Seasoning a soup while it is hot and serving it cold.", "fix": "Taste it again when it is cold."}
+  ],
+  "works_on": [
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/firm-fruits", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-sear-scallops",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "sear",
+  "at_home": ["scallops", "butter", "olive oil", "lemon", "parsley", "salt", "black pepper"],
+  "dishes": ["Coquilles Saint-Jacques poêlées"],
+  "why": "A hot pan gives scallops a browned surface while butter, lemon and parsley finish the simple preparation."
+}

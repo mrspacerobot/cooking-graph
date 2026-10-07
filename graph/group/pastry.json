@@ -1,0 +1,9 @@
+{
+  "id": "group/pastry",
+  "tier": "drafted",
+  "names": {"en": "Pastry", "fr": "Pâtes à tarte"},
+  "aliases": {},
+  "shares": "Doughs of flour and fat that are kept cold and handled little, and that bake to a dry, crisp shell.",
+  "within": {"thing": "group/starches", "tier": "drafted"},
+  "stands_alone": null
+}

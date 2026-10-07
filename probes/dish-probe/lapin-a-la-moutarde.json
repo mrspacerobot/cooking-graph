@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/lapin-a-la-moutarde",
+  "tier": "drafted",
+  "batch": "braise-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "written_for": "braise",
+  "dish": "Lapin à la moutarde",
+  "also_called": ["rabbit with mustard"],
+  "techniques": ["sear", "deglaze", "braise"],
+  "ingredients": ["rabbit", "Dijon mustard", "white wine", "shallot", "cream", "thyme"]
+}

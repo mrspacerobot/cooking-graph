@@ -1,0 +1,9 @@
+{
+  "id": "group/emulsified-sauces",
+  "tier": "drafted",
+  "names": {"en": "Emulsified sauces", "fr": "Sauces émulsionnées"},
+  "aliases": {},
+  "shares": "Sauces of fat held in a water-based liquid. They hold only while whisked with care, split when they get too hot or take fat too fast, and cannot be boiled.",
+  "within": {"thing": "group/sauces", "tier": "drafted"},
+  "stands_alone": null
+}

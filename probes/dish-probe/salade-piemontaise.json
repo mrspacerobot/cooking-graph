@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/salade-piemontaise",
+  "tier": "drafted",
+  "batch": "emulsions-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "emulsions",
+  "dish": "Salade piémontaise",
+  "also_called": ["piémontaise", "French potato salad"],
+  "techniques": ["boil", "dice", "emulsify", "toss"],
+  "ingredients": ["potato", "ham", "cornichons", "tomato", "egg", "mayonnaise"]
+}

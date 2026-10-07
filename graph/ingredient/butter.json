@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/butter",
+  "tier": "drafted",
+  "names": {"en": "Butter", "fr": "Beurre"},
+  "aliases": {"en": ["unsalted butter", "cold butter"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Melts, foams as its water boils off, then its milk solids brown and soon burn. Whisked cold into a hot liquid, it thickens it and makes it glossy.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is made from cream.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

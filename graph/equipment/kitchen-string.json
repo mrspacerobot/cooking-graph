@@ -1,0 +1,7 @@
+{
+  "id": "equipment/kitchen-string",
+  "tier": "drafted",
+  "names": {"en": "Kitchen string", "fr": "Ficelle de cuisine"},
+  "aliases": {"en": ["butcher's twine", "kitchen twine"]},
+  "use": "Ties a bundle of herbs, a joint or a bird so that it holds its shape."
+}

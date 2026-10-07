@@ -1,0 +1,31 @@
+{
+  "id": "preparation/beurre-blanc",
+  "tier": "drafted",
+  "names": {"en": "Beurre blanc", "fr": "Beurre blanc"},
+  "aliases": {"en": ["white butter sauce"], "fr": ["beurre nantais"]},
+  "is": "A warm sauce of cold butter whisked into a sharp reduction of shallot, white wine and vinegar.",
+  "parts": [
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "white-wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "white-wine-vinegar",
+      "role": "acid",
+      "options": ["ingredient/white-wine-vinegar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/emulsified-sauces", "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/reduce", "tier": "drafted"},
+    {"thing": "technique/mount-with-butter", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

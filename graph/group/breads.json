@@ -1,0 +1,9 @@
+{
+  "id": "group/breads",
+  "tier": "drafted",
+  "names": {"en": "Breads", "fr": "Pains"},
+  "aliases": {},
+  "shares": "Baked loaves and their crumbs. They dry as they stale, soak up liquid, and toast or fry to a crisp, golden crust.",
+  "within": {"thing": "group/starches", "tier": "drafted"},
+  "stands_alone": null
+}

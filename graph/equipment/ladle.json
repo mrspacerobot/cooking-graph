@@ -1,0 +1,7 @@
+{
+  "id": "equipment/ladle",
+  "tier": "drafted",
+  "names": {"en": "Ladle", "fr": "Louche"},
+  "aliases": {},
+  "use": "Lifts liquid out of a pot, and skims its surface."
+}

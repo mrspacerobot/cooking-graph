@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/jerusalem-artichoke",
+  "tier": "drafted",
+  "names": {"en": "Jerusalem artichoke", "fr": "Topinambour"},
+  "aliases": {"en": ["sunchoke"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A knobbly tuber with a sweet, nutty taste close to the artichoke. It turns brown when it is cut, and soft and creamy when it is baked.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

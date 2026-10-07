@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-scramble-eggs",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "scramble",
+  "at_home": ["eggs", "butter", "heavy cream", "salt", "black pepper", "chives"],
+  "dishes": ["Œufs brouillés"],
+  "why": "Low, steady stirring with butter makes soft curds; cream and chives finish the familiar French-style scramble."
+}

@@ -1,0 +1,112 @@
+{
+  "id": "recipe/soupe-de-poisson",
+  "tier": "drafted",
+  "names": {"en": "Soupe de poisson"},
+  "aliases": {},
+  "makes": "dish/soupe-de-poisson",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/rockfish",
+      "amount": {"value": 1, "unit": "kilogram"},
+      "forms": ["form/large-pieces"],
+      "part": "main"
+    },
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/sliced"], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {
+      "thing": "ingredient/tomato",
+      "amount": {"value": 3, "unit": "piece"},
+      "forms": ["form/chopped"],
+      "part": "tomato"
+    },
+    {"thing": "ingredient/saffron", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "saffron"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "olive-oil"},
+    {"thing": "ingredient/water", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/baguette", "amount": {"value": 8, "unit": "slice"}, "forms": [], "part": "toasts"},
+    {"thing": "preparation/rouille", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "rouille"},
+    {
+      "thing": "ingredient/gruyere",
+      "amount": {"value": 60, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/blender", "equipment/fine-sieve", "equipment/ladle",
+    "equipment/grill"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/garlic"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Soften the onion and the crushed garlic in the olive oil in a large pot, without colour.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/rockfish", "ingredient/tomato"],
+      "with": ["ingredient/water", "ingredient/saffron", "ingredient/salt"],
+      "text": "Add the fish, cut in pieces with their heads and bones, and stir over the heat until the flesh starts to fall apart. Add the tomatoes, the saffron, the water and the salt, bring to the boil and simmer briskly.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": ["preparation/broth"]
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/rockfish", "ingredient/tomato"],
+      "with": ["preparation/broth"],
+      "text": "Blend the soup in short bursts, bones and all, only until everything is broken up.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/strain",
+      "works_on": ["preparation/broth"],
+      "with": [],
+      "text": "Press the soup through a fine sieve with the back of a ladle, to take every drop and leave the bones behind.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/broth"],
+      "with": ["ingredient/salt"],
+      "text": "Bring the soup back to a simmer, taste it and correct the salt.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/baguette"],
+      "with": [],
+      "text": "Toast the slices of baguette under the grill until they are crisp and pale gold on both sides.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["preparation/broth", "ingredient/baguette", "preparation/rouille"],
+      "with": ["ingredient/gruyere"],
+      "text": "Ladle the soup into warm bowls and serve the toasts, the rouille and the grated cheese beside it. Each person spreads a toast with rouille, floats it on the soup and scatters cheese over it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

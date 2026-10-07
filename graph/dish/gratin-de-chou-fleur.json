@@ -1,0 +1,21 @@
+{
+  "id": "dish/gratin-de-chou-fleur",
+  "tier": "drafted",
+  "names": {"en": "Gratin de chou-fleur", "fr": "Gratin de chou-fleur"},
+  "aliases": {"en": ["cauliflower gratin", "cauliflower cheese", "cauliflower in béchamel"]},
+  "is": "Cauliflower boiled until just tender, covered with a béchamel enriched with cheese, and browned in the oven.",
+  "parts": [
+    {"id": "cauliflower", "role": "main", "options": ["ingredient/cauliflower"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "gruyere", "role": "topping", "options": ["ingredient/gruyere"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/gratinate", "tier": "drafted"},
+    {"thing": "technique/make-a-roux", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

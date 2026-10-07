@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/poulet-au-vinaigre",
+  "tier": "drafted",
+  "batch": "sear-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "written_for": "sear",
+  "dish": "Poulet au vinaigre",
+  "also_called": ["chicken with vinegar"],
+  "techniques": ["sear", "deglaze", "simmer"],
+  "ingredients": ["chicken", "red wine vinegar", "shallot", "tomato", "chicken stock", "butter"]
+}

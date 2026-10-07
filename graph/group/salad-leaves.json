@@ -1,0 +1,9 @@
+{
+  "id": "group/salad-leaves",
+  "tier": "drafted",
+  "names": {"en": "Salad leaves", "fr": "Salades"},
+  "aliases": {},
+  "shares": "Raw leaves that bruise and go limp once they are dressed, so they are dried well and dressed at the last moment.",
+  "within": {"thing": "group/vegetables", "tier": "drafted"},
+  "stands_alone": null
+}

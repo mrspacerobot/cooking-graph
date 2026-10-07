@@ -1,0 +1,29 @@
+{
+  "id": "dish/fish-en-papillote",
+  "tier": "drafted",
+  "names": {"en": "Fish en papillote", "fr": "Poisson en papillote"},
+  "aliases": {"en": ["fish baked in parchment", "fish in a parcel"]},
+  "is": "A fillet of white fish sealed in a paper parcel on a bed of julienned leek and carrot, and steamed in the oven with butter and a splash of white wine.",
+  "parts": [
+    {"id": "white-fish", "role": "main", "options": ["ingredient/white-fish"], "optional": false, "tier": "drafted"},
+    {"id": "leek", "role": "aromatic", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "white-wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/julienne", "tier": "drafted"},
+    {"thing": "technique/bake-in-parchment", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

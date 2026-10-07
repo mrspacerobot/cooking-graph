@@ -1,0 +1,49 @@
+{
+  "id": "dish/salade-lyonnaise",
+  "tier": "drafted",
+  "names": {"en": "Salade lyonnaise", "fr": "Salade lyonnaise"},
+  "aliases": {"en": ["Lyonnaise salad"], "fr": ["frisée aux lardons"]},
+  "is": "Bitter frisée dressed warm with bacon lardons, their fat, vinegar and mustard, with croutons and a poached egg on top.",
+  "parts": [
+    {"id": "frisee", "role": "main", "options": ["ingredient/frisee"], "optional": false, "tier": "drafted"},
+    {"id": "bacon", "role": "main", "options": ["ingredient/bacon"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "topping", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "baguette", "role": "garnish", "options": ["ingredient/baguette"], "optional": false, "tier": "drafted"},
+    {
+      "id": "red-wine-vinegar",
+      "role": "acid",
+      "options": ["ingredient/red-wine-vinegar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "dijon-mustard",
+      "role": "seasoning",
+      "options": ["ingredient/dijon-mustard"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "white-wine-vinegar",
+      "role": "acid",
+      "options": ["ingredient/white-wine-vinegar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/render", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lyonnais", "tier": "drafted"}
+  ]
+}

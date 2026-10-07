@@ -1,0 +1,20 @@
+{
+  "id": "dish/poires-au-vin-rouge",
+  "tier": "drafted",
+  "names": {"en": "Poires au vin rouge", "fr": "Poires au vin rouge"},
+  "aliases": {"en": ["pears poached in red wine", "pears in red wine"], "fr": ["poires au vin"]},
+  "is": "Whole peeled pears poached in sweetened, spiced red wine until tender and stained deep red, served cold in their syrup.",
+  "parts": [
+    {"id": "pear", "role": "main", "options": ["ingredient/pear"], "optional": false, "tier": "drafted"},
+    {"id": "red-wine", "role": "liquid", "options": ["ingredient/red-wine"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "cinnamon", "role": "aromatic", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

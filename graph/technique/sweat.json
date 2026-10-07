@@ -1,0 +1,57 @@
+{
+  "id": "technique/sweat",
+  "tier": "drafted",
+  "names": {"en": "Sweat", "fr": "Suer"},
+  "aliases": {"en": ["sweat without colour", "soften without colour", "cook until translucent"]},
+  "does": "Softens cut vegetables in a little fat over low heat, so that they give up their water and turn sweet without browning.",
+  "how": [
+    "Warm the fat in a wide pan over low heat.",
+    "Add the vegetables with a little salt and stir to coat them.",
+    "Keep the heat low and stir now and then, so that nothing sits long enough to colour.",
+    "Cover the pan to go faster: the trapped steam softens them.",
+    "Stop when the pieces are soft and glassy."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A quiet, steady hiss. A loud sizzle means the heat is too high."},
+    {"sense": "see", "text": "The onion turns glassy and limp, with no brown at the edges."},
+    {"sense": "smell", "text": "Sweet, with the raw sharpness gone."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "The heat is too high, so the edges brown before the middle softens.",
+      "fix": "Turn the heat down and add a spoonful of water to stop the colour."
+    },
+    {
+      "mistake": "Too many vegetables in a small pan, so they stew in their own water.",
+      "fix": "Use a wider pan, or let the water cook off before going on."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/mushrooms", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/sweated", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saute-pan", "equipment/saucepan", "equipment/dutch-oven"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/dice",
+      "why": "Even pieces soften together. Uneven ones leave some raw and some brown.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

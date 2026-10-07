@@ -1,0 +1,9 @@
+{
+  "id": "group/leafy-heads",
+  "tier": "drafted",
+  "names": {"en": "Leafy heads"},
+  "aliases": {},
+  "shares": "Tight heads of leaves that are bitter or strong when raw, and turn soft and sweet when cooked slowly in a little liquid.",
+  "within": {"thing": "group/vegetables", "tier": "drafted"},
+  "stands_alone": null
+}

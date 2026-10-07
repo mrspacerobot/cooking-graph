@@ -1,0 +1,9 @@
+{
+  "id": "group/braising-cuts",
+  "tier": "drafted",
+  "names": {"en": "Braising cuts", "fr": "Morceaux à braiser"},
+  "aliases": {},
+  "shares": "Tough, well-worked cuts full of connective tissue, which melts to softness only after a long time in gentle, moist heat.",
+  "within": {"thing": "group/meat", "tier": "drafted"},
+  "stands_alone": null
+}

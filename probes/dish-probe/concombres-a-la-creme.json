@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/concombres-a-la-creme",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Concombres à la crème",
+  "also_called": ["creamed cucumber", "cucumber in cream"],
+  "techniques": ["slice", "salt and drain", "toss"],
+  "ingredients": ["cucumber", "crème fraîche", "lemon", "chives", "shallot"]
+}

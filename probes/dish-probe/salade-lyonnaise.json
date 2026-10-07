@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/salade-lyonnaise",
+  "tier": "drafted",
+  "batch": "eggs-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "eggs",
+  "dish": "Salade lyonnaise",
+  "also_called": ["Lyonnaise salad"],
+  "techniques": ["poach", "saute", "toss"],
+  "ingredients": ["frisée", "bacon", "egg", "bread", "red wine vinegar", "Dijon mustard"]
+}

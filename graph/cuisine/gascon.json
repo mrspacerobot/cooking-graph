@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/gascon",
+  "tier": "drafted",
+  "names": {"en": "Gascon", "fr": "Gasconne"},
+  "aliases": {"en": ["Gascon cooking", "cooking of Gascony"]},
+  "within": {"thing": "cuisine/french", "tier": "drafted"}
+}

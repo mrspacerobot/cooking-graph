@@ -1,0 +1,49 @@
+{
+  "id": "technique/emulsify",
+  "tier": "drafted",
+  "names": {"en": "Emulsify", "fr": "Émulsionner"},
+  "aliases": {"en": ["make an emulsion", "emulsify a sauce", "whisk an emulsion"]},
+  "does": "Makes fat and a water-based liquid hold together as one smooth sauce, by breaking one into droplets too small to find each other again.",
+  "how": [
+    "Start with the water-based part and whatever helps it hold: egg yolk, mustard, or a liquid boiled down until syrupy.",
+    "Add the fat very slowly at first, drop by drop, whisking all the time.",
+    "Once the sauce has thickened and holds, add the fat in a thin stream.",
+    "Thin it with a few drops of water or acid if it turns stiff and looks oily at the edges."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sauce is smooth, opaque and glossy, and thickens as more fat goes in."},
+    {"sense": "feel", "text": "The whisk meets more resistance with every addition."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the fat too fast at the start, so that the sauce stays thin and then separates into oil and liquid.",
+      "fix": "Stop. Start again with a fresh yolk or a spoonful of mustard, and whisk the broken sauce into it drop by drop."
+    },
+    {
+      "mistake": "Ingredients at very different temperatures, which makes a cold emulsion refuse to take.",
+      "fix": "Let the egg, the mustard and the oil come to room temperature first."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/emulsified-sauces", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/mayonnaise", "tier": "drafted"},
+    {"thing": "preparation/vinaigrette", "tier": "drafted"},
+    {"thing": "preparation/hollandaise", "tier": "drafted"},
+    {"thing": "form/emulsified", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/whisk",
+      "why": "An emulsion is whisked the whole time, so a steady whisking hand comes first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/lamb-shank",
+  "tier": "drafted",
+  "names": {"en": "Lamb shank", "fr": "Souris d'agneau"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/braising-cuts", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A tough, sinewy cut on the bone that turns soft and sticky after a long braise.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is lamb.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

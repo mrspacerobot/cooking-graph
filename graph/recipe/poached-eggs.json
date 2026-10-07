@@ -1,0 +1,49 @@
+{
+  "id": "recipe/poached-eggs",
+  "tier": "drafted",
+  "names": {"en": "Poached eggs", "fr": "Œufs pochés"},
+  "aliases": {},
+  "makes": "dish/poached-eggs",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/water", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "water"},
+    {
+      "thing": "ingredient/white-wine-vinegar",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "vinegar"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "pepper"},
+    {
+      "thing": "ingredient/chives",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": ["form/chopped"],
+      "part": "herb"
+    }
+  ],
+  "equipment": ["equipment/saucepan", "equipment/slotted-spoon", "equipment/stovetop"],
+  "steps": [
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/water", "ingredient/white-wine-vinegar"],
+      "text": "Bring the water to a gentle movement, adding vinegar if chosen. Slide in the eggs and lift them out when the white holds its shape.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/salt", "ingredient/black-pepper", "ingredient/chives"],
+      "text": "Drain the eggs and finish with seasoning and chives.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

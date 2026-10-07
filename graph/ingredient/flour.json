@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/flour",
+  "tier": "drafted",
+  "names": {"en": "Flour", "fr": "Farine"},
+  "aliases": {"en": ["plain flour", "all-purpose flour", "wheat flour"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Thickens a liquid once its starch has swollen in the heat. Cooked in fat first, it loses its raw taste and does not clump.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "It is wheat flour.", "certain": true},
+      {"fact": "fact/wheat", "basis": "It is wheat flour.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

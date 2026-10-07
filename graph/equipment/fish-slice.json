@@ -1,0 +1,7 @@
+{
+  "id": "equipment/fish-slice",
+  "tier": "drafted",
+  "names": {"en": "Fish slice", "fr": "Spatule à poisson"},
+  "aliases": {"en": ["fish spatula", "turner"]},
+  "use": "A thin, wide, flexible blade that slides under a fish or an egg and turns it whole."
+}

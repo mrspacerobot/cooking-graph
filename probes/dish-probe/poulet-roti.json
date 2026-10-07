@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/poulet-roti",
+  "tier": "drafted",
+  "batch": "roast-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "roast",
+  "dish": "Poulet rôti",
+  "also_called": ["roast chicken", "roast chicken with jus"],
+  "techniques": ["truss", "roast", "baste", "rest", "deglaze"],
+  "ingredients": ["chicken", "butter", "thyme", "garlic", "chicken stock"]
+}

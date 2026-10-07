@@ -1,0 +1,49 @@
+{
+  "id": "technique/flambe",
+  "tier": "drafted",
+  "names": {"en": "Flambé", "fr": "Flamber"},
+  "aliases": {"en": ["flame", "set alight", "flame with brandy"]},
+  "does": "Sets light to a spirit poured over hot food. The flame burns away its harshness and leaves its flavour. Some of the alcohol stays in the dish.",
+  "how": [
+    "Take the pan off the heat and clear the space above it.",
+    "Pour in the spirit from a ladle or a small glass, never from the bottle.",
+    "Put the pan back on the heat, lean back, and touch a long match to its edge.",
+    "Shake the pan gently until the flames die on their own."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Blue flames that rise, then sink and go out within moments."},
+    {"sense": "smell", "text": "The sharp smell of raw spirit gives way to a warm, sweet one."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring from the bottle, so that the flame can run up the stream.",
+      "fix": "Measure the spirit into a ladle or a glass first."
+    },
+    {
+      "mistake": "Adding the spirit to a pan that is too cool, so that it will not light and the dish tastes of raw alcohol.",
+      "fix": "Have the pan hot, and warm the spirit if need be."
+    },
+    {
+      "mistake": "Lighting it under a low shelf or a running fan.",
+      "fix": "Clear the space above the pan before you light it."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/offal", "tier": "drafted"},
+    {"thing": "group/crustaceans", "tier": "drafted"},
+    {"thing": "group/firm-fruits", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "liquid", "options": ["ingredient/cognac", "ingredient/calvados"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

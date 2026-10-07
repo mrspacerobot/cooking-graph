@@ -1,0 +1,7 @@
+{
+  "id": "equipment/spatula",
+  "tier": "drafted",
+  "names": {"en": "Spatula", "fr": "Maryse"},
+  "aliases": {"en": ["rubber spatula", "silicone spatula"]},
+  "use": "Scrapes a bowl or a pan clean, and folds without knocking out air."
+}

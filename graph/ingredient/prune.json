@@ -1,0 +1,25 @@
+{
+  "id": "ingredient/prune",
+  "tier": "drafted",
+  "names": {"en": "Prune", "fr": "Pruneau"},
+  "aliases": {"en": ["prunes", "dried plum"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A dried plum, dark and sticky. It plumps in liquid and gives a braise a deep, sweet-sharp note.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/sulphites", "basis": "Dried fruit is often kept with sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

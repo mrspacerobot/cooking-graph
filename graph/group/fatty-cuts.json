@@ -1,0 +1,9 @@
+{
+  "id": "group/fatty-cuts",
+  "tier": "drafted",
+  "names": {"en": "Fatty cuts"},
+  "aliases": {},
+  "shares": "Cuts under a thick layer of fat, which must melt out slowly before the meat or the skin can crisp.",
+  "within": {"thing": "group/meat", "tier": "drafted"},
+  "stands_alone": null
+}

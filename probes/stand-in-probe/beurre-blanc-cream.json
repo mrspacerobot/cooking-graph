@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/beurre-blanc-cream",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Beurre blanc",
+  "ingredient": "cold butter",
+  "candidate": "heavy cream",
+  "verdict": "does-not-work",
+  "why": "Cream stabilizes a different sauce; it does not produce the butter-mounted emulsion of beurre blanc."
+}

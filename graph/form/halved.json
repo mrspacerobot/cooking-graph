@@ -1,0 +1,8 @@
+{
+  "id": "form/halved",
+  "tier": "drafted",
+  "names": {"en": "Halved"},
+  "aliases": {"en": ["cut in half"]},
+  "looks_like": "Cut once through the middle into equal pieces.",
+  "size": []
+}

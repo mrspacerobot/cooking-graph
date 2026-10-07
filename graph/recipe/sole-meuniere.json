@@ -1,0 +1,71 @@
+{
+  "id": "recipe/sole-meuniere",
+  "tier": "drafted",
+  "names": {"en": "Sole meunière"},
+  "aliases": {},
+  "makes": "dish/sole-meuniere",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/sole", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "sole"},
+    {"thing": "ingredient/flour", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {"thing": "preparation/clarified-butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "brown-butter"},
+    {"thing": "ingredient/lemon", "amount": {"value": 0.5, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": ["equipment/stovetop", "equipment/frying-pan", "equipment/fish-slice"],
+  "steps": [
+    {
+      "technique": "technique/dredge",
+      "works_on": ["ingredient/sole"],
+      "with": ["ingredient/salt", "ingredient/black-pepper", "ingredient/flour"],
+      "text": "Have the soles skinned and trimmed. Dry them and season them. When the pan is already heating, turn each fish in the flour and tap off all that does not cling.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pan-fry",
+      "works_on": ["ingredient/sole"],
+      "with": ["preparation/clarified-butter"],
+      "text": "Fry the fish in the clarified butter over medium heat until golden, turning them once with a wide slice. Lift them onto warm plates. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-brown-butter",
+      "works_on": ["ingredient/butter"],
+      "with": [],
+      "text": "Wipe out the pan. Melt the fresh butter in it and cook until it foams, falls quiet and smells of hazelnuts.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/brown-butter"]
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/sole", "preparation/brown-butter"],
+      "with": ["ingredient/lemon", "ingredient/parsley"],
+      "text": "Squeeze the lemon over the fish, scatter with the parsley and pour the foaming butter over at once.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

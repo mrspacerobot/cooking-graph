@@ -1,0 +1,33 @@
+{
+  "id": "dish/oeufs-cocotte",
+  "tier": "drafted",
+  "names": {"en": "Œufs cocotte", "fr": "Œufs cocotte"},
+  "aliases": {"en": ["eggs en cocotte", "baked eggs"]},
+  "is": "Eggs baked in small buttered dishes with a spoonful of cream, in a water bath, until the white is just set and the yolk still runs.",
+  "parts": [
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "enrichment",
+      "role": "enrichment",
+      "options": ["ingredient/creme-fraiche", "ingredient/cream"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "chives", "role": "garnish", "options": ["ingredient/chives"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/bake-in-a-water-bath", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

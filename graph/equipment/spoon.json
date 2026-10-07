@@ -1,0 +1,7 @@
+{
+  "id": "equipment/spoon",
+  "tier": "drafted",
+  "names": {"en": "Spoon", "fr": "Cuillère"},
+  "aliases": {"en": ["basting spoon", "large spoon"]},
+  "use": "Lifts and pours hot fat or juices over food, and tastes a sauce."
+}

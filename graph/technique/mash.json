@@ -1,0 +1,44 @@
+{
+  "id": "technique/mash",
+  "tier": "drafted",
+  "names": {"en": "Mash", "fr": "Écraser"},
+  "aliases": {"en": ["mash potatoes", "make a potato purée"]},
+  "does": "Crushes boiled potatoes while they are hot and dry, then beats in butter and hot milk to make a smooth purée.",
+  "how": [
+    "Boil floury potatoes in their skins or in large pieces, starting in cold salted water.",
+    "Drain them and let them steam dry for a moment.",
+    "Push them through a ricer or a food mill while they are still hot.",
+    "Beat in cold butter first, then hot milk little by little, until the purée is smooth and soft."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A smooth, glossy purée that falls slowly from the spoon and holds a soft peak."},
+    {"sense": "feel", "text": "No lumps under the spoon, and nothing gluey or stretchy."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using a blender or a food processor, which turns potato to glue.",
+      "fix": "Use a ricer, a food mill or a masher, and stop when it is smooth."
+    },
+    {
+      "mistake": "Mashing potatoes that are cold or waterlogged.",
+      "fix": "Mash them hot, straight after they have steamed dry."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/potato", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/mashed-potato", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/potato-masher"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/milk"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/boil", "why": "The potatoes are boiled first.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

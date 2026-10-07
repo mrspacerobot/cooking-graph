@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/chicken",
+  "tier": "drafted",
+  "names": {"en": "Chicken", "fr": "Poulet"},
+  "aliases": {"en": ["whole chicken", "hen", "boiling fowl"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/poultry", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "White breast meat that dries out quickly and dark leg meat that needs longer, on one bird. Its skin crisps in dry heat and turns soft in liquid.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is chicken.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

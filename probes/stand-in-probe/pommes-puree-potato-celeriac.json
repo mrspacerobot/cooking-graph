@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/pommes-puree-potato-celeriac",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Pommes purée",
+  "ingredient": "potato",
+  "candidate": "celeriac",
+  "verdict": "works-with-caveat",
+  "why": "Celeriac mashes smoothly, with a more aromatic flavor and less familiar potato richness."
+}

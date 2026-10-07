@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/soupe-a-loignon-gruyere-comte",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "French onion soup",
+  "ingredient": "Gruyère",
+  "candidate": "Comté",
+  "verdict": "works",
+  "why": "Both melt and brown over the soup with a nutty, savory character."
+}

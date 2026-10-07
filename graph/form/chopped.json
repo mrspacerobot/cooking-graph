@@ -1,0 +1,8 @@
+{
+  "id": "form/chopped",
+  "tier": "drafted",
+  "names": {"en": "Chopped", "fr": "Haché"},
+  "aliases": {"en": ["roughly chopped"]},
+  "looks_like": "Small, uneven pieces, dry and separate.",
+  "size": []
+}

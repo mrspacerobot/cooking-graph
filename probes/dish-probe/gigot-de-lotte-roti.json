@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gigot-de-lotte-roti",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "roast",
+  "dish": "Gigot de lotte rôti",
+  "also_called": ["roast monkfish tail", "roasted monkfish with garlic"],
+  "techniques": ["roast", "baste", "rest"],
+  "ingredients": ["monkfish", "garlic", "thyme", "butter", "bacon"]
+}

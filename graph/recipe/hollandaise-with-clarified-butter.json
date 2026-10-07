@@ -1,0 +1,53 @@
+{
+  "id": "recipe/hollandaise-with-clarified-butter",
+  "tier": "drafted",
+  "names": {"en": "Hollandaise with clarified butter"},
+  "aliases": {},
+  "makes": "preparation/hollandaise",
+  "yields": {"value": 250, "unit": "gram"},
+  "ingredients": [
+    {"thing": "ingredient/egg-yolk", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "egg-yolk"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "water"},
+    {
+      "thing": "preparation/clarified-butter",
+      "amount": {"value": 200, "unit": "gram"},
+      "forms": ["form/melted"],
+      "part": "fat"
+    },
+    {"thing": "ingredient/lemon", "amount": {"value": 0.5, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saucepan", "equipment/mixing-bowl", "equipment/whisk"],
+  "steps": [
+    {
+      "technique": "technique/make-a-sabayon",
+      "works_on": ["ingredient/egg-yolk"],
+      "with": ["ingredient/water"],
+      "text": "Whisk the yolks and the water in a bowl over a pan of barely simmering water, lifting it off whenever it feels hot, until the mixture is pale and thick and the whisk leaves a trail.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/emulsify",
+      "works_on": ["preparation/hollandaise"],
+      "with": ["preparation/clarified-butter"],
+      "text": "Whisk the warm clarified butter into the yolk foam slowly, so that it holds as a smooth sauce.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/hollandaise"],
+      "with": ["ingredient/lemon", "ingredient/salt"],
+      "text": "Whisk in the juice of the lemon and the salt. Thin the sauce with a few drops of warm water if it is too thick. Keep it barely warm and serve it soon: it can be neither boiled nor chilled.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    }
+  ]
+}

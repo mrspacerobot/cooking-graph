@@ -1,0 +1,7 @@
+{
+  "id": "equipment/stockpot",
+  "tier": "drafted",
+  "names": {"en": "Stockpot", "fr": "Marmite"},
+  "aliases": {"en": ["large pot", "soup pot"]},
+  "use": "A tall pot that holds bones, vegetables and enough water to cover them."
+}

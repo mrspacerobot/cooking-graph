@@ -1,0 +1,62 @@
+{
+  "id": "technique/simmer",
+  "tier": "drafted",
+  "names": {"en": "Simmer", "fr": "Mijoter"},
+  "aliases": {"en": ["simmer gently", "cook at a simmer", "gentle simmer"]},
+  "does": "Cooks food in liquid that is kept just below a boil, so that it turns tender without being knocked about.",
+  "how": [
+    "Bring the liquid up to a boil, then turn the heat down at once.",
+    "Find the setting where a few bubbles break the surface now and then.",
+    "Leave the lid off or ajar, so that the heat does not build back up to a boil.",
+    "Look in from time to time, and top the pot up if food shows above the liquid."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "A bubble or a small cluster of them rising every moment or so, and a surface that shivers."
+    },
+    {"sense": "hear", "text": "Near silence. A pot that rolls and rattles is boiling."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting it boil, which toughens meat and turns a stock cloudy.",
+      "fix": "Turn the heat down, or move the pot half off the burner."
+    },
+    {"mistake": "Covering the pot tightly, so that it climbs to a boil unseen.", "fix": "Leave the lid ajar."}
+  ],
+  "works_on": [
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/pulses", "tier": "drafted"},
+    {"thing": "group/pasta", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "ingredient/butter", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/broth", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saucepan", "equipment/stockpot", "equipment/dutch-oven"],
+      "tier": "drafted"
+    },
+    {
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/stock", "ingredient/chicken-stock", "ingredient/vegetable-stock"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/boil",
+      "why": "A simmer is found by coming down from a boil, so a cook has to know a boil first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

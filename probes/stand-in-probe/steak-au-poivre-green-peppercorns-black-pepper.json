@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/steak-au-poivre-green-peppercorns-black-pepper",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Steak au poivre",
+  "ingredient": "green peppercorns",
+  "candidate": "cracked black pepper",
+  "verdict": "works-with-caveat",
+  "why": "Cracked black pepper preserves the pepper sauce idea but is hotter and lacks the briny, floral peppercorn note."
+}

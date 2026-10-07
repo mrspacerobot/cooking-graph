@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/piperade",
+  "tier": "drafted",
+  "batch": "knife-cuts-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Piperade",
+  "also_called": [],
+  "techniques": ["slice", "sweat", "simmer"],
+  "ingredients": ["bell pepper", "onion", "tomato", "garlic", "olive oil", "Espelette pepper"]
+}

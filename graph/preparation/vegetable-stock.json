@@ -1,0 +1,48 @@
+{
+  "id": "preparation/vegetable-stock",
+  "tier": "drafted",
+  "names": {"en": "Vegetable stock", "fr": "Bouillon de légumes"},
+  "aliases": {"en": ["homemade vegetable stock"]},
+  "is": "A light, clear stock made by simmering sweated vegetables and herbs in water, then straining them out.",
+  "parts": [
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "celery", "role": "aromatic", "options": ["ingredient/celery"], "optional": false, "tier": "drafted"},
+    {"id": "leek", "role": "aromatic", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"},
+    {"id": "mushroom", "role": "aromatic", "options": ["ingredient/mushroom"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bouquet-garni",
+      "role": "aromatic",
+      "options": ["preparation/bouquet-garni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/butter"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/strain", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

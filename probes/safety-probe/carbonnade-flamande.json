@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/carbonnade-flamande",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Carbonnade flamande",
+  "also_called": ["carbonade", "Flemish beef stew"],
+  "holds": ["gluten", "wheat", "milk", "mustard"],
+  "does_not_hold": ["egg", "fish"],
+  "why": "Beer is brewed from barley, so it brings gluten, and a slice of bread spread with mustard thickens the sauce. The beef is often browned in butter, so milk is included."
+}

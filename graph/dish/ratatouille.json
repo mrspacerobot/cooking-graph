@@ -1,0 +1,45 @@
+{
+  "id": "dish/ratatouille",
+  "tier": "drafted",
+  "names": {"en": "Ratatouille", "fr": "Ratatouille"},
+  "aliases": {"en": ["ratatouille niçoise"]},
+  "is": "A Provençal stew of summer vegetables with tomato, pepper and aromatics. The classic mix combines aubergine and courgette; a courgette-heavy variation loses the aubergine's creamy texture.",
+  "parts": [
+    {
+      "id": "aubergine",
+      "role": "main",
+      "options": ["ingredient/aubergine", "ingredient/courgette"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "courgette", "role": "main", "options": ["ingredient/courgette"], "optional": false, "tier": "drafted"},
+    {"id": "bell-pepper", "role": "main", "options": ["ingredient/bell-pepper"], "optional": false, "tier": "drafted"},
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "thyme", "role": "aromatic", "options": ["ingredient/thyme"], "optional": false, "tier": "drafted"},
+    {"id": "bay-leaf", "role": "aromatic", "options": ["ingredient/bay-leaf"], "optional": false, "tier": "drafted"},
+    {"id": "olive-oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/dice", "tier": "drafted"},
+    {"thing": "technique/saute", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/provencal", "tier": "drafted"}
+  ]
+}

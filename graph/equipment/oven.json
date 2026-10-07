@@ -1,0 +1,7 @@
+{
+  "id": "equipment/oven",
+  "tier": "drafted",
+  "names": {"en": "Oven", "fr": "Four"},
+  "aliases": {},
+  "use": "Surrounds food with dry heat, for roasting, baking and slow braising."
+}

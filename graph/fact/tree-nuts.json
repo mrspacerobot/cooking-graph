@@ -1,0 +1,82 @@
+{
+  "id": "fact/tree-nuts",
+  "tier": "sourced",
+  "names": {"en": "Tree nuts", "fr": "Fruits à coque"},
+  "aliases": {"en": ["tree nut", "nuts", "nut"]},
+  "means": "Nuts that grow on trees, such as almonds, hazelnuts, walnuts, cashews, pecans, pistachios and macadamia nuts, or anything made from them.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "european-union",
+      "source": "source/eu-regulation-1169-2011-annex-ii",
+      "name": "Nuts, namely: almonds, hazelnuts, walnuts, cashews, pecan nuts, Brazil nuts, pistachio nuts, macadamia or Queensland nuts, and products thereof",
+      "standing": "mandatory",
+      "exemptions": "Nuts used to make alcoholic distillates.",
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-kingdom",
+      "source": "source/uk-fsa-food-allergy-advice",
+      "name": "tree nuts (such as almonds, hazelnuts, walnuts, brazil nuts, cashews, pecans, pistachios and macadamia nuts)",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-states",
+      "source": "source/us-fda-food-allergies",
+      "name": "tree nuts",
+      "standing": "mandatory",
+      "exemptions": "The labelling law leaves out highly refined oils, raw agricultural commodities, alcoholic drinks labelled under the Alcohol and Tobacco Tax and Trade Bureau, and the meat, poultry and egg products another department regulates.",
+      "note": "The type of tree nut must be declared, such as almonds, pecans or walnuts.",
+      "tier": "sourced"
+    },
+    {
+      "where": "canada",
+      "source": "source/health-canada-common-food-allergens",
+      "name": "Tree Nuts",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "australia-and-new-zealand",
+      "source": "source/fsanz-allergen-labelling",
+      "name": "almond, Brazil nut, cashew, hazelnut, macadamia, pecan, pistachio, pine nut, walnut",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "Each tree nut is declared by its own name. The list has the pine nut, which the European list has not.",
+      "tier": "sourced"
+    },
+    {
+      "where": "japan",
+      "source": "source/japan-caa-allergen-labelling",
+      "name": "くるみ (walnut), カシューナッツ (cashew nut)",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "Names these foods and not the whole class.",
+      "tier": "sourced"
+    },
+    {
+      "where": "japan",
+      "source": "source/japan-caa-allergen-labelling",
+      "name": "アーモンド (almond), ピスタチオ (pistachio), マカダミアナッツ (macadamia nut)",
+      "standing": "recommended",
+      "exemptions": null,
+      "note": "Names these foods and not the whole class.",
+      "tier": "sourced"
+    },
+    {
+      "where": "codex",
+      "source": "source/codex-labelling-standard-2010",
+      "name": "Tree nuts and nut products",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "From the text as amended up to 2010. The current standard could not be fetched and may differ.",
+      "tier": "drafted"
+    }
+  ]
+}

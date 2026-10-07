@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-julienne",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "julienne",
+  "at_home": ["carrot", "leek", "celery", "chicken stock", "butter", "salt", "black pepper", "parsley"],
+  "dishes": ["Potage julienne d’Arblay"],
+  "why": "Thin matchsticks of carrot, leek and celery cook quickly and remain distinct in a clear vegetable soup."
+}

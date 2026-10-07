@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/daube-provencale",
+  "tier": "drafted",
+  "batch": "braise-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "braise",
+  "dish": "Daube provençale",
+  "also_called": ["daube de bœuf", "beef daube"],
+  "techniques": ["marinate", "braise"],
+  "ingredients": [
+    "stewing beef",
+    "red wine",
+    "onion",
+    "carrot",
+    "garlic",
+    "orange",
+    "black olive",
+    "bouquet garni",
+    "olive oil",
+    "bacon"
+  ]
+}

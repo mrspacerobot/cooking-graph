@@ -1,0 +1,125 @@
+{
+  "id": "recipe/french-onion-soup",
+  "tier": "drafted",
+  "names": {"en": "French onion soup"},
+  "aliases": {},
+  "makes": "dish/french-onion-soup",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 800, "unit": "gram"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "onion"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/flour", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {
+      "thing": "ingredient/white-wine",
+      "amount": {"value": 150, "unit": "millilitre"},
+      "forms": [],
+      "part": "white-wine"
+    },
+    {"thing": "ingredient/beef-stock", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/baguette", "amount": {"value": 8, "unit": "slice"}, "forms": [], "part": "baguette"},
+    {
+      "thing": "ingredient/gruyere",
+      "amount": {"value": 150, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "gruyere"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/grill", "equipment/dutch-oven", "equipment/wooden-spoon",
+    "equipment/ladle", "equipment/baking-sheet"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter", "ingredient/salt"],
+      "text": "Melt the butter in a wide, heavy pot over low heat. Add the onions and a little of the salt, cover, and sweat them until soft and glassy.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/caramelize",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Take the lid off and turn the heat up a little. Cook the onions slowly, stirring and scraping every little while, until they are the colour of dark honey all the way through. Add a spoonful of water if the bottom darkens too fast.",
+      "time": {"from": 35, "to": 45, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/sprinkle-with-flour",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/flour"],
+      "text": "Scatter the flour over the onions and stir for a moment, until no white shows.",
+      "time": {"value": 1, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine"],
+      "text": "Pour in the wine and scrape the bottom of the pot until it is clean. Let the wine boil until its raw smell has gone.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/beef-stock"],
+      "with": ["ingredient/black-pepper"],
+      "text": "Add the stock and the pepper. Simmer gently, uncovered.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": [],
+      "with": ["ingredient/salt"],
+      "text": "Taste, and add the rest of the salt only if the soup needs it. Bought stock is already salted.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/baguette"],
+      "with": [],
+      "text": "Meanwhile dry the slices of baguette in the oven until crisp and pale gold.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": {"value": 160, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["ingredient/baguette", "ingredient/gruyere"],
+      "with": [],
+      "text": "Ladle the soup into ovenproof bowls. Float the toasts on top, cover them thickly with the cheese, and set the bowls under a hot grill until the cheese is blistered and golden.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

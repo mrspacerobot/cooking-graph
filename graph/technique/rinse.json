@@ -1,0 +1,44 @@
+{
+  "id": "technique/rinse",
+  "tier": "drafted",
+  "names": {"en": "Rinse", "fr": "Rincer"},
+  "aliases": {"en": ["wash", "rinse under cold water", "wash and drain"], "fr": ["laver"]},
+  "does": "Washes food in cold water, to carry off grit, loose starch, or the salt and brine it was kept in.",
+  "how": [
+    "Put the food in a colander, or in a large bowl of cold water.",
+    "Run cold water over it, or move it about in the bowl with your hands.",
+    "Change the water until it stays clear. Lift leaves out of the water, so that the grit stays behind.",
+    "Drain it well, and dry whatever will be fried or dressed."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The last water stays as clear as it went in."},
+    {"sense": "taste", "text": "Brined food tastes pleasantly salty and no longer harsh."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring washed leaves and their water out together, so that the grit lands back on them.",
+      "fix": "Lift the leaves out and leave the grit at the bottom."
+    },
+    {
+      "mistake": "Rinsing sauerkraut or capers until none of their sharpness is left.",
+      "fix": "Taste as you go, and stop while they still have bite."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pickles", "tier": "drafted"},
+    {"thing": "group/pulses", "tier": "drafted"},
+    {"thing": "group/leafy-greens", "tier": "drafted"},
+    {"thing": "group/salad-leaves", "tier": "drafted"},
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/sauerkraut", "tier": "drafted"},
+    {"thing": "ingredient/leek", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/colander", "equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

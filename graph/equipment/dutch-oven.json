@@ -1,0 +1,7 @@
+{
+  "id": "equipment/dutch-oven",
+  "tier": "drafted",
+  "names": {"en": "Dutch oven", "fr": "Cocotte"},
+  "aliases": {"en": ["casserole dish", "heavy pot"]},
+  "use": "A heavy pot with a lid that goes from the stove to the oven, for stews and braises."
+}

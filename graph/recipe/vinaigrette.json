@@ -1,0 +1,53 @@
+{
+  "id": "recipe/vinaigrette",
+  "tier": "drafted",
+  "names": {"en": "Vinaigrette"},
+  "aliases": {},
+  "makes": "preparation/vinaigrette",
+  "yields": {"value": 120, "unit": "millilitre"},
+  "ingredients": [
+    {
+      "thing": "ingredient/dijon-mustard",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "dijon-mustard"
+    },
+    {"thing": "ingredient/red-wine-vinegar", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "acid"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "black-pepper"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 6, "unit": "tablespoon"}, "forms": [], "part": "fat"}
+  ],
+  "equipment": ["equipment/mixing-bowl", "equipment/whisk"],
+  "steps": [
+    {
+      "technique": "technique/whisk",
+      "works_on": ["preparation/vinaigrette"],
+      "with": ["ingredient/dijon-mustard", "ingredient/red-wine-vinegar", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Whisk the mustard, the vinegar, the salt and the pepper in a bowl until the salt has dissolved. Salt does not dissolve in oil, so it goes in first.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/emulsify",
+      "works_on": ["preparation/vinaigrette"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Whisk in the oil in a thin stream until the dressing thickens and turns cloudy.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/vinaigrette"],
+      "with": [],
+      "text": "Taste it on a leaf, not from the spoon. It should be sharp but not harsh. Whisk it again just before it is used, because it separates as it stands.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

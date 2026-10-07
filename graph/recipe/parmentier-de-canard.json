@@ -1,0 +1,116 @@
+{
+  "id": "recipe/parmentier-de-canard",
+  "tier": "drafted",
+  "names": {"en": "Parmentier de canard"},
+  "aliases": {},
+  "makes": "dish/parmentier-de-canard",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 1, "unit": "kilogram"},
+      "forms": ["form/peeled", "form/large-pieces"],
+      "part": "mashed-potato"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "mashed-potato"},
+    {"thing": "ingredient/milk", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "mashed-potato"},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "mashed-potato"},
+    {
+      "thing": "ingredient/duck-confit",
+      "amount": {"value": 4, "unit": "piece"},
+      "forms": ["form/shredded"],
+      "part": "duck-confit"
+    },
+    {
+      "thing": "ingredient/shallot",
+      "amount": {"value": 3, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "shallot"
+    },
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {
+      "thing": "preparation/breadcrumbs",
+      "amount": {"value": 3, "unit": "tablespoon"},
+      "forms": [],
+      "part": "breadcrumbs"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/baking-dish", "equipment/stockpot", "equipment/saute-pan",
+    "equipment/potato-masher"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/salt"],
+      "text": "Boil the potatoes, starting in cold salted water, until a knife slides in easily. Drain them and let them steam dry.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mash",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/butter", "ingredient/milk", "ingredient/nutmeg", "ingredient/salt"],
+      "text": "Push the potatoes through a ricer while they are hot. Beat in most of the butter, then the milk, heated, little by little, until the purée is smooth and soft. Season with salt and a little nutmeg.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/mashed-potato"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/shallot"],
+      "with": ["ingredient/duck-confit"],
+      "text": "Soften the shallots in a spoonful of the fat from the confit.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/duck-confit"],
+      "with": ["ingredient/shallot", "ingredient/parsley", "ingredient/black-pepper"],
+      "text": "Mix the shredded duck with the shallots, the parsley and the pepper.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/duck-confit", "preparation/mashed-potato", "preparation/breadcrumbs"],
+      "with": ["ingredient/butter"],
+      "text": "Spread the duck in a gratin dish, cover it with the purée, scatter with the breadcrumbs and dot with the rest of the butter.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["preparation/breadcrumbs"],
+      "with": [],
+      "text": "Bake in a hot oven until the crumbs are golden and the edges bubble.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

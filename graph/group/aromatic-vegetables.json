@@ -1,0 +1,9 @@
+{
+  "id": "group/aromatic-vegetables",
+  "tier": "drafted",
+  "names": {"en": "Aromatic vegetables", "fr": "Garniture aromatique"},
+  "aliases": {},
+  "shares": "Vegetables that are cut small and softened in fat at the start of a dish, to give it its base flavour and not to be eaten for themselves.",
+  "within": {"thing": "group/vegetables", "tier": "drafted"},
+  "stands_alone": null
+}

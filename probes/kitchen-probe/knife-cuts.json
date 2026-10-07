@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/knife-cuts",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "knife cuts",
+  "at_home": ["onion", "carrot", "celery", "potato", "parsley", "salt", "black pepper", "olive oil", "butter"],
+  "dishes": ["Mirepoix", "Potage Parmentier", "Pommes persillade"],
+  "why": "The pantry supports even dicing, slicing and chopping for a classic aromatic base, soup and herb-finished potatoes."
+}

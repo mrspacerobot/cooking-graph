@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/oeufs-mayonnaise",
+  "tier": "drafted",
+  "batch": "eggs-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "eggs",
+  "dish": "Œufs mayonnaise",
+  "also_called": ["egg mayonnaise", "œufs mayo"],
+  "techniques": ["boil"],
+  "ingredients": ["egg", "mayonnaise"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/potage-parmentier",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "stocks",
+  "dish": "Potage Parmentier",
+  "also_called": ["leek and potato soup", "potato and leek soup"],
+  "techniques": ["slice", "sweat", "simmer", "puree"],
+  "ingredients": ["potato", "leek", "butter", "chicken stock", "cream", "chervil"]
+}

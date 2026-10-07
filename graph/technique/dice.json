@@ -1,0 +1,62 @@
+{
+  "id": "technique/dice",
+  "tier": "drafted",
+  "names": {"en": "Dice", "fr": "Tailler en dés"},
+  "aliases": {"en": ["cube", "cut into dice", "cut into cubes"]},
+  "does": "Cuts food into even cubes, so that every piece cooks at the same speed.",
+  "how": [
+    "Trim the piece so that it has a flat side and sits still on the board.",
+    "Cut it into slabs as thick as the cube you want.",
+    "Stack the slabs and cut them into sticks of the same width.",
+    "Turn the sticks and cut across them into cubes.",
+    "For an onion, halve it through the root, cut towards the root without cutting through it, then slice across."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The cubes are all one size, with square edges."},
+    {
+      "sense": "feel",
+      "text": "The knife glides forward and down. Your knuckles guide the blade and your fingertips stay tucked behind them."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pieces of different sizes, so the small ones turn to mush before the large ones are tender.",
+      "fix": "Set the thickness with the first cut. Every later cut copies it."
+    },
+    {
+      "mistake": "Chasing a round vegetable that rolls under the knife.",
+      "fix": "Cut a thin slice off one side first and rest it on that flat."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/cooked-meats", "tier": "drafted"},
+    {"thing": "group/pickles", "tier": "drafted"},
+    {"thing": "group/fatty-cuts", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/green-beans", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/diced", "tier": "drafted"},
+    {"thing": "form/small-dice", "tier": "drafted"},
+    {"thing": "preparation/mirepoix", "tier": "drafted"},
+    {"thing": "form/large-pieces", "tier": "drafted"},
+    {"thing": "form/lardons", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/slice",
+      "why": "A dice is a slice cut again, lengthwise and across, so an even slice comes first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

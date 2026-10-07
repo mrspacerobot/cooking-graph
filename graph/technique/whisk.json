@@ -1,0 +1,37 @@
+{
+  "id": "technique/whisk",
+  "tier": "drafted",
+  "names": {"en": "Whisk", "fr": "Fouetter"},
+  "aliases": {"en": ["beat", "beat eggs", "whisk together"]},
+  "does": "Beats a liquid with a whisk until it is blended and smooth.",
+  "how": [
+    "Use a bowl large enough that nothing slops over.",
+    "Tilt the bowl and beat in quick strokes that cross the middle.",
+    "Keep going until the mixture is one colour and one texture."
+  ],
+  "cues": [
+    {"sense": "see", "text": "No streaks. Beaten eggs are an even yellow that runs off the whisk in a thin stream."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Whisking eggs for an omelette until they foam, which makes it spongy.",
+      "fix": "Stop as soon as the streaks of white are gone."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/emulsified-sauces", "tier": "drafted"},
+    {"thing": "group/roux-sauces", "tier": "drafted"},
+    {"thing": "group/creams", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"},
+    {"thing": "preparation/roux", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

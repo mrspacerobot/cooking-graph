@@ -1,0 +1,47 @@
+{
+  "id": "technique/blanch",
+  "tier": "drafted",
+  "names": {"en": "Blanch", "fr": "Blanchir"},
+  "aliases": {"en": ["parboil"]},
+  "does": "Plunges food briefly into boiling water, to clean bones, loosen skins or set the colour of green vegetables.",
+  "how": [
+    "For bones, cover them with cold water, bring it to a boil, then drain them and rinse off the scum.",
+    "For vegetables, drop them into fast-boiling salted water.",
+    "Lift them out as soon as the colour brightens.",
+    "Cool them at once in iced water."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Green vegetables turn a vivid green. Bones come out clean, with the grey scum left behind in the water."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving vegetables in until they are tender, when they were only meant to be set.",
+      "fix": "Take them out early. They are cooked again later."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/bones", "tier": "drafted"},
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "group/fatty-cuts", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/stockpot", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/boil",
+      "differs": "The food stays in only briefly and is not cooked to the end.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

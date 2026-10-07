@@ -1,0 +1,53 @@
+{
+  "id": "technique/roll-an-omelette",
+  "tier": "drafted",
+  "names": {"en": "Roll an omelette", "fr": "Rouler une omelette"},
+  "aliases": {"en": ["make an omelette", "rolled omelette", "French omelette"], "fr": ["omelette roulée"]},
+  "does": "Sets beaten eggs into a thin, tender sheet with a creamy middle, and rolls it into a smooth, pale cylinder.",
+  "how": [
+    "Heat butter in a pan over medium heat until it foams and the foam starts to fall.",
+    "Pour in the beaten eggs and stir fast in small circles while shaking the pan.",
+    "Stop stirring when the eggs are mostly set but still wet on top, and let the bottom firm for a moment.",
+    "Scatter any filling down the middle.",
+    "Tilt the pan, fold the near edge over, and roll the omelette to the far lip.",
+    "Turn it out onto the plate, seam side down."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "A pale yellow, smooth skin with no brown. The top still glistens when you start to roll."
+    },
+    {"sense": "feel", "text": "The omelette slides freely when the pan is shaken."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "The pan is too hot, so the skin browns and turns leathery.",
+      "fix": "Lift the pan off the heat while you stir, and turn the heat down."
+    },
+    {
+      "mistake": "Waiting for the top to dry before rolling, which leaves the middle firm and dull.",
+      "fix": "Roll while the top is still wet. The heat inside finishes it."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/non-stick-pan", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/scramble",
+      "why": "The first half of an omelette is a fast scramble. A cook who can stop a scramble in time can stop an omelette in time.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

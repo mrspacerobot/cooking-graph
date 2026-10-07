@@ -2,7 +2,13 @@
 
 This repository holds a knowledge graph of how the world cooks. This file is the steering document for people and coding agents. Read it before changing anything. If a rule here is wrong, change the rule in the same pull request, do not quietly ignore it.
 
-The plan is in mrspacerobot/tomi#106.
+The plan is [issue 2](https://github.com/mrspacerobot/cooking-graph/issues/2).
+Progress and next work are in `docs/handover.md`; the active first slice is
+[issue 3](https://github.com/mrspacerobot/cooking-graph/issues/3), and repository
+setup is [issue 4](https://github.com/mrspacerobot/cooking-graph/issues/4).
+Follow-up work is [cycle two, issue 5](https://github.com/mrspacerobot/cooking-graph/issues/5)
+and [content review, issue 6](https://github.com/mrspacerobot/cooking-graph/issues/6).
+Keep work tracking in this repository so a colleague needs access to no other one.
 
 ## What the graph is
 
@@ -13,8 +19,10 @@ The plan is in mrspacerobot/tomi#106.
 
 ## Content is data
 
-- **One JSON file per thing,** in a folder for its kind.
+- **One JSON file per thing,** in a folder for its kind: `graph/<kind>/<slug>.json`. Probes live apart, in `probes/`.
+- **The model is `schema/model.json`,** with its closed word lists in `schema/words.json`. The checker reads them and nothing else decides what a file may hold. A change to `schema/model.json` is a change to the model: log it in `docs/model.md` with the example that forced it, in the same commit. `./check` fails when `docs/model.md` does not name a kind or a field of the model.
 - **Files are read strictly.** An unknown field is an error. A missing field is an error. A reference to something that does not exist is an error.
+- **Files are written one way.** `./tidy` rewrites them, and `./check` fails on a file written another way.
 - **Ids are permanent.** An id is its kind and an English slug, lowercase, such as `technique/deglaze`. Never rename or reuse one.
 - **Names travel with the thing,** in every language they are known in, English required. A local name is kept in its own script with a romanization.
 - **Numbers are data.** An amount, a time or a temperature is a number with a unit from a closed list, never words in a sentence.
@@ -33,12 +41,16 @@ Every thing and every statement carries one tier:
 
 - Nothing is marked higher than it earned. A model alone never raises a tier above sourced.
 - **Safety fails closed.** A safety fact (an allergen, an animal product, alcohol) is unverified until a person checked it against an authoritative source. Nothing unverified is ever exported.
+- **Only an ingredient carries safety facts, and it answers every fact,** as `contains` or `free_of`. What a dish holds follows from its ingredients and is never typed. When unsure, the stricter answer is recorded.
+- **Certain and strict are kept apart.** Each fact an ingredient holds says on what basis, and whether it is certain or recorded strictly because unsure. The owner rules on how strict to be. `docs/strict-answers.md` lists the strict ones.
+- **A regulator's list is never written from memory.** Fetch the page, record it as a `source` with the day it was read and its reuse terms as stated there, and take the names it uses. A fact may be sourced only when its page was fetched and the entry is on it. A page that cannot be fetched is left out and reported.
+- **A safety probe is never settled by editing either side.** `./safety` lists where a probe and the graph disagree. A person rules, unless a fetched page settles it.
 - No text may claim that food is cooked through or safe to eat.
 
 ## Where knowledge may come from
 
 - A model's own draft, marked drafted.
-- Open data whose licence allows commercial use, with the licence checked at its source.
+- Open data whose licence allows commercial use, with the licence checked at its source and recorded as a `source`. Nothing share-alike or unclear is imported, and no product data.
 - A reviewer.
 - **Never** scraped recipes, research-only datasets, or text copied from a book or a website. A reference is cited for its facts. The wording is our own.
 
@@ -47,6 +59,10 @@ Every thing and every statement carries one tier:
 - **Only the owner merges into `main`.** An agent works on a branch, pushes it, opens a pull request and stops. Never push to `main`, never merge, never rewrite its history.
 - **Tests first** for every tool. A rule of the checker has a test with a file that breaks it.
 - **`./check` must pass** before anything is called done. Report honestly: if it fails or a step was skipped, say so.
+- **The model that drafts the graph writes no probes.** A probe says who wrote it. Fresh probes come from another writer who cannot see `graph/`.
+- **A technique works on groups,** not on a list of ingredients. A group is narrow enough that the card is true for every member.
+- **The graph grows against probes.** `./probe` lists what the growing probes lack. One probe in five is held back by a rule, not by a person. Never write a dish, a name or an alias to please a held-back probe: `./probe` does not show what they lack, and it must stay that way.
+- **`./numbers` gives the numbers** for a round's notes and a pull request: counts by kind and tier, and the share of probes answered, growing and held back apart.
 - **A pull request that adds or changes content says how much and of what,** and lists what its author doubts.
 - Commit subjects are in the imperative and name the issue. No co-author lines for agents.
 - No secrets in the repository, ever.
@@ -56,3 +72,12 @@ Every thing and every statement carries one tier:
 - Words for people are warm, short and plain. Use a plain hyphen, never the em dash.
 - Code is small and plain: one function, one job, names that say what, comments that say why. No clever one-liners.
 - Until the stack is decided, tools use the Python standard library only. Nothing is installed.
+
+## Showing the graph in a browser
+
+- **For a visual walkthrough, run `./view` from the repository root** after reading this file and `docs/handover.md`. It rebuilds `out/graph.html` from the current working files and opens the default browser. The owner asked for this direct clone-and-open path; use it when a colleague asks to see or explore the graph.
+- **The page works independently of the agent.** It has no review session to keep alive or end. The colleague can keep exploring after your turn finishes and give feedback in the conversation.
+- **No Lavish, package installation or application server is needed.** The generator uses Python's standard library. The owner's interactive viewer uses pinned browser-only CDN libraries: force-graph 1.52.0, DaisyUI 5.5.19 and Tailwind's browser runtime 4.2.4. This does not change the stack of the graph tools.
+- **If automatic opening is unavailable, run `./view --no-open`** and open the printed HTML path with the available browser. Report the actual outcome; creating a file is not proof that a browser opened.
+- **Never hand-edit `out/graph.html`.** Change `viewer/` or the generator in `tools/viewer.py`, then rebuild. Keep generated pages and local captures out of commits.
+- **Show graph records only, never probes.** Preserve the tier, safety warning and context of every claim. Positions in a force layout are not evidence that ingredients are interchangeable. Keep the readable connection list alongside the canvas.

@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/quiche-lorraine-bacon-ham",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Quiche Lorraine",
+  "ingredient": "lardons",
+  "candidate": "cooked ham",
+  "verdict": "works-with-caveat",
+  "why": "Ham supplies cured pork flavor, though it lacks the crisp, rendered edges of lardons."
+}

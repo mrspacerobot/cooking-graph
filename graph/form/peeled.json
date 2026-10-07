@@ -1,0 +1,8 @@
+{
+  "id": "form/peeled",
+  "tier": "drafted",
+  "names": {"en": "Peeled", "fr": "Épluché"},
+  "aliases": {"en": ["shelled"]},
+  "looks_like": "With the skin or shell taken off and nothing else lost.",
+  "size": []
+}

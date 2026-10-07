@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/burgundian",
+  "tier": "drafted",
+  "names": {"en": "Burgundian", "fr": "Bourguignonne"},
+  "aliases": {"en": ["Burgundian cooking"]},
+  "within": {"thing": "cuisine/french", "tier": "drafted"}
+}

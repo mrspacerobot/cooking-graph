@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-saute-mushrooms",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "sauté",
+  "at_home": ["mushrooms", "butter", "shallot", "parsley", "salt", "black pepper"],
+  "dishes": ["Champignons sautés"],
+  "why": "Sautéing mushrooms in butter with shallot concentrates their flavor and finishes them with parsley."
+}

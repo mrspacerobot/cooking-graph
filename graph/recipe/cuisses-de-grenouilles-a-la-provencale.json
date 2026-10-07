@@ -1,0 +1,75 @@
+{
+  "id": "recipe/cuisses-de-grenouilles-a-la-provencale",
+  "tier": "drafted",
+  "names": {"en": "Cuisses de grenouilles à la provençale"},
+  "aliases": {},
+  "makes": "dish/cuisses-de-grenouilles-a-la-provencale",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/frogs-legs", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "main"},
+    {"thing": "ingredient/flour", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/butter", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/lemon", "amount": {"value": 0.5, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/frying-pan", "equipment/spatula", "equipment/thermometer"],
+  "steps": [
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/frogs-legs"],
+      "with": ["ingredient/salt"],
+      "text": "Dry the frogs' legs well and salt them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dredge",
+      "works_on": ["ingredient/frogs-legs"],
+      "with": ["ingredient/flour"],
+      "text": "Roll them in the flour and tap off all that does not cling.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/frogs-legs"],
+      "with": ["ingredient/butter"],
+      "text": "Heat the butter in a wide pan until it foams. Lay the legs in with room between them and fry them over a lively heat, turning them once, until they are golden all over. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 5, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/frogs-legs"],
+      "with": ["ingredient/garlic", "ingredient/parsley", "ingredient/lemon"],
+      "text": "Add the garlic and the parsley and toss everything for a few moments, until the garlic smells sweet and has not coloured. Squeeze the lemon over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/frogs-legs"],
+      "with": [],
+      "text": "Serve at once, straight from the pan, while the crust is crisp.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

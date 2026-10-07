@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gratin-de-courgettes",
+  "tier": "drafted",
+  "batch": "gratin-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "written_for": "gratin",
+  "dish": "Gratin de courgettes",
+  "also_called": ["courgette gratin", "zucchini gratin"],
+  "techniques": ["slice", "saute", "bake"],
+  "ingredients": ["courgette", "egg", "cream", "gruyère", "garlic"]
+}

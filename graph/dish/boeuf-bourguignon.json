@@ -1,0 +1,68 @@
+{
+  "id": "dish/boeuf-bourguignon",
+  "tier": "drafted",
+  "names": {"en": "Bœuf bourguignon", "fr": "Bœuf bourguignon"},
+  "aliases": {"en": ["beef bourguignon", "beef Burgundy"], "fr": ["bœuf à la bourguignonne"]},
+  "is": "Chunks of beef browned and then braised for a long time in red wine with bacon, onions and carrots, finished with mushrooms and small onions.",
+  "parts": [
+    {
+      "id": "stewing-beef",
+      "role": "main",
+      "options": ["ingredient/stewing-beef"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "red-wine", "role": "liquid", "options": ["ingredient/red-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["preparation/brown-stock", "ingredient/beef-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "bacon", "role": "garnish", "options": ["ingredient/bacon"], "optional": false, "tier": "drafted"},
+    {"id": "mushroom", "role": "garnish", "options": ["ingredient/mushroom"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pearl-onion",
+      "role": "garnish",
+      "options": ["ingredient/pearl-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bouquet-garni",
+      "role": "aromatic",
+      "options": ["preparation/bouquet-garni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/braise", "tier": "drafted"},
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/sprinkle-with-flour", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/burgundian", "tier": "drafted"}
+  ]
+}

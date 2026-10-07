@@ -1,0 +1,103 @@
+{
+  "id": "recipe/tartiflette",
+  "tier": "drafted",
+  "names": {"en": "Tartiflette"},
+  "aliases": {},
+  "makes": "dish/tartiflette",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/potato", "amount": {"value": 1, "unit": "kilogram"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/reblochon", "amount": {"value": 450, "unit": "gram"}, "forms": [], "part": "reblochon"},
+    {"thing": "ingredient/bacon", "amount": {"value": 200, "unit": "gram"}, "forms": ["form/lardons"], "part": "bacon"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "onion"
+    },
+    {
+      "thing": "ingredient/white-wine",
+      "amount": {"value": 100, "unit": "millilitre"},
+      "forms": [],
+      "part": "white-wine"
+    },
+    {
+      "thing": "ingredient/creme-fraiche",
+      "amount": {"value": 3, "unit": "tablespoon"},
+      "forms": [],
+      "part": "enrichment"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/baking-dish", "equipment/stockpot", "equipment/frying-pan"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/salt"],
+      "text": "Boil the potatoes whole, in their skins, in salted water until just tender. Peel them and cut them into thick slices.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/render",
+      "works_on": ["ingredient/bacon"],
+      "with": [],
+      "text": "Put the lardons in a cold frying pan over medium heat, let the fat run and brown them. Lift them out.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/rendered-fat", "preparation/fond"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["preparation/rendered-fat"],
+      "text": "Soften the onions in the bacon fat over low heat.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine"],
+      "text": "Add the wine, scrape the pan and let the wine boil away almost completely.",
+      "time": {"value": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/potato", "ingredient/onion", "ingredient/bacon", "ingredient/reblochon"],
+      "with": ["ingredient/creme-fraiche", "ingredient/black-pepper"],
+      "text": "Spread half the potatoes in a gratin dish, then half the onions and the lardons. Repeat. Spoon the crème fraîche over, season with the pepper, and lay the reblochon on top, halved through its middle, rind side up.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/reblochon", "ingredient/potato"],
+      "with": [],
+      "text": "Bake until the cheese has melted down into the potatoes and its rind has browned.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

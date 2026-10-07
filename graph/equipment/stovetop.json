@@ -1,0 +1,7 @@
+{
+  "id": "equipment/stovetop",
+  "tier": "drafted",
+  "names": {"en": "Stovetop", "fr": "Plaque de cuisson"},
+  "aliases": {"en": ["hob", "cooktop", "stove", "burner"]},
+  "use": "Heats a pan from below, on gas, electric or induction."
+}

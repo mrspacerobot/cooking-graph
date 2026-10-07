@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/steak-tartare",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Steak tartare",
+  "also_called": ["tartare de bœuf", "beef tartare"],
+  "holds": ["egg", "fish", "mustard"],
+  "does_not_hold": ["milk"],
+  "why": "Raw egg yolk and Dijon mustard are classic, and the seasoning very often includes Worcestershire sauce, which is made with anchovy."
+}

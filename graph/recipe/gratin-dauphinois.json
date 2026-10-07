@@ -1,0 +1,76 @@
+{
+  "id": "recipe/gratin-dauphinois",
+  "tier": "drafted",
+  "names": {"en": "Gratin dauphinois"},
+  "aliases": {},
+  "makes": "dish/gratin-dauphinois",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 1, "unit": "kilogram"},
+      "forms": ["form/peeled"],
+      "part": "potato"
+    },
+    {"thing": "ingredient/cream", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/milk", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "milk"},
+    {
+      "thing": "ingredient/garlic",
+      "amount": {"value": 1, "unit": "clove"},
+      "forms": ["form/peeled", "form/halved"],
+      "part": "garlic"
+    },
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "nutmeg"},
+    {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/stovetop", "equipment/baking-dish", "equipment/saucepan", "equipment/chefs-knife",
+    "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Slice the potatoes thinly and evenly. Do not rinse the slices: their starch thickens the cream.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": [],
+      "with": [
+        "ingredient/garlic", "ingredient/butter", "ingredient/cream", "ingredient/milk", "ingredient/salt",
+        "ingredient/nutmeg"
+      ],
+      "text": "Rub a gratin dish with the cut clove of garlic and butter it. Bring the cream and the milk to a simmer with the salt and a little nutmeg.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/cream", "ingredient/milk"],
+      "text": "Layer the slices in the dish, overlapping, and pour the hot cream over them. It should just reach the top layer.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Bake in a gentle oven until a knife slides down through the layers with no resistance and the top is golden. Let it stand a little before serving, so that the cream sets.",
+      "time": {"from": 60, "to": 75, "unit": "minute"},
+      "temperature": {"value": 160, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

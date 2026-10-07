@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/duck-breast",
+  "tier": "drafted",
+  "names": {"en": "Duck breast", "fr": "Magret de canard"},
+  "aliases": {"en": ["magret"]},
+  "is_a": [],
+  "part_of": [
+    {"thing": "ingredient/duck", "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/fatty-cuts", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Lean, dark meat under a thick layer of fat, which must melt out slowly before the skin can crisp.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is duck.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

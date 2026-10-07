@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/steak-frites-pan-sauce-stock",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Steak au poivre",
+  "ingredient": "beef stock",
+  "candidate": "chicken stock",
+  "verdict": "works-with-caveat",
+  "why": "Chicken stock forms a pan sauce but gives it a lighter, less beefy body."
+}

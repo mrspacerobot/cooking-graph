@@ -1,0 +1,20 @@
+{
+  "id": "dish/oeufs-a-la-tripe",
+  "tier": "drafted",
+  "names": {"en": "Œufs à la tripe", "fr": "Œufs à la tripe"},
+  "aliases": {"en": ["eggs in onion sauce"]},
+  "is": "Hard-boiled eggs, sliced and warmed in a béchamel full of onions that have been sweated soft without colour.",
+  "parts": [
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/sprinkle-with-flour", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

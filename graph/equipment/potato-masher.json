@@ -1,0 +1,7 @@
+{
+  "id": "equipment/potato-masher",
+  "tier": "drafted",
+  "names": {"en": "Potato masher", "fr": "Presse-purée"},
+  "aliases": {"en": ["potato ricer", "food mill", "masher"]},
+  "use": "Crushes boiled potatoes without working them into glue."
+}

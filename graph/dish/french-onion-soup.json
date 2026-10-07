@@ -1,0 +1,43 @@
+{
+  "id": "dish/french-onion-soup",
+  "tier": "drafted",
+  "names": {"en": "French onion soup", "fr": "Soupe à l'oignon"},
+  "aliases": {"en": ["onion soup gratinée"], "fr": ["soupe à l'oignon gratinée", "gratinée"]},
+  "is": "Onions caramelized slowly in butter, simmered in beef stock with a little white wine, and served under toasted bread and a crust of browned cheese.",
+  "parts": [
+    {"id": "onion", "role": "main", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "white-wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["preparation/brown-stock", "ingredient/beef-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "baguette", "role": "topping", "options": ["ingredient/baguette"], "optional": false, "tier": "drafted"},
+    {
+      "id": "gruyere",
+      "role": "topping",
+      "options": ["ingredient/gruyere", "ingredient/comte", "ingredient/emmental"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/caramelize", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

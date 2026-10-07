@@ -1,0 +1,40 @@
+{
+  "id": "dish/spinach-and-cheese-omelette",
+  "tier": "drafted",
+  "names": {"en": "Spinach and cheese omelette"},
+  "aliases": {"en": ["spinach and hard cheese omelette"]},
+  "is": "A rolled omelette of softly set eggs, filled with wilted spinach and grated hard cheese.",
+  "parts": [
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "spinach", "role": "filling", "options": ["ingredient/spinach"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "filling",
+      "options": ["ingredient/vegetarian-hard-cheese", "ingredient/parmesan"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/roll-an-omelette", "tier": "drafted"},
+    {"thing": "technique/wilt", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

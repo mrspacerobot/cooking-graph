@@ -1,0 +1,46 @@
+{
+  "id": "technique/cut-into-batons",
+  "tier": "drafted",
+  "names": {"en": "Cut into batons", "fr": "Tailler en bâtonnets"},
+  "aliases": {"en": ["cut into sticks", "cut batons", "cut into chips"]},
+  "does": "Cuts food into even, square-sided sticks.",
+  "how": [
+    "Peel the vegetable and trim its sides flat to make a block.",
+    "Slice the block into slabs as thick as the sticks you want.",
+    "Stack a few slabs and cut them lengthwise into sticks as wide as the slabs are thick.",
+    "Keep the trimmings for a soup or a mash."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Sticks with flat faces and square corners, all of one thickness, so that they cook in the same time."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting from a round vegetable without squaring it first, so that the sticks come out as wedges.",
+      "fix": "Trim the sides flat before you slice."
+    },
+    {
+      "mistake": "Slabs of uneven thickness, so that thin sticks burn while thick ones stay raw.",
+      "fix": "Hold the knife straight and take the same width at every cut."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/batons", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/slice", "why": "Batons start as thick, even slices.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

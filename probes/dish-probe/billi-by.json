@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/billi-by",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "stocks",
+  "dish": "Billi By",
+  "also_called": ["Billy By", "mussel soup"],
+  "techniques": ["sweat", "steam", "strain", "reduce"],
+  "ingredients": ["mussel", "shallot", "white wine", "cream", "butter", "parsley"]
+}

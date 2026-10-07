@@ -1,0 +1,27 @@
+{
+  "id": "dish/endives-braisees",
+  "tier": "drafted",
+  "names": {"en": "Endives braisées", "fr": "Endives braisées"},
+  "aliases": {"en": ["braised chicory", "braised endives"]},
+  "is": "Heads of chicory browned in butter with a little sugar, then cooked slowly, covered, with lemon and a splash of water until tender and lightly caramelized.",
+  "parts": [
+    {"id": "chicory", "role": "main", "options": ["ingredient/chicory"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon", "ingredient/lemon-juice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/braise", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

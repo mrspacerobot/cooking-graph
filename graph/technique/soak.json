@@ -1,0 +1,39 @@
+{
+  "id": "technique/soak",
+  "tier": "drafted",
+  "names": {"en": "Soak", "fr": "Tremper"},
+  "aliases": {"en": ["steep", "soak overnight", "soak in milk"], "fr": ["faire tremper", "dessaler"]},
+  "does": "Leaves food in a liquid until it has taken the liquid up, softened, or given up its salt.",
+  "how": [
+    "Cover the food with plenty of liquid, as it will swell.",
+    "For dried pulses and dried fruit, use cold water and leave them until they are plump.",
+    "For salt cod, change the water several times and keep it cold.",
+    "For stale bread, turn the slices in the liquid until they are heavy with it and still hold together."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Dried food is plump and smooth, with no wrinkles left."},
+    {"sense": "feel", "text": "A slice of bread is soft to the centre and still lifts in one piece."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Soaking bread until it falls apart.",
+      "fix": "Use bread that is a day old or more, and lift it out as soon as the centre is soft."
+    },
+    {"mistake": "Leaving pulses or salt cod to soak in a warm kitchen.", "fix": "Soak them in the fridge."}
+  ],
+  "works_on": [
+    {"thing": "group/breads", "tier": "drafted"},
+    {"thing": "group/pulses", "tier": "drafted"},
+    {"thing": "ingredient/salt-cod", "tier": "drafted"},
+    {"thing": "ingredient/prune", "tier": "drafted"},
+    {"thing": "ingredient/morel", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/milk"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/boeuf-bourguignon",
+  "tier": "drafted",
+  "batch": "braise-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "braise",
+  "dish": "Bœuf bourguignon",
+  "also_called": ["beef bourguignon", "beef Burgundy", "bœuf à la bourguignonne"],
+  "techniques": ["sear", "render", "sprinkle with flour", "deglaze", "braise"],
+  "ingredients": [
+    "stewing beef",
+    "red wine",
+    "bacon",
+    "mushroom",
+    "pearl onion",
+    "carrot",
+    "onion",
+    "garlic",
+    "bouquet garni",
+    "flour",
+    "beef stock"
+  ]
+}

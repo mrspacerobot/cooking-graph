@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/blanquette-de-veau",
+  "tier": "drafted",
+  "batch": "roux-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "roux",
+  "dish": "Blanquette de veau",
+  "also_called": ["veal blanquette"],
+  "techniques": ["simmer", "skim", "make a roux", "thicken with egg yolk"],
+  "ingredients": [
+    "veal shoulder",
+    "carrot",
+    "onion",
+    "mushroom",
+    "pearl onion",
+    "butter",
+    "flour",
+    "cream",
+    "egg yolk",
+    "lemon",
+    "bouquet garni"
+  ]
+}

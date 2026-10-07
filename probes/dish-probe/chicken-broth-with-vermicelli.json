@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/chicken-broth-with-vermicelli",
+  "tier": "drafted",
+  "batch": "stocks-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "stocks",
+  "dish": "Chicken broth with vermicelli",
+  "also_called": ["bouillon aux vermicelles", "bouillon de poule aux vermicelles"],
+  "techniques": ["simmer", "skim", "strain"],
+  "ingredients": ["chicken carcass", "carrot", "leek", "onion", "bouquet garni", "vermicelli"]
+}

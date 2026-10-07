@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/aubergine",
+  "tier": "drafted",
+  "names": {"en": "Aubergine", "fr": "Aubergine"},
+  "aliases": {"en": ["eggplant"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/watery-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Soaks up oil like a sponge at first, then gives it back as its flesh collapses and turns creamy.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

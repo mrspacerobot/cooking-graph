@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/cote-de-veau-aux-morilles",
+  "tier": "drafted",
+  "batch": "pan-sauce-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "pan-sauce",
+  "dish": "Côte de veau aux morilles",
+  "also_called": ["veal chop with morels"],
+  "techniques": ["sear", "deglaze", "reduce"],
+  "ingredients": ["veal chop", "morel", "shallot", "white wine", "cream", "butter"]
+}

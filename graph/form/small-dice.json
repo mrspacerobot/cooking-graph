@@ -1,0 +1,10 @@
+{
+  "id": "form/small-dice",
+  "tier": "drafted",
+  "names": {"en": "Small dice", "fr": "Macédoine"},
+  "aliases": {"en": ["macedoine", "macédoine cut"]},
+  "looks_like": "Small, neat cubes, about the size of a pea.",
+  "size": [
+    {"measure": "side", "length": {"from": 4, "to": 5, "unit": "millimetre"}}
+  ]
+}

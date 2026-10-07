@@ -1,0 +1,11 @@
+{
+  "id": "source/usda-fooddata-central",
+  "tier": "drafted",
+  "title": "FoodData Central API Guide",
+  "publisher": "U.S. Department of Agriculture, Agricultural Research Service",
+  "url": "https://fdc.nal.usda.gov/api-guide/",
+  "read_on": "2026-10-07",
+  "reuse": "The guide says the data are in the public domain, are not copyrighted, and are published under CC0 1.0 Universal. It asks that FoodData Central be named as the source.",
+  "commercial_use": "allowed",
+  "taken": "Nothing was imported. Neither the API guide nor the download page mentions allergens."
+}

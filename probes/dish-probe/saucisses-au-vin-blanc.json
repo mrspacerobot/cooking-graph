@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/saucisses-au-vin-blanc",
+  "tier": "drafted",
+  "batch": "pan-sauce-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "pan-sauce",
+  "dish": "Saucisses au vin blanc",
+  "also_called": ["sausages in white wine"],
+  "techniques": ["sear", "sweat", "deglaze", "reduce"],
+  "ingredients": ["pork sausage", "shallot", "white wine", "butter", "parsley"]
+}

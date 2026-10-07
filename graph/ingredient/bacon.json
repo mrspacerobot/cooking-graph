@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/bacon",
+  "tier": "drafted",
+  "names": {"en": "Bacon", "fr": "Poitrine fumée"},
+  "aliases": {"en": ["smoked bacon", "streaky bacon", "bacon lardons", "smoked pork belly", "smoked belly of pork"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/fatty-cuts", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Gives up its fat over gentle heat, then crisps in it. That fat carries its smoke and salt into the rest of the dish.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is cured pork.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is cured pork.", "certain": true},
+      {"fact": "fact/milk", "basis": "Cured pork is often made with lactose or milk protein.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -1,0 +1,160 @@
+{
+  "id": "recipe/navarin-d-agneau",
+  "tier": "drafted",
+  "names": {"en": "Navarin d'agneau"},
+  "aliases": {},
+  "makes": "dish/navarin-d-agneau",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/lamb-shoulder",
+      "amount": {"value": 1, "unit": "kilogram"},
+      "forms": ["form/large-pieces"],
+      "part": "lamb-shoulder"
+    },
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "sunflower-oil"
+    },
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/diced"],
+      "part": "onion"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {
+      "thing": "ingredient/tomato-paste",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "tomato-paste"
+    },
+    {"thing": "ingredient/flour", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {
+      "thing": "ingredient/white-wine",
+      "amount": {"value": 150, "unit": "millilitre"},
+      "forms": [],
+      "part": "white-wine"
+    },
+    {"thing": "ingredient/beef-stock", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {
+      "thing": "preparation/bouquet-garni",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": [],
+      "part": "bouquet-garni"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 300, "unit": "gram"},
+      "forms": ["form/peeled", "form/large-pieces"],
+      "part": "carrot"
+    },
+    {
+      "thing": "ingredient/turnip",
+      "amount": {"value": 300, "unit": "gram"},
+      "forms": ["form/peeled", "form/large-pieces"],
+      "part": "turnip"
+    },
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 400, "unit": "gram"},
+      "forms": ["form/peeled", "form/large-pieces"],
+      "part": "potato"
+    },
+    {"thing": "ingredient/peas", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "peas"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/dutch-oven", "equipment/wooden-spoon", "equipment/tongs"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["ingredient/salt", "ingredient/sunflower-oil"],
+      "text": "Dry the lamb and salt it. Brown it in the oil in a heavy pot, in batches, until deep brown on all sides. Lift it out.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/garlic"],
+      "with": ["ingredient/tomato-paste"],
+      "text": "Pour off most of the fat. Soften the onion in the pot, then stir in the garlic and the tomato paste and let the paste darken for a moment.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sprinkle-with-flour",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["ingredient/flour"],
+      "text": "Put the lamb back, scatter the flour over it and stir until no white shows.",
+      "time": {"value": 1, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine"],
+      "text": "Pour in the wine and scrape the bottom of the pot clean.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pan-sauce"]
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["preparation/pan-sauce", "ingredient/beef-stock", "preparation/bouquet-garni"],
+      "text": "Add the stock and the bouquet garni. Cover and cook at a bare simmer.",
+      "time": {"value": 1, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/lamb-shoulder", "ingredient/carrot", "ingredient/turnip", "ingredient/potato"],
+      "with": ["preparation/braising-liquid"],
+      "text": "Skim the fat from the surface. Add the carrots, the turnips and the potatoes, and push them under the liquid. Cover and cook until the vegetables and the lamb are tender. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 40, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/peas"],
+      "with": [],
+      "text": "Add the peas near the end. They need only a short time.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/braising-liquid"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Take out the bouquet garni. Taste and season.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

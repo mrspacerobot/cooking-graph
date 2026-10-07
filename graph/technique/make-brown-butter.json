@@ -1,0 +1,39 @@
+{
+  "id": "technique/make-brown-butter",
+  "tier": "drafted",
+  "names": {"en": "Make brown butter", "fr": "Faire un beurre noisette"},
+  "aliases": {"en": ["brown butter", "brown the butter", "beurre noisette"]},
+  "does": "Cooks butter until its milk solids turn nut-brown and it smells of hazelnuts.",
+  "how": [
+    "Melt the butter in a pale pan, so that you can see its colour.",
+    "Let it foam. The foam is its water boiling off.",
+    "Swirl the pan as the foam falls and the solids on the bottom turn golden.",
+    "Take it off the heat the moment it smells of hazelnuts, and stop it with a squeeze of lemon or by pouring it out."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "Toasted hazelnuts."},
+    {"sense": "hear", "text": "The sputter dies away just before it browns. Silence means the water has gone."},
+    {"sense": "see", "text": "Golden-brown specks on the bottom and a clear amber fat."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving it in the hot pan, where it goes from brown to black and bitter in moments.",
+      "fix": "Pour it straight over the food, or into a cold dish."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/butter", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/brown-butter", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/savoyard",
+  "tier": "drafted",
+  "names": {"en": "Savoyard", "fr": "Savoyarde"},
+  "aliases": {"en": ["Savoyard cooking"]},
+  "within": {"thing": "cuisine/french", "tier": "drafted"}
+}

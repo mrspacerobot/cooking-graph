@@ -1,0 +1,46 @@
+{
+  "id": "recipe/brochet-au-beurre-blanc",
+  "tier": "drafted",
+  "names": {"en": "Brochet au beurre blanc"},
+  "aliases": {},
+  "makes": "dish/brochet-au-beurre-blanc",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pike", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "main"},
+    {
+      "thing": "preparation/court-bouillon",
+      "amount": {"value": 2, "unit": "litre"},
+      "forms": [],
+      "part": "court-bouillon"
+    },
+    {
+      "thing": "preparation/beurre-blanc",
+      "amount": {"value": 200, "unit": "gram"},
+      "forms": [],
+      "part": "beurre-blanc"
+    }
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saute-pan", "equipment/fish-slice"],
+  "steps": [
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/pike"],
+      "with": ["preparation/court-bouillon"],
+      "text": "Lay the fish in a pan that holds it snugly and cover it with the cold court-bouillon. Bring it slowly to a bare tremble and poach until the flesh comes away from the bone. The time counts from the first tremble. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pike", "preparation/beurre-blanc"],
+      "with": [],
+      "text": "Lift the fish out, drain it well and take off the skin. Serve it on hot plates with the beurre blanc spooned over. Make the sauce while the fish poaches: it does not wait.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "group/round-fish",
+  "tier": "drafted",
+  "names": {"en": "Round fish", "fr": "Poissons ronds"},
+  "aliases": {},
+  "shares": "Fish with a rounded body and one fillet on each side of the backbone. They are scaled and gutted, and cooked whole on the bone or filleted from the back.",
+  "within": {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+  "stands_alone": null
+}

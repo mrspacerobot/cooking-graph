@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/oeufs-cocotte",
+  "tier": "drafted",
+  "batch": "eggs-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "eggs",
+  "dish": "Œufs cocotte",
+  "also_called": ["eggs en cocotte", "baked eggs"],
+  "techniques": ["bake in a water bath"],
+  "ingredients": ["egg", "crème fraîche", "butter", "chives"]
+}

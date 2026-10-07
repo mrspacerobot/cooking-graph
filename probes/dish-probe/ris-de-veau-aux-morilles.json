@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/ris-de-veau-aux-morilles",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "pan-sauce",
+  "dish": "Ris de veau aux morilles",
+  "also_called": ["veal sweetbreads with morels", "sweetbreads with morel cream sauce"],
+  "techniques": ["blanch", "sear", "deglaze", "reduce"],
+  "ingredients": ["veal sweetbreads", "morel", "shallot", "white wine", "cream", "butter"]
+}

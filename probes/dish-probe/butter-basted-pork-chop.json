@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/butter-basted-pork-chop",
+  "tier": "drafted",
+  "batch": "roast-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "roast",
+  "dish": "Butter-basted pork chop",
+  "also_called": ["côte de porc au beurre", "côte de porc arrosée au beurre"],
+  "techniques": ["sear", "baste", "rest"],
+  "ingredients": ["pork chop", "butter", "garlic", "thyme"]
+}

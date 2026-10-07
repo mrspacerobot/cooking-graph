@@ -1,0 +1,57 @@
+{
+  "id": "ingredient/chicken-stock",
+  "tier": "drafted",
+  "names": {"en": "Chicken stock", "fr": "Bouillon de volaille"},
+  "aliases": {"en": ["chicken broth", "bought chicken stock"]},
+  "is_a": [
+    {"thing": "ingredient/stock", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A light, savoury liquid that takes on other flavours easily. A homemade one sets to a soft jelly when cold and gives a sauce body as it boils down.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "Made from chicken and its bones.", "certain": true},
+      {"fact": "fact/gluten", "basis": "Bought stock and stock cubes often hold wheat.", "certain": false},
+      {"fact": "fact/wheat", "basis": "Bought stock and stock cubes often hold wheat.", "certain": false},
+      {
+        "fact": "fact/celery",
+        "basis": "Stock is usually made with celery, and stock cubes often hold it.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/white-wine",
+      "allows": true,
+      "when": ["dish/seared-chicken-thighs-with-lemon-butter-pan-sauce"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "Stock has none of the sharpness of wine. A squeeze of lemon at the end brings some of it back.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "preparation/white-chicken-stock",
+      "allows": true,
+      "when": [],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "Bought stock is salted and has little gelatine. Season at the end, and do not expect a sauce made by boiling it down to thicken or set.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

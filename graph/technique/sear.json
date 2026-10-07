@@ -1,0 +1,70 @@
+{
+  "id": "technique/sear",
+  "tier": "drafted",
+  "names": {"en": "Sear", "fr": "Saisir"},
+  "aliases": {"en": ["brown", "pan-sear", "sear in a hot pan", "searing"]},
+  "does": "Browns the surface of meat or fish fast in a very hot pan, building a crust full of flavour while the inside stays underdone.",
+  "how": [
+    "Dry the surface well. Wet food steams before it browns.",
+    "Salt it just before it goes in.",
+    "Heat a heavy pan until a thin film of oil shimmers and gives off its first wisp of smoke.",
+    "Lay the food in away from you and press it flat. Then leave it alone.",
+    "Turn it when it lifts off the pan by itself and the underside is deep brown.",
+    "Take it out to rest. The crust left on the pan is the fond for a sauce."
+  ],
+  "cues": [
+    {
+      "sense": "hear",
+      "text": "A loud, steady sizzle that does not fade. A weak hiss means the pan was not hot enough."
+    },
+    {"sense": "see", "text": "A deep brown crust, and a brown line climbing the side of the piece."},
+    {"sense": "feel", "text": "The piece lets go of the pan when it is ready to turn. If it sticks, it is not ready."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Moving the food before it has browned, which tears the crust and leaves it on the pan.",
+      "fix": "Leave it until it releases by itself."
+    },
+    {
+      "mistake": "Crowding the pan, so that the pieces stew in their own juice and turn grey.",
+      "fix": "Sear in batches with space between the pieces, and let the pan heat up again."
+    },
+    {
+      "mistake": "Putting food in the pan while its surface is wet.",
+      "fix": "Pat it dry with paper on every side first."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/roasting-joints", "tier": "drafted"},
+    {"thing": "group/offal", "tier": "drafted"},
+    {"thing": "ingredient/salmon", "tier": "drafted"},
+    {"thing": "ingredient/scallop", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/seared", "tier": "drafted"},
+    {"thing": "preparation/fond", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/frying-pan", "equipment/saute-pan", "equipment/dutch-oven"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/sunflower-oil", "preparation/clarified-butter"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs", "equipment/fish-slice"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/saute",
+      "why": "Sautéing teaches a hot pan and room between the pieces. Searing adds the hardest part: leaving the food alone.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

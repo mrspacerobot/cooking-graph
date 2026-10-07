@@ -1,0 +1,32 @@
+{
+  "id": "dish/vichyssoise",
+  "tier": "drafted",
+  "names": {"en": "Vichyssoise", "fr": "Vichyssoise"},
+  "aliases": {"en": ["cold leek and potato soup"], "fr": ["crème vichyssoise"]},
+  "is": "Leeks and potatoes sweated in butter, simmered in stock, blended smooth with cream and served cold with chives.",
+  "parts": [
+    {"id": "leek", "role": "main", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": [
+        "preparation/white-chicken-stock", "ingredient/chicken-stock", "preparation/vegetable-stock",
+        "ingredient/vegetable-stock"
+      ],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cream", "role": "enrichment", "options": ["ingredient/cream"], "optional": false, "tier": "drafted"},
+    {"id": "chives", "role": "garnish", "options": ["ingredient/chives"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/puree", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

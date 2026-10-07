@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/omelette-herbes-chives",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Omelette aux fines herbes",
+  "ingredient": "butter",
+  "candidate": "olive oil",
+  "verdict": "works-with-caveat",
+  "why": "Both let eggs set in a pan; olive oil gives a fruitier, less creamy aroma."
+}

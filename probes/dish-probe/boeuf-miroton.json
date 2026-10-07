@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/boeuf-miroton",
+  "tier": "drafted",
+  "batch": "roux-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "roux",
+  "dish": "Bœuf miroton",
+  "also_called": ["miroton"],
+  "techniques": ["slice", "sweat", "sprinkle with flour", "simmer", "gratinate"],
+  "ingredients": ["boiled beef", "onion", "butter", "flour", "red wine vinegar", "beef stock", "breadcrumbs"]
+}

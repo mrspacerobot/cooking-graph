@@ -1,0 +1,11 @@
+{
+  "id": "form/batons",
+  "tier": "drafted",
+  "names": {"en": "Batons", "fr": "Bâtonnets"},
+  "aliases": {"en": ["sticks", "thick-cut chips"]},
+  "looks_like": "Square-sided sticks with flat faces and sharp corners, all of one length.",
+  "size": [
+    {"measure": "side", "length": {"from": 6, "to": 10, "unit": "millimetre"}},
+    {"measure": "length", "length": {"from": 5, "to": 7, "unit": "centimetre"}}
+  ]
+}

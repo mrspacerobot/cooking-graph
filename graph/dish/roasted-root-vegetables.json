@@ -1,0 +1,33 @@
+{
+  "id": "dish/roasted-root-vegetables",
+  "tier": "drafted",
+  "names": {"en": "Roasted root vegetables", "fr": "Légumes racines rôtis"},
+  "aliases": {"en": ["roasted roots", "roast vegetables"], "fr": ["légumes rôtis au four"]},
+  "is": "Carrots, parsnips and turnips cut to one size, coated in oil and roasted in a hot oven until tender inside and browned at the edges.",
+  "parts": [
+    {"id": "carrot", "role": "main", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "parsnip", "role": "main", "options": ["ingredient/parsnip"], "optional": false, "tier": "drafted"},
+    {"id": "turnip", "role": "main", "options": ["ingredient/turnip"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/sunflower-oil", "ingredient/duck-fat"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "thyme", "role": "aromatic", "options": ["ingredient/thyme"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/roast", "tier": "drafted"}
+  ],
+  "belongs_to": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ingredient/celery",
+  "tier": "drafted",
+  "names": {"en": "Celery", "fr": "Céleri"},
+  "aliases": {"en": ["celery stalk", "celery stick"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Gives a savoury, slightly bitter base note and softens slowly.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/celery", "basis": "It is celery.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/leek",
+      "allows": true,
+      "when": ["dish/pot-au-feu"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "caveat": "It gives a more herbal broth and a firmer vegetable garnish, without the sweetness of leek.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

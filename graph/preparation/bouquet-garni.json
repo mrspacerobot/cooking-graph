@@ -1,0 +1,21 @@
+{
+  "id": "preparation/bouquet-garni",
+  "tier": "drafted",
+  "names": {"en": "Bouquet garni", "fr": "Bouquet garni"},
+  "aliases": {"en": ["herb bundle"]},
+  "is": "A small bundle of herbs tied with string, so that it can flavour a pot and be lifted out whole.",
+  "parts": [
+    {"id": "thyme", "role": "aromatic", "options": ["ingredient/thyme"], "optional": false, "tier": "drafted"},
+    {"id": "bay-leaf", "role": "aromatic", "options": ["ingredient/bay-leaf"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "leek", "role": "aromatic", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/woody-herbs", "tier": "drafted"}
+  ],
+  "teaches": [],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

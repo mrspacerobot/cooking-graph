@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/paupiettes-de-veau",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "braise",
+  "dish": "Paupiettes de veau",
+  "also_called": ["veal paupiettes", "veal birds", "stuffed veal rolls"],
+  "techniques": ["stuff", "tie", "sear", "deglaze", "braise"],
+  "ingredients": ["veal escalope", "sausage meat", "onion", "carrot", "white wine", "butter", "parsley"]
+}

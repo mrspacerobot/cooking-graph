@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/croque-madame",
+  "tier": "drafted",
+  "batch": "eggs-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "eggs",
+  "dish": "Croque madame",
+  "also_called": [],
+  "techniques": ["fry", "gratinate"],
+  "ingredients": ["bread", "ham", "gruyère", "béchamel", "egg", "butter"]
+}

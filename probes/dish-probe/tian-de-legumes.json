@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/tian-de-legumes",
+  "tier": "drafted",
+  "batch": "knife-cuts-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Tian de légumes",
+  "also_called": ["tian provençal", "vegetable tian"],
+  "techniques": ["slice", "bake"],
+  "ingredients": ["courgette", "aubergine", "tomato", "onion", "garlic", "olive oil", "thyme"]
+}

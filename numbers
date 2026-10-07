@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+"""numbers: counts by kind and by tier, and the share of probes answered, growing and held back apart."""
+
+import os
+import sys
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+
+from tools import check, numbers, reading  # noqa: E402
+
+things, issues = check.read_repository(ROOT)
+if issues:
+    print("numbers: ./check finds %d issues. Files with a wrong shape are not counted." % len(issues))
+model, words = reading.read_schema(ROOT)
+print(numbers.render(numbers.count(things), model, words))

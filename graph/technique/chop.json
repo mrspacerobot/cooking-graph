@@ -1,0 +1,41 @@
+{
+  "id": "technique/chop",
+  "tier": "drafted",
+  "names": {"en": "Chop", "fr": "Hacher"},
+  "aliases": {"en": ["chop finely", "chop roughly", "hand-chop"]},
+  "does": "Cuts food into small, uneven pieces, where the exact shape does not matter.",
+  "how": [
+    "Gather the food into a low pile.",
+    "Hold the tip of the knife on the board with your free hand.",
+    "Rock the blade up and down while swinging it across the pile.",
+    "Scrape the pile back together and go over it again until it is as fine as you want."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Pieces of roughly one size, still dry and separate on the board."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Chopping wet herbs, which turns them to a dark paste.",
+      "fix": "Dry the herbs well first, and stop as soon as they are fine enough."
+    },
+    {
+      "mistake": "Chopping meat for a tartare in a machine, which smears it.",
+      "fix": "Cut it by hand with a sharp knife: slices, then strips, then small cubes."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/tender-herbs", "tier": "drafted"},
+    {"thing": "group/pickles", "tier": "drafted"},
+    {"thing": "ingredient/beef-fillet", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/chopped", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

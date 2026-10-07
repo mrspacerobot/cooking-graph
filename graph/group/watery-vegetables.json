@@ -1,0 +1,9 @@
+{
+  "id": "group/watery-vegetables",
+  "tier": "drafted",
+  "names": {"en": "Watery vegetables"},
+  "aliases": {},
+  "shares": "Soft vegetables that are mostly water under a thin skin. They shed that water in the pan, so they brown only over high heat with room around them, and collapse when stewed.",
+  "within": {"thing": "group/vegetables", "tier": "drafted"},
+  "stands_alone": null
+}

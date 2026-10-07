@@ -1,0 +1,9 @@
+{
+  "id": "group/roux-sauces",
+  "tier": "drafted",
+  "names": {"en": "Roux-thickened sauces", "fr": "Sauces liées au roux"},
+  "aliases": {},
+  "shares": "Sauces thickened with a roux. They scorch on the bottom of the pan, form a skin as they stand, and thicken further as they simmer.",
+  "within": {"thing": "group/sauces", "tier": "drafted"},
+  "stands_alone": null
+}

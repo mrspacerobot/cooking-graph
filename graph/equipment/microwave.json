@@ -1,0 +1,7 @@
+{
+  "id": "equipment/microwave",
+  "tier": "drafted",
+  "names": {"en": "Microwave", "fr": "Micro-ondes"},
+  "aliases": {"en": ["microwave oven"]},
+  "use": "Heats food by stirring up the water inside it, for melting and reheating."
+}

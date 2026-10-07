@@ -1,0 +1,9 @@
+{
+  "id": "group/poultry",
+  "tier": "drafted",
+  "names": {"en": "Poultry", "fr": "Volailles"},
+  "aliases": {},
+  "shares": "Birds, whole or jointed, with a skin that crisps in dry heat and turns soft in liquid, and lean breast meat that dries before the legs are done.",
+  "within": {"thing": "group/meat", "tier": "drafted"},
+  "stands_alone": null
+}

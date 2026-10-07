@@ -1,0 +1,37 @@
+{
+  "id": "ingredient/milk",
+  "tier": "drafted",
+  "names": {"en": "Milk", "fr": "Lait"},
+  "aliases": {"en": ["whole milk"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Scorches on the bottom of a pan and boils over fast. It curdles when it meets acid while hot.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is milk.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cream",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/gratin-dauphinois"],
+      "ratio": null,
+      "caveat": "Milk alone leaves a thinner cooking liquid here. Changing the reduction or thickening is a different method.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

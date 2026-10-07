@@ -1,0 +1,72 @@
+{
+  "id": "technique/braise",
+  "tier": "drafted",
+  "names": {"en": "Braise", "fr": "Braiser"},
+  "aliases": {"en": ["braise slowly", "pot-roast", "stew", "braising"]},
+  "does": "Cooks food slowly in a little liquid in a covered pot, after browning it, until it is tender and the liquid has become its sauce.",
+  "how": [
+    "Brown the meat well in the pot and take it out.",
+    "Soften the vegetables in the same pot, then loosen the fond with the wine or the stock.",
+    "Put the meat back and add liquid to come about half way up it, not to cover it.",
+    "Bring it to a bare simmer, cover, and cook in a low oven or over the lowest heat.",
+    "Turn the pieces now and then. It is ready when a fork meets no resistance.",
+    "Lift the meat out, skim off the fat, and boil the liquid down if it is thin."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The liquid barely moves under the lid: a bubble now and then."},
+    {
+      "sense": "feel",
+      "text": "A fork slides in and out of the meat with no resistance, and the piece still holds its shape."
+    },
+    {"sense": "smell", "text": "A deep, rounded smell, with no raw wine left in it."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting it boil, which tightens the meat into dry strings even as it sits in liquid.",
+      "fix": "Lower the heat, or move the pot to a low oven, where the heat is gentler and comes from all sides."
+    },
+    {
+      "mistake": "Drowning the meat, which gives a thin soup and no sauce.",
+      "fix": "Use less liquid. The top of the meat should stand clear of it."
+    },
+    {
+      "mistake": "Stopping when the meat is cooked but still tough.",
+      "fix": "Keep going. A tough cut turns tender only after a long time at a simmer."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/leafy-heads", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/fork-tender", "tier": "drafted"},
+    {"thing": "preparation/braising-liquid", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/saute-pan"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": [
+        "ingredient/red-wine", "ingredient/white-wine", "ingredient/stock", "ingredient/chicken-stock",
+        "ingredient/beef-stock", "preparation/brown-stock", "preparation/white-chicken-stock"
+      ],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/oven", "equipment/stovetop"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/parchment-paper"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/sear", "why": "A braise begins with a sear.", "tier": "drafted"},
+    {
+      "thing": "technique/deglaze",
+      "why": "The fond of that sear is deglazed into the liquid the food braises in.",
+      "tier": "drafted"
+    },
+    {"thing": "technique/simmer", "why": "The whole of a braise is a simmer held for a long time.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

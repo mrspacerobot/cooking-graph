@@ -1,0 +1,48 @@
+{
+  "id": "ingredient/ghee",
+  "tier": "drafted",
+  "names": {"en": "Ghee"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Butter fat cooked until the milk solids brown, then strained. It tastes nuttier than gently clarified butter.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/milk",
+        "basis": "It is made from butter; removing the solids is not an assurance that every milk protein is gone.",
+        "certain": true
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "preparation/clarified-butter",
+      "allows": true,
+      "when": ["preparation/hollandaise"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "caveat": "It gives the same butter-fat emulsion, with a nuttier flavour. Warm it gently before adding it.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/butter",
+      "allows": true,
+      "when": ["preparation/hollandaise"],
+      "not_when": ["technique/mount-with-butter", "technique/make-brown-butter"],
+      "ratio": null,
+      "caveat": "It supplies the fat for the yolk emulsion with a nuttier flavour and less water.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/dinde-aux-marrons",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "roast",
+  "dish": "Dinde aux marrons",
+  "also_called": ["roast turkey with chestnuts", "turkey with chestnut stuffing"],
+  "techniques": ["stuff", "truss", "roast", "baste", "rest"],
+  "ingredients": ["turkey", "chestnut", "sausage meat", "onion", "butter", "chicken stock"]
+}

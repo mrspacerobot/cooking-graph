@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/veloute-d-asperges",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "roux",
+  "dish": "Velouté d'asperges",
+  "also_called": ["asparagus soup", "crème d'asperges"],
+  "techniques": ["make a roux", "simmer", "puree", "strain"],
+  "ingredients": ["asparagus", "butter", "flour", "chicken stock", "cream"]
+}

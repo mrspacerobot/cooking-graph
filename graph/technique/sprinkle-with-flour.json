@@ -1,0 +1,45 @@
+{
+  "id": "technique/sprinkle-with-flour",
+  "tier": "drafted",
+  "names": {"en": "Sprinkle with flour", "fr": "Singer"},
+  "aliases": {"en": ["singer", "dust with flour"]},
+  "does": "Scatters flour over food that is already cooking in fat and cooks it for a moment, so that the liquid added next thickens as it simmers.",
+  "how": [
+    "Scatter the flour evenly over the hot, fat-coated food, not in a heap.",
+    "Stir until no white shows.",
+    "Cook it for a moment, stirring, to take away the raw taste.",
+    "Add the liquid little by little at first, stirring it smooth."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The flour vanishes into a thin paste that coats every piece."},
+    {"sense": "smell", "text": "The raw, dusty smell gives way to a faint smell of biscuit."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Tipping the flour in as a heap, which makes lumps that never dissolve.",
+      "fix": "Scatter it from high up, or through a sieve."
+    },
+    {
+      "mistake": "Adding the liquid at once, before the flour has cooked.",
+      "fix": "Give it a moment on the heat first."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/braising-cuts", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/make-a-roux",
+      "differs": "The flour goes onto food already cooking in fat, so that the roux forms around the pieces and is not made on its own.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

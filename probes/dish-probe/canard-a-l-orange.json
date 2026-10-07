@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/canard-a-l-orange",
+  "tier": "drafted",
+  "batch": "pan-sauce-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "pan-sauce",
+  "dish": "Canard à l'orange",
+  "also_called": ["duck à l'orange"],
+  "techniques": ["roast", "caramelize sugar", "deglaze", "reduce"],
+  "ingredients": ["duck", "orange", "sugar", "red wine vinegar", "brown stock", "butter"]
+}

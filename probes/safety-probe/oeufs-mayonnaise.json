@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/oeufs-mayonnaise",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Œufs mayonnaise",
+  "also_called": ["egg mayonnaise", "œufs mayo"],
+  "holds": ["egg", "mustard", "sulphites"],
+  "does_not_hold": ["gluten", "milk"],
+  "why": "Mayonnaise is egg yolk and oil, and the classic one is seasoned with Dijon mustard and vinegar. Mustard and vinegar often carry sulphites."
+}

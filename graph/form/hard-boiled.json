@@ -1,0 +1,8 @@
+{
+  "id": "form/hard-boiled",
+  "tier": "drafted",
+  "names": {"en": "Hard-boiled", "fr": "Dur"},
+  "aliases": {"en": ["hard-cooked"]},
+  "looks_like": "A firm white and a firm, bright yellow yolk, with no grey ring around it.",
+  "size": []
+}

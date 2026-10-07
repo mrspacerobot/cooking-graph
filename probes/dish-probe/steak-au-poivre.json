@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/steak-au-poivre",
+  "tier": "drafted",
+  "batch": "sear-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "sear",
+  "dish": "Steak au poivre",
+  "also_called": ["pepper steak"],
+  "techniques": ["sear", "rest", "deglaze", "reduce"],
+  "ingredients": ["beef steak", "black pepper", "butter", "cognac", "cream"]
+}

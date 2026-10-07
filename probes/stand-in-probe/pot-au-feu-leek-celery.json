@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/pot-au-feu-leek-celery",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Pot-au-feu",
+  "ingredient": "leek",
+  "candidate": "celery",
+  "verdict": "works-with-caveat",
+  "why": "Celery adds aromatic depth to the broth but tastes more vegetal and less sweet than leek."
+}

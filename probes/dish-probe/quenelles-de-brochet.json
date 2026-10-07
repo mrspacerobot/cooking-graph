@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/quenelles-de-brochet",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "poach",
+  "dish": "Quenelles de brochet",
+  "also_called": ["pike quenelles", "quenelles lyonnaises", "quenelles de brochet sauce Nantua"],
+  "techniques": ["pound", "shape", "poach", "gratinate"],
+  "ingredients": ["pike", "egg", "butter", "flour", "milk", "cream", "crayfish"]
+}

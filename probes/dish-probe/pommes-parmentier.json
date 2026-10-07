@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/pommes-parmentier",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "saute",
+  "dish": "Pommes Parmentier",
+  "also_called": ["Parmentier potatoes", "diced sautéed potatoes"],
+  "techniques": ["dice", "saute"],
+  "ingredients": ["potato", "butter", "parsley"]
+}

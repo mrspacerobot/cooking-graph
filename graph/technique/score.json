@@ -1,0 +1,31 @@
+{
+  "id": "technique/score",
+  "tier": "drafted",
+  "names": {"en": "Score", "fr": "Quadriller"},
+  "aliases": {"en": ["score the skin", "score the fat", "crosshatch"]},
+  "does": "Cuts shallow lines through skin or fat, so that the fat can melt out and the skin crisps without curling.",
+  "how": [
+    "Chill the piece so that the fat is firm.",
+    "Draw a sharp knife across the fat in parallel lines a finger apart, cutting through the fat but not into the flesh.",
+    "Turn the piece and cut across the first lines to make diamonds."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A neat pattern of diamonds, with white fat in every cut and no red flesh showing."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting into the flesh, so that the meat loses juice and dries where it was cut.",
+      "fix": "Use the tip of the knife with a light hand, and stop when the colour changes."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/duck-breast", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

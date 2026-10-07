@@ -1,0 +1,49 @@
+{
+  "id": "recipe/soft-scrambled-eggs",
+  "tier": "drafted",
+  "names": {"en": "Soft scrambled eggs"},
+  "aliases": {"fr": ["Œufs brouillés"]},
+  "makes": "dish/soft-scrambled-eggs",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 5, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/cream", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "enrichment"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/mixing-bowl", "equipment/whisk", "equipment/spatula"
+  ],
+  "steps": [
+    {
+      "technique": "technique/whisk",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/salt"],
+      "text": "Crack the eggs into a bowl, add the salt and whisk until no streaks of white are left.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/scramble",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/butter"],
+      "text": "Melt most of the butter in a small pan over low heat until it foams, and keep the rest cold. Pour in the eggs and stir without stopping, scraping the bottom and the corners. Lift the pan off the heat whenever curds form too fast.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/scramble",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/butter", "ingredient/cream"],
+      "text": "While the eggs still look wet and loose, take the pan off the heat and stir in the cold butter and the cream to stop the cooking. Serve at once on warm plates.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    }
+  ]
+}

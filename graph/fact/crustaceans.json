@@ -1,0 +1,73 @@
+{
+  "id": "fact/crustaceans",
+  "tier": "sourced",
+  "names": {"en": "Crustaceans", "fr": "Crustacés"},
+  "aliases": {"en": ["crustacean", "crustacean shellfish", "crustacea"]},
+  "means": "Crustaceans, such as shrimp, prawns, crab and lobster, or anything made from them.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "european-union",
+      "source": "source/eu-regulation-1169-2011-annex-ii",
+      "name": "Crustaceans and products thereof",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-kingdom",
+      "source": "source/uk-fsa-food-allergy-advice",
+      "name": "crustaceans (such as prawns, crabs and lobsters)",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-states",
+      "source": "source/us-fda-food-allergies",
+      "name": "Crustacean shellfish",
+      "standing": "mandatory",
+      "exemptions": "The labelling law leaves out highly refined oils, raw agricultural commodities, alcoholic drinks labelled under the Alcohol and Tobacco Tax and Trade Bureau, and the meat, poultry and egg products another department regulates.",
+      "note": "The species must be declared, such as crab, lobster or shrimp.",
+      "tier": "sourced"
+    },
+    {
+      "where": "canada",
+      "source": "source/health-canada-common-food-allergens",
+      "name": "Crustaceans and molluscs",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "One entry of the list covers crustaceans and molluscs.",
+      "tier": "sourced"
+    },
+    {
+      "where": "australia-and-new-zealand",
+      "source": "source/fsanz-allergen-labelling",
+      "name": "crustacean",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "japan",
+      "source": "source/japan-caa-allergen-labelling",
+      "name": "えび (shrimp), かに (crab)",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "Names these foods and not the whole class.",
+      "tier": "sourced"
+    },
+    {
+      "where": "codex",
+      "source": "source/codex-labelling-standard-2010",
+      "name": "Crustacea and products of these",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "From the text as amended up to 2010. The current standard could not be fetched and may differ.",
+      "tier": "drafted"
+    }
+  ]
+}

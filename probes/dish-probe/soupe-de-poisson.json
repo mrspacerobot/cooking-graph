@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/soupe-de-poisson",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "stocks",
+  "dish": "Soupe de poisson",
+  "also_called": ["Provençal fish soup", "soupe de poissons de roche"],
+  "techniques": ["sweat", "simmer", "puree", "strain"],
+  "ingredients": ["rockfish", "onion", "tomato", "garlic", "saffron", "olive oil", "rouille"]
+}

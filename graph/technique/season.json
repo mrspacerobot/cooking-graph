@@ -1,0 +1,44 @@
+{
+  "id": "technique/season",
+  "tier": "drafted",
+  "names": {"en": "Season", "fr": "Assaisonner"},
+  "aliases": {"en": ["season to taste", "taste and adjust", "adjust the seasoning"]},
+  "does": "Brings out the taste of a dish with salt, and balances it with pepper, acid or fat.",
+  "how": [
+    "Salt in small steps as the dish cooks, not only at the end.",
+    "Taste before serving, from a clean spoon.",
+    "Add a little salt if the dish tastes flat, and a few drops of acid if it tastes dull or heavy.",
+    "Stir, wait a moment and taste again."
+  ],
+  "cues": [
+    {"sense": "taste", "text": "The dish tastes more of itself and not of salt. It is bright, and nothing sticks out."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Salting a liquid fully before it has boiled down, so that it ends up too salty.",
+      "fix": "Salt lightly anything that will reduce, and correct it at the end."
+    },
+    {"mistake": "Seasoning without tasting.", "fix": "Taste every time. No amount on paper replaces it."}
+  ],
+  "works_on": [
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/starches", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"},
+    {
+      "role": "acid",
+      "options": ["ingredient/lemon", "ingredient/red-wine-vinegar", "ingredient/white-wine-vinegar"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

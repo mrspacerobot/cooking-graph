@@ -1,0 +1,9 @@
+{
+  "id": "group/green-vegetables",
+  "tier": "drafted",
+  "names": {"en": "Green vegetables", "fr": "Légumes verts"},
+  "aliases": {},
+  "shares": "Vegetables whose green turns vivid in boiling salted water and dull if they are held hot or meet acid, so they are cooked fast and cooled at once.",
+  "within": {"thing": "group/vegetables", "tier": "drafted"},
+  "stands_alone": null
+}

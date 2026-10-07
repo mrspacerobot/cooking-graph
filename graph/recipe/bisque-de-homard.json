@@ -1,0 +1,152 @@
+{
+  "id": "recipe/bisque-de-homard",
+  "tier": "drafted",
+  "names": {"en": "Bisque de homard"},
+  "aliases": {},
+  "makes": "dish/bisque-de-homard",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/lobster", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "main"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/diced"], "part": "mirepoix"},
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/diced"],
+      "part": "mirepoix"
+    },
+    {
+      "thing": "ingredient/tomato-paste",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "tomato-paste"
+    },
+    {"thing": "ingredient/cognac", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "cognac"},
+    {
+      "thing": "ingredient/white-wine",
+      "amount": {"value": 150, "unit": "millilitre"},
+      "forms": [],
+      "part": "white-wine"
+    },
+    {"thing": "ingredient/fish-stock", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/rice", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/cream", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/dutch-oven", "equipment/blender", "equipment/fine-sieve",
+    "equipment/ladle", "equipment/thermometer"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/lobster"],
+      "with": ["ingredient/salt"],
+      "text": "Boil the lobster in plenty of well-salted water. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/lobster"],
+      "with": [],
+      "text": "When it is cool enough to handle, take the meat out of the tail and the claws and keep it cold for the garnish. Break the shells and the head into small pieces.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/lobster"],
+      "with": ["ingredient/butter", "ingredient/onion", "ingredient/carrot"],
+      "text": "Fry the pieces of shell in the butter over a lively heat until they smell toasted. Add the onion and the carrot and cook until they start to colour.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/flambe",
+      "works_on": ["ingredient/lobster"],
+      "with": ["ingredient/cognac"],
+      "text": "Take the pot off the heat and pour in the cognac from a ladle. Put the pot back, stand clear and set the cognac alight.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine"],
+      "text": "Pour in the wine and scrape the bottom of the pot as the wine boils down by half.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/broth"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/lobster"],
+      "with": ["preparation/broth", "ingredient/fish-stock", "ingredient/tomato-paste", "ingredient/rice"],
+      "text": "Add the stock, the tomato paste and the rice. Simmer until the rice is very soft.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/onion", "ingredient/carrot"],
+      "with": ["preparation/broth"],
+      "text": "Blend the soup in short bursts, shells and all, until the shells are crushed and the rice has thickened it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/strain",
+      "works_on": ["preparation/broth"],
+      "with": [],
+      "text": "Press it hard through a fine sieve with the back of a ladle. Strain it once more for a smooth soup.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["preparation/broth"],
+      "with": ["ingredient/cream"],
+      "text": "Bring the soup back to a simmer, stir in the cream and let it thicken a little.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/broth"],
+      "with": ["ingredient/salt"],
+      "text": "Taste it and salt it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["preparation/broth", "ingredient/lobster"],
+      "with": [],
+      "text": "Ladle the bisque into warm bowls and set the pieces of lobster meat in the middle.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

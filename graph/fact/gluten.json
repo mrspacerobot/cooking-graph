@@ -1,0 +1,55 @@
+{
+  "id": "fact/gluten",
+  "tier": "sourced",
+  "names": {"en": "Gluten", "fr": "Céréales contenant du gluten"},
+  "aliases": {"en": ["cereals containing gluten", "gluten cereals"]},
+  "means": "A cereal that holds gluten, which is wheat, rye, barley or oats, or anything made from one.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "european-union",
+      "source": "source/eu-regulation-1169-2011-annex-ii",
+      "name": "Cereals containing gluten, namely: wheat (such as spelt and khorasan wheat), rye, barley, oats or their hybridised strains, and products thereof",
+      "standing": "mandatory",
+      "exemptions": "Wheat based glucose syrups including dextrose, wheat based maltodextrins, glucose syrups based on barley, and cereals used to make alcoholic distillates. For the first two the products made from them are exempt as well, as long as the process is not likely to raise the level of allergenicity.",
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-kingdom",
+      "source": "source/uk-fsa-food-allergy-advice",
+      "name": "cereals containing gluten (such as wheat, rye, barley and oats)",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "canada",
+      "source": "source/cfia-allergen-free-gluten-free-statements",
+      "name": "Gluten source",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "The page says gluten is present in wheat (including spelt and kamut), oats, barley, rye and triticale. Health Canada's page speaks of labelling for priority allergens, gluten sources and sulphite.",
+      "tier": "sourced"
+    },
+    {
+      "where": "australia-and-new-zealand",
+      "source": "source/fsanz-allergen-labelling",
+      "name": "wheat, barley, oats, rye",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "Barley, oats and rye are declared if they contain gluten. Each cereal is declared by its own name.",
+      "tier": "sourced"
+    },
+    {
+      "where": "codex",
+      "source": "source/codex-labelling-standard-2010",
+      "name": "Cereals containing gluten; i.e., wheat, rye, barley, oats, spelt or their hybridized strains and products of these",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "From the text as amended up to 2010. The current standard could not be fetched and may differ.",
+      "tier": "drafted"
+    }
+  ]
+}

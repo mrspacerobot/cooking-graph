@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/tomato",
+  "tier": "drafted",
+  "names": {"en": "Tomato", "fr": "Tomate"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/watery-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Sheds water as it heats and breaks down into a sauce. Its acidity brightens a dish and slows the softening of beans and onions.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

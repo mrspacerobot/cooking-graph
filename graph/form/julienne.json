@@ -1,0 +1,11 @@
+{
+  "id": "form/julienne",
+  "tier": "drafted",
+  "names": {"en": "Julienne", "fr": "Julienne"},
+  "aliases": {"en": ["matchsticks", "julienned"]},
+  "looks_like": "Fine, even strips the length of a matchstick, that bend without snapping.",
+  "size": [
+    {"measure": "width", "length": {"from": 1, "to": 2, "unit": "millimetre"}},
+    {"measure": "length", "length": {"from": 4, "to": 5, "unit": "centimetre"}}
+  ]
+}

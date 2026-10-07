@@ -1,0 +1,41 @@
+{
+  "id": "dish/salade-de-chevre-chaud",
+  "tier": "drafted",
+  "names": {"en": "Salade de chèvre chaud", "fr": "Salade de chèvre chaud"},
+  "aliases": {"en": ["warm goat cheese salad"]},
+  "is": "Rounds of goat cheese warmed on toasted bread until they soften and brown, set on leaves dressed with a mustard vinaigrette and scattered with walnuts.",
+  "parts": [
+    {"id": "goat-cheese", "role": "main", "options": ["ingredient/goat-cheese"], "optional": false, "tier": "drafted"},
+    {
+      "id": "toasts",
+      "role": "base",
+      "options": ["ingredient/baguette", "ingredient/bread"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "leaves",
+      "role": "side",
+      "options": ["ingredient/lettuce", "ingredient/frisee"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "vinaigrette",
+      "role": "sauce",
+      "options": ["preparation/vinaigrette"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "walnut", "role": "garnish", "options": ["ingredient/walnut"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/toast", "tier": "drafted"},
+    {"thing": "technique/grill", "tier": "drafted"},
+    {"thing": "technique/emulsify", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gratin-de-cardons",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "gratin",
+  "dish": "Gratin de cardons",
+  "also_called": ["cardoon gratin", "cardons au gratin"],
+  "techniques": ["peel", "boil", "make a roux", "gratinate"],
+  "ingredients": ["cardoon", "milk", "butter", "flour", "gruyère", "lemon"]
+}

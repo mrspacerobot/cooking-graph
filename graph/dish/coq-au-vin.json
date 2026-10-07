@@ -1,0 +1,68 @@
+{
+  "id": "dish/coq-au-vin",
+  "tier": "drafted",
+  "names": {"en": "Coq au vin", "fr": "Coq au vin"},
+  "aliases": {"en": ["chicken in red wine"]},
+  "is": "Chicken pieces browned and then braised in red wine with bacon, mushrooms and small onions, until the meat is tender and the wine has become a dark, glossy sauce.",
+  "parts": [
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/chicken", "ingredient/chicken-thigh"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "red-wine", "role": "liquid", "options": ["ingredient/red-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock", "preparation/brown-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "bacon", "role": "garnish", "options": ["ingredient/bacon"], "optional": false, "tier": "drafted"},
+    {"id": "mushroom", "role": "garnish", "options": ["ingredient/mushroom"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pearl-onion",
+      "role": "garnish",
+      "options": ["ingredient/pearl-onion", "ingredient/shallot"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bouquet-garni",
+      "role": "aromatic",
+      "options": ["preparation/bouquet-garni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/braise", "tier": "drafted"},
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/burgundian", "tier": "drafted"}
+  ]
+}

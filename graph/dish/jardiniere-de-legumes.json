@@ -1,0 +1,25 @@
+{
+  "id": "dish/jardiniere-de-legumes",
+  "tier": "drafted",
+  "names": {"en": "Jardinière de légumes", "fr": "Jardinière de légumes"},
+  "aliases": {"en": ["vegetable jardinière", "jardinière of vegetables"]},
+  "is": "Carrots and turnips cut into batons, green beans cut to the same length and peas, each boiled on its own until just tender, then turned together in butter.",
+  "parts": [
+    {"id": "carrot", "role": "main", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "turnip", "role": "main", "options": ["ingredient/turnip"], "optional": false, "tier": "drafted"},
+    {"id": "green-beans", "role": "main", "options": ["ingredient/green-beans"], "optional": false, "tier": "drafted"},
+    {"id": "peas", "role": "main", "options": ["ingredient/peas"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cut-into-batons", "tier": "drafted"},
+    {"thing": "technique/boil", "tier": "drafted"},
+    {"thing": "technique/refresh", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

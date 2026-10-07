@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/boeuf-a-la-ficelle",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "poach",
+  "dish": "Bœuf à la ficelle",
+  "also_called": ["beef on a string", "beef poached on a string"],
+  "techniques": ["tie", "poach", "skim"],
+  "ingredients": ["beef fillet", "carrot", "leek", "turnip", "beef stock", "Dijon mustard", "cornichons"]
+}

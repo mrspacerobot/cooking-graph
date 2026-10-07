@@ -1,0 +1,72 @@
+{
+  "id": "recipe/green-beans-with-garlic",
+  "tier": "drafted",
+  "names": {"en": "Green beans with garlic"},
+  "aliases": {},
+  "makes": "dish/green-beans-with-garlic",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/green-beans", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "green-beans"},
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/slotted-spoon", "equipment/mixing-bowl",
+    "equipment/saute-pan"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/green-beans"],
+      "with": ["ingredient/salt"],
+      "text": "Top and tail the beans. Boil them in plenty of well-salted water until just tender, with a little bite left.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/refresh",
+      "works_on": ["ingredient/green-beans"],
+      "with": [],
+      "text": "Lift them straight into iced water. When they are cold, drain them and dry them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/green-beans"],
+      "with": ["ingredient/butter", "ingredient/garlic"],
+      "text": "Melt the butter in a wide pan over medium heat until it foams. Add the garlic for a moment, then the beans, and toss until they are hot and glossy.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": [],
+      "with": ["ingredient/salt", "ingredient/black-pepper", "ingredient/parsley"],
+      "text": "Season with the pepper and a little more salt, and toss with the parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

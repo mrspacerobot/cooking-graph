@@ -1,0 +1,51 @@
+{
+  "id": "technique/pan-fry",
+  "tier": "drafted",
+  "names": {"en": "Pan-fry", "fr": "Poêler"},
+  "aliases": {"en": ["fry", "shallow-fry", "fry in a pan"]},
+  "does": "Cooks a flat piece of food in a thin layer of hot fat, turning it once.",
+  "how": [
+    "Heat a film of fat in the pan over medium heat.",
+    "Lay the food in, away from you, and leave it alone.",
+    "Turn it once, when the underside is golden and it lifts without sticking.",
+    "For an egg, keep the heat gentle and spoon hot fat over the white until it is set."
+  ],
+  "cues": [
+    {"sense": "see", "text": "An even, golden underside."},
+    {"sense": "hear", "text": "A steady, gentle sizzle. Spitting means the heat is too high or the food is wet."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Turning the food again and again, so that it never browns.",
+      "fix": "Turn it once. If it sticks, it is not ready to turn."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/offal", "tier": "drafted"},
+    {"thing": "group/breads", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/pork-sausage", "tier": "drafted"},
+    {"thing": "ingredient/chicory", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/non-stick-pan"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/sunflower-oil", "preparation/clarified-butter"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/saute",
+      "differs": "Larger, flat pieces that lie still and are turned once, over gentler heat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

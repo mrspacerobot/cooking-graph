@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/poulet-vallee-d-auge",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Poulet vallée d'Auge",
+  "also_called": ["chicken Vallée d'Auge", "Normandy chicken with cider and cream"],
+  "holds": ["milk", "sulphites"],
+  "does_not_hold": ["gluten", "egg"],
+  "why": "Cream and butter bring milk, and cider commonly carries sulphites. The sauce is reduced, not thickened with flour or egg."
+}

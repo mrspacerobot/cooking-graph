@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/ratatouille",
+  "tier": "drafted",
+  "batch": "knife-cuts-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Ratatouille",
+  "also_called": [],
+  "techniques": ["dice", "saute", "simmer"],
+  "ingredients": ["aubergine", "courgette", "bell pepper", "tomato", "onion", "garlic", "olive oil", "thyme"]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "dish/saumon-a-l-unilaterale",
+  "tier": "drafted",
+  "names": {"en": "Saumon à l'unilatérale", "fr": "Saumon à l'unilatérale"},
+  "aliases": {"en": ["salmon cooked on the skin", "crisp-skinned salmon", "salmon cooked on one side"]},
+  "is": "A fillet of salmon cooked on its skin side only, so that the skin turns crisp while the heat climbs gently through the flesh, which stays soft at the top.",
+  "parts": [
+    {"id": "salmon", "role": "main", "options": ["ingredient/salmon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

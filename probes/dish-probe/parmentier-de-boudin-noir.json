@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/parmentier-de-boudin-noir",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "gratin",
+  "dish": "Parmentier de boudin noir",
+  "also_called": ["black pudding parmentier", "boudin noir parmentier"],
+  "techniques": ["boil", "mash", "saute", "gratinate"],
+  "ingredients": ["black pudding", "potato", "apple", "onion", "butter", "milk"]
+}

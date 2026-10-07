@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/french",
+  "tier": "drafted",
+  "names": {"en": "French", "fr": "Française"},
+  "aliases": {"en": ["French cooking", "French cuisine"]},
+  "within": null
+}

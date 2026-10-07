@@ -1,0 +1,7 @@
+{
+  "id": "equipment/chefs-knife",
+  "tier": "drafted",
+  "names": {"en": "Chef's knife", "fr": "Couteau de chef"},
+  "aliases": {"en": ["cook's knife", "kitchen knife"]},
+  "use": "Cuts, slices and chops almost everything on the board."
+}

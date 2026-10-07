@@ -1,0 +1,39 @@
+{
+  "id": "ingredient/creme-fraiche",
+  "tier": "drafted",
+  "names": {"en": "Crème fraîche", "fr": "Crème fraîche"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/creams", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A thick, lightly sour cream that can be boiled in a sauce without splitting.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is soured cream.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cream",
+      "allows": true,
+      "when": ["technique/reduce"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "A little sour, and thicker from the start. Unlike cream, it can boil with wine or mustard without splitting.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

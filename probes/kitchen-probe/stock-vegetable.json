@@ -1,0 +1,25 @@
+{
+  "id": "kitchen-probe/stock-vegetable",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "vegetable stock",
+  "at_home": [
+    "onion",
+    "carrot",
+    "celery",
+    "leek",
+    "mushrooms",
+    "parsley stems",
+    "thyme",
+    "bay leaf",
+    "water",
+    "salt",
+    "black pepper",
+    "potato",
+    "butter"
+  ],
+  "dishes": ["Vegetable stock", "Potage Parmentier"],
+  "why": "The vegetables, herbs and water make a vegetable stock; potato, butter and stock make a simple puréed soup."
+}

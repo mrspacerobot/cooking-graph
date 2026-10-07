@@ -62,7 +62,7 @@
       "text": "Spread a little of the sauce in a baking dish. Lay the slices of beef on it, overlapping, and cover them with the rest of the sauce.",
       "time": null,
       "temperature": null,
-      "safety_points": [],
+      "safety_points": ["cooling-and-keeping"],
       "makes": []
     },
     {

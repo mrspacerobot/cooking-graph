@@ -6,7 +6,9 @@ It is private. `cooking-graph` is a working name.
 
 ## Status
 
-Night one. Everything in this repository was drafted by a model and reviewed by nobody. Safety facts are unverified. Nothing here may be shown to a cook or exported to an app.
+Night one is done: the first slice, the 12 French skills the Tomi app teaches today. Read `docs/night-one.md` first.
+
+Everything in this repository was drafted by a model and reviewed by nobody. Safety facts are unverified. Nothing here may be shown to a cook or exported to an app.
 
 ## What is where
 

@@ -34,7 +34,7 @@
       "text": "Put the lardons in a cold frying pan over medium heat, let the fat run and brown them. Lift them out.",
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
-      "safety_points": [],
+      "safety_points": ["doneness"],
       "makes": ["preparation/rendered-fat", "preparation/fond"]
     },
     {

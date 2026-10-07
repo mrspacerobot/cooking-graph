@@ -27,7 +27,7 @@
       "text": "Put the lardons in a cold frying pan and set it over medium heat. Let the fat run, then brown them until crisp at the edges. Lift them out and leave the fat in the pan.",
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
-      "safety_points": [],
+      "safety_points": ["doneness"],
       "makes": ["preparation/rendered-fat"]
     },
     {

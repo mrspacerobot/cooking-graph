@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/hake",
+  "tier": "drafted",
+  "names": {"en": "Hake", "fr": "Merlu"},
+  "aliases": {"en": ["European hake", "merluza"]},
+  "is_a": [
+    {"thing": "ingredient/white-fish", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "group/round-fish", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A soft, white, lean fish with large flakes and a delicate taste, which breaks apart if it is handled roughly. It is poached, steamed, baked in a sauce, or floured and fried.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "It is a fish.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/spanish", "tier": "drafted"},
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "technique/roll-out",
+  "tier": "drafted",
+  "names": {"en": "Roll out", "fr": "Abaisser"},
+  "aliases": {"en": ["roll out dough", "roll flat", "rolling out"], "fr": ["étaler la pâte"]},
+  "does": "Flattens a dough with a rolling pin into an even sheet of the thickness the dish asks for, whether thin enough to see through, for a filled pastry, or thick enough to stay soft, for a flat bread.",
+  "how": [
+    "Rest the dough first, or it will spring back. Shape it into a flat round or square before the pin touches it.",
+    "Dust the surface and the pin lightly with flour, so that the dough slides and does not stick.",
+    "Roll from the middle outwards in one steady push, lift and give the dough a quarter turn, and roll again.",
+    "Turn the dough over now and then and dust again only where it sticks.",
+    "Stop when the sheet is even from edge to edge. Let it rest and spring back before it is cut or filled."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sheet is even, with no thick middle or thin rim and no tears."},
+    {"sense": "feel", "text": "The dough slides freely on the surface when it is nudged."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Rolling a tense dough that keeps shrinking back.",
+      "fix": "Cover it and let it rest, then roll again."
+    },
+    {
+      "mistake": "Dusting with too much flour, which dries the dough and leaves white streaks.",
+      "fix": "Use only as much as it takes to stop it sticking, and brush off the extra."
+    },
+    {
+      "mistake": "Rolling over the edges, which leaves them thin and the middle thick.",
+      "fix": "Roll from the middle outwards and stop short of the edge."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/bread-dough", "tier": "drafted"},
+    {"thing": "group/pastry", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/rolling-pin"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/flour"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/knead",
+      "why": "A dough has to be smooth and rested before it rolls out evenly without tearing.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

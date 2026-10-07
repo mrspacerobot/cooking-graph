@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/beef-shank",
+  "tier": "drafted",
+  "names": {"en": "Beef shank", "fr": "Jarret de bœuf"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [
+    {"thing": "ingredient/beef", "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/braising-cuts", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A tough cut from the leg, full of sinew and often sold on the bone with its marrow. It needs a long, gentle, moist cook before it turns soft and sticky, and it gives a rich liquid.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is the flesh of cattle.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

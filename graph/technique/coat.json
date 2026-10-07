@@ -2,7 +2,10 @@
   "id": "technique/coat",
   "tier": "drafted",
   "names": {"en": "Coat", "fr": "Paner"},
-  "aliases": {"en": ["coat in breadcrumbs", "coat with mustard and crumbs", "crumb"], "fr": ["enrober de chapelure"]},
+  "aliases": {
+    "en": ["coat in breadcrumbs", "coat with mustard and crumbs", "crumb", "bread"],
+    "fr": ["enrober de chapelure"]
+  },
   "does": "Covers a piece of meat in a layer of breadcrumbs over a sticky coat of mustard or beaten egg, which turns into a crisp crust when the piece is cooked.",
   "how": [
     "Pat the pieces dry and season them.",

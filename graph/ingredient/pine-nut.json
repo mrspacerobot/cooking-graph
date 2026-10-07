@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/pine-nut",
+  "tier": "drafted",
+  "names": {"en": "Pine nut", "fr": "Pignon de pin"},
+  "aliases": {"en": ["pine kernel", "pignoli", "pinoli"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A small, soft, creamy kernel from the cone of a pine, rich in oil. It burns within moments, so it is toasted in a dry pan or a little fat and watched closely.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/tree-nuts",
+        "basis": "Pine nuts are seeds of pine cones, listed as tree nuts in some places and not in others.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"},
+    {"thing": "cuisine/italian", "tier": "drafted"},
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

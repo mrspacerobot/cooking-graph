@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/coriander-seed",
+  "tier": "drafted",
+  "names": {"en": "Coriander seed", "fr": "Graine de coriandre"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/whole-spices", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Small round seeds with a warm, nutty, citrusy scent that deepens when they are toasted. They go whole into hot fat at the start, or are toasted and ground into a spice mix.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"},
+    {"thing": "cuisine/lebanese", "tier": "drafted"},
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

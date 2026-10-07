@@ -1,0 +1,52 @@
+{
+  "id": "technique/grind",
+  "tier": "drafted",
+  "names": {"en": "Grind", "fr": "Moudre"},
+  "aliases": {"en": ["grind to a powder", "grind to a paste", "grind fine"], "fr": ["broyer"]},
+  "does": "Breaks hard or firm food down to a powder, a coarse meal or a paste, by crushing it in a mortar, milling it in a grinder or running it through a blade, so that it blends into a dish or binds into a dough.",
+  "how": [
+    "Dry whole spices lightly in a warm pan first, so that they grind finer and smell stronger, then let them cool.",
+    "Soak dried pulses and drain them well before grinding them, and cut meat into strips and chill it first.",
+    "Grind in short bursts or with steady circles, a small amount at a time, so that the heat of the blade does not cook the food.",
+    "For a paste, add a very little liquid, a spoonful at a time, to keep the blades turning.",
+    "Stop when it has the texture the dish asks for, and scrape down the sides once."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The food falls into an even powder or paste with no whole pieces left."},
+    {"sense": "smell", "text": "Spices turn sharply fragrant as they break."},
+    {"sense": "feel", "text": "A ground paste holds together when pressed between the fingers."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Grinding a large amount at once, so that some is dust and some is whole.",
+      "fix": "Grind a little at a time."
+    },
+    {
+      "mistake": "Running a machine for long, so that the heat dulls the scent or cooks the food.",
+      "fix": "Work in short bursts and let it rest."
+    },
+    {
+      "mistake": "Adding too much liquid to a paste, which turns it to soup.",
+      "fix": "Add a spoonful at a time and stop as soon as it turns."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/whole-spices", "tier": "drafted"},
+    {"thing": "group/pulses", "tier": "drafted"},
+    {"thing": "ingredient/almond", "tier": "drafted"},
+    {"thing": "ingredient/lamb", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/mortar-and-pestle", "equipment/blender"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/toast",
+      "why": "Spices and nuts are toasted first so that they grind to a finer, more fragrant powder.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

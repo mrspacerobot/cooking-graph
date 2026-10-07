@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/allspice",
+  "tier": "drafted",
+  "names": {"en": "Allspice", "fr": "Piment de la Jamaïque"},
+  "aliases": {"en": ["Jamaica pepper"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/whole-spices", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Small dried berries that taste of cloves, cinnamon and nutmeg at once. Whole berries are simmered in stews and rice, and ground allspice is used in small amounts, since it is strong.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

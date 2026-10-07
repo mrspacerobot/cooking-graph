@@ -1,0 +1,7 @@
+{
+  "id": "equipment/corer",
+  "tier": "drafted",
+  "names": {"en": "Corer", "fr": "Vide-pomme"},
+  "aliases": {"en": ["apple corer", "vegetable corer"]},
+  "use": "A narrow tube or scoop with a handle, pushed into a fruit or vegetable to lift out its core or hollow it."
+}

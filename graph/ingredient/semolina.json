@@ -1,0 +1,32 @@
+{
+  "id": "ingredient/semolina",
+  "tier": "drafted",
+  "names": {"en": "Semolina", "fr": "Semoule"},
+  "aliases": {"en": ["durum semolina"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Coarse flour milled from durum wheat, pale yellow and gritty. It swells in hot liquid or syrup, gives bread and pastry a sandy crunch, and is rolled into couscous.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/wheat", "basis": "It is milled from durum wheat.", "certain": true},
+      {"fact": "fact/gluten", "basis": "It is milled from durum wheat.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"},
+    {"thing": "cuisine/greek", "tier": "drafted"},
+    {"thing": "cuisine/lebanese", "tier": "drafted"},
+    {"thing": "cuisine/turkish", "tier": "drafted"},
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

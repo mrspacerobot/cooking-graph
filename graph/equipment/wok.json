@@ -1,0 +1,7 @@
+{
+  "id": "equipment/wok",
+  "tier": "drafted",
+  "names": {"en": "Wok", "fr": "Wok"},
+  "aliases": {},
+  "use": "A wide, deep, round-bottomed pan of thin metal that heats fast and lets food be tossed high with little spilling."
+}

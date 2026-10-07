@@ -1,0 +1,51 @@
+{
+  "id": "technique/knead",
+  "tier": "drafted",
+  "names": {"en": "Knead", "fr": "Pétrir"},
+  "aliases": {"en": ["knead the dough", "knead by hand", "work the dough"], "fr": ["pétrir la pâte"]},
+  "does": "Works a dough, or a loose mixture such as minced meat or soaked bulgur, with the heels of the hands, pressing and turning it until it comes together and holds its shape. In a dough this builds the stretch that gives bread its chew. In a mixture it binds the pieces so that they do not fall apart in the pan.",
+  "how": [
+    "Bring the mixture together in a wide bowl or on a clean surface, with just enough liquid to make it hold.",
+    "Press a dough away from you with the heel of the hand, fold it back over itself, give it a quarter turn and press again.",
+    "Keep a steady rhythm. Dust a dough that sticks with a little flour, and wet one that cracks with a little water.",
+    "Work minced meat or bulgur with wet hands, squeezing and pressing, until it turns sticky and holds when pressed into a ball.",
+    "Stop when a dough is smooth and springs back, or when a mixture sticks to itself and not to the bowl, then let it rest."
+  ],
+  "cues": [
+    {
+      "sense": "feel",
+      "text": "A dough turns from rough and tacky to smooth and elastic, and springs back slowly when it is pressed."
+    },
+    {
+      "sense": "feel",
+      "text": "A kneaded mince or bulgur mixture holds together when pressed into a ball and does not crumble."
+    },
+    {"sense": "see", "text": "The surface of a kneaded dough is smooth and satiny, with no dry patches."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Working in too much flour, so that the dough turns dry and heavy.",
+      "fix": "Keep the dough a little tacky, and dust the surface only as needed."
+    },
+    {
+      "mistake": "Stopping early, so that the dough tears when it is stretched and bakes dense.",
+      "fix": "Keep going until it is smooth and springs back when pressed."
+    },
+    {
+      "mistake": "Working minced meat for long with warm hands, so that the fat smears.",
+      "fix": "Keep the meat cold, and stop as soon as the mixture turns sticky."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/bread-dough", "tier": "drafted"},
+    {"thing": "group/minced-meat", "tier": "drafted"},
+    {"thing": "ingredient/fine-bulgur", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl", "equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

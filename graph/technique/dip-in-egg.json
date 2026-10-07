@@ -1,0 +1,40 @@
+{
+  "id": "technique/dip-in-egg",
+  "tier": "drafted",
+  "names": {"en": "Dip in egg", "fr": "Passer à l'œuf"},
+  "aliases": {"en": ["dip in beaten egg", "coat in egg"], "fr": ["tremper dans l'œuf battu"]},
+  "does": "Draws food through beaten egg, so that it takes a thin, even coat that browns in the pan, or holds a crumb or flour coat in place.",
+  "how": [
+    "Beat the egg in a shallow dish with a little salt until the white and yolk are one.",
+    "Have the food ready, dry on the surface or just floured, and slightly firm.",
+    "Draw each piece through the egg and turn it, then lift it and let the extra drip off.",
+    "Go straight to the pan, or on to the next coat, before the egg runs off."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The egg covers the piece in a thin, glossy film with no thick drips."},
+    {"sense": "feel", "text": "A piece that is dipped from flour comes up with a smooth, even coat."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving a bread slice in the egg until it falls apart.",
+      "fix": "Draw it through briefly and lift it at once."
+    },
+    {
+      "mistake": "Letting a thick coat of egg drip into the pan, where it scrambles into strands.",
+      "fix": "Let the extra run off before the piece goes in."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/breads", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/lean-fish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "coating", "options": ["ingredient/egg"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

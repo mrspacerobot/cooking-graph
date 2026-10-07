@@ -1,0 +1,56 @@
+{
+  "id": "technique/thicken",
+  "tier": "drafted",
+  "names": {"en": "Thicken", "fr": "Lier"},
+  "aliases": {"en": ["thicken a sauce", "thicken with starch", "thicken with cornstarch"], "fr": ["lier une sauce"]},
+  "does": "Gives a thin hot liquid more body by stirring in a starch, mixed smooth in a little cold liquid first, and bringing it to a simmer so that the starch swells and the liquid turns glossy and coats a spoon.",
+  "how": [
+    "Mix the starch with a little cold liquid until it is smooth, with no lumps.",
+    "Bring the liquid to a gentle simmer and stir it round.",
+    "Pour the mixture in a thin stream while stirring, and keep stirring.",
+    "Let it bubble gently for a short while so that the raw taste of the starch cooks out and the body is full.",
+    "Stop when it coats the back of a spoon. It will thicken a little more as it cools, so take it off the heat while it still pours."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The liquid turns glossy and clear, or silky if it holds milk, and coats the back of a spoon."
+    },
+    {"sense": "feel", "text": "The spoon drags a little more as it moves through."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the dry starch straight to hot liquid, which lumps.",
+      "fix": "Mix it smooth in cold liquid first."
+    },
+    {
+      "mistake": "Boiling hard for long, which breaks the starch down so that the liquid thins again.",
+      "fix": "Let it bubble gently only until it has thickened."
+    },
+    {
+      "mistake": "Thickening too much at the start, since it keeps thickening as it cools.",
+      "fix": "Add a little at a time and stop while it still pours."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/cooking-liquors", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "ingredient/milk", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk", "equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/milk"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "Starch thickens at a simmer, so a cook has to be able to hold a liquid there.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

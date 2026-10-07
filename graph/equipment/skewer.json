@@ -1,0 +1,7 @@
+{
+  "id": "equipment/skewer",
+  "tier": "drafted",
+  "names": {"en": "Skewer", "fr": "Brochette"},
+  "aliases": {"en": ["kebab skewer"]},
+  "use": "A thin stick of metal or wood on which pieces of food or a shaped mince are threaded to be grilled or roasted."
+}

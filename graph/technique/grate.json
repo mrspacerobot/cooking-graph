@@ -22,7 +22,8 @@
   "works_on": [
     {"thing": "group/grating-cheeses", "tier": "drafted"},
     {"thing": "group/root-vegetables", "tier": "drafted"},
-    {"thing": "ingredient/nutmeg", "tier": "drafted"}
+    {"thing": "ingredient/nutmeg", "tier": "drafted"},
+    {"thing": "ingredient/ginger", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/grated", "tier": "drafted"}

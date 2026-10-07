@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/chickpea",
+  "tier": "drafted",
+  "names": {"en": "Chickpea", "fr": "Pois chiche"},
+  "aliases": {"en": ["garbanzo", "garbanzo bean", "kabuli chana"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pulses", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A round, beige dried seed that stays firm and nutty. Soaked and simmered it turns creamy, and soaked and ground raw it makes the base of falafel. The tinned kind has been cooked already.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"},
+    {"thing": "cuisine/moroccan", "tier": "drafted"},
+    {"thing": "cuisine/indian", "tier": "drafted"},
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

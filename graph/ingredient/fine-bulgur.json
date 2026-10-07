@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/fine-bulgur",
+  "tier": "drafted",
+  "names": {"en": "Fine bulgur", "fr": "Boulgour fin"},
+  "aliases": {},
+  "is_a": [
+    {"thing": "ingredient/bulgur", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/starches", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Bulgur ground small. It needs no cooking: warm water or tomato juice soaks it soft, and it swells in the dressing of a salad or in a spiced paste.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/wheat", "basis": "It is cracked wheat.", "certain": true},
+      {"fact": "fact/gluten", "basis": "It is cracked wheat.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/turkish", "tier": "drafted"},
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

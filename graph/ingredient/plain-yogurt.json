@@ -2,7 +2,7 @@
   "id": "ingredient/plain-yogurt",
   "tier": "drafted",
   "names": {"en": "Plain yogurt", "fr": "Yaourt nature"},
-  "aliases": {"en": ["plain yoghurt"]},
+  "aliases": {"en": ["plain yoghurt", "yogurt", "yoghurt"]},
   "is_a": [],
   "part_of": [],
   "groups": [],

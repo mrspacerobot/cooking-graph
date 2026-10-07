@@ -1,0 +1,51 @@
+{
+  "id": "technique/cook-rice",
+  "tier": "drafted",
+  "names": {"en": "Cook rice", "fr": "Cuire le riz"},
+  "aliases": {"en": ["boil rice", "steam rice", "cook rice by absorption"], "fr": ["cuire du riz"]},
+  "does": "Cooks washed rice in a measured amount of water in a covered pot until all the water is taken up, then leaves it covered off the heat so that the grains finish plump, tender and separate, or lightly sticky for a short-grain kind.",
+  "how": [
+    "Wash the rice in several changes of cold water, swirling it, until the water is much less cloudy. Drain it well.",
+    "Put it in a pot with a tight lid and add the measured water. A short-grain rice takes a little less water than a long-grain one.",
+    "Bring it to the boil uncovered or just covered, then turn the heat to its lowest and cover tightly.",
+    "Leave the lid on and do not stir, so that the steam stays in.",
+    "Take it off the heat when the water has gone, and let it stand covered. Then fluff it with a fork, or fold it with a paddle."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "The bubbling goes quiet and the pot starts to hiss softly once the water is used up."},
+    {"sense": "see", "text": "Small steam holes show on the surface and no water is left at the edge."},
+    {"sense": "feel", "text": "The grains are plump and tender, and a short-grain rice clings in a mass."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Lifting the lid again and again, so that the steam escapes and the top stays hard.",
+      "fix": "Leave the lid on from the moment the heat goes down until the rice has rested."
+    },
+    {
+      "mistake": "Stirring, which releases starch and turns the rice gluey.",
+      "fix": "Do not stir. Fluff it with a fork only at the end."
+    },
+    {
+      "mistake": "Using too much water, so that the rice turns soft and wet.",
+      "fix": "Measure the water against the rice, and use a little less for a short-grain kind."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/rice-cooker"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/rinse",
+      "why": "Washing takes off the loose starch that would make the rice gluey.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

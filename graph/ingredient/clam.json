@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/clam",
+  "tier": "drafted",
+  "names": {"en": "Clam", "fr": "Palourde"},
+  "aliases": {"en": ["vongole", "almeja"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A small shellfish that opens in a covered pan and gives up a salty liquor. It turns tough if it stays in the heat after it has opened, and any that stays shut is left out.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/molluscs", "basis": "It is a mollusc.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"},
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "ingredient/peas",
   "tier": "drafted",
   "names": {"en": "Peas", "fr": "Petits pois"},
-  "aliases": {"en": ["green peas", "garden peas"]},
+  "aliases": {"en": ["green peas", "garden peas", "pea", "green pea"]},
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -1,0 +1,32 @@
+{
+  "id": "ingredient/mint",
+  "tier": "drafted",
+  "names": {"en": "Mint", "fr": "Menthe"},
+  "aliases": {"en": ["fresh mint"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A cool, sweet, fragrant leaf that bruises easily and darkens if it is cut early or cooked for long. It is torn or chopped at the last moment, or stirred into yogurt, salads and stuffings.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"},
+    {"thing": "cuisine/turkish", "tier": "drafted"},
+    {"thing": "cuisine/greek", "tier": "drafted"},
+    {"thing": "cuisine/moroccan", "tier": "drafted"},
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

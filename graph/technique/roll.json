@@ -1,0 +1,53 @@
+{
+  "id": "technique/roll",
+  "tier": "drafted",
+  "names": {"en": "Roll", "fr": "Rouler"},
+  "aliases": {"en": ["roll up", "roll up around a filling"], "fr": ["rouler autour d'une farce"]},
+  "does": "Rolls a flat wrapper, such as a leaf, a sheet of dough or a thin pancake, up around a line of filling into a neat cylinder, with the ends folded in so that nothing can fall out.",
+  "how": [
+    "Soften the wrapper if it is stiff, by blanching a leaf or covering a sheet of dough with a damp cloth.",
+    "Lay it flat with the side that should show on the outside facing down, and set a line of filling near the edge closest to you.",
+    "Fold that edge over the filling and fold the sides in towards the middle.",
+    "Roll away from you, firm but not tight, and set the roll down with its seam underneath."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The roll is even in width, with the ends tucked in and the seam underneath."},
+    {"sense": "feel", "text": "A finished roll is firm and gives slightly when pressed."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Overfilling, so that the roll splits when the filling swells.",
+      "fix": "Use a thin line of filling and leave room at the ends."
+    },
+    {
+      "mistake": "Rolling loosely, so that the roll unwinds as it cooks.",
+      "fix": "Roll firmly, keep the seam underneath and pack the rolls snugly in the pot."
+    },
+    {
+      "mistake": "Rolling a brittle leaf or sheet that cracks.",
+      "fix": "Soften it first with a quick blanch or a damp cloth."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/vine-leaf", "tier": "drafted"},
+    {"thing": "group/leafy-heads", "tier": "drafted"},
+    {"thing": "group/pastry", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [],
+  "comes_after": [
+    {
+      "thing": "technique/wrap",
+      "why": "Rolling is wrapping with a flat wrapper, so a cook who can close a wrapper snugly rolls neater.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/wrap",
+      "differs": "The wrapper is a flat sheet that is rolled up round the filling into a cylinder with its ends folded in, and not folded into a parcel.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

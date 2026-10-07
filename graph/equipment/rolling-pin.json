@@ -1,0 +1,7 @@
+{
+  "id": "equipment/rolling-pin",
+  "tier": "drafted",
+  "names": {"en": "Rolling pin", "fr": "Rouleau à pâtisserie"},
+  "aliases": {"en": ["dough roller"]},
+  "use": "A smooth cylinder of wood or other hard material that is rolled over dough to flatten it to an even sheet."
+}

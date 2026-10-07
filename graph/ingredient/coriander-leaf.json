@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/coriander-leaf",
+  "tier": "drafted",
+  "names": {"en": "Coriander leaf", "fr": "Coriandre"},
+  "aliases": {"en": ["coriander", "cilantro", "fresh coriander"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Soft, bright, citrusy leaves on tender stems, whose taste fades fast in heat. The stems and roots go in early for body, and the leaves are chopped and stirred in at the end.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"},
+    {"thing": "cuisine/lebanese", "tier": "drafted"},
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

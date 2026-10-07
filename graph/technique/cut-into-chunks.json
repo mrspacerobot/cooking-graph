@@ -1,0 +1,45 @@
+{
+  "id": "technique/cut-into-chunks",
+  "tier": "drafted",
+  "names": {"en": "Cut into chunks"},
+  "aliases": {"en": ["cut into bite-sized pieces", "cut into large pieces"]},
+  "does": "Cuts a firm food into large, bite-sized pieces of about the same size, bigger and less exact than dice, so that they stay whole through a long simmer.",
+  "how": [
+    "Peel the food if it needs peeling, and cut it in half or in long strips to get a flat base.",
+    "Cut across into thick pieces that fit one mouthful.",
+    "Keep the pieces about equal in size, so that they cook in the same time.",
+    "For a hard squash, rest the cut side down on the board so that it cannot slip."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The pieces are blocky and about the same size."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting some pieces much smaller, so that they dissolve while the others are hard.",
+      "fix": "Cut by eye to a single size."
+    },
+    {
+      "mistake": "Cutting a hard squash held in the air, which slips.",
+      "fix": "Cut it in halves on a steady board first."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "ingredient/kabocha", "tier": "drafted"},
+    {"thing": "ingredient/pumpkin", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/dice",
+      "differs": "The pieces are large and not cut to an exact cube, because they are meant to be eaten as chunks after a long simmer.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

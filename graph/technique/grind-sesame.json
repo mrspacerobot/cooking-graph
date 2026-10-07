@@ -1,0 +1,42 @@
+{
+  "id": "technique/grind-sesame",
+  "tier": "drafted",
+  "names": {"en": "Grind sesame"},
+  "aliases": {"en": ["grind sesame seeds", "grind toasted sesame", "suribachi grind"]},
+  "does": "Toasts sesame seeds until they are fragrant, then grinds them in a ridged bowl to a rough, oily paste with some seeds left half whole, ready to coat vegetables or to thicken a dressing.",
+  "how": [
+    "Toast the seeds in a dry pan, shaking them, until they smell nutty and begin to pop.",
+    "Tip them into the ridged bowl while they are still warm.",
+    "Grind them with a circular motion, pressing against the ridges, until they are half crushed and oily.",
+    "Stir in the other seasonings and use the paste right away, as its scent fades."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "A deep, nutty, warm scent rises from the bowl."},
+    {"sense": "feel", "text": "The mixture turns into a damp, oily paste with some seeds left whole."}
+  ],
+  "mistakes": [
+    {"mistake": "Grinding raw seeds, which gives a pale, flat taste.", "fix": "Toast them first."},
+    {
+      "mistake": "Grinding too long, which turns the paste greasy and pasty.",
+      "fix": "Stop while the seeds are still half whole."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/sesame-seed", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/suribachi", "equipment/mortar-and-pestle"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/grind",
+      "differs": "The seeds are ground only until half crushed, in a ridged bowl, so that the paste stays rough and oily instead of becoming fine powder.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

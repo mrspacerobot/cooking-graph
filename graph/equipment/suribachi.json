@@ -1,0 +1,7 @@
+{
+  "id": "equipment/suribachi",
+  "tier": "drafted",
+  "names": {"en": "Suribachi"},
+  "aliases": {"en": ["Japanese grinding bowl", "ridged mortar"]},
+  "use": "A ceramic bowl with a ridged inside, used with a wooden pestle to grind seeds to a rough, oily paste."
+}

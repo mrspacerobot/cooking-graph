@@ -1,0 +1,35 @@
+{
+  "id": "technique/salt-hands",
+  "tier": "drafted",
+  "names": {"en": "Salt hands"},
+  "aliases": {"en": ["wet and salt your hands", "salt the hands"]},
+  "does": "Wets the hands and rubs salt over the palms before shaping warm rice, so that the rice does not stick and is lightly seasoned from the outside.",
+  "how": [
+    "Keep a bowl of cold water and a small dish of salt beside the board.",
+    "Dip your fingers in the water and shake off the excess.",
+    "Rub a little salt over the palms and fingers.",
+    "Wet and salt your hands again for each portion."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The palms are damp and a little gritty with salt, and the rice no longer clings."},
+    {"sense": "taste", "text": "The outside of the shaped rice is lightly salty."}
+  ],
+  "mistakes": [
+    {"mistake": "Using too much salt, so that the rice is too salty.", "fix": "Rub on only a light dusting."},
+    {"mistake": "Using hot water, which burns the hands and makes the rice stick.", "fix": "Use cold water."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/salt", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

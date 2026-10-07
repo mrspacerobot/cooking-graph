@@ -1,0 +1,46 @@
+{
+  "id": "technique/shape-by-hand",
+  "tier": "drafted",
+  "names": {"en": "Shape by hand"},
+  "aliases": {"en": ["shape rice by hand", "shape onigiri", "form rice balls"]},
+  "does": "Presses a portion of warm cooked rice between wet, salted hands into a firm triangle, ball or barrel that holds together but is not packed hard.",
+  "how": [
+    "Wet your hands in cold water, rub a little salt over the palms and shake off the excess.",
+    "Scoop up a portion of warm rice and press it lightly into a ball.",
+    "Turn it in the hollow of one hand while pressing the other hand into a corner or an edge, to form the shape. Add a filling in the middle first if it is wanted.",
+    "Squeeze only enough to hold it together, so that air stays between the grains."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The rice holds together when lifted, and still feels light."},
+    {"sense": "see", "text": "The shape has clean edges and a surface with no cracks."}
+  ],
+  "mistakes": [
+    {"mistake": "Packing the rice hard, which turns it dense and heavy.", "fix": "Press just until it holds."},
+    {
+      "mistake": "Shaping with dry hands, so that the rice sticks to them.",
+      "fix": "Wet and salt your hands each time."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/salt-hands", "why": "Wet, salted hands come first.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/shape",
+      "differs": "Warm cooked rice is shaped with wet, salted hands and kept light, so that the grains stay whole, not packed like a meat mixture.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

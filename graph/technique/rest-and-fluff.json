@@ -1,0 +1,48 @@
+{
+  "id": "technique/rest-and-fluff",
+  "tier": "drafted",
+  "names": {"en": "Rest and fluff"},
+  "aliases": {"en": ["rest the rice", "fluff the rice", "rest and fluff the rice"]},
+  "does": "Leaves cooked rice covered off the heat for a while, so that the steam spreads evenly through the grains, then cuts through it with a paddle to let the steam out and loosen the grains.",
+  "how": [
+    "As soon as the rice is cooked, take it off the heat and keep the lid on.",
+    "Leave it to rest, undisturbed, so that the grains finish steaming.",
+    "Wet a rice paddle, and cut through the rice in a slicing motion, turning it over from the bottom.",
+    "Cover it again until it is served."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The surface of the rice is dry and shiny, with no wet patches."},
+    {"sense": "feel", "text": "The grains are plump, separate and slightly sticky."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Lifting the lid during the rest, so that the steam escapes.",
+      "fix": "Keep it shut until the rest is over."
+    },
+    {
+      "mistake": "Stirring the rice, which crushes the grains and makes it pasty.",
+      "fix": "Cut and fold with a wet paddle."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/rice-paddle", "equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/cook-rice", "why": "Rice rests only after it has been cooked.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/rest",
+      "differs": "The rice rests in its own steam under a lid and is then cut through with a wet paddle to loosen it.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

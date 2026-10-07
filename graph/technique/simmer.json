@@ -2,7 +2,7 @@
   "id": "technique/simmer",
   "tier": "drafted",
   "names": {"en": "Simmer", "fr": "Mijoter"},
-  "aliases": {"en": ["simmer gently", "cook at a simmer", "gentle simmer"]},
+  "aliases": {"en": ["simmer gently", "cook at a simmer", "gentle simmer", "simmer slowly"]},
   "does": "Cooks food in liquid that is kept just below a boil, so that it turns tender without being knocked about.",
   "how": [
     "Bring the liquid up to a boil, then turn the heat down at once.",

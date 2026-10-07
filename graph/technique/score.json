@@ -2,7 +2,7 @@
   "id": "technique/score",
   "tier": "drafted",
   "names": {"en": "Score", "fr": "Quadriller"},
-  "aliases": {"en": ["score the skin", "score the fat", "crosshatch"]},
+  "aliases": {"en": ["score the skin", "score the fat", "crosshatch", "score fat", "score skin"]},
   "does": "Cuts shallow lines through skin or fat, so that the fat can melt out and the skin crisps without curling.",
   "how": [
     "Chill the piece so that the fat is firm.",

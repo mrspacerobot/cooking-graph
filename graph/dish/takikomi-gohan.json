@@ -1,0 +1,34 @@
+{
+  "id": "dish/takikomi-gohan",
+  "tier": "drafted",
+  "names": {"en": "Takikomi gohan"},
+  "aliases": {"en": ["Japanese mixed rice", "seasoned mixed rice"]},
+  "is": "Rice cooked together with dashi, soy sauce, mirin and sake, and with small pieces of burdock, mushroom and fried tofu, so that the seasoning cooks into every grain. It is rested, fluffed and served with a green herb on top.",
+  "parts": [
+    {
+      "id": "rice",
+      "role": "main",
+      "options": ["ingredient/short-grain-rice", "ingredient/rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "dashi", "role": "liquid", "options": ["preparation/dashi"], "optional": false, "tier": "drafted"},
+    {"id": "burdock", "role": "filling", "options": ["ingredient/burdock"], "optional": false, "tier": "drafted"},
+    {"id": "shiitake", "role": "filling", "options": ["ingredient/shiitake"], "optional": false, "tier": "drafted"},
+    {"id": "tofu", "role": "filling", "options": ["ingredient/fried-tofu"], "optional": false, "tier": "drafted"},
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "mirin", "role": "sweetener", "options": ["ingredient/mirin"], "optional": false, "tier": "drafted"},
+    {"id": "sake", "role": "seasoning", "options": ["ingredient/sake"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "herb", "role": "garnish", "options": ["ingredient/mitsuba"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-mixed-rice", "tier": "drafted"},
+    {"thing": "technique/wash-rice", "tier": "drafted"},
+    {"thing": "technique/soak-rice", "tier": "drafted"},
+    {"thing": "technique/rest-and-fluff", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

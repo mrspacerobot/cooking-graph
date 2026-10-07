@@ -1,0 +1,39 @@
+{
+  "id": "ingredient/mirin",
+  "tier": "drafted",
+  "names": {"en": "Mirin"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/seasoning-liquids", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A sweet, golden rice seasoning. It gives a gloss and a mild sweetness to a simmering liquid or a glaze, and is cooked briefly first so that its alcohol goes off.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "True mirin is a sweet rice wine.", "certain": true},
+      {
+        "fact": "fact/wheat",
+        "basis": "Recorded strictly: some bottled mirin-style seasonings are made with other grains.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Recorded strictly: some bottled mirin-style seasonings are made with other grains.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg", "fact/fish", "fact/lupin",
+      "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/shirataki",
+  "tier": "drafted",
+  "names": {"en": "Shirataki"},
+  "aliases": {"en": ["konjac noodles"]},
+  "is_a": [
+    {"thing": "ingredient/konnyaku", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/processed-simmering-foods", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Thin, clear, springy strands of konnyaku, sold wet in a bag. They are scalded to take off the smell of the water they sit in, and soak up the flavour of a simmering pot.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

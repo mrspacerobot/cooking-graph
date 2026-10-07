@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/mitsuba",
+  "tier": "drafted",
+  "names": {"en": "Mitsuba"},
+  "aliases": {"en": ["Japanese honeywort", "Japanese parsley"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A tender green herb with a clean, grassy, celery-like scent. It is added at the very end, as its scent fades in the heat.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "technique/oil-the-pan",
+  "tier": "drafted",
+  "names": {"en": "Oil the pan"},
+  "aliases": {"en": ["wipe the pan with oil", "grease the pan lightly"]},
+  "does": "Wipes a thin film of oil over the pan with a folded paper towel, to keep thin layers of batter or egg from sticking, with no pool of oil left to fry them.",
+  "how": [
+    "Warm the pan over a medium heat.",
+    "Fold a paper towel, dip the corner in oil and wipe it over the whole surface of the pan, including the sides.",
+    "Wipe the pan again between layers, so that every layer meets a fresh, thin film.",
+    "Keep the towel to hand on a small dish."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The pan shines lightly, with no pool of oil."},
+    {"sense": "hear", "text": "Egg poured in gives a soft hiss."}
+  ],
+  "mistakes": [
+    {"mistake": "Pouring oil straight in, so that the layers fry and turn pitted.", "fix": "Wipe on a thin film only."},
+    {"mistake": "Skipping the oil between layers, so that later layers stick.", "fix": "Oil again each time."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/oil", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/tamagoyaki-pan", "equipment/non-stick-pan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

@@ -2,7 +2,10 @@
   "id": "technique/squeeze",
   "tier": "drafted",
   "names": {"en": "Squeeze", "fr": "Essorer"},
-  "aliases": {"en": ["squeeze dry", "squeeze out", "wring out", "squeeze the greens"], "fr": ["presser les feuilles"]},
+  "aliases": {
+    "en": ["squeeze dry", "squeeze out", "wring out", "squeeze the greens", "squeeze out water"],
+    "fr": ["presser les feuilles"]
+  },
   "does": "Presses the water out of cooked leaves by the handful, or in a sieve, so that they can be seasoned and mixed without turning the dish watery.",
   "how": [
     "Let the cooked leaves cool enough to handle.",

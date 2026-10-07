@@ -2,7 +2,7 @@
   "id": "technique/stir-fry",
   "tier": "drafted",
   "names": {"en": "Stir-fry", "fr": "Sauter au wok"},
-  "aliases": {"en": ["stir-fry in a wok", "stir fry in a hot pan"], "fr": ["sauter à feu vif"]},
+  "aliases": {"en": ["stir-fry in a wok", "stir fry in a hot pan", "fry rice"], "fr": ["sauter à feu vif"]},
   "does": "Cooks small, even pieces very fast in a little hot oil in a wide pan, keeping them moving all the time with a spoon or a spatula, so that they take colour at the edges and stay crisp or just tender inside.",
   "how": [
     "Cut everything small and even, and have it all at hand before the pan goes on, because the cooking is quick.",

@@ -3,7 +3,7 @@
   "tier": "drafted",
   "names": {"en": "Batter", "fr": "Frire en pâte"},
   "aliases": {
-    "en": ["coat in batter", "dip in batter", "batter and fry", "make a batter"],
+    "en": ["coat in batter", "dip in batter", "batter and fry", "make a batter", "mix batter"],
     "fr": ["tremper dans la pâte à frire"]
   },
   "does": "Dips food in a thin, wet mixture of flour and cold liquid, so that it fries with a light, crisp, airy coat that is lighter than a crumb coat.",

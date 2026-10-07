@@ -1,0 +1,21 @@
+{
+  "id": "preparation/sweet-vinegar-sauce",
+  "tier": "drafted",
+  "names": {"en": "Sweet vinegar sauce"},
+  "aliases": {"en": ["nanban sauce", "nanban-zu"]},
+  "is": "A sharp, sweet, salty sauce of rice vinegar, sugar and soy sauce, warmed until the sugar has dissolved. Hot fried food is steeped in it.",
+  "parts": [
+    {"id": "vinegar", "role": "acid", "options": ["ingredient/rice-vinegar"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "dashi", "role": "liquid", "options": ["preparation/dashi"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-dipping-sauce", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

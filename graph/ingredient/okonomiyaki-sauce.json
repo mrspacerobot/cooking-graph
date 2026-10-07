@@ -1,0 +1,57 @@
+{
+  "id": "ingredient/okonomiyaki-sauce",
+  "tier": "drafted",
+  "names": {"en": "Okonomiyaki sauce"},
+  "aliases": {"en": ["okonomi sauce"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A thick, sweet-savoury brown sauce made from fruit, vegetables and soy sauce. It is brushed over a griddled pancake, where it browns a little and turns sticky.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/soy",
+        "basis": "Recorded strictly: bottled brown sauces of this kind usually hold soy sauce.",
+        "certain": false
+      },
+      {
+        "fact": "fact/wheat",
+        "basis": "Recorded strictly: they usually hold soy sauce, which is brewed with wheat.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Recorded strictly: they usually hold soy sauce, which is brewed with wheat.",
+        "certain": false
+      },
+      {
+        "fact": "fact/fish",
+        "basis": "Recorded strictly: some are made with anchovy, as Worcestershire sauce is.",
+        "certain": false
+      },
+      {"fact": "fact/celery", "basis": "Recorded strictly: some are spiced with celery.", "certain": false},
+      {"fact": "fact/mustard", "basis": "Recorded strictly: some are spiced with mustard.", "certain": false},
+      {
+        "fact": "fact/sulphites",
+        "basis": "Recorded strictly: they often hold vinegar or dried fruit kept with sulphites.",
+        "certain": false
+      },
+      {
+        "fact": "fact/alcohol",
+        "basis": "Recorded strictly: they hold vinegar, which keeps a trace of alcohol.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/lupin", "fact/meat", "fact/milk",
+      "fact/molluscs", "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

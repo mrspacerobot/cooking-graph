@@ -1,0 +1,52 @@
+{
+  "id": "technique/shape-in-a-mat",
+  "tier": "drafted",
+  "names": {"en": "Shape in a mat"},
+  "aliases": {"en": ["shape in mat", "shape with a bamboo mat", "press in a rolling mat"]},
+  "does": "Rolls a warm, soft food up in a bamboo mat and presses it, so that it sets into a firm, even block with square edges.",
+  "how": [
+    "Lay the mat on the board with the bamboo sticks running side to side.",
+    "Place the warm food at the near edge and roll the mat over it tightly.",
+    "Press and squeeze along the whole length so that the sides are straight.",
+    "Leave it rolled in the mat for a short while to set, then unroll and cut."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The block has an even shape with square edges."},
+    {"sense": "feel", "text": "The block is firm and holds together when it is cut."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Rolling when the food is cold and stiff, so that it cracks.",
+      "fix": "Shape it while it is still warm."
+    },
+    {
+      "mistake": "Pressing unevenly, so that one end is thinner.",
+      "fix": "Squeeze the whole length of the mat with both hands."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/bamboo-rolling-mat"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/roll-in-layers",
+      "why": "The mat shapes an egg block that has already been cooked in layers.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/shape",
+      "differs": "The food is rolled and pressed in a bamboo mat, which gives straight, square edges that hand shaping cannot.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

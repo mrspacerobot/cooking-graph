@@ -1,0 +1,45 @@
+{
+  "id": "technique/shave",
+  "tier": "drafted",
+  "names": {"en": "Shave"},
+  "aliases": {"en": ["sasagaki", "shave into slivers"]},
+  "does": "Whittles a long root into thin, curled slivers, turning it against the knife as a pencil is sharpened. The slivers cook fast and keep a crunch.",
+  "how": [
+    "Scrub the root and scrape off the skin, but not too hard, as most of the taste lies just under it.",
+    "Hold the root at a slant and turn it against the knife, taking thin slivers as it turns.",
+    "Let the slivers fall straight into a bowl of cold water.",
+    "Change the water when it turns brown."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The slivers are thin, slightly curled and about the same length."},
+    {"sense": "see", "text": "The water in the bowl turns brown, and clears when changed."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the slivers in the air, where they brown at once.",
+      "fix": "Let them fall into water as they are cut."
+    },
+    {"mistake": "Cutting thick slivers, which stay hard.", "fix": "Shave them thin."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/burdock", "tier": "drafted"},
+    {"thing": "ingredient/carrot", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife", "equipment/paring-knife"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/slice",
+      "differs": "The root is turned against the blade and whittled to slivers, instead of being cut straight across.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "ingredient/soba-noodle",
+  "tier": "drafted",
+  "names": {"en": "Soba noodle"},
+  "aliases": {"en": ["soba", "buckwheat noodle"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/noodles", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A thin brown noodle made with buckwheat flour. It cooks fast, breaks easily, and is rinsed hard in cold water to take off the surface starch.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/buckwheat", "basis": "It is made with buckwheat flour.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Recorded strictly: most soba is blended with wheat flour.", "certain": false},
+      {"fact": "fact/gluten", "basis": "Recorded strictly: most soba is blended with wheat flour.", "certain": false},
+      {"fact": "fact/egg", "basis": "Recorded strictly: some soba is bound with egg.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/celery", "fact/crustaceans", "fact/fish", "fact/lupin", "fact/meat",
+      "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

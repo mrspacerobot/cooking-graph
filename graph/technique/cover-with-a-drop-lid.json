@@ -1,0 +1,52 @@
+{
+  "id": "technique/cover-with-a-drop-lid",
+  "tier": "drafted",
+  "names": {"en": "Cover with a drop lid"},
+  "aliases": {"en": ["otoshibuta", "cover with otoshibuta", "use a drop lid", "cover with drop lid"]},
+  "does": "Lays a lid that is smaller than the pot straight on the food, so that the simmering liquid is pushed up and over every piece. The pieces cook evenly in a small amount of liquid and stay still.",
+  "how": [
+    "Arrange the food in a single layer in a wide pot and add just enough liquid to come part of the way up.",
+    "Bring the liquid to a simmer.",
+    "Lay the drop lid on the food, inside the pot. Wet it first, so that nothing sticks to it.",
+    "Keep the liquid at a gentle simmer, so that it bubbles up around the edge of the lid.",
+    "Take the lid off for the last stretch if the liquid should reduce to a glaze."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Bubbles rise around the edge of the lid and the liquid reaches the top of the pieces."},
+    {"sense": "see", "text": "The pieces keep their shape, and the liquid slowly turns glossy."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using a plain lid that sits on the rim of the pot, so that the top pieces stay dry and uncooked.",
+      "fix": "Use a drop lid, or a round of baking paper cut to fit with a small hole in the middle."
+    },
+    {
+      "mistake": "Letting the liquid boil hard under the lid, which knocks the pieces about.",
+      "fix": "Turn the heat down until it only bubbles gently."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "ingredient/kabocha", "tier": "drafted"},
+    {"thing": "ingredient/pumpkin", "tier": "drafted"},
+    {"thing": "ingredient/yellowtail", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/drop-lid"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "liquid", "options": ["preparation/dashi", "ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/simmer",
+      "differs": "The lid lies on the food itself, and not on the rim of the pot, so the liquid is held against every piece and little liquid is needed.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

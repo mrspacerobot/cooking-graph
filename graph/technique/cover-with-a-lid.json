@@ -1,0 +1,43 @@
+{
+  "id": "technique/cover-with-a-lid",
+  "tier": "drafted",
+  "names": {"en": "Cover with a lid"},
+  "aliases": {"en": ["cover with lid", "put a lid on"]},
+  "does": "Puts a lid over a pot or a dish, so that steam and heat stay in and the food cooks gently in its own moisture.",
+  "how": [
+    "Choose a lid that fits the pot or the dish well.",
+    "Put it on once the food is heated and the liquid is in.",
+    "Leave it on while the food cooks. Every time it is lifted, heat and steam escape.",
+    "Lift the lid away from you, so that the steam does not scald."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A soft, steady hiss comes from under the lid."},
+    {"sense": "see", "text": "Drops of steam gather on the inside of the lid and run back down."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Lifting the lid again and again to look, which lets the heat out.",
+      "fix": "Leave it shut and trust the sound."
+    },
+    {
+      "mistake": "Using a lid that does not fit, so that the steam escapes.",
+      "fix": "Use a lid that sits snugly, or cover the dish tightly with foil."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/starches", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop", "equipment/oven"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

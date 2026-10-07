@@ -1,0 +1,46 @@
+{
+  "id": "technique/soak-in-sauce",
+  "tier": "drafted",
+  "names": {"en": "Soak in sauce"},
+  "aliases": {"en": ["steep in sauce", "marinate after frying", "nanbanzuke"]},
+  "does": "Steeps just-fried food in a sharp, sweet sauce while it is still hot, so that it drinks up the sauce and turns juicy and flavoured through.",
+  "how": [
+    "Make the sauce ahead and have it in a shallow dish.",
+    "Fry the food and lift it out of the oil, shaking off the excess.",
+    "Put the hot food straight into the sauce and turn it once.",
+    "Leave it to steep for a while, turning it now and then, then lift out and serve."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "The sharp, sweet scent of the sauce rises as the hot food goes in."},
+    {"sense": "feel", "text": "The crust has softened slightly and the food is juicy."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Putting the food into the sauce after it has cooled, so that it will not take it up.",
+      "fix": "Put it in hot, as it comes from the oil."
+    },
+    {
+      "mistake": "Leaving it in the sauce for too long, so that it turns mushy.",
+      "fix": "Lift it out after a short while."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "ingredient/chicken-thigh", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish", "equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/soak",
+      "differs": "Hot, fried food is steeped in a seasoned sauce, not left in water, and the soak lasts only as long as the food needs to drink the sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

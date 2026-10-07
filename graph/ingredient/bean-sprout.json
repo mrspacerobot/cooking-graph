@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/bean-sprout",
+  "tier": "drafted",
+  "names": {"en": "Bean sprout"},
+  "aliases": {"en": ["mung bean sprouts", "moyashi"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Pale, crunchy sprouts that are mostly water. They go into a hot pan at the very end and need only a moment, or they turn limp and weep.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/soy",
+        "basis": "Recorded strictly: some sprouts sold under this name are grown from soybeans.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts",
+      "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

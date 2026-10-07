@@ -5,7 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
-  "groups": [],
+  "groups": [
+    {"thing": "group/seasoning-liquids", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Adds salt and savoury depth. It scorches fast in a dry, hot pan.",
   "safety": {

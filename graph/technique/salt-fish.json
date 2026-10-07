@@ -1,0 +1,36 @@
+{
+  "id": "technique/salt-fish",
+  "tier": "drafted",
+  "names": {"en": "Salt fish"},
+  "aliases": {"en": ["salt the fish", "shio furi", "lightly salt fish"]},
+  "does": "Sprinkles fresh fish with a little salt and leaves it for a short while before grilling or frying, to season it, firm the flesh and draw out the surface water and smell. It is not the long curing of salt cod.",
+  "how": [
+    "Pat the fish dry.",
+    "Sprinkle salt evenly over both sides, and a little more on the tail and fins if the fish is whole.",
+    "Leave it at room temperature for a short while, until beads of water show on the skin.",
+    "Wipe the water off with paper and cook the fish at once."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Beads of water form on the skin, and the flesh looks firmer."},
+    {"sense": "smell", "text": "The fishy smell is less sharp."}
+  ],
+  "mistakes": [
+    {"mistake": "Using too much salt, which makes the fish too salty.", "fix": "Salt lightly and evenly."},
+    {
+      "mistake": "Leaving it too long, so that it turns dry and hard.",
+      "fix": "Wipe it dry as soon as water shows and cook it."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/round-fish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "technique/garnish",
+  "tier": "drafted",
+  "names": {"en": "Garnish"},
+  "aliases": {"en": ["garnish with herbs", "finish with a garnish"]},
+  "does": "Adds a small, fresh or crisp finishing touch just before serving, such as a herb, a seed, a flake or a shaving, for scent, colour or crunch.",
+  "how": [
+    "Keep the garnish ready at the side, cut or measured.",
+    "Add it as the last step, when the food is hot or just plated.",
+    "Scatter or place a little where it will be seen, and do not cover the food.",
+    "Add the delicate ones at the table."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The garnish sits on top of the food, in a light scatter."},
+    {"sense": "smell", "text": "A fresh scent rises as the garnish meets the heat."}
+  ],
+  "mistakes": [
+    {"mistake": "Adding the garnish too early, so that it wilts or sinks.", "fix": "Add it at the last moment."},
+    {"mistake": "Using too much, so that it hides the food.", "fix": "Use only a small amount."}
+  ],
+  "works_on": [
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/starches", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

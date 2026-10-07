@@ -1,0 +1,45 @@
+{
+  "id": "technique/make-dipping-sauce",
+  "tier": "drafted",
+  "names": {"en": "Make dipping sauce"},
+  "aliases": {"en": ["make sweet vinegar sauce", "make nanban sauce", "make noodle dipping sauce"]},
+  "does": "Warms a few thin seasoning liquids together, such as stock, soy sauce, mirin or vinegar, with sugar if it is wanted, until the sugar has dissolved and the alcohol has cooked off. It then cools into one smooth, salty-sweet sauce.",
+  "how": [
+    "Put the mirin or the sake in a small pan and bring it up to a boil for a moment, so that its alcohol goes off.",
+    "Add the other liquids and any sugar, and stir over a low heat only until the sugar has dissolved.",
+    "Do not let it boil hard, or it reduces and turns too salty.",
+    "Take it off the heat and let it cool. Taste it, and add stock if it is too strong."
+  ],
+  "cues": [
+    {"sense": "taste", "text": "The sauce is salty and sweet together, with no sharp edge of raw alcohol or vinegar."},
+    {"sense": "see", "text": "The sauce is clear and no grains of sugar show on the bottom of the pan."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling the sauce hard, which concentrates the salt.",
+      "fix": "Warm it only until the sugar has gone."
+    },
+    {
+      "mistake": "Using it hot on food that should stay crisp.",
+      "fix": "For cold noodles, cool it first. For fried food that should drink it in, pour it on while the food is hot."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/seasoning-liquids", "tier": "drafted"},
+    {"thing": "preparation/dashi", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/noodle-dipping-sauce", "tier": "drafted"},
+    {"thing": "preparation/sweet-vinegar-sauce", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/sugar"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

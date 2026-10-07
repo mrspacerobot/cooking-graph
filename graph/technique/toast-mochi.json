@@ -1,0 +1,43 @@
+{
+  "id": "technique/toast-mochi",
+  "tier": "drafted",
+  "names": {"en": "Toast mochi"},
+  "aliases": {"en": ["grill mochi", "toast rice cake"]},
+  "does": "Browns pieces of hard rice cake under a grill, in a dry pan or in an oven until they puff, blister and turn soft and stretchy inside, with a lightly crisp skin.",
+  "how": [
+    "Cut the mochi into pieces and set them apart on a tray or in a dry pan.",
+    "Cook over a gentle heat and watch them, as they puff quickly.",
+    "Turn them once they swell and brown in places.",
+    "Lift them off as soon as they are puffed and soft, and eat or add them to a hot dish at once."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The pieces puff and show golden patches."},
+    {"sense": "feel", "text": "A piece gives way softly when pressed."}
+  ],
+  "mistakes": [
+    {"mistake": "Setting the pieces close together, so that they fuse.", "fix": "Leave a gap between them."},
+    {
+      "mistake": "Using strong heat, which scorches the outside before the inside softens.",
+      "fix": "Use a moderate heat and watch."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/mochi", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "heat", "options": ["equipment/grill", "equipment/oven", "equipment/stovetop"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-sheet", "equipment/frying-pan"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/toast",
+      "differs": "The food is a rice cake that swells and turns stretchy inside as it browns, and it is toasted gently so that the inside softens before the outside burns.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

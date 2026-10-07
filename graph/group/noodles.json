@@ -1,0 +1,9 @@
+{
+  "id": "group/noodles",
+  "tier": "drafted",
+  "names": {"en": "Noodles"},
+  "aliases": {},
+  "shares": "Strands of wheat or buckwheat dough that are boiled in plenty of water. Their surface starch turns them gummy and clumped unless they are rinsed or sauced straight away.",
+  "within": {"thing": "group/starches", "tier": "drafted"},
+  "stands_alone": null
+}

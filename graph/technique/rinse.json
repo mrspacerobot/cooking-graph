@@ -2,7 +2,7 @@
   "id": "technique/rinse",
   "tier": "drafted",
   "names": {"en": "Rinse", "fr": "Rincer"},
-  "aliases": {"en": ["wash", "rinse under cold water", "wash and drain"], "fr": ["laver"]},
+  "aliases": {"en": ["wash", "rinse under cold water", "wash and drain", "rinse in cold water"], "fr": ["laver"]},
   "does": "Washes food in cold water, to carry off grit, loose starch, or the salt and brine it was kept in.",
   "how": [
     "Put the food in a colander, or in a large bowl of cold water.",
@@ -31,7 +31,8 @@
     {"thing": "group/salad-leaves", "tier": "drafted"},
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/sauerkraut", "tier": "drafted"},
-    {"thing": "ingredient/leek", "tier": "drafted"}
+    {"thing": "ingredient/leek", "tier": "drafted"},
+    {"thing": "group/noodles", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

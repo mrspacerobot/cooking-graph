@@ -1,0 +1,7 @@
+{
+  "id": "equipment/rice-paddle",
+  "tier": "drafted",
+  "names": {"en": "Rice paddle"},
+  "aliases": {"en": ["shamoji"]},
+  "use": "A flat, wide paddle with a smooth face, used to cut through cooked rice and turn it over without crushing the grains."
+}

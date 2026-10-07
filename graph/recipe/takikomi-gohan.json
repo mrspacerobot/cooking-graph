@@ -1,0 +1,152 @@
+{
+  "id": "recipe/takikomi-gohan",
+  "tier": "drafted",
+  "names": {"en": "Takikomi gohan"},
+  "aliases": {},
+  "makes": "dish/takikomi-gohan",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/short-grain-rice", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/kombu", "amount": {"value": 8, "unit": "gram"}, "forms": [], "part": "dashi"},
+    {"thing": "ingredient/bonito-flakes", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "dashi"},
+    {"thing": "ingredient/water", "amount": {"value": 400, "unit": "millilitre"}, "forms": [], "part": "dashi"},
+    {"thing": "ingredient/burdock", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "burdock"},
+    {"thing": "ingredient/shiitake", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "shiitake"},
+    {"thing": "ingredient/fried-tofu", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "tofu"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/mirin", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "mirin"},
+    {"thing": "ingredient/sake", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "sake"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/mitsuba", "amount": {"value": 1, "unit": "sprig"}, "forms": [], "part": "herb"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/rice-cooker", "equipment/rice-paddle",
+    "equipment/fine-sieve", "equipment/mixing-bowl", "equipment/colander", "equipment/chefs-knife",
+    "equipment/paring-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/wash-rice",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": ["ingredient/water"],
+      "text": "Wash the rice in cold water, pouring off the first cloudy water at once, and rub it lightly until the water runs nearly clear. Drain it in a sieve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/soak-rice",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": ["ingredient/water"],
+      "text": "Soak the washed rice in fresh cold water until the grains turn chalky white, then drain it well.",
+      "time": {"from": 30, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-dashi",
+      "works_on": ["ingredient/kombu", "ingredient/bonito-flakes"],
+      "with": ["ingredient/water"],
+      "text": "Warm the kelp slowly in the cold water and lift it out just before the water boils. Turn off the heat, scatter in the bonito flakes and let them sink by themselves.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/dashi"]
+    },
+    {
+      "technique": "technique/strain",
+      "works_on": ["preparation/dashi"],
+      "with": [],
+      "text": "Pour the dashi through a fine sieve and let it cool until it is no longer hot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shave",
+      "works_on": ["ingredient/burdock"],
+      "with": ["ingredient/water"],
+      "text": "Scrub the burdock and turn it against the knife in long, thin slivers, letting them fall into a bowl of cold water.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/soak-in-water",
+      "works_on": ["ingredient/burdock"],
+      "with": ["ingredient/water"],
+      "text": "Leave the slivers in the water for a short while, changing it once when it turns brown, then drain.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pour-boiling-water-over",
+      "works_on": ["ingredient/fried-tofu"],
+      "with": ["ingredient/water"],
+      "text": "Put the fried tofu in a colander and pour boiling water over it to wash off the surface oil. Press it gently with a cloth.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-small-pieces",
+      "works_on": ["ingredient/shiitake", "ingredient/fried-tofu"],
+      "with": [],
+      "text": "Trim off the shiitake stems and cut the caps and the fried tofu into small pieces, about the same size as the burdock slivers.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-mixed-rice",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": [
+        "preparation/dashi", "ingredient/soy-sauce", "ingredient/mirin", "ingredient/sake", "ingredient/burdock",
+        "ingredient/shiitake", "ingredient/fried-tofu"
+      ],
+      "text": "Put the drained rice in the pot or the rice cooker and level it. Pour in the dashi, the soy sauce, the mirin and the sake, and stir once. Scatter the burdock, the mushroom and the tofu evenly on top without stirring them in, shut the lid and cook the rice as usual.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/rest-and-fluff",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": [],
+      "text": "Leave the pot covered off the heat so that the steam spreads through the grains. Then cut through the rice with a wet paddle and fold the pieces through it.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": ["ingredient/salt"],
+      "text": "Taste a spoonful of the rice and fold in a little salt if it needs it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": ["ingredient/mitsuba"],
+      "text": "Spoon the rice into bowls and lay a few leaves of the green herb on top.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

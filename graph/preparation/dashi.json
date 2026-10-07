@@ -1,0 +1,22 @@
+{
+  "id": "preparation/dashi",
+  "tier": "drafted",
+  "names": {"en": "Dashi"},
+  "aliases": {"en": ["Japanese stock", "kombu and bonito stock"]},
+  "is": "A clear, light Japanese stock made by steeping dried kelp and dried bonito in hot water, never by boiling it long. It carries a savoury taste and is the base of soups, simmered dishes, custards and sauces.",
+  "parts": [
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "kombu", "role": "base", "options": ["ingredient/kombu"], "optional": false, "tier": "drafted"},
+    {"id": "bonito", "role": "aromatic", "options": ["ingredient/bonito-flakes"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-dashi", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

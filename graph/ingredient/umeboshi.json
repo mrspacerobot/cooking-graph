@@ -1,0 +1,35 @@
+{
+  "id": "ingredient/umeboshi",
+  "tier": "drafted",
+  "names": {"en": "Umeboshi"},
+  "aliases": {"en": ["pickled plum", "salted plum"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pickles", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A pickled plum, wrinkled, very salty and very sour. A little goes a long way, as a filling for a rice ball or pounded into a paste.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/sulphites",
+        "basis": "Recorded strictly: pickled foods are often kept with sulphites.",
+        "certain": false
+      },
+      {"fact": "fact/fish", "basis": "Recorded strictly: some are seasoned with dried bonito.", "certain": false},
+      {"fact": "fact/animal-product", "basis": "Recorded strictly: some are sweetened with honey.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg", "fact/gluten", "fact/lupin",
+      "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

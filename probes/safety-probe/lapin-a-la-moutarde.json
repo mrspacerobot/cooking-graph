@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/lapin-a-la-moutarde",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Lapin à la moutarde",
+  "also_called": ["rabbit with mustard"],
+  "holds": ["milk", "mustard", "sulphites"],
+  "does_not_hold": ["egg", "fish"],
+  "why": "The sauce is Dijon mustard and cream, finished in a white wine base that carries sulphites."
+}

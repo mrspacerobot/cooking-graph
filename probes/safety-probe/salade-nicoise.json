@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/salade-nicoise",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Salade niçoise",
+  "also_called": ["niçoise salad"],
+  "holds": ["egg", "fish", "sulphites"],
+  "does_not_hold": ["gluten", "milk"],
+  "why": "Tuna and anchovies are both fish, and the eggs are hard-boiled. The red wine vinegar in the dressing carries sulphites."
+}

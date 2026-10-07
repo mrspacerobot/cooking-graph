@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/tartiflette",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Tartiflette",
+  "also_called": [],
+  "holds": ["milk", "sulphites"],
+  "does_not_hold": ["gluten", "egg"],
+  "why": "Reblochon and crème fraîche both bring milk, and the white wine carries sulphites. There is no flour or egg in the classic."
+}

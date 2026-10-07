@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/saint-jacques-au-beurre-blanc",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Saint-Jacques au beurre blanc",
+  "also_called": ["scallops with beurre blanc"],
+  "holds": ["molluscs", "milk", "sulphites"],
+  "does_not_hold": ["crustaceans", "fish"],
+  "why": "Scallops are molluscs. The sauce is butter whisked into a reduction of white wine and vinegar, which carries sulphites."
+}

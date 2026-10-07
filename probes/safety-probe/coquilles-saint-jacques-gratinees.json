@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/coquilles-saint-jacques-gratinees",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Coquilles Saint-Jacques gratinées",
+  "also_called": ["coquilles Saint-Jacques à la parisienne", "scallops gratin"],
+  "holds": ["gluten", "wheat", "molluscs", "milk", "sulphites"],
+  "does_not_hold": ["fish"],
+  "why": "Scallops in a white wine and cream sauce thickened with a roux, topped with breadcrumbs. That brings wheat, gluten, milk and, from the wine, sulphites."
+}

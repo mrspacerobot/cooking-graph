@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/celeri-remoulade",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Céleri rémoulade",
+  "also_called": ["celeriac remoulade"],
+  "holds": ["egg", "celery", "mustard", "sulphites"],
+  "does_not_hold": ["gluten", "milk"],
+  "why": "Celeriac is celery root, so it counts as celery. The remoulade is mayonnaise (egg) with mustard and vinegar, which often carry sulphites."
+}

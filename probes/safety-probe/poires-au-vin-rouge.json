@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/poires-au-vin-rouge",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Poires au vin rouge",
+  "also_called": ["pears poached in red wine", "poires au vin"],
+  "holds": ["sulphites"],
+  "does_not_hold": ["egg", "milk"],
+  "why": "It is fruit, sugar and spice, but red wine carries sulphites."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/sole-meuniere",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Sole meunière",
+  "also_called": [],
+  "holds": ["gluten", "wheat", "fish", "milk"],
+  "does_not_hold": ["egg"],
+  "why": "Meunière means the fish is dredged in flour and cooked in butter. The brown butter sauce is poured over at the end."
+}

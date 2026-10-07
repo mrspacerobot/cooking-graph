@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/salade-lyonnaise",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Salade lyonnaise",
+  "also_called": ["Lyonnaise salad"],
+  "holds": ["gluten", "wheat", "egg", "mustard", "sulphites"],
+  "does_not_hold": ["fish"],
+  "why": "A poached egg tops it, croutons add wheat and gluten, and the warm dressing is Dijon mustard and red wine vinegar. Vinegar and mustard often carry sulphites."
+}

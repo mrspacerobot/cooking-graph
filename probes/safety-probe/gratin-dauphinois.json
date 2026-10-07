@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/gratin-dauphinois",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Gratin dauphinois",
+  "also_called": ["potato gratin", "pommes dauphinoises"],
+  "holds": ["milk"],
+  "does_not_hold": ["gluten", "egg"],
+  "why": "Cream, milk and butter. The classic has no flour, and no egg or cheese, though some home versions add them."
+}

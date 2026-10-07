@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/billi-by",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Billi By",
+  "also_called": ["Billy By", "mussel soup"],
+  "holds": ["molluscs", "milk", "sulphites"],
+  "does_not_hold": ["crustaceans", "fish"],
+  "why": "Mussels are molluscs, and the soup is finished with cream. The white wine they cook in carries sulphites."
+}

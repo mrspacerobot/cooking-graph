@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/grand-aioli",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Aïoli garni",
+  "also_called": ["le grand aïoli", "grand aioli"],
+  "holds": ["egg", "fish"],
+  "does_not_hold": ["milk"],
+  "why": "The platter has salt cod and hard-boiled eggs, and the aïoli is made with egg yolk."
+}

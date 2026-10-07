@@ -42,6 +42,15 @@
       "ratio": null,
       "caveat": "It tastes sharper and lacks the citrus fragrance. Adjust the sharpness at the finish.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/red-wine-vinegar",
+      "allows": true,
+      "when": ["preparation/vinaigrette"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "White wine vinegar gives a lighter flavour and colour. Start with the same volume, then taste the dressing.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

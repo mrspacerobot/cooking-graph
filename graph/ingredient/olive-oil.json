@@ -37,6 +37,15 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "Its fruity flavour changes the finish. Keep it below the point where it smokes.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sunflower-oil",
+      "allows": true,
+      "when": ["preparation/vinaigrette"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "Olive oil gives the dressing a stronger, fruitier taste than a neutral oil. Taste and adjust the seasoning.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

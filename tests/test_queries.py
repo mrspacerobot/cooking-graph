@@ -193,3 +193,28 @@ class QueryTest(unittest.TestCase):
         for line in mounted:
             self.assertNotIn("ingredient/olive-oil", [one["thing"] for one in line["options"]])
             self.assertIn("ingredient/olive-oil", [one["thing"] for one in line["excluded"]])
+
+    def test_vinaigrette_stand_ins_explain_context_and_amount(self):
+        path = os.path.join(REPOSITORY, "stand-ins")
+        run = subprocess.run([path, "recipe/vinaigrette"], capture_output=True, text=True, check=True)
+        lines = {line["part"]: line for line in json.loads(run.stdout)["lines"]}
+        expected = {"acid": "ingredient/white-wine-vinegar", "fat": "ingredient/olive-oil"}
+        for part, replacement in expected.items():
+            with self.subTest(part=part):
+                option = next(one for one in lines[part]["options"] if one["thing"] == replacement)
+                self.assertEqual("stand-in", option["basis"])
+                self.assertEqual(["preparation/vinaigrette"], option["when"])
+                self.assertEqual({"stand_in": 1, "original": 1, "by": "volume"}, option["ratio"])
+                self.assertTrue(option["caveat"])
+                self.assertEqual("drafted", option["tier"])
+
+    def test_vinaigrette_kitchen_exposes_contextual_choices(self):
+        path = os.path.join(REPOSITORY, "kitchen")
+        home = ["ingredient/dijon-mustard", "ingredient/white-wine-vinegar", "ingredient/salt",
+                "ingredient/black-pepper", "ingredient/olive-oil"]
+        run = subprocess.run([path, "technique/emulsify", *home], capture_output=True, text=True, check=True)
+        recipe = next(row for row in json.loads(run.stdout)["recipes"] if row["recipe"] == "recipe/vinaigrette")
+        parts = {part["part"]: part for part in recipe["parts"]}
+        self.assertEqual(0, recipe["missing_count"])
+        self.assertEqual("stand-in", parts["acid"]["lines"][0]["status"])
+        self.assertEqual("stand-in", parts["fat"]["lines"][0]["status"])

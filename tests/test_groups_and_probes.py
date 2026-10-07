@@ -14,6 +14,11 @@ PROGRAM = "graph/program/small-program.json"
 SAFETY = "probes/safety-probe/onion-soup.json"
 
 
+def hidden(path):
+    """Where the checker reports which set a probe is in: the folder of its kind, never the probe."""
+    return "/".join(path.split("/")[:2])
+
+
 class KitchenTest(unittest.TestCase):
     def setUp(self):
         self.kitchen = SmallKitchen()
@@ -67,14 +72,14 @@ class HeldBack(KitchenTest):
         path = "probes/dish-probe/buttered-onions.json"
         self.kitchen.change(path, lambda probe: probe.update(set="held-back"))
         found = self.found()
-        self.assertIn((path, "level-dish-held-back"), found)
-        self.assertIn((path, "held-back-rule"), found)
+        self.assertIn((hidden(path), "level-dish-held-back"), found)
+        self.assertIn((hidden(path), "held-back-rule"), found)
 
     def test_a_probe_for_a_preparation_that_is_written_is_never_held_back(self):
         path = self.kitchen.held_back_path()
         self.assertTrue(path.startswith("probes/dish-probe/"))
         self.kitchen.change(path, lambda probe: probe.update(dish="Roux"))
-        self.assertIn((path, "held-back-rule"), self.found())
+        self.assertIn((hidden(path), "held-back-rule"), self.found())
 
     def test_one_batch_asks_about_a_dish_once(self):
         path = "probes/dish-probe/creamed-onions.json"
@@ -103,7 +108,7 @@ class SafetyProbes(KitchenTest):
     def test_a_safety_probe_set_by_hand(self):
         flip = {"growing": "held-back", "held-back": "growing"}
         self.kitchen.change(SAFETY, lambda probe: probe.update(set=flip[probe["set"]]))
-        self.assertIn((SAFETY, "held-back-rule"), self.found())
+        self.assertIn((hidden(SAFETY), "held-back-rule"), self.found())
 
     def test_a_held_back_safety_probe_may_ask_about_a_dish_that_is_written(self):
         held_back = [path for path, content in self.kitchen.files.items() if path.startswith("probes/safety-probe/") and content["set"] == "held-back"]

@@ -3,7 +3,7 @@
 import unittest
 
 from tests.small_kitchen import SmallKitchen
-from tools import check, names, probes
+from tools import check, names, probe_rules, probes
 
 ANSWERED = "probes/dish-probe/buttered-onions.json"
 OTHER = "probes/dish-probe/creamed-onions.json"
@@ -217,6 +217,26 @@ class Reporting(ProbeRunnerTest):
         self.assertNotIn("flambe", report)
         self.assertNotIn(self.kitchen.files[path]["dish"], report)
         self.assertIn("0 of 1", report)
+
+
+
+class ResetTheSets(unittest.TestCase):
+    def setUp(self):
+        self.kitchen = SmallKitchen()
+        self.addCleanup(self.kitchen.close)
+
+    def test_a_probe_in_the_wrong_set_is_put_right_and_only_counted(self):
+        path = self.kitchen.held_back_path()
+        self.kitchen.change(path, lambda probe: probe.update(set="growing"))
+        things, issues = check.read_repository(self.kitchen.root)
+        self.assertTrue(issues)
+        self.assertEqual(1, probe_rules.reset_sets(self.kitchen.root, things))
+        self.assertEqual([], check.check_repository(self.kitchen.root))
+
+    def test_nothing_changes_when_every_set_is_right(self):
+        things, issues = check.read_repository(self.kitchen.root)
+        self.assertEqual([], issues)
+        self.assertEqual(0, probe_rules.reset_sets(self.kitchen.root, things))
 
 
 if __name__ == "__main__":

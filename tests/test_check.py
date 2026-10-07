@@ -244,6 +244,22 @@ class Names(CheckerTest):
         self.assertEqual({(MINCE, "same-name-twice"), (SWEAT, "same-name-twice")}, found)
 
 
+    def test_an_ingredient_and_a_preparation_with_one_name(self):
+        roux = "graph/preparation/roux.json"
+        self.break_file(roux, lambda thing: thing.update(aliases={"en": ["flour"]}))
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertEqual({(roux, "same-name-across-kinds"), ("graph/ingredient/flour.json", "same-name-across-kinds")}, found)
+
+    def test_a_pair_a_cook_either_buys_or_makes_may_share_a_name(self):
+        roux = "graph/preparation/roux.json"
+        self.break_file(roux, lambda thing: thing.update(aliases={"en": ["flour"]}))
+        self.kitchen.write_text("schema/buy-or-make.json", '[["ingredient/flour", "preparation/roux"]]\n')
+        self.assertEqual([], self.issues())
+
+    def test_a_dish_and_its_recipe_may_share_a_name(self):
+        self.assertEqual([], self.issues())
+
+
 class Sentences(CheckerTest):
     def test_a_number_in_a_sentence(self):
         self.break_file(SWEAT, lambda thing: thing.update(does="Softens onions in 10 turns."))

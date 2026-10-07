@@ -534,6 +534,13 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 - **Not yet:** a step probe is still not a kind of the model. Cuisine names in their own script need languages beyond `en` and `fr`, and that list is closed.
 - **No promotion:** nothing is above drafted. A cuisine node carries no knowledge and no reviewer is named.
 
+### 30. Guards against one thing written twice (new cuisines)
+
+- **Example:** the rule that refuses one name on two things looked at one kind at a time. An ingredient and a preparation could share a name, aubergine and eggplant could be two files, and two agents working apart could each add the same ingredient and both pass.
+- **Now:** an ingredient and a preparation may not share a name, except the four pairs in `schema/buy-or-make.json`, which are the things a cook either buys or makes, such as stock and broth. `./twins` lists pairs that are probably one thing: the same words in the singular and in another order, or two names that a list of synonyms in `schema/synonyms.json` joins. It never blocks, because a pair may be two different things. `./merge` copies new files of another checkout in, and refuses a file whose id exists or whose name or alias another thing of its family holds. It never overwrites a file.
+- **Not yet:** nothing finds two things that are one thing and share no word and no listed synonym.
+- **No promotion:** these files are tools and lists. They carry no tier.
+
 ## Decisions where the starting model was silent
 
 These are not changes. The starting model names kinds and statements, not files, so the first files had to settle them.

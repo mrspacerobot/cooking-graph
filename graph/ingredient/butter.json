@@ -10,10 +10,13 @@
   "behaviour": "Melts, foams as its water boils off, then its milk solids brown and soon burn. Whisked cold into a hot liquid, it thickens it and makes it glossy.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/dairy"],
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is made from cream.", "certain": true}
+    ],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts",
-      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
     ],
     "note": null
   },

@@ -3,5 +3,7 @@
   "tier": "drafted",
   "names": {"en": "Slaughter product"},
   "aliases": {},
-  "means": "Something taken from a killed animal that is not its flesh, or anything made with it, such as gelatine, animal rennet and the finings used to clear wine."
+  "means": "Something taken from a killed animal that is not its flesh, or anything made with it, such as gelatine, animal rennet and the finings used to clear wine.",
+  "concern": "diet",
+  "regulated": []
 }

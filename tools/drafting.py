@@ -79,16 +79,19 @@ def every_fact(root):
 def safety(root, contains, note=None):
     """An unverified safety record that answers every fact: these it holds, all others it is free of.
 
-    The drafter names what the ingredient holds. The rest is written out as
-    free_of at that moment, so a fact added to the graph later is never read
-    as answered by a record that was written before it.
+    `contains` is a list of (fact, basis, certain): the fact, on what basis in
+    a few plain words, and whether that is certain or recorded strictly for
+    want of knowing. The rest is written out as free_of at that moment, so a
+    fact added to the graph later is never read as answered by an older record.
     """
     facts = every_fact(root)
-    unknown = [fact for fact in contains if fact not in facts]
+    rows = [{"fact": full(fact), "basis": basis, "certain": certain} for fact, basis, certain in contains]
+    unknown = [row["fact"] for row in rows if row["fact"] not in facts]
     if unknown:
         raise ValueError("no such fact: " + ", ".join(unknown))
-    free_of = [fact for fact in facts if fact not in contains]
-    return {"state": UNVERIFIED, "contains": list(contains), "free_of": free_of, "note": note}
+    holds = [row["fact"] for row in rows]
+    free_of = [fact for fact in facts if fact not in holds]
+    return {"state": UNVERIFIED, "contains": rows, "free_of": free_of, "note": note}
 
 
 def put(root, data):
@@ -139,7 +142,7 @@ def ingredient(root, slug, english, behaviour, fr=None, also=None, contains=(), 
     food["groups"] = full_links(groups)
     food["forms"] = full_links(forms)
     food["behaviour"] = behaviour
-    food["safety"] = safety(root, all_full(contains), note=note)
+    food["safety"] = safety(root, contains, note=note)
     food["stands_in_for"] = list(stands)
     food["in_pantry_of"] = full_links(pantry)
     return food

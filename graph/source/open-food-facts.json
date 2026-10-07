@@ -1,0 +1,11 @@
+{
+  "id": "source/open-food-facts",
+  "tier": "drafted",
+  "title": "Terms of use",
+  "publisher": "Open Food Facts",
+  "url": "https://world.openfoodfacts.org/terms-of-use",
+  "read_on": "2026-10-07",
+  "reuse": "The terms say the database is under the Open Database License, its individual contents under the Database Contents License, and product images under Creative Commons Attribution ShareAlike. They say derivative works must be shared under the same conditions.",
+  "commercial_use": "share-alike",
+  "taken": "Nothing was imported and nothing may be: the licence is share-alike, and the data is about products."
+}

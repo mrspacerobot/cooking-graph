@@ -36,12 +36,15 @@ Every thing and every statement carries one tier:
 - Nothing is marked higher than it earned. A model alone never raises a tier above sourced.
 - **Safety fails closed.** A safety fact (an allergen, an animal product, alcohol) is unverified until a person checked it against an authoritative source. Nothing unverified is ever exported.
 - **Only an ingredient carries safety facts, and it answers every fact,** as `contains` or `free_of`. What a dish holds follows from its ingredients and is never typed. When unsure, the stricter answer is recorded.
+- **Certain and strict are kept apart.** Each fact an ingredient holds says on what basis, and whether it is certain or recorded strictly because unsure. The owner rules on how strict to be. `docs/strict-answers.md` lists the strict ones.
+- **A regulator's list is never written from memory.** Fetch the page, record it as a `source` with the day it was read and its reuse terms as stated there, and take the names it uses. A fact may be sourced only when its page was fetched and the entry is on it. A page that cannot be fetched is left out and reported.
+- **A safety probe is never settled by editing either side.** `./safety` lists where a probe and the graph disagree. A person rules, unless a fetched page settles it.
 - No text may claim that food is cooked through or safe to eat.
 
 ## Where knowledge may come from
 
 - A model's own draft, marked drafted.
-- Open data whose licence allows commercial use, with the licence checked at its source.
+- Open data whose licence allows commercial use, with the licence checked at its source and recorded as a `source`. Nothing share-alike or unclear is imported, and no product data.
 - A reviewer.
 - **Never** scraped recipes, research-only datasets, or text copied from a book or a website. A reference is cited for its facts. The wording is our own.
 

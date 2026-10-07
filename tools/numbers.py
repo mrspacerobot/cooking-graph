@@ -36,6 +36,16 @@ def count_safety(things):
     return counts
 
 
+def count_facts_held(things):
+    """How many facts ingredients are said to hold: those that are certain, and those recorded strictly for want of knowing."""
+    counts = {"certain": 0, "strict": 0}
+    for thing in things.values():
+        if thing.kind == "ingredient":
+            for row in thing.data["safety"]["contains"]:
+                counts["certain" if row["certain"] else "strict"] += 1
+    return counts
+
+
 def count_levels(things):
     """How many levels of the programs name a technique they teach, and out of how many."""
     with_a_technique = 0
@@ -67,6 +77,7 @@ def count(things):
         "things": count_things(things),
         "statements": count_statements(things),
         "safety": count_safety(things),
+        "facts_held": count_facts_held(things),
         "probes": probes.shares(probes.run(things)),
         "probe_words": probes.word_shares(probes.run(things)),
         "levels_with_a_technique": count_levels(things),
@@ -103,6 +114,8 @@ def safety_table(counts):
     by_state = counts["safety"]
     cells = ["ingredients", sum(by_state.values())] + [by_state.get(state, 0) for state in SAFETY_STATES]
     lines.append(row(cells))
+    lines.append("")
+    lines.append("Facts ingredients hold: %d certain, %d recorded strictly for want of knowing" % (counts["facts_held"]["certain"], counts["facts_held"]["strict"]))
     return lines
 
 

@@ -6,12 +6,25 @@ Each kind of rule has one method here. Files are read strictly: an unknown
 field, a missing field and a reference to nothing are all issues.
 """
 
+import datetime
+import re
+
 from tools import names, sentences
 from tools.reading import Issue, is_id, is_slug, join
 
+DATE = re.compile(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$")
+WEB_ADDRESS = re.compile(r"^https?://[^\s/]+\.[^\s]+$")
 EXACT_QUANTITY = {"value", "unit"}
 RANGE_QUANTITY = {"from", "to", "unit"}
 ROMANIZED = "-Latn"
+
+
+def is_a_day(value):
+    try:
+        datetime.date(int(value[0:4]), int(value[5:7]), int(value[8:10]))
+    except ValueError:
+        return False
+    return True
 
 
 def is_positive_number(value):
@@ -67,6 +80,21 @@ class ShapeCheck:
             return
         for broken_rule, message in sentences.issues_in(value, self.words):
             self.report(where, broken_rule, message)
+
+    def check_note(self, value, rule, where):
+        """Words about a source or a probe, as they were found. They may hold numbers: they are no part of what the graph tells a cook."""
+        if not self.is_a(value, str, where, "a note"):
+            return
+        if value.strip() == "" or value.strip() != value:
+            self.report(where, "empty", "must be a note with no space around it")
+
+    def check_date(self, value, rule, where):
+        if not isinstance(value, str) or DATE.match(value) is None or not is_a_day(value):
+            self.report(where, "bad-date", "must be a day that exists, written like 2026-10-07")
+
+    def check_url(self, value, rule, where):
+        if not isinstance(value, str) or WEB_ADDRESS.match(value) is None:
+            self.report(where, "bad-url", "must be a web address that starts with https:// or http://")
 
     def check_slug(self, value, rule, where):
         if not is_slug(value):

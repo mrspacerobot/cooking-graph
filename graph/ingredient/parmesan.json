@@ -12,12 +12,16 @@
   "behaviour": "A hard, dry, salty cheese that melts into sauces and browns to a crisp crust.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/dairy", "fact/slaughter-product"],
-    "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts",
-      "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from milk.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "It is made with calf rennet.", "certain": true}
     ],
-    "note": "Made with animal rennet, which is taken from the stomach of a calf."
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "Animal rennet is taken from the stomach of a calf."
   },
   "stands_in_for": [],
   "in_pantry_of": []

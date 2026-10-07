@@ -14,10 +14,13 @@
   "behaviour": "Dark meat with enough fat and connective tissue to stay juicy through long cooking. Its skin crisps as the fat under it melts away.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/meat"],
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is chicken.", "certain": true}
+    ],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/nuts",
-      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
     ],
     "note": null
   },

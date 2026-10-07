@@ -23,16 +23,50 @@ def linked(links):
     return [link["thing"] for link in links]
 
 
+def names_a_source(thing, where):
+    """True for a row that says where a fact is regulated, which names the page it was taken from, and for a fact with such a sourced row."""
+    if thing.kind != "fact":
+        return False
+    if where.startswith("regulated["):
+        return True
+    return where == "" and any(row["tier"] == "sourced" for row in thing.data["regulated"])
+
+
 def tiers_earned(things):
-    """Nothing is above drafted yet. There is no record of who reviewed what, so nothing can have earned more."""
+    """Nothing is above drafted, except a fact taken from a source it names, which may be sourced.
+
+    There is no record yet of who reviewed what, so nothing can have earned more.
+    """
     issues = []
     for thing_id, thing in sorted(things.items()):
         for where, node in nested(thing.data):
             tier = node.get("tier", LOWEST_TIER)
-            if tier != LOWEST_TIER:
-                message = "'%s' was not earned: nothing is above drafted until a review is on record" % tier
-                issues.append(Issue(thing.path, join(where, "tier"), "tier-not-earned", message))
+            if tier == LOWEST_TIER:
+                continue
+            if tier == "sourced" and names_a_source(thing, where):
+                continue
+            message = "'%s' was not earned: only a fact that names its source may be sourced, and nothing is above that yet" % tier
+            issues.append(Issue(thing.path, join(where, "tier"), "tier-not-earned", message))
     return issues
+
+
+def regulated_once(things):
+    """A fact says once what its standing is in a place. Mandatory and recommended may both stand, as in Japan."""
+    issues = []
+    for thing_id, thing in of_kind(things, "fact"):
+        seen = set()
+        for index, row in enumerate(thing.data["regulated"]):
+            key = (row["where"], row["standing"])
+            if key in seen:
+                message = "'%s' is already said to be %s in %s" % (thing_id, row["standing"], row["where"])
+                issues.append(Issue(thing.path, "regulated[%d]" % index, "regulated-twice", message))
+            seen.add(key)
+    return issues
+
+
+def held(thing):
+    """The ids of the facts an ingredient holds."""
+    return [row["fact"] for row in thing.data["safety"]["contains"]]
 
 
 def safety_earned(things):
@@ -50,7 +84,7 @@ def facts_answered(things):
     every_fact = {thing_id for thing_id, thing in of_kind(things, "fact")}
     issues = []
     for thing_id, thing in of_kind(things, "ingredient"):
-        contains = set(thing.data["safety"]["contains"])
+        contains = set(held(thing))
         free_of = set(thing.data["safety"]["free_of"])
         for fact in sorted(contains & free_of):
             message = "'%s' is answered both ways" % fact
@@ -63,12 +97,12 @@ def facts_answered(things):
 
 def facts_missing_above(thing, things, field):
     """The facts a thing holds that something it points at through `field` does not hold, with that thing."""
-    held = set(thing.data["safety"]["contains"])
+    holds = set(held(thing))
     found = []
     for above_id in linked(thing.data[field]):
         above = things.get(above_id)
         if above is not None:
-            for fact in sorted(held - set(above.data["safety"]["contains"])):
+            for fact in sorted(holds - set(held(above))):
                 found.append((fact, above_id))
     return found
 
@@ -333,6 +367,7 @@ def lines_with_an_em_dash(path):
 
 BASE_RULES = [
     tiers_earned,
+    regulated_once,
     safety_earned,
     facts_answered,
     classes_as_strict_as_members,

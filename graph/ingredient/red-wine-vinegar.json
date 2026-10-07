@@ -10,12 +10,28 @@
   "behaviour": "Sharp and fruity. It lifts a rich dish, and a splash dissolves the browned bits in a hot pan.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/alcohol", "fact/slaughter-product"],
-    "free_of": [
-      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts",
-      "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "Vinegar keeps a trace of the alcohol it is made from.", "certain": false},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Made from wine, which may be cleared with gelatine or isinglass.",
+        "certain": false
+      },
+      {
+        "fact": "fact/fish",
+        "basis": "Made from wine, which may be cleared with isinglass from fish.",
+        "certain": false
+      },
+      {"fact": "fact/egg", "basis": "Made from wine, which may be cleared with egg white.", "certain": false},
+      {"fact": "fact/milk", "basis": "Made from wine, which may be cleared with milk protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Made from wine, which nearly always holds sulphites.", "certain": false}
     ],
-    "note": "Made from wine, which is often cleared with products of slaughtered animals, and keeps a trace of its alcohol. The stricter answer is recorded."
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/gluten", "fact/lupin",
+      "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "Whether what cleared the wine is still in the vinegar is for a person to decide."
   },
   "stands_in_for": [],
   "in_pantry_of": [

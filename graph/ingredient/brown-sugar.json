@@ -14,12 +14,15 @@
   "behaviour": "Sugar with some of its molasses, which adds a taste of caramel and browns sooner than white sugar.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/slaughter-product"],
-    "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
-      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    "contains": [
+      {"fact": "fact/slaughter-product", "basis": "Some cane sugar is whitened with bone char.", "certain": false}
     ],
-    "note": "Some cane sugar is whitened with bone char. The stricter answer is recorded, as for sugar."
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "The stricter answer is recorded, as for sugar."
   },
   "stands_in_for": [],
   "in_pantry_of": []

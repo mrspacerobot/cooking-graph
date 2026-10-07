@@ -1,0 +1,73 @@
+{
+  "id": "fact/milk",
+  "tier": "sourced",
+  "names": {"en": "Milk", "fr": "Lait"},
+  "aliases": {"en": ["dairy", "milk products", "dairy products"]},
+  "means": "Milk from any animal, or anything made from it, such as butter, cream and cheese.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "european-union",
+      "source": "source/eu-regulation-1169-2011-annex-ii",
+      "name": "Milk and products thereof (including lactose)",
+      "standing": "mandatory",
+      "exemptions": "Whey used to make alcoholic distillates, and lactitol.",
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-kingdom",
+      "source": "source/uk-fsa-food-allergy-advice",
+      "name": "milk",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-states",
+      "source": "source/us-fda-food-allergies",
+      "name": "milk",
+      "standing": "mandatory",
+      "exemptions": "The labelling law leaves out highly refined oils, raw agricultural commodities, alcoholic drinks labelled under the Alcohol and Tobacco Tax and Trade Bureau, and the meat, poultry and egg products another department regulates.",
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "canada",
+      "source": "source/health-canada-common-food-allergens",
+      "name": "Milk",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "australia-and-new-zealand",
+      "source": "source/fsanz-allergen-labelling",
+      "name": "milk",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "japan",
+      "source": "source/japan-caa-allergen-labelling",
+      "name": "乳 (milk)",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "codex",
+      "source": "source/codex-labelling-standard-2010",
+      "name": "Milk and milk products (lactose included)",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "From the text as amended up to 2010. The current standard could not be fetched and may differ.",
+      "tier": "drafted"
+    }
+  ]
+}

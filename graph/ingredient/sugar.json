@@ -12,12 +12,15 @@
   "behaviour": "Dissolves in liquid, thickens it into a syrup as it boils down, and browns to caramel in dry heat.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/slaughter-product"],
-    "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat",
-      "fact/nuts", "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    "contains": [
+      {"fact": "fact/slaughter-product", "basis": "Some cane sugar is whitened with bone char.", "certain": false}
     ],
-    "note": "Some cane sugar is whitened with bone char. Beet sugar is not. The stricter answer is recorded until a sugar that is known to be free of it is its own ingredient."
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "Beet sugar is not whitened with bone char. The stricter answer is recorded until a sugar that is known to be free of it is its own ingredient."
   },
   "stands_in_for": [],
   "in_pantry_of": [

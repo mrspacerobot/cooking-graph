@@ -14,12 +14,19 @@
   "behaviour": "A soft, close-crumbed loaf that toasts evenly and browns fast in butter.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/gluten", "fact/dairy", "fact/egg", "fact/soy"],
-    "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/fish", "fact/meat", "fact/nuts", "fact/pork", "fact/sesame",
-      "fact/shellfish", "fact/slaughter-product"
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Made of wheat flour.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Made of wheat flour.", "certain": true},
+      {"fact": "fact/milk", "basis": "Usually enriched with milk or butter.", "certain": false},
+      {"fact": "fact/egg", "basis": "Many bought loaves hold egg.", "certain": false},
+      {"fact": "fact/soy", "basis": "Many bought loaves hold soy flour.", "certain": false}
     ],
-    "note": "Usually enriched with milk or butter. Egg and soy flour are recorded because many bought loaves hold them."
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
   },
   "stands_in_for": [],
   "in_pantry_of": []

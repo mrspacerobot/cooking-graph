@@ -12,12 +12,21 @@
   "behaviour": "Softens in boiling salted water and sheds starch that helps a sauce cling.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/gluten", "fact/egg"],
-    "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/fish", "fact/meat", "fact/nuts", "fact/pork",
-      "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Made of wheat.", "certain": true},
+      {
+        "fact": "fact/egg",
+        "basis": "Fresh pasta is usually made with egg, and dried pasta sometimes is.",
+        "certain": false
+      }
     ],
-    "note": "Fresh pasta is usually made with egg and dried pasta sometimes is, so egg is recorded."
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
   },
   "stands_in_for": [],
   "in_pantry_of": []

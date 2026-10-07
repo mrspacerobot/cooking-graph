@@ -1,7 +1,73 @@
 {
   "id": "fact/soy",
-  "tier": "drafted",
+  "tier": "sourced",
   "names": {"en": "Soy", "fr": "Soja"},
-  "aliases": {},
-  "means": "Soybeans, or anything made from them."
+  "aliases": {"en": ["soya", "soybeans", "soybean", "soya beans"]},
+  "means": "Soybeans, or anything made from them.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "european-union",
+      "source": "source/eu-regulation-1169-2011-annex-ii",
+      "name": "Soybeans and products thereof",
+      "standing": "mandatory",
+      "exemptions": "Fully refined soybean oil and fat, and the products made from them as long as the process is not likely to raise the level of allergenicity. Natural mixed tocopherols (E306), natural D-alpha tocopherol and its acetate and succinate from soybean sources. Phytosterols and phytosterol esters derived from vegetable oils from soybean sources. Plant stanol ester produced from vegetable oil sterols from soybean sources.",
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-kingdom",
+      "source": "source/uk-fsa-food-allergy-advice",
+      "name": "soybeans",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-states",
+      "source": "source/us-fda-food-allergies",
+      "name": "soybeans",
+      "standing": "mandatory",
+      "exemptions": "The labelling law leaves out highly refined oils, raw agricultural commodities, alcoholic drinks labelled under the Alcohol and Tobacco Tax and Trade Bureau, and the meat, poultry and egg products another department regulates.",
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "canada",
+      "source": "source/health-canada-common-food-allergens",
+      "name": "Soy",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "australia-and-new-zealand",
+      "source": "source/fsanz-allergen-labelling",
+      "name": "soy, soya, soybean",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "japan",
+      "source": "source/japan-caa-allergen-labelling",
+      "name": "大豆 (soybean)",
+      "standing": "recommended",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "codex",
+      "source": "source/codex-labelling-standard-2010",
+      "name": "Peanuts, soybeans and products of these",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "One entry covers peanuts and soybeans. From the text as amended up to 2010. The current standard could not be fetched and may differ.",
+      "tier": "drafted"
+    }
+  ]
 }

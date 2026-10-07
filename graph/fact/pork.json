@@ -3,5 +3,7 @@
   "tier": "drafted",
   "names": {"en": "Pork", "fr": "Porc"},
   "aliases": {},
-  "means": "Meat from a pig, or anything made from it, such as bacon, ham or lard. Whatever holds pork holds meat as well."
+  "means": "Meat from a pig, or anything made from it, such as bacon, ham or lard. Whatever holds pork holds meat as well.",
+  "concern": "diet",
+  "regulated": []
 }

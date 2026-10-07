@@ -1,0 +1,28 @@
+{
+  "id": "fact/celery",
+  "tier": "sourced",
+  "names": {"en": "Celery", "fr": "Céleri"},
+  "aliases": {},
+  "means": "Celery in any form, stalk, leaf, seed or the root called celeriac, or anything made from it.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "european-union",
+      "source": "source/eu-regulation-1169-2011-annex-ii",
+      "name": "Celery and products thereof",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-kingdom",
+      "source": "source/uk-fsa-food-allergy-advice",
+      "name": "celery",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    }
+  ]
+}

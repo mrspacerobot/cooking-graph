@@ -1,0 +1,11 @@
+{
+  "id": "source/health-canada-common-food-allergens",
+  "tier": "drafted",
+  "title": "Common food allergens",
+  "publisher": "Health Canada",
+  "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/food-allergies-intolerances/food-allergies.html",
+  "read_on": "2026-10-07",
+  "reuse": "The Government of Canada's terms and conditions allow reproduction for non-commercial purposes when the material is reproduced accurately and its title, author and source are given. They say materials on the site may not be reproduced, in whole or in part, for commercial redistribution without prior written permission from the copyright administrator.",
+  "commercial_use": "not-allowed",
+  "taken": "Only the names of the eleven priority food allergens as listed there, as facts. No text. The page refused a direct download, so it was read through the fetch tool, twice with the same result, and not from the raw page. It was last modified on 28 May 2026."
+}

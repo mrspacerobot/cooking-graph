@@ -12,12 +12,20 @@
   "behaviour": "A sweet, nutty fortified wine that gives a sauce depth and a little sweetness once it has boiled down.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/alcohol", "fact/slaughter-product", "fact/egg", "fact/dairy"],
-    "free_of": [
-      "fact/animal-product", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts", "fact/pork", "fact/sesame",
-      "fact/shellfish", "fact/soy"
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "It is a fortified wine.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "Wine may be cleared with gelatine or isinglass.", "certain": false},
+      {"fact": "fact/fish", "basis": "Wine may be cleared with isinglass, which comes from fish.", "certain": false},
+      {"fact": "fact/egg", "basis": "Wine may be cleared with egg white.", "certain": false},
+      {"fact": "fact/milk", "basis": "Wine may be cleared with milk protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Nearly all wine holds sulphites.", "certain": false}
     ],
-    "note": "A fortified wine. Wine is often cleared with gelatine, isinglass, egg white or milk protein. Egg and dairy are recorded as the stricter answer."
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/gluten", "fact/lupin",
+      "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "European law exempts isinglass and fish gelatine used to clear wine and beer from the labelling of fish. The stricter answer is recorded all the same."
   },
   "stands_in_for": [],
   "in_pantry_of": []

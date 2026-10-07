@@ -10,12 +10,29 @@
   "behaviour": "Sharp and hot. It helps oil and vinegar hold together, and loses its bite when boiled.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/alcohol", "fact/slaughter-product"],
-    "free_of": [
-      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts",
-      "fact/pork", "fact/sesame", "fact/shellfish", "fact/soy"
+    "contains": [
+      {"fact": "fact/mustard", "basis": "It is made of mustard seed.", "certain": true},
+      {"fact": "fact/alcohol", "basis": "Often made with white wine or wine vinegar.", "certain": false},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Often made with wine, which may be cleared with gelatine or isinglass.",
+        "certain": false
+      },
+      {
+        "fact": "fact/fish",
+        "basis": "Often made with wine, which may be cleared with isinglass from fish.",
+        "certain": false
+      },
+      {"fact": "fact/egg", "basis": "Often made with wine, which may be cleared with egg white.", "certain": false},
+      {"fact": "fact/milk", "basis": "Often made with wine, which may be cleared with milk protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Often kept with sulphites.", "certain": false}
     ],
-    "note": "Often made with white wine or wine vinegar. Mustard is itself a common allergen, and this graph has no fact for it yet."
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/gluten", "fact/lupin",
+      "fact/meat", "fact/molluscs", "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy", "fact/tree-nuts",
+      "fact/wheat"
+    ],
+    "note": null
   },
   "stands_in_for": [],
   "in_pantry_of": [

@@ -3,5 +3,7 @@
   "tier": "drafted",
   "names": {"en": "Alcohol", "fr": "Alcool"},
   "aliases": {},
-  "means": "Alcohol from wine, beer, spirits or anything made with them, in any amount, cooked or not."
+  "means": "Alcohol from wine, beer, spirits or anything made with them, in any amount, cooked or not.",
+  "concern": "diet",
+  "regulated": []
 }

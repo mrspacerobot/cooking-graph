@@ -29,6 +29,9 @@ class NumbersTest(unittest.TestCase):
     def test_safety_records_are_counted_by_state(self):
         self.assertEqual({"unverified": 5}, self.count()["safety"])
 
+    def test_facts_held_are_counted_certain_and_strict_apart(self):
+        self.assertEqual({"certain": 2, "strict": 0}, self.count()["facts_held"])
+
     def test_probe_shares_are_counted_apart(self):
         counts = self.count()
         self.assertEqual((4, 4), counts["probes"]["growing"])

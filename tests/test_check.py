@@ -7,7 +7,7 @@ else.
 
 import unittest
 
-from tests.small_kitchen import BATCH, DRAFTED, SmallKitchen, link
+from tests.small_kitchen import BATCH, DRAFTED, SmallKitchen, holds, link
 from tools import check, reading
 from tools.rules import names_of_the_model as check_names
 
@@ -299,6 +299,91 @@ class Trust(CheckerTest):
         self.expect(BUTTER, "safety-not-earned")
 
 
+DAIRY = "graph/fact/dairy.json"
+LAW = "graph/source/kitchen-law.json"
+
+
+def regulated(tier="sourced", standing="mandatory"):
+    return {
+        "where": "european-union",
+        "source": "source/kitchen-law",
+        "name": "Milk and products thereof",
+        "standing": standing,
+        "exemptions": None,
+        "note": None,
+        "tier": tier,
+    }
+
+
+class Sources(CheckerTest):
+    def test_a_fact_taken_from_a_source_may_be_sourced(self):
+        self.break_file(DAIRY, lambda thing: thing.update(tier="sourced", regulated=[regulated()]))
+        self.assertEqual([], self.issues())
+
+    def test_a_fact_that_names_no_source_may_not_be_sourced(self):
+        self.break_file(DAIRY, lambda thing: thing.update(tier="sourced"))
+        self.expect(DAIRY, "tier-not-earned")
+
+    def test_a_fact_whose_rows_are_all_drafted_may_not_be_sourced(self):
+        self.break_file(DAIRY, lambda thing: thing.update(tier="sourced", regulated=[regulated("drafted")]))
+        self.expect(DAIRY, "tier-not-earned")
+
+    def test_a_drafted_fact_may_carry_a_sourced_row(self):
+        self.break_file(DAIRY, lambda thing: thing.update(regulated=[regulated()]))
+        self.assertEqual([], self.issues())
+
+    def test_a_fact_may_be_mandatory_and_recommended_in_the_same_place(self):
+        self.break_file(DAIRY, lambda thing: thing.update(regulated=[regulated(), regulated(standing="recommended")]))
+        self.assertEqual([], self.issues())
+
+    def test_a_fact_regulated_twice_in_the_same_place_with_the_same_standing(self):
+        self.break_file(DAIRY, lambda thing: thing.update(regulated=[regulated(), regulated()]))
+        self.expect(DAIRY, "regulated-twice")
+
+    def test_a_standing_that_is_not_one_of_the_words(self):
+        self.break_file(DAIRY, lambda thing: thing.update(regulated=[regulated(standing="advised")]))
+        self.expect(DAIRY, "not-in-standings")
+
+    def test_a_fact_that_does_not_say_what_it_concerns(self):
+        self.break_file(DAIRY, lambda thing: thing.pop("concern"))
+        self.expect(DAIRY, "missing-field")
+
+    def test_a_fact_may_not_be_more_than_sourced(self):
+        self.break_file(DAIRY, lambda thing: thing.update(tier="reviewed", regulated=[regulated()]))
+        self.expect(DAIRY, "tier-not-earned")
+
+    def test_nothing_but_a_fact_may_be_sourced(self):
+        self.break_file(BUTTER, lambda thing: thing.update(tier="sourced"))
+        self.expect(BUTTER, "tier-not-earned")
+
+    def test_a_source_that_was_read_on_no_date(self):
+        self.break_file(LAW, lambda thing: thing.update(read_on="last week"))
+        self.expect(LAW, "bad-date")
+
+    def test_a_source_read_on_a_day_that_does_not_exist(self):
+        self.break_file(LAW, lambda thing: thing.update(read_on="2026-13-45"))
+        self.expect(LAW, "bad-date")
+
+    def test_a_source_whose_use_is_not_one_of_the_answers(self):
+        self.break_file(LAW, lambda thing: thing.update(commercial_use="probably"))
+        self.expect(LAW, "not-in-commercial_uses")
+
+    def test_a_source_with_no_web_address(self):
+        self.break_file(LAW, lambda thing: thing.update(url="the library"))
+        self.expect(LAW, "bad-url")
+
+    def test_a_note_about_a_source_may_hold_numbers(self):
+        self.break_file(LAW, lambda thing: thing.update(reuse="Version 3.0 allows it, 14 items were taken."))
+        self.assertEqual([], self.issues())
+
+    def test_a_fact_regulated_under_a_source_that_does_not_exist(self):
+        def nowhere(thing):
+            thing["regulated"] = [dict(regulated("drafted"), source="source/hearsay")]
+
+        self.break_file(DAIRY, nowhere)
+        self.expect(DAIRY, "missing-reference")
+
+
 class Safety(CheckerTest):
     def test_a_fact_left_unanswered(self):
         self.break_file(BUTTER, lambda thing: thing["safety"].update(free_of=[]))
@@ -309,11 +394,19 @@ class Safety(CheckerTest):
         self.expect(BUTTER, "fact-answered-twice")
 
     def test_a_member_that_holds_what_its_class_does_not(self):
-        self.break_file(ONION, lambda thing: thing["safety"].update(contains=["fact/gluten"], free_of=["fact/dairy"]))
+        self.break_file(ONION, lambda thing: thing["safety"].update(contains=[holds("fact/gluten")], free_of=["fact/dairy"]))
         self.expect(ONION, "class-less-strict")
 
+    def test_a_fact_held_without_its_basis(self):
+        self.break_file(BUTTER, lambda thing: thing["safety"]["contains"][0].pop("basis"))
+        self.expect(BUTTER, "missing-field")
+
+    def test_a_fact_held_that_does_not_say_whether_it_is_certain(self):
+        self.break_file(BUTTER, lambda thing: thing["safety"]["contains"][0].update(certain="maybe"))
+        self.expect(BUTTER, "wrong-type")
+
     def test_a_part_that_holds_what_its_whole_does_not(self):
-        self.break_file(SKIN, lambda thing: thing["safety"].update(contains=["fact/gluten"], free_of=["fact/dairy"]))
+        self.break_file(SKIN, lambda thing: thing["safety"].update(contains=[holds("fact/gluten")], free_of=["fact/dairy"]))
         self.expect(SKIN, "whole-less-strict")
 
 

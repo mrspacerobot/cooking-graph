@@ -1,0 +1,66 @@
+{
+  "id": "fact/sulphites",
+  "tier": "sourced",
+  "names": {"en": "Sulphites", "fr": "Sulfites"},
+  "aliases": {
+    "en": ["sulfites", "sulphite", "sulfite", "sulphur dioxide", "sulfur dioxide", "sulphur dioxide and sulphites"]
+  },
+  "means": "Sulphur dioxide and sulphites, which are used to keep wine, dried fruit and other foods.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "european-union",
+      "source": "source/eu-regulation-1169-2011-annex-ii",
+      "name": "Sulphur dioxide and sulphites at concentrations of more than 10 mg/kg or 10 mg/litre in terms of the total SO2",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "The level is counted for the product as it is ready to eat or made up as its maker instructs.",
+      "tier": "sourced"
+    },
+    {
+      "where": "united-kingdom",
+      "source": "source/uk-fsa-food-allergy-advice",
+      "name": "sulphur dioxide and sulphites (at a concentration of more than ten parts per million)",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "united-states",
+      "source": "source/us-fda-food-allergies",
+      "name": "sulfiting agents",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "Not one of the nine major food allergens. The page says they must be declared on the label when the food holds 10 parts per million or more of total sulfites.",
+      "tier": "sourced"
+    },
+    {
+      "where": "canada",
+      "source": "source/health-canada-common-food-allergens",
+      "name": "Sulphites",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "australia-and-new-zealand",
+      "source": "source/fsanz-allergen-labelling",
+      "name": "sulphites",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "Declared when added in amounts equal to or more than 10 milligrams per kilogram of food.",
+      "tier": "sourced"
+    },
+    {
+      "where": "codex",
+      "source": "source/codex-labelling-standard-2010",
+      "name": "Sulphite in concentrations of 10 mg/kg or more",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": "From the text as amended up to 2010. The current standard could not be fetched and may differ.",
+      "tier": "drafted"
+    }
+  ]
+}

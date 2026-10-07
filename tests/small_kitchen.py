@@ -28,10 +28,32 @@ def head(thing_id, english):
     return {"id": thing_id, "tier": DRAFTED, "names": {"en": english}, "aliases": {}}
 
 
-def fact(slug, english, means):
+def fact(slug, english, means, also=()):
     thing = head("fact/" + slug, english)
+    if also:
+        thing["aliases"] = {"en": list(also)}
     thing["means"] = means
+    thing["concern"] = "allergen"
+    thing["regulated"] = []
     return thing
+
+
+def source():
+    return {
+        "id": "source/kitchen-law",
+        "tier": DRAFTED,
+        "title": "The law of the small kitchen",
+        "publisher": "The small kitchen",
+        "url": "https://example.org/law",
+        "read_on": "2026-10-07",
+        "reuse": "Free to reuse with the source named (section 3).",
+        "commercial_use": "allowed",
+        "taken": "The 2 facts of the kitchen.",
+    }
+
+
+def holds(fact_id, certain=True):
+    return {"fact": fact_id, "basis": "It is made of it.", "certain": certain}
 
 
 def group(slug, english, within=None, stands_alone=None):
@@ -51,7 +73,7 @@ def ingredient(slug, english, contains, free_of, is_a=(), part_of=(), groups=())
     thing["behaviour"] = "Softens over gentle heat."
     thing["safety"] = {
         "state": "unverified",
-        "contains": list(contains),
+        "contains": [holds(one) for one in contains],
         "free_of": list(free_of),
         "note": None,
     }
@@ -189,7 +211,8 @@ def probe_files():
     return files
 
 
-SAFETY_PROBED = ["Buttered onions", "Onion tart", "Onion soup", "Creamed onions", "Glazed onions"]
+# By the hash, the one in five held back here is the onion gratin: the dish that is in the graph stays in view.
+SAFETY_PROBED = ["Buttered onions", "Onion tart", "Onion soup", "Creamed onions", "Onion gratin"]
 
 
 def safety_probe_files():
@@ -226,7 +249,8 @@ def graph_files():
     mince = technique("mince", "Mince")
     mince["comes_after"] = [link("technique/sweat", why="A soft onion is easier to judge.")]
     things = [
-        fact("dairy", "Dairy", "Milk, or anything made from it."),
+        source(),
+        fact("dairy", "Dairy", "Milk, or anything made from it.", also=["milk"]),
         fact("gluten", "Gluten", "Wheat, barley or rye, or anything made from them."),
         french,
         provencal,

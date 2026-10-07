@@ -1,0 +1,11 @@
+{
+  "id": "source/wikidata",
+  "tier": "drafted",
+  "title": "Wikidata:Licensing",
+  "publisher": "Wikimedia Foundation",
+  "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+  "read_on": "2026-10-07",
+  "reuse": "The page says all structured data is released into the public domain under Creative Commons Zero, and that text in other namespaces is under the Creative Commons Attribution-ShareAlike 4.0 License.",
+  "commercial_use": "allowed",
+  "taken": "Nothing was imported. A search of its properties for the word allergen returned none, so it has no ready statement of which allergen a food holds."
+}

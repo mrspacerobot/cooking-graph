@@ -12,10 +12,13 @@
   "behaviour": "A hard, salty cheese that grates finely, melts into sauces and browns to a crust.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/dairy"],
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from milk.", "certain": true}
+    ],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/egg", "fact/fish", "fact/gluten", "fact/meat", "fact/nuts",
-      "fact/pork", "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
     ],
     "note": "A hard cheese made without animal rennet. That is what sets it apart from parmesan."
   },

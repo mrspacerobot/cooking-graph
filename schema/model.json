@@ -31,6 +31,20 @@
     }
   },
   "kinds": {
+    "source": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "title": {"is": "label"},
+        "publisher": {"is": "label"},
+        "url": {"is": "url"},
+        "read_on": {"is": "date"},
+        "reuse": {"is": "note"},
+        "commercial_use": {"is": "word", "from": "commercial_uses"},
+        "taken": {"is": "note"}
+      }
+    },
     "fact": {
       "home": "graph",
       "fields": {
@@ -38,7 +52,23 @@
         "tier": {"is": "word", "from": "tiers"},
         "names": {"is": "names"},
         "aliases": {"is": "aliases"},
-        "means": {"is": "text"}
+        "means": {"is": "text"},
+        "concern": {"is": "word", "from": "concerns"},
+        "regulated": {
+          "is": "list",
+          "of": {
+            "is": "object",
+            "fields": {
+              "where": {"is": "word", "from": "places"},
+              "source": {"is": "ref", "kinds": ["source"]},
+              "name": {"is": "label"},
+              "standing": {"is": "word", "from": "standings"},
+              "exemptions": {"is": "note", "or_null": true},
+              "note": {"is": "note", "or_null": true},
+              "tier": {"is": "word", "from": "tiers"}
+            }
+          }
+        }
       }
     },
     "cuisine": {
@@ -109,7 +139,17 @@
           "is": "object",
           "fields": {
             "state": {"is": "word", "from": "safety_states"},
-            "contains": {"is": "list", "of": {"is": "ref", "kinds": ["fact"]}},
+            "contains": {
+              "is": "list",
+              "of": {
+                "is": "object",
+                "fields": {
+                  "fact": {"is": "ref", "kinds": ["fact"]},
+                  "basis": {"is": "text"},
+                  "certain": {"is": "boolean"}
+                }
+              }
+            },
             "free_of": {"is": "list", "of": {"is": "ref", "kinds": ["fact"]}},
             "note": {"is": "text", "or_null": true}
           }
@@ -323,7 +363,7 @@
         "also_called": {"is": "list", "of": {"is": "label"}},
         "holds": {"is": "list", "of": {"is": "label"}},
         "does_not_hold": {"is": "list", "of": {"is": "label"}},
-        "why": {"is": "text"}
+        "why": {"is": "note"}
       }
     }
   }

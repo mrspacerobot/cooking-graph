@@ -10,12 +10,20 @@
   "behaviour": "Gives a stew a malty bitterness, which long cooking rounds and a little sugar balances.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/alcohol", "fact/gluten", "fact/slaughter-product"],
-    "free_of": [
-      "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/meat", "fact/nuts", "fact/pork",
-      "fact/sesame", "fact/shellfish", "fact/soy"
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "It is beer.", "certain": true},
+      {"fact": "fact/gluten", "basis": "Brewed from barley.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Some beer is brewed with wheat.", "certain": false},
+      {"fact": "fact/slaughter-product", "basis": "Beer may be cleared with isinglass.", "certain": false},
+      {"fact": "fact/fish", "basis": "Beer may be cleared with isinglass, which comes from fish.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Some beer holds sulphites.", "certain": false}
     ],
-    "note": "Brewed from barley. Beer is often cleared with isinglass, which comes from fish, so a slaughter product is recorded as for wine."
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg", "fact/lupin", "fact/meat",
+      "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy",
+      "fact/tree-nuts"
+    ],
+    "note": "European law exempts isinglass and fish gelatine used to clear wine and beer from the labelling of fish. The stricter answer is recorded all the same."
   },
   "stands_in_for": [],
   "in_pantry_of": []

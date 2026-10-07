@@ -1,0 +1,46 @@
+{
+  "id": "fact/wheat",
+  "tier": "sourced",
+  "names": {"en": "Wheat", "fr": "Blé"},
+  "aliases": {},
+  "means": "Wheat of any kind, spelt and khorasan wheat among them, or anything made from it.",
+  "concern": "allergen",
+  "regulated": [
+    {
+      "where": "united-states",
+      "source": "source/us-fda-food-allergies",
+      "name": "wheat",
+      "standing": "mandatory",
+      "exemptions": "The labelling law leaves out highly refined oils, raw agricultural commodities, alcoholic drinks labelled under the Alcohol and Tobacco Tax and Trade Bureau, and the meat, poultry and egg products another department regulates.",
+      "note": "Wheat alone is a major food allergen there. Rye and barley are not.",
+      "tier": "sourced"
+    },
+    {
+      "where": "canada",
+      "source": "source/health-canada-common-food-allergens",
+      "name": "Wheat and triticale",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "australia-and-new-zealand",
+      "source": "source/fsanz-allergen-labelling",
+      "name": "wheat",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    },
+    {
+      "where": "japan",
+      "source": "source/japan-caa-allergen-labelling",
+      "name": "小麦 (wheat)",
+      "standing": "mandatory",
+      "exemptions": null,
+      "note": null,
+      "tier": "sourced"
+    }
+  ]
+}

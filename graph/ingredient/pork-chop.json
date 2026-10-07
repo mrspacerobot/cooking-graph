@@ -12,10 +12,14 @@
   "behaviour": "A lean chop with a rim of fat. It browns well and turns dry and tough soon after it is done.",
   "safety": {
     "state": "unverified",
-    "contains": ["fact/meat", "fact/pork"],
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is pork.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is pork.", "certain": true}
+    ],
     "free_of": [
-      "fact/alcohol", "fact/animal-product", "fact/dairy", "fact/egg", "fact/fish", "fact/gluten", "fact/nuts",
-      "fact/sesame", "fact/shellfish", "fact/slaughter-product", "fact/soy"
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
     ],
     "note": null
   },

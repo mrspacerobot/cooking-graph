@@ -26,7 +26,7 @@ Every thing and every statement carries a `tier`:
 | verified | Confirmed a second time, by another reviewer or a test cook |
 | cook-tested | Results from real cooks back it |
 
-The plan asks for who, when and against what on every tier. No such record exists yet. Until it does, the check refuses every tier above drafted, so nothing can claim more than it earned.
+The plan asks for who, when and against what on every tier. No such record exists yet. Until it does, the check refuses every tier above drafted, so nothing can claim more than it earned, with one exception. A row that says where a fact is regulated names its `source`: a page that was fetched, with the day it was read. Such a row may be sourced, and so may the fact that carries one. Nothing else may be sourced, and nothing is above sourced.
 
 A safety record has a `state` of its own, with two values: unverified and verified. The check refuses verified for the same reason.
 
@@ -41,17 +41,39 @@ A safety record has a `state` of its own, with two values: unverified and verifi
 
 Two things of one kind may not share a name or an alias, in any language. That would be two nodes for one thing.
 
+A source and a probe have an `id` and a `tier` and no names: a source has a `title`, a probe has a `dish`.
+
 ## The kinds
 
 A statement is a field of the thing it starts from. It holds one row for each thing it points at. A row is the `thing`, what the statement adds, and its `tier`.
 
+### `source`
+
+A page that something in the graph was read in, or a dataset that was looked at: a regulator's list, a standard, an open database.
+
+| Field | What it holds |
+|---|---|
+| `title` | The title of the page or the document, as it stands there |
+| `publisher` | Who publishes it |
+| `url` | The web address that was fetched |
+| `read_on` | The day it was read |
+| `reuse` | Its reuse terms as the source states them, or what could not be read |
+| `commercial_use` | One of allowed, share-alike, not-allowed and unclear: may it be used in a product that is sold, without having to share our own data alike |
+| `taken` | What was taken from it. For a dataset that was only looked at: that nothing was imported, and what it could give |
+
+A source is cited for its facts. The wording of the graph is our own. Only the names a list uses are kept as they stand there.
+
 ### `fact`
 
-A safety fact: something a cook may need to avoid. The thirteen facts are Tomi's.
+A safety fact: something a cook may need to avoid. There are 21. Five are matters of diet and are Tomi's: meat, pork, animal product, slaughter product and alcohol. Sixteen are allergens, rebuilt in cycle two from the lists of seven places, at the grain those lists use.
 
 | Field | What it holds |
 |---|---|
 | `means` | A sentence that says what the fact covers |
+| `concern` | allergen or diet |
+| `regulated` | Where a list names it, one row for each place and standing. A row has `where` (european-union, united-kingdom, united-states, canada, australia-and-new-zealand, japan or codex), the `source` it was read in, the `name` used there, its `standing` (mandatory or recommended), the `exemptions` the source states or `null`, a `note` or `null` on how the entry there differs from the fact, and the row's `tier` |
+
+A row is sourced when its page was fetched and the entry is on it. The rows read in the Codex standard are drafted: the only text that could be fetched is the one amended up to 2010.
 
 ### `cuisine`
 
@@ -101,7 +123,7 @@ Something a cook starts from. It may stand for a class: stock, bread, white fish
 | `groups` | The groups it is in. Statement |
 | `forms` | The forms it comes in. Statement. Empty on every ingredient so far, see the gaps below |
 | `behaviour` | A sentence or two on how it behaves in the pan |
-| `safety` | Its safety record: a `state`, the facts it `contains`, the facts it is `free_of`, and a `note` that gives the reason for a strict answer, or `null` |
+| `safety` | Its safety record: a `state`, the facts it `contains`, the facts it is `free_of`, and a `note` or `null`. Each row of `contains` names the `fact`, the `basis` in a few plain words, and whether it is `certain`: true when the ingredient holds the fact by what it is, false when the answer is recorded strictly because a common form of the ingredient may hold it |
 | `stands_in_for` | What it can replace. Statement. Each row adds `when` and `not_when` (techniques, preparations or dishes), a `ratio` or `null`, and a `caveat`. A ratio is the `stand_in` amount for the `original` amount, measured `by` weight, volume or count |
 | `in_pantry_of` | The cuisines that keep it as a staple. Statement |
 
@@ -209,7 +231,9 @@ A second question: what does this well-known dish hold? It lives in `probes/` to
 | `batch`, `set`, `written_by`, `dish`, `also_called` | As on a dish probe |
 | `holds` | What the classic dish holds, in plain words |
 | `does_not_hold` | What it does not hold, in plain words |
-| `why` | The reason, in plain words |
+| `why` | The reason, in the writer's own words. It is a note and may hold numbers |
+
+`./safety` answers a safety probe whose dish is in the graph and has a recipe. What the dish holds is what the ingredients of its recipe hold. A preparation on a line brings what the ingredients of its own recipe hold, or every option of its parts when it has no recipe. A word of the probe is read as a fact through the fact's names and aliases, and a word that names no fact is set apart. A dish that is not in the graph is not answerable, which is not a disagreement. `./safety disagreements` writes every disagreement of a growing probe, with both sides, and the check keeps `docs/safety-disagreements.md` equal to it. Nothing settles a disagreement but a person.
 
 ## The statements of the plan, and where they went
 
@@ -258,7 +282,10 @@ In every sentence the check looks for digits, for number words from two to twelv
 
 | Rule | What it refuses |
 |---|---|
-| tier-not-earned, safety-not-earned | A tier above drafted, or a verified safety record, while no review can be put on record |
+| tier-not-earned, safety-not-earned | A tier above drafted, or a verified safety record, while no review can be put on record. Sourced is allowed on a row that says where a fact is regulated, and on a fact with such a row |
+| regulated-twice | A fact said twice to have one standing in one place |
+| bad-date, bad-url | A source read on a day that does not exist, or with no web address |
+| not-current | A document that a command writes from the files, `docs/strict-answers.md` or `docs/safety-disagreements.md`, that has fallen behind them |
 | fact-not-answered, fact-answered-twice | An ingredient that does not answer every fact exactly once |
 | class-less-strict, whole-less-strict | An ingredient that holds a fact its class or its whole does not |
 | step-works-on-unlisted, ingredient-never-used | A step that works on something not at hand, or a line no step uses |
@@ -288,6 +315,8 @@ What counts as a change: a change to `schema/model.json`. That is a kind, a fiel
 | 2, sauté, sear, poach | 1 | yes |
 | 3, roux, pan sauces, emulsions | 1 | none |
 | 4, braise, roast, gratin | 0 | none |
+| cycle two, part 1: groups, parts, probes | 5 | none |
+| cycle two, part 2: sources and allergens | 5 | yes |
 
 ### 1. A tenth kind: fact (round 0)
 
@@ -414,6 +443,41 @@ What counts as a change: a change to `schema/model.json`. That is a kind, a fiel
 - **Example:** in cycle one a single model wrote the 120 probes and the graph, minutes apart.
 - **Now:** a probe has `written_by`. The 120 old probes are stamped `claude-opus-5-5`, and the model that drafts the graph writes no more. One batch asks about a dish once, and another batch by another writer may ask again. `safety-probe` is a new kind: what a classic dish `holds` and what it `does_not_hold`, and `why`.
 
+### 22. A kind for the page a fact was read in: source (cycle two)
+
+- **Example:** the thirteen facts of the first slice were typed from Tomi's table. Mustard, celery, sulphites, lupin and molluscs were missing, and no file said where any list came from.
+- **Now:** `source` is a kind: a page that was fetched, with its `title`, `publisher` and `url`, the day it was read (`read_on`), its `reuse` terms as stated there, a verdict on `commercial_use`, and what was `taken`. Twelve exist: eight pages of regulators and four open databases that were looked at and not imported.
+
+### 23. A fact says what it concerns and where it is regulated (cycle two)
+
+- **Example:** the United States lists wheat and Europe lists cereals containing gluten. Japan lists shrimp and crab, Canada lists crustaceans and molluscs as one entry. One fact called shellfish and one called nuts could say none of that.
+- **Now:** a fact has a `concern`, allergen or diet, and `regulated` rows: `where`, the `source`, the `name` used there, its `standing`, the `exemptions` stated there and a `note`.
+- **The ids that changed.** The branch is not merged, so an id could still change. Every old id is logged here with what replaces it:
+
+| Old id | What replaces it |
+|---|---|
+| `fact/nuts` | `fact/peanuts` and `fact/tree-nuts` |
+| `fact/shellfish` | `fact/crustaceans` and `fact/molluscs` |
+| `fact/dairy` | `fact/milk`, the name every list uses |
+| `fact/gluten` | Kept. It now means the cereals that hold gluten, and `fact/wheat` stands beside it for the places that list wheat alone |
+
+New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lupin` and `fact/buckwheat`. Unchanged: `fact/egg`, `fact/fish`, `fact/soy`, `fact/sesame`, and the five diet facts `fact/meat`, `fact/pork`, `fact/animal-product`, `fact/slaughter-product` and `fact/alcohol`.
+
+### 24. What an ingredient holds says on what basis, and whether it is certain (cycle two)
+
+- **Example:** butter holds milk because it is made from cream. Wine holds egg only because egg white may have been used to clear it. Both were one word in a list, and the reason sat in a note for the whole record.
+- **Now:** each row of `contains` has the `fact`, a `basis` and `certain`. The owner rules on how strict to be and can do it reason by reason: `docs/strict-answers.md` lists every answer that is not certain, and the check keeps it equal to the files.
+
+### 25. Sourced can be earned, by a fact (cycle two)
+
+- **Example:** celery is entry 9 of Annex II of Regulation 1169/2011, read on 7 October 2026. That is more than a model's draft.
+- **Now:** a `regulated` row may be sourced, because it names its source, and a fact with a sourced row may be sourced. The check still refuses sourced everywhere else, and every tier above it.
+
+### 26. Words about a source or a probe are notes, not sentences (cycle two)
+
+- **Example:** the European list counts sulphites from 10 mg/kg, a licence is called CC BY 4.0, and the reason of a safety probe is written by another model. The sentence rules, which keep numbers out of what a cook reads, refused all three.
+- **Now:** the model has a note beside the sentence: `reuse`, `taken`, `exemptions`, the `note` of a regulated row and the `why` of a safety probe. A note may hold numbers. Nothing a cook reads is a note. A source also has a date and a web address, each with a shape of its own.
+
 ## Decisions where the starting model was silent
 
 These are not changes. The starting model names kinds and statements, not files, so the first files had to settle them.
@@ -445,4 +509,9 @@ Each of these came up while writing real content. They are listed with the examp
 - Keeping a sauce warm, which is neither cooling nor keeping.
 - The French sauter of meat, which has no technique of its own.
 - Diets and avoid items, which the safety probe will need.
+- A fact inside a fact. Japan names walnut and cashew, Australia each tree nut by name, the United States the species of a fish. The fact is the class, and the finer entry sits in the `name` of a row.
+- What a list recommends for a food that has no fact: orange, kiwi fruit, beef, chicken, banana, peach, yam, apple and gelatin in Japan.
+- A level. Every list counts sulphites from a set level, and an ingredient can only hold the fact or not.
+- An exemption that fits one ingredient. Europe exempts the isinglass that clears wine, and the wine cannot point at that row.
+- A word of a probe that covers several facts, such as shellfish.
 - Ids of public datasets. Nothing here came from one.

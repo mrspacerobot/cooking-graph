@@ -46,10 +46,10 @@ class SafetyRecords(unittest.TestCase):
         self.addCleanup(self.kitchen.close)
 
     def test_every_fact_of_the_graph_is_answered_and_nothing_is_verified(self):
-        record = drafting.safety(self.kitchen.root, ["fact/dairy"], note="Made from cream.")
+        record = drafting.safety(self.kitchen.root, [("fact/dairy", "A milk product.", True)], note="Made from cream.")
         expected = {
             "state": "unverified",
-            "contains": ["fact/dairy"],
+            "contains": [{"fact": "fact/dairy", "basis": "A milk product.", "certain": True}],
             "free_of": ["fact/gluten"],
             "note": "Made from cream.",
         }
@@ -57,7 +57,7 @@ class SafetyRecords(unittest.TestCase):
 
     def test_a_fact_the_graph_does_not_hold_is_refused(self):
         with self.assertRaises(ValueError):
-            drafting.safety(self.kitchen.root, ["fact/mustard"])
+            drafting.safety(self.kitchen.root, [("fact/mustard", "It is mustard.", True)])
 
     def test_a_drafted_thing_is_written_and_passes_the_check(self):
         cream = drafting.thing("ingredient/cream", "Cream", fr="Crème")
@@ -66,7 +66,7 @@ class SafetyRecords(unittest.TestCase):
         cream["groups"] = []
         cream["forms"] = []
         cream["behaviour"] = "Thickens as it boils down."
-        cream["safety"] = drafting.safety(self.kitchen.root, ["fact/dairy"])
+        cream["safety"] = drafting.safety(self.kitchen.root, [("fact/dairy", "A milk product.", True)])
         cream["stands_in_for"] = []
         cream["in_pantry_of"] = drafting.links("cuisine/french")
         self.assertEqual("graph/ingredient/cream.json", drafting.put(self.kitchen.root, cream))
@@ -102,7 +102,7 @@ class OneOfEachKind(unittest.TestCase):
             drafting.group("roots", "Roots", "They hold a clean cut.", within="g/vegetables", stands_alone="Only the leek is in it yet."),
             drafting.ingredient(root, "leek", "Leek", "Softens slowly.", is_a=["i/allium"], groups=["g/roots"], pantry=["c/french"]),
             drafting.ingredient(
-                root, "ghee", "Ghee", "Stands high heat.", contains=["x/dairy"], note="Made from butter.",
+                root, "ghee", "Ghee", "Stands high heat.", contains=[("x/dairy", "Made from butter.", True)],
                 stands=[drafting.stand_in("i/butter", "Tastes nuttier.", when=["t/sweat"], ratio=(1, 1, "weight"))],
             ),
             drafting.technique(

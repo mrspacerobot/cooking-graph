@@ -3,7 +3,7 @@
 import os
 import unittest
 
-from tools import group_rules, part_rules, probe_rules, reading, rules, shapes, writing
+from tools import group_rules, part_rules, probe_rules, reading, rules, shapes, writing, written_documents
 from tools.reading import Issue, Thing
 
 
@@ -75,6 +75,8 @@ def read_repository(root):
     for rule in rules.BASE_RULES + group_rules.RULES + part_rules.RULES + probe_rules.RULES:
         issues.extend(rule(sound))
     issues.extend(rules.model_document(root, model))
+    if not issues:  # a written document is compared only with files that are sound
+        issues.extend(written_documents.behind(root, sound))
     issues.extend(rules.em_dashes(root))
     return sound, sorted(issues)
 

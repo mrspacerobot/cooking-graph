@@ -2,7 +2,11 @@
 
 This repository holds a knowledge graph of how the world cooks. This file is the steering document for people and coding agents. Read it before changing anything. If a rule here is wrong, change the rule in the same pull request, do not quietly ignore it.
 
-The plan is in mrspacerobot/tomi#106.
+The plan is [issue 2](https://github.com/mrspacerobot/cooking-graph/issues/2).
+Progress and next work are in `docs/handover.md`; the active first slice is
+[issue 3](https://github.com/mrspacerobot/cooking-graph/issues/3), and repository
+setup is [issue 4](https://github.com/mrspacerobot/cooking-graph/issues/4).
+Keep work tracking in this repository so a colleague needs access to no other one.
 
 ## What the graph is
 
@@ -66,3 +70,12 @@ Every thing and every statement carries one tier:
 - Words for people are warm, short and plain. Use a plain hyphen, never the em dash.
 - Code is small and plain: one function, one job, names that say what, comments that say why. No clever one-liners.
 - Until the stack is decided, tools use the Python standard library only. Nothing is installed.
+
+## Showing the graph in a browser
+
+- **For a visual walkthrough, run `./view` from the repository root** after reading this file and `docs/handover.md`. It rebuilds `out/graph.html` from the current working files and opens the default browser. The owner asked for this direct clone-and-open path; use it when a colleague asks to see or explore the graph.
+- **The page works independently of the agent.** It has no review session to keep alive or end. The colleague can keep exploring after your turn finishes and give feedback in the conversation.
+- **No Lavish, package installation or application server is needed.** The generator uses Python's standard library. The owner's interactive viewer uses pinned browser-only CDN libraries: force-graph 1.52.0, DaisyUI 5.5.19 and Tailwind's browser runtime 4.2.4. This does not change the stack of the graph tools.
+- **If automatic opening is unavailable, run `./view --no-open`** and open the printed HTML path with the available browser. Report the actual outcome; creating a file is not proof that a browser opened.
+- **Never hand-edit `out/graph.html`.** Change `viewer/` or the generator in `tools/viewer.py`, then rebuild. Keep generated pages and local captures out of commits.
+- **Show graph records only, never probes.** Preserve the tier, safety warning and context of every claim. Positions in a force layout are not evidence that ingredients are interchangeable. Keep the readable connection list alongside the canvas.

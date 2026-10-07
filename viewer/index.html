@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-theme="luxury">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cooking graph - explore your checkout</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5.5.19/daisyui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5.5.19/themes.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.2.4/dist/index.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/force-graph@1.52.0/dist/force-graph.min.js"></script>
+<style>__GRAPH_STYLES__</style>
+</head>
+<body>
+<main class="mx-auto max-w-[1600px] p-5 md:p-9">
+ <header class="flex flex-wrap items-start justify-between gap-5 mb-7">
+  <div><p class="eyebrow mb-3">Cooking graph / working files</p><h1 class="text-3xl md:text-5xl font-semibold tracking-tight">What connects to what?</h1><p class="soft mt-3 max-w-2xl">Explore recipes, techniques and ingredients. Inspect each substitution in its context.</p></div>
+  <button id="theme" class="btn btn-outline btn-sm" type="button">Switch to light</button>
+ </header>
+ <div class="alert alert-warning alert-soft mb-6"><span><strong>Internal graph review.</strong> Inspect each entry’s tier and safety state. This is not cooking guidance.</span></div>
+ <div id="stats" class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-7"></div>
+ <section aria-labelledby="explore-title">
+  <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+   <div><h2 id="explore-title" class="text-2xl font-semibold">Explore the graph</h2><p class="soft text-sm mt-1">Drag a node to rearrange it. Drag the background to pan, scroll or pinch to zoom, and click a node to inspect it.</p></div>
+
+  </div>
+  <div class="grid xl:grid-cols-[minmax(0,1fr)_minmax(280px,370px)] gap-5">
+   <div class="min-w-0">
+    <div class="grid sm:grid-cols-[minmax(0,1fr)_minmax(0,.75fr)] gap-3 mb-4">
+     <label class="fieldset"><span class="fieldset-legend">Find an entry</span><input id="search" type="search" class="input w-full" placeholder="Name, alias or id" autocomplete="off"><select id="pick" class="select w-full" aria-label="Matching graph entries"></select></label>
+     <label class="fieldset"><span class="fieldset-legend">Relationships to show</span><select id="mode" class="select w-full"><option value="cooking">All cooking links</option><option value="recipes">Recipe ingredients and parts</option><option value="techniques">Techniques and practice recipes</option><option value="substitutions">Substitution claims</option><option value="all">Include safety and source links</option></select></label>
+    </div>
+    <div class="flex flex-wrap items-end gap-3 mb-4">
+     <label class="fieldset"><span class="fieldset-legend">Graph view</span><select id="scope" class="select"><option value="global">Whole graph</option><option value="local">Around selected entry</option></select></label>
+     <label class="fieldset" id="depth-control" hidden><span class="fieldset-legend">Connection depth</span><select id="depth" class="select"><option value="1">1 step</option><option value="2">2 steps</option><option value="3">3 steps</option></select></label>
+     <div class="flex flex-wrap gap-2 pb-1"><button id="fit" class="btn btn-sm btn-outline" type="button">Fit graph</button><button id="focus" class="btn btn-sm btn-outline" type="button">Focus selected</button><button id="zoom-in" class="btn btn-sm btn-outline" type="button" aria-label="Zoom in">+</button><button id="zoom-out" class="btn btn-sm btn-outline" type="button" aria-label="Zoom out">−</button><button id="reset-layout" class="btn btn-sm btn-ghost" type="button">Reset layout</button></div>
+    </div>
+    <div id="legend" class="flex flex-wrap gap-x-4 gap-y-2 mb-3 text-xs"></div>
+    <div class="graph-shell bg-base-200"><div id="graph" role="img" aria-label="Interactive cooking graph. Search or use the connection list for keyboard navigation."></div></div>
+    <p id="graph-count" class="soft text-sm mt-3" aria-live="polite"></p>
+    <p id="link-detail" class="text-sm mt-2" aria-live="polite">Hover a node to highlight its neighbours. Click a connection to inspect what it means.</p>
+    <details class="mt-4 card card-border p-4"><summary class="cursor-pointer font-semibold">Connections as a readable list</summary><div id="connections" class="mt-3"></div></details>
+   </div>
+   <aside class="card card-border bg-base-200 self-start"><div class="card-body" id="inspector" aria-live="polite"></div></aside>
+  </div>
+ </section>
+ <footer class="soft text-sm mt-9 border-t border-base-content/15 pt-5"><p id="checkout">Built from the working files with ./view.</p><p class="mt-2">No probes are included. This viewer adds no culinary rules. Use ./view again after changing graph files.</p><p class="mt-2">Interactive layout: <a class="link" href="https://github.com/vasturiano/force-graph" target="_blank" rel="noopener">force-graph 1.52.0</a> (MIT). The page loads pinned browser libraries from a CDN; no package installation is needed.</p></footer>
+</main>
+<script id="graph-data" type="application/json">__GRAPH_DATA__</script>
+<script>__GRAPH_RENDERER__</script>
+<script>__GRAPH_CONTROLS__</script>
+</body>
+</html>

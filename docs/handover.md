@@ -2,7 +2,31 @@
 
 Written on 7 October 2026 for an agent or a person picking this up cold. Read `AGENTS.md` first. Its rules apply to you.
 
+## Current status and next steps
+
+- Work is on `1-first-slice`, in [draft PR 1](https://github.com/mrspacerobot/cooking-graph/pull/1). The owner reviews and merges; an agent never merges.
+- Completed: the first graph slice, strict checker and schema; the question commands, independent probes and one stand-in growth round; the standalone interactive browser viewer. `./view` builds the current working files and opens the browser. See `README.md` for a fresh clone.
+- Current validation: `./check` passes 262 tests and reads 906 content files strictly. Content remains drafted except for the inherited sourced facts; every ingredient safety record is unverified.
+- Next coding work, in order: finish the `fresh-3` growing round, write `docs/rounds/cycle-two-round-3.md`, write `docs/cycle-two.md`, update the draft PR description, then post the final cycle numbers on [issue 3](https://github.com/mrspacerobot/cooking-graph/issues/3). The detailed instructions and volume limits are in "What is left, in order" below.
+- Owner review still needed: the disputed milk/cream exclusion, the courgette-heavy ratatouille option, the strict ingredient answers and the safety disagreements. The graph is not ready for export to cooks.
+- Work tracking lives here: [epic 2](https://github.com/mrspacerobot/cooking-graph/issues/2), [first slice 3](https://github.com/mrspacerobot/cooking-graph/issues/3), and [repository setup 4](https://github.com/mrspacerobot/cooking-graph/issues/4). All are open. They were transferred from Tomi issues 106, 119 and 120 with their history, so a colleague needs access only to this repository. Issue 4 creates the later backlog and CI after the owner decides the stack.
+
+`README.md` is the entry point and commands, `AGENTS.md` is the working rules,
+this handover is the current progress and next work, `docs/question-cycle.md`
+is the measured question report, and `docs/rounds/` keeps the history. Update
+this current-status section when work finishes or priorities change.
+
+The sections below retain the earlier cycle history. Old Tomi issue references
+in past reports and commits are historical; current work uses issues 2, 3 and 4
+here. Reading the Tomi repository is not required to continue this graph work.
+
 ## Update after the question cycle
+
+The graph now has a standalone browser viewer. Run `./view` to build it from
+the current checkout and open the default browser; no Lavish session or package
+installation is needed. `README.md` has the clone-and-open instructions, and
+`AGENTS.md` tells the next agent how to give a visual walkthrough. The viewer
+is an internal review tool and includes no probe records.
 
 The four steps in "What the owner wants next" have now been carried out, in
 order, on `1-first-slice`. Read `docs/question-cycle.md` and
@@ -61,7 +85,7 @@ So question 2 can already be worked out from the files. Questions 1 and 3 have t
 
 - Branch `1-first-slice`, draft pull request 1 into `main`. Everything is pushed and nothing is merged.
 - `./check` passes: 841 files read strictly, no issue.
-- The plan is the epic mrspacerobot/tomi#106. This work is its first story, mrspacerobot/tomi#119. The next story is mrspacerobot/tomi#120: the stack, the checks, agents and the backlog.
+- The plan is [epic 2](https://github.com/mrspacerobot/cooking-graph/issues/2). This work is [first slice 3](https://github.com/mrspacerobot/cooking-graph/issues/3). The next story is [repository setup 4](https://github.com/mrspacerobot/cooking-graph/issues/4): the stack, checks, agents and backlog.
 - What to read: `docs/night-one.md` (the first cycle), `docs/rounds/` (one note per round), `docs/model.md` (the model and every change to it, each with the example that forced it).
 
 ## What exists
@@ -106,7 +130,7 @@ The owner asked for four fixes to the model, a better allergen list from real so
 1. **The round on `fresh-3`.** `./probe` lists what its growing probes lack: about five technique words and 22 ingredient words. Draft what is missing: techniques, ingredients, groups, preparations. Keep the volume down. A probe only needs its techniques and ingredients to exist. A full dish file with a recipe is written for at most two fresh dishes per skill in the whole cycle, so read the notes of rounds 1 and 2 for what each skill already got. Then `./check` clean, read ten of the new files again with fresh eyes and fix what is wrong, write `docs/rounds/cycle-two-round-3.md` like the earlier notes, commit and push.
 2. **The report `docs/cycle-two.md`:** what changed in the model, the sources and what each allows, the numbers, each stopping rule with its measured value, what is doubtful, and the open questions, each with a default.
 3. **The pull request's description,** brought up to date. It stays a draft.
-4. **A comment on mrspacerobot/tomi#119** with the final numbers of the cycle.
+4. **A comment on [issue 3](https://github.com/mrspacerobot/cooking-graph/issues/3)** with the final numbers of the cycle.
 
 ## Rules that are easy to break
 
@@ -116,7 +140,7 @@ The owner asked for four fixes to the model, a better allergen list from real so
 - **A safety disagreement is never settled by editing either side.** They are for the owner.
 - **No amount, time or temperature in a sentence,** and no claim that food is safe to eat.
 - **Python standard library only.** Install nothing. No em dash anywhere.
-- **Never push to `main`, never merge.** Commit subjects are in the imperative and end with `(mrspacerobot/tomi#119)`.
+- **Never push to `main`, never merge.** Commit subjects are in the imperative and end with `(#3)` for this first slice. Earlier commits named its original Tomi issue; never rewrite them.
 
 ## The commands
 
@@ -147,6 +171,6 @@ Of the 11 safety disagreements among the growing probes, 10 rest on strict answe
 - A review of pull request 1.
 - A ruling on how strict to be: 109 of the facts ingredients hold are certain and 116 are recorded strictly for want of knowing (`docs/strict-answers.md`).
 - A ruling on each safety disagreement (`docs/safety-disagreements.md`).
-- The stack (mrspacerobot/tomi#120).
-- The app's own allergen list (mrspacerobot/tomi#123).
+- The stack ([issue 4](https://github.com/mrspacerobot/cooking-graph/issues/4)).
+- The app's own allergen list remains the owner's separate app work; it does not block work on this repository.
 - A reviewer for Japanese and for Indian cooking, before those slices start.

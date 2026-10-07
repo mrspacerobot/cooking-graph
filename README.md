@@ -27,17 +27,58 @@ unverified. Nothing here may be shown to a cook or exported to an app.
 | `schema/model.json` | The model: every kind, its fields and what each may hold |
 | `schema/words.json` | The closed word lists: tiers, units, roles |
 | `tools/`, `tests/` | The commands and their tests. Python standard library only |
+| `viewer/` | The interactive browser page's template, styles and JavaScript |
 | `docs/model.md` | The model in words, and every change to the starting model with the example that forced it |
 | `docs/night-one.md` | The report of the first night: what to open first, the numbers, the doubts, the open questions |
 | `docs/strict-answers.md` | Every answer that an ingredient holds a fact strictly and not for certain. Written by `./safety strict` |
 | `docs/safety-disagreements.md` | Where a safety probe and the graph disagree, with both sides. Written by `./safety disagreements` |
 | `docs/rounds/` | The numbers and notes of each round |
 
+## Explore in your browser
+
+For this draft, clone the working branch and open the graph:
+
+```sh
+git clone --branch 1-first-slice https://github.com/mrspacerobot/cooking-graph.git
+cd cooking-graph
+./view
+```
+
+`./view` checks the repository, builds `out/graph.html` from the current working
+files, and opens it in your default browser. Run it again after changing the
+graph. The generated page is ignored by git. No Lavish session, local server,
+Node installation or package install is needed. Python 3.9 or later is enough
+to build it; the browser needs internet access to load the pinned CDN libraries.
+
+Drag nodes to rearrange them, drag the background to pan, and scroll or pinch
+to zoom. Click an entry to inspect its record, hover to highlight its neighbours,
+or click a connection to see its meaning. Switch between the whole graph and a
+local view with one to three steps of connection depth. Filter relationships,
+search names or aliases, and use the connection list for keyboard navigation.
+Dashed red links represent explicit exclusions in their stated contexts;
+ordinary stand-in links are conditional claims. The layout is a drawing of
+links, not a measure of culinary similarity or confidence.
+
+The viewer contains graph files only, never probes. It uses the existing
+stand-in query rules and displays tiers and safety states. It is an internal
+review tool; unverified content remains unavailable for export to cooks.
+
+For an agent or a machine without a browser:
+
+```sh
+./view --no-open
+```
+
+Then open the printed file path. The command reports when automatic browser
+opening fails. An agent giving a first visual walkthrough should follow
+the browser instructions in `AGENTS.md`.
+
 ## Commands
 
 | Command | What it does |
 |---|---|
 | `./check` | Runs the tests of the tools, then reads every file strictly and lists every issue |
+| `./view [--no-open]` | Builds the current graph's interactive HTML page and opens it in the default browser |
 | `./probe` | Runs the dish probes and lists what the graph lacks. Held-back probes are counted, never shown |
 | `./probe questions [batch]` | Runs the stand-in and kitchen questions; shows only growing gaps and aggregate held-back counts |
 | `./numbers` | Counts by kind and tier, part-option shares, positive and negative statements, and all probe kinds, growing and held back apart |
@@ -82,8 +123,14 @@ recipe ids. Equipment is not part of the kitchen input yet.
 
 ## Where the plan is
 
-- The epic: mrspacerobot/tomi#106. It holds the starting model, the loop that grows the graph, and the rules for when a round and a slice stop.
-- The first story: mrspacerobot/tomi#119, which builds the first slice (the 12 French techniques the Tomi app teaches today) and settles the model from it.
+- [Epic #2](https://github.com/mrspacerobot/cooking-graph/issues/2) holds the starting model, the growth loop, stopping rules and future stories.
+- [First slice #3](https://github.com/mrspacerobot/cooking-graph/issues/3) tracks completed work, the unfinished `fresh-3` round and the owner's review, in [draft PR #1](https://github.com/mrspacerobot/cooking-graph/pull/1).
+- [Repository setup #4](https://github.com/mrspacerobot/cooking-graph/issues/4) covers the stack decision, CI, agent workflow and later backlog.
+- [docs/handover.md](docs/handover.md) records the current state and next steps. Start there after `AGENTS.md`; measured results are in [docs/question-cycle.md](docs/question-cycle.md), with history in `docs/rounds/`.
+
+These issues live here so a colleague only needs access to `cooking-graph`.
+They were transferred from Tomi issues 106, 119 and 120 with their history.
+References in older reports and commits are historical; use the links above for current work.
 
 ## Rules
 

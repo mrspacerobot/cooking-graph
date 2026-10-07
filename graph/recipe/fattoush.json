@@ -1,0 +1,146 @@
+{
+  "id": "recipe/fattoush",
+  "tier": "drafted",
+  "names": {"en": "Fattoush"},
+  "aliases": {},
+  "makes": "dish/fattoush",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pita-bread", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "pita"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/lettuce", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lettuce"},
+    {"thing": "ingredient/tomato", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/cucumber", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "cucumber"},
+    {"thing": "ingredient/purslane", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "purslane"},
+    {"thing": "ingredient/mint", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "herbs"},
+    {"thing": "ingredient/parsley", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "herbs"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {
+      "thing": "preparation/fattoush-dressing",
+      "amount": {"value": 120, "unit": "millilitre"},
+      "forms": [],
+      "part": "dressing"
+    },
+    {"thing": "ingredient/sumac", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sumac"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/baking-sheet", "equipment/pastry-brush", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/mixing-bowl", "equipment/colander"
+  ],
+  "steps": [
+    {
+      "technique": "technique/brush",
+      "works_on": ["ingredient/pita-bread"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Split each pita into thin rounds and brush the rough faces with a little of the olive oil.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/pita-bread"],
+      "with": [],
+      "text": "Break the rounds into rough pieces, spread them on a tray and bake until they are crisp and golden. Let them cool on the tray.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/lettuce"],
+      "with": [],
+      "text": "Wash the lettuce leaves in cold water.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dry",
+      "works_on": ["ingredient/lettuce"],
+      "with": [],
+      "text": "Dry the leaves well in a cloth, then tear them into bite-sized pieces. Wet leaves water down the dressing.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/tomato"],
+      "with": [],
+      "text": "Cut the tomatoes into chunks. Cut the cucumbers into chunks of a similar size.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/spring-onion"],
+      "with": [],
+      "text": "Slice the spring onions thin.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/mint", "ingredient/parsley"],
+      "with": [],
+      "text": "Dry the herbs well. Tear the mint and chop the parsley roughly.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/lettuce", "ingredient/tomato", "ingredient/cucumber"],
+      "with": [
+        "preparation/fattoush-dressing", "ingredient/mint", "ingredient/parsley", "ingredient/spring-onion",
+        "ingredient/purslane"
+      ],
+      "text": "In a large bowl, toss the lettuce, the tomatoes, the cucumbers, the herbs, the spring onions and the purslane with most of the dressing.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/pita-bread"],
+      "with": ["preparation/fattoush-dressing", "ingredient/sumac"],
+      "text": "At the last moment, add the toasted pita and the rest of the dressing and toss only once or twice, so that the bread stays crisp. Dust with the sumac.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/lettuce"],
+      "with": ["ingredient/salt"],
+      "text": "Taste a leaf with a piece of pita and add a little salt if it needs it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/lettuce", "ingredient/tomato", "ingredient/cucumber"],
+      "with": [],
+      "text": "Pile the salad in a wide bowl and serve it at once.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

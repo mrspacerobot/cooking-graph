@@ -1,0 +1,38 @@
+{
+  "id": "dish/tabbouleh",
+  "tier": "drafted",
+  "names": {"en": "Tabbouleh", "fr": "Taboulé libanais"},
+  "aliases": {"en": ["tabouleh", "tabouli", "tabbouli", "Lebanese parsley salad"], "fr": ["taboulé"]},
+  "is": "A fresh salad that is mostly finely chopped parsley, with mint, tomato and spring onion and only a little soaked fine bulgur, dressed with lemon juice and olive oil. The herbs are the main thing and the grain is the garnish.",
+  "parts": [
+    {"id": "parsley", "role": "main", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "mint", "role": "aromatic", "options": ["ingredient/mint"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "main", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "spring-onion",
+      "role": "aromatic",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "bulgur", "role": "base", "options": ["ingredient/fine-bulgur"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon-juice", "ingredient/lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "allspice", "role": "seasoning", "options": ["ingredient/allspice"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/soak-bulgur", "tier": "drafted"},
+    {"thing": "technique/chop", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

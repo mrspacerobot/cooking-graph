@@ -1,0 +1,50 @@
+{
+  "id": "technique/mash-with-a-fork",
+  "tier": "drafted",
+  "names": {"en": "Mash with a fork"},
+  "aliases": {"en": ["fork-mash"]},
+  "does": "Breaks soft, cooked flesh into a rough, stringy mash with a fork, so that some texture is left and the smoky taste of the food is not lost to a machine.",
+  "how": [
+    "Make sure the flesh is completely soft, and let any bitter juice drain off.",
+    "Put the flesh in a bowl and press and drag a fork through it until it falls into strands and small soft lumps.",
+    "Stir in the dressing a little at a time as you go, so that the flesh takes up the seasoning.",
+    "Stop while some texture is left."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Rough strands and small soft lumps, not a smooth paste."},
+    {"sense": "feel", "text": "No firm bits left under the fork."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Blending it to a smooth paste, so that the texture is lost.",
+      "fix": "Use a fork, and stop while strands are still showing."
+    },
+    {
+      "mistake": "Mashing flesh that is not soft all the way, which leaves hard bits.",
+      "fix": "Keep it on the heat until it has collapsed completely."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/aubergine", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/char",
+      "why": "The flesh is soft and smoky from the flame before it is mashed.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/mash",
+      "differs": "The flesh is broken into a rough, stringy mass by hand and not beaten smooth, and no butter or milk goes in.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

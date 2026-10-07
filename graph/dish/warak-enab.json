@@ -1,0 +1,34 @@
+{
+  "id": "dish/warak-enab",
+  "tier": "drafted",
+  "names": {"en": "Warak enab"},
+  "aliases": {"en": ["warak einab", "warak enab bi zeit"]},
+  "is": "Vine leaves rolled round a filling of raw rice, tomato, onion, parsley and mint, packed tightly in a pot and simmered in olive oil and lemon juice until tender. This is the meatless kind, which is served cold or at room temperature with lemon.",
+  "parts": [
+    {"id": "vine-leaf", "role": "main", "options": ["ingredient/vine-leaf"], "optional": false, "tier": "drafted"},
+    {"id": "rice", "role": "filling", "options": ["ingredient/rice"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "filling", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "mint", "role": "aromatic", "options": ["ingredient/mint"], "optional": false, "tier": "drafted"},
+    {"id": "allspice", "role": "seasoning", "options": ["ingredient/allspice"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon-juice", "ingredient/lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/roll", "tier": "drafted"},
+    {"thing": "technique/simmer-rolled-leaves", "tier": "drafted"},
+    {"thing": "technique/soak-rice", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

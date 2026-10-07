@@ -1,0 +1,59 @@
+{
+  "id": "dish/kousa-mahshi",
+  "tier": "drafted",
+  "names": {"en": "Kousa mahshi"},
+  "aliases": {"en": ["koussa mahshi", "kousa mehshi", "koosa mahshi"]},
+  "is": "Small, pale courgettes hollowed out and filled loosely with raw rice, minced lamb and warm spices, then simmered snugly packed in a tangy tomato broth with garlic and dried mint.",
+  "parts": [
+    {"id": "courgette", "role": "main", "options": ["ingredient/courgette"], "optional": false, "tier": "drafted"},
+    {"id": "rice", "role": "filling", "options": ["ingredient/rice"], "optional": false, "tier": "drafted"},
+    {
+      "id": "meat",
+      "role": "filling",
+      "options": ["ingredient/ground-lamb", "ingredient/minced-beef"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "spice",
+      "role": "seasoning",
+      "options": ["ingredient/allspice", "ingredient/cinnamon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "sauce",
+      "options": ["ingredient/tomato-paste", "ingredient/tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dried-mint",
+      "role": "aromatic",
+      "options": ["ingredient/dried-mint"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon-juice", "ingredient/lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/core", "tier": "drafted"},
+    {"thing": "technique/stuff", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

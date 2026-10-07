@@ -1,0 +1,65 @@
+{
+  "id": "technique/beat-tahini-sauce",
+  "tier": "drafted",
+  "names": {"en": "Beat tahini sauce"},
+  "aliases": {"en": ["make tahini sauce", "loosen tahini", "make taratour"]},
+  "does": "Beats tahini with lemon juice and cold water into a pale, smooth, pourable sauce. The paste stiffens and looks curdled when the first liquid goes in, then turns silky and loose as more water is beaten in.",
+  "how": [
+    "Stir the tahini well first, as its oil rises to the top. If garlic is used, crush it with salt and stir it into the lemon juice.",
+    "Put the tahini in a bowl and stir in the lemon juice. The paste will seize and thicken, as it should.",
+    "Add cold water a spoonful at a time, beating hard after each, until the paste loosens, lightens and turns smooth.",
+    "Stop at the texture the dish wants: thick as cream for a dip, thinner for pouring over fish or falafel.",
+    "Taste, and adjust the lemon juice and the salt."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A pale, creamy, glossy sauce with no oil standing on top."},
+    {
+      "sense": "feel",
+      "text": "Stiff and tight after the lemon juice goes in, then silky and easy to stir as the water goes in."
+    },
+    {"sense": "taste", "text": "Nutty and tart, with no bitter edge."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring in all the water at once, so that the sauce splits into oil and a watery paste.",
+      "fix": "Add it a spoonful at a time and beat after each."
+    },
+    {
+      "mistake": "Giving up when the paste seizes, thinking it has gone wrong.",
+      "fix": "Keep beating and keep adding water. It loosens."
+    },
+    {
+      "mistake": "Using tahini from the top of the jar, where the oil has risen, so that the sauce is thin and oily.",
+      "fix": "Stir the jar well before measuring."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/tahini", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/tahini-sauce", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk", "equipment/spoon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon-juice", "ingredient/lemon"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/whisk",
+      "why": "The sauce is beaten by hand until smooth, so a steady beating hand comes first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/emulsify",
+      "differs": "No oil is added. The oil already in the tahini is spread through lemon juice and water by beating, and the paste first seizes and then loosens.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

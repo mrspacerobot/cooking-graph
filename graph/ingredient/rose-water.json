@@ -2,7 +2,7 @@
   "id": "ingredient/rose-water",
   "tier": "drafted",
   "names": {"en": "Rose water", "fr": "Eau de rose"},
-  "aliases": {"en": ["rosewater"]},
+  "aliases": {"en": ["rosewater", "maward"]},
   "is_a": [],
   "part_of": [],
   "groups": [],

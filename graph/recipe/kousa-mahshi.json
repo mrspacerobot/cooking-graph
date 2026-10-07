@@ -1,0 +1,132 @@
+{
+  "id": "recipe/kousa-mahshi",
+  "tier": "drafted",
+  "names": {"en": "Kousa mahshi"},
+  "aliases": {},
+  "makes": "dish/kousa-mahshi",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/courgette", "amount": {"value": 1, "unit": "kilogram"}, "forms": [], "part": "courgette"},
+    {"thing": "ingredient/rice", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/ground-lamb", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/parsley", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/allspice", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "spice"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "spice"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/water", "amount": {"value": 700, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/dried-mint", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "dried-mint"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 60, "unit": "millilitre"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/corer", "equipment/colander", "equipment/mixing-bowl",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/core",
+      "works_on": ["ingredient/courgette"],
+      "with": [],
+      "text": "Cut a thin slice off the stem end of each courgette and hollow it out with the corer, working from the cut end. Leave a thin, even wall and take care not to pierce it. Keep the scooped flesh for another dish.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/rice"],
+      "with": [],
+      "text": "Rinse the rice under cold water and drain it. It goes into the filling raw.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "Mince the parsley fine.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": [
+        "ingredient/rice", "ingredient/parsley", "ingredient/allspice", "ingredient/cinnamon", "ingredient/olive-oil",
+        "ingredient/salt"
+      ],
+      "text": "Work the lamb with the rice, the parsley, the allspice, the cinnamon, the olive oil and half the salt, with the hands, until the mixture is even and holds together.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stuff",
+      "works_on": ["ingredient/courgette"],
+      "with": ["ingredient/ground-lamb"],
+      "text": "Fill each courgette loosely with the mixture and stop a little short of the top, because the rice swells as it cooks.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/salt", "ingredient/dried-mint"],
+      "text": "Crush the garlic with the rest of the salt to a paste, and rub in the dried mint.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/courgette"],
+      "with": ["ingredient/tomato-paste", "ingredient/garlic", "ingredient/dried-mint", "ingredient/water"],
+      "text": "Pack the stuffed courgettes snugly in a wide pot. Stir the tomato paste and the garlic and mint paste into the water, pour it over the courgettes until they are just covered, and bring it to a gentle simmer.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cover-with-a-lid",
+      "works_on": ["ingredient/courgette"],
+      "with": [],
+      "text": "Set a small plate on the courgettes to hold them down, cover the pot and cook on a low heat until the courgettes are very soft and the filling has set. Check the filling against a trusted guide to doneness.",
+      "time": {"from": 35, "to": 45, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/courgette"],
+      "with": ["ingredient/lemon-juice", "ingredient/salt"],
+      "text": "Taste the broth, and add the lemon juice and a little salt if it needs them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/courgette"],
+      "with": [],
+      "text": "Lift the courgettes onto a dish with a slotted spoon and spoon a little of the broth over them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "technique/make-a-taqliyeh",
+  "tier": "drafted",
+  "names": {"en": "Make a taqliyeh"},
+  "aliases": {"en": ["make taqliyeh", "fry garlic and coriander", "garlic and coriander sizzle"]},
+  "does": "Fries crushed raw garlic and chopped fresh coriander in hot fat for a short moment, until the garlic smells sweet and the coriander wilts and darkens, then stirs the sizzling mixture into the pot, most often at the end. It gives a stew, a soup or a dish of pulses a sharp, fresh scent.",
+  "how": [
+    "Crush the garlic with salt to a rough paste, and chop the coriander fine.",
+    "Heat the fat in a small pan until it shimmers.",
+    "Add the garlic and stir at once. Add the coriander when the garlic turns pale gold and smells sweet.",
+    "Take the pan off the heat the moment the coriander has wilted and darkened, and tip it, sizzling, into the pot.",
+    "Stir it in and serve soon, while the scent is still bright."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "A sweet, sharp scent of garlic and green coriander, with no bitter edge."},
+    {"sense": "see", "text": "The garlic is pale gold and never brown, and the coriander has wilted to a dark green."},
+    {"sense": "hear", "text": "A lively sizzle as the mixture meets the hot liquid."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting the garlic brown, which turns the whole pot bitter.",
+      "fix": "Add the coriander as soon as the garlic turns pale gold, and take the pan off the heat quickly."
+    },
+    {
+      "mistake": "Stirring the mixture in early and cooking it on, so that the fresh scent is lost.",
+      "fix": "Add it at the very end, off the heat."
+    },
+    {
+      "mistake": "Chopping the coriander coarse, so that stems stay tough.",
+      "fix": "Chop the leaves and tender stems fine."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/garlic", "tier": "drafted"},
+    {"thing": "ingredient/coriander-leaf", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/taqliyeh", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/ghee", "ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/crush",
+      "why": "The garlic is crushed with salt first, so that it fries evenly and gives its scent at once.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/temper-spices-in-hot-fat",
+      "differs": "The fat holds crushed fresh garlic and chopped fresh coriander and not dry spices. It is cooked for a moment only and is stirred into the pot, most often at the end, so it finishes a dish more than it starts one.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

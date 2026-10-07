@@ -1,0 +1,59 @@
+{
+  "id": "technique/stew-jute-leaf",
+  "tier": "drafted",
+  "names": {"en": "Stew jute leaf"},
+  "aliases": {"en": ["cook jute leaf", "cook molokhia", "simmer jute leaf in broth"]},
+  "does": "Simmers finely chopped jute leaf in hot broth, uncovered, until the leaves give up their slippery thickness and the broth turns dark green and silky. It is kept just below a boil, stirred little, and finished with a taqliyeh of garlic and coriander.",
+  "how": [
+    "Strip fresh leaves from their stems, wash and dry them well, and chop them very fine. Frozen leaves go in as they are. Dried leaves are soaked briefly first.",
+    "Bring the broth to a gentle simmer and keep it hot.",
+    "Stir in the leaves, and keep the pot just below a boil, uncovered.",
+    "Cook until the leaves have sunk into the broth and thickened it to a silky stew, stirring only now and then.",
+    "Take the pot off the heat before the garlic and coriander taqliyeh and the lemon juice go in."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The broth turns dark green, glossy and a little thick, with the leaves hanging in it and not clumped."
+    },
+    {"sense": "feel", "text": "The spoon moves through it easily. It is thick and silky and not stringy."},
+    {"sense": "smell", "text": "A deep, green scent, a little like cooked spinach."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling it hard or putting a lid on, so that the stew turns dull and stringy.",
+      "fix": "Keep it just below a boil, uncovered."
+    },
+    {
+      "mistake": "Chopping the leaves coarse, so that they stay in long strings.",
+      "fix": "Chop them very fine, or use leaves that are already chopped."
+    },
+    {"mistake": "Adding lemon juice early, which dulls the green.", "fix": "Add it at the end."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/jute-leaf", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["preparation/broth", "ingredient/chicken-stock"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "The stew is held at a gentle simmer, so a cook who can hold a simmer steady has the main skill.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/simmer",
+      "differs": "The leaf is chopped very fine and cooked uncovered, just below a boil, until it thickens the broth itself, and it is stirred little.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

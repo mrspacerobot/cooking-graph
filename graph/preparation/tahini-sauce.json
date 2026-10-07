@@ -1,0 +1,28 @@
+{
+  "id": "preparation/tahini-sauce",
+  "tier": "drafted",
+  "names": {"en": "Tahini sauce"},
+  "aliases": {"en": ["taratour", "taratoor"]},
+  "is": "Tahini beaten with lemon juice and cold water into a pale, smooth sauce, thick enough to dip in or loose enough to pour. It carries a dip such as baba ghanoush and goes over fish and falafel.",
+  "parts": [
+    {"id": "tahini", "role": "base", "options": ["ingredient/tahini"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon-juice", "ingredient/lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/beat-tahini-sauce", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

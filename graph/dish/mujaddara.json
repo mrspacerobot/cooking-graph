@@ -1,0 +1,31 @@
+{
+  "id": "dish/mujaddara",
+  "tier": "drafted",
+  "names": {"en": "Mujaddara"},
+  "aliases": {"en": ["mjaddara", "moujaddara", "mujadara", "lentils and rice with fried onions"]},
+  "is": "Brown lentils and rice cooked together with cumin in one pot, then heaped with onions fried until dark and crisp. It is eaten warm or at room temperature, with yogurt or a raw salad on the side.",
+  "parts": [
+    {"id": "lentil", "role": "main", "options": ["ingredient/brown-lentil"], "optional": false, "tier": "drafted"},
+    {"id": "rice", "role": "base", "options": ["ingredient/rice"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "topping", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "yogurt", "role": "side", "options": ["ingredient/plain-yogurt"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-onions-dark", "tier": "drafted"},
+    {"thing": "technique/cook-rice-with-lentils", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

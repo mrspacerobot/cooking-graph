@@ -1,0 +1,37 @@
+{
+  "id": "dish/baba-ghanoush",
+  "tier": "drafted",
+  "names": {"en": "Baba ghanoush"},
+  "aliases": {"en": ["baba ghannouj", "baba ganoush", "baba ghanouj", "moutabal", "mutabbal"]},
+  "is": "A smoky, creamy dip of charred aubergine mashed with tahini, lemon juice and garlic, served in a shallow dish with a pool of olive oil. The tahini version is called moutabal in much of the Levant.",
+  "parts": [
+    {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},
+    {"id": "tahini", "role": "enrichment", "options": ["ingredient/tahini"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon-juice", "ingredient/lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "garnish", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pomegranate-seed",
+      "role": "garnish",
+      "options": ["ingredient/pomegranate-seed"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/char", "tier": "drafted"},
+    {"thing": "technique/beat-tahini-sauce", "tier": "drafted"},
+    {"thing": "technique/mash-with-a-fork", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

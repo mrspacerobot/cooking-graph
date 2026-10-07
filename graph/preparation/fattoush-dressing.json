@@ -1,0 +1,44 @@
+{
+  "id": "preparation/fattoush-dressing",
+  "tier": "drafted",
+  "names": {"en": "Fattoush dressing"},
+  "aliases": {},
+  "is": "A sharp dressing of lemon juice, olive oil and pomegranate molasses, with crushed garlic, dried mint and sumac, made for the salad of toasted pita.",
+  "parts": [
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon-juice", "ingredient/lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "pomegranate-molasses",
+      "role": "acid",
+      "options": ["ingredient/pomegranate-molasses"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "dried-mint",
+      "role": "aromatic",
+      "options": ["ingredient/dried-mint"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "sumac", "role": "seasoning", "options": ["ingredient/sumac"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/emulsified-sauces", "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/emulsify", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

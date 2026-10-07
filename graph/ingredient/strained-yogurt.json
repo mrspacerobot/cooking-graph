@@ -2,7 +2,7 @@
   "id": "ingredient/strained-yogurt",
   "tier": "drafted",
   "names": {"en": "Strained yogurt"},
-  "aliases": {"en": ["suzme yogurt", "suzme yoghurt", "strained yoghurt"]},
+  "aliases": {"en": ["suzme yogurt", "suzme yoghurt", "strained yoghurt", "labneh"]},
   "is_a": [
     {"thing": "ingredient/plain-yogurt", "tier": "drafted"}
   ],

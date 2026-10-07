@@ -1,0 +1,44 @@
+{
+  "id": "dish/bamieh-bi-zeit",
+  "tier": "drafted",
+  "names": {"en": "Bamieh bi zeit"},
+  "aliases": {"en": ["okra in olive oil", "okra stew with tomato"]},
+  "is": "Small whole okra lightly browned and then simmered with onion and tomato in olive oil, finished with a sizzling garlic and coriander taqliyeh and lemon juice. It is served warm or at room temperature, with bread or rice.",
+  "parts": [
+    {"id": "okra", "role": "main", "options": ["ingredient/okra"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "sauce",
+      "options": ["ingredient/tomato", "ingredient/tomato-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "aromatic",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon-juice", "ingredient/lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/saute", "tier": "drafted"},
+    {"thing": "technique/make-a-taqliyeh", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

@@ -6,10 +6,11 @@ It is private. `cooking-graph` is a working name.
 
 ## Status
 
-The three graph questions now have commands, independent probes and a first
-stand-in growth cycle. Read `docs/question-cycle.md` first for the current
-results and limits. `docs/night-one.md` records the first slice; the cycle-two
-round notes record its later growth. `docs/cycle-two.md` reports the finished cycle.
+The three graph questions have commands, independent probes and a stand-in
+growth cycle. Read `docs/handover.md` for the current status and next steps.
+`docs/question-cycle.md` records the question cycle's results and limits;
+`docs/night-one.md` records the first slice, and `docs/cycle-two.md` reports
+the later cycle.
 
 Cooking content has no human review or kitchen test. Sixteen inherited allergen
 facts are sourced from regulator pages; the rest is drafted. Safety records are
@@ -43,9 +44,7 @@ git clone https://github.com/mrspacerobot/cooking-graph.git
 cd cooking-graph
 ```
 
-Until [PR #1](https://github.com/mrspacerobot/cooking-graph/pull/1) is merged,
-run `git checkout 1-first-slice`. After it is merged, the default branch has
-the viewer. Then open the graph:
+Open the graph from the default branch:
 
 ```sh
 ./view
@@ -131,8 +130,8 @@ recipe ids. Equipment is not part of the kitchen input yet.
 ## Where the plan is
 
 - [Epic #2](https://github.com/mrspacerobot/cooking-graph/issues/2) holds the starting model, the growth loop, stopping rules and future stories.
-- [First slice #3](https://github.com/mrspacerobot/cooking-graph/issues/3) establishes the internal draft baseline in [PR #1](https://github.com/mrspacerobot/cooking-graph/pull/1), pending the owner's review and merge.
-- [Cycle two #5](https://github.com/mrspacerobot/cooking-graph/issues/5) tracks the unfinished `fresh-3` round and report. [Content review #6](https://github.com/mrspacerobot/cooking-graph/issues/6) tracks culinary claims, strict facts and safety disagreements. Both remain open after the first slice is merged.
+- [First slice #3](https://github.com/mrspacerobot/cooking-graph/issues/3) established the internal draft baseline in the merged [PR #1](https://github.com/mrspacerobot/cooking-graph/pull/1).
+- [Cycle two #5](https://github.com/mrspacerobot/cooking-graph/issues/5) covers the completed `fresh-3` round and report. [Content review #6](https://github.com/mrspacerobot/cooking-graph/issues/6) covers culinary claims, strict facts and safety disagreements.
 - [Repository setup #4](https://github.com/mrspacerobot/cooking-graph/issues/4) covers the stack decision, CI, agent workflow and later backlog.
 - [docs/handover.md](docs/handover.md) records the current state and next steps. Start there after `AGENTS.md`; measured results are in [docs/question-cycle.md](docs/question-cycle.md), with history in `docs/rounds/`.
 

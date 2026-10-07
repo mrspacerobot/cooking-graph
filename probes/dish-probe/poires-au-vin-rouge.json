@@ -4,6 +4,7 @@
   "batch": "poach-1",
   "set": "growing",
   "written_by": "claude-opus-5-5",
+  "cuisine": "french",
   "written_for": "poach",
   "dish": "Poires au vin rouge",
   "also_called": ["pears poached in red wine", "poires au vin"],

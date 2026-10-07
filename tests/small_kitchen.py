@@ -201,6 +201,7 @@ def probe_files():
             "batch": BATCH,
             "set": "held-back" if probe_id in held_back else "growing",
             "written_by": "another-model",
+            "cuisine": "french",
             "written_for": "sweating",
             "dish": name,
             "also_called": [],

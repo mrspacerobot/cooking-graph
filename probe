@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """probe: run the dish probes against the graph and list what the graph lacks.
 
-./probe            every batch
-./probe fresh-1    one batch alone
+./probe                     every batch
+./probe fresh-1             one batch alone
+./probe --cuisine japanese  one cuisine alone
 """
 
 import os
@@ -22,6 +23,9 @@ if arguments and arguments[0] == "questions":
         sys.exit(1)
     batch = arguments[1] if len(arguments) > 1 else None
     print(question_probes.report(question_probes.run(things, batch=batch)))
+elif arguments and arguments[0] == "--cuisine":
+    cuisine = arguments[1] if len(arguments) > 1 else None
+    print(probes.report(probes.run(things, cuisine=cuisine)))
 else:
     batch = arguments[0] if arguments else None
     print(probes.report(probes.run(things, batch=batch)))

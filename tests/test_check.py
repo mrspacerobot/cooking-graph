@@ -622,6 +622,26 @@ class Probes(CheckerTest):
         self.break_file(PROBE, lambda probe: probe.update(written_for="frying"))
         self.expect(PROBE, "skill-unknown")
 
+    def test_a_probe_for_a_cuisine_that_does_not_exist(self):
+        self.break_file(PROBE, lambda probe: probe.update(cuisine="narnian"))
+        self.expect(PROBE, "cuisine-unknown")
+
+    def test_a_probe_for_a_cuisine_without_a_program_names_any_topic(self):
+        self.kitchen.write("graph/cuisine/japanese.json", {
+            "id": "cuisine/japanese", "tier": "drafted", "names": {"en": "Japanese"}, "aliases": {}, "within": None,
+        })
+        self.break_file(PROBE, lambda probe: probe.update(cuisine="japanese", written_for="rice"))
+        self.assertEqual([], self.issues())
+
+    def test_a_probe_for_a_cuisine_with_a_program_names_a_skill_of_that_program(self):
+        self.kitchen.write("graph/cuisine/japanese.json", {
+            "id": "cuisine/japanese", "tier": "drafted", "names": {"en": "Japanese"}, "aliases": {}, "within": None,
+        })
+        self.break_file(PROBE, lambda probe: probe.update(cuisine="japanese", written_for="sweating"))
+        self.assertEqual([], self.issues())
+        self.break_file(PROBE, lambda probe: probe.update(cuisine="french", written_for="rice"))
+        self.expect(PROBE, "skill-unknown")
+
     def test_a_probe_moved_out_of_the_held_back_set(self):
         path = self.kitchen.held_back_path()
         self.break_file(path, lambda probe: probe.update(set="growing"))

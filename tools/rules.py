@@ -32,24 +32,6 @@ def names_a_source(thing, where):
     return where == "" and any(row["tier"] == "sourced" for row in thing.data["regulated"])
 
 
-def tiers_earned(things):
-    """Nothing is above drafted, except a fact taken from a source it names, which may be sourced.
-
-    There is no record yet of who reviewed what, so nothing can have earned more.
-    """
-    issues = []
-    for thing_id, thing in sorted(things.items()):
-        for where, node in nested(thing.data):
-            tier = node.get("tier", LOWEST_TIER)
-            if tier == LOWEST_TIER:
-                continue
-            if tier == "sourced" and names_a_source(thing, where):
-                continue
-            message = "'%s' was not earned: only a fact that names its source may be sourced, and nothing is above that yet" % tier
-            issues.append(Issue(thing.path, join(where, "tier"), "tier-not-earned", message))
-    return issues
-
-
 def regulated_once(things):
     """A fact says once what its standing is in a place. Mandatory and recommended may both stand, as in Japan."""
     issues = []
@@ -395,7 +377,6 @@ def lines_with_an_em_dash(path):
 
 
 BASE_RULES = [
-    tiers_earned,
     regulated_once,
     safety_earned,
     facts_answered,

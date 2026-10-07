@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+"""review: show a card with the hash a review record must carry. It writes nothing.
+
+./review show technique/deglaze
+./review seal technique/deglaze                           the hash of the whole card
+./review seal technique/deglaze works_on group/sauces     the hash of one statement
+"""
+
+import os
+import sys
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+
+from tools import check, review_tool  # noqa: E402
+
+arguments = sys.argv[1:]
+if len(arguments) < 2 or arguments[0] not in ("show", "seal"):
+    sys.exit(__doc__)
+things, issues = check.read_repository(ROOT)
+if issues:
+    print("review: ./check finds %d issues" % len(issues), file=sys.stderr)
+    sys.exit(1)
+try:
+    if arguments[0] == "show":
+        print("\n".join(review_tool.show(things, arguments[1])))
+    else:
+        print(review_tool.seal(things, *arguments[1:4]))
+except ValueError as error:
+    print("review: %s" % error, file=sys.stderr)
+    sys.exit(1)

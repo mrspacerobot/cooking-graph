@@ -2,8 +2,8 @@
 
 import unittest
 
-from tests.small_kitchen import SmallKitchen
-from tools import check, numbers, reading
+from tests.small_kitchen import SmallKitchen, cover, review, reviewer
+from tools import check, numbers, reading, review_hash
 
 
 class NumbersTest(unittest.TestCase):
@@ -32,6 +32,23 @@ class NumbersTest(unittest.TestCase):
     def test_part_option_shares_are_counted_for_dishes_and_preparations(self):
         counts = self.count()
         self.assertEqual({"dish": (0, 3), "preparation": (0, 2)}, counts["parts_by_kind"])
+
+    def test_without_a_record_nothing_is_backed(self):
+        reviews = self.count()["reviews"]
+        self.assertEqual({"records": 0, "live": 0, "by_reviewer_kind": {}, "backed_units": {}}, reviews)
+        things, _ = check.read_repository(self.kitchen.root)
+        model, words = reading.read_schema(self.kitchen.root)
+        self.assertNotIn("Reviews", numbers.render(numbers.count(things), model, words))
+
+    def test_records_are_counted_by_reviewer_kind_and_the_units_they_back_by_tier(self):
+        self.kitchen.add(reviewer())
+        seen = review_hash.seen(self.kitchen.files["graph/technique/sweat.json"])
+        self.kitchen.add(review("owner-sweat-2026-10-14", "owner", "reviewed", [cover("technique/sweat", seen)]))
+        reviews = self.count()["reviews"]
+        self.assertEqual({"records": 1, "live": 1, "by_reviewer_kind": {"person": 1}, "backed_units": {"reviewed": 1}}, reviews)
+        things, _ = check.read_repository(self.kitchen.root)
+        model, words = reading.read_schema(self.kitchen.root)
+        self.assertIn("Reviews: 1 records, 1 live", numbers.render(numbers.count(things), model, words))
 
     def test_safety_probe_answered_and_answerable_counts_are_separate(self):
         counts = self.count()["safety_probes"]["growing"]

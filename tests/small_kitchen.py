@@ -275,6 +275,40 @@ def graph_files():
     return {"graph/" + thing["id"] + ".json": thing for thing in things}
 
 
+def reviewer(slug="owner", kind="person", knows=(("cuisine/french", "cooks-it-at-home"),), model_id=None, safety_authority=None):
+    return {
+        "id": "reviewer/" + slug,
+        "kind": kind,
+        "model_id": model_id,
+        "knows": [{"cuisine": cuisine, "how": how} for cuisine, how in knows],
+        "safety_authority": safety_authority,
+        "added_on": "2026-10-14",
+    }
+
+
+def cover(thing, seen, verdict="approved", field=None, target=None, note=None):
+    return {"thing": thing, "field": field, "target": target, "seen": seen, "verdict": verdict, "note": note}
+
+
+def review(slug, reviewer_slug, grants, covers, cuisine="cuisine/french", mode="rows", against=None, supersedes=(),
+           rulings=(), on="2026-10-14", sample=None, note=None):
+    against = against or [{"how": "own-knowledge", "source": None, "note": "Cooked it at home."}]
+    return {
+        "id": "review/" + slug,
+        "reviewer": "reviewer/" + reviewer_slug,
+        "on": on,
+        "grants": grants,
+        "cuisine": cuisine,
+        "mode": mode,
+        "sample": sample,
+        "against": against,
+        "covers": covers,
+        "rulings": list(rulings),
+        "supersedes": ["review/" + earlier for earlier in supersedes],
+        "note": note,
+    }
+
+
 class SmallKitchen:
     """The tiny repository on disk, in a folder of its own."""
 
@@ -289,6 +323,14 @@ class SmallKitchen:
 
     def write(self, path, content):
         self.write_text(path, writing.as_text(content))
+
+    def add(self, content):
+        """Add a new thing to the kitchen at the place its id names, and remember it so that `change` can edit it."""
+        kind, slug = content["id"].split("/")
+        path = "graph/%s/%s.json" % (kind, slug)
+        self.files[path] = content
+        self.write(path, content)
+        return path
 
     def write_text(self, path, text):
         full = os.path.join(self.root, path)

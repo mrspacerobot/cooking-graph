@@ -23,7 +23,7 @@
     {
       "id": "sunflower-oil",
       "role": "fat",
-      "options": ["ingredient/sunflower-oil"],
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
       "optional": false,
       "tier": "drafted"
     },

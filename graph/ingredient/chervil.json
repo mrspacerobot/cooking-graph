@@ -21,6 +21,16 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/parsley",
+      "allows": true,
+      "when": ["dish/sole-meuniere"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "caveat": "Add it at the finish. Its delicate anise flavour differs from parsley and fades under prolonged heat.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": []
 }

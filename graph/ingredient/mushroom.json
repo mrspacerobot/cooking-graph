@@ -2,7 +2,7 @@
   "id": "ingredient/mushroom",
   "tier": "drafted",
   "names": {"en": "Mushroom", "fr": "Champignon de Paris"},
-  "aliases": {"en": ["button mushroom", "white mushroom"]},
+  "aliases": {"en": ["button mushroom", "white mushroom", "mushrooms"]},
   "is_a": [],
   "part_of": [],
   "groups": [

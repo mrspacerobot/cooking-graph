@@ -26,7 +26,7 @@ def kitchen():
     recipe["steps"][0]["works_on"] = ["ingredient/onion"]
     recipe["steps"][0]["with"] = ["ingredient/butter"]
     oil = ingredient("oil", "Oil", [], ["fact/dairy", "fact/gluten"])
-    oil["stands_in_for"] = [link("ingredient/butter", when=["technique/sweat"], not_when=[],
+    oil["stands_in_for"] = [link("ingredient/butter", allows=True, when=["technique/sweat"], not_when=[],
                                   ratio={"stand_in": 1, "original": 1, "by": "weight"},
                                   caveat="The flavour changes.")]
     things[oil["id"]] = Thing("graph/ingredient/oil.json", "ingredient", oil)
@@ -74,6 +74,13 @@ class QueryTest(unittest.TestCase):
     def test_a_dish_context_matches(self):
         self.things["ingredient/oil"].data["stands_in_for"][0]["when"] = ["dish/buttered-onions"]
         self.assertEqual("ingredient/oil", self.fat()["options"][0]["thing"])
+
+    def test_exclusion_only_statement_never_enables_other_contexts(self):
+        row = self.things["ingredient/oil"].data["stands_in_for"][0]
+        row.update(allows=False, when=[], not_when=["technique/mince"])
+        self.assertEqual([], self.fat()["options"])
+        row["not_when"] = ["technique/sweat"]
+        self.assertEqual("not-in-this-context", self.fat()["excluded"][0]["reason"])
 
     def test_no_transitive_or_reverse_substitutions_are_invented(self):
         self.recipe["ingredients"][1]["thing"] = "ingredient/oil"
@@ -167,3 +174,14 @@ class QueryTest(unittest.TestCase):
                 bad = subprocess.run([path, "unknown"], capture_output=True, text=True)
                 self.assertNotEqual(0, bad.returncode)
                 self.assertIn("unknown", bad.stderr)
+
+    def test_command_rejects_oil_for_the_cold_butter_in_a_mounted_pan_sauce(self):
+        path = os.path.join(REPOSITORY, "stand-ins")
+        recipe = "recipe/seared-chicken-thighs-with-lemon-butter-pan-sauce"
+        run = subprocess.run([path, recipe], capture_output=True, text=True, check=True)
+        mounted = [line for line in json.loads(run.stdout)["lines"]
+                   if line["original"] == "ingredient/butter" and "technique/mount-with-butter" in line["context"]]
+        self.assertTrue(mounted)
+        for line in mounted:
+            self.assertNotIn("ingredient/olive-oil", [one["thing"] for one in line["options"]])
+            self.assertIn("ingredient/olive-oil", [one["thing"] for one in line["excluded"]])

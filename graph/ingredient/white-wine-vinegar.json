@@ -33,7 +33,17 @@
     ],
     "note": "Whether what cleared the wine is still in the vinegar is for a person to decide."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/lemon-juice",
+      "allows": true,
+      "when": ["preparation/mayonnaise", "preparation/vinaigrette"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It tastes sharper and lacks the citrus fragrance. Adjust the sharpness at the finish.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

@@ -42,7 +42,7 @@ class QuestionProbeTest(unittest.TestCase):
         probe = stand_probe(verdict="does-not-work")
         self.assertEqual("not-answerable", question_probes.answer_stand_in(probe, self.things)["status"])
         self.things["ingredient/oil"].data["stands_in_for"] = [
-            {"thing": "ingredient/butter", "when": [], "not_when": ["technique/sweat"],
+            {"thing": "ingredient/butter", "allows": False, "when": [], "not_when": ["technique/sweat"],
              "ratio": None, "caveat": "It does not give this result.", "tier": "drafted"}]
         self.assertEqual("answered", question_probes.answer_stand_in(probe, self.things)["status"])
 
@@ -60,6 +60,18 @@ class QuestionProbeTest(unittest.TestCase):
         self.assertEqual("not-answerable", question_probes.answer_stand_in(probe, self.things)["status"])
         probe["recipe"] = "Buttered onions"
         probe["ingredient"] = "Flour"
+        self.assertEqual("not-answerable", question_probes.answer_stand_in(probe, self.things)["status"])
+
+    def test_named_recipe_family_can_select_a_variant_by_its_original(self):
+        variant = copy.deepcopy(self.things["recipe/buttered-onions"].data)
+        variant["id"] = "recipe/onions-with-flour"
+        variant["names"] = {"en": "Onions with flour"}
+        variant["ingredients"][1]["thing"] = "ingredient/flour"
+        variant["steps"][0]["with"] = ["ingredient/flour"]
+        self.things[variant["id"]] = Thing("", "recipe", variant)
+        probe = dict(stand_probe(), ingredient="Flour", candidate="Roux")
+        self.assertEqual("answered", question_probes.answer_stand_in(probe, self.things)["status"])
+        probe["recipe"] = "recipe/buttered-onions"
         self.assertEqual("not-answerable", question_probes.answer_stand_in(probe, self.things)["status"])
 
     def test_kitchen_probe_checks_recipe_availability_not_only_names(self):

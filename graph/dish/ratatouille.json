@@ -3,9 +3,15 @@
   "tier": "drafted",
   "names": {"en": "Ratatouille", "fr": "Ratatouille"},
   "aliases": {"en": ["ratatouille niçoise"]},
-  "is": "A stew of aubergine, courgette, peppers, onion and tomato, each softened in olive oil before they are simmered together with garlic and herbs.",
+  "is": "A Provençal stew of summer vegetables with tomato, pepper and aromatics. The classic mix combines aubergine and courgette; a courgette-heavy variation loses the aubergine's creamy texture.",
   "parts": [
-    {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "aubergine",
+      "role": "main",
+      "options": ["ingredient/aubergine", "ingredient/courgette"],
+      "optional": false,
+      "tier": "drafted"
+    },
     {"id": "courgette", "role": "main", "options": ["ingredient/courgette"], "optional": false, "tier": "drafted"},
     {"id": "bell-pepper", "role": "main", "options": ["ingredient/bell-pepper"], "optional": false, "tier": "drafted"},
     {

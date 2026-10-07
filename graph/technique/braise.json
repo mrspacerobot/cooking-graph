@@ -2,7 +2,7 @@
   "id": "technique/braise",
   "tier": "drafted",
   "names": {"en": "Braise", "fr": "Braiser"},
-  "aliases": {"en": ["braise slowly", "pot-roast", "stew"]},
+  "aliases": {"en": ["braise slowly", "pot-roast", "stew", "braising"]},
   "does": "Cooks food slowly in a little liquid in a covered pot, after browning it, until it is tender and the liquid has become its sauce.",
   "how": [
     "Brown the meat well in the pot and take it out.",

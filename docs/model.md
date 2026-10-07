@@ -125,7 +125,7 @@ Something a cook starts from. It may stand for a class: stock, bread, white fish
 | `forms` | The forms it comes in. Statement. Empty on every ingredient so far, see the gaps below |
 | `behaviour` | A sentence or two on how it behaves in the pan |
 | `safety` | Its safety record: a `state`, the facts it `contains`, the facts it is `free_of`, and a `note` or `null`. Each row of `contains` names the `fact`, the `basis` in a few plain words, and whether it is `certain`: true when the ingredient holds the fact by what it is, false when the answer is recorded strictly because a common form of the ingredient may hold it |
-| `stands_in_for` | What it can replace. Statement. Each row adds `when` and `not_when` (techniques, preparations or dishes), a `ratio` or `null`, and a `caveat`. A ratio is the `stand_in` amount for the `original` amount, measured `by` weight, volume or count |
+| `stands_in_for` | Contextual replacements and exclusions. Each statement adds `allows`, `when` and `not_when` (techniques, preparations or dishes), a `ratio` or `null`, and a `caveat`. A ratio is the `stand_in` amount for the `original` amount, measured `by` weight, volume or count |
 | `in_pantry_of` | The cuisines that keep it as a staple. Statement |
 
 ### `technique`
@@ -501,9 +501,28 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
   every expected dish has a recipe using the named technique with no missing
   required part. It measures recall of the expected dishes, not whether every
   returned recipe deserves a cook's approval. Optional parts do not score.
+- **Recipe variations:** a named recipe is tried first. If it does not use the
+  probe's original, one uniquely matching recipe for the same dish or preparation
+  may answer. For example, the existing hollandaise uses whole butter; a separate
+  clarified-butter recipe answers a question that names clarified butter. Several
+  matching variants are ambiguous and do not answer. The query command itself
+  continues to take one explicit recipe. An explicit recipe id in a probe is
+  binding too and never selects another variation.
 - **Independence:** the question-cycle writer is `gpt-6-luna`, with no access to
   `graph/` or previous probes. The graph drafter is a different model. Held-back
   questions and gaps are counted by code and never shown to the drafter.
+
+### 28. A negative statement does not imply a positive elsewhere (the question cycle)
+
+- **Example:** yogurt is not a substitute for cream in the hot egg-yolk liaison of
+  blanquette. The model could only record `when: []` and a `not_when`. But an empty
+  `when` meant a universal positive everywhere outside that prohibition.
+- **Now:** a stand-in statement has `allows`. Existing positives are `true`.
+  An exclusion-only statement is `false`, has an empty `when` and a nonempty
+  `not_when`. It supplies no positive answer in any other context. The checker
+  tests both constraints. Matching prohibitions always take precedence.
+- **No promotion:** changing the shape or adding a prohibition earns no tier.
+  All these statements remain drafted, awaiting a cook's judgment.
 
 ## Decisions where the starting model was silent
 
@@ -515,7 +534,7 @@ These are not changes. The starting model names kinds and statements, not files,
 - **"Is the same move as" is not a statement.** The same move under another name is one technique with two names. What differs makes it a variant: `variant_of` with `differs`.
 - **Nothing is above drafted, and no safety record is verified, until a review can be put on record.** The epic asks for who, when and against what on every tier. No such record exists yet, so the check refuses any tier above drafted. That rule goes when the record comes.
 - **A number is `{"value", "unit"}` or `{"from", "to", "unit"}`,** with the unit from the closed list the field names.
-- **A stand-in names its context** as `when` and `not_when`: techniques, preparations or dishes. An empty `when` means no context is known to matter.
+- **A stand-in names its context** as `when` and `not_when`: techniques, preparations or dishes. With `allows: true`, an empty `when` means no context is known to matter. With `allows: false`, only the listed exclusions are asserted.
 - **Ids of public datasets are not built.** Nothing in this slice came from one.
 - **Probes are files too,** outside the graph, in `probes/`. A probe has a batch and a set. Which probes of a batch are held back follows from their ids by a rule in `tools/probes.py`. Nobody picks.
 

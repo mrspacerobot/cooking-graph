@@ -2,7 +2,7 @@
   "id": "technique/poach",
   "tier": "drafted",
   "names": {"en": "Poach", "fr": "Pocher"},
-  "aliases": {"en": ["poach gently"]},
+  "aliases": {"en": ["poach gently", "poaching"]},
   "does": "Cooks delicate food gently in liquid that is hot but never boils.",
   "how": [
     "Heat the liquid until it trembles, with small bubbles on the bottom of the pan and almost none rising.",

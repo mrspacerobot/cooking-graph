@@ -124,7 +124,7 @@ def preparation():
     thing["groups"] = []
     thing["teaches"] = [link("technique/sweat")]
     thing["stands_in_for"] = [
-        link("ingredient/flour", when=["technique/sweat"], not_when=[], ratio=None, caveat="It is already cooked.")
+        link("ingredient/flour", allows=True, when=["technique/sweat"], not_when=[], ratio=None, caveat="It is already cooked.")
     ]
     thing["belongs_to"] = [link("cuisine/french")]
     return thing

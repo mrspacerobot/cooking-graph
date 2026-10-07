@@ -2,7 +2,7 @@
   "id": "ingredient/chicory",
   "tier": "drafted",
   "names": {"en": "Chicory", "fr": "Endive"},
-  "aliases": {"en": ["Belgian endive", "witloof"]},
+  "aliases": {"en": ["Belgian endive", "witloof", "Belgian endives"]},
   "is_a": [],
   "part_of": [],
   "groups": [

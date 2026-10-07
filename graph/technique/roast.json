@@ -2,7 +2,7 @@
   "id": "technique/roast",
   "tier": "drafted",
   "names": {"en": "Roast", "fr": "Rôtir"},
-  "aliases": {"en": ["roast in the oven", "oven-roast"]},
+  "aliases": {"en": ["roast in the oven", "oven-roast", "roasting"]},
   "does": "Cooks food uncovered in the dry heat of a hot oven, so that the outside browns while the inside cooks in its own juices.",
   "how": [
     "Dry the surface of the food well.",

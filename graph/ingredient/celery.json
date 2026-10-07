@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/leek",
+      "allows": true,
+      "when": ["dish/pot-au-feu"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "caveat": "It gives a more herbal broth and a firmer vegetable garnish, without the sweetness of leek.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

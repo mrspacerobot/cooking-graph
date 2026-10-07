@@ -1,0 +1,47 @@
+{
+  "id": "ingredient/lemon-juice",
+  "tier": "drafted",
+  "names": {"en": "Lemon juice", "fr": "Jus de citron"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [
+    {"thing": "ingredient/lemon", "tier": "drafted"}
+  ],
+  "groups": [],
+  "forms": [],
+  "behaviour": "The squeezed liquid of a lemon, sharp and fragrant, without the shape or bitterness of its peel.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/white-wine-vinegar",
+      "allows": true,
+      "when": ["preparation/mayonnaise", "preparation/vinaigrette"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Its acidity varies with the fruit and tastes more citrusy. Adjust the sharpness at the finish.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/lemon",
+      "allows": true,
+      "when": ["dish/endives-braisees", "preparation/mayonnaise", "preparation/hollandaise"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Only the squeezed juice is used here. It cannot replace peel or a slice used as a garnish.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

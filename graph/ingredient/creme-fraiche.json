@@ -25,6 +25,7 @@
   "stands_in_for": [
     {
       "thing": "ingredient/cream",
+      "allows": true,
       "when": ["technique/reduce"],
       "not_when": [],
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},

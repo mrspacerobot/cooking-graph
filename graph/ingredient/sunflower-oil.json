@@ -22,6 +22,7 @@
   "stands_in_for": [
     {
       "thing": "ingredient/olive-oil",
+      "allows": true,
       "when": ["preparation/mayonnaise"],
       "not_when": [],
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},

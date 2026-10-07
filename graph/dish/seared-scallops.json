@@ -2,14 +2,17 @@
   "id": "dish/seared-scallops",
   "tier": "drafted",
   "names": {"en": "Seared scallops", "fr": "Noix de Saint-Jacques poêlées"},
-  "aliases": {"en": ["pan-seared scallops"], "fr": ["coquilles Saint-Jacques poêlées"]},
+  "aliases": {
+    "en": ["pan-seared scallops"],
+    "fr": ["coquilles Saint-Jacques poêlées", "Coquilles Saint-Jacques poêlées"]
+  },
   "is": "Scallops seared fast in a very hot pan until deeply browned on both flat sides and still soft in the middle, finished with butter and lemon.",
   "parts": [
     {"id": "scallop", "role": "main", "options": ["ingredient/scallop"], "optional": false, "tier": "drafted"},
     {
       "id": "sunflower-oil",
       "role": "fat",
-      "options": ["ingredient/sunflower-oil"],
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
       "optional": false,
       "tier": "drafted"
     },

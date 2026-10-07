@@ -2,7 +2,7 @@
   "id": "recipe/hollandaise",
   "tier": "drafted",
   "names": {"en": "Hollandaise"},
-  "aliases": {},
+  "aliases": {"en": ["Hollandaise sauce"]},
   "makes": "preparation/hollandaise",
   "yields": {"value": 250, "unit": "gram"},
   "ingredients": [

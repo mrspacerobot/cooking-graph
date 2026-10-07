@@ -2,7 +2,7 @@
   "id": "ingredient/black-pepper",
   "tier": "drafted",
   "names": {"en": "Black pepper", "fr": "Poivre noir"},
-  "aliases": {"en": ["ground black pepper", "black peppercorns"]},
+  "aliases": {"en": ["black peppercorns"]},
   "is_a": [],
   "part_of": [],
   "groups": [

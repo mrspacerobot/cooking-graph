@@ -17,7 +17,13 @@
       "tier": "drafted"
     },
     {"id": "baguette", "role": "topping", "options": ["ingredient/baguette"], "optional": false, "tier": "drafted"},
-    {"id": "gruyere", "role": "topping", "options": ["ingredient/gruyere"], "optional": false, "tier": "drafted"},
+    {
+      "id": "gruyere",
+      "role": "topping",
+      "options": ["ingredient/gruyere", "ingredient/comte", "ingredient/emmental"],
+      "optional": false,
+      "tier": "drafted"
+    },
     {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
     {
       "id": "black-pepper",

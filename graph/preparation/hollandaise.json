@@ -10,11 +10,17 @@
     {
       "id": "fat",
       "role": "fat",
-      "options": ["ingredient/butter", "preparation/clarified-butter"],
+      "options": ["ingredient/butter", "preparation/clarified-butter", "ingredient/ghee"],
       "optional": false,
       "tier": "drafted"
     },
-    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon", "ingredient/lemon-juice"],
+      "optional": false,
+      "tier": "drafted"
+    },
     {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
   ],
   "groups": [

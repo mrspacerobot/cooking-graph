@@ -14,7 +14,13 @@
     },
     {"id": "marrow-bone", "role": "main", "options": ["ingredient/marrow-bone"], "optional": false, "tier": "drafted"},
     {"id": "carrot", "role": "main", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
-    {"id": "leek", "role": "main", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"},
+    {
+      "id": "leek",
+      "role": "main",
+      "options": ["ingredient/leek", "ingredient/celery"],
+      "optional": false,
+      "tier": "drafted"
+    },
     {"id": "turnip", "role": "main", "options": ["ingredient/turnip"], "optional": false, "tier": "drafted"},
     {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
     {"id": "clove", "role": "aromatic", "options": ["ingredient/clove"], "optional": false, "tier": "drafted"},

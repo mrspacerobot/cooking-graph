@@ -2,7 +2,7 @@
   "id": "ingredient/chicken-thigh",
   "tier": "drafted",
   "names": {"en": "Chicken thigh", "fr": "Haut de cuisse de poulet"},
-  "aliases": {"en": ["bone-in chicken thigh"]},
+  "aliases": {"en": ["bone-in chicken thigh", "chicken thighs"]},
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/chicken", "tier": "drafted"}

@@ -2,7 +2,7 @@
   "id": "technique/saute",
   "tier": "drafted",
   "names": {"en": "Sauté", "fr": "Sauter"},
-  "aliases": {"en": ["saute", "sauté in a hot pan"]},
+  "aliases": {"en": ["saute", "sauté in a hot pan", "sautéing"]},
   "does": "Cooks small pieces fast in a hot pan with a little fat, moving them so that they brown on all sides.",
   "how": [
     "Heat the pan first, then the fat, until the fat shimmers.",

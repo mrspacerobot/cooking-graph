@@ -9,12 +9,18 @@
     {
       "id": "fat",
       "role": "fat",
-      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil", "ingredient/butter"],
       "optional": false,
       "tier": "drafted"
     },
     {"id": "butter", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
-    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "garlic",
+      "role": "aromatic",
+      "options": ["ingredient/garlic", "ingredient/shallot"],
+      "optional": false,
+      "tier": "drafted"
+    },
     {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
     {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
     {

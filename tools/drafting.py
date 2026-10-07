@@ -117,9 +117,9 @@ def form(slug, english, looks_like, fr=None, also=None, size=()):
     return state
 
 
-def stand_in(original, caveat, when=(), not_when=(), ratio=None):
+def stand_in(original, caveat, when=(), not_when=(), ratio=None, allows=True):
     """A stands-in-for row. `ratio` is (stand_in, original, measured by), or None when it is not known."""
-    row = {"when": all_full(when), "not_when": all_full(not_when), "ratio": None, "caveat": caveat}
+    row = {"allows": allows, "when": all_full(when), "not_when": all_full(not_when), "ratio": None, "caveat": caveat}
     if ratio is not None:
         row["ratio"] = {"stand_in": ratio[0], "original": ratio[1], "by": ratio[2]}
     return link(full(original), **row)

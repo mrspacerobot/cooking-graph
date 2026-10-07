@@ -29,10 +29,10 @@ def context(recipe, line):
 
 
 def choice(thing_id, basis, row=None):
-    detail = {"thing": thing_id, "basis": basis, "when": [], "not_when": [],
+    detail = {"thing": thing_id, "basis": basis, "allows": True, "when": [], "not_when": [],
               "ratio": None, "caveat": None, "tier": "drafted"}
     if row is not None:
-        for field in ("when", "not_when", "ratio", "caveat", "tier"):
+        for field in ("allows", "when", "not_when", "ratio", "caveat", "tier"):
             detail[field] = row[field]
     return detail
 
@@ -55,7 +55,7 @@ def candidate_answer(things, recipe, line, part, candidate, avoided):
         return None, dict(choice(candidate, "stand-in", blocked[0]), reason="not-in-this-context")
     if not query_safety.free_of(things, candidate, avoided):
         return None, {"thing": candidate, "reason": "avoided-or-unknown-fact"}
-    applicable = [row for row in rows if not row["when"] or contexts.intersection(row["when"])]
+    applicable = [row for row in rows if row["allows"] and (not row["when"] or contexts.intersection(row["when"]))]
     if changes_method(things, recipe, line, candidate):
         return None, {"thing": candidate, "reason": "method-not-supported"}
     if applicable:

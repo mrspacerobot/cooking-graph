@@ -66,6 +66,8 @@ is what the recipe makes and the techniques of steps that handle that line. An e
 technique that works on the original. A part option supplies no ratio or caveat unless a
 stand-in statement records them. Recipe amounts and starting forms are returned unchanged;
 the commands do not adapt steps, calculate converted amounts or test a recipe in a kitchen.
+An exclusion-only statement has `allows: false`: it asserts only its `not_when`,
+and never enables the replacement in other contexts.
 
 Kitchen inputs mean presence, not quantity. Required missing parts count once even when
 several lines fill one part. Optional omissions are shown and do not affect the score.

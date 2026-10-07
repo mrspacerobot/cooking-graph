@@ -21,6 +21,16 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/courgette",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/ratatouille"],
+      "ratio": null,
+      "caveat": "Its firm florets and brassica flavour do not give the same soft summer-vegetable result. Treat it as another dish.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": []
 }

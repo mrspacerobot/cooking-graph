@@ -2,7 +2,7 @@
   "id": "technique/sear",
   "tier": "drafted",
   "names": {"en": "Sear", "fr": "Saisir"},
-  "aliases": {"en": ["brown", "pan-sear", "sear in a hot pan"]},
+  "aliases": {"en": ["brown", "pan-sear", "sear in a hot pan", "searing"]},
   "does": "Browns the surface of meat or fish fast in a very hot pan, building a crust full of flavour while the inside stays underdone.",
   "how": [
     "Dry the surface well. Wet food steams before it browns.",

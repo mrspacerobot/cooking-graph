@@ -2,7 +2,7 @@
   "id": "ingredient/scallop",
   "tier": "drafted",
   "names": {"en": "Scallop", "fr": "Noix de Saint-Jacques"},
-  "aliases": {"en": ["sea scallop"]},
+  "aliases": {"en": ["sea scallop", "scallops"]},
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -10,11 +10,29 @@ def result(probe, status, gaps):
     return {"id": probe["id"], "batch": probe["batch"], "status": status, "gaps": gaps}
 
 
+def recipe_for_original(probe, things, original):
+    recipe_id = queries.resolve(things, probe["recipe"], ("recipe",))
+    recipe = things[recipe_id].data
+    if probe["recipe"] == recipe_id:
+        return recipe_id
+    if any(line["thing"] == original for line in recipe["ingredients"]):
+        return recipe_id
+    variants = [thing_id for thing_id, thing in sorted(things.items())
+                if thing.kind == "recipe" and thing.data["makes"] == recipe["makes"]
+                and any(line["thing"] == original for line in thing.data["ingredients"])]
+    if len(variants) == 1:
+        return variants[0]
+    if len(variants) > 1:
+        raise ValueError("the original occurs in several recipe variants; name one explicitly")
+    return recipe_id
+
+
 def answer_stand_in(probe, things):
     try:
-        answer = queries.stand_ins(things, probe["recipe"])
         original = queries.resolve(things, probe["ingredient"], queries.FOODS)
         candidate = queries.resolve(things, probe["candidate"], queries.FOODS)
+        recipe_id = recipe_for_original(probe, things, original)
+        answer = queries.stand_ins(things, recipe_id)
     except ValueError as error:
         return result(probe, "not-answerable", [str(error)])
     lines = [line for line in answer["lines"] if line["original"] == original]

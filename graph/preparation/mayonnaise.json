@@ -23,7 +23,7 @@
     {
       "id": "acid",
       "role": "acid",
-      "options": ["ingredient/white-wine-vinegar", "ingredient/lemon"],
+      "options": ["ingredient/white-wine-vinegar", "ingredient/lemon", "ingredient/lemon-juice"],
       "optional": false,
       "tier": "drafted"
     },

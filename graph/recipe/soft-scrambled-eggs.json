@@ -2,7 +2,7 @@
   "id": "recipe/soft-scrambled-eggs",
   "tier": "drafted",
   "names": {"en": "Soft scrambled eggs"},
-  "aliases": {},
+  "aliases": {"fr": ["Œufs brouillés"]},
   "makes": "dish/soft-scrambled-eggs",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [

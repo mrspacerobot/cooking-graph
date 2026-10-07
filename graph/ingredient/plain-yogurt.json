@@ -1,0 +1,35 @@
+{
+  "id": "ingredient/plain-yogurt",
+  "tier": "drafted",
+  "names": {"en": "Plain yogurt", "fr": "Yaourt nature"},
+  "aliases": {"en": ["plain yoghurt"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A cultured milk that is tangy and can curdle in a hot sauce. It does not behave like cream in a hot egg-yolk liaison.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is made from milk.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cream",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/thicken-with-egg-yolk"],
+      "ratio": null,
+      "caveat": "Its acidity and milk proteins can curdle in the hot liaison. A yogurt sauce is a different method.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": []
+}

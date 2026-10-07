@@ -1,0 +1,44 @@
+{
+  "id": "ingredient/emmental",
+  "tier": "drafted",
+  "names": {"en": "Emmental", "fr": "Emmental"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/grating-cheeses", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A firm cheese that melts smoothly and browns. Its mild flavour is less pronounced than an aged mountain cheese.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is made from milk.", "certain": true},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Traditional versions use animal rennet; the maker has not been checked.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/gruyere",
+      "allows": true,
+      "when": ["dish/croque-monsieur", "dish/french-onion-soup", "technique/gratinate"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "caveat": "It melts and browns but gives a milder, less nutty finish.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

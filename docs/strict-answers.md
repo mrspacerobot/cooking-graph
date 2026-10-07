@@ -3,7 +3,7 @@
 Written by `./safety strict`. An ingredient holds a fact for certain, or the fact is recorded strictly because a common form of the ingredient may hold it.
 The rows below are the strict ones. How strict to be is for the owner to rule, reason by reason. Every safety record is unverified either way.
 
-116 of the 225 facts that ingredients hold are strict.
+119 of the 232 facts that ingredients hold are strict.
 
 | Fact | Basis | Ingredients |
 |---|---|---|
@@ -50,6 +50,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/slaughter-product` | Many goat cheeses are made with animal rennet. | goat-cheese |
 | `fact/slaughter-product` | Often made with wine, which may be cleared with gelatine or isinglass. | dijon-mustard |
 | `fact/slaughter-product` | Some cane sugar is whitened with bone char. | brown-sugar, sugar |
+| `fact/slaughter-product` | Traditional versions use animal rennet; the maker has not been checked. | comte, emmental |
 | `fact/slaughter-product` | Wine may be cleared with gelatine or isinglass. | madeira, red-wine, vin-jaune, white-wine |
 | `fact/soy` | Bought sausage meat may hold soy protein. | sausage-meat |
 | `fact/soy` | Many bought loaves hold soy flour. | bread, sandwich-bread |
@@ -64,6 +65,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/sulphites` | Nearly all wine holds sulphites. | madeira, red-wine, vin-jaune, white-wine |
 | `fact/sulphites` | Often kept with sulphites. | dijon-mustard |
 | `fact/sulphites` | Pickles are sometimes kept with sulphites. | capers, cornichons |
+| `fact/sulphites` | Preserved peppercorns may use sulphites; the maker has not been checked. | green-peppercorns |
 | `fact/sulphites` | Some beer holds sulphites. | beer |
 | `fact/sulphites` | Table grapes are often kept with sulphur dioxide. | grape |
 | `fact/tree-nuts` | It is a nut that grows on a tree, though the European list of nuts does not name it. | chestnut |

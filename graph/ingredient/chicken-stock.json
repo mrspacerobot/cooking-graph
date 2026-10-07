@@ -34,6 +34,7 @@
   "stands_in_for": [
     {
       "thing": "ingredient/white-wine",
+      "allows": true,
       "when": ["dish/seared-chicken-thighs-with-lemon-butter-pan-sauce"],
       "not_when": [],
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
@@ -42,6 +43,7 @@
     },
     {
       "thing": "preparation/white-chicken-stock",
+      "allows": true,
       "when": [],
       "not_when": [],
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},

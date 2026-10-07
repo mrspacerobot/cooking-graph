@@ -33,6 +33,7 @@
   "stands_in_for": [
     {
       "thing": "preparation/vegetable-stock",
+      "allows": true,
       "when": [],
       "not_when": [],
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},

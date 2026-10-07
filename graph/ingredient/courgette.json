@@ -21,6 +21,16 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/aubergine",
+      "allows": true,
+      "when": ["dish/ratatouille"],
+      "not_when": [],
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "caveat": "The vegetable mixture remains tender but is less creamy and releases more water. Keep the same cut and method.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": []
 }

@@ -2,7 +2,7 @@
   "id": "ingredient/butter",
   "tier": "drafted",
   "names": {"en": "Butter", "fr": "Beurre"},
-  "aliases": {"en": ["unsalted butter"]},
+  "aliases": {"en": ["unsalted butter", "cold butter"]},
   "is_a": [],
   "part_of": [],
   "groups": [],

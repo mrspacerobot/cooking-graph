@@ -22,10 +22,20 @@
   "stands_in_for": [
     {
       "thing": "ingredient/butter",
-      "when": ["dish/spinach-and-cheese-omelette", "dish/seared-chicken-thighs-with-lemon-butter-pan-sauce"],
+      "allows": true,
+      "when": ["dish/spinach-and-cheese-omelette"],
+      "not_when": ["technique/mount-with-butter", "technique/make-brown-butter"],
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "caveat": "Oil supplies frying fat but has no butter aroma. It cannot provide the cold-butter emulsion of a mounted sauce.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sunflower-oil",
+      "allows": true,
+      "when": ["technique/sear", "technique/saute", "preparation/mayonnaise"],
       "not_when": [],
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
-      "caveat": "Oil has none of the nutty taste of butter, and a sauce finished with it stays thinner and does not turn creamy.",
+      "caveat": "Its fruity flavour changes the finish. Keep it below the point where it smokes.",
       "tier": "drafted"
     }
   ],

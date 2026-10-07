@@ -13,7 +13,13 @@
       "tier": "drafted"
     },
     {"id": "ham", "role": "filling", "options": ["ingredient/ham"], "optional": false, "tier": "drafted"},
-    {"id": "gruyere", "role": "filling", "options": ["ingredient/gruyere"], "optional": false, "tier": "drafted"},
+    {
+      "id": "gruyere",
+      "role": "filling",
+      "options": ["ingredient/gruyere", "ingredient/emmental", "ingredient/comte"],
+      "optional": false,
+      "tier": "drafted"
+    },
     {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
     {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"}
   ],

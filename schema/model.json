@@ -5,6 +5,7 @@
       "is": "link",
       "to": ["ingredient", "preparation"],
       "with": {
+        "allows": {"is": "boolean"},
         "when": {"is": "list", "of": {"is": "ref", "kinds": ["technique", "preparation", "dish"]}},
         "not_when": {"is": "list", "of": {"is": "ref", "kinds": ["technique", "preparation", "dish"]}},
         "ratio": {

@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/butter",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/mount-with-butter", "technique/make-brown-butter"],
+      "ratio": null,
+      "caveat": "Cream does not give the butter-mounted emulsion. A cream sauce needs a different method.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ]

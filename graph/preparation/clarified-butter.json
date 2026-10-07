@@ -12,6 +12,7 @@
   "stands_in_for": [
     {
       "thing": "ingredient/butter",
+      "allows": true,
       "when": ["technique/sear", "technique/pan-fry", "technique/saute"],
       "not_when": ["technique/mount-with-butter", "technique/make-brown-butter"],
       "ratio": {"stand_in": 1, "original": 1, "by": "weight"},

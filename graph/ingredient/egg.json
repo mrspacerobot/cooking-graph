@@ -2,7 +2,7 @@
   "id": "ingredient/egg",
   "tier": "drafted",
   "names": {"en": "Egg", "fr": "Œuf"},
-  "aliases": {"en": ["whole egg", "hen's egg"]},
+  "aliases": {"en": ["whole egg", "hen's egg", "eggs"]},
   "is_a": [],
   "part_of": [],
   "groups": [],

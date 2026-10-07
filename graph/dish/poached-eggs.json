@@ -1,0 +1,27 @@
+{
+  "id": "dish/poached-eggs",
+  "tier": "drafted",
+  "names": {"en": "Poached eggs", "fr": "Œufs pochés"},
+  "aliases": {},
+  "is": "Eggs set in gently moving water, lifted out and drained, with seasoning and a fresh herb finish.",
+  "parts": [
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "vinegar",
+      "role": "acid",
+      "options": ["ingredient/white-wine-vinegar"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": true, "tier": "drafted"},
+    {"id": "herb", "role": "garnish", "options": ["ingredient/chives"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

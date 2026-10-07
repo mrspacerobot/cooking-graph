@@ -2,7 +2,7 @@
   "id": "ingredient/egg-yolk",
   "tier": "drafted",
   "names": {"en": "Egg yolk", "fr": "Jaune d'œuf"},
-  "aliases": {},
+  "aliases": {"en": ["egg yolks"]},
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/egg", "tier": "drafted"}

@@ -2,7 +2,7 @@
   "id": "recipe/seared-scallops",
   "tier": "drafted",
   "names": {"en": "Seared scallops"},
-  "aliases": {},
+  "aliases": {"fr": ["Coquilles Saint-Jacques poêlées"]},
   "makes": "dish/seared-scallops",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [

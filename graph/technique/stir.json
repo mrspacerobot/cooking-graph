@@ -1,0 +1,50 @@
+{
+  "id": "technique/stir",
+  "tier": "drafted",
+  "names": {"en": "Stir", "fr": "Remuer"},
+  "aliases": {
+    "en": ["stir constantly", "stir gently", "stir continuously", "keep stirring"],
+    "fr": ["remuer sans cesse"]
+  },
+  "does": "Moves a spoon through food as it heats, scraping the base of the pan, so that it cooks evenly, does not catch and scorch, and stays smooth.",
+  "how": [
+    "Use a spoon with a flat edge, or a wooden spoon, and a pan with a heavy base.",
+    "Keep the heat gentle and reach the whole base and the corners with each pass.",
+    "Stir in slow loops or long sweeps, and not so hard that the food breaks.",
+    "Keep going for as long as the dish thickens, since the base catches first."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The spoon drags more heavily across the base as the mixture thickens."},
+    {"sense": "see", "text": "The surface stays smooth, with no brown bits at the edges."},
+    {"sense": "smell", "text": "A caught, scorched smell means it was left still for too long."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Walking away, so that the base catches and the whole pan tastes burnt.",
+      "fix": "Stay with it and stir throughout."
+    },
+    {
+      "mistake": "Stirring a rice pudding hard, so that the grains break and turn to paste.",
+      "fix": "Stir slowly and only as much as needed to stop it catching."
+    },
+    {
+      "mistake": "Using high heat, which scorches the base faster than the spoon can reach.",
+      "fix": "Turn the heat down."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/milk", "tier": "drafted"},
+    {"thing": "ingredient/semolina", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/spatula"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "dish-probe/chicken-nanban",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "frying",
+  "dish": "Chicken nanban",
+  "also_called": ["Miyazaki fried chicken with tartar sauce", "chikin nanban"],
+  "techniques": [
+    "coat in flour",
+    "dip in egg",
+    "deep fry",
+    "make sweet vinegar sauce",
+    "soak in sauce",
+    "make tartar sauce"
+  ],
+  "ingredients": ["chicken thigh", "flour", "egg", "oil", "rice vinegar", "soy sauce", "sugar", "mayonnaise", "onion"]
+}

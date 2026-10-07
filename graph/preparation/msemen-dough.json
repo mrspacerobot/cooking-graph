@@ -1,0 +1,29 @@
+{
+  "id": "preparation/msemen-dough",
+  "tier": "drafted",
+  "names": {"en": "Msemen dough"},
+  "aliases": {},
+  "is": "A soft, wet dough of wheat flour and fine semolina, worked smooth and rested, then rolled out thin, brushed with fat and folded in layers, ready to be flattened and cooked on a griddle.",
+  "parts": [
+    {"id": "flour", "role": "main", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "semolina", "role": "base", "options": ["ingredient/semolina"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil", "ingredient/butter", "ingredient/smen"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/fold-dough", "tier": "drafted"},
+    {"thing": "technique/laminate", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

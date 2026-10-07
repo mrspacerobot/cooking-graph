@@ -1,0 +1,43 @@
+{
+  "id": "technique/shred-cabbage",
+  "tier": "drafted",
+  "names": {"en": "Shred cabbage"},
+  "aliases": {"en": ["shred the cabbage", "cut cabbage into fine threads"]},
+  "does": "Cuts cabbage into very fine, long threads, which stay crisp and fresh. They are then often soaked briefly in cold water, so that they fluff and stiffen.",
+  "how": [
+    "Cut the cabbage into wedges and cut out the hard core.",
+    "Stack a few leaves, roll them up tightly and slice them across as thin as paper.",
+    "Put the threads in cold water for a short while, so that they curl and crisp.",
+    "Drain them very well and dry them in a cloth, so that they do not water down the dish."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The threads are very fine and loose, and spring up when they are lifted."},
+    {"sense": "hear", "text": "The threads crunch when they are bitten."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting thick shreds, which are tough.",
+      "fix": "Roll the leaves tightly and slice as thin as possible."
+    },
+    {"mistake": "Serving them wet, so that the plate floods.", "fix": "Drain and dry them well."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/cabbage", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/cutting-board", "equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/slice",
+      "differs": "The cut is as thin as thread and the shreds are crisped in cold water, to be eaten raw beside a rich fried dish.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

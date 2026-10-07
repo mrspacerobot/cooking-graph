@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/ajoblanco",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "cold-soups",
+  "dish": "Ajoblanco",
+  "also_called": ["white gazpacho", "ajo blanco", "Málaga almond soup"],
+  "techniques": ["soak bread", "blend", "emulsify", "chill"],
+  "ingredients": ["almond", "bread", "garlic", "olive oil", "sherry vinegar", "water", "grape", "salt"]
+}

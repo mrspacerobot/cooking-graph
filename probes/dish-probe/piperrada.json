@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/piperrada",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "eggs",
+  "dish": "Piperrada",
+  "also_called": ["piperade", "Basque pepper and egg stew", "piperrada vasca"],
+  "techniques": ["slice", "sweat", "simmer", "scramble"],
+  "ingredients": ["green pepper", "red pepper", "onion", "tomato", "garlic", "egg", "olive oil"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/coriander-mint-chutney",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "chutneys",
+  "dish": "Coriander mint chutney",
+  "also_called": ["hari chutney", "green chutney", "dhania pudina chutney"],
+  "techniques": ["grind", "mix"],
+  "ingredients": ["coriander leaf", "mint", "green chili", "ginger", "lemon", "cumin seed", "salt", "roasted gram"]
+}

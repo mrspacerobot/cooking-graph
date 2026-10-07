@@ -1,0 +1,104 @@
+{
+  "id": "recipe/hummus",
+  "tier": "drafted",
+  "names": {"en": "Hummus", "fr": "Houmous"},
+  "aliases": {},
+  "makes": "dish/hummus",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chickpea", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "chickpea"},
+    {"thing": "ingredient/water", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/tahini", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "tahini"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 60, "unit": "millilitre"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/garlic", "amount": {"value": 1, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/water", "amount": {"value": 60, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/mixing-bowl", "equipment/colander", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/blender", "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak",
+      "works_on": ["ingredient/chickpea"],
+      "with": ["ingredient/water"],
+      "text": "Cover the dried chickpeas generously with cold water in a bowl and leave them overnight, until they are plump and swollen.",
+      "time": {"from": 8, "to": 12, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/chickpea"],
+      "with": [],
+      "text": "Tip the chickpeas into a colander and let the soaking water run off.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chickpea"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Put the chickpeas in a pan, cover them with fresh water and bring them to a gentle simmer. Cook until they are very soft and crush easily between the fingers. Salt the water near the end.",
+      "time": {"from": 60, "to": 90, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/chickpea"],
+      "with": [],
+      "text": "Drain the chickpeas, keeping a little of the cooking water to hand.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/salt"],
+      "text": "Crush the garlic with a little salt under the flat of the knife, until it is a damp paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grind",
+      "works_on": ["ingredient/chickpea"],
+      "with": ["ingredient/tahini", "ingredient/lemon-juice", "ingredient/water"],
+      "text": "While the chickpeas are still warm, blend them with the tahini, the lemon juice and the garlic paste. The tahini will stiffen at first. Add cold water a little at a time and keep blending, until the dip is very smooth, pale and light.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/chickpea"],
+      "with": ["ingredient/salt", "ingredient/lemon-juice"],
+      "text": "Taste, and adjust the salt and the lemon juice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chickpea"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Spoon the dip into a shallow dish and swirl it with the back of a spoon to make a well in the middle. Pour the olive oil into the well.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

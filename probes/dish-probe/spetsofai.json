@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/spetsofai",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "stews",
+  "dish": "Spetsofai",
+  "also_called": ["spetzofai", "sausage and pepper stew"],
+  "techniques": ["fry", "saute", "simmer"],
+  "ingredients": ["pork sausage", "bell pepper", "tomato", "onion", "olive oil", "oregano"]
+}

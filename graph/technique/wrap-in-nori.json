@@ -1,0 +1,52 @@
+{
+  "id": "technique/wrap-in-nori",
+  "tier": "drafted",
+  "names": {"en": "Wrap in nori"},
+  "aliases": {"en": ["wrap with nori", "wrap in seaweed"]},
+  "does": "Wraps a sheet of dried seaweed around shaped rice just before eating, so that the seaweed stays crisp and does not turn soggy against the moist rice.",
+  "how": [
+    "Cut a sheet of nori into strips or squares, or fold it to fit the rice shape.",
+    "Hold the shaped rice in one hand and lay the nori against the rice.",
+    "Press it on lightly, so that it clings to the surface.",
+    "Wrap it just before it is eaten, or wrap it in a way that keeps part of the nori dry."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "The nori is crisp and crackles when it is bitten."},
+    {"sense": "see", "text": "The nori clings to the rice without gaps."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Wrapping long before serving, so that the nori turns damp and chewy.",
+      "fix": "Wrap it just before eating."
+    },
+    {
+      "mistake": "Using nori that has gone soft in the air.",
+      "fix": "Keep it in a closed container, and crisp it briefly over a flame if needed."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "coating", "options": ["ingredient/nori"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/shape-by-hand",
+      "why": "The nori goes around rice that has already been shaped.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/wrap",
+      "differs": "The wrapper is a sheet of dried seaweed, put on at the last moment to stay crisp, not a leaf or dough sealed around the food.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

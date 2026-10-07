@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/escalope-de-veau-a-la-normande",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "pan-sauce",
+  "dish": "Escalope de veau à la normande",
+  "also_called": ["veal escalope Normandy style", "veal with cream and calvados"],
+  "techniques": ["flatten", "sauté", "flambé", "deglaze", "reduce"],
+  "ingredients": ["veal escalope", "apple", "calvados", "crème fraîche", "butter", "shallot", "mushroom"]
+}

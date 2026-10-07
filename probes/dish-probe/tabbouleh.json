@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tabbouleh",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "salads",
+  "dish": "Tabbouleh",
+  "also_called": ["tabouli", "tabouleh", "parsley salad"],
+  "techniques": ["soak bulgur", "chop", "dice", "dress"],
+  "ingredients": ["parsley", "fine bulgur", "tomato", "mint", "spring onion", "lemon juice", "olive oil"]
+}

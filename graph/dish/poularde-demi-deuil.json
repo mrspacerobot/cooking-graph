@@ -1,0 +1,35 @@
+{
+  "id": "dish/poularde-demi-deuil",
+  "tier": "drafted",
+  "names": {"en": "Poularde demi-deuil", "fr": "Poularde demi-deuil"},
+  "aliases": {"en": ["half-mourning chicken"], "fr": ["poularde en demi-deuil"]},
+  "is": "A chicken with slices of black truffle slid under its skin, trussed and poached in white stock, so that the dark slices show through the pale skin. It is served with a cream sauce made from the poaching stock.",
+  "parts": [
+    {"id": "chicken", "role": "main", "options": ["ingredient/chicken"], "optional": false, "tier": "drafted"},
+    {"id": "truffle", "role": "filling", "options": ["ingredient/truffle"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "leek", "role": "aromatic", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cream",
+      "role": "enrichment",
+      "options": ["ingredient/cream", "ingredient/creme-fraiche"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/stuff-under-the-skin", "tier": "drafted"},
+    {"thing": "technique/poach", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

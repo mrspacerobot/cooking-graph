@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bacalao-a-la-vizcaina",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "salt-cod",
+  "dish": "Bacalao a la vizcaína",
+  "also_called": ["Biscay-style cod", "bakailaoa bizkaitar erara"],
+  "techniques": ["desalt", "sweat", "simmer", "blend"],
+  "ingredients": ["salt cod", "choricero pepper", "onion", "garlic", "olive oil", "bread"]
+}

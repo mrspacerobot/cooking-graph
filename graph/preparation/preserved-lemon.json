@@ -1,0 +1,20 @@
+{
+  "id": "preparation/preserved-lemon",
+  "tier": "drafted",
+  "names": {"en": "Preserved lemon", "fr": "Citron confit"},
+  "aliases": {"en": ["preserved lemons", "salt-preserved lemon"]},
+  "is": "Whole lemons cut in quarters but left joined at the stem end, packed in salt and their own juice, and left to soften until the rind is tender and fragrant and the pith has lost its bitterness. Mostly the rind is used, rinsed, and the pulp is scraped away or kept for a sauce.",
+  "parts": [
+    {"id": "lemon", "role": "main", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "lemon-juice", "role": "liquid", "options": ["ingredient/lemon-juice"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/pickles", "tier": "drafted"}
+  ],
+  "teaches": [],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "recipe/poularde-demi-deuil",
+  "tier": "drafted",
+  "names": {"en": "Poularde demi-deuil", "fr": "Poularde demi-deuil"},
+  "aliases": {},
+  "makes": "dish/poularde-demi-deuil",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken", "amount": {"value": 1.8, "unit": "kilogram"}, "forms": [], "part": "chicken"},
+    {
+      "thing": "ingredient/truffle",
+      "amount": {"value": 30, "unit": "gram"},
+      "forms": ["form/sliced"],
+      "part": "truffle"
+    },
+    {
+      "thing": "preparation/white-chicken-stock",
+      "amount": {"value": 2.5, "unit": "litre"},
+      "forms": [],
+      "part": "stock"
+    },
+    {"thing": "ingredient/carrot", "amount": {"value": 3, "unit": "piece"}, "forms": ["form/peeled"], "part": "carrot"},
+    {"thing": "ingredient/leek", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "leek"},
+    {"thing": "ingredient/cream", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/saute-pan", "equipment/kitchen-string",
+    "equipment/fine-sieve", "equipment/ladle", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/stuff-under-the-skin",
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/truffle", "ingredient/salt"],
+      "text": "Loosen the skin over the breast with a finger, working from the neck end and taking care not to tear it. Season the flesh, then slide the slices of truffle flat under the skin in an even layer and smooth the skin back down.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/truss",
+      "works_on": ["ingredient/chicken"],
+      "with": [],
+      "text": "Truss the bird so that it keeps a compact shape.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/chicken", "ingredient/carrot", "ingredient/leek"],
+      "with": ["preparation/white-chicken-stock"],
+      "text": "Lower the bird into the hot stock, breast up, with the carrots and the leeks. Poach at a bare tremble and never let the stock boil, until the leg moves freely in its joint. Check the thickest part of the thigh against a trusted guide to doneness.",
+      "time": {"from": 60, "to": 75, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/skim",
+      "works_on": ["preparation/white-chicken-stock"],
+      "with": [],
+      "text": "Lift out the bird and the vegetables and keep them warm. Skim the fat from the surface of the stock.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/strain",
+      "works_on": ["preparation/white-chicken-stock"],
+      "with": [],
+      "text": "Strain some of the poaching stock through a fine sieve into a wide pan.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/white-chicken-stock"],
+      "with": ["ingredient/cream"],
+      "text": "Boil the strained stock down until it has body, then add the cream and boil it down again until it coats a spoon.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/white-chicken-stock"],
+      "with": ["ingredient/salt"],
+      "text": "Taste the sauce and adjust the salt.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chicken", "ingredient/carrot", "ingredient/leek", "preparation/white-chicken-stock"],
+      "with": [],
+      "text": "Carve the bird, serve it with the vegetables and spoon the sauce over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

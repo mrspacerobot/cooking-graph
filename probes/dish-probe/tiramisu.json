@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tiramisu",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "desserts",
+  "dish": "Tiramisu",
+  "also_called": ["tiramisu"],
+  "techniques": ["whisk eggs", "fold", "dip", "layer", "chill"],
+  "ingredients": ["mascarpone", "egg", "sugar", "savoiardi", "coffee", "cocoa powder", "marsala"]
+}

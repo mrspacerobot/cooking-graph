@@ -1,0 +1,43 @@
+{
+  "id": "dish/spaghetti-alla-carbonara",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti alla carbonara", "fr": "Spaghetti à la carbonara"},
+  "aliases": {"en": ["carbonara", "pasta alla carbonara"]},
+  "is": "A Roman dish of spaghetti tossed off the heat with crisp cured pork cheek, beaten egg and sharp grated sheep's cheese, so that the egg warms into a creamy sauce. There is no cream in it.",
+  "parts": [
+    {"id": "pasta", "role": "main", "options": ["ingredient/spaghetti"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pork",
+      "role": "fat",
+      "options": ["ingredient/guanciale", "ingredient/pancetta", "ingredient/bacon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "egg",
+      "role": "sauce",
+      "options": ["ingredient/egg", "ingredient/egg-yolk"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "cheese",
+      "role": "enrichment",
+      "options": ["ingredient/pecorino", "ingredient/parmesan"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/boil-pasta", "tier": "drafted"},
+    {"thing": "technique/toss-pasta-with-sauce", "tier": "drafted"},
+    {"thing": "technique/render", "tier": "drafted"},
+    {"thing": "technique/whisk", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

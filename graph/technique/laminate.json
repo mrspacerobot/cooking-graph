@@ -1,0 +1,57 @@
+{
+  "id": "technique/laminate",
+  "tier": "drafted",
+  "names": {"en": "Laminate", "fr": "Feuilleter"},
+  "aliases": {"en": ["laminate a dough", "layer a dough with fat"]},
+  "does": "Builds a dough into many thin layers with fat between them, by rolling or stretching it out, spreading it with fat, folding it over and repeating, so that in the heat each layer cooks apart from the next and the finished bread or pastry comes away in flaky sheets.",
+  "how": [
+    "Start from a smooth dough that has rested and is soft enough to stretch thin.",
+    "Roll or stretch it out as thin as it will go without tearing.",
+    "Brush the whole sheet with melted fat or oil, or lay a slab of cold butter on it. For some breads, sprinkle fine semolina over the fat, so that the layers do not weld.",
+    "Fold the sheet over the fat, as a letter or into a square, so that the fat is sealed inside.",
+    "Rest the dough between folds: cold for a dough with butter, covered at room warmth for an oiled one.",
+    "Repeat the rolling and folding until the dough has as many layers as the dish needs, then shape it and cook it."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A cut edge shows fine, even layers, each one shining with fat."},
+    {"sense": "see", "text": "The cooked dough pulls apart in thin, crisp sheets."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting butter warm and melt into the dough, so that the bread is not flaky.",
+      "fix": "Chill the dough between folds and keep the butter cold."
+    },
+    {
+      "mistake": "Rolling so hard that the fat tears through the layers.",
+      "fix": "Roll with an even, light pressure and rest the dough when it fights back."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/msemen-dough", "tier": "drafted"},
+    {"thing": "preparation/puff-pastry", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/rolling-pin"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil", "ingredient/butter", "ingredient/smen"],
+      "tier": "drafted"
+    },
+    {"role": "coating", "options": ["ingredient/flour", "ingredient/semolina"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/roll-out",
+      "why": "Laminating starts with a dough rolled out thin and even.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/fold-dough",
+      "why": "Laminating is folding a dough over fat again and again.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

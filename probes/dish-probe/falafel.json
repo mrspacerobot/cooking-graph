@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/falafel",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "frying",
+  "dish": "Falafel",
+  "also_called": ["falafel balls", "ta'amiya"],
+  "techniques": ["soak chickpeas", "grind", "season", "shape", "deep fry"],
+  "ingredients": ["chickpea", "fava bean", "onion", "garlic", "parsley", "coriander leaf", "cumin", "coriander seed"]
+}

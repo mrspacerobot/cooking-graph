@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/biftekia",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "grilling",
+  "dish": "Biftekia",
+  "also_called": ["bifteki", "greek burgers"],
+  "techniques": ["knead", "shape", "grill"],
+  "ingredients": ["ground beef", "onion", "bread", "egg", "parsley", "oregano", "olive oil"]
+}

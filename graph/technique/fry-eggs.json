@@ -1,0 +1,56 @@
+{
+  "id": "technique/fry-eggs",
+  "tier": "drafted",
+  "names": {"en": "Fry eggs"},
+  "aliases": {"en": ["fry an egg", "huevos fritos"]},
+  "does": "Cooks eggs in a generous depth of hot olive oil, so that the whites puff, bubble and turn lacy and crisp at the edges while the yolks stay soft.",
+  "how": [
+    "Heat a good depth of olive oil in a small, deep frying pan until a breadcrumb dropped in sizzles at once.",
+    "Break each egg into a small bowl first, so that a broken yolk or a shell is found before the pan.",
+    "Slide the egg in from close to the oil at the side of the pan, so that the white curls round the yolk.",
+    "Tilt the pan and spoon hot oil over the white until it is set and frilled, while the yolk stays soft.",
+    "Lift the egg out with a slotted spoon, drain it on paper and salt it at the end."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A lively crackle as the egg goes in, which settles to a steady sizzle."},
+    {
+      "sense": "see",
+      "text": "The white is set and frilled, golden and lacy at the edge, and the yolk is still glossy and wobbly."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "The oil is too cool, so that the egg spreads thin and greasy with a pale, limp white.",
+      "fix": "Heat the oil until a breadcrumb sizzles at once."
+    },
+    {
+      "mistake": "The oil is too hot, so that the white turns brown and leathery before the yolk is warm.",
+      "fix": "Lower the heat a little and spoon the oil over the white."
+    },
+    {
+      "mistake": "Breaking the yolk as the egg goes in.",
+      "fix": "Break the egg into a small bowl first and slide it in low."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "The egg swims in a generous depth of hot olive oil and not in a thin film of fat, so the white frills and crisps at the edge. Nothing is turned, and the oil is spooned over the white.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

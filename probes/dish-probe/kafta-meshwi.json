@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kafta-meshwi",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "grilling",
+  "dish": "Kafta meshwi",
+  "also_called": ["kafta", "kofta", "grilled minced meat skewers"],
+  "techniques": ["grind", "mix", "shape", "skewer", "grill"],
+  "ingredients": ["lamb", "beef", "onion", "parsley", "allspice", "black pepper", "salt"]
+}

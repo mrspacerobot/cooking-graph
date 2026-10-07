@@ -1,0 +1,39 @@
+{
+  "id": "technique/make-tartar-sauce",
+  "tier": "drafted",
+  "names": {"en": "Make tartar sauce"},
+  "aliases": {"en": ["make tartare sauce"]},
+  "does": "Folds finely chopped pickles, boiled egg and onion into mayonnaise, to make a thick, creamy sauce with a sharp bite for fried food.",
+  "how": [
+    "Chop the pickles, the boiled egg and a little onion small. Squeeze the onion dry in a cloth if it is strong.",
+    "Put the mayonnaise in a bowl and fold in the chopped pieces.",
+    "Add a few drops of lemon juice, taste, and season with pepper.",
+    "Chill it briefly so that the flavours join."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sauce is thick and flecked with small pieces, and does not run."},
+    {"sense": "taste", "text": "The sauce is creamy first and then sharp."}
+  ],
+  "mistakes": [
+    {"mistake": "Chopping the pickles too coarsely, so that the sauce is lumpy.", "fix": "Chop them small."},
+    {"mistake": "Leaving the pickles wet, which thins the sauce.", "fix": "Pat them dry before they go in."}
+  ],
+  "works_on": [
+    {"thing": "preparation/mayonnaise", "tier": "drafted"},
+    {"thing": "ingredient/cornichons", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/tartar-sauce", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon-juice"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/fold", "why": "The pieces are folded into the mayonnaise, not beaten in.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

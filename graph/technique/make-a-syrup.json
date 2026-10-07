@@ -1,0 +1,44 @@
+{
+  "id": "technique/make-a-syrup",
+  "tier": "drafted",
+  "names": {"en": "Make a syrup"},
+  "aliases": {"en": ["make syrup", "boil a syrup", "make a sugar syrup"]},
+  "does": "Dissolves sugar in water over heat and simmers it briefly to a clear, lightly thick liquid, which soaks into pastry, sweetens fruit and drinks, or glazes a cake.",
+  "how": [
+    "Put the sugar and the water in a saucepan, with a strip of lemon peel or a stick of cinnamon if the syrup is to be flavoured.",
+    "Stir over a gentle heat until every grain has dissolved, then stop stirring.",
+    "Bring to a boil and wipe down any crystals on the side of the pan with a wet brush.",
+    "Simmer until the liquid is clear and just thick enough to coat a spoon lightly. It thickens more as it cools, so stop early.",
+    "Add a little lemon juice near the end if the syrup is to keep, which stops it turning to crystals.",
+    "Let it cool to the heat the dish needs. Syrup poured onto pastry at the same heat leaves the pastry soggy, so one of them is cold."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The liquid is clear, with no grains at the bottom, and the bubbles grow large and slow."},
+    {"sense": "feel", "text": "A cooled drop pressed between finger and thumb is sticky and draws out a short thread."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring after it boils, which throws sugar up the side of the pan and sets the whole pan to crystals.",
+      "fix": "Stir only until the sugar has dissolved, and wipe the side down with a wet brush."
+    },
+    {
+      "mistake": "Boiling on until the syrup browns, which makes a caramel and not a syrup.",
+      "fix": "Take it off the heat while it is still clear and pale."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/sugars", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/sugar-syrup", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon-juice", "ingredient/lemon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/onigiri",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "rice",
+  "dish": "Onigiri",
+  "also_called": ["rice ball", "omusubi"],
+  "techniques": ["wash rice", "cook rice", "salt hands", "shape by hand", "wrap in nori"],
+  "ingredients": ["short-grain rice", "salt", "nori", "umeboshi", "salted salmon", "bonito flakes", "soy sauce"]
+}

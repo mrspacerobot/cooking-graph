@@ -1,0 +1,36 @@
+{
+  "id": "technique/separate-eggs",
+  "tier": "drafted",
+  "names": {"en": "Separate eggs", "fr": "Séparer les œufs"},
+  "aliases": {"en": ["separate", "separate an egg", "separate yolks from whites"], "fr": ["séparer"]},
+  "does": "Parts the yolk of an egg from its white, so that each can be used alone: the yolks to enrich or thicken, the whites to whip.",
+  "how": [
+    "Set out a small bowl to separate over, and a larger bowl for the whites that are clean.",
+    "Crack the egg on a flat surface, not on a rim, and open it over the small bowl with the yolk in one half of the shell.",
+    "Pass the yolk gently from one half of the shell to the other until the white has run into the bowl.",
+    "Tip the yolk into its own bowl, and move the white to the larger bowl only when it is clean."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The white is clear, with no streak of yellow in it, and the yolk is whole and round."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting a speck of yolk fall into the whites, which then will not whip.",
+      "fix": "Separate each egg over a small bowl first, and lift out any speck with a piece of shell."
+    },
+    {
+      "mistake": "Cracking the egg on the rim of a bowl, which pushes in shell and breaks the yolk.",
+      "fix": "Crack it on a flat surface."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl", "equipment/ramekin"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

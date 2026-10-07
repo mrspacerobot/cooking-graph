@@ -1,0 +1,45 @@
+{
+  "id": "technique/core",
+  "tier": "drafted",
+  "names": {"en": "Core", "fr": "Évider"},
+  "aliases": {"en": ["remove the core", "hollow out", "core out"]},
+  "does": "Takes out the hard centre, the seeds or the pith of a fruit or vegetable, or hollows it out, so that the flesh is left as an even wall that cooks evenly or holds a filling.",
+  "how": [
+    "Cut off the top, or push the corer in from the stem end, keeping the wall of the flesh even.",
+    "Twist the corer, or run the tip of a small knife round the inside, and lift out the core and seeds.",
+    "Scoop out any pith or hard bits that are left, taking care not to cut through the wall.",
+    "Keep the scooped flesh if it is wanted for the filling."
+  ],
+  "cues": [
+    {"sense": "see", "text": "An even, unbroken wall of flesh and no hard core or seeds left inside."},
+    {"sense": "feel", "text": "The inside is smooth to the touch."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting through the wall, so that a filling leaks.",
+      "fix": "Work slowly and keep the corer in the middle."
+    },
+    {
+      "mistake": "Leaving pith or seeds behind, which turn bitter or hard.",
+      "fix": "Scrape the inside clean with a spoon."
+    },
+    {
+      "mistake": "Scooping out too much flesh, so that the wall collapses as it cooks.",
+      "fix": "Leave a wall of about the width of a finger."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/firm-fruits", "tier": "drafted"},
+    {"thing": "group/leafy-heads", "tier": "drafted"},
+    {"thing": "ingredient/courgette", "tier": "drafted"},
+    {"thing": "ingredient/bell-pepper", "tier": "drafted"},
+    {"thing": "ingredient/aubergine", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/corer", "equipment/paring-knife"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

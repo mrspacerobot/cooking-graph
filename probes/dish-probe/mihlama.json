@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/mihlama",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "eggs-and-breakfast",
+  "dish": "Mıhlama",
+  "also_called": ["kuymak", "black sea cheese and cornmeal fondue"],
+  "techniques": ["melt", "stir"],
+  "ingredients": ["cornmeal", "butter", "kolot cheese", "water"]
+}

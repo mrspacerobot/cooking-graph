@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/potage-aux-lentilles",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "stocks",
+  "dish": "Potage aux lentilles",
+  "also_called": ["soupe aux lentilles", "lentil soup"],
+  "techniques": ["dice", "sweat", "simmer", "blend"],
+  "ingredients": ["lentil", "carrot", "onion", "bacon", "garlic", "chicken stock", "bay leaf"]
+}

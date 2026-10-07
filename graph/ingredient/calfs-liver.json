@@ -2,7 +2,7 @@
   "id": "ingredient/calfs-liver",
   "tier": "drafted",
   "names": {"en": "Calf's liver", "fr": "Foie de veau"},
-  "aliases": {"en": ["veal liver"]},
+  "aliases": {"en": ["veal liver", "calf liver"]},
   "is_a": [],
   "part_of": [],
   "groups": [

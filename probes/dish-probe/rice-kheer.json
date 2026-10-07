@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/rice-kheer",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "sweets",
+  "dish": "Rice kheer",
+  "also_called": ["kheer", "chawal ki kheer"],
+  "techniques": ["soak", "simmer", "reduce", "stir"],
+  "ingredients": ["rice", "milk", "sugar", "cardamom", "almond", "pistachio", "saffron", "raisin"]
+}

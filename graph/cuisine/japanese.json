@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/japanese",
+  "tier": "drafted",
+  "names": {"en": "Japanese", "fr": "Japonaise"},
+  "aliases": {"en": ["Japanese cooking", "Japanese cuisine"]},
+  "within": null
+}

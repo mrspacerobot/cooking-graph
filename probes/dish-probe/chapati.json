@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/chapati",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "flatbreads",
+  "dish": "Chapati",
+  "also_called": ["roti", "phulka"],
+  "techniques": ["knead", "rest", "roll", "cook on a griddle"],
+  "ingredients": ["whole wheat flour", "water", "salt", "ghee"]
+}

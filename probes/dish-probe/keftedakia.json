@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/keftedakia",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "frying",
+  "dish": "Keftedakia",
+  "also_called": ["keftedes", "greek meatballs"],
+  "techniques": ["soak", "knead", "shape", "dredge", "fry"],
+  "ingredients": ["ground beef", "bread", "onion", "egg", "mint", "parsley", "flour", "olive oil"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "ingredient/squid",
+  "tier": "drafted",
+  "names": {"en": "Squid", "fr": "Calmar"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A slender sea animal with a tube-shaped body and tentacles. It cooks in moments over high heat and turns rubbery after, or it can be stewed slowly until it is tender again. Cut in rings and floured, it fries well.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/molluscs", "basis": "It is a mollusc.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

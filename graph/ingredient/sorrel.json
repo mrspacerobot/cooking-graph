@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/sorrel",
+  "tier": "drafted",
+  "names": {"en": "Sorrel", "fr": "Oseille"},
+  "aliases": {"en": ["garden sorrel"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/leafy-greens", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A tender leaf with a sharp, lemony taste. It melts into a purée the moment it meets heat and turns an olive colour, and its sharpness cuts through cream and fish.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

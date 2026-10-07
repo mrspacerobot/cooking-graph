@@ -1,0 +1,45 @@
+{
+  "id": "technique/rest-batter",
+  "tier": "drafted",
+  "names": {"en": "Rest batter"},
+  "aliases": {"en": ["let the batter rest", "rest the batter"]},
+  "does": "Leaves a mixed batter to stand, so that the flour takes up its liquid and the batter turns smooth and thickens a little. Cooked after resting, it spreads evenly and comes out tender.",
+  "how": [
+    "Cover the bowl of batter.",
+    "Leave it to stand in a cool place, or in the fridge if it will wait for long.",
+    "Stir it gently once before it is used.",
+    "If it has thickened too much, loosen it with a splash of liquid."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A few bubbles have risen to the surface and the batter has thickened slightly."},
+    {"sense": "feel", "text": "The batter is smoother when stirred than just after mixing."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cooking the batter right away, so that the pancakes are tough and uneven.",
+      "fix": "Let it stand first."
+    },
+    {
+      "mistake": "Beating it again after it has rested, which knocks out the bubbles.",
+      "fix": "Give it only one gentle stir."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/pancake-batter", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/batter", "why": "The batter must be mixed before it can rest.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/rest",
+      "differs": "The food that rests is a batter, left covered so that its flour swells, and not a piece of cooked meat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

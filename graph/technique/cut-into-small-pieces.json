@@ -1,0 +1,46 @@
+{
+  "id": "technique/cut-into-small-pieces",
+  "tier": "drafted",
+  "names": {"en": "Cut into small pieces"},
+  "aliases": {"en": ["cut into small bits", "chop into small pieces"]},
+  "does": "Cuts food into small, loose pieces, not exact cubes, so that they spread through rice, a filling or a sauce.",
+  "how": [
+    "Trim the food, take out any bone or tough stem, and slice it first if it is wide.",
+    "Cut the slices across into small, rough pieces.",
+    "Try to keep the pieces about the same size, so that they cook together.",
+    "Gather the pieces in a bowl as you go."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The pieces are small and similar in size, and can be scattered with a spoon."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting the pieces large, so that they cannot spread evenly through the rice.",
+      "fix": "Cut them about as small as a grain of rice."
+    },
+    {
+      "mistake": "Cutting soft food on a crowded board, so that it is squashed.",
+      "fix": "Use a sharp knife and a clear board."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/mushrooms", "tier": "drafted"},
+    {"thing": "ingredient/fried-tofu", "tier": "drafted"},
+    {"thing": "ingredient/chicken-thigh", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/dice",
+      "differs": "The pieces are small but cut by eye and not to an exact cube, since they only need to blend into rice or a filling.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

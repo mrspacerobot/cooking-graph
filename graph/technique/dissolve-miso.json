@@ -1,0 +1,40 @@
+{
+  "id": "technique/dissolve-miso",
+  "tier": "drafted",
+  "names": {"en": "Dissolve miso"},
+  "aliases": {"en": ["stir in miso", "dissolve the miso"]},
+  "does": "Stirs miso smooth into a little warm liquid away from the main pot, and then stirs it into the pot at the end, so that it never clumps and its scent is not boiled away.",
+  "how": [
+    "Heat the soup or stock and turn off the heat or lower it until the liquid only trembles.",
+    "Put the miso in a ladle or a small sieve and lower it into the liquid.",
+    "Work the miso loose with the back of a spoon or a whisk until it has all gone into the liquid.",
+    "Stir the pot once, taste, and serve before it cools. Never let it come back to a boil."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The soup turns evenly cloudy and there are no lumps."},
+    {"sense": "smell", "text": "The miso scent is full and warm, and is not flat."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Dropping the miso into the pot in a lump, so that it sinks and stays in clots.",
+      "fix": "Dissolve it in a ladle of warm liquid first."
+    },
+    {
+      "mistake": "Boiling the soup after the miso is in, which dulls its scent.",
+      "fix": "Take it off the heat first and serve right away."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/miso", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/ladle", "equipment/whisk"], "tier": "drafted"},
+    {"role": "liquid", "options": ["preparation/dashi", "ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

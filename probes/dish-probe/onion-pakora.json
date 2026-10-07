@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/onion-pakora",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "frying",
+  "dish": "Onion pakora",
+  "also_called": ["onion bhaji", "kanda bhaji", "pyaz ke pakode"],
+  "techniques": ["slice", "make batter", "deep fry"],
+  "ingredients": [
+    "onion",
+    "chickpea flour",
+    "rice flour",
+    "green chili",
+    "carom seed",
+    "turmeric",
+    "coriander leaf",
+    "oil"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sauce-tartare",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "emulsions",
+  "dish": "Sauce tartare",
+  "also_called": ["tartare sauce"],
+  "techniques": ["whisk", "emulsify", "chop", "fold in"],
+  "ingredients": ["egg yolk", "mustard", "oil", "vinegar", "cornichon", "caper", "shallot", "chive", "tarragon"]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/minestrone",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "soups",
+  "dish": "Minestrone",
+  "also_called": ["Italian vegetable soup"],
+  "techniques": ["make a soffritto", "simmer", "boil pasta"],
+  "ingredients": [
+    "onion",
+    "carrot",
+    "celery",
+    "potato",
+    "courgette",
+    "cannellini bean",
+    "tomato",
+    "small pasta",
+    "parmesan rind"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "ingredient/redcurrant-jelly",
+  "tier": "drafted",
+  "names": {"en": "Redcurrant jelly", "fr": "Gelée de groseille"},
+  "aliases": {"en": ["red currant jelly"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A clear, tart-sweet red jelly of redcurrants, sold in a jar. It melts into a sauce for pork or game, or glazes a tart.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/sulphites", "basis": "Preserves are sometimes kept with sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

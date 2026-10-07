@@ -2,7 +2,7 @@
   "id": "ingredient/capers",
   "tier": "drafted",
   "names": {"en": "Capers", "fr": "Câpres"},
-  "aliases": {},
+  "aliases": {"en": ["caper"]},
   "is_a": [],
   "part_of": [],
   "groups": [

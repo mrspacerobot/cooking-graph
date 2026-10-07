@@ -1,0 +1,62 @@
+{
+  "id": "technique/make-a-tomato-sauce",
+  "tier": "drafted",
+  "names": {"en": "Make a tomato sauce", "fr": "Faire une sauce tomate"},
+  "aliases": {"en": ["make a quick tomato sauce", "make salsa di pomodoro"]},
+  "does": "Cooks tomatoes in olive oil, with garlic or chilli, until they break down into a thick, bright sauce, with no cream or flour. A quick sauce is done in the time the pasta takes to boil, and a slow one grows deeper and sweeter.",
+  "how": [
+    "Warm olive oil gently with whole garlic, or with chilli, until the oil smells of it. Do not let the garlic brown.",
+    "Add the tomatoes, crushed or chopped, with a little salt, and bring to a bubble.",
+    "Keep it at a lively simmer, stirring now and then and crushing the tomatoes against the pan, until the sauce has thickened and the oil shines at the edges.",
+    "Tear in basil at the end, off the heat, and adjust the salt."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "A spoon drawn across the pan leaves a trail, with a sheen of oil at the edge and a deep red colour."
+    },
+    {"sense": "taste", "text": "Bright and sweet, with no raw sharpness."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting the garlic brown, which turns the whole sauce bitter.",
+      "fix": "Warm the oil gently and add the tomatoes as soon as the garlic smells sweet."
+    },
+    {
+      "mistake": "Adding water to a sauce that is too thick before it has cooked down, which leaves it thin and dull.",
+      "fix": "Keep it at a simmer until it thickens, and add only a splash of water at the end if it is too thick."
+    },
+    {
+      "mistake": "Cooking it too hard, so that it catches on the pan and tastes burnt.",
+      "fix": "Stir and lower the heat."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/tomato", "tier": "drafted"},
+    {"thing": "ingredient/tinned-tomatoes", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/tomato-sauce", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saute-pan", "equipment/saucepan", "equipment/frying-pan"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "The sauce thickens by a steady simmer, so a cook has to be able to hold one.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

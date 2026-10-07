@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kefta-brochettes",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "grilling",
+  "dish": "Kefta brochettes",
+  "also_called": ["kefta skewers", "brochettes de kefta", "kefta meshwi"],
+  "techniques": ["mince", "season", "shape", "grill"],
+  "ingredients": ["ground lamb", "ground beef", "onion", "parsley", "coriander", "cumin", "paprika", "mint"]
+}

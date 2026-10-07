@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/patatas-bravas",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "tapas",
+  "dish": "Patatas bravas",
+  "also_called": ["bravas", "patatas a la brava"],
+  "techniques": ["fry", "make a sauce", "simmer"],
+  "ingredients": ["potato", "olive oil", "paprika", "hot paprika", "tomato", "garlic", "flour"]
+}

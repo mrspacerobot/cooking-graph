@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/warak-enab",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "stuffed-vegetables",
+  "dish": "Warak enab",
+  "also_called": ["warak arish", "stuffed grape leaves", "dolma"],
+  "techniques": ["blanch", "stuff", "roll", "layer", "simmer"],
+  "ingredients": ["grape leaf", "rice", "lamb", "tomato", "lemon juice", "olive oil", "mint", "lamb chop"]
+}

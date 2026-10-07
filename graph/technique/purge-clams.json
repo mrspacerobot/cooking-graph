@@ -1,0 +1,52 @@
+{
+  "id": "technique/purge-clams",
+  "tier": "drafted",
+  "names": {"en": "Purge clams"},
+  "aliases": {"en": ["spurgare le vongole", "soak clams in salted water"]},
+  "does": "Leaves live clams in cold, well-salted water, like the sea, so that they open a little, breathe and spit out the sand they hold, before they are cooked.",
+  "how": [
+    "Look over the clams. Throw away any that are broken, or that stay open when they are tapped on the counter.",
+    "Stir plenty of salt into cold water until it tastes like the sea, in a bowl wide enough to hold the clams in a single layer.",
+    "Lay in the clams without crowding and leave them in a cool, dim place, so that they spit out their sand.",
+    "Lift them out of the water with your hands or a slotted spoon, leaving the grit on the bottom of the bowl. Do not tip them into a colander, which pours the sand back over them."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Sand and grit gather on the bottom of the bowl, and the clams show their siphons a little."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using fresh water, which makes the clams shut or kills them.",
+      "fix": "Make the water as salty as the sea."
+    },
+    {
+      "mistake": "Pouring the clams into a colander, so that the sand falls back over them.",
+      "fix": "Lift them out by hand and leave the grit behind."
+    },
+    {
+      "mistake": "Crowding them in a warm place, so that they do not open.",
+      "fix": "Lay them in a single layer somewhere cool."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/clam", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/soak",
+      "differs": "The water is cold and as salty as the sea, not fresh. The aim is not to soften the food but to make live shellfish spit out their sand, and they are lifted out and not drained.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

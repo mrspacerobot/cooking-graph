@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/zaru-soba",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "noodles",
+  "dish": "Zaru soba",
+  "also_called": ["cold soba with dipping sauce", "mori soba"],
+  "techniques": ["make dashi", "make dipping sauce", "boil noodles", "rinse in cold water", "chill", "grate"],
+  "ingredients": ["soba noodle", "dashi", "soy sauce", "mirin", "spring onion", "wasabi", "nori", "daikon"]
+}

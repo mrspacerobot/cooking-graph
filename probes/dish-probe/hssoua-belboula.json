@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/hssoua-belboula",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "soups",
+  "dish": "Hssoua belboula",
+  "also_called": ["barley grits soup", "soupe d'orge", "hsoua"],
+  "techniques": ["simmer", "whisk"],
+  "ingredients": ["barley grits", "milk", "olive oil", "cumin"]
+}

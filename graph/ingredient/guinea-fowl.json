@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/guinea-fowl",
+  "tier": "drafted",
+  "names": {"en": "Guinea fowl", "fr": "Pintade"},
+  "aliases": {"en": ["guineafowl"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/poultry", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A lean, slightly gamey bird, smaller than a chicken, whose breast dries out quickly. It is usually roasted with plenty of fat, or braised.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is a bird.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

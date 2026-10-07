@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/marmitako",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "stews",
+  "dish": "Marmitako",
+  "also_called": ["Basque tuna and potato stew", "marmitaco"],
+  "techniques": ["make a sofrito", "simmer", "poach"],
+  "ingredients": [
+    "tuna",
+    "potato",
+    "onion",
+    "green pepper",
+    "tomato",
+    "choricero pepper",
+    "garlic",
+    "olive oil",
+    "fish stock"
+  ]
+}

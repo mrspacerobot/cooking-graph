@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/bone-marrow",
+  "tier": "drafted",
+  "names": {"en": "Bone marrow", "fr": "Moelle"},
+  "aliases": {"en": ["beef marrow"]},
+  "is_a": [],
+  "part_of": [
+    {"thing": "ingredient/marrow-bone", "tier": "drafted"}
+  ],
+  "groups": [],
+  "forms": [],
+  "behaviour": "The soft, rich fat inside beef bones. It melts at a gentle heat, so it is scooped from the bone and added to a dish at the end, or spread warm on toast.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is taken from the bones of cattle.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

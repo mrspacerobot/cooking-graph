@@ -1,0 +1,45 @@
+{
+  "id": "technique/wash-rice",
+  "tier": "drafted",
+  "names": {"en": "Wash rice"},
+  "aliases": {"en": ["wash the rice", "rinse rice until the water runs nearly clear"]},
+  "does": "Rubs rice gently in cold water and pours the cloudy water away, again and again, to take off the loose starch, so that the cooked grains are separate and clean-tasting.",
+  "how": [
+    "Put the rice in a large bowl and cover it with cold water. Stir quickly with your hand and pour the cloudy water away at once.",
+    "Rub the rice lightly with the heel of the hand in a circular motion.",
+    "Add fresh water, swirl, and drain again.",
+    "Repeat until the water runs nearly clear. It does not need to be perfectly clear.",
+    "Drain the rice in a sieve."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The washing water turns from milky to almost clear."},
+    {"sense": "feel", "text": "The grains feel smooth and separate."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Washing slowly in the first water, which lets the rice soak up the starch.",
+      "fix": "Pour off the first water at once."
+    },
+    {"mistake": "Rubbing hard, which breaks the grains.", "fix": "Rub lightly."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl", "equipment/fine-sieve"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/rinse",
+      "differs": "The rice is rubbed lightly as it is washed, and the first water is poured away at once, so that it does not soak up the starchy water.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

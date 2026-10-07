@@ -1,0 +1,44 @@
+{
+  "id": "technique/stuff-a-pita",
+  "tier": "drafted",
+  "names": {"en": "Stuff a pita", "fr": "Garnir un pain pita"},
+  "aliases": {"en": ["fill a pita", "stuff pita bread", "fill the pita"], "fr": ["farcir un pain pita"]},
+  "does": "Opens a round of pita and spreads a thin layer of raw, spiced meat mixture inside, then presses the bread shut, so that the filling cooks and the bread crisps and soaks up its juices on the heat.",
+  "how": [
+    "Cut round the edge of the pita with a knife, or split it along one side, and open it into layers.",
+    "Spread the filling thinly and evenly over the inner face of one layer, right to the edge.",
+    "Close the pita over the filling and press it down firmly with the hand, so that the layers hold together.",
+    "Cut it in half, or leave it whole, and cook it at once."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The filling lies flat and even, with none showing at the edge."},
+    {"sense": "feel", "text": "The closed bread is firm and flat under the hand, and does not slide apart."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Piling the filling thick in the middle, so that the bread crisps and burns before the filling is done.",
+      "fix": "Spread it thin, as thin as a finger, and even."
+    },
+    {
+      "mistake": "Using a dry, cracked pita that splits as it is opened.",
+      "fix": "Warm the bread first, so that it bends."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/pita-bread", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/stuff",
+      "differs": "The pocket is a round of bread, and the filling is raw meat spread flat as a thin layer and pressed shut so that it cooks with the bread. It is not packed into a hollow of a bird or a vegetable.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

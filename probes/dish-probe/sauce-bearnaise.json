@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sauce-bearnaise",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "emulsions",
+  "dish": "Sauce béarnaise",
+  "also_called": ["béarnaise sauce"],
+  "techniques": ["reduce", "whisk", "emulsify", "clarify", "strain"],
+  "ingredients": ["egg yolk", "butter", "shallot", "tarragon", "white wine vinegar", "white wine", "chervil"]
+}

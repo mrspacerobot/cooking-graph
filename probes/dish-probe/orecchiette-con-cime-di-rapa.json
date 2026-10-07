@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/orecchiette-con-cime-di-rapa",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "fresh-pasta",
+  "dish": "Orecchiette con cime di rapa",
+  "also_called": ["orecchiette with turnip tops", "orecchiette with broccoli rabe"],
+  "techniques": ["knead dough", "shape pasta", "boil pasta", "blanch", "fry"],
+  "ingredients": ["semolina", "turnip top", "anchovy", "garlic", "chilli", "olive oil"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tagliatelle-al-ragu",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "fresh-pasta",
+  "dish": "Tagliatelle al ragu",
+  "also_called": ["tagliatelle bolognese", "tagliatelle al ragu alla bolognese"],
+  "techniques": ["knead dough", "roll out dough", "cut pasta", "make a soffritto", "simmer", "boil pasta"],
+  "ingredients": ["flour", "egg", "beef", "pork", "onion", "carrot", "celery", "tomato", "milk"]
+}

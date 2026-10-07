@@ -1,0 +1,61 @@
+{
+  "id": "technique/slow-cook",
+  "tier": "drafted",
+  "names": {"en": "Slow cook"},
+  "aliases": {"en": ["cook slowly in a sealed pot"]},
+  "does": "Cooks a tough cut for a very long time at the lowest heat in a closed pot with only a little liquid, so that it softens in its own juices and fat until it falls apart, with its taste deep and little left to reduce.",
+  "how": [
+    "Season the meat early, and rub it with the spices and the fat.",
+    "Pack it snugly into the pot with the aromatics, and add only a little liquid, well below the top of the meat.",
+    "Close the pot tightly: with its lid, with parchment tied over the mouth, or with a rope of dough around the lid.",
+    "Cook in a low oven, or on the lowest heat, and keep the pot shut for most of the time.",
+    "Open it near the end, and check that the meat falls apart under a fork and that the juices have turned into a small amount of rich sauce."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "A fork slides in and the meat falls apart under light pressure."},
+    {"sense": "see", "text": "The juices are glossy, with a layer of clear fat on top."},
+    {"sense": "smell", "text": "A deep, sweet smell rises when the pot is opened, and nothing smells scorched."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Lifting the lid often, which lets the steam out and stretches the time.",
+      "fix": "Keep the pot shut and trust the low heat."
+    },
+    {
+      "mistake": "Adding too much liquid, so that the meat boils and the sauce is thin.",
+      "fix": "Add only a little, well below the top of the meat."
+    },
+    {
+      "mistake": "Setting the heat too high, so that the bottom of the pot catches.",
+      "fix": "Use the lowest heat and a heavy pot."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/braising-cuts", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/fork-tender", "tier": "drafted"},
+    {"thing": "preparation/braising-liquid", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/earthenware-jar", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/oven", "equipment/stovetop"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/stock"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/parchment-paper", "equipment/kitchen-string"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/braise",
+      "why": "Slow cooking is a braise with less liquid and far more time, so a cook has to know how a braise behaves first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/braise",
+      "differs": "A braise browns the meat first, cooks it half covered in liquid and turns it now and then. Slow cooking skips the browning, uses only a little liquid, stays shut, and takes far longer at a lower heat, so the meat cooks in its own juices as much as in the liquid.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

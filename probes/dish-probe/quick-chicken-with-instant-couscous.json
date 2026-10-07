@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/quick-chicken-with-instant-couscous",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "couscous",
+  "dish": "Quick chicken with instant couscous",
+  "also_called": ["weeknight chicken couscous", "couscous rapide au poulet"],
+  "techniques": ["saute", "simmer", "rehydrate couscous", "fluff"],
+  "ingredients": [
+    "instant couscous",
+    "chicken",
+    "zucchini",
+    "carrot",
+    "chickpea",
+    "onion",
+    "ras el hanout",
+    "olive oil"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/saucisse-de-morteau-aux-lentilles",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "poach",
+  "dish": "Saucisse de Morteau aux lentilles",
+  "also_called": ["Morteau sausage with lentils", "morteau lentilles"],
+  "techniques": ["poach", "sweat", "simmer", "slice"],
+  "ingredients": ["morteau sausage", "lentil", "carrot", "onion", "clove", "bacon", "bay leaf"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/peperonata",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "vegetables",
+  "dish": "Peperonata",
+  "also_called": ["stewed peppers"],
+  "techniques": ["sweat", "stew", "reduce"],
+  "ingredients": ["bell pepper", "onion", "tomato", "garlic", "olive oil", "vinegar", "basil"]
+}

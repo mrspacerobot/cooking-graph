@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/dakos",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "salads-and-dips",
+  "dish": "Dakos",
+  "also_called": ["ntakos", "cretan rusk salad"],
+  "techniques": ["soak", "grate", "assemble"],
+  "ingredients": ["barley rusk", "tomato", "mizithra", "olive oil", "oregano", "olive"]
+}

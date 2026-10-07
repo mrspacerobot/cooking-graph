@@ -1,0 +1,50 @@
+{
+  "id": "technique/char",
+  "tier": "drafted",
+  "names": {"en": "Char", "fr": "Griller à la flamme"},
+  "aliases": {"en": ["blister", "blacken", "char over a flame"], "fr": ["noircir à la flamme"]},
+  "does": "Burns the skin of a whole vegetable black over an open flame or a fierce heat, so that the flesh inside turns soft, smoky and sweet, and the charred skin can be peeled away.",
+  "how": [
+    "Set the whole vegetable directly on a gas flame, on a hot grill or on a barbecue.",
+    "Turn it now and then with tongs, until the skin is blackened and blistered all over and the flesh has gone soft and collapsed.",
+    "Move it to a bowl and cover it, so that the steam loosens the skin.",
+    "When it is cool enough to handle, peel off the skin and lift out the stem and seeds. Do not rinse it, or the smoky taste is lost.",
+    "Drain off the juices, or keep them for the dish, as it asks."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The skin is blackened and blistered all over, and the vegetable has sagged."},
+    {"sense": "smell", "text": "A deep, smoky, sweet smell."},
+    {"sense": "feel", "text": "The flesh gives completely when pressed with the tongs."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Taking it off while the skin is only blistered in patches, so that the flesh stays firm and the skin clings.",
+      "fix": "Keep turning it until the skin is black all over and the vegetable has collapsed."
+    },
+    {
+      "mistake": "Rinsing the vegetable under the tap to remove the skin, which washes away the smoke.",
+      "fix": "Wipe or pull the skin off by hand."
+    },
+    {"mistake": "Leaving it uncovered, so that the skin sticks.", "fix": "Cover it while it steams and cools."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/aubergine", "tier": "drafted"},
+    {"thing": "ingredient/bell-pepper", "tier": "drafted"},
+    {"thing": "ingredient/green-pepper", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "heat", "options": ["equipment/stovetop", "equipment/grill"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/grill",
+      "differs": "The whole, unpeeled vegetable sits straight on the flame and its skin is burnt black on purpose, then peeled away, so that the smoky soft flesh is what is kept.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

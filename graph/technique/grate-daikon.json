@@ -1,0 +1,40 @@
+{
+  "id": "technique/grate-daikon",
+  "tier": "drafted",
+  "names": {"en": "Grate daikon"},
+  "aliases": {"en": ["daikon oroshi", "grate Japanese radish"]},
+  "does": "Grates a daikon on a fine grater into a wet, light, snowy mound, which is eaten raw beside rich or grilled food to freshen the mouth.",
+  "how": [
+    "Peel the daikon, or leave the skin on if it is tender, and cut it into a piece that is easy to hold.",
+    "Grate it with firm, even strokes on the finest side of the grater, in one direction.",
+    "Let the juice drain away a little in a sieve, but do not press it dry.",
+    "Shape the mound with a spoon and serve it straight away."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The grated daikon is a soft, wet, white mound."},
+    {"sense": "taste", "text": "The taste is fresh, juicy and a little sharp."}
+  ],
+  "mistakes": [
+    {"mistake": "Grating long ahead, so that it turns bitter and watery.", "fix": "Grate it just before serving."},
+    {"mistake": "Squeezing it dry, which leaves it harsh.", "fix": "Drain it lightly only."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/daikon", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/grater"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/fine-sieve"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/grate",
+      "differs": "It is grated very fine and wet, kept juicy and loose and served as a raw mound, not dried or used to flavour a dish.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

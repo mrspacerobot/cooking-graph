@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/spanish",
+  "tier": "drafted",
+  "names": {"en": "Spanish", "fr": "Espagnole"},
+  "aliases": {"en": ["Spanish cooking", "Spanish cuisine"]},
+  "within": {"thing": "cuisine/mediterranean", "tier": "drafted"}
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/kabocha",
+  "tier": "drafted",
+  "names": {"en": "Kabocha"},
+  "aliases": {"en": ["Japanese pumpkin", "kabocha squash"]},
+  "is_a": [
+    {"thing": "ingredient/pumpkin", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/watery-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A squat Japanese squash with dark green skin and sweet, dry, deep-orange flesh. Its skin is tough to cut but softens in a simmer and can be eaten.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

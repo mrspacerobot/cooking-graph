@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/taktouka",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "salads",
+  "dish": "Taktouka",
+  "also_called": ["roasted pepper and tomato salad", "tektouka", "salade de poivrons grillés"],
+  "techniques": ["roast", "peel", "simmer"],
+  "ingredients": ["green bell pepper", "tomato", "garlic", "cumin", "paprika", "olive oil", "parsley"]
+}

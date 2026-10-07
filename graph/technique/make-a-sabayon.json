@@ -2,7 +2,7 @@
   "id": "technique/make-a-sabayon",
   "tier": "drafted",
   "names": {"en": "Make a sabayon", "fr": "Monter un sabayon"},
-  "aliases": {"en": ["whisk yolks over heat", "cook the yolks to a ribbon", "sabayon"]},
+  "aliases": {"en": ["whisk yolks over heat", "cook the yolks to a ribbon", "sabayon", "whisk over heat"]},
   "does": "Whisks egg yolks with a little liquid over gentle heat until they are thick, pale and foamy, ready to take butter.",
   "how": [
     "Put the yolks and a spoonful of water for each in a round-bottomed bowl.",

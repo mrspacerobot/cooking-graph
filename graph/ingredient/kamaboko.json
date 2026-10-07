@@ -1,0 +1,55 @@
+{
+  "id": "ingredient/kamaboko",
+  "tier": "drafted",
+  "names": {"en": "Kamaboko"},
+  "aliases": {"en": ["steamed fish paste loaf"]},
+  "is_a": [
+    {"thing": "ingredient/fish-cake", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A smooth, springy loaf of steamed fish paste, white inside and often pink on the outside. It is sliced thin and laid on noodles or in soup.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "It is made of ground fish.", "certain": true},
+      {
+        "fact": "fact/wheat",
+        "basis": "Recorded strictly: many are bound with wheat starch or flour.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Recorded strictly: many are bound with wheat starch or flour.",
+        "certain": false
+      },
+      {"fact": "fact/egg", "basis": "Recorded strictly: many are bound with egg white.", "certain": false},
+      {
+        "fact": "fact/soy",
+        "basis": "Recorded strictly: many are seasoned with soy sauce or soy protein.",
+        "certain": false
+      },
+      {
+        "fact": "fact/crustaceans",
+        "basis": "Recorded strictly: some are blended with crab or shrimp.",
+        "certain": false
+      },
+      {
+        "fact": "fact/molluscs",
+        "basis": "Recorded strictly: some are blended with squid or other molluscs.",
+        "certain": false
+      },
+      {"fact": "fact/alcohol", "basis": "Recorded strictly: many are seasoned with mirin.", "certain": false}
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/lupin", "fact/meat", "fact/milk", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

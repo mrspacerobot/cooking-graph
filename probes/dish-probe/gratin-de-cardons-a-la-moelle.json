@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/gratin-de-cardons-a-la-moelle",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "gratin",
+  "dish": "Gratin de cardons à la moelle",
+  "also_called": ["cardons à la moelle", "cardoon gratin with bone marrow"],
+  "techniques": ["peel", "blanch", "make a roux", "poach", "gratinate"],
+  "ingredients": ["cardoon", "bone marrow", "butter", "flour", "beef stock", "gruyère", "lemon"]
+}

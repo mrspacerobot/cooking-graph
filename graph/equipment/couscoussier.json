@@ -1,0 +1,7 @@
+{
+  "id": "equipment/couscoussier",
+  "tier": "drafted",
+  "names": {"en": "Couscoussier", "fr": "Couscoussier"},
+  "aliases": {"en": ["couscous steamer", "couscous pot"]},
+  "use": "A tall pot made of a deep base for the stew, with a perforated pot set on top that holds the grains, so that the steam of the stew rises through them."
+}

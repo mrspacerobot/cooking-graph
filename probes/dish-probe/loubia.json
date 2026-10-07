@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/loubia",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "stews",
+  "dish": "Loubia",
+  "also_called": ["white bean stew", "loubia marocaine", "haricots blancs en sauce"],
+  "techniques": ["soak", "saute", "simmer"],
+  "ingredients": ["white bean", "tomato", "onion", "garlic", "cumin", "paprika", "olive oil", "parsley"]
+}

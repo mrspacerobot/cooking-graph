@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/pork-belly",
+  "tier": "drafted",
+  "names": {"en": "Pork belly", "fr": "Poitrine de porc"},
+  "aliases": {"en": ["belly of pork"]},
+  "is_a": [],
+  "part_of": [
+    {"thing": "ingredient/pork", "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/fatty-cuts", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A cut of layered fat and meat. Sliced thin it fries crisp at the edges, and in one piece it needs a long, slow cook to melt its fat and turn tender.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is the flesh of a pig.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is the meat of a pig.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -2,7 +2,9 @@
   "id": "technique/refresh",
   "tier": "drafted",
   "names": {"en": "Refresh", "fr": "Rafraîchir"},
-  "aliases": {"en": ["shock", "refresh in iced water", "cool in iced water", "plunge into iced water"]},
+  "aliases": {
+    "en": ["shock", "refresh in iced water", "cool in iced water", "plunge into iced water", "shock in cold water"]
+  },
   "does": "Stops the cooking at once by plunging hot food into iced water, which keeps green vegetables bright and firm.",
   "how": [
     "Have a large bowl of water and ice ready before the food is cooked.",

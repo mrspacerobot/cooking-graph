@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/esqueixada",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "salt-cod",
+  "dish": "Esqueixada",
+  "also_called": ["esqueixada de bacallà", "Catalan shredded salt cod salad"],
+  "techniques": ["desalt", "shred", "dress", "chill"],
+  "ingredients": ["salt cod", "tomato", "onion", "black olive", "olive oil", "vinegar", "red pepper"]
+}

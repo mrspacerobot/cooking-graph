@@ -1,0 +1,56 @@
+{
+  "id": "technique/batter",
+  "tier": "drafted",
+  "names": {"en": "Batter", "fr": "Frire en pâte"},
+  "aliases": {
+    "en": ["coat in batter", "dip in batter", "batter and fry", "make a batter", "mix batter"],
+    "fr": ["tremper dans la pâte à frire"]
+  },
+  "does": "Dips food in a thin, wet mixture of flour and cold liquid, so that it fries with a light, crisp, airy coat that is lighter than a crumb coat.",
+  "how": [
+    "Stir the flour into cold liquid just until it is smooth enough to coat a spoon. A few lumps do no harm.",
+    "Keep the batter cold and use it soon after it is made.",
+    "Dry the food and dust it with a little flour so that the batter clings.",
+    "Dip the food, lift it and let the extra run off, then lower it into the hot oil away from you.",
+    "Fry in small batches so that the oil stays hot, and lift each piece out onto a rack."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The batter coats a spoon in a thin even film and runs off in a slow stream."},
+    {"sense": "hear", "text": "The coat sizzles at once and bubbles as it meets the oil."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Beating the batter smooth, which builds toughness into the coat.",
+      "fix": "Stir only until the flour has just gone in."
+    },
+    {
+      "mistake": "Letting the batter stand warm for long, so that it turns heavy.",
+      "fix": "Keep it cold and make it just before frying."
+    },
+    {
+      "mistake": "Frying too many pieces at once, so that the oil cools and the coat turns greasy.",
+      "fix": "Fry a few at a time."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "group/crustaceans", "tier": "drafted"},
+    {"thing": "ingredient/aubergine", "tier": "drafted"},
+    {"thing": "ingredient/courgette", "tier": "drafted"},
+    {"thing": "ingredient/courgette-flower", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "coating", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/milk"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/whisk",
+      "why": "A batter is mixed with a quick whisk, so a cook has to know how far to take it.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

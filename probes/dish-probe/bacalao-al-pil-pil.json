@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bacalao-al-pil-pil",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "salt-cod",
+  "dish": "Bacalao al pil-pil",
+  "also_called": ["cod pil-pil", "bakailaoa pil-pilean"],
+  "techniques": ["desalt", "confit", "emulsify"],
+  "ingredients": ["salt cod", "olive oil", "garlic", "guindilla"]
+}

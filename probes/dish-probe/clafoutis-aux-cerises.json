@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/clafoutis-aux-cerises",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "eggs",
+  "dish": "Clafoutis aux cerises",
+  "also_called": ["clafoutis", "cherry clafoutis"],
+  "techniques": ["beat", "whisk", "bake"],
+  "ingredients": ["cherry", "egg", "milk", "flour", "sugar", "butter"]
+}

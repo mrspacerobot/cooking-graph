@@ -1,0 +1,25 @@
+{
+  "id": "ingredient/beef-tripe",
+  "tier": "drafted",
+  "names": {"en": "Beef tripe", "fr": "Tripes de bœuf"},
+  "aliases": {"en": ["ox tripe"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "The honeycombed lining of a cow's stomach. It is tough and mild, and needs a long, gentle simmer or braise to turn tender, with plenty of vegetables, cider or wine for taste.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is the stomach of a cow.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

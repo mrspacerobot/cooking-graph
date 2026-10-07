@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/oil",
+  "tier": "drafted",
+  "names": {"en": "Oil", "fr": "Huile"},
+  "aliases": {"en": ["cooking oil", "vegetable oil", "neutral oil"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Any neutral-tasting liquid cooking fat, used to fry and to coat a pan. It carries heat well and takes on the taste of what is cooked in it, and it smokes and turns acrid if it is heated past its limit.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/soy", "basis": "Oil sold only as vegetable oil is often pressed from soybeans.", "certain": false},
+      {
+        "fact": "fact/peanuts",
+        "basis": "Oil sold only as vegetable oil may be pressed from peanuts.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "A named oil such as olive or sunflower oil has a file of its own. This one stands for any oil a recipe does not name."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

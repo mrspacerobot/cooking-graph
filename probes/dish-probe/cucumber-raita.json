@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/cucumber-raita",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "yogurt-dishes",
+  "dish": "Cucumber raita",
+  "also_called": ["kheera raita", "kakdi raita"],
+  "techniques": ["grate", "roast spices", "whisk", "mix"],
+  "ingredients": ["yogurt", "cucumber", "cumin seed", "black salt", "coriander leaf", "green chili"]
+}

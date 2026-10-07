@@ -1,0 +1,39 @@
+{
+  "id": "technique/loosen-noodles",
+  "tier": "drafted",
+  "names": {"en": "Loosen noodles"},
+  "aliases": {"en": ["separate the noodles", "loosen the noodles"]},
+  "does": "Pulls apart a clump of steamed, oiled noodles, with a splash of water or a short warming in the pan, until each strand is free and ready to be stir-fried.",
+  "how": [
+    "Put the clump in a hot pan or in a bowl, and add a splash of water.",
+    "Cover for a very short time to steam, so that the strands relax.",
+    "Pull the strands apart with chopsticks or tongs, working gently from the edge to the middle.",
+    "Drain off any water and use the noodles at once."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The strands are separate and glossy."},
+    {"sense": "feel", "text": "The strands slide apart with no tearing."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Tearing the clump while it is cold, which breaks the strands.",
+      "fix": "Warm it first so that it relaxes."
+    },
+    {"mistake": "Adding too much water, so that the noodles are soggy.", "fix": "Use only a splash."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/yakisoba-noodle", "tier": "drafted"},
+    {"thing": "ingredient/udon-noodle", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/tongs"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/jute-leaf",
+  "tier": "drafted",
+  "names": {"en": "Jute leaf", "fr": "Corète potagère"},
+  "aliases": {"en": ["molokhia", "mulukhiyah", "Jew's mallow", "jute mallow"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A soft green leaf, sold fresh, frozen or dried, that turns thick and silky when it is cooked in liquid. It is chopped very fine, simmered in a broth with garlic and coriander, and stirred little.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

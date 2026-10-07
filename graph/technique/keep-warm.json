@@ -1,0 +1,39 @@
+{
+  "id": "technique/keep-warm",
+  "tier": "drafted",
+  "names": {"en": "Keep warm"},
+  "aliases": {},
+  "does": "Holds finished food at a gentle heat, below a simmer, so that it stays hot and goes on taking up flavour until it is served.",
+  "how": [
+    "Take the pot off the strong heat and turn the flame as low as it goes, or move the food to a warm place.",
+    "Keep the food covered so that it does not dry or skin over.",
+    "Stir or turn it now and then, so that the bottom does not catch.",
+    "Serve from the pot. Do not leave it for a very long time."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "A piece lifted out is still steaming hot, with no steam rushing off."},
+    {"sense": "see", "text": "The liquid barely moves."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the food on a simmer, which cooks it past tender.",
+      "fix": "Lower the heat until the liquid is still."
+    },
+    {"mistake": "Leaving it uncovered, so that a skin forms or it dries.", "fix": "Cover it."}
+  ],
+  "works_on": [
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "group/starches", "tier": "drafted"},
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop", "equipment/oven"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

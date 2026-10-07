@@ -1,0 +1,53 @@
+{
+  "id": "technique/stabilise",
+  "tier": "drafted",
+  "names": {"en": "Stabilise", "fr": "Stabiliser le yaourt"},
+  "aliases": {
+    "en": ["stabilise yogurt", "stabilize", "stabilise the yogurt", "prevent yogurt from splitting"],
+    "fr": ["stabiliser"]
+  },
+  "does": "Prepares yogurt so that it can be heated and simmered without splitting into curds and thin liquid. A starch or a beaten egg white is mixed into the cold yogurt, and the yogurt is stirred one way as it heats.",
+  "how": [
+    "Whisk the yogurt smooth in a pan, off the heat.",
+    "Mix a little cornstarch with cold water until smooth, or beat an egg white loose, and whisk it into the yogurt.",
+    "Set the pan over a low heat and stir all the time, always in the same direction.",
+    "Bring it slowly up to a bare simmer without letting it boil hard, and keep stirring until it is thick and smooth.",
+    "Keep it at a gentle simmer from then on."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The yogurt stays smooth and creamy, with no grains and no pool of thin liquid at the sides."
+    },
+    {"sense": "feel", "text": "The spoon meets a gentle, even drag, like a thick cream."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Heating plain yogurt fast, or stirring it first one way and then the other, so that it breaks into curds.",
+      "fix": "Stabilise it first and stir in one direction only."
+    },
+    {
+      "mistake": "Letting the stabilised yogurt boil hard, which can still break it.",
+      "fix": "Hold it at a gentle simmer."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/plain-yogurt", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/whisk"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/thicken",
+      "differs": "The aim is not body but steadiness: a starch or egg white goes into the cold yogurt first, and the yogurt is stirred one way so that its milk proteins do not clump when it is heated. Thicken stirs a starch into a hot liquid.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

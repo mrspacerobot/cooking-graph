@@ -1,0 +1,36 @@
+{
+  "id": "ingredient/rice-vinegar",
+  "tier": "drafted",
+  "names": {"en": "Rice vinegar"},
+  "aliases": {"en": ["rice wine vinegar"]},
+  "is_a": [
+    {"thing": "ingredient/vinegar", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/seasoning-liquids", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A mild, slightly sweet vinegar brewed from rice. It is gentler than grape vinegar and suits sweet and sour sauces and dressings.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "Vinegar keeps a trace of the alcohol it is made from.", "certain": false},
+      {
+        "fact": "fact/sulphites",
+        "basis": "Recorded strictly, as vinegars are often kept with sulphites.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

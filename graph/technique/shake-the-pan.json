@@ -1,0 +1,46 @@
+{
+  "id": "technique/shake-the-pan",
+  "tier": "drafted",
+  "names": {"en": "Shake the pan", "fr": "Secouer la poêle"},
+  "aliases": {"en": ["swirl the pan", "shake the pan in circles", "shake the saucepan"]},
+  "does": "Moves fish that gives up its own gelatine in a pan by holding the handle and shaking the pan in small circles, with no spoon or whisk, so that delicate pieces stay whole while the oil and the juices slowly bind into a creamy sauce.",
+  "how": [
+    "Use a wide pan, with the fish in a single layer in a little oil and a splash of liquid, over a low, steady heat.",
+    "Hold the handle and shake the pan back and forth in small circles, so that the sauce swirls round the pieces.",
+    "Keep it up as the juices and the oil turn pale and creamy. Lift the pan off the heat for a moment if it starts to catch.",
+    "Add a splash of water if the sauce gets too thick, and stop when it coats the fish like a thin cream."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sauce goes from clear and oily to pale and creamy."},
+    {"sense": "feel", "text": "The pan grows heavier to move as the sauce thickens."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring with a spoon, which breaks the fish into flakes.",
+      "fix": "Shake the pan and leave the pieces alone."
+    },
+    {
+      "mistake": "Cooking over too high a heat, so that the sauce splits into oil and water.",
+      "fix": "Keep the heat low, and lift the pan off it for a moment when the sauce gets hot."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/salt-cod", "tier": "drafted"},
+    {"thing": "ingredient/white-fish", "tier": "drafted"},
+    {"thing": "ingredient/mussel", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/emulsify",
+      "differs": "Nothing is whisked. The pan is shaken in circles so that the oil and the juices of the fish bind into a sauce while the pieces stay whole.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

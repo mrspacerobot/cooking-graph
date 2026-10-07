@@ -2,7 +2,7 @@
   "id": "technique/steam",
   "tier": "drafted",
   "names": {"en": "Steam", "fr": "Cuire à la vapeur"},
-  "aliases": {"en": ["steam open", "cook in steam"], "fr": ["faire ouvrir"]},
+  "aliases": {"en": ["steam open", "cook in steam", "steam open shellfish"], "fr": ["faire ouvrir"]},
   "does": "Cooks food in the steam of a little boiling liquid under a tight lid, so that nothing of it is washed away.",
   "how": [
     "Bring a shallow layer of water or wine to a boil in a wide pot.",
@@ -29,7 +29,8 @@
     {"thing": "group/green-vegetables", "tier": "drafted"},
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/lean-fish", "tier": "drafted"},
-    {"thing": "ingredient/mussel", "tier": "drafted"}
+    {"thing": "ingredient/mussel", "tier": "drafted"},
+    {"thing": "ingredient/clam", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

@@ -1,0 +1,37 @@
+{
+  "id": "technique/wrap",
+  "tier": "drafted",
+  "names": {"en": "Wrap", "fr": "Envelopper"},
+  "aliases": {"en": ["wrap up", "enclose in a wrapper"], "fr": ["envelopper dans"]},
+  "does": "Encloses a filling or a piece of food in a wrapper, such as caul fat, a leaf, a thin omelette or a cloth, and closes it by folding or pulling, so that it keeps its shape and its juices as it cooks.",
+  "how": [
+    "Lay the wrapper out flat and make sure it is soft enough to bend without tearing.",
+    "Set the food or the filling in the middle, with a border all round.",
+    "Fold the sides over the food, then bring the ends in and over, so that the wrapper meets itself and overlaps a little.",
+    "Turn the parcel seam side down, or tie it, so that it stays closed in the heat."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The wrapper lies snugly round the food, with the seam underneath and no gaps."},
+    {"sense": "feel", "text": "The parcel is firm and holds its shape when it is lifted."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Overfilling, so that the wrapper splits when the filling swells.",
+      "fix": "Use less filling and leave a border."
+    },
+    {
+      "mistake": "Wrapping loosely, so that the parcel falls open in the pan.",
+      "fix": "Pull the wrapper snug and set it seam side down, or tie it."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"},
+    {"thing": "group/offal", "tier": "drafted"},
+    {"thing": "ingredient/rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

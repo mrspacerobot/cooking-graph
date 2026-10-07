@@ -33,6 +33,12 @@ def read_json(path):
         return json.load(handle, object_pairs_hook=_fields_once)
 
 
+def read_buy_or_make(root):
+    """The pairs of an ingredient and a preparation that are one thing a cook buys or makes. Absent means none."""
+    path = os.path.join(root, "schema", "buy-or-make.json")
+    return read_json(path) if os.path.exists(path) else []
+
+
 def read_schema(root):
     """The model and the closed word lists the files are checked against."""
     model = read_json(os.path.join(root, "schema", "model.json"))

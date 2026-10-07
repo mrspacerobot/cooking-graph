@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/gemista",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "stuffed-vegetables",
+  "dish": "Gemista",
+  "also_called": ["yemista", "stuffed tomatoes and peppers"],
+  "techniques": ["hollow", "stuff", "bake"],
+  "ingredients": ["tomato", "bell pepper", "rice", "onion", "parsley", "mint", "olive oil", "potato"]
+}

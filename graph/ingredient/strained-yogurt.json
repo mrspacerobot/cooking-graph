@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/strained-yogurt",
+  "tier": "drafted",
+  "names": {"en": "Strained yogurt"},
+  "aliases": {"en": ["suzme yogurt", "suzme yoghurt", "strained yoghurt"]},
+  "is_a": [
+    {"thing": "ingredient/plain-yogurt", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Plain yogurt with much of its whey drained off, so that it is thick, rich and tangy and holds its shape on a spoon. It is stirred with garlic, herbs and oil into a meze or a dip. It splits if it is boiled.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is made from milk.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

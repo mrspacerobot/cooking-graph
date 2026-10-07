@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/mutabbal",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "dips",
+  "dish": "Mutabbal",
+  "also_called": ["baba ghanoush", "moutabal", "smoky eggplant dip"],
+  "techniques": ["char", "peel", "mash", "mix"],
+  "ingredients": ["eggplant", "tahini", "lemon juice", "garlic", "yogurt", "olive oil", "pomegranate seed"]
+}

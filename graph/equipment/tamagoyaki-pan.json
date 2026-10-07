@@ -1,0 +1,7 @@
+{
+  "id": "equipment/tamagoyaki-pan",
+  "tier": "drafted",
+  "names": {"en": "Tamagoyaki pan"},
+  "aliases": {"en": ["rectangular omelette pan"]},
+  "use": "A small rectangular pan with straight sides, in which thin layers of egg are cooked and rolled into a neat block."
+}

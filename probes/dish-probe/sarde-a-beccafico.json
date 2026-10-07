@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sarde-a-beccafico",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "fish",
+  "dish": "Sarde a beccafico",
+  "also_called": ["Sicilian stuffed sardines"],
+  "techniques": ["butterfly fish", "toast breadcrumbs", "stuff", "roll", "bake"],
+  "ingredients": ["sardine", "breadcrumb", "pine nut", "raisin", "orange", "bay leaf", "olive oil", "parsley"]
+}

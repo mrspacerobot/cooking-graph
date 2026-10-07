@@ -1,0 +1,36 @@
+{
+  "id": "ingredient/yakisoba-noodle",
+  "tier": "drafted",
+  "names": {"en": "Yakisoba noodle"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/noodles", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A springy wheat noodle that has been steamed and lightly oiled, sold in a clump. It is loosened in the pan and stir-fried, and stays chewy without more boiling.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/wheat", "basis": "It is made of wheat flour.", "certain": true},
+      {"fact": "fact/gluten", "basis": "It is made of wheat flour.", "certain": true},
+      {"fact": "fact/egg", "basis": "Recorded strictly: some are made with egg.", "certain": false},
+      {
+        "fact": "fact/alcohol",
+        "basis": "Recorded strictly: ready-packed noodles are sometimes kept with alcohol.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish", "fact/lupin",
+      "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ingredient/crozets",
+  "tier": "drafted",
+  "names": {"en": "Crozets", "fr": "Crozets"},
+  "aliases": {"en": ["Savoy pasta squares"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Small, flat squares of pasta dough from Savoy, sold dried. They are boiled and then baked in a gratin, or simmered in a pot with cream or cheese.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/wheat",
+        "basis": "Most crozets are made of wheat flour, though some are made of buckwheat.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Most crozets are made of wheat flour, though some are made of buckwheat.",
+        "certain": false
+      },
+      {"fact": "fact/buckwheat", "basis": "Some crozets are made of buckwheat flour.", "certain": false},
+      {
+        "fact": "fact/egg",
+        "basis": "Fresh pasta is usually made with egg, and dried pasta sometimes is.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/celery", "fact/crustaceans", "fact/fish", "fact/lupin", "fact/meat",
+      "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/savoyard", "tier": "drafted"}
+  ]
+}

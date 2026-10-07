@@ -4,6 +4,7 @@
   "batch": "poach-1",
   "set": "growing",
   "written_by": "claude-opus-5-5",
+  "cuisine": "french",
   "written_for": "poach",
   "dish": "Aïoli garni",
   "also_called": ["le grand aïoli", "grand aioli"],

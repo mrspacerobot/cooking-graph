@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/su-boregi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "dough-and-pastry",
+  "dish": "Su böreği",
+  "also_called": ["water borek", "boiled pastry pie"],
+  "techniques": ["roll", "boil", "layer", "bake"],
+  "ingredients": ["flour", "egg", "white cheese", "parsley", "butter"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/burghul-bi-banadoura",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "rice-dishes",
+  "dish": "Burghul bi banadoura",
+  "also_called": ["bulgur with tomato", "burghul bi banadura"],
+  "techniques": ["saute", "grate", "simmer", "rest"],
+  "ingredients": ["coarse bulgur", "tomato", "onion", "olive oil", "tomato paste", "salt"]
+}

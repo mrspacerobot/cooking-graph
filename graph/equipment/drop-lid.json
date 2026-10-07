@@ -1,0 +1,7 @@
+{
+  "id": "equipment/drop-lid",
+  "tier": "drafted",
+  "names": {"en": "Drop lid"},
+  "aliases": {"en": ["otoshibuta"]},
+  "use": "A lid that is smaller than the pot and sits right on the food, inside the pot, so that a simmering liquid is pushed up and over every piece."
+}

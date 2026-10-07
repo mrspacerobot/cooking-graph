@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tiropita",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "pies",
+  "dish": "Tiropita",
+  "also_called": ["cheese pie"],
+  "techniques": ["mix", "layer phyllo", "bake"],
+  "ingredients": ["feta", "phyllo", "egg", "yogurt", "butter", "anthotyro"]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/tripes-a-la-mode-de-caen",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "braise",
+  "dish": "Tripes à la mode de Caen",
+  "also_called": ["tripe Caen style", "Normandy tripe"],
+  "techniques": ["blanch", "layer", "seal with dough", "braise", "skim"],
+  "ingredients": [
+    "beef tripe",
+    "calf's foot",
+    "onion",
+    "carrot",
+    "leek",
+    "cider",
+    "calvados",
+    "clove",
+    "bouquet garni"
+  ]
+}

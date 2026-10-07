@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/andouillette-a-la-moutarde",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "pan-sauce",
+  "dish": "Andouillette à la moutarde",
+  "also_called": ["andouillette sauce moutarde", "andouillette with mustard sauce"],
+  "techniques": ["prick", "pan-fry", "deglaze", "reduce", "whisk in"],
+  "ingredients": ["andouillette", "shallot", "white wine", "mustard", "crème fraîche", "butter"]
+}

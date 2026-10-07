@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kefta-mkaouara",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "tagine",
+  "dish": "Kefta mkaouara",
+  "also_called": ["kefta tagine with eggs", "kefta mkawra", "tagine de kefta aux oeufs"],
+  "techniques": ["shape meatballs", "simmer", "poach eggs"],
+  "ingredients": ["ground beef", "tomato", "onion", "egg", "cumin", "paprika", "parsley", "coriander"]
+}

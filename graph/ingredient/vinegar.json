@@ -1,0 +1,39 @@
+{
+  "id": "ingredient/vinegar",
+  "tier": "drafted",
+  "names": {"en": "Vinegar", "fr": "Vinaigre"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A sour liquid made by souring wine, cider, grain or fruit. It sharpens a dressing, lifts a rich stew and keeps pickles. It turns harsh if it is boiled hard, so it goes in late or is cooked down on purpose.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "Vinegar keeps a trace of the alcohol it is made from.", "certain": false},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Made from wine, which may be cleared with gelatine or isinglass.",
+        "certain": false
+      },
+      {
+        "fact": "fact/fish",
+        "basis": "Made from wine, which may be cleared with isinglass from fish.",
+        "certain": false
+      },
+      {"fact": "fact/egg", "basis": "Made from wine, which may be cleared with egg white.", "certain": false},
+      {"fact": "fact/milk", "basis": "Made from wine, which may be cleared with milk protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Made from wine, which nearly always holds sulphites.", "certain": false},
+      {"fact": "fact/gluten", "basis": "Malt vinegar is made from barley.", "certain": false}
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/lupin", "fact/meat",
+      "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy", "fact/tree-nuts",
+      "fact/wheat"
+    ],
+    "note": "A named vinegar such as red wine or sherry vinegar has a file of its own. This one stands for any vinegar a recipe does not name, so every answer is strict."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

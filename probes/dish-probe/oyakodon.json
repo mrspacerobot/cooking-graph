@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/oyakodon",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "rice",
+  "dish": "Oyakodon",
+  "also_called": ["chicken and egg rice bowl", "oyako donburi"],
+  "techniques": ["cook rice", "make dashi", "simmer", "beat eggs", "poach eggs in broth"],
+  "ingredients": ["short-grain rice", "chicken thigh", "egg", "onion", "dashi", "soy sauce", "mirin", "mitsuba"]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "technique/sandwich",
+  "tier": "drafted",
+  "names": {"en": "Sandwich"},
+  "aliases": {"en": ["sandwich with a filling", "sandwich together"]},
+  "does": "Places a filling between flat pieces of soft bread or pancake, so that it holds together and is eaten in one hand.",
+  "how": [
+    "Lay out the bottom pieces in a row.",
+    "Spoon or spread the filling on each, leaving a narrow edge clear.",
+    "Cover with the top pieces and press gently so that the filling spreads without spilling.",
+    "Pat the edges together, then serve."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The filling shows evenly at the edge and does not squeeze out."},
+    {"sense": "feel", "text": "The pieces stick lightly to the filling."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Overfilling, so that the filling is squeezed out.",
+      "fix": "Spread a thin even layer and leave an edge."
+    },
+    {"mistake": "Using pieces that are too hot, which melts the filling.", "fix": "Let them cool a little first."}
+  ],
+  "works_on": [
+    {"thing": "group/breads", "tier": "drafted"},
+    {"thing": "preparation/crepe", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

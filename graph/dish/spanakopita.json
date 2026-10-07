@@ -1,0 +1,44 @@
+{
+  "id": "dish/spanakopita",
+  "tier": "drafted",
+  "names": {"en": "Spanakopita"},
+  "aliases": {"en": ["Greek spinach pie", "spinach and feta pie"]},
+  "is": "A pie of phyllo brushed with olive oil and filled with wilted spinach, feta, spring onions, dill and egg, baked until the top is golden and crackling.",
+  "parts": [
+    {"id": "spinach", "role": "main", "options": ["ingredient/spinach"], "optional": false, "tier": "drafted"},
+    {"id": "feta", "role": "filling", "options": ["ingredient/feta"], "optional": false, "tier": "drafted"},
+    {
+      "id": "onion",
+      "role": "aromatic",
+      "options": ["ingredient/spring-onion", "ingredient/onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "dill",
+      "role": "aromatic",
+      "options": ["ingredient/dill", "ingredient/parsley"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "phyllo", "role": "base", "options": ["ingredient/phyllo"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/butter"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/layer-phyllo", "tier": "drafted"},
+    {"thing": "technique/wilt", "tier": "drafted"},
+    {"thing": "technique/bake-a-phyllo-pie", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

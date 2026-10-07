@@ -1,0 +1,42 @@
+{
+  "id": "technique/pour-boiling-water-over",
+  "tier": "drafted",
+  "names": {"en": "Pour boiling water over"},
+  "aliases": {
+    "en": ["pour boiling water over tofu", "scald with boiling water", "abura nuki", "remove oil with boiling water"]
+  },
+  "does": "Pours boiling water over a ready-made food, to wash off the surface oil or the smell from the making before it goes into a pot or a dish. The food is not cooked, only scalded.",
+  "how": [
+    "Put the food in a colander or a heatproof bowl.",
+    "Pour boiling water over it, slowly and evenly, so that every surface is touched.",
+    "Drain it, and press it gently with a clean cloth or paper if it will be fried or stuffed.",
+    "Cut or use it right away."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The surface oil, which floated as a sheen, has run off with the water."},
+    {"sense": "smell", "text": "The smell of oil or of the making is gone."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling the food in the pot, which makes it soft and waterlogged.",
+      "fix": "Only scald it by pouring."
+    },
+    {
+      "mistake": "Skipping the scald before simmering, so that the broth turns greasy.",
+      "fix": "Scald it first, every time."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/processed-simmering-foods", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/colander", "equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/paneer-tikka",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "marinating",
+  "dish": "Paneer tikka",
+  "also_called": ["paneer tikka kebab"],
+  "techniques": ["marinate", "skewer", "grill", "roast"],
+  "ingredients": [
+    "paneer",
+    "yogurt",
+    "bell pepper",
+    "onion",
+    "ginger",
+    "garlic",
+    "chickpea flour",
+    "garam masala",
+    "lemon"
+  ]
+}

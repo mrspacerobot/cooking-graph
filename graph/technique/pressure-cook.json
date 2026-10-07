@@ -1,0 +1,66 @@
+{
+  "id": "technique/pressure-cook",
+  "tier": "drafted",
+  "names": {"en": "Pressure cook"},
+  "aliases": {"en": ["pressure cook the dal", "cook in a pressure cooker", "pressure-cook"]},
+  "does": "Cooks pulses in a sealed pot that holds steam in, so that the liquid gets hotter than in an open pot and hard dried seeds soften and fall apart in a fraction of the usual time.",
+  "how": [
+    "Rinse the pulses. Soak the large hard kinds such as kidney beans, if the recipe asks.",
+    "Put them in the pot with plenty of water and a little turmeric. Fill the pot no more than half, as pulses swell and foam.",
+    "Close the lid, seat the valve or weight and heat on high until the steam starts to hiss or whistle steadily.",
+    "Turn the heat down so that the hiss stays steady, and cook for the time the pulse needs.",
+    "Take the pot off the heat and let the pressure fall on its own before opening it. Open the lid away from you.",
+    "Stir. Mash the soft pulses against the side of the pot if the dish should be smooth."
+  ],
+  "cues": [
+    {
+      "sense": "hear",
+      "text": "A steady hiss or a regular whistle from the valve. Wild spitting means the heat is too high."
+    },
+    {"sense": "feel", "text": "A cooked pulse crushes easily between the fingers, with no hard core."},
+    {"sense": "see", "text": "Split pulses have fallen apart into a thick, creamy mass when stirred."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Filling the pot too full, so that foam rises and clogs the valve.",
+      "fix": "Fill the pot no more than half and add a spoonful of oil or ghee to calm the foam."
+    },
+    {
+      "mistake": "Opening the lid before the pressure has dropped, which sprays hot steam and liquid.",
+      "fix": "Let the pressure fall by itself first."
+    },
+    {
+      "mistake": "Using too little water, so that the pulses scorch at the bottom.",
+      "fix": "Cover them with plenty of water. Add more if the dish is too thick."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pulses", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/pressure-cooker"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/rinse",
+      "why": "Rinsing washes off dust and loose skins that would foam up and clog the valve.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/soak",
+      "why": "Large hard pulses are soaked first so that they cook evenly in the pot.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/simmer",
+      "differs": "The pot is sealed, so the liquid gets hotter than a simmer and the pulses cook in a fraction of the time. The cook cannot lift the lid to check, and the pressure must fall before the pot is opened.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

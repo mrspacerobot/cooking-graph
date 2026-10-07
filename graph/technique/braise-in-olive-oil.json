@@ -1,0 +1,70 @@
+{
+  "id": "technique/braise-in-olive-oil",
+  "tier": "drafted",
+  "names": {"en": "Braise in olive oil"},
+  "aliases": {"en": ["zeytinyagli", "cook zeytinyagli style", "olive oil braise", "braise vegetables in olive oil"]},
+  "does": "Cooks vegetables slowly under a lid in a generous amount of olive oil with only a little water and no browning first, until they are very soft and sweet and the oil and their own juices have become the sauce. The dish is eaten warm or at room temperature, never piping hot.",
+  "how": [
+    "Soften the onion in the olive oil over a gentle heat until it is soft and has not taken colour.",
+    "Add the vegetables, and the tomato if there is any, and turn them in the oil until they shine. Season with salt, and add a little sugar if the vegetables or the tomato are sharp.",
+    "Pour in a small amount of water, so that it comes only part way up the vegetables. They give off water of their own.",
+    "Cover the pan and cook over the lowest heat. Shake the pan now and then and do not stir, so that the pieces stay whole.",
+    "Cook until the vegetables are very soft and give way under the back of a spoon. If much liquid is left, take off the lid for the last stretch until what remains is mostly glossy oil and juice.",
+    "Let the dish cool in the pan until it is warm or at room temperature. Finish with lemon juice if the dish is dull."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The oil and the juices have come together into a loose, glossy sauce at the bottom of the pan."
+    },
+    {"sense": "feel", "text": "A piece gives way under the back of a spoon and still holds its shape."},
+    {"sense": "taste", "text": "The vegetables taste sweet and soft, and nothing squeaks between the teeth."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Browning the onion or the vegetables first, which gives a roasted taste in place of the soft, sweet taste of the dish.",
+      "fix": "Keep the heat gentle and take the onion off as soon as it is soft."
+    },
+    {
+      "mistake": "Adding too much water, which boils the vegetables into a thin soup.",
+      "fix": "Add only enough to come part way up them. They give off water of their own."
+    },
+    {
+      "mistake": "Stirring hard and often, which breaks the pieces apart.",
+      "fix": "Shake the pan and turn the pieces gently."
+    },
+    {
+      "mistake": "Skimping on the oil, so that the vegetables catch and taste flat.",
+      "fix": "Use a generous amount. The oil is part of the sauce, and it is meant to stay."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/green-beans", "tier": "drafted"},
+    {"thing": "ingredient/artichoke", "tier": "drafted"},
+    {"thing": "ingredient/leek", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/sweat",
+      "why": "The onion is softened in the oil first, so a cook has to be able to soften it without letting it colour.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/braise",
+      "differs": "It is the Turkish zeytinyagli way. The fat is a generous amount of olive oil and not a stock or a wine, there is no browning and no meat, the water is only a splash, and the dish is served warm or at room temperature and not hot.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

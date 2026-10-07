@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kibbeh-nayyeh",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "mezze",
+  "dish": "Kibbeh nayyeh",
+  "also_called": ["raw kibbeh", "kibbe nayeh"],
+  "techniques": ["soak bulgur", "grind", "knead", "shape"],
+  "ingredients": ["lamb", "fine bulgur", "onion", "mint", "olive oil", "allspice", "cinnamon"]
+}

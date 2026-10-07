@@ -2,7 +2,10 @@
   "id": "technique/roll-an-omelette",
   "tier": "drafted",
   "names": {"en": "Roll an omelette", "fr": "Rouler une omelette"},
-  "aliases": {"en": ["make an omelette", "rolled omelette", "French omelette"], "fr": ["omelette roulée"]},
+  "aliases": {
+    "en": ["make an omelette", "rolled omelette", "French omelette", "make omelette"],
+    "fr": ["omelette roulée"]
+  },
   "does": "Sets beaten eggs into a thin, tender sheet with a creamy middle, and rolls it into a smooth, pale cylinder.",
   "how": [
     "Heat butter in a pan over medium heat until it foams and the foam starts to fall.",

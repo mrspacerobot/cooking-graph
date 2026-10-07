@@ -1,0 +1,46 @@
+{
+  "id": "technique/skewer",
+  "tier": "drafted",
+  "names": {"en": "Skewer", "fr": "Embrocher"},
+  "aliases": {"en": ["thread on skewers", "put on skewers"], "fr": ["enfiler sur des brochettes"]},
+  "does": "Threads pieces of food, or presses a mince round a flat skewer, so that they can be turned as one and cook evenly over fierce heat, with their juices held in.",
+  "how": [
+    "Soak wooden skewers in water first, so that they do not scorch. Metal skewers need no soaking.",
+    "Cut the food into pieces of an even size, so that they cook at the same pace.",
+    "Thread the pieces on snugly, with a little room between them so that the heat reaches every face.",
+    "For mince, wet the hands and press it firmly round a flat skewer into a long shape, with no gaps.",
+    "Leave the ends of the skewer bare, to hold by."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The pieces sit straight and snug, and are all about the same size."},
+    {"sense": "feel", "text": "The pieces do not spin on the skewer when it is turned."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Packing the pieces tight, so that the insides stay raw while the outsides burn.",
+      "fix": "Leave a little room between pieces."
+    },
+    {
+      "mistake": "Mixing pieces that cook at different speeds on one skewer.",
+      "fix": "Thread each kind on its own skewer."
+    },
+    {
+      "mistake": "Pressing mince too loosely, so that it falls off in the heat.",
+      "fix": "Chill the mince and press it firmly with wet hands."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"},
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/roasting-joints", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/skewer"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

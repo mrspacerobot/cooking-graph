@@ -1,0 +1,7 @@
+{
+  "id": "equipment/paella-pan",
+  "tier": "drafted",
+  "names": {"en": "Paella pan", "fr": "Paellera"},
+  "aliases": {"en": ["paellera"]},
+  "use": "A very wide, shallow pan with thin sides and a handle on each side, in which rice is cooked in a thin, even layer so that it cooks at one pace and a toasted crust forms on the bottom."
+}

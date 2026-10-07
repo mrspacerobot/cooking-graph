@@ -1,0 +1,117 @@
+{
+  "id": "recipe/tangia-marrakchia",
+  "tier": "drafted",
+  "names": {"en": "Tangia marrakchia"},
+  "aliases": {},
+  "makes": "dish/tangia-marrakchia",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/lamb-shoulder", "amount": {"value": 1, "unit": "kilogram"}, "forms": [], "part": "main"},
+    {"thing": "ingredient/garlic", "amount": {"value": 6, "unit": "clove"}, "forms": ["form/peeled"], "part": "garlic"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/saffron", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "saffron"},
+    {
+      "thing": "preparation/ras-el-hanout",
+      "amount": {"value": 2, "unit": "teaspoon"},
+      "forms": [],
+      "part": "ras-el-hanout"
+    },
+    {
+      "thing": "preparation/preserved-lemon",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": [],
+      "part": "preserved-lemon"
+    },
+    {"thing": "ingredient/smen", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "smen"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "olive-oil"},
+    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/earthenware-jar", "equipment/oven", "equipment/parchment-paper", "equipment/kitchen-string",
+    "equipment/mortar-and-pestle", "equipment/chefs-knife", "equipment/cutting-board", "equipment/mixing-bowl",
+    "equipment/colander", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/trim",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": [],
+      "text": "Trim the hard fat and any gristle from the lamb, and cut the meat into large pieces of about the same size.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pound",
+      "works_on": ["ingredient/garlic", "ingredient/cumin"],
+      "with": ["ingredient/salt"],
+      "text": "Pound the garlic with the cumin and a little of the salt in a mortar to a rough paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/rinse",
+      "works_on": ["preparation/preserved-lemon"],
+      "with": [],
+      "text": "Rinse the preserved lemon under cold water and drain it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["preparation/preserved-lemon"],
+      "with": [],
+      "text": "Quarter the lemon, scrape out the pulp and cut the rind into large pieces.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/marinate",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["preparation/ras-el-hanout", "ingredient/saffron", "ingredient/smen", "ingredient/olive-oil"],
+      "text": "Rub the garlic paste, the ras el hanout, the saffron and the smen into the lamb with the oil, working it into every piece. Cover the bowl and leave it in a cool place so that the meat takes on the flavour.",
+      "time": {"from": 2, "to": 12, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slow-cook",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["preparation/preserved-lemon", "ingredient/water"],
+      "text": "Pack the meat into the jar with the lemon rind and the water. Close the mouth tightly with parchment tied on with string, and set the jar in a low oven. Leave it shut for most of the time, then open it and check that the meat falls apart under a fork. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 4, "to": 5, "unit": "hour"},
+      "temperature": {"value": 120, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/skim",
+      "works_on": ["preparation/braising-liquid"],
+      "with": [],
+      "text": "Spoon off the clear fat from the top of the juices, and keep a little of it for the table.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/braising-liquid"],
+      "with": ["ingredient/salt"],
+      "text": "Taste the juices and adjust the salt. Serve the meat from the jar with its juices and the lemon rind.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

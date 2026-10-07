@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/calamares-a-la-romana",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "frying",
+  "dish": "Calamares a la romana",
+  "also_called": ["fried squid rings", "battered squid"],
+  "techniques": ["slice", "batter", "deep-fry"],
+  "ingredients": ["squid", "flour", "egg", "olive oil", "lemon", "salt"]
+}

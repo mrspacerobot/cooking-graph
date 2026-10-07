@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/mackerel",
+  "tier": "drafted",
+  "names": {"en": "Mackerel", "fr": "Maquereau"},
+  "aliases": {"en": ["saba"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/round-fish", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "An oily, strongly flavoured fish with silvery, thin skin. Its rich flesh stands up to salt, acid and fierce heat, and it is grilled or pan-fried with the skin on, or salted for a time before cooking.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "It is a fish.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

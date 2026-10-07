@@ -1,0 +1,36 @@
+{
+  "id": "ingredient/riesling",
+  "tier": "drafted",
+  "names": {"en": "Riesling", "fr": "Riesling"},
+  "aliases": {"en": ["Riesling wine"]},
+  "is_a": [
+    {"thing": "ingredient/white-wine", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/wines", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A dry white wine of Alsace, crisp and flowery, with a sharp acidity. It tastes raw and sharp until it has boiled down, and then gives a clean acidity and aroma to a stew or a sauce.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "It is wine.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "Wine may be cleared with gelatine or isinglass.", "certain": false},
+      {"fact": "fact/fish", "basis": "Wine may be cleared with isinglass, which comes from fish.", "certain": false},
+      {"fact": "fact/egg", "basis": "Wine may be cleared with egg white.", "certain": false},
+      {"fact": "fact/milk", "basis": "Wine may be cleared with milk protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Nearly all wine holds sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/gluten", "fact/lupin",
+      "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

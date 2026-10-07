@@ -1,0 +1,58 @@
+{
+  "id": "technique/bake-a-phyllo-pie",
+  "tier": "drafted",
+  "names": {"en": "Bake a phyllo pie"},
+  "aliases": {"en": ["bake filo pie", "bake a filo pie"]},
+  "does": "Bakes a pie of oiled phyllo sheets at a steady moderate heat until the layers dry out, turn golden and crackle, and the filling inside is set.",
+  "how": [
+    "Heat the oven before the pie goes in, and set the dish on a rack in the middle.",
+    "Brush the top once more with fat just before baking, so that it browns evenly.",
+    "Bake at a steady moderate heat. A fierce heat browns the top before the layers underneath have dried.",
+    "Turn the dish round if one side browns faster than the other.",
+    "Bake until the top is deep golden and the sides pull in a little. Leave the pie to settle before cutting, so that the filling firms and the layers stay crisp."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The top is an even deep gold and the edges are dry and curled."},
+    {"sense": "hear", "text": "The pie crackles when the dish is moved, and the knife saws through a crisp top."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Baking at a fierce heat, so that the top burns while the layers below are still pale and doughy.",
+      "fix": "Keep the heat moderate and bake for longer."
+    },
+    {
+      "mistake": "Cutting the pie straight from the oven, so that the filling runs and the layers go limp.",
+      "fix": "Leave it to settle first."
+    },
+    {
+      "mistake": "Covering the pie while it cools, which steams the crust soft.",
+      "fix": "Leave it uncovered on a rack."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/phyllo", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-dish", "equipment/baking-sheet"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wire-rack"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/layer-phyllo",
+      "why": "The pie has to be layered and cut before it can be baked.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/bake",
+      "differs": "The food is sheets of dough brushed with fat, baked at a steady moderate heat until the layers dry and crackle around a moist filling, and rested before it is cut. A plain bake is for loaves and vegetables.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/rouille",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "emulsions",
+  "dish": "Rouille",
+  "also_called": ["sauce rouille"],
+  "techniques": ["pound", "emulsify", "soak"],
+  "ingredients": ["garlic", "egg yolk", "olive oil", "saffron", "cayenne pepper", "bread", "fish stock"]
+}

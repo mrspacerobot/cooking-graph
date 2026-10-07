@@ -1,0 +1,20 @@
+{
+  "id": "preparation/gremolata",
+  "tier": "drafted",
+  "names": {"en": "Gremolata", "fr": "Gremolata"},
+  "aliases": {},
+  "is": "A raw mix of finely chopped parsley, lemon zest and a little garlic, scattered over a rich, slow-cooked dish at the end. It comes from Milan, where it tops ossobuco.",
+  "parts": [
+    {"id": "parsley", "role": "base", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-gremolata", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

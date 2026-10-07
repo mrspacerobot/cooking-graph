@@ -1,0 +1,42 @@
+{
+  "id": "technique/coat-in-starch",
+  "tier": "drafted",
+  "names": {"en": "Coat in starch"},
+  "aliases": {"en": ["dust with starch", "coat in potato starch", "dredge in starch"]},
+  "does": "Dusts a piece of food, often after it has been marinated, in a thin layer of potato starch or cornstarch just before frying. It fries to a crisp, light, pale crust.",
+  "how": [
+    "Pat the food dry and shake off any marinade that is dripping.",
+    "Tip the starch into a tray and turn each piece in it, pressing lightly.",
+    "Tap off the loose starch, as too much turns pasty in the oil.",
+    "Fry straight away, before the starch dampens and turns gluey."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The coating is thin, dry and even, with no wet spots."},
+    {"sense": "hear", "text": "The piece crackles in the oil."}
+  ],
+  "mistakes": [
+    {"mistake": "Coating too thickly, which turns gluey and heavy.", "fix": "Shake off the loose starch."},
+    {"mistake": "Coating long before frying, so that the starch gets wet.", "fix": "Coat right before the oil."}
+  ],
+  "works_on": [
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "ingredient/chicken-thigh", "tier": "drafted"},
+    {"thing": "ingredient/firm-tofu", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "coating", "options": ["ingredient/potato-starch", "ingredient/cornstarch"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/dredge",
+      "differs": "The coat is starch, not flour, so it fries thinner, crisper and paler.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

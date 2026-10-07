@@ -1,0 +1,46 @@
+{
+  "id": "technique/dip",
+  "tier": "drafted",
+  "names": {"en": "Dip"},
+  "aliases": {"en": ["dip in coffee", "dip the biscuits"]},
+  "does": "Passes a dry, absorbent biscuit or slice through a liquid for a moment only, so that the outside takes up flavour and softens while the centre stays dry enough to hold the dish together.",
+  "how": [
+    "Pour the liquid into a shallow dish wide enough to take a whole piece, and let it cool if it is hot.",
+    "Hold each piece flat and pass it through the liquid in one quick motion, turning it once.",
+    "Lift it out at once and lay it straight into the dish, before the next piece goes in.",
+    "Work in a steady rhythm, and try one piece first to judge the time."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The piece is damp on the surface and still firm when pressed. It does not bend limp."},
+    {"sense": "see", "text": "The biscuit has darkened only at the surface and not all the way through."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the piece in the liquid, so that it turns to mush and falls apart.",
+      "fix": "Pass it through and lift it out at once."
+    },
+    {
+      "mistake": "Dipping into a hot liquid, which soaks the biscuit before it can be lifted.",
+      "fix": "Let the liquid cool first."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/savoiardi", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish", "equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/coffee", "ingredient/marsala", "ingredient/milk"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/soak",
+      "differs": "The piece spends only a moment in the liquid, enough to dampen the outside and leave a dry heart. It is not left to take the liquid up all the way through.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

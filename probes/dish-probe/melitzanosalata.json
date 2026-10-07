@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/melitzanosalata",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "salads-and-dips",
+  "dish": "Melitzanosalata",
+  "also_called": ["eggplant dip"],
+  "techniques": ["char", "peel", "chop", "mix"],
+  "ingredients": ["eggplant", "garlic", "olive oil", "lemon", "parsley", "onion"]
+}

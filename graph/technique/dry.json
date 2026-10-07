@@ -1,0 +1,48 @@
+{
+  "id": "technique/dry",
+  "tier": "drafted",
+  "names": {"en": "Dry", "fr": "Sécher"},
+  "aliases": {"en": ["pat dry", "dry off", "dry in the pot"], "fr": ["éponger"]},
+  "does": "Takes the wet off the surface of food so that it browns, crisps or clings instead of steaming. For food that has been boiled, it lets the last water steam away and leaves a dry skin.",
+  "how": [
+    "For raw food, pat it all over with a clean cloth or paper, on every side, and let it stand a little in the air if it is still wet.",
+    "For food that has been boiled, drain it well, then return it to the empty, still-hot pot over a very low heat.",
+    "Shake the pot now and then until the steam stops and the surface looks dull and dry.",
+    "If the water was heavily salted, the dry skin is left with a thin white crust of salt."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The surface is matt, with no shine of water, and no steam rises from the pot."},
+    {"sense": "feel", "text": "The food feels dry to the touch. The skin of a boiled potato wrinkles."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Putting wet food into hot fat, where it spits and steams instead of browning.",
+      "fix": "Pat it dry on every side first."
+    },
+    {
+      "mistake": "Leaving boiled food to dry on a cold plate, where the steam settles back into it.",
+      "fix": "Dry it in the hot pot, over a very low heat."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/salad-leaves", "tier": "drafted"},
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/lean-fish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/colander"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/drain",
+      "why": "Boiled food is drained first, so that only the last water is left to steam away.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

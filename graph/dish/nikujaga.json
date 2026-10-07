@@ -1,0 +1,35 @@
+{
+  "id": "dish/nikujaga",
+  "tier": "drafted",
+  "names": {"en": "Nikujaga"},
+  "aliases": {"en": ["Japanese meat and potato stew", "meat and potatoes"]},
+  "is": "A home-style simmered dish of thin slices of meat, potatoes, carrots, onion and konjac strands, cooked slowly in dashi sweetened with mirin and sugar and seasoned with soy sauce, until the pieces are tender and glossy.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/pork-belly", "ingredient/beef-steak"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "side", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "shirataki", "role": "filling", "options": ["ingredient/shirataki"], "optional": false, "tier": "drafted"},
+    {"id": "dashi", "role": "liquid", "options": ["preparation/dashi"], "optional": false, "tier": "drafted"},
+    {"id": "sake", "role": "seasoning", "options": ["ingredient/sake"], "optional": false, "tier": "drafted"},
+    {"id": "mirin", "role": "sweetener", "options": ["ingredient/mirin"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-dashi", "tier": "drafted"},
+    {"thing": "technique/cover-with-a-drop-lid", "tier": "drafted"},
+    {"thing": "technique/bevel-edges", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

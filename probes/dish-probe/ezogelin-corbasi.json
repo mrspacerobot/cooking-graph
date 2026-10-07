@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/ezogelin-corbasi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "soups",
+  "dish": "Ezogelin çorbası",
+  "also_called": ["ezogelin soup", "bride soup"],
+  "techniques": ["saute", "simmer"],
+  "ingredients": [
+    "red lentil",
+    "bulgur",
+    "rice",
+    "onion",
+    "tomato paste",
+    "red pepper paste",
+    "butter",
+    "dried mint",
+    "red pepper flakes"
+  ]
+}

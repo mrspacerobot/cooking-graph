@@ -1,0 +1,48 @@
+{
+  "id": "technique/seal-with-dough",
+  "tier": "drafted",
+  "names": {"en": "Seal with dough", "fr": "Luter"},
+  "aliases": {"en": ["lute", "seal the pot with dough", "seal the lid with paste"], "fr": ["luter la cocotte"]},
+  "does": "Closes the gap between a pot and its lid with a rope of plain flour paste, so that no steam leaves during a long, slow bake. The seal is broken open at the table.",
+  "how": [
+    "Mix flour with just enough water to make a stiff paste that rolls between the hands and does not stick.",
+    "Fill the pot, then put the lid on.",
+    "Roll the paste into a rope long enough to go round the rim.",
+    "Press the rope into the join where the lid meets the pot, and smooth it into both sides with a wet finger. Leave no gap.",
+    "Bake without lifting the lid. Break the seal open when the pot is brought to the table."
+  ],
+  "cues": [
+    {"sense": "see", "text": "An unbroken ring of paste all round the join, with no gap for steam to find."},
+    {"sense": "feel", "text": "The paste is pliable and does not crack when it is rolled."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Making the paste too wet, so that it runs and does not hold.",
+      "fix": "Work in more flour until it is stiff."
+    },
+    {
+      "mistake": "Leaving a gap in the ring, so that steam escapes and the liquid cooks away.",
+      "fix": "Run a wet finger round the whole join before the pot goes in the oven."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/flour", "tier": "drafted"},
+    {"thing": "ingredient/water", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/layer",
+      "why": "The pot is filled in layers first, and sealed only when everything is in.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

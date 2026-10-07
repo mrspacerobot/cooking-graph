@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/caciocavallo",
+  "tier": "drafted",
+  "names": {"en": "Caciocavallo", "fr": "Caciocavallo"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A firm cheese of stretched curd, shaped like a gourd and hung to ripen. Young it is mild and melts well, and aged it turns sharp and grates.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from milk.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "It is traditionally set with animal rennet.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

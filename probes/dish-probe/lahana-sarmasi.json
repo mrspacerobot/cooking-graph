@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/lahana-sarmasi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "stuffed-vegetables",
+  "dish": "Lahana sarması",
+  "also_called": ["stuffed cabbage rolls"],
+  "techniques": ["blanch", "stuff", "roll", "simmer"],
+  "ingredients": ["cabbage", "ground beef", "rice", "onion", "tomato paste", "butter"]
+}

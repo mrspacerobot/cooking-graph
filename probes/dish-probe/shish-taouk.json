@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/shish-taouk",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "grilling",
+  "dish": "Shish taouk",
+  "also_called": ["shish tawook", "chicken skewers"],
+  "techniques": ["marinate", "skewer", "grill", "baste"],
+  "ingredients": ["chicken breast", "yogurt", "garlic", "lemon juice", "tomato paste", "olive oil", "paprika"]
+}

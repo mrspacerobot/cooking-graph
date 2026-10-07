@@ -1,0 +1,48 @@
+{
+  "id": "technique/double-fry",
+  "tier": "drafted",
+  "names": {"en": "Double fry"},
+  "aliases": {"en": ["fry twice", "twice-fry", "fry in stages"]},
+  "does": "Fries food in rounds: first at a moderate heat to cook it, then a rest, and again in hotter oil to crisp and brown the outside. The result is tender inside and crunchy outside, and stays crisp longer.",
+  "how": [
+    "Heat the oil to a moderate heat and fry the pieces until pale and just firm. Do not crowd the pot.",
+    "Lift them onto a rack and let them rest, so that the heat spreads to the middle.",
+    "Heat the oil much hotter and put the pieces back for a short time, until golden and crisp.",
+    "Lift out, drain on the rack and serve right away."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "The pieces crackle sharply in the second round of frying."},
+    {"sense": "see", "text": "The first-round pieces are pale, and the second round turns them deep golden."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Skipping the rest, so that the outside browns before the middle is ready.",
+      "fix": "Rest the pieces on a rack between rounds."
+    },
+    {"mistake": "Frying too many pieces at once, which cools the oil.", "fix": "Fry in small batches."}
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "ingredient/chicken-thigh", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/wok"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil"], "tier": "drafted"},
+    {
+      "role": "tool",
+      "options": ["equipment/thermometer", "equipment/slotted-spoon", "equipment/wire-rack"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/deep-fry",
+      "differs": "The food is fried twice, with a rest in between, at a moderate heat first and a high heat after, instead of once at a single heat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

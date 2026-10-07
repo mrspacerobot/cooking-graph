@@ -14,13 +14,38 @@ def every_skill(things):
     return slugs
 
 
-def probes_name_a_skill(things):
-    """A dish probe is written for a skill of a program."""
-    skills = every_skill(things)
+def skills_by_cuisine(things):
+    """The skills of the programs each cuisine has. A cuisine with no program yet has none."""
+    found = {}
+    for thing_id, thing in of_kind(things, "program"):
+        slugs = {skill["slug"] for skill in skills_of(thing.data)}
+        for cuisine_id in linked(thing.data["belongs_to"]):
+            found.setdefault(cuisine_id, set()).update(slugs)
+    return found
+
+
+def probes_name_a_cuisine(things):
+    """A dish probe says which cuisine it asks about, and that cuisine is in the graph."""
     issues = []
     for thing_id, thing in of_kind(things, "dish-probe"):
-        if thing.data["written_for"] not in skills:
-            message = "'%s' is no skill of any program" % thing.data["written_for"]
+        if "cuisine/" + thing.data["cuisine"] not in things:
+            message = "'%s' is no cuisine of the graph" % thing.data["cuisine"]
+            issues.append(Issue(thing.path, "cuisine", "cuisine-unknown", message))
+    return issues
+
+
+def probes_name_a_skill(things):
+    """A dish probe is written for a skill of a program of its cuisine.
+
+    A cuisine with no program yet has no skills to name, so its probes name
+    any topic. They name a skill once the cuisine has a program.
+    """
+    skills = skills_by_cuisine(things)
+    issues = []
+    for thing_id, thing in of_kind(things, "dish-probe"):
+        known = skills.get("cuisine/" + thing.data["cuisine"])
+        if known is not None and thing.data["written_for"] not in known:
+            message = "'%s' is no skill of a program of the cuisine '%s'" % (thing.data["written_for"], thing.data["cuisine"])
             issues.append(Issue(thing.path, "written_for", "skill-unknown", message))
     return issues
 
@@ -142,6 +167,7 @@ def question_once_per_batch(things):
 
 
 RULES = [
+    probes_name_a_cuisine,
     probes_name_a_skill,
     held_back_by_the_rule,
     level_dishes_are_never_held_back,

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sukiyaki",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "one-pot",
+  "dish": "Sukiyaki",
+  "also_called": ["beef hot pot", "sukiyaki hot pot"],
+  "techniques": ["slice thinly", "sear", "make warishita sauce", "simmer at table", "dip in raw egg"],
+  "ingredients": ["beef", "tofu", "shirataki", "napa cabbage", "spring onion", "shiitake", "soy sauce", "sugar", "egg"]
+}

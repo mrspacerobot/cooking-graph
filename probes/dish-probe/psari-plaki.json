@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/psari-plaki",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "fish",
+  "dish": "Psari plaki",
+  "also_called": ["baked fish plaki"],
+  "techniques": ["slice", "saute", "bake"],
+  "ingredients": ["white fish", "tomato", "onion", "garlic", "potato", "parsley", "olive oil", "lemon"]
+}

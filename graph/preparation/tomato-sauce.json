@@ -1,0 +1,29 @@
+{
+  "id": "preparation/tomato-sauce",
+  "tier": "drafted",
+  "names": {"en": "Tomato sauce", "fr": "Sauce tomate à l'italienne"},
+  "aliases": {"en": ["salsa di pomodoro", "sugo di pomodoro"]},
+  "is": "A sauce of tomatoes cooked in olive oil until they break down, thick and bright. It is often scented with garlic or chilli and finished with torn basil.",
+  "parts": [
+    {
+      "id": "tomato",
+      "role": "main",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes", "ingredient/cherry-tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": true, "tier": "drafted"},
+    {"id": "chilli", "role": "seasoning", "options": ["ingredient/chilli"], "optional": true, "tier": "drafted"},
+    {"id": "basil", "role": "garnish", "options": ["ingredient/basil"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-tomato-sauce", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

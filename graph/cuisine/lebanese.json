@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/lebanese",
+  "tier": "drafted",
+  "names": {"en": "Lebanese", "fr": "Libanaise"},
+  "aliases": {"en": ["Lebanese cooking", "Lebanese cuisine"]},
+  "within": {"thing": "cuisine/mediterranean", "tier": "drafted"}
+}

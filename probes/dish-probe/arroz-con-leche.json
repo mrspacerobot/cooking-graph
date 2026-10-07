@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/arroz-con-leche",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "desserts",
+  "dish": "Arroz con leche",
+  "also_called": ["rice pudding", "arroz con leche asturiano"],
+  "techniques": ["infuse", "simmer", "stir", "chill"],
+  "ingredients": ["rice", "milk", "sugar", "cinnamon", "lemon zest", "butter"]
+}

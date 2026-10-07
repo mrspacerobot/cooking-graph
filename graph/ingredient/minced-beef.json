@@ -6,7 +6,8 @@
   "is_a": [],
   "part_of": [],
   "groups": [
-    {"thing": "group/meat", "tier": "drafted"}
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/minced-meat", "tier": "drafted"}
   ],
   "forms": [],
   "behaviour": "Browns in crumbs and gives up fat and juice. Lean mince stays dry and separate.",

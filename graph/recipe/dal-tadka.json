@@ -1,0 +1,114 @@
+{
+  "id": "recipe/dal-tadka",
+  "tier": "drafted",
+  "names": {"en": "Dal tadka"},
+  "aliases": {},
+  "makes": "dish/dal-tadka",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pigeon-pea", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "dal"},
+    {"thing": "ingredient/water", "amount": {"value": 900, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/turmeric", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "turmeric"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/diced"], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/diced"], "part": "tomato"},
+    {
+      "thing": "ingredient/green-chilli",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "green-chilli"
+    },
+    {"thing": "ingredient/ghee", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "cooking-fat"},
+    {"thing": "ingredient/ghee", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "tempering-fat"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {
+      "thing": "ingredient/dried-red-chilli",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": [],
+      "part": "dried-chilli"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/coriander-leaf",
+      "amount": {"value": 10, "unit": "gram"},
+      "forms": ["form/chopped"],
+      "part": "coriander"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/pressure-cooker", "equipment/colander", "equipment/saute-pan",
+    "equipment/frying-pan", "equipment/wooden-spoon", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/pigeon-pea"],
+      "with": ["ingredient/water"],
+      "text": "Rinse the lentils in a colander under cold water until the water runs clearer, then drain them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pressure-cook",
+      "works_on": ["ingredient/pigeon-pea"],
+      "with": ["ingredient/water", "ingredient/turmeric"],
+      "text": "Tip the lentils into the pressure cooker with the water and the turmeric. Close the lid and bring to pressure, then lower the heat and cook until the lentils are soft. Let the pressure fall by itself, open the lid, and stir hard until the lentils fall apart into a thick mash.",
+      "time": {"from": 15, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/onion", "ingredient/garlic", "ingredient/tomato"],
+      "with": ["ingredient/ghee", "ingredient/green-chilli"],
+      "text": "Warm the first spoonful of ghee in a wide pan. Cook the onion until it is soft and golden, add the garlic and the green chilli, and then the tomato. Cook until the tomato has collapsed and the ghee shines on the edge.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/pigeon-pea"],
+      "with": ["ingredient/onion", "ingredient/tomato", "ingredient/salt", "ingredient/water"],
+      "text": "Stir the onion and tomato into the mashed lentils with enough hot water to loosen them, and simmer gently so that they join. Add the salt and taste.",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/temper-spices-in-hot-fat",
+      "works_on": ["ingredient/dried-red-chilli"],
+      "with": ["ingredient/ghee", "ingredient/cumin"],
+      "text": "Heat the rest of the ghee in a small pan until a cumin seed sizzles at once. Add the cumin and let it darken a shade, then add the dried chillies and take the pan off the heat the moment the scent rises.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/pigeon-pea"],
+      "with": ["ingredient/salt"],
+      "text": "Pour the sizzling ghee and spices over the lentils, stir once, and taste. Add a little more salt if it needs it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pigeon-pea"],
+      "with": ["ingredient/coriander-leaf"],
+      "text": "Scatter the coriander leaves over the dal and serve it hot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

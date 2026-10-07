@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/menemen",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "eggs-and-breakfast",
+  "dish": "Menemen",
+  "also_called": ["turkish scrambled eggs with tomato and pepper"],
+  "techniques": ["saute", "scramble"],
+  "ingredients": ["egg", "tomato", "green pepper", "onion", "olive oil", "butter"]
+}

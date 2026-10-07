@@ -1,0 +1,21 @@
+{
+  "id": "preparation/soffritto",
+  "tier": "drafted",
+  "names": {"en": "Soffritto", "fr": "Soffritto"},
+  "aliases": {},
+  "is": "The Italian flavour base: onion, carrot and celery chopped very fine and cooked slowly in olive oil until they melt into a soft, sweet, golden mass. It starts soups, sauces, ragus and braises.",
+  "parts": [
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "celery", "role": "aromatic", "options": ["ingredient/celery"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-soffritto", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

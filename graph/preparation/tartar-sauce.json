@@ -1,0 +1,32 @@
+{
+  "id": "preparation/tartar-sauce",
+  "tier": "drafted",
+  "names": {"en": "Tartar sauce"},
+  "aliases": {"en": ["tartare sauce"]},
+  "is": "A thick, creamy sauce of mayonnaise with chopped pickles, chopped boiled egg and onion. It goes with fried food, where its sharpness cuts through the oil.",
+  "parts": [
+    {"id": "mayonnaise", "role": "base", "options": ["preparation/mayonnaise"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pickle",
+      "role": "filling",
+      "options": ["ingredient/cornichons", "ingredient/capers"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg", "role": "filling", "options": ["ingredient/egg"], "optional": true, "tier": "drafted"},
+    {
+      "id": "onion",
+      "role": "aromatic",
+      "options": ["ingredient/onion", "ingredient/shallot"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "acid", "role": "acid", "options": ["ingredient/lemon-juice"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-tartar-sauce", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": []
+}

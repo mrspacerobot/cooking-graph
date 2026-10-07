@@ -1,0 +1,48 @@
+{
+  "id": "technique/make-a-gremolata",
+  "tier": "drafted",
+  "names": {"en": "Make a gremolata"},
+  "aliases": {"en": ["gremolata", "make gremolata"]},
+  "does": "Chops parsley very fine with lemon zest and a little raw garlic, to be scattered over a rich, slow-cooked dish at the very end, where its sharp freshness cuts through the fat. Nothing is cooked.",
+  "how": [
+    "Pick the parsley leaves from the stalks and dry them well.",
+    "Grate the zest of the lemon in fine strips, taking only the yellow.",
+    "Peel the garlic and chop it fine with the parsley, then chop in the zest, until everything is small and even.",
+    "Make it just before serving and scatter it over the dish at the table, and not into the pot."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "Bright lemon and green parsley, with a sharp edge of garlic."},
+    {"sense": "see", "text": "The mix is fine and even and still bright green."}
+  ],
+  "mistakes": [
+    {"mistake": "Grating in the white pith, which tastes bitter.", "fix": "Take only the yellow of the peel."},
+    {
+      "mistake": "Mixing it into the pot early, so that it loses its freshness and turns dull.",
+      "fix": "Scatter it over the dish at the very end."
+    },
+    {"mistake": "Chopping wet parsley, which turns to a paste.", "fix": "Dry the leaves first."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/parsley", "tier": "drafted"},
+    {"thing": "ingredient/lemon", "tier": "drafted"},
+    {"thing": "ingredient/garlic", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/gremolata", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife", "equipment/grater"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/chop",
+      "why": "The parsley is chopped small and even, and a cook has to be able to chop first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

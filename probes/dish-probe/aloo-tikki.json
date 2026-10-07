@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/aloo-tikki",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "frying",
+  "dish": "Aloo tikki",
+  "also_called": ["aloo ki tikki", "potato cutlet"],
+  "techniques": ["boil", "mash", "shape", "shallow fry"],
+  "ingredients": ["potato", "cornstarch", "green chili", "ginger", "coriander leaf", "cumin seed", "amchur", "oil"]
+}

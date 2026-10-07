@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/chipirons-sautes",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "saute",
+  "dish": "Chipirons sautés",
+  "also_called": ["chipirons à la basquaise", "sautéed baby squid Basque style"],
+  "techniques": ["clean", "sauté", "deglaze", "toss"],
+  "ingredients": ["squid", "garlic", "onion", "green pepper", "espelette pepper", "olive oil", "parsley"]
+}

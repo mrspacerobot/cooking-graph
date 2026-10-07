@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/almejas-a-la-marinera",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "seafood",
+  "dish": "Almejas a la marinera",
+  "also_called": ["clams in white wine sauce", "sailor-style clams", "ameixas á mariñeira"],
+  "techniques": ["sweat", "deglaze", "simmer", "steam"],
+  "ingredients": ["clam", "onion", "garlic", "white wine", "olive oil", "flour", "paprika", "parsley", "bay leaf"]
+}

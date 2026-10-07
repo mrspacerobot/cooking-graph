@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tartare-de-dorade",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "knife-cuts",
+  "dish": "Tartare de dorade",
+  "also_called": ["tartare de daurade", "sea bream tartare"],
+  "techniques": ["fillet", "skin", "dice", "mince", "dress"],
+  "ingredients": ["sea bream", "shallot", "lime", "olive oil", "chive", "coriander"]
+}

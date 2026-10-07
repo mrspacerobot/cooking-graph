@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/dorayaki",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "sweets",
+  "dish": "Dorayaki",
+  "also_called": ["red bean pancake sandwich", "sweet bean pancakes"],
+  "techniques": ["beat eggs", "mix batter", "rest batter", "griddle cook", "flip", "sandwich"],
+  "ingredients": ["flour", "egg", "sugar", "honey", "baking soda", "sweet red bean paste", "water"]
+}

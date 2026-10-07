@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/fatayer-sabanekh",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "pastries",
+  "dish": "Fatayer sabanekh",
+  "also_called": ["spinach pies", "spinach fatayer"],
+  "techniques": ["knead", "proof", "roll", "fold", "bake"],
+  "ingredients": ["flour", "yeast", "spinach", "onion", "sumac", "lemon juice", "olive oil", "pine nut"]
+}

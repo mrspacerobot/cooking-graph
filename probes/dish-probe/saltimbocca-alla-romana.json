@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/saltimbocca-alla-romana",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "sauteing",
+  "dish": "Saltimbocca alla romana",
+  "also_called": ["saltimbocca", "veal with prosciutto and sage"],
+  "techniques": ["pound meat", "dredge in flour", "pan fry", "deglaze"],
+  "ingredients": ["veal escalope", "prosciutto", "sage", "butter", "white wine"]
+}

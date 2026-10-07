@@ -1,0 +1,60 @@
+{
+  "id": "technique/stir-fry",
+  "tier": "drafted",
+  "names": {"en": "Stir-fry", "fr": "Sauter au wok"},
+  "aliases": {"en": ["stir-fry in a wok", "stir fry in a hot pan", "fry rice"], "fr": ["sauter à feu vif"]},
+  "does": "Cooks small, even pieces very fast in a little hot oil in a wide pan, keeping them moving all the time with a spoon or a spatula, so that they take colour at the edges and stay crisp or just tender inside.",
+  "how": [
+    "Cut everything small and even, and have it all at hand before the pan goes on, because the cooking is quick.",
+    "Heat a wok or wide pan until very hot, then add a little oil and swirl it.",
+    "Add the food that takes longest first, then the rest in order, and keep it moving the whole time.",
+    "Add sauces and seasoning at the end, so that they coat the food and do not stew it.",
+    "Take it out as soon as it is done, since it carries on cooking in the pan."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A steady, loud sizzle, which fades if the pan has been crowded."},
+    {"sense": "see", "text": "The pieces are glossy and coloured at the edges, and none sits in a pool of liquid."},
+    {"sense": "smell", "text": "A toasty, sweet smell, and not a burnt one."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Crowding the pan, so that the food stews in its own water.",
+      "fix": "Cook in smaller batches and keep the heat high."
+    },
+    {
+      "mistake": "Adding everything together, so that some pieces are raw and others limp.",
+      "fix": "Add the pieces in order of how long they take."
+    },
+    {"mistake": "Leaving the food still for long, so that it scorches.", "fix": "Keep it moving."}
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/leafy-heads", "tier": "drafted"},
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "ingredient/pork-belly", "tier": "drafted"},
+    {"thing": "ingredient/rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/wok", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula", "equipment/wooden-spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/saute",
+      "why": "Stir-frying is sautéing at higher heat and greater speed, so a cook has to read a hot pan first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/saute",
+      "differs": "The pan is hotter and wider, the pieces are cut smaller, and they are kept moving with a spoon or spatula and added in order of how long they take, where a sauté lets them sit to colour between tosses.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

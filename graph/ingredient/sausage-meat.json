@@ -6,7 +6,8 @@
   "is_a": [],
   "part_of": [],
   "groups": [
-    {"thing": "group/meat", "tier": "drafted"}
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/minced-meat", "tier": "drafted"}
   ],
   "forms": [],
   "behaviour": "Seasoned minced pork with enough fat to stay moist. It binds a stuffing and firms as it cooks.",

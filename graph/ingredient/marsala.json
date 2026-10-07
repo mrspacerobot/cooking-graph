@@ -1,0 +1,34 @@
+{
+  "id": "ingredient/marsala",
+  "tier": "drafted",
+  "names": {"en": "Marsala", "fr": "Marsala"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/wines", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "An amber fortified wine from Sicily, sweet or dry. A splash goes into sauces for veal and chicken and into zabaione and tiramisu. The dry kind is for savoury cooking and the sweet kind for desserts.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "It is a fortified wine.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "Wine may be cleared with gelatine or isinglass.", "certain": false},
+      {"fact": "fact/fish", "basis": "Wine may be cleared with isinglass, which comes from fish.", "certain": false},
+      {"fact": "fact/egg", "basis": "Wine may be cleared with egg white.", "certain": false},
+      {"fact": "fact/milk", "basis": "Wine may be cleared with milk protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Nearly all wine holds sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/gluten", "fact/lupin",
+      "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "European law exempts isinglass and fish gelatine used to clear wine and beer from the labelling of fish. The stricter answer is recorded all the same."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

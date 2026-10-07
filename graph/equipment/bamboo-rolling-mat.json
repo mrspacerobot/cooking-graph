@@ -1,0 +1,7 @@
+{
+  "id": "equipment/bamboo-rolling-mat",
+  "tier": "drafted",
+  "names": {"en": "Bamboo rolling mat"},
+  "aliases": {"en": ["makisu", "sushi mat"]},
+  "use": "A flat mat of thin bamboo sticks bound with string. Food is rolled up in it and pressed, so that it comes out firm and evenly round or square."
+}

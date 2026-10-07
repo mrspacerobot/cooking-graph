@@ -1,0 +1,9 @@
+{
+  "id": "group/ground-spices",
+  "tier": "drafted",
+  "names": {"en": "Ground spices", "fr": "Épices moulues"},
+  "aliases": {},
+  "shares": "Spices sold as a fine powder. They have no skin to protect them, so they scorch fast in hot fat, but they mix with a little liquid into a paste that clings.",
+  "within": null,
+  "stands_alone": null
+}

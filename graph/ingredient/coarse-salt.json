@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/coarse-salt",
+  "tier": "drafted",
+  "names": {"en": "Coarse salt", "fr": "Gros sel"},
+  "aliases": {"en": ["coarse sea salt", "sal gorda"]},
+  "is_a": [
+    {"thing": "ingredient/salt", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Large crystals of salt that dissolve slowly. Boiled with potatoes in a little water, it leaves a thin crust of salt on the skins as the water dries away, and scattered on at the end it gives crunch. It is easy to over-salt with if it is measured by the spoonful like fine salt.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

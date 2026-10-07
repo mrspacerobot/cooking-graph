@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/parmesan-rind",
+  "tier": "drafted",
+  "names": {"en": "Parmesan rind", "fr": "Croûte de parmesan"},
+  "aliases": {"en": ["Parmigiano Reggiano rind"]},
+  "is_a": [],
+  "part_of": [
+    {"thing": "ingredient/parmesan", "tier": "drafted"}
+  ],
+  "groups": [],
+  "forms": [],
+  "behaviour": "The hard outer crust of a wheel of Parmesan, too tough to grate or to chew. Simmered in a soup or a pot of beans it softens and gives a deep savoury taste, and it is lifted out at the end.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is the crust of a cheese made from milk.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "It is made with calf rennet.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

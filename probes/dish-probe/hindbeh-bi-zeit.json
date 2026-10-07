@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/hindbeh-bi-zeit",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "mezze",
+  "dish": "Hindbeh bi zeit",
+  "also_called": ["dandelion greens with caramelised onions", "hindbeh"],
+  "techniques": ["blanch", "squeeze", "caramelise", "saute"],
+  "ingredients": ["dandelion green", "onion", "olive oil", "lemon juice", "garlic", "salt"]
+}

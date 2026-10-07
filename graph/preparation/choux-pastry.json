@@ -1,0 +1,28 @@
+{
+  "id": "preparation/choux-pastry",
+  "tier": "drafted",
+  "names": {"en": "Choux pastry", "fr": "Pâte à choux"},
+  "aliases": {"en": ["choux paste"]},
+  "is": "A paste of flour cooked in hot water and butter, then beaten with eggs until it is glossy. Baked, it puffs into hollow shells. Poached, it makes light dumplings.",
+  "parts": [
+    {
+      "id": "water",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/milk"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "base", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-choux-pastry", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

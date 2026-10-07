@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/caponata",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "vegetables",
+  "dish": "Caponata",
+  "also_called": ["Sicilian sweet and sour aubergine"],
+  "techniques": ["salt and drain", "fry", "sweat", "make agrodolce", "simmer"],
+  "ingredients": ["aubergine", "celery", "onion", "tomato", "caper", "green olive", "vinegar", "sugar", "olive oil"]
+}

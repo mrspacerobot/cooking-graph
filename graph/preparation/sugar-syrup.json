@@ -1,0 +1,26 @@
+{
+  "id": "preparation/sugar-syrup",
+  "tier": "drafted",
+  "names": {"en": "Sugar syrup"},
+  "aliases": {"en": ["simple syrup"]},
+  "is": "Sugar dissolved in water and simmered until it is clear and lightly thick. It soaks into pastry, sweetens fruit and drinks, and glazes cakes.",
+  "parts": [
+    {
+      "id": "sugar",
+      "role": "sweetener",
+      "options": ["ingredient/sugar", "ingredient/brown-sugar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon-juice"], "optional": true, "tier": "drafted"},
+    {"id": "honey", "role": "sweetener", "options": ["ingredient/honey"], "optional": true, "tier": "drafted"},
+    {"id": "cinnamon", "role": "aromatic", "options": ["ingredient/cinnamon"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-syrup", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": []
+}

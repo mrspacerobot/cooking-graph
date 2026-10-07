@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/pistachio",
+  "tier": "drafted",
+  "names": {"en": "Pistachio", "fr": "Pistache"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A small green kernel with a sweet, resinous taste. It turns dull and bitter if it is browned hard, so it is used raw or lightly toasted, chopped for a filling, or ground into a paste.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/tree-nuts", "basis": "It is a tree nut.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"},
+    {"thing": "cuisine/turkish", "tier": "drafted"},
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

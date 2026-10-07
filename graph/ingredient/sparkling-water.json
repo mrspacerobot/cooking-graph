@@ -1,0 +1,24 @@
+{
+  "id": "ingredient/sparkling-water",
+  "tier": "drafted",
+  "names": {"en": "Sparkling water", "fr": "Eau gazeuse"},
+  "aliases": {"en": ["fizzy water", "carbonated water"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Water with dissolved gas. Whisked into a frying batter, it makes the coating lighter and crisper.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

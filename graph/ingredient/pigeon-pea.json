@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/pigeon-pea",
+  "tier": "drafted",
+  "names": {"en": "Pigeon pea", "fr": "Pois d'Angole"},
+  "aliases": {"en": ["toor dal", "arhar dal"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pulses", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A small yellow pulse, sold split and skinned. It cooks to a thick, soft, creamy mash that needs no soaking if it is pressure cooked, and it is the base of everyday lentil stews.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

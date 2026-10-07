@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/crema-catalana",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "desserts",
+  "dish": "Crema catalana",
+  "also_called": ["Catalan cream", "crema cremada"],
+  "techniques": ["infuse", "temper", "thicken", "caramelize"],
+  "ingredients": ["egg yolk", "milk", "sugar", "cornstarch", "cinnamon", "lemon zest"]
+}

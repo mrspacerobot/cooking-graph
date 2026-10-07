@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/okra",
+  "tier": "drafted",
+  "names": {"en": "Okra", "fr": "Gombo"},
+  "aliases": {"en": ["ladies' fingers", "bhindi", "bamia", "bamieh", "bamya"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/watery-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Green ridged pods that hold a slippery sap, which thickens a stew and turns stringy if the cut pods are stirred. Cooked whole and fast in hot fat, or with something sour, they stay firm and keep the sap in.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"},
+    {"thing": "cuisine/lebanese", "tier": "drafted"},
+    {"thing": "cuisine/turkish", "tier": "drafted"},
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

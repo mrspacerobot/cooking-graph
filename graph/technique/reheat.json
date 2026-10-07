@@ -1,0 +1,50 @@
+{
+  "id": "technique/reheat",
+  "tier": "drafted",
+  "names": {"en": "Reheat"},
+  "aliases": {"en": ["reheat gently", "ribollire"]},
+  "does": "Brings food that was cooked earlier back to a hot, bubbling state, gently enough that it neither dries out nor catches on the pan. Beans and soups often taste better for the rest, and the Tuscan ribollita is made for exactly that: a soup that is boiled again.",
+  "how": [
+    "Take the food from the fridge a little ahead of time if it is thick and dense.",
+    "Put it in a heavy pan with a splash of stock or water, to loosen it and stop it catching.",
+    "Warm it over low heat, stirring up from the bottom now and then, until it bubbles gently at the centre as well as at the edge.",
+    "Taste and adjust the salt, which can flatten as the food rests."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Small, steady bubbles break at the surface in the middle of the pan as well as at the edge."
+    },
+    {"sense": "feel", "text": "The spoon moves freely along the bottom, with nothing stuck."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Reheating over high heat, so that the bottom catches while the top is still cold.",
+      "fix": "Use low heat and stir up from the bottom."
+    },
+    {
+      "mistake": "Leaving a thick soup or stew with no extra liquid, so that it dries and sticks.",
+      "fix": "Add a splash of stock or water first."
+    },
+    {"mistake": "Boiling hard, so that beans break and fall apart.", "fix": "Keep it at a gentle bubble."}
+  ],
+  "works_on": [
+    {"thing": "group/pulses", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/stock"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "Food is warmed again at a gentle simmer, so a cook has to be able to hold one.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

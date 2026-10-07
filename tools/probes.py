@@ -23,7 +23,7 @@ KINDS_THAT_ANSWER = {
 Result = namedtuple("Result", ["growing", "held_back"])
 
 
-ANSWER_FIELDS = ["probe_id", "batch", "skill", "dish", "techniques", "ingredients", "missing_techniques", "missing_ingredients", "dishes"]
+ANSWER_FIELDS = ["probe_id", "batch", "cuisine", "skill", "dish", "techniques", "ingredients", "missing_techniques", "missing_ingredients", "dishes"]
 
 
 class Answer(namedtuple("Answer", ANSWER_FIELDS)):
@@ -77,6 +77,7 @@ def answer(probe, indexes):
     return Answer(
         probe_id=probe["id"],
         batch=probe["batch"],
+        cuisine=probe["cuisine"],
         skill=probe["written_for"],
         dish=probe["dish"],
         techniques=list(probe["techniques"]),
@@ -87,14 +88,16 @@ def answer(probe, indexes):
     )
 
 
-def run(things, batch=None):
-    """Answer every dish probe, or those of one batch, the growing ones and the held-back ones apart."""
+def run(things, batch=None, cuisine=None):
+    """Answer every dish probe, or those of one batch or one cuisine, the growing ones and the held-back ones apart."""
     indexes = {word: name_index(things, kinds) for word, kinds in KINDS_THAT_ANSWER.items()}
     result = Result(growing=[], held_back=[])
     for thing_id, thing in sorted(things.items()):
         if thing.kind != "dish-probe":
             continue
         if batch is not None and thing.data["batch"] != batch:
+            continue
+        if cuisine is not None and thing.data["cuisine"] != cuisine:
             continue
         if thing.data["set"] == "held-back":
             result.held_back.append(answer(thing.data, indexes))
@@ -108,8 +111,13 @@ def share(answers):
     return (len([one for one in answers if one.answered]), len(answers))
 
 
-def shares(result):
-    return {"growing": share(result.growing), "held-back": share(result.held_back)}
+def shares(result, cuisine=None):
+    """The probes answered in each set, for every cuisine or for one."""
+    growing, held_back = result.growing, result.held_back
+    if cuisine is not None:
+        growing = [one for one in growing if one.cuisine == cuisine]
+        held_back = [one for one in held_back if one.cuisine == cuisine]
+    return {"growing": share(growing), "held-back": share(held_back)}
 
 
 def words_answered(answers):
@@ -213,6 +221,15 @@ def skill_lines(result):
     return lines
 
 
+def cuisine_lines(result):
+    """The probes answered for each cuisine. A slice is judged on its own cuisine, so the numbers are never pooled."""
+    lines = []
+    for cuisine in sorted({one.cuisine for one in result.growing + result.held_back}):
+        counted = shares(result, cuisine=cuisine)
+        lines.append("  %s: growing %s, held back %s" % (cuisine, as_share(counted["growing"]), as_share(counted["held-back"])))
+    return lines
+
+
 def gap_lines(result, field, title):
     found = gaps(result.growing, field)
     lines = ["  %s (%d):" % (title, len(found))]
@@ -234,6 +251,11 @@ def report(result):
     for name, words in word_shares(result).items():
         counted = (name, as_share(words["techniques"]), as_share(words["ingredients"]))
         lines.append("  %s: techniques %s, ingredients %s" % counted)
+    lines += [
+        "",
+        "By cuisine:",
+    ]
+    lines.extend(cuisine_lines(result))
     lines += [
         "",
         "By skill:",

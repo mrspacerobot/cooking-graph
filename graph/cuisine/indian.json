@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/indian",
+  "tier": "drafted",
+  "names": {"en": "Indian", "fr": "Indienne"},
+  "aliases": {"en": ["Indian cooking", "Indian cuisine"]},
+  "within": null
+}

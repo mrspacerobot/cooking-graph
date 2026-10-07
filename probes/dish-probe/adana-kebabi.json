@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/adana-kebabi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "kebabs-and-grilling",
+  "dish": "Adana kebabı",
+  "also_called": ["adana kebab", "minced lamb kebab"],
+  "techniques": ["mince", "knead", "skewer", "grill"],
+  "ingredients": [
+    "lamb",
+    "lamb tail fat",
+    "red pepper flakes",
+    "red pepper paste",
+    "salt",
+    "flatbread",
+    "onion",
+    "sumac"
+  ]
+}

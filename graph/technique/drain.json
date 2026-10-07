@@ -1,0 +1,51 @@
+{
+  "id": "technique/drain",
+  "tier": "drafted",
+  "names": {"en": "Drain", "fr": "Égoutter"},
+  "aliases": {"en": ["drain well", "drain in a colander", "drain on a rack"], "fr": ["laisser égoutter"]},
+  "does": "Lets water or oil run off food after it has been boiled, soaked, salted or fried, so that it is not watery or greasy when it meets the next step.",
+  "how": [
+    "Tip boiled food into a colander set in the sink, and give it a good shake. Keep a ladleful of the cooking water if the dish will want it.",
+    "Leave soaked or salted food in a colander for a while, and press out the rest of the water with the hands or a cloth.",
+    "Lift fried food out with a slotted spoon and set it on a rack or on paper.",
+    "Shake or toss the food once to free the last of the liquid."
+  ],
+  "cues": [
+    {"sense": "see", "text": "No more drops fall from the food."},
+    {"sense": "feel", "text": "The food is no longer slippery with water, and fried pieces feel dry and light."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Draining fried food flat on a plate, where it steams and goes soft.",
+      "fix": "Set it on a rack, or on paper that is changed when it soaks through."
+    },
+    {
+      "mistake": "Throwing away all the cooking water of pasta, when the dish needs it to loosen a sauce.",
+      "fix": "Scoop out a ladleful first."
+    },
+    {
+      "mistake": "Draining too little, so that the food waters down the dish.",
+      "fix": "Shake it well, and press out what a cloth can take."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pasta", "tier": "drafted"},
+    {"thing": "group/pulses", "tier": "drafted"},
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/lean-fish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "tool",
+      "options": ["equipment/colander", "equipment/wire-rack", "equipment/slotted-spoon"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

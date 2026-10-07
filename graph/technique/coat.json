@@ -1,0 +1,54 @@
+{
+  "id": "technique/coat",
+  "tier": "drafted",
+  "names": {"en": "Coat", "fr": "Paner"},
+  "aliases": {
+    "en": ["coat in breadcrumbs", "coat with mustard and crumbs", "crumb", "bread"],
+    "fr": ["enrober de chapelure"]
+  },
+  "does": "Covers a piece of meat in a layer of breadcrumbs over a sticky coat of mustard or beaten egg, which turns into a crisp crust when the piece is cooked.",
+  "how": [
+    "Pat the pieces dry and season them.",
+    "Brush a thin, even layer of mustard or beaten egg over every side, so that the crumbs have something to hold to.",
+    "Tip the crumbs into a shallow dish. Press each piece into them, turn it, and press again.",
+    "Shake off the loose crumbs and lay the pieces on a rack, so that the coat sets before cooking."
+  ],
+  "cues": [
+    {"sense": "see", "text": "An even coat of crumbs on every side, with no bare patch."},
+    {"sense": "feel", "text": "The crumbs hold when the piece is picked up and do not rain off."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Brushing on a thick layer of mustard, which slides off with the crumbs.",
+      "fix": "Brush on a thin, even layer."
+    },
+    {"mistake": "Coating wet meat, so that the crumbs go soggy and fall off.", "fix": "Pat the meat dry first."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/pork-shoulder", "tier": "drafted"},
+    {"thing": "ingredient/veal-escalope", "tier": "drafted"},
+    {"thing": "ingredient/pork-chop", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "coating", "options": ["preparation/breadcrumbs"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/dijon-mustard", "ingredient/egg"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-dish"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wire-rack"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/season",
+      "why": "The meat is seasoned first, because the coat shuts the seasoning off once it is on.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/dredge",
+      "differs": "Dredging dusts the piece with dry flour. Here a wet coat of mustard or egg goes on first and crumbs are pressed into it, to make a thick crisp crust.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/lamb-liver",
+  "tier": "drafted",
+  "names": {"en": "Lamb liver", "fr": "Foie d'agneau"},
+  "aliases": {"en": ["lamb's liver"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/offal", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Dark red, fine grained and mild, with a thin skin and fine tubes that are trimmed away. It cooks in moments and turns grainy and tough if it is cooked on, so it is seared quickly or cut small into a hot dish.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is an organ of a sheep.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

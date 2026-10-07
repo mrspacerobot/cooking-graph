@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/sesame-seed",
+  "tier": "drafted",
+  "names": {"en": "Sesame seed", "fr": "Graine de sésame"},
+  "aliases": {"en": ["sesame seeds", "goma"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A tiny seed that tastes nutty when it is toasted in a dry pan and turns bitter if it scorches. It is scattered over food, crushed into a dressing, or ground into a paste.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/sesame", "basis": "It is the sesame seed itself.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts",
+      "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"},
+    {"thing": "cuisine/moroccan", "tier": "drafted"},
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

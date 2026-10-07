@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/sumac",
+  "tier": "drafted",
+  "names": {"en": "Sumac", "fr": "Sumac"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A coarse, deep-red powder ground from dried berries, tart and fruity like lemon, without the wetness. It is sprinkled over food at the end or stirred into a dressing or marinade, since long heat dulls it.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"},
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

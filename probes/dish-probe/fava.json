@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/fava",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "meze",
+  "dish": "Fava",
+  "also_called": ["broad bean puree", "fava bean dip"],
+  "techniques": ["simmer", "blend", "chill"],
+  "ingredients": ["dried broad bean", "onion", "olive oil", "dill", "lemon", "sugar"]
+}

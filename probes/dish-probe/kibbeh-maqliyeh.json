@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kibbeh-maqliyeh",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "frying",
+  "dish": "Kibbeh maqliyeh",
+  "also_called": ["fried kibbeh", "kibbeh balls", "kibbeh raas"],
+  "techniques": ["grind", "knead", "saute", "shape", "stuff", "deep fry"],
+  "ingredients": ["lamb", "fine bulgur", "onion", "pine nut", "allspice", "cinnamon", "sumac"]
+}

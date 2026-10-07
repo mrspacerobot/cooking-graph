@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/mozzarella",
+  "tier": "drafted",
+  "names": {"en": "Mozzarella", "fr": "Mozzarella"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A soft, springy, milky cheese that is stretched while hot and sold in its whey. It melts into long strings, and it turns watery on a dish unless it is drained and dried first.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from milk.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "Many mozzarellas are set with animal rennet.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

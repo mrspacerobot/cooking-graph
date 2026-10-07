@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/curry-leaf",
+  "tier": "drafted",
+  "names": {"en": "Curry leaf", "fr": "Feuille de curry"},
+  "aliases": {"en": ["curry leaves", "kadi patta", "kari patta"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "The small glossy leaf of a tropical tree, with a citrusy, nutty, faintly smoky scent. Dropped into hot fat it spits and crisps in moments, and the scented fat is the point. It is not curry powder.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

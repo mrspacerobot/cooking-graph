@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/ground-lamb",
+  "tier": "drafted",
+  "names": {"en": "Ground lamb", "fr": "Agneau haché"},
+  "aliases": {"en": ["minced lamb", "lamb mince"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Lamb cut or ground fine, rich and strongly flavoured, with a good share of fat. It binds when it is kneaded with salt and spices, takes a shape easily on skewers, and shrinks and dries if it is cooked on past brown.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is the flesh of a sheep.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

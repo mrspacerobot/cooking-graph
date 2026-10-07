@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kuru-fasulye",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "stews",
+  "dish": "Kuru fasulye",
+  "also_called": ["white bean stew"],
+  "techniques": ["soak", "saute", "simmer"],
+  "ingredients": ["white bean", "onion", "tomato paste", "red pepper paste", "butter", "green pepper"]
+}

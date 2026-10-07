@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/mujaddara",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "rice-dishes",
+  "dish": "Mujaddara",
+  "also_called": ["mjaddara", "moujadara", "lentils and rice"],
+  "techniques": ["boil", "caramelise", "simmer", "rest"],
+  "ingredients": ["brown lentil", "rice", "onion", "olive oil", "cumin", "salt"]
+}

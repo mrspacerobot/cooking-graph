@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tortilla-de-patatas",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "eggs",
+  "dish": "Tortilla de patatas",
+  "also_called": ["Spanish omelette", "tortilla española", "truita de patates"],
+  "techniques": ["slice", "fry", "beat", "flip"],
+  "ingredients": ["egg", "potato", "olive oil", "onion", "salt"]
+}

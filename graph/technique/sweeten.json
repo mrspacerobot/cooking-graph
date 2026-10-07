@@ -1,0 +1,38 @@
+{
+  "id": "technique/sweeten",
+  "tier": "drafted",
+  "names": {"en": "Sweeten"},
+  "aliases": {"en": ["add sugar", "sweeten to taste"]},
+  "does": "Adds sugar to a food a little at a time and tastes after each addition, to bring it to the right level of sweetness without hiding its own taste.",
+  "how": [
+    "Cook the food until it is soft enough to take up the sugar.",
+    "Add the sugar in portions, stirring each in until it has dissolved.",
+    "Taste after each portion and stop when the sweetness is balanced.",
+    "Add a small amount of salt at the end to round the taste."
+  ],
+  "cues": [
+    {"sense": "taste", "text": "The sweetness is clear but does not drown the taste of the food."},
+    {"sense": "see", "text": "No grains of sugar remain."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding all the sugar at once, so that it is too sweet and cannot be corrected.",
+      "fix": "Add it a little at a time."
+    },
+    {
+      "mistake": "Adding sugar to dried beans before they are soft, so that they stay hard.",
+      "fix": "Cook them soft first."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/azuki-bean", "tier": "drafted"},
+    {"thing": "group/firm-fruits", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "seasoning", "options": ["ingredient/sugar", "ingredient/honey"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

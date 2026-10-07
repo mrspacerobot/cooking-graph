@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/cardamom",
+  "tier": "drafted",
+  "names": {"en": "Cardamom", "fr": "Cardamome"},
+  "aliases": {"en": ["elaichi", "green cardamom"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/whole-spices", "tier": "drafted"},
+    {"thing": "group/tempering-spices", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Small green pods that hold sticky black seeds with a sweet, floral, cooling scent. The pods are cracked and dropped whole into hot fat or a pot of rice, or the seeds are ground for sweets and spice blends.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

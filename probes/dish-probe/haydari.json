@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/haydari",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "meze",
+  "dish": "Haydari",
+  "also_called": ["strained yogurt dip with herbs"],
+  "techniques": ["strain", "mash", "mix"],
+  "ingredients": ["strained yogurt", "garlic", "dried mint", "dill", "white cheese", "olive oil"]
+}

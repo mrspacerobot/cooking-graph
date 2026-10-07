@@ -1,0 +1,24 @@
+{
+  "id": "ingredient/radish",
+  "tier": "drafted",
+  "names": {"en": "Radish", "fr": "Radis"},
+  "aliases": {"en": ["radishes"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A small, crisp root with a peppery bite and a fresh, watery crunch. It is sliced raw into salads, and the heat fades if it is salted or left in cold water.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

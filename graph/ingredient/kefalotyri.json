@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/kefalotyri",
+  "tier": "drafted",
+  "names": {"en": "Kefalotyri"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/grating-cheeses", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A hard, salty, sharp cheese of sheep's or goat's milk. It grates over baked pasta and pies, where it browns to a crust, and cut in slices it fries until crisp outside and soft within.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from the milk of sheep or goats.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "It is traditionally made with animal rennet.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "Animal rennet is taken from the stomach of a young calf, kid or lamb."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

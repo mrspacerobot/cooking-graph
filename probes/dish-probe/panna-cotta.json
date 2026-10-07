@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/panna-cotta",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "desserts",
+  "dish": "Panna cotta",
+  "also_called": ["cooked cream"],
+  "techniques": ["bloom gelatin", "infuse", "simmer", "set", "unmould"],
+  "ingredients": ["cream", "sugar", "gelatin", "vanilla", "milk"]
+}

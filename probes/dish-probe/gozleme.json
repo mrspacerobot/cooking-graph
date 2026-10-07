@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/gozleme",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "dough-and-pastry",
+  "dish": "Gözleme",
+  "also_called": ["stuffed griddle flatbread"],
+  "techniques": ["knead", "roll", "fill", "griddle"],
+  "ingredients": ["flour", "yogurt", "spinach", "white cheese", "onion", "butter"]
+}

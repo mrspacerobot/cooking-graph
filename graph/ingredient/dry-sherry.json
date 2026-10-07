@@ -1,0 +1,34 @@
+{
+  "id": "ingredient/dry-sherry",
+  "tier": "drafted",
+  "names": {"en": "Dry sherry", "fr": "Xérès sec"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/wines", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A pale, dry, sharp fortified wine from the south of Spain. A splash in a hot pan lifts the browned bits and scents shellfish, garlic and ham. It must boil down to lose its raw taste of spirit.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "It is a fortified wine.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "Some wines are cleared with animal finings.", "certain": false},
+      {"fact": "fact/fish", "basis": "Some wines are cleared with fish finings.", "certain": false},
+      {"fact": "fact/egg", "basis": "Some wines are cleared with egg white.", "certain": false},
+      {"fact": "fact/milk", "basis": "Some wines are cleared with milk protein.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Wines are usually kept with sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/gluten", "fact/lupin",
+      "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/miso",
+  "tier": "drafted",
+  "names": {"en": "Miso"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A thick paste of fermented soybeans and grain. It goes into a pot at the end, stirred smooth into a little warm liquid, because a hard boil dulls its scent.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/soy", "basis": "It is fermented from soybeans.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Recorded strictly: some miso is made with wheat or barley.", "certain": false},
+      {"fact": "fact/gluten", "basis": "Recorded strictly: some miso is made with wheat or barley.", "certain": false},
+      {"fact": "fact/fish", "basis": "Recorded strictly: some miso has fish stock added.", "certain": false},
+      {"fact": "fact/alcohol", "basis": "Recorded strictly: some miso has alcohol added to keep it.", "certain": false}
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg", "fact/lupin", "fact/meat",
+      "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

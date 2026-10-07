@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/moussaka",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "baked-dishes",
+  "dish": "Moussaka",
+  "also_called": ["mousaka"],
+  "techniques": ["fry", "simmer", "make bechamel", "layer", "bake"],
+  "ingredients": ["eggplant", "potato", "ground beef", "onion", "tomato", "milk", "butter", "flour", "cinnamon"]
+}

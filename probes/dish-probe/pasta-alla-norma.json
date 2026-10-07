@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pasta-alla-norma",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Pasta alla Norma",
+  "also_called": ["pasta with aubergine and ricotta salata"],
+  "techniques": ["fry", "make a tomato sauce", "boil pasta", "toss pasta with sauce"],
+  "ingredients": ["pasta", "aubergine", "tomato", "ricotta salata", "basil", "garlic", "olive oil"]
+}

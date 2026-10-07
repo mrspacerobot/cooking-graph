@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/gujarati-kadhi",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "yogurt-dishes",
+  "dish": "Gujarati kadhi",
+  "also_called": ["kadhi", "dahi kadhi"],
+  "techniques": ["whisk", "simmer", "temper spices in hot fat"],
+  "ingredients": [
+    "yogurt",
+    "chickpea flour",
+    "ghee",
+    "mustard seed",
+    "cumin seed",
+    "curry leaf",
+    "ginger",
+    "green chili",
+    "jaggery"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/maamoul",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "desserts",
+  "dish": "Maamoul",
+  "also_called": ["ma'amoul", "date and nut shortbread", "maamoul bi tamer"],
+  "techniques": ["knead", "rest", "stuff", "mould", "bake"],
+  "ingredients": ["semolina", "butter", "date", "walnut", "pistachio", "orange blossom water", "rose water", "sugar"]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "technique/griddle",
+  "tier": "drafted",
+  "names": {"en": "Griddle", "fr": "Cuire sur une plaque"},
+  "aliases": {"en": ["cook on a griddle", "griddle cook", "cook on a plancha"], "fr": ["cuire à la plancha"]},
+  "does": "Cooks flat foods on a wide, flat, heavy surface that is dry or only lightly oiled, so that they brown in speckles and spots on each face and stay soft within, without being fried in a pool of fat.",
+  "how": [
+    "Heat the griddle well in advance, until it is evenly hot all over and a drop of water skips off it.",
+    "Wipe it with a thin film of oil, or leave it dry for a dough that holds its own fat.",
+    "Lay the food down flat and leave it still until the underside is spotted brown and it lifts easily.",
+    "Turn it and cook the other face, pressing lightly if it puffs.",
+    "Stack the finished pieces in a cloth so that they stay soft."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Brown speckles on the underside, and bubbles or puffing on the top."},
+    {"sense": "smell", "text": "A toasty, bready smell, and not a burnt one."},
+    {"sense": "hear", "text": "A quiet sizzle when the food touches down."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Putting the food on before the griddle is hot, so that it dries out and turns stiff.",
+      "fix": "Preheat it until it is evenly hot."
+    },
+    {"mistake": "Using too much oil, which fries the food and turns it greasy.", "fix": "Wipe on only a thin film."},
+    {
+      "mistake": "Leaving the finished food open to the air, where it dries and stiffens.",
+      "fix": "Stack it in a cloth to keep it soft."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/bread-dough", "tier": "drafted"},
+    {"thing": "group/breads", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/griddle", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "The food lies on a flat surface that is dry or barely oiled and browns in speckles, where pan-frying cooks in a film of fat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

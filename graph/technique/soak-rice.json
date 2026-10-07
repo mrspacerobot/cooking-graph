@@ -1,0 +1,50 @@
+{
+  "id": "technique/soak-rice",
+  "tier": "drafted",
+  "names": {"en": "Soak rice"},
+  "aliases": {"en": ["soak the rice"]},
+  "does": "Leaves washed rice in cold water until the grains have turned white and plump all through, so that they cook evenly and come out tender in the middle.",
+  "how": [
+    "Put the washed, drained rice in the pot or in a bowl and cover it with cold water.",
+    "Leave it until the grains turn from clear to chalky white.",
+    "Drain it well and let it sit in the sieve for a short while.",
+    "Cook it in fresh measured water."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The grains turn from glassy to an even, chalky white."},
+    {"sense": "feel", "text": "A grain crushes easily between the fingers, with no hard core."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Soaking for too long in warm weather, so that the rice sours.",
+      "fix": "Soak it in cold water and shorter."
+    },
+    {
+      "mistake": "Cooking it in the soaking water, so that the amount of water is wrong.",
+      "fix": "Drain it and add the measured water."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/fine-sieve"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/wash-rice", "why": "The rice is soaked after it has been washed.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/soak",
+      "differs": "It is a short soak of washed rice in cold water until the grains turn white, and not a long soak of dried pulses, and the water is poured off.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

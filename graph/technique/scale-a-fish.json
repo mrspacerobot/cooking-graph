@@ -1,0 +1,38 @@
+{
+  "id": "technique/scale-a-fish",
+  "tier": "drafted",
+  "names": {"en": "Scale a fish", "fr": "Écailler le poisson"},
+  "aliases": {"en": ["scale", "scale the fish", "descale"], "fr": ["écailler"]},
+  "does": "Scrapes the scales off the skin of a whole fish, so that none are left to catch in the mouth or to make the skin gritty.",
+  "how": [
+    "Hold the fish firmly by the tail on a board that cannot slip. A deep sink or a large tray catches the flying scales.",
+    "With the back of a knife, scrape from the tail towards the head in short firm strokes, against the way the scales lie.",
+    "Turn the fish over and do the other side. Go carefully round the fins, the belly and the base of the head, where scales hide.",
+    "Rinse the fish under cold water and run a finger from tail to head to find any scale that is left."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The skin is smooth under a finger run from tail to head, with no rough edge."},
+    {"sense": "hear", "text": "A dry rasping sound as the scales lift. It goes quiet once the skin is bare."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Scraping from the head towards the tail, which only presses the scales flat.",
+      "fix": "Scrape from the tail towards the head, against the scales."
+    },
+    {
+      "mistake": "Using the sharp edge of the knife, which cuts the skin.",
+      "fix": "Use the back of the blade, in short firm strokes."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/round-fish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

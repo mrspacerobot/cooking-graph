@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/rajma",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "curry-base",
+  "dish": "Rajma",
+  "also_called": ["rajma masala", "rajma chawal"],
+  "techniques": ["soak", "pressure cook", "saute", "simmer"],
+  "ingredients": ["kidney bean", "onion", "tomato", "ginger", "garlic", "cumin seed", "garam masala", "coriander leaf"]
+}

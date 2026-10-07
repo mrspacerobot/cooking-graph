@@ -527,6 +527,20 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 - **No promotion:** changing the shape or adding a prohibition earns no tier.
   All these statements remain drafted, awaiting a cook's judgment.
 
+### 29. A dish probe says which cuisine it asks about (new cuisines)
+
+- **Example:** a weeknight chicken with couscous. The only program is French, and `written_for` had to name one of its skills, so no probe could be written for a Moroccan, Japanese or Indian dish. A slice is also judged on its own probes, and a share pooled over every cuisine would hide a new one behind French.
+- **Now:** `dish-probe` has a `cuisine`, the slug of a `cuisine` of the graph, written after `written_by`. A probe for a cuisine that is not in the graph is refused. `written_for` names a skill of a program of that cuisine. A cuisine with no program yet has no skills to name, so its probes name any topic, such as rice or grilling, and they name a skill once the cuisine has a program. The 215 existing probes are `french`. `./probe` reports the probes answered for each cuisine and `./probe --cuisine japanese` runs one alone. The cuisines `japanese`, `indian` and `moroccan` are in the graph as bare names, drafted, so that probes can point at them.
+- **Not yet:** a step probe is still not a kind of the model. Cuisine names in their own script need languages beyond `en` and `fr`, and that list is closed.
+- **No promotion:** nothing is above drafted. A cuisine node carries no knowledge and no reviewer is named.
+
+### 30. Guards against one thing written twice (new cuisines)
+
+- **Example:** the rule that refuses one name on two things looked at one kind at a time. An ingredient and a preparation could share a name, aubergine and eggplant could be two files, and two agents working apart could each add the same ingredient and both pass.
+- **Now:** an ingredient and a preparation may not share a name, except the four pairs in `schema/buy-or-make.json`, which are the things a cook either buys or makes, such as stock and broth. `./twins` lists pairs that are probably one thing: the same words in the singular and in another order, or two names that a list of synonyms in `schema/synonyms.json` joins. It never blocks, because a pair may be two different things. `./merge` copies new files of another checkout in, and refuses a file whose id exists or whose name or alias another thing of its family holds. It never overwrites a file.
+- **Not yet:** nothing finds two things that are one thing and share no word and no listed synonym.
+- **No promotion:** these files are tools and lists. They carry no tier.
+
 ## Decisions where the starting model was silent
 
 These are not changes. The starting model names kinds and statements, not files, so the first files had to settle them.

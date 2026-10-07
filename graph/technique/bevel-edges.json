@@ -1,0 +1,44 @@
+{
+  "id": "technique/bevel-edges",
+  "tier": "drafted",
+  "names": {"en": "Bevel edges"},
+  "aliases": {"en": ["mentori", "round the corners", "round off the edges"]},
+  "does": "Shaves the sharp corners from cut pieces of a firm vegetable, so that they hold their shape and do not break or cloud the liquid while they simmer.",
+  "how": [
+    "Cut the vegetable into chunks.",
+    "Hold a chunk in one hand and run a knife around its sharp edges, taking off a thin sliver from each corner.",
+    "Work around every chunk, so that all the corners are rounded.",
+    "Rinse the pieces, if they are starchy, before they go into the pot."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The pieces have smooth, rounded corners and no sharp edges."},
+    {"sense": "feel", "text": "The pieces are smooth in the hand and do not catch."}
+  ],
+  "mistakes": [
+    {"mistake": "Taking off too much, which wastes the vegetable.", "fix": "Take off only a thin sliver."},
+    {
+      "mistake": "Skipping it for long simmering, so that the corners break off and cloud the liquid.",
+      "fix": "Bevel the edges of any piece that will simmer for long."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "ingredient/kabocha", "tier": "drafted"},
+    {"thing": "ingredient/pumpkin", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/paring-knife", "equipment/chefs-knife"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/cut-into-chunks",
+      "why": "The edges are bevelled after the food is cut into pieces.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

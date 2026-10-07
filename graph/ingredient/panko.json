@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/panko",
+  "tier": "drafted",
+  "names": {"en": "Panko"},
+  "aliases": {"en": ["Japanese breadcrumbs"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Coarse, airy flakes of dried white bread. They fry up lighter and crunchier than fine crumbs, and soak up little oil.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/wheat", "basis": "It is dried wheat bread.", "certain": true},
+      {"fact": "fact/gluten", "basis": "It is dried wheat bread.", "certain": true},
+      {"fact": "fact/milk", "basis": "Recorded strictly: some bread is made with milk.", "certain": false},
+      {"fact": "fact/soy", "basis": "Recorded strictly: some bread is made with soy flour.", "certain": false},
+      {"fact": "fact/egg", "basis": "Recorded strictly: some bread is made with egg.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

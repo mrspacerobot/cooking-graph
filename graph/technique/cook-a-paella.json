@@ -1,0 +1,62 @@
+{
+  "id": "technique/cook-a-paella",
+  "tier": "drafted",
+  "names": {"en": "Cook a paella"},
+  "aliases": {"en": ["make a paella", "cook rice in a paella pan"]},
+  "does": "Cooks short-grain rice in a thin, even layer in a wide, shallow pan, in a well-flavoured broth, with no lid and no stirring, until the rice has taken the broth up and a thin toasted crust, the socarrat, forms on the bottom.",
+  "how": [
+    "Bring the flavoured broth, which has already simmered with its meat and vegetables, to a lively boil in the paella pan. Taste it: it should taste a little strong, as the rice will soften it.",
+    "Scatter the rice evenly over the pan in one layer and stir once to spread it. Do not stir again.",
+    "Cook at a strong simmer, then turn the heat down once the rice has swollen. Turn the pan over the flame if it is bigger than the burner, so that all the rice cooks at one pace.",
+    "When the broth has almost gone and the rice is nearly tender, turn the heat up for a short while to toast the bottom.",
+    "Take the pan off the heat and let it rest, covered with a clean cloth, so that the rice finishes in its own steam."
+  ],
+  "cues": [
+    {
+      "sense": "hear",
+      "text": "The bubbling gives way to a faint crackle as the last of the liquid goes and the bottom begins to toast."
+    },
+    {"sense": "smell", "text": "A nutty, toasted smell. A burnt smell means the pan must come off the heat at once."},
+    {"sense": "see", "text": "The rice lies in a thin, even layer with separate grains and no liquid standing."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring the rice, which releases starch and makes it creamy like a risotto and not loose.",
+      "fix": "Spread it once and then leave it alone."
+    },
+    {
+      "mistake": "Too much broth or too deep a layer, which leaves the rice soft, wet and uneven.",
+      "fix": "Measure the broth against the rice and keep the layer thin."
+    },
+    {
+      "mistake": "Toasting the bottom too long, so that the crust burns.",
+      "fix": "Listen for the crackle, smell the pan, and take it off the heat when it smells toasty."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/paella-pan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-a-sofrito",
+      "why": "The broth and the base of a paella start from a sofrito.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/cook-rice",
+      "differs": "The rice is cooked uncovered, in a thin layer in a wide pan and in a flavoured broth, with no stirring, and it is finished with a toasted crust on the bottom. Plain rice is cooked under a tight lid.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

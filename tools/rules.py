@@ -219,6 +219,35 @@ def names_once_per_kind(things):
     return issues
 
 
+FOOD_KINDS = ("ingredient", "preparation")  # the probes and the recipes look both up as one thing a cook buys or makes
+
+
+def foods_share_no_name(things, known_pairs=()):
+    """An ingredient and a preparation never share a name. A recipe line and a probe word would not know which is meant.
+
+    The pairs in `known_pairs` are the things a cook either buys or makes,
+    such as stock: the model cannot yet say it, and docs/model.md says so.
+    """
+    allowed = {frozenset(pair) for pair in known_pairs}
+    owners = {}
+    for thing_id, thing in sorted(things.items()):
+        if thing.kind in FOOD_KINDS:
+            for name in names.plain_names(thing.data):
+                owners.setdefault(name, {}).setdefault(thing.kind, []).append(thing_id)
+    issues = []
+    for name, by_kind in sorted(owners.items()):
+        if len(by_kind) < 2:
+            continue
+        everyone = [thing_id for ids in by_kind.values() for thing_id in ids]
+        if len(everyone) == 2 and frozenset(everyone) in allowed:
+            continue
+        for thing_id in everyone:
+            others = ", ".join(other for other in everyone if other != thing_id)
+            message = "the name '%s' is an ingredient and a preparation at once: also %s" % (name, others)
+            issues.append(Issue(things[thing_id].path, "names", "same-name-across-kinds", message))
+    return issues
+
+
 def can_reach_themselves(follows):
     """The things that come back to themselves by following the links."""
 

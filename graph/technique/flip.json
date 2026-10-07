@@ -1,0 +1,56 @@
+{
+  "id": "technique/flip",
+  "tier": "drafted",
+  "names": {"en": "Flip", "fr": "Retourner"},
+  "aliases": {"en": ["turn over", "flip over"], "fr": ["retourner à la spatule"]},
+  "does": "Turns food over in the pan or on the griddle at the right moment, so that its other side cooks and browns while the first side has set enough to hold together.",
+  "how": [
+    "Wait until the underside has set and browned, and the food moves freely when the pan is shaken.",
+    "Slide a wide spatula fully under the food, so that none of it hangs over the edge.",
+    "Lift and turn in one quick, confident motion, close to the pan.",
+    "For a large, soft cake, slide it onto a plate, set the pan upside down over it and turn both over together, then slide it back.",
+    "Press gently to settle it, and cook the other side."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The edges are set and dry, and the underside is a rich brown when the corner is lifted."},
+    {"sense": "feel", "text": "The food slides when the pan is shaken, and does not cling."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Flipping too early, so that the food is still soft and breaks.",
+      "fix": "Wait until the edges are set and it moves freely."
+    },
+    {
+      "mistake": "Using a narrow spatula, so that the food folds as it is lifted.",
+      "fix": "Use a wide spatula, or slide the food onto a plate first."
+    },
+    {
+      "mistake": "Hesitating in mid-air, which tears or splashes.",
+      "fix": "Turn it in one quick motion, close to the pan."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "group/breads", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spatula", "equipment/fish-slice"], "tier": "drafted"},
+    {
+      "role": "vessel",
+      "options": ["equipment/frying-pan", "equipment/non-stick-pan", "equipment/griddle"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/pan-fry",
+      "why": "Turning at the right moment depends on reading the underside of food in a pan, which pan-frying teaches.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

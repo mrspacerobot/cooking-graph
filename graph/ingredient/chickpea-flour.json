@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/chickpea-flour",
+  "tier": "drafted",
+  "names": {"en": "Chickpea flour", "fr": "Farine de pois chiche"},
+  "aliases": {"en": ["besan", "gram flour"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A pale yellow flour of ground dried chickpeas, with a nutty, slightly bitter taste. It makes batters that fry crisp, thickens sauces, and is stirred in ghee until it smells toasty for sweets.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

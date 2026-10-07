@@ -1,0 +1,156 @@
+{
+  "id": "recipe/weeknight-chicken-with-couscous",
+  "tier": "drafted",
+  "names": {"en": "Weeknight chicken with preserved lemon and couscous"},
+  "aliases": {},
+  "makes": "dish/weeknight-chicken-with-couscous",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "main"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "olive-oil"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/sliced"], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/ginger", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "ginger"},
+    {"thing": "ingredient/turmeric", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "turmeric"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {"thing": "ingredient/saffron", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "saffron"},
+    {
+      "thing": "preparation/preserved-lemon",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": [],
+      "part": "preserved-lemon"
+    },
+    {"thing": "ingredient/green-olive", "amount": {"value": 120, "unit": "gram"}, "forms": [], "part": "olives"},
+    {"thing": "ingredient/water", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/instant-couscous", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "couscous"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 350, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 4, "unit": "sprig"}, "forms": [], "part": "herbs"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/tongs", "equipment/mixing-bowl", "equipment/spoon",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/colander"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/salt", "ingredient/olive-oil"],
+      "text": "Pat the thighs dry and salt them. Heat the oil in a wide, heavy pan and brown the thighs skin side down, without moving them, until the skin is deep gold. Turn them, brown the other side, and lift them out onto a plate.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/garlic"],
+      "with": [],
+      "text": "Lower the heat. Put the onions into the fat left in the pan with a little salt and soften them, stirring now and then, until they are glossy and soft. Add the garlic for the last moments.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": [
+        "ingredient/water", "ingredient/ginger", "ingredient/turmeric", "ingredient/cumin", "ingredient/black-pepper",
+        "ingredient/saffron"
+      ],
+      "text": "Stir the ginger, the turmeric, the cumin, the pepper and the saffron into the onions for a moment, then pour in the water and scrape the pan clean.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pan-sauce"]
+    },
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/green-olive", "preparation/preserved-lemon"],
+      "with": [],
+      "text": "Rinse the olives and the preserved lemon under cold water to wash off the brine and the salt on the surface, and drain them well.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["preparation/preserved-lemon", "ingredient/coriander-leaf"],
+      "with": [],
+      "text": "Quarter the preserved lemon, scrape out the pulp and chop the rind small. Chop the coriander leaves and keep them for the end.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["preparation/pan-sauce", "preparation/preserved-lemon", "ingredient/green-olive"],
+      "text": "Put the thighs back in the pan with the sauce, skin side up, and scatter over the lemon rind and the olives. Cover and cook at a gentle simmer, turning the pieces once, until the meat is tender and the sauce has thickened a little. Check the thickest part of a thigh against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 40, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/rehydrate-couscous",
+      "works_on": ["ingredient/instant-couscous"],
+      "with": ["ingredient/chicken-stock", "ingredient/butter", "ingredient/salt"],
+      "text": "While the chicken finishes, put the couscous in a wide bowl with the butter and a little salt and rub until every grain is coated. Bring the stock to a boil, pour it over the grains all at once, stir once, and cover the bowl tightly. Leave it off the heat until the liquid is taken up.",
+      "time": {"from": 5, "to": 7, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fluff",
+      "works_on": ["ingredient/instant-couscous"],
+      "with": [],
+      "text": "Uncover the bowl and run a fork lightly through the grains, lifting and separating them, and break any lumps with the fingertips.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/braising-liquid"],
+      "with": [],
+      "text": "Lift the chicken onto a warm dish. If the sauce is thin, boil it down for a short while until it clings to a spoon.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/braising-liquid"],
+      "with": ["ingredient/salt"],
+      "text": "Taste the sauce and adjust the salt.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/instant-couscous", "ingredient/chicken-thigh"],
+      "with": ["ingredient/coriander-leaf", "preparation/braising-liquid"],
+      "text": "Heap the couscous on a warm dish, set the chicken on top and spoon the sauce, with its olives and lemon rind, over it. Scatter with the coriander.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

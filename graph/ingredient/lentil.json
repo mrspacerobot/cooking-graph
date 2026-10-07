@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/lentil",
+  "tier": "drafted",
+  "names": {"en": "Lentil", "fr": "Lentille"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pulses", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A small dried lens-shaped seed that needs no soaking and turns tender in a gentle simmer. Brown and green kinds hold their shape, and red ones dissolve into a purée. Salt added late keeps the skins soft.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/greek", "tier": "drafted"},
+    {"thing": "cuisine/moroccan", "tier": "drafted"},
+    {"thing": "cuisine/indian", "tier": "drafted"},
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "technique/make-a-sauce",
+  "tier": "drafted",
+  "names": {"en": "Make a sauce", "fr": "Faire une sauce"},
+  "aliases": {"en": ["build a sauce", "make a simple sauce"]},
+  "does": "Builds a sauce from a flavouring base cooked in fat, a liquid and a short simmer, until it coats a spoon. It is seasoned at the end, and strained or blended if it should be smooth.",
+  "how": [
+    "Cook the flavouring base in the fat first: a roux, tomato, or a spice such as paprika stirred into oil off the heat.",
+    "Add the liquid a little at a time, whisking, until the sauce is smooth.",
+    "Simmer gently, stirring now and then, until the sauce coats the back of a spoon.",
+    "Blend or strain it if it should be smooth.",
+    "Taste and season last, because a sauce grows saltier as it thickens."
+  ],
+  "cues": [
+    {"sense": "see", "text": "It coats the back of a spoon, and a finger drawn through the coat leaves a clear line."},
+    {"sense": "taste", "text": "Round and clean, with neither a raw floury taste nor a raw sharpness of spice."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Salting early and then boiling the sauce down, so that it ends up too salty.",
+      "fix": "Season at the end."
+    },
+    {"mistake": "Pouring all the liquid in at once, which makes lumps.", "fix": "Add it a little at a time and whisk."},
+    {
+      "mistake": "Stirring a spice into hot oil, where it burns and turns the sauce bitter.",
+      "fix": "Take the pan off the heat first."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "ingredient/tomato", "tier": "drafted"},
+    {"thing": "preparation/roux", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk", "equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/simmer", "why": "A sauce is brought to its body at a simmer.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

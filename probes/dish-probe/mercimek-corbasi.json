@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/mercimek-corbasi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "soups",
+  "dish": "Mercimek çorbası",
+  "also_called": ["red lentil soup"],
+  "techniques": ["saute", "simmer", "blend"],
+  "ingredients": ["red lentil", "onion", "carrot", "potato", "butter", "paprika", "lemon"]
+}

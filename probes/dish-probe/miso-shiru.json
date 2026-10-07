@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/miso-shiru",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "soups",
+  "dish": "Miso shiru",
+  "also_called": ["miso soup", "misoshiru"],
+  "techniques": ["make dashi", "simmer", "dissolve miso", "cut into cubes"],
+  "ingredients": ["dashi", "kombu", "bonito flakes", "miso", "tofu", "wakame", "spring onion"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pulpo-a-la-gallega",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "seafood",
+  "dish": "Pulpo a la gallega",
+  "also_called": ["Galician-style octopus", "polbo á feira", "pulpo á feira"],
+  "techniques": ["boil", "rest", "slice", "dress"],
+  "ingredients": ["octopus", "potato", "paprika", "olive oil", "coarse salt"]
+}

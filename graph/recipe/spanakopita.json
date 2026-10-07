@@ -1,0 +1,105 @@
+{
+  "id": "recipe/spanakopita",
+  "tier": "drafted",
+  "names": {"en": "Spanakopita"},
+  "aliases": {},
+  "makes": "dish/spanakopita",
+  "yields": {"value": 8, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/spinach", "amount": {"value": 900, "unit": "gram"}, "forms": [], "part": "spinach"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 6, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/dill", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "dill"},
+    {"thing": "ingredient/feta", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "feta"},
+    {"thing": "ingredient/egg", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/phyllo", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "phyllo"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/saute-pan", "equipment/colander", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/mixing-bowl", "equipment/baking-dish"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/spinach"],
+      "with": [],
+      "text": "Rinse the spinach in several changes of cold water until no grit is left, and cut off any tough stems.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/dill"],
+      "with": [],
+      "text": "Chop the dill roughly.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/spring-onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Slice the spring onions and soften them in a little of the olive oil, without letting them colour.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/wilt",
+      "works_on": ["ingredient/spinach"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Add the spinach to the pan in handfuls, turning it until it has collapsed. Tip it into a colander and let it cool, then squeeze out as much liquid as the hands can.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/spinach"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Season the spinach lightly with salt and pepper. The feta is salty, so leave room for it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/spinach", "ingredient/spring-onion", "ingredient/egg"],
+      "with": ["ingredient/feta", "ingredient/dill"],
+      "text": "Beat the eggs in a large bowl. Crumble in the feta, add the dill, the spinach and the spring onions, and mix until evenly combined.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer-phyllo",
+      "works_on": ["ingredient/phyllo"],
+      "with": ["ingredient/olive-oil", "ingredient/spinach"],
+      "text": "Brush the dish with olive oil. Lay in half of the sheets one at a time, brushing each with oil and letting the edges hang over the sides. Spread the filling in an even layer and fold the edges back over it. Lay the remaining sheets on top, brushing each with oil, tuck in the edges, brush the top and cut through the top layers into squares.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-a-phyllo-pie",
+      "works_on": ["ingredient/phyllo"],
+      "with": [],
+      "text": "Bake in a moderate oven until the top is deep golden and crisp, and the pie feels firm when pressed in the middle. Leave it to settle before serving.",
+      "time": {"from": 45, "to": 55, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

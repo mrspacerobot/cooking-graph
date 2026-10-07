@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/salsifis-en-sauce-blanche",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "roux",
+  "dish": "Salsifis en sauce blanche",
+  "also_called": ["salsifis à la béchamel", "salsify in white sauce"],
+  "techniques": ["peel", "boil", "make a roux", "simmer"],
+  "ingredients": ["salsify", "butter", "flour", "milk", "lemon", "nutmeg", "parsley"]
+}

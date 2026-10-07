@@ -1,0 +1,47 @@
+{
+  "id": "technique/temper",
+  "tier": "drafted",
+  "names": {"en": "Temper"},
+  "aliases": {"en": ["temper eggs", "temper the eggs", "temper the yolks"]},
+  "does": "Warms eggs or yolks gently by whisking a little hot liquid into them, so that they can then join the hot liquid in the pan without turning to specks. The word here is for eggs, not for chocolate.",
+  "how": [
+    "Whisk the eggs or yolks, usually with the sugar, in a bowl big enough to take the liquid.",
+    "Heat the milk or cream until it steams. It must not be boiling.",
+    "Pour a little of the hot liquid onto the eggs in a thin stream while whisking all the time.",
+    "Add a little more in the same way, until the bowl feels warm to the touch.",
+    "Tip the warmed mixture back into the pan and finish over gentle heat, stirring."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The bowl is warm and not hot, and the mixture is smooth with no threads of cooked egg."},
+    {"sense": "see", "text": "The mixture is glossy and thinner than it was."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring the hot liquid in all at once, which cooks the egg into specks.",
+      "fix": "Pour a thin stream while whisking hard."
+    },
+    {
+      "mistake": "Tipping the eggs into liquid that is boiling.",
+      "fix": "Take the liquid off the heat first, and warm the eggs with a little of it."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/milk", "ingredient/cream"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/whisk",
+      "why": "The eggs are whisked first, and the hot liquid is whisked in.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

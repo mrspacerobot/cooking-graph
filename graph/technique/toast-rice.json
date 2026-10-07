@@ -1,0 +1,63 @@
+{
+  "id": "technique/toast-rice",
+  "tier": "drafted",
+  "names": {"en": "Toast rice"},
+  "aliases": {"en": ["tostatura", "toast the rice", "toast the rice in fat"]},
+  "does": "Stirs raw rice in hot fat until the outside of each grain turns translucent and the grains are hot and dry, so that they keep their shape and take up stock slowly. The Italian name for this first step of a risotto is tostatura.",
+  "how": [
+    "Make the base of the dish first in the same wide pan, such as onion softened in butter, and leave it soft.",
+    "Tip in the dry, unwashed rice and stir over medium heat, so that every grain is coated in fat.",
+    "Keep stirring until the edges of the grains turn translucent, with a pearly dot left at the centre, and the rice is too hot to hold comfortably.",
+    "If wine is used, pour it in now and stir until it has been taken up and the sharp smell has gone."
+  ],
+  "cues": [
+    {
+      "sense": "hear",
+      "text": "A dry, gentle rustle of grains in the pan, and a faint crackle when they are properly hot."
+    },
+    {"sense": "see", "text": "The edges of the grains turn translucent while the centre stays white."},
+    {"sense": "smell", "text": "A faint nutty scent rises from the pan."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Rinsing the rice first, which washes off the starch that makes the sauce creamy.",
+      "fix": "Use the rice dry, straight from the packet."
+    },
+    {
+      "mistake": "Taking it too far, so that the grains brown and taste scorched.",
+      "fix": "Stop when the edges are translucent and no more."
+    },
+    {
+      "mistake": "Skipping the step, so that the grains go soft outside before the centre is tender.",
+      "fix": "Coat them in hot fat first."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/risotto-rices", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/sweat",
+      "why": "The rice goes into onion that has been softened without colour.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/toast",
+      "differs": "The grains are stirred in hot fat, in the pan they will cook in, and not dried alone in dry heat. They are taken only to translucent edges and never to colour.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

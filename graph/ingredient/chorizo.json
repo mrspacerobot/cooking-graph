@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/chorizo",
+  "tier": "drafted",
+  "names": {"en": "Chorizo", "fr": "Chorizo"},
+  "aliases": {"en": ["Spanish chorizo"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A firm, deep red pork sausage, coloured and flavoured with paprika and garlic, cured and sold ready to slice or to cook. Sliced and fried, it gives up its red, paprika-scented fat. Simmered whole in a stew, it flavours the broth. The sweet kind is mild and the picante kind is hot.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is a sausage of pork.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is a sausage of pork.", "certain": true},
+      {"fact": "fact/sulphites", "basis": "Cured sausages are often kept with sulphites.", "certain": false},
+      {"fact": "fact/milk", "basis": "Some sausages are made with milk protein.", "certain": false},
+      {"fact": "fact/gluten", "basis": "Some sausages are made with a cereal filler.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

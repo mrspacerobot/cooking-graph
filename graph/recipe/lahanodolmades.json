@@ -1,0 +1,142 @@
+{
+  "id": "recipe/lahanodolmades",
+  "tier": "drafted",
+  "names": {"en": "Lahanodolmades"},
+  "aliases": {},
+  "makes": "dish/lahanodolmades",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/cabbage", "amount": {"value": 1.2, "unit": "kilogram"}, "forms": [], "part": "cabbage"},
+    {"thing": "ingredient/ground-pork", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "pork"},
+    {"thing": "ingredient/rice", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/dill", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "dill"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 60, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/stock", "amount": {"value": 700, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "avgolemono"},
+    {
+      "thing": "ingredient/lemon-juice",
+      "amount": {"value": 80, "unit": "millilitre"},
+      "forms": [],
+      "part": "avgolemono"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/saute-pan", "equipment/dutch-oven", "equipment/paring-knife",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/mixing-bowl", "equipment/whisk", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/core",
+      "works_on": ["ingredient/cabbage"],
+      "with": [],
+      "text": "Cut the hard core out of the cabbage with a small knife and leave the head whole.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/cabbage"],
+      "with": ["ingredient/salt"],
+      "text": "Lower the cabbage into a pot of simmering salted water, core side up, and lift off the outer leaves as they turn pliable. Return the head to the water until all the leaves can be peeled away. Shave the thick rib of each large leaf flat, and cut very large leaves in half.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Mince the onions finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/dill"],
+      "with": [],
+      "text": "Chop the dill.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Soften the onions in the olive oil until they are translucent, and let them cool.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/ground-pork"],
+      "with": ["ingredient/onion", "ingredient/rice", "ingredient/dill", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Work the pork with the cooled onions, the rice, the dill, salt and pepper, with the heels of the hands, until the mixture holds together.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stuff",
+      "works_on": ["ingredient/cabbage"],
+      "with": ["ingredient/ground-pork"],
+      "text": "Put a spoonful of the filling near the thick end of each leaf, a little away from the edge.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roll",
+      "works_on": ["ingredient/cabbage"],
+      "with": [],
+      "text": "Fold the sides of each leaf over the filling and roll it up firmly, leaving room for the rice to swell. Pack the rolls seam side down, snugly, in a wide pot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/cabbage"],
+      "with": ["ingredient/stock"],
+      "text": "Pour in the stock until it comes about halfway up the rolls, cover them with a plate to keep them under, and simmer very gently until the leaves are soft and the pork is done. Check one against a trusted guide to doneness.",
+      "time": {"from": 60, "to": 75, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/broth"]
+    },
+    {
+      "technique": "technique/make-avgolemono",
+      "works_on": ["preparation/broth"],
+      "with": ["ingredient/egg", "ingredient/lemon-juice"],
+      "text": "Take the pot off the heat and let the liquid settle. Beat the eggs until frothy, beat in the lemon juice, then beat in ladles of the hot liquid from the pot. Pour the mixture back over the rolls and swirl the pot to mix it in.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": ["preparation/avgolemono"]
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/cabbage", "preparation/broth"],
+      "with": ["preparation/avgolemono"],
+      "text": "Serve the rolls in warm bowls with the sauce spooned over, and a little extra dill if there is some left.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

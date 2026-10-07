@@ -1,0 +1,42 @@
+{
+  "id": "technique/infuse",
+  "tier": "drafted",
+  "names": {"en": "Infuse", "fr": "Infuser"},
+  "aliases": {"en": ["infuse the milk", "infuse in warm liquid", "steep in warm liquid"], "fr": ["faire infuser"]},
+  "does": "Lets a flavouring steep in a warm liquid until the liquid has taken on its scent, colour and taste, and then lifts or strains the flavouring out. It is the reverse of soaking, where the food takes up the liquid.",
+  "how": [
+    "Warm the liquid until it steams. Do not let it boil hard, which dulls a delicate scent and makes milk climb the pan.",
+    "Add the flavouring, such as strips of peel, a stick of cinnamon, a split vanilla pod, threads of saffron or herbs, and take the pan off the heat.",
+    "Cover and leave it to steep until the liquid smells strongly of the flavouring.",
+    "Strain, or lift the flavouring out, before the liquid is used. Press it gently to give up the last of its taste."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "The liquid smells clearly of the flavouring when you bend over the pan."},
+    {"sense": "see", "text": "Saffron turns the liquid a deep gold, and the threads go pale."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling the liquid with the flavouring in it, which turns peel and saffron harsh and bitter.",
+      "fix": "Take the pan off the heat before the flavouring goes in."
+    },
+    {
+      "mistake": "Straining too soon, so that the liquid is only faintly flavoured.",
+      "fix": "Taste it, and leave it longer if it is weak."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/creams", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "ingredient/milk", "tier": "drafted"},
+    {"thing": "ingredient/water", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/milk", "ingredient/cream", "ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

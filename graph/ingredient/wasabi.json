@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/wasabi",
+  "tier": "drafted",
+  "names": {"en": "Wasabi"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A pale green root whose sharp heat rises through the nose and fades quickly. Grated fresh or taken from a tube, it is added at the table so that its sting stays bright.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/mustard",
+        "basis": "Recorded strictly: tube wasabi is often made with horseradish and mustard.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

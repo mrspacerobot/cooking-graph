@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/baccala-alla-vicentina",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "fish",
+  "dish": "Baccala alla vicentina",
+  "also_called": ["Vicenza-style salt cod", "stockfish alla vicentina"],
+  "techniques": ["soak salt cod", "dredge in flour", "sweat", "simmer gently"],
+  "ingredients": ["stockfish", "onion", "anchovy", "milk", "olive oil", "parmesan", "parsley", "polenta"]
+}

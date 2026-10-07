@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/smoked-duck-breast",
+  "tier": "drafted",
+  "names": {"en": "Smoked duck breast", "fr": "Magret fumé"},
+  "aliases": {"en": ["smoked magret"], "fr": ["magret de canard fumé"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/cooked-meats", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Duck breast cured with salt and smoked, sold ready to slice. Thin slices are laid on a salad or warmed briefly.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is cured duck.", "certain": true},
+      {"fact": "fact/milk", "basis": "Cured meat is sometimes made with lactose or milk protein.", "certain": false},
+      {"fact": "fact/celery", "basis": "Cured meat is often made with an extract that holds celery.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/gluten", "fact/lupin", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

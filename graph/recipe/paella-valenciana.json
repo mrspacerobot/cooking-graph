@@ -1,0 +1,150 @@
+{
+  "id": "recipe/paella-valenciana",
+  "tier": "drafted",
+  "names": {"en": "Paella valenciana", "fr": "Paella valencienne"},
+  "aliases": {},
+  "makes": "dish/paella-valenciana",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/short-grain-rice", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "rice"},
+    {
+      "thing": "ingredient/chicken",
+      "amount": {"value": 1.2, "unit": "kilogram"},
+      "forms": ["form/jointed"],
+      "part": "chicken"
+    },
+    {
+      "thing": "ingredient/green-beans",
+      "amount": {"value": 300, "unit": "gram"},
+      "forms": ["form/halved"],
+      "part": "green-beans"
+    },
+    {"thing": "ingredient/butter-bean", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "butter-bean"},
+    {
+      "thing": "ingredient/tomato",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/grated"],
+      "part": "sofrito"
+    },
+    {
+      "thing": "ingredient/garlic",
+      "amount": {"value": 3, "unit": "clove"},
+      "forms": ["form/minced"],
+      "part": "sofrito"
+    },
+    {"thing": "ingredient/paprika", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sofrito"},
+    {"thing": "ingredient/saffron", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "saffron"},
+    {"thing": "ingredient/water", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/water", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "soaking-water"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 6, "unit": "tablespoon"}, "forms": [], "part": "olive-oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/paella-pan", "equipment/mixing-bowl", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/grater", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak",
+      "works_on": ["ingredient/butter-bean"],
+      "with": ["ingredient/water"],
+      "text": "Cover the dried beans with cold water and leave them to soak overnight in the fridge. Drain them.",
+      "time": {"from": 8, "to": 12, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/salt"],
+      "text": "Season the pieces of chicken with some of the salt.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Heat the oil in the paella pan over a medium-high heat. Brown the chicken on all sides until it is deep golden, then push it to the edge of the pan.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/green-beans"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Add the green beans to the pan and turn them in the oil until they take a little colour. Push them to the edge with the chicken.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-sofrito",
+      "works_on": ["ingredient/tomato", "ingredient/garlic"],
+      "with": ["ingredient/olive-oil", "ingredient/paprika"],
+      "text": "Make a clear space in the middle of the pan. Cook the grated tomato and the garlic there on a low heat, stirring now and then, until the water has gone and the paste is dark and jammy. Take the pan off the heat, stir in the paprika and put it back at once.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/sofrito"]
+    },
+    {
+      "technique": "technique/infuse",
+      "works_on": ["ingredient/water"],
+      "with": ["ingredient/saffron"],
+      "text": "Steep the saffron in a ladle of warm water, off the boil, until the water turns a deep gold.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken", "ingredient/green-beans", "ingredient/butter-bean"],
+      "with": ["ingredient/water", "ingredient/saffron", "preparation/sofrito"],
+      "text": "Add the soaked beans, the rest of the water and the saffron water to the pan. Bring it to a boil, then simmer gently until the beans are soft and the chicken is tender. Check the thickest part of a thigh against a trusted guide to doneness.",
+      "time": {"from": 40, "to": 50, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": [],
+      "with": ["ingredient/salt"],
+      "text": "Taste the broth and add salt until it tastes a little strong, as the rice will soften it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-a-paella",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": ["ingredient/water"],
+      "text": "Bring the broth to a lively boil. Scatter the rice evenly over the pan and stir once to spread it. Cook it at a strong simmer without stirring, then lower the heat as the rice swells. When the broth has almost gone, turn the heat up for a short while until a faint crackle and a toasted smell tell you the bottom is crisping. Take the pan off the heat, cover it with a cloth and let it rest.",
+      "time": {"from": 18, "to": 22, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": [
+        "ingredient/short-grain-rice", "ingredient/chicken", "ingredient/green-beans", "ingredient/butter-bean"
+      ],
+      "with": [],
+      "text": "Serve straight from the pan, giving each person some chicken, beans and rice, with a little of the toasted crust.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "preparation/sofrito",
+  "tier": "drafted",
+  "names": {"en": "Sofrito"},
+  "aliases": {},
+  "is": "A base of onion, garlic and ripe tomato cooked slowly in olive oil until the water has gone and the mixture is a dark, sweet, jammy paste. Rice dishes, stews and sauces are built on it.",
+  "parts": [
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": true, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "base", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pepper",
+      "role": "aromatic",
+      "options": ["ingredient/bell-pepper", "ingredient/red-pepper"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {
+      "id": "paprika",
+      "role": "seasoning",
+      "options": ["ingredient/paprika", "ingredient/hot-paprika"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-sofrito", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

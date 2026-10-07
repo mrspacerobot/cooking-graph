@@ -2,7 +2,7 @@
   "id": "technique/make-a-custard",
   "tier": "drafted",
   "names": {"en": "Make a custard", "fr": "Cuire une crème anglaise"},
-  "aliases": {"en": ["cook a custard", "stirred custard", "cook to nappe"]},
+  "aliases": {"en": ["cook a custard", "stirred custard", "cook to nappe", "make custard"]},
   "does": "Thickens sweetened milk with egg yolks over gentle heat, stirring until it coats a spoon and before the yolks scramble.",
   "how": [
     "Whisk the yolks with the sugar until pale.",

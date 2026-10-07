@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sellou",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "sweets",
+  "dish": "Sellou",
+  "also_called": ["sfouf", "zmita", "slilou"],
+  "techniques": ["toast", "grind", "mix"],
+  "ingredients": ["flour", "almond", "sesame seed", "honey", "butter", "anise", "cinnamon"]
+}

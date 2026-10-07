@@ -1,0 +1,9 @@
+{
+  "id": "group/minced-meat",
+  "tier": "drafted",
+  "names": {"en": "Minced meat", "fr": "Viande hachée"},
+  "aliases": {"en": ["ground meat"]},
+  "shares": "Meat cut or ground fine and mixed with seasoning. It binds when it is worked, takes any shape, cooks fast and dries out soon, and it is wrapped, pressed onto skewers or rolled into balls and patties.",
+  "within": {"thing": "group/meat", "tier": "drafted"},
+  "stands_alone": null
+}

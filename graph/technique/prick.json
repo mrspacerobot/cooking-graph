@@ -1,0 +1,44 @@
+{
+  "id": "technique/prick",
+  "tier": "drafted",
+  "names": {"en": "Prick", "fr": "Piquer"},
+  "aliases": {"en": ["prick with a fork", "pierce the skin", "dock"], "fr": ["piquer à la fourchette"]},
+  "does": "Makes small holes in a skin or a crust with the tip of a knife or a fork, so that steam can leave and the skin does not split or the crust puff.",
+  "how": [
+    "Dry the surface, so that the tip does not slip.",
+    "Prick evenly all over with the point, a little way in, about as far apart as the width of a fork.",
+    "On a sausage, turn it and prick on every side. On pastry, prick the base and the sides.",
+    "Cook it soon after, before the holes close."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A neat spread of small holes all over, none of them a tear."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stabbing deep into a sausage, which lets the juices run out and dries it.",
+      "fix": "Prick only just through the skin."
+    },
+    {
+      "mistake": "Pricking unevenly, which leaves a patch that still splits or puffs.",
+      "fix": "Prick evenly, all over."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/andouillette", "tier": "drafted"},
+    {"thing": "ingredient/pork-sausage", "tier": "drafted"},
+    {"thing": "preparation/shortcrust-pastry", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/paring-knife"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/score",
+      "differs": "Scoring cuts shallow lines. Pricking makes only small holes and takes nothing away, so that steam leaves without the skin or the crust splitting or puffing.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

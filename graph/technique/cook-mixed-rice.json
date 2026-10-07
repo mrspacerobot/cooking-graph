@@ -1,0 +1,60 @@
+{
+  "id": "technique/cook-mixed-rice",
+  "tier": "drafted",
+  "names": {"en": "Cook rice with its flavourings"},
+  "aliases": {"en": ["takikomi", "cook takikomi rice", "cook seasoned mixed rice"]},
+  "does": "Cooks washed, soaked rice together with a seasoned stock and small pieces of vegetables, mushrooms or tofu, so that the taste cooks into every grain.",
+  "how": [
+    "Put the washed, soaked, drained rice in the pot or the rice cooker and level it.",
+    "Pour in the seasoned stock, in place of plain water, up to the usual level. Stir once, then leave it still.",
+    "Scatter the cut pieces evenly over the top without stirring them in, and shut the lid.",
+    "Cook the rice as usual, then leave it to rest, covered.",
+    "Fold the pieces through the rice at the end."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "A sweet, savoury steam rises from the pot."},
+    {"sense": "see", "text": "The rice is evenly tinted by the seasoning, and the pieces are scattered on top."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring the pieces into the rice before cooking, which makes some of the rice cook unevenly.",
+      "fix": "Lay the pieces on top and fold them in afterwards."
+    },
+    {
+      "mistake": "Adding too much stock and seasoning, so that the rice is soft and salty.",
+      "fix": "Use the same amount of liquid as for plain rice, counting the seasonings as part of it."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/rice-cooker", "equipment/dutch-oven", "equipment/saucepan"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "liquid", "options": ["preparation/dashi"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/soy-sauce"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/soak-rice",
+      "why": "The rice is soaked before it is cooked in the seasoned stock.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/cook-rice",
+      "differs": "The rice cooks in seasoned stock together with its pieces of vegetable and tofu, and not in plain water, so the whole pot is flavoured.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

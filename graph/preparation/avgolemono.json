@@ -1,0 +1,28 @@
+{
+  "id": "preparation/avgolemono",
+  "tier": "drafted",
+  "names": {"en": "Avgolemono"},
+  "aliases": {"en": ["egg and lemon sauce", "avgolemono sauce"]},
+  "is": "A sauce of eggs beaten with lemon juice and warmed with hot broth, which turns a pot of broth pale, creamy and sharp. It thickens soups and the juices of stuffed vegetables.",
+  "parts": [
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon-juice"], "optional": false, "tier": "drafted"},
+    {
+      "id": "liquid",
+      "role": "liquid",
+      "options": [
+        "ingredient/chicken-stock", "ingredient/stock", "ingredient/vegetable-stock", "preparation/white-chicken-stock"
+      ],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-avgolemono", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

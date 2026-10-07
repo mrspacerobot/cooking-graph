@@ -2,7 +2,7 @@
   "id": "technique/plate",
   "tier": "drafted",
   "names": {"en": "Plate", "fr": "Dresser"},
-  "aliases": {"en": ["serve", "dish up", "plate up"]},
+  "aliases": {"en": ["serve", "dish up", "plate up", "assemble"]},
   "does": "Arranges the finished parts on a plate, so that each reaches the table at its best.",
   "how": [
     "Warm the plates for hot food and chill them for cold.",

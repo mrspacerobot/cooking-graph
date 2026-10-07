@@ -4,13 +4,15 @@ Written on 7 October 2026 for an agent or a person picking this up cold. Read `A
 
 ## Current status and next steps
 
-- Work is on `1-first-slice`, in [draft PR 1](https://github.com/mrspacerobot/cooking-graph/pull/1). The owner reviews and merges; an agent never merges.
-- The owner asked whether the first slice can be merged as an internal draft baseline. Technical checks pass; the unfinished cycle and content review are separate follow-ups below. The PR remains draft for the owner's decision. A merge does not promote any tier, verify safety records or permit an export.
+- [PR 1](https://github.com/mrspacerobot/cooking-graph/pull/1) (the first slice, `1-first-slice`) was merged by the owner on 7 October 2026 as an internal draft baseline, and [issue 3](https://github.com/mrspacerobot/cooking-graph/issues/3) is closed. The cycle-two follow-up is on the branch `claude/modest-clarke-n2wbsf`, with no pull request yet. The owner reviews and merges; an agent never merges. The merge did not promote any tier, verify safety records or permit an export.
 - Completed: the first graph slice, strict checker and schema; the question commands, independent probes and one stand-in growth round; the standalone interactive browser viewer. `./view` builds the current working files and opens the browser. See `README.md` for a fresh clone.
-- Current validation: `./check` passes 262 tests and reads 906 content files strictly. Content remains drafted except for the inherited sourced facts; every ingredient safety record is unverified.
-- Next coding work is [issue 5](https://github.com/mrspacerobot/cooking-graph/issues/5), in order: finish the `fresh-3` growing round, write `docs/rounds/cycle-two-round-3.md`, write `docs/cycle-two.md`, update its draft PR description, then post the final cycle numbers on issue 5. After the first slice is merged, use a new branch and PR for that issue. The detailed instructions and volume limits are in "What is left, in order" below.
-- Owner review is [issue 6](https://github.com/mrspacerobot/cooking-graph/issues/6): the disputed milk/cream exclusion, the courgette-heavy ratatouille option, strict ingredient answers and safety disagreements. The graph is not ready for export to cooks.
-- Work tracking lives here: [epic 2](https://github.com/mrspacerobot/cooking-graph/issues/2), [first slice 3](https://github.com/mrspacerobot/cooking-graph/issues/3), and [repository setup 4](https://github.com/mrspacerobot/cooking-graph/issues/4). All are open. They were transferred from Tomi issues 106, 119 and 120 with their history, so a colleague needs access only to this repository. Issue 4 creates the later backlog and CI after the owner decides the stack.
+- Current validation: `./check` passes 287 tests and reads 1651 files strictly. Content remains drafted except for the inherited sourced facts; all 427 ingredient safety records are unverified.
+- Cycle two is finished on its branch ([issue 5](https://github.com/mrspacerobot/cooking-graph/issues/5)): the `fresh-3` round is done (`docs/rounds/cycle-two-round-3.md`) and the report is `docs/cycle-two.md`. All 173 growing dish probes are answered; the held-back dish probes are 29 of 42. The branch awaits the owner's decision on a pull request, and the final numbers await a comment on issue 5. No dish was written for the held-back probes, and Jambon persillé has its words but no dish.
+- The new cuisines now have drafted words and two dishes each, and still no reviewer and no program. A dish probe names its cuisine (change 29). `cuisine/mediterranean` is a parent of Italian, Greek, Spanish, Lebanese, Turkish and Moroccan. Probes (30 each, 42 for French fresh-4) were written by `claude-fable-5-1`. Round 1 drafted 232 ingredients, 119 techniques and 16 dishes with recipes through agents and `./merge`: see `docs/rounds/new-cuisines-round-1.md`. All 399 growing dish probes are answered; held-back are 61 of 98. Everything is drafted and unverified, and the amounts are from memory. Moroccan has the weeknight chicken with instant couscous ([issue 8](https://github.com/mrspacerobot/cooking-graph/issues/8)).
+- Guards against duplicates (change 30): `./check` refuses an ingredient and a preparation with one name, `./twins` lists likely duplicates (read every pair), and `./merge <checkout>` copies only new files from another checkout and refuses clashes. Use it when agents work in separate checkouts, and create the checkouts from the current commit.
+- Design notes, nothing built: `docs/review-record.md` (blocks every tier above drafted), `docs/step-probes.md`, `docs/stack-options.md`, `docs/backlog-draft.md`.
+- Next is the owner's review, [issue 6](https://github.com/mrspacerobot/cooking-graph/issues/6): the disputed milk/cream exclusion, the courgette-heavy ratatouille option, strict ingredient answers and safety disagreements. The graph is not ready for export to cooks.
+- Work tracking lives here: [epic 2](https://github.com/mrspacerobot/cooking-graph/issues/2), [first slice 3](https://github.com/mrspacerobot/cooking-graph/issues/3), and [repository setup 4](https://github.com/mrspacerobot/cooking-graph/issues/4). Issues 2 and 4 are open and issue 3 is closed. They were transferred from Tomi issues 106, 119 and 120 with their history, so a colleague needs access only to this repository. Issue 4 creates the later backlog and CI after the owner decides the stack.
 
 `README.md` is the entry point and commands, `AGENTS.md` is the working rules,
 this handover is the current progress and next work, `docs/question-cycle.md`
@@ -85,8 +87,8 @@ So question 2 can already be worked out from the files. Questions 1 and 3 have t
 
 ## Where things are
 
-- Branch `1-first-slice`, draft pull request 1 into `main`. Everything is pushed and nothing is merged.
-- `./check` passes: 841 files read strictly, no issue.
+- Written before the merge: `1-first-slice` was then a draft pull request. It is merged now, and the current status is at the top.
+- `./check` passed 841 files then; it reads 933 now.
 - The plan is [epic 2](https://github.com/mrspacerobot/cooking-graph/issues/2). This work is [first slice 3](https://github.com/mrspacerobot/cooking-graph/issues/3). The next story is [repository setup 4](https://github.com/mrspacerobot/cooking-graph/issues/4): the stack, checks, agents and backlog.
 - What to read: `docs/night-one.md` (the first cycle), `docs/rounds/` (one note per round), `docs/model.md` (the model and every change to it, each with the example that forced it).
 
@@ -123,20 +125,17 @@ The owner asked for four fixes to the model, a better allergen list from real so
 | The first run of the fresh probes, before anything was drafted | Done | `docs/rounds/cycle-two-first-run.md` |
 | Growth round on `fresh-1` | Done | `docs/rounds/cycle-two-round-1.md` |
 | Growth round on `fresh-2` | Done | `docs/rounds/cycle-two-round-2.md` |
-| Growth round on `fresh-3` | **Not done.** 7 of its 24 growing probes are answered | |
-| The report `docs/cycle-two.md` | **Not written** | |
-| The pull request's description | **Still describes the first cycle only** | |
+| Growth round on `fresh-3` | Done. All 24 of its growing probes are answered | `docs/rounds/cycle-two-round-3.md` |
+| The report `docs/cycle-two.md` | Done | `docs/cycle-two.md` |
+| The pull request's description | Moot: PR 1 is merged. A new pull request waits for the owner | |
 
 ## What is left, in order
 
-This is now [issue 5](https://github.com/mrspacerobot/cooking-graph/issues/5),
-separate from the first-slice PR. Use a new branch after the owner merges the
-baseline; do not reopen or reuse the first-slice PR for this follow-up.
+Issue 5 is finished on its branch. What remains of it:
 
-1. **The round on `fresh-3`.** `./probe` lists what its growing probes lack: about five technique words and 22 ingredient words. Draft what is missing: techniques, ingredients, groups, preparations. Keep the volume down. A probe only needs its techniques and ingredients to exist. A full dish file with a recipe is written for at most two fresh dishes per skill in the whole cycle, so read the notes of rounds 1 and 2 for what each skill already got. Then `./check` clean, read ten of the new files again with fresh eyes and fix what is wrong, write `docs/rounds/cycle-two-round-3.md` like the earlier notes, commit and push.
-2. **The report `docs/cycle-two.md`:** what changed in the model, the sources and what each allows, the numbers, each stopping rule with its measured value, what is doubtful, and the open questions, each with a default.
-3. **The follow-up pull request's description,** brought up to date. It stays a draft.
-4. **A comment on [issue 5](https://github.com/mrspacerobot/cooking-graph/issues/5)** with the final numbers of the cycle.
+1. **Post the final cycle numbers as a comment on [issue 5](https://github.com/mrspacerobot/cooking-graph/issues/5).** They are in `docs/cycle-two.md`. This is outward-facing, so the owner says when.
+2. **A pull request for the branch,** only if the owner asks for one. Do not reuse PR 1: it is merged.
+3. **Owner review,** [issue 6](https://github.com/mrspacerobot/cooking-graph/issues/6), then the stack and CI, [issue 4](https://github.com/mrspacerobot/cooking-graph/issues/4). The open questions, each with a default, are at the end of `docs/cycle-two.md`.
 
 ## Rules that are easy to break
 
@@ -165,8 +164,8 @@ baseline; do not reopen or reuse the first-slice PR for this follow-up.
 | Rule | Value | Bar | Met |
 |---|---|---|---|
 | Held-back technique words the graph knows | 126 of 128 (98%) | 95% | Yes |
-| Held-back ingredient words the graph knows | 223 of 241 (93%) | 85% | Yes |
-| Held-back dish probes answered in full | 26 of 42 (62%) | none set | |
+| Held-back ingredient words the graph knows | 226 of 241 (94%) | 85% | Yes |
+| Held-back dish probes answered in full | 29 of 42 (69%) | 95% | No |
 | Safety probes that can be answered and agree | 8 of 19 growing | all, after a person rules | No |
 | Reviewer rejects under 5%, everything at the customer's floor | no reviewer yet | | No |
 
@@ -174,8 +173,8 @@ Of the 11 safety disagreements among the growing probes, 10 rest on strict answe
 
 ## Waiting for the owner
 
-- A review of pull request 1.
-- A ruling on how strict to be: 109 of the facts ingredients hold are certain and 116 are recorded strictly for want of knowing (`docs/strict-answers.md`).
+- A decision on a pull request for the cycle-two branch, and a go-ahead to post the final numbers on issue 5.
+- A ruling on how strict to be: 130 of the facts ingredients hold are certain and 140 are recorded strictly for want of knowing (`docs/strict-answers.md`).
 - A ruling on each safety disagreement (`docs/safety-disagreements.md`).
 - The stack ([issue 4](https://github.com/mrspacerobot/cooking-graph/issues/4)).
 - The app's own allergen list remains the owner's separate app work; it does not block work on this repository.

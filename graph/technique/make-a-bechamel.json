@@ -1,0 +1,56 @@
+{
+  "id": "technique/make-a-bechamel",
+  "tier": "drafted",
+  "names": {"en": "Make a béchamel"},
+  "aliases": {"en": ["make bechamel", "make a white sauce"]},
+  "does": "Cooks a pale roux, whisks warm milk into it a little at a time and simmers it to a smooth white sauce seasoned with nutmeg. Thin, it coats food. Thick, it holds a baked dish together.",
+  "how": [
+    "Warm the milk in a second pan until it is hot but not boiling.",
+    "Melt the butter in a saucepan, stir in an equal weight of flour and cook it, stirring, only until it smells like biscuit and has taken no colour.",
+    "Take the pan off the heat and whisk in a ladle of milk until the paste is smooth. Add the rest a ladle at a time, whisking each one smooth.",
+    "Set the pan back on a low heat and simmer gently, stirring into the corners, until the raw taste of flour has gone and the sauce coats a spoon.",
+    "Season with salt and a grating of nutmeg. For a baked dish, cook it thicker. For coating, leave it looser.",
+    "If it must wait, press a piece of buttered paper onto its surface so that no skin forms."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sauce is smooth and ivory, and runs off the spoon in a slow, even ribbon."},
+    {"sense": "smell", "text": "The smell of raw flour has gone and a gentle smell of milk and nutmeg remains."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring in all the milk at once, which leaves lumps.",
+      "fix": "Add it a ladle at a time and whisk each one smooth. A lumpy sauce can be rescued through a sieve."
+    },
+    {
+      "mistake": "Leaving the sauce unstirred on the heat, so that it catches on the base of the pan.",
+      "fix": "Stir into the corners all the while and keep the heat low."
+    },
+    {
+      "mistake": "Serving it before the flour is cooked out, so that it tastes pasty.",
+      "fix": "Simmer it gently until it tastes of milk and not of flour."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/roux", "tier": "drafted"},
+    {"thing": "ingredient/milk", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/bechamel", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk", "equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/milk"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/nutmeg", "ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-a-roux",
+      "why": "A béchamel begins with a pale roux, so a cook has to be able to cook flour in fat without lumps or colour.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

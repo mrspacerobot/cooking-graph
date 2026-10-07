@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tagine-berbere",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "tagine",
+  "dish": "Tagine berbère",
+  "also_called": ["Berber vegetable tagine", "tagine amazigh", "tajine berbère aux légumes"],
+  "techniques": ["layer", "steam", "braise"],
+  "ingredients": ["lamb", "potato", "carrot", "zucchini", "tomato", "onion", "turmeric", "olive oil"]
+}

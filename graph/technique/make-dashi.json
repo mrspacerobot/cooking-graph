@@ -1,0 +1,50 @@
+{
+  "id": "technique/make-dashi",
+  "tier": "drafted",
+  "names": {"en": "Make dashi"},
+  "aliases": {"en": ["make Japanese stock", "make kombu and bonito stock"]},
+  "does": "Steeps dried kelp and dried bonito in hot water for a short time, to draw out a clear, savoury stock. Nothing is boiled long: a long boil turns the stock bitter and cloudy.",
+  "how": [
+    "Wipe the kelp with a damp cloth and leave the white bloom on, as it carries taste. Put it in cold water and bring the water up slowly.",
+    "Take the kelp out just before the water boils.",
+    "Turn off the heat, scatter in the bonito flakes and let them sink by themselves.",
+    "Leave them to steep until they have all sunk, then pour the stock through a fine sieve. Do not press the flakes, or the stock turns cloudy and fishy.",
+    "For a plant-only stock, leave out the bonito and steep the kelp alone for longer."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "The stock smells of the sea and of smoke, with nothing harsh in it."},
+    {"sense": "see", "text": "The stock is pale gold and clear."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling the kelp, which turns the stock slimy and bitter.",
+      "fix": "Lift the kelp out as the first small bubbles rise."
+    },
+    {"mistake": "Squeezing the bonito in the sieve, which clouds the stock.", "fix": "Let it drip by itself."},
+    {"mistake": "Simmering the bonito, which makes the stock fishy.", "fix": "Steep it off the heat only."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/kombu", "tier": "drafted"},
+    {"thing": "ingredient/bonito-flakes", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/dashi", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/fine-sieve"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "Dashi is kept below a boil, so a cook has to be able to hold a liquid at a steady gentle heat first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

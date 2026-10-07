@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/shichimi",
+  "tier": "drafted",
+  "names": {"en": "Shichimi"},
+  "aliases": {"en": ["shichimi togarashi", "seven-spice powder"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A Japanese blend of several spices: dried chilli, sesame, citrus peel and others. It is shaken over hot food at the end for heat and scent.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/sesame", "basis": "Recorded strictly: the blend usually holds sesame seeds.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts",
+      "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

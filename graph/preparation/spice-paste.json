@@ -1,0 +1,40 @@
+{
+  "id": "preparation/spice-paste",
+  "tier": "drafted",
+  "names": {"en": "Spice paste"},
+  "aliases": {"en": ["masala paste"]},
+  "is": "A thick paste of ground spices, fresh garlic, ginger or chilli, salt and a little liquid, worked together so that it clings to fish, meat or vegetables.",
+  "parts": [
+    {
+      "id": "spice",
+      "role": "seasoning",
+      "options": [
+        "ingredient/red-chilli-powder", "ingredient/kashmiri-red-chilli-powder", "ingredient/turmeric",
+        "preparation/garam-masala"
+      ],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "aromatic",
+      "role": "aromatic",
+      "options": ["ingredient/garlic", "ingredient/ginger", "ingredient/green-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "liquid",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/lemon-juice", "ingredient/plain-yogurt"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-spice-paste", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": []
+}

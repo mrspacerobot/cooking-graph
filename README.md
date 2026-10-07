@@ -9,7 +9,7 @@ It is private. `cooking-graph` is a working name.
 The three graph questions now have commands, independent probes and a first
 stand-in growth cycle. Read `docs/question-cycle.md` first for the current
 results and limits. `docs/night-one.md` records the first slice; the cycle-two
-round notes record its later growth. Cycle two's third batch remains unfinished.
+round notes record its later growth. `docs/cycle-two.md` reports the finished cycle.
 
 Cooking content has no human review or kitchen test. Sixteen inherited allergen
 facts are sourced from regulator pages; the rest is drafted. Safety records are

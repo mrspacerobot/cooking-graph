@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/ficelle-picarde",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "roux",
+  "dish": "Ficelle picarde",
+  "also_called": ["Picardy ham and mushroom crêpe"],
+  "techniques": ["make crêpes", "make a duxelles", "make a roux", "roll", "gratinate"],
+  "ingredients": ["crêpe", "ham", "mushroom", "shallot", "butter", "flour", "milk", "crème fraîche", "gruyère"]
+}

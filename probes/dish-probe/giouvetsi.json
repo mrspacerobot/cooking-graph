@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/giouvetsi",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "baked-dishes",
+  "dish": "Giouvetsi",
+  "also_called": ["youvetsi", "beef with orzo"],
+  "techniques": ["brown", "simmer", "bake"],
+  "ingredients": ["beef", "orzo", "tomato", "onion", "garlic", "olive oil", "kefalotyri"]
+}

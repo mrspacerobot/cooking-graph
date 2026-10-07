@@ -1,0 +1,36 @@
+{
+  "id": "ingredient/asafoetida",
+  "tier": "drafted",
+  "names": {"en": "Asafoetida", "fr": "Asa fœtida"},
+  "aliases": {"en": ["hing", "asafetida"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A resin with a pungent, sulphurous smell that mellows in hot fat into something like fried onion and garlic. A tiny amount goes into the fat at the very last moment. The powder in the shops is usually cut with flour.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/wheat",
+        "basis": "Ground asafoetida is commonly cut with wheat flour to keep it from lumping.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Ground asafoetida is commonly cut with wheat flour to keep it from lumping.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

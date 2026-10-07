@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kanda-poha",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "rice",
+  "dish": "Kanda poha",
+  "also_called": ["poha", "kande pohe", "batata poha"],
+  "techniques": ["rinse", "temper spices in hot fat", "saute", "steam"],
+  "ingredients": ["flattened rice", "onion", "potato", "mustard seed", "turmeric", "peanut", "curry leaf", "lemon"]
+}

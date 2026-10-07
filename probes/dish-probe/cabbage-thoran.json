@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/cabbage-thoran",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "dry-vegetable-dishes",
+  "dish": "Cabbage thoran",
+  "also_called": ["muttakose thoran", "cabbage poriyal"],
+  "techniques": ["temper spices in hot fat", "stir fry", "steam"],
+  "ingredients": [
+    "cabbage",
+    "coconut",
+    "mustard seed",
+    "curry leaf",
+    "shallot",
+    "green chili",
+    "turmeric",
+    "coconut oil"
+  ]
+}

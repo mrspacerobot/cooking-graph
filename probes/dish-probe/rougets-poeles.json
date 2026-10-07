@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/rougets-poeles",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "sear",
+  "dish": "Rougets poêlés",
+  "also_called": ["filets de rouget poêlés", "pan-fried red mullet"],
+  "techniques": ["scale", "fillet", "sear", "deglaze"],
+  "ingredients": ["red mullet", "olive oil", "tomato", "black olive", "basil", "lemon"]
+}

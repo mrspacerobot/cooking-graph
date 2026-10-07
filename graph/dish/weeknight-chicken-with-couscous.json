@@ -1,0 +1,83 @@
+{
+  "id": "dish/weeknight-chicken-with-couscous",
+  "tier": "drafted",
+  "names": {"en": "Weeknight chicken with preserved lemon and couscous"},
+  "aliases": {"en": ["chicken with olives and instant couscous"]},
+  "is": "Chicken thighs browned, then simmered with onion, garlic, warm spices, preserved lemon and olives, and served over instant couscous that is soaked in hot stock and fluffed instead of steamed.",
+  "parts": [
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "olive-oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "butter",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/smen"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "seasoning", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "saffron", "role": "seasoning", "options": ["ingredient/saffron"], "optional": true, "tier": "drafted"},
+    {
+      "id": "preserved-lemon",
+      "role": "acid",
+      "options": ["preparation/preserved-lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "olives",
+      "role": "garnish",
+      "options": ["ingredient/green-olive", "ingredient/olive", "ingredient/black-olive"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "couscous",
+      "role": "base",
+      "options": ["ingredient/instant-couscous", "ingredient/couscous"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock", "ingredient/stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "herbs",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf", "ingredient/parsley"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/rehydrate-couscous", "tier": "drafted"},
+    {"thing": "technique/fluff", "tier": "drafted"},
+    {"thing": "technique/braise", "tier": "drafted"},
+    {"thing": "technique/sear", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

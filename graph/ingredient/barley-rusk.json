@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/barley-rusk",
+  "tier": "drafted",
+  "names": {"en": "Barley rusk"},
+  "aliases": {"en": ["paximadi"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A hard roll of barley flour, baked twice until it is dry as a biscuit. It is sprinkled with water, or dipped briefly, until the outside softens and the middle keeps a bite, and then it carries tomato, cheese and oil.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Barley is a cereal that holds gluten.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Many rusks are made with a mix of barley and wheat flour.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "technique/boil-noodles",
+  "tier": "drafted",
+  "names": {"en": "Boil noodles"},
+  "aliases": {"en": ["boil soba", "boil udon", "cook noodles"]},
+  "does": "Cooks noodles in a large pot of rapidly boiling water, stirring them loose at the start, and lifts them out the moment they are tender, so that they are springy and not gummy.",
+  "how": [
+    "Bring a large pot of water to a rolling boil. Do not salt it for dry buckwheat noodles.",
+    "Fan the noodles into the water and stir with long chopsticks or tongs so that they do not clump.",
+    "If the water rises, add a splash of cold water to calm it.",
+    "Taste a strand for bite.",
+    "Drain the noodles right away into a colander and rinse them if they will be eaten cold."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "A strand has a clean, springy bite, with no hard core."},
+    {"sense": "see", "text": "The noodles move freely, not stuck in a mass."}
+  ],
+  "mistakes": [
+    {"mistake": "Using too little water, so that the noodles stick together.", "fix": "Use a very large pot."},
+    {
+      "mistake": "Leaving the noodles in the water after they are done, so that they go soft.",
+      "fix": "Lift them out as soon as they are tender."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/noodles", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/stockpot", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/colander"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/boil",
+      "differs": "The noodles are stirred loose at the start, lifted as soon as they have a clean bite and rinsed, which the boiling of vegetables and pasta does not need.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

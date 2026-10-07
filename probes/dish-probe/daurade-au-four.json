@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/daurade-au-four",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "roast",
+  "dish": "Daurade au four",
+  "also_called": ["dorade au four", "daurade rôtie", "whole roasted sea bream"],
+  "techniques": ["scale", "gut", "score", "roast", "baste"],
+  "ingredients": ["sea bream", "fennel", "tomato", "lemon", "olive oil", "white wine", "thyme", "garlic"]
+}

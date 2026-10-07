@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/besan-ladoo",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "sweets",
+  "dish": "Besan ladoo",
+  "also_called": ["besan laddu", "besan ke laddoo"],
+  "techniques": ["roast", "mix", "shape"],
+  "ingredients": ["chickpea flour", "ghee", "sugar", "cardamom", "almond"]
+}

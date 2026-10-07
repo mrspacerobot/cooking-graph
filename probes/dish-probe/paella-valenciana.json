@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/paella-valenciana",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "rice-dishes",
+  "dish": "Paella valenciana",
+  "also_called": ["Valencian paella", "paella"],
+  "techniques": ["sear", "make a sofrito", "simmer", "rest"],
+  "ingredients": [
+    "rice",
+    "chicken",
+    "rabbit",
+    "green bean",
+    "butter bean",
+    "tomato",
+    "saffron",
+    "olive oil",
+    "paprika"
+  ]
+}

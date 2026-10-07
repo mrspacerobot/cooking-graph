@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/merlu-koskera",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "poach",
+  "dish": "Merlu koskera",
+  "also_called": ["merluza a la koskera", "colin koskera", "hake Basque style with clams and peas"],
+  "techniques": ["sweat", "flour", "poach", "shake the pan", "simmer"],
+  "ingredients": ["hake", "clam", "pea", "asparagus", "egg", "garlic", "parsley", "white wine", "olive oil"]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "technique/make-a-sofrito",
+  "tier": "drafted",
+  "names": {"en": "Make a sofrito"},
+  "aliases": {"en": ["make sofrito", "cook a sofrito"]},
+  "does": "Cooks onion, garlic and ripe tomato slowly in a generous amount of olive oil until their water has gone and what is left is a dark, sweet, jammy paste. It is the base of rice dishes, stews and sauces.",
+  "how": [
+    "Chop the onion and the garlic fine, if they are used. Grate or chop the tomato and keep its juice.",
+    "Warm a generous amount of olive oil in a wide pan over a low to medium heat.",
+    "Cook the onion with a little salt, stirring now and then, until it is soft and pale gold. Add the garlic for the last moments.",
+    "Add the tomato and keep cooking, stirring now and then, as it gives up its water and the mixture thickens.",
+    "Go on until the oil seeps out at the edges and the paste is dark, sweet and jammy. Do not hurry it with a high heat.",
+    "If paprika is wanted, take the pan off the heat and stir it in, because it turns bitter in hot oil."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The oil seeps out at the edges of the paste, which has darkened from bright red to deep brick."
+    },
+    {"sense": "smell", "text": "Sweet and rich, like jam. The sharp smell of raw tomato and raw garlic has gone."},
+    {"sense": "taste", "text": "Sweet and deep, with no raw sourness."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Turning up the heat to hurry it, so that the garlic and the paste scorch and turn bitter.",
+      "fix": "Keep the heat low, and add a splash of water if it starts to catch."
+    },
+    {
+      "mistake": "Stopping while the tomato is still wet and sharp, which leaves a thin, sour base.",
+      "fix": "Keep going until the oil seeps out at the edges."
+    },
+    {
+      "mistake": "Stirring the paprika into hot oil, where it burns within moments.",
+      "fix": "Take the pan off the heat first."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/onion", "tier": "drafted"},
+    {"thing": "ingredient/garlic", "tier": "drafted"},
+    {"thing": "ingredient/tomato", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/sofrito", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saute-pan", "equipment/frying-pan", "equipment/paella-pan"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/dice", "why": "Small, even pieces melt into the paste together.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/sweat",
+      "differs": "Sweating stops while the vegetables are soft and pale. A sofrito goes on much longer, in much more oil and with tomato added, until the mixture is dark, sweet and jammy.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

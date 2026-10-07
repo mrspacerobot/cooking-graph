@@ -1,0 +1,66 @@
+{
+  "id": "technique/make-a-soffritto",
+  "tier": "drafted",
+  "names": {"en": "Make a soffritto"},
+  "aliases": {"en": ["soffritto", "cook a soffritto", "fare il soffritto"]},
+  "does": "Cooks very finely chopped onion, carrot and celery slowly in olive oil, until they melt together into a soft, sweet, golden base on which the rest of the dish is built.",
+  "how": [
+    "Chop the onion, carrot and celery very fine and as even as you can, so that they melt into the dish and do not show as pieces.",
+    "Warm olive oil in a wide, heavy pan over low heat, then add the vegetables with a little salt.",
+    "Stir now and then and keep the heat gentle. The vegetables first give up their water, then slowly turn soft and pale gold.",
+    "Take it as far as the dish needs: pale and sweet for a delicate soup, deeper gold for a sauce or a ragu. Stop before it turns dark or bitter."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "Sweet and rounded, with the raw sharpness of the onion gone."},
+    {"sense": "see", "text": "The pieces have melted into a soft golden mass, and the oil is lightly tinted."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cooking it over high heat, so that it browns before it softens and tastes bitter.",
+      "fix": "Lower the heat and add a spoonful of water to hold back the colour."
+    },
+    {
+      "mistake": "Cutting the vegetables in different sizes, so that some burn while others stay hard.",
+      "fix": "Chop them small and even."
+    },
+    {
+      "mistake": "Going on to the next ingredient too soon, before the vegetables have melted, so that the base tastes raw.",
+      "fix": "Give it the time it needs."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/onion", "tier": "drafted"},
+    {"thing": "ingredient/carrot", "tier": "drafted"},
+    {"thing": "ingredient/celery", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/soffritto", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saute-pan", "equipment/saucepan", "equipment/dutch-oven"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/mince",
+      "why": "A soffritto is only as good as its cut, and the pieces must be small and even to melt.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/sweat",
+      "differs": "It uses olive oil and not butter, the vegetables are chopped much finer, and it is cooked longer, until it turns gold, where a sweat stops before any colour. A French mirepoix is cut larger and is often strained out of the dish. A soffritto stays in.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

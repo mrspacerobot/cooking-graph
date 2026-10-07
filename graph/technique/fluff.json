@@ -1,0 +1,55 @@
+{
+  "id": "technique/fluff",
+  "tier": "drafted",
+  "names": {"en": "Fluff", "fr": "Égrainer"},
+  "aliases": {"en": ["fluff with a fork", "fluff up", "rake the grains apart"]},
+  "does": "Loosens cooked grains with a fork or the fingertips, lifting and separating them, so that the steam escapes and each grain stands apart instead of sitting in a block.",
+  "how": [
+    "Wait until the grains have taken up their liquid and the steam is no longer heavy.",
+    "Add a little butter or a trickle of oil, so that the grains stay loose.",
+    "Run a fork, or the fingertips, lightly through the grains, lifting from the bottom and letting them fall. Do not press and do not stir.",
+    "Rub any lumps between the fingertips to break them.",
+    "Cover with a cloth until it is time to serve, so that the grains stay warm without drying."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The grains lie loose, each with its own outline, and the heap holds no wet patches."},
+    {"sense": "feel", "text": "The fork meets no resistance and the grains fall away from it."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring hard, which breaks the grains and turns them to paste.",
+      "fix": "Lift and let fall, with light strokes."
+    },
+    {
+      "mistake": "Fluffing while the grains are still wet, which smears them.",
+      "fix": "Leave them covered until the liquid has gone."
+    },
+    {
+      "mistake": "Leaving the grains in a heap without airing them, so that they set into a block.",
+      "fix": "Fluff them once more just before serving."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/couscous", "tier": "drafted"},
+    {"thing": "ingredient/instant-couscous", "tier": "drafted"},
+    {"thing": "ingredient/rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/rehydrate-couscous",
+      "why": "Couscous is fluffed once it has drunk its liquid, so a cook has to be able to bring the grains to that point first.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/cook-rice",
+      "why": "Rice is fluffed once it has taken up its water, so a cook has to be able to cook it to that point first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

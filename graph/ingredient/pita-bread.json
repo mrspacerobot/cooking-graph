@@ -1,0 +1,34 @@
+{
+  "id": "ingredient/pita-bread",
+  "tier": "drafted",
+  "names": {"en": "Pita bread", "fr": "Pain pita"},
+  "aliases": {"en": ["pitta bread", "pita", "pitta"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/breads", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A round, flat wheat bread that puffs in a hot oven and leaves a pocket inside. Stale or warm, it can be split open and filled, toasted or fried until crisp, or torn and soaked in a sauce.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Bread is made of a cereal that holds gluten.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Nearly all pita is made with wheat flour.", "certain": false},
+      {"fact": "fact/sesame", "basis": "Some pita is brushed with oil or topped with sesame seeds.", "certain": false},
+      {"fact": "fact/milk", "basis": "Some bought pita holds milk or butter.", "certain": false},
+      {"fact": "fact/egg", "basis": "Some bought pita holds egg.", "certain": false},
+      {"fact": "fact/soy", "basis": "Some bought pita holds soy flour.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/slaughter-product",
+      "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/cocido-madrileno",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "stews",
+  "dish": "Cocido madrileño",
+  "also_called": ["Madrid chickpea stew", "cocido"],
+  "techniques": ["soak", "simmer", "skim", "strain"],
+  "ingredients": [
+    "chickpea",
+    "beef shank",
+    "chicken",
+    "chorizo",
+    "morcilla",
+    "pork belly",
+    "cabbage",
+    "potato",
+    "carrot"
+  ]
+}

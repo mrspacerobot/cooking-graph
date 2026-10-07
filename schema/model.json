@@ -345,6 +345,7 @@
         "batch": {"is": "slug"},
         "set": {"is": "word", "from": "probe_sets"},
         "written_by": {"is": "slug"},
+        "cuisine": {"is": "slug"},
         "written_for": {"is": "slug"},
         "dish": {"is": "label"},
         "also_called": {"is": "list", "of": {"is": "label"}},

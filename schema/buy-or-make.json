@@ -1,0 +1,6 @@
+[
+  ["ingredient/duck-fat", "preparation/rendered-fat"],
+  ["ingredient/stock", "preparation/broth"],
+  ["ingredient/stock", "preparation/fond"],
+  ["ingredient/vegetable-stock", "preparation/vegetable-stock"]
+]

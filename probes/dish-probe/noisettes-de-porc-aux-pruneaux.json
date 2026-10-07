@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/noisettes-de-porc-aux-pruneaux",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "pan-sauce",
+  "dish": "Noisettes de porc aux pruneaux",
+  "also_called": ["porc aux pruneaux de Tours", "pork medallions with prunes"],
+  "techniques": ["soak", "sear", "deglaze", "reduce", "mount with butter"],
+  "ingredients": ["pork tenderloin", "prune", "white wine", "crème fraîche", "redcurrant jelly", "butter", "flour"]
+}

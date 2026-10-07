@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/khobz",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "bread",
+  "dish": "Khobz",
+  "also_called": ["kesra", "Moroccan round bread", "khobz dyal dar"],
+  "techniques": ["knead", "proof", "shape", "bake"],
+  "ingredients": ["flour", "semolina", "yeast", "water", "salt", "sugar"]
+}

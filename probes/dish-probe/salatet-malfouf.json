@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/salatet-malfouf",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "salads",
+  "dish": "Salatet malfouf",
+  "also_called": ["cabbage salad", "malfouf salad"],
+  "techniques": ["shred", "crush", "dress", "toss"],
+  "ingredients": ["white cabbage", "garlic", "lemon juice", "olive oil", "dried mint", "salt"]
+}

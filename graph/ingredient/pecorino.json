@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/pecorino",
+  "tier": "drafted",
+  "names": {"en": "Pecorino", "fr": "Pecorino"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/grating-cheeses", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A hard, salty, sharp cheese of sheep's milk. The Roman kind is grated over carbonara and cacio e pepe, and it melts into a sauce, where it is stronger than Parmesan.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from the milk of sheep.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "It is traditionally set with lamb rennet.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

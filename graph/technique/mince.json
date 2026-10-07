@@ -21,7 +21,8 @@
   ],
   "works_on": [
     {"thing": "group/alliums", "tier": "drafted"},
-    {"thing": "group/tender-herbs", "tier": "drafted"}
+    {"thing": "group/tender-herbs", "tier": "drafted"},
+    {"thing": "ingredient/ginger", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/minced", "tier": "drafted"}

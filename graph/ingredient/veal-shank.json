@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/veal-shank",
+  "tier": "drafted",
+  "names": {"en": "Veal shank", "fr": "Jarret de veau"},
+  "aliases": {"en": ["veal shin"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/braising-cuts", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "The shin of a calf, cut across the bone, thick with sinew and holding a ring of marrow. It turns meltingly tender in slow braising, and the marrow melts into the sauce.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is veal.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

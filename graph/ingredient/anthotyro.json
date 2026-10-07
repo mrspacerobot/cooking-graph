@@ -1,0 +1,32 @@
+{
+  "id": "ingredient/anthotyro",
+  "tier": "drafted",
+  "names": {"en": "Anthotyro"},
+  "aliases": {"en": ["anthotiro"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A fresh, soft, mild cheese made from whey with a little milk added, white and crumbly like ricotta. It is eaten fresh or baked into pies and pastries, and it turns grainy if it is boiled.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from whey and milk.", "certain": true},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "The whey it is made from comes from cheeses set with animal rennet.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "Animal rennet is taken from the stomach of a young calf, kid or lamb."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

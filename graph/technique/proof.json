@@ -1,0 +1,45 @@
+{
+  "id": "technique/proof",
+  "tier": "drafted",
+  "names": {"en": "Proof", "fr": "Faire pousser la pâte"},
+  "aliases": {"en": ["prove", "let rise", "let the dough rise", "rise"], "fr": ["laisser pousser"]},
+  "does": "Leaves shaped yeast dough in a warm, still place to rise, so that the yeast fills it with gas and it swells and turns light, airy and ready to bake or fry.",
+  "how": [
+    "Shape the dough and set it in a lightly oiled bowl, or on a tray, with room to swell.",
+    "Cover it with a damp cloth or oiled film, so that its skin does not dry out.",
+    "Leave it somewhere warm and free of draughts until it has roughly doubled, or puffed as the shape asks.",
+    "Press a fingertip lightly into it: it is ready when the dent fills back slowly.",
+    "Bake or fry it at once, and handle it gently so that the air stays in."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The dough has swelled and looks puffy and domed, with small bubbles under the skin."},
+    {"sense": "feel", "text": "A fingertip leaves a dent that fills back slowly."},
+    {"sense": "smell", "text": "A mild, yeasty, slightly sweet smell, and not a sharp sour one."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Proofing in a spot that is too hot, so that the dough turns sour and loose.",
+      "fix": "Choose a gently warm place and give it more time."
+    },
+    {
+      "mistake": "Baking too soon, so that the bread is dense and tight.",
+      "fix": "Wait until the dent fills back slowly."
+    },
+    {
+      "mistake": "Leaving it too long, so that it collapses when it is touched or baked.",
+      "fix": "Check it often and bake it as soon as it is ready."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/bread-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/knead", "why": "A dough rises evenly only once it has been worked smooth.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

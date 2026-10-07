@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kabocha-no-nimono",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "simmered-dishes",
+  "dish": "Kabocha no nimono",
+  "also_called": ["simmered kabocha", "simmered pumpkin", "kabocha no nitsuke"],
+  "techniques": ["cut into chunks", "bevel edges", "make dashi", "simmer", "cover with drop lid"],
+  "ingredients": ["kabocha", "dashi", "soy sauce", "mirin", "sugar", "sake"]
+}

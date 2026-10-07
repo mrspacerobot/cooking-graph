@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/lahanodolmades",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "stuffed-vegetables",
+  "dish": "Lahanodolmades",
+  "also_called": ["stuffed cabbage rolls", "lahanodolmades avgolemono"],
+  "techniques": ["blanch", "stuff", "roll", "simmer", "make avgolemono"],
+  "ingredients": ["cabbage", "ground pork", "rice", "onion", "egg", "lemon", "dill"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pesce-all-acqua-pazza",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "fish",
+  "dish": "Pesce all'acqua pazza",
+  "also_called": ["acqua pazza", "fish in crazy water"],
+  "techniques": ["sweat", "poach", "reduce"],
+  "ingredients": ["sea bream", "cherry tomato", "garlic", "white wine", "parsley", "olive oil", "chilli"]
+}

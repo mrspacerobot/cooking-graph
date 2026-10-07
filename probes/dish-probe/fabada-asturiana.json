@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/fabada-asturiana",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "stews",
+  "dish": "Fabada asturiana",
+  "also_called": ["Asturian bean stew", "fabada"],
+  "techniques": ["soak", "simmer", "skim", "rest"],
+  "ingredients": ["white bean", "chorizo", "morcilla", "pork belly", "saffron", "onion", "garlic", "paprika"]
+}

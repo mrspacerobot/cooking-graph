@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/souvlaki",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "grilling",
+  "dish": "Souvlaki",
+  "also_called": ["pork souvlaki", "kalamaki"],
+  "techniques": ["cube", "marinate", "skewer", "grill"],
+  "ingredients": ["pork", "olive oil", "lemon", "oregano", "garlic", "pita"]
+}

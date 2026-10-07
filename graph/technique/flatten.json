@@ -1,0 +1,45 @@
+{
+  "id": "technique/flatten",
+  "tier": "drafted",
+  "names": {"en": "Flatten", "fr": "Aplatir"},
+  "aliases": {"en": ["flatten the escalopes", "beat thin", "pound thin", "pound meat"], "fr": ["battre les escalopes"]},
+  "does": "Beats a slice of meat to an even, thin sheet between layers of paper, so that it cooks in moments and stays tender.",
+  "how": [
+    "Trim away any sinew or skin from the slice, and nick the edge in a few places so that it does not curl.",
+    "Lay the slice between sheets of parchment paper.",
+    "Beat it from the middle outwards with the flat of a heavy pan, in even blows, turning it as you go.",
+    "Stop when the sheet is the same thickness from edge to edge, before it tears."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The slice is an even sheet with no thick middle and no holes."},
+    {"sense": "feel", "text": "Under the pan the meat gives evenly and no longer springs back."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Beating with hard, sharp blows that tear the meat into holes.",
+      "fix": "Use the flat of the pan, with steady, even weight."
+    },
+    {
+      "mistake": "Beating the edges thin and leaving the middle thick, so that it cooks unevenly.",
+      "fix": "Start in the middle and work outwards."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/veal-escalope", "tier": "drafted"},
+    {"thing": "ingredient/pork-tenderloin", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/parchment-paper"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/trim",
+      "why": "Sinew and skin are cut away first, or they shrink and curl when the meat is beaten flat.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

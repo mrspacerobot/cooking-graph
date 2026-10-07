@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/chana-masala",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "curry-base",
+  "dish": "Chana masala",
+  "also_called": ["chole", "chholay", "chole masala"],
+  "techniques": ["soak", "pressure cook", "saute", "simmer"],
+  "ingredients": ["chickpea", "onion", "tomato", "ginger", "garlic", "coriander seed", "amchur", "garam masala"]
+}

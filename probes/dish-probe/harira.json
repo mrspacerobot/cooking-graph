@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/harira",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "soups",
+  "dish": "Harira",
+  "also_called": ["Moroccan tomato and lentil soup", "harira marocaine", "hrira"],
+  "techniques": ["saute", "simmer", "thicken"],
+  "ingredients": ["tomato", "lentil", "chickpea", "lamb", "onion", "celery", "coriander", "flour", "vermicelli"]
+}

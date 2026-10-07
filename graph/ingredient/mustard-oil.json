@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/mustard-oil",
+  "tier": "drafted",
+  "names": {"en": "Mustard oil", "fr": "Huile de moutarde"},
+  "aliases": {"en": ["sarson ka tel"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A pungent, golden oil pressed from mustard seed, sharp enough to sting the nose. It is heated until it smokes lightly to tame it, and then it cooks marinades, fish and pickles in eastern and northern India.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/mustard", "basis": "It is pressed from mustard seed.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "equipment/griddle",
+  "tier": "drafted",
+  "names": {"en": "Griddle", "fr": "Plancha"},
+  "aliases": {"en": ["flat griddle", "flat top"]},
+  "use": "A wide, flat, heavy plate or pan that holds a steady dry heat, for cooking flat breads, cakes and thin slices without pooling fat."
+}

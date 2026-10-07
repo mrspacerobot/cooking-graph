@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kyuri-no-asazuke",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "pickles-and-sides",
+  "dish": "Kyuri no asazuke",
+  "also_called": ["quick pickled cucumber", "lightly salted cucumber", "asazuke"],
+  "techniques": ["slice", "salt", "massage", "rest", "squeeze out water"],
+  "ingredients": ["cucumber", "salt", "kombu", "ginger", "chilli", "shiso"]
+}

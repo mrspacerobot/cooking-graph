@@ -1,0 +1,21 @@
+{
+  "id": "preparation/duxelles",
+  "tier": "drafted",
+  "names": {"en": "Duxelles", "fr": "Duxelles"},
+  "aliases": {},
+  "is": "A dry, dark paste of finely minced mushrooms and shallot cooked in butter until their water is gone. It is spread, stuffed or folded into a filling.",
+  "parts": [
+    {"id": "mushroom", "role": "main", "options": ["ingredient/mushroom"], "optional": false, "tier": "drafted"},
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-duxelles", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

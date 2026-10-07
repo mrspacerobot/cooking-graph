@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/moschari-stifado",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "stews",
+  "dish": "Moschari stifado",
+  "also_called": ["stifado", "beef stew with shallots"],
+  "techniques": ["brown", "braise"],
+  "ingredients": ["beef", "shallot", "tomato", "red wine", "vinegar", "bay leaf", "cinnamon", "allspice", "olive oil"]
+}

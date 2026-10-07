@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/gratin-daubergines",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "gratin",
+  "dish": "Gratin d'aubergines",
+  "also_called": ["aubergine gratin", "eggplant gratin", "gratin d'aubergines à la provençale"],
+  "techniques": ["slice", "salt", "sauté", "layer", "gratinate"],
+  "ingredients": ["eggplant", "tomato", "garlic", "onion", "olive oil", "parmesan", "basil", "thyme"]
+}

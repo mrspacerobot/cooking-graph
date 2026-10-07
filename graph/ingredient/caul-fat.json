@@ -1,0 +1,37 @@
+{
+  "id": "ingredient/caul-fat",
+  "tier": "drafted",
+  "names": {"en": "Caul fat", "fr": "Crépine"},
+  "aliases": {"en": ["caul"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A thin, lacy membrane of fat from the belly of an animal. It is soaked in water, spread out like a net and wrapped around lean or crumbly mixtures. In the heat it melts away, basting what is inside and holding it together.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is animal fat, like dripping.", "certain": true},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "It is a membrane taken from a killed animal, and is not its flesh.",
+        "certain": true
+      },
+      {
+        "fact": "fact/pork",
+        "basis": "It may come from a pig or from a lamb, so the stricter answer is recorded.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

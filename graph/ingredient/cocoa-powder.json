@@ -1,0 +1,25 @@
+{
+  "id": "ingredient/cocoa-powder",
+  "tier": "drafted",
+  "names": {"en": "Cocoa powder", "fr": "Cacao en poudre"},
+  "aliases": {"en": ["unsweetened cocoa"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A dark, bitter, unsweetened powder from roasted cocoa beans. It is dusted over a dessert at the end or stirred into a batter, and it clumps unless it is sifted.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "Cocoa sold for drinks may be mixed with milk powder.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

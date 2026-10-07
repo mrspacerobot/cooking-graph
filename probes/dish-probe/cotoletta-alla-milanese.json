@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/cotoletta-alla-milanese",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "frying",
+  "dish": "Cotoletta alla milanese",
+  "also_called": ["Milanese veal cutlet", "veal milanese"],
+  "techniques": ["pound meat", "bread", "shallow fry"],
+  "ingredients": ["veal cutlet", "egg", "breadcrumb", "clarified butter", "lemon"]
+}

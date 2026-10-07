@@ -1,0 +1,25 @@
+{
+  "id": "ingredient/cuttlefish",
+  "tier": "drafted",
+  "names": {"en": "Cuttlefish", "fr": "Seiche"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A soft-bodied sea animal with a wide, flat body, sold whole or cleaned. Its flesh turns tough with brief cooking and tender again with long, gentle cooking. It is cut small for a rice dish or grilled quickly, and its ink sac holds a black ink.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/molluscs", "basis": "It is a mollusc.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

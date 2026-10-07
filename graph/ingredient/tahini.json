@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/tahini",
+  "tier": "drafted",
+  "names": {"en": "Tahini", "fr": "Tahini"},
+  "aliases": {"en": ["tahina", "tahini paste"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A smooth, pale paste of ground sesame seeds, rich and slightly bitter. It stiffens at first when lemon juice or cold water goes in, then loosens into a creamy, pale sauce as more liquid is beaten in.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/sesame", "basis": "It is ground sesame seed.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts",
+      "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

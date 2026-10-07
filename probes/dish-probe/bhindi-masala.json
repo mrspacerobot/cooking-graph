@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bhindi-masala",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "dry-vegetable-dishes",
+  "dish": "Bhindi masala",
+  "also_called": ["bhindi fry", "okra masala", "bhindi ki sabzi"],
+  "techniques": ["temper spices in hot fat", "saute", "stir fry"],
+  "ingredients": ["okra", "onion", "tomato", "cumin seed", "turmeric", "coriander seed", "amchur", "oil"]
+}

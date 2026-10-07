@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/chawanmushi",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "eggs",
+  "dish": "Chawanmushi",
+  "also_called": ["savoury egg custard", "steamed egg custard"],
+  "techniques": ["make dashi", "beat eggs", "strain", "steam", "cover with lid", "cool"],
+  "ingredients": ["egg", "dashi", "soy sauce", "mirin", "salt", "chicken thigh", "shrimp", "shiitake", "mitsuba"]
+}

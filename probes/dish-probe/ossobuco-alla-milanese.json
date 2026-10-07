@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/ossobuco-alla-milanese",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "braising",
+  "dish": "Ossobuco alla milanese",
+  "also_called": ["ossobuco", "braised veal shank"],
+  "techniques": ["dredge in flour", "sear", "make a soffritto", "deglaze", "braise", "make gremolata"],
+  "ingredients": ["veal shank", "onion", "carrot", "celery", "white wine", "tomato", "beef stock", "lemon", "parsley"]
+}

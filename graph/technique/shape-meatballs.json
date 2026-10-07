@@ -1,0 +1,51 @@
+{
+  "id": "technique/shape-meatballs",
+  "tier": "drafted",
+  "names": {"en": "Shape meatballs"},
+  "aliases": {"en": ["roll meatballs", "form meatballs"]},
+  "does": "Rolls seasoned minced meat between wet palms into round balls of an even size, so that they hold together and cook at the same pace.",
+  "how": [
+    "Knead the minced meat with its seasoning until it holds together, and chill it briefly so that it handles well.",
+    "Wet the hands, or rub them with a little oil, so that the meat does not stick.",
+    "Take up equal portions with a spoon, to keep the balls the same size.",
+    "Roll each portion between the palms with light pressure until it is round and smooth, with no cracks.",
+    "Set the balls on a tray, not touching, until they are cooked."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The balls are the same size, smooth and round, with no cracks."},
+    {"sense": "feel", "text": "Each ball holds together when it is lifted, and springs back a little under a finger."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Packing the balls hard, which makes them dense and dry.",
+      "fix": "Roll with light pressure, only until they hold."
+    },
+    {
+      "mistake": "Making balls of different sizes, so that some are done before others.",
+      "fix": "Portion the meat with a spoon before rolling."
+    },
+    {"mistake": "Working with dry hands, so that the meat sticks and tears.", "fix": "Wet or oil the hands often."}
+  ],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/knead",
+      "why": "Minced meat is kneaded with its seasoning so that it holds together before it is rolled.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/shape",
+      "differs": "Shape forms a soft mixture into even pieces between spoons. Here the meat is firm enough to be rolled by hand into round balls, and the mixture must first be kneaded to bind.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

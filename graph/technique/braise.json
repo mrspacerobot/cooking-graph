@@ -39,7 +39,8 @@
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/leafy-heads", "tier": "drafted"},
     {"thing": "group/alliums", "tier": "drafted"},
-    {"thing": "group/root-vegetables", "tier": "drafted"}
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "ingredient/beef-tripe", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/fork-tender", "tier": "drafted"},

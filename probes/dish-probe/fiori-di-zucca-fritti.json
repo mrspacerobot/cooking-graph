@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/fiori-di-zucca-fritti",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "frying",
+  "dish": "Fiori di zucca fritti",
+  "also_called": ["fried courgette flowers", "fried zucchini blossoms"],
+  "techniques": ["stuff", "make a batter", "deep fry"],
+  "ingredients": ["courgette flower", "mozzarella", "anchovy", "flour", "sparkling water", "sunflower oil"]
+}

@@ -162,6 +162,37 @@ class Reporting(ProbeRunnerTest):
         self.assertNotIn("glaze", table)
         self.assertNotIn("flambe", table)
 
+    def test_the_numbers_are_kept_apart_for_each_cuisine(self):
+        self.kitchen.write("graph/cuisine/japanese.json", {
+            "id": "cuisine/japanese", "tier": "drafted", "names": {"en": "Japanese"}, "aliases": {}, "within": None,
+        })
+        fresh = dict(self.kitchen.files[OTHER])
+        fresh.update(id="dish-probe/miso-soup", batch="japanese-1", dish="Miso soup", cuisine="japanese",
+                     written_for="soups", techniques=["simmer"], ingredients=["miso"])
+        self.kitchen.write("probes/dish-probe/miso-soup.json", fresh)
+        things, issues = check.read_repository(self.kitchen.root)
+        self.assertEqual([], issues)
+        result = probes.run(things)
+        self.assertEqual((0, 1), probes.shares(result, cuisine="japanese")["growing"])
+        self.assertEqual((4, 4), probes.shares(result, cuisine="french")["growing"])
+        report = probes.report(result)
+        self.assertIn("By cuisine:", report)
+        self.assertIn("  japanese: growing 0 of 1 (0%), held back 0 of 0", report)
+
+    def test_one_cuisine_can_be_run_alone(self):
+        self.kitchen.write("graph/cuisine/japanese.json", {
+            "id": "cuisine/japanese", "tier": "drafted", "names": {"en": "Japanese"}, "aliases": {}, "within": None,
+        })
+        fresh = dict(self.kitchen.files[OTHER])
+        fresh.update(id="dish-probe/miso-soup", batch="japanese-1", dish="Miso soup", cuisine="japanese",
+                     written_for="soups", techniques=["simmer"], ingredients=["miso"])
+        self.kitchen.write("probes/dish-probe/miso-soup.json", fresh)
+        things, issues = check.read_repository(self.kitchen.root)
+        report = probes.report(probes.run(things, cuisine="japanese"))
+        self.assertIn("miso", report)
+        self.assertNotIn("By cuisine:\n  french", report)
+        self.assertEqual((0, 1), probes.shares(probes.run(things, cuisine="japanese"))["growing"])
+
     def add_a_fresh_probe(self, technique):
         fresh = dict(self.kitchen.files[OTHER])
         fresh.update(id="dish-probe/onion-fritters", batch="fresh-1", dish="Onion fritters", techniques=[technique])

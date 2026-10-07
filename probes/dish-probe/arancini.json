@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/arancini",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "frying",
+  "dish": "Arancini",
+  "also_called": ["arancine", "Sicilian rice balls"],
+  "techniques": ["cook rice", "make a ragu", "shape", "bread", "deep fry"],
+  "ingredients": ["rice", "saffron", "beef", "pea", "tomato", "caciocavallo", "egg", "breadcrumb", "sunflower oil"]
+}

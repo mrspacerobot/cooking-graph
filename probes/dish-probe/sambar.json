@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/sambar",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "dal",
+  "dish": "Sambar",
+  "also_called": ["sambhar", "kuzhambu"],
+  "techniques": ["pressure cook", "simmer", "roast spices", "temper spices in hot fat"],
+  "ingredients": [
+    "pigeon pea",
+    "tamarind",
+    "drumstick",
+    "shallot",
+    "tomato",
+    "mustard seed",
+    "curry leaf",
+    "asafoetida",
+    "fenugreek seed"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "equipment/pastry-brush",
+  "tier": "drafted",
+  "names": {"en": "Pastry brush", "fr": "Pinceau de cuisine"},
+  "aliases": {"en": ["basting brush", "kitchen brush"], "fr": ["pinceau à pâtisserie"]},
+  "use": "A small brush with soft bristles of silicone or natural hair, used to paint a thin, even film of oil, butter, egg or glaze onto a surface."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "technique/press-tofu",
+  "tier": "drafted",
+  "names": {"en": "Press tofu"},
+  "aliases": {"en": ["press the tofu", "drain tofu", "press and drain tofu"]},
+  "does": "Presses water out of a block of firm tofu under a light weight, so that it is firmer, absorbs a sauce and browns instead of steaming.",
+  "how": [
+    "Wrap the block in a clean cloth or paper towels.",
+    "Set it on a tray or a board, put a plate and a light weight on top and tilt the tray so the water runs off.",
+    "Leave it until the water has stopped running out.",
+    "Unwrap, pat dry and cut."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The cloth is wet and the block has become a little thinner."},
+    {"sense": "feel", "text": "The tofu is firm and springs back."}
+  ],
+  "mistakes": [
+    {"mistake": "Pressing with a heavy weight, which cracks the block.", "fix": "Use a plate or a light bowl only."},
+    {"mistake": "Skipping the drying, so that the tofu spits in the pan.", "fix": "Pat it dry."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/firm-tofu", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish", "equipment/colander"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/cholar-dal",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "dal",
+  "dish": "Cholar dal",
+  "also_called": ["bengali chana dal", "cholar dal with coconut"],
+  "techniques": ["pressure cook", "simmer", "fry", "temper spices in hot fat"],
+  "ingredients": [
+    "split chickpea",
+    "coconut",
+    "ghee",
+    "cumin seed",
+    "bay leaf",
+    "green chili",
+    "raisin",
+    "sugar",
+    "turmeric"
+  ]
+}

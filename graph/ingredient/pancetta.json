@@ -1,0 +1,32 @@
+{
+  "id": "ingredient/pancetta",
+  "tier": "drafted",
+  "names": {"en": "Pancetta", "fr": "Pancetta"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/fatty-cuts", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Pork belly cured in salt and spices and not smoked, sold rolled or flat. It is cut in small cubes or strips and cooked in its own fat to start a soup, a sauce or a rice dish.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is cured pork.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is cured pork.", "certain": true},
+      {"fact": "fact/milk", "basis": "Cured pork is often made with lactose or milk protein.", "certain": false},
+      {"fact": "fact/celery", "basis": "Cured meat is often made with an extract that holds celery.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/gluten", "fact/lupin", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

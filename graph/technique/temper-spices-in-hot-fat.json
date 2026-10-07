@@ -1,0 +1,90 @@
+{
+  "id": "technique/temper-spices-in-hot-fat",
+  "tier": "drafted",
+  "names": {"en": "Temper spices in hot fat"},
+  "aliases": {
+    "en": [
+      "tadka",
+      "tarka",
+      "chaunk",
+      "baghar",
+      "vaghar",
+      "phodni",
+      "oggarane",
+      "thalippu",
+      "tempering spices",
+      "temper whole spices",
+      "fry whole spices in hot fat"
+    ]
+  },
+  "does": "Fries whole seeds, dried chillies and leaves in a little very hot fat until they crackle, darken a shade and give up their scent, then pours the scented fat and the spices over the food. Done at the start it is the base that onions and vegetables cook in. Done at the end it is a last layer of flavour poured over a finished dish.",
+  "how": [
+    "Heat a small amount of ghee or oil in a small pan until it shimmers and a single seed dropped in sizzles at once.",
+    "Add the slowest seeds first: mustard seed, which will crackle and jump, and any split lentils that should turn golden. Cover the pan with a lid if they leap out.",
+    "When the popping slows, add cumin, fenugreek seed, cardamom and the dried chilli, and stir for a moment.",
+    "Add the curry leaves, dry, and the asafoetida last. They burn the quickest, and wet leaves spit.",
+    "Stop the moment the seeds darken a shade and the scent rises, and take the pan off the heat.",
+    "Pour the fat and the spices straight into the food, or over a finished dish, and stir it in or leave it on top."
+  ],
+  "cues": [
+    {
+      "sense": "hear",
+      "text": "Mustard seeds crackle and pop, then go quiet. A loud, steady sizzle means the fat is hot enough."
+    },
+    {
+      "sense": "see",
+      "text": "Cumin seeds turn a shade darker, the dried chilli puffs and darkens, and the curry leaves go glassy and crisp."
+    },
+    {"sense": "smell", "text": "A warm, nutty scent rises. A sharp, acrid smell means the spices have gone too far."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Putting the spices into fat that is not hot enough, so that they soak it up and taste raw.",
+      "fix": "Test with a single seed first. It must sizzle at once."
+    },
+    {
+      "mistake": "Leaving the pan on the heat after the seeds have darkened, so that they scorch and turn bitter.",
+      "fix": "Take the pan off the heat the moment the scent rises and pour out at once."
+    },
+    {
+      "mistake": "Adding asafoetida or chilli powder first, so that it burns before the seeds are ready.",
+      "fix": "Add them last, with the pan off the heat or nearly so."
+    },
+    {
+      "mistake": "Dropping wet curry leaves into the fat, which makes it spit.",
+      "fix": "Pat the leaves dry first and stand back as they go in."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/tempering-spices", "tier": "drafted"},
+    {"thing": "ingredient/curry-leaf", "tier": "drafted"},
+    {"thing": "ingredient/asafoetida", "tier": "drafted"},
+    {"thing": "ingredient/black-gram", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saucepan"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/ghee", "ingredient/oil", "ingredient/coconut-oil", "ingredient/mustard-oil"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/saute",
+      "differs": "The spices are whole, few and cooked for a moment, in a small amount of hot fat on their own, and the scented fat is the point. A French sauce starts with spices or aromatics that cook slowly along with the vegetables, and it never pours the fat over a finished dish.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/toast",
+      "differs": "Toasting browns spices in a dry pan to be ground later. Here the spices go whole into hot fat, which carries their scent into the food, and the cooking is over in moments.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

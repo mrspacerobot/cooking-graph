@@ -1,7 +1,7 @@
 {
   "id": "ingredient/sumac",
   "tier": "drafted",
-  "names": {"en": "Sumac", "fr": "Sumac"},
+  "names": {"en": "Sumac", "fr": "Sumac", "es": "zumaque"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -24,5 +24,7 @@
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q16131953", "tier": "sourced"}
+  ]
 }

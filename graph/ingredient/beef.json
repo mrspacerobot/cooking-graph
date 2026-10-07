@@ -1,8 +1,8 @@
 {
   "id": "ingredient/beef",
   "tier": "drafted",
-  "names": {"en": "Beef", "fr": "Bœuf"},
-  "aliases": {},
+  "names": {"en": "Beef", "fr": "Bœuf", "es": "carne de res", "it": "manzo", "tr": "dana eti"},
+  "aliases": {"fr": ["viande bovine"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -24,5 +24,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q192628", "tier": "sourced"}
+  ]
 }

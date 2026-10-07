@@ -1,7 +1,7 @@
 {
   "id": "ingredient/kidney-bean",
   "tier": "drafted",
-  "names": {"en": "Kidney bean", "fr": "Haricot rouge"},
+  "names": {"en": "Kidney bean", "fr": "Haricot rouge", "es": "frijol rojo"},
   "aliases": {"en": ["rajma", "red kidney bean"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q18175531", "tier": "sourced"}
+  ]
 }

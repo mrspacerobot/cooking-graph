@@ -1,8 +1,14 @@
 {
   "id": "ingredient/tomato-paste",
   "tier": "drafted",
-  "names": {"en": "Tomato paste", "fr": "Concentré de tomate"},
-  "aliases": {"en": ["tomato purée", "tomato concentrate"]},
+  "names": {
+    "en": "Tomato paste",
+    "fr": "Concentré de tomate",
+    "es": "pasta de tomate",
+    "it": "concentrato di pomodoro",
+    "tr": "domates salçası"
+  },
+  "aliases": {"en": ["tomato purée", "tomato concentrate"], "fr": ["double concentré de tomates"]},
   "is_a": [
     {"thing": "ingredient/tomato", "tier": "drafted"}
   ],
@@ -25,5 +31,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1499073", "tier": "sourced"}
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "id": "ingredient/lentil",
   "tier": "drafted",
-  "names": {"en": "Lentil", "fr": "Lentille"},
-  "aliases": {},
+  "names": {"en": "Lentil", "fr": "Lentille", "es": "lenteja", "it": "lenticchia"},
+  "aliases": {"fr": ["lentile"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -28,5 +28,7 @@
     {"thing": "cuisine/indian", "tier": "drafted"},
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q61505177", "tier": "sourced"}
+  ]
 }

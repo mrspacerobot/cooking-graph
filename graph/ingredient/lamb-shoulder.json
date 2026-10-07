@@ -1,7 +1,7 @@
 {
   "id": "ingredient/lamb-shoulder",
   "tier": "drafted",
-  "names": {"en": "Lamb shoulder", "fr": "Épaule d'agneau"},
+  "names": {"en": "Lamb shoulder", "fr": "Épaule d'agneau", "es": "paletilla de cordero"},
   "aliases": {"en": ["stewing lamb"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +24,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q138542233", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/cider",
   "tier": "drafted",
-  "names": {"en": "Cider", "fr": "Cidre"},
+  "names": {"en": "Cider", "fr": "Cidre", "es": "sidra", "it": "sidro", "tr": "elma şarabı"},
   "aliases": {"en": ["dry cider", "hard cider"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q167296", "tier": "sourced"}
+  ]
 }

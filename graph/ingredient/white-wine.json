@@ -1,7 +1,7 @@
 {
   "id": "ingredient/white-wine",
   "tier": "drafted",
-  "names": {"en": "White wine", "fr": "Vin blanc"},
+  "names": {"en": "White wine", "fr": "Vin blanc", "es": "vino blanco", "it": "vino bianco", "tr": "beyaz şarap"},
   "aliases": {"en": ["dry white wine"]},
   "is_a": [],
   "part_of": [],
@@ -31,5 +31,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q10210", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/celery",
   "tier": "drafted",
-  "names": {"en": "Celery", "fr": "Céleri"},
+  "names": {"en": "Celery", "fr": "Céleri", "es": "apio", "it": "sedano", "tr": "Kereviz"},
   "aliases": {"en": ["celery stalk", "celery stick"]},
   "is_a": [],
   "part_of": [],
@@ -36,5 +36,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q23012379", "tier": "sourced"}
+  ]
 }

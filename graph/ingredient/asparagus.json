@@ -1,7 +1,7 @@
 {
   "id": "ingredient/asparagus",
   "tier": "drafted",
-  "names": {"en": "Asparagus", "fr": "Asperge"},
+  "names": {"en": "Asparagus", "fr": "Asperge", "es": "espárragos", "it": "asparago"},
   "aliases": {"en": ["asparagus spears"]},
   "is_a": [],
   "part_of": [],
@@ -23,5 +23,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q23041045", "tier": "sourced"}
+  ]
 }

@@ -49,7 +49,12 @@ else:
         with open(args.save, "w", encoding="utf-8") as handle:
             json.dump(entities, handle, ensure_ascii=False, indent=1)
 try:
-    the_plan = wikidata.plan(things, entities, args.source, languages)
+    refused_path = os.path.join(ROOT, "schema", "wikidata-refused.json")
+    refused = []
+    if os.path.exists(refused_path):
+        with open(refused_path, encoding="utf-8") as handle:
+            refused = json.load(handle)
+    the_plan = wikidata.plan(things, entities, args.source, languages, refused)
 except ValueError as error:
     print("wikidata: %s" % error, file=sys.stderr)
     sys.exit(1)

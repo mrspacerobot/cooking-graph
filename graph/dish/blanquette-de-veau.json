@@ -1,7 +1,7 @@
 {
   "id": "dish/blanquette-de-veau",
   "tier": "drafted",
-  "names": {"en": "Blanquette de veau", "fr": "Blanquette de veau"},
+  "names": {"en": "Blanquette de veau", "fr": "Blanquette de veau", "es": "Blanquette de ternera"},
   "aliases": {"en": ["veal blanquette", "veal in white sauce"]},
   "is": "Veal simmered without browning with vegetables and herbs, then served in a sauce made from its own broth, thickened with a pale roux and finished with cream and egg yolk, with mushrooms and small onions.",
   "parts": [
@@ -44,5 +44,7 @@
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1191278", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/white-cheese",
   "tier": "drafted",
-  "names": {"en": "White cheese"},
+  "names": {"en": "White cheese", "es": "queso blanco", "it": "formaggio bianco"},
   "aliases": {"en": ["beyaz peynir", "Turkish white cheese"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q123160832", "tier": "sourced"}
+  ]
 }

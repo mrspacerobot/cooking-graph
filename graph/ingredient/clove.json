@@ -1,8 +1,8 @@
 {
   "id": "ingredient/clove",
   "tier": "drafted",
-  "names": {"en": "Clove", "fr": "Clou de girofle"},
-  "aliases": {"en": ["cloves", "whole clove"]},
+  "names": {"en": "Clove", "fr": "Clou de girofle", "es": "clavos de olor", "it": "chiodo di garofano"},
+  "aliases": {"en": ["cloves", "whole clove"], "fr": ["girofle"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -25,5 +25,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q15622897", "tier": "sourced"}
+  ]
 }

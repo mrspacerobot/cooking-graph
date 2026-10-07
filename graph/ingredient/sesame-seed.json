@@ -1,8 +1,8 @@
 {
   "id": "ingredient/sesame-seed",
   "tier": "drafted",
-  "names": {"en": "Sesame seed", "fr": "Graine de sésame"},
-  "aliases": {"en": ["sesame seeds", "goma"]},
+  "names": {"en": "Sesame seed", "fr": "Graine de sésame", "es": "semillas de sésamo", "it": "seme di sesamo"},
+  "aliases": {"en": ["sesame seeds", "goma"], "fr": ["graines de sésame"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -27,5 +27,7 @@
     {"thing": "cuisine/moroccan", "tier": "drafted"},
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q12000036", "tier": "sourced"}
+  ]
 }

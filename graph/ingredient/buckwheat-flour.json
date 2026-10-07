@@ -1,7 +1,7 @@
 {
   "id": "ingredient/buckwheat-flour",
   "tier": "drafted",
-  "names": {"en": "Buckwheat flour", "fr": "Farine de sarrasin"},
+  "names": {"en": "Buckwheat flour", "fr": "Farine de sarrasin", "es": "harina de sarraceno"},
   "aliases": {"en": ["farina di grano saraceno"]},
   "is_a": [],
   "part_of": [],
@@ -26,5 +26,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q11621982", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,13 @@
 {
   "id": "ingredient/lemon-juice",
   "tier": "drafted",
-  "names": {"en": "Lemon juice", "fr": "Jus de citron"},
+  "names": {
+    "en": "Lemon juice",
+    "fr": "Jus de citron",
+    "es": "jugo de limón",
+    "it": "succo di limone",
+    "tr": "limon suyu"
+  },
   "aliases": {},
   "is_a": [],
   "part_of": [
@@ -44,5 +50,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1375049", "tier": "sourced"}
+  ]
 }

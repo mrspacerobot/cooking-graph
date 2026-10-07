@@ -1,7 +1,7 @@
 {
   "id": "ingredient/almond",
   "tier": "drafted",
-  "names": {"en": "Almond", "fr": "Amande"},
+  "names": {"en": "Almond", "fr": "Amande", "es": "almendra", "it": "mandorla"},
   "aliases": {"en": ["almonds"]},
   "is_a": [],
   "part_of": [],
@@ -22,5 +22,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q184357", "tier": "sourced"}
+  ]
 }

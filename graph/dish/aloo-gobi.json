@@ -1,7 +1,7 @@
 {
   "id": "dish/aloo-gobi",
   "tier": "drafted",
-  "names": {"en": "Aloo gobi"},
+  "names": {"en": "Aloo gobi", "it": "Allo gobi"},
   "aliases": {"en": ["aloo gobhi", "potato and cauliflower sabzi"]},
   "is": "Potato and cauliflower cooked dry in a spiced onion and tomato base, with no water added, under a lid over a low heat, and finished with sour mango powder and garam masala.",
   "parts": [
@@ -52,5 +52,7 @@
   "belongs_to": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q447296", "tier": "sourced"}
+  ]
 }

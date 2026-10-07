@@ -1,7 +1,13 @@
 {
   "id": "ingredient/brown-sugar",
   "tier": "drafted",
-  "names": {"en": "Brown sugar", "fr": "Cassonade"},
+  "names": {
+    "en": "Brown sugar",
+    "fr": "Cassonade",
+    "es": "azúcar morena",
+    "it": "zucchero bruno",
+    "tr": "Kahverengi şeker"
+  },
   "aliases": {},
   "is_a": [
     {"thing": "ingredient/sugar", "tier": "drafted"}
@@ -26,5 +32,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q11190742", "tier": "sourced"}
+  ]
 }

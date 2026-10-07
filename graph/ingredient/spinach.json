@@ -1,8 +1,8 @@
 {
   "id": "ingredient/spinach",
   "tier": "drafted",
-  "names": {"en": "Spinach", "fr": "Épinards"},
-  "aliases": {},
+  "names": {"en": "Spinach", "fr": "Épinards", "it": "spinaci"},
+  "aliases": {"fr": ["feuilles d'épinard"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -24,5 +24,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q36814998", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/black-pudding",
   "tier": "drafted",
-  "names": {"en": "Black pudding", "fr": "Boudin noir"},
+  "names": {"en": "Black pudding", "fr": "Boudin noir", "es": "budín negro"},
   "aliases": {"en": ["blood sausage"]},
   "is_a": [],
   "part_of": [],
@@ -28,5 +28,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q15462145", "tier": "sourced"}
+  ]
 }

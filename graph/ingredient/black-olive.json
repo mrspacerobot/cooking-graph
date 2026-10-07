@@ -1,7 +1,7 @@
 {
   "id": "ingredient/black-olive",
   "tier": "drafted",
-  "names": {"en": "Black olive", "fr": "Olive noire"},
+  "names": {"en": "Black olive", "fr": "Olive noire", "es": "aceituna negra", "it": "olive nere"},
   "aliases": {"en": ["black olives", "niçoise olive"]},
   "is_a": [],
   "part_of": [],
@@ -23,5 +23,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q56475549", "tier": "sourced"}
+  ]
 }

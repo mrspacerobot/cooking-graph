@@ -1,7 +1,13 @@
 {
   "id": "preparation/tartar-sauce",
   "tier": "drafted",
-  "names": {"en": "Tartar sauce"},
+  "names": {
+    "en": "Tartar sauce",
+    "es": "salsa tártara",
+    "it": "salsa tartara",
+    "tr": "Tartar sos",
+    "fr": "sauce tartare"
+  },
   "aliases": {"en": ["tartare sauce"]},
   "is": "A thick, creamy sauce of mayonnaise with chopped pickles, chopped boiled egg and onion. It goes with fried food, where its sharpness cuts through the oil.",
   "parts": [
@@ -29,5 +35,7 @@
   ],
   "stands_in_for": [],
   "belongs_to": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q348947", "tier": "sourced"}
+  ]
 }

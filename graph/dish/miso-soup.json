@@ -1,7 +1,7 @@
 {
   "id": "dish/miso-soup",
   "tier": "drafted",
-  "names": {"en": "Miso soup"},
+  "names": {"en": "Miso soup", "es": "sopa de miso", "it": "zuppa di miso", "tr": "Miso çorbası", "fr": "soupe miso"},
   "aliases": {"en": ["misoshiru", "Japanese miso soup"]},
   "is": "A light soup of dashi in which miso is stirred smooth at the end and never boiled, with cubes of soft tofu, softened wakame and a scatter of spring onion.",
   "parts": [
@@ -19,5 +19,7 @@
   "belongs_to": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q471866", "tier": "sourced"}
+  ]
 }

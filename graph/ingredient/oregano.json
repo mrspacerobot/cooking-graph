@@ -1,7 +1,7 @@
 {
   "id": "ingredient/oregano",
   "tier": "drafted",
-  "names": {"en": "Oregano", "fr": "Origan"},
+  "names": {"en": "Oregano", "fr": "Origan", "it": "origano"},
   "aliases": {"en": ["rigani"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/greek", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q92581152", "tier": "sourced"}
+  ]
 }

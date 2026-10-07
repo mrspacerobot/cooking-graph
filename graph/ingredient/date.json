@@ -1,7 +1,7 @@
 {
   "id": "ingredient/date",
   "tier": "drafted",
-  "names": {"en": "Date", "fr": "Datte"},
+  "names": {"en": "Date", "fr": "Datte", "es": "dátil", "it": "dattero", "tr": "hurma"},
   "aliases": {"en": ["dates", "date fruit"]},
   "is_a": [],
   "part_of": [],
@@ -38,5 +38,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1652093", "tier": "sourced"}
+  ]
 }

@@ -25,5 +25,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/greek", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q182760", "tier": "sourced"}
+  ]
 }

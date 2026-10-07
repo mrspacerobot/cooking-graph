@@ -1,7 +1,7 @@
 {
   "id": "ingredient/beef-stock",
   "tier": "drafted",
-  "names": {"en": "Beef stock", "fr": "Bouillon de bœuf"},
+  "names": {"en": "Beef stock", "fr": "Bouillon de bœuf", "es": "Caldo de carne de vaca", "it": "brodo di manzo"},
   "aliases": {"en": ["beef broth"]},
   "is_a": [
     {"thing": "ingredient/stock", "tier": "drafted"}
@@ -43,5 +43,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q96362190", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "dish/fattoush",
   "tier": "drafted",
-  "names": {"en": "Fattoush"},
+  "names": {"en": "Fattoush", "tr": "Fettuş", "fr": "fattouche"},
   "aliases": {"en": ["fattouch", "fatoush", "Lebanese bread salad"]},
   "is": "A salad of crisp lettuce, tomato, cucumber and fresh herbs, topped with pieces of toasted pita and dressed with a sharp lemon, sumac and pomegranate molasses dressing. The bread goes in at the last moment so that it stays crisp.",
   "parts": [
@@ -43,5 +43,7 @@
   "belongs_to": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1398251", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,13 @@
 {
   "id": "ingredient/mustard-oil",
   "tier": "drafted",
-  "names": {"en": "Mustard oil", "fr": "Huile de moutarde"},
+  "names": {
+    "en": "Mustard oil",
+    "fr": "Huile de moutarde",
+    "es": "Aceite de mostaza",
+    "it": "olio di senape",
+    "tr": "hardal yağı"
+  },
   "aliases": {"en": ["sarson ka tel"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +30,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q910958", "tier": "sourced"}
+  ]
 }

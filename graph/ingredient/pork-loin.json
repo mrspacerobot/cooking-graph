@@ -1,7 +1,7 @@
 {
   "id": "ingredient/pork-loin",
   "tier": "drafted",
-  "names": {"en": "Pork loin", "fr": "Longe de porc"},
+  "names": {"en": "Pork loin", "fr": "Longe de porc", "es": "Lomo de cerdo", "it": "lonza di maiale"},
   "aliases": {"en": ["loin of pork", "pork roasting joint"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q7230136", "tier": "sourced"}
+  ]
 }

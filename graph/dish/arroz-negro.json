@@ -29,5 +29,7 @@
   "belongs_to": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q19872588", "tier": "sourced"}
+  ]
 }

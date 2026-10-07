@@ -1,7 +1,12 @@
 {
   "id": "ingredient/coriander-seed",
   "tier": "drafted",
-  "names": {"en": "Coriander seed", "fr": "Graine de coriandre"},
+  "names": {
+    "en": "Coriander seed",
+    "fr": "Graine de coriandre",
+    "es": "Semillas de cilantro",
+    "it": "seme di coriandolo"
+  },
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -28,5 +33,7 @@
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/moroccan", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q20856764", "tier": "sourced"}
+  ]
 }

@@ -2,7 +2,7 @@
   "id": "ingredient/chicory",
   "tier": "drafted",
   "names": {"en": "Chicory", "fr": "Endive"},
-  "aliases": {"en": ["Belgian endive", "witloof", "Belgian endives"]},
+  "aliases": {"en": ["Belgian endive", "witloof", "Belgian endives"], "fr": ["chicorée"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -23,5 +23,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2963409", "tier": "sourced"}
+  ]
 }

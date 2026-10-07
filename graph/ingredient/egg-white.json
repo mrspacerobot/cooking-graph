@@ -1,7 +1,7 @@
 {
   "id": "ingredient/egg-white",
   "tier": "drafted",
-  "names": {"en": "Egg white", "fr": "Blanc d'œuf"},
+  "names": {"en": "Egg white", "fr": "Blanc d'œuf", "es": "clara de huevo", "it": "albume", "tr": "yumurta akı"},
   "aliases": {},
   "is_a": [],
   "part_of": [
@@ -24,5 +24,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q796758", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/rice-vinegar",
   "tier": "drafted",
-  "names": {"en": "Rice vinegar"},
+  "names": {"en": "Rice vinegar", "es": "vinagre de arroz", "it": "aceto di riso", "fr": "Vinaigre de riz"},
   "aliases": {"en": ["rice wine vinegar"]},
   "is_a": [
     {"thing": "ingredient/vinegar", "tier": "drafted"}
@@ -33,5 +33,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1849012", "tier": "sourced"}
+  ]
 }

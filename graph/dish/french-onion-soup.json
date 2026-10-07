@@ -1,7 +1,7 @@
 {
   "id": "dish/french-onion-soup",
   "tier": "drafted",
-  "names": {"en": "French onion soup", "fr": "Soupe à l'oignon"},
+  "names": {"en": "French onion soup", "fr": "Soupe à l'oignon", "es": "Sopa de cebolla", "it": "zuppa di cipolle"},
   "aliases": {"en": ["onion soup gratinée"], "fr": ["soupe à l'oignon gratinée", "gratinée"]},
   "is": "Onions caramelized slowly in butter, simmered in beef stock with a little white wine, and served under toasted bread and a crust of browned cheese.",
   "parts": [
@@ -40,5 +40,7 @@
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q244617", "tier": "sourced"}
+  ]
 }

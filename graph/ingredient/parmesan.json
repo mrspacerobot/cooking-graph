@@ -1,7 +1,7 @@
 {
   "id": "ingredient/parmesan",
   "tier": "drafted",
-  "names": {"en": "Parmesan", "fr": "Parmesan"},
+  "names": {"en": "Parmesan", "fr": "Parmesan", "es": "queso parmesano", "tr": "Parmesan peyniri"},
   "aliases": {"en": ["Parmigiano Reggiano"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q155922", "tier": "sourced"}
+  ]
 }

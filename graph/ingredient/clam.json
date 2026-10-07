@@ -1,7 +1,7 @@
 {
   "id": "ingredient/clam",
   "tier": "drafted",
-  "names": {"en": "Clam", "fr": "Palourde"},
+  "names": {"en": "Clam", "fr": "Palourde", "it": "vongola"},
   "aliases": {"en": ["vongole", "almeja"]},
   "is_a": [],
   "part_of": [],
@@ -27,5 +27,7 @@
     {"thing": "cuisine/italian", "tier": "drafted"},
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1192868", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/rice-flour",
   "tier": "drafted",
-  "names": {"en": "Rice flour"},
+  "names": {"en": "Rice flour", "es": "harina de arroz", "it": "farina di riso", "fr": "farine de riz"},
   "aliases": {"en": ["pirinc unu"]},
   "is_a": [],
   "part_of": [],
@@ -23,5 +23,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1269205", "tier": "sourced"}
+  ]
 }

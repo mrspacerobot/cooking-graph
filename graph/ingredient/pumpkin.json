@@ -1,8 +1,8 @@
 {
   "id": "ingredient/pumpkin",
   "tier": "drafted",
-  "names": {"en": "Pumpkin", "fr": "Potiron"},
-  "aliases": {"en": ["winter squash"]},
+  "names": {"en": "Pumpkin", "fr": "Potiron", "it": "zucca"},
+  "aliases": {"en": ["winter squash"], "fr": ["citrouille"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -23,5 +23,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q165308", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/sauerkraut",
   "tier": "drafted",
-  "names": {"en": "Sauerkraut", "fr": "Choucroute"},
+  "names": {"en": "Sauerkraut", "fr": "Choucroute", "es": "Chucrut", "it": "crauti"},
   "aliases": {"en": ["fermented cabbage"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +24,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q154166", "tier": "sourced"}
+  ]
 }

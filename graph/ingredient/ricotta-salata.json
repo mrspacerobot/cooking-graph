@@ -1,7 +1,7 @@
 {
   "id": "ingredient/ricotta-salata",
   "tier": "drafted",
-  "names": {"en": "Ricotta salata", "fr": "Ricotta salée"},
+  "names": {"en": "Ricotta salata", "fr": "Ricotta salée", "it": "ricotta secca"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -29,5 +29,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3935162", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/thyme",
   "tier": "drafted",
-  "names": {"en": "Thyme", "fr": "Thym"},
+  "names": {"en": "Thyme", "fr": "Thym", "es": "tomillo", "it": "timo", "tr": "Kekik"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3215980", "tier": "sourced"}
+  ]
 }

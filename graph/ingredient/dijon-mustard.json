@@ -1,7 +1,13 @@
 {
   "id": "ingredient/dijon-mustard",
   "tier": "drafted",
-  "names": {"en": "Dijon mustard", "fr": "Moutarde de Dijon"},
+  "names": {
+    "en": "Dijon mustard",
+    "fr": "Moutarde de Dijon",
+    "es": "Mostaza de Dijon",
+    "it": "Senape di Digione",
+    "tr": "Dijon hardalı"
+  },
   "aliases": {"en": ["mustard"]},
   "is_a": [],
   "part_of": [],
@@ -38,5 +44,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q204226", "tier": "sourced"}
+  ]
 }

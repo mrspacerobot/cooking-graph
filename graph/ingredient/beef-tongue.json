@@ -1,7 +1,7 @@
 {
   "id": "ingredient/beef-tongue",
   "tier": "drafted",
-  "names": {"en": "Beef tongue", "fr": "Langue de bœuf"},
+  "names": {"en": "Beef tongue", "fr": "Langue de bœuf", "es": "Lengua de res", "tr": "Dil"},
   "aliases": {"en": ["ox tongue"]},
   "is_a": [],
   "part_of": [],
@@ -22,5 +22,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1558649", "tier": "sourced"}
+  ]
 }

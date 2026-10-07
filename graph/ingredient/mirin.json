@@ -36,5 +36,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1045910", "tier": "sourced"}
+  ]
 }

@@ -106,6 +106,23 @@ class WikidataTest(unittest.TestCase):
         self.assertEqual({}, names["ingredient/flour"])
         self.assertIn("name-held", {skip.why for skip in plan.skipped})
 
+    def test_a_label_with_a_note_in_brackets_a_digit_or_a_full_stop_is_not_a_plain_name(self):
+        labels = {"es": "mantequilla (alimento)", "it": "burro 2", "tr": "tereyağı sp."}
+        plan = self.plan([entity("butter", "Q34172", labels)])
+        self.assertEqual({}, plan.changes[0].names)
+        self.assertEqual({"not-a-plain-name"}, {skip.why for skip in plan.skipped})
+
+    def test_a_very_long_label_is_not_a_plain_name(self):
+        plan = self.plan([entity("butter", "Q34172", {"es": "Denominación de Origen Protegida Mantequilla de la Región Antigua"})])
+        self.assertEqual({}, plan.changes[0].names)
+
+    def test_a_name_that_was_read_and_refused_is_not_written_again(self):
+        refused = [{"thing": "ingredient/butter", "language": "es", "label": "mantequilla", "why": "Read and refused in a test."}]
+        plan = wikidata.plan(self.things(), [BUTTER], SOURCE, LANGUAGES, refused)
+        self.assertNotIn("es", plan.changes[0].names)
+        self.assertIn("it", plan.changes[0].names)
+        self.assertIn("read-and-refused", {skip.why for skip in plan.skipped})
+
     def test_a_label_in_another_script_is_not_written(self):
         plan = self.plan([entity("butter", "Q34172", {"ja": "バター", "es": "mantequilla"})], languages=("es", "ja"))
         self.assertEqual({"es": "mantequilla"}, plan.changes[0].names)

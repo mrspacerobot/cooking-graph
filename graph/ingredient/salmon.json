@@ -1,7 +1,7 @@
 {
   "id": "ingredient/salmon",
   "tier": "drafted",
-  "names": {"en": "Salmon", "fr": "Saumon"},
+  "names": {"en": "Salmon", "fr": "Saumon", "it": "salmone", "tr": "somon"},
   "aliases": {"en": ["salmon fillet"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2796766", "tier": "sourced"}
+  ]
 }

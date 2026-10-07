@@ -1,7 +1,7 @@
 {
   "id": "dish/baba-ghanoush",
   "tier": "drafted",
-  "names": {"en": "Baba ghanoush"},
+  "names": {"en": "Baba ghanoush", "es": "baba ganush", "it": "baba ganush", "tr": "Abugannug", "fr": "baba ganousch"},
   "aliases": {"en": ["baba ghannouj", "baba ganoush", "baba ghanouj", "moutabal", "mutabbal"]},
   "is": "A smoky, creamy dip of charred aubergine mashed with tahini, lemon juice and garlic, served in a shallow dish with a pool of olive oil. The tahini version is called moutabal in much of the Levant.",
   "parts": [
@@ -34,5 +34,7 @@
   "belongs_to": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1072192", "tier": "sourced"}
+  ]
 }

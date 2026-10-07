@@ -1,7 +1,7 @@
 {
   "id": "ingredient/mackerel",
   "tier": "drafted",
-  "names": {"en": "Mackerel", "fr": "Maquereau"},
+  "names": {"en": "Mackerel", "fr": "Maquereau", "es": "verdel"},
   "aliases": {"en": ["saba"]},
   "is_a": [],
   "part_of": [],
@@ -27,5 +27,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q8064278", "tier": "sourced"}
+  ]
 }

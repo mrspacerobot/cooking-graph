@@ -1,7 +1,7 @@
 {
   "id": "ingredient/pork-shoulder",
   "tier": "drafted",
-  "names": {"en": "Pork shoulder", "fr": "Épaule de porc"},
+  "names": {"en": "Pork shoulder", "fr": "Épaule de porc", "es": "paleta de cerdo"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2255700", "tier": "sourced"}
+  ]
 }

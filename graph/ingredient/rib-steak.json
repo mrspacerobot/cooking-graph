@@ -1,8 +1,8 @@
 {
   "id": "ingredient/rib-steak",
   "tier": "drafted",
-  "names": {"en": "Rib steak", "fr": "Entrecôte"},
-  "aliases": {"en": ["ribeye", "entrecote"]},
+  "names": {"en": "Rib steak", "fr": "Entrecôte", "es": "Costilla de ternera"},
+  "aliases": {"en": ["ribeye", "entrecote"], "fr": ["côte de bœuf"]},
   "is_a": [
     {"thing": "ingredient/beef-steak", "tier": "drafted"}
   ],
@@ -26,5 +26,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q16335923", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/parsley",
   "tier": "drafted",
-  "names": {"en": "Parsley", "fr": "Persil"},
+  "names": {"en": "Parsley", "fr": "Persil", "es": "perejil", "it": "prezzemolo", "tr": "maydanoz"},
   "aliases": {"en": ["flat-leaf parsley"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q65522500", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "dish/bacalao-a-la-vizcaina",
   "tier": "drafted",
-  "names": {"en": "Bacalao a la vizcaína"},
+  "names": {"en": "Bacalao a la vizcaína", "fr": "morue à la biscayenne"},
   "aliases": {"en": ["bacalao vizcaina", "salt cod in Biscay sauce", "salt cod in Vizcaina sauce"]},
   "is": "Salt cod from the Basque country, soaked until it has lost most of its salt, then simmered in a thick, sweet, brick-red sauce of onion cooked down for a long time and the pulp of dried choricero peppers.",
   "parts": [
@@ -19,5 +19,7 @@
   "belongs_to": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q597836", "tier": "sourced"}
+  ]
 }

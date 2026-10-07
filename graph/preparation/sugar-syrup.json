@@ -1,7 +1,7 @@
 {
   "id": "preparation/sugar-syrup",
   "tier": "drafted",
-  "names": {"en": "Sugar syrup"},
+  "names": {"en": "Sugar syrup", "fr": "sirop de sucre"},
   "aliases": {"en": ["simple syrup"]},
   "is": "Sugar dissolved in water and simmered until it is clear and lightly thick. It soaks into pastry, sweetens fruit and drinks, and glazes cakes.",
   "parts": [
@@ -23,5 +23,7 @@
   ],
   "stands_in_for": [],
   "belongs_to": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1377087", "tier": "sourced"}
+  ]
 }

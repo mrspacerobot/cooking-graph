@@ -1,7 +1,7 @@
 {
   "id": "ingredient/bean-sprout",
   "tier": "drafted",
-  "names": {"en": "Bean sprout"},
+  "names": {"en": "Bean sprout", "it": "germoglio di legume"},
   "aliases": {"en": ["mung bean sprouts", "moyashi"]},
   "is_a": [],
   "part_of": [],
@@ -27,5 +27,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2459072", "tier": "sourced"}
+  ]
 }

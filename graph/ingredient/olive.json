@@ -1,7 +1,7 @@
 {
   "id": "ingredient/olive",
   "tier": "drafted",
-  "names": {"en": "Olive", "fr": "Olive"},
+  "names": {"en": "Olive", "fr": "Olive", "es": "oliva", "it": "oliva", "tr": "zeytin"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -28,5 +28,7 @@
     {"thing": "cuisine/spanish", "tier": "drafted"},
     {"thing": "cuisine/moroccan", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1621080", "tier": "sourced"}
+  ]
 }

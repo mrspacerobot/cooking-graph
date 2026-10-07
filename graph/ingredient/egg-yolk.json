@@ -1,7 +1,7 @@
 {
   "id": "ingredient/egg-yolk",
   "tier": "drafted",
-  "names": {"en": "Egg yolk", "fr": "Jaune d'œuf"},
+  "names": {"en": "Egg yolk", "fr": "Jaune d'œuf", "es": "yema de huevo", "it": "tuorlo", "tr": "Yumurta sarısı"},
   "aliases": {"en": ["egg yolks"]},
   "is_a": [],
   "part_of": [
@@ -24,5 +24,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q181409", "tier": "sourced"}
+  ]
 }

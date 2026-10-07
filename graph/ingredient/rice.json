@@ -1,7 +1,7 @@
 {
   "id": "ingredient/rice",
   "tier": "drafted",
-  "names": {"en": "Rice", "fr": "Riz"},
+  "names": {"en": "Rice", "fr": "Riz", "es": "arroz", "it": "riso", "tr": "pirinç"},
   "aliases": {"en": ["white rice"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q5090", "tier": "sourced"}
+  ]
 }

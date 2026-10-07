@@ -1,7 +1,7 @@
 {
   "id": "ingredient/lemon-zest",
   "tier": "drafted",
-  "names": {"en": "Lemon zest", "fr": "Zeste de citron"},
+  "names": {"en": "Lemon zest", "fr": "Zeste de citron", "es": "cáscara de limón", "it": "scorza di limone"},
   "aliases": {},
   "is_a": [],
   "part_of": [
@@ -23,5 +23,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q206454", "tier": "sourced"}
+  ]
 }

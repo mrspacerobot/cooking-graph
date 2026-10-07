@@ -1,7 +1,7 @@
 {
   "id": "preparation/vinaigrette",
   "tier": "drafted",
-  "names": {"en": "Vinaigrette", "fr": "Vinaigrette"},
+  "names": {"en": "Vinaigrette", "fr": "Vinaigrette", "es": "vinagreta"},
   "aliases": {"en": ["French dressing", "mustard vinaigrette"]},
   "is": "Oil whisked into vinegar and mustard until they hold together for a while: the dressing of French salads.",
   "parts": [
@@ -45,5 +45,7 @@
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q847441", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/ham",
   "tier": "drafted",
-  "names": {"en": "Ham", "fr": "Jambon"},
+  "names": {"en": "Ham", "fr": "Jambon", "es": "jamón", "it": "prosciutto"},
   "aliases": {"en": ["cooked ham", "jambon blanc"]},
   "is_a": [],
   "part_of": [],
@@ -31,5 +31,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q170486", "tier": "sourced"}
+  ]
 }

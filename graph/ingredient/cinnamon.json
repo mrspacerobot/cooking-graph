@@ -1,7 +1,7 @@
 {
   "id": "ingredient/cinnamon",
   "tier": "drafted",
-  "names": {"en": "Cinnamon", "fr": "Cannelle"},
+  "names": {"en": "Cinnamon", "fr": "Cannelle", "es": "canela", "it": "cannella", "tr": "Tarçın"},
   "aliases": {"en": ["cinnamon stick"]},
   "is_a": [],
   "part_of": [],
@@ -23,5 +23,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q28165", "tier": "sourced"}
+  ]
 }

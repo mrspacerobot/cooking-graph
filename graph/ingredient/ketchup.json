@@ -1,7 +1,7 @@
 {
   "id": "ingredient/ketchup",
   "tier": "drafted",
-  "names": {"en": "Ketchup"},
+  "names": {"en": "Ketchup", "tr": "ketçap"},
   "aliases": {"en": ["tomato ketchup"]},
   "is_a": [],
   "part_of": [],
@@ -29,5 +29,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q178143", "tier": "sourced"}
+  ]
 }

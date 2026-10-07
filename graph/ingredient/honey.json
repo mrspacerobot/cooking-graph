@@ -1,7 +1,7 @@
 {
   "id": "ingredient/honey",
   "tier": "drafted",
-  "names": {"en": "Honey", "fr": "Miel"},
+  "names": {"en": "Honey", "fr": "Miel", "it": "miele", "tr": "bal"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -26,5 +26,7 @@
     {"thing": "cuisine/greek", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q10987", "tier": "sourced"}
+  ]
 }

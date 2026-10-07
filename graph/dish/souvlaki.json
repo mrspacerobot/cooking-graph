@@ -1,7 +1,7 @@
 {
   "id": "dish/souvlaki",
   "tier": "drafted",
-  "names": {"en": "Souvlaki"},
+  "names": {"en": "Souvlaki", "tr": "Suvlaki"},
   "aliases": {"en": ["pork souvlaki", "souvlaki in pita"]},
   "is": "Small cubes of pork marinated in oil, lemon and oregano, threaded on skewers and grilled over fierce heat, then wrapped in warm pita with tomato, raw onion and a squeeze of lemon.",
   "parts": [
@@ -24,5 +24,7 @@
   "belongs_to": [
     {"thing": "cuisine/greek", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q240923", "tier": "sourced"}
+  ]
 }

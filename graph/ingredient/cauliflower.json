@@ -1,7 +1,7 @@
 {
   "id": "ingredient/cauliflower",
   "tier": "drafted",
-  "names": {"en": "Cauliflower", "fr": "Chou-fleur"},
+  "names": {"en": "Cauliflower", "fr": "Chou-fleur", "es": "coliflor", "it": "cavolfiore"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -33,5 +33,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q23900272", "tier": "sourced"}
+  ]
 }

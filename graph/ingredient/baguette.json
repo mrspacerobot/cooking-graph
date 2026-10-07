@@ -1,7 +1,7 @@
 {
   "id": "ingredient/baguette",
   "tier": "drafted",
-  "names": {"en": "Baguette", "fr": "Baguette"},
+  "names": {"en": "Baguette", "fr": "Baguette", "tr": "francala"},
   "aliases": {},
   "is_a": [
     {"thing": "ingredient/bread", "tier": "drafted"}
@@ -29,5 +29,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q208172", "tier": "sourced"}
+  ]
 }

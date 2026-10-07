@@ -1,7 +1,13 @@
 {
   "id": "ingredient/goat-cheese",
   "tier": "drafted",
-  "names": {"en": "Goat cheese", "fr": "Fromage de chèvre"},
+  "names": {
+    "en": "Goat cheese",
+    "fr": "Fromage de chèvre",
+    "es": "queso de cabra",
+    "it": "formaggio di capra",
+    "tr": "Keçi peyniri"
+  },
   "aliases": {"en": ["goat's cheese", "chèvre"]},
   "is_a": [],
   "part_of": [],
@@ -23,5 +29,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q198815", "tier": "sourced"}
+  ]
 }

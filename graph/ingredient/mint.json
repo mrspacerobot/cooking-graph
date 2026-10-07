@@ -1,7 +1,7 @@
 {
   "id": "ingredient/mint",
   "tier": "drafted",
-  "names": {"en": "Mint", "fr": "Menthe"},
+  "names": {"en": "Mint", "fr": "Menthe", "it": "mentina"},
   "aliases": {"en": ["fresh mint"]},
   "is_a": [],
   "part_of": [],
@@ -29,5 +29,7 @@
     {"thing": "cuisine/moroccan", "tier": "drafted"},
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q5254978", "tier": "sourced"}
+  ]
 }

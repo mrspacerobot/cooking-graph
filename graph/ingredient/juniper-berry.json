@@ -1,8 +1,8 @@
 {
   "id": "ingredient/juniper-berry",
   "tier": "drafted",
-  "names": {"en": "Juniper berry", "fr": "Baie de genièvre"},
-  "aliases": {"en": ["juniper", "juniper berries"]},
+  "names": {"en": "Juniper berry", "fr": "Baie de genièvre", "es": "baya de enebro", "it": "coccola di ginepro"},
+  "aliases": {"en": ["juniper", "juniper berries"], "fr": ["baies de genièvre"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -23,5 +23,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3251025", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/butter",
   "tier": "drafted",
-  "names": {"en": "Butter", "fr": "Beurre"},
+  "names": {"en": "Butter", "fr": "Beurre", "es": "mantequilla", "it": "burro", "tr": "tereyağı"},
   "aliases": {"en": ["unsalted butter", "cold butter"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +24,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q34172", "tier": "sourced"}
+  ]
 }

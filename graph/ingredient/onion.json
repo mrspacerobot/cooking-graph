@@ -1,7 +1,7 @@
 {
   "id": "ingredient/onion",
   "tier": "drafted",
-  "names": {"en": "Onion", "fr": "Oignon"},
+  "names": {"en": "Onion", "fr": "Oignon", "es": "cebolla", "it": "cipolla", "tr": "soğan"},
   "aliases": {"en": ["yellow onion", "brown onion"]},
   "is_a": [],
   "part_of": [],
@@ -37,5 +37,7 @@
     {"thing": "cuisine/french", "tier": "drafted"},
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3406628", "tier": "sourced"}
+  ]
 }

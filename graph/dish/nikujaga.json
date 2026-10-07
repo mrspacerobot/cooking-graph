@@ -1,7 +1,7 @@
 {
   "id": "dish/nikujaga",
   "tier": "drafted",
-  "names": {"en": "Nikujaga"},
+  "names": {"en": "Nikujaga", "es": "Nikujyaga"},
   "aliases": {"en": ["Japanese meat and potato stew", "meat and potatoes"]},
   "is": "A home-style simmered dish of thin slices of meat, potatoes, carrots, onion and konjac strands, cooked slowly in dashi sweetened with mirin and sugar and seasoned with soy sauce, until the pieces are tender and glossy.",
   "parts": [
@@ -32,5 +32,7 @@
   "belongs_to": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q714027", "tier": "sourced"}
+  ]
 }

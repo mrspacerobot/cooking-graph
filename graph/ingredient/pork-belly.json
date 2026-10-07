@@ -1,8 +1,8 @@
 {
   "id": "ingredient/pork-belly",
   "tier": "drafted",
-  "names": {"en": "Pork belly", "fr": "Poitrine de porc"},
-  "aliases": {"en": ["belly of pork"]},
+  "names": {"en": "Pork belly", "fr": "Poitrine de porc", "es": "panza de cerdo", "tr": "Domuz göbeği"},
+  "aliases": {"en": ["belly of pork"], "fr": ["ventre de porc"]},
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/pork", "tier": "drafted"}
@@ -27,5 +27,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1365868", "tier": "sourced"}
+  ]
 }

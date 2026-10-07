@@ -1,7 +1,7 @@
 {
   "id": "ingredient/shrimp",
   "tier": "drafted",
-  "names": {"en": "Shrimp", "fr": "Crevette"},
+  "names": {"en": "Shrimp", "fr": "Crevette", "it": "gamberetto", "tr": "karides"},
   "aliases": {"en": ["prawn", "garides", "gamba"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +24,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1517781", "tier": "sourced"}
+  ]
 }

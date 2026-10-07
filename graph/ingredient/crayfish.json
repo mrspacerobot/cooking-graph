@@ -1,7 +1,13 @@
 {
   "id": "ingredient/crayfish",
   "tier": "drafted",
-  "names": {"en": "Crayfish", "fr": "Écrevisse"},
+  "names": {
+    "en": "Crayfish",
+    "fr": "Écrevisse",
+    "es": "cangrejo de río",
+    "it": "gambero d'acqua dolce",
+    "tr": "kerevit"
+  },
   "aliases": {"en": ["freshwater crayfish", "crawfish"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +30,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1211742", "tier": "sourced"}
+  ]
 }

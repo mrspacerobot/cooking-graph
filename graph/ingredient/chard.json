@@ -1,7 +1,7 @@
 {
   "id": "ingredient/chard",
   "tier": "drafted",
-  "names": {"en": "Chard", "fr": "Blette"},
+  "names": {"en": "Chard", "fr": "Blette", "it": "bietola"},
   "aliases": {"en": ["Swiss chard"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +24,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q36823285", "tier": "sourced"}
+  ]
 }

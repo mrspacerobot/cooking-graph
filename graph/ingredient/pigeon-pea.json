@@ -1,7 +1,7 @@
 {
   "id": "ingredient/pigeon-pea",
   "tier": "drafted",
-  "names": {"en": "Pigeon pea", "fr": "Pois d'Angole"},
+  "names": {"en": "Pigeon pea", "fr": "Pois d'Angole", "it": "legume caiano"},
   "aliases": {"en": ["toor dal", "arhar dal"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q103449274", "tier": "sourced"}
+  ]
 }

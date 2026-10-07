@@ -1,7 +1,7 @@
 {
   "id": "ingredient/cornichons",
   "tier": "drafted",
-  "names": {"en": "Cornichons", "fr": "Cornichons"},
+  "names": {"en": "Cornichons", "fr": "Cornichons", "tr": "Kornişon"},
   "aliases": {"en": ["gherkins", "cornichon"]},
   "is_a": [],
   "part_of": [],
@@ -28,5 +28,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q93778799", "tier": "sourced"}
+  ]
 }

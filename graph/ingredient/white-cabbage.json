@@ -1,7 +1,7 @@
 {
   "id": "ingredient/white-cabbage",
   "tier": "drafted",
-  "names": {"en": "White cabbage", "fr": "Chou blanc"},
+  "names": {"en": "White cabbage", "fr": "Chou blanc", "tr": "Beyaz lahana"},
   "aliases": {},
   "is_a": [
     {"thing": "ingredient/cabbage", "tier": "drafted"}
@@ -27,5 +27,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q113199286", "tier": "sourced"}
+  ]
 }

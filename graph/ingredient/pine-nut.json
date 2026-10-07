@@ -1,7 +1,7 @@
 {
   "id": "ingredient/pine-nut",
   "tier": "drafted",
-  "names": {"en": "Pine nut", "fr": "Pignon de pin"},
+  "names": {"en": "Pine nut", "fr": "Pignon de pin", "es": "Piñón", "it": "pinolo", "tr": "Çam fıstığı"},
   "aliases": {"en": ["pine kernel", "pignoli", "pinoli"]},
   "is_a": [],
   "part_of": [],
@@ -30,5 +30,7 @@
     {"thing": "cuisine/italian", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q212933", "tier": "sourced"}
+  ]
 }

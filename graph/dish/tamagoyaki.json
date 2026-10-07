@@ -21,5 +21,7 @@
   "belongs_to": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q747302", "tier": "sourced"}
+  ]
 }

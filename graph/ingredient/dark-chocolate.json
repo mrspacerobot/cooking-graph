@@ -1,7 +1,13 @@
 {
   "id": "ingredient/dark-chocolate",
   "tier": "drafted",
-  "names": {"en": "Dark chocolate", "fr": "Chocolat noir"},
+  "names": {
+    "en": "Dark chocolate",
+    "fr": "Chocolat noir",
+    "es": "chocolate amargo",
+    "it": "cioccolato fondente",
+    "tr": "bitter çikolata"
+  },
   "aliases": {"en": ["plain chocolate", "bittersweet chocolate"]},
   "is_a": [],
   "part_of": [],
@@ -23,5 +29,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q277628", "tier": "sourced"}
+  ]
 }

@@ -26,5 +26,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q102354615", "tier": "sourced"}
+  ]
 }

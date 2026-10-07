@@ -1,7 +1,7 @@
 {
   "id": "preparation/ras-el-hanout",
   "tier": "drafted",
-  "names": {"en": "Ras el hanout"},
+  "names": {"en": "Ras el hanout", "es": "Ras el hanut"},
   "aliases": {"en": ["ras al hanout"]},
   "is": "A blend of many ground spices, which differs from cook to cook and from shop to shop. It is warm, floral and gently hot, and it is stirred into a dish early or rubbed onto meat.",
   "parts": [
@@ -51,5 +51,7 @@
   "belongs_to": [
     {"thing": "cuisine/moroccan", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1067261", "tier": "sourced"}
+  ]
 }

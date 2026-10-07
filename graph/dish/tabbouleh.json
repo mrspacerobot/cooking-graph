@@ -1,7 +1,7 @@
 {
   "id": "dish/tabbouleh",
   "tier": "drafted",
-  "names": {"en": "Tabbouleh", "fr": "Taboulé libanais"},
+  "names": {"en": "Tabbouleh", "fr": "Taboulé libanais", "es": "tabule", "tr": "Tabbule"},
   "aliases": {"en": ["tabouleh", "tabouli", "tabbouli", "Lebanese parsley salad"], "fr": ["taboulé"]},
   "is": "A fresh salad that is mostly finely chopped parsley, with mint, tomato and spring onion and only a little soaked fine bulgur, dressed with lemon juice and olive oil. The herbs are the main thing and the grain is the garnish.",
   "parts": [
@@ -35,5 +35,7 @@
   "belongs_to": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q607690", "tier": "sourced"}
+  ]
 }

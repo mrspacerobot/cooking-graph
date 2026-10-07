@@ -1,7 +1,7 @@
 {
   "id": "ingredient/prune",
   "tier": "drafted",
-  "names": {"en": "Prune", "fr": "Pruneau"},
+  "names": {"en": "Prune", "fr": "Pruneau", "es": "ciruela pasa", "it": "prugna secca"},
   "aliases": {"en": ["prunes", "dried plum"]},
   "is_a": [],
   "part_of": [],
@@ -22,5 +22,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q6766526", "tier": "sourced"}
+  ]
 }

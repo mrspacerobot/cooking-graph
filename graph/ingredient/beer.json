@@ -1,7 +1,7 @@
 {
   "id": "ingredient/beer",
   "tier": "drafted",
-  "names": {"en": "Beer", "fr": "Bière"},
+  "names": {"en": "Beer", "fr": "Bière", "es": "cerveza", "it": "birra", "tr": "bira"},
   "aliases": {"en": ["ale"]},
   "is_a": [],
   "part_of": [],
@@ -27,5 +27,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q44", "tier": "sourced"}
+  ]
 }

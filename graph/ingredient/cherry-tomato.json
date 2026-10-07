@@ -1,7 +1,7 @@
 {
   "id": "ingredient/cherry-tomato",
   "tier": "drafted",
-  "names": {"en": "Cherry tomato", "fr": "Tomate cerise"},
+  "names": {"en": "Cherry tomato", "fr": "Tomate cerise", "it": "pomodoro ciliegino", "tr": "çeri domates"},
   "aliases": {},
   "is_a": [
     {"thing": "ingredient/tomato", "tier": "drafted"}
@@ -23,5 +23,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q6540634", "tier": "sourced"}
+  ]
 }

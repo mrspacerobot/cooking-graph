@@ -1,7 +1,7 @@
 {
   "id": "ingredient/sugar",
   "tier": "drafted",
-  "names": {"en": "Sugar", "fr": "Sucre"},
+  "names": {"en": "Sugar", "fr": "Sucre", "es": "azúcar", "it": "zuccheri", "tr": "şeker"},
   "aliases": {"en": ["white sugar", "caster sugar", "granulated sugar"]},
   "is_a": [],
   "part_of": [],
@@ -26,5 +26,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q11002", "tier": "sourced"}
+  ]
 }

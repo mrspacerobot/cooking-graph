@@ -1,7 +1,12 @@
 {
   "id": "dish/sole-meuniere",
   "tier": "drafted",
-  "names": {"en": "Sole meunière", "fr": "Sole meunière"},
+  "names": {
+    "en": "Sole meunière",
+    "fr": "Sole meunière",
+    "es": "Lenguado a la meunière",
+    "it": "sogliola alla mugnaia"
+  },
   "aliases": {"en": ["sole in brown butter"]},
   "is": "A sole dusted with flour, fried golden in butter, and finished with nut-brown butter, lemon juice and parsley.",
   "parts": [
@@ -46,5 +51,7 @@
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q10749957", "tier": "sourced"}
+  ]
 }

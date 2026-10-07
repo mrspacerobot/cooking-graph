@@ -1,7 +1,7 @@
 {
   "id": "dish/harira",
   "tier": "drafted",
-  "names": {"en": "Harira"},
+  "names": {"en": "Harira", "fr": "harira marocaine"},
   "aliases": {},
   "is": "A thick tomato soup of lamb, chickpeas and lentils, scented with ginger, cinnamon and saffron, with a little vermicelli and thickened with a flour paste, finished with plenty of fresh coriander and parsley and a squeeze of lemon.",
   "parts": [
@@ -69,5 +69,7 @@
   "belongs_to": [
     {"thing": "cuisine/moroccan", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1513612", "tier": "sourced"}
+  ]
 }

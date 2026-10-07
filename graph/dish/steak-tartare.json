@@ -1,7 +1,13 @@
 {
   "id": "dish/steak-tartare",
   "tier": "drafted",
-  "names": {"en": "Steak tartare", "fr": "Steak tartare"},
+  "names": {
+    "en": "Steak tartare",
+    "fr": "Steak tartare",
+    "es": "filete tártaro",
+    "it": "bistecca alla tartara",
+    "tr": "Steak tartar"
+  },
   "aliases": {"en": ["beef tartare"], "fr": ["tartare de bœuf"]},
   "is": "Raw beef chopped by hand and seasoned at the last moment with shallot, capers, cornichons, parsley and mustard, with a raw egg yolk on top.",
   "parts": [
@@ -47,5 +53,7 @@
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q749593", "tier": "sourced"}
+  ]
 }

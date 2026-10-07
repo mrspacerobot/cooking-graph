@@ -50,7 +50,16 @@ def candidates_for(things, entities):
     return found
 
 
-def new_names(thing, item, languages, held, claimed):
+LONGEST_NAME = 40
+
+
+def is_plain_name(label):
+    """No note in brackets, no digit, no full stop, and not a long appellation: those are not what a cook calls a thing."""
+    return not any(sign in label for sign in "()[]") and not any(letter.isdigit() for letter in label) \
+        and "." not in label and len(label) <= LONGEST_NAME
+
+
+def new_names(thing, item, languages, held, claimed, refused=frozenset()):
     """The names and aliases to add for one thing, and the labels left out and why."""
     added, aliases, skipped = {}, {}, []
     own = names.plain_names(thing.data)
@@ -62,6 +71,10 @@ def new_names(thing, item, languages, held, claimed):
         plain = names.plain(label)
         if not names.is_latin(label):
             skipped.append(Skip(thing.data["id"], "not-latin", "%s: %s" % (language, label)))
+        elif (thing.data["id"], language, plain) in refused:
+            skipped.append(Skip(thing.data["id"], "read-and-refused", "%s: %s" % (language, label)))
+        elif not is_plain_name(label):
+            skipped.append(Skip(thing.data["id"], "not-a-plain-name", "%s: %s" % (language, label)))
         elif plain in own:
             continue
         elif held.get((family, plain), set()) - {thing.data["id"]} or claimed.get((family, plain), thing.data["id"]) != thing.data["id"]:
@@ -76,8 +89,13 @@ def new_names(thing, item, languages, held, claimed):
     return added, aliases, skipped
 
 
-def plan(things, entities, source_id, languages):
-    """What would change. Raises ValueError when the source may not be used in a product that is sold."""
+def plan(things, entities, source_id, languages, refused=()):
+    """What would change. Raises ValueError when the source may not be used in a product that is sold.
+
+    `refused` lists names a person read and found wrong for the thing, as rows of thing, language and label.
+    They are never written, so a later run does not bring them back.
+    """
+    refused = {(row["thing"], row["language"], names.plain(row["label"])) for row in refused}
     source = things.get(source_id)
     if source is None or source.data["commercial_use"] != "allowed":
         raise ValueError("%s is not a source that allows use in a product that is sold" % source_id)
@@ -107,7 +125,7 @@ def plan(things, entities, source_id, languages):
             skipped.append(Skip(thing_id, "different-id-held", "%s already has %s" % (thing_id, rows[0]["id"])))
             continue
         matched += 1
-        added, aliases, left_out = new_names(thing, item, languages, held, claimed)
+        added, aliases, left_out = new_names(thing, item, languages, held, claimed, refused)
         skipped.extend(left_out)
         row = None if rows else {"source": source_id, "id": item["qid"], "tier": "sourced"}
         if row or added or aliases:

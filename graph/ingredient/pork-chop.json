@@ -1,8 +1,8 @@
 {
   "id": "ingredient/pork-chop",
   "tier": "drafted",
-  "names": {"en": "Pork chop", "fr": "Côte de porc"},
-  "aliases": {},
+  "names": {"en": "Pork chop", "fr": "Côte de porc", "es": "chuleta de cerdo", "it": "costoletta di maiale"},
+  "aliases": {"fr": ["côtelette de porc"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -25,5 +25,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q860985", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/ditalini",
   "tier": "drafted",
-  "names": {"en": "Ditalini", "fr": "Ditalini"},
+  "names": {"en": "Ditalini", "fr": "Ditalini", "it": "ditali"},
   "aliases": {},
   "is_a": [
     {"thing": "ingredient/small-pasta", "tier": "drafted"}
@@ -30,5 +30,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3711859", "tier": "sourced"}
+  ]
 }

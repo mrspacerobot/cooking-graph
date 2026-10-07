@@ -1,7 +1,7 @@
 {
   "id": "preparation/mayonnaise",
   "tier": "drafted",
-  "names": {"en": "Mayonnaise", "fr": "Mayonnaise"},
+  "names": {"en": "Mayonnaise", "fr": "Mayonnaise", "es": "mayonesa", "it": "maionese", "tr": "mayonez"},
   "aliases": {"en": ["mayo"]},
   "is": "A thick, cold sauce of oil whisked drop by drop into egg yolk, sharpened with mustard and vinegar or lemon.",
   "parts": [
@@ -39,5 +39,7 @@
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q167893", "tier": "sourced"}
+  ]
 }

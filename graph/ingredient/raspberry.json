@@ -1,7 +1,7 @@
 {
   "id": "ingredient/raspberry",
   "tier": "drafted",
-  "names": {"en": "Raspberry", "fr": "Framboise"},
+  "names": {"en": "Raspberry", "fr": "Framboise", "es": "frambuesa", "it": "lampone", "tr": "ahududu"},
   "aliases": {"en": ["raspberries"]},
   "is_a": [],
   "part_of": [],
@@ -21,5 +21,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q13179", "tier": "sourced"}
+  ]
 }

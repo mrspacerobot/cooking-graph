@@ -1,7 +1,7 @@
 {
   "id": "ingredient/lemon",
   "tier": "drafted",
-  "names": {"en": "Lemon", "fr": "Citron"},
+  "names": {"en": "Lemon", "fr": "Citron", "es": "limón", "it": "limone", "tr": "Limon"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -33,5 +33,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1093742", "tier": "sourced"}
+  ]
 }

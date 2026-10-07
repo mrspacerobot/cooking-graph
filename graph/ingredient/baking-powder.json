@@ -1,7 +1,13 @@
 {
   "id": "ingredient/baking-powder",
   "tier": "drafted",
-  "names": {"en": "Baking powder", "fr": "Levure chimique"},
+  "names": {
+    "en": "Baking powder",
+    "fr": "Levure chimique",
+    "es": "gasificante",
+    "it": "lievito chimico",
+    "tr": "Kabartma tozu"
+  },
   "aliases": {"en": ["chemical raising agent"]},
   "is_a": [],
   "part_of": [],
@@ -23,5 +29,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q29476", "tier": "sourced"}
+  ]
 }

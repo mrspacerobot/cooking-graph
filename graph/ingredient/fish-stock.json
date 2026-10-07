@@ -1,7 +1,13 @@
 {
   "id": "ingredient/fish-stock",
   "tier": "drafted",
-  "names": {"en": "Fish stock", "fr": "Fumet de poisson"},
+  "names": {
+    "en": "Fish stock",
+    "fr": "Fumet de poisson",
+    "es": "caldo de pescado",
+    "it": "fumetto di pesce",
+    "tr": "Fumet"
+  },
   "aliases": {"en": ["fish fumet"]},
   "is_a": [],
   "part_of": [],
@@ -31,5 +37,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q5454675", "tier": "sourced"}
+  ]
 }

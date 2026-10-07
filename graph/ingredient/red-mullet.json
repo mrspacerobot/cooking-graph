@@ -1,7 +1,7 @@
 {
   "id": "ingredient/red-mullet",
   "tier": "drafted",
-  "names": {"en": "Red mullet", "fr": "Rouget"},
+  "names": {"en": "Red mullet", "fr": "Rouget", "it": "triglia"},
   "aliases": {"fr": ["rouget barbet"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +24,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q6604812", "tier": "sourced"}
+  ]
 }

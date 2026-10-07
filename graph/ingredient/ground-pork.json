@@ -1,7 +1,7 @@
 {
   "id": "ingredient/ground-pork",
   "tier": "drafted",
-  "names": {"en": "Ground pork", "fr": "Porc haché"},
+  "names": {"en": "Ground pork", "fr": "Porc haché", "es": "carne picada de cerdo"},
   "aliases": {"en": ["minced pork", "pork mince"]},
   "is_a": [],
   "part_of": [],
@@ -26,5 +26,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q54962305", "tier": "sourced"}
+  ]
 }

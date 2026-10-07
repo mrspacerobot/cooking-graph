@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/choucroute-garnie",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "braise",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Choucroute garnie",
+  "also_called": ["Alsatian sauerkraut with sausages and pork", "sauerkraut garnished"],
+  "techniques": ["rinse", "sweat", "braise"],
+  "ingredients": ["sauerkraut", "smoked pork belly", "pork sausage", "potato", "white wine", "juniper berry", "onion"]
+}

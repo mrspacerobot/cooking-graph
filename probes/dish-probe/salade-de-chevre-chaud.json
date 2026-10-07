@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/salade-de-chevre-chaud",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "emulsions",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Salade de chèvre chaud",
+  "also_called": ["warm goat cheese salad"],
+  "techniques": ["toast", "grill", "emulsify", "toss"],
+  "ingredients": ["goat cheese", "baguette", "lettuce", "walnut", "Dijon mustard", "red wine vinegar", "olive oil"]
+}

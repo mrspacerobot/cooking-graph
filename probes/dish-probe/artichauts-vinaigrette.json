@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/artichauts-vinaigrette",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "emulsions",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Artichauts vinaigrette",
+  "also_called": ["artichokes vinaigrette", "artichoke with vinaigrette"],
+  "techniques": ["boil", "emulsify"],
+  "ingredients": ["artichoke", "Dijon mustard", "red wine vinegar", "sunflower oil", "shallot", "parsley"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gratin-de-fenouil",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "held-back",
+  "written_for": "gratin",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Gratin de fenouil",
+  "also_called": ["fennel gratin", "fennel au gratin"],
+  "techniques": ["slice", "boil", "make a roux", "gratinate"],
+  "ingredients": ["fennel", "milk", "butter", "flour", "gruyère", "nutmeg"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gigot-de-sept-heures",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "braise",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Gigot de sept heures",
+  "also_called": ["seven-hour lamb", "seven-hour leg of lamb"],
+  "techniques": ["sear", "deglaze", "braise"],
+  "ingredients": ["leg of lamb", "garlic", "carrot", "onion", "white wine", "thyme"]
+}

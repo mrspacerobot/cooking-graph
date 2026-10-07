@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/sole-veronique",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "roux",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Sole Véronique",
+  "also_called": ["filets de sole Véronique", "sole with grapes"],
+  "techniques": ["poach", "make a roux", "reduce"],
+  "ingredients": ["sole", "grape", "white wine", "fish stock", "butter", "flour", "cream"]
+}

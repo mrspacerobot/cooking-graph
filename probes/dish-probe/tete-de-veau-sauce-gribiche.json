@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/tete-de-veau-sauce-gribiche",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "held-back",
+  "written_for": "poach",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Tête de veau sauce gribiche",
+  "also_called": ["calf's head with gribiche sauce", "tête de veau"],
+  "techniques": ["soak", "poach", "skim", "emulsify"],
+  "ingredients": ["calf's head", "carrot", "egg", "Dijon mustard", "sunflower oil", "capers", "cornichons"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/jardiniere-de-legumes",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "knife-cuts",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Jardinière de légumes",
+  "also_called": ["vegetable jardinière", "jardinière of vegetables"],
+  "techniques": ["cut into batons", "boil", "toss"],
+  "ingredients": ["carrot", "turnip", "green beans", "peas", "butter", "parsley"]
+}

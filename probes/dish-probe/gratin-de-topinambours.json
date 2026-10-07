@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gratin-de-topinambours",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "gratin",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Gratin de topinambours",
+  "also_called": ["Jerusalem artichoke gratin"],
+  "techniques": ["peel", "slice", "bake", "gratinate"],
+  "ingredients": ["Jerusalem artichoke", "cream", "garlic", "gruyère", "nutmeg", "butter"]
+}

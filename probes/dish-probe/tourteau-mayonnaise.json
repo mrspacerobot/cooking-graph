@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/tourteau-mayonnaise",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "emulsions",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Tourteau mayonnaise",
+  "also_called": ["crab mayonnaise", "crabe mayonnaise", "dressed crab with mayonnaise"],
+  "techniques": ["boil", "shell", "emulsify"],
+  "ingredients": ["brown crab", "egg yolk", "Dijon mustard", "sunflower oil", "lemon", "court-bouillon"]
+}

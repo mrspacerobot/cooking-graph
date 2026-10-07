@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/boudin-noir-aux-pommes",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "saute",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Boudin noir aux pommes",
+  "also_called": ["black pudding with apples", "blood sausage with apples"],
+  "techniques": ["slice", "pan-fry", "saute"],
+  "ingredients": ["black pudding", "apple", "butter", "onion"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/oeufs-mimosa",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "eggs",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Œufs mimosa",
+  "also_called": ["mimosa eggs", "œufs farcis"],
+  "techniques": ["boil", "peel", "mash"],
+  "ingredients": ["egg", "mayonnaise", "Dijon mustard", "parsley", "chives"]
+}

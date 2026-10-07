@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/lotte-a-l-armoricaine",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "sear",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Lotte à l'armoricaine",
+  "also_called": ["monkfish armoricaine", "lotte à l'américaine"],
+  "techniques": ["sear", "flambé", "simmer", "reduce"],
+  "ingredients": ["monkfish", "tomato", "shallot", "cognac", "white wine", "tarragon", "butter"]
+}

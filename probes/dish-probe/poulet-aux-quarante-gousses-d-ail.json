@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/poulet-aux-quarante-gousses-d-ail",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "roast",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Poulet aux quarante gousses d'ail",
+  "also_called": ["chicken with forty cloves of garlic", "poulet aux 40 gousses d'ail"],
+  "techniques": ["sear", "roast", "deglaze"],
+  "ingredients": ["chicken", "garlic", "olive oil", "thyme", "white wine"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/homard-a-la-nage",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "poach",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Homard à la nage",
+  "also_called": ["lobster à la nage", "lobster in court-bouillon"],
+  "techniques": ["simmer", "poach", "reduce", "mount with butter"],
+  "ingredients": ["lobster", "white wine", "carrot", "leek", "shallot", "butter"]
+}

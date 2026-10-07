@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/bisque-de-homard",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_for": "stocks",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Bisque de homard",
+  "also_called": ["lobster bisque"],
+  "techniques": ["saute", "deglaze", "simmer", "puree", "strain"],
+  "ingredients": ["lobster", "onion", "carrot", "cognac", "fish stock", "rice", "cream"]
+}

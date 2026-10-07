@@ -140,6 +140,7 @@ Two things about these numbers matter more than the numbers.
 - **Nothing was merged.** The work is on the branch `1-first-slice`, in a draft pull request.
 - **Limits kept:** no network but git and gh, nothing installed, no other agents, no change in the Tomi repository.
 - **One slip:** early in the night one scratch file, the output of `./numbers`, was written to the system's temporary folder, outside the clone. It was deleted at once.
+- **One read too many:** at the very end `git status` was run once in the Tomi repository, to confirm that nothing there had changed. It showed the same uncommitted work as at the start. It changes no file and nothing that is staged, though git may refresh its own cache of file times when it runs.
 - **How the content was typed:** through `tools/drafting.py`, from scratch scripts in the ignored `out/` folder. The scripts are not kept. The JSON files are the only source.
 - **Tools added that the story did not ask for:** `./tidy` and the rule that a file is written one way, the drafting helpers, the rule that `docs/model.md` names every kind and field, and the count of words answered. Each has tests.
 - **One commit message is wrong by one:** "Draft what the probes of round 1 lack" says 59 ingredients. It was 58.

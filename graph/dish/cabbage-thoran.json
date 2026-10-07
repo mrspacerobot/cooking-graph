@@ -1,0 +1,49 @@
+{
+  "id": "dish/cabbage-thoran",
+  "tier": "drafted",
+  "names": {"en": "Cabbage thoran"},
+  "aliases": {"en": ["muttakose thoran", "thoran"]},
+  "is": "A dry stir-fry from Kerala of finely sliced cabbage tossed with fresh coconut and green chilli, started with mustard seed and curry leaf popped in coconut oil.",
+  "parts": [
+    {"id": "cabbage", "role": "main", "options": ["ingredient/cabbage"], "optional": false, "tier": "drafted"},
+    {"id": "coconut", "role": "filling", "options": ["ingredient/coconut"], "optional": false, "tier": "drafted"},
+    {"id": "coconut-oil", "role": "fat", "options": ["ingredient/coconut-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "mustard-seed",
+      "role": "seasoning",
+      "options": ["ingredient/mustard-seed"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "curry-leaf",
+      "role": "seasoning",
+      "options": ["ingredient/curry-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "dried-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/dried-red-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "green-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/green-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/temper-spices-in-hot-fat", "tier": "drafted"},
+    {"thing": "technique/stir-fry", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

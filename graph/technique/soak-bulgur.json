@@ -1,0 +1,45 @@
+{
+  "id": "technique/soak-bulgur",
+  "tier": "drafted",
+  "names": {"en": "Soak bulgur", "fr": "Faire gonfler le boulgour"},
+  "aliases": {"en": ["soak the bulgur", "soak fine bulgur", "hydrate bulgur"], "fr": ["tremper le boulgour"]},
+  "does": "Leaves fine bulgur in just enough cool liquid for the grains to swell and turn tender, with no cooking at all. The liquid can be water, lemon juice or the juice of tomatoes, and it flavours the grain as it goes in.",
+  "how": [
+    "Rinse the bulgur in a sieve and let the water run off. Tip it into a bowl.",
+    "Pour over cool water, or lemon juice or tomato juice, to just cover the grains. They take up the liquid as they swell.",
+    "Leave it, and stir once or twice, until the grains are tender with a slight chew in the centre.",
+    "Tip it into a sieve, press out any liquid that is left, and fluff the grains with a fork before they meet other foods."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "A grain bitten through is tender and slightly chewy, with no hard, dry core."},
+    {"sense": "see", "text": "The grains have swelled to fill the bowl and the liquid is gone."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Drowning the bulgur in a great deal of water, so that it turns soggy and the dish goes watery.",
+      "fix": "Use just enough to cover it, and press out the rest."
+    },
+    {
+      "mistake": "Soaking coarse bulgur the same way, which leaves it hard.",
+      "fix": "Coarse grades are simmered. Only the fine grades are soaked."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/fine-bulgur", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/fine-sieve"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/lemon-juice"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/soak",
+      "differs": "The grain is given only as much liquid as it can take up, or is drained and pressed afterwards, and it is never simmered. Beans, bread and dried fruit are covered in plenty of liquid.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

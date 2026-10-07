@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/amchur",
+  "tier": "drafted",
+  "names": {"en": "Amchur"},
+  "aliases": {"en": ["amchoor", "dried mango powder", "mango powder"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/ground-spices", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A pale tan powder of dried unripe mango, sour and fruity. It sours a dish without wetting it, so it goes into dry vegetable dishes, stuffings and spice blends.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/sulphites",
+        "basis": "Dried fruit is often treated with sulphites to keep its colour.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

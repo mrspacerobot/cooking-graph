@@ -1,0 +1,7 @@
+{
+  "id": "equipment/pressure-cooker",
+  "tier": "drafted",
+  "names": {"en": "Pressure cooker", "fr": "Autocuiseur"},
+  "aliases": {"en": ["pressure pot"], "fr": ["cocotte-minute"]},
+  "use": "A heavy pot with a locking lid and a valve or weight that holds steam in. The steam builds pressure, so the liquid gets hotter than in an open pot and hard foods such as beans and pulses soften in a fraction of the time."
+}

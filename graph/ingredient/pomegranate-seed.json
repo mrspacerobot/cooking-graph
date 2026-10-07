@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/pomegranate-seed",
+  "tier": "drafted",
+  "names": {"en": "Pomegranate seed", "fr": "Graine de grenade"},
+  "aliases": {"en": ["pomegranate seeds", "pomegranate arils"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "The small, juicy, ruby-red seed sacs of the pomegranate, sweet and sharply sour. They are scattered over food at the end, for colour and a burst of juice, and are never cooked.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

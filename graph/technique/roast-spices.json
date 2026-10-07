@@ -1,0 +1,52 @@
+{
+  "id": "technique/roast-spices",
+  "tier": "drafted",
+  "names": {"en": "Roast spices"},
+  "aliases": {"en": ["dry-roast spices", "dry roast whole spices"]},
+  "does": "Roasts whole spices in a dry, heavy pan over a low heat until they darken a shade and smell strong, then cools them, so that they can be ground into a blend or a powder that keeps its scent.",
+  "how": [
+    "Set a heavy dry pan over a low heat and let it warm.",
+    "Add the spices that take the longest first, such as coriander seed and cumin, and the softer ones a little later. Roast each at its own pace if they differ.",
+    "Stir or shake all the while so that nothing sits and scorches.",
+    "Tip the spices out onto a cold plate the moment they smell strong and have darkened a shade.",
+    "Let them cool completely before grinding, so that the powder does not turn damp or gummy."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "A deep, warm scent fills the kitchen. A sharp, bitter smell means they are scorched."},
+    {"sense": "see", "text": "The spices turn a shade darker and the seeds begin to smoke very lightly."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Roasting on a high heat, so that the outsides scorch while the insides stay raw.",
+      "fix": "Keep the heat low and take your time."
+    },
+    {
+      "mistake": "Roasting all the spices together when they take different times.",
+      "fix": "Roast the hard ones first, or roast each kind in turn."
+    },
+    {
+      "mistake": "Grinding the spices while they are still hot, so that the powder clumps.",
+      "fix": "Cool them completely first."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/whole-spices", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/toast",
+      "differs": "Toasting browns one food for a short while. Here a mix of whole spices is roasted slowly, each at its own pace, as the first step of making a blend, and then cooled and ground, and nothing is left whole to garnish.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

@@ -2,11 +2,12 @@
   "id": "ingredient/cumin",
   "tier": "drafted",
   "names": {"en": "Cumin", "fr": "Cumin"},
-  "aliases": {"en": ["jeera", "kamoun", "comino"]},
+  "aliases": {"en": ["jeera", "kamoun", "comino", "cumin seed"]},
   "is_a": [],
   "part_of": [],
   "groups": [
-    {"thing": "group/whole-spices", "tier": "drafted"}
+    {"thing": "group/whole-spices", "tier": "drafted"},
+    {"thing": "group/tempering-spices", "tier": "drafted"}
   ],
   "forms": [],
   "behaviour": "Small crescent seeds with a warm, earthy, slightly bitter scent. They are toasted whole or ground, and go into hot fat at the start or are stirred in with the other spices, since they scorch quickly.",

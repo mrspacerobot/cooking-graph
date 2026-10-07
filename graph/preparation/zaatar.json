@@ -1,0 +1,19 @@
+{
+  "id": "preparation/zaatar",
+  "tier": "drafted",
+  "names": {"en": "Za'atar", "fr": "Zaatar"},
+  "aliases": {"en": ["zaatar", "zatar", "za'atar mix", "za'atar blend"]},
+  "is": "A dry spice mix of dried thyme or wild thyme, tart sumac, toasted sesame seeds and salt. It is stirred into olive oil to make a paste to spread on dough, or scattered over bread, labneh and eggs. The same name is used for the wild herb itself.",
+  "parts": [
+    {"id": "herb", "role": "aromatic", "options": ["ingredient/thyme"], "optional": false, "tier": "drafted"},
+    {"id": "sumac", "role": "acid", "options": ["ingredient/sumac"], "optional": false, "tier": "drafted"},
+    {"id": "sesame", "role": "topping", "options": ["ingredient/sesame-seed"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

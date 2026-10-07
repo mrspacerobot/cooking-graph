@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/rose-water",
+  "tier": "drafted",
+  "names": {"en": "Rose water", "fr": "Eau de rose"},
+  "aliases": {"en": ["rosewater"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A clear, perfumed water distilled from rose petals. A few drops scent a milk pudding, a syrup or a pastry filling. Too much tastes of soap, and the scent fades if it is boiled for long.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

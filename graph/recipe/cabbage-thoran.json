@@ -1,0 +1,110 @@
+{
+  "id": "recipe/cabbage-thoran",
+  "tier": "drafted",
+  "names": {"en": "Cabbage thoran"},
+  "aliases": {},
+  "makes": "dish/cabbage-thoran",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/cabbage", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "cabbage"},
+    {
+      "thing": "ingredient/coconut",
+      "amount": {"value": 60, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "coconut"
+    },
+    {
+      "thing": "ingredient/coconut-oil",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "coconut-oil"
+    },
+    {
+      "thing": "ingredient/mustard-seed",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "mustard-seed"
+    },
+    {"thing": "ingredient/curry-leaf", "amount": {"value": 1, "unit": "sprig"}, "forms": [], "part": "curry-leaf"},
+    {
+      "thing": "ingredient/dried-red-chilli",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": [],
+      "part": "dried-chilli"
+    },
+    {
+      "thing": "ingredient/green-chilli",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/minced"],
+      "part": "green-chilli"
+    },
+    {"thing": "ingredient/turmeric", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "turmeric"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/wok", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/wooden-spoon", "equipment/spatula"
+  ],
+  "steps": [
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/cabbage"],
+      "with": [],
+      "text": "Quarter the cabbage, cut out the core and slice the leaves as thinly as you can.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/temper-spices-in-hot-fat",
+      "works_on": ["ingredient/mustard-seed", "ingredient/dried-red-chilli", "ingredient/curry-leaf"],
+      "with": ["ingredient/coconut-oil"],
+      "text": "Heat the coconut oil in a wide pan until a mustard seed sizzles at once. Add the mustard seeds and cover the pan until they stop popping. Then add the dried chillies and the curry leaves, dry, and stir for a moment until the leaves crisp.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": ["ingredient/cabbage"],
+      "with": ["ingredient/green-chilli", "ingredient/turmeric", "ingredient/salt"],
+      "text": "Add the cabbage, the green chilli, the turmeric and the salt to the pan. Stir over a medium-high heat, with a splash of water to make steam, until the cabbage has wilted but still has some bite.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/cabbage"],
+      "with": ["ingredient/coconut"],
+      "text": "Take the pan off the heat, scatter in the grated coconut and toss until it is mixed through.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/cabbage"],
+      "with": ["ingredient/salt"],
+      "text": "Taste and add a little more salt if it needs it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/cabbage"],
+      "with": [],
+      "text": "Serve it warm as a dry side dish with rice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 Written by `./safety strict`. An ingredient holds a fact for certain, or the fact is recorded strictly because a common form of the ingredient may hold it.
 The rows below are the strict ones. How strict to be is for the owner to rule, reason by reason. Every safety record is unverified either way.
 
-177 of the 351 facts that ingredients hold are strict.
+192 of the 377 facts that ingredients hold are strict.
 
 | Fact | Basis | Ingredients |
 |---|---|---|
@@ -26,6 +26,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/egg` | Many bought loaves hold egg. | sandwich-bread |
 | `fact/egg` | Often made with wine, which may be cleared with egg white. | dijon-mustard |
 | `fact/egg` | Pasta of unknown make may hold egg. | macaroni, vermicelli |
+| `fact/egg` | Some bought pita holds egg. | pita-bread |
 | `fact/egg` | Wine may be cleared with egg white. | madeira, red-wine, riesling, vin-jaune, white-wine |
 | `fact/fish` | Beer may be cleared with isinglass, which comes from fish. | beer |
 | `fact/fish` | Cider may be cleared with isinglass, which comes from fish. | cider |
@@ -34,6 +35,8 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/fish` | Wine may be cleared with isinglass, which comes from fish. | madeira, red-wine, riesling, vin-jaune, white-wine |
 | `fact/gluten` | Bought sausage meat is often bound with breadcrumbs or rusk. | sausage-meat |
 | `fact/gluten` | Bought stock and stock cubes often hold wheat. | beef-stock, chicken-stock, fish-stock, stock, vegetable-stock |
+| `fact/gluten` | Chopped dates are often rolled in flour so that they do not stick, and the flour may be of oats or wheat. | date |
+| `fact/gluten` | Ground asafoetida is commonly cut with wheat flour to keep it from lumping. | asafoetida |
 | `fact/gluten` | Malt vinegar is made from barley. | vinegar |
 | `fact/gluten` | Many sausages are bound with breadcrumbs or rusk. | pork-sausage |
 | `fact/gluten` | Most crozets are made of wheat flour, though some are made of buckwheat. | crozets |
@@ -56,6 +59,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/milk` | Often made with wine, which may be cleared with milk protein. | dijon-mustard |
 | `fact/milk` | Some are made with milk protein. | lyon-sausage |
 | `fact/milk` | Some black pudding is made with cream or milk. | black-pudding |
+| `fact/milk` | Some bought pita holds milk or butter. | pita-bread |
 | `fact/milk` | Some sausages are made with milk protein. | andouillette |
 | `fact/milk` | Usually enriched with milk or butter. | sandwich-bread |
 | `fact/milk` | Wine may be cleared with milk protein. | madeira, red-wine, riesling, vin-jaune, white-wine |
@@ -65,6 +69,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/pork` | Most cervelas hold pork, though some are made of beef alone. | cervelas |
 | `fact/pork` | Most gelatin is made from pig skin. | gelatin |
 | `fact/sesame` | Many loaves carry sesame seeds. | bread |
+| `fact/sesame` | Some pita is brushed with oil or topped with sesame seeds. | pita-bread |
 | `fact/slaughter-product` | Beer may be cleared with isinglass. | beer |
 | `fact/slaughter-product` | Brawn is set in the jelly of the pig, which comes from animal bones and skin. | pork-brawn |
 | `fact/slaughter-product` | By tradition it is made with animal rennet. | beaufort, gruyere, reblochon |
@@ -85,6 +90,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/soy` | Many bought loaves hold soy flour. | bread, sandwich-bread |
 | `fact/soy` | Most chocolate is made with soy lecithin. | dark-chocolate |
 | `fact/soy` | Oil sold only as vegetable oil is often pressed from soybeans. | oil |
+| `fact/soy` | Some bought pita holds soy flour. | pita-bread |
 | `fact/soy` | Some sausages are made with soy protein. | pork-sausage |
 | `fact/sulphites` | Bought pastes may be kept with a preservative of sulphites. | red-pepper-paste |
 | `fact/sulphites` | Bought sauerkraut is sometimes kept with sulphites. | sauerkraut |
@@ -93,7 +99,10 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/sulphites` | Cooked meats are often kept with sulphites. | pork-brawn |
 | `fact/sulphites` | Cooked sausages are often kept with sulphites. | cervelas |
 | `fact/sulphites` | Dried fruit is often kept with sulphites. | currant, prune |
+| `fact/sulphites` | Dried fruit is often treated with sulphites to keep its colour. | amchur |
+| `fact/sulphites` | Dried fruit is sometimes kept with a preservative of sulphites. | date |
 | `fact/sulphites` | Fresh sausages are often kept with sulphites. | pork-sausage |
+| `fact/sulphites` | It is a sulphur-rich mineral salt; recorded strictly in case sulphites are present. | black-salt |
 | `fact/sulphites` | Jarred brined leaves may be kept with a preservative of sulphites. | vine-leaf |
 | `fact/sulphites` | Made from wine, which nearly always holds sulphites. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
 | `fact/sulphites` | Most cider holds sulphites. | cider |
@@ -104,17 +113,23 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/sulphites` | Preserves are sometimes kept with sulphites. | redcurrant-jelly |
 | `fact/sulphites` | Sausages are often kept with sulphites. | andouillette, lyon-sausage |
 | `fact/sulphites` | Some beer holds sulphites. | beer |
+| `fact/sulphites` | Some jaggery is clarified with sulphur compounds. | jaggery |
 | `fact/sulphites` | Table grapes are often kept with sulphur dioxide. | grape |
 | `fact/tree-nuts` | It is a nut that grows on a tree, though the European list of nuts does not name it. | chestnut |
+| `fact/tree-nuts` | It is pressed from coconut, which some lists count as a tree nut; recorded strictly. | coconut-oil |
 | `fact/tree-nuts` | Pine nuts are seeds of pine cones, listed as tree nuts in some places and not in others. | pine-nut |
 | `fact/tree-nuts` | Some are studded with pistachios. | cervelas, lyon-sausage |
+| `fact/tree-nuts` | Some lists count coconut as a tree nut; recorded strictly. | coconut |
 | `fact/tree-nuts` | Some loaves hold walnuts or other nuts. | bread |
 | `fact/wheat` | Bought sausage meat is often bound with breadcrumbs or rusk. | sausage-meat |
 | `fact/wheat` | Bought stock and stock cubes often hold wheat. | beef-stock, chicken-stock, fish-stock, stock, vegetable-stock |
+| `fact/wheat` | Chopped dates are often rolled in flour so that they do not stick, and the flour may be of wheat. | date |
+| `fact/wheat` | Ground asafoetida is commonly cut with wheat flour to keep it from lumping. | asafoetida |
 | `fact/wheat` | Many sausages are bound with breadcrumbs or rusk. | pork-sausage |
 | `fact/wheat` | Most crozets are made of wheat flour, though some are made of buckwheat. | crozets |
 | `fact/wheat` | Most soy sauce is brewed with wheat. | soy-sauce |
 | `fact/wheat` | Nearly all bread is made with wheat flour. | bread |
+| `fact/wheat` | Nearly all pita is made with wheat flour. | pita-bread |
 | `fact/wheat` | Some are bound with bread or flour. | andouillette |
 | `fact/wheat` | Some beer is brewed with wheat. | beer |
 | `fact/wheat` | Some black pudding is bound with cereal or bread. | black-pudding |

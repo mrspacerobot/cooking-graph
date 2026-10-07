@@ -6,7 +6,8 @@
   "is_a": [],
   "part_of": [],
   "groups": [
-    {"thing": "group/whole-spices", "tier": "drafted"}
+    {"thing": "group/whole-spices", "tier": "drafted"},
+    {"thing": "group/tempering-spices", "tier": "drafted"}
   ],
   "forms": [],
   "behaviour": "Small round seeds with a warm, nutty, citrusy scent that deepens when they are toasted. They go whole into hot fat at the start, or are toasted and ground into a spice mix.",

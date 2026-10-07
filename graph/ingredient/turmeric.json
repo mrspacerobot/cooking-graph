@@ -5,7 +5,9 @@
   "aliases": {"en": ["haldi"]},
   "is_a": [],
   "part_of": [],
-  "groups": [],
+  "groups": [
+    {"thing": "group/ground-spices", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A bright orange-yellow root, sold dried and ground, with an earthy, slightly bitter taste. It stains everything it touches, and tastes raw and dusty until it has cooked in fat or liquid for a while.",
   "safety": {

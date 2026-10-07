@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/white-cabbage",
+  "tier": "drafted",
+  "names": {"en": "White cabbage", "fr": "Chou blanc"},
+  "aliases": {},
+  "is_a": [
+    {"thing": "ingredient/cabbage", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/leafy-heads", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A tight, pale, crisp head with firm leaves. Raw, it is sliced very thin, salted and left to soften in a dressing. Cooked, it turns sweet and tender, and gives off a strong smell if it is boiled hard for long.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "preparation/garam-masala",
+  "tier": "drafted",
+  "names": {"en": "Garam masala"},
+  "aliases": {},
+  "is": "A warm blend of dry-roasted whole spices ground to a powder. It is added near the end of cooking, or stirred in at the end, since its scent fades with long heat.",
+  "parts": [
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "seasoning",
+      "options": ["ingredient/coriander-seed"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "cardamom", "role": "seasoning", "options": ["ingredient/cardamom"], "optional": false, "tier": "drafted"},
+    {"id": "cinnamon", "role": "seasoning", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"},
+    {"id": "clove", "role": "seasoning", "options": ["ingredient/clove"], "optional": false, "tier": "drafted"},
+    {"id": "nutmeg", "role": "seasoning", "options": ["ingredient/nutmeg"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/ground-spices", "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/roast-spices", "tier": "drafted"},
+    {"thing": "technique/grind", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

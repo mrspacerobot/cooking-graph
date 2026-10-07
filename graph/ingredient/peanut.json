@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/peanut",
+  "tier": "drafted",
+  "names": {"en": "Peanut", "fr": "Cacahuète"},
+  "aliases": {"en": ["groundnut", "peanuts"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A nutty, crisp seed that grows underground in a pod, and is no nut. It is roasted or fried until golden, then crushed or left whole for crunch, and it burns fast when fried in hot fat.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/peanuts", "basis": "It is the peanut itself.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

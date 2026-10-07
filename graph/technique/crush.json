@@ -1,0 +1,45 @@
+{
+  "id": "technique/crush",
+  "tier": "drafted",
+  "names": {"en": "Crush", "fr": "Écraser à plat"},
+  "aliases": {"en": ["crush garlic", "crush the garlic", "crush garlic with salt"], "fr": ["écraser l'ail"]},
+  "does": "Presses a clove of garlic flat under the blade of a knife, or under a pestle, and works it with salt into a damp, rough paste that melts into a dressing or a sauce.",
+  "how": [
+    "Peel the clove and set it on a board with a little salt. The salt grips it and wears it down.",
+    "Lay the flat of a broad knife on the clove and press down with the heel of the hand until it splits.",
+    "Drag the blade over the pieces with the flat tilted, again and again, until the garlic is a damp paste with no lumps.",
+    "Scrape the paste into the dressing or the sauce and stir it in at once."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The garlic turns from pieces to a pale, glossy, wet paste."},
+    {"sense": "smell", "text": "A sharp, raw scent rises as soon as it breaks, and fades into the dressing."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Crushing without salt, so that the garlic slides about under the blade and stays in pieces.",
+      "fix": "Add a little salt first, so that it grips."
+    },
+    {
+      "mistake": "Leaving the paste on the board to turn bitter and harsh.",
+      "fix": "Stir it into the acid or the oil soon after it is done."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/garlic", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife", "equipment/mortar-and-pestle"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/pound",
+      "differs": "The garlic is pressed and dragged flat under a blade or a pestle for a few moments into a damp, rough paste, and not worked long in a mortar until it is smooth.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

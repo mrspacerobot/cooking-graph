@@ -1,0 +1,47 @@
+{
+  "id": "dish/dal-tadka",
+  "tier": "drafted",
+  "names": {"en": "Dal tadka"},
+  "aliases": {"en": ["tadka dal", "dal tarka", "dal fry tadka"]},
+  "is": "Yellow lentils cooked to a soft mash with turmeric, finished with a sauté of onion, garlic and tomato and then crowned with a hot tadka of cumin and dried chilli in ghee, poured on at the very end.",
+  "parts": [
+    {"id": "dal", "role": "main", "options": ["ingredient/pigeon-pea"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "acid", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "green-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/green-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {"id": "cooking-fat", "role": "fat", "options": ["ingredient/ghee"], "optional": false, "tier": "drafted"},
+    {"id": "tempering-fat", "role": "fat", "options": ["ingredient/ghee"], "optional": false, "tier": "drafted"},
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dried-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/dried-red-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/temper-spices-in-hot-fat", "tier": "drafted"},
+    {"thing": "technique/pressure-cook", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

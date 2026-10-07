@@ -1,0 +1,55 @@
+{
+  "id": "technique/make-spice-paste",
+  "tier": "drafted",
+  "names": {"en": "Make spice paste"},
+  "aliases": {"en": ["make a masala paste", "make masala paste"]},
+  "does": "Works ground spices, with fresh garlic, ginger or chilli, salt and a little liquid, into a thick paste by pounding or blending. The paste clings to fish, meat or vegetables, and seasons them all over.",
+  "how": [
+    "Pound or blend the garlic, ginger and fresh chilli with the salt to a rough mash. The salt helps break them down.",
+    "Add the ground spices.",
+    "Add a little liquid, such as water, lemon juice or yogurt, a spoonful at a time, and work it in.",
+    "Stop when the paste is thick and smooth, and holds on the spoon without running.",
+    "Use it at once, or let it stand briefly so the flavours join."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The paste is an even deep colour with no dry streaks of powder."},
+    {"sense": "feel", "text": "It clings to the spoon and does not run off."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding all the liquid at once, so that the paste runs off the food.",
+      "fix": "Add it a spoonful at a time and stop when the paste clings."
+    },
+    {
+      "mistake": "Frying the raw paste on a high heat, so that the powders scorch.",
+      "fix": "Cook it gently, with a splash of liquid, or use it as a coating."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/ground-spices", "tier": "drafted"},
+    {"thing": "ingredient/garlic", "tier": "drafted"},
+    {"thing": "ingredient/ginger", "tier": "drafted"},
+    {"thing": "ingredient/green-chilli", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/spice-paste", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/mortar-and-pestle", "equipment/blender"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/lemon-juice", "ingredient/plain-yogurt"],
+      "tier": "drafted"
+    },
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/pound",
+      "why": "A paste starts with aromatics pounded and broken down with salt.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

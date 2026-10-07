@@ -31,5 +31,7 @@
       "tier": "drafted"
     }
   ],
-  "in_pantry_of": []
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/paneer",
+  "tier": "drafted",
+  "names": {"en": "Paneer"},
+  "aliases": {"en": ["panir"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A fresh, firm, white cheese made by curdling hot milk with acid and pressing the curds. It does not melt, so it is cut in cubes and grilled, fried or simmered in sauces, and it turns rubbery if it is cooked too long.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a fresh cheese made from milk.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "recipe/arayes",
+  "tier": "drafted",
+  "names": {"en": "Arayes", "fr": "Arayes"},
+  "aliases": {},
+  "makes": "dish/arayes",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pita-bread", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "pita"},
+    {"thing": "ingredient/minced-beef", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/minced"], "part": "onion"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 30, "unit": "gram"},
+      "forms": ["form/minced"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/allspice", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "spice"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "spice"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "spice"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/griddle", "equipment/mixing-bowl", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/pastry-brush", "equipment/spatula", "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/onion", "ingredient/parsley"],
+      "with": [],
+      "text": "Mince the onion and the parsley as finely as you can.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [
+        "ingredient/onion", "ingredient/parsley", "ingredient/allspice", "ingredient/cinnamon",
+        "ingredient/black-pepper", "ingredient/salt"
+      ],
+      "text": "Work the beef, the onion, the parsley, the spices and the salt together with the hands until the mixture is even and holds together.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stuff-a-pita",
+      "works_on": ["ingredient/pita-bread"],
+      "with": ["ingredient/minced-beef"],
+      "text": "Cut round the edge of each pita and open it into layers. Spread the meat mixture thinly over the inner face of one layer, right to the edge, then press the bread shut.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brush",
+      "works_on": ["ingredient/pita-bread"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Brush both outer faces of each stuffed pita with a thin film of olive oil.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/griddle",
+      "works_on": ["ingredient/pita-bread"],
+      "with": [],
+      "text": "Lay the pitas on a hot griddle and press them down gently with the spatula. Cook until the underside is crisp and spotted brown, and check the filling against a trusted guide to doneness.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/flip",
+      "works_on": ["ingredient/pita-bread"],
+      "with": [],
+      "text": "Turn each pita over with the spatula and cook the other face until it is crisp and spotted brown too.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pita-bread"],
+      "with": [],
+      "text": "Cut each pita into wedges and serve at once while the bread is crisp.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

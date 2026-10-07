@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/coconut",
+  "tier": "drafted",
+  "names": {"en": "Coconut", "fr": "Noix de coco"},
+  "aliases": {"en": ["fresh coconut", "nariyal"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "The white flesh of the coconut, eaten fresh, grated or ground. It is sweet and milky, and it is grated into stir-fried vegetables, ground into chutneys and curries, and squeezed for milk.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/tree-nuts",
+        "basis": "Some lists count coconut as a tree nut; recorded strictly.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

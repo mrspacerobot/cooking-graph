@@ -1,0 +1,49 @@
+{
+  "id": "technique/brush",
+  "tier": "drafted",
+  "names": {"en": "Brush", "fr": "Badigeonner"},
+  "aliases": {"en": ["brush with oil", "brush with butter", "paint with oil"], "fr": ["dorer au pinceau"]},
+  "does": "Paints a thin, even film of oil, melted butter or beaten egg onto a surface with a soft brush, so that it browns and shines in the heat, keeps from drying out, or does not stick.",
+  "how": [
+    "Have the oil, butter or egg ready in a small bowl, and the food in front of you.",
+    "Dip only the tip of the brush, and press the extra off against the rim of the bowl.",
+    "Stroke the surface in one direction and then across, so that the film is thin and no part is missed.",
+    "Go lightly over folds and edges, where the liquid pools and burns.",
+    "Brush again part-way through cooking if the surface looks dry."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The surface shines evenly, with no puddles and no dry patches."},
+    {"sense": "feel", "text": "The bristles glide and do not drag or tear at soft dough."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Loading the brush so full that the fat pools and the food turns greasy.",
+      "fix": "Dip the tip only and press the extra off on the rim."
+    },
+    {
+      "mistake": "Brushing a soft dough hard, so that it tears or loses its air.",
+      "fix": "Use a light touch and a soft brush."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pastry", "tier": "drafted"},
+    {"thing": "ingredient/pita-bread", "tier": "drafted"},
+    {"thing": "preparation/bread-dough", "tier": "drafted"},
+    {"thing": "ingredient/aubergine", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/pastry-brush"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil", "ingredient/butter"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/egg"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/baste",
+      "differs": "The fat or glaze is painted on in a thin film with a brush, often before the food meets the heat, and not spooned over the food from the pan as it cooks.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

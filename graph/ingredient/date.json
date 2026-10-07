@@ -1,0 +1,41 @@
+{
+  "id": "ingredient/date",
+  "tier": "drafted",
+  "names": {"en": "Date", "fr": "Datte"},
+  "aliases": {"en": ["dates", "date fruit"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A small, sticky fruit of the date palm, with a sweet, caramel taste. It is eaten whole, or pitted and pressed into a paste for a pastry filling, and it burns on the outside of a pastry if the heat is high.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/sulphites",
+        "basis": "Dried fruit is sometimes kept with a preservative of sulphites.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Chopped dates are often rolled in flour so that they do not stick, and the flour may be of oats or wheat.",
+        "certain": false
+      },
+      {
+        "fact": "fact/wheat",
+        "basis": "Chopped dates are often rolled in flour so that they do not stick, and the flour may be of wheat.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

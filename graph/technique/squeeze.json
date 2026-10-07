@@ -1,0 +1,48 @@
+{
+  "id": "technique/squeeze",
+  "tier": "drafted",
+  "names": {"en": "Squeeze", "fr": "Essorer"},
+  "aliases": {"en": ["squeeze dry", "squeeze out", "wring out", "squeeze the greens"], "fr": ["presser les feuilles"]},
+  "does": "Presses the water out of cooked leaves by the handful, or in a sieve, so that they can be seasoned and mixed without turning the dish watery.",
+  "how": [
+    "Let the cooked leaves cool enough to handle.",
+    "Take up a handful and close the fist, or press the leaves against the side of a sieve with a spoon.",
+    "Squeeze hard and long, turning the ball in the hand, until only a few drops come out.",
+    "Shake the leaves loose, as they will be a tight lump, and chop or season them."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The ball of leaves is dense and damp but gives out no more water when squeezed."},
+    {
+      "sense": "see",
+      "text": "The water that comes out is a dark green, and the leaves loosen into a dry, fluffy heap."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Squeezing the leaves while they are hot, which burns the hands and tempts a cook to squeeze too lightly.",
+      "fix": "Let them cool, then squeeze hard."
+    },
+    {
+      "mistake": "Leaving the leaves wet, so that the oil and the dressing slide off them.",
+      "fix": "Squeeze again until only a few drops come out."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/spinach", "tier": "drafted"},
+    {"thing": "ingredient/chard", "tier": "drafted"},
+    {"thing": "ingredient/dandelion-green", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/colander", "equipment/fine-sieve"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/wilt",
+      "why": "Leaves are squeezed once they have wilted or boiled and let go of their water. Raw leaves hold it in.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

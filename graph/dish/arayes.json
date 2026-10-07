@@ -1,0 +1,30 @@
+{
+  "id": "dish/arayes",
+  "tier": "drafted",
+  "names": {"en": "Arayes", "fr": "Arayes"},
+  "aliases": {"en": ["arayis"]},
+  "is": "Rounds of pita stuffed with a thin layer of spiced minced meat, brushed with oil and cooked on a griddle until the bread is crisp and spotted brown. They are cut into pieces and eaten hot.",
+  "parts": [
+    {"id": "pita", "role": "main", "options": ["ingredient/pita-bread"], "optional": false, "tier": "drafted"},
+    {"id": "meat", "role": "filling", "options": ["ingredient/minced-beef"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "spice",
+      "role": "seasoning",
+      "options": ["ingredient/allspice", "ingredient/cinnamon", "ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/stuff-a-pita", "tier": "drafted"},
+    {"thing": "technique/brush", "tier": "drafted"},
+    {"thing": "technique/griddle", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

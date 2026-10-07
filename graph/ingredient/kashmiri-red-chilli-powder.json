@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/kashmiri-red-chilli-powder",
+  "tier": "drafted",
+  "names": {"en": "Kashmiri red chilli powder"},
+  "aliases": {"en": ["kashmiri red chili powder", "kashmiri chilli powder", "kashmiri mirch"]},
+  "is_a": [
+    {"thing": "ingredient/red-chilli-powder", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/ground-spices", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A powder of mild, deep red chillies from Kashmir. It gives a bright red colour with only a gentle heat, which is why it is used in marinades and sauces that should look red without burning.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

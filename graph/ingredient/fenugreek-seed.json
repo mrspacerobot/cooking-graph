@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/fenugreek-seed",
+  "tier": "drafted",
+  "names": {"en": "Fenugreek seed", "fr": "Fenugrec"},
+  "aliases": {"en": ["methi seed", "methi dana"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/whole-spices", "tier": "drafted"},
+    {"thing": "group/tempering-spices", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Small hard, angular, golden seeds with a bitter, maple-like scent. A few go into hot fat for a moment and no longer, since they turn very bitter when they darken.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

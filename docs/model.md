@@ -521,6 +521,9 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
   An exclusion-only statement is `false`, has an empty `when` and a nonempty
   `not_when`. It supplies no positive answer in any other context. The checker
   tests both constraints. Matching prohibitions always take precedence.
+- **Query context:** the recipe's dish or preparation, and the technique and
+  preparations a relevant step works on, uses or makes. An unrelated step
+  cannot enable a stand-in. A test proves intermediate preparations count too.
 - **No promotion:** changing the shape or adding a prohibition earns no tier.
   All these statements remain drafted, awaiting a cook's judgment.
 

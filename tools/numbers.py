@@ -1,6 +1,6 @@
 """The numbers: what the graph holds, how far it can be trusted, and how many probes it answers."""
 
-from tools import probes, question_probes
+from tools import probes, question_probes, safety_probes
 from tools.reading import nested
 
 SAFETY_STATES = ("unverified", "verified")
@@ -72,9 +72,15 @@ def count_safety_points(things):
     return sum(len(step["safety_points"]) for recipe in recipes for step in recipe.data["steps"])
 
 
-def count_parts(things):
-    parts = [part for thing in things.values() if thing.kind in ("dish", "preparation") for part in thing.data["parts"]]
+def count_parts(things, kinds=("dish", "preparation")):
+    parts = [part for thing in things.values() if thing.kind in kinds for part in thing.data["parts"]]
     return (sum(len(part["options"]) > 1 for part in parts), len(parts))
+
+
+def count_stand_ins(things):
+    rows = [row for thing in things.values() for row in thing.data.get("stands_in_for", [])]
+    positive = sum(row["allows"] for row in rows)
+    return {"positive": positive, "exclusion_only": len(rows) - positive}
 
 
 def count(things):
@@ -92,6 +98,9 @@ def count(things):
         "safety_points": count_safety_points(things),
         "parts_with_options": count_parts(things),
         "question_probes": question_probes.counts(question_probes.run(things)),
+        "parts_by_kind": {kind: count_parts(things, (kind,)) for kind in ("dish", "preparation")},
+        "stand_in_statements": count_stand_ins(things),
+        "safety_probes": safety_probes.counts(safety_probes.run(things)),
     }
 
 
@@ -157,9 +166,17 @@ def render(counts, model, words):
     lines.append("Recipe steps: %d" % counts["recipe_steps"])
     lines.append("Safety points in recipe steps that wait for a verified fact: %d" % counts["safety_points"])
     lines.append("Parts with more than one option: %s" % probes.as_share(counts["parts_with_options"]))
+    for kind, pair in counts["parts_by_kind"].items():
+        lines.append("%s parts with more than one option: %s" % (kind.capitalize(), probes.as_share(pair)))
+    stand_ins = counts["stand_in_statements"]
+    lines.append("Stand-in statements: %d positive, %d exclusion-only" % (stand_ins["positive"], stand_ins["exclusion_only"]))
     lines.append("")
     lines.extend(["| Question probes | Set | Answered |", "|---|---|---|"])
     for kind, sets in counts["question_probes"].items():
         for set_name, pair in sets.items():
             lines.append("| %s | %s | %s |" % (kind, set_name, probes.as_share(pair)))
+    lines.extend(["", "| Safety probes | Agreeing | Answerable | Disagreeing |", "|---|---|---|---|"])
+    for set_name, values in counts["safety_probes"].items():
+        share = probes.as_share((values["agreeing"], values["probes"]))
+        lines.append("| %s | %s | %d | %d |" % (set_name, share, values["answerable"], values["disagreeing"]))
     return "\n".join(lines)

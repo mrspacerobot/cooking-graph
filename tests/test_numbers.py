@@ -29,6 +29,19 @@ class NumbersTest(unittest.TestCase):
     def test_safety_records_are_counted_by_state(self):
         self.assertEqual({"unverified": 5}, self.count()["safety"])
 
+    def test_part_option_shares_are_counted_for_dishes_and_preparations(self):
+        counts = self.count()
+        self.assertEqual({"dish": (0, 3), "preparation": (0, 2)}, counts["parts_by_kind"])
+
+    def test_safety_probe_answered_and_answerable_counts_are_separate(self):
+        counts = self.count()["safety_probes"]["growing"]
+        self.assertEqual(4, counts["probes"])
+        self.assertEqual(1, counts["answerable"])
+        self.assertEqual(1, counts["agreeing"])
+
+    def test_positive_and_exclusion_only_statements_are_counted_separately(self):
+        self.assertEqual({"positive": 1, "exclusion_only": 0}, self.count()["stand_in_statements"])
+
     def test_the_probes_are_counted_for_each_batch(self):
         batch = self.count()["batches"]["sweating-1"]
         self.assertEqual(5, batch["probes"])

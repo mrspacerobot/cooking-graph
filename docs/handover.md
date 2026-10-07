@@ -2,6 +2,28 @@
 
 Written on 7 October 2026 for an agent or a person picking this up cold. Read `AGENTS.md` first. Its rules apply to you.
 
+## Update after the question cycle
+
+The four steps in "What the owner wants next" have now been carried out, in
+order, on `1-first-slice`. Read `docs/question-cycle.md` and
+`docs/rounds/question-cycle-round-1.md` for current numbers, unresolved probes,
+the independent review and the limits. Commands are `./stand-ins`, `./recipes`,
+`./kitchen`, and `./probe questions`; `./numbers` now counts every probe kind.
+
+The graph has 177 ingredients, 80 techniques, 66 dishes and 80 recipes, with
+28 contextual statements (24 positive, 4 exclusion-only). Growing stand-in
+questions answer 11 of 20; held-back 0 of 5. Growing kitchen questions answer
+8 of 24; held-back 1 of 6. Dish parts with more than one option: 56 of 485.
+`./check` passes 253 tests and reads 906 files strictly.
+
+All 177 safety records remain unverified. No tier was promoted and no safety
+disagreement was settled. No held-back file was opened by the graph drafter.
+The pull request remains a draft and nothing was merged.
+
+The original sections below describe the starting point and retained cycle-two
+backlog. Its `fresh-3` round and `docs/cycle-two.md` remain outstanding; the new
+owner priority was completed first, as requested.
+
 ## What the owner wants next
 
 Added later on 7 October 2026. The owner's concern is the graph itself, not the app. The graph must answer three questions:

@@ -96,5 +96,5 @@ the stand-in knowledge generalizes. This is one requested cycle, not a completed
 slice. Bakery dishes, broad technique-family queries, ingredient forms and
 ready-made component paths still need separate work and review.
 
-`./check` passes: 252 tests, 906 files read strictly, no issue. No dependency
+`./check` passes: 253 tests, 906 files read strictly, no issue. No dependency
 was installed. No content was promoted, exported or merged.

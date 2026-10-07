@@ -25,6 +25,8 @@ def context(recipe, line):
     for step in recipe["steps"]:
         if line["thing"] in step["works_on"] + step["with"]:
             found.add(step["technique"])
+            found.update(thing_id for thing_id in step["works_on"] + step["with"] + step["makes"]
+                         if thing_id.startswith("preparation/"))
     return sorted(found)
 
 

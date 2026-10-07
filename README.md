@@ -6,9 +6,14 @@ It is private. `cooking-graph` is a working name.
 
 ## Status
 
-Night one is done: the first slice, the 12 French skills the Tomi app teaches today. Read `docs/night-one.md` first.
+The three graph questions now have commands, independent probes and a first
+stand-in growth cycle. Read `docs/question-cycle.md` first for the current
+results and limits. `docs/night-one.md` records the first slice; the cycle-two
+round notes record its later growth. Cycle two's third batch remains unfinished.
 
-Everything in this repository was drafted by a model and reviewed by nobody. Safety facts are unverified. Nothing here may be shown to a cook or exported to an app.
+Cooking content has no human review or kitchen test. Sixteen inherited allergen
+facts are sourced from regulator pages; the rest is drafted. Safety records are
+unverified. Nothing here may be shown to a cook or exported to an app.
 
 ## What is where
 
@@ -35,7 +40,7 @@ Everything in this repository was drafted by a model and reviewed by nobody. Saf
 | `./check` | Runs the tests of the tools, then reads every file strictly and lists every issue |
 | `./probe` | Runs the dish probes and lists what the graph lacks. Held-back probes are counted, never shown |
 | `./probe questions [batch]` | Runs the stand-in and kitchen questions; shows only growing gaps and aggregate held-back counts |
-| `./numbers` | Counts by kind and tier, and the share of probes answered, growing and held back apart |
+| `./numbers` | Counts by kind and tier, part-option shares, positive and negative statements, and all probe kinds, growing and held back apart |
 | `./safety` | Runs the safety probes: what each dish holds, worked out from its recipe, against what the probe says |
 | `./tidy` | Rewrites every file in the one way a file is written |
 | `./stand-ins <recipe> [--avoid <fact>]` | Other part options, contextual stand-ins and recorded exclusions, for every recipe line |
@@ -61,7 +66,7 @@ Avoidance excludes strict `contains` answers too. Preparations are checked throu
 of every part; a missing answer or a cycle fails closed. This is deliberately conservative.
 
 Only direct statements are used. No reverse or chained stand-in is inferred. A line's context
-is what the recipe makes and the techniques of steps that handle that line. An explicit
+is what the recipe makes and the techniques and preparations of steps that handle that line. An explicit
 `not_when` overrides a positive statement or a part option. A replacement must fit each
 technique that works on the original. A part option supplies no ratio or caveat unless a
 stand-in statement records them. Recipe amounts and starting forms are returned unchanged;

@@ -75,6 +75,14 @@ class QueryTest(unittest.TestCase):
         self.things["ingredient/oil"].data["stands_in_for"][0]["when"] = ["dish/buttered-onions"]
         self.assertEqual("ingredient/oil", self.fat()["options"][0]["thing"])
 
+    def test_preparation_context_of_a_relevant_step_is_honoured(self):
+        self.recipe["steps"][0]["makes"] = ["preparation/onion-juices"]
+        row = self.things["ingredient/oil"].data["stands_in_for"][0]
+        row["when"] = ["preparation/onion-juices"]
+        self.assertEqual("ingredient/oil", self.fat()["options"][0]["thing"])
+        row["not_when"] = ["preparation/onion-juices"]
+        self.assertEqual([], self.fat()["options"])
+
     def test_exclusion_only_statement_never_enables_other_contexts(self):
         row = self.things["ingredient/oil"].data["stands_in_for"][0]
         row.update(allows=False, when=[], not_when=["technique/mince"])

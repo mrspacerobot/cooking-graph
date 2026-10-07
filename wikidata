@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+"""wikidata: give our ingredients, preparations and dishes their Wikidata id and names in other languages.
+
+./wikidata --dry-run                 ask Wikidata, print what would change, write nothing
+./wikidata --dry-run --save raw.json keep the answer so that it can be read again
+./wikidata --from raw.json           use a kept answer and write the changes
+./wikidata                           ask Wikidata and write the changes
+
+Only exact English matches to a food are taken. A label with two items, an item for two things,
+a name another thing holds, and a name in another script are skipped and listed.
+"""
+
+import argparse
+import json
+import os
+import sys
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+
+from tools import check, wikidata, wikidata_fetch  # noqa: E402
+from tools.rules import SAME_AS_KINDS, of_kind  # noqa: E402
+
+parser = argparse.ArgumentParser(prog="wikidata", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+parser.add_argument("--dry-run", action="store_true", help="write nothing")
+parser.add_argument("--save", help="keep the answer from Wikidata in this file")
+parser.add_argument("--from", dest="source_file", help="read a kept answer instead of asking")
+parser.add_argument("--languages", default="es,it,tr,fr", help="comma list of language tags to take names in")
+parser.add_argument("--source", default="source/wikidata", help="the source record that licenses the import")
+args = parser.parse_args()
+
+things, issues = check.read_repository(ROOT)
+if issues:
+    print("wikidata: ./check finds %d issues; fix them first" % len(issues), file=sys.stderr)
+    sys.exit(1)
+languages = tuple(args.languages.split(","))
+considered = [thing for kind in SAME_AS_KINDS for _, thing in of_kind(things, kind)]
+if args.source_file:
+    with open(args.source_file, encoding="utf-8") as handle:
+        entities = json.load(handle)
+else:
+    labels = sorted({name for thing in considered for name in wikidata.english_names(thing.data)})
+
+    def progress(done, total):
+        print("asked %d of %d labels" % (done, total), file=sys.stderr)
+
+    entities = wikidata_fetch.fetch(labels, languages, progress)
+    if args.save:
+        with open(args.save, "w", encoding="utf-8") as handle:
+            json.dump(entities, handle, ensure_ascii=False, indent=1)
+try:
+    the_plan = wikidata.plan(things, entities, args.source, languages)
+except ValueError as error:
+    print("wikidata: %s" % error, file=sys.stderr)
+    sys.exit(1)
+print("\n".join(wikidata.report(the_plan, len(considered))))
+changed = wikidata.apply(ROOT, things, the_plan, dry_run=args.dry_run)
+print("wikidata: %d things %s" % (changed, "would change (dry run)" if args.dry_run else "changed. Run ./tidy and ./check."))

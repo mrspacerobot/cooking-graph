@@ -20,5 +20,6 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

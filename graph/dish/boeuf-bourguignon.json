@@ -64,5 +64,6 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/burgundian", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

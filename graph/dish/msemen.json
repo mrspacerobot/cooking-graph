@@ -22,5 +22,6 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/moroccan", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

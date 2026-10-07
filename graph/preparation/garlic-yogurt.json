@@ -22,5 +22,6 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

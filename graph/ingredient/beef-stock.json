@@ -42,5 +42,6 @@
       "tier": "drafted"
     }
   ],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": []
 }

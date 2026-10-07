@@ -79,6 +79,7 @@ def ingredient(slug, english, contains, free_of, is_a=(), part_of=(), groups=())
     }
     thing["stands_in_for"] = []
     thing["in_pantry_of"] = [link("cuisine/french")]
+    thing["same_as"] = []
     return thing
 
 
@@ -114,6 +115,7 @@ def dish():
     ]
     thing["teaches"] = [link("technique/sweat")]
     thing["belongs_to"] = [link("cuisine/french")]
+    thing["same_as"] = []
     return thing
 
 
@@ -127,6 +129,7 @@ def preparation():
         link("ingredient/flour", allows=True, when=["technique/sweat"], not_when=[], ratio=None, caveat="It is already cooked.")
     ]
     thing["belongs_to"] = [link("cuisine/french")]
+    thing["same_as"] = []
     return thing
 
 
@@ -139,6 +142,7 @@ def by_product():
     thing["teaches"] = []
     thing["stands_in_for"] = []
     thing["belongs_to"] = []
+    thing["same_as"] = []
     return thing
 
 

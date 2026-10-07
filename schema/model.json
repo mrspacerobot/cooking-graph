@@ -20,6 +20,14 @@
         "caveat": {"is": "text"}
       }
     },
+    "same_as": {
+      "is": "object",
+      "fields": {
+        "source": {"is": "ref", "kinds": ["source"]},
+        "id": {"is": "label"},
+        "tier": {"is": "word", "from": "tiers"}
+      }
+    },
     "part": {
       "is": "object",
       "fields": {
@@ -156,7 +164,8 @@
           }
         },
         "stands_in_for": {"is": "list", "of": {"is": "shape", "name": "stand_in"}},
-        "in_pantry_of": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
+        "in_pantry_of": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}},
+        "same_as": {"is": "list", "of": {"is": "shape", "name": "same_as"}}
       }
     },
     "technique": {
@@ -224,7 +233,8 @@
         "groups": {"is": "list", "of": {"is": "link", "to": ["group"]}},
         "teaches": {"is": "list", "of": {"is": "link", "to": ["technique"]}},
         "stands_in_for": {"is": "list", "of": {"is": "shape", "name": "stand_in"}},
-        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
+        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}},
+        "same_as": {"is": "list", "of": {"is": "shape", "name": "same_as"}}
       }
     },
     "dish": {
@@ -237,7 +247,8 @@
         "is": {"is": "text"},
         "parts": {"is": "list", "at_least": 1, "of": {"is": "shape", "name": "part"}},
         "teaches": {"is": "list", "of": {"is": "link", "to": ["technique"]}},
-        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
+        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}},
+        "same_as": {"is": "list", "of": {"is": "shape", "name": "same_as"}}
       }
     },
     "recipe": {

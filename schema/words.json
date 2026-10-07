@@ -6,7 +6,7 @@
   "places": ["european-union", "united-kingdom", "united-states", "canada", "australia-and-new-zealand", "japan", "codex"],
   "standings": ["mandatory", "recommended"],
   "commercial_uses": ["allowed", "share-alike", "not-allowed", "unclear"],
-  "languages": ["en", "fr"],
+  "languages": ["en", "fr", "es", "it", "tr"],
   "reviewer_kinds": ["person", "model", "test-cook"],
   "know_ways": ["cooks-it-at-home", "cooks-it-for-work", "trained-in-it", "lives-or-lived-there", "studies-it"],
   "verdicts": ["approved", "rejected"],

@@ -555,6 +555,13 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 - **Not yet:** verified needs a second reviewer, and cook-tested needs cooks. Both stay refused. The safety record of an ingredient stays unverified until stage two.
 - **No promotion:** nothing changes tier in this commit.
 
+### 33. An id from a public dataset: same_as (the open-data skeleton)
+
+- **Example:** nothing said that our aubergine is the aubergine of Wikidata, so no name in another language, and no way to tell two files for one thing apart, could be taken from an open dataset and shown to come from it.
+- **Now:** an ingredient, a preparation and a dish have a list `same_as`. A row is the `source` (a source record), the `id` the dataset gives the thing (for Wikidata, a Q number), and a `tier`. A row may be sourced when its source says it may be used in a product that is sold (`commercial_use: allowed`); the rule `same-as-source-not-allowed` refuses it otherwise. The thing itself stays drafted: a name has no tier, so the names that come with an id are drafted words on a drafted thing, and only the row is sourced. `same-id-twice` refuses one id on two things of a family, which is nearly always one thing written twice. The languages list gains `es`, `it` and `tr`. Names in other scripts are not taken yet, because a name in another script must bring its romanization and the dataset does not give one. `./wikidata` writes only the id and new names, matches only an exact English label to a food or food ingredient, skips anything ambiguous, and changes nothing on a second run.
+- **Not yet:** Japanese, Hindi, Arabic and Greek names. Techniques and cuisines have no `same_as`. FoodOn is recorded as a source and nothing is imported from it.
+- **No promotion:** the rows are sourced because a person can open the source and see the id there. The things stay drafted.
+
 ## Decisions where the starting model was silent
 
 These are not changes. The starting model names kinds and statements, not files, so the first files had to settle them.

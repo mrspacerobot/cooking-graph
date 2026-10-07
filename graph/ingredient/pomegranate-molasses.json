@@ -28,5 +28,6 @@
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

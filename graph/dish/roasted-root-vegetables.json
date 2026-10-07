@@ -29,5 +29,6 @@
   "teaches": [
     {"thing": "technique/roast", "tier": "drafted"}
   ],
-  "belongs_to": []
+  "belongs_to": [],
+  "same_as": []
 }

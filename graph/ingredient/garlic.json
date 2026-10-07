@@ -26,5 +26,6 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"},
     {"thing": "cuisine/indian", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

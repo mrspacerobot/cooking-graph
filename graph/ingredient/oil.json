@@ -26,5 +26,6 @@
     "note": "A named oil such as olive or sunflower oil has a file of its own. This one stands for any oil a recipe does not name."
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": []
 }

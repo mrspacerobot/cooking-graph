@@ -145,6 +145,7 @@ def ingredient(root, slug, english, behaviour, fr=None, also=None, contains=(), 
     food["safety"] = safety(root, contains, note=note)
     food["stands_in_for"] = list(stands)
     food["in_pantry_of"] = full_links(pantry)
+    food["same_as"] = []
     return food
 
 
@@ -174,6 +175,7 @@ def preparation(slug, english, what_it_is, parts, fr=None, also=None, groups=(),
     block["teaches"] = full_links(teaches)
     block["stands_in_for"] = list(stands)
     block["belongs_to"] = full_links(belongs_to)
+    block["same_as"] = []
     return block
 
 
@@ -183,6 +185,7 @@ def dish(slug, english, what_it_is, parts, fr=None, also=None, teaches=(), belon
     plate["parts"] = list(parts)
     plate["teaches"] = full_links(teaches)
     plate["belongs_to"] = full_links(belongs_to)
+    plate["same_as"] = []
     return plate
 
 

@@ -335,6 +335,35 @@ def regulated(tier="sourced", standing="mandatory"):
     }
 
 
+class SameAs(CheckerTest):
+    def row(self, tier="sourced", source="source/kitchen-law", identifier="Q34172"):
+        return {"source": source, "id": identifier, "tier": tier}
+
+    def test_a_sourced_id_from_a_source_that_allows_use_is_accepted(self):
+        self.break_file(BUTTER, lambda thing: thing.update(same_as=[self.row()]))
+        self.assertEqual([], self.issues())
+
+    def test_a_drafted_id_is_accepted(self):
+        self.break_file(BUTTER, lambda thing: thing.update(same_as=[self.row("drafted")]))
+        self.assertEqual([], self.issues())
+
+    def test_an_id_from_a_source_that_does_not_allow_use_may_not_be_sourced(self):
+        self.break_file("graph/source/kitchen-law.json", lambda source: source.update(commercial_use="share-alike"))
+        self.break_file(BUTTER, lambda thing: thing.update(same_as=[self.row()]))
+        self.assertIn((BUTTER, "same-as-source-not-allowed"), {(issue.path, issue.rule) for issue in self.issues()})
+
+    def test_the_thing_stays_drafted_whatever_an_id_says(self):
+        self.break_file(BUTTER, lambda thing: thing.update(tier="sourced", same_as=[self.row()]))
+        self.expect(BUTTER, "tier-not-earned")
+
+    def test_the_same_id_on_two_things_of_one_kind_is_refused(self):
+        self.break_file(BUTTER, lambda thing: thing.update(same_as=[self.row()]))
+        self.break_file("graph/ingredient/flour.json", lambda thing: thing.update(same_as=[self.row()]))
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((BUTTER, "same-id-twice"), found)
+        self.assertIn(("graph/ingredient/flour.json", "same-id-twice"), found)
+
+
 class Sources(CheckerTest):
     def test_a_fact_taken_from_a_source_may_be_sourced(self):
         self.break_file(DAIRY, lambda thing: thing.update(tier="sourced", regulated=[regulated()]))

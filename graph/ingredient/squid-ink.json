@@ -1,0 +1,25 @@
+{
+  "id": "ingredient/squid-ink",
+  "tier": "drafted",
+  "names": {"en": "Squid ink", "fr": "Encre de calmar"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "The black ink of squid, sold in small sachets or jars. A little colours a rice or a sauce black and gives a briny, deep taste of the sea. It stains cloth and fingers.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/molluscs", "basis": "It is the ink of a mollusc.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

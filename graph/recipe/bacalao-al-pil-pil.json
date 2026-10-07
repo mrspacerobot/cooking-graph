@@ -1,0 +1,91 @@
+{
+  "id": "recipe/bacalao-al-pil-pil",
+  "tier": "drafted",
+  "names": {"en": "Bacalao al pil-pil"},
+  "aliases": {},
+  "makes": "dish/bacalao-al-pil-pil",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/salt-cod", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "cod"},
+    {"thing": "ingredient/water", "amount": {"value": 3, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "olive-oil"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/guindilla", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "guindilla"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/mixing-bowl", "equipment/saute-pan", "equipment/slotted-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/desalt",
+      "works_on": ["ingredient/salt-cod"],
+      "with": ["ingredient/water"],
+      "text": "Rinse the pieces of cod, lay them skin side up in a deep dish and cover them with cold water. Keep the dish in the fridge and change the water several times, until a flake from the thickest part tastes lightly seasoned.",
+      "time": {"from": 24, "to": 48, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dry",
+      "works_on": ["ingredient/salt-cod"],
+      "with": [],
+      "text": "Drain the cod and pat it dry on every side with a clean cloth.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/garlic"],
+      "with": [],
+      "text": "Slice the garlic thin.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/confit",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/olive-oil", "ingredient/guindilla"],
+      "text": "Warm the oil in the pan on the lowest heat with the garlic and the guindilla, until the garlic is pale gold and smells sweet and has not browned. Lift out the garlic and the guindilla and keep them.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/confit",
+      "works_on": ["ingredient/salt-cod"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Slip the cod into the scented oil, skin side down, with the heat very low. The oil must barely stir. Leave the pieces in it until the flesh turns opaque and a milky liquid starts to seep from the flakes, then lift the cod out onto a plate. Do not salt anything.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/shake-the-pan",
+      "works_on": ["ingredient/salt-cod"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Let the oil cool until it is just warm and pour it into a jug, leaving the milky juices in the pan. Put the cod back skin side up. Shake the pan slowly in small circles on and off a very low heat, and pour the oil back in a thin thread, a little at a time, as the juices turn pale and thick. Stop when the sauce is creamy and clings to the fish. Here the oil goes back in a little at a time, where the usual card starts with a little oil in the pan.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/salt-cod", "ingredient/garlic"],
+      "with": ["ingredient/guindilla"],
+      "text": "Spoon the sauce over the cod and scatter the golden garlic and the guindilla on top.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

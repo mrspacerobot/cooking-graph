@@ -3,7 +3,7 @@
 Written by `./safety strict`. An ingredient holds a fact for certain, or the fact is recorded strictly because a common form of the ingredient may hold it.
 The rows below are the strict ones. How strict to be is for the owner to rule, reason by reason. Every safety record is unverified either way.
 
-199 of the 396 facts that ingredients hold are strict.
+213 of the 424 facts that ingredients hold are strict.
 
 | Fact | Basis | Ingredients |
 |---|---|---|
@@ -27,11 +27,13 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/egg` | Often made with wine, which may be cleared with egg white. | dijon-mustard |
 | `fact/egg` | Pasta of unknown make may hold egg. | macaroni, orzo, vermicelli |
 | `fact/egg` | Some bought pita holds egg. | pita-bread |
+| `fact/egg` | Some wines are cleared with egg white. | dry-sherry |
 | `fact/egg` | Wine may be cleared with egg white. | madeira, red-wine, riesling, vin-jaune, white-wine |
 | `fact/fish` | Beer may be cleared with isinglass, which comes from fish. | beer |
 | `fact/fish` | Cider may be cleared with isinglass, which comes from fish. | cider |
 | `fact/fish` | Made from wine, which may be cleared with isinglass from fish. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
 | `fact/fish` | Often made with wine, which may be cleared with isinglass from fish. | dijon-mustard |
+| `fact/fish` | Some wines are cleared with fish finings. | dry-sherry |
 | `fact/fish` | Wine may be cleared with isinglass, which comes from fish. | madeira, red-wine, riesling, vin-jaune, white-wine |
 | `fact/gluten` | Bought sausage meat is often bound with breadcrumbs or rusk. | sausage-meat |
 | `fact/gluten` | Bought stock and stock cubes often hold wheat. | beef-stock, chicken-stock, fish-stock, stock, vegetable-stock |
@@ -43,6 +45,9 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/gluten` | Most soy sauce is brewed with wheat. | soy-sauce |
 | `fact/gluten` | Some are bound with bread or flour. | andouillette |
 | `fact/gluten` | Some black pudding is bound with cereal or bread. | black-pudding |
+| `fact/gluten` | Some cured meats are made with a cereal filler. | serrano-ham |
+| `fact/gluten` | Some sausages are bound with bread or flour. | morcilla |
+| `fact/gluten` | Some sausages are made with a cereal filler. | chorizo |
 | `fact/gluten` | The mould that veins it is traditionally grown on bread. | roquefort |
 | `fact/lupin` | Some bread is made with lupin flour. | bread |
 | `fact/meat` | A pork fact counts as meat as well. | gelatin |
@@ -51,6 +56,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/milk` | Cooked meats are sometimes made with lactose or milk protein. | pork-brawn |
 | `fact/milk` | Cooked sausages are often made with milk protein. | cervelas |
 | `fact/milk` | Cured meat is sometimes made with lactose or milk protein. | smoked-duck-breast |
+| `fact/milk` | Cured meats are sometimes made with lactose or milk protein. | serrano-ham |
 | `fact/milk` | Cured pork is often made with lactose or milk protein. | bacon, ham, salt-pork |
 | `fact/milk` | Enriched loaves hold milk or butter. | bread |
 | `fact/milk` | Made from wine, which may be cleared with milk protein. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
@@ -60,7 +66,8 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/milk` | Some are made with milk protein. | lyon-sausage |
 | `fact/milk` | Some black pudding is made with cream or milk. | black-pudding |
 | `fact/milk` | Some bought pita holds milk or butter. | pita-bread |
-| `fact/milk` | Some sausages are made with milk protein. | andouillette |
+| `fact/milk` | Some sausages are made with milk protein. | andouillette, chorizo, morcilla |
+| `fact/milk` | Some wines are cleared with milk protein. | dry-sherry |
 | `fact/milk` | Usually enriched with milk or butter. | sandwich-bread |
 | `fact/milk` | Wine may be cleared with milk protein. | madeira, red-wine, riesling, vin-jaune, white-wine |
 | `fact/mustard` | Often pickled with mustard seed. | cornichons |
@@ -85,6 +92,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/slaughter-product` | Some cane sugar is whitened with bone char. | brown-sugar, sugar |
 | `fact/slaughter-product` | Some cheese for the filling is set with animal rennet. | ravioles |
 | `fact/slaughter-product` | Some fresh cheeses are set with animal rennet. | fromage-blanc |
+| `fact/slaughter-product` | Some wines are cleared with animal finings. | dry-sherry |
 | `fact/slaughter-product` | The whey it is made from comes from cheeses set with animal rennet. | anthotyro, mizithra |
 | `fact/slaughter-product` | Traditional versions use animal rennet; the maker has not been checked. | comte, emmental |
 | `fact/slaughter-product` | Wine may be cleared with gelatine or isinglass. | madeira, red-wine, riesling, vin-jaune, white-wine |
@@ -100,7 +108,9 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/sulphites` | Bought sausage meat is often kept with sulphites. | sausage-meat |
 | `fact/sulphites` | Bought syrups may be kept with a preservative of sulphites. | pomegranate-molasses |
 | `fact/sulphites` | Cooked meats are often kept with sulphites. | pork-brawn |
-| `fact/sulphites` | Cooked sausages are often kept with sulphites. | cervelas |
+| `fact/sulphites` | Cooked sausages are often kept with sulphites. | cervelas, morcilla |
+| `fact/sulphites` | Cured meats are often kept with sulphites. | serrano-ham |
+| `fact/sulphites` | Cured sausages are often kept with sulphites. | chorizo |
 | `fact/sulphites` | Dried fruit is often kept with sulphites. | currant, prune |
 | `fact/sulphites` | Dried fruit is often treated with sulphites to keep its colour. | amchur |
 | `fact/sulphites` | Dried fruit is sometimes kept with a preservative of sulphites. | date |
@@ -118,6 +128,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/sulphites` | Some beer holds sulphites. | beer |
 | `fact/sulphites` | Some jaggery is clarified with sulphur compounds. | jaggery |
 | `fact/sulphites` | Table grapes are often kept with sulphur dioxide. | grape |
+| `fact/sulphites` | Wines are usually kept with sulphites. | dry-sherry |
 | `fact/tree-nuts` | It is a nut that grows on a tree, though the European list of nuts does not name it. | chestnut |
 | `fact/tree-nuts` | It is pressed from coconut, which some lists count as a tree nut; recorded strictly. | coconut-oil |
 | `fact/tree-nuts` | Pine nuts are seeds of pine cones, listed as tree nuts in some places and not in others. | pine-nut |

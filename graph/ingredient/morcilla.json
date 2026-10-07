@@ -1,0 +1,34 @@
+{
+  "id": "ingredient/morcilla",
+  "tier": "drafted",
+  "names": {"en": "Morcilla"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/cooked-meats", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A soft, rich Spanish blood sausage of pig's blood with rice or onion, seasoned with paprika and spices. It is sliced and fried, or warmed in a stew, and its skin splits if the heat is high.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is a sausage of pork.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is a sausage of pork.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "It is made with the blood of a pig.", "certain": true},
+      {"fact": "fact/sulphites", "basis": "Cooked sausages are often kept with sulphites.", "certain": false},
+      {"fact": "fact/milk", "basis": "Some sausages are made with milk protein.", "certain": false},
+      {"fact": "fact/gluten", "basis": "Some sausages are bound with bread or flour.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame", "fact/soy",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

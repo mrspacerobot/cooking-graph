@@ -1,0 +1,52 @@
+{
+  "id": "technique/confit",
+  "tier": "drafted",
+  "names": {"en": "Confit", "fr": "Confire"},
+  "aliases": {"en": ["cook slowly in fat", "poach in oil", "slow-cook in oil"], "fr": ["mettre en confit"]},
+  "does": "Cooks food slowly while it lies covered in fat held far below a simmer, so that it turns tender and silky and the fat takes up its flavour. The food is lifted out and the scented fat is kept.",
+  "how": [
+    "Season or cure the food first if it needs it, and dry it well.",
+    "Choose a pot just big enough for the food to lie in one snug layer, with the fat covering it.",
+    "Warm the fat over the lowest heat, or in a low oven, until it shivers and gives only the odd bubble. It must never fry.",
+    "Add the food and keep the fat at that heat until a knife slips into the thickest part with no resistance. Garlic needs less time than a duck leg, and a piece of fish least.",
+    "Lift the food out with a slotted spoon and drain it. Keep the fat."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The fat shivers and gives off a bubble now and then. The food does not sizzle."},
+    {"sense": "feel", "text": "A knife or skewer slips into the thickest part with no resistance."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting the fat get hot enough to fry, which toughens fish and browns garlic bitter.",
+      "fix": "Use the lowest heat, and lift the pan off the heat for a moment if the fat bubbles."
+    },
+    {
+      "mistake": "Using too little fat, so that part of the food sticks out and dries.",
+      "fix": "Use a smaller pot, so that the fat covers the food."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/salt-cod", "tier": "drafted"},
+    {"thing": "ingredient/garlic", "tier": "drafted"},
+    {"thing": "ingredient/duck", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saucepan", "equipment/dutch-oven", "equipment/saute-pan"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/olive-oil", "ingredient/duck-fat"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop", "equipment/oven"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/poach",
+      "differs": "The food lies under fat and not under water, at a heat low enough that the fat barely stirs, so it gives its juices to the fat and takes the fat's flavour in return.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

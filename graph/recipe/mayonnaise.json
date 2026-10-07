@@ -4,7 +4,7 @@
   "names": {"en": "Mayonnaise"},
   "aliases": {},
   "makes": "preparation/mayonnaise",
-  "yields": {"value": 250, "unit": "gram"},
+  "yields": {"value": 220, "unit": "gram"},
   "ingredients": [
     {"thing": "ingredient/egg-yolk", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/room-temperature"]},
     {"thing": "ingredient/dijon-mustard", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},

@@ -4,7 +4,7 @@
   "names": {"en": "Vinaigrette"},
   "aliases": {},
   "makes": "preparation/vinaigrette",
-  "yields": {"value": 100, "unit": "millilitre"},
+  "yields": {"value": 120, "unit": "millilitre"},
   "ingredients": [
     {"thing": "ingredient/dijon-mustard", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},
     {"thing": "ingredient/red-wine-vinegar", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},

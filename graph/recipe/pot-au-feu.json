@@ -58,7 +58,7 @@
     {
       "technique": "technique/poach",
       "works_on": ["ingredient/marrow-bone", "preparation/broth"],
-      "text": "Poach the marrow bones apart, in a ladleful of the broth in a small pan, so that the marrow does not melt away into the pot.",
+      "text": "Poach the marrow bones apart, in a small pan with enough of the broth to cover them, so that the marrow does not melt away into the pot.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

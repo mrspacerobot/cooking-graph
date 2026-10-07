@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/soupe-de-pois-casses",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "stocks",
+  "dish": "Soupe de pois cassés",
+  "also_called": ["split pea soup", "potage Saint-Germain"],
+  "techniques": ["sweat", "simmer", "skim", "puree"],
+  "ingredients": ["split peas", "bacon", "onion", "carrot", "butter", "bouquet garni"]
+}

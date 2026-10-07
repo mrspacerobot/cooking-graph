@@ -13,7 +13,26 @@ from collections import namedtuple
 from tools import names
 
 Result = namedtuple("Result", ["growing", "held_back"])
-Answer = namedtuple("Answer", ["probe_id", "probe", "dish_id", "verdict", "graph_holds", "disagreements", "unknown_words"])
+ANSWER_FIELDS = ["probe_id", "probe", "dish_id", "verdict", "graph_holds", "disagreements", "unknown_words"]
+
+HOLDS = "the probe says it holds"
+DOES_NOT_HOLD = "the probe says it does not hold"
+GRAPH_DOES_NOT = "the graph says it does not"
+GRAPH_CERTAIN = "the graph says it does, for certain"
+GRAPH_STRICT = "the graph says it does, on strict answers alone"
+
+
+class Answer(namedtuple("Answer", ANSWER_FIELDS)):
+    """What the graph says to one safety probe."""
+
+    @property
+    def strict_alone(self):
+        """True when the probe disagrees, and only with answers the graph records strictly and not for certain.
+
+        How strict to be is for the owner to rule. Such a disagreement goes
+        away if he rules that those answers are too strict, and stays if not.
+        """
+        return self.verdict == "disagrees" and all(side[3] == GRAPH_STRICT for side in self.disagreements)
 
 
 def recipe_that_makes(thing_id, things):
@@ -83,13 +102,14 @@ def answer(probe, things, facts_by_word):
         if fact is None:
             unknown.append(word)
         elif fact not in graph_holds:
-            disagreements.append(("the probe says it holds", word, fact))
+            disagreements.append((HOLDS, word, fact, GRAPH_DOES_NOT))
     for word in probe["does_not_hold"]:
         fact = facts_by_word.get(names.plain(word))
         if fact is None:
             unknown.append(word)
         elif fact in graph_holds:
-            disagreements.append(("the probe says it does not hold", word, fact))
+            certain = any(row[2] for row in graph_holds[fact])
+            disagreements.append((DOES_NOT_HOLD, word, fact, GRAPH_CERTAIN if certain else GRAPH_STRICT))
     verdict = "disagrees" if disagreements else "agrees"
     return Answer(probe["id"], probe, dish_id, verdict, graph_holds, disagreements, unknown)
 
@@ -114,6 +134,7 @@ def count(answers):
         "answerable": len([one for one in answers if one.verdict != "not answerable"]),
         "agreeing": len([one for one in answers if one.verdict == "agrees"]),
         "disagreeing": len([one for one in answers if one.verdict == "disagrees"]),
+        "on_strict_answers_alone": len([one for one in answers if one.strict_alone]),
     }
 
 
@@ -124,8 +145,9 @@ def counts(result):
 def report(result):
     lines = []
     for name, numbers in counts(result).items():
-        line = "Safety probes, %s: %d. Answerable %d, agreeing %d, disagreeing %d."
-        lines.append(line % (name, numbers["probes"], numbers["answerable"], numbers["agreeing"], numbers["disagreeing"]))
+        line = "Safety probes, %s: %d. Answerable %d, agreeing %d, disagreeing %d, of which %d on strict answers alone."
+        cells = (name, numbers["probes"], numbers["answerable"], numbers["agreeing"], numbers["disagreeing"], numbers["on_strict_answers_alone"])
+        lines.append(line % cells)
     unknown = sorted({names.plain(word) for one in result.growing for word in one.unknown_words})
     lines.append("Words of the growing probes that name no fact: %s" % (", ".join(unknown) or "none"))
     lines.append("What a held-back probe disagrees with is never shown.")
@@ -135,9 +157,8 @@ def report(result):
 def where_from(sources):
     parts = []
     for ingredient_id, basis, certain in sources:
-        sure = "certain" if certain else "recorded strictly, not certain"
-        parts.append("`%s` (%s %s)" % (ingredient_id, basis.rstrip("."), sure))
-    return "; ".join(parts)
+        parts.append("`%s` (%s: %s)" % (ingredient_id, "certain" if certain else "strict", basis))
+    return ", ".join(parts)
 
 
 def disagreement_lines(one):
@@ -149,10 +170,9 @@ def disagreement_lines(one):
     lines.append("- **The probe's reason:** %s" % probe["why"])
     lines.append("- **The graph's dish:** `%s`. From the ingredients of its recipe it holds:" % one.dish_id)
     for fact, sources in sorted(one.graph_holds.items()):
-        lines.append("  - `%s`, from %s" % (fact, where_from(sources)))
+        lines.append("  - `%s`: %s" % (fact, where_from(sources)))
     lines.append("- **Where they disagree:**")
-    for side, word, fact in one.disagreements:
-        graph_side = "the graph says it does not" if side == "the probe says it holds" else "the graph says it does"
+    for side, word, fact, graph_side in one.disagreements:
         lines.append("  - %s %s (`%s`), and %s." % (side, word, fact, graph_side))
     lines.append("")
     return lines
@@ -167,13 +187,20 @@ def disagreements_document(result):
         "Written by `./safety disagreements`. Nothing here is settled: each disagreement is for a person to rule on.",
         "The graph's side is worked out from the ingredients of the dish's recipe, and every safety record behind it is unverified.",
         "",
-        "| Set | Probes | Answerable | Agreeing | Disagreeing |",
-        "|---|---|---|---|---|",
+        "| Set | Probes | Answerable | Agreeing | Disagreeing | Of which on strict answers alone |",
+        "|---|---|---|---|---|---|",
     ]
     for name in ("growing", "held-back"):
         row = numbers[name]
-        lines.append("| %s | %d | %d | %d | %d |" % (name, row["probes"], row["answerable"], row["agreeing"], row["disagreeing"]))
-    lines.extend(["", "A probe is not answerable when its dish is not in the graph or has no recipe. What a held-back probe disagrees with is counted and never shown.", ""])
+        cells = (name, row["probes"], row["answerable"], row["agreeing"], row["disagreeing"], row["on_strict_answers_alone"])
+        lines.append("| %s | %d | %d | %d | %d | %d |" % cells)
+    lines.extend([
+        "",
+        "A probe is not answerable when its dish is not in the graph or has no recipe. What a held-back probe disagrees with is counted and never shown.",
+        "",
+        "A disagreement rests on strict answers alone when the probe says the dish does not hold a fact and the graph holds it only through answers that are recorded strictly and not for certain. `docs/strict-answers.md` lists those answers.",
+        "",
+    ])
     for one in result.growing:
         if one.verdict == "disagrees":
             lines.extend(disagreement_lines(one))

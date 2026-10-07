@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/omelette-de-la-mere-poulard",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "eggs",
+  "dish": "Omelette de la mère Poulard",
+  "also_called": ["mère Poulard omelette", "Mont-Saint-Michel omelette"],
+  "techniques": ["whisk", "pan-fry", "fold"],
+  "ingredients": ["egg", "butter"]
+}

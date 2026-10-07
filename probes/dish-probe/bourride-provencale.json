@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/bourride-provencale",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "poach",
+  "dish": "Bourride provençale",
+  "also_called": ["bourride", "bourride sétoise"],
+  "techniques": ["poach", "emulsify", "thicken with egg yolk"],
+  "ingredients": ["white fish", "leek", "fennel", "garlic", "olive oil", "egg yolk", "bread"]
+}

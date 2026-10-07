@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/consomme",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Consommé",
+  "also_called": ["beef consommé"],
+  "holds": ["egg", "celery"],
+  "does_not_hold": ["gluten", "milk"],
+  "why": "Egg white clarifies it, so egg is in the raft even though the strained soup looks clear. The vegetables that flavour it usually include celery."
+}

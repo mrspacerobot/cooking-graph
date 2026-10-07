@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/pain-perdu",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "eggs",
+  "dish": "Pain perdu",
+  "also_called": ["French toast", "lost bread"],
+  "techniques": ["whisk", "soak", "pan-fry"],
+  "ingredients": ["bread", "egg", "milk", "butter", "sugar"]
+}

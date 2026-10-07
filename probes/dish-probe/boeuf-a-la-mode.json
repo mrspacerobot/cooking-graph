@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/boeuf-a-la-mode",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "braise",
+  "dish": "Bœuf à la mode",
+  "also_called": ["beef à la mode", "French pot roast"],
+  "techniques": ["marinate", "sear", "deglaze", "braise"],
+  "ingredients": ["beef chuck", "red wine", "carrot", "onion", "bacon", "calf's foot", "bouquet garni"]
+}

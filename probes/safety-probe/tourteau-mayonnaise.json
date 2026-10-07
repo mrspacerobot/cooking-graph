@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/tourteau-mayonnaise",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Tourteau mayonnaise",
+  "also_called": ["crab mayonnaise", "crabe mayonnaise", "dressed crab with mayonnaise"],
+  "holds": ["crustaceans", "egg", "mustard", "sulphites"],
+  "does_not_hold": ["molluscs", "fish"],
+  "why": "Crab is a crustacean, and the mayonnaise is egg yolk with mustard. The vinegar in it often carries sulphites."
+}

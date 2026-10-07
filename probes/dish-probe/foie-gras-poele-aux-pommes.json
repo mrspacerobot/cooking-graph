@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/foie-gras-poele-aux-pommes",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "sear",
+  "dish": "Foie gras poêlé aux pommes",
+  "also_called": ["pan-seared foie gras with apples", "escalope de foie gras poêlée"],
+  "techniques": ["slice", "sear", "deglaze"],
+  "ingredients": ["foie gras", "apple", "butter", "sherry vinegar"]
+}

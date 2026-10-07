@@ -80,6 +80,8 @@ def count(things):
         "facts_held": count_facts_held(things),
         "probes": probes.shares(probes.run(things)),
         "probe_words": probes.word_shares(probes.run(things)),
+        "batches": probes.by_batch(probes.run(things)),
+        "batch_lines": probes.batch_lines(probes.run(things)),
         "levels_with_a_technique": count_levels(things),
         "recipe_steps": count_steps(things),
         "safety_points": count_safety_points(things),
@@ -141,6 +143,8 @@ def render(counts, model, words):
     lines.extend(safety_table(counts))
     lines.append("")
     lines.extend(probe_table(counts))
+    lines.append("")
+    lines.extend(counts["batch_lines"])
     lines.append("")
     lines.append("Levels of the programs that name a technique: %d of %d" % (with_a_technique, levels))
     lines.append("Recipe steps: %d" % counts["recipe_steps"])

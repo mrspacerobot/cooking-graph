@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/gratin-de-crozets",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Gratin de crozets",
+  "also_called": ["crozets gratin", "crozets au gratin", "Savoyard pasta gratin"],
+  "holds": ["gluten", "wheat", "milk", "buckwheat"],
+  "does_not_hold": ["fish"],
+  "why": "Crozets are small Savoyard pasta squares made from wheat flour, and some are made with buckwheat flour. The gratin is finished with cream and cheese."
+}

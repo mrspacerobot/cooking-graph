@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/confit-de-canard",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "sear",
+  "dish": "Confit de canard",
+  "also_called": ["duck confit", "cuisse de canard confite", "duck leg confit"],
+  "techniques": ["cure", "confit", "sear"],
+  "ingredients": ["duck leg", "duck fat", "garlic", "thyme"]
+}

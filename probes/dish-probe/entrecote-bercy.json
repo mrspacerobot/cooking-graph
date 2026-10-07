@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/entrecote-bercy",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "pan-sauce",
+  "dish": "Entrecôte Bercy",
+  "also_called": ["entrecôte sauce Bercy", "steak with Bercy sauce"],
+  "techniques": ["sear", "rest", "reduce", "mount with butter"],
+  "ingredients": ["rib steak", "shallot", "white wine", "butter", "parsley", "lemon"]
+}

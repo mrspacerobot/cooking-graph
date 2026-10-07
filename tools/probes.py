@@ -23,7 +23,7 @@ KINDS_THAT_ANSWER = {
 Result = namedtuple("Result", ["growing", "held_back"])
 
 
-ANSWER_FIELDS = ["probe_id", "skill", "dish", "techniques", "ingredients", "missing_techniques", "missing_ingredients", "dishes"]
+ANSWER_FIELDS = ["probe_id", "batch", "skill", "dish", "techniques", "ingredients", "missing_techniques", "missing_ingredients", "dishes"]
 
 
 class Answer(namedtuple("Answer", ANSWER_FIELDS)):
@@ -76,6 +76,7 @@ def answer(probe, indexes):
         dishes.update(indexes["dish"].get(name, []))
     return Answer(
         probe_id=probe["id"],
+        batch=probe["batch"],
         skill=probe["written_for"],
         dish=probe["dish"],
         techniques=list(probe["techniques"]),
@@ -122,6 +123,66 @@ def words_answered(answers):
 def word_shares(result):
     """The words answered, for each set. A count names no word, so it may be shown for the held-back set too."""
     return {"growing": words_answered(result.growing), "held-back": words_answered(result.held_back)}
+
+
+def new_words(answers, field):
+    """The distinct words the graph has no name for. Only ever counted: a held-back word must not be named."""
+    return {names.plain(word) for one in answers for word in getattr(one, field)}
+
+
+def per_fifty(count, probes):
+    """A count of new words, brought to a batch of fifty probes so that batches of any size compare."""
+    return round(50 * count / probes, 1)
+
+
+def batch_numbers(growing, held_back):
+    everyone = growing + held_back
+    techniques = len(new_words(everyone, "missing_techniques"))
+    ingredients = len(new_words(everyone, "missing_ingredients"))
+    return {
+        "probes": len(everyone),
+        "growing": share(growing),
+        "held-back": share(held_back),
+        "new_technique_words": techniques,
+        "new_ingredient_words": ingredients,
+        "technique_words_per_50": per_fifty(techniques, len(everyone)),
+        "ingredient_words_per_50": per_fifty(ingredients, len(everyone)),
+    }
+
+
+def by_batch(result):
+    """The numbers of each batch: its probes, those answered in each set, and its new words.
+
+    A new word is a technique or ingredient word the graph has no name for.
+    It is counted once in a batch, whoever asks for it, the held-back probes
+    included. A count names no word.
+    """
+    batches = sorted({one.batch for one in result.growing + result.held_back})
+    numbers = {}
+    for batch in batches:
+        growing = [one for one in result.growing if one.batch == batch]
+        held_back = [one for one in result.held_back if one.batch == batch]
+        numbers[batch] = batch_numbers(growing, held_back)
+    return numbers
+
+
+def batch_lines(result):
+    """The numbers of each batch as a Markdown table."""
+    header = ["Batch", "Probes", "Growing answered", "Held back answered", "New technique words", "per 50 probes", "New ingredient words", "per 50 probes"]
+    lines = ["| " + " | ".join(header) + " |", "|" + " --- |" * len(header)]
+    for batch, numbers in by_batch(result).items():
+        cells = [
+            batch,
+            numbers["probes"],
+            "%d of %d" % numbers["growing"],
+            "%d of %d" % numbers["held-back"],
+            numbers["new_technique_words"],
+            numbers["technique_words_per_50"],
+            numbers["new_ingredient_words"],
+            numbers["ingredient_words_per_50"],
+        ]
+        lines.append("| " + " | ".join(str(cell) for cell in cells) + " |")
+    return lines
 
 
 def as_share(pair):

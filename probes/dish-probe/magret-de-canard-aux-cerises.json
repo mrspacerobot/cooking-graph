@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/magret-de-canard-aux-cerises",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "pan-sauce",
+  "dish": "Magret de canard aux cerises",
+  "also_called": ["duck breast with cherries", "duck breast with cherry sauce"],
+  "techniques": ["score", "sear", "rest", "deglaze", "reduce"],
+  "ingredients": ["duck breast", "cherry", "red wine vinegar", "sugar", "brown stock", "butter"]
+}

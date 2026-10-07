@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gratin-savoyard",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "gratin",
+  "dish": "Gratin savoyard",
+  "also_called": ["Savoyard potato gratin", "Savoy gratin"],
+  "techniques": ["slice", "layer", "bake", "gratinate"],
+  "ingredients": ["potato", "Beaufort", "beef stock", "butter", "garlic", "nutmeg"]
+}

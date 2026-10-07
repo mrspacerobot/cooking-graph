@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/entrecote-bearnaise",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Entrecôte béarnaise",
+  "also_called": ["steak béarnaise", "steak with béarnaise sauce"],
+  "holds": ["egg", "milk", "sulphites"],
+  "does_not_hold": ["gluten", "fish"],
+  "why": "Béarnaise is egg yolks whisked with butter. The vinegar and wine in the reduction carry sulphites."
+}

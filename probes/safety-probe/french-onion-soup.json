@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/french-onion-soup",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "French onion soup",
+  "also_called": ["soupe à l'oignon", "soupe à l'oignon gratinée"],
+  "holds": ["gluten", "wheat", "milk", "celery", "sulphites"],
+  "does_not_hold": ["egg", "fish"],
+  "why": "Flour and a baguette crouton bring wheat and gluten, and the Gruyère and butter bring milk. The white wine carries sulphites and the beef stock often has celery in it."
+}

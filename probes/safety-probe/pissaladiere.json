@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/pissaladiere",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Pissaladière",
+  "also_called": [],
+  "holds": ["gluten", "wheat", "fish"],
+  "does_not_hold": ["egg", "milk"],
+  "why": "Anchovies are in the topping, which is easy to miss under the onions. The base is a bread dough."
+}

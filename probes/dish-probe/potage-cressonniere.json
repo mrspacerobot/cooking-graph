@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/potage-cressonniere",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "stocks",
+  "dish": "Potage cressonnière",
+  "also_called": ["watercress soup", "soupe au cresson"],
+  "techniques": ["sweat", "simmer", "puree"],
+  "ingredients": ["watercress", "potato", "onion", "butter", "chicken stock", "cream"]
+}

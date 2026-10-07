@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/cote-de-boeuf",
+  "tier": "drafted",
+  "batch": "fresh-2",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "sear",
+  "dish": "Côte de bœuf",
+  "also_called": ["rib of beef", "bone-in rib steak"],
+  "techniques": ["sear", "baste", "rest"],
+  "ingredients": ["rib steak", "butter", "garlic", "thyme"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/poires-belle-helene",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Poires Belle-Hélène",
+  "also_called": ["pears Belle Hélène"],
+  "holds": ["egg", "soy", "milk"],
+  "does_not_hold": ["gluten", "tree nuts"],
+  "why": "Vanilla ice cream brings milk and egg, and the chocolate sauce is made with cream or milk. Chocolate often contains soy lecithin, so soy is included."
+}

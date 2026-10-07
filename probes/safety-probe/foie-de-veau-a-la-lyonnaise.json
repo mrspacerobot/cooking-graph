@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/foie-de-veau-a-la-lyonnaise",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Foie de veau à la lyonnaise",
+  "also_called": ["calf's liver with onions"],
+  "holds": ["gluten", "wheat", "milk", "sulphites"],
+  "does_not_hold": ["egg"],
+  "why": "The liver is dusted with flour and cooked in butter with onions. A splash of vinegar at the end carries sulphites."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/bouillabaisse",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Bouillabaisse",
+  "also_called": [],
+  "holds": ["gluten", "wheat", "crustaceans", "egg", "fish"],
+  "does_not_hold": ["milk"],
+  "why": "Besides the rockfish, small crabs often go into the soup, so crustaceans are included. The croutons are wheat, and the rouille served with them is often made with egg yolk."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/truite-aux-amandes",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Truite aux amandes",
+  "also_called": ["trout almondine", "trout with almonds", "truite meunière aux amandes"],
+  "holds": ["gluten", "wheat", "fish", "milk", "tree nuts"],
+  "does_not_hold": ["egg", "peanuts"],
+  "why": "Almonds are tree nuts, not peanuts. The trout is dredged in flour and finished in butter."
+}

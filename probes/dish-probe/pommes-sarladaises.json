@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/pommes-sarladaises",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "saute",
+  "dish": "Pommes sarladaises",
+  "also_called": ["Sarlat potatoes", "pommes de terre à la sarladaise"],
+  "techniques": ["slice", "saute"],
+  "ingredients": ["potato", "duck fat", "garlic", "parsley"]
+}

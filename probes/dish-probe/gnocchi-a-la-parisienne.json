@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gnocchi-a-la-parisienne",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "roux",
+  "dish": "Gnocchi à la parisienne",
+  "also_called": ["Parisian gnocchi", "choux gnocchi"],
+  "techniques": ["make choux pastry", "poach", "make a roux", "gratinate"],
+  "ingredients": ["flour", "butter", "egg", "milk", "gruyère", "nutmeg"]
+}

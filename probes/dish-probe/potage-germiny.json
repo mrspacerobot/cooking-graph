@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/potage-germiny",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Potage Germiny",
+  "also_called": ["soupe à l'oseille", "sorrel soup"],
+  "techniques": ["shred", "sweat", "simmer", "thicken with egg yolk"],
+  "ingredients": ["sorrel", "butter", "chicken stock", "egg yolk", "cream"]
+}

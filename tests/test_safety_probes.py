@@ -68,13 +68,27 @@ class Verdicts(SafetyProbeTest):
         self.kitchen.change(BUTTERED, lambda probe: probe.update(holds=["milk", "gluten"], does_not_hold=[]))
         answer = self.answer(BUTTERED)
         self.assertEqual("disagrees", answer.verdict)
-        self.assertEqual([("the probe says it holds", "gluten", "fact/gluten")], answer.disagreements)
+        self.assertEqual([("the probe says it holds", "gluten", "fact/gluten", "the graph says it does not")], answer.disagreements)
 
     def test_a_probe_that_says_the_dish_does_not_hold_what_the_graph_says_it_does(self):
         self.kitchen.change(BUTTERED, lambda probe: probe.update(holds=[], does_not_hold=["milk"]))
         answer = self.answer(BUTTERED)
         self.assertEqual("disagrees", answer.verdict)
-        self.assertEqual([("the probe says it does not hold", "milk", "fact/dairy")], answer.disagreements)
+        self.assertEqual([("the probe says it does not hold", "milk", "fact/dairy", "the graph says it does, for certain")], answer.disagreements)
+
+    def test_a_disagreement_that_rests_on_strict_answers_alone_says_so(self):
+        self.kitchen.change(BUTTER, lambda thing: thing["safety"]["contains"][0].update(certain=False))
+        self.kitchen.change(BUTTERED, lambda probe: probe.update(holds=[], does_not_hold=["milk"]))
+        answer = self.answer(BUTTERED)
+        self.assertEqual([("the probe says it does not hold", "milk", "fact/dairy", "the graph says it does, on strict answers alone")], answer.disagreements)
+        self.assertTrue(answer.strict_alone)
+
+    def test_a_disagreement_with_a_certain_answer_does_not_rest_on_strict_answers_alone(self):
+        self.kitchen.change(BUTTERED, lambda probe: probe.update(holds=[], does_not_hold=["milk"]))
+        self.assertFalse(self.answer(BUTTERED).strict_alone)
+
+    def test_an_agreement_does_not_rest_on_strict_answers(self):
+        self.assertFalse(self.answer(BUTTERED).strict_alone)
 
     def test_a_word_that_names_no_fact_is_set_apart(self):
         self.kitchen.change(BUTTERED, lambda probe: probe.update(holds=["milk", "onions"]))
@@ -90,16 +104,24 @@ class Verdicts(SafetyProbeTest):
 class Reporting(SafetyProbeTest):
     def test_the_counts_are_given_for_each_set(self):
         counts = safety_probes.counts(self.run_probes())
-        self.assertEqual({"probes": 4, "answerable": 1, "agreeing": 1, "disagreeing": 0}, counts["growing"])
-        self.assertEqual({"probes": 1, "answerable": 0, "agreeing": 0, "disagreeing": 0}, counts["held-back"])
+        self.assertEqual({"probes": 4, "answerable": 1, "agreeing": 1, "disagreeing": 0, "on_strict_answers_alone": 0}, counts["growing"])
+        self.assertEqual({"probes": 1, "answerable": 0, "agreeing": 0, "disagreeing": 0, "on_strict_answers_alone": 0}, counts["held-back"])
+
+    def test_disagreements_that_rest_on_strict_answers_alone_are_counted(self):
+        self.kitchen.change(BUTTER, lambda thing: thing["safety"]["contains"][0].update(certain=False))
+        self.kitchen.change(BUTTERED, lambda probe: probe.update(holds=[], does_not_hold=["milk"]))
+        counts = safety_probes.counts(self.run_probes())
+        self.assertEqual(1, counts["growing"]["disagreeing"])
+        self.assertEqual(1, counts["growing"]["on_strict_answers_alone"])
 
     def test_a_disagreement_is_written_with_both_sides(self):
         self.kitchen.change(BUTTERED, lambda probe: probe.update(holds=[], does_not_hold=["milk"]))
         document = safety_probes.disagreements_document(self.run_probes())
         self.assertIn("Buttered onions", document)
         self.assertIn("It is made with butter and no flour.", document)
-        self.assertIn("ingredient/butter", document)
+        self.assertIn("`ingredient/butter` (certain: It is made of it.)", document)
         self.assertIn("the probe says it does not hold", document)
+        self.assertIn("the graph says it does, for certain", document)
 
     def test_a_held_back_probe_is_counted_and_never_shown(self):
         path = self.held_back()

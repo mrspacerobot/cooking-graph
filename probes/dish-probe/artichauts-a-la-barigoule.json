@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/artichauts-a-la-barigoule",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "braise",
+  "dish": "Artichauts à la barigoule",
+  "also_called": ["artichokes barigoule", "braised artichokes Provençal style"],
+  "techniques": ["trim", "sweat", "braise"],
+  "ingredients": ["artichoke", "carrot", "onion", "bacon", "white wine", "olive oil", "garlic"]
+}

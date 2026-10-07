@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/legumes-a-la-grecque",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Légumes à la grecque",
+  "also_called": ["vegetables à la grecque", "champignons à la grecque"],
+  "techniques": ["slice", "simmer", "chill"],
+  "ingredients": ["mushroom", "pearl onion", "cauliflower", "white wine", "olive oil", "lemon", "coriander seed"]
+}

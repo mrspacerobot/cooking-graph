@@ -1,0 +1,21 @@
+{
+  "id": "dish-probe/tournedos-choron",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "held-back",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "emulsions",
+  "dish": "Tournedos Choron",
+  "also_called": ["tournedos with sauce Choron"],
+  "techniques": ["sear", "reduce", "emulsify"],
+  "ingredients": [
+    "beef fillet",
+    "egg yolk",
+    "butter",
+    "shallot",
+    "tarragon",
+    "white wine vinegar",
+    "tomato paste",
+    "artichoke"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/steak-au-poivre",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Steak au poivre",
+  "also_called": ["pepper steak"],
+  "holds": ["milk"],
+  "does_not_hold": ["gluten", "egg"],
+  "why": "Butter in the pan and cream in the sauce bring milk. The pepper crust is just crushed peppercorns, with no flour."
+}

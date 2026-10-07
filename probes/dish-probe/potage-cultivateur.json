@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/potage-cultivateur",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "written_for": "knife-cuts",
+  "dish": "Potage cultivateur",
+  "also_called": ["soupe cultivateur", "farmer's vegetable soup"],
+  "techniques": ["slice", "sweat", "simmer"],
+  "ingredients": ["carrot", "turnip", "potato", "leek", "onion", "butter"]
+}

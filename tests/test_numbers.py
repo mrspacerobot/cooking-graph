@@ -29,6 +29,15 @@ class NumbersTest(unittest.TestCase):
     def test_safety_records_are_counted_by_state(self):
         self.assertEqual({"unverified": 5}, self.count()["safety"])
 
+    def test_the_probes_are_counted_for_each_batch(self):
+        batch = self.count()["batches"]["sweating-1"]
+        self.assertEqual(5, batch["probes"])
+        self.assertEqual(0, batch["new_technique_words"])
+
+    def test_the_batches_are_in_what_is_rendered(self):
+        model, words = reading.read_schema(self.kitchen.root)
+        self.assertIn("| sweating-1 | 5 |", numbers.render(self.count(), model, words))
+
     def test_facts_held_are_counted_certain_and_strict_apart(self):
         self.assertEqual({"certain": 2, "strict": 0}, self.count()["facts_held"])
 

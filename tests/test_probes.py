@@ -130,6 +130,38 @@ class Reporting(ProbeRunnerTest):
         self.assertIn("caramelize", report)
         self.assertIn("3 of 4", report)
 
+    def ask_for_new_words(self):
+        """Two growing probes and the held-back one ask for words the graph has no name for."""
+        self.kitchen.change(OTHER, lambda probe: probe.update(techniques=["sweat", "flambe"], ingredients=["onion", "truffle"]))
+        self.kitchen.change(ANSWERED, lambda probe: probe.update(techniques=["Flambé"]))
+        self.kitchen.change(self.kitchen.held_back_path(), lambda probe: probe.update(techniques=["flambe", "glaze"]))
+
+    def test_a_batch_counts_each_new_word_once_whoever_asks(self):
+        self.ask_for_new_words()
+        batch = probes.by_batch(self.run_probes())["sweating-1"]
+        self.assertEqual(5, batch["probes"])
+        self.assertEqual(2, batch["new_technique_words"])
+        self.assertEqual(1, batch["new_ingredient_words"])
+
+    def test_a_batch_gives_its_new_words_for_every_fifty_probes(self):
+        self.ask_for_new_words()
+        batch = probes.by_batch(self.run_probes())["sweating-1"]
+        self.assertEqual(20.0, batch["technique_words_per_50"])
+        self.assertEqual(10.0, batch["ingredient_words_per_50"])
+
+    def test_a_batch_counts_its_answered_probes_in_each_set(self):
+        self.ask_for_new_words()
+        batch = probes.by_batch(self.run_probes())["sweating-1"]
+        self.assertEqual((2, 4), batch["growing"])
+        self.assertEqual((0, 1), batch["held-back"])
+
+    def test_the_numbers_of_a_batch_name_no_word(self):
+        self.ask_for_new_words()
+        table = "\n".join(probes.batch_lines(self.run_probes()))
+        self.assertIn("sweating-1", table)
+        self.assertNotIn("glaze", table)
+        self.assertNotIn("flambe", table)
+
     def test_what_a_held_back_probe_lacks_is_never_listed(self):
         path = self.kitchen.held_back_path()
         self.kitchen.change(path, lambda probe: probe.update(techniques=["flambe"]))

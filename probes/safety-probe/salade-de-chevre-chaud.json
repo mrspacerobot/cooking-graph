@@ -1,0 +1,12 @@
+{
+  "id": "safety-probe/salade-de-chevre-chaud",
+  "tier": "drafted",
+  "batch": "safety-1",
+  "set": "growing",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Salade de chèvre chaud",
+  "also_called": ["warm goat cheese salad"],
+  "holds": ["gluten", "wheat", "milk", "tree nuts", "mustard", "sulphites"],
+  "does_not_hold": ["egg", "peanuts"],
+  "why": "Goat cheese is milk and the toasts are bread. The vinaigrette brings mustard and sulphites from the vinegar, and most versions add walnuts."
+}

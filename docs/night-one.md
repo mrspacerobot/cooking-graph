@@ -92,7 +92,7 @@ Two things about these numbers matter more than the numbers.
 ## How it was checked
 
 - **By code, on every file:** shape, ids, references, tiers, closed word lists, the safety rules, the recipe rules, names, the held-back rule, and every sentence for numbers, units and claims. `docs/model.md` lists the rules.
-- **By code, once, with scratch scripts that are not kept:** techniques no recipe uses, forms no technique makes, ingredients nothing points at, recipes that hold meat without a doneness point. This found two missing recipes, three missing safety points and a handful of missing links. They were fixed.
+- **By code, once, with scratch scripts that are not kept:** techniques no recipe uses, forms no technique makes, ingredients nothing points at, recipes that hold meat without a doneness point. This found two missing recipes, three missing safety points and a handful of missing links. They were fixed. One more audit looked for anything that is in the graph only because a held-back probe names it: a technique, an ingredient or a preparation that no growing probe asks for and nothing else points at. It found none.
 - **By the writer rereading:** 42 files in the four rounds, 6 fixed. Then all 138 safety records in one pass, 5 made stricter.
 - **Not checked at all:** whether any recipe works. Whether a French name is the one a French cook would use. Whether a cue is what you really see. Whether a dish belongs where it is said to belong.
 

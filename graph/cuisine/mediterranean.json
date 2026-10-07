@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/mediterranean",
+  "tier": "drafted",
+  "names": {"en": "Mediterranean", "fr": "Méditerranéenne"},
+  "aliases": {"en": ["Mediterranean cooking", "Mediterranean cuisine"]},
+  "within": null
+}

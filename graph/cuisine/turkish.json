@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/turkish",
+  "tier": "drafted",
+  "names": {"en": "Turkish", "fr": "Turque"},
+  "aliases": {"en": ["Turkish cooking", "Turkish cuisine"]},
+  "within": {"thing": "cuisine/mediterranean", "tier": "drafted"}
+}

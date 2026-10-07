@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/greek",
+  "tier": "drafted",
+  "names": {"en": "Greek", "fr": "Grecque"},
+  "aliases": {"en": ["Greek cooking", "Greek cuisine"]},
+  "within": {"thing": "cuisine/mediterranean", "tier": "drafted"}
+}

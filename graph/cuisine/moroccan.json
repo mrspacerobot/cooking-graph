@@ -3,5 +3,5 @@
   "tier": "drafted",
   "names": {"en": "Moroccan", "fr": "Marocaine"},
   "aliases": {"en": ["Moroccan cooking", "Moroccan cuisine"]},
-  "within": null
+  "within": {"thing": "cuisine/mediterranean", "tier": "drafted"}
 }

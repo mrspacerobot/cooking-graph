@@ -1,0 +1,26 @@
+{
+  "id": "preparation/garlic-yogurt",
+  "tier": "drafted",
+  "names": {"en": "Garlic yogurt"},
+  "aliases": {"en": ["sarimsakli yogurt"]},
+  "is": "Thick yogurt stirred with crushed, salted garlic, kept cold and spooned under or over hot and cold food.",
+  "parts": [
+    {
+      "id": "yogurt",
+      "role": "main",
+      "options": ["ingredient/strained-yogurt", "ingredient/plain-yogurt"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "seasoning", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-garlic-yogurt", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "id": "recipe/pasta-e-fagioli",
+  "tier": "drafted",
+  "names": {"en": "Pasta e fagioli", "fr": "Pasta e fagioli"},
+  "aliases": {},
+  "makes": "dish/pasta-e-fagioli",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/borlotti-bean", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "bean"},
+    {"thing": "ingredient/water", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "liquid"},
+    {"thing": "ingredient/vegetable-stock", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "liquid"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "soffritto"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "soffritto"
+    },
+    {
+      "thing": "ingredient/celery",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/minced"],
+      "part": "soffritto"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "soffritto"},
+    {"thing": "ingredient/rosemary", "amount": {"value": 2, "unit": "sprig"}, "forms": [], "part": "herb"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/parmesan-rind", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "rind"},
+    {"thing": "ingredient/ditalini", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 40, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/stockpot", "equipment/mixing-bowl", "equipment/colander",
+    "equipment/wooden-spoon", "equipment/potato-masher", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/grater", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak",
+      "works_on": ["ingredient/borlotti-bean"],
+      "with": ["ingredient/water"],
+      "text": "Cover the beans with plenty of cold water and leave them overnight, until they are plump.",
+      "time": {"from": 8, "to": 12, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/borlotti-bean"],
+      "with": [],
+      "text": "Drain the beans and throw away the soaking water.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-soffritto",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Chop the onion, the carrot and the celery very fine and cook them in the olive oil in a heavy pot over low heat, with a little salt, until they are soft and pale gold.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/soffritto"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/borlotti-bean"],
+      "with": [
+        "preparation/soffritto", "ingredient/rosemary", "ingredient/tomato-paste", "ingredient/parmesan-rind",
+        "ingredient/vegetable-stock", "ingredient/water"
+      ],
+      "text": "Add the drained beans, the rosemary, the tomato paste, the Parmesan rind and the stock. Bring to a boil, then lower the heat and simmer with the lid ajar, stirring now and then, until the beans are completely tender.",
+      "time": {"from": 60, "to": 90, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush-some-of-the-beans",
+      "works_on": ["ingredient/borlotti-bean"],
+      "with": [],
+      "text": "Fish out the rosemary. Lift a ladle of the beans with a little broth into a bowl, crush them to a rough paste and stir it back into the pot. Let the soup bubble gently until it has thickened.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/ditalini"],
+      "with": [],
+      "text": "Bring the soup back to a simmer, add the pasta and cook, stirring often, until the pasta is tender with a little bite. Add hot water if the soup gets too thick. Lift out the rind.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/ditalini"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Taste and adjust the salt, and add the pepper.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grate",
+      "works_on": ["ingredient/parmesan"],
+      "with": [],
+      "text": "Grate the Parmesan.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/ditalini"],
+      "with": ["ingredient/olive-oil", "ingredient/parmesan"],
+      "text": "Leave the soup to settle for a short while, then ladle it into warm bowls and finish each with a thread of olive oil and the grated cheese.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

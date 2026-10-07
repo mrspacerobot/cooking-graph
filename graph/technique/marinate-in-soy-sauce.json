@@ -1,0 +1,52 @@
+{
+  "id": "technique/marinate-in-soy-sauce",
+  "tier": "drafted",
+  "names": {"en": "Marinate in soy sauce"},
+  "aliases": {"en": ["steep in soy and sake"]},
+  "does": "Steeps pieces of poultry for a short while in soy sauce and sake with ginger and garlic, so that the flavour sinks in and the surface is seasoned. The salty liquid is let drip off before frying and is not kept for the pot.",
+  "how": [
+    "Cut the meat into even, bite-sized pieces, so that each takes up the same amount of flavour.",
+    "In a bowl, mix the soy sauce and the sake with finely grated ginger and garlic.",
+    "Add the meat and work the liquid in with your hands until every piece is wet.",
+    "Leave it for a short while, turning the pieces once. Soy is salty, and a long steep turns the meat firm and dry.",
+    "Lift the pieces out and let the extra liquid drip off before they are coated."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The pieces are stained an even brown and glisten, with only a little liquid left in the bowl."
+    },
+    {"sense": "smell", "text": "The bowl smells strongly of ginger and garlic."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the meat in the soy for too long, so that it turns salty and firm.",
+      "fix": "Steep it for a short while only."
+    },
+    {
+      "mistake": "Coating the pieces while they are still dripping, which turns a dry coat to paste.",
+      "fix": "Let the extra liquid drip off first."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/poultry", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/soy-sauce"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/sake"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/ginger"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/marinate",
+      "differs": "The liquid is salty soy sauce and sake with ginger, not wine or acid, and the steeping is brief, since soy firms the meat if it sits long. The meat is let drip and not dried, because a little soy stays on for the coat to cling to.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "dish/pulpo-a-la-gallega",
+  "tier": "drafted",
+  "names": {"en": "Pulpo a la gallega"},
+  "aliases": {"en": ["pulpo a feira", "Galician octopus", "octopus Galician style"]},
+  "is": "Octopus from Galicia, cooked in plain water until it is tender, snipped into rounds with scissors and laid on slices of boiled potato, then finished with olive oil, coarse salt and paprika.",
+  "parts": [
+    {"id": "octopus", "role": "main", "options": ["ingredient/octopus"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "side", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "paprika",
+      "role": "seasoning",
+      "options": ["ingredient/paprika", "ingredient/hot-paprika"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "salt",
+      "role": "seasoning",
+      "options": ["ingredient/coarse-salt", "ingredient/salt"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/cook-octopus", "tier": "drafted"},
+    {"thing": "technique/boil", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

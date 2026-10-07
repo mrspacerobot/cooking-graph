@@ -1,0 +1,26 @@
+{
+  "id": "dish/msemen",
+  "tier": "drafted",
+  "names": {"en": "Msemen"},
+  "aliases": {"en": ["msmen"]},
+  "is": "A square, flaky flatbread made of a wet dough of flour and fine semolina, stretched thin, folded in layers with fat, and cooked on a griddle until it is golden, then served hot with honey or butter.",
+  "parts": [
+    {"id": "dough", "role": "main", "options": ["preparation/msemen-dough"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/smen", "ingredient/butter", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/make-msemen-dough", "tier": "drafted"},
+    {"thing": "technique/laminate", "tier": "drafted"},
+    {"thing": "technique/fold-dough", "tier": "drafted"},
+    {"thing": "technique/cook-msemen", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

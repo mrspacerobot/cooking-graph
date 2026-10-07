@@ -1,0 +1,56 @@
+{
+  "id": "dish/palak-paneer",
+  "tier": "drafted",
+  "names": {"en": "Palak paneer"},
+  "aliases": {"en": ["saag paneer", "spinach and paneer curry"]},
+  "is": "Cubes of fresh, firm cheese simmered in a smooth green gravy of blanched spinach, built on a masala base of onion, tomato, ginger and garlic, with a tempering of cumin and a little cream.",
+  "parts": [
+    {"id": "paneer", "role": "main", "options": ["ingredient/paneer"], "optional": false, "tier": "drafted"},
+    {"id": "spinach", "role": "sauce", "options": ["ingredient/spinach"], "optional": false, "tier": "drafted"},
+    {"id": "blanching-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "aromatic", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "green-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/green-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/ghee", "ingredient/oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli-powder",
+      "role": "seasoning",
+      "options": ["ingredient/red-chilli-powder"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "garam-masala",
+      "role": "seasoning",
+      "options": ["preparation/garam-masala"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cream", "role": "enrichment", "options": ["ingredient/cream"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-in-masala-gravy", "tier": "drafted"},
+    {"thing": "technique/fry-masala-base", "tier": "drafted"},
+    {"thing": "technique/blanch", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

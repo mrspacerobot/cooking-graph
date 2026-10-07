@@ -1,0 +1,46 @@
+{
+  "id": "technique/rehydrate-seaweed",
+  "tier": "drafted",
+  "names": {"en": "Rehydrate seaweed"},
+  "aliases": {"en": ["soak wakame", "soak dried seaweed"]},
+  "does": "Soaks dried seaweed in cold water until it swells and turns soft, silky and bright green, then squeezes out the water and cuts away any hard rib.",
+  "how": [
+    "Put a small handful of dried seaweed in a large bowl, as it swells to many times its size.",
+    "Cover it with cold water and leave it until it is soft and glossy.",
+    "Lift it out, drain it and squeeze it lightly.",
+    "Cut away any hard rib and cut the rest into bite-sized pieces."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The seaweed has opened out and turned a glossy dark green."},
+    {"sense": "feel", "text": "It is soft and slippery, with no hard, dry centre."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using too much, so that the bowl overflows with swollen seaweed.",
+      "fix": "Start with a small handful."
+    },
+    {
+      "mistake": "Leaving it in the water for too long, so that it turns slimy and loses its bite.",
+      "fix": "Lift it out as soon as it is soft."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/wakame", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/soak",
+      "differs": "Dried seaweed swells very fast and to many times its size in cold water, so it is soaked for a short while only, then squeezed, and any hard rib is cut away.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

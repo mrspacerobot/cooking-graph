@@ -1,0 +1,24 @@
+{
+  "id": "dish/tamagoyaki",
+  "tier": "drafted",
+  "names": {"en": "Tamagoyaki"},
+  "aliases": {"en": ["Japanese rolled omelette"]},
+  "is": "A sweet, savoury omelette of eggs beaten with dashi, mirin, sugar and soy sauce, cooked in thin layers that are rolled up in a rectangular pan into one soft, layered roll, then cut in thick slices.",
+  "parts": [
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "dashi", "role": "liquid", "options": ["preparation/dashi"], "optional": false, "tier": "drafted"},
+    {"id": "mirin", "role": "sweetener", "options": ["ingredient/mirin"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {"id": "daikon", "role": "garnish", "options": ["ingredient/daikon"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/roll-in-layers", "tier": "drafted"},
+    {"thing": "technique/oil-the-pan", "tier": "drafted"},
+    {"thing": "technique/shape-in-a-mat", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

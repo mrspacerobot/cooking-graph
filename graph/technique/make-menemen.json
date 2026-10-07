@@ -1,0 +1,66 @@
+{
+  "id": "technique/make-menemen",
+  "tier": "drafted",
+  "names": {"en": "Make menemen"},
+  "aliases": {"en": ["menemen"]},
+  "does": "Sets whole eggs gently in a pan of softened tomato and pepper, breaking them in and stirring only lightly, so that the dish ends loose and juicy, streaked with white and yolk, instead of in fine curds.",
+  "how": [
+    "Soften the peppers in butter or oil, then add the tomato and cook until it has collapsed into a thick, juicy base. Salt it.",
+    "Lower the heat. Break the eggs straight on to the base and leave them until the edges begin to set.",
+    "Stir lightly a few times with a wooden spoon, so that the white and the yolk only half mix.",
+    "Take the pan off the heat while the eggs are still soft and moist, because they go on setting in the heat of the pan.",
+    "Serve at once in the pan, with bread to scoop it up."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The eggs are streaked, with bright yolk and white still showing, lying in a juicy red base."
+    },
+    {"sense": "feel", "text": "The spoon meets soft, loose eggs and no firm curds."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Beating the eggs and stirring without pause, which gives a dry scramble.",
+      "fix": "Break them in whole and stir only a few times."
+    },
+    {
+      "mistake": "Cooking the dish until the eggs are firm and the base has dried out.",
+      "fix": "Take the pan off the heat while it is still wet and soft."
+    },
+    {
+      "mistake": "Adding the eggs to a watery base, so that the dish turns to soup.",
+      "fix": "Cook the tomato down until it is thick before the eggs go in."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/sweat",
+      "why": "The peppers and tomato are softened in fat first, without browning.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/scramble",
+      "differs": "The whole eggs go straight on to a base of cooked tomato and pepper and are barely stirred, so that the dish is left juicy and streaked. Scrambling beats the eggs first, stirs without pause and aims at small creamy curds.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

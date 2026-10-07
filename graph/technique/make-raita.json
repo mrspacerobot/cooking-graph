@@ -1,0 +1,52 @@
+{
+  "id": "technique/make-raita",
+  "tier": "drafted",
+  "names": {"en": "Make raita"},
+  "aliases": {"en": ["raita"]},
+  "does": "Whisks cold yogurt smooth and stirs in a cool, drained raw or cooked vegetable, with salt and a roasted ground spice, to make a cooling side that tempers the heat of a spiced meal.",
+  "how": [
+    "Whisk cold yogurt in a bowl until it is smooth and creamy. Thin it with a splash of cold water only if it is very thick.",
+    "Wring the vegetable dry, or drain it well, so that it does not thin the yogurt.",
+    "Stir the vegetable into the yogurt with salt and a roasted, ground spice such as cumin.",
+    "Taste and adjust the salt. Chill the raita before it is served and stir it again just before."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The raita is thick and creamy, with the vegetable spread evenly through it and no pool of water."
+    },
+    {"sense": "taste", "text": "It tastes cool, lightly salted and gently tangy, with a roasted note of cumin."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding a watery vegetable without drying it, so that the raita turns thin and sour.",
+      "fix": "Salt and squeeze the vegetable first."
+    },
+    {"mistake": "Heating the yogurt, so that it splits.", "fix": "Keep it cold from start to end."},
+    {
+      "mistake": "Mixing it long before the meal, so that it turns watery as it sits.",
+      "fix": "Mix it shortly before serving, or squeeze the vegetable very dry."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/plain-yogurt", "tier": "drafted"},
+    {"thing": "ingredient/cucumber", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk", "equipment/spoon"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/salt-and-squeeze",
+      "why": "A watery vegetable has to be salted and squeezed dry first, or it thins the yogurt.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

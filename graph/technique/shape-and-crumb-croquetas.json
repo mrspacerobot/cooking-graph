@@ -1,0 +1,59 @@
+{
+  "id": "technique/shape-and-crumb-croquetas",
+  "tier": "drafted",
+  "names": {"en": "Shape and crumb croquetas"},
+  "aliases": {"en": ["rebozar", "shape croquetas", "crumb croquetas", "coat croquetas"]},
+  "does": "Rolls cold, firm croqueta paste into small logs or balls and coats each one in flour, beaten egg and breadcrumbs in turn, so that it fries with a crisp shell and a soft, creamy middle.",
+  "how": [
+    "Set out shallow dishes in a row: flour, beaten egg and breadcrumbs, in that order. Have a tray ready.",
+    "Scoop a spoonful of the chilled paste and roll it between floured hands into a short log or a ball. Keep them all one size.",
+    "Roll each one in the flour and shake off the extra, turn it through the egg, then roll it in the crumbs, pressing so that they cover it all round.",
+    "Lay them on the tray without touching. For a thicker shell, dip them in the egg and the crumbs a second time.",
+    "Chill them again for a short while before frying, so that the shell sets."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The paste rolls clean between floured hands and does not stick."},
+    {"sense": "see", "text": "Each croqueta is covered all round with an even coat of crumbs and no bare patch."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving a bare patch, through which the paste bursts out in the hot oil.",
+      "fix": "Turn each one through the egg and the crumbs until it is covered all round."
+    },
+    {
+      "mistake": "Shaping warm paste, which squashes and sticks to the hands.",
+      "fix": "Chill the paste until it is firm, and flour your hands."
+    },
+    {
+      "mistake": "Using the same hand for the dry coats and for the egg, which builds up gluey lumps on the fingers.",
+      "fix": "Keep one hand for the flour and the crumbs and the other for the egg."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/croqueta-paste", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "coating", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/egg"], "tier": "drafted"},
+    {"role": "coating", "options": ["preparation/breadcrumbs"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-sheet"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-croqueta-paste",
+      "why": "There is nothing to shape until the paste has been made and chilled.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/coat",
+      "differs": "The food is a soft paste that has to be rolled to shape first, and it takes flour, then egg, then crumbs, so that the shell holds the paste in when it is fried. The coat of a cutlet goes straight onto firm meat with egg or mustard and crumbs.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "technique/make-a-bearnaise",
+  "tier": "drafted",
+  "names": {"en": "Make a béarnaise", "fr": "Faire une béarnaise"},
+  "aliases": {"en": ["make bearnaise", "make béarnaise sauce"], "fr": ["faire une sauce béarnaise"]},
+  "does": "Makes a warm sauce of egg yolk and butter, as a hollandaise is made, but sharpened with a strong reduction of vinegar, white wine, shallot and tarragon in place of lemon juice, and finished with chopped tarragon.",
+  "how": [
+    "Put the vinegar, the wine, the chopped shallot and part of the tarragon in a small pan and boil them down until only a few spoonfuls of strong, sharp liquid are left.",
+    "Strain the reduction and let it cool a little.",
+    "Melt the butter gently and keep it warm.",
+    "Whisk the yolks with the reduction in a bowl over a pan of barely trembling water until they are pale, thick and leave a ribbon. Lift the bowl away from the heat as soon as it gets too hot to touch.",
+    "Off the heat, whisk in the warm butter, a drop at a time at first and then in a thin stream, leaving the milky part in the pan.",
+    "Season, stir in the rest of the tarragon, chopped, and keep the sauce warm, never hot, until it is served."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The yolks leave a ribbon on the surface, and the finished sauce is glossy and thick enough to coat a spoon."
+    },
+    {"sense": "taste", "text": "Sharp at first, then rounded by the butter, with a clear note of tarragon."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Heating the yolks too long or too hot, so that they scramble.",
+      "fix": "Lift the bowl off the heat often and keep whisking."
+    },
+    {
+      "mistake": "Adding the butter too fast, so that the sauce splits.",
+      "fix": "Start a drop at a time. If it splits, whisk the split sauce into a fresh yolk slowly."
+    },
+    {
+      "mistake": "Reducing the vinegar too little, so that the sauce is sour and thin, or too far, so that it is harsh.",
+      "fix": "Stop when a few spoonfuls of syrupy liquid are left."
+    },
+    {
+      "mistake": "Keeping the sauce too hot while it waits, so that it separates.",
+      "fix": "Keep it in a warm bowl, away from direct heat."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"},
+    {"thing": "ingredient/shallot", "tier": "drafted"},
+    {"thing": "ingredient/tarragon", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/bearnaise", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/fine-sieve"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/white-wine-vinegar"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-a-sabayon",
+      "why": "The yolks are first whisked over gentle heat to a ribbon, as in a sabayon, before the butter goes in.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/emulsify",
+      "differs": "A hollandaise takes its sharpness from lemon juice. A béarnaise starts with a strong reduction of vinegar, wine, shallot and tarragon, which is strained into the yolks, and ends with fresh tarragon.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

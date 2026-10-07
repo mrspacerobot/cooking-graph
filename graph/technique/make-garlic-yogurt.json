@@ -1,0 +1,55 @@
+{
+  "id": "technique/make-garlic-yogurt",
+  "tier": "drafted",
+  "names": {"en": "Make garlic yogurt"},
+  "aliases": {"en": ["sarimsakli yogurt", "garlic yoghurt"]},
+  "does": "Stirs crushed, salted garlic into cold, thick yogurt until it is smooth and evenly scented, so that it can be spooned under or over hot and cold food. The yogurt is never heated.",
+  "how": [
+    "Crush the garlic with the salt to a smooth paste, so that no raw lump is left to bite.",
+    "Spoon the yogurt into a bowl and beat it with a spoon until it is smooth. Loosen very thick yogurt with a splash of cold water if it will not spread.",
+    "Stir in the garlic until it is evenly mixed, then taste and add more salt if it needs it.",
+    "Keep it cold until it is needed, so that the garlic mellows into the yogurt."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The yogurt is smooth and even, with no streaks or flecks of garlic."},
+    {"sense": "taste", "text": "The garlic is clear and round, and the yogurt is lightly salted and cool."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Dropping the garlic in raw and in lumps, so that some bites are harsh.",
+      "fix": "Crush it to a paste with the salt first."
+    },
+    {
+      "mistake": "Putting the yogurt on the heat, or on food that is boiling, so that it splits and turns grainy.",
+      "fix": "Keep it cold and spoon it under or over the hot food at the table."
+    },
+    {
+      "mistake": "Thinning it with too much water, so that it runs off the food.",
+      "fix": "Add water a splash at a time and stop as soon as it spreads."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/strained-yogurt", "tier": "drafted"},
+    {"thing": "ingredient/plain-yogurt", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/garlic-yogurt", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/garlic"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/crush",
+      "why": "The garlic has to be crushed to a smooth paste with salt before it goes into the yogurt.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

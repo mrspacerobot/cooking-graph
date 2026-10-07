@@ -1,0 +1,113 @@
+{
+  "id": "recipe/trenette-al-pesto",
+  "tier": "drafted",
+  "names": {"en": "Trenette al pesto", "fr": "Trenette au pesto"},
+  "aliases": {},
+  "makes": "dish/trenette-al-pesto",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/basil", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "pesto"},
+    {"thing": "ingredient/pine-nut", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "pesto"},
+    {"thing": "ingredient/garlic", "amount": {"value": 1, "unit": "clove"}, "forms": ["form/peeled"], "part": "pesto"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 40, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "pesto"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "pesto"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pesto"},
+    {"thing": "ingredient/trenette", "amount": {"value": 320, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 250, "unit": "gram"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "potato"
+    },
+    {
+      "thing": "ingredient/green-beans",
+      "amount": {"value": 150, "unit": "gram"},
+      "forms": ["form/halved"],
+      "part": "beans"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/mortar-and-pestle", "equipment/colander",
+    "equipment/wooden-spoon", "equipment/slotted-spoon", "equipment/mixing-bowl", "equipment/chefs-knife",
+    "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-a-pesto",
+      "works_on": ["ingredient/basil", "ingredient/pine-nut", "ingredient/garlic"],
+      "with": ["ingredient/parmesan", "ingredient/olive-oil", "ingredient/salt"],
+      "text": "Pound the garlic with a little coarse salt in a mortar, then the pine nuts, then the dry basil leaves a handful at a time. Work in the grated cheese and finally the olive oil, in a thin stream, until the sauce is thick and glossy. Keep it raw.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pesto"]
+    },
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Bring a large pot of water to a rolling boil and salt it well. Lower in the sliced potato and boil it until it is nearly tender.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/trenette"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Add the pasta to the same pot and stir. Keep the water bubbling and taste a little before the packet says it is ready.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/green-beans"],
+      "with": [],
+      "text": "Add the green beans to the pot for the last stretch of the pasta, so that they come out tender but still green.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/trenette"],
+      "with": ["ingredient/potato", "ingredient/green-beans"],
+      "text": "Scoop out a mug of the cooking water, then lift everything out into a colander. Do not rinse.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/trenette"],
+      "with": ["preparation/pesto", "ingredient/potato", "ingredient/green-beans", "ingredient/water"],
+      "text": "Tip the pasta, the potato and the beans into a warm bowl, off the heat. Stir in the pesto with a splash of the cooking water at a time, until the sauce coats every ribbon.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/trenette"],
+      "with": [],
+      "text": "Serve at once, while the sauce is still loose and bright.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

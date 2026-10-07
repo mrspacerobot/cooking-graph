@@ -1,0 +1,29 @@
+{
+  "id": "preparation/pesto",
+  "tier": "drafted",
+  "names": {"en": "Pesto", "fr": "Pesto"},
+  "aliases": {"en": ["pesto alla genovese", "basil pesto"]},
+  "is": "A raw, thick, green sauce of Liguria, pounded from basil, garlic, pine nuts, grated hard cheese and olive oil. It is stirred into hot pasta off the heat.",
+  "parts": [
+    {"id": "basil", "role": "main", "options": ["ingredient/basil"], "optional": false, "tier": "drafted"},
+    {"id": "pine-nut", "role": "filling", "options": ["ingredient/pine-nut"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "enrichment",
+      "options": ["ingredient/parmesan", "ingredient/pecorino"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-pesto", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

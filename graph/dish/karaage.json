@@ -1,0 +1,43 @@
+{
+  "id": "dish/karaage",
+  "tier": "drafted",
+  "names": {"en": "Karaage"},
+  "aliases": {"en": ["Japanese fried chicken", "chicken karaage"]},
+  "is": "Bite-sized pieces of chicken thigh steeped in soy sauce, sake, ginger and garlic, dusted in potato starch and fried twice, so that the crust is thin, crisp and pale and the meat inside stays juicy.",
+  "parts": [
+    {"id": "chicken", "role": "main", "options": ["ingredient/chicken-thigh"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "sake", "role": "seasoning", "options": ["ingredient/sake"], "optional": false, "tier": "drafted"},
+    {
+      "id": "starch",
+      "role": "coating",
+      "options": ["ingredient/potato-starch", "ingredient/cornstarch"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "lemon",
+      "role": "garnish",
+      "options": ["ingredient/lemon", "ingredient/sudachi"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/marinate-in-soy-sauce", "tier": "drafted"},
+    {"thing": "technique/coat-in-starch", "tier": "drafted"},
+    {"thing": "technique/double-fry", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

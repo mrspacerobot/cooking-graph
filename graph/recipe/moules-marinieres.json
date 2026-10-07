@@ -1,0 +1,113 @@
+{
+  "id": "recipe/moules-marinieres",
+  "tier": "drafted",
+  "names": {"en": "Moules marinières", "fr": "Moules marinières"},
+  "aliases": {},
+  "makes": "dish/moules-marinieres",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/mussel", "amount": {"value": 2, "unit": "kilogram"}, "forms": [], "part": "mussel"},
+    {
+      "thing": "ingredient/shallot",
+      "amount": {"value": 3, "unit": "piece"},
+      "forms": ["form/peeled"],
+      "part": "shallot"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/white-wine", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 4, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/mixing-bowl", "equipment/colander",
+    "equipment/paring-knife", "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon",
+    "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/clean-mussels",
+      "works_on": ["ingredient/mussel"],
+      "with": [],
+      "text": "Lift the mussels out of a bowl of cold water by the handful. Tap any open shell and leave out any that stays open. Scrape the shells and pull off the beards, then rinse them and keep them cold.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/shallot"],
+      "with": [],
+      "text": "Chop the shallots finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "Chop the parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/shallot"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the butter in a large heavy pot and soften the shallots in it over a gentle heat, without letting them colour.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/steam",
+      "works_on": ["ingredient/mussel"],
+      "with": ["ingredient/white-wine"],
+      "text": "Pour in the wine and bring it to a boil. Tip in the mussels, cover the pot tightly and steam them over a high heat until the shells have opened wide.",
+      "time": {"from": 5, "to": 7, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/shake-the-pan",
+      "works_on": ["ingredient/mussel"],
+      "with": [],
+      "text": "Halfway through, take the pot by its handles and shake it hard, so that the mussels at the top fall to the bottom and all of them meet the steam.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/mussel"],
+      "with": ["ingredient/black-pepper"],
+      "text": "Grind in a little pepper and taste the juices. They are usually salty enough already.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/mussel"],
+      "with": ["ingredient/parsley"],
+      "text": "Spoon the mussels and their juices into warm, deep bowls and scatter with the parsley. Leave out any that have stayed shut.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

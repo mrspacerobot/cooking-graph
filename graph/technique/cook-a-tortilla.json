@@ -1,0 +1,71 @@
+{
+  "id": "technique/cook-a-tortilla",
+  "tier": "drafted",
+  "names": {"en": "Cook a tortilla"},
+  "aliases": {
+    "en": ["make a tortilla", "cook a tortilla espanola", "cook a Spanish omelette", "cook a tortilla de patatas"]
+  },
+  "does": "Sets a mix of beaten egg and soft cooked potato in a small pan into a thick, round cake, golden outside and tender or even creamy in the middle. It is turned over once with the help of a plate.",
+  "how": [
+    "Heat a spoonful of the kept oil in a small non-stick pan over a medium heat, so that it coats the base and the sides.",
+    "Pour in the mix of egg and potato and press it level. It should hiss softly, not spit.",
+    "Cook gently. Shake the pan now and then and run a spatula round the edge to keep it neat and tucked in, until the underside is golden and the edge has set while the top is still wet.",
+    "Turn it over onto a flat plate and slide it back, as in the flip, then tuck the edges in and cook the other side briefly.",
+    "Slide it onto a plate and let it stand a while. The middle can be left soft or set firm, as the cook likes."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The edge pulls from the pan and turns pale gold, and the top shrinks from wet to a soft, glossy skin."
+    },
+    {"sense": "feel", "text": "The pan shakes freely and the cake slides on the oil."},
+    {"sense": "smell", "text": "A sweet, eggy smell. A sharp, burnt smell means the heat is too high."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cooking it too hot, so that the outside burns before the egg in the middle has begun to set.",
+      "fix": "Cook it over a medium heat or lower, and give it time."
+    },
+    {
+      "mistake": "Turning it before the underside has set, so that it tears and runs.",
+      "fix": "Wait until the edge is firm and the cake slides when the pan is shaken."
+    },
+    {
+      "mistake": "Using a pan far too big, which leaves a thin, dry cake.",
+      "fix": "Use a small, deep pan, so that the cake is thick."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/potato", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/non-stick-pan", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula", "equipment/flat-plate"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/slow-fry-in-olive-oil",
+      "why": "The potato has to be soft before the egg goes round it, and it is cooked soft in oil first.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/flip",
+      "why": "The cake is turned over in the same way as any food that must be turned while its top is still soft.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/roll-an-omelette",
+      "differs": "The egg is a thick flat cake with soft potato inside it and is never rolled. It is cooked slowly, turned over with a plate, and served warm or at room temperature, with the middle left soft or firm to taste. A rolled omelette is thin, quick and creamy.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

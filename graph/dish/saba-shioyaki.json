@@ -1,0 +1,28 @@
+{
+  "id": "dish/saba-shioyaki",
+  "tier": "drafted",
+  "names": {"en": "Saba shioyaki"},
+  "aliases": {"en": ["salt-grilled mackerel", "grilled salted mackerel"]},
+  "is": "Mackerel salted for a short while and grilled until the skin is crisp and blistered, served with a heap of grated daikon, a drop of soy sauce and a squeeze of sudachi.",
+  "parts": [
+    {"id": "mackerel", "role": "main", "options": ["ingredient/mackerel"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "daikon", "role": "side", "options": ["ingredient/daikon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "citrus",
+      "role": "acid",
+      "options": ["ingredient/sudachi", "ingredient/lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/salt-fish", "tier": "drafted"},
+    {"thing": "technique/grill", "tier": "drafted"},
+    {"thing": "technique/grate-daikon", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

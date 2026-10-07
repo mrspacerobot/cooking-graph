@@ -1,0 +1,45 @@
+{
+  "id": "dish/cassoulet",
+  "tier": "drafted",
+  "names": {"en": "Cassoulet", "fr": "Cassoulet"},
+  "aliases": {},
+  "is": "A deep pot of white beans baked slowly with pork, sausage and duck confit, under a thick crust of crumbs that is pressed down into the beans several times as it bakes.",
+  "parts": [
+    {"id": "beans", "role": "main", "options": ["ingredient/white-beans"], "optional": false, "tier": "drafted"},
+    {"id": "pork", "role": "main", "options": ["ingredient/pork-shoulder"], "optional": false, "tier": "drafted"},
+    {"id": "sausage", "role": "main", "options": ["ingredient/pork-sausage"], "optional": false, "tier": "drafted"},
+    {"id": "confit", "role": "main", "options": ["ingredient/duck-confit"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "herbs", "role": "aromatic", "options": ["preparation/bouquet-garni"], "optional": false, "tier": "drafted"},
+    {"id": "clove", "role": "seasoning", "options": ["ingredient/clove"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato-paste",
+      "role": "enrichment",
+      "options": ["ingredient/tomato-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/stock", "ingredient/chicken-stock", "preparation/white-chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "duck-fat", "role": "fat", "options": ["ingredient/duck-fat"], "optional": false, "tier": "drafted"},
+    {"id": "crumbs", "role": "topping", "options": ["preparation/breadcrumbs"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/break-the-crust", "tier": "drafted"},
+    {"thing": "technique/soak", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/braise", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

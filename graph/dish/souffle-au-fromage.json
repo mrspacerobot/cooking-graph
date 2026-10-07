@@ -1,0 +1,29 @@
+{
+  "id": "dish/souffle-au-fromage",
+  "tier": "drafted",
+  "names": {"en": "Cheese soufflé", "fr": "Soufflé au fromage"},
+  "aliases": {"en": ["French cheese souffle"]},
+  "is": "A thick cheese sauce lightened with whipped egg white and baked in a buttered dish until it rises high above the rim. It is brought to the table the moment it comes out.",
+  "parts": [
+    {"id": "bechamel", "role": "base", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "egg-white", "role": "main", "options": ["ingredient/egg-white"], "optional": false, "tier": "drafted"},
+    {"id": "egg-yolk", "role": "enrichment", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "filling",
+      "options": ["ingredient/gruyere", "ingredient/comte", "ingredient/emmental"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/bake-a-souffle", "tier": "drafted"},
+    {"thing": "technique/fold", "tier": "drafted"},
+    {"thing": "technique/whip", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

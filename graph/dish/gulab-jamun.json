@@ -1,0 +1,29 @@
+{
+  "id": "dish/gulab-jamun",
+  "tier": "drafted",
+  "names": {"en": "Gulab jamun"},
+  "aliases": {"en": ["gulab jamoon", "gulabjamun"]},
+  "is": "Small balls of soft khoya dough fried slowly in ghee until deep brown, then soaked in warm cardamom and rose syrup until they are swollen, soft and sweet to the centre.",
+  "parts": [
+    {"id": "dough", "role": "main", "options": ["preparation/khoya-dough"], "optional": false, "tier": "drafted"},
+    {"id": "ghee", "role": "fat", "options": ["ingredient/ghee"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "syrup-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "cardamom", "role": "seasoning", "options": ["ingredient/cardamom"], "optional": false, "tier": "drafted"},
+    {
+      "id": "rose-water",
+      "role": "seasoning",
+      "options": ["ingredient/rose-water"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/make-khoya-dough", "tier": "drafted"},
+    {"thing": "technique/fry-and-soak-in-syrup", "tier": "drafted"},
+    {"thing": "technique/make-a-syrup", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

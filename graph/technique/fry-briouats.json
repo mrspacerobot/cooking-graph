@@ -1,0 +1,60 @@
+{
+  "id": "technique/fry-briouats",
+  "tier": "drafted",
+  "names": {"en": "Fry briouats"},
+  "aliases": {},
+  "does": "Fries small folded pastries in a good depth of hot oil, turning them until they are golden and crisp, then dips them while hot in warm honey scented with orange blossom water and scatters them with toasted sesame seeds.",
+  "how": [
+    "Warm the honey gently with a spoonful of water and the orange blossom water, and keep it at the side of the stove.",
+    "Heat the oil in a wide pan to about a finger deep, until a scrap of warqa sizzles at once.",
+    "Fry the pastries a few at a time, turning them, until they are golden on every side.",
+    "Lift them out and let the oil run off for a moment.",
+    "Dip each one into the warm honey, turn it over, lift it out and set it on a rack. Scatter with toasted sesame seeds."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The pastry is a deep, even gold and the layers show a fine blister."},
+    {"sense": "hear", "text": "The oil sizzles quietly and steadily, with no spitting."},
+    {"sense": "taste", "text": "The honey coat is thin and glossy, and the pastry still crackles under it."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying in oil that is too cool, which leaves the pastry greasy and pale.",
+      "fix": "Test the oil with a scrap of warqa first."
+    },
+    {
+      "mistake": "Leaving the pastries in the honey, which turns them soggy.",
+      "fix": "Dip them for a moment only and set them on a rack."
+    },
+    {
+      "mistake": "Letting the honey boil, which makes it bitter and hard.",
+      "fix": "Warm it gently and keep it just hot."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/warqa", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/fold-briouats",
+      "why": "The pastries must be folded and sealed before they go into the oil.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "Pan-frying cooks a flat piece in a thin layer of fat and turns it once. Here small filled triangles fry in oil about a finger deep, are turned until gold on every side, and are then dipped hot into warm honey.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

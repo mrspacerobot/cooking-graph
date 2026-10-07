@@ -1,0 +1,54 @@
+{
+  "id": "technique/roll-out-a-chapati",
+  "tier": "drafted",
+  "names": {"en": "Roll out a chapati"},
+  "aliases": {"en": ["roll chapati", "roll out roti"]},
+  "does": "Rolls a ball of atta dough into a thin, even round, a little at a time, turning it often, so that it is the same thickness all over and puffs evenly when it is cooked.",
+  "how": [
+    "Flatten a ball of dough in a dish of dry flour, coating both faces lightly.",
+    "Roll from the centre outwards with short, firm strokes. Give the dough a small turn after each stroke, so that it grows into a round.",
+    "Use just enough flour to stop it sticking. Shake off the extra, because burnt flour makes a bitter smell on the hot plate.",
+    "Stop when the round is thin and even from the middle to the edge, with no thick patches or tears.",
+    "Cook it at once. A rolled round that waits dries at the edge and tears when lifted."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The round is even in thickness and has a smooth edge with no cracks."},
+    {"sense": "feel", "text": "It peels from the board without sticking and does not tear."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Rolling thick in the middle and thin at the edge, so that it cooks unevenly and does not puff.",
+      "fix": "Roll from the centre outwards and turn the dough after every stroke."
+    },
+    {
+      "mistake": "Using too much dry flour, which burns on the hot plate.",
+      "fix": "Dust lightly and shake off what is not needed."
+    },
+    {"mistake": "Stacking rolled rounds without flour, so that they stick.", "fix": "Cook each one as it is rolled."}
+  ],
+  "works_on": [
+    {"thing": "preparation/chapati-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/rolling-pin"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/whole-wheat-flour"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-atta-dough",
+      "why": "The rounds are rolled from a rested atta dough, so the dough comes first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/roll-out",
+      "differs": "Each round is rolled alone, from a small ball, and cooked at once. The dough is soft and unrested between rolls. The aim is a thin, even disc that will puff, and not a sheet that holds its shape and is cut.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

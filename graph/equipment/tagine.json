@@ -1,0 +1,7 @@
+{
+  "id": "equipment/tagine",
+  "tier": "drafted",
+  "names": {"en": "Tagine", "fr": "Tajine"},
+  "aliases": {"en": ["tajine", "tagine pot", "tajine pot"]},
+  "use": "A shallow earthenware dish with a tall cone lid. The steam of the food rises into the cone, cools there and runs back down, so the food cooks with very little added water."
+}

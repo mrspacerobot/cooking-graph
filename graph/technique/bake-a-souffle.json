@@ -1,0 +1,72 @@
+{
+  "id": "technique/bake-a-souffle",
+  "tier": "drafted",
+  "names": {"en": "Bake a soufflé", "fr": "Faire un soufflé"},
+  "aliases": {"en": ["make a souffle"], "fr": ["cuire un soufflé"]},
+  "does": "Bakes a thick, flavoured base that has been lightened with whipped egg white, in a dish coated so that the mixture can climb. The trapped air swells in the oven and lifts the mixture high above the rim. It sinks soon after it comes out, so it is served at once.",
+  "how": [
+    "Brush the dish all over with soft butter, using upward strokes so that the butter makes lines for the mixture to climb. Coat it with a dusting of grated cheese or flour and tip out the extra.",
+    "Warm the base and beat the egg yolks and the cheese into it. Season it boldly, because the whites will dilute it.",
+    "Whip the whites to firm, glossy peaks that are just short of dry.",
+    "Stir a spoonful of the whites into the base to loosen it, then fold in the rest in stages with a spatula, cutting down through the middle and lifting up the sides, until only a few streaks of white are left.",
+    "Fill the dish nearly to the rim, smooth the top and run a thumb around the inside edge, so that the mixture lifts clear of the dish.",
+    "Bake in the middle of a hot oven and keep the door shut until the soufflé has risen high and the top is deep gold. Take it to the table at once."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The soufflé stands well above the rim, with a deep gold top, and it trembles a little when the dish is moved."
+    },
+    {
+      "sense": "feel",
+      "text": "The folded mixture is light and airy, and it falls from the spoon in a slow, soft mass."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Opening the oven door early, so that the air chills and the soufflé collapses.",
+      "fix": "Keep the door shut until the soufflé has risen and browned."
+    },
+    {
+      "mistake": "Whipping the whites until they turn dry and grainy, so that they will not blend in.",
+      "fix": "Stop when the peaks are glossy and just hold."
+    },
+    {
+      "mistake": "Stirring the whites into the base, which beats the air out.",
+      "fix": "Fold with a spatula, cutting down and lifting up, and stop while a few streaks show."
+    },
+    {
+      "mistake": "Leaving the sides of the dish bare, so that the mixture sticks and rises crookedly.",
+      "fix": "Butter the dish in upward strokes and coat it well."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg-white", "tier": "drafted"},
+    {"thing": "preparation/bechamel", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish", "equipment/ramekin"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/fold",
+      "why": "A soufflé is a base with whipped whites folded in, so a cook has to be able to fold without knocking the air out.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/bake",
+      "differs": "The mixture is held up by trapped air, so it is baked in a coated dish, the oven door stays shut and the dish goes to the table at once, before the air cools and the mixture sinks.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -31,7 +31,8 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/rice", "tier": "drafted"}
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

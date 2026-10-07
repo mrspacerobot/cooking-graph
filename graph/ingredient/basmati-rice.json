@@ -7,7 +7,9 @@
     {"thing": "ingredient/rice", "tier": "drafted"}
   ],
   "part_of": [],
-  "groups": [],
+  "groups": [
+    {"thing": "group/starches", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A long, slender grain that is dry and separate when cooked and has a floral scent. It is rinsed well and often soaked before it is cooked, and it stretches as it cooks.",
   "safety": {

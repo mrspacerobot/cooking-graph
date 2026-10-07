@@ -1,0 +1,57 @@
+{
+  "id": "technique/make-rillettes",
+  "tier": "drafted",
+  "names": {"en": "Make rillettes", "fr": "Faire des rillettes"},
+  "aliases": {"en": ["make potted pork"]},
+  "does": "Cooks cut meat very slowly in its own fat and a little wine until it can be pulled apart with a fork, shreds it, mixes it back with some of the melted fat and packs it in a pot under a layer of fat, to be spread cold on bread.",
+  "how": [
+    "Cut the meat and the fatty belly into pieces of about the same size, and season them generously.",
+    "Put the meat in a heavy pot with a little white wine, garlic and herbs, cover it and cook at the gentlest heat in the oven until it falls apart and sits in a pool of clear fat.",
+    "Take out the herbs and lift the meat from the fat with a slotted spoon. Keep the fat.",
+    "Pull the meat apart with a pair of forks while it is still warm until it is in soft, ragged threads. Do not mash it.",
+    "Mix in enough of the warm fat to make the meat spreadable, and taste it. It should be seasoned boldly, as cold food tastes milder.",
+    "Pack the meat firmly into jars, press out any air pockets and seal the top with a layer of fat. Keep it cold and let it rest for a few days before eating."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The meat comes apart at the touch of a fork, with no resistance."},
+    {"sense": "see", "text": "The shredded meat is in ragged threads, glistening with fat, and not a smooth paste."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cooking at too high a heat, so that the meat fries and goes dry instead of turning soft.",
+      "fix": "Keep the heat low, with the pot covered, until the meat falls apart."
+    },
+    {
+      "mistake": "Pounding or blending the meat, which makes a heavy paste.",
+      "fix": "Pull it into threads with a pair of forks."
+    },
+    {
+      "mistake": "Seasoning lightly, so that the cold rillettes taste flat.",
+      "fix": "Taste the mixture and season it boldly while it is still warm."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/pork-shoulder", "tier": "drafted"},
+    {"thing": "ingredient/pork-belly", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/earthenware-jar"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/confit",
+      "differs": "A confit keeps whole pieces and lifts them out of the fat to be stored. Rillettes cooks cut meat with its own fat and some wine, pulls it into threads, mixes it with fat and packs it in jars to be spread cold.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "dish/moules-marinieres",
+  "tier": "drafted",
+  "names": {"en": "Moules marinières", "fr": "Moules marinières"},
+  "aliases": {
+    "en": ["mussels marinière", "moules marinière", "mussels in white wine"],
+    "fr": ["moules à la marinière"]
+  },
+  "is": "Mussels steamed open in a pot with white wine, shallot and butter, and served in the shells with the pan juices and a scatter of parsley.",
+  "parts": [
+    {"id": "mussel", "role": "main", "options": ["ingredient/mussel"], "optional": false, "tier": "drafted"},
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/clean-mussels", "tier": "drafted"},
+    {"thing": "technique/steam", "tier": "drafted"},
+    {"thing": "technique/shake-the-pan", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

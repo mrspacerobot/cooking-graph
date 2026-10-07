@@ -1,0 +1,52 @@
+{
+  "id": "technique/fold-a-gozleme",
+  "tier": "drafted",
+  "names": {"en": "Fold a gozleme"},
+  "aliases": {"en": ["gozleme", "fold a filled flatbread"]},
+  "does": "Scatters a filling over one half of a thin round of dough, folds the other half over it and presses the edges shut, so that the filling is held in a flat parcel that cooks on a dry griddle.",
+  "how": [
+    "Roll the dough out into a thin, even round and brush off the loose flour.",
+    "Scatter a thin layer of filling over one half, leaving a clear rim at the edge.",
+    "Lift the clear half over the filling and press the rim with the fingertips until it is sealed all the way round.",
+    "Carry the parcel to the hot griddle without letting it stretch."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The parcel is a flat half moon with an even bump of filling and a neat, thin rim."},
+    {"sense": "feel", "text": "The rim is pressed thin and sticks to itself, with no gap."}
+  ],
+  "mistakes": [
+    {"mistake": "Overfilling, so that the parcel bursts on the griddle.", "fix": "Spread the filling in a thin layer."},
+    {
+      "mistake": "Using a wet filling, which soaks the dough and makes it soggy.",
+      "fix": "Squeeze or drain a wet filling first."
+    },
+    {
+      "mistake": "Leaving flour on the rim, so that it will not stick.",
+      "fix": "Brush the rim clean before pressing it shut."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/bread-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "coating", "options": ["ingredient/flour"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/roll-out",
+      "why": "The dough must be rolled thin and even before it can be folded over a filling.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/fold-dough",
+      "differs": "The dough is folded once over a filling to make a flat sealed parcel, with no layers built up. Folding dough in the layered way stacks sheets over fat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

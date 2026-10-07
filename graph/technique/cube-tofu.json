@@ -1,0 +1,43 @@
+{
+  "id": "technique/cube-tofu",
+  "tier": "drafted",
+  "names": {"en": "Cube tofu"},
+  "aliases": {"en": ["cut tofu into cubes", "dice tofu"]},
+  "does": "Cuts a block of soft tofu into neat cubes with a wet blade and a slicing motion, without pressing, so that the cubes keep their corners and do not break.",
+  "how": [
+    "Lift the block out of its water and let it drain for a short while on a board.",
+    "Wet a thin, sharp knife.",
+    "Cut the block in slabs, then in sticks, then in cubes, drawing the blade through in one slow motion and never pressing down.",
+    "Slide the cubes into the dish on the flat of the knife or on a spoon, and do not stir them roughly."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The cubes have clean, sharp corners and smooth sides."},
+    {"sense": "feel", "text": "The blade glides through with almost no pressure."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pressing down with the knife, which crushes the block into crumbs.",
+      "fix": "Draw the blade through in a slicing motion."
+    },
+    {"mistake": "Cutting with a dry knife, so that the tofu drags and tears.", "fix": "Wet the blade."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/tofu", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/dice",
+      "differs": "Soft tofu is too tender to be stacked and cut like a vegetable, so the block is cut slab by slab with a wet blade and no pressure, and the cubes are moved on a flat blade.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "technique/crush-some-of-the-beans",
+  "tier": "drafted",
+  "names": {"en": "Crush some of the beans"},
+  "aliases": {"en": ["mash some of the beans", "thicken a bean soup with its own beans"]},
+  "does": "Presses a few spoonfuls of cooked, tender beans or other pulses against the side of the pot, or lifts out a ladle of them with a little broth and crushes them, then stirs the paste back in, so that the soup turns creamy and thick without flour or cream while the rest of the beans stay whole.",
+  "how": [
+    "Wait until the beans are completely tender, or they will not crush.",
+    "Lift a ladle of beans, with a little of their broth, into a bowl.",
+    "Crush them to a rough paste with the back of a spoon or a masher. Do not make them completely smooth.",
+    "Stir the paste back into the pot and let the soup bubble gently for a little while, until it has thickened.",
+    "Crush more if the soup is still thin. Thin it with hot water if it has grown too thick."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The broth turns cloudy and creamy and a spoon leaves a trail in it."},
+    {"sense": "feel", "text": "Some beans still hold their shape when pressed, while others melt into the broth."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Crushing beans that are still firm, which leaves a gritty, thin soup.",
+      "fix": "Cook them longer, until a bean crushes at a light touch."
+    },
+    {
+      "mistake": "Crushing nearly all of them, so that the soup turns to paste.",
+      "fix": "Crush only a ladle or so and leave the rest whole."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pulses", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/potato-masher"], "tier": "drafted"},
+    {
+      "role": "vessel",
+      "options": ["equipment/saucepan", "equipment/stockpot", "equipment/dutch-oven"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "The beans must be simmered tender before any of them can be crushed.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/mash",
+      "differs": "Only a few beans are crushed, with no butter or milk, and the rest are left whole. The crushed beans thicken the soup they were cooked in.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

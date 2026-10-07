@@ -1,0 +1,78 @@
+{
+  "id": "recipe/kefta-brochettes",
+  "tier": "drafted",
+  "names": {"en": "Kefta brochettes"},
+  "aliases": {},
+  "makes": "dish/kefta-brochettes",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/ground-lamb", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/parsley", "amount": {"value": 8, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 8, "unit": "sprig"}, "forms": [], "part": "coriander"},
+    {"thing": "ingredient/cumin", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/paprika", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "paprika"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/bread", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "bread"}
+  ],
+  "equipment": [
+    "equipment/grill", "equipment/skewer", "equipment/tongs", "equipment/mixing-bowl", "equipment/chefs-knife",
+    "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/onion", "ingredient/parsley", "ingredient/coriander-leaf"],
+      "with": [],
+      "text": "Mince the onion, the parsley and the coriander very fine.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": [
+        "ingredient/onion", "ingredient/parsley", "ingredient/coriander-leaf", "ingredient/cumin", "ingredient/paprika",
+        "ingredient/black-pepper", "ingredient/salt"
+      ],
+      "text": "Work the lamb in a bowl with the onion, the herbs, the cumin, the paprika, the pepper and the salt, squeezing it with the hands for a good while, until it is sticky and holds together. Chill it for a while so that it firms.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/skewer",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": [],
+      "text": "Wet the hands and press a handful of the mince round each flat skewer in a long sausage, pinching it so that it grips the metal.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grill-over-charcoal",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": [],
+      "text": "Lay the skewers across glowing coals and turn them often until they are browned all over and firm to the touch. Check a skewer against a trusted guide to doneness.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": ["ingredient/bread"],
+      "text": "Slide the meat off the skewers or serve it on them, with warm bread.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

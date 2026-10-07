@@ -2,7 +2,7 @@
   "id": "ingredient/octopus",
   "tier": "drafted",
   "names": {"en": "Octopus", "fr": "Poulpe"},
-  "aliases": {},
+  "aliases": {"en": ["pulpo"]},
   "is_a": [],
   "part_of": [],
   "groups": [],

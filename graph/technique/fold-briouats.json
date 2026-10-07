@@ -1,0 +1,45 @@
+{
+  "id": "technique/fold-briouats",
+  "tier": "drafted",
+  "names": {"en": "Fold briouats"},
+  "aliases": {},
+  "does": "Cuts sheets of warqa into long strips, puts a spoonful of filling at one end of each strip and folds the end over it again and again, corner to corner, into a small neat triangle, with the loose end sealed down with a dab of fat.",
+  "how": [
+    "Keep the warqa under a damp cloth. Cut a sheet into strips as wide as a hand, and brush each strip lightly with melted butter.",
+    "Put a small spoonful of filling at one end, a little in from the corner.",
+    "Fold the corner over the filling to make a triangle, then fold the triangle over on itself along the strip, again and again, as one folds a flag.",
+    "Seal the last flap with a dab of butter and tuck it under.",
+    "Lay the triangles on a tray and cover them until they are fried."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Each pastry is a neat triangle with no filling showing at the corners."},
+    {"sense": "feel", "text": "The sealed flap holds without sticking and the triangle is firm and flat."}
+  ],
+  "mistakes": [
+    {"mistake": "Overfilling, which splits the thin sheet and leaks in the oil.", "fix": "Use only a small spoonful."},
+    {
+      "mistake": "Letting the strips dry out, so that they crack when folded.",
+      "fix": "Cut only a few at a time and keep the rest under a damp cloth."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/warqa", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/pastry-brush"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter", "ingredient/smen"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/wrap",
+      "differs": "Wrapping encloses a filling in a leaf, caul fat or a thin omelette. Here the wrapper is a paper-thin sheet cut in strips, and the filling is folded up in a series of triangle folds along the strip.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

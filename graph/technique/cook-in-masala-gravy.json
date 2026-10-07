@@ -1,0 +1,65 @@
+{
+  "id": "technique/cook-in-masala-gravy",
+  "tier": "drafted",
+  "names": {"en": "Cook in a masala gravy"},
+  "aliases": {"en": ["simmer in gravy", "simmer in a curry sauce", "cook a curry"]},
+  "does": "Simmers pieces of meat, bird or firm cheese in a gravy made from a fried masala base, with a little water or cream, until they are tender and the gravy has thickened and clings to them.",
+  "how": [
+    "Start from a masala base cooked until its fat has parted.",
+    "Add the pieces, raw or already roasted or fried, and stir them into the base for a moment so that they are coated.",
+    "Add hot water or cream a little at a time, and bring the pan to a gentle simmer. Cover it partly.",
+    "Stir now and then and scrape the bottom. Add a little more liquid if the gravy dries out before the pieces are tender.",
+    "Stop when the pieces are tender and the gravy is thick enough to coat them, with a shine of fat on top.",
+    "Stir in the finishing touches, such as cream, dried fenugreek leaf or garam masala, off the heat or just before."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The gravy is thick and glossy and clings to the pieces, with a little fat shining at the edge."
+    },
+    {"sense": "feel", "text": "The pieces give easily under a spoon and are tender throughout."},
+    {"sense": "smell", "text": "The scent is round and full, with no raw spice in it."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring in cold water, which stops the cooking and thins the flavour.",
+      "fix": "Add hot water, a little at a time."
+    },
+    {
+      "mistake": "Boiling hard, so that the gravy splits and the pieces turn tough.",
+      "fix": "Keep a gentle simmer and stir now and then."
+    },
+    {
+      "mistake": "Adding the cream or yogurt to a boiling pan, so that it splits.",
+      "fix": "Take the pan off the heat for a moment, or lower the heat, before the cream goes in."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "ingredient/paneer", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/cream"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/fry-masala-base",
+      "why": "The gravy is made on a masala base cooked until its fat parts, so the base comes first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/braise",
+      "differs": "The pieces are not browned first and there is no wine or stock. The liquid is water or cream added to a fried masala base, and the sauce is thick and clings to the pieces. It is cooked on the stove, covered only in part.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

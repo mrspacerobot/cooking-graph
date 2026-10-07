@@ -1,0 +1,29 @@
+{
+  "id": "dish/escalivada",
+  "tier": "drafted",
+  "names": {"en": "Escalivada"},
+  "aliases": {"en": ["escalivada catalana"]},
+  "is": "A Catalan dish of aubergine, red pepper and onion cooked until soft and smoky, peeled, torn or cut in strips and dressed with olive oil, garlic and salt. It is eaten warm or cold.",
+  "parts": [
+    {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pepper",
+      "role": "main",
+      "options": ["ingredient/bell-pepper", "ingredient/red-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "main", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": true, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/char", "tier": "drafted"},
+    {"thing": "technique/roast", "tier": "drafted"},
+    {"thing": "technique/crush", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

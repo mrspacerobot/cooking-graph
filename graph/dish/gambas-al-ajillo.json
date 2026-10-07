@@ -1,0 +1,23 @@
+{
+  "id": "dish/gambas-al-ajillo",
+  "tier": "drafted",
+  "names": {"en": "Gambas al ajillo"},
+  "aliases": {"en": ["garlic prawns", "garlic shrimp", "prawns in garlic oil"]},
+  "is": "Shrimp cooked for a short time in a pool of olive oil scented with sliced garlic and a hot pepper, in a shallow earthenware dish, and served still sizzling in the oil, with bread to mop it up.",
+  "parts": [
+    {"id": "shrimp", "role": "main", "options": ["ingredient/shrimp"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "guindilla", "role": "aromatic", "options": ["ingredient/guindilla"], "optional": true, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-al-ajillo", "tier": "drafted"},
+    {"thing": "technique/slice", "tier": "drafted"},
+    {"thing": "technique/peel", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "dish/cucumber-raita",
+  "tier": "drafted",
+  "names": {"en": "Cucumber raita"},
+  "aliases": {"en": ["kheera raita", "cucumber yogurt side"]},
+  "is": "Cold yogurt whisked smooth, with salted and squeezed cucumber and roasted ground cumin stirred through it, served as a cooling side.",
+  "parts": [
+    {"id": "yogurt", "role": "base", "options": ["ingredient/plain-yogurt"], "optional": false, "tier": "drafted"},
+    {"id": "cucumber", "role": "main", "options": ["ingredient/cucumber"], "optional": false, "tier": "drafted"},
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "mint", "role": "garnish", "options": ["ingredient/mint"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-raita", "tier": "drafted"},
+    {"thing": "technique/salt-and-squeeze", "tier": "drafted"},
+    {"thing": "technique/roast-spices", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "recipe/chapati",
+  "tier": "drafted",
+  "names": {"en": "Chapati"},
+  "aliases": {},
+  "makes": "dish/chapati",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/whole-wheat-flour", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "dough"},
+    {
+      "thing": "ingredient/whole-wheat-flour",
+      "amount": {"value": 30, "unit": "gram"},
+      "forms": [],
+      "part": "dusting-flour"
+    },
+    {"thing": "ingredient/ghee", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "ghee"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/mixing-bowl", "equipment/rolling-pin", "equipment/tava", "equipment/tongs"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-atta-dough",
+      "works_on": ["ingredient/whole-wheat-flour"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Put the flour and the salt in a bowl and work in the warm water a little at a time, until the dough is soft and smooth and no longer sticks. Cover it with a damp cloth and leave it to rest, then tear off equal balls and roll them smooth between the palms.",
+      "time": {"from": 30, "to": 45, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/chapati-dough"]
+    },
+    {
+      "technique": "technique/roll-out-a-chapati",
+      "works_on": ["preparation/chapati-dough"],
+      "with": ["ingredient/whole-wheat-flour"],
+      "text": "Flatten a ball in the dry flour and roll it from the centre outwards, turning it after each stroke, into a thin, even round. Shake off the extra flour.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-a-chapati",
+      "works_on": ["preparation/chapati-dough"],
+      "with": ["ingredient/ghee"],
+      "text": "Lay the round on a hot iron plate. When bubbles show, turn it and cook the second face until it is spotted with brown. Lift it with tongs and hold it on the open flame until it swells into a ball, then brush it with ghee and stack it in a cloth.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

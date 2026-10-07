@@ -1,0 +1,26 @@
+{
+  "id": "dish/chapati",
+  "tier": "drafted",
+  "names": {"en": "Chapati"},
+  "aliases": {"en": ["roti", "phulka", "fulka"]},
+  "is": "A soft, thin, unleavened flat bread of whole wheat dough, cooked on a hot iron plate and then puffed on the open flame, brushed with ghee and kept soft under a cloth.",
+  "parts": [
+    {"id": "dough", "role": "main", "options": ["preparation/chapati-dough"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dusting-flour",
+      "role": "coating",
+      "options": ["ingredient/whole-wheat-flour"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "ghee", "role": "fat", "options": ["ingredient/ghee"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-atta-dough", "tier": "drafted"},
+    {"thing": "technique/roll-out-a-chapati", "tier": "drafted"},
+    {"thing": "technique/cook-a-chapati", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

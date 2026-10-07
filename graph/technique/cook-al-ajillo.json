@@ -1,0 +1,60 @@
+{
+  "id": "technique/cook-al-ajillo",
+  "tier": "drafted",
+  "names": {"en": "Cook al ajillo"},
+  "aliases": {"en": ["al ajillo", "sizzle in garlic oil", "cook in garlic oil", "cook in garlic and chilli oil"]},
+  "does": "Cooks small pieces of shellfish or mushroom for a short time in a generous pool of olive oil scented with sliced garlic and a piece of hot pepper, in a shallow earthenware dish. The oil becomes the sauce, and the food reaches the table still sizzling in it.",
+  "how": [
+    "Put the olive oil, the sliced garlic and the pieces of hot pepper in a cold earthenware dish and set it over a medium heat, so that the garlic warms along with the oil.",
+    "Let the oil heat until the garlic starts to bubble gently and turns pale gold. Do not let it brown.",
+    "Add the dry, salted shrimp or mushrooms in one layer and turn the heat up. Shake the dish now and then so that they cook evenly in the oil.",
+    "As soon as the shrimp turn opaque and curl, or the mushrooms soften, take the dish off the heat. The hot dish keeps the oil sizzling.",
+    "Scatter chopped parsley over and take the dish straight to the table, with bread to mop up the oil."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A steady, lively sizzle when the food goes in, which dies down to a gentle bubbling."},
+    {"sense": "smell", "text": "Sweet garlic, with no sharp or bitter edge."},
+    {
+      "sense": "see",
+      "text": "The garlic is pale gold and the shrimp are curled and opaque, with the oil bubbling round them."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting the garlic brown, which turns the whole pool of oil bitter.",
+      "fix": "Start it in cold oil, and add the food as soon as the garlic is pale gold."
+    },
+    {
+      "mistake": "Cooking the shrimp too long, so that they turn rubbery.",
+      "fix": "Take the dish off the heat the moment they turn opaque."
+    },
+    {"mistake": "Adding wet shrimp, which spit and cool the oil.", "fix": "Pat them dry first."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/shrimp", "tier": "drafted"},
+    {"thing": "ingredient/mushroom", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/cazuela"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/slice",
+      "why": "The garlic has to be sliced evenly, so that all of it turns pale gold at the same moment.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/saute",
+      "differs": "The food lies in a deep pool of oil and not in a thin film, the garlic and the pepper are warmed in the oil first, and the dish goes to the table as it was cooked, oil and all. A sauté keeps small pieces moving in a hot pan with a little fat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

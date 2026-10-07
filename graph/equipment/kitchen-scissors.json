@@ -1,0 +1,7 @@
+{
+  "id": "equipment/kitchen-scissors",
+  "tier": "drafted",
+  "names": {"en": "Kitchen scissors", "fr": "Ciseaux de cuisine"},
+  "aliases": {},
+  "use": "Strong scissors kept for food, used to snip herbs, shells or cooked octopus straight into a dish."
+}

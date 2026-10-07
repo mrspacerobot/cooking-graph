@@ -1,0 +1,37 @@
+{
+  "id": "preparation/lentil-bulgur-mixture",
+  "tier": "drafted",
+  "names": {"en": "Lentil and bulgur mixture"},
+  "aliases": {"en": ["mercimek koftesi mixture"]},
+  "is": "Red lentils and fine bulgur swollen together in the heat, kneaded with softened onion, paste and spice into a soft mixture that holds when squeezed.",
+  "parts": [
+    {"id": "lentil", "role": "main", "options": ["ingredient/red-lentil"], "optional": false, "tier": "drafted"},
+    {"id": "bulgur", "role": "main", "options": ["ingredient/fine-bulgur"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "paste",
+      "role": "seasoning",
+      "options": ["ingredient/red-pepper-paste", "ingredient/tomato-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "spice", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/shape-a-finger-kofte", "tier": "drafted"},
+    {"thing": "technique/swell-bulgur-in-hot-liquid", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "dish/gozleme",
+  "tier": "drafted",
+  "names": {"en": "Gozleme"},
+  "aliases": {"en": ["peynirli gozleme", "Turkish filled flatbread"]},
+  "is": "A thin round of dough folded over a filling of white cheese and parsley and cooked on a dry griddle until it is speckled brown, then brushed with butter. It is eaten hot.",
+  "parts": [
+    {"id": "dough", "role": "main", "options": ["preparation/bread-dough"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "filling",
+      "options": ["ingredient/white-cheese", "ingredient/kashkaval-cheese", "ingredient/kolot-cheese"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "herb",
+      "role": "filling",
+      "options": ["ingredient/parsley", "ingredient/dill"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fold-a-gozleme", "tier": "drafted"},
+    {"thing": "technique/griddle", "tier": "drafted"},
+    {"thing": "technique/roll-out", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

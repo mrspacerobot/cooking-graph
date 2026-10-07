@@ -1,0 +1,40 @@
+{
+  "id": "dish/bulgur-pilavi",
+  "tier": "drafted",
+  "names": {"en": "Turkish bulgur pilaf"},
+  "aliases": {"en": ["bulgur pilavi", "domatesli bulgur pilavi"]},
+  "is": "Coarse bulgur fried with onion and tomato paste, then left under a lid with hot water until every grain is plump and separate. It is served beside meat, stews or yogurt.",
+  "parts": [
+    {"id": "bulgur", "role": "main", "options": ["ingredient/coarse-bulgur"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "paste",
+      "role": "seasoning",
+      "options": ["ingredient/tomato-paste", "ingredient/red-pepper-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "liquid",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-bulgur-pilaf", "tier": "drafted"},
+    {"thing": "technique/sweat", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

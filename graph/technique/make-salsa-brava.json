@@ -1,0 +1,61 @@
+{
+  "id": "technique/make-salsa-brava",
+  "tier": "drafted",
+  "names": {"en": "Make salsa brava"},
+  "aliases": {"en": ["make brava sauce", "make bravas sauce"]},
+  "does": "Toasts a little flour in olive oil, takes the pan off the heat to stir in sweet and hot paprika, then whisks in water and tomato paste and simmers it to a thin, glossy, brick-red sauce with a sharp bite, to spoon over fried potatoes.",
+  "how": [
+    "Warm the olive oil in a small pan over a low heat. Stir in the flour and cook it, stirring, until it smells nutty and has only just darkened.",
+    "Take the pan off the heat and stir in the sweet paprika and the hot paprika. Paprika scorches in hot oil and turns the sauce bitter.",
+    "Whisk in the tomato paste, then pour in the water a little at a time, whisking smooth after each addition. Add a crushed clove of garlic if it is liked.",
+    "Put the pan back on a low heat and simmer, whisking now and then, until the sauce is thick enough to coat a spoon lightly. Season it with salt at the end.",
+    "Keep it warm and spoon it over the potatoes at the last moment, so that they stay crisp."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "A smooth sauce the colour of brick that coats the back of a spoon in a thin, glossy layer."
+    },
+    {"sense": "taste", "text": "Smoky and warm with a bite from the hot paprika, and no raw taste of flour."},
+    {"sense": "smell", "text": "Toasty and sweet, with no burnt edge."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring the paprika into hot oil, so that it scorches and the sauce turns bitter.",
+      "fix": "Take the pan off the heat first and stir it in at once."
+    },
+    {
+      "mistake": "Pouring in all the water at once, which leaves lumps of flour.",
+      "fix": "Pour it in a little at a time, whisking smooth after each addition."
+    },
+    {
+      "mistake": "Letting the sauce get too thick, so that it clings to the potatoes as a paste.",
+      "fix": "Loosen it with a little water until it flows off the spoon."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/flour", "tier": "drafted"},
+    {"thing": "ingredient/paprika", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/salsa-brava", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/make-a-roux",
+      "differs": "The fat is olive oil and not butter, the flour is only lightly toasted, the paprika goes in off the heat, and the sauce stays thin and sharp. A roux is cooked to a set colour and is the thickener of a smooth white or brown sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

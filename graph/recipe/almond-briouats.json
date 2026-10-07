@@ -1,0 +1,70 @@
+{
+  "id": "recipe/almond-briouats",
+  "tier": "drafted",
+  "names": {"en": "Almond briouats"},
+  "aliases": {},
+  "makes": "dish/almond-briouats",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/warqa", "amount": {"value": 12, "unit": "piece"}, "forms": [], "part": "warqa"},
+    {"thing": "ingredient/almond", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "almond"},
+    {"thing": "ingredient/sugar", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cinnamon"},
+    {
+      "thing": "ingredient/orange-blossom-water",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "blossom"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/honey", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "honey"},
+    {"thing": "ingredient/sesame-seed", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "sesame"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/saucepan", "equipment/blender", "equipment/mixing-bowl",
+    "equipment/spoon", "equipment/pastry-brush", "equipment/slotted-spoon", "equipment/wire-rack"
+  ],
+  "steps": [
+    {
+      "technique": "technique/grind",
+      "works_on": ["ingredient/almond"],
+      "with": ["ingredient/sugar", "ingredient/cinnamon", "ingredient/orange-blossom-water", "ingredient/butter"],
+      "text": "Grind the almonds coarsely with the sugar and the cinnamon, then work in the orange blossom water and a little of the butter to make a thick, crumbly paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/sesame-seed"],
+      "with": [],
+      "text": "Toast the sesame seeds in a dry pan, shaking it often, until they turn pale gold.",
+      "time": {"from": 2, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fold-briouats",
+      "works_on": ["ingredient/warqa"],
+      "with": ["ingredient/almond", "ingredient/butter"],
+      "text": "Cut the warqa into strips, brush them with melted butter, and fold a small spoonful of the almond paste up in each strip into a neat triangle. Seal the last flap with butter.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-briouats",
+      "works_on": ["ingredient/warqa"],
+      "with": ["ingredient/sunflower-oil", "ingredient/honey", "ingredient/sesame-seed"],
+      "text": "Warm the honey gently. Heat the oil in a wide pan and fry the triangles a few at a time, turning them, until golden on every side. Dip each one in the warm honey for a moment, set it on a rack and scatter with the sesame seeds.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

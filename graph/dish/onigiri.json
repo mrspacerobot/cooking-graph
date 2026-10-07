@@ -1,0 +1,34 @@
+{
+  "id": "dish/onigiri",
+  "tier": "drafted",
+  "names": {"en": "Onigiri"},
+  "aliases": {"en": ["Japanese rice ball", "omusubi"]},
+  "is": "Cooked short-grain rice pressed between wet, salted hands into a firm triangle with a salty or sour filling in the middle, and wrapped in a strip of crisp nori.",
+  "parts": [
+    {
+      "id": "rice",
+      "role": "main",
+      "options": ["ingredient/short-grain-rice", "ingredient/rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "filling",
+      "role": "filling",
+      "options": ["ingredient/umeboshi", "ingredient/salted-salmon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "nori", "role": "coating", "options": ["ingredient/nori"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/salt-hands", "tier": "drafted"},
+    {"thing": "technique/shape-by-hand", "tier": "drafted"},
+    {"thing": "technique/wrap-in-nori", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

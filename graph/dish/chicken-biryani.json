@@ -1,0 +1,48 @@
+{
+  "id": "dish/chicken-biryani",
+  "tier": "drafted",
+  "names": {"en": "Chicken biryani"},
+  "aliases": {"en": ["murgh biryani", "dum biryani", "chicken dum biryani"]},
+  "is": "Chicken marinated in spiced yogurt, layered with nearly cooked basmati rice, crisp fried onions, herbs and saffron milk in a heavy pot, sealed and finished in its own steam over a very low heat.",
+  "parts": [
+    {"id": "chicken", "role": "main", "options": ["ingredient/chicken-thigh"], "optional": false, "tier": "drafted"},
+    {"id": "rice", "role": "base", "options": ["ingredient/basmati-rice"], "optional": false, "tier": "drafted"},
+    {"id": "yogurt", "role": "coating", "options": ["ingredient/plain-yogurt"], "optional": false, "tier": "drafted"},
+    {"id": "paste", "role": "seasoning", "options": ["preparation/spice-paste"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fried-onions",
+      "role": "topping",
+      "options": ["preparation/fried-onions"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "rice-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "cardamom", "role": "seasoning", "options": ["ingredient/cardamom"], "optional": false, "tier": "drafted"},
+    {"id": "cinnamon", "role": "seasoning", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"},
+    {"id": "clove", "role": "seasoning", "options": ["ingredient/clove"], "optional": false, "tier": "drafted"},
+    {"id": "bay-leaf", "role": "aromatic", "options": ["ingredient/bay-leaf"], "optional": false, "tier": "drafted"},
+    {"id": "saffron", "role": "seasoning", "options": ["ingredient/saffron"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "ghee", "role": "fat", "options": ["ingredient/ghee"], "optional": false, "tier": "drafted"},
+    {"id": "mint", "role": "aromatic", "options": ["ingredient/mint"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "seal-flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "seal-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-on-dum", "tier": "drafted"},
+    {"thing": "technique/parboil-rice", "tier": "drafted"},
+    {"thing": "technique/marinate-in-yogurt", "tier": "drafted"},
+    {"thing": "technique/fry-onions-deep-brown", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "dish/lamb-tagine-with-prunes",
+  "tier": "drafted",
+  "names": {"en": "Lamb tagine with prunes and almonds"},
+  "aliases": {"en": ["lamb tagine with prunes", "lham bil barqooq"]},
+  "is": "Lamb cooked slowly in a clay tagine on a bed of onion with ginger, cinnamon and saffron, then finished with plump prunes and honey until the sauce is dark and sticky, and scattered with toasted almonds and sesame seeds.",
+  "parts": [
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/lamb-shoulder", "ingredient/lamb-shank"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/smen", "ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "ginger", "role": "seasoning", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "cinnamon", "role": "seasoning", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"},
+    {"id": "saffron", "role": "seasoning", "options": ["ingredient/saffron"], "optional": true, "tier": "drafted"},
+    {"id": "prune", "role": "filling", "options": ["ingredient/prune"], "optional": false, "tier": "drafted"},
+    {"id": "honey", "role": "sweetener", "options": ["ingredient/honey"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "almond", "role": "garnish", "options": ["ingredient/almond"], "optional": false, "tier": "drafted"},
+    {"id": "sesame", "role": "garnish", "options": ["ingredient/sesame-seed"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-in-a-tagine", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"},
+    {"thing": "technique/toast", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "preparation/bearnaise",
+  "tier": "drafted",
+  "names": {"en": "Béarnaise", "fr": "Sauce béarnaise"},
+  "aliases": {"en": ["bearnaise sauce", "béarnaise sauce", "sauce bearnaise"]},
+  "is": "A warm, thick sauce of egg yolk and butter, sharpened with a reduction of vinegar, wine, shallot and tarragon, and finished with fresh tarragon. It is spooned beside grilled or seared beef.",
+  "parts": [
+    {"id": "egg-yolk", "role": "emulsifier", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {
+      "id": "butter",
+      "role": "fat",
+      "options": ["ingredient/butter", "preparation/clarified-butter"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "tarragon", "role": "aromatic", "options": ["ingredient/tarragon"], "optional": false, "tier": "drafted"},
+    {"id": "wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "vinegar",
+      "role": "acid",
+      "options": ["ingredient/white-wine-vinegar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/emulsified-sauces", "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-a-bearnaise", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "recipe/gulab-jamun",
+  "tier": "drafted",
+  "names": {"en": "Gulab jamun"},
+  "aliases": {},
+  "makes": "dish/gulab-jamun",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/khoya", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/flour", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/milk", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/baking-soda", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/ghee", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "ghee"},
+    {"thing": "ingredient/sugar", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/water", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "syrup-water"},
+    {"thing": "ingredient/cardamom", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "cardamom"},
+    {"thing": "ingredient/rose-water", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "rose-water"}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saucepan", "equipment/mixing-bowl", "equipment/slotted-spoon"],
+  "steps": [
+    {
+      "technique": "technique/make-a-syrup",
+      "works_on": ["ingredient/sugar"],
+      "with": ["ingredient/water", "ingredient/cardamom", "ingredient/rose-water"],
+      "text": "Dissolve the sugar in the water with the cardamom pods, bring to a boil and simmer just until the syrup turns sticky and thin. Stir in the rose water and keep the syrup warm.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/sugar-syrup"]
+    },
+    {
+      "technique": "technique/make-khoya-dough",
+      "works_on": ["ingredient/khoya"],
+      "with": ["ingredient/flour", "ingredient/baking-soda", "ingredient/milk"],
+      "text": "Crumble the khoya fine in a bowl. Mix in the flour and the baking soda lightly, add the milk a spoonful at a time, and press the mixture together into a soft, smooth dough. Roll it into small balls with no cracks.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/khoya-dough"]
+    },
+    {
+      "technique": "technique/fry-and-soak-in-syrup",
+      "works_on": ["preparation/khoya-dough"],
+      "with": ["ingredient/ghee", "preparation/sugar-syrup"],
+      "text": "Heat the ghee gently. Fry the balls in small batches over a low heat, turning them, until they are an even deep brown. Lift them out and drop them into the warm syrup. Leave them to soak until they are swollen and soft.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

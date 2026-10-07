@@ -1,0 +1,66 @@
+{
+  "id": "recipe/saba-shioyaki",
+  "tier": "drafted",
+  "names": {"en": "Saba shioyaki"},
+  "aliases": {},
+  "makes": "dish/saba-shioyaki",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/mackerel",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/skin-on"],
+      "part": "mackerel"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/daikon", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "daikon"},
+    {"thing": "ingredient/sudachi", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "citrus"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "soy"}
+  ],
+  "equipment": [
+    "equipment/grill", "equipment/baking-sheet", "equipment/wire-rack", "equipment/tongs", "equipment/grater",
+    "equipment/fine-sieve", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/salt-fish",
+      "works_on": ["ingredient/mackerel"],
+      "with": ["ingredient/salt"],
+      "text": "Pat the mackerel dry and sprinkle salt evenly over both sides. Leave it until beads of water show on the skin, then wipe them off with paper.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grate-daikon",
+      "works_on": ["ingredient/daikon"],
+      "with": [],
+      "text": "Grate the daikon and let the juice drain a little in a fine sieve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grill",
+      "works_on": ["ingredient/mackerel"],
+      "with": [],
+      "text": "Heat the grill until it is very hot. Lay the fish skin side up on a rack in a tray close to the heat and grill until the skin blisters and browns, then turn it once and grill the other side. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/mackerel"],
+      "with": ["ingredient/daikon", "ingredient/soy-sauce", "ingredient/sudachi"],
+      "text": "Set the fish on a plate with a heap of grated daikon, a few drops of soy sauce on the daikon and a halved sudachi to squeeze over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

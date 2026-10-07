@@ -1,0 +1,26 @@
+{
+  "id": "recipe/alioli",
+  "tier": "drafted",
+  "names": {"en": "Alioli"},
+  "aliases": {},
+  "makes": "preparation/alioli",
+  "yields": {"value": 200, "unit": "millilitre"},
+  "ingredients": [
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": ["equipment/mortar-and-pestle"],
+  "steps": [
+    {
+      "technique": "technique/make-alioli",
+      "works_on": ["ingredient/garlic", "ingredient/olive-oil"],
+      "with": ["ingredient/salt"],
+      "text": "Pound the garlic with the salt in the mortar to a smooth paste. Turn the pestle in one direction only and work in the oil a drop at a time, then in a thin thread as the sauce thickens and turns pale, until it stands up on the pestle.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/alioli"]
+    }
+  ]
+}

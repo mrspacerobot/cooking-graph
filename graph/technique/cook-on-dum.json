@@ -1,0 +1,83 @@
+{
+  "id": "technique/cook-on-dum",
+  "tier": "drafted",
+  "names": {"en": "Cook on dum"},
+  "aliases": {"en": ["dum", "dum cooking", "seal the pot and cook slowly"]},
+  "does": "Layers marinated meat and nearly cooked rice in a heavy pot, closes the lid tightly, often with a rope of dough, and finishes the dish in its own steam over a very low heat. Nothing is stirred, and the pot is opened at the table.",
+  "how": [
+    "Spread the marinated meat in an even layer on the bottom of a heavy pot, with a little ghee.",
+    "Pile the nearly cooked rice over the meat in loose layers, with herbs, crisp fried onions and ghee between them. Do not press it down.",
+    "Sprinkle saffron steeped in warm milk over the top.",
+    "Seal the gap between the lid and the pot with a rope of firm dough, pressing it in all round. A heavy cloth under the lid works too.",
+    "Set the pot on a flat plate of iron over a medium heat for a short spell to build up steam, then turn the heat to its lowest and leave it undisturbed.",
+    "Rest the sealed pot off the heat before it is broken open. Fold the rice and the meat together from the bottom with a flat spoon, so the layers are kept."
+  ],
+  "cues": [
+    {
+      "sense": "smell",
+      "text": "A rich scent of spice, saffron and ghee seeps out from under the lid when the pot is nearly ready."
+    },
+    {"sense": "hear", "text": "A faint, steady hiss comes from the pot, with no hard bubbling."},
+    {
+      "sense": "see",
+      "text": "The grains of rice on top are long, dry and separate, and the meat below is tender and coated in a thick gravy."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Letting the seal leak, so that the steam escapes and the rice on top stays hard.",
+      "fix": "Press the rope of dough into the join all round, and patch any gap at once."
+    },
+    {
+      "mistake": "Keeping the heat too high, so that the bottom layer scorches.",
+      "fix": "Set the pot on a flat iron plate and turn the heat to its lowest once the steam builds."
+    },
+    {
+      "mistake": "Lifting the lid to look, which lets the steam out and breaks the slow cooking.",
+      "fix": "Leave the pot shut until the end of the rest."
+    },
+    {
+      "mistake": "Stirring the layers together, so that the dish turns into a heap of mush.",
+      "fix": "Dig down to the bottom with a flat spoon and lift the layers out whole."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/basmati-rice", "tier": "drafted"},
+    {"thing": "ingredient/chicken-thigh", "tier": "drafted"},
+    {"thing": "ingredient/lamb-shoulder", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/handi", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tava"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/ghee"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/parboil-rice",
+      "why": "The rice goes into the pot only nearly cooked, so a cook has to be able to stop it at that point first.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/marinate-in-yogurt",
+      "why": "The meat goes into the pot already marinated, and cooks in the steam without being browned.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/seal-with-dough",
+      "differs": "The seal is for a pot on the stove, over a very low heat, and not for a long bake. The food is layered, half-cooked rice over marinated meat, and cooks in the steam and scent held in the pot, never stirred.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/cook-pilaf",
+      "differs": "A pilaf cooks raw rice in a measured amount of stock. Here the rice is boiled nearly done first, laid over meat that has not been browned, and finished by steam alone.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

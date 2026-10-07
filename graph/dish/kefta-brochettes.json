@@ -1,0 +1,44 @@
+{
+  "id": "dish/kefta-brochettes",
+  "tier": "drafted",
+  "names": {"en": "Kefta brochettes"},
+  "aliases": {"en": ["kefta skewers", "Moroccan kefta kebab"]},
+  "is": "Minced lamb worked with onion, parsley, coriander, cumin and paprika, pressed round flat skewers and grilled over charcoal, served hot with bread.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/ground-lamb", "ingredient/minced-beef"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "aromatic",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "paprika", "role": "seasoning", "options": ["ingredient/paprika"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bread",
+      "role": "side",
+      "options": ["ingredient/bread", "ingredient/pita-bread"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/skewer", "tier": "drafted"},
+    {"thing": "technique/grill-over-charcoal", "tier": "drafted"},
+    {"thing": "technique/knead", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

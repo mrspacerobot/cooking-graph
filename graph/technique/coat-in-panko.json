@@ -1,0 +1,55 @@
+{
+  "id": "technique/coat-in-panko",
+  "tier": "drafted",
+  "names": {"en": "Coat in panko"},
+  "aliases": {"en": ["crumb with panko", "coat in panko crumbs", "flour, egg and panko coat"]},
+  "does": "Covers a cutlet in layers, first flour, then beaten egg and then coarse panko flakes, which fry into a light, shaggy, golden crust that stays crisp.",
+  "how": [
+    "Season the meat and pat it dry.",
+    "Set out trays in a row: flour, beaten egg and panko.",
+    "Dust the meat in flour and tap off the extra, so that only a thin film is left.",
+    "Draw it through the egg so that every side is wet, and let the extra drip off.",
+    "Lay it in the panko and press the flakes on lightly with a dry hand, covering the faces and the edges. Do not pack them down.",
+    "Shake off the loose flakes and fry soon, before the coat turns damp."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The crust is an even layer of dry flakes with no bare spots."},
+    {"sense": "feel", "text": "The flakes cling when the piece is lifted and do not fall away."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pressing the panko down hard, which makes a dense, heavy crust.",
+      "fix": "Press lightly and let the flakes stay loose."
+    },
+    {
+      "mistake": "Leaving thick egg on the meat, which makes a gummy coat.",
+      "fix": "Let the extra egg drip off before the flakes go on."
+    },
+    {
+      "mistake": "Coating well ahead of the oil, so that the flakes soak up the egg and turn soft.",
+      "fix": "Coat just before frying."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/pork-loin", "tier": "drafted"},
+    {"thing": "ingredient/pork-tenderloin", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "coating", "options": ["ingredient/panko"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/egg"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-dish"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/coat",
+      "differs": "The crumbs are panko, coarse, dry flakes, and not fine breadcrumbs, and the coat is flour, then egg, then panko, with no mustard. It fries lighter and more shaggy and stays crisp longer.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

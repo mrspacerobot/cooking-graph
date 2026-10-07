@@ -1,0 +1,68 @@
+{
+  "id": "recipe/coconut-chutney",
+  "tier": "drafted",
+  "names": {"en": "Coconut chutney"},
+  "aliases": {},
+  "makes": "dish/coconut-chutney",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/coconut",
+      "amount": {"value": 150, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "coconut"
+    },
+    {"thing": "ingredient/roasted-gram", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "thickener"},
+    {"thing": "ingredient/green-chilli", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "green-chilli"},
+    {"thing": "ingredient/ginger", "amount": {"value": 10, "unit": "gram"}, "forms": ["form/minced"], "part": "ginger"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/water", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {
+      "thing": "ingredient/coconut-oil",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "tempering-fat"
+    },
+    {
+      "thing": "ingredient/mustard-seed",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "mustard-seed"
+    },
+    {"thing": "ingredient/black-gram", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "urad"},
+    {"thing": "ingredient/curry-leaf", "amount": {"value": 10, "unit": "leaf"}, "forms": [], "part": "curry-leaf"},
+    {
+      "thing": "ingredient/dried-red-chilli",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": [],
+      "part": "dried-chilli"
+    }
+  ],
+  "equipment": ["equipment/stovetop", "equipment/blender", "equipment/frying-pan", "equipment/spoon"],
+  "steps": [
+    {
+      "technique": "technique/grind-a-chutney",
+      "works_on": ["ingredient/coconut"],
+      "with": [
+        "ingredient/roasted-gram", "ingredient/green-chilli", "ingredient/ginger", "ingredient/salt", "ingredient/water"
+      ],
+      "text": "Blend the coconut with the roasted split chickpeas, the green chilli, the ginger and the salt, adding the cold water a spoonful at a time, until the paste is coarse, moist and just thick enough to hold on a spoon. Taste, and adjust the salt.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/temper-spices-in-hot-fat",
+      "works_on": [
+        "ingredient/mustard-seed", "ingredient/black-gram", "ingredient/curry-leaf", "ingredient/dried-red-chilli"
+      ],
+      "with": ["ingredient/coconut-oil"],
+      "text": "Heat the coconut oil in a small pan until a mustard seed sizzles at once. Add the mustard seeds and wait for them to pop, then the urad dal until it turns golden, then the dried chilli and the curry leaves. Pour the hot oil and the spices at once over the chutney and stir them in.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

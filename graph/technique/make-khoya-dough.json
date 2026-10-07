@@ -1,0 +1,53 @@
+{
+  "id": "technique/make-khoya-dough",
+  "tier": "drafted",
+  "names": {"en": "Make khoya dough"},
+  "aliases": {"en": ["make gulab jamun dough"]},
+  "does": "Crumbles khoya and works it with a little flour, milk and a trace of raising agent into a soft, smooth dough with no cracks, and rolls it into small balls that will not split in the fat.",
+  "how": [
+    "Crumble the khoya fine, with no lumps, in a wide bowl.",
+    "Add a little flour and the raising agent, and mix lightly with the fingertips.",
+    "Add milk a spoonful at a time and press the mixture together. Work it gently, only until it is soft and smooth.",
+    "Rub a little ghee on the palms. Roll the dough into small balls with no cracks on the surface.",
+    "Keep the balls covered until they are fried."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The dough is soft and smooth, a little tacky, and holds a ball with no cracks."},
+    {"sense": "see", "text": "The surface of each ball is smooth and unbroken."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Working the dough hard, which makes the cooked balls tough and chewy.",
+      "fix": "Mix lightly and stop as soon as the dough is smooth."
+    },
+    {
+      "mistake": "Adding too much flour, so that the balls turn dense and floury.",
+      "fix": "Use only as much flour as is needed to bring the khoya together."
+    },
+    {
+      "mistake": "Rolling balls with cracks, which open and split in the hot fat.",
+      "fix": "Add a drop of milk and roll again until the surface is smooth."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/khoya", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/khoya-dough", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/milk"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/knead",
+      "differs": "The dough is made of crumbled khoya, with only a little flour, and is worked gently and briefly. There is no gluten to build. Kneading it hard would make the balls tough.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

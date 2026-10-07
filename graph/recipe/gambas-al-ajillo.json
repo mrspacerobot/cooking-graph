@@ -1,0 +1,92 @@
+{
+  "id": "recipe/gambas-al-ajillo",
+  "tier": "drafted",
+  "names": {"en": "Gambas al ajillo"},
+  "aliases": {},
+  "makes": "dish/gambas-al-ajillo",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/shrimp", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "shrimp"},
+    {"thing": "ingredient/garlic", "amount": {"value": 6, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/guindilla", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "guindilla"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 120, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/parsley", "amount": {"value": 4, "unit": "sprig"}, "forms": [], "part": "parsley"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/cazuela", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/paring-knife"
+  ],
+  "steps": [
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/shrimp"],
+      "with": [],
+      "text": "Peel the shrimp, leaving the tails on if liked. Pat them dry with a cloth.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/shrimp"],
+      "with": ["ingredient/salt"],
+      "text": "Salt the shrimp lightly.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/garlic"],
+      "with": [],
+      "text": "Peel the garlic and slice it thin and even.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "Chop the parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-al-ajillo",
+      "works_on": ["ingredient/shrimp"],
+      "with": ["ingredient/olive-oil", "ingredient/garlic", "ingredient/guindilla"],
+      "text": "Put the oil, the garlic and the pieces of hot pepper in a cold earthenware dish and set it over a medium heat. When the garlic bubbles gently and turns pale gold, add the shrimp in one layer and turn the heat up. Shake the dish and take it off the heat as soon as the shrimp turn opaque and curl. Check them against a trusted guide to doneness.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/shrimp"],
+      "with": ["ingredient/parsley"],
+      "text": "Scatter the parsley over the shrimp.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/shrimp"],
+      "with": [],
+      "text": "Take the dish straight to the table, still sizzling, with bread to mop up the oil.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

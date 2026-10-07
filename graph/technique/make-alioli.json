@@ -1,0 +1,61 @@
+{
+  "id": "technique/make-alioli",
+  "tier": "drafted",
+  "names": {"en": "Make alioli"},
+  "aliases": {"en": ["make allioli", "pound alioli"]},
+  "does": "Works garlic with salt in a mortar to a smooth paste, then works in olive oil drop by drop with the pestle, always in one direction, until the paste turns into a thick, pale, glossy sauce. No egg is used: the garlic holds the oil.",
+  "how": [
+    "Peel the garlic and take out any green shoot, which is bitter. Pound it with a little salt in the mortar until it is a smooth paste with no lumps.",
+    "Start turning the pestle in one direction only, and add the oil a drop at a time. Wait until each drop has been taken up before adding more.",
+    "As the sauce thickens and turns pale, the oil can go in as a very thin thread. Keep turning the pestle in the same direction.",
+    "Stop when the sauce is thick enough to stand up on the pestle. Taste, and add salt or a drop of water if it is too strong."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The paste turns from translucent to pale and creamy and stands in soft peaks."},
+    {"sense": "feel", "text": "The pestle goes heavy and the sauce clings to the bowl of the mortar."},
+    {"sense": "taste", "text": "Sweet and sharp with garlic, with no bitter edge."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the oil too fast, so that the sauce splits into oil and a grainy paste.",
+      "fix": "Add it a drop at a time at first. To mend a split sauce, pound a fresh clove with a little water and work the split sauce into it slowly."
+    },
+    {
+      "mistake": "Changing the direction of the pestle, which can undo the sauce.",
+      "fix": "Turn the pestle in one direction only."
+    },
+    {
+      "mistake": "Leaving the green shoot in the garlic, which tastes bitter.",
+      "fix": "Cut each clove open and take the shoot out."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/garlic", "tier": "drafted"},
+    {"thing": "ingredient/olive-oil", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/alioli", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/mortar-and-pestle"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/pound",
+      "why": "The sauce starts as garlic pounded smooth with salt in a mortar.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/emulsify",
+      "differs": "A paste of pounded garlic and no egg yolk holds the oil, and the sauce is made by hand in a mortar with a pestle turned one way, slowly. A mayonnaise is whisked in a bowl with egg yolk.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

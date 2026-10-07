@@ -1,0 +1,32 @@
+{
+  "id": "dish/polenta-ai-funghi",
+  "tier": "drafted",
+  "names": {"en": "Polenta ai funghi", "fr": "Polenta aux champignons"},
+  "aliases": {"en": ["polenta with mushrooms", "polenta e funghi"]},
+  "is": "Soft, creamy polenta of the north, stirred for a long time over a low heat and enriched with butter and cheese, with a dish of mushrooms cooked in garlic and olive oil, and the water from soaking dried porcini, spooned over.",
+  "parts": [
+    {"id": "polenta", "role": "main", "options": ["ingredient/polenta"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "mushroom",
+      "role": "filling",
+      "options": ["ingredient/mushroom", "ingredient/porcini-mushroom"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "finish", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "cheese", "role": "topping", "options": ["ingredient/parmesan"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-polenta", "tier": "drafted"},
+    {"thing": "technique/soak-dried-mushrooms", "tier": "drafted"},
+    {"thing": "technique/saute", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

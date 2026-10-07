@@ -1,0 +1,55 @@
+{
+  "id": "technique/cook-msemen",
+  "tier": "drafted",
+  "names": {"en": "Cook msemen"},
+  "aliases": {},
+  "does": "Stretches a folded square of layered dough out thin again with oiled fingertips, lays it on a hot, lightly oiled griddle and cooks both faces until it is golden in speckles and its layers have set apart, so that it comes away in flaky sheets.",
+  "how": [
+    "Heat a flat griddle or a wide pan over a medium heat and oil it lightly.",
+    "Press the folded square out with oiled fingertips, to a flat square that is still in layers.",
+    "Lay it on the griddle and cook until the underside is gold and speckled.",
+    "Turn it over once and cook the other side the same way.",
+    "Lift it out, clap it between the hands so that the layers open, and serve it hot."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Both faces are golden and speckled, and the edges look layered."},
+    {"sense": "hear", "text": "The fat sizzles gently under the dough."},
+    {"sense": "feel", "text": "The bread is crisp on the outside and soft inside, and pulls apart in thin sheets."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Rolling the square flat with a pin, which crushes the layers together.",
+      "fix": "Press it out with oiled fingertips."
+    },
+    {
+      "mistake": "Cooking on too high a heat, so that the outside burns and the layers inside stay doughy.",
+      "fix": "Keep the heat moderate."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/msemen-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/griddle", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/smen", "ingredient/butter"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/laminate",
+      "why": "The dough has to be folded into layers before it is cooked.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/griddle",
+      "differs": "Griddling cooks flat breads that are already shaped. Here the dough is a folded square of many layers of fat and dough, pressed out thin by hand on the pan itself, turned once, and clapped open at the end.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

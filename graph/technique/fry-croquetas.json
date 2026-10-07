@@ -1,0 +1,60 @@
+{
+  "id": "technique/fry-croquetas",
+  "tier": "drafted",
+  "names": {"en": "Fry croquetas"},
+  "aliases": {"en": ["fry croquettes", "fry the croquetas"]},
+  "does": "Fries coated croquetas in a few at a time in hot oil deep enough to cover them, turning them until the shell is deep golden all round and the paste inside has melted soft.",
+  "how": [
+    "Heat plenty of oil in a deep, heavy pan. A crumb dropped in should sizzle at once and rise.",
+    "Lower a few croquetas in with a slotted spoon. Do not crowd the pan, or the oil cools and the shells go greasy.",
+    "Turn them gently until they are deep golden all round.",
+    "Lift them out onto a rack and let the oil run off. Serve at once, while the shell is crisp and the middle is soft."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A sharp, steady sizzle when they go in, which quietens as the shell sets."},
+    {"sense": "see", "text": "The shell is an even deep gold, with no cracks."},
+    {"sense": "feel", "text": "The croquetas are light for their size and the shell feels firm when pressed."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying in oil that is not hot enough, so that the shell soaks up oil and the paste leaks out.",
+      "fix": "Wait until a crumb sizzles at once, and fry only a few at a time."
+    },
+    {
+      "mistake": "Crowding the pan, which cools the oil.",
+      "fix": "Fry in small batches and let the oil heat up again between them."
+    },
+    {"mistake": "Piercing the shell with a fork while turning.", "fix": "Turn them with a slotted spoon."}
+  ],
+  "works_on": [
+    {"thing": "preparation/croqueta-paste", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"], "tier": "drafted"},
+    {
+      "role": "tool",
+      "options": ["equipment/slotted-spoon", "equipment/thermometer", "equipment/wire-rack"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/shape-and-crumb-croquetas",
+      "why": "There is nothing to fry until the croquetas are shaped and coated.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/deep-fry",
+      "differs": "The food is a soft paste in a fragile shell that has to set in the first moments, so the oil must be hot at once and only a few go in each time. A firm food such as a potato is fried to cook it and then fried again to crisp it.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

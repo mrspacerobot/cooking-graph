@@ -1,0 +1,21 @@
+{
+  "id": "dish/sutlac",
+  "tier": "drafted",
+  "names": {"en": "Sutlac"},
+  "aliases": {"en": ["Turkish rice pudding", "sutlac pudding"]},
+  "is": "A creamy rice pudding of rice simmered soft in plenty of milk with sugar, thickened lightly with rice flour and poured into bowls to set as it cools.",
+  "parts": [
+    {"id": "rice", "role": "main", "options": ["ingredient/rice"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "thickener", "options": ["ingredient/rice-flour"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-sutlac", "tier": "drafted"},
+    {"thing": "technique/thicken", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

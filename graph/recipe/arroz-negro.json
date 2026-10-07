@@ -1,0 +1,97 @@
+{
+  "id": "recipe/arroz-negro",
+  "tier": "drafted",
+  "names": {"en": "Arroz negro"},
+  "aliases": {},
+  "makes": "dish/arroz-negro",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/short-grain-rice", "amount": {"value": 320, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/squid", "amount": {"value": 500, "unit": "gram"}, "forms": ["form/sliced"], "part": "squid"},
+    {"thing": "ingredient/squid-ink", "amount": {"value": 8, "unit": "gram"}, "forms": [], "part": "ink"},
+    {
+      "thing": "ingredient/tomato",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/grated"],
+      "part": "sofrito"
+    },
+    {
+      "thing": "ingredient/garlic",
+      "amount": {"value": 3, "unit": "clove"},
+      "forms": ["form/minced"],
+      "part": "sofrito"
+    },
+    {"thing": "ingredient/paprika", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sofrito"},
+    {"thing": "ingredient/fish-stock", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 5, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "preparation/alioli", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "alioli"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/halved"], "part": "lemon"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/paella-pan", "equipment/saucepan", "equipment/ladle", "equipment/grater",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/saute",
+      "works_on": [],
+      "with": ["ingredient/squid", "ingredient/olive-oil"],
+      "text": "Heat the oil in the paella pan. Add the squid and stir it over a medium-high heat until the liquid it gives off has gone and it has taken a little colour. Push it to the edge of the pan.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-sofrito",
+      "works_on": ["ingredient/tomato", "ingredient/garlic"],
+      "with": ["ingredient/olive-oil", "ingredient/paprika"],
+      "text": "Make a clear space in the middle of the pan. Cook the grated tomato and the garlic there on a low heat, stirring now and then, until the water has gone and the paste is dark and jammy. Take the pan off the heat, stir in the paprika and put it back at once.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/sofrito"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/fish-stock"],
+      "with": ["ingredient/squid-ink"],
+      "text": "Warm the fish stock in a pan until it just simmers, and stir in the squid ink until the stock is evenly black.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/fish-stock"],
+      "with": ["ingredient/salt"],
+      "text": "Taste the stock and add salt until it tastes a little strong, as the rice will soften it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-a-paella",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": ["ingredient/fish-stock", "preparation/sofrito"],
+      "text": "Pour the hot black stock into the pan and bring it to a lively boil. Scatter the rice evenly over the pan and stir once to spread it. Cook it at a strong simmer without stirring, then lower the heat as the rice swells. When the stock has almost gone, turn the heat up for a short while until a faint crackle tells you the bottom is crisping. Take the pan off the heat, cover it with a cloth and let it rest.",
+      "time": {"from": 18, "to": 22, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": ["preparation/alioli", "ingredient/lemon"],
+      "text": "Serve from the pan, with a spoonful of alioli and a wedge of lemon beside each plate.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "technique/sizzle-chilli-butter",
+  "tier": "drafted",
+  "names": {"en": "Sizzle chilli butter"},
+  "aliases": {"en": ["kizdirilmis tereyagi", "sizzled red butter"]},
+  "does": "Melts butter, takes it off the heat and stirs in dried chilli flakes or paprika, which sizzle for a moment and turn the butter bright red and fragrant. It is spooned over yogurt, eggs, dumplings or soup at the last moment.",
+  "how": [
+    "Melt the butter in a small pan over a gentle heat until it foams, and stop before it browns.",
+    "Take the pan off the heat and stir in the chilli flakes or the paprika.",
+    "Stir for a few moments while the flakes sizzle gently and the butter turns a deep red.",
+    "Spoon it over the food at once, while it is still bubbling."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The butter is a clear, bright red and the flakes are sizzling gently, not black."},
+    {"sense": "smell", "text": "A warm, sweet smell of dried pepper, with no scorched edge."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the pan on the heat after the chilli goes in, so that it scorches and turns the butter bitter.",
+      "fix": "Take the pan off the heat before the chilli goes in."
+    },
+    {
+      "mistake": "Browning the butter first, which gives a nutty taste and a dull colour in place of the clean red.",
+      "fix": "Melt the butter only until it foams."
+    },
+    {
+      "mistake": "Making it long before it is needed, so that it turns thick and dull.",
+      "fix": "Make it as the dish is ready and spoon it over while it is hot."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/butter", "tier": "drafted"},
+    {"thing": "ingredient/chili-flakes", "tier": "drafted"},
+    {"thing": "ingredient/paprika", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/chilli-butter", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/melt",
+      "why": "The butter is melted gently first, without letting it colour.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/temper-spices-in-hot-fat",
+      "differs": "The fat is butter and not ghee or oil, the spice is ground or flaked red pepper and not whole seeds, and the pan is off the heat when the pepper goes in, so that the red does not scorch. The butter is spooned over finished food as a sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

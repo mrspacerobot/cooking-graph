@@ -1,0 +1,91 @@
+{
+  "id": "recipe/onigiri",
+  "tier": "drafted",
+  "names": {"en": "Onigiri"},
+  "aliases": {},
+  "makes": "dish/onigiri",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/rice", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/water", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/umeboshi", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "filling"},
+    {"thing": "ingredient/nori", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "nori"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/mixing-bowl", "equipment/fine-sieve",
+    "equipment/rice-paddle", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/wash-rice",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/water"],
+      "text": "Wash the rice in several changes of cold water until the water is much less cloudy, and drain it in a sieve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/soak-rice",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/water"],
+      "text": "Leave the washed rice in cold water until the grains turn chalky white, then drain it well.",
+      "time": {"from": 30, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-rice",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/water"],
+      "text": "Cook the rice in its measured water in a covered pot until the water is taken up.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/rest-and-fluff",
+      "works_on": ["ingredient/rice"],
+      "with": [],
+      "text": "Leave the pot covered off the heat, then cut through the rice with a wet paddle to loosen the grains. Let it cool until it can be handled comfortably.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/salt-hands",
+      "works_on": ["ingredient/salt"],
+      "with": ["ingredient/water"],
+      "text": "Dip the fingers in cold water and rub a little salt over the palms. Wet and salt the hands again for each portion.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape-by-hand",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/salt", "ingredient/water", "ingredient/umeboshi"],
+      "text": "Scoop up a portion of warm rice, press a little pickled plum flesh into the middle and close the rice over it. Turn it in the hand, pressing a corner at a time, into a firm triangle. Squeeze only enough to hold it together.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/wrap-in-nori",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/nori"],
+      "text": "Cut the nori into strips and wrap one round the base of each rice triangle just before it is eaten.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

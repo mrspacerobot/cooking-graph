@@ -1,0 +1,20 @@
+{
+  "id": "preparation/chapati-dough",
+  "tier": "drafted",
+  "names": {"en": "Chapati dough"},
+  "aliases": {"en": ["roti dough", "atta dough"]},
+  "is": "A soft dough of whole wheat flour and water, with no yeast, rested and then divided into small balls to roll into thin rounds.",
+  "parts": [
+    {"id": "flour", "role": "base", "options": ["ingredient/whole-wheat-flour"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-atta-dough", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

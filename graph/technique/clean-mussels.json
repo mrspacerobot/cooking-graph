@@ -1,0 +1,51 @@
+{
+  "id": "technique/clean-mussels",
+  "tier": "drafted",
+  "names": {"en": "Clean mussels", "fr": "Nettoyer les moules"},
+  "aliases": {
+    "en": ["debeard mussels", "scrub mussels", "beard mussels"],
+    "fr": ["ébarber les moules", "gratter les moules"]
+  },
+  "does": "Scrubs the shells of mussels and pulls off the tuft of fibres at the hinge, which is called the beard, so that nothing gritty reaches the pot. Mussels are cleaned just before they are cooked.",
+  "how": [
+    "Tip the mussels into a bowl of cold water and lift them out by the handful, leaving the grit in the bottom of the bowl.",
+    "Tap any open shell on the side of the bowl. Leave out any that stays open.",
+    "Scrape off barnacles and dirt with the back of a knife.",
+    "Take the tuft of fibres at the hinge between a thumb and the knife blade and pull it firmly towards the hinge end until it comes away.",
+    "Rinse once more and keep the mussels cold until they go into the pot."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The shells are closed and clean, with no tufts left sticking out."},
+    {"sense": "smell", "text": "They smell fresh, of clean sea water."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the mussels to soak for a long time in fresh water, which weakens them.",
+      "fix": "Rinse them quickly in cold water and cook them soon after."
+    },
+    {
+      "mistake": "Pulling the beard the wrong way, towards the point of the shell, which can tear the mussel.",
+      "fix": "Pull towards the hinge end."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/mussel", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/colander"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/paring-knife"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/purge-clams",
+      "differs": "Clams are left to stand in salted water so that they give up their sand. Mussels hold little sand, so they are scrubbed, bearded and cooked soon after, and are never left to stand.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

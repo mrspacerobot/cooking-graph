@@ -1,0 +1,22 @@
+{
+  "id": "preparation/mascarpone-cream",
+  "tier": "drafted",
+  "names": {"en": "Mascarpone cream", "fr": "Crème au mascarpone"},
+  "aliases": {"en": ["tiramisu cream"]},
+  "is": "A smooth, thick, cold cream of mascarpone loosened with a sweet egg-yolk foam that is flavoured with Marsala. It is the cream between the layers of tiramisu.",
+  "parts": [
+    {"id": "mascarpone", "role": "main", "options": ["ingredient/mascarpone"], "optional": false, "tier": "drafted"},
+    {"id": "yolk", "role": "enrichment", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "marsala", "role": "liquid", "options": ["ingredient/marsala"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-mascarpone-cream", "tier": "drafted"},
+    {"thing": "technique/whisk-over-a-bain-marie", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

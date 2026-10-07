@@ -1,0 +1,82 @@
+{
+  "id": "recipe/tarte-tatin",
+  "tier": "drafted",
+  "names": {"en": "Tarte Tatin", "fr": "Tarte Tatin"},
+  "aliases": {},
+  "makes": "dish/tarte-tatin",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/apple", "amount": {"value": 1.2, "unit": "kilogram"}, "forms": [], "part": "apple"},
+    {"thing": "ingredient/sugar", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/butter", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "water"},
+    {"thing": "preparation/puff-pastry", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "pastry"},
+    {"thing": "ingredient/flour", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "flour"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/saute-pan", "equipment/saucepan", "equipment/rolling-pin",
+    "equipment/spatula", "equipment/paring-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/apple"],
+      "with": [],
+      "text": "Peel the apples.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/core",
+      "works_on": ["ingredient/apple"],
+      "with": [],
+      "text": "Cut the apples in half and scoop out the cores.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-caramel",
+      "works_on": ["ingredient/sugar"],
+      "with": ["ingredient/water", "ingredient/butter"],
+      "text": "Melt the sugar with the water in the ovenproof pan over a medium heat, without stirring, until it turns a deep amber. Take it off the heat and stir in the butter.",
+      "time": {"from": 6, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roll-out",
+      "works_on": ["preparation/puff-pastry"],
+      "with": ["ingredient/flour"],
+      "text": "Roll the pastry out on a floured surface into a round a little wider than the pan, and chill it while the apples cook.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-a-tarte-tatin",
+      "works_on": ["ingredient/apple", "preparation/puff-pastry"],
+      "with": [],
+      "text": "Pack the apple halves tightly into the caramel, rounded side down, and cook on the stove until the caramel is thick and the apples have begun to soften. Lay the pastry over the apples and tuck the edge down inside the pan. Prick it in a few places and bake until puffed and deep gold. Rest briefly, then lay a plate over the pan and turn it over with care.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/apple"],
+      "with": [],
+      "text": "Lift away the pan and put back any apple that has stuck to it. Serve warm.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

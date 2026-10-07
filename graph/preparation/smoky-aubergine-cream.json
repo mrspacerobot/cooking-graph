@@ -1,0 +1,29 @@
+{
+  "id": "preparation/smoky-aubergine-cream",
+  "tier": "drafted",
+  "names": {"en": "Smoky aubergine cream"},
+  "aliases": {"en": ["begendi"]},
+  "is": "A thick white sauce of flour, butter and milk with charred aubergine flesh and melted cheese beaten in, served warm under braised meat.",
+  "parts": [
+    {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "enrichment",
+      "options": ["ingredient/kashkaval-cheese"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-begendi", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

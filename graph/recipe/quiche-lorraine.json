@@ -1,0 +1,117 @@
+{
+  "id": "recipe/quiche-lorraine",
+  "tier": "drafted",
+  "names": {"en": "Quiche Lorraine", "fr": "Quiche lorraine"},
+  "aliases": {},
+  "makes": "dish/quiche-lorraine",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/flour", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "pastry"},
+    {"thing": "ingredient/butter", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "pastry"},
+    {"thing": "ingredient/water", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "pastry"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/flour", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/bacon", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "bacon"},
+    {"thing": "ingredient/egg", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/cream", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "custard"},
+    {"thing": "ingredient/milk", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "milk"},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "nutmeg"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/mixing-bowl", "equipment/chefs-knife", "equipment/rolling-pin",
+    "equipment/tart-tin", "equipment/baking-beans", "equipment/parchment-paper", "equipment/frying-pan",
+    "equipment/whisk", "equipment/oven", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-shortcrust-pastry",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter", "ingredient/water", "ingredient/salt"],
+      "text": "Rub the cold butter into the flour and a little salt with the fingertips until it looks like fine crumbs. Add cold water a spoonful at a time until the crumbs cling, press them into a flat round without kneading, wrap it and rest it in a cool place until firm.",
+      "time": {"from": 30, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/shortcrust-pastry"]
+    },
+    {
+      "technique": "technique/roll-out",
+      "works_on": ["preparation/shortcrust-pastry"],
+      "with": ["ingredient/flour"],
+      "text": "Roll the pastry out on a floured surface into a round a little wider than the tin. Lift it into the tin, press it into the corners and trim the edge.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/prick",
+      "works_on": ["preparation/shortcrust-pastry"],
+      "with": [],
+      "text": "Prick the base all over with a fork.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/blind-bake",
+      "works_on": ["preparation/shortcrust-pastry"],
+      "with": [],
+      "text": "Line the case with paper, fill it with baking beans and bake until the edges are set and pale gold. Lift out the paper and beans and bake a little longer, until the base is dry.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": {"value": 190, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/bacon"],
+      "with": [],
+      "text": "Cut the bacon into short, thick strips.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/render",
+      "works_on": ["ingredient/bacon"],
+      "with": [],
+      "text": "Cook the bacon in a dry pan over a gentle heat until the fat has run out and the strips are lightly coloured. Lift them out and drain them on paper.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/cream", "ingredient/milk", "ingredient/nutmeg", "ingredient/salt"],
+      "text": "Whisk the eggs with the cream, the milk and the nutmeg until smooth. Season with a little salt, going lightly because the bacon is salty.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/pour-over",
+      "works_on": ["ingredient/cream", "ingredient/milk"],
+      "with": ["ingredient/bacon", "ingredient/egg"],
+      "text": "Scatter the bacon over the base of the case and pour the egg mixture over it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["preparation/shortcrust-pastry"],
+      "with": [],
+      "text": "Bake in a moderate oven until the filling is just set, with a slight wobble in the middle, and the top is lightly golden. Check it against a trusted guide to doneness. Leave it to stand before cutting.",
+      "time": {"from": 30, "to": 35, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

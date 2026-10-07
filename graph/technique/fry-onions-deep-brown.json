@@ -1,0 +1,69 @@
+{
+  "id": "technique/fry-onions-deep-brown",
+  "tier": "drafted",
+  "names": {"en": "Fry onions to deep brown"},
+  "aliases": {"en": ["birista", "beresta", "crisp fried onions"]},
+  "does": "Fries thinly sliced onions in a generous amount of fat until their water has gone and they turn deep brown and crisp, then lifts them out to drain. They are crushed into a marinade, layered into rice, scattered on top, or stirred into a gravy.",
+  "how": [
+    "Slice the onions thin and even, so that they brown together. Spread them out to dry a little if they are wet.",
+    "Heat plenty of fat in a wide pan until a slice sizzles at once, then add the onions in a loose layer.",
+    "Stir often at a steady medium heat. They go limp, then pale gold, then amber.",
+    "Lower the heat as the colour deepens. The last stage takes only moments, so stay at the pan.",
+    "Lift them out with a slotted spoon the moment they are deep brown, and spread them on paper to drain. They crisp as they cool."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The slices pass from limp and pale to amber and then deep brown, with the edges darkest."
+    },
+    {
+      "sense": "hear",
+      "text": "The sizzle is loud while the onions are wet and fades to a quiet crackle as the water goes."
+    },
+    {"sense": "feel", "text": "A slice lifted out and left to cool snaps between the fingers."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Crowding the pan, so that the onions steam and stay limp and pale.",
+      "fix": "Fry in a wide pan, in a thin layer, or in batches."
+    },
+    {
+      "mistake": "Walking away at the end, when the onions turn from brown to bitter black in moments.",
+      "fix": "Lift them out while they are a shade lighter than wanted. They go on darkening in the fat they carry."
+    },
+    {
+      "mistake": "Leaving them in the hot fat to cool, so that they go soft and greasy.",
+      "fix": "Lift them out and spread them on paper at once."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/onion", "tier": "drafted"},
+    {"thing": "ingredient/shallot", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/fried-onions", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil", "ingredient/ghee"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/slice",
+      "why": "Slices of an even width brown together, so the cook has to be able to slice onions evenly first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/caramelize",
+      "differs": "Caramelising keeps the onions soft and sticky, in little fat and over a low heat. Here the slices swim in a generous amount of fat at a steady medium heat until they dry out, turn deep brown and crisp, and are lifted out and drained, to be used as a topping, a layer or a flavouring.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

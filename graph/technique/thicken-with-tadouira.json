@@ -1,0 +1,61 @@
+{
+  "id": "technique/thicken-with-tadouira",
+  "tier": "drafted",
+  "names": {"en": "Thicken with tadouira"},
+  "aliases": {"en": ["tadouira", "thicken a soup with flour paste"]},
+  "does": "Stirs a loose paste of flour and cold water into a hot soup in a slow stream, then keeps the soup at a simmer until the flour has lost its raw taste, so that the soup turns silky and gains body. Beaten egg is sometimes stirred in at the end.",
+  "how": [
+    "Whisk the flour into plenty of cold water until it is as smooth and loose as cream, with no lump left.",
+    "Bring the soup to a steady simmer and keep stirring as you pour the paste in, in a thin stream.",
+    "Keep stirring until the soup comes back to the simmer, then let it bubble gently for a good while, so that the flour cooks out.",
+    "Stir in the beaten egg last, if the soup is to have it, off the boil."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The soup turns from thin and clear to glossy and slightly cloudy, and coats the back of a spoon."
+    },
+    {"sense": "taste", "text": "The raw taste of flour is gone and the soup tastes round."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Tipping the paste into the soup all at once, which leaves lumps.",
+      "fix": "Pour it in a thin stream while stirring."
+    },
+    {
+      "mistake": "Mixing the flour with hot liquid, which clots it.",
+      "fix": "Always whisk the flour with cold water first."
+    },
+    {
+      "mistake": "Stopping as soon as the soup thickens, which leaves a taste of raw flour.",
+      "fix": "Let it simmer on until the taste is gone."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk", "equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "The paste goes into a soup that is already simmering, so a cook has to hold a steady simmer first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/thicken",
+      "differs": "Thickening stirs a starch mixed smooth in a little cold liquid into a sauce. Tadouira uses plain wheat flour whisked into a loose paste with a good deal of cold water, poured into the soup in a thin stream, and the soup is then simmered on for a good while so that the flour cooks out. No roux is made.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "technique/fry-masala-base",
+  "tier": "drafted",
+  "names": {"en": "Fry a masala base"},
+  "aliases": {"en": ["bhuna", "bhunao", "bhuno", "cook the masala", "fry until the oil separates"]},
+  "does": "Cooks onion, ginger and garlic, ground spices and tomato in fat over a medium heat, stirring often and sprinkling a little water when the pan dries, until the water of the vegetables is gone and the fat parts from the paste and shines on its edge. This is the base of a gravy.",
+  "how": [
+    "Heat the fat and cook the sliced or chopped onion until it is soft and golden.",
+    "Add the ginger and garlic paste or the spice paste and stir until the raw smell goes.",
+    "Add the ground spices and stir for a few moments. Sprinkle in a little water if they catch.",
+    "Add the tomato, mash it down with the spoon and cook, stirring, until it has collapsed into a thick paste.",
+    "Go on until the fat separates from the paste and gathers in a bright pool at the edge. Add a spoonful of water and scrape the pan whenever the paste sticks."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The paste turns a deeper colour and shiny fat parts from it and gathers at the edge of the pan."
+    },
+    {
+      "sense": "smell",
+      "text": "The raw sharp smell of garlic and spice is gone, replaced by a rounded, roasted scent."
+    },
+    {"sense": "feel", "text": "The spoon leaves a clean track across the paste on the pan."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the liquid too soon, before the fat has parted, so that the gravy tastes raw and thin.",
+      "fix": "Wait until the fat shines at the edge of the paste."
+    },
+    {
+      "mistake": "Burning the ground spices by frying them in dry, hot fat.",
+      "fix": "Keep the heat moderate, sprinkle in a little water when the pan dries, and add the tomato soon after the spices."
+    },
+    {
+      "mistake": "Rushing it over a high heat, which scorches the paste.",
+      "fix": "Keep a medium heat and be patient. The wait is the point."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/onion", "tier": "drafted"},
+    {"thing": "ingredient/tomato", "tier": "drafted"},
+    {"thing": "preparation/spice-paste", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saute-pan", "equipment/frying-pan", "equipment/saucepan"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/ghee", "ingredient/oil", "ingredient/butter"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-spice-paste",
+      "why": "The base is built on a paste of ginger, garlic and spices, so a cook has to be able to make one first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/make-a-sofrito",
+      "differs": "A sofrito is cooked slowly in olive oil to a sweet, jammy paste. Here ground spices and a spice paste go in as well, with a splash of water whenever the pan dries, and the cook stops when the fat parts from the paste.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

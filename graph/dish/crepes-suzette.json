@@ -1,0 +1,23 @@
+{
+  "id": "dish/crepes-suzette",
+  "tier": "drafted",
+  "names": {"en": "Crêpes Suzette", "fr": "Crêpes Suzette"},
+  "aliases": {"fr": ["crêpes à l'orange flambées"]},
+  "is": "Thin crepes folded into a hot sauce of caramel, orange and butter, then set alight with a spirit at the end and served with the sauce spooned over.",
+  "parts": [
+    {"id": "crepe", "role": "main", "options": ["preparation/crepe"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "orange", "role": "sauce", "options": ["ingredient/orange"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "spirit", "role": "liquid", "options": ["ingredient/cognac"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/warm-crepes-in-orange-sauce", "tier": "drafted"},
+    {"thing": "technique/make-crepes", "tier": "drafted"},
+    {"thing": "technique/make-a-caramel", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

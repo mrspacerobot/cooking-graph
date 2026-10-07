@@ -1,0 +1,63 @@
+{
+  "id": "technique/fry-a-cutlet",
+  "tier": "drafted",
+  "names": {"en": "Fry a cutlet"},
+  "aliases": {"en": ["fry katsu", "deep-fry a crumbed cutlet"]},
+  "does": "Fries a crumbed cutlet whole in deep oil, turning it once, until the crust is deep gold. It is then stood upright to drain, rested a little and cut across in strips, so that the crust stays crisp.",
+  "how": [
+    "Heat deep oil in a heavy pan to a moderate heat, enough to cover the cutlet.",
+    "Test it with a few flakes of panko, which should sink briefly and then rise in a stream of fine bubbles.",
+    "Lower in one cutlet at a time, so that the oil keeps its heat, and leave it alone until the crust has set.",
+    "Turn it once and fry until the crust is deep gold on both sides.",
+    "Lift it out and stand it upright against a rack, so that the oil drains from the crust instead of pooling under it.",
+    "Rest it for a short while, then cut across in strips with a sharp knife, sawing lightly so that the crust does not shatter."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A steady, lively sizzle that softens as the cutlet browns."},
+    {"sense": "see", "text": "An even, deep gold crust, with the bubbles around it slowing down."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying in oil that is too hot, so that the crust browns before the meat is ready.",
+      "fix": "Keep the heat moderate and test with a few flakes of panko."
+    },
+    {
+      "mistake": "Laying the fried cutlet flat on a plate, where it steams and the crust goes soft.",
+      "fix": "Stand it upright against a rack."
+    },
+    {
+      "mistake": "Cutting at once, so that the juice runs out and the crust goes limp.",
+      "fix": "Let it rest for a short while first."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/pork-loin", "tier": "drafted"},
+    {"thing": "ingredient/pork-tenderloin", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/thermometer"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wire-rack"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/coat-in-panko",
+      "why": "The crust must be on the meat before it goes into the oil.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/deep-fry",
+      "differs": "One thick, crumbed piece of meat is fried whole at a moderate heat and turned once, then stood upright to drain, rested and cut across, where deep-frying works on small pieces and is salted at once.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

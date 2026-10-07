@@ -1,0 +1,32 @@
+{
+  "id": "dish/arroz-negro",
+  "tier": "drafted",
+  "names": {"en": "Arroz negro"},
+  "aliases": {"en": ["squid ink rice", "arros negre", "rice with squid ink"]},
+  "is": "Rice cooked in a wide, shallow pan in a fish broth that has been coloured black with squid ink, on a base of sofrito, with pieces of squid. As in a paella, the rice is cooked in a thin layer and not stirred. It is often served with a spoonful of garlic sauce and a wedge of lemon.",
+  "parts": [
+    {"id": "rice", "role": "main", "options": ["ingredient/short-grain-rice"], "optional": false, "tier": "drafted"},
+    {
+      "id": "squid",
+      "role": "main",
+      "options": ["ingredient/squid", "ingredient/cuttlefish"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "ink", "role": "seasoning", "options": ["ingredient/squid-ink"], "optional": false, "tier": "drafted"},
+    {"id": "sofrito", "role": "base", "options": ["preparation/sofrito"], "optional": false, "tier": "drafted"},
+    {"id": "stock", "role": "liquid", "options": ["ingredient/fish-stock"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "alioli", "role": "topping", "options": ["preparation/alioli"], "optional": true, "tier": "drafted"},
+    {"id": "lemon", "role": "garnish", "options": ["ingredient/lemon"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-a-paella", "tier": "drafted"},
+    {"thing": "technique/make-a-sofrito", "tier": "drafted"},
+    {"thing": "technique/make-alioli", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

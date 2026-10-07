@@ -1,0 +1,29 @@
+{
+  "id": "dish/trenette-al-pesto",
+  "tier": "drafted",
+  "names": {"en": "Trenette al pesto", "fr": "Trenette au pesto"},
+  "aliases": {"en": ["trenette al pesto genovese", "trenette with pesto"]},
+  "is": "The Ligurian way with pesto: flat ribbons of dried pasta boiled in the same pot as sliced potato and green beans, then stirred off the heat into a raw sauce of pounded basil, garlic, pine nuts, cheese and olive oil.",
+  "parts": [
+    {
+      "id": "pasta",
+      "role": "main",
+      "options": ["ingredient/trenette", "ingredient/spaghetti"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "pesto", "role": "sauce", "options": ["preparation/pesto"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "side", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "beans", "role": "side", "options": ["ingredient/green-beans"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-a-pesto", "tier": "drafted"},
+    {"thing": "technique/boil-pasta", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

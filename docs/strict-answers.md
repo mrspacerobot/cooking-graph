@@ -3,7 +3,7 @@
 Written by `./safety strict`. An ingredient holds a fact for certain, or the fact is recorded strictly because a common form of the ingredient may hold it.
 The rows below are the strict ones. How strict to be is for the owner to rule, reason by reason. Every safety record is unverified either way.
 
-317 of the 586 facts that ingredients hold are strict.
+318 of the 589 facts that ingredients hold are strict.
 
 | Fact | Basis | Ingredients |
 |---|---|---|
@@ -42,7 +42,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/egg` | Recorded strictly: some soba is bound with egg. | soba-noodle |
 | `fact/egg` | Some bought pita holds egg. | pita-bread |
 | `fact/egg` | Some makers add egg to thin pastry sheets. | warqa |
-| `fact/egg` | Some pasta is made with egg. | ditalini, small-pasta, spaghetti |
+| `fact/egg` | Some pasta is made with egg. | ditalini, small-pasta, spaghetti, trenette |
 | `fact/egg` | Some wines are cleared with egg white. | dry-sherry |
 | `fact/egg` | Wine may be cleared with egg white. | madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
 | `fact/fish` | Beer may be cleared with isinglass, which comes from fish. | beer |

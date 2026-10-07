@@ -1,0 +1,25 @@
+{
+  "id": "preparation/chilli-butter",
+  "tier": "drafted",
+  "names": {"en": "Chilli butter"},
+  "aliases": {"en": ["red butter", "kizdirilmis tereyagi"]},
+  "is": "Melted butter with dried chilli flakes or paprika sizzled into it until it turns red, spooned over food as a last touch.",
+  "parts": [
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli",
+      "role": "seasoning",
+      "options": ["ingredient/chili-flakes", "ingredient/paprika"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/sizzle-chilli-butter", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

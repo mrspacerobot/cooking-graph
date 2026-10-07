@@ -2,7 +2,7 @@
   "id": "ingredient/squid",
   "tier": "drafted",
   "names": {"en": "Squid", "fr": "Calmar"},
-  "aliases": {},
+  "aliases": {"en": ["calamar"]},
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -2,7 +2,7 @@
   "id": "ingredient/shrimp",
   "tier": "drafted",
   "names": {"en": "Shrimp", "fr": "Crevette"},
-  "aliases": {"en": ["prawn", "garides"]},
+  "aliases": {"en": ["prawn", "garides", "gamba"]},
   "is_a": [],
   "part_of": [],
   "groups": [

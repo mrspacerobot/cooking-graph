@@ -1,0 +1,96 @@
+{
+  "id": "recipe/patatas-bravas",
+  "tier": "drafted",
+  "names": {"en": "Patatas bravas"},
+  "aliases": {},
+  "makes": "dish/patatas-bravas",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/potato", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/flour", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/paprika", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/hot-paprika", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/water", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/saucepan", "equipment/whisk", "equipment/slotted-spoon",
+    "equipment/thermometer", "equipment/wire-rack", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/vegetable-peeler"
+  ],
+  "steps": [
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Peel the potatoes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-chunks",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Cut the potatoes into chunks about the size of a walnut, as even as possible.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/double-fry",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Fry the potatoes in a moderate oil until a knife slips in and they are pale, with no colour. Lift them out onto a rack and let them rest while the oil heats up.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": {"value": 140, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/double-fry",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Fry the potatoes again in the hotter oil, in batches, until they are deep golden and crisp on all sides.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": {"value": 190, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-salsa-brava",
+      "works_on": ["ingredient/flour", "ingredient/paprika"],
+      "with": ["ingredient/olive-oil", "ingredient/hot-paprika", "ingredient/tomato-paste", "ingredient/water"],
+      "text": "While the potatoes rest, warm the olive oil in a small pan and stir in the flour until it smells nutty. Take the pan off the heat and stir in both paprikas. Whisk in the tomato paste and then the water, a little at a time. Simmer, whisking, until the sauce is thin and glossy and coats a spoon lightly.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/salsa-brava"]
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/salt"],
+      "text": "Salt the hot potatoes straight away.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/potato", "preparation/salsa-brava"],
+      "with": [],
+      "text": "Pile the potatoes in a dish and spoon the sauce over them at the last moment, so that they stay crisp.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

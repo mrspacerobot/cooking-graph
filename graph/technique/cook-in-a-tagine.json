@@ -1,0 +1,67 @@
+{
+  "id": "technique/cook-in-a-tagine",
+  "tier": "drafted",
+  "names": {"en": "Cook in a tagine", "fr": "Cuire en tajine"},
+  "aliases": {"en": ["tagine", "tajine", "cook a tagine", "cook in a tajine"], "fr": ["tajine"]},
+  "does": "Cooks meat or poultry slowly over low heat in a shallow earthenware dish under a tall cone lid, on a bed of sliced onion, fat and spices, with only a little water. The steam rises into the cone, cools and runs back down, so the food stews in its own juices and the sauce stays short and strong.",
+  "how": [
+    "Spread sliced onion over the base of the dish with the fat and the spices, and pour in a little water, only enough to wet the base.",
+    "Lay the meat on top and season it. Do not brown it first.",
+    "Put on the lid and set the dish over the lowest heat, with a diffuser under it if the flame is fierce. Leave it alone and lift the lid as seldom as you can.",
+    "When the meat is tender, spread over it whatever finishes the dish, such as dried fruit, olives or vegetables, and cover again.",
+    "Cook on until the sauce has shrunk to a rich coat and the fat shines on top."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Only a few small bubbles stir at the edge of the sauce, and a little steam rises from the top of the cone."
+    },
+    {"sense": "feel", "text": "The meat gives way to the side of a spoon without a pull."},
+    {"sense": "smell", "text": "The scent of the spices turns round and warm, with no sharp note of scorching."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Setting the dish on a fierce heat, which scorches the base and can crack the clay.",
+      "fix": "Start on the lowest heat, use a diffuser, and bring the heat up slowly."
+    },
+    {
+      "mistake": "Pouring in water to cover, which makes a thin soup and washes out the taste of the spices.",
+      "fix": "Start with only a little. The lid sends the steam back down."
+    },
+    {
+      "mistake": "Lifting the lid again and again, which lets the steam escape.",
+      "fix": "Leave it covered and check only near the end."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/braising-liquid", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/tagine", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/smen", "ingredient/olive-oil", "ingredient/butter"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/sweat",
+      "why": "A tagine starts on a bed of softened onion, so a cook has to know how to soften onion in fat without colour.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/braise",
+      "differs": "Braising browns the food first and cooks it in a measured amount of liquid. A tagine skips the browning, lays the meat on a bed of onion and spices and adds only a little water, because the cone lid sends the steam back down.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

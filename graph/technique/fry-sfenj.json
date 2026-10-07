@@ -1,0 +1,55 @@
+{
+  "id": "technique/fry-sfenj",
+  "tier": "drafted",
+  "names": {"en": "Fry sfenj"},
+  "aliases": {"en": ["fry Moroccan doughnuts"]},
+  "does": "Shapes lumps of very soft, risen dough into rings with a wet hand and drops them into hot oil, turning them once, until they puff up golden with a thin crisp crust and a light, chewy crumb. They are lifted out at once, drained and tossed in sugar.",
+  "how": [
+    "Heat the oil until a scrap of dough dropped in sizzles and rises at once.",
+    "Wet one hand and a plate. Pull off a lump of dough, flatten it, and poke a hole through the middle with a wet thumb.",
+    "Slide the ring into the oil and fry only a few at a time, so that the oil stays hot.",
+    "Turn each ring once with a skewer or the handle of a spoon when it has puffed and coloured underneath.",
+    "Lift the rings out when golden on both sides, drain them well and toss them in sugar while they are warm."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The ring floats, swells and turns an even gold on both sides."},
+    {"sense": "hear", "text": "The oil sizzles steadily and not wildly."},
+    {"sense": "feel", "text": "A finished ring is light for its size and springs back when pressed."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying in oil that is too cool, which makes greasy, heavy rings.",
+      "fix": "Test the oil with a scrap of dough first."
+    },
+    {"mistake": "Putting in too many at once, which cools the oil.", "fix": "Fry a few at a time."},
+    {"mistake": "Handling the dough with dry hands, which sticks and tears it.", "fix": "Wet the hand each time."}
+  ],
+  "works_on": [
+    {"thing": "preparation/bread-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/thermometer"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/proof",
+      "why": "The dough must have risen until it is light and full of gas before it goes into the oil.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/deep-fry",
+      "differs": "Deep-frying cooks food that is firm or coated. Here the food is a sticky raw dough that is shaped in the hand moments before it goes in, and the oil is what makes it puff.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

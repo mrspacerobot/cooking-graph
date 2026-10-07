@@ -1,0 +1,57 @@
+{
+  "id": "technique/make-atta-dough",
+  "tier": "drafted",
+  "names": {"en": "Make atta dough"},
+  "aliases": {"en": ["knead chapati dough", "make roti dough", "make chapati dough", "knead atta"]},
+  "does": "Works whole wheat flour and water into a soft, smooth dough with no yeast, then lets it rest. A rested dough is easy to roll thin and cooks into a soft, flexible flat bread.",
+  "how": [
+    "Put the flour in a wide bowl with a little salt, and make a well.",
+    "Add warm water a little at a time, and bring the flour together with the fingers of one hand.",
+    "Press and fold the dough with the heel of the hand until it is smooth and soft, and no longer sticks to the bowl. It should be softer than a bread dough.",
+    "Rub the surface with a drop of oil, cover the bowl with a damp cloth, and leave the dough to rest.",
+    "Knead it briefly once more, then tear off equal balls and roll each one between the palms until it is smooth."
+  ],
+  "cues": [
+    {
+      "sense": "feel",
+      "text": "The dough is soft as an earlobe, springs back slowly when pressed, and does not stick to the hands."
+    },
+    {"sense": "see", "text": "The surface is smooth and even, with no cracks, after the rest."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Making the dough stiff, so that the breads turn hard and do not puff.",
+      "fix": "Add water until the dough is soft and just short of sticky."
+    },
+    {
+      "mistake": "Skipping the rest, so that the dough springs back as it is rolled.",
+      "fix": "Cover it and leave it until it is relaxed."
+    },
+    {
+      "mistake": "Letting the covered dough dry, so that a crust forms and shows as cracks and specks in the bread.",
+      "fix": "Cover it with a damp cloth or a plate."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/whole-wheat-flour", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/chapati-dough", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/knead",
+      "differs": "The dough has no yeast and is worked only until it is smooth and soft, then left to rest. It is never worked until it turns elastic, and the softness comes from a high share of water.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

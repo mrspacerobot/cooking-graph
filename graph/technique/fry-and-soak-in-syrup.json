@@ -1,0 +1,65 @@
+{
+  "id": "technique/fry-and-soak-in-syrup",
+  "tier": "drafted",
+  "names": {"en": "Fry and soak in syrup"},
+  "aliases": {"en": ["fry in ghee and soak in syrup"]},
+  "does": "Fries balls of dough slowly in ghee over a gentle heat until they are deep brown and cooked to the middle, then drops them into warm sugar syrup, which they drink up until they are soft, swollen and sweet to the centre.",
+  "how": [
+    "Make the syrup first and keep it warm. It should be thin and sticky, not thick.",
+    "Heat the ghee or oil gently. A test ball should rise slowly, with a few bubbles, and not brown at once.",
+    "Slide in a few balls and shake the pan so that they turn. Keep the heat low, so that they swell and colour slowly.",
+    "Fry until they are deep, even brown all over. Lift them out with a slotted spoon and let the extra fat drip off.",
+    "Drop the hot balls into the warm syrup and leave them to soak, turning once, until they swell and are soft all the way through."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The balls swell, rise and turn an even, deep reddish brown, with no pale patches."},
+    {"sense": "feel", "text": "A soaked ball is soft and spongy, and gives under the spoon without breaking."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying in fat that is too hot, so that the outside darkens while the middle stays raw and dense.",
+      "fix": "Test with one ball and keep the heat low."
+    },
+    {
+      "mistake": "Putting the balls into cold or boiling syrup, so that they stay hard or fall apart.",
+      "fix": "Keep the syrup warm and thin."
+    },
+    {
+      "mistake": "Making the syrup too thick, so that it sits on the surface and does not soak in.",
+      "fix": "Boil it just until it turns sticky."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/khoya-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/ghee", "ingredient/oil"], "tier": "drafted"},
+    {"role": "liquid", "options": ["preparation/sugar-syrup"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-khoya-dough",
+      "why": "The balls are made from khoya dough, so the dough comes first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/deep-fry",
+      "differs": "The fat is held low and gentle, so that the balls swell and colour slowly and the middle cooks. It is not a hot fry meant to crisp a thin crust, and the fried balls are not drained dry, they go into syrup.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/soak",
+      "differs": "The soaking is done in warm sugar syrup, straight after frying, so that the fried balls drink it up as they cool.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

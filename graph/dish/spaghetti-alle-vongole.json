@@ -1,0 +1,27 @@
+{
+  "id": "dish/spaghetti-alle-vongole",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti alle vongole", "fr": "Spaghetti aux palourdes"},
+  "aliases": {"en": ["spaghetti with clams", "spaghetti alle vongole veraci"], "fr": ["spaghettis aux palourdes"]},
+  "is": "Spaghetti tossed in a light sauce made only of the juices of fresh clams, which have been purged of sand and opened in white wine with garlic, chilli and olive oil. Parsley goes on at the end, and no cheese.",
+  "parts": [
+    {"id": "pasta", "role": "main", "options": ["ingredient/spaghetti"], "optional": false, "tier": "drafted"},
+    {"id": "clam", "role": "main", "options": ["ingredient/clam"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "chilli", "role": "aromatic", "options": ["ingredient/chilli"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/purge-clams", "tier": "drafted"},
+    {"thing": "technique/steam", "tier": "drafted"},
+    {"thing": "technique/boil-pasta", "tier": "drafted"},
+    {"thing": "technique/toss-pasta-with-sauce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "recipe/souffle-au-fromage",
+  "tier": "drafted",
+  "names": {"en": "Cheese soufflé", "fr": "Soufflé au fromage"},
+  "aliases": {},
+  "makes": "dish/souffle-au-fromage",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/butter", "amount": {"value": 70, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/flour", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/milk", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/egg-yolk", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "egg-yolk"},
+    {"thing": "ingredient/egg-white", "amount": {"value": 5, "unit": "piece"}, "forms": [], "part": "egg-white"},
+    {
+      "thing": "ingredient/gruyere",
+      "amount": {"value": 100, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/whisk", "equipment/mixing-bowl", "equipment/spatula",
+    "equipment/baking-dish", "equipment/oven"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
+      "text": "Melt most of the butter in a saucepan, stir in the flour and cook it, stirring, for a short while, until it froths and smells of biscuit. It must stay pale.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["preparation/roux"],
+      "with": ["ingredient/milk"],
+      "text": "Off the heat, whisk in the milk a little at a time, making each addition smooth before the next.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/bechamel"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["preparation/bechamel"],
+      "with": ["ingredient/nutmeg", "ingredient/salt"],
+      "text": "Simmer the sauce, stirring, until it is very thick, like a soft paste. Stir in the nutmeg and a little salt.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["preparation/bechamel"],
+      "with": ["ingredient/egg-yolk", "ingredient/gruyere", "ingredient/salt"],
+      "text": "Take the sauce off the heat and let it cool a little. Beat in the yolks one at a time, then most of the cheese, until it is smooth. Taste it and season it boldly.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/whip",
+      "works_on": ["ingredient/egg-white"],
+      "with": ["ingredient/salt"],
+      "text": "Whip the whites, which must hold not a trace of yolk, with a little salt until they hold firm, glossy peaks that are just short of dry.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fold",
+      "works_on": ["ingredient/egg-white"],
+      "with": ["preparation/bechamel"],
+      "text": "Stir a spoonful of the whites into the cheese base to loosen it. Fold in the rest in stages with a spatula, cutting down through the middle and lifting up the sides, until only a few streaks of white are left.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-a-souffle",
+      "works_on": ["ingredient/egg-white", "preparation/bechamel"],
+      "with": ["ingredient/butter", "ingredient/gruyere"],
+      "text": "Butter a soufflé dish in upward strokes and coat it with the rest of the cheese. Fill it nearly to the rim, smooth the top and run a thumb around the inside edge. Bake in the middle of a hot oven without opening the door, until it has risen high and the top is deep gold. Serve it at once.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    }
+  ]
+}

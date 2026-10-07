@@ -1,0 +1,54 @@
+{
+  "id": "technique/cook-polenta",
+  "tier": "drafted",
+  "names": {"en": "Cook polenta"},
+  "aliases": {"en": ["make polenta", "cook polenta softly"]},
+  "does": "Rains coarse maize meal in a thin stream into boiling salted water, stirring all the while, then cooks it for a long time over the lowest heat, stirring often, until it swells into a thick, smooth porridge that comes away from the sides of the pot. It is eaten soft and creamy, or poured out to set firm.",
+  "how": [
+    "Bring plenty of salted water to a boil in a heavy pot with a broad base.",
+    "Lower the heat so that the water is just bubbling. With one hand let the meal fall in a thin stream, and stir with the other, so that no lumps form.",
+    "Keep the heat very low. The porridge will pop and spit, so stir with a long wooden spoon and keep a hand clear of the pot.",
+    "Stir often, scraping the base and the corners, for a long time, adding hot water if it gets too stiff to stir, until it is thick and smooth and the grains are tender, with no raw taste.",
+    "Beat in butter and cheese off the heat if the dish asks for them. Serve it soft at once, or pour it onto a board and let it set."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The polenta pulls away from the side of the pot in a mass as it is stirred."},
+    {"sense": "taste", "text": "A taste is soft and sweet, with no gritty or raw-flour bite."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Tipping the meal in all at once, which clumps into lumps that never soften.",
+      "fix": "Let it fall in a thin stream while stirring."
+    },
+    {
+      "mistake": "Cooking it at a fierce heat, which scorches the base and leaves the grains hard.",
+      "fix": "Keep it at the lowest heat and stir often."
+    },
+    {
+      "mistake": "Stopping as soon as it thickens, when the grains are still raw.",
+      "fix": "Keep cooking and stirring until the grains are tender."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/polenta", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/whisk"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/stir",
+      "differs": "The meal is rained in a thin stream into boiling water and the porridge is stirred for a long time over a very low heat, until the grains are tender and the mass pulls away from the pot. A white sauce or a milk pudding is stirred only until it thickens.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

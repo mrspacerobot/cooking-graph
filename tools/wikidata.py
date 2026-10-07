@@ -18,7 +18,8 @@ Plan = namedtuple("Plan", ["changes", "skipped", "matched"])
 
 
 def english_names(data):
-    return [data["names"]["en"]] + data.get("aliases", {}).get("en", [])
+    """The one name a match is made on. An alias is often wider or narrower than the thing, so it never decides."""
+    return [data["names"]["en"]]
 
 
 def families(kind):

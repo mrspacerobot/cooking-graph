@@ -46,6 +46,11 @@ class WikidataTest(unittest.TestCase):
         self.assertEqual({"source": SOURCE, "id": "Q34172", "tier": "sourced"}, change.same_as)
         self.assertEqual({"es": "mantequilla", "it": "burro", "tr": "tereyağı", "fr": "beurre"}, change.names)
 
+    def test_a_match_through_an_alias_alone_is_not_taken(self):
+        self.kitchen.change("graph/ingredient/butter.json", lambda food: food.update(aliases={"en": ["cooking fat"]}))
+        plan = self.plan([entity("cooking fat", "Q77")])
+        self.assertEqual([], plan.changes)
+
     def test_the_label_is_compared_in_plain_form(self):
         plan = self.plan([entity("BUTTER", "Q34172")])
         self.assertEqual(["ingredient/butter"], [change.thing for change in plan.changes])

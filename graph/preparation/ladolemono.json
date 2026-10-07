@@ -1,0 +1,23 @@
+{
+  "id": "preparation/ladolemono",
+  "tier": "drafted",
+  "names": {"en": "Ladolemono"},
+  "aliases": {"en": ["Greek lemon and oil dressing"]},
+  "is": "A loose dressing of olive oil whisked with lemon juice, oregano and salt. It is spooned over grilled fish and meat, used to marinate small pieces of meat, and poured over boiled greens and vegetables.",
+  "parts": [
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon-juice"], "optional": false, "tier": "drafted"},
+    {"id": "oregano", "role": "aromatic", "options": ["ingredient/oregano"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/emulsified-sauces", "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/emulsify", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

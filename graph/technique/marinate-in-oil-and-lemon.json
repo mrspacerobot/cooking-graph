@@ -1,0 +1,52 @@
+{
+  "id": "technique/marinate-in-oil-and-lemon",
+  "tier": "drafted",
+  "names": {"en": "Marinate in oil and lemon"},
+  "aliases": {"en": ["marinate in ladolemono"]},
+  "does": "Turns small pieces of meat in olive oil, lemon juice, oregano and garlic for a short while before they are grilled, so that the surface takes up the flavour and the oil keeps the meat from drying on the fire.",
+  "how": [
+    "Cut the meat into even pieces so that they take the marinade and cook at the same pace.",
+    "Mix the oil, the lemon juice, the oregano, the crushed garlic and a little salt in a bowl.",
+    "Turn the meat in it until every piece shines, then cover the bowl and keep it in the cold.",
+    "Keep the time short. Lemon juice dries meat the longer it sits, and the surface turns chalky.",
+    "Lift the meat out and let the extra drip off before it goes on the skewers or the grill. Do not spoon used marinade over food that has been cooked."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "Bright lemon and dried oregano, with garlic underneath."},
+    {"sense": "see", "text": "Every piece is coated in a glossy film of oil and none sits in a pool."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the meat in lemon juice for a long time, so that it turns dry and chalky.",
+      "fix": "Keep the time short."
+    },
+    {
+      "mistake": "Putting the meat on the fire dripping wet, so that it flares and scorches.",
+      "fix": "Let the extra marinade drip away first."
+    },
+    {
+      "mistake": "Salting heavily in the marinade, which draws out juice.",
+      "fix": "Use a little salt and season again at the end."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/pork-tenderloin", "tier": "drafted"},
+    {"thing": "ingredient/chicken-thigh", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon-juice", "ingredient/lemon"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/oregano", "ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/marinate",
+      "differs": "The liquid is olive oil and lemon juice with oregano and garlic, with no wine, and the time is short, because lemon juice dries meat. The oil carries the flavour and protects the meat on the fire, where a wine marinade is made for a long braise.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

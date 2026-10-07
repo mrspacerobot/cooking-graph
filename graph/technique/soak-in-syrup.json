@@ -1,0 +1,56 @@
+{
+  "id": "technique/soak-in-syrup",
+  "tier": "drafted",
+  "names": {"en": "Soak in syrup"},
+  "aliases": {"en": ["pour syrup over", "syrup the pastry"]},
+  "does": "Pours a cool syrup over a pastry as it comes hot from the oven, so that the syrup runs into every layer and the pastry drinks it up while the top stays crisp.",
+  "how": [
+    "Make the syrup ahead and let it cool fully. Hot pastry takes cool syrup. Hot syrup on hot pastry turns it soggy.",
+    "Cut the pastry into portions before it is baked, so that the syrup can run down the cuts.",
+    "Pour the syrup slowly and evenly over the pastry as it comes out of the oven, and listen for the hiss.",
+    "Stop when the syrup stands in the cuts and a little pools at the edge. It goes on sinking in as the pastry cools.",
+    "Leave the pastry uncovered until it is cold. A lid traps steam and softens the top."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A sharp hiss as the cool syrup meets the hot pastry."},
+    {"sense": "see", "text": "The syrup sinks away from the surface and the top stays pale and crisp."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring hot syrup on hot pastry, so that the layers go limp.",
+      "fix": "Let the syrup or the pastry be cold."
+    },
+    {
+      "mistake": "Covering the pastry while it is still warm, so that steam softens the top.",
+      "fix": "Leave it uncovered until it is cold."
+    },
+    {
+      "mistake": "Using a syrup boiled too thick, which sits on top and does not soak in.",
+      "fix": "Stop boiling the syrup while it is still thin enough to run off a spoon."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/phyllo", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/ladle"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/bake-a-phyllo-pie",
+      "why": "The syrup goes on while the baked pastry is still hot.",
+      "tier": "drafted"
+    },
+    {"thing": "technique/make-a-syrup", "why": "The syrup is made ahead and cooled.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/soak",
+      "differs": "The pastry is not left in a bath. The syrup is poured over the baked, hot pastry in one go, and either the syrup or the pastry must be cold, so that the layers drink it and stay crisp.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

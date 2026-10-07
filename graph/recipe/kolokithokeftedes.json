@@ -1,0 +1,90 @@
+{
+  "id": "recipe/kolokithokeftedes",
+  "tier": "drafted",
+  "names": {"en": "Kolokithokeftedes"},
+  "aliases": {},
+  "makes": "dish/kolokithokeftedes",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/courgette", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "courgette"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/feta", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "feta"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/flour", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/mint", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "herbs"},
+    {"thing": "ingredient/dill", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "herbs"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/spatula", "equipment/colander", "equipment/mixing-bowl",
+    "equipment/wire-rack", "equipment/chefs-knife", "equipment/cutting-board", "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/salt-and-drain",
+      "works_on": ["ingredient/courgette"],
+      "with": ["ingredient/salt"],
+      "text": "Grate the courgettes coarsely, toss them with the salt and leave them in a colander until they have given up their water. Squeeze them hard by the handful, until they are quite dry.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/spring-onion"],
+      "with": [],
+      "text": "Slice the spring onions thin.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/mint", "ingredient/dill"],
+      "with": [],
+      "text": "Chop the mint and the dill.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/courgette"],
+      "with": [
+        "ingredient/feta", "ingredient/egg", "ingredient/flour", "ingredient/spring-onion", "ingredient/mint",
+        "ingredient/dill", "ingredient/black-pepper"
+      ],
+      "text": "Mix the dry courgette with the crumbled feta, the eggs, the flour, the spring onions, the herbs and the pepper, until it makes a thick mixture that sits on a spoon.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/courgette-fritter-mixture"]
+    },
+    {
+      "technique": "technique/fry-fritters",
+      "works_on": ["preparation/courgette-fritter-mixture"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Warm the olive oil in a wide pan. Drop in spoonfuls of the mixture, press each flat and fry until the underside is deep golden. Turn once and fry the other side. Lift them onto a rack and fry the rest in lots.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/courgette"],
+      "with": ["ingredient/lemon"],
+      "text": "Pile the fritters on a plate with wedges of lemon to squeeze over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

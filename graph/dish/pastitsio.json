@@ -1,0 +1,33 @@
+{
+  "id": "dish/pastitsio",
+  "tier": "drafted",
+  "names": {"en": "Pastitsio"},
+  "aliases": {"en": ["Greek baked pasta"]},
+  "is": "A baked dish of macaroni tossed with butter and cheese, a spiced meat sauce, and a thick white sauce enriched with egg yolk and sharp cheese on top, baked until the top is golden and the layers cut cleanly into squares.",
+  "parts": [
+    {"id": "pasta", "role": "main", "options": ["ingredient/macaroni"], "optional": false, "tier": "drafted"},
+    {"id": "kima", "role": "filling", "options": ["preparation/kima"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "yolk", "role": "enrichment", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "topping",
+      "options": ["ingredient/kefalotyri", "ingredient/pecorino", "ingredient/parmesan"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/boil-pasta", "tier": "drafted"},
+    {"thing": "technique/make-a-kima", "tier": "drafted"},
+    {"thing": "technique/thicken-with-egg-yolk", "tier": "drafted"},
+    {"thing": "technique/layer", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

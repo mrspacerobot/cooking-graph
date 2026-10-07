@@ -1,0 +1,91 @@
+{
+  "id": "recipe/tsipoura-sti-schara",
+  "tier": "drafted",
+  "names": {"en": "Grilled sea bream with ladolemono"},
+  "aliases": {},
+  "makes": "dish/tsipoura-sti-schara",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/sea-bream", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "fish"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/oregano", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {
+      "thing": "preparation/ladolemono",
+      "amount": {"value": 100, "unit": "millilitre"},
+      "forms": [],
+      "part": "dressing"
+    },
+    {"thing": "ingredient/parsley", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "parsley"}
+  ],
+  "equipment": [
+    "equipment/grill", "equipment/tongs", "equipment/wire-rack", "equipment/baking-sheet", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/filleting-knife", "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/scale-a-fish",
+      "works_on": ["ingredient/sea-bream"],
+      "with": [],
+      "text": "Scrape the scales off both sides of each fish, taking care round the fins and the base of the head, and rinse.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gut-a-fish",
+      "works_on": ["ingredient/sea-bream"],
+      "with": [],
+      "text": "Slit the belly, take out the guts and the gills, rinse the cavity and pat the fish dry.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/sea-bream"],
+      "with": [
+        "ingredient/salt", "ingredient/black-pepper", "ingredient/lemon", "ingredient/oregano", "ingredient/olive-oil"
+      ],
+      "text": "Season the fish inside and out with the salt and the pepper. Put a slice of lemon and a little oregano inside each, and rub the skin with a little of the olive oil.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grill",
+      "works_on": ["ingredient/sea-bream"],
+      "with": [],
+      "text": "Heat the grill until it is very hot. Grill the fish close to the heat and leave them alone until the skin is blistered and lifts, then turn them once with care. Check the thickest part beside the backbone against a trusted guide to doneness.",
+      "time": {"from": 12, "to": 18, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "Chop the parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/sea-bream"],
+      "with": ["preparation/ladolemono", "ingredient/parsley"],
+      "text": "Lift the fish onto a warm platter. Whisk the ladolemono again and spoon it over, then scatter with parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "technique/make-a-kima",
+  "tier": "drafted",
+  "names": {"en": "Make a kima"},
+  "aliases": {"en": ["make kima", "make a Greek meat sauce"]},
+  "does": "Cooks minced meat with softened onion, tomato and a little red wine, scented with cinnamon, allspice and a bay leaf, until it is a thick, moist, mildly sweet sauce that sits under a white sauce in a baked dish or is spooned over pasta.",
+  "how": [
+    "Soften the onion and garlic in olive oil first, and keep the pan wide so that the meat browns and does not stew.",
+    "Add the minced meat in small lots and break it up with a spoon. Let it take colour before more goes in.",
+    "Pour in the wine and let it bubble away almost completely.",
+    "Stir in the tomato paste, then the tomatoes, the cinnamon, the allspice and the bay leaf.",
+    "Simmer gently with the lid ajar, stirring now and then, until the meat is tender and the sauce is thick enough to hold a track.",
+    "Take out the bay leaf, season, and stir in the parsley. A kima for baking is cooked drier than one for pasta, so that it does not flood the dish."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "Warm cinnamon and allspice over sweet tomato, with no sharp smell of raw wine."},
+    {"sense": "see", "text": "The sauce is thick, and a spoon drawn across the pan leaves a track that closes slowly."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the spices to a pan that is too hot, so that they scorch and taste bitter.",
+      "fix": "Add them with the tomato, once the wine has gone."
+    },
+    {
+      "mistake": "Leaving the sauce loose, so that it floods the dish it is baked in.",
+      "fix": "Cook it until a spoon leaves a track."
+    },
+    {
+      "mistake": "Tipping all the meat in at once, so that it steams grey.",
+      "fix": "Add it in small lots and let each take colour."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/kima", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/red-wine"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/sweat",
+      "why": "The onion and garlic are softened in oil before the meat goes in.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/make-a-ragu",
+      "differs": "A kima is spiced with cinnamon, allspice and a bay leaf, and is built on onion and tomato paste, where a ragu starts from a soffritto of onion, carrot and celery and is finished with milk. It is cooked drier, so that it can sit under a white sauce without flooding it.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "technique/fry-fritters",
+  "tier": "drafted",
+  "names": {"en": "Fry fritters"},
+  "aliases": {"en": ["fry in spoonfuls", "make fritters"]},
+  "does": "Drops spoonfuls of a thick mixture of grated vegetable, egg, cheese and a little flour into hot oil, flattens them lightly and turns them once, so that each fritter is crisp and golden outside and soft inside.",
+  "how": [
+    "Make the mixture thick enough to sit on a spoon. If it runs, stir in a little more flour. If it is stiff and dry, loosen it with a spoonful of water.",
+    "Warm a shallow layer of oil in a wide pan until a crumb of the mixture sizzles at once.",
+    "Drop in spoonfuls with room between them, and press each to a flat round with the back of the spoon.",
+    "Leave them alone until the underside is deep golden and the edges look set, then turn each once.",
+    "Lift them onto a rack or paper to drain. Fry the rest in lots, and wipe the pan if bits of the mixture scorch."
+  ],
+  "cues": [
+    {
+      "sense": "hear",
+      "text": "A steady, lively sizzle. A roar means the oil is too hot, and silence means it is too cool."
+    },
+    {"sense": "see", "text": "The edges turn lacy and golden before the middle sets."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying in oil that is too cool, so that the fritters soak it up and turn greasy.",
+      "fix": "Wait for the sizzle before the first spoonful goes in."
+    },
+    {
+      "mistake": "Crowding the pan, so that the fritters steam and join together.",
+      "fix": "Fry a few at a time, with room between them."
+    },
+    {
+      "mistake": "Turning too soon, so that the fritter tears.",
+      "fix": "Wait until the underside is golden and the edges are set."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/courgette-fritter-mixture", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula", "equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "A fritter mixture has no shape of its own, so it is dropped in by the spoonful and flattened, in more oil than a cut of meat or fish would be fried in, and it is turned only once it has set.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

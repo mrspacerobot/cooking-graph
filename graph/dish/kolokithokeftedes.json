@@ -1,0 +1,32 @@
+{
+  "id": "dish/kolokithokeftedes",
+  "tier": "drafted",
+  "names": {"en": "Kolokithokeftedes"},
+  "aliases": {"en": ["Greek courgette fritters"]},
+  "is": "Fritters of grated courgette, crumbled feta, egg, spring onion, mint and dill, bound with a little flour and fried by the spoonful in olive oil until they are golden and crisp at the edge and soft in the middle. They are served with wedges of lemon.",
+  "parts": [
+    {"id": "courgette", "role": "main", "options": ["ingredient/courgette"], "optional": false, "tier": "drafted"},
+    {"id": "feta", "role": "filling", "options": ["ingredient/feta"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/spring-onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "herbs",
+      "role": "aromatic",
+      "options": ["ingredient/mint", "ingredient/dill"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/salt-and-drain", "tier": "drafted"},
+    {"thing": "technique/fry-fritters", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

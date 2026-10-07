@@ -1,0 +1,108 @@
+{
+  "id": "recipe/fasolada",
+  "tier": "drafted",
+  "names": {"en": "Fasolada"},
+  "aliases": {},
+  "makes": "dish/fasolada",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/white-beans", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "beans"},
+    {"thing": "ingredient/water", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/carrot", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "carrot"},
+    {"thing": "ingredient/celery", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "celery"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/bay-leaf", "amount": {"value": 2, "unit": "leaf"}, "forms": [], "part": "bay"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/parsley", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/mixing-bowl", "equipment/colander",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/water"],
+      "text": "Cover the beans generously with cold water and leave them overnight, until they are plump.",
+      "time": {"from": 8, "to": 12, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/white-beans"],
+      "with": [],
+      "text": "Drain the beans and rinse them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Dice the onion, the carrots and the celery. Soften them in some of the olive oil in a large pot until they are soft and glassy, without letting them colour.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/water", "ingredient/bay-leaf"],
+      "text": "Add the beans, the bay leaves and fresh water. Bring to a boil, then turn the heat low and simmer gently, with the lid ajar, until the beans are nearly tender. Keep the beans covered with water. Do not salt yet.",
+      "time": {"from": 45, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/tomato-paste"],
+      "text": "Stir in the tomato paste and simmer on until the beans are completely tender and the broth has thickened to a creamy soup.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "Chop the parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Season with the salt and the pepper, and taste. Take out the bay leaves.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/olive-oil", "ingredient/parsley"],
+      "text": "Ladle the soup into bowls. Pour a thread of raw olive oil into each and scatter with parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

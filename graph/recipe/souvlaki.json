@@ -1,0 +1,114 @@
+{
+  "id": "recipe/souvlaki",
+  "tier": "drafted",
+  "names": {"en": "Souvlaki"},
+  "aliases": {},
+  "makes": "dish/souvlaki",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-tenderloin", "amount": {"value": 700, "unit": "gram"}, "forms": [], "part": "pork"},
+    {
+      "thing": "preparation/ladolemono",
+      "amount": {"value": 100, "unit": "millilitre"},
+      "forms": [],
+      "part": "marinade"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/oregano", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/pita-bread", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "pita"},
+    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"}
+  ],
+  "equipment": [
+    "equipment/grill", "equipment/skewer", "equipment/tongs", "equipment/baking-sheet", "equipment/mixing-bowl",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/wire-rack"
+  ],
+  "steps": [
+    {
+      "technique": "technique/trim",
+      "works_on": ["ingredient/pork-tenderloin"],
+      "with": [],
+      "text": "Trim away the silver skin and any hard fat, then cut the pork into cubes of an even size.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/salt"],
+      "text": "Crush the garlic with a little of the salt to a paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/marinate-in-oil-and-lemon",
+      "works_on": ["ingredient/pork-tenderloin"],
+      "with": [
+        "preparation/ladolemono", "ingredient/garlic", "ingredient/oregano", "ingredient/salt",
+        "ingredient/black-pepper"
+      ],
+      "text": "Turn the pork in the ladolemono with the garlic, the oregano, the rest of the salt and the pepper. Cover and keep it in the cold for a short while. Do not leave it long, or the lemon dries the meat.",
+      "time": {"from": 30, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/skewer",
+      "works_on": ["ingredient/pork-tenderloin"],
+      "with": [],
+      "text": "Thread the cubes on skewers, snugly, with a little room between them. Soak wooden skewers in water first.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/tomato", "ingredient/onion"],
+      "with": [],
+      "text": "Slice the tomatoes and slice the onion thin.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grill",
+      "works_on": ["ingredient/pork-tenderloin"],
+      "with": [],
+      "text": "Grill the skewers close to a fierce heat, turning them now and then, until the pork is browned at the edges. Check a cube from the thickest skewer against a trusted guide to doneness.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/pita-bread"],
+      "with": [],
+      "text": "Warm the pitas on the grill for a short while, turning them once, until they are soft and lightly marked.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sandwich",
+      "works_on": ["ingredient/pita-bread"],
+      "with": ["ingredient/pork-tenderloin", "ingredient/tomato", "ingredient/onion", "ingredient/lemon"],
+      "text": "Lay the pitas flat. Slide the pork off the skewers onto each, add the tomato and the onion, squeeze over the lemon and fold the bread round the filling. Serve at once.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

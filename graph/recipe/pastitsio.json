@@ -1,0 +1,133 @@
+{
+  "id": "recipe/pastitsio",
+  "tier": "drafted",
+  "names": {"en": "Pastitsio"},
+  "aliases": {},
+  "makes": "dish/pastitsio",
+  "yields": {"value": 8, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/macaroni", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/water", "amount": {"value": 5, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/butter", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/minced-beef", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/red-wine", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/allspice", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/bay-leaf", "amount": {"value": 1, "unit": "leaf"}, "forms": [], "part": "kima"},
+    {"thing": "preparation/bechamel", "amount": {"value": 900, "unit": "millilitre"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/egg-yolk", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "yolk"},
+    {
+      "thing": "ingredient/kefalotyri",
+      "amount": {"value": 120, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/grill", "equipment/stockpot", "equipment/colander",
+    "equipment/saute-pan", "equipment/baking-dish", "equipment/grater", "equipment/mixing-bowl", "equipment/whisk",
+    "equipment/wooden-spoon", "equipment/chefs-knife", "equipment/cutting-board", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/macaroni"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Boil the macaroni in plenty of well-salted water until it is still quite firm in the middle, since it will go on softening in the oven. Drain it well and do not rinse it.",
+      "time": {"from": 7, "to": 9, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/garlic"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Dice the onions and mince the garlic, then soften them together in the olive oil in a wide pan without letting them colour.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-kima",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [
+        "ingredient/onion", "ingredient/garlic", "ingredient/red-wine", "ingredient/tomato-paste",
+        "ingredient/tinned-tomatoes", "ingredient/cinnamon", "ingredient/allspice", "ingredient/bay-leaf",
+        "ingredient/olive-oil", "ingredient/salt"
+      ],
+      "text": "Add the beef to the pan in small lots and let it take colour. Pour in the wine and let it bubble away. Stir in the tomato paste, the tomatoes, the cinnamon, the allspice and the bay leaf, and simmer gently, stirring now and then, until the sauce is thick and the meat is tender. Take out the bay leaf and season. Check the meat against a trusted guide to doneness.",
+      "time": {"from": 35, "to": 45, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/kima"]
+    },
+    {
+      "technique": "technique/grate",
+      "works_on": ["ingredient/kefalotyri"],
+      "with": [],
+      "text": "Grate the kefalotyri finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/macaroni"],
+      "with": ["ingredient/butter", "ingredient/kefalotyri"],
+      "text": "Melt the butter into the hot macaroni and toss it with a third of the cheese.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/thicken-with-egg-yolk",
+      "works_on": ["preparation/bechamel"],
+      "with": ["ingredient/egg-yolk", "ingredient/kefalotyri"],
+      "text": "Warm the béchamel, then take it off the heat. Beat the yolks in a bowl, whisk in a ladle of the sauce, then pour the mixture back into the pan, stirring. Stir in a third of the cheese. The sauce should be thick enough to stand on a spoon.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/macaroni", "preparation/bechamel", "ingredient/kefalotyri"],
+      "with": ["preparation/kima"],
+      "text": "In a deep baking dish, spread half of the macaroni, then all of the meat sauce, then the rest of the macaroni, pressing it down gently. Spread the white sauce over the top, smooth it to the edges and scatter with the rest of the cheese.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["preparation/bechamel", "ingredient/kefalotyri"],
+      "with": [],
+      "text": "Bake in a moderate oven until the sauce is set and bubbling at the edges, then move the dish under a hot grill until the top is deep golden. Watch it all the time.",
+      "time": {"from": 35, "to": 45, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/macaroni"],
+      "with": [],
+      "text": "Leave the pastitsio to settle for a good while so that it firms, then cut it into squares with a sharp knife.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

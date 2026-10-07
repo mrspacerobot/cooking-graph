@@ -1,0 +1,30 @@
+{
+  "id": "preparation/courgette-fritter-mixture",
+  "tier": "drafted",
+  "names": {"en": "Courgette fritter mixture"},
+  "aliases": {},
+  "is": "A thick mixture of salted, pressed courgette, crumbled feta, egg, spring onion, mint and dill, bound with a little flour. It is dropped by the spoonful into hot oil.",
+  "parts": [
+    {"id": "courgette", "role": "main", "options": ["ingredient/courgette"], "optional": false, "tier": "drafted"},
+    {"id": "feta", "role": "filling", "options": ["ingredient/feta"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/spring-onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "mint",
+      "role": "aromatic",
+      "options": ["ingredient/mint", "ingredient/dill"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/fry-fritters", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/potee-auvergnate",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_for": "stocks",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Potée auvergnate",
+  "also_called": ["Auvergne potée", "potée"],
+  "techniques": ["simmer", "skim"],
+  "ingredients": ["salt pork", "pork sausage", "cabbage", "carrot", "turnip", "potato", "leek"]
+}

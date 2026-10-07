@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/oeufs-sur-le-plat",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_for": "eggs",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Œufs sur le plat",
+  "also_called": ["œufs au plat", "œufs miroir", "fried eggs"],
+  "techniques": ["fry", "baste"],
+  "ingredients": ["egg", "butter"]
+}

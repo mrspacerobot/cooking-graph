@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/pintade-au-chou",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_for": "braise",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Pintade au chou",
+  "also_called": ["guinea fowl with cabbage", "braised guinea fowl with cabbage"],
+  "techniques": ["sear", "blanch", "braise"],
+  "ingredients": ["guinea fowl", "cabbage", "bacon", "carrot", "onion", "white wine"]
+}

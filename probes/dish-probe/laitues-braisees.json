@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/laitues-braisees",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "held-back",
+  "written_for": "braise",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Laitues braisées",
+  "also_called": ["braised lettuce"],
+  "techniques": ["blanch", "braise"],
+  "ingredients": ["lettuce", "butter", "chicken stock", "onion", "carrot", "bacon"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/faisan-a-la-normande",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "held-back",
+  "written_for": "pan-sauce",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Faisan à la normande",
+  "also_called": ["pheasant with apples and cream", "Normandy pheasant"],
+  "techniques": ["roast", "flambé", "deglaze", "reduce"],
+  "ingredients": ["pheasant", "apple", "Calvados", "cider", "cream", "butter"]
+}

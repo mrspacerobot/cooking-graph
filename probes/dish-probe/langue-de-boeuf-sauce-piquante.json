@@ -1,0 +1,21 @@
+{
+  "id": "dish-probe/langue-de-boeuf-sauce-piquante",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_for": "poach",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Langue de bœuf sauce piquante",
+  "also_called": ["beef tongue with piquante sauce", "langue de bœuf"],
+  "techniques": ["simmer", "skim", "peel", "slice", "reduce"],
+  "ingredients": [
+    "beef tongue",
+    "carrot",
+    "onion",
+    "shallot",
+    "white wine vinegar",
+    "brown stock",
+    "cornichons",
+    "capers"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/fondue-de-poireaux",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_for": "saute",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Fondue de poireaux",
+  "also_called": ["leek fondue", "sweated leeks"],
+  "techniques": ["slice", "sweat"],
+  "ingredients": ["leek", "butter", "cream"]
+}

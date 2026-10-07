@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/loup-au-fenouil",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_for": "roast",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Loup au fenouil",
+  "also_called": ["sea bass flambéed with fennel", "loup flambé au fenouil", "bar au fenouil"],
+  "techniques": ["roast", "flambé", "fillet"],
+  "ingredients": ["sea bass", "fennel", "pastis", "olive oil", "lemon"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/pommes-boulangere",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_for": "roast",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Pommes boulangère",
+  "also_called": ["boulangère potatoes", "pommes de terre boulangère"],
+  "techniques": ["slice", "layer", "roast"],
+  "ingredients": ["potato", "onion", "chicken stock", "butter", "thyme"]
+}

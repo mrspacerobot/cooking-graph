@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/saucisson-chaud-pommes-a-l-huile",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_for": "poach",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Saucisson chaud pommes à l'huile",
+  "also_called": ["hot Lyon sausage with warm potato salad", "saucisson de Lyon pommes à l'huile"],
+  "techniques": ["poach", "boil", "toss"],
+  "ingredients": ["Lyon sausage", "potato", "shallot", "white wine", "white wine vinegar", "sunflower oil", "parsley"]
+}

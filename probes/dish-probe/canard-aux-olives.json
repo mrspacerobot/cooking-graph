@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/canard-aux-olives",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "held-back",
+  "written_for": "braise",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Canard aux olives",
+  "also_called": ["duck with olives", "duck braised with olives"],
+  "techniques": ["sear", "deglaze", "braise"],
+  "ingredients": ["duck", "green olive", "white wine", "brown stock", "onion", "carrot", "bouquet garni"]
+}

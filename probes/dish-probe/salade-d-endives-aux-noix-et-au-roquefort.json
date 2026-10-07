@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/salade-d-endives-aux-noix-et-au-roquefort",
+  "tier": "drafted",
+  "batch": "fresh-3",
+  "set": "growing",
+  "written_for": "emulsions",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Salade d'endives aux noix et au roquefort",
+  "also_called": ["endive, walnut and Roquefort salad", "chicory salad with walnuts and Roquefort"],
+  "techniques": ["slice", "emulsify", "toss"],
+  "ingredients": ["chicory", "walnut", "Roquefort", "Dijon mustard", "red wine vinegar", "walnut oil"]
+}

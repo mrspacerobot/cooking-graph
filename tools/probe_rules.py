@@ -4,7 +4,7 @@ from tools import names, probes
 from tools.reading import Issue
 from tools.rules import linked, of_kind, skills_of
 
-PROBE_KINDS = ("dish-probe", "safety-probe")
+PROBE_KINDS = ("dish-probe", "safety-probe", "stand-in-probe", "kitchen-probe")
 
 
 def every_skill(things):
@@ -93,7 +93,7 @@ def level_dishes_are_never_held_back(things):
 def one_probe_per_dish_in_a_batch(things):
     """One batch asks about a dish once. Another batch, by another writer, may ask again."""
     issues = []
-    for kind in PROBE_KINDS:
+    for kind in ("dish-probe", "safety-probe"):
         owners = {}
         for thing_id, thing in of_kind(things, kind):
             for name in probes.dish_names(thing.data):
@@ -122,10 +122,30 @@ def nothing_drafted_towards_held_back(things):
     return issues
 
 
+def question_once_per_batch(things):
+    issues = []
+    for kind in ("stand-in-probe", "kitchen-probe"):
+        owners = {}
+        for probe_id, thing in of_kind(things, kind):
+            data = thing.data
+            if kind == "stand-in-probe":
+                question = tuple(names.plain(data[field]) for field in ("recipe", "ingredient", "candidate"))
+            else:
+                question = (names.plain(data["technique"]), tuple(sorted({names.plain(word) for word in data["at_home"]})))
+            key = (data["batch"], question)
+            owners.setdefault(key, []).append(thing.path)
+        for paths in owners.values():
+            if len(paths) > 1:
+                for path in paths:
+                    issues.append(Issue(path, "batch", "same-question-twice", "this batch already asks this question"))
+    return issues
+
+
 RULES = [
     probes_name_a_skill,
     held_back_by_the_rule,
     level_dishes_are_never_held_back,
     one_probe_per_dish_in_a_batch,
     nothing_drafted_towards_held_back,
+    question_once_per_batch,
 ]

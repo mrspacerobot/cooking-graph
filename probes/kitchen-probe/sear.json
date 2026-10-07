@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/sear",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "searing",
+  "at_home": ["beef steak", "butter", "olive oil", "shallot", "red wine", "beef stock", "salt", "black pepper"],
+  "dishes": ["Steak au poivre", "Steak sauce marchand de vin"],
+  "why": "A steak, cooking fat and sauce ingredients support a hard pan sear followed by a wine-based pan sauce."
+}

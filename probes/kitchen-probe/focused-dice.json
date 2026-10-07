@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-dice",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "dice",
+  "at_home": ["onion", "carrot", "celery", "butter", "water", "salt", "black pepper", "olive oil"],
+  "dishes": ["Mirepoix"],
+  "why": "Even, small dice let onion, carrot and celery soften together into the classic aromatic base."
+}

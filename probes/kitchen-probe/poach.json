@@ -1,0 +1,23 @@
+{
+  "id": "kitchen-probe/poach",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "poaching",
+  "at_home": [
+    "eggs",
+    "water",
+    "white wine vinegar",
+    "salt",
+    "salmon fillet",
+    "onion",
+    "carrot",
+    "celery",
+    "bay leaf",
+    "thyme",
+    "lemon"
+  ],
+  "dishes": ["Œufs pochés", "Saumon poché"],
+  "why": "Eggs and vinegar support gentle water poaching; fish, aromatics and lemon support a gentle court-bouillon preparation."
+}

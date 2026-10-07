@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/gratin-dauphinois-potato-turnip",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "held-back",
+  "written_by": "gpt-6-luna",
+  "recipe": "Gratin dauphinois",
+  "ingredient": "potato",
+  "candidate": "turnip",
+  "verdict": "does-not-work",
+  "why": "Turnip releases a sharper flavor and does not give the same starchy, creamy layers."
+}

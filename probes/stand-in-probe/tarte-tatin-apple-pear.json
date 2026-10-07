@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/tarte-tatin-apple-pear",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Tarte Tatin",
+  "ingredient": "apple",
+  "candidate": "pear",
+  "verdict": "works-with-caveat",
+  "why": "Pears caramelize in the same tart format but become softer and taste less tart than apples."
+}

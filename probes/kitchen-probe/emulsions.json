@@ -1,0 +1,21 @@
+{
+  "id": "kitchen-probe/emulsions",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "emulsified sauces",
+  "at_home": [
+    "egg yolks",
+    "Dijon mustard",
+    "neutral oil",
+    "olive oil",
+    "lemon juice",
+    "white wine vinegar",
+    "butter",
+    "salt",
+    "black pepper"
+  ],
+  "dishes": ["Mayonnaise", "Vinaigrette", "Hollandaise sauce"],
+  "why": "The pantry covers cold oil emulsions and a warm butter emulsion, with acid and mustard for seasoning and stability."
+}

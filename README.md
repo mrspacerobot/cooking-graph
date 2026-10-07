@@ -18,6 +18,7 @@ Everything in this repository was drafted by a model and reviewed by nobody. Saf
 | `graph/source/` | The pages a fact was read in, each with the day it was read and its reuse terms |
 | `probes/dish-probe/` | The dish probes: well-known dishes the graph must be able to express |
 | `probes/safety-probe/` | The safety probes: what a well-known dish holds and does not hold |
+| `probes/stand-in-probe/`, `probes/kitchen-probe/` | Independent question probes, with one in five held back by the hash rule |
 | `schema/model.json` | The model: every kind, its fields and what each may hold |
 | `schema/words.json` | The closed word lists: tiers, units, roles |
 | `tools/`, `tests/` | The commands and their tests. Python standard library only |
@@ -33,6 +34,7 @@ Everything in this repository was drafted by a model and reviewed by nobody. Saf
 |---|---|
 | `./check` | Runs the tests of the tools, then reads every file strictly and lists every issue |
 | `./probe` | Runs the dish probes and lists what the graph lacks. Held-back probes are counted, never shown |
+| `./probe questions [batch]` | Runs the stand-in and kitchen questions; shows only growing gaps and aggregate held-back counts |
 | `./numbers` | Counts by kind and tier, and the share of probes answered, growing and held back apart |
 | `./safety` | Runs the safety probes: what each dish holds, worked out from its recipe, against what the probe says |
 | `./tidy` | Rewrites every file in the one way a file is written |

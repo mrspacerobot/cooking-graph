@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/ratatouille-courgette-cauliflower",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Ratatouille",
+  "ingredient": "zucchini",
+  "candidate": "cauliflower",
+  "verdict": "does-not-work",
+  "why": "Cauliflower stays firmer and has a stronger brassica character, changing the soft summer-vegetable result."
+}

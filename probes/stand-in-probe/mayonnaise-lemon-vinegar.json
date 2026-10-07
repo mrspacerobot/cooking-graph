@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/mayonnaise-lemon-vinegar",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Mayonnaise",
+  "ingredient": "lemon juice",
+  "candidate": "white wine vinegar",
+  "verdict": "works-with-caveat",
+  "why": "Either acid brightens the emulsion; vinegar tastes sharper and less citrusy."
+}

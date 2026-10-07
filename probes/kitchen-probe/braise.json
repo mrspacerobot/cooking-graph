@@ -1,0 +1,27 @@
+{
+  "id": "kitchen-probe/braise",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "braising",
+  "at_home": [
+    "beef chuck",
+    "chicken thighs",
+    "onion",
+    "carrot",
+    "celery",
+    "garlic",
+    "red wine",
+    "beef stock",
+    "chicken stock",
+    "tomato paste",
+    "thyme",
+    "bay leaf",
+    "salt",
+    "black pepper",
+    "olive oil"
+  ],
+  "dishes": ["Bœuf bourguignon", "Coq au vin"],
+  "why": "The meats, aromatics, cooking liquids and herbs support long covered wine braises and a tomato-enriched beef braise."
+}

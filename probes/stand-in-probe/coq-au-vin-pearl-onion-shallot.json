@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/coq-au-vin-pearl-onion-shallot",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Coq au vin",
+  "ingredient": "pearl onions",
+  "candidate": "shallots",
+  "verdict": "works-with-caveat",
+  "why": "Shallots soften in the braise, with a sweeter, less rounded onion flavor."
+}

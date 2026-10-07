@@ -1,0 +1,23 @@
+{
+  "id": "kitchen-probe/roast",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "roasting",
+  "at_home": [
+    "chicken",
+    "potato",
+    "carrot",
+    "onion",
+    "butter",
+    "olive oil",
+    "thyme",
+    "rosemary",
+    "lemon",
+    "salt",
+    "black pepper"
+  ],
+  "dishes": ["Poulet rôti", "Poulet rôti avec pommes de terre"],
+  "why": "Whole chicken and vegetables with fat, herbs and seasoning support a simple roast with pan vegetables."
+}

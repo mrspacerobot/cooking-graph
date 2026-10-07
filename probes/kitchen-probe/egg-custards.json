@@ -1,0 +1,22 @@
+{
+  "id": "kitchen-probe/egg-custards",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "egg custards",
+  "at_home": [
+    "eggs",
+    "whole milk",
+    "heavy cream",
+    "bacon",
+    "Gruyère",
+    "butter",
+    "salt",
+    "black pepper",
+    "nutmeg",
+    "all-purpose flour"
+  ],
+  "dishes": ["Quiche Lorraine", "Flan salé"],
+  "why": "Eggs, dairy and seasoning form savory custards, while flour and butter allow a basic pastry shell for quiche."
+}

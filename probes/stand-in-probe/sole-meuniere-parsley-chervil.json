@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/sole-meuniere-parsley-chervil",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Sole meunière",
+  "ingredient": "parsley",
+  "candidate": "chervil",
+  "verdict": "works-with-caveat",
+  "why": "Chervil gives a delicate herbal finish, though it is sweeter and less grassy than parsley."
+}

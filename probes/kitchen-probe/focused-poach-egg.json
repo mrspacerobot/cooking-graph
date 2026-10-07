@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-poach-egg",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "poach",
+  "at_home": ["eggs", "water", "white wine vinegar", "salt", "black pepper", "chives"],
+  "dishes": ["Œufs pochés"],
+  "why": "A gently moving acidulated water bath sets the egg white around a soft yolk; chives and seasoning finish it."
+}

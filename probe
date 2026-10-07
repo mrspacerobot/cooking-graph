@@ -11,10 +11,17 @@ import sys
 ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
 
-from tools import check, probes  # noqa: E402
+from tools import check, probes, question_probes  # noqa: E402
 
 things, issues = check.read_repository(ROOT)
 if issues:
     print("probe: ./check finds %d issues. Files with a wrong shape are left out of this run." % len(issues))
-batch = sys.argv[1] if len(sys.argv) > 1 else None
-print(probes.report(probes.run(things, batch=batch)))
+arguments = sys.argv[1:]
+if arguments and arguments[0] == "questions":
+    if issues:
+        sys.exit(1)
+    batch = arguments[1] if len(arguments) > 1 else None
+    print(question_probes.report(question_probes.run(things, batch=batch)))
+else:
+    batch = arguments[0] if arguments else None
+    print(probes.report(probes.run(things, batch=batch)))

@@ -8,7 +8,7 @@ Everything built with this model so far is a model's draft that nobody has revie
 
 ## Files and ids
 
-- **One thing, one file.** A thing of the graph lives at `graph/<kind>/<slug>.json`. A probe lives at `probes/dish-probe/<slug>.json` or `probes/safety-probe/<slug>.json`.
+- **One thing, one file.** A thing of the graph lives at `graph/<kind>/<slug>.json`. A probe lives at `probes/<probe-kind>/<slug>.json`.
 - **The id is the kind and the slug:** `technique/deglaze`. The slug is lowercase English words joined by hyphens. An id is permanent: never renamed, never reused. A file's `id` must be the one its place gives it.
 - **Every field is always written,** in the order of the model. An empty list is `[]`. `null` is allowed only where the model says so. An unknown field, a missing field and a field out of order are all issues.
 - **A reference is an id.** It must exist, and be of a kind the field allows.
@@ -41,7 +41,8 @@ A safety record has a `state` of its own, with two values: unverified and verifi
 
 Two things of one kind may not share a name or an alias, in any language. That would be two nodes for one thing.
 
-A source and a probe have an `id` and a `tier` and no names: a source has a `title`, a probe has a `dish`.
+A source and a probe have an `id` and a `tier` and no names: a source has a `title`,
+a probe names the dish, recipe or technique its question concerns.
 
 ## The kinds
 
@@ -477,6 +478,32 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 
 - **Example:** the European list counts sulphites from 10 mg/kg, a licence is called CC BY 4.0, and the reason of a safety probe is written by another model. The sentence rules, which keep numbers out of what a cook reads, refused all three.
 - **Now:** the model has a note beside the sentence: `reuse`, `taken`, `exemptions`, the `note` of a regulated row and the `why` of a safety probe. A note may hold numbers. Nothing a cook reads is a note. A source also has a date and a web address, each with a shape of its own.
+
+### 27. Probes for stand-ins and kitchens (the question cycle)
+
+- **Example:** clarified butter can replace butter when frying, but cannot mount a sauce.
+  A dish probe only tests whether words exist. It cannot test either contextual answer,
+  or whether a kitchen can fill every required part of a recipe.
+- **Now:** `stand-in-probe` and `kitchen-probe` live apart from the graph. Both have
+  `id`, `tier`, `batch`, `set` and `written_by`. The existing hash rule holds back
+  one in five within each kind and batch, with no exception for written recipes.
+- **A stand-in-probe** has `recipe`, `ingredient`, `candidate`, `verdict` and `why`.
+  These are independent names, not references that would force the graph to contain
+  the answer. `verdict` takes `works`, `works-with-caveat` or `does-not-work` from
+  `stand_in_verdicts`. `why` is the independent writer's note.
+- **A kitchen-probe** has `technique`, `at_home`, `dishes` and `why`. Names again,
+  with every pantry item explicit and at least one expected dish or preparation.
+- **What counts:** the commands answer a stand-in probe only through an applicable
+  part option or direct statement, with a caveat when required, or an explicit
+  `not_when` for a negative. Absence never proves a negative. `works` accepts a
+  recorded caveat; `works-with-caveat` requires one. If an ingredient occurs more
+  than once, a positive must work for every line. A kitchen probe is answered when
+  every expected dish has a recipe using the named technique with no missing
+  required part. It measures recall of the expected dishes, not whether every
+  returned recipe deserves a cook's approval. Optional parts do not score.
+- **Independence:** the question-cycle writer is `gpt-6-luna`, with no access to
+  `graph/` or previous probes. The graph drafter is a different model. Held-back
+  questions and gaps are counted by code and never shown to the drafter.
 
 ## Decisions where the starting model was silent
 

@@ -1,0 +1,23 @@
+{
+  "id": "kitchen-probe/gratin",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "held-back",
+  "written_by": "gpt-6-luna",
+  "technique": "gratins",
+  "at_home": [
+    "potato",
+    "whole milk",
+    "heavy cream",
+    "Gruyère",
+    "butter",
+    "garlic",
+    "salt",
+    "black pepper",
+    "nutmeg",
+    "cauliflower",
+    "all-purpose flour"
+  ],
+  "dishes": ["Gratin dauphinois", "Gratin de chou-fleur"],
+  "why": "Potatoes, dairy and seasoning make a dauphinois; cauliflower, flour and cheese support a béchamel-based gratin."
+}

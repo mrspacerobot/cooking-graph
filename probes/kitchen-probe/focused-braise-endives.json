@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-braise-endives",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "braise",
+  "at_home": ["Belgian endives", "butter", "water", "lemon juice", "sugar", "salt", "black pepper"],
+  "dishes": ["Endives braisées"],
+  "why": "Endives cook gently with a little liquid and butter until tender, with lemon and a touch of sugar balancing their bitterness."
+}

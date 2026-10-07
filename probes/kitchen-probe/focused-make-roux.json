@@ -1,0 +1,11 @@
+{
+  "id": "kitchen-probe/focused-make-roux",
+  "tier": "drafted",
+  "batch": "kitchen-2",
+  "set": "held-back",
+  "written_by": "gpt-6-luna",
+  "technique": "make a roux",
+  "at_home": ["butter", "all-purpose flour", "whole milk", "salt", "black pepper", "nutmeg"],
+  "dishes": ["Béchamel sauce"],
+  "why": "Butter and flour are cooked together before milk is whisked in to make a smooth béchamel."
+}

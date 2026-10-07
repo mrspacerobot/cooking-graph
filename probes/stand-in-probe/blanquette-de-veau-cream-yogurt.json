@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/blanquette-de-veau-cream-yogurt",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Blanquette de veau",
+  "ingredient": "heavy cream",
+  "candidate": "plain yogurt",
+  "verdict": "does-not-work",
+  "why": "Yogurt’s acidity can split and makes the sauce tangy instead of gently creamy."
+}

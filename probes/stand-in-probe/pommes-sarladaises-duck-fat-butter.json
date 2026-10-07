@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/pommes-sarladaises-duck-fat-butter",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Pommes de terre sarladaises",
+  "ingredient": "duck fat",
+  "candidate": "butter",
+  "verdict": "works-with-caveat",
+  "why": "Butter can brown the potatoes, though it brings a dairy flavor and browns more readily than duck fat."
+}

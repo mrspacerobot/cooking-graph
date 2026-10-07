@@ -1,0 +1,22 @@
+{
+  "id": "kitchen-probe/saute",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "sautéing",
+  "at_home": [
+    "chicken breast",
+    "shallot",
+    "mushrooms",
+    "butter",
+    "olive oil",
+    "white wine",
+    "chicken stock",
+    "parsley",
+    "salt",
+    "black pepper"
+  ],
+  "dishes": ["Poulet sauté chasseur", "Poulet à la crème"],
+  "why": "The listed aromatics, cooking fats and liquids support sautéed chicken with a pan sauce, including mushroom and cream preparations."
+}

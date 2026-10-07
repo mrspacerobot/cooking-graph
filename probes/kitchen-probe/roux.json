@@ -1,0 +1,20 @@
+{
+  "id": "kitchen-probe/roux",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "roux sauces",
+  "at_home": [
+    "butter",
+    "all-purpose flour",
+    "whole milk",
+    "chicken stock",
+    "Gruyère",
+    "salt",
+    "black pepper",
+    "nutmeg"
+  ],
+  "dishes": ["Béchamel sauce", "Mornay sauce", "Croque monsieur"],
+  "why": "Butter and flour form roux-based sauces with milk or stock; cheese turns béchamel into Mornay for a familiar gratin or sandwich."
+}

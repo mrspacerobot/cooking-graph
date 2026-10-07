@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/boeuf-bourguignon-red-wine-stock",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "held-back",
+  "written_by": "gpt-6-luna",
+  "recipe": "Bœuf bourguignon",
+  "ingredient": "red wine",
+  "candidate": "beef stock",
+  "verdict": "does-not-work",
+  "why": "Stock adds body but lacks the wine’s acidity and aroma that define the braising liquid."
+}

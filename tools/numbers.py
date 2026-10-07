@@ -1,6 +1,6 @@
 """The numbers: what the graph holds, how far it can be trusted, and how many probes it answers."""
 
-from tools import probes
+from tools import probes, question_probes
 from tools.reading import nested
 
 SAFETY_STATES = ("unverified", "verified")
@@ -72,6 +72,11 @@ def count_safety_points(things):
     return sum(len(step["safety_points"]) for recipe in recipes for step in recipe.data["steps"])
 
 
+def count_parts(things):
+    parts = [part for thing in things.values() if thing.kind in ("dish", "preparation") for part in thing.data["parts"]]
+    return (sum(len(part["options"]) > 1 for part in parts), len(parts))
+
+
 def count(things):
     return {
         "things": count_things(things),
@@ -85,6 +90,8 @@ def count(things):
         "levels_with_a_technique": count_levels(things),
         "recipe_steps": count_steps(things),
         "safety_points": count_safety_points(things),
+        "parts_with_options": count_parts(things),
+        "question_probes": question_probes.counts(question_probes.run(things)),
     }
 
 
@@ -149,4 +156,10 @@ def render(counts, model, words):
     lines.append("Levels of the programs that name a technique: %d of %d" % (with_a_technique, levels))
     lines.append("Recipe steps: %d" % counts["recipe_steps"])
     lines.append("Safety points in recipe steps that wait for a verified fact: %d" % counts["safety_points"])
+    lines.append("Parts with more than one option: %s" % probes.as_share(counts["parts_with_options"]))
+    lines.append("")
+    lines.extend(["| Question probes | Set | Answered |", "|---|---|---|"])
+    for kind, sets in counts["question_probes"].items():
+        for set_name, pair in sets.items():
+            lines.append("| %s | %s | %s |" % (kind, set_name, probes.as_share(pair)))
     return "\n".join(lines)

@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/ratatouille-aubergine-courgette",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "recipe": "Ratatouille",
+  "ingredient": "eggplant",
+  "candidate": "zucchini",
+  "verdict": "works",
+  "why": "Both are tender summer vegetables that suit the same slow-cooked vegetable preparation."
+}

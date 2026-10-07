@@ -1,0 +1,22 @@
+{
+  "id": "kitchen-probe/stocks",
+  "tier": "drafted",
+  "batch": "kitchen-1",
+  "set": "growing",
+  "written_by": "gpt-6-luna",
+  "technique": "stock making",
+  "at_home": [
+    "chicken bones",
+    "onion",
+    "carrot",
+    "celery",
+    "parsley stems",
+    "thyme",
+    "bay leaf",
+    "water",
+    "salt",
+    "black pepper"
+  ],
+  "dishes": ["Chicken stock", "Consommé de volaille"],
+  "why": "Bones, aromatic vegetables, herbs and water make a standard poultry stock that can also be clarified as consommé."
+}

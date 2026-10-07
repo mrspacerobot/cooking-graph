@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/sauce-bearnaise-tarragon-chervil",
+  "tier": "drafted",
+  "batch": "stand-ins-1",
+  "set": "held-back",
+  "written_by": "gpt-6-luna",
+  "recipe": "Sauce béarnaise",
+  "ingredient": "tarragon",
+  "candidate": "chervil",
+  "verdict": "works-with-caveat",
+  "why": "Chervil keeps a delicate anise-herb note, though the sauce loses tarragon’s distinctive flavor."
+}

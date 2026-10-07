@@ -21,8 +21,9 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/garlic", "tier": "drafted"},
-    {"thing": "ingredient/basil", "tier": "drafted"}
+    {"thing": "group/whole-spices", "tier": "drafted"},
+    {"thing": "group/tender-herbs", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

@@ -25,10 +25,9 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/shallot", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/celery", "tier": "drafted"},
-    {"thing": "ingredient/onion", "tier": "drafted"}
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/brunoise", "tier": "drafted"}

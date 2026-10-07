@@ -5,6 +5,9 @@
   "aliases": {"en": ["fresh pork sausage", "Toulouse sausage"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/meat", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Coarse pork in a skin. Cooked slowly it stays juicy, and it bursts if it is pricked or rushed.",
   "safety": {

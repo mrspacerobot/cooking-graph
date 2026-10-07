@@ -28,17 +28,10 @@
     }
   ],
   "works_on": [
-    {"thing": "preparation/pan-sauce", "tier": "drafted"},
-    {"thing": "preparation/poaching-liquid", "tier": "drafted"},
-    {"thing": "ingredient/stock", "tier": "drafted"},
-    {"thing": "ingredient/red-wine", "tier": "drafted"},
-    {"thing": "ingredient/white-wine", "tier": "drafted"},
-    {"thing": "ingredient/cream", "tier": "drafted"},
-    {"thing": "preparation/white-chicken-stock", "tier": "drafted"},
-    {"thing": "preparation/brown-stock", "tier": "drafted"},
-    {"thing": "ingredient/shallot", "tier": "drafted"},
-    {"thing": "preparation/braising-liquid", "tier": "drafted"},
-    {"thing": "preparation/jus", "tier": "drafted"}
+    {"thing": "group/cooking-liquors", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "group/wines", "tier": "drafted"},
+    {"thing": "group/creams", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/nappe", "tier": "drafted"}

@@ -50,6 +50,8 @@ Every thing and every statement carries one tier:
 - **Only the owner merges into `main`.** An agent works on a branch, pushes it, opens a pull request and stops. Never push to `main`, never merge, never rewrite its history.
 - **Tests first** for every tool. A rule of the checker has a test with a file that breaks it.
 - **`./check` must pass** before anything is called done. Report honestly: if it fails or a step was skipped, say so.
+- **The model that drafts the graph writes no probes.** A probe says who wrote it. Fresh probes come from another writer who cannot see `graph/`.
+- **A technique works on groups,** not on a list of ingredients. A group is narrow enough that the card is true for every member.
 - **The graph grows against probes.** `./probe` lists what the growing probes lack. One probe in five is held back by a rule, not by a person. Never write a dish, a name or an alias to please a held-back probe: `./probe` does not show what they lack, and it must stay that way.
 - **`./numbers` gives the numbers** for a round's notes and a pull request: counts by kind and tier, and the share of probes answered, growing and held back apart.
 - **A pull request that adds or changes content says how much and of what,** and lists what its author doubts.

@@ -6,15 +6,16 @@
   "makes": "dish/asperges-hollandaise",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/asparagus", "amount": {"value": 1, "unit": "kilogram"}, "forms": []},
-    {"thing": "preparation/hollandaise", "amount": {"value": 250, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []}
+    {"thing": "ingredient/asparagus", "amount": {"value": 1, "unit": "kilogram"}, "forms": [], "part": "asparagus"},
+    {"thing": "preparation/hollandaise", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "hollandaise"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "salt"}
   ],
   "equipment": ["equipment/stovetop", "equipment/saute-pan", "equipment/vegetable-peeler", "equipment/slotted-spoon"],
   "steps": [
     {
       "technique": "technique/peel",
       "works_on": ["ingredient/asparagus"],
+      "with": [],
       "text": "Cut off the woody ends. Peel each spear from just below the tip to the base.",
       "time": null,
       "temperature": null,
@@ -23,7 +24,8 @@
     },
     {
       "technique": "technique/boil",
-      "works_on": ["ingredient/asparagus", "ingredient/salt"],
+      "works_on": ["ingredient/asparagus"],
+      "with": ["ingredient/salt"],
       "text": "Boil the spears in well-salted water until the tip of a knife slides into the thick end.",
       "time": {"from": 6, "to": 10, "unit": "minute"},
       "temperature": null,
@@ -33,6 +35,7 @@
     {
       "technique": "technique/plate",
       "works_on": ["ingredient/asparagus", "preparation/hollandaise"],
+      "with": [],
       "text": "Drain them on a cloth and serve them warm, with the hollandaise beside them.",
       "time": null,
       "temperature": null,

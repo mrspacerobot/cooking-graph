@@ -29,11 +29,7 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/leek", "tier": "drafted"},
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/pumpkin", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/mushroom", "tier": "drafted"}
+    {"thing": "group/vegetables", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/pureed", "tier": "drafted"}

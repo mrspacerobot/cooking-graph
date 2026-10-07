@@ -5,6 +5,9 @@
   "aliases": {"en": ["button mushroom", "white mushroom"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/mushrooms", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Sheds its water in the pan, and browns only once that water has cooked off.",
   "safety": {

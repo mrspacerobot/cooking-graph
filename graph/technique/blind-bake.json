@@ -24,7 +24,7 @@
     }
   ],
   "works_on": [
-    {"thing": "preparation/shortcrust-pastry", "tier": "drafted"}
+    {"thing": "group/pastry", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/blind-baked", "tier": "drafted"}

@@ -7,6 +7,9 @@
     {"thing": "ingredient/beef-steak", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A well-marbled steak whose fat melts in the pan and bastes it.",
   "safety": {

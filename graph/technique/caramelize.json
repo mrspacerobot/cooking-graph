@@ -27,8 +27,7 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/onion", "tier": "drafted"},
-    {"thing": "ingredient/shallot", "tier": "drafted"}
+    {"thing": "group/alliums", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/caramelized", "tier": "drafted"},

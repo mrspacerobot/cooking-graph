@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/roasting-joints", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A row of tender chops in one piece under a layer of fat, which cooks quickly and is best left pink.",
   "safety": {

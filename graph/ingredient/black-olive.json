@@ -5,6 +5,9 @@
   "aliases": {"en": ["black olives", "niçoise olive"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/pickles", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Salty and slightly bitter. It keeps its shape in the oven and seasons what is around it.",
   "safety": {

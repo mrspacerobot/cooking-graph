@@ -5,14 +5,26 @@
   "aliases": {"en": ["piémontaise", "French potato salad with ham"]},
   "is": "A cold salad of boiled potatoes, tomato, ham, hard-boiled egg and cornichons, bound with mayonnaise.",
   "parts": [
-    {"role": "main", "options": ["ingredient/potato"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/tomato"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/ham"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/egg"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/cornichons"], "tier": "drafted"},
-    {"role": "sauce", "options": ["preparation/mayonnaise"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "main", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {"id": "ham", "role": "main", "options": ["ingredient/ham"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cornichons",
+      "role": "seasoning",
+      "options": ["ingredient/cornichons"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "mayonnaise", "role": "sauce", "options": ["preparation/mayonnaise"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/dice", "tier": "drafted"},

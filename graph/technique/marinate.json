@@ -28,9 +28,8 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/stewing-beef", "tier": "drafted"},
-    {"thing": "ingredient/chicken", "tier": "drafted"},
-    {"thing": "ingredient/lamb-shoulder", "tier": "drafted"}
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

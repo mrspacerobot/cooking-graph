@@ -5,6 +5,9 @@
   "aliases": {"en": ["fish fumet"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A light, quick stock from fish bones. It turns bitter if it is simmered for long.",
   "safety": {

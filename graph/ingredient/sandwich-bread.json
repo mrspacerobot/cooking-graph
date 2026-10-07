@@ -7,6 +7,9 @@
     {"thing": "ingredient/bread", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [
+    {"thing": "group/breads", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A soft, close-crumbed loaf that toasts evenly and browns fast in butter.",
   "safety": {

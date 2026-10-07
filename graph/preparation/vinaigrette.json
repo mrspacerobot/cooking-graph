@@ -6,14 +6,37 @@
   "is": "Oil whisked into vinegar and mustard until they hold together for a while: the dressing of French salads.",
   "parts": [
     {
+      "id": "acid",
       "role": "acid",
       "options": ["ingredient/red-wine-vinegar", "ingredient/white-wine-vinegar", "ingredient/lemon"],
+      "optional": false,
       "tier": "drafted"
     },
-    {"role": "emulsifier", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {
+      "id": "dijon-mustard",
+      "role": "emulsifier",
+      "options": ["ingredient/dijon-mustard"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "groups": [
+    {"thing": "group/emulsified-sauces", "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/emulsify", "tier": "drafted"}

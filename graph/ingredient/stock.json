@@ -5,6 +5,9 @@
   "aliases": {"en": ["broth"], "fr": ["fond"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Gives body and savoury depth. As it boils down it thickens and grows saltier.",
   "safety": {

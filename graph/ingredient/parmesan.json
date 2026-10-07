@@ -5,6 +5,9 @@
   "aliases": {"en": ["Parmigiano Reggiano"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/grating-cheeses", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A hard, dry, salty cheese that melts into sauces and browns to a crisp crust.",
   "safety": {

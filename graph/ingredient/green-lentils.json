@@ -5,6 +5,9 @@
   "aliases": {"en": ["Puy lentils", "French lentils"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/pulses", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Small lentils that keep their shape when simmered gently. Salt goes in at the end, so that their skins do not toughen.",
   "safety": {

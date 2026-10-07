@@ -320,7 +320,7 @@ class Safety(CheckerTest):
 class Recipes(CheckerTest):
     def test_a_step_that_works_on_something_not_listed(self):
         def add_flour(thing):
-            thing["steps"][0]["works_on"].append("ingredient/flour")
+            thing["steps"][0]["with"].append("ingredient/flour")
 
         self.break_file(RECIPE, add_flour)
         self.expect(RECIPE, "step-works-on-unlisted")
@@ -329,11 +329,12 @@ class Recipes(CheckerTest):
         def make_the_roux(thing):
             thing["makes"] = "preparation/roux"
             thing["ingredients"] = [
-                {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": []},
-                {"thing": "ingredient/flour", "amount": {"value": 20, "unit": "gram"}, "forms": []},
+                {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "butter"},
+                {"thing": "ingredient/flour", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "flour"},
             ]
-            thing["steps"][0]["works_on"] = ["ingredient/butter", "ingredient/flour"]
-            thing["steps"].append(dict(thing["steps"][0], works_on=["preparation/roux"]))
+            thing["steps"][0]["works_on"] = []
+            thing["steps"][0]["with"] = ["ingredient/butter", "ingredient/flour"]
+            thing["steps"].append(dict(thing["steps"][0], works_on=[], **{"with": ["preparation/roux"]}))
 
         self.break_file(RECIPE, make_the_roux)
         self.assertEqual([], self.issues())
@@ -360,7 +361,8 @@ class Recipes(CheckerTest):
 
     def test_a_by_product_listed_as_an_ingredient(self):
         def list_the_juices(thing):
-            thing["ingredients"].append({"thing": JUICES, "amount": {"value": 1, "unit": "tablespoon"}, "forms": []})
+            juices = {"thing": JUICES, "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "onion"}
+            thing["ingredients"].append(juices)
             thing["steps"][0]["works_on"].append(JUICES)
 
         self.break_file(RECIPE, list_the_juices)
@@ -368,22 +370,61 @@ class Recipes(CheckerTest):
         self.assertIn((RECIPE, "by-product-as-ingredient"), found)
 
     def test_a_by_product_named_as_a_part_of_a_dish(self):
-        self.break_file(DISH, lambda thing: thing["parts"].append({"role": "liquid", "options": [JUICES], "tier": DRAFTED}))
+        juices = {"id": "juices", "role": "liquid", "options": [JUICES], "optional": True, "tier": DRAFTED}
+        self.break_file(DISH, lambda thing: thing["parts"].append(juices))
         self.expect(DISH, "by-product-as-part")
 
     def test_an_ingredient_no_step_uses(self):
         def forget_the_butter(thing):
-            thing["steps"][0]["works_on"] = ["ingredient/onion"]
+            thing["steps"][0]["with"] = []
 
         self.break_file(RECIPE, forget_the_butter)
         self.expect(RECIPE, "ingredient-never-used")
 
-    def test_an_ingredient_the_dish_does_not_name(self):
-        def cook_in_roux_no_more(thing):
-            thing["parts"] = thing["parts"][:1]
+    def test_a_line_that_fills_a_part_the_dish_does_not_have(self):
+        def fill_the_sauce(thing):
+            thing["ingredients"][1]["part"] = "sauce"
 
-        self.break_file(DISH, cook_in_roux_no_more)
-        self.expect(RECIPE, "not-in-the-dish")
+        self.break_file(RECIPE, fill_the_sauce)
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((RECIPE, "part-unknown"), found)
+
+    def test_a_line_that_is_no_option_of_its_part(self):
+        def butter_as_the_onion(thing):
+            thing["ingredients"][1]["part"] = "onion"
+
+        self.break_file(RECIPE, butter_as_the_onion)
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((RECIPE, "not-an-option-of-its-part"), found)
+
+    def test_a_part_no_line_fills(self):
+        def forget_the_roux(thing):
+            thing["ingredients"] = thing["ingredients"][:1]
+            thing["steps"][0]["with"] = []
+
+        self.break_file(RECIPE, forget_the_roux)
+        self.expect(RECIPE, "part-not-filled")
+
+    def test_an_optional_part_may_stay_unfilled(self):
+        self.assertEqual([], self.issues())
+        self.break_file(DISH, lambda thing: thing["parts"][2].update(optional=False))
+        self.expect(RECIPE, "part-not-filled")
+
+    def test_two_parts_of_a_dish_with_one_id(self):
+        self.break_file(DISH, lambda thing: thing["parts"][2].update(id="onion"))
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((DISH, "part-id-twice"), found)
+
+    def test_a_step_that_works_on_what_its_technique_does_not(self):
+        def sweat_the_butter(thing):
+            thing["steps"][0]["works_on"].append("ingredient/butter")
+
+        self.break_file(RECIPE, sweat_the_butter)
+        self.expect(RECIPE, "not-what-the-technique-works-on")
+
+    def test_a_step_may_work_on_a_member_of_a_narrower_group(self):
+        covered = [issue for issue in self.issues() if issue.rule == "not-what-the-technique-works-on"]
+        self.assertEqual([], covered)
 
     def test_a_step_with_a_technique_that_does_not_exist(self):
         def name_a_ghost(thing):
@@ -502,7 +543,9 @@ class Probes(CheckerTest):
         path = self.kitchen.held_back_path()
         self.break_file(path, lambda probe: probe.update(dish="Buttered onions baked"))
         self.break_file(DISH, lambda thing: thing.update(aliases={"en": ["buttered onions baked"]}))
-        self.expect(DISH, "drafted-towards-held-back")
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((DISH, "drafted-towards-held-back"), found)
+        self.assertIn((path, "level-dish-held-back"), found)
 
     def test_a_preparation_drafted_towards_a_held_back_probe(self):
         path = self.kitchen.held_back_path()
@@ -516,9 +559,8 @@ class Probes(CheckerTest):
         self.assertEqual({"same-dish-twice"}, found)
 
     def test_the_batch_of_the_small_kitchen_holds_one_probe_back(self):
-        held_back = [f for f in self.kitchen.files.values() if f.get("set") == "held-back"]
+        held_back = [f for f in self.kitchen.files.values() if f.get("set") == "held-back" and f["batch"] == BATCH]
         self.assertEqual(1, len(held_back))
-        self.assertEqual(BATCH, held_back[0]["batch"])
 
 
 if __name__ == "__main__":

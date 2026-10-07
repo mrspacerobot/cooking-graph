@@ -1,0 +1,36 @@
+{
+  "id": "dish/butter-basted-pork-chop",
+  "tier": "drafted",
+  "names": {"en": "Butter-basted pork chop", "fr": "Côte de porc au beurre"},
+  "aliases": {"fr": ["côte de porc arrosée au beurre"]},
+  "is": "A thick pork chop seared in a hot pan, then basted with foaming butter, garlic and thyme until it is browned all over, and rested.",
+  "parts": [
+    {"id": "pork-chop", "role": "main", "options": ["ingredient/pork-chop"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "thyme", "role": "aromatic", "options": ["ingredient/thyme"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/baste", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

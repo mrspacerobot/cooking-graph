@@ -5,14 +5,41 @@
   "aliases": {"en": ["brown veal stock", "brown beef stock"]},
   "is": "A dark, full-bodied stock made from bones and vegetables that are roasted until deeply browned before they are simmered.",
   "parts": [
-    {"role": "main", "options": ["ingredient/veal-bones", "ingredient/beef-bones"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/celery"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/tomato-paste"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/veal-bones", "ingredient/beef-bones"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "celery", "role": "aromatic", "options": ["ingredient/celery"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato-paste",
+      "role": "aromatic",
+      "options": ["ingredient/tomato-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "bouquet-garni",
+      "role": "aromatic",
+      "options": ["preparation/bouquet-garni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/stocks", "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/skim", "tier": "drafted"},

@@ -5,6 +5,9 @@
   "aliases": {"en": ["celery root"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Firm and earthy, crisp when raw and creamy when cooked. Its cut flesh browns in air unless it meets acid.",
   "safety": {

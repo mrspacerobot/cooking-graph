@@ -26,7 +26,6 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/butter", "tier": "drafted"},
     {"thing": "ingredient/flour", "tier": "drafted"}
   ],
   "makes": [

@@ -5,6 +5,9 @@
   "aliases": {"en": ["loin of pork", "pork roasting joint"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/roasting-joints", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A lean roasting joint that dries out easily, so it is roasted gently and rested.",
   "safety": {

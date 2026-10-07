@@ -5,8 +5,9 @@
   "aliases": {},
   "is": "Butter with its water and milk solids taken out. What is left is pure fat, which stands much more heat before it burns.",
   "parts": [
-    {"role": "main", "options": ["ingredient/butter"], "tier": "drafted"}
+    {"id": "butter", "role": "main", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"}
   ],
+  "groups": [],
   "teaches": [],
   "stands_in_for": [
     {

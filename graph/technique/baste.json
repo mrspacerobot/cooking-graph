@@ -28,12 +28,9 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/chicken", "tier": "drafted"},
-    {"thing": "ingredient/duck", "tier": "drafted"},
-    {"thing": "ingredient/leg-of-lamb", "tier": "drafted"},
-    {"thing": "ingredient/pork-loin", "tier": "drafted"},
-    {"thing": "ingredient/pork-chop", "tier": "drafted"},
-    {"thing": "ingredient/beef-steak", "tier": "drafted"}
+    {"thing": "group/roasting-joints", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/steaks-and-chops", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

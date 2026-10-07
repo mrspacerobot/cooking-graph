@@ -5,14 +5,26 @@
   "aliases": {},
   "is": "Sliced boiled potatoes baked with onions, bacon lardons, a splash of white wine and cream, under a halved reblochon that melts over them and browns.",
   "parts": [
-    {"role": "main", "options": ["ingredient/potato"], "tier": "drafted"},
-    {"role": "topping", "options": ["ingredient/reblochon"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/bacon"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
-    {"role": "enrichment", "options": ["ingredient/creme-fraiche", "ingredient/cream"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "reblochon", "role": "topping", "options": ["ingredient/reblochon"], "optional": false, "tier": "drafted"},
+    {"id": "bacon", "role": "garnish", "options": ["ingredient/bacon"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "white-wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "enrichment",
+      "role": "enrichment",
+      "options": ["ingredient/creme-fraiche", "ingredient/cream"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/layer", "tier": "drafted"},

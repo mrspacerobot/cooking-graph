@@ -5,6 +5,9 @@
   "aliases": {"en": ["sweet pepper", "capsicum"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/watery-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Softens and sweetens slowly, and its skin loosens when it is blistered.",
   "safety": {

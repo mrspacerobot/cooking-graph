@@ -5,13 +5,18 @@
   "aliases": {"en": ["velouté sauce"]},
   "is": "A white stock thickened with a blond roux and simmered until smooth and velvety, the base of the cream sauces for poultry, veal and fish.",
   "parts": [
-    {"role": "thickener", "options": ["preparation/roux"], "tier": "drafted"},
+    {"id": "roux", "role": "thickener", "options": ["preparation/roux"], "optional": false, "tier": "drafted"},
     {
+      "id": "stock",
       "role": "liquid",
       "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock", "ingredient/fish-stock"],
+      "optional": false,
       "tier": "drafted"
     },
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/roux-sauces", "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/make-a-roux", "tier": "drafted"}

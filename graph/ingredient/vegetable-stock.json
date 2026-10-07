@@ -7,6 +7,9 @@
     {"thing": "ingredient/stock", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A light liquid with no gelatine in it, so it stays thin however far it is boiled down.",
   "safety": {

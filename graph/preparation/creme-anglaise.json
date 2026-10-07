@@ -5,10 +5,13 @@
   "aliases": {"en": ["custard sauce", "pouring custard", "custard"]},
   "is": "A pouring custard: sweetened milk thickened gently with egg yolks until it coats a spoon.",
   "parts": [
-    {"role": "thickener", "options": ["ingredient/egg-yolk"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/milk"], "tier": "drafted"},
-    {"role": "sweetener", "options": ["ingredient/sugar"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/vanilla"], "tier": "drafted"}
+    {"id": "egg-yolk", "role": "thickener", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "vanilla", "role": "aromatic", "options": ["ingredient/vanilla"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/sauces", "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/make-a-custard", "tier": "drafted"}

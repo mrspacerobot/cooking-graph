@@ -22,8 +22,10 @@
     "part": {
       "is": "object",
       "fields": {
+        "id": {"is": "slug"},
         "role": {"is": "word", "from": "part_roles"},
         "options": {"is": "list", "at_least": 1, "of": {"is": "ref", "kinds": ["ingredient", "preparation"]}},
+        "optional": {"is": "boolean"},
         "tier": {"is": "word", "from": "tiers"}
       }
     }
@@ -79,6 +81,18 @@
         }
       }
     },
+    "group": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "names": {"is": "names"},
+        "aliases": {"is": "aliases"},
+        "shares": {"is": "text"},
+        "within": {"is": "link", "to": ["group"], "or_null": true},
+        "stands_alone": {"is": "text", "or_null": true}
+      }
+    },
     "ingredient": {
       "home": "graph",
       "fields": {
@@ -88,6 +102,7 @@
         "aliases": {"is": "aliases"},
         "is_a": {"is": "list", "of": {"is": "link", "to": ["ingredient"]}},
         "part_of": {"is": "list", "of": {"is": "link", "to": ["ingredient"]}},
+        "groups": {"is": "list", "of": {"is": "link", "to": ["group"]}},
         "forms": {"is": "list", "of": {"is": "link", "to": ["form"]}},
         "behaviour": {"is": "text"},
         "safety": {
@@ -134,7 +149,7 @@
             }
           }
         },
-        "works_on": {"is": "list", "of": {"is": "link", "to": ["ingredient", "preparation"]}},
+        "works_on": {"is": "list", "of": {"is": "link", "to": ["group", "ingredient", "preparation"]}},
         "makes": {"is": "list", "of": {"is": "link", "to": ["form", "preparation"]}},
         "needs": {
           "is": "list",
@@ -165,6 +180,7 @@
         "aliases": {"is": "aliases"},
         "is": {"is": "text"},
         "parts": {"is": "list", "of": {"is": "shape", "name": "part"}},
+        "groups": {"is": "list", "of": {"is": "link", "to": ["group"]}},
         "teaches": {"is": "list", "of": {"is": "link", "to": ["technique"]}},
         "stands_in_for": {"is": "list", "of": {"is": "shape", "name": "stand_in"}},
         "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
@@ -200,7 +216,8 @@
             "fields": {
               "thing": {"is": "ref", "kinds": ["ingredient", "preparation"]},
               "amount": {"is": "quantity", "units": "amount_units"},
-              "forms": {"is": "list", "of": {"is": "ref", "kinds": ["form"]}}
+              "forms": {"is": "list", "of": {"is": "ref", "kinds": ["form"]}},
+              "part": {"is": "slug"}
             }
           }
         },
@@ -213,6 +230,7 @@
             "fields": {
               "technique": {"is": "ref", "kinds": ["technique"]},
               "works_on": {"is": "list", "of": {"is": "ref", "kinds": ["ingredient", "preparation"]}},
+              "with": {"is": "list", "of": {"is": "ref", "kinds": ["ingredient", "preparation"]}},
               "text": {"is": "text"},
               "time": {"is": "quantity", "units": "time_units", "or_null": true},
               "temperature": {"is": "quantity", "units": "temperature_units", "or_null": true},
@@ -285,11 +303,27 @@
         "tier": {"is": "word", "from": "tiers"},
         "batch": {"is": "slug"},
         "set": {"is": "word", "from": "probe_sets"},
+        "written_by": {"is": "slug"},
         "written_for": {"is": "slug"},
         "dish": {"is": "label"},
         "also_called": {"is": "list", "of": {"is": "label"}},
         "techniques": {"is": "list", "at_least": 1, "of": {"is": "label"}},
         "ingredients": {"is": "list", "at_least": 1, "of": {"is": "label"}}
+      }
+    },
+    "safety-probe": {
+      "home": "probes",
+      "fields": {
+        "id": {"is": "id"},
+        "tier": {"is": "word", "from": "tiers"},
+        "batch": {"is": "slug"},
+        "set": {"is": "word", "from": "probe_sets"},
+        "written_by": {"is": "slug"},
+        "dish": {"is": "label"},
+        "also_called": {"is": "list", "of": {"is": "label"}},
+        "holds": {"is": "list", "of": {"is": "label"}},
+        "does_not_hold": {"is": "list", "of": {"is": "label"}},
+        "why": {"is": "text"}
       }
     }
   }

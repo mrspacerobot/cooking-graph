@@ -5,6 +5,9 @@
   "aliases": {"en": ["green peas", "garden peas"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/green-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Cook in moments and lose their sweetness and colour if they are held hot.",
   "safety": {

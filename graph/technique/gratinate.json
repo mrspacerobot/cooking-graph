@@ -22,12 +22,10 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/gruyere", "tier": "drafted"},
-    {"thing": "preparation/bechamel", "tier": "drafted"},
-    {"thing": "preparation/breadcrumbs", "tier": "drafted"},
-    {"thing": "preparation/mashed-potato", "tier": "drafted"},
-    {"thing": "ingredient/reblochon", "tier": "drafted"},
-    {"thing": "ingredient/baguette", "tier": "drafted"}
+    {"thing": "group/grating-cheeses", "tier": "drafted"},
+    {"thing": "group/roux-sauces", "tier": "drafted"},
+    {"thing": "group/breads", "tier": "drafted"},
+    {"thing": "preparation/mashed-potato", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

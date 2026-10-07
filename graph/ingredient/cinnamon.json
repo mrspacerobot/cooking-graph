@@ -5,6 +5,9 @@
   "aliases": {"en": ["cinnamon stick"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/whole-spices", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A sweet, warm bark that gives its flavour slowly to a hot liquid.",
   "safety": {

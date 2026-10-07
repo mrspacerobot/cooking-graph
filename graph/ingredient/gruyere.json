@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/grating-cheeses", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A firm, nutty cheese that melts smoothly and browns to a golden crust.",
   "safety": {

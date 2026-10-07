@@ -20,17 +20,11 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/turnip", "tier": "drafted"},
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/celeriac", "tier": "drafted"},
-    {"thing": "ingredient/onion", "tier": "drafted"},
-    {"thing": "ingredient/shallot", "tier": "drafted"},
-    {"thing": "ingredient/garlic", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
     {"thing": "ingredient/egg", "tier": "drafted"},
     {"thing": "ingredient/pear", "tier": "drafted"},
-    {"thing": "ingredient/asparagus", "tier": "drafted"},
-    {"thing": "ingredient/pearl-onion", "tier": "drafted"}
+    {"thing": "ingredient/asparagus", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/peeled", "tier": "drafted"}

@@ -5,6 +5,9 @@
   "aliases": {"en": ["pork fillet"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A lean, tender muscle that cooks quickly and dries out if it is taken any further.",
   "safety": {

@@ -7,6 +7,9 @@
     {"thing": "ingredient/sugar", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [
+    {"thing": "group/sugars", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Sugar with some of its molasses, which adds a taste of caramel and browns sooner than white sugar.",
   "safety": {

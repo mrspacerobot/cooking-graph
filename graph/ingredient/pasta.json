@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Softens in boiling salted water and sheds starch that helps a sauce cling.",
   "safety": {

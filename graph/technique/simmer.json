@@ -25,23 +25,13 @@
     {"mistake": "Covering the pot tightly, so that it climbs to a boil unseen.", "fix": "Leave the lid ajar."}
   ],
   "works_on": [
-    {"thing": "ingredient/stock", "tier": "drafted"},
-    {"thing": "ingredient/stewing-beef", "tier": "drafted"},
-    {"thing": "ingredient/white-beans", "tier": "drafted"},
-    {"thing": "ingredient/tomato", "tier": "drafted"},
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/leek", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/cabbage", "tier": "drafted"},
-    {"thing": "ingredient/pumpkin", "tier": "drafted"},
-    {"thing": "ingredient/veal-shoulder", "tier": "drafted"},
-    {"thing": "ingredient/green-lentils", "tier": "drafted"},
-    {"thing": "preparation/bechamel", "tier": "drafted"},
-    {"thing": "preparation/veloute", "tier": "drafted"},
-    {"thing": "ingredient/butter", "tier": "drafted"},
-    {"thing": "ingredient/chicken", "tier": "drafted"},
-    {"thing": "preparation/broth", "tier": "drafted"},
-    {"thing": "preparation/pan-sauce", "tier": "drafted"}
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/pulses", "tier": "drafted"},
+    {"thing": "group/pasta", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "ingredient/butter", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/broth", "tier": "drafted"}

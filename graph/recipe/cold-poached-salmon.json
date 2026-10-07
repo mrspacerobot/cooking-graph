@@ -6,16 +6,22 @@
   "makes": "dish/cold-poached-salmon",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/salmon", "amount": {"value": 600, "unit": "gram"}, "forms": []},
-    {"thing": "preparation/court-bouillon", "amount": {"value": 1.5, "unit": "litre"}, "forms": []},
-    {"thing": "preparation/mayonnaise", "amount": {"value": 150, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": []}
+    {"thing": "ingredient/salmon", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "salmon"},
+    {
+      "thing": "preparation/court-bouillon",
+      "amount": {"value": 1.5, "unit": "litre"},
+      "forms": [],
+      "part": "court-bouillon"
+    },
+    {"thing": "preparation/mayonnaise", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "mayonnaise"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"}
   ],
   "equipment": ["equipment/stovetop", "equipment/saute-pan", "equipment/fish-slice"],
   "steps": [
     {
       "technique": "technique/poach",
-      "works_on": ["ingredient/salmon", "preparation/court-bouillon"],
+      "works_on": ["ingredient/salmon"],
+      "with": ["preparation/court-bouillon"],
       "text": "Lay the salmon in a pan that holds it snugly and pour the cold court-bouillon over it to cover. Bring it slowly to a bare tremble and hold it there. The time counts from the first tremble. Check the thickest part against a trusted guide to doneness.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
@@ -25,6 +31,7 @@
     {
       "technique": "technique/chill",
       "works_on": ["ingredient/salmon", "preparation/court-bouillon"],
+      "with": [],
       "text": "Take the pan off the heat and let the fish cool in its liquid, then chill it in the liquid until cold.",
       "time": {"value": 2, "unit": "hour"},
       "temperature": null,
@@ -33,7 +40,8 @@
     },
     {
       "technique": "technique/plate",
-      "works_on": ["ingredient/salmon", "preparation/mayonnaise", "ingredient/lemon"],
+      "works_on": ["ingredient/salmon", "preparation/mayonnaise"],
+      "with": ["ingredient/lemon"],
       "text": "Lift the fish out, peel off the skin and the grey layer under it, and serve with the mayonnaise and wedges of lemon.",
       "time": null,
       "temperature": null,

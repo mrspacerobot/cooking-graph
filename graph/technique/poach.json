@@ -29,18 +29,13 @@
     }
   ],
   "works_on": [
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
     {"thing": "ingredient/egg", "tier": "drafted"},
-    {"thing": "ingredient/white-fish", "tier": "drafted"},
-    {"thing": "ingredient/chicken", "tier": "drafted"},
-    {"thing": "ingredient/salmon", "tier": "drafted"},
-    {"thing": "ingredient/skate", "tier": "drafted"},
-    {"thing": "ingredient/sole", "tier": "drafted"},
     {"thing": "ingredient/pear", "tier": "drafted"},
-    {"thing": "ingredient/marrow-bone", "tier": "drafted"},
-    {"thing": "ingredient/pike", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/leek", "tier": "drafted"},
-    {"thing": "ingredient/turnip", "tier": "drafted"}
+    {"thing": "ingredient/marrow-bone", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/poaching-liquid", "tier": "drafted"},

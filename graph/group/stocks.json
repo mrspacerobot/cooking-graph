@@ -1,0 +1,9 @@
+{
+  "id": "group/stocks",
+  "tier": "drafted",
+  "names": {"en": "Stocks", "fr": "Fonds"},
+  "aliases": {},
+  "shares": "Liquids made by simmering bones or vegetables in water. They carry flavour, and those made from bones gain body as they boil down.",
+  "within": null,
+  "stands_alone": null
+}

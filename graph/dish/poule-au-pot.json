@@ -5,17 +5,29 @@
   "aliases": {"en": ["chicken in the pot"]},
   "is": "A whole chicken poached gently with carrots, leeks, turnips and celery. The broth is served first and the bird after, carved, with its vegetables.",
   "parts": [
-    {"role": "main", "options": ["ingredient/chicken"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/carrot"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/leek"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/turnip"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/celery"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/clove"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {"id": "chicken", "role": "main", "options": ["ingredient/chicken"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "main", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "leek", "role": "main", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"},
+    {"id": "turnip", "role": "main", "options": ["ingredient/turnip"], "optional": false, "tier": "drafted"},
+    {"id": "celery", "role": "aromatic", "options": ["ingredient/celery"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "clove", "role": "aromatic", "options": ["ingredient/clove"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bouquet-garni",
+      "role": "aromatic",
+      "options": ["preparation/bouquet-garni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/poach", "tier": "drafted"},

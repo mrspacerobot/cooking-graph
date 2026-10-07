@@ -27,16 +27,10 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/allium", "tier": "drafted"},
-    {"thing": "ingredient/onion", "tier": "drafted"},
-    {"thing": "ingredient/leek", "tier": "drafted"},
-    {"thing": "ingredient/shallot", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/celery", "tier": "drafted"},
-    {"thing": "ingredient/fennel", "tier": "drafted"},
-    {"thing": "ingredient/bell-pepper", "tier": "drafted"},
-    {"thing": "preparation/mirepoix", "tier": "drafted"},
-    {"thing": "ingredient/spring-onion", "tier": "drafted"}
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/mushrooms", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/sweated", "tier": "drafted"}

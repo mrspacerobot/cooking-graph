@@ -6,16 +6,30 @@
   "is": "A steak crusted with coarsely crushed black pepper, seared and rested, with a sauce made in its pan from cognac and cream.",
   "parts": [
     {
+      "id": "main",
       "role": "main",
       "options": ["ingredient/beef-steak", "ingredient/rib-steak", "ingredient/beef-fillet"],
+      "optional": false,
       "tier": "drafted"
     },
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/cognac"], "tier": "drafted"},
-    {"role": "enrichment", "options": ["ingredient/cream"], "tier": "drafted"}
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "cognac", "role": "liquid", "options": ["ingredient/cognac"], "optional": false, "tier": "drafted"},
+    {"id": "cream", "role": "enrichment", "options": ["ingredient/cream"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/sear", "tier": "drafted"},

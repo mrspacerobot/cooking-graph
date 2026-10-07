@@ -23,9 +23,8 @@
     {"mistake": "Walking away at the end, when the syrup burns.", "fix": "Stay, and keep them rolling."}
   ],
   "works_on": [
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/turnip", "tier": "drafted"},
-    {"thing": "ingredient/pearl-onion", "tier": "drafted"}
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/glazed", "tier": "drafted"}

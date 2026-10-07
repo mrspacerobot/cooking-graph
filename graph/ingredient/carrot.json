@@ -5,6 +5,10 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Sweetens as it cooks and keeps its shape through long simmering.",
   "safety": {

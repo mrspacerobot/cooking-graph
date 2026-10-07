@@ -26,9 +26,7 @@
     }
   ],
   "works_on": [
-    {"thing": "preparation/fond", "tier": "drafted"},
-    {"thing": "ingredient/white-wine", "tier": "drafted"},
-    {"thing": "ingredient/red-wine-vinegar", "tier": "drafted"}
+    {"thing": "preparation/fond", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/pan-sauce", "tier": "drafted"},

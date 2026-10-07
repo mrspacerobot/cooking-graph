@@ -20,11 +20,8 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/gruyere", "tier": "drafted"},
-    {"thing": "ingredient/parmesan", "tier": "drafted"},
-    {"thing": "ingredient/vegetarian-hard-cheese", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/celeriac", "tier": "drafted"},
+    {"thing": "group/grating-cheeses", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "ingredient/nutmeg", "tier": "drafted"}
   ],
   "makes": [

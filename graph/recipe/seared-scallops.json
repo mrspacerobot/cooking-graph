@@ -6,17 +6,23 @@
   "makes": "dish/seared-scallops",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/scallop", "amount": {"value": 8, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/lemon", "amount": {"value": 0.25, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {"thing": "ingredient/scallop", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "scallop"},
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "sunflower-oil"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/lemon", "amount": {"value": 0.25, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "salt"}
   ],
   "equipment": ["equipment/stovetop", "equipment/frying-pan", "equipment/tongs"],
   "steps": [
     {
       "technique": "technique/sear",
-      "works_on": ["ingredient/scallop", "ingredient/salt", "ingredient/sunflower-oil"],
+      "works_on": ["ingredient/scallop"],
+      "with": ["ingredient/salt", "ingredient/sunflower-oil"],
       "text": "Dry the scallops very well on paper and salt them. Heat the oil in a heavy pan until it just begins to smoke. Set the scallops in, flat side down and well apart, and do not touch them until a deep brown crust has formed.",
       "time": {"from": 90, "to": 120, "unit": "second"},
       "temperature": null,
@@ -25,7 +31,8 @@
     },
     {
       "technique": "technique/sear",
-      "works_on": ["ingredient/scallop", "ingredient/butter"],
+      "works_on": ["ingredient/scallop"],
+      "with": ["ingredient/butter"],
       "text": "Turn them, add the butter and spoon it over as it foams. Take them out while the middle still gives under a finger. Check the thickest part against a trusted guide to doneness.",
       "time": {"from": 30, "to": 60, "unit": "second"},
       "temperature": null,
@@ -34,7 +41,8 @@
     },
     {
       "technique": "technique/plate",
-      "works_on": ["ingredient/scallop", "ingredient/lemon"],
+      "works_on": ["ingredient/scallop"],
+      "with": ["ingredient/lemon"],
       "text": "Serve at once on warm plates, with a few drops of lemon.",
       "time": null,
       "temperature": null,

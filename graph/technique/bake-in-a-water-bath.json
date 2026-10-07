@@ -24,9 +24,7 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/egg", "tier": "drafted"},
-    {"thing": "ingredient/cream", "tier": "drafted"},
-    {"thing": "ingredient/creme-fraiche", "tier": "drafted"}
+    {"thing": "ingredient/egg", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

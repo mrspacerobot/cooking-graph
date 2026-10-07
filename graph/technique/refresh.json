@@ -21,12 +21,10 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/green-beans", "tier": "drafted"},
-    {"thing": "ingredient/peas", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/turnip", "tier": "drafted"},
-    {"thing": "ingredient/egg", "tier": "drafted"},
-    {"thing": "ingredient/leek", "tier": "drafted"}
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

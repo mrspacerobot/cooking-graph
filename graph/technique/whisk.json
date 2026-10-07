@@ -19,9 +19,12 @@
     }
   ],
   "works_on": [
+    {"thing": "group/emulsified-sauces", "tier": "drafted"},
+    {"thing": "group/roux-sauces", "tier": "drafted"},
+    {"thing": "group/creams", "tier": "drafted"},
     {"thing": "ingredient/egg", "tier": "drafted"},
-    {"thing": "ingredient/cream", "tier": "drafted"},
-    {"thing": "ingredient/dijon-mustard", "tier": "drafted"}
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"},
+    {"thing": "preparation/roux", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

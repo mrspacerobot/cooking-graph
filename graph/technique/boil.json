@@ -25,17 +25,11 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/turnip", "tier": "drafted"},
-    {"thing": "ingredient/green-beans", "tier": "drafted"},
-    {"thing": "ingredient/peas", "tier": "drafted"},
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/pasta", "tier": "drafted"},
-    {"thing": "ingredient/vermicelli", "tier": "drafted"},
-    {"thing": "ingredient/leek", "tier": "drafted"},
-    {"thing": "ingredient/asparagus", "tier": "drafted"},
-    {"thing": "ingredient/cauliflower", "tier": "drafted"},
-    {"thing": "ingredient/macaroni", "tier": "drafted"}
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/pasta", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "ingredient/cauliflower", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

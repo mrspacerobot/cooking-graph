@@ -5,10 +5,22 @@
   "aliases": {"en": ["leeks vinaigrette", "leeks in vinaigrette"]},
   "is": "Leeks boiled until completely tender, drained well and served just warm under a mustardy vinaigrette.",
   "parts": [
-    {"role": "main", "options": ["ingredient/leek"], "tier": "drafted"},
-    {"role": "sauce", "options": ["preparation/vinaigrette"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/parsley", "ingredient/chives"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+    {"id": "leek", "role": "main", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"},
+    {
+      "id": "vinaigrette",
+      "role": "sauce",
+      "options": ["preparation/vinaigrette"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "garnish",
+      "role": "garnish",
+      "options": ["ingredient/parsley", "ingredient/chives"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/boil", "tier": "drafted"},

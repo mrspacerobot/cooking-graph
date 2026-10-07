@@ -1,0 +1,9 @@
+{
+  "id": "group/cooked-meats",
+  "tier": "drafted",
+  "names": {"en": "Cooked meats"},
+  "aliases": {},
+  "shares": "Meat that is already cooked or cured. It only needs warming, and dries out if it is heated for long.",
+  "within": {"thing": "group/meat", "tier": "drafted"},
+  "stands_alone": null
+}

@@ -5,11 +5,11 @@
   "aliases": {"en": ["cauliflower gratin", "cauliflower cheese", "cauliflower in béchamel"]},
   "is": "Cauliflower boiled until just tender, covered with a béchamel enriched with cheese, and browned in the oven.",
   "parts": [
-    {"role": "main", "options": ["ingredient/cauliflower"], "tier": "drafted"},
-    {"role": "sauce", "options": ["preparation/bechamel"], "tier": "drafted"},
-    {"role": "topping", "options": ["ingredient/gruyere"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+    {"id": "cauliflower", "role": "main", "options": ["ingredient/cauliflower"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "gruyere", "role": "topping", "options": ["ingredient/gruyere"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/gratinate", "tier": "drafted"},

@@ -5,6 +5,9 @@
   "aliases": {"en": ["white rice"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/starches", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Swells as it takes up liquid, and its starch thickens whatever it is stirred in.",
   "safety": {

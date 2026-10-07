@@ -1,0 +1,9 @@
+{
+  "id": "group/pasta",
+  "tier": "drafted",
+  "names": {"en": "Pasta", "fr": "Pâtes"},
+  "aliases": {},
+  "shares": "Dried shapes of wheat dough that soften in plenty of boiling salted water and go on swelling in any liquid they sit in.",
+  "within": {"thing": "group/starches", "tier": "drafted"},
+  "stands_alone": null
+}

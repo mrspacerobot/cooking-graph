@@ -1,0 +1,9 @@
+{
+  "id": "group/sauces",
+  "tier": "drafted",
+  "names": {"en": "Sauces", "fr": "Sauces"},
+  "aliases": {},
+  "shares": "Liquids made to coat food. A cook seasons them at the end, keeps them at the right heat and puts them on the plate last.",
+  "within": null,
+  "stands_alone": null
+}

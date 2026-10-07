@@ -6,21 +6,61 @@
   "makes": "dish/coq-au-vin",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/chicken", "amount": {"value": 1.6, "unit": "kilogram"}, "forms": ["form/jointed"]},
-    {"thing": "ingredient/bacon", "amount": {"value": 150, "unit": "gram"}, "forms": ["form/lardons"]},
-    {"thing": "ingredient/pearl-onion", "amount": {"value": 200, "unit": "gram"}, "forms": ["form/peeled"]},
-    {"thing": "ingredient/mushroom", "amount": {"value": 250, "unit": "gram"}, "forms": ["form/halved"]},
-    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled", "form/diced"]},
-    {"thing": "ingredient/carrot", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled", "form/sliced"]},
-    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"]},
-    {"thing": "ingredient/flour", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/red-wine", "amount": {"value": 600, "unit": "millilitre"}, "forms": []},
-    {"thing": "ingredient/chicken-stock", "amount": {"value": 200, "unit": "millilitre"}, "forms": []},
-    {"thing": "preparation/bouquet-garni", "amount": {"value": 1, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {
+      "thing": "ingredient/chicken",
+      "amount": {"value": 1.6, "unit": "kilogram"},
+      "forms": ["form/jointed"],
+      "part": "main"
+    },
+    {"thing": "ingredient/bacon", "amount": {"value": 150, "unit": "gram"}, "forms": ["form/lardons"], "part": "bacon"},
+    {
+      "thing": "ingredient/pearl-onion",
+      "amount": {"value": 200, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "pearl-onion"
+    },
+    {
+      "thing": "ingredient/mushroom",
+      "amount": {"value": 250, "unit": "gram"},
+      "forms": ["form/halved"],
+      "part": "mushroom"
+    },
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/diced"],
+      "part": "onion"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "carrot"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/flour", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/red-wine", "amount": {"value": 600, "unit": "millilitre"}, "forms": [], "part": "red-wine"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {
+      "thing": "preparation/bouquet-garni",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": [],
+      "part": "bouquet-garni"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "butter"},
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "sunflower-oil"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": [
     "equipment/stovetop", "equipment/oven", "equipment/dutch-oven", "equipment/wooden-spoon", "equipment/tongs",
@@ -30,6 +70,7 @@
     {
       "technique": "technique/render",
       "works_on": ["ingredient/bacon"],
+      "with": [],
       "text": "Put the lardons in a cold, heavy pot over medium heat. Let the fat run, brown them and lift them out.",
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
@@ -38,7 +79,8 @@
     },
     {
       "technique": "technique/sear",
-      "works_on": ["ingredient/chicken", "ingredient/salt", "preparation/rendered-fat", "ingredient/sunflower-oil"],
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/salt", "preparation/rendered-fat", "ingredient/sunflower-oil"],
       "text": "Dry the chicken pieces and salt them. Brown them in the bacon fat, with the oil if the pot looks dry, skin side down first and in batches. Lift them out.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": null,
@@ -47,7 +89,8 @@
     },
     {
       "technique": "technique/saute",
-      "works_on": ["ingredient/butter", "ingredient/pearl-onion", "ingredient/mushroom"],
+      "works_on": ["ingredient/pearl-onion", "ingredient/mushroom"],
+      "with": ["ingredient/butter"],
       "text": "Brown the pearl onions, then the mushrooms, in the butter in a frying pan. Keep them aside for the end.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
@@ -57,6 +100,7 @@
     {
       "technique": "technique/sweat",
       "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/garlic"],
+      "with": [],
       "text": "Pour off all but a film of fat from the pot. Soften the onion and the carrot in it, then stir in the garlic.",
       "time": {"from": 5, "to": 6, "unit": "minute"},
       "temperature": null,
@@ -65,7 +109,8 @@
     },
     {
       "technique": "technique/sprinkle-with-flour",
-      "works_on": ["ingredient/flour", "ingredient/onion", "ingredient/carrot"],
+      "works_on": ["ingredient/onion", "ingredient/carrot"],
+      "with": ["ingredient/flour"],
       "text": "Scatter the flour over the vegetables and stir for a moment.",
       "time": {"value": 1, "unit": "minute"},
       "temperature": null,
@@ -74,7 +119,8 @@
     },
     {
       "technique": "technique/deglaze",
-      "works_on": ["preparation/fond", "ingredient/red-wine"],
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/red-wine"],
       "text": "Pour in the wine and scrape the bottom of the pot clean. Boil it for a moment to drive off the raw smell.",
       "time": {"from": 3, "to": 4, "unit": "minute"},
       "temperature": null,
@@ -83,9 +129,8 @@
     },
     {
       "technique": "technique/braise",
-      "works_on": [
-        "ingredient/chicken", "preparation/pan-sauce", "ingredient/chicken-stock", "preparation/bouquet-garni"
-      ],
+      "works_on": ["ingredient/chicken"],
+      "with": ["preparation/pan-sauce", "ingredient/chicken-stock", "preparation/bouquet-garni"],
       "text": "Add the stock and the bouquet garni and put the chicken back. The liquid should come about half way up the pieces. Cover and cook at a bare simmer in a low oven, turning the pieces once, until the legs are tender. Take the breast pieces out earlier. Check the thickest part against a trusted guide to doneness.",
       "time": {"from": 45, "to": 60, "unit": "minute"},
       "temperature": {"value": 150, "unit": "celsius"},
@@ -95,6 +140,7 @@
     {
       "technique": "technique/reduce",
       "works_on": ["preparation/braising-liquid"],
+      "with": [],
       "text": "Lift the chicken out. Skim the fat from the liquid, take out the bouquet garni, and boil the sauce down until it coats a spoon.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
@@ -104,9 +150,10 @@
     {
       "technique": "technique/season",
       "works_on": [
-        "preparation/braising-liquid", "ingredient/black-pepper", "ingredient/salt", "ingredient/chicken",
-        "ingredient/bacon", "ingredient/pearl-onion", "ingredient/mushroom"
+        "preparation/braising-liquid", "ingredient/chicken", "ingredient/bacon", "ingredient/pearl-onion",
+        "ingredient/mushroom"
       ],
+      "with": ["ingredient/black-pepper", "ingredient/salt"],
       "text": "Taste and season. Put the chicken back with the lardons, the onions and the mushrooms, and warm it all gently in the sauce.",
       "time": null,
       "temperature": null,

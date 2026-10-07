@@ -24,18 +24,11 @@
     {"mistake": "Carving a roast straight from the oven.", "fix": "Rest it first, loosely covered."}
   ],
   "works_on": [
-    {"thing": "ingredient/chicken", "tier": "drafted"},
-    {"thing": "ingredient/duck", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/turnip", "tier": "drafted"},
-    {"thing": "ingredient/veal-bones", "tier": "drafted"},
-    {"thing": "ingredient/beef-bones", "tier": "drafted"},
-    {"thing": "ingredient/parsnip", "tier": "drafted"},
-    {"thing": "ingredient/leg-of-lamb", "tier": "drafted"},
-    {"thing": "ingredient/pork-loin", "tier": "drafted"},
-    {"thing": "ingredient/rack-of-lamb", "tier": "drafted"},
-    {"thing": "ingredient/beef-roasting-joint", "tier": "drafted"}
+    {"thing": "group/roasting-joints", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/bones", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/fond", "tier": "drafted"}

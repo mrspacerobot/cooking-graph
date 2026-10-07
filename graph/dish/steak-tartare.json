@@ -5,16 +5,40 @@
   "aliases": {"en": ["beef tartare"], "fr": ["tartare de bœuf"]},
   "is": "Raw beef chopped by hand and seasoned at the last moment with shallot, capers, cornichons, parsley and mustard, with a raw egg yolk on top.",
   "parts": [
-    {"role": "main", "options": ["ingredient/beef-fillet"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/capers"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/cornichons"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/parsley"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"], "tier": "drafted"},
-    {"role": "enrichment", "options": ["ingredient/egg-yolk"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {"id": "beef-fillet", "role": "main", "options": ["ingredient/beef-fillet"], "optional": false, "tier": "drafted"},
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "capers", "role": "seasoning", "options": ["ingredient/capers"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cornichons",
+      "role": "seasoning",
+      "options": ["ingredient/cornichons"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dijon-mustard",
+      "role": "seasoning",
+      "options": ["ingredient/dijon-mustard"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg-yolk", "role": "enrichment", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/brunoise", "tier": "drafted"},

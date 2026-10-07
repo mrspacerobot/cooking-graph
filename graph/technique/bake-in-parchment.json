@@ -26,9 +26,7 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/white-fish", "tier": "drafted"},
-    {"thing": "ingredient/leek", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"}
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

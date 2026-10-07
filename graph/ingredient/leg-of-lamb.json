@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/roasting-joints", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A large, lean joint that roasts best left pink, and needs a long rest before it is carved.",
   "safety": {

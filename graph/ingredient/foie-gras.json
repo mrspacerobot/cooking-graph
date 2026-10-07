@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/offal", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "The fattened liver of a duck or a goose. It melts fast in a hot pan and needs only a moment on each side.",
   "safety": {

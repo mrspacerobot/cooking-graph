@@ -5,10 +5,22 @@
   "aliases": {"en": ["chicken soup with vermicelli"], "fr": ["bouillon de poule aux vermicelles"]},
   "is": "A clear chicken stock, seasoned and brought to a simmer, with fine vermicelli cooked in it at the last moment.",
   "parts": [
-    {"role": "liquid", "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/vermicelli"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/parsley", "ingredient/chives"], "tier": "drafted"}
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "vermicelli", "role": "main", "options": ["ingredient/vermicelli"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "garnish",
+      "role": "garnish",
+      "options": ["ingredient/parsley", "ingredient/chives"],
+      "optional": true,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/simmer", "tier": "drafted"},

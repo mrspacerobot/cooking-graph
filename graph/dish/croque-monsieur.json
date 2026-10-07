@@ -5,11 +5,17 @@
   "aliases": {"en": ["croque"]},
   "is": "A sandwich of ham and gruyère on white bread, spread with béchamel, topped with more cheese and browned until it bubbles.",
   "parts": [
-    {"role": "base", "options": ["ingredient/sandwich-bread"], "tier": "drafted"},
-    {"role": "filling", "options": ["ingredient/ham"], "tier": "drafted"},
-    {"role": "filling", "options": ["ingredient/gruyere"], "tier": "drafted"},
-    {"role": "sauce", "options": ["preparation/bechamel"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"}
+    {
+      "id": "sandwich-bread",
+      "role": "base",
+      "options": ["ingredient/sandwich-bread"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "ham", "role": "filling", "options": ["ingredient/ham"], "optional": false, "tier": "drafted"},
+    {"id": "gruyere", "role": "filling", "options": ["ingredient/gruyere"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/gratinate", "tier": "drafted"},

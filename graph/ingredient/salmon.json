@@ -5,6 +5,9 @@
   "aliases": {"en": ["salmon fillet"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Rich, oily flesh that stays moist, with a skin that crisps well. It turns from glossy to matt as it sets, and dry soon after.",
   "safety": {

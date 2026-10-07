@@ -3,10 +3,12 @@
   "tier": "drafted",
   "names": {"en": "Leek", "fr": "Poireau"},
   "aliases": {},
-  "is_a": [
-    {"thing": "ingredient/allium", "tier": "drafted"}
-  ],
+  "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Melts to a silky sweetness over low heat. Grit hides between its layers, so it is washed after it is cut.",
   "safety": {

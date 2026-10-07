@@ -5,6 +5,9 @@
   "aliases": {"en": ["bay", "laurel leaf"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/woody-herbs", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Gives a quiet, savoury depth to anything that simmers. It stays tough and is taken out before serving.",
   "safety": {

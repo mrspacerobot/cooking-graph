@@ -6,13 +6,28 @@
   "makes": "dish/poulet-roti",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/chicken", "amount": {"value": 1.6, "unit": "kilogram"}, "forms": []},
-    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": ["form/room-temperature"]},
-    {"thing": "ingredient/thyme", "amount": {"value": 4, "unit": "sprig"}, "forms": []},
-    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": []},
-    {"thing": "ingredient/chicken-stock", "amount": {"value": 250, "unit": "millilitre"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {"thing": "ingredient/chicken", "amount": {"value": 1.6, "unit": "kilogram"}, "forms": [], "part": "chicken"},
+    {
+      "thing": "ingredient/butter",
+      "amount": {"value": 40, "unit": "gram"},
+      "forms": ["form/room-temperature"],
+      "part": "butter"
+    },
+    {"thing": "ingredient/thyme", "amount": {"value": 4, "unit": "sprig"}, "forms": [], "part": "thyme"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {
+      "thing": "ingredient/chicken-stock",
+      "amount": {"value": 250, "unit": "millilitre"},
+      "forms": [],
+      "part": "liquid"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": [
     "equipment/oven", "equipment/stovetop", "equipment/roasting-tin", "equipment/kitchen-string", "equipment/spoon",
@@ -21,9 +36,8 @@
   "steps": [
     {
       "technique": "technique/truss",
-      "works_on": [
-        "ingredient/chicken", "ingredient/salt", "ingredient/black-pepper", "ingredient/thyme", "ingredient/garlic"
-      ],
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/salt", "ingredient/black-pepper", "ingredient/thyme", "ingredient/garlic"],
       "text": "Dry the bird well, inside and out. Season the inside and put the thyme and the crushed cloves of garlic in the cavity. Tuck the wings under and tie the legs together.",
       "time": null,
       "temperature": null,
@@ -32,7 +46,8 @@
     },
     {
       "technique": "technique/roast",
-      "works_on": ["ingredient/chicken", "ingredient/butter", "ingredient/salt"],
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/butter", "ingredient/salt"],
       "text": "Rub the skin with the soft butter and salt it. Roast it in a tin that fits it, first on one thigh, then on the other, then on its back, so that the legs cook as fast as the breast.",
       "time": {"from": 60, "to": 75, "unit": "minute"},
       "temperature": {"value": 200, "unit": "celsius"},
@@ -42,6 +57,7 @@
     {
       "technique": "technique/baste",
       "works_on": ["ingredient/chicken"],
+      "with": [],
       "text": "Each time you turn it, spoon the fat in the tin over the bird. Check the thickest part of the thigh against a trusted guide to doneness.",
       "time": null,
       "temperature": null,
@@ -51,6 +67,7 @@
     {
       "technique": "technique/rest",
       "works_on": ["ingredient/chicken"],
+      "with": [],
       "text": "Lift the bird onto a board, breast down, and rest it, loosely covered.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
@@ -59,7 +76,8 @@
     },
     {
       "technique": "technique/deglaze",
-      "works_on": ["preparation/fond", "ingredient/chicken-stock"],
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/chicken-stock"],
       "text": "Pour off the fat from the tin and keep the brown juices. Set the tin over the heat, add the stock and scrape up everything that has stuck.",
       "time": null,
       "temperature": null,
@@ -69,6 +87,7 @@
     {
       "technique": "technique/reduce",
       "works_on": ["preparation/jus"],
+      "with": [],
       "text": "Boil it down by about half, add the juices that have run from the resting bird, and strain it.",
       "time": {"from": 4, "to": 5, "unit": "minute"},
       "temperature": null,
@@ -78,6 +97,7 @@
     {
       "technique": "technique/carve",
       "works_on": ["ingredient/chicken"],
+      "with": [],
       "text": "Carve the chicken: the legs first, then the breasts, sliced across.",
       "time": null,
       "temperature": null,
@@ -87,6 +107,7 @@
     {
       "technique": "technique/plate",
       "works_on": ["ingredient/chicken", "preparation/jus"],
+      "with": [],
       "text": "Serve on warm plates with the jus beside it.",
       "time": null,
       "temperature": null,

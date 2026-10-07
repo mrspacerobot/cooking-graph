@@ -5,6 +5,9 @@
   "aliases": {"en": ["roasting juices", "pan juices"], "fr": ["jus de rôti"]},
   "is": "The juices of a roast, loosened from the tin with a little liquid and boiled until they taste strong.",
   "parts": [],
+  "groups": [
+    {"thing": "group/cooking-liquors", "tier": "drafted"}
+  ],
   "teaches": [],
   "stands_in_for": [],
   "belongs_to": [

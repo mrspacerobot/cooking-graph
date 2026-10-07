@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/bones", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Give a stock flavour, and body from the gelatine that long simmering draws out of them.",
   "safety": {

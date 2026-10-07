@@ -5,12 +5,12 @@
   "aliases": {"en": ["vegetable macedoine", "macedoine of vegetables"]},
   "is": "Carrot, turnip, green beans and peas, cut to the size of a pea, boiled until just tender and bound cold with mayonnaise.",
   "parts": [
-    {"role": "main", "options": ["ingredient/carrot"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/turnip"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/green-beans"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/peas"], "tier": "drafted"},
-    {"role": "sauce", "options": ["preparation/mayonnaise"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+    {"id": "carrot", "role": "main", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "turnip", "role": "main", "options": ["ingredient/turnip"], "optional": false, "tier": "drafted"},
+    {"id": "green-beans", "role": "main", "options": ["ingredient/green-beans"], "optional": false, "tier": "drafted"},
+    {"id": "peas", "role": "main", "options": ["ingredient/peas"], "optional": false, "tier": "drafted"},
+    {"id": "mayonnaise", "role": "sauce", "options": ["preparation/mayonnaise"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/dice", "tier": "drafted"},

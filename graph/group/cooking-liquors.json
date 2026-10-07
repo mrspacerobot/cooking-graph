@@ -1,0 +1,9 @@
+{
+  "id": "group/cooking-liquors",
+  "tier": "drafted",
+  "names": {"en": "Cooking liquors"},
+  "aliases": {},
+  "shares": "The liquids a pan, a pot or a tin is left with after food has cooked in it. They hold its flavour, and are skimmed, strained, boiled down and seasoned into a sauce.",
+  "within": {"thing": "group/sauces", "tier": "drafted"},
+  "stands_alone": null
+}

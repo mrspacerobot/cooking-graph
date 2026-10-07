@@ -5,14 +5,32 @@
   "aliases": {"en": ["sole in brown butter"]},
   "is": "A sole dusted with flour, fried golden in butter, and finished with nut-brown butter, lemon juice and parsley.",
   "parts": [
-    {"role": "main", "options": ["ingredient/sole"], "tier": "drafted"},
-    {"role": "coating", "options": ["ingredient/flour"], "tier": "drafted"},
-    {"role": "fat", "options": ["preparation/clarified-butter", "ingredient/sunflower-oil"], "tier": "drafted"},
-    {"role": "sauce", "options": ["preparation/brown-butter"], "tier": "drafted"},
-    {"role": "acid", "options": ["ingredient/lemon"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/parsley"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {"id": "sole", "role": "main", "options": ["ingredient/sole"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["preparation/clarified-butter", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "brown-butter",
+      "role": "sauce",
+      "options": ["preparation/brown-butter"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/dredge", "tier": "drafted"},

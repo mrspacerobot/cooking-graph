@@ -5,6 +5,9 @@
   "aliases": {"en": ["stewing lamb"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/braising-cuts", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A fatty, well-worked cut with a strong taste, which turns tender and rich with long, gentle cooking.",
   "safety": {

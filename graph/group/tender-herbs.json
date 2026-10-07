@@ -1,0 +1,9 @@
+{
+  "id": "group/tender-herbs",
+  "tier": "drafted",
+  "names": {"en": "Tender herbs", "fr": "Herbes tendres"},
+  "aliases": {},
+  "shares": "Soft-leaved herbs that bruise easily and lose their scent with heat, so they are cut at the last moment and added at the end.",
+  "within": null,
+  "stands_alone": null
+}

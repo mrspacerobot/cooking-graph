@@ -28,10 +28,7 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/egg-yolk", "tier": "drafted"},
-    {"thing": "ingredient/milk", "tier": "drafted"},
-    {"thing": "ingredient/sugar", "tier": "drafted"},
-    {"thing": "ingredient/vanilla", "tier": "drafted"}
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/creme-anglaise", "tier": "drafted"},

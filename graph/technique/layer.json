@@ -18,15 +18,12 @@
     {"mistake": "Seasoning only the top, which leaves the inside bland.", "fix": "Season lightly as you go."}
   ],
   "works_on": [
-    {"thing": "ingredient/sandwich-bread", "tier": "drafted"},
-    {"thing": "ingredient/ham", "tier": "drafted"},
-    {"thing": "ingredient/gruyere", "tier": "drafted"},
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/boiled-beef", "tier": "drafted"},
-    {"thing": "preparation/bechamel", "tier": "drafted"},
-    {"thing": "ingredient/cauliflower", "tier": "drafted"},
-    {"thing": "ingredient/macaroni", "tier": "drafted"},
-    {"thing": "preparation/mashed-potato", "tier": "drafted"}
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/starches", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "group/grating-cheeses", "tier": "drafted"},
+    {"thing": "ingredient/reblochon", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

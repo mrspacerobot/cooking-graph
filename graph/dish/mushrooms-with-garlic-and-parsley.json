@@ -5,13 +5,25 @@
   "aliases": {"en": ["mushrooms persillade", "garlic mushrooms"], "fr": ["champignons sautés"]},
   "is": "Mushrooms browned hard in a hot pan, then tossed off the heat with butter, garlic and parsley.",
   "parts": [
-    {"role": "main", "options": ["ingredient/mushroom"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"], "tier": "drafted"},
-    {"role": "enrichment", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/parsley"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {"id": "mushroom", "role": "main", "options": ["ingredient/mushroom"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/saute", "tier": "drafted"}

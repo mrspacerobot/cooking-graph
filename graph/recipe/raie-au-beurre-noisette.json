@@ -6,19 +6,35 @@
   "makes": "dish/raie-au-beurre-noisette",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/skate", "amount": {"value": 500, "unit": "gram"}, "forms": []},
-    {"thing": "preparation/court-bouillon", "amount": {"value": 1.5, "unit": "litre"}, "forms": []},
-    {"thing": "ingredient/butter", "amount": {"value": 80, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/capers", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/red-wine-vinegar", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/parsley", "amount": {"value": 1, "unit": "tablespoon"}, "forms": ["form/chopped"]},
-    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": []}
+    {"thing": "ingredient/skate", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "skate"},
+    {
+      "thing": "preparation/court-bouillon",
+      "amount": {"value": 1.5, "unit": "litre"},
+      "forms": [],
+      "part": "court-bouillon"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "brown-butter"},
+    {"thing": "ingredient/capers", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "capers"},
+    {
+      "thing": "ingredient/red-wine-vinegar",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "red-wine-vinegar"
+    },
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "salt"}
   ],
   "equipment": ["equipment/stovetop", "equipment/saute-pan", "equipment/frying-pan", "equipment/fish-slice"],
   "steps": [
     {
       "technique": "technique/poach",
-      "works_on": ["ingredient/skate", "preparation/court-bouillon"],
+      "works_on": ["ingredient/skate"],
+      "with": ["preparation/court-bouillon"],
       "text": "Lay the skate in a wide pan and cover it with the cold court-bouillon. Bring it slowly to a bare tremble and poach until the flesh comes away from the cartilage at the thickest point. The time counts from the first tremble. Check the thickest part against a trusted guide to doneness.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": null,
@@ -27,7 +43,8 @@
     },
     {
       "technique": "technique/plate",
-      "works_on": ["ingredient/skate", "ingredient/salt", "ingredient/capers", "ingredient/parsley"],
+      "works_on": ["ingredient/skate"],
+      "with": ["ingredient/salt", "ingredient/capers", "ingredient/parsley"],
       "text": "Lift the wings out, drain them well and scrape off the skin. Set them on hot plates, salt them lightly and scatter with the capers and the parsley.",
       "time": null,
       "temperature": null,
@@ -37,6 +54,7 @@
     {
       "technique": "technique/make-brown-butter",
       "works_on": ["ingredient/butter"],
+      "with": [],
       "text": "Cook the butter in a pan until it foams, falls quiet and smells of hazelnuts.",
       "time": {"from": 2, "to": 3, "unit": "minute"},
       "temperature": null,
@@ -45,7 +63,8 @@
     },
     {
       "technique": "technique/plate",
-      "works_on": ["preparation/brown-butter", "ingredient/red-wine-vinegar", "ingredient/skate"],
+      "works_on": ["preparation/brown-butter", "ingredient/skate"],
+      "with": ["ingredient/red-wine-vinegar"],
       "text": "Pour the butter over the fish at once. Swirl the vinegar in the hot pan for a moment and pour it over too. Serve while it still sizzles.",
       "time": null,
       "temperature": null,

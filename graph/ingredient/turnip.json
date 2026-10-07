@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Peppery when raw, mild and slightly sweet once cooked, and quick to turn watery if overcooked.",
   "safety": {

@@ -3,10 +3,11 @@
   "tier": "drafted",
   "names": {"en": "Spring onion", "fr": "Oignon nouveau"},
   "aliases": {"en": ["scallion", "green onion", "salad onion"]},
-  "is_a": [
-    {"thing": "ingredient/allium", "tier": "drafted"}
-  ],
+  "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/alliums", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A young, mild onion that softens quickly and sweetens without the bite of a mature one.",
   "safety": {

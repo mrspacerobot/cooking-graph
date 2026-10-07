@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/wines", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Brings colour, acidity and tannin. It tastes harsh and raw until it has boiled down, then deep and rounded.",
   "safety": {

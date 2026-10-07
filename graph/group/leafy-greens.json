@@ -1,0 +1,9 @@
+{
+  "id": "group/leafy-greens",
+  "tier": "drafted",
+  "names": {"en": "Leafy greens"},
+  "aliases": {},
+  "shares": "Tender leaves that collapse within moments of meeting heat and shed a great deal of water.",
+  "within": {"thing": "group/vegetables", "tier": "drafted"},
+  "stands_alone": null
+}

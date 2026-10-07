@@ -5,17 +5,53 @@
   "aliases": {"en": ["French shepherd's pie", "parmentier"]},
   "is": "Minced beef cooked with onion under a thick layer of potato purée, baked until the top is golden and crisp.",
   "parts": [
-    {"role": "main", "options": ["ingredient/minced-beef", "ingredient/boiled-beef"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/parsley"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/beef-stock", "preparation/brown-stock"], "tier": "drafted"},
-    {"role": "topping", "options": ["preparation/mashed-potato"], "tier": "drafted"},
-    {"role": "topping", "options": ["preparation/breadcrumbs"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/minced-beef", "ingredient/boiled-beef"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/beef-stock", "preparation/brown-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "mashed-potato",
+      "role": "topping",
+      "options": ["preparation/mashed-potato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "breadcrumbs",
+      "role": "topping",
+      "options": ["preparation/breadcrumbs"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/mash", "tier": "drafted"},

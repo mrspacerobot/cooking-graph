@@ -5,6 +5,10 @@
   "aliases": {"en": ["butterhead lettuce"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/leafy-greens", "tier": "drafted"},
+    {"thing": "group/salad-leaves", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Wilts at once in heat and gives up a good deal of sweet water.",
   "safety": {

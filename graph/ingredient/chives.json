@@ -3,10 +3,11 @@
   "tier": "drafted",
   "names": {"en": "Chives", "fr": "Ciboulette"},
   "aliases": {},
-  "is_a": [
-    {"thing": "ingredient/allium", "tier": "drafted"}
-  ],
+  "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A mild onion taste that heat destroys, so they go on at the end, cut and not chopped.",
   "safety": {

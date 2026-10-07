@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A sweet, starchy root that browns fast in the oven because of its sugar.",
   "safety": {

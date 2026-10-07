@@ -35,15 +35,11 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/stewing-beef", "tier": "drafted"},
-    {"thing": "ingredient/chicken", "tier": "drafted"},
-    {"thing": "ingredient/chicken-thigh", "tier": "drafted"},
-    {"thing": "ingredient/lamb-shoulder", "tier": "drafted"},
-    {"thing": "ingredient/lamb-shank", "tier": "drafted"},
-    {"thing": "ingredient/veal-shoulder", "tier": "drafted"},
-    {"thing": "ingredient/leek", "tier": "drafted"},
-    {"thing": "ingredient/chicory", "tier": "drafted"},
-    {"thing": "ingredient/cabbage", "tier": "drafted"}
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/leafy-heads", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/fork-tender", "tier": "drafted"},

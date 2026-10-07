@@ -5,6 +5,9 @@
   "aliases": {"en": ["green cabbage", "savoy cabbage"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/leafy-heads", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Softens and sweetens with long simmering, and gives a strong smell if it is boiled hard for long.",
   "safety": {

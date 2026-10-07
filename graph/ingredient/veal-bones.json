@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/bones", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Rich in gelatine and mild in taste, so they give a stock body without taking it over.",
   "safety": {

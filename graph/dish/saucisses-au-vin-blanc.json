@@ -5,12 +5,24 @@
   "aliases": {"en": ["sausages in white wine"]},
   "is": "Pork sausages browned slowly in a pan, with a short sauce made on their fond from shallot and white wine and finished with cold butter.",
   "parts": [
-    {"role": "main", "options": ["ingredient/pork-sausage"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
-    {"role": "enrichment", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/parsley"], "tier": "drafted"}
+    {
+      "id": "pork-sausage",
+      "role": "main",
+      "options": ["ingredient/pork-sausage"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "white-wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/deglaze", "tier": "drafted"},

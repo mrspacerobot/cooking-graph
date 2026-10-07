@@ -23,6 +23,7 @@ SHORT_KINDS = {
     "d": "dish",
     "r": "recipe",
     "x": "fact",
+    "g": "group",
 }
 
 
@@ -56,9 +57,9 @@ def links(*thing_ids):
     return [link(thing_id) for thing_id in thing_ids]
 
 
-def part(role, *options):
-    """One part of a dish or a preparation: a role, and the things a cook may choose for it."""
-    return {"role": role, "options": all_full(options), "tier": DRAFTED}
+def part(part_id, role, *options, optional=False):
+    """One part of a dish or a preparation: its id, its role, and the things a cook may choose for it."""
+    return {"id": part_id, "role": role, "options": all_full(options), "optional": optional, "tier": DRAFTED}
 
 
 def amount(value, unit):
@@ -121,11 +122,21 @@ def stand_in(original, caveat, when=(), not_when=(), ratio=None):
     return link(full(original), **row)
 
 
+def group(slug, english, shares, fr=None, also=None, within=None, stands_alone=None):
+    """A group of ingredients that behave alike in cooking, and the wider group it sits within."""
+    kind = thing("group/" + slug, english, fr=fr, also=also)
+    kind["shares"] = shares
+    kind["within"] = link(full(within)) if within else None
+    kind["stands_alone"] = stands_alone
+    return kind
+
+
 def ingredient(root, slug, english, behaviour, fr=None, also=None, contains=(), note=None,
-               is_a=(), part_of=(), forms=(), stands=(), pantry=()):
+               is_a=(), part_of=(), groups=(), forms=(), stands=(), pantry=()):
     food = thing("ingredient/" + slug, english, fr=fr, also=also)
     food["is_a"] = full_links(is_a)
     food["part_of"] = full_links(part_of)
+    food["groups"] = full_links(groups)
     food["forms"] = full_links(forms)
     food["behaviour"] = behaviour
     food["safety"] = safety(root, all_full(contains), note=note)
@@ -152,10 +163,11 @@ def technique(slug, english, does, how, cues, mistakes, fr=None, also=None, work
     return move
 
 
-def preparation(slug, english, what_it_is, parts, fr=None, also=None, teaches=(), stands=(), belongs_to=()):
+def preparation(slug, english, what_it_is, parts, fr=None, also=None, groups=(), teaches=(), stands=(), belongs_to=()):
     block = thing("preparation/" + slug, english, fr=fr, also=also)
     block["is"] = what_it_is
     block["parts"] = list(parts)
+    block["groups"] = full_links(groups)
     block["teaches"] = full_links(teaches)
     block["stands_in_for"] = list(stands)
     block["belongs_to"] = full_links(belongs_to)
@@ -171,16 +183,21 @@ def dish(slug, english, what_it_is, parts, fr=None, also=None, teaches=(), belon
     return plate
 
 
-def line(thing_id, value, unit, *forms):
-    """One ingredient line of a recipe: the thing, how much, and the forms it is in before the first step."""
-    return {"thing": full(thing_id), "amount": amount(value, unit), "forms": all_full(forms)}
+def line(thing_id, value, unit, *forms, part=None):
+    """One ingredient line of a recipe: the thing, how much, the forms it is in, and the part of the dish it fills.
+
+    The part is the slug of the thing unless another is named.
+    """
+    filled = part or full(thing_id).split("/")[1]
+    return {"thing": full(thing_id), "amount": amount(value, unit), "forms": all_full(forms), "part": filled}
 
 
-def step(technique_id, works_on, text, time=None, temperature=None, safety=(), makes=()):
-    """One step of a recipe. `makes` names what the step leaves behind for a later step to work on."""
+def step(technique_id, works_on, text, using=(), time=None, temperature=None, safety=(), makes=()):
+    """One step of a recipe: what the technique works on, what it is done with, and what it leaves behind."""
     return {
         "technique": full(technique_id),
         "works_on": all_full(works_on),
+        "with": all_full(using),
         "text": text,
         "time": time,
         "temperature": temperature,

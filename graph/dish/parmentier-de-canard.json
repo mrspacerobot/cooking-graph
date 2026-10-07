@@ -5,13 +5,31 @@
   "aliases": {"en": ["duck parmentier", "duck confit parmentier"]},
   "is": "Shredded duck confit with softened shallots under a layer of potato purée and a crust of breadcrumbs, baked until golden.",
   "parts": [
-    {"role": "main", "options": ["ingredient/duck-confit"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/parsley"], "tier": "drafted"},
-    {"role": "topping", "options": ["preparation/mashed-potato"], "tier": "drafted"},
-    {"role": "topping", "options": ["preparation/breadcrumbs"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {"id": "duck-confit", "role": "main", "options": ["ingredient/duck-confit"], "optional": false, "tier": "drafted"},
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "mashed-potato",
+      "role": "topping",
+      "options": ["preparation/mashed-potato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "breadcrumbs",
+      "role": "topping",
+      "options": ["preparation/breadcrumbs"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/mash", "tier": "drafted"},

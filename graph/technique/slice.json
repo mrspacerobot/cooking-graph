@@ -25,14 +25,11 @@
     {"mistake": "Slices that grow thicker as the hand tires.", "fix": "Slow down. Even matters more than fast."}
   ],
   "works_on": [
-    {"thing": "ingredient/onion", "tier": "drafted"},
-    {"thing": "ingredient/leek", "tier": "drafted"},
-    {"thing": "ingredient/shallot", "tier": "drafted"},
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/courgette", "tier": "drafted"},
-    {"thing": "ingredient/aubergine", "tier": "drafted"},
-    {"thing": "ingredient/tomato", "tier": "drafted"},
-    {"thing": "ingredient/mushroom", "tier": "drafted"}
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/mushrooms", "tier": "drafted"},
+    {"thing": "group/leafy-heads", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/sliced", "tier": "drafted"}

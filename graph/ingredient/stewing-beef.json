@@ -5,6 +5,9 @@
   "aliases": {"en": ["braising beef", "beef chuck", "beef shin"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/braising-cuts", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Tough, well-worked cuts full of connective tissue, which melts to a rich softness over long, gentle cooking.",
   "safety": {

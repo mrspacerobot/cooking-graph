@@ -6,21 +6,61 @@
   "makes": "dish/boeuf-bourguignon",
   "yields": {"value": 6, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/stewing-beef", "amount": {"value": 1.2, "unit": "kilogram"}, "forms": ["form/large-pieces"]},
-    {"thing": "ingredient/bacon", "amount": {"value": 150, "unit": "gram"}, "forms": ["form/lardons"]},
-    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/peeled", "form/diced"]},
-    {"thing": "ingredient/carrot", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/peeled", "form/sliced"]},
-    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"]},
-    {"thing": "ingredient/flour", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/red-wine", "amount": {"value": 750, "unit": "millilitre"}, "forms": []},
-    {"thing": "ingredient/beef-stock", "amount": {"value": 300, "unit": "millilitre"}, "forms": []},
-    {"thing": "preparation/bouquet-garni", "amount": {"value": 1, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/pearl-onion", "amount": {"value": 200, "unit": "gram"}, "forms": ["form/peeled"]},
-    {"thing": "ingredient/mushroom", "amount": {"value": 250, "unit": "gram"}, "forms": ["form/halved"]},
-    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/sunflower-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []}
+    {
+      "thing": "ingredient/stewing-beef",
+      "amount": {"value": 1.2, "unit": "kilogram"},
+      "forms": ["form/large-pieces"],
+      "part": "stewing-beef"
+    },
+    {"thing": "ingredient/bacon", "amount": {"value": 150, "unit": "gram"}, "forms": ["form/lardons"], "part": "bacon"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/diced"],
+      "part": "onion"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "carrot"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/flour", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/red-wine", "amount": {"value": 750, "unit": "millilitre"}, "forms": [], "part": "red-wine"},
+    {"thing": "ingredient/beef-stock", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {
+      "thing": "preparation/bouquet-garni",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": [],
+      "part": "bouquet-garni"
+    },
+    {
+      "thing": "ingredient/pearl-onion",
+      "amount": {"value": 200, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "pearl-onion"
+    },
+    {
+      "thing": "ingredient/mushroom",
+      "amount": {"value": 250, "unit": "gram"},
+      "forms": ["form/halved"],
+      "part": "mushroom"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "butter"},
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "sunflower-oil"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": [
     "equipment/stovetop", "equipment/oven", "equipment/dutch-oven", "equipment/wooden-spoon", "equipment/tongs",
@@ -30,6 +70,7 @@
     {
       "technique": "technique/render",
       "works_on": ["ingredient/bacon"],
+      "with": [],
       "text": "Put the lardons in a cold, heavy pot over medium heat. Let the fat run, brown them and lift them out.",
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
@@ -38,9 +79,8 @@
     },
     {
       "technique": "technique/sear",
-      "works_on": [
-        "ingredient/stewing-beef", "ingredient/salt", "preparation/rendered-fat", "ingredient/sunflower-oil"
-      ],
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/salt", "preparation/rendered-fat", "ingredient/sunflower-oil"],
       "text": "Dry the beef well and salt it. Brown it in the bacon fat and the oil over high heat, a few pieces at a time, until deep brown on all sides. Lift each batch out.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
@@ -50,6 +90,7 @@
     {
       "technique": "technique/sweat",
       "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/garlic"],
+      "with": [],
       "text": "Lower the heat. Soften the onions and the carrots in the pot, then stir in the garlic.",
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
@@ -58,7 +99,8 @@
     },
     {
       "technique": "technique/sprinkle-with-flour",
-      "works_on": ["ingredient/flour", "ingredient/stewing-beef", "ingredient/onion", "ingredient/carrot"],
+      "works_on": ["ingredient/stewing-beef", "ingredient/onion", "ingredient/carrot"],
+      "with": ["ingredient/flour"],
       "text": "Put the beef back, scatter the flour over everything and stir over the heat until no white shows.",
       "time": {"value": 2, "unit": "minute"},
       "temperature": null,
@@ -67,7 +109,8 @@
     },
     {
       "technique": "technique/deglaze",
-      "works_on": ["preparation/fond", "ingredient/red-wine"],
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/red-wine"],
       "text": "Pour in the wine and scrape the bottom of the pot clean.",
       "time": null,
       "temperature": null,
@@ -76,10 +119,8 @@
     },
     {
       "technique": "technique/braise",
-      "works_on": [
-        "ingredient/stewing-beef", "preparation/pan-sauce", "ingredient/beef-stock", "preparation/bouquet-garni",
-        "ingredient/bacon"
-      ],
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["preparation/pan-sauce", "ingredient/beef-stock", "preparation/bouquet-garni", "ingredient/bacon"],
       "text": "Add the stock, the bouquet garni and the lardons. The liquid should barely cover the meat. Bring it to a bare simmer, cover, and cook in a low oven until a fork slides into the beef with no resistance. Check the thickest part against a trusted guide to doneness.",
       "time": {"from": 2.5, "to": 3, "unit": "hour"},
       "temperature": {"value": 150, "unit": "celsius"},
@@ -88,7 +129,8 @@
     },
     {
       "technique": "technique/saute",
-      "works_on": ["ingredient/butter", "ingredient/pearl-onion", "ingredient/mushroom"],
+      "works_on": ["ingredient/pearl-onion", "ingredient/mushroom"],
+      "with": ["ingredient/butter"],
       "text": "Near the end, brown the pearl onions and then the mushrooms in the butter in a frying pan.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
@@ -98,6 +140,7 @@
     {
       "technique": "technique/reduce",
       "works_on": ["preparation/braising-liquid"],
+      "with": [],
       "text": "Lift the beef out. Skim the fat from the liquid, take out the bouquet garni, and boil the sauce down, if it is thin, until it coats a spoon.",
       "time": {"from": 5, "to": 10, "unit": "minute"},
       "temperature": null,
@@ -107,9 +150,9 @@
     {
       "technique": "technique/season",
       "works_on": [
-        "preparation/braising-liquid", "ingredient/black-pepper", "ingredient/salt", "ingredient/stewing-beef",
-        "ingredient/pearl-onion", "ingredient/mushroom"
+        "preparation/braising-liquid", "ingredient/stewing-beef", "ingredient/pearl-onion", "ingredient/mushroom"
       ],
+      "with": ["ingredient/black-pepper", "ingredient/salt"],
       "text": "Taste and season. Put the beef back with the onions and the mushrooms and warm it gently. It is better still the next day.",
       "time": null,
       "temperature": null,

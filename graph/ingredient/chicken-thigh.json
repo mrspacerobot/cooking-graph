@@ -7,6 +7,9 @@
   "part_of": [
     {"thing": "ingredient/chicken", "tier": "drafted"}
   ],
+  "groups": [
+    {"thing": "group/poultry", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Dark meat with enough fat and connective tissue to stay juicy through long cooking. Its skin crisps as the fat under it melts away.",
   "safety": {

@@ -38,14 +38,17 @@ def _hash(probe_id):
     return hashlib.sha256(probe_id.encode("utf-8")).hexdigest()
 
 
-def held_back_ids(batch_ids):
-    """The probes of one batch that are held back: the fifth whose ids hash lowest.
+def held_back_ids(batch_ids, never=()):
+    """The probes of one batch that are held back: one in five, taken in the order their ids hash.
 
-    The choice follows from the ids alone. Nobody picks it, it is the same on
-    every machine, and it cannot follow what the graph already holds.
+    Nobody picks. The order follows from the ids alone and is the same on
+    every machine. A probe in `never` is passed over and the next in the
+    order takes its place: a probe whose dish is already written, or that a
+    level of a program is practised through. If too few are left, fewer are held back.
     """
     in_hash_order = sorted(batch_ids, key=_hash)
-    return set(in_hash_order[: len(in_hash_order) // HELD_BACK_SHARE])
+    may_be_held_back = [probe_id for probe_id in in_hash_order if probe_id not in never]
+    return set(may_be_held_back[: len(in_hash_order) // HELD_BACK_SHARE])
 
 
 def dish_names(probe):

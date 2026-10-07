@@ -5,7 +5,10 @@
   "aliases": {"en": ["nut-brown butter"]},
   "is": "Butter cooked until its milk solids turn nut-brown and it smells of hazelnuts.",
   "parts": [
-    {"role": "main", "options": ["ingredient/butter"], "tier": "drafted"}
+    {"id": "butter", "role": "main", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/sauces", "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/make-brown-butter", "tier": "drafted"}

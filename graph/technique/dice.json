@@ -29,18 +29,14 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/onion", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/celery", "tier": "drafted"},
-    {"thing": "ingredient/turnip", "tier": "drafted"},
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/courgette", "tier": "drafted"},
-    {"thing": "ingredient/aubergine", "tier": "drafted"},
-    {"thing": "ingredient/bell-pepper", "tier": "drafted"},
-    {"thing": "ingredient/tomato", "tier": "drafted"},
-    {"thing": "ingredient/ham", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/cooked-meats", "tier": "drafted"},
+    {"thing": "group/pickles", "tier": "drafted"},
+    {"thing": "group/fatty-cuts", "tier": "drafted"},
     {"thing": "ingredient/egg", "tier": "drafted"},
-    {"thing": "ingredient/bacon", "tier": "drafted"},
     {"thing": "ingredient/green-beans", "tier": "drafted"}
   ],
   "makes": [

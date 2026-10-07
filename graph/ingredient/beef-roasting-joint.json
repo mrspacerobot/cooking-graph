@@ -5,6 +5,9 @@
   "aliases": {"en": ["roasting beef", "beef topside"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/roasting-joints", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A tender, lean joint for roasting fast and leaving pink. It needs a rest as long as half its time in the oven.",
   "safety": {

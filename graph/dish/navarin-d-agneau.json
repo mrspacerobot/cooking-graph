@@ -5,25 +5,57 @@
   "aliases": {"en": ["lamb navarin", "lamb stew with spring vegetables"], "fr": ["navarin printanier"]},
   "is": "Lamb shoulder browned and braised in white wine and stock with a little tomato, then finished with carrots, turnips, potatoes and peas cooked in the sauce.",
   "parts": [
-    {"role": "main", "options": ["ingredient/lamb-shoulder"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/garlic"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/tomato-paste"], "tier": "drafted"},
-    {"role": "thickener", "options": ["ingredient/flour"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
     {
-      "role": "liquid",
-      "options": ["preparation/brown-stock", "ingredient/beef-stock", "ingredient/chicken-stock"],
+      "id": "lamb-shoulder",
+      "role": "main",
+      "options": ["ingredient/lamb-shoulder"],
+      "optional": false,
       "tier": "drafted"
     },
-    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/carrot"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/turnip"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/potato"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/peas"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato-paste",
+      "role": "aromatic",
+      "options": ["ingredient/tomato-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "white-wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["preparation/brown-stock", "ingredient/beef-stock", "ingredient/chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "bouquet-garni",
+      "role": "aromatic",
+      "options": ["preparation/bouquet-garni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "carrot", "role": "garnish", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "turnip", "role": "garnish", "options": ["ingredient/turnip"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "garnish", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "peas", "role": "garnish", "options": ["ingredient/peas"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/braise", "tier": "drafted"},

@@ -5,6 +5,10 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "group/leafy-greens", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Wilts within moments and sheds a great deal of water, shrinking to a fraction of its raw bulk.",
   "safety": {

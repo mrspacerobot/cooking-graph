@@ -5,6 +5,9 @@
   "aliases": {"en": ["asparagus spears"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/green-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Tender tips and woody ends on one spear. The thick end needs peeling, and takes longer than the tip.",
   "safety": {

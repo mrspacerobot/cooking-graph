@@ -7,6 +7,7 @@
     {"thing": "ingredient/tomato", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [],
   "forms": [],
   "behaviour": "Break down into a sauce as they simmer, turning sweeter and thicker as their water cooks off.",
   "safety": {

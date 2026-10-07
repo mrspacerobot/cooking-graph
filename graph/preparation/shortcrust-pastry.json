@@ -5,10 +5,19 @@
   "aliases": {"en": ["shortcrust", "pie pastry"]},
   "is": "A crisp, crumbly pastry of flour rubbed with cold butter and bound with a little water or egg.",
   "parts": [
-    {"role": "main", "options": ["ingredient/flour"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/water", "ingredient/egg"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+    {"id": "flour", "role": "main", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "liquid",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/egg"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/pastry", "tier": "drafted"}
   ],
   "teaches": [],
   "stands_in_for": [],

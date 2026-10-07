@@ -5,6 +5,9 @@
   "aliases": {"en": ["zucchini"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/watery-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Full of water, so it browns only in a hot pan with room around it, and turns to mush if stewed too long.",
   "safety": {

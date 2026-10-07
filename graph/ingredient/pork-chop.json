@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A lean chop with a rim of fat. It browns well and turns dry and tough soon after it is done.",
   "safety": {

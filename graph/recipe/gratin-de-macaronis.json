@@ -6,11 +6,16 @@
   "makes": "dish/gratin-de-macaronis",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/macaroni", "amount": {"value": 300, "unit": "gram"}, "forms": []},
-    {"thing": "preparation/bechamel", "amount": {"value": 500, "unit": "millilitre"}, "forms": []},
-    {"thing": "ingredient/gruyere", "amount": {"value": 150, "unit": "gram"}, "forms": ["form/grated"]},
-    {"thing": "ingredient/butter", "amount": {"value": 10, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []}
+    {"thing": "ingredient/macaroni", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "macaroni"},
+    {"thing": "preparation/bechamel", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "bechamel"},
+    {
+      "thing": "ingredient/gruyere",
+      "amount": {"value": 150, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "gruyere"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "salt"}
   ],
   "equipment": [
     "equipment/stovetop", "equipment/oven", "equipment/baking-dish", "equipment/stockpot", "equipment/colander"
@@ -18,7 +23,8 @@
   "steps": [
     {
       "technique": "technique/boil",
-      "works_on": ["ingredient/macaroni", "ingredient/salt"],
+      "works_on": ["ingredient/macaroni"],
+      "with": ["ingredient/salt"],
       "text": "Boil the macaroni in plenty of well-salted water until just tender, with a little bite left. Drain it.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
@@ -27,7 +33,8 @@
     },
     {
       "technique": "technique/toss",
-      "works_on": ["ingredient/macaroni", "preparation/bechamel", "ingredient/gruyere"],
+      "works_on": ["ingredient/macaroni"],
+      "with": ["preparation/bechamel", "ingredient/gruyere"],
       "text": "Fold the macaroni into the warm béchamel with most of the cheese.",
       "time": null,
       "temperature": null,
@@ -36,7 +43,8 @@
     },
     {
       "technique": "technique/layer",
-      "works_on": ["ingredient/macaroni", "ingredient/butter", "ingredient/gruyere"],
+      "works_on": ["ingredient/macaroni", "ingredient/gruyere"],
+      "with": ["ingredient/butter"],
       "text": "Butter a gratin dish, tip the macaroni in, level it and scatter with the rest of the cheese.",
       "time": null,
       "temperature": null,
@@ -46,6 +54,7 @@
     {
       "technique": "technique/gratinate",
       "works_on": ["ingredient/gruyere"],
+      "with": [],
       "text": "Bake in a hot oven until the top is golden and crisp at the edges.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": {"value": 200, "unit": "celsius"},

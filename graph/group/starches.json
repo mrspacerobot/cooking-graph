@@ -1,0 +1,9 @@
+{
+  "id": "group/starches",
+  "tier": "drafted",
+  "names": {"en": "Starches", "fr": "Féculents"},
+  "aliases": {},
+  "shares": "Foods that are mostly starch. They swell as they take up liquid, thicken what they cook in, and carry a sauce.",
+  "within": null,
+  "stands_alone": null
+}

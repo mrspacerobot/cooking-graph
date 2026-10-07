@@ -31,8 +31,8 @@ class Rows(unittest.TestCase):
         self.assertEqual([drafting.link("cuisine/french"), drafting.link("cuisine/provencal")], rows)
 
     def test_a_part_names_its_role_and_options(self):
-        row = drafting.part("fat", "ingredient/butter", "ingredient/olive-oil")
-        expected = {"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"}
+        row = drafting.part("fat", "fat", "ingredient/butter", "ingredient/olive-oil")
+        expected = {"id": "fat", "role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "optional": False, "tier": "drafted"}
         self.assertEqual(expected, row)
 
     def test_an_amount_and_a_range(self):
@@ -63,6 +63,7 @@ class SafetyRecords(unittest.TestCase):
         cream = drafting.thing("ingredient/cream", "Cream", fr="Crème")
         cream["is_a"] = []
         cream["part_of"] = []
+        cream["groups"] = []
         cream["forms"] = []
         cream["behaviour"] = "Thickens as it boils down."
         cream["safety"] = drafting.safety(self.kitchen.root, ["fact/dairy"])
@@ -98,7 +99,8 @@ class OneOfEachKind(unittest.TestCase):
         built = [
             drafting.equipment("whisk", "Whisk", "Beats air into a liquid.", fr="Fouet"),
             drafting.form("diced", "Diced", "Even cubes.", size=[("side", drafting.span(8, 12, "millimetre"))]),
-            drafting.ingredient(root, "leek", "Leek", "Softens slowly.", is_a=["i/allium"], pantry=["c/french"]),
+            drafting.group("roots", "Roots", "They hold a clean cut.", within="g/vegetables", stands_alone="Only the leek is in it yet."),
+            drafting.ingredient(root, "leek", "Leek", "Softens slowly.", is_a=["i/allium"], groups=["g/roots"], pantry=["c/french"]),
             drafting.ingredient(
                 root, "ghee", "Ghee", "Stands high heat.", contains=["x/dairy"], note="Made from butter.",
                 stands=[drafting.stand_in("i/butter", "Tastes nuttier.", when=["t/sweat"], ratio=(1, 1, "weight"))],
@@ -108,27 +110,27 @@ class OneOfEachKind(unittest.TestCase):
                 how=["Square off the piece.", "Cut it into planks, then sticks, then cubes."],
                 cues=[("see", "The cubes are all one size.")],
                 mistakes=[("The pieces are uneven.", "Cut the planks to one thickness first.")],
-                works_on=["i/leek"], makes=["f/diced"], needs=[("tool", ["e/pan"])],
+                works_on=["g/roots"], makes=["f/diced"], needs=[("tool", ["e/pan"])],
                 comes_after=[("t/mince", "A steady grip comes first.")], variant_of=[("t/mince", "Larger pieces.")],
                 belongs_to=["c/french"],
             ),
             drafting.preparation(
                 "leek-butter", "Leek butter", "Leeks softened in butter.",
-                parts=[drafting.part("main", "i/leek"), drafting.part("fat", "i/butter")], teaches=["t/dice"],
+                parts=[drafting.part("leek", "main", "i/leek"), drafting.part("butter", "fat", "i/butter")], teaches=["t/dice"],
                 stands=[drafting.stand_in("i/leek", "It is richer.", not_when=["t/sweat"])],
             ),
             drafting.dish(
                 "buttered-leeks", "Buttered leeks", "Leeks softened in butter.",
-                parts=[drafting.part("main", "p/leek-butter")], teaches=["t/dice"], belongs_to=["c/french"],
+                parts=[drafting.part("leeks", "main", "p/leek-butter")], teaches=["t/dice"], belongs_to=["c/french"],
             ),
             drafting.recipe(
                 "buttered-leeks", "Buttered leeks", "d/buttered-leeks", drafting.amount(2, "serving"),
-                ingredients=[drafting.line("i/leek", 2, "piece", "f/diced"), drafting.line("i/butter", 20, "gram")],
+                ingredients=[drafting.line("i/leek", 2, "piece", "f/diced", part="leeks"), drafting.line("i/butter", 20, "gram", part="leeks")],
                 equipment=["e/pan"],
                 steps=[
                     drafting.step("t/dice", ["i/leek"], "Cut the leeks into even cubes."),
                     drafting.step(
-                        "t/sweat", ["i/butter", "i/leek"], "Soften the leeks in the butter.",
+                        "t/sweat", ["i/leek"], "Soften the leeks in the butter.", using=["i/butter"],
                         time=drafting.span(8, 10, "minute"), safety=["cooling-and-keeping"], makes=["p/roux"],
                     ),
                 ],

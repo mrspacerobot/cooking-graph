@@ -5,21 +5,41 @@
   "aliases": {"en": ["chicken chasseur", "hunter's chicken"]},
   "is": "Chicken pieces browned in a sauté pan, then finished in a sauce made in the same pan from mushrooms, shallots, white wine, tomato and stock, with tarragon.",
   "parts": [
-    {"role": "main", "options": ["ingredient/chicken", "ingredient/chicken-thigh"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/mushroom"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
     {
-      "role": "liquid",
-      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock", "preparation/brown-stock"],
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/chicken", "ingredient/chicken-thigh"],
+      "optional": false,
       "tier": "drafted"
     },
-    {"role": "aromatic", "options": ["ingredient/tomato"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/tarragon"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "mushroom", "role": "garnish", "options": ["ingredient/mushroom"], "optional": false, "tier": "drafted"},
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "white-wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock", "preparation/brown-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "tomato", "role": "aromatic", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {"id": "tarragon", "role": "aromatic", "options": ["ingredient/tarragon"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/sear", "tier": "drafted"},

@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A soft herb with a strong taste of anise. Heat fades it, so it goes in at the end.",
   "safety": {

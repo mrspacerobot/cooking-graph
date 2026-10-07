@@ -1,0 +1,9 @@
+{
+  "id": "group/vegetables",
+  "tier": "drafted",
+  "names": {"en": "Vegetables", "fr": "Légumes"},
+  "aliases": {},
+  "shares": "Plants cooked as the savoury part of a dish. They are mostly water, so they shrink, soften and sweeten as they cook, and a cook seasons, dresses and plates them alike.",
+  "within": null,
+  "stands_alone": null
+}

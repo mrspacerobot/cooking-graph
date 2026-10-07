@@ -5,10 +5,16 @@
   "aliases": {"en": ["scrambled eggs", "French scrambled eggs"]},
   "is": "Eggs stirred over gentle heat with butter until they form small, creamy curds, and taken off the heat while still soft.",
   "parts": [
-    {"role": "main", "options": ["ingredient/egg"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "enrichment", "options": ["ingredient/cream", "ingredient/creme-fraiche"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "enrichment",
+      "role": "enrichment",
+      "options": ["ingredient/cream", "ingredient/creme-fraiche"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/scramble", "tier": "drafted"}

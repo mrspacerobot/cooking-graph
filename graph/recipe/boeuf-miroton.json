@@ -6,15 +6,40 @@
   "makes": "dish/boeuf-miroton",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/boiled-beef", "amount": {"value": 500, "unit": "gram"}, "forms": ["form/sliced"]},
-    {"thing": "ingredient/onion", "amount": {"value": 400, "unit": "gram"}, "forms": ["form/peeled", "form/sliced"]},
-    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/flour", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/red-wine-vinegar", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/beef-stock", "amount": {"value": 400, "unit": "millilitre"}, "forms": []},
-    {"thing": "preparation/breadcrumbs", "amount": {"value": 3, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {
+      "thing": "ingredient/boiled-beef",
+      "amount": {"value": 500, "unit": "gram"},
+      "forms": ["form/sliced"],
+      "part": "boiled-beef"
+    },
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 400, "unit": "gram"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "onion"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/flour", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {
+      "thing": "ingredient/red-wine-vinegar",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "red-wine-vinegar"
+    },
+    {"thing": "ingredient/beef-stock", "amount": {"value": 400, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {
+      "thing": "preparation/breadcrumbs",
+      "amount": {"value": 3, "unit": "tablespoon"},
+      "forms": [],
+      "part": "breadcrumbs"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": [
     "equipment/stovetop", "equipment/oven", "equipment/saute-pan", "equipment/baking-dish", "equipment/wooden-spoon"
@@ -22,7 +47,8 @@
   "steps": [
     {
       "technique": "technique/caramelize",
-      "works_on": ["ingredient/butter", "ingredient/onion", "ingredient/salt"],
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter", "ingredient/salt"],
       "text": "Cook the onions in the butter with the salt over medium-low heat, stirring now and then, until soft and golden brown.",
       "time": {"from": 20, "to": 25, "unit": "minute"},
       "temperature": null,
@@ -31,7 +57,8 @@
     },
     {
       "technique": "technique/sprinkle-with-flour",
-      "works_on": ["ingredient/flour", "ingredient/onion"],
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/flour"],
       "text": "Scatter the flour over the onions and cook it, stirring, until it has turned light brown and smells of toasted nuts.",
       "time": {"from": 2, "to": 3, "unit": "minute"},
       "temperature": null,
@@ -40,7 +67,8 @@
     },
     {
       "technique": "technique/deglaze",
-      "works_on": ["preparation/fond", "ingredient/red-wine-vinegar"],
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/red-wine-vinegar"],
       "text": "Add the vinegar and scrape the pan as it boils away almost to nothing.",
       "time": {"value": 1, "unit": "minute"},
       "temperature": null,
@@ -49,7 +77,8 @@
     },
     {
       "technique": "technique/simmer",
-      "works_on": ["preparation/pan-sauce", "ingredient/beef-stock", "ingredient/black-pepper"],
+      "works_on": ["preparation/pan-sauce"],
+      "with": ["ingredient/beef-stock", "ingredient/black-pepper"],
       "text": "Stir in the stock a little at a time, with the pepper. Simmer until the sauce coats a spoon lightly.",
       "time": {"from": 10, "to": 15, "unit": "minute"},
       "temperature": null,
@@ -59,6 +88,7 @@
     {
       "technique": "technique/layer",
       "works_on": ["ingredient/boiled-beef", "preparation/pan-sauce"],
+      "with": [],
       "text": "Spread a little of the sauce in a baking dish. Lay the slices of beef on it, overlapping, and cover them with the rest of the sauce.",
       "time": null,
       "temperature": null,
@@ -68,6 +98,7 @@
     {
       "technique": "technique/gratinate",
       "works_on": ["preparation/breadcrumbs"],
+      "with": [],
       "text": "Scatter with the breadcrumbs. Bake in a hot oven until the sauce bubbles at the edges and the top is golden.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": {"value": 200, "unit": "celsius"},

@@ -6,22 +6,43 @@
   "makes": "dish/steak-tartare",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/beef-fillet", "amount": {"value": 300, "unit": "gram"}, "forms": ["form/cold"]},
-    {"thing": "ingredient/shallot", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"]},
-    {"thing": "ingredient/capers", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/cornichons", "amount": {"value": 4, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/parsley", "amount": {"value": 4, "unit": "sprig"}, "forms": []},
-    {"thing": "ingredient/dijon-mustard", "amount": {"value": 2, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/olive-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/egg-yolk", "amount": {"value": 2, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {
+      "thing": "ingredient/beef-fillet",
+      "amount": {"value": 300, "unit": "gram"},
+      "forms": ["form/cold"],
+      "part": "beef-fillet"
+    },
+    {
+      "thing": "ingredient/shallot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled"],
+      "part": "shallot"
+    },
+    {"thing": "ingredient/capers", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "capers"},
+    {"thing": "ingredient/cornichons", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "cornichons"},
+    {"thing": "ingredient/parsley", "amount": {"value": 4, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {
+      "thing": "ingredient/dijon-mustard",
+      "amount": {"value": 2, "unit": "teaspoon"},
+      "forms": [],
+      "part": "dijon-mustard"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/egg-yolk", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg-yolk"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": ["equipment/mixing-bowl", "equipment/chefs-knife", "equipment/cutting-board"],
   "steps": [
     {
       "technique": "technique/brunoise",
       "works_on": ["ingredient/shallot"],
+      "with": [],
       "text": "Cut the shallot into a fine brunoise.",
       "time": null,
       "temperature": null,
@@ -31,6 +52,7 @@
     {
       "technique": "technique/chop",
       "works_on": ["ingredient/capers", "ingredient/cornichons", "ingredient/parsley"],
+      "with": [],
       "text": "Chop the capers, the cornichons and the parsley leaves finely, each on its own.",
       "time": null,
       "temperature": null,
@@ -40,6 +62,7 @@
     {
       "technique": "technique/chop",
       "works_on": ["ingredient/beef-fillet"],
+      "with": [],
       "text": "Trim the beef of any sinew. With a sharp knife, cut it into thin slices, then strips, then small cubes. Keep it cold and work fast.",
       "time": null,
       "temperature": null,
@@ -48,10 +71,10 @@
     },
     {
       "technique": "technique/toss",
-      "works_on": [
-        "ingredient/beef-fillet", "ingredient/shallot", "ingredient/capers", "ingredient/cornichons",
-        "ingredient/parsley", "ingredient/dijon-mustard", "ingredient/olive-oil", "ingredient/salt",
-        "ingredient/black-pepper"
+      "works_on": ["ingredient/beef-fillet"],
+      "with": [
+        "ingredient/shallot", "ingredient/capers", "ingredient/cornichons", "ingredient/parsley",
+        "ingredient/dijon-mustard", "ingredient/olive-oil", "ingredient/salt", "ingredient/black-pepper"
       ],
       "text": "Just before serving, turn the beef with the shallot, the capers, the cornichons, the parsley, the mustard and the oil until evenly mixed. Season with the salt and the pepper, and taste.",
       "time": null,
@@ -62,6 +85,7 @@
     {
       "technique": "technique/plate",
       "works_on": ["ingredient/beef-fillet", "ingredient/egg-yolk"],
+      "with": [],
       "text": "Shape each portion into a thick disc on a cold plate, press a hollow into the top and set an egg yolk in it.",
       "time": null,
       "temperature": null,

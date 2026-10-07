@@ -7,6 +7,9 @@
     {"thing": "ingredient/bread", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [
+    {"thing": "group/breads", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A lean loaf with a crisp crust. A day old, it makes good croutons and soaks up soup without falling apart.",
   "safety": {

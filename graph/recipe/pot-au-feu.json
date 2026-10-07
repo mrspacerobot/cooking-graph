@@ -6,19 +6,39 @@
   "makes": "dish/pot-au-feu",
   "yields": {"value": 6, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/stewing-beef", "amount": {"value": 1.2, "unit": "kilogram"}, "forms": ["form/large-pieces"]},
-    {"thing": "ingredient/marrow-bone", "amount": {"value": 4, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/carrot", "amount": {"value": 6, "unit": "piece"}, "forms": ["form/peeled"]},
-    {"thing": "ingredient/leek", "amount": {"value": 4, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/turnip", "amount": {"value": 4, "unit": "piece"}, "forms": ["form/peeled"]},
-    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"]},
-    {"thing": "ingredient/clove", "amount": {"value": 3, "unit": "piece"}, "forms": []},
-    {"thing": "preparation/bouquet-garni", "amount": {"value": 1, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/dijon-mustard", "amount": {"value": 3, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/cornichons", "amount": {"value": 12, "unit": "piece"}, "forms": []}
+    {
+      "thing": "ingredient/stewing-beef",
+      "amount": {"value": 1.2, "unit": "kilogram"},
+      "forms": ["form/large-pieces"],
+      "part": "stewing-beef"
+    },
+    {"thing": "ingredient/marrow-bone", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "marrow-bone"},
+    {"thing": "ingredient/carrot", "amount": {"value": 6, "unit": "piece"}, "forms": ["form/peeled"], "part": "carrot"},
+    {"thing": "ingredient/leek", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "leek"},
+    {"thing": "ingredient/turnip", "amount": {"value": 4, "unit": "piece"}, "forms": ["form/peeled"], "part": "turnip"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"], "part": "onion"},
+    {"thing": "ingredient/clove", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "clove"},
+    {
+      "thing": "preparation/bouquet-garni",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": [],
+      "part": "bouquet-garni"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {
+      "thing": "ingredient/dijon-mustard",
+      "amount": {"value": 3, "unit": "tablespoon"},
+      "forms": [],
+      "part": "dijon-mustard"
+    },
+    {"thing": "ingredient/cornichons", "amount": {"value": 12, "unit": "piece"}, "forms": [], "part": "cornichons"}
   ],
   "equipment": [
     "equipment/stovetop", "equipment/stockpot", "equipment/saucepan", "equipment/ladle", "equipment/kitchen-string",
@@ -27,28 +47,31 @@
   "steps": [
     {
       "technique": "technique/skim",
-      "works_on": ["ingredient/stewing-beef", "ingredient/water"],
+      "works_on": ["preparation/broth"],
+      "with": ["ingredient/stewing-beef", "ingredient/water"],
       "text": "Put the beef in a large pot and cover it with the cold water. Bring it up slowly, and lift off the grey foam as it rises, until no more comes.",
       "time": {"from": 20, "to": 30, "unit": "minute"},
-      "temperature": null,
-      "safety_points": [],
-      "makes": []
-    },
-    {
-      "technique": "technique/simmer",
-      "works_on": [
-        "ingredient/stewing-beef", "ingredient/onion", "ingredient/clove", "preparation/bouquet-garni",
-        "ingredient/salt", "ingredient/black-pepper"
-      ],
-      "text": "Stick the cloves into the onion. Add it with the bouquet garni, the salt and the pepper. Simmer very gently, lid ajar, and never let it boil.",
-      "time": {"value": 2, "unit": "hour"},
       "temperature": null,
       "safety_points": [],
       "makes": ["preparation/broth"]
     },
     {
       "technique": "technique/simmer",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": [
+        "ingredient/onion", "ingredient/clove", "preparation/bouquet-garni", "ingredient/salt",
+        "ingredient/black-pepper"
+      ],
+      "text": "Stick the cloves into the onion. Add it with the bouquet garni, the salt and the pepper. Simmer very gently, lid ajar, and never let it boil.",
+      "time": {"value": 2, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
       "works_on": ["ingredient/stewing-beef", "ingredient/carrot", "ingredient/turnip", "ingredient/leek"],
+      "with": [],
       "text": "Add the carrots and the turnips, whole or halved, and the leeks tied in a bundle. Simmer until a knife meets no resistance in the meat and the vegetables are tender.",
       "time": {"from": 45, "to": 60, "unit": "minute"},
       "temperature": null,
@@ -57,7 +80,8 @@
     },
     {
       "technique": "technique/poach",
-      "works_on": ["ingredient/marrow-bone", "preparation/broth"],
+      "works_on": ["ingredient/marrow-bone"],
+      "with": ["preparation/broth"],
       "text": "Poach the marrow bones apart, in a small pan with enough of the broth to cover them, so that the marrow does not melt away into the pot.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
@@ -66,7 +90,8 @@
     },
     {
       "technique": "technique/season",
-      "works_on": ["preparation/broth", "ingredient/salt"],
+      "works_on": ["preparation/broth"],
+      "with": ["ingredient/salt"],
       "text": "Skim the fat from the broth, taste it and add salt if it needs it.",
       "time": null,
       "temperature": null,
@@ -77,8 +102,9 @@
       "technique": "technique/plate",
       "works_on": [
         "preparation/broth", "ingredient/stewing-beef", "ingredient/marrow-bone", "ingredient/carrot",
-        "ingredient/turnip", "ingredient/leek", "ingredient/dijon-mustard", "ingredient/cornichons"
+        "ingredient/turnip", "ingredient/leek"
       ],
+      "with": ["ingredient/dijon-mustard", "ingredient/cornichons"],
       "text": "Serve the broth first, in warm bowls. Then slice the beef across the grain and serve it with the vegetables and the marrow bones, moistened with a little broth, with the mustard and the cornichons on the side.",
       "time": null,
       "temperature": null,

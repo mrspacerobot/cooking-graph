@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Its starch thickens the liquid it cooks in. Waxy kinds hold their shape and floury kinds fall apart.",
   "safety": {

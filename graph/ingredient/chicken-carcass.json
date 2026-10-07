@@ -7,6 +7,9 @@
   "part_of": [
     {"thing": "ingredient/chicken", "tier": "drafted"}
   ],
+  "groups": [
+    {"thing": "group/bones", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "The bones and scraps of a bird, which give a stock its flavour and its gelatine.",
   "safety": {

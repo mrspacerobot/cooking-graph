@@ -5,6 +5,9 @@
   "aliases": {"en": ["steak", "sirloin steak", "rump steak"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A tender cut that wants fierce heat for a short time, and a rest before it is cut. It toughens as it cooks past pink.",
   "safety": {

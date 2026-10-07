@@ -5,6 +5,9 @@
   "aliases": {"en": ["ground black pepper", "black peppercorns"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/whole-spices", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Gives heat and aroma that fade with long cooking and turn harsh when scorched, so most of it goes in near the end.",
   "safety": {

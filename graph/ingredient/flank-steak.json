@@ -7,6 +7,9 @@
     {"thing": "ingredient/beef-steak", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A loose-grained, full-flavoured steak that is tender only when cooked fast and sliced across the grain.",
   "safety": {

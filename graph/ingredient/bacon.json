@@ -5,6 +5,9 @@
   "aliases": {"en": ["smoked bacon", "streaky bacon", "bacon lardons"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/fatty-cuts", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Gives up its fat over gentle heat, then crisps in it. That fat carries its smoke and salt into the rest of the dish.",
   "safety": {

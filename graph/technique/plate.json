@@ -24,7 +24,17 @@
       "fix": "Put the sauce beside it or under it."
     }
   ],
-  "works_on": [],
+  "works_on": [
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/starches", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"},
+    {"thing": "ingredient/pear", "tier": "drafted"}
+  ],
   "makes": [],
   "needs": [],
   "comes_after": [],

@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/wines", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A sweet, nutty fortified wine that gives a sauce depth and a little sweetness once it has boiled down.",
   "safety": {

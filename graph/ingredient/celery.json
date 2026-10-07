@@ -5,6 +5,9 @@
   "aliases": {"en": ["celery stalk", "celery stick"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Gives a savoury, slightly bitter base note and softens slowly.",
   "safety": {

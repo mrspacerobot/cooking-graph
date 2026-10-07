@@ -34,10 +34,19 @@ def fact(slug, english, means):
     return thing
 
 
-def ingredient(slug, english, contains, free_of, is_a=(), part_of=()):
+def group(slug, english, within=None, stands_alone=None):
+    thing = head("group/" + slug, english)
+    thing["shares"] = "They soften slowly and turn sweet."
+    thing["within"] = link(within) if within else None
+    thing["stands_alone"] = stands_alone
+    return thing
+
+
+def ingredient(slug, english, contains, free_of, is_a=(), part_of=(), groups=()):
     thing = head("ingredient/" + slug, english)
     thing["is_a"] = [link(parent) for parent in is_a]
     thing["part_of"] = [link(whole) for whole in part_of]
+    thing["groups"] = [link(one) for one in groups]
     thing["forms"] = []
     thing["behaviour"] = "Softens over gentle heat."
     thing["safety"] = {
@@ -57,7 +66,7 @@ def technique(slug, english):
     thing["how"] = ["Warm the fat over low heat.", "Stir now and then until soft."]
     thing["cues"] = [{"sense": "see", "text": "The pieces turn glassy."}]
     thing["mistakes"] = [{"mistake": "The heat is too high.", "fix": "Turn it down."}]
-    thing["works_on"] = [link("ingredient/onion")]
+    thing["works_on"] = [link("group/vegetables")]
     thing["makes"] = [link("form/minced")]
     thing["needs"] = [
         {"role": "vessel", "options": ["equipment/pan"], "tier": DRAFTED},
@@ -69,14 +78,18 @@ def technique(slug, english):
     return thing
 
 
-def part(role, options):
-    return {"role": role, "options": list(options), "tier": DRAFTED}
+def part(part_id, role, options, optional=False):
+    return {"id": part_id, "role": role, "options": list(options), "optional": optional, "tier": DRAFTED}
 
 
 def dish():
     thing = head("dish/buttered-onions", "Buttered onions")
     thing["is"] = "Onions softened slowly in butter."
-    thing["parts"] = [part("main", ["ingredient/onion"]), part("fat", ["preparation/roux"])]
+    thing["parts"] = [
+        part("onion", "main", ["ingredient/onion"]),
+        part("roux", "fat", ["preparation/roux"]),
+        part("garnish", "main", ["ingredient/onion-skin"], optional=True),
+    ]
     thing["teaches"] = [link("technique/sweat")]
     thing["belongs_to"] = [link("cuisine/french")]
     return thing
@@ -85,7 +98,8 @@ def dish():
 def preparation():
     thing = head("preparation/roux", "Roux")
     thing["is"] = "Flour cooked in butter."
-    thing["parts"] = [part("fat", ["ingredient/butter"]), part("main", ["ingredient/flour"])]
+    thing["parts"] = [part("butter", "fat", ["ingredient/butter"]), part("flour", "main", ["ingredient/flour"], optional=True)]
+    thing["groups"] = []
     thing["teaches"] = [link("technique/sweat")]
     thing["stands_in_for"] = [
         link("ingredient/flour", when=["technique/sweat"], not_when=[], ratio=None, caveat="It is already cooked.")
@@ -99,6 +113,7 @@ def by_product():
     thing = head("preparation/onion-juices", "Onion juices")
     thing["is"] = "The sweet liquid onions leave in the pan."
     thing["parts"] = []
+    thing["groups"] = [link("group/alliums")]
     thing["teaches"] = []
     thing["stands_in_for"] = []
     thing["belongs_to"] = []
@@ -110,14 +125,15 @@ def recipe():
     thing["makes"] = "dish/buttered-onions"
     thing["yields"] = {"value": 2, "unit": "serving"}
     thing["ingredients"] = [
-        {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/minced"]},
-        {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": []},
+        {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/minced"], "part": "onion"},
+        {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "roux"},
     ]
     thing["equipment"] = ["equipment/pan"]
     thing["steps"] = [
         {
             "technique": "technique/sweat",
-            "works_on": ["ingredient/butter", "ingredient/onion"],
+            "works_on": ["ingredient/onion"],
+            "with": ["ingredient/butter"],
             "text": "Soften the onions in the butter over low heat.",
             "time": {"from": 8, "to": 10, "unit": "minute"},
             "temperature": None,
@@ -153,7 +169,7 @@ PROBED_DISHES = ["Buttered onions", "Onion tart", "Onion soup", "Creamed onions"
 
 def probe_files():
     slugs = [name.lower().replace(" ", "-") for name in PROBED_DISHES]
-    held_back = probes.held_back_ids(["dish-probe/" + slug for slug in slugs])
+    held_back = probes.held_back_ids(["dish-probe/" + slug for slug in slugs], never=["dish-probe/buttered-onions"])
     files = {}
     for slug, name in zip(slugs, PROBED_DISHES):
         probe_id = "dish-probe/" + slug
@@ -162,11 +178,37 @@ def probe_files():
             "tier": DRAFTED,
             "batch": BATCH,
             "set": "held-back" if probe_id in held_back else "growing",
+            "written_by": "another-model",
             "written_for": "sweating",
             "dish": name,
             "also_called": [],
             "techniques": ["sweat"],
             "ingredients": ["onion", "butter"],
+        }
+    files.update(safety_probe_files())
+    return files
+
+
+SAFETY_PROBED = ["Buttered onions", "Onion tart", "Onion soup", "Creamed onions", "Glazed onions"]
+
+
+def safety_probe_files():
+    slugs = [name.lower().replace(" ", "-") for name in SAFETY_PROBED]
+    held_back = probes.held_back_ids(["safety-probe/" + slug for slug in slugs])
+    files = {}
+    for slug, name in zip(slugs, SAFETY_PROBED):
+        probe_id = "safety-probe/" + slug
+        files["probes/safety-probe/" + slug + ".json"] = {
+            "id": probe_id,
+            "tier": DRAFTED,
+            "batch": "safety-1",
+            "set": "held-back" if probe_id in held_back else "growing",
+            "written_by": "another-model",
+            "dish": name,
+            "also_called": [],
+            "holds": ["milk"],
+            "does_not_hold": ["gluten"],
+            "why": "It is made with butter and no flour.",
         }
     return files
 
@@ -190,8 +232,10 @@ def graph_files():
         provencal,
         pan,
         minced,
-        ingredient("allium", "Allium", [], ["fact/dairy", "fact/gluten"]),
-        ingredient("onion", "Onion", [], ["fact/dairy", "fact/gluten"], is_a=["ingredient/allium"]),
+        group("vegetables", "Vegetables"),
+        group("alliums", "Alliums", within="group/vegetables"),
+        ingredient("allium", "Allium", [], ["fact/dairy", "fact/gluten"], groups=["group/alliums"]),
+        ingredient("onion", "Onion", [], ["fact/dairy", "fact/gluten"], is_a=["ingredient/allium"], groups=["group/alliums"]),
         ingredient("onion-skin", "Onion skin", [], ["fact/dairy", "fact/gluten"], part_of=["ingredient/onion"]),
         ingredient("butter", "Butter", ["fact/dairy"], ["fact/gluten"]),
         ingredient("flour", "Flour", ["fact/gluten"], ["fact/dairy"]),

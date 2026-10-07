@@ -24,12 +24,9 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/parsley", "tier": "drafted"},
-    {"thing": "ingredient/basil", "tier": "drafted"},
-    {"thing": "ingredient/capers", "tier": "drafted"},
-    {"thing": "ingredient/cornichons", "tier": "drafted"},
-    {"thing": "ingredient/beef-fillet", "tier": "drafted"},
-    {"thing": "ingredient/tarragon", "tier": "drafted"}
+    {"thing": "group/tender-herbs", "tier": "drafted"},
+    {"thing": "group/pickles", "tier": "drafted"},
+    {"thing": "ingredient/beef-fillet", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/chopped", "tier": "drafted"}

@@ -20,14 +20,9 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/stock", "tier": "drafted"},
-    {"thing": "preparation/white-chicken-stock", "tier": "drafted"},
-    {"thing": "preparation/vegetable-stock", "tier": "drafted"},
-    {"thing": "preparation/brown-stock", "tier": "drafted"},
-    {"thing": "preparation/court-bouillon", "tier": "drafted"},
-    {"thing": "preparation/clarified-butter", "tier": "drafted"},
-    {"thing": "preparation/broth", "tier": "drafted"},
-    {"thing": "preparation/jus", "tier": "drafted"}
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "group/cooking-liquors", "tier": "drafted"},
+    {"thing": "preparation/clarified-butter", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

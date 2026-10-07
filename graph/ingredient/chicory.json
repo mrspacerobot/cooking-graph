@@ -5,6 +5,9 @@
   "aliases": {"en": ["Belgian endive", "witloof"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/leafy-heads", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Crisp and bitter when raw. Slow cooking softens it and turns the bitterness mellow and sweet.",
   "safety": {

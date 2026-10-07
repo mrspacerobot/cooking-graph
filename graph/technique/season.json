@@ -20,7 +20,14 @@
     },
     {"mistake": "Seasoning without tasting.", "fix": "Taste every time. No amount on paper replaces it."}
   ],
-  "works_on": [],
+  "works_on": [
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/starches", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/sauces", "tier": "drafted"},
+    {"thing": "group/stocks", "tier": "drafted"}
+  ],
   "makes": [],
   "needs": [
     {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},

@@ -29,8 +29,7 @@
     }
   ],
   "works_on": [
-    {"thing": "preparation/pan-sauce", "tier": "drafted"},
-    {"thing": "ingredient/butter", "tier": "drafted"}
+    {"thing": "group/cooking-liquors", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/beurre-blanc", "tier": "drafted"},

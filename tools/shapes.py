@@ -78,6 +78,10 @@ class ShapeCheck:
         if "at_least" in rule and value < rule["at_least"]:
             self.report(where, "too-small", "must be at least %d" % rule["at_least"])
 
+    def check_boolean(self, value, rule, where):
+        if not isinstance(value, bool):
+            self.report(where, "wrong-type", "must be true or false")
+
     def check_number(self, value, rule, where):
         if not is_positive_number(value):
             self.report(where, "wrong-type", "must be a number above zero")

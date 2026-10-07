@@ -7,6 +7,7 @@
   "part_of": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],
+  "groups": [],
   "forms": [],
   "behaviour": "Thickens a warm liquid as it heats and scrambles if it gets too hot. It holds oil and water together in a sauce.",
   "safety": {

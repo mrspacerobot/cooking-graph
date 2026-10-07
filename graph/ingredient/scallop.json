@@ -5,6 +5,9 @@
   "aliases": {"en": ["sea scallop"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Sweet, tender muscle that browns fast when dry and turns rubbery when it is cooked a moment too long.",
   "safety": {

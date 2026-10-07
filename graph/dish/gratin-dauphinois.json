@@ -1,0 +1,25 @@
+{
+  "id": "dish/gratin-dauphinois",
+  "tier": "drafted",
+  "names": {"en": "Gratin dauphinois", "fr": "Gratin dauphinois"},
+  "aliases": {"en": ["potato gratin", "dauphinoise potatoes"]},
+  "is": "Thinly sliced potatoes baked slowly in cream and milk scented with garlic, until they are tender all the way and the top is golden. The classic has no cheese, and many cooks add some.",
+  "parts": [
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "cream", "role": "liquid", "options": ["ingredient/cream"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "nutmeg", "role": "seasoning", "options": ["ingredient/nutmeg"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "cheese", "role": "topping", "options": ["ingredient/gruyere"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/slice", "tier": "drafted"},
+    {"thing": "technique/layer", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

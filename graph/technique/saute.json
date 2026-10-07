@@ -28,14 +28,13 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/mushroom", "tier": "drafted"},
-    {"thing": "ingredient/courgette", "tier": "drafted"},
-    {"thing": "ingredient/aubergine", "tier": "drafted"},
-    {"thing": "ingredient/bell-pepper", "tier": "drafted"},
-    {"thing": "ingredient/bacon", "tier": "drafted"},
-    {"thing": "ingredient/baguette", "tier": "drafted"},
-    {"thing": "ingredient/green-beans", "tier": "drafted"},
-    {"thing": "ingredient/calfs-liver", "tier": "drafted"}
+    {"thing": "group/mushrooms", "tier": "drafted"},
+    {"thing": "group/watery-vegetables", "tier": "drafted"},
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/breads", "tier": "drafted"},
+    {"thing": "group/offal", "tier": "drafted"},
+    {"thing": "ingredient/minced-beef", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

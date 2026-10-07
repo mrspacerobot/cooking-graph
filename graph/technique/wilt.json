@@ -20,7 +20,7 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/spinach", "tier": "drafted"}
+    {"thing": "group/leafy-greens", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/wilted", "tier": "drafted"}

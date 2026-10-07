@@ -7,6 +7,9 @@
     {"thing": "ingredient/pasta", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Short tubes of pasta that hold a sauce inside them, and go on softening in it as they bake.",
   "safety": {

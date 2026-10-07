@@ -5,6 +5,9 @@
   "aliases": {"en": ["whole chicken", "hen", "boiling fowl"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/poultry", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "White breast meat that dries out quickly and dark leg meat that needs longer, on one bird. Its skin crisps in dry heat and turns soft in liquid.",
   "safety": {

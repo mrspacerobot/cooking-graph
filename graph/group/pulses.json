@@ -1,0 +1,9 @@
+{
+  "id": "group/pulses",
+  "tier": "drafted",
+  "names": {"en": "Pulses", "fr": "Légumes secs"},
+  "aliases": {},
+  "shares": "Dried seeds that take up water and turn creamy with long, gentle simmering. Salt and acid added early keep their skins firm.",
+  "within": {"thing": "group/starches", "tier": "drafted"},
+  "stands_alone": null
+}

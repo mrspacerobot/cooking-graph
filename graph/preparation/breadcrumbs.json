@@ -5,7 +5,16 @@
   "aliases": {"en": ["dried breadcrumbs"]},
   "is": "Stale bread dried and crushed to fine crumbs, which brown to a crisp crust.",
   "parts": [
-    {"role": "main", "options": ["ingredient/bread", "ingredient/baguette"], "tier": "drafted"}
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/bread", "ingredient/baguette"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "groups": [
+    {"thing": "group/breads", "tier": "drafted"}
   ],
   "teaches": [],
   "stands_in_for": [],

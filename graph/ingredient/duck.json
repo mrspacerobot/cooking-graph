@@ -5,6 +5,9 @@
   "aliases": {"en": ["whole duck"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/poultry", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A fatty bird whose dark meat stays moist. Its fat must melt out as it cooks, or the skin stays soft.",
   "safety": {

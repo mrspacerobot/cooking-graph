@@ -6,14 +6,29 @@
   "makes": "dish/gigot-d-agneau",
   "yields": {"value": 6, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/leg-of-lamb", "amount": {"value": 2, "unit": "kilogram"}, "forms": []},
-    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": ["form/peeled", "form/sliced"]},
-    {"thing": "ingredient/thyme", "amount": {"value": 4, "unit": "sprig"}, "forms": []},
-    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/white-wine", "amount": {"value": 150, "unit": "millilitre"}, "forms": []},
-    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []}
+    {"thing": "ingredient/leg-of-lamb", "amount": {"value": 2, "unit": "kilogram"}, "forms": [], "part": "leg-of-lamb"},
+    {
+      "thing": "ingredient/garlic",
+      "amount": {"value": 4, "unit": "clove"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "garlic"
+    },
+    {"thing": "ingredient/thyme", "amount": {"value": 4, "unit": "sprig"}, "forms": [], "part": "thyme"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "olive-oil"},
+    {
+      "thing": "ingredient/white-wine",
+      "amount": {"value": 150, "unit": "millilitre"},
+      "forms": [],
+      "part": "white-wine"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": [
     "equipment/oven", "equipment/stovetop", "equipment/roasting-tin", "equipment/spoon", "equipment/thermometer",
@@ -22,9 +37,9 @@
   "steps": [
     {
       "technique": "technique/season",
-      "works_on": [
-        "ingredient/leg-of-lamb", "ingredient/garlic", "ingredient/olive-oil", "ingredient/salt",
-        "ingredient/black-pepper", "ingredient/thyme"
+      "works_on": ["ingredient/leg-of-lamb"],
+      "with": [
+        "ingredient/garlic", "ingredient/olive-oil", "ingredient/salt", "ingredient/black-pepper", "ingredient/thyme"
       ],
       "text": "Make small cuts all over the lamb with the tip of a knife and push a sliver of garlic into each. Rub the lamb with the oil, the salt, the pepper and the thyme.",
       "time": null,
@@ -35,6 +50,7 @@
     {
       "technique": "technique/roast",
       "works_on": ["ingredient/leg-of-lamb"],
+      "with": [],
       "text": "Roast it in a tin that fits it, in a hot oven, until it is well browned.",
       "time": {"from": 60, "to": 80, "unit": "minute"},
       "temperature": {"value": 200, "unit": "celsius"},
@@ -44,6 +60,7 @@
     {
       "technique": "technique/baste",
       "works_on": ["ingredient/leg-of-lamb"],
+      "with": [],
       "text": "Baste it with the fat in the tin every little while. Check the thickest part with a thermometer against a trusted guide to doneness.",
       "time": null,
       "temperature": null,
@@ -53,6 +70,7 @@
     {
       "technique": "technique/rest",
       "works_on": ["ingredient/leg-of-lamb"],
+      "with": [],
       "text": "Rest it on a board, loosely covered, for longer than seems necessary.",
       "time": {"from": 20, "to": 30, "unit": "minute"},
       "temperature": null,
@@ -61,7 +79,8 @@
     },
     {
       "technique": "technique/deglaze",
-      "works_on": ["preparation/fond", "ingredient/white-wine", "ingredient/water"],
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine", "ingredient/water"],
       "text": "Pour off the fat. Set the tin over the heat, add the wine and scrape it clean, then add the water and boil until it tastes strong.",
       "time": {"from": 5, "to": 6, "unit": "minute"},
       "temperature": null,
@@ -71,6 +90,7 @@
     {
       "technique": "technique/carve",
       "works_on": ["ingredient/leg-of-lamb"],
+      "with": [],
       "text": "Carve thin slices across the grain, parallel to the bone.",
       "time": null,
       "temperature": null,
@@ -80,6 +100,7 @@
     {
       "technique": "technique/plate",
       "works_on": ["ingredient/leg-of-lamb", "preparation/jus"],
+      "with": [],
       "text": "Serve on hot plates with the jus, and pour the juices from the board into it.",
       "time": null,
       "temperature": null,

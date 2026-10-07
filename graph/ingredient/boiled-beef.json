@@ -5,6 +5,9 @@
   "aliases": {"en": ["leftover boiled beef", "cold boiled beef"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/cooked-meats", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Beef already simmered until tender, as it is left from a pot-au-feu. It only needs reheating, and dries out unless it is kept under a sauce.",
   "safety": {

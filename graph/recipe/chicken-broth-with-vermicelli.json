@@ -6,16 +6,27 @@
   "makes": "dish/chicken-broth-with-vermicelli",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {"thing": "preparation/white-chicken-stock", "amount": {"value": 1.2, "unit": "litre"}, "forms": []},
-    {"thing": "ingredient/vermicelli", "amount": {"value": 80, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/parsley", "amount": {"value": 1, "unit": "tablespoon"}, "forms": ["form/chopped"]}
+    {
+      "thing": "preparation/white-chicken-stock",
+      "amount": {"value": 1.2, "unit": "litre"},
+      "forms": [],
+      "part": "stock"
+    },
+    {"thing": "ingredient/vermicelli", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "vermicelli"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "garnish"
+    }
   ],
   "equipment": ["equipment/stovetop", "equipment/saucepan", "equipment/ladle"],
   "steps": [
     {
       "technique": "technique/simmer",
       "works_on": ["preparation/white-chicken-stock"],
+      "with": [],
       "text": "Bring the stock to a simmer.",
       "time": null,
       "temperature": null,
@@ -24,7 +35,8 @@
     },
     {
       "technique": "technique/season",
-      "works_on": ["ingredient/salt", "preparation/white-chicken-stock"],
+      "works_on": ["preparation/white-chicken-stock"],
+      "with": ["ingredient/salt"],
       "text": "Season it now: a homemade stock has no salt in it. Add the salt in stages and taste until the broth tastes full.",
       "time": null,
       "temperature": null,
@@ -34,6 +46,7 @@
     {
       "technique": "technique/simmer",
       "works_on": ["ingredient/vermicelli"],
+      "with": [],
       "text": "Scatter in the vermicelli, stir once so that they do not clump, and simmer until just tender.",
       "time": {"from": 2, "to": 3, "unit": "minute"},
       "temperature": null,
@@ -42,7 +55,8 @@
     },
     {
       "technique": "technique/plate",
-      "works_on": ["ingredient/parsley"],
+      "works_on": ["preparation/white-chicken-stock", "ingredient/vermicelli"],
+      "with": ["ingredient/parsley"],
       "text": "Ladle into warm bowls at once, before the vermicelli swell, and scatter with the parsley.",
       "time": null,
       "temperature": null,

@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/cooked-meats", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Duck cooked and kept in its own fat. The flesh is soft and salty, and the skin crisps fast in a hot pan.",
   "safety": {

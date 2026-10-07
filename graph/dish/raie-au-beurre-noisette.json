@@ -5,13 +5,31 @@
   "aliases": {"en": ["skate with brown butter", "skate in brown butter"], "fr": ["raie aux câpres"]},
   "is": "A skate wing poached in court-bouillon and served under foaming nut-brown butter sharpened with vinegar and capers.",
   "parts": [
-    {"role": "main", "options": ["ingredient/skate"], "tier": "drafted"},
-    {"role": "liquid", "options": ["preparation/court-bouillon"], "tier": "drafted"},
-    {"role": "sauce", "options": ["preparation/brown-butter"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/capers"], "tier": "drafted"},
-    {"role": "acid", "options": ["ingredient/red-wine-vinegar"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/parsley"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+    {"id": "skate", "role": "main", "options": ["ingredient/skate"], "optional": false, "tier": "drafted"},
+    {
+      "id": "court-bouillon",
+      "role": "liquid",
+      "options": ["preparation/court-bouillon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "brown-butter",
+      "role": "sauce",
+      "options": ["preparation/brown-butter"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "capers", "role": "seasoning", "options": ["ingredient/capers"], "optional": false, "tier": "drafted"},
+    {
+      "id": "red-wine-vinegar",
+      "role": "acid",
+      "options": ["ingredient/red-wine-vinegar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/poach", "tier": "drafted"},

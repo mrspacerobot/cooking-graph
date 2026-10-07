@@ -5,19 +5,43 @@
   "aliases": {},
   "is": "Beef and marrow bones simmered for a long time with carrots, leeks, turnips and an onion stuck with cloves. The broth is served first, then the meat and the vegetables, with mustard and cornichons.",
   "parts": [
-    {"role": "main", "options": ["ingredient/stewing-beef"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/marrow-bone"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/carrot"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/leek"], "tier": "drafted"},
-    {"role": "main", "options": ["ingredient/turnip"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/clove"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"},
-    {"role": "side", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
-    {"role": "side", "options": ["ingredient/cornichons"], "tier": "drafted"}
+    {
+      "id": "stewing-beef",
+      "role": "main",
+      "options": ["ingredient/stewing-beef"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "marrow-bone", "role": "main", "options": ["ingredient/marrow-bone"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "main", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "leek", "role": "main", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"},
+    {"id": "turnip", "role": "main", "options": ["ingredient/turnip"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "clove", "role": "aromatic", "options": ["ingredient/clove"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bouquet-garni",
+      "role": "aromatic",
+      "options": ["preparation/bouquet-garni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "dijon-mustard",
+      "role": "side",
+      "options": ["ingredient/dijon-mustard"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "cornichons", "role": "side", "options": ["ingredient/cornichons"], "optional": true, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/simmer", "tier": "drafted"},

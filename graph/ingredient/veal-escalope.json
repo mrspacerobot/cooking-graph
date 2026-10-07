@@ -5,6 +5,9 @@
   "aliases": {"en": ["veal cutlet"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A thin, lean slice that cooks in moments and dries out if it is left any longer.",
   "safety": {

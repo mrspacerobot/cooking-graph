@@ -6,19 +6,35 @@
   "makes": "dish/mushrooms-with-garlic-and-parsley",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/mushroom", "amount": {"value": 400, "unit": "gram"}, "forms": ["form/sliced"]},
-    {"thing": "ingredient/sunflower-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"]},
-    {"thing": "ingredient/parsley", "amount": {"value": 2, "unit": "tablespoon"}, "forms": ["form/chopped"]},
-    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {
+      "thing": "ingredient/mushroom",
+      "amount": {"value": 400, "unit": "gram"},
+      "forms": ["form/sliced"],
+      "part": "mushroom"
+    },
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": ["equipment/stovetop", "equipment/frying-pan"],
   "steps": [
     {
       "technique": "technique/saute",
-      "works_on": ["ingredient/sunflower-oil", "ingredient/mushroom"],
+      "works_on": ["ingredient/mushroom"],
+      "with": ["ingredient/sunflower-oil"],
       "text": "Heat a wide pan over high heat, then the oil until it shimmers. Add the mushrooms in a single layer, in batches if the pan is small, and leave them a moment before the first toss. They give up their water. Keep going until it has cooked off and they brown.",
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
@@ -27,7 +43,8 @@
     },
     {
       "technique": "technique/saute",
-      "works_on": ["ingredient/butter", "ingredient/garlic", "ingredient/mushroom"],
+      "works_on": ["ingredient/mushroom"],
+      "with": ["ingredient/butter", "ingredient/garlic"],
       "text": "Turn the heat down. Add the butter and the garlic and toss just until the garlic smells sweet, without letting it colour.",
       "time": {"from": 30, "to": 60, "unit": "second"},
       "temperature": null,
@@ -36,7 +53,8 @@
     },
     {
       "technique": "technique/season",
-      "works_on": ["ingredient/salt", "ingredient/black-pepper", "ingredient/parsley"],
+      "works_on": [],
+      "with": ["ingredient/salt", "ingredient/black-pepper", "ingredient/parsley"],
       "text": "Take the pan off the heat. Season with the salt and the pepper only now, toss with the parsley and serve at once.",
       "time": null,
       "temperature": null,

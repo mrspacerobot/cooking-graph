@@ -5,10 +5,10 @@
   "aliases": {"en": ["eggs in onion sauce"]},
   "is": "Hard-boiled eggs, sliced and warmed in a béchamel full of onions that have been sweated soft without colour.",
   "parts": [
-    {"role": "main", "options": ["ingredient/egg"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
-    {"role": "sauce", "options": ["preparation/bechamel"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"}
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/sweat", "tier": "drafted"},

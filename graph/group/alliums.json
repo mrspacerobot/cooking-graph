@@ -1,0 +1,9 @@
+{
+  "id": "group/alliums",
+  "tier": "drafted",
+  "names": {"en": "Alliums"},
+  "aliases": {},
+  "shares": "Bulbs and shoots of the onion family: sharp when raw, sweet once cooked slowly, and bitter the moment they scorch. Their layers come apart when they are cut.",
+  "within": {"thing": "group/vegetables", "tier": "drafted"},
+  "stands_alone": null
+}

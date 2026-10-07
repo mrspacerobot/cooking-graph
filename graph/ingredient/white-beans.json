@@ -5,6 +5,9 @@
   "aliases": {"en": ["haricot beans", "cannellini beans"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/pulses", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Turn creamy with long, gentle simmering. Salt and acid added early keep their skins firm.",
   "safety": {

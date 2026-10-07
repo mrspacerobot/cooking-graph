@@ -5,6 +5,9 @@
   "aliases": {"en": ["flat-leaf parsley"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Fresh and grassy. The leaves go on at the end and the stalks flavour a stock.",
   "safety": {

@@ -5,6 +5,9 @@
   "aliases": {"en": ["braising juices"]},
   "is": "The liquid a braise leaves: wine or stock that has taken the flavour and the body of what cooked in it. Skimmed and boiled down, it is the sauce.",
   "parts": [],
+  "groups": [
+    {"thing": "group/cooking-liquors", "tier": "drafted"}
+  ],
   "teaches": [],
   "stands_in_for": [],
   "belongs_to": []

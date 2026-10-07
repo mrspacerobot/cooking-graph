@@ -6,13 +6,23 @@
   "makes": "dish/gratin-de-chou-fleur",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/cauliflower", "amount": {"value": 1, "unit": "kilogram"}, "forms": []},
-    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/flour", "amount": {"value": 30, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/milk", "amount": {"value": 500, "unit": "millilitre"}, "forms": ["form/cold"]},
-    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": []},
-    {"thing": "ingredient/gruyere", "amount": {"value": 120, "unit": "gram"}, "forms": ["form/grated"]},
-    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []}
+    {"thing": "ingredient/cauliflower", "amount": {"value": 1, "unit": "kilogram"}, "forms": [], "part": "cauliflower"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/flour", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {
+      "thing": "ingredient/milk",
+      "amount": {"value": 500, "unit": "millilitre"},
+      "forms": ["form/cold"],
+      "part": "bechamel"
+    },
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "bechamel"},
+    {
+      "thing": "ingredient/gruyere",
+      "amount": {"value": 120, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "gruyere"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "salt"}
   ],
   "equipment": [
     "equipment/stovetop", "equipment/oven", "equipment/baking-dish", "equipment/stockpot", "equipment/saucepan",
@@ -21,7 +31,8 @@
   "steps": [
     {
       "technique": "technique/boil",
-      "works_on": ["ingredient/cauliflower", "ingredient/salt"],
+      "works_on": ["ingredient/cauliflower"],
+      "with": ["ingredient/salt"],
       "text": "Cut the cauliflower into florets of one size. Boil them in well-salted water until just tender, and drain them very well.",
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
@@ -30,7 +41,8 @@
     },
     {
       "technique": "technique/make-a-roux",
-      "works_on": ["ingredient/butter", "ingredient/flour"],
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
       "text": "Melt most of the butter in a saucepan, stir in the flour and cook it, stirring, until it froths and smells of biscuit. It must stay pale.",
       "time": {"from": 2, "to": 3, "unit": "minute"},
       "temperature": null,
@@ -39,7 +51,8 @@
     },
     {
       "technique": "technique/whisk",
-      "works_on": ["preparation/roux", "ingredient/milk"],
+      "works_on": ["preparation/roux"],
+      "with": ["ingredient/milk"],
       "text": "Off the heat, whisk in the cold milk a little at a time, and make each addition smooth before the next.",
       "time": null,
       "temperature": null,
@@ -48,7 +61,8 @@
     },
     {
       "technique": "technique/simmer",
-      "works_on": ["preparation/bechamel", "ingredient/nutmeg", "ingredient/gruyere", "ingredient/salt"],
+      "works_on": ["preparation/bechamel"],
+      "with": ["ingredient/nutmeg", "ingredient/gruyere", "ingredient/salt"],
       "text": "Simmer the sauce, stirring, until it coats a spoon. Off the heat, stir in the nutmeg and half the cheese, and taste for salt.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
@@ -57,7 +71,8 @@
     },
     {
       "technique": "technique/layer",
-      "works_on": ["ingredient/cauliflower", "preparation/bechamel", "ingredient/gruyere", "ingredient/butter"],
+      "works_on": ["ingredient/cauliflower", "preparation/bechamel", "ingredient/gruyere"],
+      "with": ["ingredient/butter"],
       "text": "Butter a gratin dish. Lay the florets in it, pour the sauce over them and scatter with the rest of the cheese.",
       "time": null,
       "temperature": null,
@@ -67,6 +82,7 @@
     {
       "technique": "technique/gratinate",
       "works_on": ["ingredient/gruyere"],
+      "with": [],
       "text": "Bake in a hot oven until the sauce bubbles at the edges and the top is golden brown.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": {"value": 200, "unit": "celsius"},

@@ -6,18 +6,49 @@
   "makes": "preparation/white-chicken-stock",
   "yields": {"value": 2, "unit": "litre"},
   "ingredients": [
-    {"thing": "ingredient/chicken-carcass", "amount": {"value": 1.5, "unit": "kilogram"}, "forms": []},
-    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled", "form/halved"]},
+    {
+      "thing": "ingredient/chicken-carcass",
+      "amount": {"value": 1.5, "unit": "kilogram"},
+      "forms": [],
+      "part": "chicken-carcass"
+    },
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/halved"],
+      "part": "onion"
+    },
     {
       "thing": "ingredient/carrot",
       "amount": {"value": 2, "unit": "piece"},
-      "forms": ["form/peeled", "form/large-pieces"]
+      "forms": ["form/peeled", "form/large-pieces"],
+      "part": "carrot"
     },
-    {"thing": "ingredient/celery", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/large-pieces"]},
-    {"thing": "ingredient/leek", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/large-pieces"]},
-    {"thing": "preparation/bouquet-garni", "amount": {"value": 1, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/water", "amount": {"value": 3, "unit": "litre"}, "forms": []}
+    {
+      "thing": "ingredient/celery",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/large-pieces"],
+      "part": "celery"
+    },
+    {
+      "thing": "ingredient/leek",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/large-pieces"],
+      "part": "leek"
+    },
+    {
+      "thing": "preparation/bouquet-garni",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": [],
+      "part": "bouquet-garni"
+    },
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 3, "unit": "litre"}, "forms": [], "part": "water"}
   ],
   "equipment": [
     "equipment/stovetop", "equipment/stockpot", "equipment/ladle", "equipment/fine-sieve", "equipment/mixing-bowl"
@@ -26,6 +57,7 @@
     {
       "technique": "technique/blanch",
       "works_on": ["ingredient/chicken-carcass"],
+      "with": [],
       "text": "Cover the carcasses with cold water, bring it just to a boil, then drain them and rinse off the scum under cold water.",
       "time": null,
       "temperature": null,
@@ -34,7 +66,8 @@
     },
     {
       "technique": "technique/skim",
-      "works_on": ["ingredient/chicken-carcass", "ingredient/water"],
+      "works_on": ["preparation/white-chicken-stock"],
+      "with": ["ingredient/chicken-carcass", "ingredient/water"],
       "text": "Put the bones back in the clean pot with the measured cold water. Bring it up slowly and skim off the foam as it rises.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
@@ -43,10 +76,8 @@
     },
     {
       "technique": "technique/simmer",
-      "works_on": [
-        "ingredient/onion", "ingredient/carrot", "ingredient/celery", "ingredient/leek", "preparation/bouquet-garni",
-        "ingredient/black-pepper"
-      ],
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery", "ingredient/leek"],
+      "with": ["preparation/bouquet-garni", "ingredient/black-pepper"],
       "text": "Add the vegetables, the bouquet garni and the pepper. Simmer very gently, uncovered, skimming now and then. It must never boil, and it is not salted.",
       "time": {"from": 2.5, "to": 3, "unit": "hour"},
       "temperature": null,
@@ -56,6 +87,7 @@
     {
       "technique": "technique/strain",
       "works_on": ["preparation/white-chicken-stock"],
+      "with": [],
       "text": "Ladle the stock through a fine sieve without pressing on the bones, and leave the cloudy dregs in the pot.",
       "time": null,
       "temperature": null,
@@ -65,6 +97,7 @@
     {
       "technique": "technique/chill",
       "works_on": ["preparation/white-chicken-stock"],
+      "with": [],
       "text": "Cool it quickly in shallow containers set in iced water, then keep it in the fridge. Lift off the fat once it has set on top.",
       "time": null,
       "temperature": null,

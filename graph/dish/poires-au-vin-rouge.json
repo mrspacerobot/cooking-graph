@@ -5,10 +5,10 @@
   "aliases": {"en": ["pears poached in red wine", "pears in red wine"], "fr": ["poires au vin"]},
   "is": "Whole peeled pears poached in sweetened, spiced red wine until tender and stained deep red, served cold in their syrup.",
   "parts": [
-    {"role": "main", "options": ["ingredient/pear"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/red-wine"], "tier": "drafted"},
-    {"role": "sweetener", "options": ["ingredient/sugar"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/cinnamon"], "tier": "drafted"}
+    {"id": "pear", "role": "main", "options": ["ingredient/pear"], "optional": false, "tier": "drafted"},
+    {"id": "red-wine", "role": "liquid", "options": ["ingredient/red-wine"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "cinnamon", "role": "aromatic", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/poach", "tier": "drafted"},

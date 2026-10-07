@@ -5,6 +5,7 @@
   "aliases": {"en": ["ale"]},
   "is_a": [],
   "part_of": [],
+  "groups": [],
   "forms": [],
   "behaviour": "Gives a stew a malty bitterness, which long cooking rounds and a little sugar balances.",
   "safety": {

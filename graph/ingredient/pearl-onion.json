@@ -3,10 +3,11 @@
   "tier": "drafted",
   "names": {"en": "Pearl onion", "fr": "Oignon grelot"},
   "aliases": {"en": ["pearl onions", "button onion"]},
-  "is_a": [
-    {"thing": "ingredient/allium", "tier": "drafted"}
-  ],
+  "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/alliums", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A small, mild onion that is cooked whole and turns sweet and tender.",
   "safety": {

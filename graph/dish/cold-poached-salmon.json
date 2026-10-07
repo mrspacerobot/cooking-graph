@@ -5,10 +5,16 @@
   "aliases": {"en": ["poached salmon", "cold salmon mayonnaise"], "fr": ["saumon poché"]},
   "is": "Salmon poached gently in court-bouillon, left to cool in the liquid so that it stays moist, and served cold with mayonnaise and lemon.",
   "parts": [
-    {"role": "main", "options": ["ingredient/salmon"], "tier": "drafted"},
-    {"role": "liquid", "options": ["preparation/court-bouillon"], "tier": "drafted"},
-    {"role": "sauce", "options": ["preparation/mayonnaise"], "tier": "drafted"},
-    {"role": "acid", "options": ["ingredient/lemon"], "tier": "drafted"}
+    {"id": "salmon", "role": "main", "options": ["ingredient/salmon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "court-bouillon",
+      "role": "liquid",
+      "options": ["preparation/court-bouillon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "mayonnaise", "role": "sauce", "options": ["preparation/mayonnaise"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/poach", "tier": "drafted"}

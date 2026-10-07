@@ -21,14 +21,13 @@
     }
   ],
   "works_on": [
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/offal", "tier": "drafted"},
+    {"thing": "group/breads", "tier": "drafted"},
     {"thing": "ingredient/egg", "tier": "drafted"},
-    {"thing": "ingredient/sandwich-bread", "tier": "drafted"},
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/sole", "tier": "drafted"},
-    {"thing": "ingredient/veal-escalope", "tier": "drafted"},
-    {"thing": "ingredient/calfs-liver", "tier": "drafted"},
     {"thing": "ingredient/pork-sausage", "tier": "drafted"},
-    {"thing": "ingredient/foie-gras", "tier": "drafted"}
+    {"thing": "ingredient/chicory", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

@@ -6,12 +6,22 @@
   "makes": "dish/spinach-and-cheese-omelette",
   "yields": {"value": 1, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/egg", "amount": {"value": 3, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/spinach", "amount": {"value": 60, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/vegetarian-hard-cheese", "amount": {"value": 30, "unit": "gram"}, "forms": ["form/grated"]},
-    {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {"thing": "ingredient/egg", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/spinach", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "spinach"},
+    {
+      "thing": "ingredient/vegetarian-hard-cheese",
+      "amount": {"value": 30, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": [
     "equipment/stovetop", "equipment/non-stick-pan", "equipment/mixing-bowl", "equipment/whisk", "equipment/spatula"
@@ -19,7 +29,8 @@
   "steps": [
     {
       "technique": "technique/whisk",
-      "works_on": ["ingredient/egg", "ingredient/salt", "ingredient/black-pepper"],
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
       "text": "Crack the eggs into a bowl with the salt and the pepper, and whisk only until the streaks of white are gone.",
       "time": null,
       "temperature": null,
@@ -28,7 +39,8 @@
     },
     {
       "technique": "technique/wilt",
-      "works_on": ["ingredient/butter", "ingredient/spinach"],
+      "works_on": ["ingredient/spinach"],
+      "with": ["ingredient/butter"],
       "text": "Melt half the butter in the pan over medium heat. Turn the spinach in it until it collapses, then tip it onto a plate and press out the water.",
       "time": {"value": 1, "unit": "minute"},
       "temperature": null,
@@ -37,7 +49,8 @@
     },
     {
       "technique": "technique/roll-an-omelette",
-      "works_on": ["ingredient/butter", "ingredient/egg"],
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/butter"],
       "text": "Wipe the pan and melt the rest of the butter until it foams. Pour in the eggs and stir fast in small circles, shaking the pan, until they are mostly set and still wet on top.",
       "time": {"value": 1, "unit": "minute"},
       "temperature": null,
@@ -46,7 +59,8 @@
     },
     {
       "technique": "technique/roll-an-omelette",
-      "works_on": ["ingredient/egg", "ingredient/spinach", "ingredient/vegetarian-hard-cheese"],
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/spinach", "ingredient/vegetarian-hard-cheese"],
       "text": "Stop stirring and let the bottom firm for a moment. Scatter the spinach and the cheese down the middle.",
       "time": {"value": 30, "unit": "second"},
       "temperature": null,
@@ -56,6 +70,7 @@
     {
       "technique": "technique/roll-an-omelette",
       "works_on": ["ingredient/egg"],
+      "with": [],
       "text": "Tilt the pan, fold the near edge over the filling and roll the omelette to the far lip. Turn it out onto a warm plate, seam side down.",
       "time": null,
       "temperature": null,

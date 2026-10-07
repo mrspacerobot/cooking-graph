@@ -5,6 +5,9 @@
   "aliases": {"en": ["morels"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/mushrooms", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A honeycombed wild mushroom with a deep, smoky taste that carries into cream. Dried ones need soaking, and grit hides in the caps.",
   "safety": {

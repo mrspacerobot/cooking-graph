@@ -5,6 +5,9 @@
   "aliases": {"en": ["cloves", "whole clove"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/whole-spices", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Very strong and warm. A little flavours a whole pot, and too much numbs the tongue.",
   "safety": {

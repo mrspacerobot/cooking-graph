@@ -5,6 +5,10 @@
   "aliases": {"en": ["beef marrow bone"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/bones", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "The marrow inside turns soft and rich as it heats, and melts away if it is cooked for long.",
   "safety": {

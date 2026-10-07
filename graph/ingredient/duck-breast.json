@@ -7,6 +7,10 @@
   "part_of": [
     {"thing": "ingredient/duck", "tier": "drafted"}
   ],
+  "groups": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/fatty-cuts", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Lean, dark meat under a thick layer of fat, which must melt out slowly before the skin can crisp.",
   "safety": {

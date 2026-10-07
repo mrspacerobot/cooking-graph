@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/braising-cuts", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A tough, sinewy cut on the bone that turns soft and sticky after a long braise.",
   "safety": {

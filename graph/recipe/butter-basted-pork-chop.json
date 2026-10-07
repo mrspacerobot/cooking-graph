@@ -1,0 +1,70 @@
+{
+  "id": "recipe/butter-basted-pork-chop",
+  "tier": "drafted",
+  "names": {"en": "Butter-basted pork chop"},
+  "aliases": {},
+  "makes": "dish/butter-basted-pork-chop",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-chop", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "pork-chop"},
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "sunflower-oil"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/thyme", "amount": {"value": 3, "unit": "sprig"}, "forms": [], "part": "thyme"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.75, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": ["equipment/stovetop", "equipment/frying-pan", "equipment/spoon", "equipment/tongs"],
+  "steps": [
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/pork-chop"],
+      "with": ["ingredient/salt", "ingredient/sunflower-oil"],
+      "text": "Dry the chops and salt them. Stand them on their fat edge in a hot, heavy pan with the oil until the fat has browned, then lay them flat and sear both sides until deep golden.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/baste",
+      "works_on": ["ingredient/pork-chop"],
+      "with": ["ingredient/butter", "ingredient/garlic", "ingredient/thyme"],
+      "text": "Lower the heat. Add the butter, the crushed cloves of garlic and the thyme. When the butter foams, tilt the pan and spoon it over the chops again and again, turning them once. Stop when the foam dies down. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/rest",
+      "works_on": ["ingredient/pork-chop"],
+      "with": [],
+      "text": "Rest the chops on a warm plate and spoon a little of the butter over them.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pork-chop"],
+      "with": ["ingredient/black-pepper"],
+      "text": "Serve on warm plates, with the pepper and the juices from the resting plate.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

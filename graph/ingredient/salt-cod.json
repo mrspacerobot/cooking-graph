@@ -5,6 +5,9 @@
   "aliases": {"en": ["salted cod"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/lean-fish", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Cod preserved in salt. It must soak in several changes of water before it is cooked, and flakes into large, firm pieces.",
   "safety": {

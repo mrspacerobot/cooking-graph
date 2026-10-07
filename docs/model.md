@@ -8,7 +8,7 @@ Everything built with this model so far is a model's draft that nobody has revie
 
 ## Files and ids
 
-- **One thing, one file.** A thing of the graph lives at `graph/<kind>/<slug>.json`. A probe lives at `probes/dish-probe/<slug>.json`.
+- **One thing, one file.** A thing of the graph lives at `graph/<kind>/<slug>.json`. A probe lives at `probes/dish-probe/<slug>.json` or `probes/safety-probe/<slug>.json`.
 - **The id is the kind and the slug:** `technique/deglaze`. The slug is lowercase English words joined by hyphens. An id is permanent: never renamed, never reused. A file's `id` must be the one its place gives it.
 - **Every field is always written,** in the order of the model. An empty list is `[]`. `null` is allowed only where the model says so. An unknown field, a missing field and a field out of order are all issues.
 - **A reference is an id.** It must exist, and be of a kind the field allows.
@@ -78,6 +78,18 @@ A state food is in: a cut, a result of cooking, or a condition such as cold.
 | `looks_like` | A sentence that says how to tell it is right |
 | `size` | For a cut that is defined by its size: rows of a `measure` (side, width, length, thickness) and a `length` with a unit. Empty for every other form |
 
+### `group`
+
+Ingredients and preparations that behave alike in cooking. A technique works on groups, so that its card speaks of a kind of food and not of a list.
+
+| Field | What it holds |
+|---|---|
+| `shares` | A sentence that says what the members share in the pan, and why a technique cares |
+| `within` | The wider group it sits within, as one statement, or `null` |
+| `stands_alone` | Why it has fewer than two members for now, or `null`. The check asks for it when a group is that small |
+
+A group must be narrow enough that a technique's card is true for every member. If the card would need an exception for one member, the group is too wide and is split. A wide group, such as vegetables or meat, is what a move that suits everything works on: seasoning, plating.
+
 ### `ingredient`
 
 Something a cook starts from. It may stand for a class: stock, bread, white fish.
@@ -86,6 +98,7 @@ Something a cook starts from. It may stand for a class: stock, bread, white fish
 |---|---|
 | `is_a` | The classes it is a kind of. Statement |
 | `part_of` | The ingredient it is a part or a cut of: a yolk of an egg, a thigh of a chicken. Statement |
+| `groups` | The groups it is in. Statement |
 | `forms` | The forms it comes in. Statement. Empty on every ingredient so far, see the gaps below |
 | `behaviour` | A sentence or two on how it behaves in the pan |
 | `safety` | Its safety record: a `state`, the facts it `contains`, the facts it is `free_of`, and a `note` that gives the reason for a strict answer, or `null` |
@@ -102,7 +115,7 @@ One kitchen move, defined by what it does to food.
 | `how` | The move in a few short beats, at least two |
 | `cues` | What tells the cook it is right, at least one. Each has a `sense` (see, hear, smell, feel, taste) and a `text` |
 | `mistakes` | The mistakes people really make, at least one. Each has the `mistake` and its `fix` |
-| `works_on` | What the move is done to: ingredients or preparations. Statement |
+| `works_on` | What the move is done to. Statement. It points at groups. It may name a single ingredient or preparation only where nothing else in the graph behaves like it, and never more than three |
 | `makes` | What it leaves: forms or preparations. Statement |
 | `needs` | What it cannot be done without. Statement. Each row has a `role` and `options`: equipment, ingredients or preparations, any one of which will do |
 | `comes_after` | The techniques to learn first. Statement. Each row adds `why` |
@@ -116,7 +129,8 @@ A building block made on the way to a dish: a stock, a roux, a vinaigrette. A pr
 | Field | What it holds |
 |---|---|
 | `is` | A sentence that says what it is |
-| `parts` | What it is made of. Statement. Each row has a `role` and `options`: the ingredients or preparations a cook may choose for that role. Empty for a by-product |
+| `parts` | What it is made of. Statement. Each row has an `id` that is its own within this preparation or dish, a `role`, its `options` (the ingredients or preparations a cook may choose), and whether it is `optional`. Empty for a by-product |
+| `groups` | The groups it is in, where it behaves like one. Statement |
 | `teaches` | The techniques it is a good way to learn. Statement |
 | `stands_in_for` | What it can replace, as on an ingredient |
 | `belongs_to` | The cuisines it belongs to. Statement |
@@ -140,11 +154,13 @@ One way to make a dish or a preparation, with amounts and steps. No recipe here 
 |---|---|
 | `makes` | The dish or preparation it makes |
 | `yields` | How much: a number of servings, or an amount for a preparation |
-| `ingredients` | The lines, at least one. Each has the `thing` (an ingredient, or a preparation made ahead), its `amount`, and the `forms` it is in before the first step, in the order they are done |
+| `ingredients` | The lines, at least one. Each has the `thing` (an ingredient, or a preparation made ahead), its `amount`, the `forms` it is in before the first step, and the `part` of the dish it fills, by that part's id |
 | `equipment` | The equipment it needs |
-| `steps` | The steps in order, at least one. Each has one `technique`, what it `works_on`, its `text`, a `time` or `null`, a `temperature` or `null`, its `safety_points`, and what it `makes` |
+| `steps` | The steps in order, at least one. Each has one `technique`, what the technique `works_on`, what it is done `with` (the fat, the salt, the liquid poured in), its `text`, a `time` or `null`, a `temperature` or `null`, its `safety_points`, and what it `makes` |
 
-A step works only on what is at hand: a line of the recipe, the thing the recipe is making, or something an earlier step `makes`. Every line is used by some step.
+`works_on` means one thing everywhere. On a step it is what the technique acts on, and it must be something the technique's card works on, directly or through a group. Deglazing works on the fond, with the wine.
+
+A step handles only what is at hand: a line of the recipe, the thing the recipe is making, or something this step or an earlier one `makes`. Every line is used by some step. Every line fills a part of the dish with one of that part's options, and every part that is not optional is filled.
 
 `safety_points` mark where a fact that a person has verified must be supplied before a cook may see the step. A point claims nothing.
 
@@ -174,7 +190,8 @@ A question the graph must be able to answer: can this well-known dish be written
 | Field | What it holds |
 |---|---|
 | `batch` | The batch it was written in. A batch is closed once it is committed |
-| `set` | growing or held-back. The rule in `tools/probes.py` decides, from the ids of the batch: the fifth whose ids hash lowest are held back |
+| `set` | growing or held-back. The rule in `tools/probes.py` decides: one in five of a batch, taken in the order their ids hash. A probe is passed over, and the next takes its place, when its dish is already written or a level of a program is practised through it |
+| `written_by` | Who wrote the probe. The model that drafts the graph writes no probes |
 | `written_for` | The skill of a program it was written for |
 | `dish` | The dish, in plain words |
 | `also_called` | Other names of the dish |
@@ -183,13 +200,24 @@ A question the graph must be able to answer: can this well-known dish be written
 
 A probe is answered when every one of its technique words is a name of a technique, and every one of its ingredient words is a name of an ingredient or a preparation. One missing word fails the probe, so `./probe` also counts the words answered, for each set. It lists what the growing probes lack. Of the held-back probes it gives counts only and never a word. No dish, recipe or preparation may carry the name of a held-back probe.
 
+### `safety-probe`
+
+A second question: what does this well-known dish hold? It lives in `probes/` too, and one in five of a batch is held back by the plain hash rule. A held-back safety probe may ask about a dish that is written. It is counted, and what it disagrees with is never shown.
+
+| Field | What it holds |
+|---|---|
+| `batch`, `set`, `written_by`, `dish`, `also_called` | As on a dish probe |
+| `holds` | What the classic dish holds, in plain words |
+| `does_not_hold` | What it does not hold, in plain words |
+| `why` | The reason, in plain words |
+
 ## The statements of the plan, and where they went
 
 | Statement in the plan | Kept in | Field | Rows after night one |
 |---|---|---|---|
 | is a kind of | the ingredient | `is_a` | 23 |
 | is the same move as, or a variant of | the technique | `variant_of`, with `differs`. The same move under another name is one technique with two names | 12 |
-| works on | the technique | `works_on` | 342 |
+| works on | the technique | `works_on`, pointing at groups | 342 |
 | makes | the technique | `makes` | 51 |
 | needs | the technique | `needs`, with `role` and `options` | 167 |
 | comes before | the later technique, and the later skill of a program | `comes_after`, with `why` on a technique | 32 and 12 |
@@ -201,7 +229,7 @@ A probe is answered when every one of its technique words is a name of a techniq
 | teaches | the dish, the preparation, or a level of a program | `teaches` | 202 |
 | contains | the ingredient | `safety`. Not a statement with a tier: one record with a state | 138 records |
 
-Two statements are not in the plan: a cuisine lies `within` another (5 rows), and a level is practised `through` a dish or a preparation (53 rows).
+Four statements are not in the plan: a cuisine lies `within` another, a level is practised `through` a dish or a preparation, an ingredient or a preparation is in `groups`, and a group sits `within` a wider one.
 
 What a preparation, a dish or a recipe holds is never written. It follows from its ingredients, through every option of every part. Three rules keep that sound: an ingredient answers every fact, a class or a whole holds every fact its members or parts hold, and a recipe uses nothing its dish does not name.
 
@@ -234,12 +262,14 @@ In every sentence the check looks for digits, for number words from two to twelv
 | fact-not-answered, fact-answered-twice | An ingredient that does not answer every fact exactly once |
 | class-less-strict, whole-less-strict | An ingredient that holds a fact its class or its whole does not |
 | step-works-on-unlisted, ingredient-never-used | A step that works on something not at hand, or a line no step uses |
-| not-in-the-dish | A recipe line that is no part of its dish, through any option of any part |
+| part-unknown, not-an-option-of-its-part, part-not-filled, part-id-twice | A recipe line that names no part of its dish or is no option of it, a part no line fills unless it is optional, and two parts of a dish with one id |
+| not-what-the-technique-works-on | A step whose technique works on something its card does not work on, directly or through a group |
+| too-many-single-things, already-in-a-group, group-too-small | A technique that names more than three single things or one its group already holds, and a group with fewer than two members that does not say why |
 | by-product-as-part, by-product-as-ingredient | A by-product named as a part or bought as an ingredient |
 | same-name-twice | Two things of one kind with one name |
 | cycle | A thing that is a kind of, part of, within, after or a variant of itself |
 | slug-twice, skill-unknown, level-numbers | A program that does not hold together |
-| held-back-rule, same-dish-twice, drafted-towards-held-back | A probe set by hand, asked twice, or written towards |
+| held-back-rule, level-dish-held-back, same-dish-twice, drafted-towards-held-back | A probe set by hand, a held-back probe for a dish a level is practised through, a dish asked twice in one batch, and a dish written towards a held-back probe |
 | number-in-sentence, unit-in-sentence, claim-in-sentence | A sentence that holds data or a safety claim |
 | em-dash | The em dash, in any file of the repository |
 | not-tidy, field-order | A file not written the one way |
@@ -355,6 +385,35 @@ What counts as a change: a change to `schema/model.json`. That is a kind, a fiel
 - **What did not fit:** only an ingredient could stand in for something.
 - **Now:** a preparation has `stands_in_for`, with the same shape as an ingredient's.
 
+### 17. A kind for a group of ingredients that behave alike (cycle two)
+
+- **Example:** searing listed 21 single ingredients, and poaching 13.
+- **What did not fit:** a list of ingredients is no knowledge. It is out of date with every new ingredient, and it does not say what the listed things have in common.
+- **Now:** `graph/group/` holds groups, each with a sentence on what its members share and the wider group it sits within. An ingredient or a preparation says which `groups` it is in. A technique's `works_on` points at groups, and at no more than three single things. Searing works on steaks and chops, braising cuts, poultry, roasting joints and offal, and on salmon and the scallop. `ingredient/allium`, which no cook ever bought, became `group/alliums`.
+
+### 18. `works_on` means one thing, and a step says what it is done with (cycle two)
+
+- **Example:** the deglazing step of steak au poivre listed the fond and the cognac. Deglazing works on the fond, with the cognac.
+- **What did not fit:** on a technique `works_on` was what the move is for. On a step it was everything the step handled, the fat and the salt included.
+- **Now:** a step has `works_on` and `with`. What a step's technique works on must be something its card works on, directly or through a group. The rule found 14 steps on its first run. Ten were wrong steps and four were missing memberships: `docs/cycle-two.md` lists them.
+
+### 19. The parts of a dish have ids, and a recipe line names its part (cycle two)
+
+- **Example:** coq au vin had four parts called aromatic and two called liquid, so nothing could point at "the liquid".
+- **What did not fit:** a part had a role and no name. A recipe could not say which part a line fills, and a part could not be left out.
+- **Now:** a part has an `id` of its own within its dish (wine, stock) beside its `role`, and may be `optional`: the cheese of a gratin dauphinois is. A recipe line names the `part` it fills and must be one of its options. This replaces the older rule that a recipe uses nothing its dish does not name.
+
+### 20. A dish a level is practised through is never held back (cycle two)
+
+- **Example:** gratin dauphinois and the butter-basted pork chop fell into the held-back set, so two of Tomi's levels had no dish.
+- **Decision, logged here as asked:** on 7 October 2026 the probes `dish-probe/gratin-dauphinois` and `dish-probe/butter-basted-pork-chop` moved to the growing set. In each of their batches the next probe in hash order that may be held back took the place: `dish-probe/gratin-de-courgettes` in `gratin-1` and `dish-probe/carre-d-agneau` in `roast-1`. In both batches the probes ranked just before them were passed over because their dishes were already written. Both replacements had been growing probes in cycle one, so their words were already answered when they became held back.
+- **Now:** the held-back rule passes over a probe whose dish is already written or that a level is practised through, and the check refuses a held-back probe for a level's dish. Both dishes are written and their levels point at them.
+
+### 21. A probe says who wrote it, and there is a second kind of probe (cycle two)
+
+- **Example:** in cycle one a single model wrote the 120 probes and the graph, minutes apart.
+- **Now:** a probe has `written_by`. The 120 old probes are stamped `claude-opus-5-5`, and the model that drafts the graph writes no more. One batch asks about a dish once, and another batch by another writer may ask again. `safety-probe` is a new kind: what a classic dish `holds` and what it `does_not_hold`, and `why`.
+
 ## Decisions where the starting model was silent
 
 These are not changes. The starting model names kinds and statements, not files, so the first files had to settle them.
@@ -377,7 +436,6 @@ Each of these came up while writing real content. They are listed with the examp
 - A proportion that defines a preparation, such as the equal weights of a roux.
 - Doneness. The temperatures are safety facts and wait for a person.
 - A need that holds only for some food, such as vinegar when poaching an egg.
-- A part that may be left out.
 - A cooking aid that stays in the pot, such as the vinegar of poaching water.
 - A helper that is not what the move works on, such as the egg white that clears a consommé.
 - One thing a cook either buys or makes, such as chicken stock.

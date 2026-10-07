@@ -5,6 +5,9 @@
   "aliases": {"en": ["beef tenderloin"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Very lean and tender, with little flavour of its own. It toughens and dries the moment it is overcooked.",
   "safety": {

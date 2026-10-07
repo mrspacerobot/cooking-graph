@@ -24,10 +24,10 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/frisee", "tier": "drafted"},
-    {"thing": "ingredient/celeriac", "tier": "drafted"},
-    {"thing": "ingredient/carrot", "tier": "drafted"},
-    {"thing": "ingredient/green-beans", "tier": "drafted"}
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/starches", "tier": "drafted"},
+    {"thing": "group/meat", "tier": "drafted"},
+    {"thing": "ingredient/egg", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

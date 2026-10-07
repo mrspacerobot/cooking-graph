@@ -500,7 +500,9 @@
                 {"thing": "technique/baste", "tier": "drafted"},
                 {"thing": "technique/rest", "tier": "drafted"}
               ],
-              "through": []
+              "through": [
+                {"thing": "dish/butter-basted-pork-chop", "tier": "drafted"}
+              ]
             }
           ]
         },
@@ -519,7 +521,9 @@
                 {"thing": "technique/layer", "tier": "drafted"},
                 {"thing": "technique/bake", "tier": "drafted"}
               ],
-              "through": []
+              "through": [
+                {"thing": "dish/gratin-dauphinois", "tier": "drafted"}
+              ]
             },
             {
               "number": 2,

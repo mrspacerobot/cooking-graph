@@ -5,16 +5,46 @@
   "aliases": {"en": ["tarragon chicken", "chicken with tarragon"]},
   "is": "Chicken pieces browned and then simmered with white wine, stock and tarragon, in a sauce finished with cream and fresh tarragon leaves.",
   "parts": [
-    {"role": "main", "options": ["ingredient/chicken", "ingredient/chicken-thigh"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/shallot"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
-    {"role": "liquid", "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/tarragon"], "tier": "drafted"},
-    {"role": "enrichment", "options": ["ingredient/cream", "ingredient/creme-fraiche"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/chicken", "ingredient/chicken-thigh"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "white-wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["preparation/white-chicken-stock", "ingredient/chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "tarragon", "role": "aromatic", "options": ["ingredient/tarragon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "enrichment",
+      "role": "enrichment",
+      "options": ["ingredient/cream", "ingredient/creme-fraiche"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/sear", "tier": "drafted"},

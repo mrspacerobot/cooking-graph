@@ -7,6 +7,9 @@
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [
+    {"thing": "group/lean-fish", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A lean, firm, bony river fish with a delicate taste, at its best poached.",
   "safety": {

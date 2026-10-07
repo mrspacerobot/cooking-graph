@@ -5,6 +5,9 @@
   "aliases": {"en": ["white sugar", "caster sugar", "granulated sugar"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/sugars", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Dissolves in liquid, thickens it into a syrup as it boils down, and browns to caramel in dry heat.",
   "safety": {

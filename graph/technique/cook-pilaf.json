@@ -28,8 +28,7 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/rice", "tier": "drafted"},
-    {"thing": "ingredient/onion", "tier": "drafted"}
+    {"thing": "ingredient/rice", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

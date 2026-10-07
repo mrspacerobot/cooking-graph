@@ -23,15 +23,11 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/chicken-carcass", "tier": "drafted"},
-    {"thing": "ingredient/veal-bones", "tier": "drafted"},
-    {"thing": "ingredient/beef-bones", "tier": "drafted"},
-    {"thing": "ingredient/green-beans", "tier": "drafted"},
-    {"thing": "ingredient/peas", "tier": "drafted"},
-    {"thing": "ingredient/bacon", "tier": "drafted"},
-    {"thing": "ingredient/veal-shoulder", "tier": "drafted"},
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/chard", "tier": "drafted"}
+    {"thing": "group/bones", "tier": "drafted"},
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "group/fatty-cuts", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

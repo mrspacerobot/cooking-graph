@@ -1,0 +1,9 @@
+{
+  "id": "group/wines",
+  "tier": "drafted",
+  "names": {"en": "Wines", "fr": "Vins"},
+  "aliases": {},
+  "shares": "Wines for the pot. They taste raw and sharp until they have boiled, then give acidity, depth and the base of a sauce.",
+  "within": null,
+  "stands_alone": null
+}

@@ -6,13 +6,23 @@
   "makes": "dish/steak-au-poivre",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/beef-steak", "amount": {"value": 400, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/cognac", "amount": {"value": 3, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/cream", "amount": {"value": 100, "unit": "millilitre"}, "forms": []}
+    {"thing": "ingredient/beef-steak", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "main"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "sunflower-oil"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/cognac", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "cognac"},
+    {"thing": "ingredient/cream", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "cream"}
   ],
   "equipment": [
     "equipment/stovetop", "equipment/frying-pan", "equipment/mortar-and-pestle", "equipment/tongs",
@@ -22,6 +32,7 @@
     {
       "technique": "technique/pound",
       "works_on": ["ingredient/black-pepper"],
+      "with": [],
       "text": "Crush the peppercorns coarsely in a mortar or under a heavy pan. They should be cracked, not ground.",
       "time": null,
       "temperature": null,
@@ -30,10 +41,8 @@
     },
     {
       "technique": "technique/sear",
-      "works_on": [
-        "ingredient/beef-steak", "ingredient/black-pepper", "ingredient/salt", "ingredient/sunflower-oil",
-        "ingredient/butter"
-      ],
+      "works_on": ["ingredient/beef-steak"],
+      "with": ["ingredient/black-pepper", "ingredient/salt", "ingredient/sunflower-oil", "ingredient/butter"],
       "text": "Dry the steaks and press the pepper into both sides. Salt them. Sear them in the oil in a very hot, heavy pan, without moving them, until a deep brown crust has formed. Turn them, add the butter, and cook to the doneness you like. Check it with a thermometer against a trusted guide.",
       "time": {"from": 4, "to": 8, "unit": "minute"},
       "temperature": null,
@@ -43,6 +52,7 @@
     {
       "technique": "technique/rest",
       "works_on": ["ingredient/beef-steak"],
+      "with": [],
       "text": "Lift the steaks onto a rack or a warm plate and leave them alone while you make the sauce.",
       "time": {"value": 5, "unit": "minute"},
       "temperature": null,
@@ -51,7 +61,8 @@
     },
     {
       "technique": "technique/deglaze",
-      "works_on": ["preparation/fond", "ingredient/cognac"],
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/cognac"],
       "text": "Pour off the fat. Take the pan off the heat, add the cognac, and put it back, standing clear in case it flames. Scrape the pan clean as it boils.",
       "time": {"value": 30, "unit": "second"},
       "temperature": null,
@@ -61,6 +72,7 @@
     {
       "technique": "technique/reduce",
       "works_on": ["preparation/pan-sauce", "ingredient/cream"],
+      "with": [],
       "text": "Add the cream and boil until the sauce coats the back of a spoon. Pour in the juices the steaks have given up.",
       "time": {"from": 2, "to": 3, "unit": "minute"},
       "temperature": null,
@@ -69,7 +81,8 @@
     },
     {
       "technique": "technique/season",
-      "works_on": ["preparation/pan-sauce", "ingredient/salt"],
+      "works_on": ["preparation/pan-sauce"],
+      "with": ["ingredient/salt"],
       "text": "Taste the sauce and salt it.",
       "time": null,
       "temperature": null,
@@ -79,6 +92,7 @@
     {
       "technique": "technique/plate",
       "works_on": ["ingredient/beef-steak", "preparation/pan-sauce"],
+      "with": [],
       "text": "Set the steaks on warm plates and spoon the sauce beside them, not over the crust.",
       "time": null,
       "temperature": null,

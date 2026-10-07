@@ -25,14 +25,11 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/potato", "tier": "drafted"},
-    {"thing": "ingredient/courgette", "tier": "drafted"},
-    {"thing": "ingredient/aubergine", "tier": "drafted"},
-    {"thing": "ingredient/tomato", "tier": "drafted"},
-    {"thing": "preparation/shortcrust-pastry", "tier": "drafted"},
-    {"thing": "ingredient/baguette", "tier": "drafted"},
-    {"thing": "ingredient/sandwich-bread", "tier": "drafted"},
-    {"thing": "ingredient/reblochon", "tier": "drafted"}
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/breads", "tier": "drafted"},
+    {"thing": "group/pastry", "tier": "drafted"},
+    {"thing": "ingredient/reblochon", "tier": "drafted"},
+    {"thing": "preparation/bread-dough", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

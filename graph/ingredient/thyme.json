@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/woody-herbs", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A woody herb that gives its flavour slowly, so it goes in early and stands long cooking.",
   "safety": {

@@ -21,10 +21,9 @@
     {"mistake": "Leaving a thick coat on, which falls off in the pan and burns.", "fix": "Tap the piece well."}
   ],
   "works_on": [
-    {"thing": "ingredient/sole", "tier": "drafted"},
-    {"thing": "ingredient/white-fish", "tier": "drafted"},
-    {"thing": "ingredient/veal-escalope", "tier": "drafted"},
-    {"thing": "ingredient/calfs-liver", "tier": "drafted"}
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/offal", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

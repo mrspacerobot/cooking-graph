@@ -5,6 +5,9 @@
   "aliases": {"en": ["curly endive"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/salad-leaves", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A bitter, frilly leaf, sturdy enough to stand a warm dressing without wilting at once.",
   "safety": {

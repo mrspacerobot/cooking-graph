@@ -7,6 +7,9 @@
     {"thing": "ingredient/pasta", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Very thin pasta that cooks in moments and goes on swelling in hot soup.",
   "safety": {

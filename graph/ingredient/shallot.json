@@ -3,10 +3,12 @@
   "tier": "drafted",
   "names": {"en": "Shallot", "fr": "Échalote"},
   "aliases": {},
-  "is_a": [
-    {"thing": "ingredient/allium", "tier": "drafted"}
-  ],
+  "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Finer and sweeter than onion, and quick to burn. Cut small, it melts into a sauce.",
   "safety": {

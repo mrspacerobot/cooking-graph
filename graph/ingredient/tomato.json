@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/watery-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Sheds water as it heats and breaks down into a sauce. Its acidity brightens a dish and slows the softening of beans and onions.",
   "safety": {

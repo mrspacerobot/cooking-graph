@@ -5,6 +5,9 @@
   "aliases": {"en": ["stewing veal"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/braising-cuts", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A pale, mild cut with enough connective tissue to turn tender and silky when it is simmered gently for a long time.",
   "safety": {

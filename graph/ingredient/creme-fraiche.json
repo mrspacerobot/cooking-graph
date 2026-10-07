@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/creams", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A thick, lightly sour cream that can be boiled in a sauce without splitting.",
   "safety": {

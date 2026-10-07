@@ -6,13 +6,18 @@
   "makes": "dish/fish-en-papillote",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/white-fish", "amount": {"value": 300, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/leek", "amount": {"value": 1, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/carrot", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"]},
-    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/white-wine", "amount": {"value": 2, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {"thing": "ingredient/white-fish", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "white-fish"},
+    {"thing": "ingredient/leek", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "leek"},
+    {"thing": "ingredient/carrot", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"], "part": "carrot"},
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/white-wine", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "white-wine"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": [
     "equipment/oven", "equipment/stovetop", "equipment/saute-pan", "equipment/parchment-paper",
@@ -22,6 +27,7 @@
     {
       "technique": "technique/julienne",
       "works_on": ["ingredient/leek", "ingredient/carrot"],
+      "with": [],
       "text": "Cut the white of the leek and the carrot into fine julienne. Wash the leek strips and drain them.",
       "time": null,
       "temperature": null,
@@ -30,7 +36,8 @@
     },
     {
       "technique": "technique/sweat",
-      "works_on": ["ingredient/butter", "ingredient/leek", "ingredient/carrot", "ingredient/salt"],
+      "works_on": ["ingredient/leek", "ingredient/carrot"],
+      "with": ["ingredient/butter", "ingredient/salt"],
       "text": "Soften the julienne in half the butter with a little of the salt over low heat, without colour.",
       "time": {"from": 5, "to": 6, "unit": "minute"},
       "temperature": null,
@@ -39,9 +46,10 @@
     },
     {
       "technique": "technique/bake-in-parchment",
-      "works_on": [
-        "ingredient/leek", "ingredient/carrot", "ingredient/white-fish", "ingredient/butter", "ingredient/white-wine",
-        "ingredient/salt", "ingredient/black-pepper"
+      "works_on": ["ingredient/white-fish"],
+      "with": [
+        "ingredient/leek", "ingredient/carrot", "ingredient/butter", "ingredient/white-wine", "ingredient/salt",
+        "ingredient/black-pepper"
       ],
       "text": "Fold a large sheet of paper for each person. Lay the julienne on one side of the fold and a piece of fish on top. Season, dot with the rest of the butter and add the wine. Seal the parcels tightly and bake them on a tray until they puff up.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
@@ -52,6 +60,7 @@
     {
       "technique": "technique/plate",
       "works_on": ["ingredient/white-fish"],
+      "with": [],
       "text": "Carry the parcels to the table on warm plates and cut them open there.",
       "time": null,
       "temperature": null,

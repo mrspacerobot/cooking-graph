@@ -5,6 +5,9 @@
   "aliases": {"en": ["heavy cream", "double cream", "whipping cream"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/creams", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Thickens as it boils down and softens sharp flavours. It can split when boiled hard with acid.",
   "safety": {

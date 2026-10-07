@@ -6,9 +6,14 @@
   "makes": "dish/magret-de-canard",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/duck-breast", "amount": {"value": 1, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/salt", "amount": {"value": 0.75, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {"thing": "ingredient/duck-breast", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "duck-breast"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.75, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": [
     "equipment/stovetop", "equipment/frying-pan", "equipment/chefs-knife", "equipment/cutting-board",
@@ -17,7 +22,8 @@
   "steps": [
     {
       "technique": "technique/score",
-      "works_on": ["ingredient/duck-breast", "ingredient/salt"],
+      "works_on": ["ingredient/duck-breast"],
+      "with": ["ingredient/salt"],
       "text": "Score the skin in a pattern of diamonds, cutting through the fat but not into the flesh. Dry the breast and salt both sides.",
       "time": null,
       "temperature": null,
@@ -27,6 +33,7 @@
     {
       "technique": "technique/render",
       "works_on": ["ingredient/duck-breast"],
+      "with": [],
       "text": "Lay the breast skin side down in a cold, dry pan and set it over medium-low heat. Let the fat melt out slowly, pouring it off into a bowl as it gathers, until the skin is thin, deep golden and crisp.",
       "time": {"from": 12, "to": 15, "unit": "minute"},
       "temperature": null,
@@ -36,6 +43,7 @@
     {
       "technique": "technique/sear",
       "works_on": ["ingredient/duck-breast"],
+      "with": [],
       "text": "Turn the breast and sear the flesh side briefly over higher heat. Check its doneness with a thermometer against a trusted guide.",
       "time": {"from": 2, "to": 4, "unit": "minute"},
       "temperature": null,
@@ -45,6 +53,7 @@
     {
       "technique": "technique/rest",
       "works_on": ["ingredient/duck-breast"],
+      "with": [],
       "text": "Rest it skin side up on a rack.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
@@ -53,7 +62,8 @@
     },
     {
       "technique": "technique/plate",
-      "works_on": ["ingredient/duck-breast", "ingredient/black-pepper"],
+      "works_on": ["ingredient/duck-breast"],
+      "with": ["ingredient/black-pepper"],
       "text": "Slice it across, a little on the slant, season with the pepper and serve on warm plates. Keep the fat you poured off: it is very good for frying potatoes.",
       "time": null,
       "temperature": null,

@@ -7,6 +7,7 @@
     {"thing": "ingredient/tomato", "tier": "drafted"}
   ],
   "part_of": [],
+  "groups": [],
   "forms": [],
   "behaviour": "A thick concentrate that turns sweet and deep when it is fried for a moment, and stays raw and sharp when it is not.",
   "safety": {

@@ -5,18 +5,36 @@
   "aliases": {"en": ["veal blanquette", "veal in white sauce"]},
   "is": "Veal simmered without browning with vegetables and herbs, then served in a sauce made from its own broth, thickened with a pale roux and finished with cream and egg yolk, with mushrooms and small onions.",
   "parts": [
-    {"role": "main", "options": ["ingredient/veal-shoulder"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/carrot"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["preparation/bouquet-garni"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/mushroom"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/pearl-onion"], "tier": "drafted"},
-    {"role": "thickener", "options": ["preparation/roux"], "tier": "drafted"},
-    {"role": "enrichment", "options": ["ingredient/cream"], "tier": "drafted"},
-    {"role": "thickener", "options": ["ingredient/egg-yolk"], "tier": "drafted"},
-    {"role": "acid", "options": ["ingredient/lemon"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+    {
+      "id": "veal-shoulder",
+      "role": "main",
+      "options": ["ingredient/veal-shoulder"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bouquet-garni",
+      "role": "aromatic",
+      "options": ["preparation/bouquet-garni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "mushroom", "role": "garnish", "options": ["ingredient/mushroom"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pearl-onion",
+      "role": "garnish",
+      "options": ["ingredient/pearl-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "roux", "role": "thickener", "options": ["preparation/roux"], "optional": false, "tier": "drafted"},
+    {"id": "cream", "role": "enrichment", "options": ["ingredient/cream"], "optional": false, "tier": "drafted"},
+    {"id": "egg-yolk", "role": "thickener", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/simmer", "tier": "drafted"},

@@ -25,13 +25,7 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/egg-yolk", "tier": "drafted"},
-    {"thing": "ingredient/sunflower-oil", "tier": "drafted"},
-    {"thing": "ingredient/olive-oil", "tier": "drafted"},
-    {"thing": "ingredient/butter", "tier": "drafted"},
-    {"thing": "ingredient/dijon-mustard", "tier": "drafted"},
-    {"thing": "ingredient/red-wine-vinegar", "tier": "drafted"},
-    {"thing": "ingredient/white-wine-vinegar", "tier": "drafted"}
+    {"thing": "group/emulsified-sauces", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/mayonnaise", "tier": "drafted"},

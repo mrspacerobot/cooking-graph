@@ -5,6 +5,9 @@
   "aliases": {"en": ["veal liver"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/offal", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Tender and mild when cooked fast and left pink, grainy and bitter when overcooked.",
   "safety": {

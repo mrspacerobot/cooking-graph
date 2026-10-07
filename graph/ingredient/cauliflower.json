@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Mild and firm. It turns sweet and nutty when browned, and soft, wet and sulphurous when boiled too long.",
   "safety": {

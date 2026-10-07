@@ -5,6 +5,9 @@
   "aliases": {"en": ["gherkins"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/pickles", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Small, sharp pickles that stay crisp and cut through rich meat.",
   "safety": {

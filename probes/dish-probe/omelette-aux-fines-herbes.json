@@ -3,6 +3,7 @@
   "tier": "drafted",
   "batch": "eggs-1",
   "set": "held-back",
+  "written_by": "claude-opus-5-5",
   "written_for": "eggs",
   "dish": "Omelette aux fines herbes",
   "also_called": ["herb omelette"],

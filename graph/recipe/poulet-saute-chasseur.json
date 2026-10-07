@@ -6,23 +6,59 @@
   "makes": "dish/poulet-saute-chasseur",
   "yields": {"value": 4, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/chicken", "amount": {"value": 1.4, "unit": "kilogram"}, "forms": ["form/jointed"]},
-    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/mushroom", "amount": {"value": 250, "unit": "gram"}, "forms": ["form/sliced"]},
-    {"thing": "ingredient/shallot", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/peeled", "form/minced"]},
-    {"thing": "ingredient/white-wine", "amount": {"value": 150, "unit": "millilitre"}, "forms": []},
-    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/diced"]},
-    {"thing": "ingredient/chicken-stock", "amount": {"value": 200, "unit": "millilitre"}, "forms": []},
-    {"thing": "ingredient/tarragon", "amount": {"value": 2, "unit": "sprig"}, "forms": ["form/chopped"]},
-    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {
+      "thing": "ingredient/chicken",
+      "amount": {"value": 1.4, "unit": "kilogram"},
+      "forms": ["form/jointed"],
+      "part": "main"
+    },
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "sunflower-oil"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "butter"},
+    {
+      "thing": "ingredient/mushroom",
+      "amount": {"value": 250, "unit": "gram"},
+      "forms": ["form/sliced"],
+      "part": "mushroom"
+    },
+    {
+      "thing": "ingredient/shallot",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "shallot"
+    },
+    {
+      "thing": "ingredient/white-wine",
+      "amount": {"value": 150, "unit": "millilitre"},
+      "forms": [],
+      "part": "white-wine"
+    },
+    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/diced"], "part": "tomato"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {
+      "thing": "ingredient/tarragon",
+      "amount": {"value": 2, "unit": "sprig"},
+      "forms": ["form/chopped"],
+      "part": "tarragon"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": ["equipment/stovetop", "equipment/saute-pan", "equipment/tongs", "equipment/wooden-spoon"],
   "steps": [
     {
       "technique": "technique/sear",
-      "works_on": ["ingredient/chicken", "ingredient/salt", "ingredient/sunflower-oil", "ingredient/butter"],
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/salt", "ingredient/sunflower-oil", "ingredient/butter"],
       "text": "Dry the chicken pieces and salt them. Heat the oil and the butter in a wide sauté pan. Brown the pieces skin side down first, without moving them, then turn them. Lift them out.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": null,
@@ -32,6 +68,7 @@
     {
       "technique": "technique/saute",
       "works_on": ["ingredient/mushroom"],
+      "with": [],
       "text": "Brown the mushrooms in the fat left in the pan over high heat, then lift them out too.",
       "time": {"from": 4, "to": 5, "unit": "minute"},
       "temperature": null,
@@ -41,6 +78,7 @@
     {
       "technique": "technique/sweat",
       "works_on": ["ingredient/shallot"],
+      "with": [],
       "text": "Pour off all but a film of fat. Soften the shallots in it over low heat.",
       "time": {"from": 1, "to": 2, "unit": "minute"},
       "temperature": null,
@@ -49,7 +87,8 @@
     },
     {
       "technique": "technique/deglaze",
-      "works_on": ["preparation/fond", "ingredient/white-wine"],
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine"],
       "text": "Pour in the wine and scrape the pan clean. Boil until about half of the wine is left.",
       "time": {"from": 2, "to": 3, "unit": "minute"},
       "temperature": null,
@@ -58,7 +97,8 @@
     },
     {
       "technique": "technique/simmer",
-      "works_on": ["preparation/pan-sauce", "ingredient/tomato", "ingredient/chicken-stock", "ingredient/chicken"],
+      "works_on": ["preparation/pan-sauce", "ingredient/tomato", "ingredient/chicken"],
+      "with": ["ingredient/chicken-stock"],
       "text": "Add the tomatoes and the stock, then put the chicken back, skin side up. Cover and simmer gently, taking the breast pieces out before the legs. Check the thickest part against a trusted guide to doneness.",
       "time": {"from": 20, "to": 25, "unit": "minute"},
       "temperature": null,
@@ -67,7 +107,8 @@
     },
     {
       "technique": "technique/reduce",
-      "works_on": ["preparation/pan-sauce", "ingredient/mushroom"],
+      "works_on": ["preparation/pan-sauce"],
+      "with": ["ingredient/mushroom"],
       "text": "Lift the chicken onto a warm dish. Put the mushrooms back and boil the sauce down until it coats a spoon.",
       "time": {"from": 3, "to": 5, "unit": "minute"},
       "temperature": null,
@@ -76,7 +117,8 @@
     },
     {
       "technique": "technique/season",
-      "works_on": ["preparation/pan-sauce", "ingredient/tarragon", "ingredient/salt", "ingredient/black-pepper"],
+      "works_on": ["preparation/pan-sauce"],
+      "with": ["ingredient/tarragon", "ingredient/salt", "ingredient/black-pepper"],
       "text": "Off the heat, stir in the tarragon. Taste, season, and spoon the sauce over the chicken.",
       "time": null,
       "temperature": null,

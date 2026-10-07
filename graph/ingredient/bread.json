@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/breads", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Dries as it stales, which makes it better for crumbs, croutons and soaking up liquid. It toasts and browns fast in fat.",
   "safety": {

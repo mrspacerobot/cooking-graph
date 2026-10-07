@@ -5,12 +5,30 @@
   "aliases": {"en": ["spinach and hard cheese omelette"]},
   "is": "A rolled omelette of softly set eggs, filled with wilted spinach and grated hard cheese.",
   "parts": [
-    {"role": "main", "options": ["ingredient/egg"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter", "ingredient/olive-oil"], "tier": "drafted"},
-    {"role": "filling", "options": ["ingredient/spinach"], "tier": "drafted"},
-    {"role": "filling", "options": ["ingredient/vegetarian-hard-cheese", "ingredient/parmesan"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "spinach", "role": "filling", "options": ["ingredient/spinach"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "filling",
+      "options": ["ingredient/vegetarian-hard-cheese", "ingredient/parmesan"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/roll-an-omelette", "tier": "drafted"},

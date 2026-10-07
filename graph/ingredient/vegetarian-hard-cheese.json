@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/grating-cheeses", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A hard, salty cheese that grates finely, melts into sauces and browns to a crust.",
   "safety": {

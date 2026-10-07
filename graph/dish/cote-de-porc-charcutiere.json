@@ -5,20 +5,40 @@
   "aliases": {"en": ["pork chop charcutière", "pork chops with charcutière sauce"]},
   "is": "A pork chop seared and rested, with a sauce made in its pan from onion, white wine and stock, finished off the heat with mustard and strips of cornichon.",
   "parts": [
-    {"role": "main", "options": ["ingredient/pork-chop"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/onion"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/white-wine"], "tier": "drafted"},
+    {"id": "pork-chop", "role": "main", "options": ["ingredient/pork-chop"], "optional": false, "tier": "drafted"},
     {
-      "role": "liquid",
-      "options": ["preparation/brown-stock", "ingredient/beef-stock", "ingredient/chicken-stock"],
+      "id": "sunflower-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil"],
+      "optional": false,
       "tier": "drafted"
     },
-    {"role": "seasoning", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
-    {"role": "garnish", "options": ["ingredient/cornichons"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/black-pepper"], "tier": "drafted"}
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "white-wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["preparation/brown-stock", "ingredient/beef-stock", "ingredient/chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "dijon-mustard",
+      "role": "seasoning",
+      "options": ["ingredient/dijon-mustard"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cornichons", "role": "garnish", "options": ["ingredient/cornichons"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/sear", "tier": "drafted"},

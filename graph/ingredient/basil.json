@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Bruises and blackens easily and loses its scent with heat, so it goes in raw or at the very end.",
   "safety": {

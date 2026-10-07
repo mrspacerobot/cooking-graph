@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/pickles", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Small, salty, sour buds that cut through fat. They are rinsed before use.",
   "safety": {

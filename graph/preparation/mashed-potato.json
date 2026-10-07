@@ -5,11 +5,14 @@
   "aliases": {"en": ["mashed potato", "mashed potatoes", "mash"]},
   "is": "Boiled potatoes crushed while hot and beaten smooth with butter and hot milk.",
   "parts": [
-    {"role": "main", "options": ["ingredient/potato"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/milk"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/nutmeg"], "tier": "drafted"}
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "nutmeg", "role": "seasoning", "options": ["ingredient/nutmeg"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/starches", "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/mash", "tier": "drafted"}

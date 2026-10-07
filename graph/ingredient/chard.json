@@ -5,6 +5,10 @@
   "aliases": {"en": ["Swiss chard"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "group/leafy-greens", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Leaves that wilt like spinach on stalks that need longer, so the leaves and the stalks are cooked apart.",
   "safety": {

@@ -5,9 +5,27 @@
   "aliases": {"en": ["pike with beurre blanc", "poached fish with beurre blanc"]},
   "is": "Pike poached in court-bouillon and served under beurre blanc, a dish of the Loire.",
   "parts": [
-    {"role": "main", "options": ["ingredient/pike", "ingredient/white-fish"], "tier": "drafted"},
-    {"role": "liquid", "options": ["preparation/court-bouillon"], "tier": "drafted"},
-    {"role": "sauce", "options": ["preparation/beurre-blanc"], "tier": "drafted"}
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/pike", "ingredient/white-fish"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "court-bouillon",
+      "role": "liquid",
+      "options": ["preparation/court-bouillon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "beurre-blanc",
+      "role": "sauce",
+      "options": ["preparation/beurre-blanc"],
+      "optional": false,
+      "tier": "drafted"
+    }
   ],
   "teaches": [
     {"thing": "technique/poach", "tier": "drafted"},

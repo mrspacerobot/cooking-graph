@@ -6,15 +6,21 @@
   "makes": "preparation/mirepoix",
   "yields": {"value": 400, "unit": "gram"},
   "ingredients": [
-    {"thing": "ingredient/onion", "amount": {"value": 200, "unit": "gram"}, "forms": ["form/peeled"]},
-    {"thing": "ingredient/carrot", "amount": {"value": 100, "unit": "gram"}, "forms": ["form/peeled"]},
-    {"thing": "ingredient/celery", "amount": {"value": 100, "unit": "gram"}, "forms": []}
+    {"thing": "ingredient/onion", "amount": {"value": 200, "unit": "gram"}, "forms": ["form/peeled"], "part": "onion"},
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 100, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "carrot"
+    },
+    {"thing": "ingredient/celery", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "celery"}
   ],
   "equipment": ["equipment/chefs-knife", "equipment/cutting-board"],
   "steps": [
     {
       "technique": "technique/dice",
       "works_on": ["ingredient/onion"],
+      "with": [],
       "text": "Halve the onion through the root, cut towards the root without cutting through it, then slice across into dice.",
       "time": null,
       "temperature": null,
@@ -24,6 +30,7 @@
     {
       "technique": "technique/dice",
       "works_on": ["ingredient/carrot", "ingredient/celery"],
+      "with": [],
       "text": "Cut the carrot and the celery into dice of the same size as the onion. One size matters more than which size: cut larger for a stock that simmers long, and smaller for a quick sauce.",
       "time": null,
       "temperature": null,

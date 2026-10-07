@@ -1,0 +1,9 @@
+{
+  "id": "group/steaks-and-chops",
+  "tier": "drafted",
+  "names": {"en": "Steaks and chops"},
+  "aliases": {},
+  "shares": "Tender, pan-sized cuts with little connective tissue. They want fierce heat for a short time and then a rest, and they toughen when cooked for long.",
+  "within": {"thing": "group/meat", "tier": "drafted"},
+  "stands_alone": null
+}

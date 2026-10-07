@@ -7,7 +7,7 @@ the shape issue is reported first and the rest follows once it is fixed.
 
 import os
 
-from tools import names, probes
+from tools import names
 from tools.reading import Issue, join, nested
 
 LOWEST_TIER = "drafted"
@@ -97,7 +97,8 @@ def steps_use_what_is_listed(things):
     """A step works only on what is at hand, and everything the recipe lists is used.
 
     At hand are the ingredients the recipe lists, the thing the recipe is
-    making, and whatever an earlier step left behind.
+    making, and whatever this step or an earlier one leaves behind. A step
+    uses a thing when it works on it or is done with it.
     """
     issues = []
     for thing_id, thing in of_kind(things, "recipe"):
@@ -105,13 +106,14 @@ def steps_use_what_is_listed(things):
         at_hand = set(listed) | {thing.data["makes"]}
         used = set()
         for index, step in enumerate(thing.data["steps"]):
-            for worked_on in step["works_on"]:
-                used.add(worked_on)
-                if worked_on not in at_hand:
-                    where = "steps[%d].works_on" % index
-                    message = "'%s' is neither an ingredient of this recipe nor left behind by an earlier step" % worked_on
-                    issues.append(Issue(thing.path, where, "step-works-on-unlisted", message))
             at_hand.update(step["makes"])
+            for field in ("works_on", "with"):
+                for handled in step[field]:
+                    used.add(handled)
+                    if handled not in at_hand:
+                        where = "steps[%d].%s" % (index, field)
+                        message = "'%s' is neither an ingredient of this recipe nor left behind by a step so far" % handled
+                        issues.append(Issue(thing.path, where, "step-works-on-unlisted", message))
         for index, listed_thing in enumerate(listed):
             if listed_thing not in used:
                 where = "ingredients[%d]" % index
@@ -134,19 +136,6 @@ def everything_inside(thing_id, things, found=None):
                 if option.startswith("preparation/"):
                     everything_inside(option, things, found)
     return found
-
-
-def recipes_stay_inside_their_dish(things):
-    """A recipe uses nothing its dish does not name, so what a dish holds covers every way to make it."""
-    issues = []
-    for thing_id, thing in of_kind(things, "recipe"):
-        allowed = everything_inside(thing.data["makes"], things)
-        for index, line in enumerate(thing.data["ingredients"]):
-            if line["thing"] not in allowed:
-                where = "ingredients[%d].thing" % index
-                message = "'%s' is no part of '%s', which this recipe makes" % (line["thing"], thing.data["makes"])
-                issues.append(Issue(thing.path, where, "not-in-the-dish", message))
-    return issues
 
 
 def by_products(things):
@@ -232,6 +221,7 @@ LOOPS_THAT_MAKE_NO_SENSE = [
     ("ingredient", "is_a"),
     ("ingredient", "part_of"),
     ("cuisine", "within"),
+    ("group", "within"),
     ("technique", "comes_after"),
     ("technique", "variant_of"),
 ]
@@ -281,70 +271,6 @@ def programs_hold_together(things):
     issues = []
     for thing_id, thing in of_kind(things, "program"):
         issues.extend(program_issues(thing))
-    return issues
-
-
-def every_skill(things):
-    slugs = set()
-    for thing_id, thing in of_kind(things, "program"):
-        slugs.update(skill["slug"] for skill in skills_of(thing.data))
-    return slugs
-
-
-def probes_name_a_skill(things):
-    """A probe is written for a skill of a program."""
-    skills = every_skill(things)
-    issues = []
-    for thing_id, thing in of_kind(things, "dish-probe"):
-        if thing.data["written_for"] not in skills:
-            message = "'%s' is no skill of any program" % thing.data["written_for"]
-            issues.append(Issue(thing.path, "written_for", "skill-unknown", message))
-    return issues
-
-
-def held_back_by_the_rule(things):
-    """Which probes are held back is decided by the rule in tools/probes.py, never by hand."""
-    batches = {}
-    for thing_id, thing in of_kind(things, "dish-probe"):
-        batches.setdefault(thing.data["batch"], []).append(thing_id)
-    issues = []
-    for batch, probe_ids in sorted(batches.items()):
-        held_back = probes.held_back_ids(probe_ids)
-        for probe_id in probe_ids:
-            expected = "held-back" if probe_id in held_back else "growing"
-            if things[probe_id].data["set"] != expected:
-                message = "the rule puts this probe of batch '%s' in the set '%s'" % (batch, expected)
-                issues.append(Issue(things[probe_id].path, "set", "held-back-rule", message))
-    return issues
-
-
-def one_probe_per_dish(things):
-    owners = {}
-    for thing_id, thing in of_kind(things, "dish-probe"):
-        for name in probes.dish_names(thing.data):
-            owners.setdefault(name, []).append(thing_id)
-    issues = []
-    for name, sharing in sorted(owners.items()):
-        if len(sharing) < 2:
-            continue
-        for probe_id in sharing:
-            message = "another probe already asks about '%s'" % name
-            issues.append(Issue(things[probe_id].path, "dish", "same-dish-twice", message))
-    return issues
-
-
-def nothing_drafted_towards_held_back(things):
-    """Nothing is written for a held-back probe. Held-back probes test the graph, they never grow it."""
-    held_back_names = set()
-    for thing_id, thing in of_kind(things, "dish-probe"):
-        if thing.data["set"] == "held-back":
-            held_back_names.update(probes.dish_names(thing.data))
-    issues = []
-    for kind in ("dish", "recipe", "preparation"):
-        for thing_id, thing in of_kind(things, kind):
-            if names.plain_names(thing.data) & held_back_names:
-                message = "a held-back probe asks about this dish, so it may not be written"
-                issues.append(Issue(thing.path, "names", "drafted-towards-held-back", message))
     return issues
 
 
@@ -405,20 +331,15 @@ def lines_with_an_em_dash(path):
     return [number for number, line in enumerate(lines, start=1) if EM_DASH in line]
 
 
-EVERY_RULE = [
+BASE_RULES = [
     tiers_earned,
     safety_earned,
     facts_answered,
     classes_as_strict_as_members,
     wholes_as_strict_as_parts,
     steps_use_what_is_listed,
-    recipes_stay_inside_their_dish,
     by_products_stay_inside_recipes,
     names_once_per_kind,
     no_loops,
     programs_hold_together,
-    probes_name_a_skill,
-    held_back_by_the_rule,
-    one_probe_per_dish,
-    nothing_drafted_towards_held_back,
 ]

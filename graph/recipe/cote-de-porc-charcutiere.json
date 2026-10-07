@@ -6,22 +6,53 @@
   "makes": "dish/cote-de-porc-charcutiere",
   "yields": {"value": 2, "unit": "serving"},
   "ingredients": [
-    {"thing": "ingredient/pork-chop", "amount": {"value": 2, "unit": "piece"}, "forms": []},
-    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": []},
-    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled", "form/minced"]},
-    {"thing": "ingredient/white-wine", "amount": {"value": 100, "unit": "millilitre"}, "forms": []},
-    {"thing": "ingredient/beef-stock", "amount": {"value": 150, "unit": "millilitre"}, "forms": []},
-    {"thing": "ingredient/dijon-mustard", "amount": {"value": 1, "unit": "tablespoon"}, "forms": []},
-    {"thing": "ingredient/cornichons", "amount": {"value": 4, "unit": "piece"}, "forms": ["form/julienne"]},
-    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": []},
-    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": []}
+    {"thing": "ingredient/pork-chop", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "pork-chop"},
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "sunflower-oil"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "butter"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "onion"
+    },
+    {
+      "thing": "ingredient/white-wine",
+      "amount": {"value": 100, "unit": "millilitre"},
+      "forms": [],
+      "part": "white-wine"
+    },
+    {"thing": "ingredient/beef-stock", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {
+      "thing": "ingredient/dijon-mustard",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "dijon-mustard"
+    },
+    {
+      "thing": "ingredient/cornichons",
+      "amount": {"value": 4, "unit": "piece"},
+      "forms": ["form/julienne"],
+      "part": "cornichons"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
   ],
   "equipment": ["equipment/stovetop", "equipment/frying-pan", "equipment/wooden-spoon", "equipment/tongs"],
   "steps": [
     {
       "technique": "technique/sear",
-      "works_on": ["ingredient/pork-chop", "ingredient/salt", "ingredient/sunflower-oil"],
+      "works_on": ["ingredient/pork-chop"],
+      "with": ["ingredient/salt", "ingredient/sunflower-oil"],
       "text": "Dry the chops and salt them. Sear them in the oil in a hot, heavy pan until deep golden on both sides, then lower the heat and cook them more gently. Check the thickest part against a trusted guide to doneness.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": null,
@@ -31,6 +62,7 @@
     {
       "technique": "technique/rest",
       "works_on": ["ingredient/pork-chop"],
+      "with": [],
       "text": "Rest the chops on a warm plate, loosely covered.",
       "time": {"value": 5, "unit": "minute"},
       "temperature": null,
@@ -39,7 +71,8 @@
     },
     {
       "technique": "technique/sweat",
-      "works_on": ["ingredient/butter", "ingredient/onion"],
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter"],
       "text": "Pour off the fat. Soften the onion in the butter in the same pan over low heat.",
       "time": {"from": 3, "to": 4, "unit": "minute"},
       "temperature": null,
@@ -48,7 +81,8 @@
     },
     {
       "technique": "technique/deglaze",
-      "works_on": ["preparation/fond", "ingredient/white-wine"],
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine"],
       "text": "Pour in the wine and scrape the pan clean. Boil until almost all of it has gone.",
       "time": {"value": 2, "unit": "minute"},
       "temperature": null,
@@ -58,6 +92,7 @@
     {
       "technique": "technique/reduce",
       "works_on": ["preparation/pan-sauce", "ingredient/beef-stock"],
+      "with": [],
       "text": "Add the stock and boil it down until the sauce coats a spoon.",
       "time": {"from": 4, "to": 5, "unit": "minute"},
       "temperature": null,
@@ -66,9 +101,8 @@
     },
     {
       "technique": "technique/season",
-      "works_on": [
-        "preparation/pan-sauce", "ingredient/dijon-mustard", "ingredient/cornichons", "ingredient/black-pepper"
-      ],
+      "works_on": ["preparation/pan-sauce"],
+      "with": ["ingredient/dijon-mustard", "ingredient/cornichons", "ingredient/black-pepper"],
       "text": "Take the pan off the heat. Stir in the mustard, which must not boil, then the cornichons, the pepper and the juices from the resting chops. Taste.",
       "time": null,
       "temperature": null,
@@ -78,6 +112,7 @@
     {
       "technique": "technique/plate",
       "works_on": ["ingredient/pork-chop", "preparation/pan-sauce"],
+      "with": [],
       "text": "Serve the chops on warm plates with the sauce spooned beside them.",
       "time": null,
       "temperature": null,

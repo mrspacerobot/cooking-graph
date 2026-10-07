@@ -1,0 +1,9 @@
+{
+  "id": "group/roasting-joints",
+  "tier": "drafted",
+  "names": {"en": "Roasting joints", "fr": "Rôtis"},
+  "aliases": {},
+  "shares": "Large, tender pieces that are roasted whole in dry heat, rested for a long time and carved across the grain.",
+  "within": {"thing": "group/meat", "tier": "drafted"},
+  "stands_alone": null
+}

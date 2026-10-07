@@ -5,13 +5,19 @@
   "aliases": {"en": ["French-style peas", "peas braised with lettuce"]},
   "is": "Young peas stewed gently in butter with spring onions and shredded lettuce, in the little water the lettuce gives up.",
   "parts": [
-    {"role": "main", "options": ["ingredient/peas"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/spring-onion"], "tier": "drafted"},
-    {"role": "aromatic", "options": ["ingredient/lettuce"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
-    {"role": "sweetener", "options": ["ingredient/sugar"], "tier": "drafted"},
-    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+    {"id": "peas", "role": "main", "options": ["ingredient/peas"], "optional": false, "tier": "drafted"},
+    {
+      "id": "spring-onion",
+      "role": "aromatic",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lettuce", "role": "aromatic", "options": ["ingredient/lettuce"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/sweat", "tier": "drafted"}

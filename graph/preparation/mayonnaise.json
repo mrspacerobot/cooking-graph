@@ -5,11 +5,32 @@
   "aliases": {"en": ["mayo"]},
   "is": "A thick, cold sauce of oil whisked drop by drop into egg yolk, sharpened with mustard and vinegar or lemon.",
   "parts": [
-    {"role": "emulsifier", "options": ["ingredient/egg-yolk"], "tier": "drafted"},
-    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/dijon-mustard"], "tier": "drafted"},
-    {"role": "acid", "options": ["ingredient/white-wine-vinegar", "ingredient/lemon"], "tier": "drafted"},
-    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+    {"id": "egg-yolk", "role": "emulsifier", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "dijon-mustard",
+      "role": "seasoning",
+      "options": ["ingredient/dijon-mustard"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "acid",
+      "role": "acid",
+      "options": ["ingredient/white-wine-vinegar", "ingredient/lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/emulsified-sauces", "tier": "drafted"}
   ],
   "teaches": [
     {"thing": "technique/emulsify", "tier": "drafted"}

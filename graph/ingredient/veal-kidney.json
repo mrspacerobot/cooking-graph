@@ -5,6 +5,9 @@
   "aliases": {"en": ["calf's kidney"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/offal", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Tender and mild when seared fast and left pink inside, tough and strong when cooked long.",
   "safety": {

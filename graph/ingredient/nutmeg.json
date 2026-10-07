@@ -5,6 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/whole-spices", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Warm and sweet. It fades fast once grated, so it is grated at the last moment and used sparingly.",
   "safety": {

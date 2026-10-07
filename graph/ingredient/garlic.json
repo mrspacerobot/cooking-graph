@@ -3,10 +3,12 @@
   "tier": "drafted",
   "names": {"en": "Garlic", "fr": "Ail"},
   "aliases": {},
-  "is_a": [
-    {"thing": "ingredient/allium", "tier": "drafted"}
-  ],
+  "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Turns sweet and mellow over gentle heat and bitter the moment it scorches. The finer it is cut, the faster both happen.",
   "safety": {

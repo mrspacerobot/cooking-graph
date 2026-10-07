@@ -5,6 +5,9 @@
   "aliases": {"en": ["French beans", "green bean"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/green-vegetables", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Turn bright green in boiling salted water and dull olive if they are held hot or meet acid.",
   "safety": {

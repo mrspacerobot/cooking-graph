@@ -21,8 +21,7 @@
     }
   ],
   "works_on": [
-    {"thing": "ingredient/bacon", "tier": "drafted"},
-    {"thing": "ingredient/duck-breast", "tier": "drafted"}
+    {"thing": "group/fatty-cuts", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/rendered-fat", "tier": "drafted"}

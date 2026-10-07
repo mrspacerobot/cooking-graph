@@ -1,0 +1,9 @@
+{
+  "id": "group/meat",
+  "tier": "drafted",
+  "names": {"en": "Meat and poultry", "fr": "Viandes"},
+  "aliases": {},
+  "shares": "The flesh of animals and birds. It browns in dry heat and firms as it cooks, and how far to cook it is a question the graph leaves to a verified guide.",
+  "within": null,
+  "stands_alone": null
+}

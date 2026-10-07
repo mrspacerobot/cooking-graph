@@ -5,6 +5,9 @@
   "aliases": {"en": ["cooked ham", "jambon blanc"]},
   "is_a": [],
   "part_of": [],
+  "groups": [
+    {"thing": "group/cooked-meats", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Already cooked and salty. It only needs warming, and dries out if heated for long.",
   "safety": {

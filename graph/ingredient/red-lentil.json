@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/red-lentil",
+  "tier": "drafted",
+  "names": {"en": "Red lentil"},
+  "aliases": {"en": ["red lentils", "split red lentils", "kirmizi mercimek"]},
+  "is_a": [
+    {"thing": "ingredient/lentil", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A small, split, orange-red lentil that needs no soaking. In a gentle simmer it falls apart within a short time into a thick, soft purée, which is why it thickens soups.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

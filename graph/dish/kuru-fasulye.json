@@ -1,0 +1,36 @@
+{
+  "id": "dish/kuru-fasulye",
+  "tier": "drafted",
+  "names": {"en": "Turkish white bean stew"},
+  "aliases": {"en": ["Kuru fasulye"]},
+  "is": "Dried white beans soaked overnight and simmered until creamy, then cooked on in a sauce of onion fried in butter with red pepper paste, until the liquid is thick and red. It is served hot, often with rice.",
+  "parts": [
+    {"id": "white-beans", "role": "main", "options": ["ingredient/white-beans"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "butter",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "pepper-paste",
+      "role": "seasoning",
+      "options": ["ingredient/red-pepper-paste", "ingredient/tomato-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soaking-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/soak", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/sweat", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/kashkaval-cheese",
+  "tier": "drafted",
+  "names": {"en": "Kashkaval cheese"},
+  "aliases": {"en": ["kashkaval", "kasar", "kasar peyniri"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A semi-hard, pale yellow cheese of cow's or sheep's milk, mild and a little salty. It melts smoothly and stretches in the heat, so it is grated into sauces and fillings, melted on toast and baked on top of dishes.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from milk.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "Many are set with animal rennet.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

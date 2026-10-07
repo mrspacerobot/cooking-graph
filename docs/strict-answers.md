@@ -3,7 +3,7 @@
 Written by `./safety strict`. An ingredient holds a fact for certain, or the fact is recorded strictly because a common form of the ingredient may hold it.
 The rows below are the strict ones. How strict to be is for the owner to rule, reason by reason. Every safety record is unverified either way.
 
-172 of the 342 facts that ingredients hold are strict.
+177 of the 351 facts that ingredients hold are strict.
 
 | Fact | Basis | Ingredients |
 |---|---|---|
@@ -71,7 +71,10 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/slaughter-product` | Cider may be cleared with gelatine or isinglass. | cider |
 | `fact/slaughter-product` | It is traditionally made with animal rennet. | roquefort |
 | `fact/slaughter-product` | Made from wine, which may be cleared with gelatine or isinglass. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
+| `fact/slaughter-product` | Many are set with animal rennet. | kashkaval-cheese |
 | `fact/slaughter-product` | Many goat cheeses are made with animal rennet. | goat-cheese |
+| `fact/slaughter-product` | Many such cheeses are set with animal rennet. | kolot-cheese |
+| `fact/slaughter-product` | Many white cheeses are set with animal rennet. | white-cheese |
 | `fact/slaughter-product` | Often made with wine, which may be cleared with gelatine or isinglass. | dijon-mustard |
 | `fact/slaughter-product` | Some cane sugar is whitened with bone char. | brown-sugar, sugar |
 | `fact/slaughter-product` | Some cheese for the filling is set with animal rennet. | ravioles |
@@ -83,12 +86,13 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/soy` | Most chocolate is made with soy lecithin. | dark-chocolate |
 | `fact/soy` | Oil sold only as vegetable oil is often pressed from soybeans. | oil |
 | `fact/soy` | Some sausages are made with soy protein. | pork-sausage |
+| `fact/sulphites` | Bought pastes may be kept with a preservative of sulphites. | red-pepper-paste |
 | `fact/sulphites` | Bought sauerkraut is sometimes kept with sulphites. | sauerkraut |
 | `fact/sulphites` | Bought sausage meat is often kept with sulphites. | sausage-meat |
 | `fact/sulphites` | Bought syrups may be kept with a preservative of sulphites. | pomegranate-molasses |
 | `fact/sulphites` | Cooked meats are often kept with sulphites. | pork-brawn |
 | `fact/sulphites` | Cooked sausages are often kept with sulphites. | cervelas |
-| `fact/sulphites` | Dried fruit is often kept with sulphites. | prune |
+| `fact/sulphites` | Dried fruit is often kept with sulphites. | currant, prune |
 | `fact/sulphites` | Fresh sausages are often kept with sulphites. | pork-sausage |
 | `fact/sulphites` | Jarred brined leaves may be kept with a preservative of sulphites. | vine-leaf |
 | `fact/sulphites` | Made from wine, which nearly always holds sulphites. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |

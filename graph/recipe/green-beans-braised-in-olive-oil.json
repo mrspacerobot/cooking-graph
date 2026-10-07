@@ -1,0 +1,89 @@
+{
+  "id": "recipe/green-beans-braised-in-olive-oil",
+  "tier": "drafted",
+  "names": {"en": "Green beans braised in olive oil"},
+  "aliases": {},
+  "makes": "dish/green-beans-braised-in-olive-oil",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/green-beans", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "green-beans"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/diced"], "part": "onion"},
+    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/diced"], "part": "tomato"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 90, "unit": "millilitre"}, "forms": [], "part": "olive-oil"},
+    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/sugar", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sugar"},
+    {
+      "thing": "ingredient/lemon-juice",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "lemon-juice"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/wooden-spoon", "equipment/chefs-knife",
+    "equipment/paring-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/trim",
+      "works_on": ["ingredient/green-beans"],
+      "with": [],
+      "text": "Snap the stalk end off each bean and pull away any string along the sides. Leave the beans whole, or snap the longest ones in half.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion", "ingredient/tomato"],
+      "with": [],
+      "text": "Dice the onion small. Dice the tomatoes and keep their juice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Warm the olive oil in a wide pan over a gentle heat. Add the onion and soften it without letting it take any colour.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise-in-olive-oil",
+      "works_on": ["ingredient/green-beans"],
+      "with": ["ingredient/tomato", "ingredient/olive-oil", "ingredient/water", "ingredient/salt", "ingredient/sugar"],
+      "text": "Add the beans and the tomatoes with their juice and turn them in the oil until they shine. Sprinkle with the salt and the sugar, then pour in the water so that it comes only part way up the beans. Cover and cook over the lowest heat, shaking the pan now and then and not stirring, until the beans are very soft and give way under the back of a spoon. If much liquid is left, take off the lid for the last stretch until the pan holds mostly oil and glossy juice.",
+      "time": {"from": 40, "to": 50, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": [],
+      "with": ["ingredient/salt", "ingredient/lemon-juice"],
+      "text": "Taste the beans and adjust the salt. Add the lemon juice if they taste heavy or dull.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/green-beans"],
+      "with": [],
+      "text": "Leave the beans to cool in the pan until they are warm or at room temperature. Lift them onto a dish and spoon over the oil and juice from the pan. Keep any that is left covered and cold.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/red-pepper-paste",
+  "tier": "drafted",
+  "names": {"en": "Red pepper paste"},
+  "aliases": {"en": ["biber salcasi", "Turkish red pepper paste"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A thick, dark-red paste of red peppers cooked down with salt, sold sweet or hot. It turns deep and sweet when it is fried for a moment in oil or butter, and stays raw and sharp when it is not. It scorches quickly in a dry pan.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/sulphites",
+        "basis": "Bought pastes may be kept with a preservative of sulphites.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

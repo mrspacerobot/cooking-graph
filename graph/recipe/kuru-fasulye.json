@@ -1,0 +1,118 @@
+{
+  "id": "recipe/kuru-fasulye",
+  "tier": "drafted",
+  "names": {"en": "Turkish white bean stew"},
+  "aliases": {},
+  "makes": "dish/kuru-fasulye",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/white-beans", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "white-beans"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/diced"], "part": "onion"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "butter"},
+    {
+      "thing": "ingredient/red-pepper-paste",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "pepper-paste"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "soaking-water"},
+    {"thing": "ingredient/water", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/saute-pan", "equipment/mixing-bowl", "equipment/colander",
+    "equipment/wooden-spoon", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/water"],
+      "text": "Pick over the beans for small stones and rinse them under cold water.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/soak",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/water"],
+      "text": "Put the beans in a bowl, cover them with plenty of cold water and leave them overnight, until they are plump and smooth.",
+      "time": {"from": 8, "to": 12, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/white-beans"],
+      "with": [],
+      "text": "Tip the beans into a colander and throw the soaking water away.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/water"],
+      "text": "Put the beans in a pot with fresh water, bring them to a boil, then turn the heat down to a gentle simmer. Leave the lid ajar and simmer until the beans are nearly tender. Test a bean from the middle of the pot against a trusted guide to doneness.",
+      "time": {"from": 40, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the onion small.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter", "ingredient/red-pepper-paste"],
+      "text": "Melt the butter in a pan over a gentle heat and soften the onion without letting it colour. Stir in the red pepper paste and fry it just until it darkens and smells sweet. Do not let it scorch.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/onion", "ingredient/red-pepper-paste", "ingredient/butter", "ingredient/water"],
+      "text": "Stir the onion and paste into the beans with a ladle of their liquid. Simmer gently with the lid ajar, topping up with hot water if the beans show above the liquid, until the beans are very tender and the liquid is thick, red and glossy. Check a bean from the middle against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 40, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/salt"],
+      "text": "Salt the beans near the end, then taste and adjust.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/white-beans"],
+      "with": [],
+      "text": "Serve the beans hot in warm bowls with plenty of the red sauce.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

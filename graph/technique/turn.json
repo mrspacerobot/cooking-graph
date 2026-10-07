@@ -1,0 +1,42 @@
+{
+  "id": "technique/turn",
+  "tier": "drafted",
+  "names": {"en": "Turn", "fr": "Tourner"},
+  "aliases": {"en": ["turn vegetables", "turn potatoes", "cut into barrels"]},
+  "does": "Pares a vegetable into a neat barrel with curved sides, so that every piece cooks in the same time and rolls in the pan.",
+  "how": [
+    "Cut the vegetable into pieces of one length, and split large ones into halves or quarters.",
+    "Hold a piece between thumb and finger and draw a small knife from end to end in one curved stroke.",
+    "Turn the piece a little and cut again, until it has even faces and tapers at both ends.",
+    "Drop potatoes into cold water as they are done, and keep the parings for a soup or a mash."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Small barrels of one size, with smooth curved faces and blunt ends."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Short, choppy cuts, which leave flat steps instead of a curve.",
+      "fix": "Take each face in one long stroke, turning the wrist."
+    },
+    {
+      "mistake": "Pieces of different sizes, which cook unevenly.",
+      "fix": "Cut all the pieces to one length before you start."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/turned", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/paring-knife"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/peel", "why": "A vegetable is peeled before it is turned.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

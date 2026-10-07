@@ -89,7 +89,7 @@
       "makes": []
     },
     {
-      "technique": "technique/gratinate",
+      "technique": "technique/toast",
       "works_on": ["ingredient/baguette"],
       "with": [],
       "text": "Toast the slices of baguette under the grill until they are crisp and pale gold on both sides.",

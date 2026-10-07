@@ -1,0 +1,10 @@
+{
+  "id": "form/turned",
+  "tier": "drafted",
+  "names": {"en": "Turned", "fr": "Tourné"},
+  "aliases": {"en": ["barrel-shaped", "barrels"]},
+  "looks_like": "Small barrels with smooth, curved faces and blunt ends, all of one size.",
+  "size": [
+    {"measure": "length", "length": {"from": 4, "to": 6, "unit": "centimetre"}}
+  ]
+}

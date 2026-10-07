@@ -1,0 +1,40 @@
+{
+  "id": "technique/toast",
+  "tier": "drafted",
+  "names": {"en": "Toast", "fr": "Toaster"},
+  "aliases": {"en": ["toast the bread", "dry-roast", "toast nuts"], "fr": ["torréfier"]},
+  "does": "Dries and browns bread, nuts or spices in dry heat, which makes them crisp and wakes their scent.",
+  "how": [
+    "Spread the food in a single layer on a tray or in a dry pan.",
+    "Use a moderate heat: an oven, a grill or a pan with no fat.",
+    "Turn bread once. Shake nuts and spices often.",
+    "Tip nuts and spices out of the hot pan as soon as they are done, as they go on browning in it."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Bread is dry and pale gold. Nuts are a shade darker than they were."},
+    {"sense": "smell", "text": "A warm, nutty scent rises. An acrid smell means it has gone too far."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Walking away, as nuts go from golden to burnt within moments.",
+      "fix": "Stay with them and shake the pan."
+    },
+    {
+      "mistake": "Leaving toasted nuts or spices in the hot pan, where they keep browning.",
+      "fix": "Tip them onto a cold plate at once."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/breads", "tier": "drafted"},
+    {"thing": "group/whole-spices", "tier": "drafted"},
+    {"thing": "ingredient/walnut", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "heat", "options": ["equipment/oven", "equipment/grill", "equipment/stovetop"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-sheet", "equipment/frying-pan"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

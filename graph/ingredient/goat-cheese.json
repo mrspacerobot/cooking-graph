@@ -1,0 +1,26 @@
+{
+  "id": "ingredient/goat-cheese",
+  "tier": "drafted",
+  "names": {"en": "Goat cheese", "fr": "Fromage de chèvre"},
+  "aliases": {"en": ["goat's cheese", "chèvre"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A soft, tangy cheese that turns creamy and browns on top when it is warmed, without running.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from the milk of a goat.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "Many goat cheeses are made with animal rennet.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "Animal rennet is taken from the stomach of a young calf, kid or lamb."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

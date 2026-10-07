@@ -1,0 +1,39 @@
+{
+  "id": "technique/salt-and-drain",
+  "tier": "drafted",
+  "names": {"en": "Salt and drain", "fr": "Faire dégorger"},
+  "aliases": {"en": ["degorge", "salt to draw out water", "purge with salt"], "fr": ["dégorger"]},
+  "does": "Draws water out of a watery vegetable with salt before it is cooked or dressed, so that it keeps its bite and does not flood the dish.",
+  "how": [
+    "Slice or dice the vegetable and toss it with fine salt.",
+    "Leave it in a colander over a bowl until it has given up its water.",
+    "Rinse off the salt if the dish will be salted again, and press or pat the pieces dry."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Liquid has collected under the colander, and the pieces have gone limp and glossy."},
+    {"sense": "feel", "text": "A piece bends without snapping."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Skipping the drying, so that the vegetable goes into the pan or the dressing still wet.",
+      "fix": "Press it gently in a cloth before you use it."
+    },
+    {
+      "mistake": "Salting the dish as usual afterwards, so that it ends up far too salty.",
+      "fix": "Taste before you add any more salt."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/cucumber", "tier": "drafted"},
+    {"thing": "ingredient/aubergine", "tier": "drafted"},
+    {"thing": "ingredient/courgette", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/colander"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

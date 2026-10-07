@@ -2,7 +2,7 @@
   "id": "ingredient/bacon",
   "tier": "drafted",
   "names": {"en": "Bacon", "fr": "Poitrine fumée"},
-  "aliases": {"en": ["smoked bacon", "streaky bacon", "bacon lardons"]},
+  "aliases": {"en": ["smoked bacon", "streaky bacon", "bacon lardons", "smoked pork belly", "smoked belly of pork"]},
   "is_a": [],
   "part_of": [],
   "groups": [

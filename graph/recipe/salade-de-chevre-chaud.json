@@ -1,0 +1,99 @@
+{
+  "id": "recipe/salade-de-chevre-chaud",
+  "tier": "drafted",
+  "names": {"en": "Salade de chèvre chaud"},
+  "aliases": {},
+  "makes": "dish/salade-de-chevre-chaud",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/goat-cheese",
+      "amount": {"value": 120, "unit": "gram"},
+      "forms": ["form/sliced"],
+      "part": "goat-cheese"
+    },
+    {"thing": "ingredient/baguette", "amount": {"value": 4, "unit": "slice"}, "forms": [], "part": "toasts"},
+    {"thing": "ingredient/lettuce", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "leaves"},
+    {"thing": "ingredient/walnut", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "walnut"},
+    {
+      "thing": "ingredient/dijon-mustard",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "vinaigrette"
+    },
+    {
+      "thing": "ingredient/red-wine-vinegar",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "vinaigrette"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "vinaigrette"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "vinaigrette"}
+  ],
+  "equipment": [
+    "equipment/grill", "equipment/stovetop", "equipment/frying-pan", "equipment/baking-sheet", "equipment/mixing-bowl",
+    "equipment/whisk"
+  ],
+  "steps": [
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/baguette"],
+      "with": [],
+      "text": "Toast the slices of baguette on both sides until they are dry and pale gold.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/walnut"],
+      "with": [],
+      "text": "Toast the walnuts in a dry pan, shaking them, until they smell nutty. Tip them out at once.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/emulsify",
+      "works_on": ["preparation/vinaigrette"],
+      "with": ["ingredient/dijon-mustard", "ingredient/red-wine-vinegar", "ingredient/salt", "ingredient/olive-oil"],
+      "text": "Whisk the mustard with the vinegar and the salt, then whisk in the oil little by little until the dressing holds.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/vinaigrette"]
+    },
+    {
+      "technique": "technique/grill",
+      "works_on": ["ingredient/goat-cheese"],
+      "with": ["ingredient/baguette"],
+      "text": "Lay a round of cheese on each toast and set them under a hot grill until the cheese has softened and its top has browned.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/lettuce"],
+      "with": ["preparation/vinaigrette"],
+      "text": "Toss the leaves with the dressing at the last moment.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/lettuce", "ingredient/baguette"],
+      "with": ["ingredient/goat-cheese", "ingredient/walnut"],
+      "text": "Pile the leaves on plates, set the hot toasts on top and scatter the walnuts over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

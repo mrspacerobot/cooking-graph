@@ -36,7 +36,8 @@
     {"thing": "group/offal", "tier": "drafted"},
     {"thing": "ingredient/minced-beef", "tier": "drafted"},
     {"thing": "group/firm-fruits", "tier": "drafted"},
-    {"thing": "ingredient/frogs-legs", "tier": "drafted"}
+    {"thing": "ingredient/frogs-legs", "tier": "drafted"},
+    {"thing": "group/crustaceans", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/sauerkraut",
+  "tier": "drafted",
+  "names": {"en": "Sauerkraut", "fr": "Choucroute"},
+  "aliases": {"en": ["fermented cabbage"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Shredded cabbage fermented in salt until sour. It is rinsed to tame it, then cooked slowly with fat and wine until tender.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/sulphites", "basis": "Bought sauerkraut is sometimes kept with sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

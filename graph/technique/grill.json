@@ -1,0 +1,44 @@
+{
+  "id": "technique/grill",
+  "tier": "drafted",
+  "names": {"en": "Grill", "fr": "Griller"},
+  "aliases": {"en": ["chargrill", "cook under the grill", "grill under a hot grill"]},
+  "does": "Cooks food close to fierce, direct heat, so that its surface colours and chars lightly while the inside stays moist.",
+  "how": [
+    "Heat the grill until it is very hot before the food goes near it.",
+    "Dry the food, oil it lightly and season it.",
+    "Set it close to the heat and leave it until the surface has coloured, then turn it once.",
+    "Move a thick piece further from the heat once it has coloured, so that the inside can catch up.",
+    "For cheese on toast, set it a little further from the heat and take it out when the cheese has softened and browned on top."
+  ],
+  "cues": [
+    {"sense": "see", "text": "An evenly browned or blistered surface, with no black, bitter patches."},
+    {"sense": "smell", "text": "A smell of toasting, not of burning."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Grilling food straight from the fridge, so that the outside burns before the inside is warm.",
+      "fix": "Let it lose its chill first."
+    },
+    {
+      "mistake": "Turning it again and again, so that it never colours.",
+      "fix": "Leave it alone until it has coloured, then turn it once."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/round-fish", "tier": "drafted"},
+    {"thing": "ingredient/goat-cheese", "tier": "drafted"},
+    {"thing": "ingredient/aubergine", "tier": "drafted"},
+    {"thing": "ingredient/bell-pepper", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "heat", "options": ["equipment/grill"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-sheet", "equipment/wire-rack"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

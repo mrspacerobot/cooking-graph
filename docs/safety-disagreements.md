@@ -5,7 +5,7 @@ The graph's side is worked out from the ingredients of the dish's recipe, and ev
 
 | Set | Probes | Answerable | Agreeing | Disagreeing | Of which on strict answers alone |
 |---|---|---|---|---|---|
-| growing | 32 | 16 | 7 | 9 | 8 |
+| growing | 32 | 19 | 8 | 11 | 10 |
 | held-back | 8 | 2 | 1 | 1 | 1 |
 
 A probe is not answerable when its dish is not in the graph or has no recipe. What a held-back probe disagrees with is counted and never shown.
@@ -88,6 +88,26 @@ A disagreement rests on strict answers alone when the probe says the dish does n
 - **Where they disagree:**
   - the probe says it does not hold egg (`fact/egg`), and the graph says it does, on strict answers alone.
   - the probe says it does not hold milk (`fact/milk`), and the graph says it does, on strict answers alone.
+
+## Salade de chèvre chaud
+
+- **Probe:** `safety-probe/salade-de-chevre-chaud`, written by claude-sonnet-5-5.
+- **The probe says it holds:** gluten, wheat, milk, tree nuts, mustard, sulphites.
+- **The probe says it does not hold:** egg, peanuts.
+- **The probe's reason:** Goat cheese is milk and the toasts are bread. The vinaigrette brings mustard and sulphites from the vinegar, and most versions add walnuts.
+- **The graph's dish:** `dish/salade-de-chevre-chaud`. From the ingredients of its recipe it holds:
+  - `fact/alcohol`: `ingredient/dijon-mustard` (strict: Often made with white wine or wine vinegar.), `ingredient/red-wine-vinegar` (strict: Vinegar keeps a trace of the alcohol it is made from.)
+  - `fact/egg`: `ingredient/dijon-mustard` (strict: Often made with wine, which may be cleared with egg white.), `ingredient/red-wine-vinegar` (strict: Made from wine, which may be cleared with egg white.)
+  - `fact/fish`: `ingredient/dijon-mustard` (strict: Often made with wine, which may be cleared with isinglass from fish.), `ingredient/red-wine-vinegar` (strict: Made from wine, which may be cleared with isinglass from fish.)
+  - `fact/gluten`: `ingredient/baguette` (certain: Made of wheat flour.)
+  - `fact/milk`: `ingredient/goat-cheese` (certain: It is a cheese made from the milk of a goat.), `ingredient/dijon-mustard` (strict: Often made with wine, which may be cleared with milk protein.), `ingredient/red-wine-vinegar` (strict: Made from wine, which may be cleared with milk protein.)
+  - `fact/mustard`: `ingredient/dijon-mustard` (certain: It is made of mustard seed.)
+  - `fact/slaughter-product`: `ingredient/goat-cheese` (strict: Many goat cheeses are made with animal rennet.), `ingredient/dijon-mustard` (strict: Often made with wine, which may be cleared with gelatine or isinglass.), `ingredient/red-wine-vinegar` (strict: Made from wine, which may be cleared with gelatine or isinglass.)
+  - `fact/sulphites`: `ingredient/dijon-mustard` (strict: Often kept with sulphites.), `ingredient/red-wine-vinegar` (strict: Made from wine, which nearly always holds sulphites.)
+  - `fact/tree-nuts`: `ingredient/walnut` (certain: It is a tree nut.)
+  - `fact/wheat`: `ingredient/baguette` (certain: Made of wheat flour.)
+- **Where they disagree:**
+  - the probe says it does not hold egg (`fact/egg`), and the graph says it does, on strict answers alone.
 
 ## Salade lyonnaise
 
@@ -185,3 +205,21 @@ A disagreement rests on strict answers alone when the probe says the dish does n
   - `fact/sulphites`: `ingredient/white-wine` (strict: Nearly all wine holds sulphites.)
 - **Where they disagree:**
   - the probe says it does not hold egg (`fact/egg`), and the graph says it does, on strict answers alone.
+
+## Tourteau mayonnaise
+
+- **Probe:** `safety-probe/tourteau-mayonnaise`, written by claude-sonnet-5-5.
+- **The probe says it holds:** crustaceans, egg, mustard, sulphites.
+- **The probe says it does not hold:** molluscs, fish.
+- **The probe's reason:** Crab is a crustacean, and the mayonnaise is egg yolk with mustard. The vinegar in it often carries sulphites.
+- **The graph's dish:** `dish/tourteau-mayonnaise`. From the ingredients of its recipe it holds:
+  - `fact/alcohol`: `ingredient/white-wine` (certain: It is wine.), `ingredient/dijon-mustard` (strict: Often made with white wine or wine vinegar.)
+  - `fact/crustaceans`: `ingredient/brown-crab` (certain: It is a crustacean.)
+  - `fact/egg`: `ingredient/white-wine` (strict: Wine may be cleared with egg white.), `ingredient/egg-yolk` (certain: It is the yolk of an egg.), `ingredient/dijon-mustard` (strict: Often made with wine, which may be cleared with egg white.)
+  - `fact/fish`: `ingredient/white-wine` (strict: Wine may be cleared with isinglass, which comes from fish.), `ingredient/dijon-mustard` (strict: Often made with wine, which may be cleared with isinglass from fish.)
+  - `fact/milk`: `ingredient/white-wine` (strict: Wine may be cleared with milk protein.), `ingredient/dijon-mustard` (strict: Often made with wine, which may be cleared with milk protein.)
+  - `fact/mustard`: `ingredient/dijon-mustard` (certain: It is made of mustard seed.)
+  - `fact/slaughter-product`: `ingredient/white-wine` (strict: Wine may be cleared with gelatine or isinglass.), `ingredient/dijon-mustard` (strict: Often made with wine, which may be cleared with gelatine or isinglass.)
+  - `fact/sulphites`: `ingredient/white-wine` (strict: Nearly all wine holds sulphites.), `ingredient/dijon-mustard` (strict: Often kept with sulphites.)
+- **Where they disagree:**
+  - the probe says it does not hold fish (`fact/fish`), and the graph says it does, on strict answers alone.

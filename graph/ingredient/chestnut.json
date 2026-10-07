@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/chestnut",
+  "tier": "drafted",
+  "names": {"en": "Chestnut", "fr": "Marron"},
+  "aliases": {"en": ["sweet chestnut"], "fr": ["châtaigne"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A floury, sweet nut, closer to a potato than to a walnut. It is peeled, cooked until soft, and crumbles easily.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/tree-nuts",
+        "basis": "It is a nut that grows on a tree, though the European list of nuts does not name it.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/calfs-foot",
+  "tier": "drafted",
+  "names": {"en": "Calf's foot", "fr": "Pied de veau"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/bones", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "All skin, bone and sinew. Simmered for a long time, it gives a braise or a stock enough gelatine to set when cold.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is the foot of a calf.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -29,7 +29,8 @@
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/pasta", "tier": "drafted"},
     {"thing": "group/alliums", "tier": "drafted"},
-    {"thing": "ingredient/cauliflower", "tier": "drafted"}
+    {"thing": "ingredient/cauliflower", "tier": "drafted"},
+    {"thing": "group/crustaceans", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

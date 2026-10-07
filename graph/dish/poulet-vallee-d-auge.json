@@ -1,0 +1,38 @@
+{
+  "id": "dish/poulet-vallee-d-auge",
+  "tier": "drafted",
+  "names": {"en": "Poulet vallée d'Auge", "fr": "Poulet vallée d'Auge"},
+  "aliases": {"en": ["chicken Vallée d'Auge", "Normandy chicken with cider and cream"]},
+  "is": "Chicken browned in butter, flamed with calvados and simmered in cider, finished with cream and served with apples fried in butter.",
+  "parts": [
+    {
+      "id": "main",
+      "role": "main",
+      "options": ["ingredient/chicken", "ingredient/chicken-thigh"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "calvados", "role": "liquid", "options": ["ingredient/calvados"], "optional": false, "tier": "drafted"},
+    {"id": "cider", "role": "liquid", "options": ["ingredient/cider"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cream",
+      "role": "enrichment",
+      "options": ["ingredient/cream", "ingredient/creme-fraiche"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "apple", "role": "garnish", "options": ["ingredient/apple"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/flambe", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

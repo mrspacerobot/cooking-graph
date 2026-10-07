@@ -1,0 +1,29 @@
+{
+  "id": "dish/cuisses-de-grenouilles-a-la-provencale",
+  "tier": "drafted",
+  "names": {"en": "Cuisses de grenouilles à la provençale", "fr": "Cuisses de grenouilles à la provençale"},
+  "aliases": {"en": ["frogs' legs provençale", "frog legs with garlic and parsley"]},
+  "is": "Frogs' legs floured and fried fast in butter until golden, then tossed with garlic, parsley and lemon.",
+  "parts": [
+    {"id": "main", "role": "main", "options": ["ingredient/frogs-legs"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/dredge", "tier": "drafted"},
+    {"thing": "technique/saute", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

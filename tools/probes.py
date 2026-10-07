@@ -87,12 +87,14 @@ def answer(probe, indexes):
     )
 
 
-def run(things):
-    """Answer every dish probe, the growing ones and the held-back ones apart."""
+def run(things, batch=None):
+    """Answer every dish probe, or those of one batch, the growing ones and the held-back ones apart."""
     indexes = {word: name_index(things, kinds) for word, kinds in KINDS_THAT_ANSWER.items()}
     result = Result(growing=[], held_back=[])
     for thing_id, thing in sorted(things.items()):
         if thing.kind != "dish-probe":
+            continue
+        if batch is not None and thing.data["batch"] != batch:
             continue
         if thing.data["set"] == "held-back":
             result.held_back.append(answer(thing.data, indexes))

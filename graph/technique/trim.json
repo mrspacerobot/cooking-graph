@@ -1,0 +1,44 @@
+{
+  "id": "technique/trim",
+  "tier": "drafted",
+  "names": {"en": "Trim", "fr": "Parer"},
+  "aliases": {"en": ["trim the fat", "trim and tidy", "top and tail", "turn an artichoke"]},
+  "does": "Cuts away what will not be eaten or will not cook well: sinew, surplus fat, tough leaves, stalks and ragged edges.",
+  "how": [
+    "Slide the tip of the knife under a strip of sinew, angle the blade up against it and draw the knife along, so that the sinew comes away with almost no meat.",
+    "Leave a thin, even layer of fat on a joint that will be roasted.",
+    "Snap or cut the ends off beans, and pull away any string.",
+    "For an artichoke, break off the stalk, pull away the dark outer leaves, cut off the top, pare the base smooth and scoop out the hairy choke. Rub every cut with lemon at once.",
+    "Keep meat trimmings for a stock or for rendering."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Clean, even surfaces with no silvery skin, no ragged flaps and no dark outer leaves."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting deep and wasting good flesh along with the sinew.",
+      "fix": "Keep the blade angled up against what you are taking off."
+    },
+    {
+      "mistake": "Leaving a cut artichoke in the air, where it turns brown within moments.",
+      "fix": "Rub each cut with lemon, or drop the trimmed artichoke into water sharpened with lemon."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/roasting-joints", "tier": "drafted"},
+    {"thing": "group/steaks-and-chops", "tier": "drafted"},
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "group/offal", "tier": "drafted"},
+    {"thing": "ingredient/green-beans", "tier": "drafted"},
+    {"thing": "ingredient/asparagus", "tier": "drafted"},
+    {"thing": "ingredient/artichoke", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/paring-knife", "equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

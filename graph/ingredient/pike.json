@@ -8,7 +8,8 @@
   ],
   "part_of": [],
   "groups": [
-    {"thing": "group/lean-fish", "tier": "drafted"}
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "group/round-fish", "tier": "drafted"}
   ],
   "forms": [],
   "behaviour": "A lean, firm, bony river fish with a delicate taste, at its best poached.",

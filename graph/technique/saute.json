@@ -34,7 +34,9 @@
     {"thing": "group/alliums", "tier": "drafted"},
     {"thing": "group/breads", "tier": "drafted"},
     {"thing": "group/offal", "tier": "drafted"},
-    {"thing": "ingredient/minced-beef", "tier": "drafted"}
+    {"thing": "ingredient/minced-beef", "tier": "drafted"},
+    {"thing": "group/firm-fruits", "tier": "drafted"},
+    {"thing": "ingredient/frogs-legs", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

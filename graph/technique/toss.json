@@ -27,7 +27,8 @@
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/starches", "tier": "drafted"},
     {"thing": "group/meat", "tier": "drafted"},
-    {"thing": "ingredient/egg", "tier": "drafted"}
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

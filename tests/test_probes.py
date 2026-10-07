@@ -162,6 +162,21 @@ class Reporting(ProbeRunnerTest):
         self.assertNotIn("glaze", table)
         self.assertNotIn("flambe", table)
 
+    def add_a_fresh_probe(self, technique):
+        fresh = dict(self.kitchen.files[OTHER])
+        fresh.update(id="dish-probe/onion-fritters", batch="fresh-1", dish="Onion fritters", techniques=[technique])
+        self.kitchen.write("probes/dish-probe/onion-fritters.json", fresh)
+
+    def test_one_batch_can_be_run_alone(self):
+        self.add_a_fresh_probe("deep-fry")
+        self.kitchen.change(OTHER, lambda probe: probe.update(techniques=["caramelize"]))
+        things, issues = check.read_repository(self.kitchen.root)
+        self.assertEqual([], issues)
+        report = probes.report(probes.run(things, batch="fresh-1"))
+        self.assertIn("deep fry", report)
+        self.assertNotIn("caramelize", report)
+        self.assertEqual((0, 1), probes.shares(probes.run(things, batch="fresh-1"))["growing"])
+
     def test_what_a_held_back_probe_lacks_is_never_listed(self):
         path = self.kitchen.held_back_path()
         self.kitchen.change(path, lambda probe: probe.update(techniques=["flambe"]))

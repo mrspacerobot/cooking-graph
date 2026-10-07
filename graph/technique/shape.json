@@ -1,0 +1,39 @@
+{
+  "id": "technique/shape",
+  "tier": "drafted",
+  "names": {"en": "Shape", "fr": "Façonner"},
+  "aliases": {"en": ["form", "mould", "shape quenelles", "shape between spoons"], "fr": ["mouler"]},
+  "does": "Forms a soft mixture into even pieces that hold together when they are cooked.",
+  "how": [
+    "Chill the mixture first. A cold mixture holds its shape and does not stick.",
+    "For quenelles, dip a pair of spoons in hot water, scoop the mixture with the first, and pass it back and forth between them until its sides are smooth.",
+    "For patties and balls, wet your hands and press lightly, only until the piece holds.",
+    "Make every piece the same size, so that they cook in the same time."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Pieces of one size with smooth surfaces and no cracks."},
+    {"sense": "feel", "text": "The piece holds when it is lifted, and gives a little under a finger."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Working the mixture for too long or pressing it hard, which makes it dense and tough.",
+      "fix": "Handle it as little as you can."
+    },
+    {
+      "mistake": "Shaping a warm, loose mixture, which sticks to everything and falls apart in the pot.",
+      "fix": "Chill it until it is firm before you start."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/mashed-potato", "tier": "drafted"},
+    {"thing": "ingredient/minced-beef", "tier": "drafted"},
+    {"thing": "ingredient/sausage-meat", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

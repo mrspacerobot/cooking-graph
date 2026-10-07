@@ -31,7 +31,8 @@
     {"thing": "group/cooking-liquors", "tier": "drafted"},
     {"thing": "group/stocks", "tier": "drafted"},
     {"thing": "group/wines", "tier": "drafted"},
-    {"thing": "group/creams", "tier": "drafted"}
+    {"thing": "group/creams", "tier": "drafted"},
+    {"thing": "ingredient/cider", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/nappe", "tier": "drafted"}

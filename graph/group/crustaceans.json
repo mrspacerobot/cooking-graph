@@ -1,0 +1,9 @@
+{
+  "id": "group/crustaceans",
+  "tier": "drafted",
+  "names": {"en": "Crustaceans", "fr": "Crustacés"},
+  "aliases": {},
+  "shares": "Shellfish with a hard shell and jointed legs. Their sweet flesh sets fast and turns rubbery when it is cooked for long, and their shells give colour and flavour to a sauce or a stock.",
+  "within": {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+  "stands_alone": null
+}

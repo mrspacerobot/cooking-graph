@@ -1,0 +1,41 @@
+{
+  "id": "dish/soupe-de-poisson",
+  "tier": "drafted",
+  "names": {"en": "Soupe de poisson", "fr": "Soupe de poisson"},
+  "aliases": {"en": ["Provençal fish soup"], "fr": ["soupe de poissons de roche"]},
+  "is": "A strained soup of small rockfish cooked with tomato, garlic, saffron and olive oil and crushed to give up everything they have, served with toasts, rouille and grated cheese.",
+  "parts": [
+    {"id": "main", "role": "main", "options": ["ingredient/rockfish"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "saffron", "role": "seasoning", "options": ["ingredient/saffron"], "optional": false, "tier": "drafted"},
+    {"id": "olive-oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "toasts", "role": "side", "options": ["ingredient/baguette"], "optional": false, "tier": "drafted"},
+    {"id": "rouille", "role": "sauce", "options": ["preparation/rouille"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "garnish",
+      "options": ["ingredient/gruyere", "ingredient/parmesan"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/puree", "tier": "drafted"},
+    {"thing": "technique/strain", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/provencal", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/cider",
+  "tier": "drafted",
+  "names": {"en": "Cider", "fr": "Cidre"},
+  "aliases": {"en": ["dry cider", "hard cider"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Fermented apple juice, lightly sharp and fruity. Boiled down, it gives a sauce a gentle acidity and the taste of apples.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "It is fermented apple juice.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "Cider may be cleared with gelatine or isinglass.", "certain": false},
+      {"fact": "fact/fish", "basis": "Cider may be cleared with isinglass, which comes from fish.", "certain": false},
+      {"fact": "fact/sulphites", "basis": "Most cider holds sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg", "fact/gluten",
+      "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

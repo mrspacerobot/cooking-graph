@@ -1,0 +1,146 @@
+{
+  "id": "recipe/homard-thermidor",
+  "tier": "drafted",
+  "names": {"en": "Homard Thermidor"},
+  "aliases": {},
+  "makes": "dish/homard-thermidor",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/lobster", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "main"},
+    {
+      "thing": "ingredient/white-wine",
+      "amount": {"value": 100, "unit": "millilitre"},
+      "forms": [],
+      "part": "white-wine"
+    },
+    {
+      "thing": "ingredient/shallot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/minced"],
+      "part": "shallot"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/flour", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/milk", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "bechamel"},
+    {
+      "thing": "ingredient/dijon-mustard",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "dijon-mustard"
+    },
+    {"thing": "ingredient/egg-yolk", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "egg-yolk"},
+    {
+      "thing": "ingredient/gruyere",
+      "amount": {"value": 40, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/saucepan", "equipment/whisk", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/grill", "equipment/baking-sheet", "equipment/thermometer"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/lobster"],
+      "with": ["ingredient/salt"],
+      "text": "Bring a large pot of water to a rolling boil and salt it well. Plunge the lobster in head first, cover the pot, and count the time from the moment the water boils again. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/chill",
+      "works_on": ["ingredient/lobster"],
+      "with": [],
+      "text": "Lift the lobster out and let it cool until it can be handled.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/lobster"],
+      "with": [],
+      "text": "Split the lobster in half along its length. Lift out the tail meat and cut it in thick slices, crack the claws and ease out their meat. Rinse the half shells and keep them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["ingredient/white-wine"],
+      "with": ["ingredient/shallot"],
+      "text": "Boil the wine with the shallot in a small pan until only a spoonful of syrupy liquid is left.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/reduction"]
+    },
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the butter in a saucepan, stir in the flour and cook it gently for a moment without colour.",
+      "time": {"value": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["preparation/roux"],
+      "with": ["ingredient/milk"],
+      "text": "Whisk in the milk a little at a time, bring it to the boil and simmer until the sauce is thick and smooth.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/bechamel"]
+    },
+    {
+      "technique": "technique/thicken-with-egg-yolk",
+      "works_on": ["preparation/bechamel"],
+      "with": ["preparation/reduction", "ingredient/dijon-mustard", "ingredient/egg-yolk", "ingredient/salt"],
+      "text": "Off the heat, stir in the reduced wine, the mustard and the egg yolk. Taste the sauce and salt it lightly. Do not let it boil again.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/lobster"],
+      "with": ["preparation/bechamel", "ingredient/gruyere"],
+      "text": "Fold the lobster meat into most of the sauce and spoon it into the half shells. Cover it with the rest of the sauce and scatter the cheese over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["preparation/bechamel", "ingredient/gruyere"],
+      "with": [],
+      "text": "Set the filled shells on a tray under a hot grill until the top is golden and bubbling.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/lobster"],
+      "with": [],
+      "text": "Serve at once, in the shells.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

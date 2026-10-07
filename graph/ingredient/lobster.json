@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/lobster",
+  "tier": "drafted",
+  "names": {"en": "Lobster", "fr": "Homard"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/crustaceans", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A large sea shellfish with firm, sweet flesh in its tail and claws. It toughens fast when it is overcooked, and its shell flavours a sauce.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/crustaceans", "basis": "It is a crustacean.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/egg", "fact/fish", "fact/gluten",
+      "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

@@ -31,7 +31,8 @@
     {"thing": "group/meat", "tier": "drafted"},
     {"thing": "group/stocks", "tier": "drafted"},
     {"thing": "group/sauces", "tier": "drafted"},
-    {"thing": "ingredient/butter", "tier": "drafted"}
+    {"thing": "ingredient/butter", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/broth", "tier": "drafted"}

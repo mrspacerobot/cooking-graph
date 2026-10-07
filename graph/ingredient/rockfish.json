@@ -8,7 +8,8 @@
   ],
   "part_of": [],
   "groups": [
-    {"thing": "group/lean-fish", "tier": "drafted"}
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "group/round-fish", "tier": "drafted"}
   ],
   "forms": [],
   "behaviour": "A firm, bony white fish, with a head and bones that give a soup its body.",

@@ -1,0 +1,139 @@
+{
+  "id": "recipe/poulet-vallee-d-auge",
+  "tier": "drafted",
+  "names": {"en": "Poulet vallée d'Auge"},
+  "aliases": {},
+  "makes": "dish/poulet-vallee-d-auge",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/chicken",
+      "amount": {"value": 1.4, "unit": "kilogram"},
+      "forms": ["form/jointed"],
+      "part": "main"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "butter"},
+    {
+      "thing": "ingredient/shallot",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/minced"],
+      "part": "shallot"
+    },
+    {"thing": "ingredient/calvados", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "calvados"},
+    {"thing": "ingredient/cider", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "cider"},
+    {"thing": "ingredient/cream", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "cream"},
+    {
+      "thing": "ingredient/apple",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "apple"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/frying-pan", "equipment/tongs", "equipment/ladle",
+    "equipment/thermometer"
+  ],
+  "steps": [
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/salt"],
+      "text": "Dry the chicken pieces well and salt them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/butter"],
+      "text": "Brown the pieces in half the butter in a wide, heavy pan, skin side first, until they are deep gold all over. Do it in batches if the pan is crowded.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/shallot"],
+      "with": [],
+      "text": "Lower the heat, add the shallots and soften them in the fat without colour.",
+      "time": {"value": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/flambe",
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/calvados"],
+      "text": "Take the pan off the heat and pour in the calvados from a ladle. Put the pan back, stand clear and set the calvados alight. Shake the pan until the flames die.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/cider"],
+      "text": "Pour in the cider and scrape up everything stuck to the pan as it comes to the boil.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pan-sauce"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken"],
+      "with": ["preparation/pan-sauce"],
+      "text": "Cover the pan and simmer gently until the chicken is tender. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/apple"],
+      "with": ["ingredient/butter"],
+      "text": "Meanwhile fry the apple slices in the rest of the butter in another pan, until they are golden on both sides and just tender.",
+      "time": {"from": 5, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/pan-sauce", "ingredient/cream"],
+      "with": [],
+      "text": "Lift the chicken out and keep it warm. Add the cream to the pan and boil until the sauce coats the back of a spoon.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/pan-sauce"],
+      "with": ["ingredient/salt"],
+      "text": "Taste the sauce and salt it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chicken", "preparation/pan-sauce", "ingredient/apple"],
+      "with": [],
+      "text": "Coat the chicken with the sauce and arrange the apples around it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

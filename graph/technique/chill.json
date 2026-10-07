@@ -25,7 +25,7 @@
     {"thing": "group/sauces", "tier": "drafted"},
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/fish-and-shellfish", "tier": "drafted"},
-    {"thing": "ingredient/pear", "tier": "drafted"}
+    {"thing": "group/firm-fruits", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

@@ -2,7 +2,7 @@
   "id": "technique/truss",
   "tier": "drafted",
   "names": {"en": "Truss", "fr": "Brider"},
-  "aliases": {"en": ["tie a chicken", "truss a bird", "tie a joint"]},
+  "aliases": {"en": ["tie a chicken", "truss a bird", "tie a joint", "tie", "tie with string"], "fr": ["ficeler"]},
   "does": "Ties a bird or a joint into a compact shape, so that it cooks evenly and keeps its form.",
   "how": [
     "Tuck the wing tips under the back of the bird.",

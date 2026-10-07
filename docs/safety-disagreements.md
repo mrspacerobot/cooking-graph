@@ -5,7 +5,7 @@ The graph's side is worked out from the ingredients of the dish's recipe, and ev
 
 | Set | Probes | Answerable | Agreeing | Disagreeing | Of which on strict answers alone |
 |---|---|---|---|---|---|
-| growing | 32 | 12 | 4 | 8 | 8 |
+| growing | 32 | 16 | 7 | 9 | 8 |
 | held-back | 8 | 2 | 1 | 1 | 1 |
 
 A probe is not answerable when its dish is not in the graph or has no recipe. What a held-back probe disagrees with is counted and never shown.
@@ -129,6 +129,26 @@ A disagreement rests on strict answers alone when the probe says the dish does n
   - `fact/sulphites`: `ingredient/cornichons` (strict: Pickles are sometimes kept with sulphites.), `ingredient/dijon-mustard` (strict: Often kept with sulphites.), `ingredient/white-wine-vinegar` (strict: Made from wine, which nearly always holds sulphites.)
 - **Where they disagree:**
   - the probe says it does not hold milk (`fact/milk`), and the graph says it does, on strict answers alone.
+
+## Soupe de poisson
+
+- **Probe:** `safety-probe/soupe-de-poisson`, written by claude-sonnet-5-5.
+- **The probe says it holds:** gluten, wheat, crustaceans, egg, fish, milk.
+- **The probe says it does not hold:** nothing.
+- **The probe's reason:** Rockfish and small crabs go in the pot, so crustaceans are included. It is served with wheat croutons, grated cheese and a rouille that is often made with egg yolk.
+- **The graph's dish:** `dish/soupe-de-poisson`. From the ingredients of its recipe it holds:
+  - `fact/egg`: `ingredient/bread` (strict: Enriched loaves may hold egg.), `ingredient/egg-yolk` (certain: It is the yolk of an egg.)
+  - `fact/fish`: `ingredient/rockfish` (certain: It is a fish.)
+  - `fact/gluten`: `ingredient/baguette` (certain: Made of wheat flour.), `ingredient/bread` (certain: Bread is made of a cereal that holds gluten.)
+  - `fact/lupin`: `ingredient/bread` (strict: Some bread is made with lupin flour.)
+  - `fact/milk`: `ingredient/bread` (strict: Enriched loaves hold milk or butter.), `ingredient/gruyere` (certain: It is a cheese made from milk.)
+  - `fact/sesame`: `ingredient/bread` (strict: Many loaves carry sesame seeds.)
+  - `fact/slaughter-product`: `ingredient/gruyere` (strict: By tradition it is made with animal rennet.)
+  - `fact/soy`: `ingredient/bread` (strict: Many bought loaves hold soy flour.)
+  - `fact/tree-nuts`: `ingredient/bread` (strict: Some loaves hold walnuts or other nuts.)
+  - `fact/wheat`: `ingredient/baguette` (certain: Made of wheat flour.), `ingredient/bread` (strict: Nearly all bread is made with wheat flour.)
+- **Where they disagree:**
+  - the probe says it holds crustaceans (`fact/crustaceans`), and the graph says it does not.
 
 ## Steak tartare
 

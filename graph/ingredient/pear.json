@@ -5,7 +5,9 @@
   "aliases": {},
   "is_a": [],
   "part_of": [],
-  "groups": [],
+  "groups": [
+    {"thing": "group/firm-fruits", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "Softens and turns translucent in a gentle syrup, and takes the colour and flavour of what it is poached in.",
   "safety": {

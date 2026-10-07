@@ -1,0 +1,39 @@
+{
+  "id": "technique/fillet",
+  "tier": "drafted",
+  "names": {"en": "Fillet", "fr": "Lever les filets"},
+  "aliases": {"en": ["fillet a fish", "take off the fillets", "lift the fillets"], "fr": ["fileter"]},
+  "does": "Cuts the flesh of a fish away from its bones in whole, clean pieces.",
+  "how": [
+    "Lay the fish flat. Cut behind the head and the fin, down to the backbone.",
+    "Turn the blade flat and run it along the backbone toward the tail in long strokes, keeping it against the bones.",
+    "Lift the fillet away, turn the fish over and do the same on the other side.",
+    "Run a finger down each fillet and pull out the small bones it finds.",
+    "Keep the bones and the head for a stock."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A whole fillet with smooth edges, and a skeleton with almost no flesh left on it."},
+    {"sense": "feel", "text": "The blade rides on the bones the whole way."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Sawing with a dull or stiff knife, which tears the flesh.",
+      "fix": "Use a sharp, flexible blade and long, light strokes."
+    },
+    {
+      "mistake": "Lifting the blade away from the bones, which leaves flesh behind.",
+      "fix": "Keep the flat of the blade pressed against the backbone."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/round-fish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/filleting-knife", "equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

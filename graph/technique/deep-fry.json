@@ -1,0 +1,59 @@
+{
+  "id": "technique/deep-fry",
+  "tier": "drafted",
+  "names": {"en": "Deep-fry", "fr": "Frire"},
+  "aliases": {"en": ["fry in deep oil", "deep-fat fry"]},
+  "does": "Cooks food under hot oil, so that its surface dries to a crisp shell while the inside steams.",
+  "how": [
+    "Dry the food well. Water makes hot oil spit and boil over.",
+    "Fill a deep, heavy pan no more than a third full of oil and heat it.",
+    "Lower in a small batch, so that the oil keeps its heat and the pieces do not stick together.",
+    "Lift the food out when it is crisp and golden, drain it on a rack and salt it at once.",
+    "For thick chips, fry once gently until soft and pale, rest them, then fry again in hotter oil until crisp."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "A steady stream of small bubbles around each piece, slowing as the food dries and turns golden."
+    },
+    {
+      "sense": "hear",
+      "text": "A lively, even crackle. A loud spit means water, and silence means the oil is too cool."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Crowding the pan, so that the oil cools and the food soaks it up and turns greasy.",
+      "fix": "Fry in small batches and let the oil come back to heat between them."
+    },
+    {
+      "mistake": "Putting wet food into the oil, so that it spits and foams up.",
+      "fix": "Pat everything dry first, and never fill the pan more than a third."
+    },
+    {
+      "mistake": "Oil that smokes. It tastes acrid and is close to catching fire.",
+      "fix": "Take the pan off the heat at once and let it cool."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "group/lean-fish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/thermometer"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "The food is covered by the oil and floats in it. Nothing touches the pan.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

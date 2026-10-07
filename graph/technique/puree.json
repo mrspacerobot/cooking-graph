@@ -29,7 +29,8 @@
     }
   ],
   "works_on": [
-    {"thing": "group/vegetables", "tier": "drafted"}
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/lean-fish", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "form/pureed", "tier": "drafted"}

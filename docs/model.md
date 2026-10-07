@@ -212,7 +212,7 @@ A question the graph must be able to answer: can this well-known dish be written
 | Field | What it holds |
 |---|---|
 | `batch` | The batch it was written in. A batch is closed once it is committed |
-| `set` | growing or held-back. The rule in `tools/probes.py` decides: one in five of a batch, taken in the order their ids hash. A probe is passed over, and the next takes its place, when its dish is already written or a level of a program is practised through it |
+| `set` | growing or held-back. The rule in `tools/probes.py` decides: one in five of a batch, taken in the order their ids hash. A probe is passed over, and the next takes its place, when its dish is already written, as a dish, a recipe or a preparation, or a level of a program is practised through it |
 | `written_by` | Who wrote the probe. The model that drafts the graph writes no probes |
 | `written_for` | The skill of a program it was written for |
 | `dish` | The dish, in plain words |

@@ -70,6 +70,12 @@ class HeldBack(KitchenTest):
         self.assertIn((path, "level-dish-held-back"), found)
         self.assertIn((path, "held-back-rule"), found)
 
+    def test_a_probe_for_a_preparation_that_is_written_is_never_held_back(self):
+        path = self.kitchen.held_back_path()
+        self.assertTrue(path.startswith("probes/dish-probe/"))
+        self.kitchen.change(path, lambda probe: probe.update(dish="Roux"))
+        self.assertIn((path, "held-back-rule"), self.found())
+
     def test_one_batch_asks_about_a_dish_once(self):
         path = "probes/dish-probe/creamed-onions.json"
         self.kitchen.change(path, lambda probe: probe.update(dish="Glazed onions"))

@@ -37,20 +37,25 @@ def names_of_level_dishes(things):
     return found
 
 
-def names_of_written_dishes(things):
+WRITTEN_KINDS = ("dish", "recipe", "preparation")  # what a probe's dish may already be written as
+
+
+def names_of_what_is_written(things):
     found = set()
-    for thing_id, thing in of_kind(things, "dish"):
-        found.update(names.plain_names(thing.data))
+    for kind in WRITTEN_KINDS:
+        for thing_id, thing in of_kind(things, kind):
+            found.update(names.plain_names(thing.data))
     return found
 
 
 def may_not_be_held_back(things, probe_ids):
     """The dish probes that are never held back: a level is practised through their dish, or their dish is written.
 
-    Nothing that is already written becomes held back, and no level is left
-    without its dish because a hash fell badly.
+    Nothing that is already written becomes held back, be it written as a
+    dish, a recipe or a preparation, and no level is left without its dish
+    because a hash fell badly.
     """
-    taken = names_of_level_dishes(things) | names_of_written_dishes(things)
+    taken = names_of_level_dishes(things) | names_of_what_is_written(things)
     return {probe_id for probe_id in probe_ids if probes.dish_names(things[probe_id].data) & taken}
 
 
@@ -109,7 +114,7 @@ def nothing_drafted_towards_held_back(things):
         if thing.data["set"] == "held-back":
             held_back_names.update(probes.dish_names(thing.data))
     issues = []
-    for kind in ("dish", "recipe", "preparation"):
+    for kind in WRITTEN_KINDS:
         for thing_id, thing in of_kind(things, kind):
             if names.plain_names(thing.data) & held_back_names:
                 message = "a held-back probe asks about this dish, so it may not be written"

@@ -644,7 +644,10 @@ class Probes(CheckerTest):
         path = self.kitchen.held_back_path()
         self.break_file(path, lambda probe: probe.update(dish="Brown roux"))
         self.break_file(ROUX, lambda thing: thing.update(aliases={"en": ["brown roux"]}))
-        self.expect(ROUX, "drafted-towards-held-back")
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((ROUX, "drafted-towards-held-back"), found)
+        # The probe may no longer be held back either: what it asks about is written.
+        self.assertIn((path, "held-back-rule"), found)
 
     def test_two_probes_about_one_dish(self):
         self.break_file(PROBE, lambda probe: probe.update(dish="Onion soup"))

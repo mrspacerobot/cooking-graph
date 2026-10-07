@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/izgara-kofte",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "kebabs-and-grilling",
+  "dish": "Izgara köfte",
+  "also_called": ["grilled meatballs", "kofte"],
+  "techniques": ["knead", "shape", "grill"],
+  "ingredients": ["ground beef", "onion", "bread", "cumin", "parsley", "egg"]
+}

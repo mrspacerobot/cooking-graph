@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/batata-harra",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "mezze",
+  "dish": "Batata harra",
+  "also_called": ["spicy potatoes", "batata harra bi kizbara"],
+  "techniques": ["dice", "fry", "saute", "toss"],
+  "ingredients": ["potato", "garlic", "coriander leaf", "chili", "lemon juice", "olive oil"]
+}

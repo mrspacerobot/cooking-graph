@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/zeytinyagli-taze-fasulye",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "olive-oil-vegetables",
+  "dish": "Zeytinyağlı taze fasulye",
+  "also_called": ["green beans in olive oil"],
+  "techniques": ["trim", "sweat", "braise in olive oil"],
+  "ingredients": ["green bean", "onion", "tomato", "olive oil", "garlic", "sugar"]
+}

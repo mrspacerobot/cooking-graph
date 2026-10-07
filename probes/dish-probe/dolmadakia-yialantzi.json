@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/dolmadakia-yialantzi",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "stuffed-vegetables",
+  "dish": "Dolmadakia yialantzi",
+  "also_called": ["dolmades", "stuffed vine leaves"],
+  "techniques": ["blanch", "stuff", "roll", "simmer"],
+  "ingredients": ["vine leaf", "rice", "onion", "dill", "mint", "lemon", "olive oil"]
+}

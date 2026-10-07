@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kousa-mahshi",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "stuffed-vegetables",
+  "dish": "Kousa mahshi",
+  "also_called": ["stuffed zucchini", "koussa mahshi", "stuffed courgette"],
+  "techniques": ["core", "stuff", "simmer"],
+  "ingredients": ["zucchini", "rice", "lamb", "tomato", "tomato paste", "garlic", "dried mint", "allspice"]
+}

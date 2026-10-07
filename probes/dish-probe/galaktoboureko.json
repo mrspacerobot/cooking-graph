@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/galaktoboureko",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "desserts",
+  "dish": "Galaktoboureko",
+  "also_called": ["custard pie in syrup"],
+  "techniques": ["make custard", "layer phyllo", "bake", "make syrup"],
+  "ingredients": ["milk", "semolina", "egg", "sugar", "phyllo", "butter", "lemon", "vanilla"]
+}

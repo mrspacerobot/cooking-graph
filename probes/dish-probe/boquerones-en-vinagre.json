@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/boquerones-en-vinagre",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "tapas",
+  "dish": "Boquerones en vinagre",
+  "also_called": ["anchovies in vinegar", "marinated fresh anchovies"],
+  "techniques": ["fillet", "marinate", "dress"],
+  "ingredients": ["fresh anchovy", "white wine vinegar", "garlic", "parsley", "olive oil", "salt"]
+}

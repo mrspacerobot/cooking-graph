@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/hummus",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "dips",
+  "dish": "Hummus",
+  "also_called": ["hummus bi tahini", "chickpea dip"],
+  "techniques": ["soak chickpeas", "boil", "blend", "season"],
+  "ingredients": ["chickpea", "tahini", "lemon juice", "garlic", "olive oil", "cumin"]
+}

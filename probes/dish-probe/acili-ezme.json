@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/acili-ezme",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "meze",
+  "dish": "Acılı ezme",
+  "also_called": ["spicy tomato and pepper relish", "ezme salad"],
+  "techniques": ["chop", "mix", "rest"],
+  "ingredients": [
+    "tomato",
+    "onion",
+    "green pepper",
+    "parsley",
+    "red pepper paste",
+    "pomegranate molasses",
+    "olive oil",
+    "sumac",
+    "red pepper flakes"
+  ]
+}

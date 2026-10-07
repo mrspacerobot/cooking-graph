@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pastitsio",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "baked-dishes",
+  "dish": "Pastitsio",
+  "also_called": ["pastichio", "greek baked pasta"],
+  "techniques": ["boil", "simmer", "make bechamel", "layer", "bake"],
+  "ingredients": ["pasta", "ground beef", "tomato", "onion", "milk", "butter", "flour", "kefalotyri", "cinnamon"]
+}

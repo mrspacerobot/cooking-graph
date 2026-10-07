@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/ribollita",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "soups",
+  "dish": "Ribollita",
+  "also_called": ["Tuscan bread and bean soup"],
+  "techniques": ["soak beans", "make a soffritto", "simmer", "layer", "reheat"],
+  "ingredients": ["cannellini bean", "cavolo nero", "stale bread", "onion", "carrot", "celery", "tomato", "olive oil"]
+}

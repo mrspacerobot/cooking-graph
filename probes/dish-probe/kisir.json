@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/kisir",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "bulgur-and-pilaf",
+  "dish": "Kısır",
+  "also_called": ["bulgur salad"],
+  "techniques": ["soak", "knead", "mix"],
+  "ingredients": [
+    "fine bulgur",
+    "tomato paste",
+    "red pepper paste",
+    "onion",
+    "parsley",
+    "spring onion",
+    "lemon",
+    "pomegranate molasses",
+    "olive oil"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/hunkar-begendi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "stews",
+  "dish": "Hünkar beğendi",
+  "also_called": ["sultan's delight", "lamb stew on eggplant puree"],
+  "techniques": ["braise", "roast", "mash", "whisk"],
+  "ingredients": ["lamb", "eggplant", "milk", "butter", "flour", "kashkaval cheese", "onion", "tomato paste"]
+}

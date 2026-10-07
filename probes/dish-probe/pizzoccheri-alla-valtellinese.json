@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pizzoccheri-alla-valtellinese",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "fresh-pasta",
+  "dish": "Pizzoccheri alla valtellinese",
+  "also_called": ["pizzoccheri", "buckwheat pasta with cabbage and cheese"],
+  "techniques": ["knead dough", "roll out dough", "cut pasta", "boil pasta", "brown butter", "layer"],
+  "ingredients": ["buckwheat flour", "flour", "potato", "savoy cabbage", "casera cheese", "butter", "garlic", "sage"]
+}

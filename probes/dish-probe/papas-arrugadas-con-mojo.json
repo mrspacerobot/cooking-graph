@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/papas-arrugadas-con-mojo",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "vegetables",
+  "dish": "Papas arrugadas con mojo",
+  "also_called": ["Canarian wrinkled potatoes with mojo", "papas arrugás"],
+  "techniques": ["boil", "dry", "pound", "blend"],
+  "ingredients": ["potato", "coarse salt", "garlic", "cumin", "paprika", "red pepper", "olive oil", "vinegar"]
+}

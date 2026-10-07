@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/spaghetti-alla-carbonara",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Spaghetti alla carbonara",
+  "also_called": ["carbonara"],
+  "techniques": ["boil pasta", "render fat", "whisk eggs", "toss pasta with sauce"],
+  "ingredients": ["spaghetti", "guanciale", "egg", "pecorino", "black pepper"]
+}

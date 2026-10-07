@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/laban-immo",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "yogurt-dishes",
+  "dish": "Laban immo",
+  "also_called": ["lamb cooked in yogurt", "laban ummo", "labanieh"],
+  "techniques": ["boil", "stabilise", "simmer", "saute"],
+  "ingredients": ["lamb", "yogurt", "onion", "cornstarch", "garlic", "dried mint", "rice"]
+}

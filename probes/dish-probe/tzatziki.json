@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tzatziki",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "salads-and-dips",
+  "dish": "Tzatziki",
+  "also_called": [],
+  "techniques": ["grate", "drain", "mix"],
+  "ingredients": ["yogurt", "cucumber", "garlic", "olive oil", "vinegar", "dill"]
+}

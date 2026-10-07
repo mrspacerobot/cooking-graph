@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/peposo",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "braising",
+  "dish": "Peposo",
+  "also_called": ["peposo alla fornacina", "Tuscan peppery beef stew"],
+  "techniques": ["marinate", "braise", "reduce"],
+  "ingredients": ["beef shin", "red wine", "garlic", "black pepper", "salt"]
+}

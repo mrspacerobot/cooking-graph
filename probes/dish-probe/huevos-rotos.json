@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/huevos-rotos",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "eggs",
+  "dish": "Huevos rotos",
+  "also_called": ["broken eggs", "huevos estrellados"],
+  "techniques": ["slice", "fry", "fry eggs"],
+  "ingredients": ["egg", "potato", "olive oil", "serrano ham", "salt"]
+}

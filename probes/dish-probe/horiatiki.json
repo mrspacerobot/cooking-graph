@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/horiatiki",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "salads-and-dips",
+  "dish": "Horiatiki",
+  "also_called": ["greek salad", "village salad"],
+  "techniques": ["chop", "slice", "dress"],
+  "ingredients": ["tomato", "cucumber", "onion", "bell pepper", "olive", "feta", "olive oil", "oregano"]
+}

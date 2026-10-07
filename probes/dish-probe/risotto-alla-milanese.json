@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/risotto-alla-milanese",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "risotto",
+  "dish": "Risotto alla milanese",
+  "also_called": ["saffron risotto"],
+  "techniques": ["sweat", "toast rice", "deglaze", "add stock gradually", "mount with butter"],
+  "ingredients": [
+    "carnaroli rice",
+    "saffron",
+    "onion",
+    "butter",
+    "white wine",
+    "beef stock",
+    "parmesan",
+    "bone marrow"
+  ]
+}

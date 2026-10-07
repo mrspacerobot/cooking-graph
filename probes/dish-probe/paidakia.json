@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/paidakia",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "grilling",
+  "dish": "Paidakia",
+  "also_called": ["lamb chops", "paidakia sta karvouna"],
+  "techniques": ["marinate", "grill"],
+  "ingredients": ["lamb chop", "olive oil", "lemon", "oregano", "garlic", "salt"]
+}

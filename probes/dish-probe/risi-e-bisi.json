@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/risi-e-bisi",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "risotto",
+  "dish": "Risi e bisi",
+  "also_called": ["rice and peas"],
+  "techniques": ["sweat", "toast rice", "add stock gradually", "simmer"],
+  "ingredients": ["vialone nano rice", "pea", "pancetta", "onion", "vegetable stock", "butter", "parmesan", "parsley"]
+}

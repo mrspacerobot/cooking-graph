@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/zabaione",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "desserts",
+  "dish": "Zabaione",
+  "also_called": ["zabaglione", "sabayon"],
+  "techniques": ["whisk over a bain-marie", "whisk eggs"],
+  "ingredients": ["egg yolk", "sugar", "marsala", "savoiardi"]
+}

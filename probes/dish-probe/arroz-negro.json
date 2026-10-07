@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/arroz-negro",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "rice-dishes",
+  "dish": "Arroz negro",
+  "also_called": ["black rice", "arròs negre"],
+  "techniques": ["make a sofrito", "saute", "simmer", "rest"],
+  "ingredients": ["rice", "cuttlefish", "squid ink", "onion", "garlic", "tomato", "fish stock", "olive oil"]
+}

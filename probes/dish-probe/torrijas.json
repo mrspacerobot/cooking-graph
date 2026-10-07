@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/torrijas",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "desserts",
+  "dish": "Torrijas",
+  "also_called": ["Spanish French toast", "torrijas de leche"],
+  "techniques": ["infuse", "soak", "dip in egg", "fry"],
+  "ingredients": ["bread", "milk", "egg", "sugar", "cinnamon", "lemon zest", "olive oil"]
+}

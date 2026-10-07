@@ -10,10 +10,17 @@ Written on 7 October 2026, before anything was drafted for them. Everything here
 | japanese-1 | Japanese | 30 | 6 | claude-fable-5-1 |
 | indian-1 | Indian | 30 | 6 | claude-fable-5-1 |
 | moroccan-1 | Moroccan | 30 | 6 | claude-fable-5-1 |
+| italian-1 | Italian | 29 | 5 | claude-fable-5-1 |
+| greek-1 | Greek | 29 | 5 | claude-fable-5-1 |
+| spanish-1 | Spanish | 28 | 5 | claude-fable-5-1 |
+| lebanese-1 | Lebanese | 29 | 5 | claude-fable-5-1 |
+| turkish-1 | Turkish | 25 | 5 | claude-fable-5-1 |
 
 The model that drafts this graph in this cycle is `claude-sonnet-5-5`, and the three earlier fresh batches were also written by it. These four come from another model, as the rules ask.
 
 The writers were told not to read `graph/` or anything else in the repository, and they wrote their files outside it. That is a rule given in words. Nothing stops an agent from opening a file, so the isolation is by instruction and cannot be shown.
+
+Each of the Mediterranean batches was written for 30 dishes. Nine were not installed, because a dish name or an alias matched a probe that already existed, in this cuisine or another: Shish taouk, Pollo alla cacciatora, Fakes, Arroz con leche, Piperrada, İrmik helvası, Kuru fasulye, Lahana sarması, Zeytinyağlı yaprak sarma. Some of these are the same dish in two cuisines (rice pudding, stuffed vine or cabbage leaves) and a cuisine's own version may deserve a probe of its own. The rule allows it, and the script did not.
 
 The cuisines became possible with change 29 in `docs/model.md`: a dish probe now names its cuisine, and a cuisine with no program yet takes any topic for `written_for`. The three cuisines are in the graph as bare drafted names.
 
@@ -45,6 +52,23 @@ The second pass was told to favour regional and less common dishes, so fresh-4 i
 
 **Indian and Moroccan.** The most asked for are temper spices in hot fat (eight dishes), pressure cook, knead, roll and grind for Indian, and knead, grind, proof and steam couscous for Moroccan.
 
+## The Mediterranean cuisines
+
+`cuisine/mediterranean` is a parent. Italian, Greek, Spanish, Lebanese, Turkish and Moroccan sit within it, each with its own probes. No probe belongs to the parent, so the numbers below are for each cuisine and are never pooled.
+
+| Cuisine | Probes | Growing answered | Held back answered | Technique words known (growing) | Ingredient words known (growing) | New technique words per 50 probes | New ingredient words per 50 probes |
+|---|---|---|---|---|---|---|---|
+| Italian | 29 | 1 of 24 | 0 of 5 | 57 of 106 (54%) | 120 of 175 (69%) | 58.6 | 84.5 |
+| Greek | 29 | 1 of 24 | 0 of 5 | 64 of 89 (72%) | 125 of 175 (71%) | 27.6 | 46.6 |
+| Spanish | 28 | 0 of 23 | 0 of 5 | 65 of 85 (76%) | 115 of 161 (71%) | 26.8 | 57.1 |
+| Lebanese | 29 | 0 of 24 | 0 of 5 | 80 of 100 (80%) | 96 of 172 (56%) | 27.6 | 67.2 |
+| Turkish | 25 | 0 of 20 | 0 of 5 | 50 of 61 (82%) | 95 of 139 (68%) | 14.0 | 56.0 |
+| Moroccan | 30 | 0 of 24 | 0 of 6 | 60 of 80 (75%) | 96 of 172 (56%) | 25.0 | 55.0 |
+
+The French graph already knew many of the ingredient words, such as olive oil, tomato, garlic and lemon. The technique words it lacks are mostly cuisine-specific moves.
+
+**Moves missing across several cuisines.** Across the growing probes of all eight non-French cuisines, 134 distinct technique words are missing. Only three are asked for in four or more cuisines: **roll** and **knead** (five cuisines each) and **stir** (four). Most of the rest are asked for by one cuisine. Whether the same card will serve two cuisines is the test the epic describes, and this count shows only how often the same word appears.
+
 ## What this says, and what it does not
 
 - A new cuisine begins at 0% on its own probes. That is expected, and it is the number the loop is meant to move.
@@ -55,6 +79,6 @@ The second pass was told to favour regional and less common dishes, so fresh-4 i
 
 ## What was not done
 
-- Nothing was drafted for any new cuisine. That waits for the owner, for a reviewer who knows each cuisine, and for French to be reviewed, as the epic says and as [issue 8](https://github.com/mrspacerobot/cooking-graph/issues/8) records for Moroccan.
+- Nothing was drafted for any new cuisine, and nothing for the Mediterranean parent. That waits for the owner, for a reviewer who knows each cuisine, and for French to be reviewed, as the epic says and as [issue 8](https://github.com/mrspacerobot/cooking-graph/issues/8) records for Moroccan.
 - There are no step probes. The model has no such kind.
 - The probes have not been read by a person who knows the cuisine. Spellings and the idea that a dish is a typical home dish are the writers' own.

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/croquetas-de-jamon",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "frying",
+  "dish": "Croquetas de jamón",
+  "also_called": ["ham croquettes", "croquetes de pernil"],
+  "techniques": ["make a bechamel", "chill", "shape", "bread", "deep-fry"],
+  "ingredients": ["serrano ham", "butter", "flour", "milk", "egg", "breadcrumb", "olive oil", "nutmeg", "onion"]
+}

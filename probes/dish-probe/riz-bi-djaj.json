@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/riz-bi-djaj",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "rice-dishes",
+  "dish": "Riz bi djaj",
+  "also_called": ["riz a djej", "rice with chicken", "Lebanese chicken and rice"],
+  "techniques": ["poach", "brown", "simmer", "toast", "shred"],
+  "ingredients": ["chicken", "rice", "beef", "onion", "almond", "pine nut", "cinnamon", "allspice"]
+}

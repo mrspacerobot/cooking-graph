@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/fattoush",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "salads",
+  "dish": "Fattoush",
+  "also_called": ["fattouche", "bread salad"],
+  "techniques": ["toast", "chop", "dress", "toss"],
+  "ingredients": [
+    "pita bread",
+    "cucumber",
+    "tomato",
+    "radish",
+    "purslane",
+    "sumac",
+    "pomegranate molasses",
+    "olive oil",
+    "lemon juice"
+  ]
+}

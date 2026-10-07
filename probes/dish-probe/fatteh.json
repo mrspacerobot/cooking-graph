@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/fatteh",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "yogurt-dishes",
+  "dish": "Fatteh",
+  "also_called": ["fattet hummus", "chickpea fatteh", "fatte"],
+  "techniques": ["soak chickpeas", "boil", "toast", "layer", "brown"],
+  "ingredients": ["chickpea", "pita bread", "yogurt", "tahini", "garlic", "pine nut", "butter", "cumin"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/garides-saganaki",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "fish",
+  "dish": "Garides saganaki",
+  "also_called": ["shrimp saganaki", "prawn saganaki"],
+  "techniques": ["saute", "simmer", "bake"],
+  "ingredients": ["shrimp", "tomato", "feta", "garlic", "onion", "ouzo", "olive oil", "parsley"]
+}

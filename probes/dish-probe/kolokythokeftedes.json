@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kolokythokeftedes",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "frying",
+  "dish": "Kolokythokeftedes",
+  "also_called": ["zucchini fritters"],
+  "techniques": ["grate", "salt", "drain", "mix", "shallow fry"],
+  "ingredients": ["zucchini", "feta", "egg", "flour", "spring onion", "mint", "dill", "olive oil"]
+}

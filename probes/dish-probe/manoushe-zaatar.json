@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/manoushe-zaatar",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "pastries",
+  "dish": "Manoushe zaatar",
+  "also_called": ["manakish", "manaeesh", "zaatar flatbread"],
+  "techniques": ["knead", "proof", "roll", "spread", "bake"],
+  "ingredients": ["flour", "yeast", "zaatar", "olive oil", "sumac", "sesame seed", "salt"]
+}

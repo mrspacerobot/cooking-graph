@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/ijjeh",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "frying",
+  "dish": "Ijjeh",
+  "also_called": ["ejjeh", "Lebanese herb omelette", "parsley fritters"],
+  "techniques": ["chop", "whisk", "pan fry"],
+  "ingredients": ["egg", "parsley", "onion", "flour", "mint", "allspice", "olive oil"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pisto-manchego",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "vegetables",
+  "dish": "Pisto manchego",
+  "also_called": ["Spanish ratatouille", "pisto"],
+  "techniques": ["dice", "saute", "stew"],
+  "ingredients": ["tomato", "zucchini", "red pepper", "green pepper", "onion", "garlic", "olive oil", "egg"]
+}

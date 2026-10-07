@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/halvas-simigdalenios",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "desserts",
+  "dish": "Halvas simigdalenios",
+  "also_called": ["semolina halva", "halvas 1-2-3-4"],
+  "techniques": ["toast", "make syrup", "stir", "set"],
+  "ingredients": ["semolina", "olive oil", "sugar", "water", "cinnamon", "almond", "raisin"]
+}

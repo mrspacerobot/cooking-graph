@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kolokythopita",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "pies",
+  "dish": "Kolokythopita",
+  "also_called": ["zucchini pie"],
+  "techniques": ["grate", "salt", "drain", "mix", "layer phyllo", "bake"],
+  "ingredients": ["zucchini", "feta", "phyllo", "egg", "dill", "mint", "onion", "olive oil"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/yayla-corbasi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "soups",
+  "dish": "Yayla çorbası",
+  "also_called": ["highland soup", "yogurt and rice soup"],
+  "techniques": ["simmer", "whisk", "temper"],
+  "ingredients": ["yogurt", "rice", "egg", "flour", "butter", "dried mint"]
+}

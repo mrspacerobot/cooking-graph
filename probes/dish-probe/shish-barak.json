@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/shish-barak",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "yogurt-dishes",
+  "dish": "Shish barak",
+  "also_called": ["shishbarak", "meat dumplings in yogurt"],
+  "techniques": ["knead", "roll", "stuff", "pinch", "bake", "simmer"],
+  "ingredients": [
+    "flour",
+    "lamb",
+    "onion",
+    "pine nut",
+    "yogurt",
+    "garlic",
+    "coriander leaf",
+    "cornstarch",
+    "dried mint"
+  ]
+}

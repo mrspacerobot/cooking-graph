@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/htapodi-krasato",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "fish",
+  "dish": "Htapodi krasato",
+  "also_called": ["oktapodi krasato", "octopus in wine"],
+  "techniques": ["simmer", "braise", "reduce"],
+  "ingredients": ["octopus", "red wine", "onion", "tomato", "bay leaf", "olive oil", "vinegar"]
+}

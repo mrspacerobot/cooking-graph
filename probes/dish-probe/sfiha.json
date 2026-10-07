@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sfiha",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "pastries",
+  "dish": "Sfiha",
+  "also_called": ["sfiha baalbakieh", "lahm bi ajeen", "meat pies"],
+  "techniques": ["knead", "proof", "roll", "spread", "bake"],
+  "ingredients": ["flour", "yeast", "lamb", "onion", "tomato", "pomegranate molasses", "pine nut", "allspice"]
+}

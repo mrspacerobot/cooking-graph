@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bamieh-bi-lahmeh",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "stews",
+  "dish": "Bamieh bi lahmeh",
+  "also_called": ["okra stew", "bamia", "bamieh"],
+  "techniques": ["brown", "saute", "simmer"],
+  "ingredients": ["okra", "lamb", "tomato", "onion", "garlic", "coriander leaf", "lemon juice"]
+}

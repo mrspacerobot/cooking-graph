@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/cilbir",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "eggs-and-breakfast",
+  "dish": "Çılbır",
+  "also_called": ["poached eggs with yogurt", "cilbir"],
+  "techniques": ["poach", "mix", "melt"],
+  "ingredients": ["egg", "yogurt", "garlic", "butter", "red pepper flakes", "vinegar"]
+}

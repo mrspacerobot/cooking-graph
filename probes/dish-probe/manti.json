@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/manti",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "dough-and-pastry",
+  "dish": "Mantı",
+  "also_called": ["turkish dumplings", "kayseri manti"],
+  "techniques": ["knead", "roll", "fill", "boil"],
+  "ingredients": [
+    "flour",
+    "egg",
+    "ground beef",
+    "onion",
+    "yogurt",
+    "garlic",
+    "butter",
+    "red pepper flakes",
+    "dried mint"
+  ]
+}

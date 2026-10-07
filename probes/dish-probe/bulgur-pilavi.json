@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bulgur-pilavi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "bulgur-and-pilaf",
+  "dish": "Bulgur pilavı",
+  "also_called": ["bulgur pilaf"],
+  "techniques": ["saute", "simmer", "rest"],
+  "ingredients": ["coarse bulgur", "onion", "green pepper", "tomato paste", "butter", "tomato"]
+}

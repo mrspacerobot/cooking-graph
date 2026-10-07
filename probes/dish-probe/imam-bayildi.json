@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/imam-bayildi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "olive-oil-vegetables",
+  "dish": "İmam bayıldı",
+  "also_called": ["imam bayildi", "stuffed eggplant in olive oil"],
+  "techniques": ["fry", "stuff", "braise in olive oil"],
+  "ingredients": ["eggplant", "onion", "tomato", "garlic", "parsley", "olive oil", "sugar"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/lentejas-con-chorizo",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "pulses",
+  "dish": "Lentejas con chorizo",
+  "also_called": ["lentils with chorizo", "lentejas estofadas"],
+  "techniques": ["saute", "make a sofrito", "simmer"],
+  "ingredients": ["lentil", "chorizo", "onion", "carrot", "potato", "garlic", "paprika", "bay leaf", "olive oil"]
+}

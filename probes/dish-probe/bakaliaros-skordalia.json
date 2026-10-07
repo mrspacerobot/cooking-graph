@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bakaliaros-skordalia",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "frying",
+  "dish": "Bakaliaros skordalia",
+  "also_called": ["bakaliaros me skordalia", "fried salt cod with garlic dip"],
+  "techniques": ["soak", "batter", "deep fry", "mash"],
+  "ingredients": ["salt cod", "flour", "beer", "potato", "garlic", "olive oil", "vinegar"]
+}

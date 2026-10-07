@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/gambas-al-ajillo",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "tapas",
+  "dish": "Gambas al ajillo",
+  "also_called": ["garlic prawns", "garlic shrimp"],
+  "techniques": ["peel", "slice", "saute"],
+  "ingredients": ["prawn", "garlic", "olive oil", "guindilla", "parsley", "dry sherry"]
+}

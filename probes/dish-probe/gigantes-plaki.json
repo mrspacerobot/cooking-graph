@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/gigantes-plaki",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "pulses",
+  "dish": "Gigantes plaki",
+  "also_called": ["gigandes plaki", "baked giant beans"],
+  "techniques": ["soak", "boil", "simmer", "bake"],
+  "ingredients": ["giant bean", "tomato", "onion", "garlic", "carrot", "celery", "parsley", "olive oil"]
+}

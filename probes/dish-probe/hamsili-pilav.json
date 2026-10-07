@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/hamsili-pilav",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "bulgur-and-pilaf",
+  "dish": "Hamsili pilav",
+  "also_called": ["anchovy rice", "black sea anchovy pilaf"],
+  "techniques": ["saute", "layer", "bake"],
+  "ingredients": ["anchovy", "rice", "onion", "butter", "pine nut", "currant", "dill", "allspice"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/fegato-alla-veneziana",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "sauteing",
+  "dish": "Fegato alla veneziana",
+  "also_called": ["Venetian liver and onions"],
+  "techniques": ["sweat", "slice thinly", "saute", "deglaze"],
+  "ingredients": ["calf liver", "onion", "butter", "olive oil", "white wine", "parsley"]
+}

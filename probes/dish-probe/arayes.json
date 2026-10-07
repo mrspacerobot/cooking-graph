@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/arayes",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "grilling",
+  "dish": "Arayes",
+  "also_called": ["arayes kafta", "meat stuffed pita"],
+  "techniques": ["mix", "stuff", "brush", "grill"],
+  "ingredients": ["pita bread", "beef", "onion", "parsley", "tomato", "allspice", "olive oil"]
+}

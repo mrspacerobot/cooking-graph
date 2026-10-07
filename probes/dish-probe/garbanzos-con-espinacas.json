@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/garbanzos-con-espinacas",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "pulses",
+  "dish": "Garbanzos con espinacas",
+  "also_called": ["chickpeas with spinach", "espinacas con garbanzos"],
+  "techniques": ["soak", "simmer", "fry", "pound"],
+  "ingredients": ["chickpea", "spinach", "bread", "garlic", "cumin", "paprika", "olive oil", "sherry vinegar"]
+}

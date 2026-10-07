@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/riz-bi-haleeb",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "desserts",
+  "dish": "Riz bi haleeb",
+  "also_called": ["rice pudding", "roz bi haleeb"],
+  "techniques": ["boil", "simmer", "stir", "chill"],
+  "ingredients": ["rice", "milk", "sugar", "cornstarch", "orange blossom water", "rose water", "pistachio"]
+}

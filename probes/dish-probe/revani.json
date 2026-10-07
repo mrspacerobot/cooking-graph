@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/revani",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "desserts",
+  "dish": "Revani",
+  "also_called": ["semolina syrup cake"],
+  "techniques": ["whisk", "bake", "soak"],
+  "ingredients": ["semolina", "flour", "egg", "yogurt", "sugar", "lemon", "butter"]
+}

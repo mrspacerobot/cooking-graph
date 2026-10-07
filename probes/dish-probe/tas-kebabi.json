@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tas-kebabi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "stews",
+  "dish": "Tas kebabı",
+  "also_called": ["lamb and vegetable stew"],
+  "techniques": ["brown", "saute", "braise"],
+  "ingredients": ["lamb", "onion", "potato", "carrot", "tomato paste", "pea", "butter"]
+}

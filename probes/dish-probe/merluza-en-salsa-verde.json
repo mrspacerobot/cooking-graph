@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/merluza-en-salsa-verde",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "seafood",
+  "dish": "Merluza en salsa verde",
+  "also_called": ["hake in green sauce", "legatza saltsa berdean"],
+  "techniques": ["sweat", "deglaze", "poach", "emulsify"],
+  "ingredients": ["hake", "garlic", "parsley", "white wine", "olive oil", "flour", "clam", "pea"]
+}

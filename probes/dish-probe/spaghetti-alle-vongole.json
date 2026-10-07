@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/spaghetti-alle-vongole",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Spaghetti alle vongole",
+  "also_called": ["spaghetti with clams"],
+  "techniques": ["purge clams", "boil pasta", "steam open shellfish", "deglaze", "toss pasta with sauce"],
+  "ingredients": ["spaghetti", "clam", "garlic", "white wine", "parsley", "olive oil", "chilli"]
+}

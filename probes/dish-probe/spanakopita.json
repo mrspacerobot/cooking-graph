@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/spanakopita",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "pies",
+  "dish": "Spanakopita",
+  "also_called": ["spinach pie"],
+  "techniques": ["wilt", "mix", "layer phyllo", "bake"],
+  "ingredients": ["spinach", "feta", "phyllo", "spring onion", "dill", "egg", "olive oil"]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/risotto-ai-funghi-porcini",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "risotto",
+  "dish": "Risotto ai funghi porcini",
+  "also_called": ["porcini risotto", "mushroom risotto"],
+  "techniques": ["soak dried mushrooms", "sweat", "toast rice", "deglaze", "add stock gradually", "mount with butter"],
+  "ingredients": [
+    "carnaroli rice",
+    "porcini mushroom",
+    "shallot",
+    "white wine",
+    "vegetable stock",
+    "butter",
+    "parmesan",
+    "parsley"
+  ]
+}

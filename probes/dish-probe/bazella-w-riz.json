@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bazella-w-riz",
+  "tier": "drafted",
+  "batch": "lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "stews",
+  "dish": "Bazella w riz",
+  "also_called": ["pea and carrot stew", "bazella bi lahmeh"],
+  "techniques": ["brown", "saute", "simmer", "boil"],
+  "ingredients": ["green pea", "carrot", "beef", "onion", "tomato paste", "garlic", "rice", "allspice"]
+}

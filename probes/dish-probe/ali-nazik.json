@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/ali-nazik",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "kebabs-and-grilling",
+  "dish": "Ali Nazik",
+  "also_called": ["ali nazik kebab", "lamb on smoky eggplant yogurt"],
+  "techniques": ["roast", "peel", "mash", "saute"],
+  "ingredients": [
+    "eggplant",
+    "yogurt",
+    "garlic",
+    "lamb",
+    "butter",
+    "green pepper",
+    "tomato paste",
+    "red pepper flakes"
+  ]
+}

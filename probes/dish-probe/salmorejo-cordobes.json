@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/salmorejo-cordobes",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "cold-soups",
+  "dish": "Salmorejo cordobés",
+  "also_called": ["salmorejo", "Córdoba cold tomato soup"],
+  "techniques": ["soak bread", "blend", "emulsify", "chill"],
+  "ingredients": ["tomato", "bread", "olive oil", "garlic", "sherry vinegar", "salt", "egg", "serrano ham"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/zeytinyagli-enginar",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "olive-oil-vegetables",
+  "dish": "Zeytinyağlı enginar",
+  "also_called": ["artichokes in olive oil"],
+  "techniques": ["trim", "braise in olive oil", "chill"],
+  "ingredients": ["artichoke", "carrot", "potato", "pea", "onion", "olive oil", "lemon", "dill"]
+}

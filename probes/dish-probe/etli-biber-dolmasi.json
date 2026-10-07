@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/etli-biber-dolmasi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "stuffed-vegetables",
+  "dish": "Etli biber dolması",
+  "also_called": ["stuffed peppers with meat"],
+  "techniques": ["stuff", "simmer"],
+  "ingredients": ["green pepper", "ground beef", "rice", "onion", "tomato paste", "parsley", "tomato"]
+}

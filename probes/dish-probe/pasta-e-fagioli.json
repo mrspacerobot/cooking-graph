@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pasta-e-fagioli",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "soups",
+  "dish": "Pasta e fagioli",
+  "also_called": ["pasta and beans", "pasta fazool"],
+  "techniques": ["soak beans", "make a soffritto", "simmer", "puree", "boil pasta"],
+  "ingredients": ["borlotti bean", "ditalini", "onion", "carrot", "celery", "rosemary", "pancetta", "olive oil"]
+}

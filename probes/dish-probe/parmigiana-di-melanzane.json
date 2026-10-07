@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/parmigiana-di-melanzane",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "vegetables",
+  "dish": "Parmigiana di melanzane",
+  "also_called": ["aubergine parmigiana", "eggplant parmesan", "melanzane alla parmigiana"],
+  "techniques": ["salt and drain", "fry", "make a tomato sauce", "layer", "bake"],
+  "ingredients": ["aubergine", "tomato", "mozzarella", "parmesan", "basil", "olive oil", "garlic"]
+}

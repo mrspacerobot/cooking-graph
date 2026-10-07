@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/gazpacho-andaluz",
+  "tier": "drafted",
+  "batch": "spanish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "cold-soups",
+  "dish": "Gazpacho andaluz",
+  "also_called": ["gazpacho", "Andalusian gazpacho"],
+  "techniques": ["blend", "emulsify", "strain", "chill"],
+  "ingredients": [
+    "tomato",
+    "cucumber",
+    "green pepper",
+    "garlic",
+    "bread",
+    "olive oil",
+    "sherry vinegar",
+    "salt",
+    "onion"
+  ]
+}

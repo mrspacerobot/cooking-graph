@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/zeytinyagli-yaprak-sarma",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "stuffed-vegetables",
+  "dish": "Zeytinyağlı yaprak sarma",
+  "also_called": ["stuffed vine leaves", "dolma"],
+  "techniques": ["blanch", "saute", "stuff", "roll", "simmer"],
+  "ingredients": ["vine leaf", "rice", "onion", "olive oil", "pine nut", "currant", "dried mint", "lemon"]
+}

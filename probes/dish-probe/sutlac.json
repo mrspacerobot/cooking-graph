@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sutlac",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "desserts",
+  "dish": "Sütlaç",
+  "also_called": ["rice pudding", "fırın sütlaç"],
+  "techniques": ["simmer", "stir", "bake"],
+  "ingredients": ["rice", "milk", "sugar", "rice flour", "cinnamon"]
+}

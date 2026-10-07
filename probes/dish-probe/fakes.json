@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/fakes",
+  "tier": "drafted",
+  "batch": "greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "pulses",
+  "dish": "Fakes",
+  "also_called": ["lentil soup"],
+  "techniques": ["boil", "simmer"],
+  "ingredients": ["lentil", "onion", "garlic", "carrot", "bay leaf", "tomato", "olive oil", "vinegar"]
+}

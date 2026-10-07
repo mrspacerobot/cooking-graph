@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pollo-alla-cacciatora",
+  "tier": "drafted",
+  "batch": "italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "braising",
+  "dish": "Pollo alla cacciatora",
+  "also_called": ["chicken cacciatore", "hunter's chicken"],
+  "techniques": ["sear", "sweat", "deglaze", "braise"],
+  "ingredients": ["chicken", "onion", "tomato", "white wine", "rosemary", "olive", "garlic", "olive oil"]
+}

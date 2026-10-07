@@ -10,17 +10,17 @@ Written on 7 October 2026, before anything was drafted for them. Everything here
 | japanese-1 | Japanese | 30 | 6 | claude-fable-5-1 |
 | indian-1 | Indian | 30 | 6 | claude-fable-5-1 |
 | moroccan-1 | Moroccan | 30 | 6 | claude-fable-5-1 |
-| italian-1 | Italian | 29 | 5 | claude-fable-5-1 |
-| greek-1 | Greek | 29 | 5 | claude-fable-5-1 |
-| spanish-1 | Spanish | 28 | 5 | claude-fable-5-1 |
-| lebanese-1 | Lebanese | 29 | 5 | claude-fable-5-1 |
-| turkish-1 | Turkish | 25 | 5 | claude-fable-5-1 |
+| italian-1 | Italian | 30 | 6 | claude-fable-5-1 |
+| greek-1 | Greek | 30 | 6 | claude-fable-5-1 |
+| spanish-1 | Spanish | 30 | 6 | claude-fable-5-1 |
+| lebanese-1 | Lebanese | 30 | 6 | claude-fable-5-1 |
+| turkish-1 | Turkish | 30 | 6 | claude-fable-5-1 |
 
 The model that drafts this graph in this cycle is `claude-sonnet-5-5`, and the three earlier fresh batches were also written by it. These four come from another model, as the rules ask.
 
 The writers were told not to read `graph/` or anything else in the repository, and they wrote their files outside it. That is a rule given in words. Nothing stops an agent from opening a file, so the isolation is by instruction and cannot be shown.
 
-Each of the Mediterranean batches was written for 30 dishes. Nine were not installed, because a dish name or an alias matched a probe that already existed, in this cuisine or another: Shish taouk, Pollo alla cacciatora, Fakes, Arroz con leche, Piperrada, İrmik helvası, Kuru fasulye, Lahana sarması, Zeytinyağlı yaprak sarma. Some of these are the same dish in two cuisines (rice pudding, stuffed vine or cabbage leaves) and a cuisine's own version may deserve a probe of its own. The rule allows it, and the script did not.
+Each of the Mediterranean batches was written for 30 dishes. Ten were first left out, because a name matched a probe of another cuisine: Shish taouk, Pollo alla cacciatora, Fakes, Arroz con leche, Piperrada, Sütlaç, İrmik helvası, Kuru fasulye, Lahana sarması and Zeytinyağlı yaprak sarma. Some are the same dish in two cuisines (rice pudding, stuffed leaves), and a cuisine's own version deserves its own probe, since one batch may ask a dish once but another batch may ask it again. They were put back before any drafting, because adding probes to a batch can change which of its probes are held back. Every Mediterranean batch is now 30, with 6 held back, and the numbers in the tables below are those at the time of the first run, before the ten went back in.
 
 The cuisines became possible with change 29 in `docs/model.md`: a dish probe now names its cuisine, and a cuisine with no program yet takes any topic for `written_for`. The three cuisines are in the graph as bare drafted names.
 

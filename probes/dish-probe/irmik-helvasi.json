@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/irmik-helvasi",
+  "tier": "drafted",
+  "batch": "turkish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "desserts",
+  "dish": "İrmik helvası",
+  "also_called": ["semolina halva"],
+  "techniques": ["toast", "simmer", "rest"],
+  "ingredients": ["semolina", "butter", "sugar", "milk", "pine nut"]
+}

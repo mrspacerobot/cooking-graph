@@ -1,0 +1,51 @@
+{
+  "id": "technique/set-in-aspic",
+  "tier": "drafted",
+  "names": {"en": "Set in aspic", "fr": "Prendre en gelée"},
+  "aliases": {"en": ["set in jelly", "aspic", "set in a savoury jelly"], "fr": ["mettre en gelée", "en gelée"]},
+  "does": "Holds cooked food in a clear, savoury jelly, which sets as it cools and turns a loose mixture into a firm block that can be turned out and cut in slices.",
+  "how": [
+    "Make the jelly from a clear, well-flavoured stock with enough gelatin to hold it. Soak the gelatin in cold water first, then melt it into the warm stock.",
+    "Let the jelly cool until it is syrupy and just starting to thicken, before it meets the food.",
+    "Pack the cooked food loosely into a deep dish, with herbs between the layers.",
+    "Pour the jelly over the food until it is covered, and press gently so that it runs into every gap.",
+    "Chill until it is firm throughout. To turn it out, dip the dish briefly in hot water and tip it over a plate."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The cooled jelly runs slowly off a spoon and leaves a thin coat."},
+    {"sense": "feel", "text": "A finished set trembles when the dish is shaken, and holds its shape when it is cut."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using too much gelatin, so that the jelly turns stiff and rubbery.",
+      "fix": "Use less, and aim for a gentle tremble."
+    },
+    {
+      "mistake": "Pouring the jelly on while it is still hot, so that the herbs turn dull and the pieces rise to the top.",
+      "fix": "Let it cool until it starts to thicken."
+    },
+    {
+      "mistake": "Turning the set out too early, while the centre is still loose.",
+      "fix": "Leave it to chill until it is firm all the way through."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "group/cooked-meats", "tier": "drafted"},
+    {"thing": "ingredient/gelatin", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/terrine", "equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/ladle"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/chill",
+      "why": "Setting is chilling a liquid until it holds, so a cook has to be able to chill evenly first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

@@ -9,7 +9,8 @@
     "Slide the food in gently.",
     "Hold the heat there. Turn it down the moment bubbles start to break the surface.",
     "Lift the food out with a slotted spoon and drain it well.",
-    "For an egg, add a little vinegar to the water, crack the egg into a small bowl first, and tip it in at the surface."
+    "For an egg, add a little vinegar to the water, crack the egg into a small bowl first, and tip it in at the surface.",
+    "For dumplings of choux paste, drop spoonfuls into salted water at a tremble, and lift them out with a slotted spoon once they float and feel firm."
   ],
   "cues": [
     {"sense": "see", "text": "The surface shivers and steams, and nothing rolls."},
@@ -35,7 +36,8 @@
     {"thing": "group/alliums", "tier": "drafted"},
     {"thing": "ingredient/egg", "tier": "drafted"},
     {"thing": "ingredient/marrow-bone", "tier": "drafted"},
-    {"thing": "group/firm-fruits", "tier": "drafted"}
+    {"thing": "group/firm-fruits", "tier": "drafted"},
+    {"thing": "preparation/choux-pastry", "tier": "drafted"}
   ],
   "makes": [
     {"thing": "preparation/poaching-liquid", "tier": "drafted"},

@@ -1,0 +1,28 @@
+{
+  "id": "dish/gnocchi-a-la-parisienne",
+  "tier": "drafted",
+  "names": {"en": "Gnocchi à la parisienne", "fr": "Gnocchi à la parisienne"},
+  "aliases": {"en": ["Parisian gnocchi", "choux gnocchi"], "fr": ["gnocchis parisiens"]},
+  "is": "Dumplings of choux paste poached in salted water, then baked in a cheese sauce until the top is golden.",
+  "parts": [
+    {"id": "choux", "role": "main", "options": ["preparation/choux-pastry"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "topping",
+      "options": ["ingredient/gruyere", "ingredient/comte", "ingredient/emmental"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-choux-pastry", "tier": "drafted"},
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

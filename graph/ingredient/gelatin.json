@@ -1,0 +1,27 @@
+{
+  "id": "ingredient/gelatin",
+  "tier": "drafted",
+  "names": {"en": "Gelatin", "fr": "Gélatine"},
+  "aliases": {"en": ["gelatine", "gelatin sheets", "leaf gelatin"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A setting agent made from animal skin and bones, sold in sheets or as powder. It is soaked, then melted into warm liquid, which sets as it cools.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/slaughter-product", "basis": "It is made from the skin and bones of animals.", "certain": true},
+      {"fact": "fact/pork", "basis": "Most gelatin is made from pig skin.", "certain": false},
+      {"fact": "fact/meat", "basis": "A pork fact counts as meat as well.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

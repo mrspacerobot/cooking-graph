@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/roquefort",
+  "tier": "drafted",
+  "names": {"en": "Roquefort", "fr": "Roquefort"},
+  "aliases": {"en": ["Roquefort cheese"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A sharp, salty, crumbly blue cheese of sheep's milk, veined with mould. It crumbles over a salad and melts into a dressing or a sauce.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from the milk of sheep.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "It is traditionally made with animal rennet.", "certain": false},
+      {"fact": "fact/gluten", "basis": "The mould that veins it is traditionally grown on bread.", "certain": false},
+      {"fact": "fact/wheat", "basis": "The mould that veins it is traditionally grown on bread.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": []
+}

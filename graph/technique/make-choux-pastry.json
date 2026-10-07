@@ -1,0 +1,59 @@
+{
+  "id": "technique/make-choux-pastry",
+  "tier": "drafted",
+  "names": {"en": "Make choux pastry", "fr": "Faire une pâte à choux"},
+  "aliases": {"en": ["choux pastry", "choux paste", "make choux paste"], "fr": ["pâte à choux"]},
+  "does": "Cooks flour into boiling water and butter to a thick, smooth paste, then beats in eggs until it turns glossy and soft enough to spoon or pipe. Baked, the paste puffs into hollow shells. Poached, it makes light dumplings.",
+  "how": [
+    "Bring the water, the butter and a little salt to a boil, so that the butter has melted by the time the water bubbles.",
+    "Take the pan off the heat, tip in all the flour at once and beat hard with a wooden spoon.",
+    "Put the pan back on a low heat and keep beating until the paste pulls into one ball, leaves a thin film on the pan and no longer sticks to the spoon.",
+    "Move the paste to a bowl and let it cool a little, or the eggs will cook in it.",
+    "Beat in the eggs a little at a time. Each addition must be taken up before the next goes in.",
+    "Stop when the paste is glossy and falls from the spoon in a slow, thick ribbon. Keep back any egg that is not needed."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The finished paste is smooth and glossy, and falls from the spoon in a thick ribbon."},
+    {
+      "sense": "feel",
+      "text": "The dried paste is heavy and stiff to beat. It loosens and turns silky as the eggs go in."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the flour a little at a time, so that it lumps.",
+      "fix": "Take the pan off the heat, tip all the flour in at once and beat."
+    },
+    {
+      "mistake": "Beating in the eggs while the paste is still hot, so that they cook into strings.",
+      "fix": "Let the paste cool a little first."
+    },
+    {
+      "mistake": "Adding all the egg at once, which leaves a paste too loose to hold its shape.",
+      "fix": "Add it a little at a time and stop when the paste falls from the spoon in a thick ribbon."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/flour", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/choux-pastry", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/milk"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-a-roux",
+      "why": "Choux paste starts like a roux, as flour cooked in hot fat and liquid, so a cook who can cook flour without lumps can make it.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

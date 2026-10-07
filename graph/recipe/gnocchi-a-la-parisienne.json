@@ -1,0 +1,80 @@
+{
+  "id": "recipe/gnocchi-a-la-parisienne",
+  "tier": "drafted",
+  "names": {"en": "Gnocchi à la parisienne", "fr": "Gnocchi à la parisienne"},
+  "aliases": {},
+  "makes": "dish/gnocchi-a-la-parisienne",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/flour", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "choux"},
+    {"thing": "ingredient/butter", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "choux"},
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "choux"},
+    {"thing": "preparation/bechamel", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "bechamel"},
+    {
+      "thing": "ingredient/gruyere",
+      "amount": {"value": 100, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "choux"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "choux"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/wooden-spoon", "equipment/mixing-bowl",
+    "equipment/slotted-spoon", "equipment/whisk", "equipment/baking-dish", "equipment/oven", "equipment/grill"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-choux-pastry",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/water", "ingredient/butter", "ingredient/salt", "ingredient/egg"],
+      "text": "Bring the water, the butter and a little salt to a boil. Take the pan off the heat and tip in the flour all at once, then beat hard. Cook the paste over a low heat until it forms a ball and leaves the sides of the pan. Let it cool a little, then beat in the eggs a little at a time, until the paste is glossy and falls from the spoon in a thick ribbon.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/choux-pastry"]
+    },
+    {
+      "technique": "technique/poach",
+      "works_on": ["preparation/choux-pastry"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Bring a wide pan of salted water to a tremble. Drop in spoonfuls of the paste, a few at a time, and poach them gently until they float and feel firm. Lift them out with a slotted spoon and drain them well.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["preparation/bechamel"],
+      "with": ["ingredient/gruyere"],
+      "text": "Warm the béchamel and whisk in most of the cheese until it melts into a smooth sauce.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["preparation/bechamel", "ingredient/gruyere"],
+      "with": ["preparation/choux-pastry"],
+      "text": "Lay the poached gnocchi in a shallow dish in a single layer, spoon the sauce over them and scatter with the rest of the cheese.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["ingredient/gruyere"],
+      "with": [],
+      "text": "Bake in a hot oven until the sauce bubbles and the top is golden.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

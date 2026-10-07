@@ -1,0 +1,44 @@
+{
+  "id": "technique/stuff-under-the-skin",
+  "tier": "drafted",
+  "names": {"en": "Stuff under the skin", "fr": "Glisser sous la peau"},
+  "aliases": {"en": ["slide under the skin", "stuff beneath the skin"], "fr": ["farcir sous la peau"]},
+  "does": "Slides a flavouring, such as slices of truffle or a soft herb butter, between the skin and the flesh of a bird, so that it seasons the meat directly and keeps the breast moist as it cooks.",
+  "how": [
+    "Dry the bird well. Start at the neck end and work a finger gently between the skin and the breast, then loosen the skin over the whole breast and a little way down the legs, without tearing it.",
+    "Season the flesh under the skin.",
+    "Slide the flavouring in flat and spread it in an even layer, then smooth the skin back down over it.",
+    "Tuck the neck skin under the bird, so that nothing slips out.",
+    "Truss the bird if it is to be poached or roasted whole, and cook it soon after."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The skin lifts easily from the flesh on a fingertip and does not tear."},
+    {"sense": "see", "text": "The flavouring shows through the skin as an even pattern, with no bare patches."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Tearing the skin, so that the flavouring leaks out and the flesh dries.",
+      "fix": "Work slowly with a finger and not a nail, and lay the skin back over any small tear."
+    },
+    {
+      "mistake": "Pushing in a lumpy filling that leaves gaps and slides about.",
+      "fix": "Use thin flat slices, or a soft smooth butter spread evenly."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/poultry", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/stuff",
+      "differs": "The filling goes between the skin and the flesh and not into the hollow of the bird, so it flavours and bastes the meat directly and is never packed in.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

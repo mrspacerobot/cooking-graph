@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/salade-nicoise",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "held-back",
+  "written_for": "emulsions",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Salade niçoise",
+  "also_called": ["niçoise salad"],
+  "techniques": ["boil", "slice", "emulsify", "toss"],
+  "ingredients": ["tuna", "anchovy", "egg", "tomato", "black olive", "olive oil", "red wine vinegar"]
+}

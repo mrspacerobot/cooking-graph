@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/petite-marmite",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_for": "stocks",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Petite marmite",
+  "also_called": ["petite marmite Henri IV", "la petite marmite"],
+  "techniques": ["simmer", "skim", "strain"],
+  "ingredients": ["stewing beef", "chicken", "marrow bone", "carrot", "leek", "turnip", "bread"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/poulet-marengo",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_for": "saute",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Poulet Marengo",
+  "also_called": ["chicken Marengo", "poulet sauté Marengo"],
+  "techniques": ["saute", "deglaze", "simmer"],
+  "ingredients": ["chicken", "tomato", "mushroom", "white wine", "garlic", "olive oil", "egg"]
+}

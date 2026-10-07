@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/gratin-de-poireaux",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "held-back",
+  "written_for": "gratin",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Gratin de poireaux",
+  "also_called": ["leek gratin", "leeks au gratin"],
+  "techniques": ["boil", "make a roux", "gratinate"],
+  "ingredients": ["leek", "milk", "butter", "flour", "gruyère", "nutmeg"]
+}

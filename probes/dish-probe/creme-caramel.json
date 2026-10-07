@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/creme-caramel",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_for": "eggs",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Crème caramel",
+  "also_called": ["crème renversée au caramel", "caramel custard"],
+  "techniques": ["caramelize sugar", "make a custard", "bake in a water bath"],
+  "ingredients": ["egg", "milk", "sugar", "vanilla"]
+}

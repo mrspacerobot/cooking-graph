@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/pintade-rotie",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "held-back",
+  "written_for": "roast",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Pintade rôtie",
+  "also_called": ["roast guinea fowl", "roast pintade"],
+  "techniques": ["truss", "roast", "baste", "rest", "deglaze"],
+  "ingredients": ["guinea fowl", "butter", "bacon", "thyme", "garlic", "chicken stock"]
+}

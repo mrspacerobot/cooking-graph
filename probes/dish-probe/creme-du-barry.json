@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/creme-du-barry",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_for": "roux",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Crème Du Barry",
+  "also_called": ["potage Du Barry", "velouté Dubarry", "cauliflower soup"],
+  "techniques": ["make a roux", "simmer", "puree"],
+  "ingredients": ["cauliflower", "butter", "flour", "chicken stock", "cream"]
+}

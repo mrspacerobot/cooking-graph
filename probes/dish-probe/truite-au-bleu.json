@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/truite-au-bleu",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "held-back",
+  "written_for": "poach",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Truite au bleu",
+  "also_called": ["blue trout"],
+  "techniques": ["simmer", "poach"],
+  "ingredients": ["trout", "court-bouillon", "white wine vinegar", "butter", "potato", "parsley"]
+}

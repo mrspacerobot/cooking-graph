@@ -1,0 +1,12 @@
+{
+  "id": "dish-probe/poulet-vallee-d-auge",
+  "tier": "drafted",
+  "batch": "fresh-1",
+  "set": "growing",
+  "written_for": "pan-sauce",
+  "written_by": "claude-sonnet-5-5",
+  "dish": "Poulet vallée d'Auge",
+  "also_called": ["chicken Vallée d'Auge", "Normandy chicken with cider and cream"],
+  "techniques": ["sear", "flambé", "deglaze", "reduce"],
+  "ingredients": ["chicken", "Calvados", "cider", "cream", "apple", "shallot", "butter"]
+}

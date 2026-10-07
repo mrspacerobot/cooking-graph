@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/seffa-medfouna",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "couscous",
+  "dish": "Seffa medfouna",
+  "also_called": ["sweet couscous with hidden chicken", "seffa au poulet", "medfouna"],
+  "techniques": ["steam couscous", "braise", "layer"],
+  "ingredients": ["couscous", "chicken", "onion", "saffron", "cinnamon", "powdered sugar", "almond", "butter"]
+}

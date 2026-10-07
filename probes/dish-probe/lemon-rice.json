@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/lemon-rice",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "rice",
+  "dish": "Lemon rice",
+  "also_called": ["chitranna", "elumichai sadam"],
+  "techniques": ["boil", "temper spices in hot fat", "mix"],
+  "ingredients": ["rice", "lemon", "mustard seed", "peanut", "curry leaf", "turmeric", "green chili", "asafoetida"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/buri-daikon",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "simmered-dishes",
+  "dish": "Buri daikon",
+  "also_called": ["simmered yellowtail and daikon", "yellowtail with daikon"],
+  "techniques": ["blanch", "parboil", "simmer", "cover with drop lid", "reduce"],
+  "ingredients": ["yellowtail", "daikon", "ginger", "sake", "soy sauce", "mirin", "sugar", "water"]
+}

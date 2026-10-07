@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/goya-champuru",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "pan-frying",
+  "dish": "Goya champuru",
+  "also_called": ["Okinawan bitter melon stir fry", "goya chanpuru"],
+  "techniques": ["slice thinly", "salt and squeeze", "press tofu", "stir fry", "scramble eggs"],
+  "ingredients": ["bitter melon", "firm tofu", "egg", "pork belly", "soy sauce", "salt", "bonito flakes", "oil"]
+}

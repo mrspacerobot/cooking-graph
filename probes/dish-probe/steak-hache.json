@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/steak-hache",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "sear",
+  "dish": "Steak haché",
+  "also_called": ["bifteck haché", "French hamburger steak"],
+  "techniques": ["shape", "sear", "rest", "deglaze"],
+  "ingredients": ["ground beef", "butter", "shallot", "parsley"]
+}

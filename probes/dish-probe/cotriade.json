@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/cotriade",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "stocks",
+  "dish": "Cotriade",
+  "also_called": ["cotriade bretonne", "Breton fish stew"],
+  "techniques": ["sweat", "simmer", "skim", "poach"],
+  "ingredients": ["mackerel", "conger eel", "whiting", "potato", "onion", "leek", "butter", "vinegar"]
+}

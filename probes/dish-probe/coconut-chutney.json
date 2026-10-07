@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/coconut-chutney",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "chutneys",
+  "dish": "Coconut chutney",
+  "also_called": ["thengai chutney", "nariyal chutney"],
+  "techniques": ["grind", "temper spices in hot fat"],
+  "ingredients": ["coconut", "roasted gram", "green chili", "ginger", "mustard seed", "curry leaf", "tamarind", "oil"]
+}

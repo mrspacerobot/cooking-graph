@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tamagoyaki",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "eggs",
+  "dish": "Tamagoyaki",
+  "also_called": ["rolled omelette", "Japanese rolled omelette", "dashimaki tamago"],
+  "techniques": ["beat eggs", "strain", "oil the pan", "roll in layers", "shape in mat", "slice"],
+  "ingredients": ["egg", "dashi", "sugar", "soy sauce", "mirin", "salt", "oil", "daikon"]
+}

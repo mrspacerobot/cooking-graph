@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/seksu-bidawi",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "couscous",
+  "dish": "Seksu bidawi",
+  "also_called": ["couscous with seven vegetables", "couscous aux sept légumes", "couscous bidaoui"],
+  "techniques": ["steam couscous", "simmer", "fluff"],
+  "ingredients": ["couscous", "lamb", "turnip", "carrot", "zucchini", "pumpkin", "cabbage", "chickpea", "tomato"]
+}

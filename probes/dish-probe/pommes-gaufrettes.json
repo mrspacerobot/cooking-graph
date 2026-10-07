@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pommes-gaufrettes",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "knife-cuts",
+  "dish": "Pommes gaufrettes",
+  "also_called": ["waffle-cut potatoes", "waffle fries"],
+  "techniques": ["peel", "slice on a mandoline", "soak", "deep-fry"],
+  "ingredients": ["potato", "oil", "salt", "parsley"]
+}

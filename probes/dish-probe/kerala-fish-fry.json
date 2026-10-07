@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/kerala-fish-fry",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "marinating",
+  "dish": "Kerala fish fry",
+  "also_called": ["meen varuthathu", "meen fry"],
+  "techniques": ["make spice paste", "marinate", "shallow fry"],
+  "ingredients": [
+    "kingfish",
+    "red chili powder",
+    "turmeric",
+    "black pepper",
+    "ginger",
+    "garlic",
+    "curry leaf",
+    "lemon",
+    "coconut oil"
+  ]
+}

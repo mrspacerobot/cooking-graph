@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/medu-vada",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "frying",
+  "dish": "Medu vada",
+  "also_called": ["ulundu vadai", "urad dal vada", "uzhunnu vada"],
+  "techniques": ["soak", "grind", "shape", "deep fry"],
+  "ingredients": ["black gram", "green chili", "ginger", "curry leaf", "black pepper", "onion", "oil"]
+}

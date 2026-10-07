@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/chanchan-yaki",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "grilling",
+  "dish": "Chanchan yaki",
+  "also_called": ["Hokkaido salmon and vegetables with miso", "salmon chanchanyaki"],
+  "techniques": ["sear", "steam under lid", "mix miso sauce", "griddle cook", "slice thinly"],
+  "ingredients": ["salmon", "cabbage", "onion", "bean sprout", "carrot", "miso", "butter", "sake", "mirin"]
+}

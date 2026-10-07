@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tonkatsu",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "frying",
+  "dish": "Tonkatsu",
+  "also_called": ["breaded pork cutlet", "pork katsu"],
+  "techniques": ["score fat", "season", "bread", "deep fry", "rest", "slice", "shred cabbage"],
+  "ingredients": ["pork loin", "flour", "egg", "panko", "oil", "cabbage", "tonkatsu sauce", "salt", "black pepper"]
+}

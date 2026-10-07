@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kinpira-gobo",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "pickles-and-sides",
+  "dish": "Kinpira gobo",
+  "also_called": ["braised burdock and carrot", "stir-fried burdock", "kinpira"],
+  "techniques": ["shave", "cut into matchsticks", "soak in water", "stir fry", "simmer", "reduce"],
+  "ingredients": ["burdock", "carrot", "sesame oil", "soy sauce", "mirin", "sugar", "sake", "chilli", "sesame seed"]
+}

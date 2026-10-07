@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/palette-a-la-diable",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "roast",
+  "dish": "Palette à la diable",
+  "also_called": ["palette de porc à la diable", "Alsatian mustard-roasted pork shoulder"],
+  "techniques": ["coat", "roast", "baste", "rest", "deglaze"],
+  "ingredients": ["pork shoulder", "mustard", "onion", "white wine", "thyme", "bay leaf", "butter"]
+}

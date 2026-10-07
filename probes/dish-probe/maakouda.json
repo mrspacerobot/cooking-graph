@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/maakouda",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "frying",
+  "dish": "Maakouda",
+  "also_called": ["maqouda", "Moroccan potato fritters", "batata maakouda"],
+  "techniques": ["boil", "mash", "shape", "deep fry"],
+  "ingredients": ["potato", "egg", "garlic", "parsley", "coriander", "cumin", "turmeric", "flour", "vegetable oil"]
+}

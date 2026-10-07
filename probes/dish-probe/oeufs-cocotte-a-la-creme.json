@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/oeufs-cocotte-a-la-creme",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "eggs",
+  "dish": "Œufs cocotte à la crème",
+  "also_called": ["œufs en cocotte", "baked eggs in ramekins", "shirred eggs"],
+  "techniques": ["butter", "bake", "bain-marie"],
+  "ingredients": ["egg", "crème fraîche", "butter", "chive"]
+}

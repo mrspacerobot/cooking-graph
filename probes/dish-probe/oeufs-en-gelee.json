@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/oeufs-en-gelee",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "eggs",
+  "dish": "Œufs en gelée",
+  "also_called": ["eggs in aspic", "œufs en gelée à l'estragon"],
+  "techniques": ["poach", "clarify", "set in aspic", "chill"],
+  "ingredients": ["egg", "chicken stock", "gelatin", "tarragon", "ham", "madeira"]
+}

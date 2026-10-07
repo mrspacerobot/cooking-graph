@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/baeckeoffe",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "braise",
+  "dish": "Baeckeoffe",
+  "also_called": ["baeckeofe", "Alsatian baker's oven stew"],
+  "techniques": ["marinate", "layer", "seal with dough", "braise"],
+  "ingredients": [
+    "pork shoulder",
+    "lamb shoulder",
+    "beef",
+    "potato",
+    "onion",
+    "leek",
+    "riesling",
+    "carrot",
+    "bay leaf"
+  ]
+}

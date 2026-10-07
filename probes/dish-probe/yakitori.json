@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/yakitori",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "grilling",
+  "dish": "Yakitori",
+  "also_called": ["grilled chicken skewers", "chicken skewers"],
+  "techniques": ["cut into chunks", "skewer", "grill", "make tare sauce", "baste"],
+  "ingredients": ["chicken thigh", "spring onion", "soy sauce", "mirin", "sake", "sugar", "salt", "shichimi"]
+}

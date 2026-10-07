@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/gratin-de-ravioles",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "gratin",
+  "dish": "Gratin de ravioles",
+  "also_called": ["ravioles du Dauphiné gratinées", "Dauphiné ravioli gratin"],
+  "techniques": ["layer", "pour over", "gratinate"],
+  "ingredients": ["ravioles", "crème fraîche", "comté", "butter", "nutmeg"]
+}

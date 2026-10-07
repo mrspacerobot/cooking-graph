@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/dal-tadka",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "dal",
+  "dish": "Dal tadka",
+  "also_called": ["dal fry", "tadka dal"],
+  "techniques": ["pressure cook", "simmer", "temper spices in hot fat"],
+  "ingredients": ["pigeon pea", "onion", "tomato", "garlic", "cumin seed", "turmeric", "ghee", "dried red chili"]
+}

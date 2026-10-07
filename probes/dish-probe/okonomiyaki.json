@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/okonomiyaki",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "pan-frying",
+  "dish": "Okonomiyaki",
+  "also_called": ["savoury cabbage pancake", "Osaka okonomiyaki", "Japanese savoury pancake"],
+  "techniques": ["shred cabbage", "make dashi", "mix batter", "griddle cook", "flip", "garnish"],
+  "ingredients": [
+    "cabbage",
+    "flour",
+    "egg",
+    "dashi",
+    "pork belly",
+    "yam",
+    "okonomiyaki sauce",
+    "mayonnaise",
+    "bonito flakes"
+  ]
+}

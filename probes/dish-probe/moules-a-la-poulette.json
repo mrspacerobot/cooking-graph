@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/moules-a-la-poulette",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "roux",
+  "dish": "Moules à la poulette",
+  "also_called": ["moules poulette", "mussels in poulette sauce"],
+  "techniques": ["steam open", "make a roux", "reduce", "bind with yolks", "strain"],
+  "ingredients": [
+    "mussel",
+    "butter",
+    "flour",
+    "white wine",
+    "shallot",
+    "egg yolk",
+    "crème fraîche",
+    "lemon",
+    "parsley"
+  ]
+}

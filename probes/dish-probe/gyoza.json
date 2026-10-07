@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/gyoza",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "pan-frying",
+  "dish": "Gyoza",
+  "also_called": ["pan-fried dumplings", "yaki gyoza", "potstickers"],
+  "techniques": ["mince", "salt and squeeze", "mix filling", "fold and pleat", "pan fry", "steam under lid"],
+  "ingredients": [
+    "ground pork",
+    "cabbage",
+    "garlic chive",
+    "garlic",
+    "ginger",
+    "gyoza wrapper",
+    "soy sauce",
+    "sesame oil",
+    "rice vinegar"
+  ]
+}

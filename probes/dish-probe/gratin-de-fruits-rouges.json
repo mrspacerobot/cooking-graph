@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/gratin-de-fruits-rouges",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "gratin",
+  "dish": "Gratin de fruits rouges",
+  "also_called": ["gratin de framboises au sabayon", "red berry gratin with sabayon"],
+  "techniques": ["whisk over heat", "make a sabayon", "spoon over", "gratinate"],
+  "ingredients": ["raspberry", "strawberry", "redcurrant", "egg yolk", "sugar", "white wine", "crème fraîche"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/cervelle-meuniere",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "saute",
+  "dish": "Cervelle meunière",
+  "also_called": ["cervelle de veau meunière", "calf's brains in brown butter"],
+  "techniques": ["soak", "blanch", "flour", "sauté", "brown butter"],
+  "ingredients": ["calf's brains", "butter", "flour", "lemon", "parsley", "caper"]
+}

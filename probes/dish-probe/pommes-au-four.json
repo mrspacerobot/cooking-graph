@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pommes-au-four",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "roast",
+  "dish": "Pommes au four",
+  "also_called": ["pommes bonne femme", "baked apples"],
+  "techniques": ["core", "stuff", "roast", "baste"],
+  "ingredients": ["apple", "butter", "sugar", "cinnamon", "raisin", "calvados"]
+}

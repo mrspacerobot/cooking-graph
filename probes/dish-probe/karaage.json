@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/karaage",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "frying",
+  "dish": "Karaage",
+  "also_called": ["Japanese fried chicken", "tori no karaage"],
+  "techniques": ["cut into chunks", "marinate", "coat in starch", "deep fry", "double fry", "drain"],
+  "ingredients": ["chicken thigh", "soy sauce", "sake", "ginger", "garlic", "potato starch", "oil", "lemon"]
+}

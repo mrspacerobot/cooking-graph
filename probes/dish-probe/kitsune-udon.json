@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/kitsune-udon",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "noodles",
+  "dish": "Kitsune udon",
+  "also_called": ["udon with sweet fried tofu", "fox udon"],
+  "techniques": ["make dashi", "pour boiling water over tofu", "simmer", "boil noodles", "assemble"],
+  "ingredients": [
+    "udon noodle",
+    "fried tofu",
+    "dashi",
+    "soy sauce",
+    "mirin",
+    "sugar",
+    "spring onion",
+    "kamaboko",
+    "shichimi"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/truffade",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "saute",
+  "dish": "Truffade",
+  "also_called": ["truffade auvergnate", "potatoes with tomme fraîche"],
+  "techniques": ["slice", "sauté", "melt", "turn out"],
+  "ingredients": ["potato", "tomme fraîche", "bacon", "garlic", "lard"]
+}

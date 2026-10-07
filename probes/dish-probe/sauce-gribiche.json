@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sauce-gribiche",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "emulsions",
+  "dish": "Sauce gribiche",
+  "also_called": ["gribiche sauce", "sauce for tête de veau"],
+  "techniques": ["hard-boil", "mash", "emulsify", "chop"],
+  "ingredients": ["egg", "mustard", "oil", "vinegar", "caper", "cornichon", "parsley", "tarragon", "chervil"]
+}

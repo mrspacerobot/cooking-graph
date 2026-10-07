@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/fenouil-braise",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "braise",
+  "dish": "Fenouil braisé",
+  "also_called": ["braised fennel"],
+  "techniques": ["trim", "brown", "braise", "glaze"],
+  "ingredients": ["fennel", "butter", "olive oil", "chicken stock", "lemon", "garlic"]
+}

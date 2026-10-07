@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tonjiru",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "soups",
+  "dish": "Tonjiru",
+  "also_called": ["pork miso soup", "butajiru"],
+  "techniques": ["slice thinly", "stir fry", "make dashi", "simmer", "skim", "dissolve miso"],
+  "ingredients": ["pork belly", "daikon", "carrot", "burdock", "konnyaku", "taro", "dashi", "miso", "spring onion"]
+}

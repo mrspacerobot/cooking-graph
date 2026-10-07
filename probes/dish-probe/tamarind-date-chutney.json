@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tamarind-date-chutney",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "chutneys",
+  "dish": "Tamarind date chutney",
+  "also_called": ["imli chutney", "saunth", "meethi chutney"],
+  "techniques": ["soak", "simmer", "strain", "reduce"],
+  "ingredients": ["tamarind", "date", "jaggery", "cumin seed", "ginger powder", "red chili powder", "black salt"]
+}

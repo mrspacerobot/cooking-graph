@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/chou-farci",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "braise",
+  "dish": "Chou farci",
+  "also_called": ["stuffed cabbage", "chou farci auvergnat"],
+  "techniques": ["blanch", "stuff", "wrap", "tie", "braise"],
+  "ingredients": ["savoy cabbage", "sausage meat", "pork", "onion", "bread", "egg", "carrot", "chicken stock", "bacon"]
+}

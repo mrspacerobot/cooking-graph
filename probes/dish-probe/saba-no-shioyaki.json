@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/saba-no-shioyaki",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "grilling",
+  "dish": "Saba no shioyaki",
+  "also_called": ["salt-grilled mackerel", "grilled mackerel with salt", "saba shioyaki"],
+  "techniques": ["salt fish", "rest", "score skin", "grill", "grate daikon"],
+  "ingredients": ["mackerel", "salt", "daikon", "soy sauce", "lemon", "sudachi"]
+}

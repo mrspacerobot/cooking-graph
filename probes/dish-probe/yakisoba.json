@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/yakisoba",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "noodles",
+  "dish": "Yakisoba",
+  "also_called": ["fried noodles", "stir-fried noodles", "sauce yakisoba"],
+  "techniques": ["slice thinly", "stir fry", "loosen noodles", "toss in sauce"],
+  "ingredients": [
+    "yakisoba noodle",
+    "pork belly",
+    "cabbage",
+    "onion",
+    "carrot",
+    "bean sprout",
+    "yakisoba sauce",
+    "pickled ginger",
+    "aonori"
+  ]
+}

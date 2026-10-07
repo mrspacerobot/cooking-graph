@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/soupe-de-chataignes",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "stocks",
+  "dish": "Soupe de châtaignes",
+  "also_called": ["chestnut soup", "velouté de châtaignes"],
+  "techniques": ["sweat", "simmer", "blend", "strain"],
+  "ingredients": ["chestnut", "onion", "leek", "chicken stock", "crème fraîche", "butter"]
+}

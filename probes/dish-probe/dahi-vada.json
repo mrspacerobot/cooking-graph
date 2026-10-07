@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/dahi-vada",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "yogurt-dishes",
+  "dish": "Dahi vada",
+  "also_called": ["dahi bhalla", "thayir vadai"],
+  "techniques": ["soak", "grind", "deep fry", "whisk", "chill"],
+  "ingredients": [
+    "black gram",
+    "yogurt",
+    "tamarind",
+    "jaggery",
+    "cumin seed",
+    "red chili powder",
+    "black salt",
+    "coriander leaf"
+  ]
+}

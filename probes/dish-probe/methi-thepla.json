@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/methi-thepla",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "flatbreads",
+  "dish": "Methi thepla",
+  "also_called": ["thepla", "gujarati fenugreek flatbread"],
+  "techniques": ["knead", "roll", "cook on a griddle"],
+  "ingredients": [
+    "whole wheat flour",
+    "fenugreek leaf",
+    "chickpea flour",
+    "yogurt",
+    "turmeric",
+    "red chili powder",
+    "sesame seed",
+    "oil"
+  ]
+}

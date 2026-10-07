@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/aloo-paratha",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "flatbreads",
+  "dish": "Aloo paratha",
+  "also_called": ["aloo ka paratha", "stuffed potato flatbread"],
+  "techniques": ["knead", "boil", "mash", "stuff", "roll", "shallow fry"],
+  "ingredients": ["whole wheat flour", "potato", "green chili", "coriander leaf", "amchur", "cumin seed", "ghee"]
+}

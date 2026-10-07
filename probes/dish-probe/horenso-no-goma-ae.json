@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/horenso-no-goma-ae",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "pickles-and-sides",
+  "dish": "Horenso no goma-ae",
+  "also_called": ["spinach with sesame dressing", "goma-ae", "sesame spinach"],
+  "techniques": ["blanch", "shock in cold water", "squeeze out water", "toast sesame", "grind sesame", "dress"],
+  "ingredients": ["spinach", "sesame seed", "soy sauce", "sugar", "mirin", "dashi"]
+}

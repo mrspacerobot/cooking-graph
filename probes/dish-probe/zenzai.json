@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/zenzai",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "sweets",
+  "dish": "Zenzai",
+  "also_called": ["sweet red bean soup with mochi", "oshiruko"],
+  "techniques": ["soak beans", "boil", "simmer", "sweeten", "toast mochi"],
+  "ingredients": ["azuki bean", "sugar", "salt", "mochi", "water"]
+}

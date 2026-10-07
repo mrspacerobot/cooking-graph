@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/omurice",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "eggs",
+  "dish": "Omurice",
+  "also_called": ["omelette rice", "omuraisu", "ketchup rice omelette"],
+  "techniques": ["dice", "stir fry", "fry rice", "beat eggs", "make omelette", "wrap", "shape"],
+  "ingredients": [
+    "short-grain rice",
+    "egg",
+    "chicken thigh",
+    "onion",
+    "ketchup",
+    "butter",
+    "green pea",
+    "salt",
+    "black pepper"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/entrecote-au-roquefort",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "pan-sauce",
+  "dish": "Entrecôte au Roquefort",
+  "also_called": ["steak au Roquefort", "steak with blue cheese sauce"],
+  "techniques": ["sear", "rest", "deglaze", "reduce", "melt in"],
+  "ingredients": ["rib-eye steak", "roquefort", "crème fraîche", "shallot", "white wine", "butter"]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/takikomi-gohan",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "rice",
+  "dish": "Takikomi gohan",
+  "also_called": ["mixed rice", "seasoned rice cooked with vegetables", "gomoku gohan"],
+  "techniques": ["wash rice", "soak rice", "make dashi", "cut into small pieces", "cook rice", "rest and fluff"],
+  "ingredients": [
+    "short-grain rice",
+    "dashi",
+    "soy sauce",
+    "sake",
+    "chicken thigh",
+    "carrot",
+    "shiitake",
+    "fried tofu",
+    "burdock"
+  ]
+}

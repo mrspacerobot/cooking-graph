@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tagine-barkouk",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "tagine",
+  "dish": "Tagine barkouk",
+  "also_called": ["lamb tagine with prunes", "tagine d'agneau aux pruneaux", "lham bel barkouk"],
+  "techniques": ["brown", "braise", "simmer", "toast"],
+  "ingredients": ["lamb", "prune", "onion", "cinnamon", "ginger", "saffron", "honey", "almond", "sesame seed"]
+}

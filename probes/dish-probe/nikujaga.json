@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/nikujaga",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "simmered-dishes",
+  "dish": "Nikujaga",
+  "also_called": ["meat and potato stew", "simmered beef and potato"],
+  "techniques": ["slice thinly", "cut into chunks", "stir fry", "make dashi", "simmer", "cover with drop lid"],
+  "ingredients": ["beef", "potato", "onion", "carrot", "shirataki", "dashi", "soy sauce", "sugar", "mirin"]
+}

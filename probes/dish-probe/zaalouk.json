@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/zaalouk",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "salads",
+  "dish": "Zaalouk",
+  "also_called": ["zaalouk d'aubergines", "cooked eggplant and tomato salad", "zaalouk d'aubergine"],
+  "techniques": ["roast", "mash", "simmer"],
+  "ingredients": ["eggplant", "tomato", "garlic", "cumin", "paprika", "olive oil", "coriander", "lemon"]
+}

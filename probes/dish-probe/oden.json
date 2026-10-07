@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/oden",
+  "tier": "drafted",
+  "batch": "japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "one-pot",
+  "dish": "Oden",
+  "also_called": ["Japanese winter hot pot", "simmered fish cakes and daikon"],
+  "techniques": ["make dashi", "parboil", "pour boiling water over", "simmer slowly", "keep warm"],
+  "ingredients": ["daikon", "egg", "konnyaku", "fish cake", "fried tofu", "potato", "kombu", "soy sauce", "mirin"]
+}

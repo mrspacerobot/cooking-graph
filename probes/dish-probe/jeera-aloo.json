@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/jeera-aloo",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "dry-vegetable-dishes",
+  "dish": "Jeera aloo",
+  "also_called": ["cumin potato", "zeera aloo"],
+  "techniques": ["boil", "temper spices in hot fat", "saute"],
+  "ingredients": ["potato", "cumin seed", "turmeric", "green chili", "coriander leaf", "amchur", "oil"]
+}

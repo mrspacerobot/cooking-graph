@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/cotelettes-dagneau-grillees",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "sear",
+  "dish": "Côtelettes d'agneau grillées",
+  "also_called": ["côtelettes d'agneau aux herbes", "lamb chops with herbs"],
+  "techniques": ["marinate", "sear", "baste", "rest"],
+  "ingredients": ["lamb chop", "garlic", "thyme", "rosemary", "olive oil"]
+}

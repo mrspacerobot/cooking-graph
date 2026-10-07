@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/boulfaf",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "grilling",
+  "dish": "Boulfaf",
+  "also_called": ["liver skewers wrapped in caul fat", "kebda mchermla", "brochettes de foie"],
+  "techniques": ["sear", "wrap", "season", "grill"],
+  "ingredients": ["lamb liver", "caul fat", "cumin", "paprika"]
+}

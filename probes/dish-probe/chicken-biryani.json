@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/chicken-biryani",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "rice",
+  "dish": "Chicken biryani",
+  "also_called": ["murgh biryani", "dum biryani"],
+  "techniques": ["marinate", "parboil", "fry", "layer", "steam"],
+  "ingredients": ["chicken", "basmati rice", "yogurt", "onion", "ginger", "garlic", "saffron", "mint", "ghee"]
+}

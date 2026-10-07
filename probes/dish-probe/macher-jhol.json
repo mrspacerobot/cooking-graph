@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/macher-jhol",
+  "tier": "drafted",
+  "batch": "indian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "curry-base",
+  "dish": "Macher jhol",
+  "also_called": ["maacher jhol", "bengali fish curry"],
+  "techniques": ["marinate", "shallow fry", "temper spices in hot fat", "simmer"],
+  "ingredients": ["rohu", "potato", "tomato", "mustard oil", "turmeric", "nigella seed", "green chili", "ginger"]
+}

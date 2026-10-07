@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tourin-a-lail",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "eggs",
+  "dish": "Tourin à l'ail",
+  "also_called": ["tourin", "tourain blanchi", "Périgord garlic soup"],
+  "techniques": ["sweat", "simmer", "separate", "bind with yolks", "poach"],
+  "ingredients": ["garlic", "egg", "duck fat", "flour", "vinegar", "bread", "chicken stock"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bissara",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "soups",
+  "dish": "Bissara",
+  "also_called": ["bessara", "dried fava bean soup", "soupe de fèves"],
+  "techniques": ["soak", "simmer", "puree"],
+  "ingredients": ["dried fava bean", "garlic", "cumin", "olive oil", "paprika"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pruneaux-a-larmagnac",
+  "tier": "drafted",
+  "batch": "fresh-4",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "french",
+  "written_for": "poach",
+  "dish": "Pruneaux à l'armagnac",
+  "also_called": ["prunes in Armagnac", "pruneaux d'Agen à l'armagnac"],
+  "techniques": ["infuse", "poach", "macerate"],
+  "ingredients": ["prune", "armagnac", "black tea", "sugar", "vanilla", "orange peel"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/couscous-tfaya",
+  "tier": "drafted",
+  "batch": "moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "couscous",
+  "dish": "Couscous tfaya",
+  "also_called": ["couscous with caramelised onions and raisins", "couscous tfaya au poulet", "seksu tfaya"],
+  "techniques": ["steam couscous", "caramelise", "braise"],
+  "ingredients": ["couscous", "chicken", "onion", "raisin", "cinnamon", "honey", "butter", "chickpea"]
+}

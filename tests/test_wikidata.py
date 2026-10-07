@@ -140,6 +140,9 @@ class WikidataTest(unittest.TestCase):
         text = wikidata_fetch.query(['crème "fraîche"', "butter"], ("es", "fr"))
         self.assertIn("wd:Q2095", text)
         self.assertIn("wd:Q25403900", text)
+        self.assertIn("wd:Q19861951", text)
+        self.assertIn("wd:Q136769237", text)
+        self.assertIn("(wdt:P31|wdt:P279)/wdt:P279*", text)
         self.assertIn('"crème \\"fraîche\\""@en', text)
         self.assertIn('"es", "fr"', text)
 

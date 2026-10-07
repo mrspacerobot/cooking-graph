@@ -13,7 +13,7 @@ import urllib.request
 
 ENDPOINT = "https://query.wikidata.org/sparql"
 USER_AGENT = "cooking-graph-importer/0.1 (a private knowledge graph; contact the repository owner)"
-FOOD_CLASSES = ("wd:Q2095", "wd:Q25403900")  # food, food ingredient: their labels were fetched and read, not remembered
+FOOD_CLASSES = ("wd:Q2095", "wd:Q25403900", "wd:Q19861951", "wd:Q136769237")  # food, food ingredient, type of food or dish, type of ingredient: labels fetched and read, not remembered
 BATCH = 25
 PAUSE = 1.5
 
@@ -34,7 +34,7 @@ def query(labels, languages):
   VALUES ?enLabel { %s }
   VALUES ?class { %s }
   ?item rdfs:label ?enLabel .
-  ?item wdt:P31/wdt:P279* ?class .
+  ?item (wdt:P31|wdt:P279)/wdt:P279* ?class .
   OPTIONAL { ?item rdfs:label ?name . BIND(LANG(?name) AS ?lang) FILTER(?lang IN (%s)) }
 }""" % (values, " ".join(FOOD_CLASSES), wanted)
 

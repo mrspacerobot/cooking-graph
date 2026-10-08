@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/cheddar",
+  "tier": "drafted",
+  "names": {"en": "Cheddar", "fr": "Cheddar"},
+  "aliases": {"en": ["cheddar cheese"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/grating-cheeses", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A firm, pressed cow's milk cheese of England, mild when young and sharp and crumbly when aged. It grates and melts into a sauce or a topping and browns to a golden crust, though a very old one can turn oily if it is heated hard.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from milk.", "certain": true},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Recorded strictly: cheese is often set with animal rennet.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

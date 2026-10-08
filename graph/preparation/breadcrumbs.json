@@ -2,7 +2,7 @@
   "id": "preparation/breadcrumbs",
   "tier": "drafted",
   "names": {"en": "Breadcrumbs", "fr": "Chapelure"},
-  "aliases": {"en": ["dried breadcrumbs", "breadcrumb"]},
+  "aliases": {"en": ["dried breadcrumbs", "breadcrumb", "fine dry breadcrumbs"]},
   "is": "Stale bread dried and crushed to fine crumbs, which brown to a crisp crust.",
   "parts": [
     {

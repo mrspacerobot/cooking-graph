@@ -1,0 +1,34 @@
+{
+  "id": "dish/mercimek-corbasi",
+  "tier": "drafted",
+  "names": {"en": "Mercimek corbasi"},
+  "aliases": {"en": ["Turkish red lentil soup"]},
+  "is": "A smooth Turkish soup of red lentils, onion, carrot and potato, simmered soft and blended, then finished at the table with a spoon of sizzling red chilli butter and a squeeze of lemon.",
+  "parts": [
+    {"id": "lentil", "role": "main", "options": ["ingredient/red-lentil"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "base", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato-paste",
+      "role": "base",
+      "options": ["ingredient/tomato-paste", "ingredient/red-pepper-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["preparation/chilli-butter"], "optional": false, "tier": "drafted"},
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/puree", "tier": "drafted"},
+    {"thing": "technique/sizzle-chilli-butter", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

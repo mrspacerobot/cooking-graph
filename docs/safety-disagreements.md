@@ -6,7 +6,7 @@ The graph's side is worked out from the ingredients of the dish's recipe, and ev
 | Set | Probes | Answerable | Agreeing | Disagreeing | Of which on strict answers alone |
 |---|---|---|---|---|---|
 | growing | 32 | 20 | 8 | 12 | 11 |
-| held-back | 8 | 2 | 1 | 1 | 1 |
+| held-back | 8 | 3 | 1 | 2 | 1 |
 
 A probe is not answerable when its dish is not in the graph or has no recipe. What a held-back probe disagrees with is counted and never shown.
 

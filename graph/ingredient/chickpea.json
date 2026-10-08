@@ -2,7 +2,7 @@
   "id": "ingredient/chickpea",
   "tier": "drafted",
   "names": {"en": "Chickpea", "fr": "Pois chiche", "it": "cece", "tr": "nohut"},
-  "aliases": {"en": ["garbanzo", "garbanzo bean", "kabuli chana"]},
+  "aliases": {"en": ["garbanzo", "garbanzo bean", "kabuli chana", "chickpeas", "dried chickpeas"]},
   "is_a": [],
   "part_of": [],
   "groups": [

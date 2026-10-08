@@ -2,7 +2,7 @@
   "id": "ingredient/pine-nut",
   "tier": "drafted",
   "names": {"en": "Pine nut", "fr": "Pignon de pin", "es": "Piñón", "it": "pinolo", "tr": "Çam fıstığı"},
-  "aliases": {"en": ["pine kernel", "pignoli", "pinoli"]},
+  "aliases": {"en": ["pine kernel", "pignoli", "pinoli", "pine nuts"]},
   "is_a": [],
   "part_of": [],
   "groups": [],

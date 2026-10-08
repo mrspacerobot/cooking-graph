@@ -2,7 +2,7 @@
   "id": "ingredient/mozzarella",
   "tier": "drafted",
   "names": {"en": "Mozzarella", "fr": "Mozzarella"},
-  "aliases": {},
+  "aliases": {"en": ["fresh mozzarella"]},
   "is_a": [],
   "part_of": [],
   "groups": [],

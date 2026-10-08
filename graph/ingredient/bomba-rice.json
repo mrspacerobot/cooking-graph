@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/bomba-rice",
+  "tier": "drafted",
+  "names": {"en": "Bomba rice", "fr": "Riz bomba"},
+  "aliases": {"en": ["bomba"]},
+  "is_a": [
+    {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/starches", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A short, round rice of eastern Spain that drinks a great deal of stock and swells without breaking. It stays loose and separate where the pan is not stirred, so it is the usual rice for paella and for rice cooked in broth.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

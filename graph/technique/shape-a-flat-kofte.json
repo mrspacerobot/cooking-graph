@@ -1,0 +1,59 @@
+{
+  "id": "technique/shape-a-flat-kofte",
+  "tier": "drafted",
+  "names": {"en": "Shape a flat kofte"},
+  "aliases": {"en": ["shape izgara kofte", "shape grilled kofte"]},
+  "does": "Presses a portion of rested kofte mixture between wet palms into a short, flat oval with a shallow dent from the thumb, so that it holds together over the fire and cooks fast and evenly, and is cooked afterwards on a grill or in a pan.",
+  "how": [
+    "Keep a bowl of water beside the work and wet the hands lightly, so the mixture does not stick.",
+    "Take a portion about the size of a walnut and roll it once between the palms to bring it together.",
+    "Press it into a short oval, a little longer than it is wide, and flatten it so that it is the same thickness from end to end.",
+    "Press the thumb along the middle for a shallow dent, which keeps the middle from puffing up as it cooks.",
+    "Set the pieces on a tray, close in size, and keep them cool until they go on the heat."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Each piece is an even, smooth oval with a shallow dent and no cracks at the edge."},
+    {
+      "sense": "feel",
+      "text": "The piece holds together when it is lifted and springs back a little when it is pressed."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Shaping a mixture that was not worked or rested, so that the pieces crack and fall apart on the grill.",
+      "fix": "Knead it until sticky and let it rest in the cold before shaping."
+    },
+    {
+      "mistake": "Making the pieces thick and round, so that the outside burns before the middle is done.",
+      "fix": "Flatten them to an even, modest thickness."
+    },
+    {
+      "mistake": "Working with dry hands, so that the meat clings and tears.",
+      "fix": "Wet the hands lightly and often."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/knead",
+      "why": "The mixture is worked until it is sticky and holds together before it is shaped.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/shape-meatballs",
+      "differs": "The piece is pressed into a flat oval with a thumb dent and not rolled into a ball, and the mixture takes soaked bread as its binder. It is made to be cooked fast over fierce heat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

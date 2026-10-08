@@ -1,0 +1,64 @@
+{
+  "id": "technique/cook-a-naan",
+  "tier": "drafted",
+  "names": {"en": "Cook a naan"},
+  "aliases": {"en": ["cook naan on a tava", "stretch and cook naan", "blister naan"]},
+  "does": "Stretches a rested ball of naan dough by hand into a teardrop, cooks it on a very hot iron plate until it puffs and blisters, then holds it for a moment over the open flame to char it in spots. The finished bread is brushed with ghee and kept soft under a cloth.",
+  "how": [
+    "Divide the risen dough into equal balls, cover them, and let them rest for a short while.",
+    "Flatten a ball on a floured board, then pull and press it by hand into a teardrop, a little thicker than a chapati.",
+    "Heat the iron plate until a drop of water skips on it. Wet one face of the naan lightly and lay it on the plate wet side down, so that it sticks and steams.",
+    "Cook until bubbles rise across the top and the underside is spotted with brown.",
+    "Turn the naan with the tongs and hold the top over the open flame for a moment, until it is blistered in dark spots.",
+    "Brush at once with melted ghee and keep the naan wrapped in a cloth while the rest are cooked."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Large bubbles lift across the top and the underside is speckled with brown, not black all over."
+    },
+    {"sense": "feel", "text": "The naan is soft and bends without cracking when it is lifted."},
+    {"sense": "smell", "text": "A toasty, buttery smell as the ghee meets the hot bread."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cooking on a plate that is not hot enough, so that the naan dries and turns leathery before it puffs.",
+      "fix": "Let the plate heat well first and cook quickly."
+    },
+    {
+      "mistake": "Rolling the dough thin like a chapati, so that it does not puff or stay soft.",
+      "fix": "Keep it a little thick and stretch it by hand."
+    },
+    {
+      "mistake": "Leaving it on the flame too long, so that it chars to a cinder.",
+      "fix": "Hold it over the flame only for a moment, turning it with tongs."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/naan-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/tava"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/ghee"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-naan-dough",
+      "why": "The dough must be risen before it is stretched and cooked.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/cook-a-chapati",
+      "differs": "The dough is yeast and yogurt dough, stretched by hand into a teardrop and left thicker. It is laid wet side down on the plate so that it sticks and steams, and it is charred over the flame at the end and not puffed whole.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

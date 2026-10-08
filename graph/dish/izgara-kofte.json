@@ -1,0 +1,33 @@
+{
+  "id": "dish/izgara-kofte",
+  "tier": "drafted",
+  "names": {"en": "Izgara kofte"},
+  "aliases": {"en": ["Turkish grilled kofte", "grilled kofte", "sis kofte"]},
+  "is": "Turkish minced beef and lamb worked with minced onion, soaked bread, parsley, cumin and paprika, rested, shaped into flat ovals and grilled over fierce heat. It is the meat kofte, a different dish from the cold red lentil kofte.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "bread", "role": "thickener", "options": ["ingredient/stale-bread"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "paprika", "role": "seasoning", "options": ["ingredient/paprika"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/shape-a-flat-kofte", "tier": "drafted"},
+    {"thing": "technique/knead", "tier": "drafted"},
+    {"thing": "technique/grill-over-charcoal", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

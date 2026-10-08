@@ -2,7 +2,7 @@
   "id": "ingredient/pistachio",
   "tier": "drafted",
   "names": {"en": "Pistachio", "fr": "Pistache"},
-  "aliases": {},
+  "aliases": {"en": ["pistachios"]},
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -1,0 +1,35 @@
+{
+  "id": "ingredient/coconut-milk",
+  "tier": "drafted",
+  "names": {"en": "Coconut milk", "fr": "Lait de coco"},
+  "aliases": {},
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A rich, creamy white liquid squeezed from grated coconut flesh. It carries spice and sweetness into a curry or a soup, thickens as it simmers, and can split if it is boiled hard. The thick part rises to the top of a tin and the thin part stays below.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/tree-nuts",
+        "basis": "It is pressed from coconut, which some lists count as a tree nut; recorded strictly.",
+        "certain": false
+      },
+      {
+        "fact": "fact/sulphites",
+        "basis": "Recorded strictly: some sold coconut milk is kept with sulphites.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/skimmed-milk",
+  "tier": "drafted",
+  "names": {"en": "Skimmed milk", "fr": "Lait écrémé"},
+  "aliases": {"en": ["skim milk"]},
+  "is_a": [
+    {"thing": "ingredient/milk", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Milk with the cream taken off, so it is thin and lean. It gives little richness, scorches and boils over as milk does, and a sauce made with it is lighter and less silky than one made with whole milk.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is milk.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

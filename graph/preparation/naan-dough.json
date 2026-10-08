@@ -1,0 +1,31 @@
+{
+  "id": "preparation/naan-dough",
+  "tier": "drafted",
+  "names": {"en": "Naan dough"},
+  "aliases": {"en": ["yogurt dough for naan"]},
+  "is": "Flour, yeast, yogurt, milk, sugar, salt and a little oil kneaded to a soft, slightly sticky dough and left to rise.",
+  "parts": [
+    {"id": "flour", "role": "main", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "yeast", "role": "base", "options": ["ingredient/yeast"], "optional": false, "tier": "drafted"},
+    {
+      "id": "yogurt",
+      "role": "enrichment",
+      "options": ["ingredient/plain-yogurt"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/sunflower-oil"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-naan-dough", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

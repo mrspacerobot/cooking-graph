@@ -1,0 +1,101 @@
+{
+  "id": "recipe/mercimek-corbasi",
+  "tier": "drafted",
+  "names": {"en": "Mercimek corbasi"},
+  "aliases": {},
+  "makes": "dish/mercimek-corbasi",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/red-lentil", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "lentil"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/diced"], "part": "onion"},
+    {"thing": "ingredient/carrot", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/diced"], "part": "carrot"},
+    {"thing": "ingredient/potato", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/diced"], "part": "potato"},
+    {
+      "thing": "ingredient/tomato-paste",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "tomato-paste"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/water", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/blender", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/potato"],
+      "with": [],
+      "text": "Peel and dice the onion, the carrot and the potato into small, even pieces.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/carrot"],
+      "with": ["ingredient/butter", "ingredient/salt"],
+      "text": "Melt a little of the butter in the pan and soften the onion and the carrot over a low heat, without colour.",
+      "time": {"from": 5, "to": 7, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/red-lentil", "ingredient/potato"],
+      "with": ["ingredient/tomato-paste", "ingredient/cumin", "ingredient/water"],
+      "text": "Rinse the lentils in a sieve under running water. Add them to the pan with the potato, the tomato paste, the cumin and the water, bring to the boil, then simmer gently until the lentils and the potato are completely soft.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/broth"]
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/potato"],
+      "with": ["ingredient/red-lentil", "preparation/broth"],
+      "text": "Blend the soup with the lentils until smooth, loosening it with a little hot water if it is too thick to pour.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/broth"],
+      "with": ["ingredient/salt"],
+      "text": "Return the soup to a simmer, taste it and correct the salt.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sizzle-chilli-butter",
+      "works_on": ["ingredient/butter", "ingredient/chili-flakes"],
+      "with": [],
+      "text": "Melt the rest of the butter in a small pan until it foams, take it off the heat and stir in the chilli flakes until the butter turns bright red.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/chilli-butter"]
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["preparation/broth"],
+      "with": ["preparation/chilli-butter", "ingredient/lemon"],
+      "text": "Ladle the soup into warm bowls, spoon the red butter over each and serve with lemon cut in wedges.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

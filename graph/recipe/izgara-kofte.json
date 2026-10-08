@@ -1,0 +1,99 @@
+{
+  "id": "recipe/izgara-kofte",
+  "tier": "drafted",
+  "names": {"en": "Izgara kofte"},
+  "aliases": {},
+  "makes": "dish/izgara-kofte",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/minced-beef", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/ground-lamb", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/stale-bread", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "bread"},
+    {"thing": "ingredient/parsley", "amount": {"value": 6, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/paprika", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "paprika"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/water", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "water"}
+  ],
+  "equipment": [
+    "equipment/grill", "equipment/skewer", "equipment/tongs", "equipment/mixing-bowl", "equipment/chefs-knife",
+    "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak",
+      "works_on": ["ingredient/stale-bread"],
+      "with": ["ingredient/water"],
+      "text": "Cover the bread with some of the water until it is soft, then squeeze it dry.",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/onion", "ingredient/parsley"],
+      "with": [],
+      "text": "Mince the onion and the parsley very fine, and squeeze the onion in a cloth to take off its juice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "with": [
+        "ingredient/onion", "ingredient/parsley", "ingredient/stale-bread", "ingredient/cumin", "ingredient/paprika",
+        "ingredient/black-pepper", "ingredient/salt"
+      ],
+      "text": "Work the beef and the lamb in a bowl with the onion, the parsley, the soaked bread, the cumin, the paprika, the pepper and the salt, squeezing and folding with the hands for a good while, until the mixture is sticky and holds together. Cover and rest it in the cold.",
+      "time": {"from": 30, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape-a-flat-kofte",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "with": ["ingredient/water"],
+      "text": "With wet hands, press portions of the mixture into short flat ovals, each with a shallow dent from the thumb.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/skewer",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "with": [],
+      "text": "Press each oval lightly along a flat skewer so that it grips the metal and can be turned in one move.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grill-over-charcoal",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "with": [],
+      "text": "Lay the skewers over glowing coals and turn them often, until the kofte are browned all over and firm to the touch. Check one against a trusted guide to doneness.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish", "doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "with": [],
+      "text": "Slide the kofte off the skewers onto a warm platter and serve at once.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

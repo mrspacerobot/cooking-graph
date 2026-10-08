@@ -1,0 +1,39 @@
+{
+  "id": "ingredient/dry-vermouth",
+  "tier": "drafted",
+  "names": {"en": "Dry vermouth", "fr": "Vermouth sec"},
+  "aliases": {"en": ["French vermouth", "extra-dry vermouth"], "es": ["vermut seco"], "it": ["vermut secco"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/wines", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A dry white wine strengthened with spirit and scented with herbs, bark and peel. It is sharper and more aromatic than plain white wine. A splash dissolves the browned bits in a pan, and it is boiled down so that its raw taste of spirit goes and only the acid and the herbal scent are left. A cook who has no white wine often reaches for it in a cream sauce or a fish dish.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "It is a fortified wine.", "certain": true},
+      {"fact": "fact/sulphites", "basis": "Nearly all vermouth holds sulphites.", "certain": false},
+      {"fact": "fact/slaughter-product", "basis": "Wine may be cleared with gelatine or isinglass.", "certain": false},
+      {
+        "fact": "fact/animal-product",
+        "basis": "Wine may be cleared with gelatine, isinglass, egg white or milk protein.",
+        "certain": false
+      },
+      {"fact": "fact/fish", "basis": "Wine may be cleared with isinglass, which comes from fish.", "certain": false},
+      {"fact": "fact/egg", "basis": "Wine may be cleared with egg white.", "certain": false},
+      {"fact": "fact/milk", "basis": "Wine may be cleared with milk protein.", "certain": false}
+    ],
+    "free_of": [
+      "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs",
+      "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": "The mix of herbs and spices is a house secret and is not listed on every bottle. It is recorded here as holding none of the other facts, which a person must check on the bottle in hand."
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": []
+}

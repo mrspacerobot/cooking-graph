@@ -3,7 +3,7 @@
 Written by `./safety strict`. An ingredient holds a fact for certain, or the fact is recorded strictly because a common form of the ingredient may hold it.
 The rows below are the strict ones. How strict to be is for the owner to rule, reason by reason. Every safety record is unverified either way.
 
-335 of the 615 facts that ingredients hold are strict.
+344 of the 628 facts that ingredients hold are strict.
 
 | Fact | Basis | Ingredients |
 |---|---|---|
@@ -20,6 +20,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/alcohol` | Some are seasoned with wine. | andouillette |
 | `fact/alcohol` | Vinegar keeps a trace of the alcohol it is made from. | capers, cornichons, red-wine-vinegar, rice-vinegar, sherry-vinegar, vinegar, white-vinegar, white-wine-vinegar |
 | `fact/animal-product` | Recorded strictly: some are sweetened with honey. | umeboshi |
+| `fact/animal-product` | Wine may be cleared with gelatine, isinglass, egg white or milk protein. | dry-vermouth |
 | `fact/buckwheat` | Some crozets are made of buckwheat flour. | crozets |
 | `fact/celery` | Cooked ham is often made with a stock or an extract that holds celery. | ham |
 | `fact/celery` | Cooked meats are often made with a stock or an extract that holds celery. | pork-brawn |
@@ -44,7 +45,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/egg` | Some makers add egg to thin pastry sheets. | warqa |
 | `fact/egg` | Some pasta is made with egg. | ditalini, small-pasta, spaghetti, trenette |
 | `fact/egg` | Some wines are cleared with egg white. | dry-sherry |
-| `fact/egg` | Wine may be cleared with egg white. | madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
+| `fact/egg` | Wine may be cleared with egg white. | dry-vermouth, madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
 | `fact/fish` | Beer may be cleared with isinglass, which comes from fish. | beer |
 | `fact/fish` | Cider may be cleared with isinglass, which comes from fish. | cider |
 | `fact/fish` | Made from wine, which may be cleared with isinglass from fish. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
@@ -53,7 +54,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/fish` | Recorded strictly: some are seasoned with dried bonito. | umeboshi |
 | `fact/fish` | Recorded strictly: some miso has fish stock added. | miso, red-miso, white-miso |
 | `fact/fish` | Some wines are cleared with fish finings. | dry-sherry |
-| `fact/fish` | Wine may be cleared with isinglass, which comes from fish. | madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
+| `fact/fish` | Wine may be cleared with isinglass, which comes from fish. | dry-vermouth, madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
 | `fact/gluten` | Bought sausage meat is often bound with breadcrumbs or rusk. | sausage-meat |
 | `fact/gluten` | Bought stock and stock cubes often hold wheat. | beef-stock, chicken-stock, fish-stock, stock, vegetable-stock |
 | `fact/gluten` | Buckwheat flour is often milled or mixed with wheat. | buckwheat-flour |
@@ -100,7 +101,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/milk` | Some sausages are made with milk protein. | andouillette, chorizo, morcilla |
 | `fact/milk` | Some wines are cleared with milk protein. | dry-sherry |
 | `fact/milk` | Usually enriched with milk or butter. | sandwich-bread |
-| `fact/milk` | Wine may be cleared with milk protein. | madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
+| `fact/milk` | Wine may be cleared with milk protein. | dry-vermouth, madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
 | `fact/molluscs` | Recorded strictly: some are blended with squid or other molluscs. | fish-cake, kamaboko |
 | `fact/mustard` | Often pickled with mustard seed. | cornichons |
 | `fact/mustard` | Recorded strictly: some are spiced with mustard. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
@@ -111,9 +112,11 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/pork` | It may come from a pig or from a lamb, so the stricter answer is recorded. | caul-fat |
 | `fact/pork` | Most cervelas hold pork, though some are made of beef alone. | cervelas |
 | `fact/pork` | Most gelatin is made from pig skin. | gelatin |
+| `fact/pork` | Traditional merguez holds no pork, but some bought kinds blend it in. | merguez |
 | `fact/sesame` | Many loaves carry sesame seeds. | bread, stale-bread |
 | `fact/sesame` | Recorded strictly: the blend usually holds sesame seeds. | shichimi |
 | `fact/sesame` | Some pita is brushed with oil or topped with sesame seeds. | pita-bread |
+| `fact/slaughter-product` | A natural casing is part of the gut of an animal. | merguez |
 | `fact/slaughter-product` | Beer may be cleared with isinglass. | beer |
 | `fact/slaughter-product` | Brawn is set in the jelly of the pig, which comes from animal bones and skin. | pork-brawn |
 | `fact/slaughter-product` | By tradition it is made with animal rennet. | beaufort, gruyere, reblochon |
@@ -138,7 +141,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/slaughter-product` | Some wines are cleared with animal finings. | dry-sherry |
 | `fact/slaughter-product` | The whey it is made from comes from cheeses set with animal rennet. | anthotyro, mizithra |
 | `fact/slaughter-product` | Traditional versions use animal rennet; the maker has not been checked. | comte, emmental |
-| `fact/slaughter-product` | Wine may be cleared with gelatine or isinglass. | madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
+| `fact/slaughter-product` | Wine may be cleared with gelatine or isinglass. | dry-vermouth, madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
 | `fact/soy` | Bought sausage meat may hold soy protein. | sausage-meat |
 | `fact/soy` | Many bought loaves hold soy flour. | bread, sandwich-bread, stale-bread |
 | `fact/soy` | Most chocolate is made with soy lecithin. | dark-chocolate |
@@ -167,6 +170,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/sulphites` | Jarred brined leaves may be kept with a preservative of sulphites. | vine-leaf |
 | `fact/sulphites` | Made from wine, which nearly always holds sulphites. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
 | `fact/sulphites` | Most cider holds sulphites. | cider |
+| `fact/sulphites` | Nearly all vermouth holds sulphites. | dry-vermouth |
 | `fact/sulphites` | Nearly all wine holds sulphites. | madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
 | `fact/sulphites` | Often kept with sulphites. | dijon-mustard |
 | `fact/sulphites` | Pickles are sometimes kept with sulphites. | capers, cornichons |
@@ -177,7 +181,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/sulphites` | Recorded strictly: some ketchups are kept with sulphites. | ketchup |
 | `fact/sulphites` | Recorded strictly: some sold coconut milk is kept with sulphites. | coconut-milk |
 | `fact/sulphites` | Recorded strictly: they often hold vinegar or dried fruit kept with sulphites. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
-| `fact/sulphites` | Sausages are often kept with sulphites. | andouillette, lyon-sausage |
+| `fact/sulphites` | Sausages are often kept with sulphites. | andouillette, lyon-sausage, merguez |
 | `fact/sulphites` | Some beer holds sulphites. | beer |
 | `fact/sulphites` | Some bottled sake is kept with sulphites. | sake |
 | `fact/sulphites` | Some dried mushrooms are treated with sulphites. | porcini-mushroom |

@@ -1,0 +1,119 @@
+{
+  "id": "recipe/salmorejo",
+  "tier": "drafted",
+  "names": {"en": "Salmorejo"},
+  "aliases": {},
+  "makes": "dish/salmorejo",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/tomato",
+      "amount": {"value": 1, "unit": "kilogram"},
+      "forms": ["form/large-pieces"],
+      "part": "tomato"
+    },
+    {"thing": "ingredient/stale-bread", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "bread"},
+    {"thing": "ingredient/garlic", "amount": {"value": 1, "unit": "clove"}, "forms": ["form/peeled"], "part": "garlic"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 120, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/sherry-vinegar",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "vinegar"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {
+      "thing": "ingredient/serrano-ham",
+      "amount": {"value": 60, "unit": "gram"},
+      "forms": ["form/small-dice"],
+      "part": "ham"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/slotted-spoon", "equipment/blender", "equipment/fine-sieve",
+    "equipment/mixing-bowl", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil-an-egg",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Lower the eggs into a pan of gently boiling water and cook them until the yolks are firm. Lift them out into cold water to cool.",
+      "time": {"from": 9, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Crack and peel the cooled eggs.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Chop the eggs finely and set them aside for the garnish.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/stale-bread", "ingredient/garlic", "ingredient/sherry-vinegar", "ingredient/salt"],
+      "text": "Blend the tomato with the torn bread, the garlic, the vinegar and the salt until completely smooth, and leave it to stand briefly so that the bread swells. Pass it through a fine sieve if the skins are tough.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/olive-oil"],
+      "text": "With the blender running, pour in the oil in a thin stream until the soup is thick, creamy and pale orange. It should coat a spoon.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chill",
+      "works_on": ["ingredient/tomato"],
+      "with": [],
+      "text": "Pour the soup into a bowl, cover it and chill it until it is really cold.",
+      "time": {"from": 2, "to": 4, "unit": "hour"},
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/salt", "ingredient/sherry-vinegar"],
+      "text": "Taste it cold and add salt or a few drops of vinegar if it needs it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/egg", "ingredient/serrano-ham", "ingredient/olive-oil"],
+      "text": "Spoon into small chilled bowls. Scatter over the chopped egg and the ham, and finish with a thread of olive oil.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

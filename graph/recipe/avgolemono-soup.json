@@ -1,0 +1,117 @@
+{
+  "id": "recipe/avgolemono-soup",
+  "tier": "drafted",
+  "names": {"en": "Avgolemono soup"},
+  "aliases": {},
+  "makes": "dish/avgolemono-soup",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/halved"], "part": "onion"},
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/large-pieces"],
+      "part": "carrot"
+    },
+    {
+      "thing": "ingredient/celery",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/large-pieces"],
+      "part": "celery"
+    },
+    {"thing": "ingredient/rice", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/egg", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "avgolemono"},
+    {
+      "thing": "ingredient/lemon-juice",
+      "amount": {"value": 90, "unit": "millilitre"},
+      "forms": [],
+      "part": "avgolemono"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "pepper"},
+    {
+      "thing": "ingredient/dill",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "dill"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/saucepan", "equipment/fine-sieve", "equipment/ladle",
+    "equipment/mixing-bowl", "equipment/whisk", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/water", "ingredient/onion", "ingredient/carrot", "ingredient/celery", "ingredient/salt"],
+      "text": "Put the chicken, onion, carrot and celery in the pot with the water and half of the salt. Bring it slowly to a simmer, skim off the grey foam, and keep it at a gentle simmer until the meat comes easily off the bone. Check a piece against a trusted guide to doneness.",
+      "time": {"from": 45, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/broth"]
+    },
+    {
+      "technique": "technique/strain",
+      "works_on": ["preparation/broth"],
+      "with": [],
+      "text": "Lift the chicken out onto a board and pour the broth through a fine sieve into a clean pot. Throw away the vegetables.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-small-pieces",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "When the chicken is cool enough to handle, drop the skin and bones and pull the meat into small pieces.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-rice",
+      "works_on": ["ingredient/rice"],
+      "with": ["preparation/broth"],
+      "text": "Return the broth to a simmer, add the rice, and cook it in the broth until the grains are tender. Take the pot off the heat and let the bubbling stop.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-avgolemono",
+      "works_on": ["preparation/broth"],
+      "with": ["ingredient/egg", "ingredient/lemon-juice"],
+      "text": "Beat the eggs in a bowl until pale and frothy, then beat in the lemon juice. Beat in ladles of the hot broth, one at a time, until the mixture is warm. Stir it back into the pot, off the heat, and do not let the soup bubble again.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": ["preparation/avgolemono"]
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/broth"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Taste the soup and add salt, pepper or a little more lemon juice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["preparation/broth"],
+      "with": ["preparation/avgolemono", "ingredient/chicken-thigh", "ingredient/dill"],
+      "text": "Stir the chicken back into the soup. Ladle it into warm bowls and scatter over a little dill. Serve soon, and warm it only gently if it must wait.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

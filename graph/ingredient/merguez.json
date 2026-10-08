@@ -1,0 +1,41 @@
+{
+  "id": "ingredient/merguez",
+  "tier": "drafted",
+  "names": {"en": "Merguez", "fr": "Merguez"},
+  "aliases": {"en": ["merguez sausage", "lamb sausage"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A thin, red, spicy sausage of lamb or beef, seasoned with chilli, cumin and garlic. It gives up a good deal of red fat as it cooks, so it is best cooked apart and set on top of a dish rather than left to cloud a broth.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is a sausage of lamb or beef.", "certain": true},
+      {
+        "fact": "fact/pork",
+        "basis": "Traditional merguez holds no pork, but some bought kinds blend it in.",
+        "certain": false
+      },
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "A natural casing is part of the gut of an animal.",
+        "certain": false
+      },
+      {"fact": "fact/sulphites", "basis": "Sausages are often kept with sulphites.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/sesame", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": []
+}

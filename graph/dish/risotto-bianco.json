@@ -1,0 +1,49 @@
+{
+  "id": "dish/risotto-bianco",
+  "tier": "drafted",
+  "names": {"en": "Risotto bianco", "fr": "Risotto blanc"},
+  "aliases": {
+    "en": ["risotto alla parmigiana", "risotto in bianco", "parmesan risotto", "white risotto"],
+    "it": ["risotto in bianco", "risotto alla parmigiana"],
+    "fr": ["risotto au parmesan"]
+  },
+  "is": "A plain northern Italian risotto of short-grained rice cooked in hot stock added a ladle at a time with onion and white wine, and finished off the heat with butter and parmesan until it flows like a slow wave. It has no tomato, saffron or other colour.",
+  "parts": [
+    {
+      "id": "rice",
+      "role": "main",
+      "options": ["ingredient/carnaroli-rice", "ingredient/vialone-nano-rice", "ingredient/arborio-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "wine", "role": "acid", "options": ["ingredient/white-wine"], "optional": true, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock", "ingredient/beef-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "finish", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "cheese", "role": "enrichment", "options": ["ingredient/parmesan"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/toast-rice", "tier": "drafted"},
+    {"thing": "technique/add-stock-gradually", "tier": "drafted"},
+    {"thing": "technique/mantecare", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

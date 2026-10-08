@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/smoked-paprika",
+  "tier": "drafted",
+  "names": {"en": "Smoked paprika", "fr": "Paprika fumé"},
+  "aliases": {
+    "en": ["pimentón de la Vera", "smoked pimentón", "Spanish smoked paprika"],
+    "es": ["pimentón ahumado", "pimentón de la Vera"],
+    "it": ["paprica affumicata"]
+  },
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/ground-spices", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A dark red powder of peppers that were dried slowly over smouldering oak and then ground. It tastes of woodsmoke first and of pepper after, and it comes sweet, bittersweet or hot. It is a spice of its own and not a plain paprika with a hint of smoke, so a dish built on it tastes of a wood fire. Like every ground spice it burns and turns bitter in hot fat within moments, so it is stirred into oil off the heat or straight into liquid, and it is used with a light hand because the smoke can drown a dish.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

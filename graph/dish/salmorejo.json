@@ -1,0 +1,44 @@
+{
+  "id": "dish/salmorejo",
+  "tier": "drafted",
+  "names": {"en": "Salmorejo", "es": "Salmorejo"},
+  "aliases": {"en": ["salmorejo cordobes", "Cordoba tomato soup", "Cordoban cold tomato and bread soup"]},
+  "is": "A thick, cold soup from Cordoba of ripe tomato blended with bread, garlic and a good deal of olive oil until creamy, served with chopped hard-boiled egg and cured ham.",
+  "parts": [
+    {"id": "tomato", "role": "main", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bread",
+      "role": "thickener",
+      "options": ["ingredient/stale-bread", "ingredient/bread"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "vinegar",
+      "role": "acid",
+      "options": ["ingredient/sherry-vinegar", "ingredient/red-wine-vinegar", "ingredient/white-wine-vinegar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "garnish", "options": ["ingredient/egg"], "optional": true, "tier": "drafted"},
+    {
+      "id": "ham",
+      "role": "garnish",
+      "options": ["ingredient/serrano-ham", "ingredient/ham"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/puree", "tier": "drafted"},
+    {"thing": "technique/chill", "tier": "drafted"},
+    {"thing": "technique/boil-an-egg", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

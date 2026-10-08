@@ -1,0 +1,69 @@
+{
+  "id": "dish/chicken-tikka-masala",
+  "tier": "drafted",
+  "names": {"en": "Chicken tikka masala", "fr": "Poulet tikka masala", "es": "pollo tikka masala"},
+  "aliases": {"en": ["tikka masala", "chicken tikka masala curry", "CTM"]},
+  "is": "Boneless chicken marinated in spiced yogurt, threaded on skewers and roasted in strong heat until it chars at the edges, then simmered in a rich, orange gravy of fried onion, tomato and cream. The gravy is milder and creamier than a plain tomato gravy, and the chicken is in pieces that took their char before they met the sauce.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken-breast"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "yogurt", "role": "coating", "options": ["ingredient/plain-yogurt"], "optional": false, "tier": "drafted"},
+    {"id": "paste", "role": "seasoning", "options": ["preparation/spice-paste"], "optional": false, "tier": "drafted"},
+    {"id": "paprika", "role": "seasoning", "options": ["ingredient/paprika"], "optional": false, "tier": "drafted"},
+    {"id": "roasting-oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "sauce",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "tomato-paste",
+      "role": "sauce",
+      "options": ["ingredient/tomato-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "butter",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/ghee"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "cream", "role": "enrichment", "options": ["ingredient/cream"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fenugreek",
+      "role": "seasoning",
+      "options": ["ingredient/dried-fenugreek-leaf"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/marinate-in-yogurt", "tier": "drafted"},
+    {"thing": "technique/fry-masala-base", "tier": "drafted"},
+    {"thing": "technique/cook-in-masala-gravy", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,164 @@
+{
+  "id": "recipe/chicken-tikka-masala",
+  "tier": "drafted",
+  "names": {"en": "Chicken tikka masala"},
+  "aliases": {},
+  "makes": "dish/chicken-tikka-masala",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/chicken-thigh",
+      "amount": {"value": 700, "unit": "gram"},
+      "forms": ["form/large-pieces"],
+      "part": "chicken"
+    },
+    {"thing": "ingredient/plain-yogurt", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "yogurt"},
+    {
+      "thing": "ingredient/kashmiri-red-chilli-powder",
+      "amount": {"value": 2, "unit": "teaspoon"},
+      "forms": [],
+      "part": "paste"
+    },
+    {"thing": "ingredient/turmeric", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "paste"},
+    {"thing": "preparation/garam-masala", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/garlic", "amount": {"value": 5, "unit": "clove"}, "forms": ["form/minced"], "part": "paste"},
+    {"thing": "ingredient/ginger", "amount": {"value": 25, "unit": "gram"}, "forms": ["form/grated"], "part": "paste"},
+    {
+      "thing": "ingredient/green-chilli",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "paste"
+    },
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "roasting-oil"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/sliced"], "part": "onion"},
+    {
+      "thing": "ingredient/tomato",
+      "amount": {"value": 500, "unit": "gram"},
+      "forms": ["form/chopped"],
+      "part": "tomato"
+    },
+    {
+      "thing": "ingredient/tomato-paste",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "tomato-paste"
+    },
+    {"thing": "ingredient/paprika", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "paprika"},
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/water", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/cream", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/sugar", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sugar"},
+    {
+      "thing": "ingredient/dried-fenugreek-leaf",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "fenugreek"
+    },
+    {
+      "thing": "ingredient/coriander-leaf",
+      "amount": {"value": 10, "unit": "gram"},
+      "forms": ["form/chopped"],
+      "part": "coriander"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/blender", "equipment/mixing-bowl", "equipment/skewer",
+    "equipment/roasting-tin", "equipment/saute-pan", "equipment/wooden-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-spice-paste",
+      "works_on": [
+        "ingredient/garlic", "ingredient/ginger", "ingredient/green-chilli", "ingredient/kashmiri-red-chilli-powder"
+      ],
+      "with": ["ingredient/turmeric", "preparation/garam-masala", "ingredient/lemon-juice", "ingredient/salt"],
+      "text": "Blend the garlic, ginger and green chilli with the chilli powder, the turmeric, the garam masala, the lemon juice and half of the salt to a thick paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/spice-paste"]
+    },
+    {
+      "technique": "technique/marinate-in-yogurt",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/plain-yogurt", "preparation/spice-paste"],
+      "text": "Whisk half of the paste into the yogurt. Turn the chicken pieces in it until they are coated all over, cover the bowl and keep it in the fridge. Keep the rest of the paste for the gravy.",
+      "time": {"from": 4, "to": 12, "unit": "hour"},
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    },
+    {
+      "technique": "technique/skewer",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Thread the marinated pieces on skewers, close together but not crushed, and let the extra marinade drip off.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/oil"],
+      "text": "Lay the skewers across a roasting tin, brush the chicken with the oil and roast in a very hot oven, turning once, until the edges are charred in places. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": {"value": 230, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-masala-base",
+      "works_on": ["ingredient/onion", "ingredient/tomato", "preparation/spice-paste"],
+      "with": ["ingredient/butter", "ingredient/tomato-paste", "ingredient/paprika", "ingredient/water"],
+      "text": "Melt the butter in a wide pan and cook the sliced onion until it is soft and golden. Stir in the rest of the paste, the paprika and the tomato paste for a moment, then add the chopped tomato and the water. Cook down, mashing the tomato with the spoon, until the fat shines at the edge of the sauce.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/tomato"],
+      "with": [],
+      "text": "Blend the sauce until it is smooth and silky, and return it to the pan.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-in-masala-gravy",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/cream", "ingredient/sugar", "ingredient/dried-fenugreek-leaf"],
+      "text": "Slide the chicken off the skewers into the sauce with any juices from the tin. Simmer gently, uncovered, so that the sauce clings to the pieces, then stir in the cream, the sugar and the dried fenugreek leaf crushed between the palms. Check a piece against a trusted guide to doneness.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/salt", "ingredient/sugar"],
+      "text": "Taste the gravy and adjust the salt and the sugar until it is mild, rich and a little tangy.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/coriander-leaf"],
+      "text": "Scatter the coriander leaves over the chicken and serve it hot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

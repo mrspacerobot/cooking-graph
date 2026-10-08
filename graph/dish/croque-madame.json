@@ -1,0 +1,36 @@
+{
+  "id": "dish/croque-madame",
+  "tier": "drafted",
+  "names": {"en": "Croque madame", "fr": "Croque-madame"},
+  "aliases": {"en": ["croque-madame"]},
+  "is": "A croque monsieur of ham and gruyère on white bread, spread with béchamel and browned under the grill until it bubbles, and crowned with a fried egg.",
+  "parts": [
+    {
+      "id": "sandwich-bread",
+      "role": "base",
+      "options": ["ingredient/sandwich-bread"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "ham", "role": "filling", "options": ["ingredient/ham"], "optional": false, "tier": "drafted"},
+    {
+      "id": "gruyere",
+      "role": "filling",
+      "options": ["ingredient/gruyere", "ingredient/emmental", "ingredient/comte"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "topping", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/layer", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"},
+    {"thing": "technique/pan-fry", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": []
+}

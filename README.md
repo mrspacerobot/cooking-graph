@@ -93,6 +93,7 @@ the browser instructions in `AGENTS.md`.
 | `./stand-ins <recipe> [--avoid <fact>]` | Other part options, contextual stand-ins and recorded exclusions, for every recipe line |
 | `./recipes <technique>` | Recipes whose steps use the technique, teaching dishes first |
 | `./kitchen <technique> [food ...] [--avoid <fact>]` | Recipes ranked by missing required parts, with each line's available option, stand-in or missing ingredient |
+| `./compose --technique <t> [--technique <t> ...] [food ...] [--avoid <fact>] [--servings <n>] [--top <n>]` | Recipes that practise the techniques, covering the most first, adapted to what is at home: stand-ins, amounts converted by a recorded ratio and scaled to servings, and each step with what to read in place of what |
 
 They need Python 3.9 or later and nothing else.
 
@@ -106,6 +107,8 @@ For example:
 ./stand-ins recipe/sole-meuniere --avoid fact/milk
 ./recipes technique/sear
 ./kitchen technique/sear ingredient/salmon ingredient/sunflower-oil ingredient/salt
+./compose --technique technique/sear --technique technique/mount-with-butter --servings 4 \
+  ingredient/chicken-thigh ingredient/butter ingredient/olive-oil ingredient/lemon ingredient/salt
 ```
 
 These are internal exploration commands. Every answer says safety records are unverified.
@@ -116,8 +119,12 @@ Only direct statements are used. No reverse or chained stand-in is inferred. A l
 is what the recipe makes and the techniques and preparations of steps that handle that line. An explicit
 `not_when` overrides a positive statement or a part option. A replacement must fit each
 technique that works on the original. A part option supplies no ratio or caveat unless a
-stand-in statement records them. Recipe amounts and starting forms are returned unchanged;
-the commands do not adapt steps, calculate converted amounts or test a recipe in a kitchen.
+stand-in statement records them. `./stand-ins`, `./recipes` and `./kitchen` return recipe amounts and
+starting forms unchanged. `./compose` converts an amount only where a stand-in statement records a ratio
+of the same measure (weight, volume or count) as the amount's unit; otherwise it says why it did not.
+It never edits a step's words: each step comes back as written, with a `read_as` list of what to read in
+place of what. None of the commands tests a recipe in a kitchen, and `./compose` does not write a new
+recipe: it adapts one the graph already holds, with no model involved.
 An exclusion-only statement has `allows: false`: it asserts only its `not_when`,
 and never enables the replacement in other contexts.
 

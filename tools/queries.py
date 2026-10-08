@@ -143,3 +143,96 @@ def kitchen(things, technique_word, at_home, avoid=()):
     answer["recipes"] = [home_recipe(things, row, home, avoided) for row in answer["recipes"]]
     answer["recipes"].sort(key=lambda row: (row["missing_count"], not row["teaches"], row["recipe"]))
     return answer
+
+
+# A ratio is by weight, volume or count. A unit outside this table (a pinch) has no measure, so no ratio applies.
+MEASURE_OF_UNIT = {"gram": "weight", "kilogram": "weight", "millilitre": "volume", "litre": "volume",
+                   "teaspoon": "volume", "tablespoon": "volume", "piece": "count", "clove": "count",
+                   "sprig": "count", "leaf": "count", "slice": "count"}
+
+
+def number(value):
+    value = round(value, 2)
+    return int(value) if value == int(value) else value
+
+
+def amount_of(amount, factor):
+    return {"value": number(amount["value"] * factor), "unit": amount["unit"]}
+
+
+def scaling(recipe, servings):
+    """The factor to multiply every amount by, the servings asked for, and a note when they cannot be applied."""
+    if servings is None:
+        return 1, None, None
+    if servings <= 0:
+        raise ValueError("servings must be more than zero")
+    yields = recipe["yields"]
+    if yields["unit"] != "serving":
+        return 1, None, "The recipe yields in %s, not servings; amounts are as written." % yields["unit"]
+    return servings / yields["value"], {"from": number(yields["value"]), "to": number(servings)}, None
+
+
+def line_amount(amount, status, choice, factor):
+    needed = amount_of(amount, factor)
+    answer = {"original": needed, "for_home": None, "note": None}
+    if status == "at-home":
+        answer["for_home"] = needed
+    elif status != "missing":
+        ratio = choice["ratio"]
+        if ratio is None:
+            answer["note"] = "No ratio is recorded for this swap, so the amount is not converted."
+        elif MEASURE_OF_UNIT.get(amount["unit"]) != ratio["by"]:
+            answer["note"] = "The recorded ratio is by %s and does not fit this amount, so it is not converted." % ratio["by"]
+        else:
+            answer["for_home"] = amount_of(amount, factor * ratio["stand_in"] / ratio["original"])
+    return answer
+
+
+def steps_as_read(recipe, parts):
+    """Each step as written, and which ingredient to read in place of which, from the parts already answered."""
+    replaced = {line["original"]: line["choice"]["thing"] for part in parts for line in part["lines"]
+                if line["status"] not in ("at-home", "missing")}
+    return [{"technique": step["technique"], "text": step["text"], "time": step["time"],
+             "temperature": step["temperature"], "safety_points": step["safety_points"],
+             "read_as": [{"original": thing_id, "instead": replaced[thing_id]}
+                         for thing_id in step["works_on"] + step["with"] if thing_id in replaced]}
+            for step in recipe["steps"]]
+
+
+def compose_recipe(things, row, home, avoided, factor):
+    answer = home_recipe(things, row, home, avoided)
+    recipe = things[row["recipe"]].data
+    amounts = {(line["part"], line["thing"]): line["amount"] for line in recipe["ingredients"]}
+    answer["missing"] = []
+    for part in answer["parts"]:
+        for line in part["lines"]:
+            line["amount"] = line_amount(amounts[(part["part"], line["original"])], line["status"], line["choice"], factor)
+            if line["status"] == "missing" and not part["optional"]:
+                answer["missing"].append({"part": part["part"], "original": line["original"]})
+    answer["steps"] = steps_as_read(recipe, answer["parts"])
+    return answer
+
+
+def compose(things, technique_words, at_home, avoid=(), servings=None, top=5):
+    """Recipes that practise the techniques, adapted to what is at home: the stand-ins, amounts and steps as read."""
+    if not technique_words:
+        raise ValueError("name at least one technique")
+    if top < 1:
+        raise ValueError("top must be at least one")
+    techniques = resolve_many(things, technique_words, ("technique",))
+    home = resolve_many(things, at_home, FOODS)
+    avoided = resolve_many(things, avoid, ("fact",))
+    found = {}
+    for technique_id in techniques:
+        for row in recipes(things, technique_id)["recipes"]:
+            earlier = found.get(row["recipe"], row)
+            found[row["recipe"]] = dict(row, teaches=row["teaches"] or earlier["teaches"])
+    answers = []
+    for recipe_id, row in found.items():
+        used = {step["technique"] for step in things[recipe_id].data["steps"]}
+        row = dict(row, covered=[one for one in techniques if one in used], uncovered=[one for one in techniques if one not in used])
+        factor, asked, note = scaling(things[recipe_id].data, servings)
+        answer = compose_recipe(things, row, home, avoided, factor)
+        answers.append(dict(answer, servings=asked, scaling_note=note))
+    answers.sort(key=lambda row: (len(row["uncovered"]), row["missing_count"], not row["teaches"], row["recipe"]))
+    return {"techniques": techniques, "at_home": home, "avoid": avoided, "safety": SAFETY, "recipes": answers[:top]}

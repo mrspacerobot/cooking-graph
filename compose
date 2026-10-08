@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+"""Adapt recipes to several techniques and what is at home."""
+
+import os
+import sys
+
+from tools import query_command
+
+sys.exit(query_command.main(os.path.dirname(os.path.abspath(__file__)), "compose"))

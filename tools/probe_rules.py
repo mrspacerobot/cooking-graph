@@ -4,7 +4,7 @@ from tools import names, probes, writing
 from tools.reading import Issue
 from tools.rules import linked, of_kind, skills_of
 
-PROBE_KINDS = ("dish-probe", "safety-probe", "stand-in-probe", "kitchen-probe")
+PROBE_KINDS = ("dish-probe", "safety-probe", "stand-in-probe", "kitchen-probe", "compose-probe")
 
 
 def every_skill(things):
@@ -176,12 +176,15 @@ def nothing_drafted_towards_held_back(things):
 
 def question_once_per_batch(things):
     issues = []
-    for kind in ("stand-in-probe", "kitchen-probe"):
+    for kind in ("stand-in-probe", "kitchen-probe", "compose-probe"):
         owners = {}
         for probe_id, thing in of_kind(things, kind):
             data = thing.data
             if kind == "stand-in-probe":
                 question = tuple(names.plain(data[field]) for field in ("recipe", "ingredient", "candidate"))
+            elif kind == "compose-probe":
+                question = (tuple(sorted({names.plain(word) for word in data["techniques"]})),
+                            tuple(sorted({names.plain(word) for word in data["at_home"]})))
             else:
                 question = (names.plain(data["technique"]), tuple(sorted({names.plain(word) for word in data["at_home"]})))
             key = (data["batch"], question)

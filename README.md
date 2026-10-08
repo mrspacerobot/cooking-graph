@@ -24,7 +24,7 @@ unverified. Nothing here may be shown to a cook or exported to an app.
 | `graph/source/` | The pages a fact was read in, each with the day it was read and its reuse terms |
 | `probes/dish-probe/` | The dish probes: well-known dishes the graph must be able to express |
 | `probes/safety-probe/` | The safety probes: what a well-known dish holds and does not hold |
-| `probes/stand-in-probe/`, `probes/kitchen-probe/` | Independent question probes, with one in five held back by the hash rule |
+| `probes/stand-in-probe/`, `probes/kitchen-probe/`, `probes/compose-probe/` | Independent question probes, with one in five held back by the hash rule. A compose probe names several techniques and a pantry |
 | `schema/model.json` | The model: every kind, its fields and what each may hold |
 | `schema/words.json` | The closed word lists: tiers, units, roles |
 | `tools/`, `tests/` | The commands and their tests. Python standard library only |

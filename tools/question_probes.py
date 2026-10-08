@@ -2,7 +2,7 @@
 
 from tools import names, probes, queries
 
-KINDS = ("stand-in-probe", "kitchen-probe")
+KINDS = ("stand-in-probe", "kitchen-probe", "compose-probe")
 SETS = ("growing", "held-back")
 
 
@@ -69,9 +69,25 @@ def answer_kitchen(probe, things):
     return result(probe, "answered", [])
 
 
+def answer_compose(probe, things):
+    """Answered when every expected dish has a recipe that uses every named technique with no required part missing."""
+    try:
+        answer = queries.compose(things, probe["techniques"], probe["at_home"], top=len(things))
+    except ValueError as error:
+        return result(probe, "not-answerable", [str(error)])
+    ready = {row["makes"] for row in answer["recipes"] if row["missing_count"] == 0 and not row["uncovered"]}
+    ready_names = set()
+    for whole in ready:
+        ready_names.update(names.plain_names(things[whole].data))
+    missing = [dish for dish in probe["dishes"] if names.plain(dish) not in ready_names]
+    if missing:
+        return result(probe, "not-answerable", ["no recipe with every technique and all required parts for " + dish for dish in missing])
+    return result(probe, "answered", [])
+
+
 def run(things, batch=None):
     found = {kind: {set_name: [] for set_name in SETS} for kind in KINDS}
-    answerers = {"stand-in-probe": answer_stand_in, "kitchen-probe": answer_kitchen}
+    answerers = {"stand-in-probe": answer_stand_in, "kitchen-probe": answer_kitchen, "compose-probe": answer_compose}
     for thing_id, thing in sorted(things.items()):
         if thing.kind not in KINDS or (batch is not None and thing.data["batch"] != batch):
             continue

@@ -21,7 +21,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/asparagus",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/asperges-hollandaise"],
+      "ratio": null,
+      "caveat": "Peas are small and sweet and cannot be served as spears under the sauce.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/potato",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/aloo-gobi", "technique/roast"],
+      "ratio": null,
+      "caveat": "Peas do not give a crisp, starchy, fluffy roasted result.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q29472543", "tier": "sourced"}

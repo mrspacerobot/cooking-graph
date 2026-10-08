@@ -19,7 +19,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/garlic",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/spice-paste", "technique/fry-masala-base"],
+      "ratio": null,
+      "caveat": "Ginger is warm and sharp where garlic is pungent and savoury, so the base tastes different.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/green-chilli",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/spice-paste"],
+      "ratio": null,
+      "caveat": "Ginger brings warmth and bite but not the clean chilli heat or green freshness.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"},
     {"thing": "cuisine/japanese", "tier": "drafted"}

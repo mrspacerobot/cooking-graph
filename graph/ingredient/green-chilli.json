@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/garlic",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/spice-paste", "technique/fry-masala-base"],
+      "ratio": null,
+      "caveat": "Green chilli adds heat and a fresh green note, but none of garlic's savoury depth.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],

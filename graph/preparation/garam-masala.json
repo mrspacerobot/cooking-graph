@@ -26,7 +26,26 @@
     {"thing": "technique/roast-spices", "tier": "drafted"},
     {"thing": "technique/grind", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/amchur",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/spice-paste", "technique/season"],
+      "ratio": null,
+      "caveat": "Garam masala adds warmth and no sourness, so the dish loses the sharp tang.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/red-chilli-powder",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/spice-paste", "technique/fry-masala-base"],
+      "ratio": null,
+      "caveat": "Garam masala is a warm, sweet-spiced blend and does not bring the heat of chilli.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],

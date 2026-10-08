@@ -40,3 +40,42 @@ Small data fixes from the agents' change requests: chicken breast joins the poul
 | Compose probes, growing / held back | 1 of 32 / 0 of 8 | 1 of 64 / 0 of 16 |
 
 Compose did not move again. On the growing compose-2 questions, with pantry words that do not match exactly dropped, the first blocker is a generic technique the best recipe does not name in 17 of 32 (saute, simmer, pan-fry, toast, soak, boil, whisk, puree and similar), a dish absent in 5, a pantry shortfall in 8 and no recipe using the techniques in 2. The dishes are there; their steps use more specific technique names that are not linked to the general ones.
+
+## Tick 4: technique taxonomy
+
+Two blind drafters read every technique card and 30 general techniques cooks name (sear, saute, simmer, boil, toast, soak, whisk, pan-fry and so on) and proposed which cards are a kind of which. They wrote the same two pairs and nothing else: cut-into-small-pieces is a kind of chop, and parboil-rice is a kind of boil. Both were applied. The taxonomy was mostly complete already, so most "recipe leaves a technique out" blockers are not missing links. They are the probe writer's everyday technique labels against recipes that really do not practise that move (a carbonara has no pan-fry step, a croque monsieur no toast step).
+
+## Tick 5: swaps for the most-used foods with none
+
+48 pairs for 13 foods (bay leaf, bechamel, bouquet garni, clove, fish sauce, garam masala, ginger, green beans, green chilli, nutmeg, peas, soy sauce, turmeric) went to two blind drafters, who wrote 14 and 40 rows (nearly all exclusions). `./stand-in-merge` kept 13 (12 exclusions and bouquet garni for bay leaf), disputed 0, left 28 single-drafter rows unapplied. Several exclusions are obvious traps (turmeric is not chilli) and add little. Foods in no stand-in row went from 292 to 279.
+
+## The hour in numbers (start to end)
+
+| | Start | End |
+|---|---|---|
+| Dishes / recipes / techniques / ingredients | 169 / 188 / 278 / 451 | 178 / 197 / 283 / 453 |
+| Recipe lines with a swap offered | 463 of 1648 | 524 of 1782 |
+| Lines with a card-named swap not offered | 103 | 104 (new dishes added lines) |
+| Foods in no stand-in row | 291 | 279 |
+| Compose probes, growing / held back | 1 of 32 / 0 of 8 | 1 of 64 / 0 of 16 |
+| Stand-in probes, growing / held back | 12 of 52 / 2 of 13 | 12 of 52 / 2 of 13 |
+| Kitchen probes, growing / held back | 8 of 24 / 1 of 6 | 8 of 24 / 1 of 6 |
+| Dish probes held back (bar 95%) | 63 of 98 (64%) | 63 of 98 (64%) |
+
+## What the hour shows
+
+- Content grew and swaps grew, but the probe scores did not move. The compose score is flat at 1 of 64 growing and 0 of 16 held back.
+- On the growing compose-2 questions the first blocker is mostly a generic technique the best recipe does not name (17 of 32), then a pantry shortfall (8). Words that do not match exactly are 24 of the 64 growing questions overall, and a photo step choosing from a closed list would not produce them.
+- The measure itself is probably the weak part: a free-text technique list written by a cook who has not seen the graph asks for moves that real recipes do not contain. A probe that names technique ids from `./vocabulary`, or a human-checked expected list, would measure the graph more fairly. That is a design decision for the owner.
+- Four of the eight compose-1 held-back probes are weakened (read before a rule change). compose-2 is clean: none of its content was read by the drafter.
+
+## Held-back flags in the hour
+
+Dishes drafted and then deleted because the checker reported a held-back probe asks for them: 1 in this hour (shish taouk, with its sauce and recipes, 4 files). None is restored.
+
+## Needs a person
+
+- Whether to widen `grill` to poultry, `cook-on-dum` to vegetables, `cook-pilaf` to other rice and oil, and how to read the stretched `simmer`, `puree`, `deglaze` and `sear` cards.
+- A Thai (and Vietnamese) cuisine node, so fish sauce, green curry paste and the Thai dishes have a home.
+- The one-drafter swap rows left unapplied, among them smoked paprika for plain paprika, and the six deglaze exclusions held back because they contradict the card.
+- Every amount in every new recipe is a guess, and nothing is above drafted. 453 safety records are unverified and there is still no reviewer.

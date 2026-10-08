@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+"""stand-in-merge: keep only the stand-in rows that two drafters, who did not see each other, both wrote.
+
+./stand-in-merge first.json second.json --out agreed.json [--report report.txt]
+
+agreed.json can be applied with the same script that applies any change list. Rows only one drafter
+wrote, and rows they wrote against each other, are listed in the report and never applied.
+"""
+
+import argparse
+import json
+import os
+import sys
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+
+from tools import stand_in_merge  # noqa: E402
+
+parser = argparse.ArgumentParser(prog="stand-in-merge", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+parser.add_argument("first")
+parser.add_argument("second")
+parser.add_argument("--out", required=True, help="where to write the rows both drafters wrote")
+parser.add_argument("--report", help="where to write the report; it is also printed")
+args = parser.parse_args()
+
+with open(args.first, encoding="utf-8") as handle:
+    first = json.load(handle)
+with open(args.second, encoding="utf-8") as handle:
+    second = json.load(handle)
+result = stand_in_merge.merge(first, second)
+with open(args.out, "w", encoding="utf-8") as handle:
+    json.dump(result.agreed, handle, ensure_ascii=False, indent=1)
+    handle.write("\n")
+text = "\n".join(stand_in_merge.report(result))
+if args.report:
+    with open(args.report, "w", encoding="utf-8") as handle:
+        handle.write(text + "\n")
+print(text)

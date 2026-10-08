@@ -1,0 +1,91 @@
+{
+  "id": "recipe/zenzai",
+  "tier": "drafted",
+  "names": {"en": "Zenzai"},
+  "aliases": {},
+  "makes": "dish/zenzai",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/azuki-bean", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "beans"},
+    {"thing": "ingredient/water", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/sugar", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/mochi", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "mochi"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/colander", "equipment/wooden-spoon", "equipment/ladle",
+    "equipment/grill", "equipment/baking-sheet"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/azuki-bean"],
+      "with": ["ingredient/water"],
+      "text": "Rinse the beans in cold water and pick out any that are split or shrivelled.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/azuki-bean"],
+      "with": ["ingredient/water"],
+      "text": "Cover the beans with water, bring them to a boil and let them bubble for a short while.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/azuki-bean"],
+      "with": [],
+      "text": "Tip the beans into a colander and pour away the bitter first water.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/azuki-bean"],
+      "with": ["ingredient/water"],
+      "text": "Return the beans to the pot with fresh water. Simmer gently, topping up the water when it falls below the beans, until the beans can be crushed easily between the fingers.",
+      "time": {"from": 60, "to": 90, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweeten",
+      "works_on": ["ingredient/azuki-bean"],
+      "with": ["ingredient/sugar", "ingredient/salt"],
+      "text": "Stir in the sugar in portions, letting each dissolve before the next, and taste. Add a little salt at the end to round the taste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast-mochi",
+      "works_on": ["ingredient/mochi"],
+      "with": [],
+      "text": "Set the pieces of mochi a little apart on a tray under the grill. Watch them, and turn them once they swell and brown in places. Lift them out as soon as they are puffed and soft.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/azuki-bean"],
+      "with": ["ingredient/mochi"],
+      "text": "Ladle the warm beans and their sweet liquid into bowls and set a piece of toasted mochi in each.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

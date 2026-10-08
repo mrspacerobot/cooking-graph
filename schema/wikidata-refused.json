@@ -1,0 +1,122 @@
+[
+ {
+  "thing": "ingredient/clam",
+  "language": "tr",
+  "label": "deniz tarağı",
+  "why": "That is the Turkish for scallop."
+ },
+ {
+  "thing": "ingredient/chives",
+  "language": "it",
+  "label": "cippolina",
+  "why": "Not the Italian word for chives."
+ },
+ {
+  "thing": "ingredient/bone-marrow",
+  "language": "es",
+  "label": "médula ósea",
+  "why": "The tissue of the body, not the food."
+ },
+ {
+  "thing": "ingredient/bone-marrow",
+  "language": "it",
+  "label": "midollo osseo",
+  "why": "The tissue of the body, not the food."
+ },
+ {
+  "thing": "ingredient/bone-marrow",
+  "language": "tr",
+  "label": "Kemik iliği",
+  "why": "The tissue of the body, not the food."
+ },
+ {
+  "thing": "ingredient/wakame",
+  "language": "es",
+  "label": "Undaria pinnatifida",
+  "why": "A scientific name, not what a cook says."
+ },
+ {
+  "thing": "ingredient/sherry-vinegar",
+  "language": "es",
+  "label": "Denominación de Origen Vinagre de Jerez",
+  "why": "A protected appellation, not the name of the thing."
+ },
+ {
+  "thing": "ingredient/pumpkin",
+  "language": "es",
+  "label": "calabaza gigante",
+  "why": "A kind of squash, not pumpkin."
+ },
+ {
+  "thing": "ingredient/pumpkin",
+  "language": "tr",
+  "label": "bal kabağı",
+  "why": "A kind of squash, not pumpkin."
+ },
+ {
+  "thing": "ingredient/bean-sprout",
+  "language": "fr",
+  "label": "germe de légume sec",
+  "why": "Not a name anyone uses for bean sprouts."
+ },
+ {
+  "thing": "ingredient/kidney-bean",
+  "language": "tr",
+  "label": "Meksika fasulyesi",
+  "why": "Means Mexican bean."
+ },
+ {
+  "thing": "ingredient/cornmeal",
+  "language": "es",
+  "label": "Fubá",
+  "why": "The Brazilian cornmeal, narrower than cornmeal."
+ },
+ {
+  "thing": "ingredient/courgette",
+  "language": "es",
+  "label": "cucurbita pepo",
+  "why": "A species name, not what a cook says."
+ },
+ {
+  "thing": "ingredient/butter-bean",
+  "language": "es",
+  "label": "el frijol ancho",
+  "why": "Written with an article, and ancho is another bean."
+ },
+ {
+  "thing": "ingredient/basil",
+  "language": "it",
+  "label": "foglie di basilico",
+  "why": "That means basil leaves. The word is basilico."
+ },
+ {
+  "thing": "ingredient/mushroom",
+  "language": "it",
+  "label": "fungo epigeo",
+  "why": "A technical term, not the word for a mushroom."
+ },
+ {
+  "thing": "ingredient/mushroom",
+  "language": "tr",
+  "label": "şapkalı mantar",
+  "why": "A technical term, not the word for a mushroom."
+ },
+ {
+  "thing": "ingredient/kashkaval-cheese",
+  "language": "fr",
+  "label": "Cașcaval",
+  "why": "Romanian spelling, not French."
+ },
+ {
+  "thing": "ingredient/whiting",
+  "language": "tr",
+  "label": "Bakalyaro",
+  "why": "That is the Turkish word for cod."
+ },
+ {
+  "thing": "preparation/sofrito",
+  "language": "fr",
+  "label": "sofregit",
+  "why": "The Catalan word, not French."
+ }
+]

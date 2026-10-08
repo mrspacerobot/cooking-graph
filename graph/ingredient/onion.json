@@ -1,7 +1,7 @@
 {
   "id": "ingredient/onion",
   "tier": "drafted",
-  "names": {"en": "Onion", "fr": "Oignon"},
+  "names": {"en": "Onion", "fr": "Oignon", "es": "cebolla", "it": "cipolla", "tr": "soğan"},
   "aliases": {"en": ["yellow onion", "brown onion"]},
   "is_a": [],
   "part_of": [],
@@ -31,10 +31,22 @@
       "ratio": null,
       "caveat": "Stronger and less sweet. Cut it finer and sweat it a little longer.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/spring-onion",
+      "allows": true,
+      "when": ["dish/lahanodolmades", "dish/spanakopita"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sharper and sweeter, and needs a little longer to soften.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"},
     {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3406628", "tier": "sourced"}
   ]
 }

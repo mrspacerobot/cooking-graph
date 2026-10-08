@@ -1,7 +1,7 @@
 {
   "id": "ingredient/green-olive",
   "tier": "drafted",
-  "names": {"en": "Green olive", "fr": "Olive verte"},
+  "names": {"en": "Green olive", "fr": "Olive verte", "es": "olivas verdes", "it": "olive verdi"},
   "aliases": {},
   "is_a": [
     {"thing": "ingredient/olive", "tier": "drafted"}
@@ -23,11 +23,24 @@
     ],
     "note": "Plain cured olives are meant. Olives stuffed with fish, nuts or cheese are another product."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/black-olive",
+      "allows": true,
+      "when": ["dish/weeknight-chicken-with-couscous"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sharper and firmer, with less rich softness.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/moroccan", "tier": "drafted"},
     {"thing": "cuisine/spanish", "tier": "drafted"},
     {"thing": "cuisine/italian", "tier": "drafted"},
     {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q26879770", "tier": "sourced"}
   ]
 }

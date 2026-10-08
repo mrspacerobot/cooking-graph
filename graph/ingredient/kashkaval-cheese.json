@@ -1,7 +1,7 @@
 {
   "id": "ingredient/kashkaval-cheese",
   "tier": "drafted",
-  "names": {"en": "Kashkaval cheese"},
+  "names": {"en": "Kashkaval cheese", "tr": "kaşkaval"},
   "aliases": {"en": ["kashkaval", "kasar", "kasar peyniri"]},
   "is_a": [],
   "part_of": [],
@@ -21,8 +21,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/white-cheese",
+      "allows": true,
+      "when": ["dish/gozleme"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It melts and stretches instead of staying crumbly, and is less salty.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q7220270", "tier": "sourced"}
   ]
 }

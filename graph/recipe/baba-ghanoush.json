@@ -1,0 +1,99 @@
+{
+  "id": "recipe/baba-ghanoush",
+  "tier": "drafted",
+  "names": {"en": "Baba ghanoush"},
+  "aliases": {},
+  "makes": "dish/baba-ghanoush",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/aubergine", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "aubergine"},
+    {"thing": "ingredient/tahini", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "tahini"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 50, "unit": "millilitre"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/water", "amount": {"value": 40, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.75, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/pomegranate-seed",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "pomegranate-seed"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/grill", "equipment/tongs", "equipment/mixing-bowl", "equipment/colander",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/whisk", "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/char",
+      "works_on": ["ingredient/aubergine"],
+      "with": [],
+      "text": "Set the whole aubergines straight on a gas flame or a very hot grill and turn them with tongs until the skin is black and blistered and the flesh has sagged. Move them to a bowl and cover it, so that the steam loosens the skin.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/aubergine"],
+      "with": [],
+      "text": "When the aubergines are cool enough to handle, pull off the skin and tear the flesh open. Leave it in a colander to let the bitter juice run off. Do not rinse it.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/salt"],
+      "text": "Crush the garlic with a little of the salt until it is a damp paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/beat-tahini-sauce",
+      "works_on": ["ingredient/tahini"],
+      "with": ["ingredient/lemon-juice", "ingredient/water", "ingredient/garlic"],
+      "text": "Stir the tahini and the garlic paste into the lemon juice. The mixture will stiffen. Beat in the cold water a spoonful at a time until the sauce is pale, smooth and loose.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tahini-sauce"]
+    },
+    {
+      "technique": "technique/mash-with-a-fork",
+      "works_on": ["ingredient/aubergine"],
+      "with": ["preparation/tahini-sauce"],
+      "text": "Mash the drained flesh with a fork into rough strands, then stir in the tahini sauce until the dip is creamy but still has some texture.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/aubergine"],
+      "with": ["ingredient/salt", "ingredient/lemon-juice"],
+      "text": "Taste, and adjust the salt and the lemon juice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/aubergine"],
+      "with": ["ingredient/olive-oil", "ingredient/pomegranate-seed"],
+      "text": "Spoon the dip into a shallow dish and swirl a well in the middle with the back of the spoon. Pour the olive oil into the well and scatter the pomegranate seeds over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

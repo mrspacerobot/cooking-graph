@@ -1,8 +1,8 @@
 {
   "id": "ingredient/oil",
   "tier": "drafted",
-  "names": {"en": "Oil", "fr": "Huile"},
-  "aliases": {"en": ["cooking oil", "vegetable oil", "neutral oil"]},
+  "names": {"en": "Oil", "fr": "Huile", "es": "aceite vegetal", "it": "olio vegetale", "tr": "Bitkisel yağ"},
+  "aliases": {"en": ["cooking oil", "vegetable oil", "neutral oil"], "fr": ["huile végétale"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -25,6 +25,28 @@
     ],
     "note": "A named oil such as olive or sunflower oil has a file of its own. This one stands for any oil a recipe does not name."
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/ghee",
+      "allows": true,
+      "when": ["dish/palak-paneer", "preparation/fried-onions"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It lacks the nutty, buttery taste.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sunflower-oil",
+      "allows": true,
+      "when": ["dish/karaage", "dish/sfenj", "dish/tonkatsu", "dish/yakisoba"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "It is neutral too, though the taste can vary with the kind.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q4739805", "tier": "sourced"}
+  ]
 }

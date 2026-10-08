@@ -1,0 +1,44 @@
+{
+  "id": "dish/butter-chicken",
+  "tier": "drafted",
+  "names": {"en": "Butter chicken", "es": "pollo con mantequilla", "tr": "Tereyağlı tavuk"},
+  "aliases": {"en": ["murgh makhani", "chicken makhani"]},
+  "is": "Chicken marinated in spiced yogurt and roasted in strong heat until it chars at the edges, then simmered in a smooth, mild gravy of tomato, butter and cream, finished with dried fenugreek leaf.",
+  "parts": [
+    {"id": "chicken", "role": "main", "options": ["ingredient/chicken-thigh"], "optional": false, "tier": "drafted"},
+    {"id": "yogurt", "role": "coating", "options": ["ingredient/plain-yogurt"], "optional": false, "tier": "drafted"},
+    {"id": "paste", "role": "seasoning", "options": ["preparation/spice-paste"], "optional": false, "tier": "drafted"},
+    {"id": "roasting-oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "sauce", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "cream", "role": "enrichment", "options": ["ingredient/cream"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fenugreek",
+      "role": "seasoning",
+      "options": ["ingredient/dried-fenugreek-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/marinate-in-yogurt", "tier": "drafted"},
+    {"thing": "technique/fry-masala-base", "tier": "drafted"},
+    {"thing": "technique/cook-in-masala-gravy", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1322549", "tier": "sourced"}
+  ]
+}

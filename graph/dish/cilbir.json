@@ -1,0 +1,30 @@
+{
+  "id": "dish/cilbir",
+  "tier": "drafted",
+  "names": {"en": "Cilbir"},
+  "aliases": {"en": ["Turkish eggs", "poached eggs in garlic yogurt"]},
+  "is": "Poached eggs laid on cold garlic yogurt and finished with sizzling red chilli butter, so that hot, cold, creamy and spiced meet in one bowl. It is served with bread.",
+  "parts": [
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "yogurt", "role": "base", "options": ["preparation/garlic-yogurt"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "sauce", "options": ["preparation/chilli-butter"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "vinegar",
+      "role": "acid",
+      "options": ["ingredient/white-wine-vinegar"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/make-garlic-yogurt", "tier": "drafted"},
+    {"thing": "technique/sizzle-chilli-butter", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

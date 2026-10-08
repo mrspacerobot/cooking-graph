@@ -1,0 +1,46 @@
+{
+  "id": "technique/beat-sfenj-dough",
+  "tier": "drafted",
+  "names": {"en": "Beat sfenj dough"},
+  "aliases": {},
+  "does": "Mixes flour, warm water, yeast and salt into a very wet, sticky dough and beats it by hand in a bowl, with a wet hand, lifting and slapping it, until it turns stretchy and full of air. It is far too soft to knead on a board.",
+  "how": [
+    "Stir the yeast into part of the warm water with the sugar and let it foam.",
+    "Put the flour and the salt in a large bowl and pour in the yeast water and the rest of the water.",
+    "Beat with a wet hand, lifting the dough high and letting it fall back, again and again.",
+    "Keep beating until the dough is smooth, elastic and bubbly, and drops from the hand in a slow rope."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The dough is sticky and soft, and stretches in a long strand without breaking."},
+    {"sense": "see", "text": "Bubbles show on the surface and the dough no longer sticks in lumps to the bowl."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding more flour to stop the stickiness, which makes a dense doughnut.",
+      "fix": "Keep the dough wet and wet the hand instead."
+    },
+    {"mistake": "Stopping too soon, which leaves a dough without air.", "fix": "Beat until it stretches and bubbles."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/flour", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/bread-dough", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/knead",
+      "differs": "Kneading works a firm dough on a board with the heels of the hands. This dough is too wet for that: it is beaten in a bowl with a wet hand until it stretches, and it is never shaped until it goes into the oil.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

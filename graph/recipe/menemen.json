@@ -1,0 +1,72 @@
+{
+  "id": "recipe/menemen",
+  "tier": "drafted",
+  "names": {"en": "Menemen"},
+  "aliases": {},
+  "makes": "dish/menemen",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/green-pepper", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/tomato", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "chilli"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/wooden-spoon", "equipment/chefs-knife",
+    "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/green-pepper", "ingredient/tomato"],
+      "with": [],
+      "text": "Remove the stems and seeds of the peppers and dice them small. Dice the tomatoes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/green-pepper", "ingredient/tomato"],
+      "with": ["ingredient/butter", "ingredient/salt"],
+      "text": "Melt the butter in a wide pan over a gentle heat. Soften the peppers first, then add the tomatoes and a little salt. Cook until the tomato has collapsed into a thick, juicy base.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-menemen",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/salt"],
+      "text": "Lower the heat and break the eggs straight on to the base. Leave them until the edges begin to set, then stir lightly a few times so that white and yolk only half mix. Take the pan off the heat while the eggs are still soft and moist.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/chili-flakes"],
+      "text": "Scatter the chilli flakes over the top.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Serve at once from the pan, with bread for scooping.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "recipe/tortilla-espanola",
+  "tier": "drafted",
+  "names": {"en": "Tortilla española", "fr": "Tortilla espagnole"},
+  "aliases": {},
+  "makes": "dish/tortilla-espanola",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/potato", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/egg", "amount": {"value": 6, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/non-stick-pan", "equipment/flat-plate", "equipment/colander",
+    "equipment/mixing-bowl", "equipment/whisk", "equipment/spatula", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/vegetable-peeler"
+  ],
+  "steps": [
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Peel the potatoes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/potato", "ingredient/onion"],
+      "with": [],
+      "text": "Cut the potatoes into thin, even slices and the onion into thinner ones.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/potato", "ingredient/onion"],
+      "with": ["ingredient/salt"],
+      "text": "Salt the potato and onion lightly and turn them over by hand so that the salt goes through evenly.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slow-fry-in-olive-oil",
+      "works_on": ["ingredient/potato", "ingredient/onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Pour the oil into a wide, deep pan and warm it. Add the potato and onion and keep the heat low, so that the oil only shimmers. Turn the slices now and then until they give way under the edge of a spoon and have hardly taken any colour.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Tip the slices into a colander set over a bowl and let the oil run off. Keep the oil.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/salt"],
+      "text": "Beat the eggs in a large bowl with the rest of the salt until the whites and the yolks are blended.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/egg", "ingredient/potato", "ingredient/onion"],
+      "with": [],
+      "text": "Fold the warm potato and onion into the eggs, pressing down so that the egg covers them. Leave the mix to stand so that the egg soaks into the potato.",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-a-tortilla",
+      "works_on": ["ingredient/egg", "ingredient/potato"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Warm a spoonful of the kept oil in a small non-stick pan. Pour in the mix and press it level. Cook it gently, running a spatula round the edge, until the underside is golden and the edge has set while the top is still wet.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/flip",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Set a flat plate over the pan, turn both over in one move and slide the cake back into the pan with its pale side down. Tuck the edges in with the spatula and cook the other side briefly.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/egg", "ingredient/potato"],
+      "with": [],
+      "text": "Slide the tortilla onto a plate and let it stand for a while. Cut it in wedges and serve warm or at room temperature. The middle may stay soft or be set firm, as the cook likes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "preparation/hollandaise",
   "tier": "drafted",
-  "names": {"en": "Hollandaise", "fr": "Sauce hollandaise"},
+  "names": {"en": "Hollandaise", "fr": "Sauce hollandaise", "es": "salsa holandesa", "it": "Salsa olandese"},
   "aliases": {"en": ["hollandaise sauce"]},
   "is": "A warm sauce of butter whisked into egg yolks that have been cooked to a foam, sharpened with lemon.",
   "parts": [
@@ -30,8 +30,30 @@
     {"thing": "technique/make-a-sabayon", "tier": "drafted"},
     {"thing": "technique/emulsify", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/bearnaise",
+      "allows": true,
+      "when": ["dish/entrecote-sauce-bearnaise"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Stir in a reduction of vinegar, shallot and tarragon, or it will lack the sharp herb taste.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "preparation/mayonnaise",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/celeri-remoulade", "dish/oeufs-mayonnaise", "dish/tourteau-mayonnaise"],
+      "ratio": null,
+      "caveat": "Hollandaise is warm and runny and melts on a cold dish, and it turns greasy when it cools.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q58259", "tier": "sourced"}
   ]
 }

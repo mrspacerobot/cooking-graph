@@ -1,7 +1,7 @@
 {
   "id": "ingredient/salmon",
   "tier": "drafted",
-  "names": {"en": "Salmon", "fr": "Saumon"},
+  "names": {"en": "Salmon", "fr": "Saumon", "it": "salmone", "tr": "somon"},
   "aliases": {"en": ["salmon fillet"]},
   "is_a": [],
   "part_of": [],
@@ -23,6 +23,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/trout",
+      "allows": true,
+      "when": ["technique/poach", "technique/pan-fry", "technique/bake-in-parchment"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "Salmon is richer and fattier, with a firmer flake.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2796766", "tier": "sourced"}
+  ]
 }

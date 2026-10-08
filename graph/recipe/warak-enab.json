@@ -1,0 +1,112 @@
+{
+  "id": "recipe/warak-enab",
+  "tier": "drafted",
+  "names": {"en": "Warak enab"},
+  "aliases": {},
+  "makes": "dish/warak-enab",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/vine-leaf", "amount": {"value": 40, "unit": "leaf"}, "forms": [], "part": "vine-leaf"},
+    {"thing": "ingredient/rice", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/tomato", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/parsley", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/mint", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "mint"},
+    {"thing": "ingredient/allspice", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "allspice"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 120, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 80, "unit": "millilitre"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/water", "amount": {"value": 400, "unit": "millilitre"}, "forms": [], "part": "water"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/colander", "equipment/mixing-bowl",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak-rice",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/water"],
+      "text": "Cover the rice with cold water and leave it, then drain it well.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/onion", "ingredient/parsley", "ingredient/mint"],
+      "with": [],
+      "text": "Mince the onions, the parsley and the mint fine.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/tomato"],
+      "with": [],
+      "text": "Dice about half the tomatoes small for the filling and slice the rest for lining the pot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/rice", "ingredient/tomato", "ingredient/onion"],
+      "with": [
+        "ingredient/parsley", "ingredient/mint", "ingredient/allspice", "ingredient/salt", "ingredient/olive-oil",
+        "ingredient/lemon-juice"
+      ],
+      "text": "Mix the drained rice, the diced tomatoes and the onions with the parsley, the mint, the allspice, half the salt, half the olive oil and a little of the lemon juice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/salt", "ingredient/lemon-juice"],
+      "text": "Taste the filling. It should be well seasoned, bright and sharp, because the rice will soften the flavour as it cooks.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roll",
+      "works_on": ["ingredient/vine-leaf"],
+      "with": ["ingredient/rice", "ingredient/tomato", "ingredient/onion"],
+      "text": "Rinse the brine off the vine leaves and soak them briefly in hot water to soften them. Trim the stems. Lay a leaf shiny side down, set a little of the filling near the stem end, fold in the sides and roll it up firmly but not tight, so that the rice has room to swell.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer-rolled-leaves",
+      "works_on": ["ingredient/vine-leaf"],
+      "with": [
+        "ingredient/olive-oil", "ingredient/lemon-juice", "ingredient/water", "ingredient/salt", "ingredient/tomato"
+      ],
+      "text": "Line a wide pot with the sliced tomatoes, pack the rolls on top seam down, and pour over the rest of the olive oil, the rest of the lemon juice and the water, with the rest of the salt. Set a plate on the rolls, cover the pot and simmer on a low heat until the leaves and the rice are tender. Leave the rolls to cool in the pot.",
+      "time": {"from": 45, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/rice", "ingredient/tomato"],
+      "with": [],
+      "text": "Lift the rolls onto a dish in tight rows and serve them cold or at room temperature, with lemon on the side.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

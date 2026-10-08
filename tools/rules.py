@@ -23,8 +23,17 @@ def linked(links):
     return [link["thing"] for link in links]
 
 
+SAME_AS_KINDS = ("ingredient", "preparation", "dish")
+
+
 def names_a_source(thing, where):
-    """True for a row that says where a fact is regulated, which names the page it was taken from, and for a fact with such a sourced row."""
+    """True for a row that names the page it was taken from: where a fact is regulated, or the id a public dataset gives a thing.
+
+    A fact with a sourced regulated row may be sourced itself. A thing with an id from a dataset stays drafted:
+    only the row is sourced.
+    """
+    if thing.kind in SAME_AS_KINDS:
+        return where.startswith("same_as[")
     if thing.kind != "fact":
         return False
     if where.startswith("regulated["):
@@ -32,21 +41,34 @@ def names_a_source(thing, where):
     return where == "" and any(row["tier"] == "sourced" for row in thing.data["regulated"])
 
 
-def tiers_earned(things):
-    """Nothing is above drafted, except a fact taken from a source it names, which may be sourced.
-
-    There is no record yet of who reviewed what, so nothing can have earned more.
-    """
+def same_as_source_allowed(things):
+    """An id taken from a public dataset may be sourced only when the source says it may be used in a product that is sold."""
     issues = []
-    for thing_id, thing in sorted(things.items()):
-        for where, node in nested(thing.data):
-            tier = node.get("tier", LOWEST_TIER)
-            if tier == LOWEST_TIER:
-                continue
-            if tier == "sourced" and names_a_source(thing, where):
-                continue
-            message = "'%s' was not earned: only a fact that names its source may be sourced, and nothing is above that yet" % tier
-            issues.append(Issue(thing.path, join(where, "tier"), "tier-not-earned", message))
+    for kind in SAME_AS_KINDS:
+        for thing_id, thing in of_kind(things, kind):
+            for index, row in enumerate(thing.data["same_as"]):
+                source = things.get(row["source"])
+                if row["tier"] == "sourced" and source is not None and source.data["commercial_use"] != "allowed":
+                    message = "'%s' may not be used in a product that is sold, so its id cannot be sourced" % row["source"]
+                    issues.append(Issue(thing.path, "same_as[%d]" % index, "same-as-source-not-allowed", message))
+    return issues
+
+
+def same_as_once(things):
+    """One id of one dataset names one thing. Two things with the same id are probably one thing."""
+    owners = {}
+    for kind in SAME_AS_KINDS:
+        for thing_id, thing in of_kind(things, kind):
+            for row in thing.data["same_as"]:
+                owners.setdefault((kind in FOOD_KINDS and "food" or kind, row["source"], row["id"]), []).append(thing_id)
+    issues = []
+    for (family, source, identifier), sharing in sorted(owners.items()):
+        if len(sharing) < 2:
+            continue
+        for thing_id in sharing:
+            others = ", ".join(other for other in sharing if other != thing_id)
+            message = "the id '%s' of '%s' is also the id of %s" % (identifier, source, others)
+            issues.append(Issue(things[thing_id].path, "same_as", "same-id-twice", message))
     return issues
 
 
@@ -395,7 +417,8 @@ def lines_with_an_em_dash(path):
 
 
 BASE_RULES = [
-    tiers_earned,
+    same_as_source_allowed,
+    same_as_once,
     regulated_once,
     safety_earned,
     facts_answered,

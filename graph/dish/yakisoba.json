@@ -1,0 +1,37 @@
+{
+  "id": "dish/yakisoba",
+  "tier": "drafted",
+  "names": {"en": "Yakisoba"},
+  "aliases": {"en": ["Japanese fried noodles"]},
+  "is": "Wheat noodles fried in a very hot pan with thin pork, cabbage, carrot, onion and bean sprouts, tossed with a sweet and tangy sauce poured round the edge of the pan, and topped with green seaweed powder and pickled ginger.",
+  "parts": [
+    {"id": "noodles", "role": "main", "options": ["ingredient/yakisoba-noodle"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "pork", "role": "main", "options": ["ingredient/pork-belly"], "optional": false, "tier": "drafted"},
+    {"id": "cabbage", "role": "side", "options": ["ingredient/cabbage"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "side", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "side", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "sprouts", "role": "side", "options": ["ingredient/bean-sprout"], "optional": false, "tier": "drafted"},
+    {"id": "sauce", "role": "sauce", "options": ["ingredient/yakisoba-sauce"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "seaweed", "role": "garnish", "options": ["ingredient/aonori"], "optional": true, "tier": "drafted"},
+    {"id": "ginger", "role": "garnish", "options": ["ingredient/pickled-ginger"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/loosen-noodles", "tier": "drafted"},
+    {"thing": "technique/fry-noodles-in-sauce", "tier": "drafted"},
+    {"thing": "technique/stir-fry", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1144102", "tier": "sourced"}
+  ]
+}

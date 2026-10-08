@@ -1,0 +1,115 @@
+{
+  "id": "recipe/bamieh-bi-zeit",
+  "tier": "drafted",
+  "names": {"en": "Bamieh bi zeit"},
+  "aliases": {},
+  "makes": "dish/bamieh-bi-zeit",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/okra", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "okra"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/tomato", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/garlic", "amount": {"value": 5, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "coriander"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 40, "unit": "millilitre"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/frying-pan", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/wooden-spoon", "equipment/slotted-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Slice the onions thin.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Soften the onions in a little of the olive oil in a wide pan, with a little of the salt, until they are soft and lightly golden. Move them to a plate.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/okra"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Trim the stem caps of the okra in a shallow cone, so that the pods stay whole and do not seep. Brown the pods in a hot pan with more of the olive oil, turning them, until they are lightly coloured on all sides.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/tomato"],
+      "with": [],
+      "text": "Dice the tomatoes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/okra"],
+      "with": ["ingredient/onion", "ingredient/tomato", "ingredient/water", "ingredient/salt"],
+      "text": "Return the onions to the pan, add the tomatoes and the water, and bring it to a gentle simmer. Cook until the okra is tender, shaking the pan now and then instead of stirring, so that the pods do not break.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/salt"],
+      "text": "Crush the garlic with a little salt to a rough paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-taqliyeh",
+      "works_on": ["ingredient/garlic", "ingredient/coriander-leaf"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Heat the rest of the olive oil in a small pan. Fry the garlic paste until it is pale gold, then add the chopped coriander and fry only until it wilts and darkens.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/taqliyeh"]
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/okra"],
+      "with": ["preparation/taqliyeh", "ingredient/lemon-juice", "ingredient/salt"],
+      "text": "Stir the sizzling taqliyeh into the pot. Add the lemon juice, then taste and adjust the salt.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/okra"],
+      "with": [],
+      "text": "Spoon the okra into a dish and serve it warm or at room temperature, with bread or rice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

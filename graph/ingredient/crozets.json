@@ -38,5 +38,6 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/savoyard", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

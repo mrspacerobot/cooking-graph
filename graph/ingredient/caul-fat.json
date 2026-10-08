@@ -1,7 +1,7 @@
 {
   "id": "ingredient/caul-fat",
   "tier": "drafted",
-  "names": {"en": "Caul fat", "fr": "Crépine"},
+  "names": {"en": "Caul fat", "fr": "Crépine", "it": "omento"},
   "aliases": {"en": ["caul"]},
   "is_a": [],
   "part_of": [],
@@ -33,5 +33,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q662490", "tier": "sourced"}
   ]
 }

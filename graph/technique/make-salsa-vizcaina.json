@@ -1,0 +1,64 @@
+{
+  "id": "technique/make-salsa-vizcaina",
+  "tier": "drafted",
+  "names": {"en": "Make a Vizcaina sauce"},
+  "aliases": {"en": ["make salsa vizcaina", "make Biscay sauce", "make a Biscayne sauce"]},
+  "does": "Cooks a large quantity of onion very slowly in olive oil until it is sweet and soft, joins it with the pulp of dried choricero peppers that have been soaked until soft, simmers them together and rubs the sauce through a sieve into a thick, smooth, sweet, brick-red sauce for salt cod.",
+  "how": [
+    "Cover the dried peppers with hot water and leave them until they are soft and wrinkled. Split them, scrape the pulp from the skins and keep the soaking water.",
+    "Cook plenty of sliced onion with the garlic in olive oil, with the lid ajar, over a very low heat until it is soft, sweet and pale. Do not let it brown.",
+    "Stir in the pepper pulp and a ladle of the soaking water, and simmer gently until the onion falls apart. For more body, simmer a piece of stale bread in the sauce.",
+    "Rub the sauce through a sieve with the back of a ladle, or blend it and then sieve it, so that no skin is left. Loosen it with soaking water if it is too thick.",
+    "Season with salt at the end, once the sauce has reduced."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The onion is pale, soft and translucent before the pepper goes in, and the sauce is brick-red and smooth after sieving."
+    },
+    {"sense": "taste", "text": "Sweet and deep, with the mild warmth of dried pepper and no raw onion."},
+    {"sense": "feel", "text": "It coats the back of a spoon thickly and falls from it slowly."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Browning the onion, which turns the sauce bitter and dark.",
+      "fix": "Cook it over a very low heat with the lid ajar, and add a splash of water if it begins to colour."
+    },
+    {
+      "mistake": "Leaving out the sieve, so that bits of pepper skin stay in the sauce.",
+      "fix": "Rub the sauce through a sieve until only skin is left."
+    },
+    {"mistake": "Salting early, before the sauce has reduced, which leaves it too salty.", "fix": "Season at the end."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/onion", "tier": "drafted"},
+    {"thing": "ingredient/choricero-pepper", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/salsa-vizcaina", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/fine-sieve", "equipment/ladle"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/soak",
+      "why": "The dried peppers are soaked until soft before their pulp is scraped out.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/sweat",
+      "differs": "The onion is cooked down for much longer until it is a sauce, joined by the pulp of dried peppers, and then rubbed through a sieve. Sweating only softens cut vegetables at the start of a dish.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

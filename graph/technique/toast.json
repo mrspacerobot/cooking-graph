@@ -28,7 +28,8 @@
     {"thing": "group/breads", "tier": "drafted"},
     {"thing": "group/whole-spices", "tier": "drafted"},
     {"thing": "ingredient/walnut", "tier": "drafted"},
-    {"thing": "ingredient/sesame-seed", "tier": "drafted"}
+    {"thing": "ingredient/sesame-seed", "tier": "drafted"},
+    {"thing": "ingredient/almond", "tier": "drafted"}
   ],
   "makes": [],
   "needs": [

@@ -1,0 +1,43 @@
+{
+  "id": "dish/ossobuco-alla-milanese",
+  "tier": "drafted",
+  "names": {"en": "Ossobuco alla milanese", "fr": "Osso buco à la milanaise"},
+  "aliases": {"en": ["ossobuco", "osso buco", "osso buco alla milanese"]},
+  "is": "Thick rings of veal shin, with the marrow in the bone, browned and braised slowly in white wine and stock until the meat is spoon-tender and the marrow is soft. A raw mix of parsley, lemon zest and garlic is scattered over at the table to cut the richness.",
+  "parts": [
+    {"id": "veal", "role": "main", "options": ["ingredient/veal-shank"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "fat", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": [
+        "ingredient/chicken-stock", "ingredient/beef-stock", "ingredient/stock", "ingredient/vegetable-stock"
+      ],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "gremolata", "role": "topping", "options": ["preparation/gremolata"], "optional": false, "tier": "drafted"},
+    {
+      "id": "seasoning",
+      "role": "seasoning",
+      "options": ["ingredient/salt", "ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/braise", "tier": "drafted"},
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/make-a-gremolata", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1057256", "tier": "sourced"}
+  ]
+}

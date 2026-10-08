@@ -1,7 +1,7 @@
 {
   "id": "ingredient/lettuce",
   "tier": "drafted",
-  "names": {"en": "Lettuce", "fr": "Laitue"},
+  "names": {"en": "Lettuce", "fr": "Laitue", "es": "Lechuga", "it": "lattuga"},
   "aliases": {"en": ["butterhead lettuce"]},
   "is_a": [],
   "part_of": [],
@@ -23,5 +23,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q104666136", "tier": "sourced"}
+  ]
 }

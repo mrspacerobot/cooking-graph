@@ -1,7 +1,7 @@
 {
   "id": "ingredient/sandwich-bread",
   "tier": "drafted",
-  "names": {"en": "Sandwich bread", "fr": "Pain de mie"},
+  "names": {"en": "Sandwich bread", "fr": "Pain de mie", "es": "pan de molde"},
   "aliases": {"en": ["white sandwich loaf"]},
   "is_a": [
     {"thing": "ingredient/bread", "tier": "drafted"}
@@ -29,5 +29,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q21080963", "tier": "sourced"}
+  ]
 }

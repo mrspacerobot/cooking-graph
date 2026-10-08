@@ -1,0 +1,7 @@
+{
+  "id": "equipment/cazuela",
+  "tier": "drafted",
+  "names": {"en": "Cazuela"},
+  "aliases": {"en": ["earthenware cazuela", "terracotta cooking dish"]},
+  "use": "A shallow, wide dish of glazed earthenware that goes straight on the flame or into the oven, keeps its heat for a long time and goes to the table with the food still in it."
+}

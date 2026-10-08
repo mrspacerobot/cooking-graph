@@ -1,0 +1,30 @@
+{
+  "id": "dish/tarte-tatin",
+  "tier": "drafted",
+  "names": {"en": "Tarte Tatin", "fr": "Tarte Tatin"},
+  "aliases": {"en": ["upside-down apple tart", "tatin"], "fr": ["tarte des demoiselles Tatin"]},
+  "is": "An upside-down tart of apples cooked in butter and caramel in a heavy pan, covered with pastry, baked and turned out so that the glossy apples sit on top of the crisp pastry.",
+  "parts": [
+    {"id": "apple", "role": "main", "options": ["ingredient/apple"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pastry",
+      "role": "base",
+      "options": ["preparation/puff-pastry", "preparation/shortcrust-pastry"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/bake-a-tarte-tatin", "tier": "drafted"},
+    {"thing": "technique/make-a-caramel", "tier": "drafted"},
+    {"thing": "technique/roll-out", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": []
+}

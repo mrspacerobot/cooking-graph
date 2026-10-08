@@ -1,0 +1,7 @@
+{
+  "id": "equipment/tava",
+  "tier": "drafted",
+  "names": {"en": "Tava"},
+  "aliases": {"en": ["tawa", "tava griddle"]},
+  "use": "A flat or slightly dished plate of iron or steel, set over direct heat to cook flat breads, which brown in spots on its dry surface."
+}

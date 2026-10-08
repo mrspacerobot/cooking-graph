@@ -1,0 +1,28 @@
+{
+  "id": "dish/entrecote-sauce-bearnaise",
+  "tier": "drafted",
+  "names": {"en": "Rib steak with bearnaise sauce", "fr": "Entrecôte sauce béarnaise"},
+  "aliases": {"en": ["steak béarnaise", "steak with bearnaise sauce"], "fr": ["entrecôte béarnaise"]},
+  "is": "A pan-seared rib steak served with a warm, thick sauce of egg yolk and butter, sharp with vinegar and scented with tarragon.",
+  "parts": [
+    {
+      "id": "steak",
+      "role": "main",
+      "options": ["ingredient/rib-steak", "ingredient/beef-steak"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "bearnaise", "role": "sauce", "options": ["preparation/bearnaise"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/sunflower-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-a-bearnaise", "tier": "drafted"},
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": []
+}

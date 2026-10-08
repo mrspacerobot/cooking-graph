@@ -1,7 +1,7 @@
 {
   "id": "ingredient/basil",
   "tier": "drafted",
-  "names": {"en": "Basil", "fr": "Basilic"},
+  "names": {"en": "Basil", "fr": "Basilic", "es": "albahaca", "tr": "fesleğen"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -22,5 +22,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q65522654", "tier": "sourced"}
+  ]
 }

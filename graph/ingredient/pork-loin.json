@@ -1,7 +1,7 @@
 {
   "id": "ingredient/pork-loin",
   "tier": "drafted",
-  "names": {"en": "Pork loin", "fr": "Longe de porc"},
+  "names": {"en": "Pork loin", "fr": "Longe de porc", "es": "Lomo de cerdo", "it": "lonza di maiale"},
   "aliases": {"en": ["loin of pork", "pork roasting joint"]},
   "is_a": [],
   "part_of": [],
@@ -23,6 +23,28 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/veal-roasting-joint",
+      "allows": true,
+      "when": ["technique/roast"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It has a stronger taste and a little more fat, and it dries out as easily.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/pork-tenderloin",
+      "allows": true,
+      "when": ["dish/tonkatsu"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is fattier along the edge, so it tastes richer but is less tender.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q7230136", "tier": "sourced"}
+  ]
 }

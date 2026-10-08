@@ -1,0 +1,28 @@
+{
+  "id": "preparation/khoya-dough",
+  "tier": "drafted",
+  "names": {"en": "Khoya dough"},
+  "aliases": {"en": ["gulab jamun dough"]},
+  "is": "A soft, smooth dough of crumbled khoya, a little flour and milk, rolled into small balls with no cracks, to be fried slowly and soaked in syrup.",
+  "parts": [
+    {"id": "khoya", "role": "main", "options": ["ingredient/khoya"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "base", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {
+      "id": "raising-agent",
+      "role": "base",
+      "options": ["ingredient/baking-soda", "ingredient/baking-powder"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-khoya-dough", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

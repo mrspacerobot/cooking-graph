@@ -21,8 +21,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/kashmiri-red-chilli-powder",
+      "allows": true,
+      "when": ["preparation/spice-paste", "technique/make-spice-paste"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The paste is hotter and duller in colour, so use much less.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

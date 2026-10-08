@@ -21,5 +21,6 @@
     {"thing": "technique/roast", "tier": "drafted"},
     {"thing": "technique/blanch", "tier": "drafted"}
   ],
-  "belongs_to": []
+  "belongs_to": [],
+  "same_as": []
 }

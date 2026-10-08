@@ -1,0 +1,84 @@
+{
+  "id": "recipe/tamagoyaki",
+  "tier": "drafted",
+  "names": {"en": "Tamagoyaki"},
+  "aliases": {},
+  "makes": "dish/tamagoyaki",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "preparation/dashi", "amount": {"value": 60, "unit": "millilitre"}, "forms": [], "part": "dashi"},
+    {"thing": "ingredient/mirin", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "mirin"},
+    {"thing": "ingredient/sugar", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/daikon", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "daikon"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/tamagoyaki-pan", "equipment/mixing-bowl", "equipment/whisk", "equipment/spatula",
+    "equipment/bamboo-rolling-mat", "equipment/grater", "equipment/fine-sieve", "equipment/cutting-board",
+    "equipment/chefs-knife"
+  ],
+  "steps": [
+    {
+      "technique": "technique/whisk",
+      "works_on": ["ingredient/egg"],
+      "with": ["preparation/dashi", "ingredient/mirin", "ingredient/sugar", "ingredient/soy-sauce"],
+      "text": "Beat the eggs with the dashi, the mirin, the sugar and the soy sauce, cutting through the whites with a whisk or chopsticks and not whipping in air, until the mixture runs smooth.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/oil-the-pan",
+      "works_on": ["ingredient/oil"],
+      "with": [],
+      "text": "Heat the rectangular pan over a medium heat and wipe it with a folded paper soaked in oil. Wipe it again before each layer.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roll-in-layers",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/oil"],
+      "text": "Pour in a thin layer of the egg and break any large bubbles. When the top is still wet, roll it up towards you and push the roll to the far end. Oil the pan, pour in more egg under the roll and roll again. Repeat until the egg is used.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape-in-a-mat",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Tip the hot roll onto a bamboo mat, roll it up in the mat and press gently to square the sides. Leave it for a short while to hold its shape.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grate-daikon",
+      "works_on": ["ingredient/daikon"],
+      "with": [],
+      "text": "Grate the daikon and let the juice drain in a fine sieve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Cut the roll in thick slices, lay them cut side up and put a small heap of grated daikon beside them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

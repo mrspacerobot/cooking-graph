@@ -1,0 +1,67 @@
+{
+  "id": "technique/cook-sutlac",
+  "tier": "drafted",
+  "names": {"en": "Cook sutlac"},
+  "aliases": {"en": ["sutlac", "Turkish rice pudding"]},
+  "does": "Simmers washed rice in water until it is soft, then in plenty of milk with sugar, stirring often, until the grains are very tender and the milk has thickened to a loose, creamy pudding that sets a little as it cools.",
+  "how": [
+    "Wash the rice and simmer it in water until it is soft and has drunk most of the water.",
+    "Pour in the milk and stir in the sugar. Bring it back to a gentle simmer.",
+    "Stir often, scraping the base of the pan, until the rice is very soft and the milk has begun to thicken.",
+    "Stir in a smooth slurry of rice flour if the pudding needs more body, and simmer for a short while longer.",
+    "Pour the pudding into bowls while it is still runny, because it thickens as it cools."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The pudding is pale and creamy and coats the spoon, and the grains are swollen and soft."
+    },
+    {
+      "sense": "feel",
+      "text": "The spoon drags a little on the base of the pan, and the pudding is looser than it should be when set."
+    },
+    {"sense": "taste", "text": "Sweet and milky, with no hard centre in the grain."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving it unstirred, so that the milk catches on the base of the pan and scorches.",
+      "fix": "Stir often and keep the heat gentle."
+    },
+    {
+      "mistake": "Cooking it until it is stiff in the pan, so that it sets like glue when cool.",
+      "fix": "Pour it into the bowls while it is still loose."
+    },
+    {
+      "mistake": "Adding the milk to hard rice, so that the grains stay firm in the thick milk.",
+      "fix": "Soften the rice in water first."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/milk", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/milk", "ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/cook-rice",
+      "why": "The rice is first softened in water, as in plain rice cooking.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/cook-rice",
+      "differs": "The rice is cooked in a large amount of milk and stirred often, to a soft, thick pudding. Plain rice is cooked in a measured amount of water, left alone and kept in separate grains.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

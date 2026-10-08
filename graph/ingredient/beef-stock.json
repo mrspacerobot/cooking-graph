@@ -1,7 +1,7 @@
 {
   "id": "ingredient/beef-stock",
   "tier": "drafted",
-  "names": {"en": "Beef stock", "fr": "Bouillon de bœuf"},
+  "names": {"en": "Beef stock", "fr": "Bouillon de bœuf", "es": "Caldo de carne de vaca", "it": "brodo di manzo"},
   "aliases": {"en": ["beef broth"]},
   "is_a": [
     {"thing": "ingredient/stock", "tier": "drafted"}
@@ -40,7 +40,19 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "Bought stock is salted and has little gelatine, so it turns salty before it turns syrupy when it is boiled down.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": true,
+      "when": ["dish/cote-de-porc-charcutiere", "dish/navarin-d-agneau", "technique/braise"],
+      "not_when": ["dish/poulet-a-l-estragon", "dish/vichyssoise", "preparation/avgolemono", "preparation/veloute"],
+      "ratio": null,
+      "caveat": "It is darker and stronger and takes over delicate flavours.",
+      "tier": "drafted"
     }
   ],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q96362190", "tier": "sourced"}
+  ]
 }

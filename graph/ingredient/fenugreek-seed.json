@@ -1,8 +1,8 @@
 {
   "id": "ingredient/fenugreek-seed",
   "tier": "drafted",
-  "names": {"en": "Fenugreek seed", "fr": "Fenugrec"},
-  "aliases": {"en": ["methi seed", "methi dana"]},
+  "names": {"en": "Fenugreek seed", "fr": "Fenugrec", "es": "semilla de alholva", "it": "seme di fieno greco"},
+  "aliases": {"en": ["methi seed", "methi dana"], "fr": ["graine de fenugrec"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -22,8 +22,30 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cumin",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/temper-spices-in-hot-fat"],
+      "ratio": null,
+      "caveat": "It turns very bitter in hot fat and tastes of maple, nothing like cumin.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/mustard-seed",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/temper-spices-in-hot-fat"],
+      "ratio": null,
+      "caveat": "It does not crackle, and it turns bitter fast where mustard seed turns nutty.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q57659978", "tier": "sourced"}
   ]
 }

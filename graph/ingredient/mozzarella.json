@@ -2,7 +2,7 @@
   "id": "ingredient/mozzarella",
   "tier": "drafted",
   "names": {"en": "Mozzarella", "fr": "Mozzarella"},
-  "aliases": {},
+  "aliases": {"en": ["fresh mozzarella"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -24,5 +24,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q14088", "tier": "sourced"}
   ]
 }

@@ -1,8 +1,8 @@
 {
   "id": "ingredient/yeast",
   "tier": "drafted",
-  "names": {"en": "Yeast", "fr": "Levure de boulanger"},
-  "aliases": {"en": ["baker's yeast", "fresh yeast"]},
+  "names": {"en": "Yeast", "fr": "Levure de boulanger", "es": "levadura", "it": "lievito", "tr": "maya"},
+  "aliases": {"en": ["baker's yeast", "fresh yeast"], "fr": ["levure"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -20,5 +20,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q45422", "tier": "sourced"}
+  ]
 }

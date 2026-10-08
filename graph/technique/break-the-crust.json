@@ -1,0 +1,53 @@
+{
+  "id": "technique/break-the-crust",
+  "tier": "drafted",
+  "names": {"en": "Break the crust", "fr": "Casser la croûte"},
+  "aliases": {"en": ["push the crust down", "break the crust of a cassoulet"], "fr": ["casser la croûte du cassoulet"]},
+  "does": "Presses the golden crust that forms on top of a slowly baked pot of beans and meat down into the pot, so that it soaks up the juices and thickens them, then lets a fresh crust form. It is done several times, and the last crust is left whole for the table.",
+  "how": [
+    "Sprinkle a thick layer of crumbs over the beans and meat, with the liquid just below the top.",
+    "Bake at a low heat until a golden crust has formed on the top.",
+    "Press the crust down into the pot with the back of a spoon so that it sinks into the juices. If the pot looks dry, add a ladle of hot liquid.",
+    "Sprinkle on a little more crumbs if the top is bare, and bake until a fresh crust forms.",
+    "Do this several times over the baking. Leave the last crust whole."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A deep golden crust, thicker than a gratin, with the beans below it glossy and moist."},
+    {"sense": "feel", "text": "The spoon cracks through a crisp top into a thick, creamy mass of beans."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Breaking the crust before it has browned, so that the crumbs turn to a paste and it never forms again.",
+      "fix": "Wait for a golden crust before each press."
+    },
+    {
+      "mistake": "Letting the pot dry out under the crust.",
+      "fix": "Add a ladle of hot liquid whenever the beans no longer shine."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/white-beans", "tier": "drafted"},
+    {"thing": "preparation/breadcrumbs", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/earthenware-jar", "equipment/dutch-oven", "equipment/baking-dish"],
+      "tier": "drafted"
+    },
+    {"role": "tool", "options": ["equipment/spoon", "equipment/ladle"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/gratinate",
+      "differs": "A gratin is browned once under strong heat from above and eaten at once. Here the crust is pressed down into the pot several times during a long, low bake, so that it thickens the beans and a new crust takes its place.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

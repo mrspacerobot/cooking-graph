@@ -1,0 +1,29 @@
+{
+  "id": "dish/croquetas-de-jamon",
+  "tier": "drafted",
+  "names": {"en": "Croquetas de jamón", "fr": "Croquettes au jambon"},
+  "aliases": {"en": ["ham croquettes", "ham croquetas"]},
+  "is": "Small logs of a very thick white sauce with chopped ham, chilled firm, coated in flour, egg and breadcrumbs and fried in hot oil until the shell is crisp and the middle is soft and creamy.",
+  "parts": [
+    {"id": "paste", "role": "main", "options": ["preparation/croqueta-paste"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "coating", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "crumbs", "role": "coating", "options": ["preparation/breadcrumbs"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/make-croqueta-paste", "tier": "drafted"},
+    {"thing": "technique/shape-and-crumb-croquetas", "tier": "drafted"},
+    {"thing": "technique/fry-croquetas", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

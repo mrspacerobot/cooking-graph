@@ -1,8 +1,8 @@
 {
   "id": "ingredient/capers",
   "tier": "drafted",
-  "names": {"en": "Capers", "fr": "Câpres"},
-  "aliases": {"en": ["caper"]},
+  "names": {"en": "Capers", "fr": "Câpres", "es": "alcaparra", "it": "cappero"},
+  "aliases": {"en": ["caper"], "fr": ["câpre"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -23,8 +23,21 @@
     ],
     "note": "Whether a trace of alcohol in vinegar counts is for a person to decide."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cornichons",
+      "allows": true,
+      "when": ["preparation/tartar-sauce", "technique/make-tartar-sauce"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "They are smaller and saltier, with less crunch.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3229775", "tier": "sourced"}
   ]
 }

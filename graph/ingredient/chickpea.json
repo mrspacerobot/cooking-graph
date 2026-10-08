@@ -1,8 +1,8 @@
 {
   "id": "ingredient/chickpea",
   "tier": "drafted",
-  "names": {"en": "Chickpea", "fr": "Pois chiche"},
-  "aliases": {"en": ["garbanzo", "garbanzo bean", "kabuli chana"]},
+  "names": {"en": "Chickpea", "fr": "Pois chiche", "it": "cece", "tr": "nohut"},
+  "aliases": {"en": ["garbanzo", "garbanzo bean", "kabuli chana", "chickpeas", "dried chickpeas"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -21,11 +21,24 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/fava-bean",
+      "allows": true,
+      "when": ["technique/fry-fritters"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The fritter is paler and nuttier, and is ground from the soaked seed.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/moroccan", "tier": "drafted"},
     {"thing": "cuisine/indian", "tier": "drafted"},
     {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q21156930", "tier": "sourced"}
   ]
 }

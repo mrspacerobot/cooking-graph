@@ -20,6 +20,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/squid",
+      "allows": true,
+      "when": ["dish/arroz-negro"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is firmer and gives more ink, and needs longer to soften.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
 }

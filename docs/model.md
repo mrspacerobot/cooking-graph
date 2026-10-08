@@ -541,6 +541,27 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 - **Not yet:** nothing finds two things that are one thing and share no word and no listed synonym.
 - **No promotion:** these files are tools and lists. They carry no tier.
 
+### 31. Two kinds that put a review on record: reviewer and review (review record, stage one)
+
+- **Example:** `technique/deglaze` could not be reviewed. The check refused every tier above drafted because nothing could say who read it, when, and against what, so no person could approve anything.
+- **Now:** a `reviewer` (`graph/reviewer/<slug>.json`) has a `kind` (person, model or test-cook), a `model_id` for a model, `knows` (rows of `cuisine` and `how`), a `safety_authority` note only the owner sets, and `added_on`. The slug is chosen by the owner and is never a name, a handle or an email. A `review` (`graph/review/<reviewer>-<topic>-<day>.json`, because a slug starts with a letter) is one session of one reviewer: `reviewer`, the day `on`, the tier it `grants`, the `cuisine` answered for, the `mode` (rows or sample), a `sample` (`seed`, `per_hundred`, `kinds`, `cuisine`; only for the mode sample), what the review was `against` (rows of `how`, `source` and `note`), what it `covers` (rows of `thing`, `field`, `target`, `seen` the hash of what the reviewer saw, `verdict` and `note`), `rulings` on safety disagreements (rows of `probe`, `fact`, `stands` and `why`), the earlier records it `supersedes`, and a `note`. Neither kind has a tier or names: a record is history and is never edited. A fix is a new record that supersedes the old one.
+- **Not yet:** samples, rulings, a review of a safety record, and every tier above reviewed are refused by the rule `review-not-built`. A sample, a ruling and a safety review are later stages in `docs/review-record.md`.
+- **No promotion:** no record exists in the graph. The kinds and the rules are tools. The first record is written by a person.
+
+### 32. What a record backs (review record, stage one)
+
+- **Example:** the rule that refused every tier above drafted had no way to let a reviewed technique stand, and no way to notice that it was edited after it was read.
+- **Now:** a tier above drafted is backed when a live record approves it and the thing is as the reviewer saw it. A record is live when no later record names it in `supersedes`. A record that covers the whole thing (no `field`, no `target`) backs the thing and every statement in it except its safety record. A record that names a `field` and a `target` backs that one statement or part. The hash (`./review seal`) leaves out every tier and the safety record, so setting a tier does not undo a review. If the file changes, the hash no longer matches and the rule `review-stale` takes the tier away. Rules: `tier-not-earned` (no live approving record, or a tier above what the record grants), `model-grants-too-much` (a model grants nothing above sourced, and sourced only against a source), `reviewer-does-not-know-cuisine` (a person who grants reviewed answers for a cuisine they know, or one that is wider than it, and the thing belongs to it), `review-unlinked` (two live records granting one unit one tier, a record that replaces a later one, a rejection that does not name the approval it withdraws), `review-not-built`, and `email-in-repo` (no email address anywhere in the graph). The tier of a fact taken from a source it names may still be sourced, as in change 25.
+- **Not yet:** verified needs a second reviewer, and cook-tested needs cooks. Both stay refused. The safety record of an ingredient stays unverified until stage two.
+- **No promotion:** nothing changes tier in this commit.
+
+### 33. An id from a public dataset: same_as (the open-data skeleton)
+
+- **Example:** nothing said that our aubergine is the aubergine of Wikidata, so no name in another language, and no way to tell two files for one thing apart, could be taken from an open dataset and shown to come from it.
+- **Now:** an ingredient, a preparation and a dish have a list `same_as`. A row is the `source` (a source record), the `id` the dataset gives the thing (for Wikidata, a Q number), and a `tier`. A row may be sourced when its source says it may be used in a product that is sold (`commercial_use: allowed`); the rule `same-as-source-not-allowed` refuses it otherwise. The thing itself stays drafted: a name has no tier, so the names that come with an id are drafted words on a drafted thing, and only the row is sourced. `same-id-twice` refuses one id on two things of a family, which is nearly always one thing written twice. The languages list gains `es`, `it` and `tr`. Names in other scripts are not taken yet, because a name in another script must bring its romanization and the dataset does not give one. `./wikidata` writes only the id and new names, matches only an exact English label to a food or food ingredient, skips anything ambiguous, and changes nothing on a second run. A name that a person read and found wrong for its thing is listed in `schema/wikidata-refused.json` with the reason, and is never written again.
+- **Not yet:** Japanese, Hindi, Arabic and Greek names. Techniques and cuisines have no `same_as`. FoodOn is recorded as a source and nothing is imported from it.
+- **No promotion:** the rows are sourced because a person can open the source and see the id there. The things stay drafted.
+
 ## Decisions where the starting model was silent
 
 These are not changes. The starting model names kinds and statements, not files, so the first files had to settle them.
@@ -549,7 +570,7 @@ These are not changes. The starting model names kinds and statements, not files,
 - **Every field is always written.** An empty list is `[]`. `null` is allowed only where the model says so.
 - **Names are one name per language tag,** English required. A name in another script brings its romanization under `<tag>-Latn`. Other names are `aliases`, by language.
 - **"Is the same move as" is not a statement.** The same move under another name is one technique with two names. What differs makes it a variant: `variant_of` with `differs`.
-- **Nothing is above drafted, and no safety record is verified, until a review can be put on record.** The epic asks for who, when and against what on every tier. No such record exists yet, so the check refuses any tier above drafted. That rule goes when the record comes.
+- **Nothing is above drafted, and no safety record is verified, until a review is on record.** Stage one of the review record is built (changes 31 and 32): a person who knows the cuisine can back reviewed. No record exists yet, so every tier is still drafted. Verified, cook-tested and every safety record stay refused until their stages are built.
 - **A number is `{"value", "unit"}` or `{"from", "to", "unit"}`,** with the unit from the closed list the field names.
 - **A stand-in names its context** as `when` and `not_when`: techniques, preparations or dishes. With `allows: true`, an empty `when` means no context is known to matter. With `allows: false`, only the listed exclusions are asserted.
 - **Ids of public datasets are not built.** Nothing in this slice came from one.

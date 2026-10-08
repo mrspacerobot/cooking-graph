@@ -1,8 +1,14 @@
 {
   "id": "ingredient/mustard-seed",
   "tier": "drafted",
-  "names": {"en": "Mustard seed", "fr": "Graine de moutarde"},
-  "aliases": {"en": ["rai"]},
+  "names": {
+    "en": "Mustard seed",
+    "fr": "Graine de moutarde",
+    "es": "granos de mostaza",
+    "it": "seme di senape",
+    "tr": "hardal tohumu"
+  },
+  "aliases": {"en": ["rai"], "fr": ["graines de moutarde"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -26,5 +32,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1937700", "tier": "sourced"}
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/risotto-arborio-rice-basmati-rice",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Risotto alla milanese",
+  "ingredient": "arborio rice",
+  "candidate": "basmati rice",
+  "verdict": "does-not-work",
+  "why": "Basmati is long and low in the surface starch that makes risotto creamy, so the grains stay separate and the dish turns to pilaf."
+}

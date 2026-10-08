@@ -1,7 +1,7 @@
 {
   "id": "dish/spanakopita",
   "tier": "drafted",
-  "names": {"en": "Spanakopita"},
+  "names": {"en": "Spanakopita", "tr": "Ispanaklı börek"},
   "aliases": {"en": ["Greek spinach pie", "spinach and feta pie"]},
   "is": "A pie of phyllo brushed with olive oil and filled with wilted spinach, feta, spring onions, dill and egg, baked until the top is golden and crackling.",
   "parts": [
@@ -40,5 +40,8 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1190165", "tier": "sourced"}
   ]
 }

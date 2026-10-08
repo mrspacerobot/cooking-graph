@@ -1,0 +1,63 @@
+{
+  "id": "technique/cook-a-dry-vegetable-dish",
+  "tier": "drafted",
+  "names": {"en": "Cook a dry vegetable dish"},
+  "aliases": {"en": ["sabzi", "sukhi sabzi", "sookhi sabji", "dry vegetable curry"]},
+  "does": "Cooks cut vegetables in spiced fat with no added water, under a lid over a low heat, so that they soften in their own steam and end up coated in a thick spiced paste, with no gravy left in the pan.",
+  "how": [
+    "Cut the vegetables into pieces of an even size and pat them dry.",
+    "Start the pan with a tempering of whole spices and a masala base cooked until its fat parts.",
+    "Add the vegetables and stir until they are coated. Add salt.",
+    "Cover the pan and cook over a low heat, lifting the lid and stirring now and then, so that the steam from the vegetables does the cooking. Sprinkle in a spoonful of water only if the pan catches.",
+    "Take off the lid at the end and stir over a higher heat for a short time, until any moisture has gone and the spices cling to the pieces."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The pieces are tender and coated in a thick, dry spice paste, with a little browned crust on some."
+    },
+    {"sense": "feel", "text": "A piece breaks easily under a spoon and a fork goes in with no resistance."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding water at the start, so that the vegetables boil and the dish turns into a watery stew.",
+      "fix": "Trust their own moisture and add only a spoonful if the pan catches."
+    },
+    {
+      "mistake": "Stirring hard, so that soft vegetables break into mush.",
+      "fix": "Stir gently and seldom, and use a wide pan."
+    },
+    {
+      "mistake": "Leaving the lid on to the end, so that the dish is damp and not dry.",
+      "fix": "Take the lid off for the end of the cooking and let the moisture cook away."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/root-vegetables", "tier": "drafted"},
+    {"thing": "ingredient/cauliflower", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil", "ingredient/ghee"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/fry-masala-base",
+      "why": "The vegetables go into a masala base that has already been fried until its fat parts.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/braise",
+      "differs": "No liquid is added, and the pieces are not browned first. The vegetables cook in their own steam under a lid and the dish ends dry, with a coat of spices, and not in a sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

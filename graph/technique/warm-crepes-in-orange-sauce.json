@@ -1,0 +1,62 @@
+{
+  "id": "technique/warm-crepes-in-orange-sauce",
+  "tier": "drafted",
+  "names": {"en": "Warm crêpes in orange sauce", "fr": "Réchauffer les crêpes au beurre d'orange"},
+  "aliases": {"en": ["crepes suzette method", "flame crepes in orange sauce"], "fr": ["flamber les crêpes Suzette"]},
+  "does": "Folds cooked crepes into a hot sauce of caramel, orange and butter, warms them in it and sets a spirit alight over them at the end. The crepes soak up the sauce, and the flame burns off the harshness of the spirit.",
+  "how": [
+    "Make the sauce first in a wide pan: stir the orange juice, some zest and the butter into a pale caramel and simmer until it is syrupy.",
+    "Fold each crepe in half and in half again, to make a fan.",
+    "Lay the crepes in the sauce, spoon the sauce over them and turn them once so that both sides are coated and warm.",
+    "Warm the spirit in a small pan. Take the pan with the crepes off the heat and pour the spirit around the edge, never straight from the bottle.",
+    "Stand back and light it with a long match, or tilt the pan to the flame, and spoon the burning sauce over the crepes until the flame dies.",
+    "Serve at once on warm plates, with the sauce spooned over."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sauce is thick enough to coat a spoon and clings to the crepes in a glossy layer."},
+    {"sense": "smell", "text": "A warm smell of orange and caramel."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring the spirit from the bottle into the hot pan, where the flame can run back into the bottle.",
+      "fix": "Measure the spirit into a small pan first, and pour it around the edge, off the heat."
+    },
+    {
+      "mistake": "Letting the caramel go dark and bitter before the juice goes in.",
+      "fix": "Add the juice as soon as the sugar is a pale amber."
+    },
+    {
+      "mistake": "Soaking the crepes for too long, so that they turn limp and tear.",
+      "fix": "Warm them just long enough to coat them, and serve at once."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/crepe", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/cognac"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-crepes",
+      "why": "The dish starts with crepes that are already cooked, so a cook has to be able to make them thin and supple first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/flambe",
+      "differs": "The flame is not used to start a pan sauce. The crepes are warmed in a finished sauce of caramel, orange and butter, and the spirit is lit at the end, over the whole dish.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

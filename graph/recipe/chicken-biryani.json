@@ -1,0 +1,145 @@
+{
+  "id": "recipe/chicken-biryani",
+  "tier": "drafted",
+  "names": {"en": "Chicken biryani"},
+  "aliases": {},
+  "makes": "dish/chicken-biryani",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/basmati-rice", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/plain-yogurt", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "yogurt"},
+    {
+      "thing": "ingredient/kashmiri-red-chilli-powder",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "paste"
+    },
+    {"thing": "ingredient/turmeric", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "paste"},
+    {"thing": "preparation/garam-masala", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/garlic", "amount": {"value": 5, "unit": "clove"}, "forms": ["form/minced"], "part": "paste"},
+    {"thing": "ingredient/ginger", "amount": {"value": 25, "unit": "gram"}, "forms": ["form/grated"], "part": "paste"},
+    {
+      "thing": "ingredient/green-chilli",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "paste"
+    },
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/onion", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "fried-onions"},
+    {"thing": "ingredient/oil", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "fried-onions"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "litre"}, "forms": [], "part": "rice-water"},
+    {"thing": "ingredient/cardamom", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "cardamom"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "cinnamon"},
+    {"thing": "ingredient/clove", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "clove"},
+    {"thing": "ingredient/bay-leaf", "amount": {"value": 2, "unit": "leaf"}, "forms": [], "part": "bay-leaf"},
+    {"thing": "ingredient/saffron", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "saffron"},
+    {"thing": "ingredient/milk", "amount": {"value": 60, "unit": "millilitre"}, "forms": [], "part": "milk"},
+    {"thing": "ingredient/ghee", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "ghee"},
+    {"thing": "ingredient/mint", "amount": {"value": 15, "unit": "gram"}, "forms": ["form/chopped"], "part": "mint"},
+    {
+      "thing": "ingredient/coriander-leaf",
+      "amount": {"value": 15, "unit": "gram"},
+      "forms": ["form/chopped"],
+      "part": "coriander"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 3, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/flour", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "seal-flour"},
+    {"thing": "ingredient/water", "amount": {"value": 50, "unit": "millilitre"}, "forms": [], "part": "seal-water"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/handi", "equipment/tava", "equipment/colander",
+    "equipment/mixing-bowl", "equipment/frying-pan", "equipment/slotted-spoon", "equipment/saucepan",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/blender"
+  ],
+  "steps": [
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Halve the onions and slice them thin and even, so that they brown together.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-onions-deep-brown",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/oil"],
+      "text": "Fry the onions in the oil in a wide pan, stirring often, until they are deep brown. Lift them out onto paper, and they crisp as they cool.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fried-onions"]
+    },
+    {
+      "technique": "technique/make-spice-paste",
+      "works_on": [
+        "ingredient/garlic", "ingredient/ginger", "ingredient/green-chilli", "ingredient/kashmiri-red-chilli-powder"
+      ],
+      "with": ["ingredient/turmeric", "preparation/garam-masala", "ingredient/lemon-juice", "ingredient/salt"],
+      "text": "Blend the garlic, ginger and green chilli with the chilli powder, the turmeric, the garam masala, the lemon juice and a little of the salt to a thick paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/spice-paste"]
+    },
+    {
+      "technique": "technique/marinate-in-yogurt",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/plain-yogurt", "preparation/spice-paste", "preparation/fried-onions"],
+      "text": "Stir the paste and a handful of the crushed fried onions into the yogurt, turn the chicken in it until it is coated, cover and keep it in the fridge.",
+      "time": {"from": 4, "to": 12, "unit": "hour"},
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    },
+    {
+      "technique": "technique/parboil-rice",
+      "works_on": ["ingredient/basmati-rice"],
+      "with": [
+        "ingredient/water", "ingredient/salt", "ingredient/cardamom", "ingredient/cinnamon", "ingredient/clove",
+        "ingredient/bay-leaf"
+      ],
+      "text": "Rinse the rice until the water is nearly clear and soak it in cold water. Boil it in a large pot of well-salted water with the cardamom, the cinnamon, the cloves and the bay leaves until each grain is nearly tender with a firm core. Drain it at once.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/infuse",
+      "works_on": ["ingredient/milk"],
+      "with": ["ingredient/saffron"],
+      "text": "Warm the milk gently and steep the saffron in it until the milk turns a deep gold.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-on-dum",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/basmati-rice"],
+      "with": [
+        "ingredient/ghee", "ingredient/saffron", "ingredient/milk", "ingredient/mint", "ingredient/coriander-leaf",
+        "preparation/fried-onions", "ingredient/flour", "ingredient/water"
+      ],
+      "text": "Spread the marinated chicken on the bottom of a heavy pot with a little of the ghee. Pile the rice over it in loose layers with the mint, the coriander and the rest of the fried onions, dot it with the ghee and pour the saffron milk over the top. Mix the flour and the water to a firm dough and press a rope of it round the rim so that the lid is sealed. Set the pot on an iron plate over a medium heat for a short spell, then turn the heat to its lowest and leave it undisturbed. Rest it before breaking the seal. Check a piece of chicken against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 40, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Break the seal at the table. Dig down to the bottom with a flat spoon so that the layers of chicken and rice come up together, and serve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

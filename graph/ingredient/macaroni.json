@@ -1,7 +1,7 @@
 {
   "id": "ingredient/macaroni",
   "tier": "drafted",
-  "names": {"en": "Macaroni", "fr": "Macaronis"},
+  "names": {"en": "Macaroni", "fr": "Macaronis", "es": "macarrón", "it": "maccheroni"},
   "aliases": {},
   "is_a": [
     {"thing": "ingredient/pasta", "tier": "drafted"}
@@ -27,5 +27,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q20019", "tier": "sourced"}
+  ]
 }

@@ -1,0 +1,52 @@
+{
+  "id": "technique/make-shortcrust-pastry",
+  "tier": "drafted",
+  "names": {"en": "Make shortcrust pastry", "fr": "Faire une pâte brisée"},
+  "aliases": {"en": ["make pie pastry", "rub in the butter"], "fr": ["faire la pâte brisée", "sabler la pâte"]},
+  "does": "Rubs cold butter into flour with the fingertips until the mixture looks like fine crumbs, then binds it with a little cold water into a dough. Baked, the dough is short, which means crumbly and tender, and not chewy. It is rested in a cool place before it is rolled.",
+  "how": [
+    "Cut the cold butter into small pieces and put it in a bowl with the flour and a little salt.",
+    "Rub the butter into the flour with the tips of the fingers, lifting the mixture as you go to let in air, until it looks like fine crumbs with no big lumps of butter left.",
+    "Sprinkle on cold water a little at a time and cut it in with a knife until the crumbs begin to cling.",
+    "Press the crumbs together into a flat round. Do not knead it.",
+    "Wrap the dough and rest it in a cool place until it is firm, so that the flour relaxes and the butter sets again."
+  ],
+  "cues": [
+    {
+      "sense": "feel",
+      "text": "The crumbs are cool and dry, and the dough holds when it is pinched but does not stick to the fingers."
+    },
+    {"sense": "see", "text": "Small flecks of butter show in the finished dough, and it is not smooth."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Working the butter with warm hands for too long, so that it melts into the flour and the pastry turns greasy and tough.",
+      "fix": "Work fast with the fingertips, and chill the bowl and the butter first if the kitchen is warm."
+    },
+    {
+      "mistake": "Adding too much water, which makes the pastry tough and makes it shrink in the oven.",
+      "fix": "Add the water a spoonful at a time and stop as soon as the dough holds."
+    },
+    {
+      "mistake": "Kneading the dough until it is smooth, which makes it elastic and chewy.",
+      "fix": "Press it together once, and leave it alone."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/flour", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/shortcrust-pastry", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/chefs-knife"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "dish/ratatouille",
   "tier": "drafted",
-  "names": {"en": "Ratatouille", "fr": "Ratatouille"},
+  "names": {"en": "Ratatouille", "fr": "Ratatouille", "tr": "Ratatuy"},
   "aliases": {"en": ["ratatouille niçoise"]},
   "is": "A Provençal stew of summer vegetables with tomato, pepper and aromatics. The classic mix combines aubergine and courgette; a courgette-heavy variation loses the aubergine's creamy texture.",
   "parts": [
@@ -41,5 +41,8 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/provencal", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q183095", "tier": "sourced"}
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "preparation/gremolata",
   "tier": "drafted",
-  "names": {"en": "Gremolata", "fr": "Gremolata"},
+  "names": {"en": "Gremolata", "fr": "Gremolata", "it": "gremolada"},
   "aliases": {},
   "is": "A raw mix of finely chopped parsley, lemon zest and a little garlic, scattered over a rich, slow-cooked dish at the end. It comes from Milan, where it tops ossobuco.",
   "parts": [
@@ -16,5 +16,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q429383", "tier": "sourced"}
   ]
 }

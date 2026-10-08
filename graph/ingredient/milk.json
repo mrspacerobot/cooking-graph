@@ -1,7 +1,7 @@
 {
   "id": "ingredient/milk",
   "tier": "drafted",
-  "names": {"en": "Milk", "fr": "Lait"},
+  "names": {"en": "Milk", "fr": "Lait", "es": "leche", "it": "latte", "tr": "süt"},
   "aliases": {"en": ["whole milk"]},
   "is_a": [],
   "part_of": [],
@@ -29,9 +29,21 @@
       "ratio": null,
       "caveat": "Milk alone leaves a thinner cooking liquid here. Changing the reduction or thickening is a different method.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/water",
+      "allows": true,
+      "when": ["preparation/choux-pastry", "preparation/pancake-batter"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It makes a richer, softer batter that browns faster.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q8495", "tier": "sourced"}
   ]
 }

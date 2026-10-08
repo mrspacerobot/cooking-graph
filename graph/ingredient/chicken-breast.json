@@ -1,0 +1,28 @@
+{
+  "id": "ingredient/chicken-breast",
+  "tier": "drafted",
+  "names": {"en": "Chicken breast", "fr": "Blanc de poulet"},
+  "aliases": {"en": ["chicken breasts"]},
+  "is_a": [],
+  "part_of": [
+    {"thing": "ingredient/chicken", "tier": "drafted"}
+  ],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Lean white meat that cooks fast and dries out the moment it goes too far. It is best cooked gently, or cut thin and cooked quickly, and it takes a marinade, a coat of crumbs or a sauce well.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is chicken.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

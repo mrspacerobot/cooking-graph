@@ -150,7 +150,7 @@ class QuestionProbeSchemaTest(unittest.TestCase):
             data["id"] = probe_id
             data["set"] = "growing"
             self.kitchen.write(path, data)
-            found = {issue.rule for issue in check.check_repository(self.kitchen.root) if issue.path == path}
+            found = {issue.rule for issue in check.check_repository(self.kitchen.root) if issue.path == "/".join(path.split("/")[:2])}
             self.assertIn("held-back-rule", found)
 
     def test_kitchen_requires_nonempty_dishes(self):

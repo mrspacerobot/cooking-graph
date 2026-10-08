@@ -1,7 +1,7 @@
 {
   "id": "ingredient/coffee",
   "tier": "drafted",
-  "names": {"en": "Coffee", "fr": "Café"},
+  "names": {"en": "Coffee", "fr": "Café", "it": "caffè", "tr": "kahve"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -22,5 +22,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q8486", "tier": "sourced"}
   ]
 }

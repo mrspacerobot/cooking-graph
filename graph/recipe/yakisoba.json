@@ -1,0 +1,87 @@
+{
+  "id": "recipe/yakisoba",
+  "tier": "drafted",
+  "names": {"en": "Yakisoba"},
+  "aliases": {},
+  "makes": "dish/yakisoba",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/yakisoba-noodle", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "noodles"},
+    {"thing": "ingredient/water", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/pork-belly", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "pork"},
+    {"thing": "ingredient/cabbage", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "cabbage"},
+    {"thing": "ingredient/carrot", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"], "part": "carrot"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"], "part": "onion"},
+    {"thing": "ingredient/bean-sprout", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "sprouts"},
+    {"thing": "ingredient/yakisoba-sauce", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/aonori", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "seaweed"},
+    {"thing": "ingredient/pickled-ginger", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "ginger"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/wok", "equipment/frying-pan", "equipment/tongs", "equipment/spatula",
+    "equipment/mixing-bowl", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/loosen-noodles",
+      "works_on": ["ingredient/yakisoba-noodle"],
+      "with": ["ingredient/water"],
+      "text": "Put the clump of noodles in the pan with a splash of water, cover for a short time to steam, then pull the strands apart with tongs. Drain off any water.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/cabbage", "ingredient/carrot", "ingredient/onion"],
+      "with": [],
+      "text": "Cut the cabbage into bite-sized pieces. Slice the carrot into thin strips and the onion thin.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/pork-belly"],
+      "with": [],
+      "text": "Cut the pork belly into small, even bite-sized pieces.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": ["ingredient/pork-belly", "ingredient/carrot", "ingredient/cabbage"],
+      "with": ["ingredient/oil", "ingredient/onion", "ingredient/bean-sprout"],
+      "text": "Heat the oil in a wok or a wide pan until it is very hot. Stir-fry the pork until its surface is gold, then add the carrot and the onion, then the cabbage and the bean sprouts, and keep everything moving. Check a piece of the pork against a trusted guide to doneness.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-noodles-in-sauce",
+      "works_on": ["ingredient/yakisoba-noodle"],
+      "with": ["ingredient/yakisoba-sauce"],
+      "text": "Add the loosened noodles and toss them with tongs, lifting from the bottom, until hot. Pour the sauce round the edge of the pan so that it sizzles, then toss until the noodles are evenly coated.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/yakisoba-noodle"],
+      "with": ["ingredient/aonori", "ingredient/pickled-ginger"],
+      "text": "Pile the noodles on plates and scatter over the seaweed powder, with a little pickled ginger on the side.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

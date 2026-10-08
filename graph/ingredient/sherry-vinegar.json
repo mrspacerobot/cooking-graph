@@ -34,5 +34,8 @@
     "note": "Sherry is a wine. Whether what cleared the wine is still in the vinegar is for a person to decide."
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2766624", "tier": "sourced"}
+  ]
 }

@@ -1,0 +1,54 @@
+{
+  "id": "technique/make-msemen-dough",
+  "tier": "drafted",
+  "names": {"en": "Make msemen dough"},
+  "aliases": {},
+  "does": "Works flour and fine semolina with warm salted water, by hand and for a good while, on an oiled surface, until the dough is smooth, soft and stretchy, then divides it into balls and rests them under oil so that they can later be stretched paper thin.",
+  "how": [
+    "Mix the flour, the semolina and the salt, and add warm water a little at a time until a soft, wet dough forms.",
+    "Oil the hands and the work surface and work the dough with the heels of the hands for a good while, until it is smooth, soft and stretchy.",
+    "Divide it into balls of an even size and roll each one in oil.",
+    "Cover the balls and leave them to rest until they relax and can be stretched without tearing."
+  ],
+  "cues": [
+    {
+      "sense": "feel",
+      "text": "The dough is soft as a lobe of the ear, elastic and a little sticky, and springs back slowly when pressed."
+    },
+    {"sense": "see", "text": "A small piece pulled out between the fingers goes thin and clear before it breaks."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Making the dough stiff with too little water, so that it tears when stretched.",
+      "fix": "Keep it wetter than seems right and work it with oiled hands."
+    },
+    {
+      "mistake": "Skipping the rest, so that the dough springs back and will not stretch.",
+      "fix": "Rest the oiled balls until they relax."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/flour", "tier": "drafted"},
+    {"thing": "ingredient/semolina", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/msemen-dough", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/knead",
+      "differs": "Kneading works a firm dough on a floured board. This dough is wet, worked on an oiled surface with oiled hands, and divided into balls that are rested under oil so that they can be stretched thin.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

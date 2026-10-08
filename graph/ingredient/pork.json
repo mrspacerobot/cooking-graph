@@ -1,8 +1,8 @@
 {
   "id": "ingredient/pork",
   "tier": "drafted",
-  "names": {"en": "Pork", "fr": "Porc"},
-  "aliases": {},
+  "names": {"en": "Pork", "fr": "Porc", "es": "carne de cerdo", "it": "carne di maiale", "tr": "domuz eti"},
+  "aliases": {"fr": ["viande de porc"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -24,5 +24,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q191768", "tier": "sourced"}
+  ]
 }

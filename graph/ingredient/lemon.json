@@ -1,7 +1,7 @@
 {
   "id": "ingredient/lemon",
   "tier": "drafted",
-  "names": {"en": "Lemon", "fr": "Citron"},
+  "names": {"en": "Lemon", "fr": "Citron", "es": "limón", "it": "limone", "tr": "Limon"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -28,9 +28,30 @@
       "ratio": null,
       "caveat": "Softer and fruitier than vinegar.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/red-wine-vinegar",
+      "allows": true,
+      "when": ["preparation/vinaigrette"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a bright, fruity sourness instead of a winey one.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sudachi",
+      "allows": true,
+      "when": ["dish/karaage", "dish/saba-shioyaki"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is yellow and rounder, with a less green perfume.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1093742", "tier": "sourced"}
   ]
 }

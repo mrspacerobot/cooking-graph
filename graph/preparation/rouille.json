@@ -29,5 +29,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/provencal", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1937652", "tier": "sourced"}
   ]
 }

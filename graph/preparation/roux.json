@@ -1,7 +1,7 @@
 {
   "id": "preparation/roux",
   "tier": "drafted",
-  "names": {"en": "Roux", "fr": "Roux"},
+  "names": {"en": "Roux", "fr": "Roux", "tr": "Meyane"},
   "aliases": {},
   "is": "Flour cooked in an equal weight of butter. It thickens a liquid without lumps or a raw taste.",
   "parts": [
@@ -15,5 +15,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q746427", "tier": "sourced"}
   ]
 }

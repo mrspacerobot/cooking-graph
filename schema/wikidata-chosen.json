@@ -1,0 +1,397 @@
+[
+ {
+  "thing": "dish/bisque-de-homard",
+  "id": "Q107791506",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/boeuf-bourguignon",
+  "id": "Q1022124",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/kuru-fasulye",
+  "id": "Q16906849",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/melitzanosalata",
+  "id": "Q18629138",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/mujaddara",
+  "id": "Q2663815",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/ossobuco-alla-milanese",
+  "id": "Q1057256",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/poireaux-vinaigrette",
+  "id": "Q105333550",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/poulet-roti",
+  "id": "Q899640",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/salade-de-chevre-chaud",
+  "id": "Q65589417",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/spaghetti-all-amatriciana",
+  "id": "Q135629302",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/spaghetti-alla-carbonara",
+  "id": "Q876624",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/tiramisu",
+  "id": "Q131582",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "dish/tortilla-espanola",
+  "id": "Q281751",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/allspice",
+  "id": "Q1963621",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/amchur",
+  "id": "Q2015681",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/anise",
+  "id": "Q33873455",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/artichoke",
+  "id": "Q23041430",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/aubergine",
+  "id": "Q12533094",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/basil",
+  "id": "Q65522654",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/basmati-rice",
+  "id": "Q1649635",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/beaufort",
+  "id": "Q781150",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/beef-steak",
+  "id": "Q213062",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/borlotti-bean",
+  "id": "Q6006851",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/bread",
+  "id": "Q7802",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/burdock",
+  "id": "Q95999057",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/butter-bean",
+  "id": "Q104007010",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/capers",
+  "id": "Q3229775",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/cashew",
+  "id": "Q7885904",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/chestnut",
+  "id": "Q773987",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/chickpea-flour",
+  "id": "Q651829",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/chilli",
+  "id": "Q165199",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/coriander-leaf",
+  "id": "Q65523167",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/courgette",
+  "id": "Q7533",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/cream",
+  "id": "Q13228",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/cumin",
+  "id": "Q57328174",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/daikon",
+  "id": "Q28048050",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/dill",
+  "id": "Q59659860",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/egg",
+  "id": "Q115618816",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/fennel",
+  "id": "Q115618652",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/fenugreek-leaf",
+  "id": "Q104054829",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/fenugreek-seed",
+  "id": "Q57659978",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/ginger",
+  "id": "Q15046077",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/green-beans",
+  "id": "Q2987371",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/green-chilli",
+  "id": "Q16641308",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/kashkaval-cheese",
+  "id": "Q7220270",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/khoya",
+  "id": "Q9017517",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/macaroni",
+  "id": "Q20019",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/mushroom",
+  "id": "Q83093",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/oil",
+  "id": "Q4739805",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/okra",
+  "id": "Q12047207",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/peas",
+  "id": "Q29472543",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/pita-bread",
+  "id": "Q211340",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/plain-yogurt",
+  "id": "Q13317",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/red-pepper",
+  "id": "Q106446932",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/rockfish",
+  "id": "Q113330459",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/roquefort",
+  "id": "Q189221",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/rosemary",
+  "id": "Q68315046",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/sage",
+  "id": "Q67206399",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/shiitake",
+  "id": "Q105965457",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/short-grain-rice",
+  "id": "Q67593960",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/soba-noodle",
+  "id": "Q753910",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/spaghetti",
+  "id": "Q20026",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/sparkling-water",
+  "id": "Q264554",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/strawberry",
+  "id": "Q14458220",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/tomato",
+  "id": "Q20638126",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/tuna",
+  "id": "Q139820999",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/turnip",
+  "id": "Q3916957",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/udon-noodle",
+  "id": "Q471861",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/vermicelli",
+  "id": "Q20027",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/whiting",
+  "id": "Q273083",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/whole-wheat-flour",
+  "id": "Q27862521",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/yam",
+  "id": "Q8047551",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "ingredient/zander",
+  "id": "Q146641",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "preparation/bearnaise",
+  "id": "Q58265",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "preparation/dashi",
+  "id": "Q851746",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "preparation/hollandaise",
+  "id": "Q58259",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "preparation/mashed-potato",
+  "id": "Q322787",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "preparation/ragu",
+  "id": "Q5571808",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ },
+ {
+  "thing": "preparation/sofrito",
+  "id": "Q1147677",
+  "why": "Read against its description: the food, not the plant, a colour or a work."
+ }
+]

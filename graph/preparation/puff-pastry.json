@@ -1,7 +1,7 @@
 {
   "id": "preparation/puff-pastry",
   "tier": "drafted",
-  "names": {"en": "Puff pastry", "fr": "Pâte feuilletée"},
+  "names": {"en": "Puff pastry", "fr": "Pâte feuilletée", "es": "hojaldre", "it": "pasta sfoglia", "tr": "milföy"},
   "aliases": {},
   "is": "A pastry of thin layers of dough and butter, folded many times, which rise apart into crisp leaves in the oven.",
   "parts": [
@@ -17,5 +17,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q29221", "tier": "sourced"}
   ]
 }

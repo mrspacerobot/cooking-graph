@@ -22,8 +22,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/mushroom",
+      "allows": true,
+      "when": ["dish/polenta-ai-funghi", "technique/saute"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is deeper and nuttier, and costs more.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

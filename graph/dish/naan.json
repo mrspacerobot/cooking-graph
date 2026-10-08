@@ -1,0 +1,19 @@
+{
+  "id": "dish/naan",
+  "tier": "drafted",
+  "names": {"en": "Naan"},
+  "aliases": {"en": ["naan bread"]},
+  "is": "A soft, puffy Indian flat bread of yeast and yogurt dough, stretched by hand into a teardrop, cooked on a very hot iron plate until it blisters, charred in spots over the flame and brushed with ghee.",
+  "parts": [
+    {"id": "dough", "role": "main", "options": ["preparation/naan-dough"], "optional": false, "tier": "drafted"},
+    {"id": "ghee", "role": "fat", "options": ["ingredient/ghee"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-naan-dough", "tier": "drafted"},
+    {"thing": "technique/cook-a-naan", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

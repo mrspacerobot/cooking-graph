@@ -1,0 +1,56 @@
+{
+  "id": "technique/shape-a-finger-kofte",
+  "tier": "drafted",
+  "names": {"en": "Shape a finger kofte"},
+  "aliases": {"en": ["shape mercimek koftesi", "fist-pressed kofte"]},
+  "does": "Squeezes a small lump of a soft, cool mixture in the closed fist, so that it takes the print of the fingers and comes out as a small ridged oval, with nothing cooked afterwards.",
+  "how": [
+    "Keep a bowl of water beside the work and wet the hands lightly.",
+    "Take a small lump of the mixture and close the fist around it.",
+    "Squeeze, so that it presses into an oval along the fingers and takes their marks.",
+    "Set it on a platter and go on until the mixture is used.",
+    "Keep it cool and serve it cold."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Each piece is an even oval with the print of the fingers along it."},
+    {"sense": "feel", "text": "The piece holds together when lifted and does not crumble."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Working with dry hands, so that the mixture sticks and tears.",
+      "fix": "Wet the hands lightly and often."
+    },
+    {
+      "mistake": "Shaping a mixture that is still loose, so that the pieces slump.",
+      "fix": "Leave it to swell longer, or knead in a little more fine bulgur."
+    },
+    {
+      "mistake": "Making the pieces different sizes, which looks untidy on the plate.",
+      "fix": "Take about the same amount each time."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/lentil-bulgur-mixture", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/knead",
+      "why": "The mixture is kneaded until it holds before it is shaped.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/shape-meatballs",
+      "differs": "There is no meat and nothing is cooked afterwards. The piece is squeezed in the fist into a ridged oval and not rolled round between the palms, and it is served cold.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

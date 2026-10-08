@@ -2,7 +2,7 @@
   "id": "dish/spaghetti-alla-carbonara",
   "tier": "drafted",
   "names": {"en": "Spaghetti alla carbonara", "fr": "Spaghetti à la carbonara"},
-  "aliases": {"en": ["carbonara", "pasta alla carbonara"]},
+  "aliases": {"en": ["carbonara", "pasta alla carbonara"], "fr": ["pâtes à la carbonara"]},
   "is": "A Roman dish of spaghetti tossed off the heat with crisp cured pork cheek, beaten egg and sharp grated sheep's cheese, so that the egg warms into a creamy sauce. There is no cream in it.",
   "parts": [
     {"id": "pasta", "role": "main", "options": ["ingredient/spaghetti"], "optional": false, "tier": "drafted"},
@@ -39,5 +39,8 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q876624", "tier": "sourced"}
   ]
 }

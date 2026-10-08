@@ -21,6 +21,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/carrot",
+      "allows": true,
+      "when": ["technique/roast"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "It is sweeter and browns sooner, so watch it near the end.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q104413481", "tier": "sourced"}
+  ]
 }

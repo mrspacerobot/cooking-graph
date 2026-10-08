@@ -1,7 +1,7 @@
 {
   "id": "ingredient/emmental",
   "tier": "drafted",
-  "names": {"en": "Emmental", "fr": "Emmental"},
+  "names": {"en": "Emmental", "fr": "Emmental", "es": "queso emmental", "tr": "Emmental peyniri"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -36,9 +36,32 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
       "caveat": "It melts and browns but gives a milder, less nutty finish.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/parmesan",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/spaghetti-alla-carbonara", "preparation/pesto"],
+      "ratio": null,
+      "caveat": "It is too mild and soft and lacks the salt and sharpness the sauce depends on.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/comte",
+      "allows": true,
+      "when": [
+        "dish/croque-monsieur", "dish/french-onion-soup", "dish/gnocchi-a-la-parisienne", "dish/souffle-au-fromage"
+      ],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It tastes milder and less nutty.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q932214", "tier": "sourced"}
   ]
 }

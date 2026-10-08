@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/hollandaise-lemon-juice-white-wine-vinegar",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Hollandaise",
+  "ingredient": "lemon juice",
+  "candidate": "white wine vinegar",
+  "verdict": "works",
+  "why": "A vinegar reduction is the classic way to sharpen hollandaise and the acid does the same job on the yolks."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "equipment/handi",
+  "tier": "drafted",
+  "names": {"en": "Handi"},
+  "aliases": {"en": ["handi pot", "dum pot"]},
+  "use": "A round-bellied pot of metal or clay with a narrow mouth and a close-fitting lid. Food in it cooks slowly in its own steam, and the pot is often sealed with dough."
+}

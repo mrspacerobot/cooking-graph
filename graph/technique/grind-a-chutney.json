@@ -1,0 +1,54 @@
+{
+  "id": "technique/grind-a-chutney",
+  "tier": "drafted",
+  "names": {"en": "Grind a chutney"},
+  "aliases": {"en": ["grind fresh chutney", "grind a wet chutney"]},
+  "does": "Grinds fresh coconut or fresh herbs with green chilli, ginger, salt and a little cold water in a blender or on a stone into a coarse, moist paste, which is served raw as a fresh relish.",
+  "how": [
+    "Put the coconut or the herbs in the blender with the green chilli, the ginger, the salt and any thickener, such as roasted split chickpeas.",
+    "Add a little cold water to start. Pulse and scrape down the sides.",
+    "Add more water a spoonful at a time, until the blades catch and the paste turns over and over.",
+    "Stop when the paste is coarse and moist, thick enough to hold on a spoon, and not a smooth purée.",
+    "Taste and adjust the salt and the chilli. It is served the same day, often with a hot tempering poured over it."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The paste is moist and coarse, with a slow ribbon when it falls from the spoon."},
+    {
+      "sense": "taste",
+      "text": "Fresh, mild and sweet from the coconut, with a sharp warmth from the chilli and a clean finish."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding all the water at once, so that the chutney is thin and bland.",
+      "fix": "Add the water a spoonful at a time."
+    },
+    {
+      "mistake": "Grinding too long, so that the paste turns warm and pasty.",
+      "fix": "Pulse in short bursts and stop while it is still coarse."
+    },
+    {"mistake": "Using warm water, which turns the herbs dark and the coconut sour sooner.", "fix": "Use cold water."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/coconut", "tier": "drafted"},
+    {"thing": "ingredient/coriander-leaf", "tier": "drafted"},
+    {"thing": "ingredient/mint", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/blender", "equipment/mortar-and-pestle"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/grind",
+      "differs": "The food is ground fresh and wet to a coarse, moist paste and served raw, not dried and ground to a powder. A little cold water is added slowly so that the blades catch.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

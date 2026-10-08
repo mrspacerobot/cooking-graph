@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/lamb-tagine-prunes-dried-apricots",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Lamb tagine with prunes",
+  "ingredient": "prunes",
+  "candidate": "dried apricots",
+  "verdict": "works",
+  "why": "Apricots are a classic tagine fruit and soften into the sauce with the same sweet and savoury balance."
+}

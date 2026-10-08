@@ -27,5 +27,8 @@
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"},
     {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q12047207", "tier": "sourced"}
   ]
 }

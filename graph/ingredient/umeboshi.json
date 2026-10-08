@@ -28,8 +28,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/salted-salmon",
+      "allows": true,
+      "when": ["dish/onigiri"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The filling is sour and sharp instead of rich and fishy.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1045417", "tier": "sourced"}
   ]
 }

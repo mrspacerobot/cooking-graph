@@ -1,0 +1,126 @@
+{
+  "id": "recipe/pommes-puree",
+  "tier": "drafted",
+  "names": {"en": "Pommes purée", "fr": "Pommes purée"},
+  "aliases": {},
+  "makes": "dish/pommes-puree",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 800, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "potato"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/milk", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "milk"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "nutmeg"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/colander", "equipment/potato-masher",
+    "equipment/vegetable-peeler", "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Peel the potatoes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-chunks",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Cut the potatoes into large pieces of one size, so that they cook at the same pace.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/salt"],
+      "text": "Put the potatoes in a pan of cold water with some of the salt, bring to the boil and cook until a knife slips in with no resistance.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Drain the potatoes well in the colander.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dry",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Tip them back into the dry pan over a low heat and shake for a moment, until the steam stops rising and a floury film forms on the base.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grate",
+      "works_on": ["ingredient/nutmeg"],
+      "with": [],
+      "text": "Grate a little nutmeg.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/infuse",
+      "works_on": ["ingredient/milk"],
+      "with": ["ingredient/nutmeg"],
+      "text": "Warm the milk with the nutmeg in a small pan and keep it hot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mash",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/butter", "ingredient/milk"],
+      "text": "Crush the potatoes while they are hot, then beat in the cold butter first and the hot milk little by little, until the purée is smooth, glossy and soft.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/mashed-potato"]
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/salt"],
+      "text": "Taste and correct the salt.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["preparation/mashed-potato"],
+      "with": [],
+      "text": "Spoon the purée into a warm dish and serve at once.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

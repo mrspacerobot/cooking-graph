@@ -1,0 +1,62 @@
+{
+  "id": "dish/seven-vegetable-couscous",
+  "tier": "drafted",
+  "names": {"en": "Seven-vegetable couscous", "fr": "Couscous aux sept légumes"},
+  "aliases": {"en": ["couscous with seven vegetables"], "fr": ["couscous aux légumes"]},
+  "is": "Couscous steamed over a stew of lamb, chickpeas and many vegetables, the grains raked and steamed in rounds until they are light, heaped on a dish with the meat and vegetables on top and the broth ladled over.",
+  "parts": [
+    {"id": "couscous", "role": "base", "options": ["ingredient/couscous"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lamb",
+      "role": "main",
+      "options": ["ingredient/lamb-shoulder", "ingredient/lamb-shank"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "chickpea", "role": "main", "options": ["ingredient/chickpea"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "aromatic", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "side", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "turnip", "role": "side", "options": ["ingredient/turnip"], "optional": false, "tier": "drafted"},
+    {"id": "courgette", "role": "side", "options": ["ingredient/courgette"], "optional": false, "tier": "drafted"},
+    {"id": "pumpkin", "role": "side", "options": ["ingredient/pumpkin"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cabbage",
+      "role": "side",
+      "options": ["ingredient/cabbage", "ingredient/white-cabbage"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/smen", "ingredient/butter"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "olive-oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "seasoning", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "saffron", "role": "seasoning", "options": ["ingredient/saffron"], "optional": true, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/steam-couscous", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/soak", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": []
+}

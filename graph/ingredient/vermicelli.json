@@ -1,8 +1,8 @@
 {
   "id": "ingredient/vermicelli",
   "tier": "drafted",
-  "names": {"en": "Vermicelli", "fr": "Vermicelles"},
-  "aliases": {},
+  "names": {"en": "Vermicelli", "fr": "Vermicelles", "tr": "Tel şehriye"},
+  "aliases": {"fr": ["vermicelle"]},
   "is_a": [
     {"thing": "ingredient/pasta", "tier": "drafted"}
   ],
@@ -26,6 +26,30 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/spaghetti",
+      "allows": false,
+      "when": [],
+      "not_when": [
+        "dish/spaghetti-all-amatriciana", "dish/spaghetti-alla-carbonara", "technique/toss-pasta-with-sauce"
+      ],
+      "ratio": null,
+      "caveat": "The thin strands soften in moments and clump in a thick sauce.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/rice",
+      "allows": true,
+      "when": ["dish/harira"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It cooks faster and thickens the soup less.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q20027", "tier": "sourced"}
+  ]
 }

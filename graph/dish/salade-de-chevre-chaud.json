@@ -37,5 +37,8 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q65589417", "tier": "sourced"}
   ]
 }

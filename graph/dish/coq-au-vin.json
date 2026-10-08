@@ -64,5 +64,8 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/burgundian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q527323", "tier": "sourced"}
   ]
 }

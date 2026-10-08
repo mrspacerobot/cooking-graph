@@ -1,6 +1,6 @@
 """The rules about probes: who they are written for, which are held back, and what may not be written for them."""
 
-from tools import names, probes
+from tools import names, probes, writing
 from tools.reading import Issue
 from tools.rules import linked, of_kind, skills_of
 
@@ -84,9 +84,9 @@ def may_not_be_held_back(things, probe_ids):
     return {probe_id for probe_id in probe_ids if probes.dish_names(things[probe_id].data) & taken}
 
 
-def held_back_by_the_rule(things):
-    """Which probes are held back is decided by the rule in tools/probes.py, never by hand."""
-    issues = []
+def expected_sets(things):
+    """The set each probe belongs in, by the rule and never by hand: {probe id: 'held-back' or 'growing'}."""
+    expected = {}
     for kind in PROBE_KINDS:
         batches = {}
         for thing_id, thing in of_kind(things, kind):
@@ -97,22 +97,49 @@ def held_back_by_the_rule(things):
                 never = may_not_be_held_back(things, probe_ids)
             held_back = probes.held_back_ids(probe_ids, never)
             for probe_id in probe_ids:
-                expected = "held-back" if probe_id in held_back else "growing"
-                if things[probe_id].data["set"] != expected:
-                    message = "the rule puts this probe of batch '%s' in the set '%s'" % (batch, expected)
-                    issues.append(Issue(things[probe_id].path, "set", "held-back-rule", message))
-    return issues
+                expected[probe_id] = "held-back" if probe_id in held_back else "growing"
+    return expected
+
+
+def about_sets(things, probe_ids, rule, message):
+    """One issue for each kind and batch of probes, naming a count and never a probe.
+
+    A drafter reads the checker's output. A path or a message that named a held-back
+    probe would tell the drafter which dish it asks about.
+    """
+    counts = {}
+    for probe_id in probe_ids:
+        key = (things[probe_id].kind, things[probe_id].data["batch"])
+        counts[key] = counts.get(key, 0) + 1
+    return [Issue("probes/" + kind, "set", rule, message % (count, batch))
+            for (kind, batch), count in sorted(counts.items())]
+
+
+def held_back_by_the_rule(things):
+    """Which probes are held back is decided by the rule in tools/probes.py, never by hand."""
+    wrong = [probe_id for probe_id, expected in expected_sets(things).items() if things[probe_id].data["set"] != expected]
+    message = "%d probes of batch '%s' are in another set than the rule gives: run ./probe reset-sets"
+    return about_sets(things, wrong, "held-back-rule", message)
+
+
+def reset_sets(root, things):
+    """Put every probe in the set the rule gives. Return how many moved. Nothing about them is printed."""
+    moved = 0
+    for probe_id, expected in sorted(expected_sets(things).items()):
+        data = things[probe_id].data
+        if data["set"] != expected:
+            writing.write_thing(root, dict(data, set=expected))
+            moved += 1
+    return moved
 
 
 def level_dishes_are_never_held_back(things):
     """A dish that a level of a program is practised through is never held back."""
     level_dishes = names_of_level_dishes(things)
-    issues = []
-    for thing_id, thing in of_kind(things, "dish-probe"):
-        if thing.data["set"] == "held-back" and probes.dish_names(thing.data) & level_dishes:
-            message = "a level of a program is practised through this dish, so its probe must be in the growing set"
-            issues.append(Issue(thing.path, "set", "level-dish-held-back", message))
-    return issues
+    wrong = [thing_id for thing_id, thing in of_kind(things, "dish-probe")
+             if thing.data["set"] == "held-back" and probes.dish_names(thing.data) & level_dishes]
+    message = "%d probes of batch '%s' ask about a dish a level is practised through, so they belong in the growing set: run ./probe reset-sets"
+    return about_sets(things, wrong, "level-dish-held-back", message)
 
 
 def one_probe_per_dish_in_a_batch(things):

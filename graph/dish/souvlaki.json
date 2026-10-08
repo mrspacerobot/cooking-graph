@@ -1,0 +1,30 @@
+{
+  "id": "dish/souvlaki",
+  "tier": "drafted",
+  "names": {"en": "Souvlaki", "tr": "Suvlaki"},
+  "aliases": {"en": ["pork souvlaki", "souvlaki in pita"]},
+  "is": "Small cubes of pork marinated in oil, lemon and oregano, threaded on skewers and grilled over fierce heat, then wrapped in warm pita with tomato, raw onion and a squeeze of lemon.",
+  "parts": [
+    {"id": "pork", "role": "main", "options": ["ingredient/pork-tenderloin"], "optional": false, "tier": "drafted"},
+    {"id": "marinade", "role": "sauce", "options": ["preparation/ladolemono"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "oregano", "role": "seasoning", "options": ["ingredient/oregano"], "optional": false, "tier": "drafted"},
+    {"id": "pita", "role": "base", "options": ["ingredient/pita-bread"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "filling", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "filling", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/marinate-in-oil-and-lemon", "tier": "drafted"},
+    {"thing": "technique/skewer", "tier": "drafted"},
+    {"thing": "technique/grill", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q240923", "tier": "sourced"}
+  ]
+}

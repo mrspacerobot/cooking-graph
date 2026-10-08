@@ -1,0 +1,56 @@
+{
+  "id": "recipe/crepes-suzette",
+  "tier": "drafted",
+  "names": {"en": "Crêpes Suzette", "fr": "Crêpes Suzette"},
+  "aliases": {},
+  "makes": "dish/crepes-suzette",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/flour", "amount": {"value": 125, "unit": "gram"}, "forms": [], "part": "crepe"},
+    {"thing": "ingredient/milk", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "crepe"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "crepe"},
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "crepe"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "crepe"},
+    {"thing": "ingredient/sugar", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/butter", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/orange", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "orange"},
+    {"thing": "ingredient/cognac", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "spirit"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/mixing-bowl", "equipment/whisk", "equipment/ladle", "equipment/spatula",
+    "equipment/non-stick-pan", "equipment/saucepan", "equipment/saute-pan", "equipment/spoon", "equipment/tongs"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-crepes",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/milk", "ingredient/egg", "ingredient/butter", "ingredient/salt"],
+      "text": "Whisk the flour, the eggs and the salt, then whisk in the milk and the melted butter a little at a time until the batter is smooth and as thin as pouring cream. Rest it, then cook thin crepes in a hot buttered pan, a ladle at a time, turning each once. Stack them as they are done.",
+      "time": {"from": 30, "to": 40, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/crepe"]
+    },
+    {
+      "technique": "technique/make-a-caramel",
+      "works_on": ["ingredient/sugar"],
+      "with": ["ingredient/water"],
+      "text": "Melt the sugar with the water in a small pan over a medium heat, without stirring, until it is a pale amber. Take it off the heat.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/warm-crepes-in-orange-sauce",
+      "works_on": ["preparation/crepe"],
+      "with": ["ingredient/orange", "ingredient/butter", "ingredient/cognac", "ingredient/sugar"],
+      "text": "In a wide pan, stir the juice of the oranges, a little of the zest and the butter into the caramel and simmer until syrupy. Fold each crepe in half and in half again and lay them in the sauce, spooning it over and turning them once. Warm the cognac in a small pan, take the wide pan off the heat and pour the cognac around the edge. Stand back and light it, and spoon the burning sauce over the crepes until the flame dies. Serve at once.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

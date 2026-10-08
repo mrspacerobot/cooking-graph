@@ -1,8 +1,8 @@
 {
   "id": "ingredient/cream",
   "tier": "drafted",
-  "names": {"en": "Cream", "fr": "Crème liquide"},
-  "aliases": {"en": ["heavy cream", "double cream", "whipping cream"]},
+  "names": {"en": "Cream", "fr": "Crème liquide", "es": "crema de leche", "it": "panna", "tr": "krema"},
+  "aliases": {"en": ["heavy cream", "double cream", "whipping cream"], "fr": ["crème"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -31,9 +31,21 @@
       "ratio": null,
       "caveat": "Cream does not give the butter-mounted emulsion. A cream sauce needs a different method.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/milk",
+      "allows": true,
+      "when": ["technique/make-a-bechamel", "technique/make-a-custard"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The result is much richer and heavier, so thin it with water.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q13228", "tier": "sourced"}
   ]
 }

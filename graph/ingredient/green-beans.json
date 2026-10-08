@@ -1,8 +1,8 @@
 {
   "id": "ingredient/green-beans",
   "tier": "drafted",
-  "names": {"en": "Green beans", "fr": "Haricots verts"},
-  "aliases": {"en": ["French beans", "green bean"]},
+  "names": {"en": "Green beans", "fr": "Haricots verts", "es": "judía verde", "it": "fagiolino", "tr": "Yeşil fasulye"},
+  "aliases": {"en": ["French beans", "green bean"], "fr": ["haricot vert"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -22,5 +22,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2987371", "tier": "sourced"}
+  ]
 }

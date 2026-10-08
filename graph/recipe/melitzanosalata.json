@@ -1,0 +1,90 @@
+{
+  "id": "recipe/melitzanosalata",
+  "tier": "drafted",
+  "names": {"en": "Melitzanosalata"},
+  "aliases": {},
+  "makes": "dish/melitzanosalata",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/aubergine", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "aubergine"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 80, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/red-wine-vinegar",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "vinegar"
+    },
+    {"thing": "ingredient/parsley", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/tongs", "equipment/mixing-bowl", "equipment/colander", "equipment/blender",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/char",
+      "works_on": ["ingredient/aubergine"],
+      "with": [],
+      "text": "Set the whole aubergines straight on a gas flame or under a very hot grill. Turn them with tongs until the skin is black and blistered all over and the flesh has collapsed. Put them in a bowl, cover them and leave them until they are cool enough to handle. Peel off the skin and do not rinse the flesh.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/aubergine"],
+      "with": [],
+      "text": "Leave the flesh in a colander for a while and press out the bitter juices.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/aubergine"],
+      "with": [],
+      "text": "Break the flesh down with short pulses of the blender, or chop it fine by hand, to a soft mass that still keeps some texture. Do not take it smooth.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/salt"],
+      "text": "Crush the garlic with a little of the salt to a paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "Chop the parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/aubergine"],
+      "with": [
+        "ingredient/garlic", "ingredient/red-wine-vinegar", "ingredient/parsley", "ingredient/olive-oil",
+        "ingredient/salt"
+      ],
+      "text": "Mix the aubergine with the garlic, the vinegar and the parsley, then beat in the oil a little at a time. Taste and adjust the salt and the vinegar. Chill before serving.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

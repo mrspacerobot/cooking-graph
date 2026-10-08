@@ -32,8 +32,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/sake",
+      "allows": true,
+      "when": ["dish/nikujaga"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sweeter, so use less sugar elsewhere in the dish.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1045910", "tier": "sourced"}
   ]
 }

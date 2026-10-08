@@ -1,7 +1,7 @@
 {
   "id": "ingredient/stockfish",
   "tier": "drafted",
-  "names": {"en": "Stockfish", "fr": "Stockfisch"},
+  "names": {"en": "Stockfish", "fr": "Stockfisch", "es": "Pescado seco"},
   "aliases": {"en": ["stoccafisso"]},
   "is_a": [],
   "part_of": [],
@@ -23,5 +23,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q213725", "tier": "sourced"}
   ]
 }

@@ -1,0 +1,86 @@
+{
+  "id": "recipe/cucumber-raita",
+  "tier": "drafted",
+  "names": {"en": "Cucumber raita"},
+  "aliases": {},
+  "makes": "dish/cucumber-raita",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/plain-yogurt", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "yogurt"},
+    {
+      "thing": "ingredient/cucumber",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "cucumber"
+    },
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/mint", "amount": {"value": 5, "unit": "gram"}, "forms": [], "part": "mint"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/mortar-and-pestle", "equipment/mixing-bowl",
+    "equipment/whisk", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/salt-and-squeeze",
+      "works_on": ["ingredient/cucumber"],
+      "with": ["ingredient/salt"],
+      "text": "Rub the cucumber slices with a little of the salt, leave them to wilt, then squeeze them hard by the handful to wring out the water.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast-spices",
+      "works_on": ["ingredient/cumin"],
+      "with": [],
+      "text": "Warm the cumin seeds in a dry pan over a low heat until they darken a shade and smell strong, then tip them out to cool.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grind",
+      "works_on": ["ingredient/cumin"],
+      "with": [],
+      "text": "Crush the roasted cumin in a mortar to a coarse powder.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/mint"],
+      "with": [],
+      "text": "Chop the mint leaves fine.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-raita",
+      "works_on": ["ingredient/plain-yogurt", "ingredient/cucumber"],
+      "with": ["ingredient/cumin", "ingredient/salt"],
+      "text": "Whisk the cold yogurt until it is smooth and creamy. Stir in the cucumber, most of the cumin and the rest of the salt. Taste, and chill until it is served.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/cucumber"],
+      "with": ["ingredient/mint", "ingredient/cumin"],
+      "text": "Scatter the chopped mint and the rest of the cumin over the raita.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

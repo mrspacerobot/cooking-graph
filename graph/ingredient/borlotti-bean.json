@@ -1,8 +1,8 @@
 {
   "id": "ingredient/borlotti-bean",
   "tier": "drafted",
-  "names": {"en": "Borlotti bean", "fr": "Haricot borlotti"},
-  "aliases": {"en": ["borlotti", "cranberry bean"]},
+  "names": {"en": "Borlotti bean", "fr": "Haricot borlotti", "es": "Alubia pinta", "it": "fagiolo borlotto"},
+  "aliases": {"en": ["borlotti", "cranberry bean"], "fr": ["haricot marbré"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -21,8 +21,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/kidney-bean",
+      "allows": true,
+      "when": ["technique/simmer"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "It is creamier and milder.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q6006851", "tier": "sourced"}
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/kidney-bean",
   "tier": "drafted",
-  "names": {"en": "Kidney bean", "fr": "Haricot rouge"},
+  "names": {"en": "Kidney bean", "fr": "Haricot rouge", "es": "frijol rojo"},
   "aliases": {"en": ["rajma", "red kidney bean"]},
   "is_a": [],
   "part_of": [],
@@ -21,8 +21,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/borlotti-bean",
+      "allows": true,
+      "when": ["technique/simmer"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "The skin is firmer and the bean needs longer.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q18175531", "tier": "sourced"}
   ]
 }

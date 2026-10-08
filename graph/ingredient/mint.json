@@ -1,7 +1,7 @@
 {
   "id": "ingredient/mint",
   "tier": "drafted",
-  "names": {"en": "Mint", "fr": "Menthe"},
+  "names": {"en": "Mint", "fr": "Menthe", "it": "mentina"},
   "aliases": {"en": ["fresh mint"]},
   "is_a": [],
   "part_of": [],
@@ -21,12 +21,25 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/parsley",
+      "allows": true,
+      "when": ["dish/dolmades", "dish/fattoush", "dish/kisir"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is cool and sweet instead of grassy.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"},
     {"thing": "cuisine/greek", "tier": "drafted"},
     {"thing": "cuisine/moroccan", "tier": "drafted"},
     {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q5254978", "tier": "sourced"}
   ]
 }

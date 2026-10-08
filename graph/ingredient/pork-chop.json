@@ -1,8 +1,8 @@
 {
   "id": "ingredient/pork-chop",
   "tier": "drafted",
-  "names": {"en": "Pork chop", "fr": "Côte de porc"},
-  "aliases": {},
+  "names": {"en": "Pork chop", "fr": "Côte de porc", "es": "chuleta de cerdo", "it": "costoletta di maiale"},
+  "aliases": {"fr": ["côtelette de porc"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -23,6 +23,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/veal-chop",
+      "allows": true,
+      "when": ["technique/pan-fry", "technique/sear"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The taste is stronger and the chop is fattier, and it turns dry soon after it is done.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q860985", "tier": "sourced"}
+  ]
 }

@@ -1,0 +1,63 @@
+{
+  "id": "technique/cook-a-chapati",
+  "tier": "drafted",
+  "names": {"en": "Cook a chapati"},
+  "aliases": {"en": ["cook roti on a tava", "puff a chapati", "puff a phulka"]},
+  "does": "Cooks a thin round of atta dough for a short time on each face on a dry, hot iron plate, then lays it straight on the open flame, where the steam inside swells it into a soft ball. The finished bread is brushed with ghee and kept soft under a cloth.",
+  "how": [
+    "Heat the iron plate until it is hot all over. A dusting of flour dropped on it should brown at once.",
+    "Lay the rolled round on the hot plate. When small bubbles show on the top, turn it.",
+    "Cook the second face until it has pale brown spots.",
+    "Using tongs, lift the bread off the plate and lay it straight on the open flame. It puffs up in moments.",
+    "Turn it over for a moment, then take it off. Brush it with ghee if wanted and stack the finished breads in a cloth, so that they stay soft."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Bubbles rise on the upper face, then the bread swells like a ball on the flame, with brown flecks."
+    },
+    {"sense": "feel", "text": "The finished bread is soft and flexible, not stiff or leathery."},
+    {"sense": "smell", "text": "A warm, toasty scent of wheat rises, with no burnt smell."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cooking it too long on the plate, so that it dries out and will not puff.",
+      "fix": "Turn it as soon as bubbles show, and keep each side short."
+    },
+    {
+      "mistake": "Putting it on a plate that is not hot enough, so that it turns leathery.",
+      "fix": "Heat the plate until a dusting of flour browns at once."
+    },
+    {
+      "mistake": "Leaving the bread on the flame, where it chars to ash.",
+      "fix": "Hold it there for moments only and turn it."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/chapati-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/tava"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/ghee"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/roll-out-a-chapati",
+      "why": "The rolled round has to be thin and even or it will not puff.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/griddle",
+      "differs": "After the dry plate the bread is lifted off and held directly on the open flame, where trapped steam puffs it into a ball. A griddled flat bread is left on the hot surface from start to end.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

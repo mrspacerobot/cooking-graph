@@ -1,0 +1,29 @@
+{
+  "id": "dish/mercimek-koftesi",
+  "tier": "drafted",
+  "names": {"en": "Red lentil kofte"},
+  "aliases": {"en": ["mercimek koftesi", "lentil kofte", "Turkish red lentil balls"]},
+  "is": "Small ridged ovals of red lentils and fine bulgur swollen together in the heat, kneaded with onion, paste and cumin, and eaten cold with lemon and spring onion. Nothing is cooked after shaping.",
+  "parts": [
+    {
+      "id": "mixture",
+      "role": "main",
+      "options": ["preparation/lentil-bulgur-mixture"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon-juice"], "optional": true, "tier": "drafted"},
+    {"id": "onion", "role": "garnish", "options": ["ingredient/spring-onion"], "optional": true, "tier": "drafted"},
+    {"id": "herb", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/swell-bulgur-in-hot-liquid", "tier": "drafted"},
+    {"thing": "technique/shape-a-finger-kofte", "tier": "drafted"},
+    {"thing": "technique/knead", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

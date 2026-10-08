@@ -1,7 +1,7 @@
 {
   "id": "ingredient/tomato",
   "tier": "drafted",
-  "names": {"en": "Tomato", "fr": "Tomate"},
+  "names": {"en": "Tomato", "fr": "Tomate", "it": "pomodoro", "tr": "domates"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -21,6 +21,28 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/tinned-tomatoes",
+      "allows": true,
+      "when": ["preparation/tomato-sauce"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Peel it and cook it down longer, as fresh tomato is wetter and less concentrated.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tomato-paste",
+      "allows": true,
+      "when": ["dish/bamieh-bi-zeit", "dish/green-beans-braised-in-olive-oil", "dish/kousa-mahshi", "preparation/kima"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is wetter and milder, so cook it down longer.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q20638126", "tier": "sourced"}
+  ]
 }

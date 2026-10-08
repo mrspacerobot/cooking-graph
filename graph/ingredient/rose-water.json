@@ -1,8 +1,8 @@
 {
   "id": "ingredient/rose-water",
   "tier": "drafted",
-  "names": {"en": "Rose water", "fr": "Eau de rose"},
-  "aliases": {"en": ["rosewater"]},
+  "names": {"en": "Rose water", "fr": "Eau de rose", "es": "agua de rosas", "it": "acqua di rose", "tr": "gülsuyu"},
+  "aliases": {"en": ["rosewater", "maward"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -22,5 +22,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q900450", "tier": "sourced"}
   ]
 }

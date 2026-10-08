@@ -1,0 +1,58 @@
+{
+  "id": "dish/aloo-gobi",
+  "tier": "drafted",
+  "names": {"en": "Aloo gobi", "it": "Allo gobi"},
+  "aliases": {"en": ["aloo gobhi", "potato and cauliflower sabzi"]},
+  "is": "Potato and cauliflower cooked dry in a spiced onion and tomato base, with no water added, under a lid over a low heat, and finished with sour mango powder and garam masala.",
+  "parts": [
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "cauliflower", "role": "main", "options": ["ingredient/cauliflower"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "aromatic", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {
+      "id": "green-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/green-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli-powder",
+      "role": "seasoning",
+      "options": ["ingredient/red-chilli-powder"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "amchur", "role": "acid", "options": ["ingredient/amchur"], "optional": false, "tier": "drafted"},
+    {
+      "id": "garam-masala",
+      "role": "seasoning",
+      "options": ["preparation/garam-masala"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/cook-a-dry-vegetable-dish", "tier": "drafted"},
+    {"thing": "technique/fry-masala-base", "tier": "drafted"},
+    {"thing": "technique/temper-spices-in-hot-fat", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q447296", "tier": "sourced"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "dish/rillettes-de-porc",
+  "tier": "drafted",
+  "names": {"en": "Pork rillettes", "fr": "Rillettes de porc"},
+  "aliases": {"en": ["French potted pork"]},
+  "is": "Pork cooked very slowly in its own fat and a little wine, pulled into soft threads and packed in a jar under a layer of fat. It is spread cold on toasted bread.",
+  "parts": [
+    {"id": "pork", "role": "main", "options": ["ingredient/pork-shoulder"], "optional": false, "tier": "drafted"},
+    {"id": "belly", "role": "fat", "options": ["ingredient/pork-belly"], "optional": false, "tier": "drafted"},
+    {"id": "wine", "role": "liquid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "herbs", "role": "aromatic", "options": ["preparation/bouquet-garni"], "optional": false, "tier": "drafted"},
+    {"id": "nutmeg", "role": "seasoning", "options": ["ingredient/nutmeg"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "bread", "role": "side", "options": ["ingredient/baguette"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-rillettes", "tier": "drafted"},
+    {"thing": "technique/toast", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": []
+}

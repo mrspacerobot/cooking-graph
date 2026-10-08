@@ -31,8 +31,28 @@
     ],
     "note": "Bread of unknown kind."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/breadcrumbs",
+      "allows": true,
+      "when": ["technique/fry-a-cutlet", "technique/gratinate", "technique/shape-and-crumb-croquetas"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Grate it or grind it fine first, and the crumbs are coarser and uneven.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/bread",
+      "allows": true,
+      "when": ["preparation/salsa-vizcaina"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is drier and soaks up liquid well.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

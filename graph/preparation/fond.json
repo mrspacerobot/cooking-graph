@@ -1,8 +1,8 @@
 {
   "id": "preparation/fond",
   "tier": "drafted",
-  "names": {"en": "Fond", "fr": "Sucs"},
-  "aliases": {"en": ["browned bits", "pan fond"], "fr": ["sucs de cuisson"]},
+  "names": {"en": "Fond", "fr": "Sucs", "it": "Fondo di cottura"},
+  "aliases": {"en": ["browned bits", "pan fond"], "fr": ["sucs de cuisson", "Fond de veau"]},
   "is": "The browned layer left stuck to a pan after searing, sautéing or roasting. Dissolved with a liquid, it becomes the base of a sauce.",
   "parts": [],
   "groups": [],
@@ -10,5 +10,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1435646", "tier": "sourced"}
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/courgette",
   "tier": "drafted",
-  "names": {"en": "Courgette", "fr": "Courgette"},
+  "names": {"en": "Courgette", "fr": "Courgette", "it": "zucchina", "tr": "sakız kabağı"},
   "aliases": {"en": ["zucchini"]},
   "is_a": [],
   "part_of": [],
@@ -30,7 +30,19 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
       "caveat": "The vegetable mixture remains tender but is less creamy and releases more water. Keep the same cut and method.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/okra",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/bamieh-bi-zeit"],
+      "ratio": null,
+      "caveat": "It has none of the sap that thickens the stew, and turns watery and soft instead.",
+      "tier": "drafted"
     }
   ],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q7533", "tier": "sourced"}
+  ]
 }

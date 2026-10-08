@@ -1,0 +1,51 @@
+{
+  "id": "technique/make-a-mascarpone-cream",
+  "tier": "drafted",
+  "names": {"en": "Make a mascarpone cream"},
+  "aliases": {"en": ["mascarpone cream", "make tiramisu cream"]},
+  "does": "Loosens soft mascarpone with a cooled, sweet egg-yolk foam into a smooth, thick cream that holds its shape in a spoon. It is the cream of tiramisu and of other cold layered desserts.",
+  "how": [
+    "Cool the egg-yolk foam completely. A warm foam melts the cheese into a loose soup.",
+    "Put the mascarpone into a wide bowl and stir it with a spatula only until it is smooth. Never beat it hard.",
+    "Stir in a spoonful of the foam to loosen the cheese, then fold in the rest in small lots.",
+    "Stop as soon as the cream is smooth and even, with no streaks. Use it at once or keep it cold."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The cream is smooth and glossy, with no grains and no streaks."},
+    {"sense": "feel", "text": "It holds a soft peak on the spatula and does not run."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Beating the mascarpone hard, so that it turns grainy and then oily.",
+      "fix": "Stir it gently with a spatula, only until smooth."
+    },
+    {"mistake": "Mixing in a foam that is still warm, which thins the cheese.", "fix": "Let the foam cool first."}
+  ],
+  "works_on": [
+    {"thing": "ingredient/mascarpone", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/mascarpone-cream", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/whisk-over-a-bain-marie",
+      "why": "The cream is made with the sweet yolk foam, which must be whisked and cooled first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/fold",
+      "differs": "Nothing is whipped to hold air. A dense, soft cheese is loosened with a foam and combined with a spatula until smooth, and beating it hard would spoil it.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

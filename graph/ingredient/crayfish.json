@@ -1,7 +1,13 @@
 {
   "id": "ingredient/crayfish",
   "tier": "drafted",
-  "names": {"en": "Crayfish", "fr": "Écrevisse"},
+  "names": {
+    "en": "Crayfish",
+    "fr": "Écrevisse",
+    "es": "cangrejo de río",
+    "it": "gambero d'acqua dolce",
+    "tr": "kerevit"
+  },
   "aliases": {"en": ["freshwater crayfish", "crawfish"]},
   "is_a": [],
   "part_of": [],
@@ -22,6 +28,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/shrimp",
+      "allows": true,
+      "when": ["technique/saute", "technique/boil"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Crayfish tails are smaller and sweeter, with more taste in the shell.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1211742", "tier": "sourced"}
+  ]
 }

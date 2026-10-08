@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/romesco-nora-peppers-roasted-red-peppers",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Romesco",
+  "ingredient": "nora peppers",
+  "candidate": "roasted red peppers",
+  "verdict": "works-with-caveat",
+  "why": "Roasted red peppers give sweetness and colour but lack the dried fruity depth of nora, so a little smoked paprika helps."
+}

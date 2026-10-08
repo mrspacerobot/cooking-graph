@@ -1,0 +1,90 @@
+{
+  "id": "recipe/entrecote-sauce-bearnaise",
+  "tier": "drafted",
+  "names": {"en": "Rib steak with bearnaise sauce", "fr": "Entrecôte sauce béarnaise"},
+  "aliases": {},
+  "makes": "dish/entrecote-sauce-bearnaise",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/rib-steak", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "steak"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/egg-yolk", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "bearnaise"},
+    {"thing": "ingredient/butter", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "bearnaise"},
+    {
+      "thing": "ingredient/shallot",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/minced"],
+      "part": "bearnaise"
+    },
+    {"thing": "ingredient/tarragon", "amount": {"value": 6, "unit": "sprig"}, "forms": [], "part": "bearnaise"},
+    {
+      "thing": "ingredient/white-wine",
+      "amount": {"value": 100, "unit": "millilitre"},
+      "forms": [],
+      "part": "bearnaise"
+    },
+    {
+      "thing": "ingredient/white-wine-vinegar",
+      "amount": {"value": 3, "unit": "tablespoon"},
+      "forms": [],
+      "part": "bearnaise"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/frying-pan", "equipment/mixing-bowl", "equipment/whisk",
+    "equipment/fine-sieve", "equipment/tongs", "equipment/wire-rack", "equipment/thermometer"
+  ],
+  "steps": [
+    {
+      "technique": "technique/melt",
+      "works_on": ["ingredient/butter"],
+      "with": [],
+      "text": "Melt the butter gently in a small pan and keep it warm.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-bearnaise",
+      "works_on": ["ingredient/egg-yolk", "ingredient/shallot", "ingredient/tarragon"],
+      "with": ["ingredient/white-wine", "ingredient/white-wine-vinegar", "ingredient/butter", "ingredient/salt"],
+      "text": "Boil the vinegar, the wine, the shallots and half of the tarragon down to a few spoonfuls and strain. Whisk the yolks with this over a pan of barely trembling water until pale and thick, then off the heat whisk in the warm butter, a drop at a time and then in a thin stream. Stir in the rest of the tarragon, chopped, season, and keep the sauce warm.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": ["preparation/bearnaise"]
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/rib-steak"],
+      "with": ["ingredient/sunflower-oil", "ingredient/salt"],
+      "text": "Dry the steak and salt it. Sear it in the oil in a very hot, heavy pan, without moving it, until a deep brown crust forms, then turn it and cook to the doneness you like. Check it with a thermometer against a trusted guide.",
+      "time": {"from": 6, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/rest",
+      "works_on": ["ingredient/rib-steak"],
+      "with": [],
+      "text": "Lift the steak onto a rack and leave it alone for a short while.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/rib-steak", "preparation/bearnaise"],
+      "with": [],
+      "text": "Carve the steak into slices across the grain and spoon a little of the sauce beside it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    }
+  ]
+}

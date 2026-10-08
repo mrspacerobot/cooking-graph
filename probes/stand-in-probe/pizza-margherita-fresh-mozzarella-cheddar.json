@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/pizza-margherita-fresh-mozzarella-cheddar",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Pizza margherita",
+  "ingredient": "fresh mozzarella",
+  "candidate": "cheddar",
+  "verdict": "does-not-work",
+  "why": "Cheddar splits and pools oil in a hot oven and its sharp taste fights the sweet tomato and basil."
+}

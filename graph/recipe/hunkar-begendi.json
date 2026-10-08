@@ -1,0 +1,107 @@
+{
+  "id": "recipe/hunkar-begendi",
+  "tier": "drafted",
+  "names": {"en": "Hunkar begendi"},
+  "aliases": {},
+  "makes": "dish/hunkar-begendi",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/lamb-shoulder",
+      "amount": {"value": 700, "unit": "gram"},
+      "forms": ["form/large-pieces"],
+      "part": "lamb"
+    },
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/stock", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/aubergine", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/flour", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/milk", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "cream"},
+    {
+      "thing": "ingredient/kashkaval-cheese",
+      "amount": {"value": 80, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cream"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/saucepan", "equipment/whisk", "equipment/wooden-spoon",
+    "equipment/tongs", "equipment/mixing-bowl", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["ingredient/sunflower-oil", "ingredient/salt"],
+      "text": "Season the lamb with some of the salt and brown it in the hot oil in batches, so that the pot is never crowded.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the onion.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["ingredient/onion", "ingredient/tomato-paste", "ingredient/stock"],
+      "text": "Return all the lamb to the pot with the onion and the tomato paste. Pour in the stock, cover and braise gently until the meat is tender and the sauce is thick. Check a piece from the middle of the pot against a trusted guide to doneness.",
+      "time": {"from": 90, "to": 120, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/char",
+      "works_on": ["ingredient/aubergine"],
+      "with": [],
+      "text": "Set the aubergines straight on a gas flame and turn them until the skin is black and the flesh has collapsed. Cover them in a bowl to cool, then pull away the skin and drain off the juice.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the butter in a pan, stir in the flour and cook it for a short while without colour.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/make-begendi",
+      "works_on": ["ingredient/aubergine", "preparation/roux", "ingredient/milk"],
+      "with": ["ingredient/kashkaval-cheese", "ingredient/salt"],
+      "text": "Mash the aubergine flesh to a pulp. Whisk the warm milk into the roux a little at a time until thick, then beat in the aubergine and the cheese and stir until it melts into a smooth cream. Season with salt.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/smoky-aubergine-cream"]
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": [],
+      "text": "Spoon the warm cream on to plates and ladle the lamb and its sauce over it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

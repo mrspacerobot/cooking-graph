@@ -1,0 +1,65 @@
+{
+  "id": "technique/cook-rice-with-lentils",
+  "tier": "drafted",
+  "names": {"en": "Cook rice with lentils"},
+  "aliases": {"en": ["cook mujaddara", "cook rice and lentils together", "mujaddara method"]},
+  "does": "Cooks rice in the pot where lentils have been simmering, so that the rice takes up the lentil water and its flavour, and the rice and the lentils finish together under one lid as a dish of tender grains and whole lentils.",
+  "how": [
+    "Simmer the lentils in plenty of water until they are tender outside but still firm at the centre.",
+    "Wash the rice until the water is much less cloudy, and drain it.",
+    "Stir the rice into the pot with the lentils and add salt. If the liquid does not stand above them by about the depth of a finger, add hot water.",
+    "Bring to a boil, then turn the heat to its lowest, cover tightly and leave without stirring.",
+    "Rest it covered off the heat, then fluff it gently with a fork."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The liquid is gone and small steam holes show in the surface."},
+    {"sense": "feel", "text": "Both the rice and the lentils are tender, whole and separate."},
+    {"sense": "hear", "text": "The bubbling quietens to a soft hiss as the last liquid is taken up."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Simmering the lentils soft before the rice goes in, so that they fall apart.",
+      "fix": "Take the lentils off when the centre is still firm. They finish with the rice."
+    },
+    {
+      "mistake": "Adding too much water, so that the dish turns to porridge.",
+      "fix": "Let the liquid stand only a finger above the grains."
+    },
+    {
+      "mistake": "Stirring after the rice has gone in, which turns the starch gluey.",
+      "fix": "Stir once to settle the rice, then leave it alone."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/brown-lentil", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "The lentils are simmered first, and the rice goes into their pot.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/wash-rice",
+      "why": "Washing takes off the loose starch that would make the pot gluey.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/cook-rice",
+      "differs": "The rice goes into a pot of part-cooked lentils and takes up their liquid, so the rice and the lentils finish together. It is not cooked alone in measured water.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

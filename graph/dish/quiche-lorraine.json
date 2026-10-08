@@ -1,0 +1,38 @@
+{
+  "id": "dish/quiche-lorraine",
+  "tier": "drafted",
+  "names": {"en": "Quiche Lorraine", "fr": "Quiche lorraine"},
+  "aliases": {"en": ["Lorraine quiche"]},
+  "is": "A crisp pastry case filled with strips of bacon and a savoury custard of egg and cream, baked until the custard is just set. The classic quiche holds no cheese.",
+  "parts": [
+    {
+      "id": "pastry",
+      "role": "base",
+      "options": ["preparation/shortcrust-pastry"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "bacon", "role": "filling", "options": ["ingredient/bacon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "custard",
+      "role": "liquid",
+      "options": ["ingredient/cream", "ingredient/creme-fraiche"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "nutmeg", "role": "seasoning", "options": ["ingredient/nutmeg"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-shortcrust-pastry", "tier": "drafted"},
+    {"thing": "technique/blind-bake", "tier": "drafted"},
+    {"thing": "technique/render", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": []
+}

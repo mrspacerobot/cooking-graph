@@ -1,0 +1,83 @@
+{
+  "id": "recipe/rillettes-de-porc",
+  "tier": "drafted",
+  "names": {"en": "Pork rillettes", "fr": "Rillettes de porc"},
+  "aliases": {},
+  "makes": "dish/rillettes-de-porc",
+  "yields": {"value": 10, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-shoulder", "amount": {"value": 1, "unit": "kilogram"}, "forms": [], "part": "pork"},
+    {"thing": "ingredient/pork-belly", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "belly"},
+    {"thing": "ingredient/white-wine", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": ["form/peeled"], "part": "garlic"},
+    {"thing": "preparation/bouquet-garni", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "herbs"},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "nutmeg"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/baguette",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "bread"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/dutch-oven", "equipment/earthenware-jar",
+    "equipment/slotted-spoon", "equipment/wooden-spoon", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/trim",
+      "works_on": ["ingredient/pork-shoulder"],
+      "with": [],
+      "text": "Cut off the skin and any hard gristle from the shoulder, then cut the meat into pieces.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/pork-belly"],
+      "with": [],
+      "text": "Cut the belly into pieces about the size of the shoulder pieces, so that they cook at the same pace.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-rillettes",
+      "works_on": ["ingredient/pork-shoulder", "ingredient/pork-belly"],
+      "with": [
+        "ingredient/white-wine", "ingredient/garlic", "preparation/bouquet-garni", "ingredient/salt",
+        "ingredient/black-pepper", "ingredient/nutmeg"
+      ],
+      "text": "Put the meat in a heavy pot with the wine, the garlic, the herbs, the salt and the pepper. Cover and cook in a very low oven until the meat falls apart and sits in a pool of clear fat. Take out the herbs, lift the meat from the fat and pull it into ragged threads with a pair of forks. Mix in enough of the warm fat to make it spreadable, add the nutmeg, and taste. Pack it firmly into jars and seal the tops with a layer of fat. Keep it cold.",
+      "time": {"from": 240, "to": 300, "unit": "minute"},
+      "temperature": {"value": 120, "unit": "celsius"},
+      "safety_points": ["doneness", "cooling-and-keeping"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/pork-shoulder", "ingredient/pork-belly"],
+      "with": [],
+      "text": "Taste a little of the cold rillettes after a day and add salt or pepper if they taste flat. Cold food tastes milder.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/baguette"],
+      "with": [],
+      "text": "Toast the slices of bread until crisp and golden, to be spread with the rillettes at the table.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

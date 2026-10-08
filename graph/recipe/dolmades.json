@@ -1,0 +1,100 @@
+{
+  "id": "recipe/dolmades",
+  "tier": "drafted",
+  "names": {"en": "Dolmades"},
+  "aliases": {},
+  "makes": "dish/dolmades",
+  "yields": {"value": 8, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/vine-leaf", "amount": {"value": 40, "unit": "leaf"}, "forms": [], "part": "leaves"},
+    {"thing": "ingredient/rice", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/dill", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "herbs"},
+    {"thing": "ingredient/mint", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "herbs"},
+    {"thing": "ingredient/parsley", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "herbs"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/water", "amount": {"value": 450, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/saute-pan", "equipment/colander", "equipment/mixing-bowl",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/rice"],
+      "with": [],
+      "text": "Rinse the rice in a colander until the water is no longer cloudy, and drain it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Mince the onions.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/dill", "ingredient/mint", "ingredient/parsley"],
+      "with": [],
+      "text": "Chop the dill, the mint and the parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Soften the onions in some of the olive oil without letting them colour.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/rice", "ingredient/onion"],
+      "with": [
+        "ingredient/dill", "ingredient/mint", "ingredient/parsley", "ingredient/lemon-juice", "ingredient/olive-oil",
+        "ingredient/salt", "ingredient/black-pepper"
+      ],
+      "text": "Mix the raw rice with the onions, the herbs, part of the lemon juice, a little of the oil, the salt and the pepper. The rice will swell, so the filling should look loose.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roll",
+      "works_on": ["ingredient/vine-leaf"],
+      "with": ["ingredient/rice"],
+      "text": "Rinse the leaves well to wash off the brine, and soften them in hot water. Lay each leaf flat with the shiny side down, put a spoonful of filling near the stalk end, fold in the sides and roll up firmly but not tight, so that the rice has room to swell.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cover-with-a-lid",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/water", "ingredient/lemon-juice", "ingredient/olive-oil", "ingredient/vine-leaf"],
+      "text": "Pack the rolls seam down and close together in a pot lined with a few torn leaves. Add the water, the rest of the lemon juice and the rest of the oil, set a plate on top to hold them down and put on the lid. Simmer gently until the rice is soft and the leaves are tender, then leave them to cool in the pot.",
+      "time": {"from": 40, "to": 50, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "preparation/choux-pastry",
   "tier": "drafted",
-  "names": {"en": "Choux pastry", "fr": "Pâte à choux"},
+  "names": {"en": "Choux pastry", "fr": "Pâte à choux", "es": "Pasta choux", "it": "pasta choux", "tr": "şu hamuru"},
   "aliases": {"en": ["choux paste"]},
   "is": "A paste of flour cooked in hot water and butter, then beaten with eggs until it is glossy. Baked, it puffs into hollow shells. Poached, it makes light dumplings.",
   "parts": [
@@ -24,5 +24,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q898344", "tier": "sourced"}
   ]
 }

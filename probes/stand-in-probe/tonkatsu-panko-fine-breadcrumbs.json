@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/tonkatsu-panko-fine-breadcrumbs",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Tonkatsu",
+  "ingredient": "panko",
+  "candidate": "fine dry breadcrumbs",
+  "verdict": "works-with-caveat",
+  "why": "Fine crumbs fry to an even crust but lack the airy jagged crunch that panko gives the cutlet."
+}

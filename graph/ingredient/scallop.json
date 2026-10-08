@@ -1,8 +1,8 @@
 {
   "id": "ingredient/scallop",
   "tier": "drafted",
-  "names": {"en": "Scallop", "fr": "Noix de Saint-Jacques"},
-  "aliases": {"en": ["sea scallop", "scallops"]},
+  "names": {"en": "Scallop", "fr": "Noix de Saint-Jacques", "es": "vieira", "it": "capasanta"},
+  "aliases": {"en": ["sea scallop", "scallops"], "fr": ["pétoncle"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -23,5 +23,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q7360490", "tier": "sourced"}
+  ]
 }

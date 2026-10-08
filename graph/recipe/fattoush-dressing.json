@@ -1,0 +1,68 @@
+{
+  "id": "recipe/fattoush-dressing",
+  "tier": "drafted",
+  "names": {"en": "Fattoush dressing"},
+  "aliases": {},
+  "makes": "preparation/fattoush-dressing",
+  "yields": {"value": 150, "unit": "millilitre"},
+  "ingredients": [
+    {"thing": "ingredient/garlic", "amount": {"value": 1, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 60, "unit": "millilitre"}, "forms": [], "part": "lemon"},
+    {
+      "thing": "ingredient/pomegranate-molasses",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "pomegranate-molasses"
+    },
+    {"thing": "ingredient/dried-mint", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "dried-mint"},
+    {"thing": "ingredient/sumac", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sumac"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 90, "unit": "millilitre"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": ["equipment/mixing-bowl", "equipment/whisk", "equipment/chefs-knife", "equipment/cutting-board"],
+  "steps": [
+    {
+      "technique": "technique/crush",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/salt"],
+      "text": "Crush the garlic with the salt under the flat of the knife until it is a damp paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["preparation/fattoush-dressing"],
+      "with": [
+        "ingredient/garlic", "ingredient/lemon-juice", "ingredient/pomegranate-molasses", "ingredient/dried-mint",
+        "ingredient/sumac"
+      ],
+      "text": "In a bowl, whisk the garlic paste with the lemon juice, the pomegranate molasses, the dried mint and the sumac, until the salt has dissolved.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/emulsify",
+      "works_on": ["preparation/fattoush-dressing"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Whisk in the olive oil in a thin stream until the dressing thickens slightly and turns cloudy.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/fattoush-dressing"],
+      "with": [],
+      "text": "Taste it on a leaf. It should be sharp, a little sweet and tart. Whisk it again just before it is used, because it separates as it stands.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

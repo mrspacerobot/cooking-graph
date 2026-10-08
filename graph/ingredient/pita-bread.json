@@ -27,8 +27,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/bread",
+      "allows": true,
+      "when": ["dish/kefta-brochettes"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is flat and soft, and wraps the meat instead of making slices.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q211340", "tier": "sourced"}
   ]
 }

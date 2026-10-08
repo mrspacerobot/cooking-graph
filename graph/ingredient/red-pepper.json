@@ -23,8 +23,30 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/green-pepper",
+      "allows": true,
+      "when": ["dish/ratatouille", "technique/saute", "technique/simmer", "technique/stuff"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sweeter and softer, with a thinner wall and no grassy edge.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/bell-pepper",
+      "allows": true,
+      "when": ["dish/escalivada", "preparation/sofrito"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sweeter and softer than a green pepper.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q106446932", "tier": "sourced"}
   ]
 }

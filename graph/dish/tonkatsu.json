@@ -1,0 +1,41 @@
+{
+  "id": "dish/tonkatsu",
+  "tier": "drafted",
+  "names": {"en": "Tonkatsu"},
+  "aliases": {"en": ["Japanese pork cutlet"]},
+  "is": "A thick cutlet of pork, coated in flour, egg and coarse panko and fried whole in deep oil until deep gold, then cut across in strips and served on a heap of shredded raw cabbage with a thick, sweet and tangy sauce.",
+  "parts": [
+    {
+      "id": "pork",
+      "role": "main",
+      "options": ["ingredient/pork-loin", "ingredient/pork-tenderloin"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "coating", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "panko", "role": "coating", "options": ["ingredient/panko"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cabbage", "role": "side", "options": ["ingredient/cabbage"], "optional": false, "tier": "drafted"},
+    {"id": "sauce", "role": "sauce", "options": ["ingredient/tonkatsu-sauce"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/coat-in-panko", "tier": "drafted"},
+    {"thing": "technique/fry-a-cutlet", "tier": "drafted"},
+    {"thing": "technique/shred-cabbage", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1142841", "tier": "sourced"}
+  ]
+}

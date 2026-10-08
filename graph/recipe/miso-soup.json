@@ -1,0 +1,81 @@
+{
+  "id": "recipe/miso-soup",
+  "tier": "drafted",
+  "names": {"en": "Miso soup"},
+  "aliases": {},
+  "makes": "dish/miso-soup",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "preparation/dashi", "amount": {"value": 800, "unit": "millilitre"}, "forms": [], "part": "dashi"},
+    {"thing": "ingredient/miso", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "miso"},
+    {"thing": "ingredient/tofu", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "tofu"},
+    {"thing": "ingredient/wakame", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "wakame"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/ladle", "equipment/whisk", "equipment/mixing-bowl",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rehydrate-seaweed",
+      "works_on": ["ingredient/wakame"],
+      "with": [],
+      "text": "Soak the dried wakame in a bowl of cold water until it is soft and glossy. Lift it out, squeeze it lightly and cut away any hard rib.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cube-tofu",
+      "works_on": ["ingredient/tofu"],
+      "with": [],
+      "text": "Cut the tofu into small cubes with a wet knife, without pressing.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/spring-onion"],
+      "with": [],
+      "text": "Slice the spring onions thin.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["preparation/dashi"],
+      "with": ["ingredient/tofu", "ingredient/wakame"],
+      "text": "Warm the dashi in a pot until it just trembles. Slip in the tofu and the wakame and warm them through gently.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dissolve-miso",
+      "works_on": ["ingredient/miso"],
+      "with": ["preparation/dashi"],
+      "text": "Turn the heat down so that the dashi only trembles. Lower the miso in a ladle or a small sieve and work it loose into the dashi with the back of a spoon. Do not let the soup boil.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["preparation/dashi"],
+      "with": ["ingredient/spring-onion"],
+      "text": "Ladle the soup into bowls and scatter the spring onion over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

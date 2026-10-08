@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/tabbouleh-bulgur-quinoa",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Tabbouleh",
+  "ingredient": "bulgur",
+  "candidate": "quinoa",
+  "verdict": "works-with-caveat",
+  "why": "Cooked and cooled quinoa stands in for soaked bulgur and keeps the salad gluten free, though it is softer and less nutty."
+}

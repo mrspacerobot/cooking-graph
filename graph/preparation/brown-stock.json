@@ -1,7 +1,7 @@
 {
   "id": "preparation/brown-stock",
   "tier": "drafted",
-  "names": {"en": "Brown stock", "fr": "Fond brun"},
+  "names": {"en": "Brown stock", "fr": "Fond brun", "es": "Fondo oscuro"},
   "aliases": {"en": ["brown veal stock", "brown beef stock"]},
   "is": "A dark, full-bodied stock made from bones and vegetables that are roasted until deeply browned before they are simmered.",
   "parts": [
@@ -48,8 +48,21 @@
     {"thing": "technique/roast", "tier": "drafted"},
     {"thing": "technique/deglaze", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/white-chicken-stock",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/vichyssoise", "preparation/avgolemono", "preparation/veloute"],
+      "ratio": null,
+      "caveat": "A dark stock turns a pale sauce brown and gives it a roasted taste.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3075324", "tier": "sourced"}
   ]
 }

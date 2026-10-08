@@ -1,7 +1,7 @@
 {
   "id": "ingredient/ground-pork",
   "tier": "drafted",
-  "names": {"en": "Ground pork", "fr": "Porc haché"},
+  "names": {"en": "Ground pork", "fr": "Porc haché", "es": "carne picada de cerdo"},
   "aliases": {"en": ["minced pork", "pork mince"]},
   "is_a": [],
   "part_of": [],
@@ -24,6 +24,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/minced-beef",
+      "allows": true,
+      "when": ["preparation/kima", "preparation/ragu", "technique/shape-meatballs"],
+      "not_when": ["dish/kefta-brochettes", "dish/kefta-tagine-with-eggs", "dish/kousa-mahshi"],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "It is milder and fattier, so the dish is softer and less deep in taste.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q54962305", "tier": "sourced"}
+  ]
 }

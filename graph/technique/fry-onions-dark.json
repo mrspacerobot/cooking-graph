@@ -1,0 +1,63 @@
+{
+  "id": "technique/fry-onions-dark",
+  "tier": "drafted",
+  "names": {"en": "Fry onions until dark"},
+  "aliases": {"en": ["fry onions until crisp", "fry onions dark"]},
+  "does": "Fries thinly sliced onions in a generous layer of hot oil until they turn deep brown and crisp at the edges, then lifts them out to drain. They bring a bittersweet crunch to rice and lentils, and the oil they leave behind is full of their flavour.",
+  "how": [
+    "Slice the onions thin and evenly, so that they brown at one pace.",
+    "Heat a good depth of oil in a wide, heavy pan until a slice sizzles the moment it goes in.",
+    "Add the onions in a loose layer, in batches if need be. Stir often at first, then less often as they darken.",
+    "Lower the heat once the edges go dark, and keep frying until the onions are a deep brown. They crisp further as they cool.",
+    "Lift them out with a slotted spoon onto a rack or paper, and salt them lightly. Keep the oil."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A deep, even brown with a few darker tips, and no black."},
+    {
+      "sense": "hear",
+      "text": "A loud bubbling at the start that calms to a quiet sizzle as the water leaves the onions."
+    },
+    {"sense": "feel", "text": "A piece lifted out and cooled snaps when it is pressed."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Crowding the pan, so that the onions steam, turn limp and never crisp.",
+      "fix": "Fry in batches, in the widest pan you have."
+    },
+    {
+      "mistake": "Looking away at the end, when the onions go from brown to bitter black in moments.",
+      "fix": "Stay by the pan and lift them out as soon as they are deep brown."
+    },
+    {
+      "mistake": "Starting in cool oil, which soaks into the onions and leaves them greasy.",
+      "fix": "Wait until a slice sizzles at once."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/onion", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/slice",
+      "why": "Even slices brown at one pace, so a cook who can slice evenly fries better onions.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/caramelize",
+      "differs": "The onions are cut thin and fried in plenty of hot oil until dark and crisp at the edges, and not coaxed slowly in a little fat until soft and sweet.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

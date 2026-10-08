@@ -1,0 +1,54 @@
+{
+  "id": "technique/cook-octopus",
+  "tier": "drafted",
+  "names": {"en": "Cook octopus Galician style"},
+  "aliases": {"en": ["pulpo a feira", "asustar el pulpo", "scare the octopus"]},
+  "does": "Cooks a whole octopus in plenty of water, first dipping it in and out of the boil several times so that the arms curl and the skin stays on, then lets it bubble steadily until the thickest part of an arm is tender. It is rested, then snipped into rounds with scissors.",
+  "how": [
+    "Bring a large pot of water to a rolling boil. Hold the octopus by the head with tongs and dip it in and out of the water, a few times, for a moment each time. The arms curl up.",
+    "Lower it in completely. When the water comes back to a boil, turn the heat down to a steady bubbling.",
+    "Cook until a knife slips into the thickest part of an arm with no pull. The time depends on the size of the animal, so test it often towards the end.",
+    "Lift it out onto a board, cover it with a cloth and let it rest while the potatoes cook in the same water. It goes on softening as it stands.",
+    "Snip the arms into rounds about as thick as a thumb with kitchen scissors, straight onto the serving dish. Cut the head into strips if it is used."
+  ],
+  "cues": [
+    {"sense": "see", "text": "After the dips the arms curl into tight spirals and the purple skin is still on."},
+    {"sense": "feel", "text": "A knife slides into the thickest part of an arm as into a ripe pear, with no pull."},
+    {"sense": "see", "text": "The cut rounds are glossy and keep their curl, with the skin still on the edge."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Lowering the octopus straight in, so that the arms stay limp and the skin comes away.",
+      "fix": "Dip it in and out of the boil first, to set the skin."
+    },
+    {
+      "mistake": "Boiling it hard for the whole time, which toughens the outside before the middle has softened.",
+      "fix": "Turn the heat down to a steady bubbling once it is in."
+    },
+    {
+      "mistake": "Cutting the rounds with a knife on a board, which squashes them and loses the juices.",
+      "fix": "Snip them with scissors straight onto the dish."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/octopus", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/stockpot"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/kitchen-scissors", "equipment/tongs"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/boil",
+      "differs": "The food is one whole animal and not many small pieces. It is dipped in and out of the boil first, then cooked at a steady bubbling, rested out of the water, and cut with scissors. Boiling cooks small pieces fast and evenly in fast-bubbling water.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/miso-soup-white-miso-red-miso",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Miso soup",
+  "ingredient": "white miso",
+  "candidate": "red miso",
+  "verdict": "works-with-caveat",
+  "why": "Red miso is saltier and more pungent, so less is needed and the soup is darker and bolder."
+}

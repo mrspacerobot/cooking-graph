@@ -3,7 +3,7 @@
 Written by `./safety strict`. An ingredient holds a fact for certain, or the fact is recorded strictly because a common form of the ingredient may hold it.
 The rows below are the strict ones. How strict to be is for the owner to rule, reason by reason. Every safety record is unverified either way.
 
-317 of the 586 facts that ingredients hold are strict.
+335 of the 615 facts that ingredients hold are strict.
 
 | Fact | Basis | Ingredients |
 |---|---|---|
@@ -14,11 +14,11 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/alcohol` | Recorded strictly: many are seasoned with mirin. | fish-cake, kamaboko |
 | `fact/alcohol` | Recorded strictly: ready-packed noodles are sometimes kept with alcohol. | yakisoba-noodle |
 | `fact/alcohol` | Recorded strictly: ready-packed udon is sometimes kept with alcohol. | udon-noodle |
-| `fact/alcohol` | Recorded strictly: some miso has alcohol added to keep it. | miso |
+| `fact/alcohol` | Recorded strictly: some miso has alcohol added to keep it. | miso, red-miso, white-miso |
 | `fact/alcohol` | Recorded strictly: they hold vinegar, which keeps a trace of alcohol. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
 | `fact/alcohol` | Some are seasoned with wine or spirits. | lyon-sausage |
 | `fact/alcohol` | Some are seasoned with wine. | andouillette |
-| `fact/alcohol` | Vinegar keeps a trace of the alcohol it is made from. | capers, cornichons, red-wine-vinegar, rice-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
+| `fact/alcohol` | Vinegar keeps a trace of the alcohol it is made from. | capers, cornichons, red-wine-vinegar, rice-vinegar, sherry-vinegar, vinegar, white-vinegar, white-wine-vinegar |
 | `fact/animal-product` | Recorded strictly: some are sweetened with honey. | umeboshi |
 | `fact/buckwheat` | Some crozets are made of buckwheat flour. | crozets |
 | `fact/celery` | Cooked ham is often made with a stock or an extract that holds celery. | ham |
@@ -42,7 +42,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/egg` | Recorded strictly: some soba is bound with egg. | soba-noodle |
 | `fact/egg` | Some bought pita holds egg. | pita-bread |
 | `fact/egg` | Some makers add egg to thin pastry sheets. | warqa |
-| `fact/egg` | Some pasta is made with egg. | ditalini, small-pasta, spaghetti |
+| `fact/egg` | Some pasta is made with egg. | ditalini, small-pasta, spaghetti, trenette |
 | `fact/egg` | Some wines are cleared with egg white. | dry-sherry |
 | `fact/egg` | Wine may be cleared with egg white. | madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
 | `fact/fish` | Beer may be cleared with isinglass, which comes from fish. | beer |
@@ -51,7 +51,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/fish` | Often made with wine, which may be cleared with isinglass from fish. | dijon-mustard |
 | `fact/fish` | Recorded strictly: some are made with anchovy, as Worcestershire sauce is. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
 | `fact/fish` | Recorded strictly: some are seasoned with dried bonito. | umeboshi |
-| `fact/fish` | Recorded strictly: some miso has fish stock added. | miso |
+| `fact/fish` | Recorded strictly: some miso has fish stock added. | miso, red-miso, white-miso |
 | `fact/fish` | Some wines are cleared with fish finings. | dry-sherry |
 | `fact/fish` | Wine may be cleared with isinglass, which comes from fish. | madeira, marsala, red-wine, riesling, vin-jaune, white-wine |
 | `fact/gluten` | Bought sausage meat is often bound with breadcrumbs or rusk. | sausage-meat |
@@ -64,10 +64,11 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/gluten` | Many sausages are bound with breadcrumbs or rusk. | pork-sausage |
 | `fact/gluten` | Most crozets are made of wheat flour, though some are made of buckwheat. | crozets |
 | `fact/gluten` | Most soy sauce is brewed with wheat. | soy-sauce |
+| `fact/gluten` | Recorded strictly: it may be made from grain. | white-vinegar |
 | `fact/gluten` | Recorded strictly: many are bound with wheat starch or flour. | fish-cake, kamaboko |
 | `fact/gluten` | Recorded strictly: most soba is blended with wheat flour. | soba-noodle |
 | `fact/gluten` | Recorded strictly: some bottled mirin-style seasonings are made with other grains. | mirin |
-| `fact/gluten` | Recorded strictly: some miso is made with wheat or barley. | miso |
+| `fact/gluten` | Recorded strictly: some miso is made with wheat or barley. | miso, red-miso, white-miso |
 | `fact/gluten` | Recorded strictly: they usually hold soy sauce, which is brewed with wheat. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
 | `fact/gluten` | Some are bound with bread or flour. | andouillette |
 | `fact/gluten` | Some baking powder is bulked with wheat starch. | baking-powder |
@@ -119,7 +120,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/slaughter-product` | Cider may be cleared with gelatine or isinglass. | cider |
 | `fact/slaughter-product` | It is traditionally made with animal rennet. | kefalotyri, roquefort |
 | `fact/slaughter-product` | It is traditionally set with animal rennet. | caciocavallo, casera-cheese |
-| `fact/slaughter-product` | It is traditionally set with lamb rennet. | pecorino |
+| `fact/slaughter-product` | It is traditionally set with lamb rennet. | pecorino, pecorino-romano |
 | `fact/slaughter-product` | Made from wine, which may be cleared with gelatine or isinglass. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
 | `fact/slaughter-product` | Many are set with animal rennet. | kashkaval-cheese |
 | `fact/slaughter-product` | Many fetas are set with animal rennet. | feta |
@@ -128,6 +129,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/slaughter-product` | Many such cheeses are set with animal rennet. | kolot-cheese |
 | `fact/slaughter-product` | Many white cheeses are set with animal rennet. | white-cheese |
 | `fact/slaughter-product` | Often made with wine, which may be cleared with gelatine or isinglass. | dijon-mustard |
+| `fact/slaughter-product` | Recorded strictly: cheese is often set with animal rennet. | cheddar, cottage-cheese |
 | `fact/slaughter-product` | Ricotta is made from the whey of cheese that was set with animal rennet. | ricotta-salata |
 | `fact/slaughter-product` | Some cane sugar is whitened with bone char. | brown-sugar, savoiardi, sugar |
 | `fact/slaughter-product` | Some cheese for the filling is set with animal rennet. | ravioles |
@@ -157,7 +159,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/sulphites` | Cooked sausages are often kept with sulphites. | cervelas, morcilla |
 | `fact/sulphites` | Cured meats are often kept with sulphites. | serrano-ham |
 | `fact/sulphites` | Cured sausages are often kept with sulphites. | chorizo |
-| `fact/sulphites` | Dried fruit is often kept with sulphites. | currant, prune |
+| `fact/sulphites` | Dried fruit is often kept with sulphites. | currant, dried-apricot, prune |
 | `fact/sulphites` | Dried fruit is often treated with sulphites to keep its colour. | amchur |
 | `fact/sulphites` | Dried fruit is sometimes kept with a preservative of sulphites. | date |
 | `fact/sulphites` | Fresh sausages are often kept with sulphites. | pork-sausage |
@@ -170,9 +172,10 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/sulphites` | Pickles are sometimes kept with sulphites. | capers, cornichons |
 | `fact/sulphites` | Preserved peppercorns may use sulphites; the maker has not been checked. | green-peppercorns |
 | `fact/sulphites` | Preserves are sometimes kept with sulphites. | redcurrant-jelly |
-| `fact/sulphites` | Recorded strictly, as vinegars are often kept with sulphites. | rice-vinegar |
+| `fact/sulphites` | Recorded strictly, as vinegars are often kept with sulphites. | rice-vinegar, white-vinegar |
 | `fact/sulphites` | Recorded strictly: pickled foods are often kept with sulphites. | pickled-ginger, umeboshi |
 | `fact/sulphites` | Recorded strictly: some ketchups are kept with sulphites. | ketchup |
+| `fact/sulphites` | Recorded strictly: some sold coconut milk is kept with sulphites. | coconut-milk |
 | `fact/sulphites` | Recorded strictly: they often hold vinegar or dried fruit kept with sulphites. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
 | `fact/sulphites` | Sausages are often kept with sulphites. | andouillette, lyon-sausage |
 | `fact/sulphites` | Some beer holds sulphites. | beer |
@@ -182,7 +185,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/sulphites` | Table grapes are often kept with sulphur dioxide. | grape |
 | `fact/sulphites` | Wines are usually kept with sulphites. | dry-sherry |
 | `fact/tree-nuts` | It is a nut that grows on a tree, though the European list of nuts does not name it. | chestnut |
-| `fact/tree-nuts` | It is pressed from coconut, which some lists count as a tree nut; recorded strictly. | coconut-oil |
+| `fact/tree-nuts` | It is pressed from coconut, which some lists count as a tree nut; recorded strictly. | coconut-milk, coconut-oil |
 | `fact/tree-nuts` | Pine nuts are seeds of pine cones, listed as tree nuts in some places and not in others. | pine-nut |
 | `fact/tree-nuts` | Some are studded with pistachios. | cervelas, lyon-sausage |
 | `fact/tree-nuts` | Some lists count coconut as a tree nut; recorded strictly. | coconut |
@@ -201,7 +204,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/wheat` | Recorded strictly: many are bound with wheat starch or flour. | fish-cake, kamaboko |
 | `fact/wheat` | Recorded strictly: most soba is blended with wheat flour. | soba-noodle |
 | `fact/wheat` | Recorded strictly: some bottled mirin-style seasonings are made with other grains. | mirin |
-| `fact/wheat` | Recorded strictly: some miso is made with wheat or barley. | miso |
+| `fact/wheat` | Recorded strictly: some miso is made with wheat or barley. | miso, red-miso, white-miso |
 | `fact/wheat` | Recorded strictly: they usually hold soy sauce, which is brewed with wheat. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
 | `fact/wheat` | Some are bound with bread or flour. | andouillette |
 | `fact/wheat` | Some baking powder is bulked with wheat starch. | baking-powder |

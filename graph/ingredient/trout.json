@@ -1,7 +1,7 @@
 {
   "id": "ingredient/trout",
   "tier": "drafted",
-  "names": {"en": "Trout", "fr": "Truite"},
+  "names": {"en": "Trout", "fr": "Truite", "es": "trucha", "it": "trota", "tr": "Alabalık"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -22,6 +22,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/salmon",
+      "allows": true,
+      "when": [
+        "technique/poach", "technique/bake-in-parchment", "dish/cold-poached-salmon", "dish/saumon-a-l-unilaterale"
+      ],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "Trout is leaner and thinner, so it sets sooner and dries out sooner.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2258881", "tier": "sourced"}
+  ]
 }

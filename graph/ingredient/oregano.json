@@ -1,7 +1,7 @@
 {
   "id": "ingredient/oregano",
   "tier": "drafted",
-  "names": {"en": "Oregano", "fr": "Origan"},
+  "names": {"en": "Oregano", "fr": "Origan", "it": "origano"},
   "aliases": {"en": ["rigani"]},
   "is_a": [],
   "part_of": [],
@@ -21,8 +21,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/thyme",
+      "allows": true,
+      "when": ["dish/roasted-root-vegetables", "technique/grill", "technique/roast"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It tastes sharper and more peppery, so use a little less.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q92581152", "tier": "sourced"}
   ]
 }

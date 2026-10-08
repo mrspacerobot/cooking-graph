@@ -1,7 +1,13 @@
 {
   "id": "ingredient/cocoa-powder",
   "tier": "drafted",
-  "names": {"en": "Cocoa powder", "fr": "Cacao en poudre"},
+  "names": {
+    "en": "Cocoa powder",
+    "fr": "Cacao en poudre",
+    "es": "cacao en polvo",
+    "it": "cacao in polvere",
+    "tr": "Kakao tozu"
+  },
   "aliases": {"en": ["unsweetened cocoa"]},
   "is_a": [],
   "part_of": [],
@@ -21,5 +27,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1062396", "tier": "sourced"}
+  ]
 }

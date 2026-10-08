@@ -1,0 +1,64 @@
+{
+  "id": "technique/layer-a-cold-dessert",
+  "tier": "drafted",
+  "names": {"en": "Layer a cold dessert"},
+  "aliases": {"en": ["layer biscuits and cream", "build a layered dessert"]},
+  "does": "Builds a dessert without baking it, from dipped biscuits and a soft cream laid in even layers in a dish, dusts the top and chills it for long enough that the layers soften into each other and the whole can be cut in squares.",
+  "how": [
+    "Have the dipped biscuits and the cream within reach before the first layer goes down.",
+    "Lay a single layer of biscuits side by side in the dish, close together with no gaps.",
+    "Spread half the cream over them in an even layer, right to the corners, and smooth it with a spatula.",
+    "Lay a second layer of biscuits, then spread the rest of the cream and smooth the top.",
+    "Sift cocoa over the top just before serving, so that it stays dry and dark.",
+    "Cover the dish and chill it until the layers have melded and the cream is firm enough to cut cleanly."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The layers are flat and even, and show as stripes where a square is cut out."},
+    {
+      "sense": "feel",
+      "text": "A knife cuts through without the cream running, and the biscuits are soft right through."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting the dessert after only a short chill, so that the cream runs and the layers slide.",
+      "fix": "Leave it to chill until it is firm, ideally overnight."
+    },
+    {
+      "mistake": "Dusting the cocoa on before chilling, so that it dissolves into a damp, patchy top.",
+      "fix": "Dust it on just before serving."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/savoiardi", "tier": "drafted"},
+    {"thing": "preparation/mascarpone-cream", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula", "equipment/fine-sieve"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/cocoa-powder"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/dip",
+      "why": "The biscuits must be dipped before they are laid down, or they stay dry.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/make-a-mascarpone-cream",
+      "why": "The cream goes between the layers, so it is made first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/layer",
+      "differs": "Nothing is baked. The layers are built cold and soften together as they chill, so the dessert needs a long rest before it is cut.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

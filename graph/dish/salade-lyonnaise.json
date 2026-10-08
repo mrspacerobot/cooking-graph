@@ -45,5 +45,8 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/lyonnais", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q20971886", "tier": "sourced"}
   ]
 }

@@ -22,6 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/pork-loin",
+      "allows": true,
+      "when": ["technique/roast"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is paler and milder, and it needs basting just as often.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
 }

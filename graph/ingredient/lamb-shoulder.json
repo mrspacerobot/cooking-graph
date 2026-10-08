@@ -1,7 +1,7 @@
 {
   "id": "ingredient/lamb-shoulder",
   "tier": "drafted",
-  "names": {"en": "Lamb shoulder", "fr": "Épaule d'agneau"},
+  "names": {"en": "Lamb shoulder", "fr": "Épaule d'agneau", "es": "paletilla de cordero"},
   "aliases": {"en": ["stewing lamb"]},
   "is_a": [],
   "part_of": [],
@@ -22,6 +22,28 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/lamb-shank",
+      "allows": true,
+      "when": ["dish/lamb-tagine-with-prunes"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is fattier and has no bone, so the sauce is less sticky.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/beef-shank",
+      "allows": true,
+      "when": ["dish/tangia-marrakchia"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Lamb tastes stronger and is fattier, and the stew becomes less sticky.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q138542233", "tier": "sourced"}
+  ]
 }

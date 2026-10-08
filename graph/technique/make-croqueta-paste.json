@@ -1,0 +1,62 @@
+{
+  "id": "technique/make-croqueta-paste",
+  "tier": "drafted",
+  "names": {"en": "Make croqueta paste"},
+  "aliases": {"en": ["make croqueta filling", "make croqueta dough", "make the croqueta base"]},
+  "does": "Cooks flour in butter with a little onion, stirs in chopped ham, then beats in warm milk a little at a time over the heat until the mixture is so thick that it pulls away from the pan in one mass. Spread in a tray and chilled, it sets firm enough to shape by hand.",
+  "how": [
+    "Melt the butter in a wide pan over a gentle heat and soften the finely chopped onion in it without colour.",
+    "Stir in the flour and cook it, stirring, until it smells of biscuit.",
+    "Add the finely chopped ham. Pour in warm milk a little at a time, beating hard with a wooden spoon after each addition until smooth before the next goes in.",
+    "Keep stirring over a low heat until the mixture is very thick and pulls away from the sides and the bottom of the pan as one mass. Season with nutmeg. The ham is already salty, so taste before adding salt.",
+    "Spread the paste in a shallow dish, press a sheet of film onto the surface so that no skin forms, and chill it until it is firm all the way through."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The paste leaves the sides and the bottom of the pan and gathers into one mass round the spoon."
+    },
+    {"sense": "feel", "text": "It is heavy to stir and holds the trail of the spoon."},
+    {"sense": "feel", "text": "After chilling it holds the cut of a spoon and does not stick to floured hands."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the milk cold and all at once, which makes lumps.",
+      "fix": "Warm the milk and add it a little at a time, beating smooth after each addition."
+    },
+    {
+      "mistake": "Stopping while the paste is still loose, so that the croquetas slump and burst in the oil.",
+      "fix": "Keep stirring until the paste pulls away from the pan, and chill it until firm."
+    },
+    {
+      "mistake": "Shaping the paste while it is still soft.",
+      "fix": "Chill it overnight if there is time; a cold paste is easy to roll."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/flour", "tier": "drafted"},
+    {"thing": "ingredient/milk", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/croqueta-paste", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/butter"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/milk"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/nutmeg", "ingredient/salt"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/make-a-bechamel",
+      "differs": "Far more flour is used for the same milk, the ham and onion go in with it, and it is cooked until it leaves the pan in one mass and is then chilled to a firm block. A béchamel is kept loose enough to pour or coat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

@@ -24,8 +24,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/ham",
+      "allows": true,
+      "when": ["preparation/croqueta-paste"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is saltier and more intense, so use less salt elsewhere.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q584324", "tier": "sourced"}
   ]
 }

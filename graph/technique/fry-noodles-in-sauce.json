@@ -1,0 +1,60 @@
+{
+  "id": "technique/fry-noodles-in-sauce",
+  "tier": "drafted",
+  "names": {"en": "Fry noodles in sauce"},
+  "aliases": {"en": ["fry noodles with sauce"]},
+  "does": "Tosses loosened noodles in a very hot pan with meat and vegetables that are already cooked, and pours a sweet, tangy sauce round the edge of the pan, until the noodles are coated, lightly browned in places and still separate.",
+  "how": [
+    "Have the noodles loosened, the sauce mixed and everything else cut and at hand.",
+    "Cook the meat and the firmest vegetables first in a hot pan with a little oil, then add the leaves and sprouts for a short time.",
+    "Add the noodles and toss them with tongs, lifting from the bottom, until they are hot.",
+    "Pour the sauce round the edge of the pan, so that it sizzles on the metal before it is tossed in.",
+    "Toss until the sauce is taken up, and serve at once, before the noodles soften."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "The sauce smells sweet and tangy as it hits the hot pan."},
+    {"sense": "see", "text": "The strands are evenly brown, separate, and there is no wet pool in the pan."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding noodles that are still in a clump, so that they tear and cook unevenly.",
+      "fix": "Loosen them first."
+    },
+    {
+      "mistake": "Pouring the sauce on top of the noodles, so that they stew and turn soft.",
+      "fix": "Pour it round the edge of the hot pan."
+    },
+    {
+      "mistake": "Packing too much into the pan, so that the food steams.",
+      "fix": "Use a wide pan, or cook in batches."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/yakisoba-noodle", "tier": "drafted"},
+    {"thing": "ingredient/udon-noodle", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/wok", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/loosen-noodles",
+      "why": "The noodles must be pulled apart before they go into the pan.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/stir-fry",
+      "differs": "The main food is noodles and not rice or vegetables. They are loosened first and added late, and the sauce is poured round the edge of the pan so that it sizzles before it coats them.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

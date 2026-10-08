@@ -1,0 +1,98 @@
+{
+  "id": "recipe/spaghetti-all-amatriciana",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti all'amatriciana", "fr": "Spaghetti à l'amatriciana"},
+  "aliases": {},
+  "makes": "dish/spaghetti-all-amatriciana",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/spaghetti", "amount": {"value": 320, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {
+      "thing": "ingredient/guanciale",
+      "amount": {"value": 150, "unit": "gram"},
+      "forms": ["form/sliced"],
+      "part": "guanciale"
+    },
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/chilli", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "sauce"},
+    {
+      "thing": "ingredient/pecorino",
+      "amount": {"value": 60, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/frying-pan", "equipment/colander", "equipment/tongs",
+    "equipment/wooden-spoon", "equipment/grater", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/render",
+      "works_on": ["ingredient/guanciale"],
+      "with": [],
+      "text": "Put the guanciale in a cold, wide pan over medium-low heat and let the fat run, until the pieces are golden at the edges. Lift them out and keep the fat in the pan.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/rendered-fat"]
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": [
+        "ingredient/chilli", "ingredient/olive-oil", "ingredient/salt", "preparation/rendered-fat",
+        "ingredient/guanciale"
+      ],
+      "text": "Add the chilli and the olive oil to the fat, then the tomatoes, crushed, with a little salt. Let it bubble at a lively simmer, stirring and crushing the tomatoes, until the sauce is thick and the fat shines at the edge. Stir the guanciale back in.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Cook the spaghetti in a large pot of well-salted boiling water, and lift it out a little before it is ready, with a mug of the cooking water set aside.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss-pasta-with-sauce",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["preparation/tomato-sauce", "ingredient/water"],
+      "text": "Lift the spaghetti straight into the pan with the sauce and toss over the heat, adding the cooking water a splash at a time, until the sauce turns glossy and clings.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grate",
+      "works_on": ["ingredient/pecorino"],
+      "with": [],
+      "text": "Grate the pecorino and take half through the pasta off the heat.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/pecorino"],
+      "text": "Serve in warm bowls with the rest of the cheese over the top.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/cardamom",
   "tier": "drafted",
-  "names": {"en": "Cardamom", "fr": "Cardamome"},
+  "names": {"en": "Cardamom", "fr": "Cardamome", "es": "cardamomo", "it": "cardamomo", "tr": "kakule"},
   "aliases": {"en": ["elaichi", "green cardamom"]},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q14625808", "tier": "sourced"}
   ]
 }

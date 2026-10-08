@@ -1,8 +1,8 @@
 {
   "id": "ingredient/phyllo",
   "tier": "drafted",
-  "names": {"en": "Phyllo", "fr": "Pâte filo"},
-  "aliases": {"en": ["filo", "phyllo pastry", "filo pastry", "phyllo dough"]},
+  "names": {"en": "Phyllo", "fr": "Pâte filo", "es": "masa filo", "it": "pasta fillo", "tr": "Yufka"},
+  "aliases": {"en": ["filo", "phyllo pastry", "filo pastry", "phyllo dough"], "fr": ["pâte phyllo"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -25,5 +25,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1866347", "tier": "sourced"}
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/chorizo",
   "tier": "drafted",
-  "names": {"en": "Chorizo", "fr": "Chorizo"},
+  "names": {"en": "Chorizo", "fr": "Chorizo", "tr": "çorizo"},
   "aliases": {"en": ["Spanish chorizo"]},
   "is_a": [],
   "part_of": [],
@@ -29,5 +29,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q23374", "tier": "sourced"}
   ]
 }

@@ -1,0 +1,99 @@
+{
+  "id": "recipe/bacalao-a-la-vizcaina",
+  "tier": "drafted",
+  "names": {"en": "Bacalao a la vizcaína"},
+  "aliases": {},
+  "makes": "dish/bacalao-a-la-vizcaina",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/salt-cod", "amount": {"value": 700, "unit": "gram"}, "forms": [], "part": "cod"},
+    {"thing": "ingredient/water", "amount": {"value": 3, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/onion", "amount": {"value": 800, "unit": "gram"}, "forms": ["form/sliced"], "part": "sauce"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/choricero-pepper", "amount": {"value": 6, "unit": "piece"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/stale-bread", "amount": {"value": 1, "unit": "slice"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/water", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/flour", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/mixing-bowl", "equipment/saucepan", "equipment/frying-pan", "equipment/fine-sieve",
+    "equipment/ladle", "equipment/fish-slice"
+  ],
+  "steps": [
+    {
+      "technique": "technique/desalt",
+      "works_on": ["ingredient/salt-cod"],
+      "with": ["ingredient/water"],
+      "text": "Put the cod skin side up in a bowl of cold water in the fridge. Change the water several times, until the fish has lost most of its salt and tastes pleasant when a small piece is tried.",
+      "time": {"from": 24, "to": 48, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-salsa-vizcaina",
+      "works_on": ["ingredient/onion", "ingredient/choricero-pepper"],
+      "with": [
+        "ingredient/garlic", "ingredient/olive-oil", "ingredient/water", "ingredient/stale-bread", "ingredient/salt"
+      ],
+      "text": "Soak the dried peppers in hot water until soft, scrape out the pulp and keep the water. Cook the onion and the garlic in the oil, lid ajar, over a very low heat until soft, sweet and pale. Add the pulp, a ladle of the soaking water and the bread, simmer until the onion falls apart, then rub the sauce through a sieve. Season it at the end.",
+      "time": {"from": 60, "to": 75, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/salsa-vizcaina"]
+    },
+    {
+      "technique": "technique/dry",
+      "works_on": ["ingredient/salt-cod"],
+      "with": [],
+      "text": "Lift the cod out, divide it in portions and pat it dry.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dredge",
+      "works_on": ["ingredient/salt-cod"],
+      "with": ["ingredient/flour"],
+      "text": "Dust the portions lightly with flour and shake off the extra.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pan-fry",
+      "works_on": ["ingredient/salt-cod"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Fry the portions in the oil, skin side down first, and turn them once, until they are lightly golden but not hard.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/salt-cod", "preparation/salsa-vizcaina"],
+      "with": [],
+      "text": "Slide the cod into the sauce and simmer very gently, shaking the pan now and then. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/salt-cod", "preparation/salsa-vizcaina"],
+      "with": [],
+      "text": "Serve the cod in the sauce in a warm dish.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

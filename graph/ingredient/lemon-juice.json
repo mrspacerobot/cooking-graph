@@ -1,7 +1,13 @@
 {
   "id": "ingredient/lemon-juice",
   "tier": "drafted",
-  "names": {"en": "Lemon juice", "fr": "Jus de citron"},
+  "names": {
+    "en": "Lemon juice",
+    "fr": "Jus de citron",
+    "es": "jugo de limón",
+    "it": "succo di limone",
+    "tr": "limon suyu"
+  },
   "aliases": {},
   "is_a": [],
   "part_of": [
@@ -39,9 +45,21 @@
       "ratio": null,
       "caveat": "Only the squeezed juice is used here. It cannot replace peel or a slice used as a garnish.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/red-wine-vinegar",
+      "allows": true,
+      "when": ["dish/melitzanosalata"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a bright, citrus sourness instead of a winey one.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1375049", "tier": "sourced"}
   ]
 }

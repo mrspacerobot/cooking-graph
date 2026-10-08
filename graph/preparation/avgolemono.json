@@ -24,5 +24,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1863568", "tier": "sourced"}
   ]
 }

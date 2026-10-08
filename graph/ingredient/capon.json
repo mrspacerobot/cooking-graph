@@ -24,6 +24,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/chicken",
+      "allows": true,
+      "when": ["technique/roast"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is larger and fattier, so it takes longer and gives a richer broth.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
 }

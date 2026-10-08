@@ -28,5 +28,6 @@
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"},
     {"thing": "cuisine/moroccan", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

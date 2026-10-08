@@ -1,8 +1,8 @@
 {
   "id": "ingredient/peas",
   "tier": "drafted",
-  "names": {"en": "Peas", "fr": "Petits pois"},
-  "aliases": {"en": ["green peas", "garden peas", "pea", "green pea"]},
+  "names": {"en": "Peas", "fr": "Petits pois", "es": "guisante", "it": "pisello"},
+  "aliases": {"en": ["green peas", "garden peas", "pea", "green pea"], "fr": ["pois"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -22,5 +22,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q29472543", "tier": "sourced"}
+  ]
 }

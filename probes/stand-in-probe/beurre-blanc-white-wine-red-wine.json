@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/beurre-blanc-white-wine-red-wine",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Beurre blanc",
+  "ingredient": "white wine",
+  "candidate": "red wine",
+  "verdict": "works-with-caveat",
+  "why": "The sauce still emulsifies but turns a dusky pink and tastes fuller, which cooks know as beurre rouge."
+}

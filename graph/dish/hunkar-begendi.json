@@ -1,0 +1,43 @@
+{
+  "id": "dish/hunkar-begendi",
+  "tier": "drafted",
+  "names": {"en": "Hunkar begendi"},
+  "aliases": {"en": ["Sultan's delight", "hunkar begendi"]},
+  "is": "Tender braised lamb in a tomato sauce, ladled over a thick, smoky cream of charred aubergine and melted cheese. The cream is the heart of the dish.",
+  "parts": [
+    {
+      "id": "lamb",
+      "role": "main",
+      "options": ["ingredient/lamb-shoulder", "ingredient/lamb-shank"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "paste", "role": "seasoning", "options": ["ingredient/tomato-paste"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/sunflower-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/stock", "ingredient/water"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "cream",
+      "role": "base",
+      "options": ["preparation/smoky-aubergine-cream"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-begendi", "tier": "drafted"},
+    {"thing": "technique/char", "tier": "drafted"},
+    {"thing": "technique/braise", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

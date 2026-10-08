@@ -1,7 +1,7 @@
 {
   "id": "ingredient/cornichons",
   "tier": "drafted",
-  "names": {"en": "Cornichons", "fr": "Cornichons"},
+  "names": {"en": "Cornichons", "fr": "Cornichons", "tr": "Kornişon"},
   "aliases": {"en": ["gherkins", "cornichon"]},
   "is_a": [],
   "part_of": [],
@@ -24,8 +24,21 @@
     ],
     "note": "Whether a trace of alcohol in vinegar counts is for a person to decide."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/capers",
+      "allows": true,
+      "when": ["preparation/tartar-sauce", "technique/make-tartar-sauce"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Chop them small. They are crunchier and less floral.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q93778799", "tier": "sourced"}
   ]
 }

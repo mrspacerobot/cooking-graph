@@ -5,8 +5,8 @@ The graph's side is worked out from the ingredients of the dish's recipe, and ev
 
 | Set | Probes | Answerable | Agreeing | Disagreeing | Of which on strict answers alone |
 |---|---|---|---|---|---|
-| growing | 32 | 19 | 8 | 11 | 10 |
-| held-back | 8 | 2 | 1 | 1 | 1 |
+| growing | 32 | 20 | 8 | 12 | 11 |
+| held-back | 8 | 3 | 1 | 2 | 1 |
 
 A probe is not answerable when its dish is not in the graph or has no recipe. What a held-back probe disagrees with is counted and never shown.
 
@@ -32,6 +32,23 @@ A disagreement rests on strict answers alone when the probe says the dish does n
   - `fact/wheat`: `ingredient/flour` (certain: It is wheat flour.), `ingredient/chicken-stock` (strict: Bought stock and stock cubes often hold wheat.)
 - **Where they disagree:**
   - the probe says it does not hold egg (`fact/egg`), and the graph says it does, on strict answers alone.
+  - the probe says it does not hold fish (`fact/fish`), and the graph says it does, on strict answers alone.
+
+## Entrecôte béarnaise
+
+- **Probe:** `safety-probe/entrecote-bearnaise`, written by claude-sonnet-5-5.
+- **The probe says it holds:** egg, milk, sulphites.
+- **The probe says it does not hold:** gluten, fish.
+- **The probe's reason:** Béarnaise is egg yolks whisked with butter. The vinegar and wine in the reduction carry sulphites.
+- **The graph's dish:** `dish/entrecote-sauce-bearnaise`. From the ingredients of its recipe it holds:
+  - `fact/alcohol`: `ingredient/white-wine` (certain: It is wine.), `ingredient/white-wine-vinegar` (strict: Vinegar keeps a trace of the alcohol it is made from.)
+  - `fact/egg`: `ingredient/egg-yolk` (certain: It is the yolk of an egg.), `ingredient/white-wine` (strict: Wine may be cleared with egg white.), `ingredient/white-wine-vinegar` (strict: Made from wine, which may be cleared with egg white.)
+  - `fact/fish`: `ingredient/white-wine` (strict: Wine may be cleared with isinglass, which comes from fish.), `ingredient/white-wine-vinegar` (strict: Made from wine, which may be cleared with isinglass from fish.)
+  - `fact/meat`: `ingredient/rib-steak` (certain: It is beef.)
+  - `fact/milk`: `ingredient/butter` (certain: It is made from cream.), `ingredient/white-wine` (strict: Wine may be cleared with milk protein.), `ingredient/white-wine-vinegar` (strict: Made from wine, which may be cleared with milk protein.)
+  - `fact/slaughter-product`: `ingredient/white-wine` (strict: Wine may be cleared with gelatine or isinglass.), `ingredient/white-wine-vinegar` (strict: Made from wine, which may be cleared with gelatine or isinglass.)
+  - `fact/sulphites`: `ingredient/white-wine` (strict: Nearly all wine holds sulphites.), `ingredient/white-wine-vinegar` (strict: Made from wine, which nearly always holds sulphites.)
+- **Where they disagree:**
   - the probe says it does not hold fish (`fact/fish`), and the graph says it does, on strict answers alone.
 
 ## French onion soup

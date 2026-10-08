@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/tortilla-espanola-olive-oil-butter",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Tortilla espanola",
+  "ingredient": "olive oil",
+  "candidate": "butter",
+  "verdict": "does-not-work",
+  "why": "The potatoes need to poach slowly in a deep pool of fat and butter burns and foams long before they soften."
+}

@@ -1,0 +1,84 @@
+{
+  "id": "recipe/galaktoboureko",
+  "tier": "drafted",
+  "names": {"en": "Galaktoboureko"},
+  "aliases": {},
+  "makes": "dish/galaktoboureko",
+  "yields": {"value": 12, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/milk", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "custard"},
+    {"thing": "ingredient/semolina", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "custard"},
+    {"thing": "ingredient/sugar", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "custard"},
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "custard"},
+    {"thing": "ingredient/vanilla", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "custard"},
+    {"thing": "ingredient/butter", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/phyllo", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "phyllo"},
+    {"thing": "preparation/sugar-syrup", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "syrup"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/saucepan", "equipment/wooden-spoon", "equipment/whisk",
+    "equipment/mixing-bowl", "equipment/baking-dish", "equipment/pastry-brush", "equipment/wire-rack", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/stir",
+      "works_on": ["ingredient/semolina", "ingredient/milk"],
+      "with": ["ingredient/sugar", "ingredient/vanilla"],
+      "text": "Warm the milk with the sugar and the split vanilla pod. Rain in the semolina, stirring all the time, and keep stirring over a gentle heat until the mixture is thick and the grains have swelled. Take the pan off the heat.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/temper",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/milk", "ingredient/semolina", "ingredient/sugar", "ingredient/vanilla", "ingredient/butter"],
+      "text": "Beat the eggs in a bowl. Whisk in a ladle of the hot semolina, then another, until the bowl feels warm, then stir the egg back into the pan with a spoonful of the butter. Take out the vanilla pod and leave the custard to cool a little.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/semolina-custard"]
+    },
+    {
+      "technique": "technique/melt",
+      "works_on": ["ingredient/butter"],
+      "with": [],
+      "text": "Melt the rest of the butter in a small pan.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer-phyllo",
+      "works_on": ["ingredient/phyllo"],
+      "with": ["ingredient/butter", "preparation/semolina-custard"],
+      "text": "Brush the dish with butter. Lay in half of the sheets one at a time, brushing each with butter. Pour in the custard and spread it level, fold the hanging edges back over it, then lay the rest of the sheets on top, brushing each with butter. Tuck in the edges, brush the top and cut through the top layers into portions.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-a-phyllo-pie",
+      "works_on": ["ingredient/phyllo"],
+      "with": [],
+      "text": "Bake in a moderate oven until the top is deep golden and crisp and the custard is set.",
+      "time": {"from": 40, "to": 50, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/soak-in-syrup",
+      "works_on": ["ingredient/phyllo"],
+      "with": ["preparation/sugar-syrup"],
+      "text": "While the pie is still hot, pour the cooled syrup slowly over it, so that it runs down the cuts. Leave it uncovered until it is cold, then chill it before serving.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

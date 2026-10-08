@@ -22,5 +22,6 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/gascon", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

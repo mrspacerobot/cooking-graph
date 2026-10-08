@@ -1,7 +1,13 @@
 {
   "id": "dish/poulet-roti",
   "tier": "drafted",
-  "names": {"en": "Poulet rôti", "fr": "Poulet rôti"},
+  "names": {
+    "en": "Poulet rôti",
+    "fr": "Poulet rôti",
+    "es": "Pollo asado",
+    "it": "Pollo arrosto",
+    "tr": "Tavuk kızartması"
+  },
   "aliases": {"en": ["roast chicken", "roast chicken with jus"]},
   "is": "A whole chicken rubbed with butter, roasted until the skin is crisp and golden, rested, and served with a jus made from what it leaves in the tin.",
   "parts": [
@@ -33,5 +39,8 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q899640", "tier": "sourced"}
   ]
 }

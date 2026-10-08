@@ -1,0 +1,288 @@
+# Substitution round one: swaps only one drafter wrote
+
+Not applied to the graph. Each line is a swap that one of two drafters wrote and the other did not. It may be a real swap
+that the second drafter forgot, or one that only one of them believes. Read them with a cook's eye; any may be promoted by a
+person, or written again by a third drafter. Format: stand-in for original: works or fails, when, not when, caveat.
+
+- allspice for cinnamon: works when dish/arayes, dish/kousa-mahshi, not when -: It tastes of clove and nutmeg as well as cinnamon, so use a small amount.
+- allspice for clove: works when technique/simmer, dish/pot-au-feu, not when -: It is milder, and brings a note of cinnamon and nutmeg along with the clove taste.
+- allspice for nutmeg: works when preparation/bechamel, not when -: It is less sweet and nearer to clove, so use a small amount.
+- anise for cumin: fails when -, not when dish/dal-tadka: Its sweet liquorice scent clashes with the earthy base the dal needs.
+- artichoke for cardoon: works when technique/simmer, not when -: It turns tender sooner and is less stringy and less bitter.
+- bacon for guanciale: works when dish/spaghetti-alla-carbonara, not when -: It brings smoke that the dish does not have, and it gives up less silky fat.
+- baguette for bread: works when dish/salade-de-chevre-chaud, not when -: The crust is crisper, so the toasts are thin and crunchy.
+- baguette for pita-bread: fails when -, not when technique/stuff-a-pita: A hard crust and no pocket, so it cannot be split open and filled.
+- baking-soda for baking-powder: works when preparation/khoya-dough, not when -: It is much stronger and wants an acid in the mix, so far less is used, or the dough tastes soapy.
+- basmati-rice for carnaroli-rice: fails when -, not when technique/add-stock-gradually, technique/mantecare: It gives off little starch, so the risotto never turns creamy.
+- beef-bones for chicken-carcass: fails when -, not when preparation/white-chicken-stock: Beef bones make a darker, heavier stock that overpowers a pale stock.
+- beef-fillet for beef-steak: works when dish/steak-au-poivre, not when -: It is leaner, softer and milder in taste.
+- beef-fillet for stewing-beef: fails when -, not when technique/braise, technique/slow-cook: Fillet is lean and tender and turns dry and dull in long cooking.
+- beef-shank for lamb-shoulder: works when dish/tangia-marrakchia, not when -: Beef is milder and leaner, and needs longer in the pot to soften.
+- beef-shank for veal-shank: works when dish/ossobuco-alla-milanese, technique/braise, not when -: It tastes stronger and takes longer to turn soft.
+- beef-steak for beef-fillet: works when dish/steak-au-poivre, not when -: It is firmer and has less of the soft, buttery texture.
+- beef-steak for beef-shank: fails when -, not when technique/braise, dish/tangia-marrakchia: A tender steak cut turns dry and stringy in a long moist cook, which only a sinewy cut survives.
+- beef-steak for duck-breast: fails when -, not when dish/magret-de-canard, technique/render: It has no skin or fat cap to render, so the crisp skin and the rich fat are lost.
+- beef-steak for rib-steak: works when dish/steak-au-poivre, dish/entrecote-sauce-bearnaise, not when -: It is leaner, so the pan has less fat and the taste is milder.
+- beef-steak for stewing-beef: fails when -, not when technique/braise, technique/simmer, technique/slow-cook: A tender steak has no connective tissue to melt, so it turns dry and stringy.
+- beef-stock for red-wine: works when technique/deglaze, technique/braise, not when -: The sauce loses the tannin, the acidity and the colour of the wine, so add a little vinegar.
+- beef-stock for stock: works when technique/simmer, technique/braise, not when -: It is darker and stronger, and it colours a pale dish.
+- beef-stock for vegetable-stock: works when dish/ossobuco-alla-milanese, dish/risotto-ai-funghi-porcini, preparation/ragu, not when -: It is darker and meatier, and takes over the dish.
+- black-olive for olive: works when dish/weeknight-chicken-with-couscous, not when -: It is soft and rich, and adds a mellow salt.
+- black-pepper for allspice: works when dish/arayes, not when -: It adds heat and bite but no sweet warmth.
+- black-pepper for cinnamon: fails when -, not when dish/arayes: It gives heat rather than sweet warmth, so the meat tastes sharp.
+- black-pepper for salt: fails when -, not when dish/ossobuco-alla-milanese: It adds heat but does no seasoning work of salt.
+- black-pudding for cervelas: fails when -, not when technique/poach: The soft skin bursts in water, so it falls apart.
+- boiled-beef for minced-beef: works when dish/hachis-parmentier, not when -: It must be chopped fine by hand, and it is drier unless the sauce is generous.
+- borlotti-bean for white-beans: works when dish/fasolada, dish/kuru-fasulye, not when -: It is nuttier and tints the broth pink.
+- braising-liquid for pan-sauce: works when technique/reduce, technique/mount-with-butter, not when -: It tastes of the braise, not of the pan, and needs to be boiled down first.
+- bread for baguette: works when dish/salade-de-chevre-chaud, not when -: The slices are softer and larger, so toast them until crisp.
+- bread for breadcrumbs: works when technique/fry-a-cutlet, technique/shape-and-crumb-croquetas, not when -: Dry it out and grind it first; the coat is less even than a bought crumb.
+- bread for pita-bread: fails when -, not when technique/stuff-a-pita, dish/arayes: Sliced bread has no pocket to open and does not crisp on a griddle like pita, so it cannot hold the meat layer.
+- bread for pita-bread: works when dish/kefta-brochettes, not when -: It has no pocket, so it is served on the side.
+- bread for stale-bread: works when preparation/salsa-vizcaina, not when -: Fresh bread is moister, so dry it first or the sauce turns gummy.
+- breadcrumbs for baguette: fails when -, not when dish/salade-de-chevre-chaud: Crumbs cannot carry the warm cheese the way a toast does.
+- breadcrumbs for stale-bread: works when preparation/salsa-vizcaina, not when -: Crumbs soak up quickly but give a smoother, less rustic sauce.
+- broth for stock: works when technique/simmer, technique/braise, not when -: A broth carries the taste of what cooked in it, so it can be stronger and saltier.
+- brown-crab for lobster: works when dish/bisque-de-homard, dish/homard-thermidor, not when -: The meat is flaked rather than in large pieces, and the brown meat is richer and stronger.
+- brown-crab for shrimp: fails when -, not when technique/saute, technique/batter, technique/cook-al-ajillo, dish/gambas-al-ajillo: A whole crab must be boiled and picked first, and the meat falls to shreds in a hot pan.
+- brown-lentil for chickpea: fails when -, not when dish/hummus: The lentils give a grainy, earthy paste and never turn smooth and creamy.
+- brown-stock for beef-stock: works when technique/simmer, technique/braise, technique/add-stock-gradually, not when -: Homemade brown stock is unsalted and deeper, with more body than a bought one.
+- brown-stock for chicken-stock: works when dish/coq-au-vin, dish/cote-de-porc-charcutiere, dish/navarin-d-agneau, dish/poulet-saute-chasseur, not when -: It is darker and more roasted, and gives a deeper colour and sauce.
+- brown-stock for white-chicken-stock: works when dish/coq-au-vin, dish/poulet-saute-chasseur, not when -: It is darker and more roasted, and colours the sauce.
+- buckwheat-flour for flour: fails when -, not when technique/knead, technique/make-shortcrust-pastry, technique/make-choux-pastry: It has no gluten, so the dough will not stretch or hold together.
+- buckwheat-flour for semolina: fails when -, not when preparation/fresh-pasta-dough: It has no gluten, so a dough made only of it will not hold together.
+- butter for clarified-butter: fails when -, not when technique/sear, technique/pan-fry: Whole butter browns and burns before the food is coloured.
+- butter-bean for dried-broad-bean: works when technique/simmer, not when -: It is milder and less earthy.
+- cabbage for white-cabbage: works when dish/seven-vegetable-couscous, not when -: Some kinds are softer and cook faster.
+- cabbage for white-cabbage: works when technique/shred-cabbage, dish/seven-vegetable-couscous, not when -: The leaves are looser and cook faster.
+- capers for cornichons: works when preparation/tartar-sauce, not when -: They are saltier and more floral, and they are rinsed and chopped fine.
+- carnaroli-rice for short-grain-rice: works when technique/cook-sutlac, not when -: Keeps more bite and makes a firmer pudding.
+- carnaroli-rice for vialone-nano-rice: works when technique/add-stock-gradually, technique/mantecare, not when -: Firmer grains and a creamier, tighter risotto than the looser Veneto style.
+- carrot for burdock: works when technique/stir-fry, not when -: It is sweeter and softer, with none of the earthy fibrous crunch.
+- cavolo-nero for cabbage: works when technique/braise, technique/simmer, not when -: It is tougher and needs longer cooking, and the ribs are cut away first.
+- celeriac for potato: works when technique/mash, technique/puree, not when -: The mash is looser and lighter, and it tastes of celery.
+- chicken for duck: fails when -, not when technique/confit, technique/render: It has too little fat to melt out, so the skin will not crisp the same way and the meat dries.
+- chicken for rabbit: works when technique/braise, not when -: It is milder and takes less time to turn tender.
+- chicken-carcass for veal-bones: works when preparation/brown-stock, not when -: The stock tastes of chicken and has less body.
+- chicken-stock for fish-stock: works when preparation/veloute, not when -: The sauce loses the taste of the sea, so add a little lemon at the end.
+- chicken-stock for fish-stock: works when preparation/veloute, not when -: The sauce tastes of chicken rather than the sea, so it suits poultry and vegetables better than fish.
+- chicken-stock for stock: works when technique/simmer, technique/braise, technique/add-stock-gradually, not when -: It is lighter and paler than a plain meat stock, and sets softer when cold.
+- chicken-stock for vegetable-stock: works when dish/vichyssoise, dish/risotto-ai-funghi-porcini, dish/poireaux-braises, preparation/avgolemono, not when -: It is rounder and meatier, and no longer suits a meatless table.
+- chicken-thigh for frogs-legs: works when technique/pan-fry, technique/deep-fry, not when -: It is larger and has a stronger taste, and the pieces are cut small to match.
+- chicken-thigh for rabbit: works when technique/braise, not when -: It is richer and juicier, and the taste is stronger than the mild rabbit.
+- chickpea for split-chickpea: fails when -, not when technique/temper-spices-in-hot-fat: The whole seed stays hard and will not crisp in the hot fat.
+- chives for parsley: works when dish/oeufs-mayonnaise, dish/poireaux-vinaigrette, dish/chicken-broth-with-vermicelli, not when -: It adds a mild onion taste in place of the grassy one, so cut it rather than chopping it fine.
+- chorizo for pork-sausage: works when dish/cassoulet, technique/simmer, not when -: The paprika colours the beans and the broth and adds its own heat.
+- chorizo for sausage-meat: fails when -, not when technique/stuff, technique/shape-meatballs: It is cured and firm, so it does not bind or mix like fresh mince.
+- cinnamon for allspice: works when dish/arayes, dish/kousa-mahshi, not when -: It is sweeter and woodier, with less pepper.
+- clam for scallop: fails when -, not when technique/sear, dish/seared-scallops: It does not form a golden crust and turns tough in a dry hot pan.
+- clarified-butter for sunflower-oil: works when dish/sole-meuniere, not when -: It gives a nutty butter taste and browns the fish more.
+- clove for cinnamon: fails when -, not when dish/poires-au-vin-rouge, preparation/sugar-syrup: It is far stronger and numbs the tongue, and it lacks the sweet warmth of cinnamon.
+- coarse-bulgur for fine-bulgur: fails when -, not when dish/tabbouleh, dish/kisir: The large pieces stay hard in a quick soak and the salad is gritty.
+- coarse-salt for salt: works when dish/pulpo-a-la-gallega, not when -: It sits in larger crystals and dissolves slowly.
+- conger-eel for hake: fails when -, not when technique/poach, technique/pan-fry, technique/bake-in-parchment: It is rich, firm and full of fine bones, so it does not give a soft delicate flake.
+- cornichons for capers: works when preparation/tartar-sauce, not when -: They are crunchier and tarter and less salty, and they are drained and chopped.
+- cornstarch for potato-starch: works when technique/thicken, technique/coat-in-starch, not when -: The coat is a little heavier and less clear.
+- courgette for bitter-melon: works when technique/stir-fry, not when -: It has no bitterness at all, and is softer and wetter.
+- court-bouillon for chicken-stock: fails when -, not when preparation/veloute, technique/reduce: It holds wine or vinegar, which turns sharp as it boils down, and it has no body.
+- court-bouillon for stock: fails when -, not when technique/reduce, technique/braise: It is sharp with acid and wine, and boiling it down only sharpens it further.
+- couscous for instant-couscous: fails when -, not when technique/rehydrate-couscous: Plain couscous does not soften in a quick soak and must be steamed.
+- crayfish for lobster: works when technique/saute, technique/flambe, dish/bisque-de-homard, not when -: The tails are smaller, so there is less meat, though the shells give good colour.
+- cream for creme-fraiche: works when technique/reduce, not when -: It has no tang and may split if boiled hard with acid, so add the acid off the heat.
+- cucumber for courgette: fails when -, not when technique/saute, technique/roast: It turns limp and watery in the heat and never browns.
+- dashi for chicken-stock: fails when -, not when technique/braise, dish/coq-au-vin: Dashi tastes of kelp and smoked fish, which does not belong in a French braise.
+- dashi for water: works when preparation/pancake-batter, not when -: The batter turns savoury with a taste of the sea, so it suits savoury cakes only.
+- dill for mint: works when dish/dolmades, dish/kolokithokeftedes, preparation/courgette-fritter-mixture, not when -: It is feathery and aniseed-like instead of cool.
+- dill for mint: works when dish/kolokithokeftedes, not when -: The fritters taste grassier and of aniseed, with none of the cool sweetness.
+- dill for parsley: works when dish/spanakopita, dish/lahanodolmades, not when -: It adds a grassy aniseed note that plain parsley does not have.
+- ditalini for macaroni: works when dish/gratin-de-macaronis, not when -: The tubes are smaller and bake softer, so the gratin is more tender and less chewy.
+- ditalini for small-pasta: works when dish/pasta-e-fagioli, not when -: It is a tube and is a little thicker in the bite.
+- dried-broad-bean for fava-bean: works when technique/simmer, not when -: The skins can stay tough, so a long soak matters, and the stew comes out less creamy.
+- dried-red-chilli for red-chilli-powder: works when technique/make-spice-paste, not when -: Soak and grind it first. The paste is more rounded and the heat is harder to judge.
+- dry-sherry for sake: works when technique/simmer, technique/marinate-in-soy-sauce, not when -: It tastes nuttier and more of grapes than of rice.
+- duck-breast for bacon: fails when -, not when dish/spaghetti-alla-carbonara, dish/quiche-lorraine: It is lean meat with a fat cap and is not cured, so it gives little crisp fat and none of the salt.
+- duck-breast for beef-steak: works when dish/steak-au-poivre, technique/sear, not when -: Start it skin side down so the fat melts out, and pour off the fat before the sauce.
+- egg for egg-white: fails when -, not when technique/whip, technique/bake-a-souffle: The yolk fat stops the foam from rising to a firm peak.
+- egg for egg-yolk: works when dish/spaghetti-alla-carbonara, not when -: The white makes the sauce looser and less rich.
+- emmental for comte: works when technique/gratinate, dish/croque-monsieur, dish/french-onion-soup, not when -: Much milder, so the dish tastes plainer and less nutty.
+- fava-bean for dried-broad-bean: works when technique/simmer, not when -: The beans are the same plant, but a peeled kind breaks down faster than one with its skin on.
+- feta for goat-cheese: fails when -, not when dish/salade-de-chevre-chaud: Feta stays crumbly and sharply salty when warmed and does not turn creamy.
+- feta for paneer: fails when -, not when dish/palak-paneer: Feta is salty and crumbles into the sauce instead of holding firm cubes.
+- feta for ricotta-salata: works when technique/garnish, not when -: Tangier and wetter, and it softens where ricotta salata stays dry.
+- feta for white-cheese: works when dish/gozleme, dish/spanakopita, not when -: A little firmer and tangier, with a sheep's milk taste.
+- fine-bulgur for coarse-bulgur: fails when -, not when technique/cook-bulgur-pilaf, dish/bulgur-pilavi: The fine grains turn to mush when simmered like rice.
+- fine-bulgur for couscous: fails when -, not when technique/steam-couscous, dish/seven-vegetable-couscous: It is made for soaking, not steaming, and turns to a sticky paste.
+- fine-bulgur for instant-couscous: works when dish/weeknight-chicken-with-couscous, not when -: It is chewier and nuttier, and needs more liquid and a longer stand.
+- fish-stock for chicken-stock: fails when -, not when technique/braise, dish/coq-au-vin, dish/risotto-ai-funghi-porcini: Fish stock tastes of the sea and drowns the flavour of poultry and mushrooms.
+- fish-stock for stock: fails when -, not when technique/braise, dish/cassoulet, dish/pasta-e-fagioli: Fish stock tastes of the sea, so it suits only fish and shellfish dishes.
+- flank-steak for beef-fillet: fails when -, not when dish/steak-au-poivre: Served whole it is chewy, as it needs slicing across the grain.
+- flattened-rice for rice: fails when -, not when technique/cook-rice, technique/cook-pilaf: It softens with a rinse and a short rest and turns to mush if it is boiled.
+- fried-tofu for fish-cake: works when technique/simmer, not when -: It soaks up the broth but has no fish taste and is softer, not springy.
+- fromage-blanc for strained-yogurt: works when technique/make-dipping-sauce, not when -: Milder and less tangy, and it also splits if it is boiled.
+- ginger for garlic: fails when -, not when preparation/spice-paste: It has a different, sharper flavour and does not do the job of garlic.
+- goat-cheese for white-cheese: works when dish/spanakopita, not when -: It is creamier and less salty, and it softens into the filling instead of staying crumbly.
+- green-olive for capers: works when technique/make-a-sauce, not when -: Chop it small. It is milder and less floral, and brings more salt.
+- green-olive for olive: works when dish/weeknight-chicken-with-couscous, dish/caponata, not when -: It is firm and sharp, and adds a green, briny bite.
+- ground-lamb for ground-pork: works when preparation/kima, not when -: Lamb tastes stronger and gamier than pork.
+- ground-pork for ground-lamb: fails when -, not when technique/make-a-kima, dish/kefta-brochettes, dish/kousa-mahshi: These dishes are built on lamb or beef, and pork changes their character.
+- ground-pork for ground-lamb: works when preparation/kima, not when dish/kefta-brochettes, dish/kefta-tagine-with-eggs, dish/kousa-mahshi: Pork is sweeter and milder, so add more spice.
+- ground-pork for sausage-meat: works when technique/stuff, not when -: It is not seasoned, so salt and herbs must be added.
+- gruyere for beaufort: works when technique/gratinate, dish/croque-monsieur, dish/french-onion-soup, dish/souffle-au-fromage, not when -: A touch more nutty and a little less smooth in the melt.
+- gruyere for pecorino: fails when -, not when dish/spaghetti-alla-carbonara: It melts stringy and tastes far milder, so the sauce loses its sharp, salty edge.
+- hake for sea-bass: fails when -, not when technique/grill, technique/bake-in-a-salt-crust: The soft flesh breaks apart when turned over fierce heat or lifted from a crust.
+- hake for sole: works when technique/pan-fry, technique/dredge, dish/sole-meuniere, not when -: The fillet is softer and thicker, so turn it with care and expect less of a clean lift from the bone.
+- instant-couscous for rice: fails when -, not when technique/cook-rice, technique/cook-pilaf: It needs only hot liquid poured over it and turns pasty when simmered like rice.
+- juniper-berry for black-pepper: fails when -, not when dish/steak-au-poivre: It tastes of pine and gives no heat, so the sauce loses its peppery bite.
+- jus for pan-sauce: works when technique/mount-with-butter, not when -: It is plainer and thinner, so boil it down first and then whisk in cold butter.
+- kashkaval-cheese for emmental: works when dish/croque-monsieur, technique/gratinate, not when -: It melts smoothly and stretches a little, with a saltier and more buttery taste.
+- kashkaval-cheese for mozzarella: works when technique/gratinate, not when -: Melts and stretches but is saltier and drier, so there is less milky string.
+- kefalotyri for parmesan: works when dish/pastitsio, technique/gratinate, not when -: It browns to a crust the same way, and tastes saltier and sharper.
+- kefalotyri for pecorino: works when dish/pastitsio, not when -: It is a little milder and harder to the grater.
+- kidney-bean for azuki-bean: fails when -, not when dish/zenzai: It is floury with a savoury taste and does not sweeten into a red bean paste.
+- kingfish for salmon: works when technique/grill, technique/sear, not when -: Kingfish is leaner and firmer, and it dries out sooner.
+- kingfish for yellowtail: works when technique/grill, technique/sear, technique/simmer, not when -: They are close relatives, so the flesh and taste are very alike.
+- kolot-cheese for kashkaval-cheese: works when dish/gozleme, not when -: It is younger and milder, and stretches more.
+- konnyaku for shirataki: works when dish/nikujaga, technique/simmer, not when -: It must be cut or torn into thin strips first and is chewier.
+- ladolemono for vinaigrette: works when dish/poireaux-vinaigrette, not when -: It has no mustard, so it separates sooner, and it tastes of oregano and lemon.
+- lamb-shoulder for veal-shoulder: fails when -, not when dish/blanquette-de-veau: Its strong taste and fat overpower the pale, mild sauce.
+- lentil for black-gram: fails when -, not when technique/batter, technique/rest-batter: It does not turn sticky or ferment the way the traditional batter pulse does.
+- lentil for brown-lentil: works when dish/harira, not when -: The kind decides how soft it gets.
+- lentil for green-lentils: works when dish/harira, not when -: The kind decides how well it holds its shape.
+- lettuce for spinach: fails when -, not when dish/palak-paneer, dish/spanakopita: It is nearly all water and has no body, so the filling turns thin and bland.
+- lobster for crayfish: works when technique/saute, technique/boil, not when -: The meat is larger and firmer, so cut it to match.
+- mackerel for hake: fails when -, not when technique/poach, technique/steam, technique/bake-in-parchment: Its oily, strong flavour overwhelms the delicate sauce and aromatics meant for a mild fish.
+- mackerel for sole: fails when -, not when dish/sole-meuniere, technique/poach: Its oily strong flesh hides the delicate taste the dish is built on.
+- mackerel for yellowtail: works when technique/simmer, not when -: Mackerel is stronger tasting and softer, so it suits a short simmer in a savoury sweet liquid.
+- mascarpone for cream: fails when -, not when technique/whip, technique/reduce: It turns grainy when beaten hard and oily when it is heated.
+- mayonnaise for hollandaise: fails when -, not when dish/asperges-hollandaise: Mayonnaise is cold and sharp, and it cannot be warmed without splitting.
+- minced-beef for boiled-beef: works when dish/hachis-parmentier, not when -: It must be browned first and tastes of the pan rather than of the pot.
+- minced-beef for sausage-meat: works when technique/make-a-ragu, not when -: It is leaner and unseasoned, so the sauce needs more salt and spice.
+- mint for basil: works when preparation/pesto, not when -: The sauce turns cooler and sweeter, with a clear mint scent in place of the sweet basil one.
+- mint for dill: works when dish/dolmades, dish/kolokithokeftedes, preparation/courgette-fritter-mixture, not when dish/lahanodolmades: It is cool and sweet instead of feathery and aniseed-like.
+- mint for dill: works when dish/kolokithokeftedes, not when -: The fritters taste cooler and sweeter, with none of the aniseed note.
+- mint for parsley: fails when -, not when technique/make-a-gremolata: Mint turns the sharp, fresh topping into something sweet and cooling.
+- mirin for rice-vinegar: fails when -, not when preparation/sweet-vinegar-sauce: Mirin is sweet and has no sourness, so the sauce loses its sharp edge.
+- monkfish for lobster: works when technique/poach, technique/saute, not when dish/bisque-de-homard: The firm meaty flesh gives a lobster-like bite, but it has no sweetness and no shell to flavour a sauce.
+- monkfish for sea-bass: works when technique/sear, technique/simmer, not when -: It is meatier and holds together in a sauce instead of flaking.
+- mozzarella for kashkaval-cheese: works when dish/gozleme, technique/gratinate, not when -: Drain and dry it well; it is milder and wetter and gives a milky stretch.
+- mozzarella for parmesan: fails when -, not when preparation/pesto, dish/spaghetti-alla-carbonara: It is soft, wet and mild, with no salty bite, and it clumps instead of blending into the sauce.
+- mushroom for morel: works when technique/saute, technique/make-a-sauce, not when -: It lacks the smoky depth and the honeycomb hollows that hold sauce.
+- mustard-seed for cumin: works when technique/temper-spices-in-hot-fat, dish/dal-tadka, not when -: It crackles and tastes sharper and nuttier, with none of the earthy warmth.
+- onion for garlic: fails when -, not when technique/cook-al-ajillo, dish/gambas-al-ajillo: It gives none of the garlic flavour, which is the point of the dish.
+- onion for pearl-onion: works when technique/braise, not when -: Cut in chunks it softens more and keeps a less neat shape.
+- onion for spring-onion: works when dish/spanakopita, not when -: It is sharper, so cut it fine and soften it first.
+- orzo for small-pasta: works when dish/pasta-e-fagioli, not when -: It swells in the soup like the tiny shapes and thickens the broth more.
+- pan-sauce for jus: works when dish/poulet-roti, dish/roti-de-porc, not when -: It is richer and sharper, because wine and butter are in it.
+- parsley for dill: works when dish/spanakopita, dish/lahanodolmades, not when -: The filling tastes greener and loses the aniseed freshness of dill.
+- parsley for mitsuba: works when technique/garnish, not when -: Add it at the very end. The scent is more grassy and less celery-like.
+- parsnip for salsify: works when technique/simmer, not when -: It is sweeter and lacks the faint oyster note of salsify.
+- phyllo for warqa: works when dish/almond-briouats, technique/fold-briouats, technique/fry-briouats, not when -: It is thicker and drier, so the pastry is flakier and crisper and less chewy, and each sheet needs brushing well.
+- pita-bread for bread: works when dish/kefta-brochettes, not when -: It is flatter and thinner, and is torn or split to serve alongside.
+- plain-yogurt for lemon-juice: works when preparation/spice-paste, not when -: It gives a gentler tang and a creamy body, and the paste is thicker.
+- plain-yogurt for strained-yogurt: works when technique/make-garlic-yogurt, not when -: Runnier and less rich, so drain off the whey in a cloth first.
+- poaching-liquid for jus: fails when -, not when dish/poulet-roti, dish/roti-de-porc: It tastes of what was poached in it and lacks the deep taste of roasting.
+- pork-brawn for ham: fails when -, not when dish/croque-monsieur, technique/reheat: It is set in jelly, which melts away when it is heated, so it cannot be warmed in a sandwich.
+- pork-chop for pork-shoulder: fails when -, not when technique/braise, technique/slow-cook: A chop is lean and dries out in long moist cooking.
+- pork-loin for pork-shoulder: fails when -, not when technique/braise, technique/slow-cook: Loin is lean with little connective tissue, so it dries out rather than turning soft.
+- pork-sausage for sausage-meat: works when technique/make-a-ragu, technique/shape-meatballs, not when -: Take the meat out of its skin first, and it is coarser.
+- pork-shoulder for lamb-shoulder: works when technique/braise, not when -: It is milder and sweeter, without the strong taste of lamb.
+- pork-tenderloin for beef-fillet: fails when -, not when dish/steak-tartare: The dish is built on the taste and texture of beef, and pork is different in both.
+- potato for celeriac: fails when -, not when dish/celeri-remoulade: Raw potato is starchy and not crisp, and it lacks the celery taste.
+- potato for daikon: fails when -, not when technique/grate-daikon: Grated potato is starchy and dull, with none of the juice or fresh bite.
+- potato for jerusalem-artichoke: works when technique/roast, technique/puree, not when -: It lacks the sweet nutty taste and the creamy softness.
+- puff-pastry for shortcrust-pastry: works when dish/tarte-tatin, not when -: It rises into light flaky layers instead of a short, crumbly base.
+- rack-of-lamb for leg-of-lamb: fails when -, not when dish/gigot-d-agneau: It is a small row of chops that cooks fast, so the timing, the carving and the portion all change.
+- red-chilli-powder for black-pepper: fails when -, not when dish/steak-au-poivre: It brings a different, sharper heat and none of the aroma that the dish is built on.
+- red-wine for vin-jaune: fails when -, not when technique/reduce, technique/deglaze: It turns a pale cream sauce grey-purple and brings tannin where nutty depth is wanted.
+- red-wine-vinegar for vinegar: works when preparation/agrodolce, not when -: It is rounder and fruitier.
+- rib-steak for beef-fillet: works when dish/steak-au-poivre, technique/sear, not when -: It has much more flavour and fat, and is less tender.
+- rib-steak for beef-steak: works when dish/steak-au-poivre, dish/entrecote-sauce-bearnaise, not when -: It is richer and fattier, with a stronger beef taste.
+- rice for basmati-rice: works when technique/cook-pilaf, technique/cook-rice, not when -: The grains are shorter and have less scent and less stretch.
+- rice for mashed-potato: fails when -, not when dish/hachis-parmentier, dish/parmentier-de-canard: Cooked rice cannot be spread and browned as a smooth topping.
+- rice for short-grain-rice: works when dish/dolmades, not when -: The grains stay more separate and the filling is looser.
+- rice-flour for flour: works when technique/make-a-bechamel, not when -: Sets softer and silkier and lumps if it meets hot liquid dry, so stir it smooth in cold milk first.
+- rosemary for bay-leaf: fails when -, not when preparation/bouquet-garni: It overpowers the bundle with resin where bay only adds quiet depth.
+- rouille for mayonnaise: fails when -, not when dish/oeufs-mayonnaise, dish/tourteau-mayonnaise, dish/celeri-remoulade: Its garlic and chilli overpower the plain, mild dish.
+- sake for soy-sauce: fails when -, not when dish/nikujaga, dish/saba-shioyaki, dish/karaage: Sake brings no salt or savoury depth.
+- salmon for kingfish: works when technique/grill, technique/sear, not when -: Salmon is richer and softer, and it flakes more readily.
+- salsa-brava for salsa-vizcaina: fails when -, not when dish/bacalao-a-la-vizcaina: It is thin and hot, and it lacks the slow-cooked sweetness of onion.
+- salsa-vizcaina for salsa-brava: fails when -, not when dish/patatas-bravas: It is thick and sweet and has none of the heat of a bravas sauce.
+- salt-cod for white-fish: fails when -, not when technique/poach, technique/steam, technique/pan-fry: It stays salty and firm and gives a different dish.
+- sandwich-bread for bread: works when dish/croque-monsieur, technique/toast, not when -: A softer, finer crumb with hardly any crust, and it browns faster.
+- sandwich-bread for breadcrumbs: works when technique/fry-a-cutlet, technique/shape-and-crumb-croquetas, not when -: Soft crumb makes fine, pale crumbs that brown fast, so keep the heat steady.
+- sandwich-bread for pita-bread: fails when -, not when technique/stuff-a-pita, dish/arayes: It has no pocket to split and fill, and it cannot be stuffed and baked the same way.
+- sauerkraut for white-cabbage: fails when -, not when technique/shred-cabbage: It is already sour and salty, so a slaw or a fresh braise turns out wrong.
+- scallop for mussel: fails when -, not when dish/moules-marinieres, technique/steam: It does not open and gives no briny liquor to make the sauce.
+- scallop for shrimp: works when technique/saute, not when -: It is sweeter and has no shell, so the oil gets less flavour, and it turns rubbery fast.
+- sea-bass for sole: works when technique/pan-fry, technique/dredge, dish/sole-meuniere, not when -: The fillet is thicker and firmer, so it needs a little longer in the pan.
+- sea-bream for red-mullet: works when technique/pan-fry, technique/grill, not when -: Sea bream is milder and its flesh is larger and less sweet.
+- sea-bream for white-fish: works when technique/bake-in-parchment, technique/poach, dish/fish-en-papillote, not when -: It is a particular fish where the original was any lean white fillet, so the taste is more distinct.
+- shirataki for konnyaku: works when dish/nikujaga, technique/simmer, not when -: It comes as thin strands, so the dish is eaten differently from blocks.
+- short-grain-rice for rice: works when technique/cook-rice, dish/dolmades, dish/takikomi-gohan, not when -: The grains cling and are plumper, and they need a little less water.
+- shortcrust-pastry for puff-pastry: works when dish/tarte-tatin, not when -: It gives a denser, crumbly, crisp base instead of light flaky layers.
+- shrimp for brown-crab: fails when -, not when dish/tourteau-mayonnaise: It has no rich brown meat to carry the dish.
+- sole for monkfish: fails when -, not when technique/sear, technique/simmer: The thin delicate fillet falls apart and dries out where monkfish stays meaty.
+- sole for white-fish: works when technique/pan-fry, technique/poach, not when -: It is finer and firmer, and costs more.
+- soy-sauce for mirin: fails when -, not when dish/nikujaga, dish/tamagoyaki: Soy sauce is salty and dark and adds no sweetness or gloss.
+- soy-sauce for rice-vinegar: fails when -, not when preparation/sweet-vinegar-sauce: Soy sauce is salty and dark and has no sourness.
+- spaghetti for macaroni: fails when -, not when dish/gratin-de-macaronis: Long rods do not hold sauce inside them and bake into a tangle.
+- spaghetti for yakisoba-noodle: works when dish/yakisoba, not when -: It lacks the springy chew of the steamed noodle, so boil it, drain it dry and toss it in a little oil first.
+- spinach for sorrel: works when technique/wilt, technique/puree, not when -: It lacks the sharp lemony edge, so the sourness must come from elsewhere.
+- split-chickpea for pigeon-pea: works when dish/dal-tadka, technique/pressure-cook, not when -: It holds its shape and tastes nuttier, and needs longer cooking.
+- split-peas for brown-lentil: fails when -, not when technique/cook-rice-with-lentils, dish/mujaddara: They collapse into a mush and cannot stay whole among the rice.
+- spring-onion for leek: works when technique/sweat, not when -: It is thinner and milder, so use more of it and it gives less silky body.
+- stale-bread for bread: works when preparation/salsa-vizcaina, not when -: It soaks up the liquid without falling apart and gives a coarser sauce.
+- stale-bread for pita-bread: works when dish/fattoush, not when -: Cut it small and toast or fry until crisp; it is denser and less flaky than pita.
+- stock for chicken-stock: works when technique/simmer, technique/braise, not when -: The taste is plainer and less sweet, so season it at the end.
+- strained-yogurt for fromage-blanc: works when technique/make-dipping-sauce, not when -: Tangier and a little richer, with a heavier body.
+- tarragon for basil: fails when -, not when technique/make-a-pesto, dish/trenette-al-pesto: The strong anise taste takes over and the sauce no longer tastes like a basil pesto.
+- tarragon for parsley: fails when -, not when dish/tabbouleh: Its strong aniseed taste swamps the salad, which depends on plain grassy parsley in quantity.
+- tomato for cherry-tomato: works when preparation/tomato-sauce, not when -: It is less sweet and wetter, so cook it longer.
+- trenette for spaghetti: works when dish/trenette-al-pesto, not when -: It is a flat ribbon, so the pesto clings better.
+- trout for sea-bass: works when technique/bake-in-a-salt-crust, technique/grill, not when -: Trout is smaller and softer, so it dries out sooner and tastes more earthy.
+- trout for zander: works when technique/pan-fry, not when -: Trout is softer and pinker with a more earthy taste, and it dries out quickly.
+- turkey for chicken: works when technique/roast, dish/poulet-roti, not when -: The bird is much larger and takes far longer, and the breast dries long before the legs are done.
+- turmeric for kashmiri-red-chilli-powder: fails when -, not when preparation/spice-paste: It gives a yellow colour and an earthy, bitter taste with no heat, so it cannot make a paste red or hot.
+- turmeric for red-chilli-powder: fails when -, not when preparation/spice-paste: It gives yellow colour and an earthy taste but no heat.
+- umeboshi for preserved-lemon: fails when -, not when technique/cook-in-a-tagine: It is far saltier, and its sourness is plum and not citrus.
+- veal-bones for chicken-carcass: works when preparation/white-chicken-stock, not when -: The stock is paler in taste, with more body and less chicken flavour.
+- veal-chop for pork-chop: works when technique/pan-fry, technique/sear, not when -: It is milder and leaner, and has less fat to baste itself.
+- veal-shank for veal-shoulder: works when technique/braise, not when -: It is cut across the bone, and the sauce is richer from the marrow.
+- veal-shoulder for lamb-shoulder: works when dish/navarin-d-agneau, technique/braise, not when -: The stew is paler and milder, with much less of the lamb taste.
+- veal-shoulder for veal-shank: works when technique/braise, not when -: There is no marrow, so the sauce is lighter.
+- vegetable-stock for brown-stock: fails when -, not when technique/reduce, dish/boeuf-bourguignon: It has no gelatine and no roasted depth, so it will not give a dark, glossy sauce body.
+- vegetable-stock for court-bouillon: works when technique/poach, not when -: It lacks the sharpness of wine or vinegar, so add a splash of either.
+- vegetable-stock for dashi: works when dish/miso-soup, not when -: The soup tastes of onion and carrot and not of the sea, so it is a different soup.
+- vegetable-stock for stock: works when technique/simmer, technique/add-stock-gradually, not when -: It is thinner and has no body from bones, so a sauce made from it stays thin.
+- vegetable-stock for white-chicken-stock: works when dish/poireaux-braises, dish/vichyssoise, not when -: It is lighter and sweeter, with less body.
+- vegetable-stock for white-wine: works when technique/deglaze, not when -: It brings no acidity, so finish with a little lemon juice or vinegar.
+- vermicelli for macaroni: fails when -, not when dish/gratin-de-macaronis: The fine strands go soft and collapse in the bake instead of holding the sauce.
+- vialone-nano-rice for carnaroli-rice: works when technique/add-stock-gradually, technique/mantecare, not when -: Takes up stock faster and gives a looser, wetter risotto, so watch the liquid.
+- vinaigrette for mayonnaise: fails when -, not when dish/oeufs-mayonnaise, dish/tourteau-mayonnaise: A thin dressing runs off the food and has none of the creamy body.
+- vinegar for red-wine-vinegar: works when preparation/agrodolce, not when -: It is plainer and sharper.
+- vinegar for white-wine-vinegar: works when preparation/agrodolce, not when -: It is plainer and sharper.
+- water for dashi: works when preparation/pancake-batter, not when -: The cakes are plainer and lose their savoury, sea-scented depth.
+- water for lemon-juice: works when preparation/spice-paste, not when -: It loosens the paste but adds no sourness.
+- water for milk: works when preparation/choux-pastry, preparation/pancake-batter, not when -: The result is paler and lighter, and less rich.
+- water for plain-yogurt: works when preparation/spice-paste, not when -: It loosens the paste but adds neither tang nor creaminess.
+- water for white-chicken-stock: works when dish/poulet-roti, not when -: The pan juices make the flavour here, so the liquid is thinner but still works.
+- white-beans for chickpea: works when dish/hummus, not when -: The result is milder, softer and creamier, with less nutty bite.
+- white-cheese for feta: works when dish/spanakopita, not when -: Crumbly like feta but often softer and saltier, so soak it briefly to tone down the salt.
+- white-cheese for goat-cheese: fails when -, not when dish/salade-de-chevre-chaud: It is crumbly and salty and does not turn creamy or brown on the toast.
+- white-chicken-stock for chicken-stock: works when dish/coq-au-vin, dish/poulet-saute-chasseur, not when -: It is the same poultry stock made with care, so it is cleaner and lighter.
+- white-chicken-stock for vegetable-stock: works when dish/poireaux-braises, dish/vichyssoise, not when -: It is meatier and rounder, and no longer meatless.
+- white-chicken-stock for vegetable-stock: works when dish/poireaux-braises, dish/vichyssoise, not when -: It is meatier and rounder, and no longer meatless.
+- white-chicken-stock for water: works when dish/poulet-roti, not when -: It adds depth and body to the pan juices.
+- white-fish for hake: works when technique/poach, technique/bake-in-parchment, not when -: An unnamed lean fillet has a plainer taste and the flake can differ.
+- white-fish for salt-cod: fails when -, not when technique/desalt, dish/bacalao-al-pil-pil, dish/bacalao-a-la-vizcaina: Fresh flesh lacks the firm salted texture and the gelatine that binds the sauce.
+- white-fish for whiting: works when technique/poach, technique/bake-in-parchment, not when -: An unnamed lean fillet has a plainer taste and the flake can differ.
+- white-fish for zander: works when technique/poach, technique/bake-in-parchment, not when -: An unnamed lean fillet has a plainer taste and the flake can differ.
+- white-wine for riesling: works when technique/deglaze, technique/braise, technique/make-a-sauce, not when -: It is less crisp and flowery, so the sauce is plainer.
+- white-wine-vinegar for vinegar: works when preparation/agrodolce, not when -: It is rounder and milder.
+- whiting for sole: works when technique/pan-fry, technique/dredge, dish/sole-meuniere, not when -: The flesh is softer and breaks easily, with a milder taste than sole.
+- whiting for white-fish: works when technique/bake-in-parchment, technique/poach, dish/fish-en-papillote, not when -: It is a particular fish where the original was any lean white fillet, so the taste is more distinct.
+- yellowtail for kingfish: works when technique/grill, technique/sear, technique/simmer, not when -: They are close relatives, so the flesh and taste are very alike.
+- yellowtail for mackerel: works when technique/grill, dish/saba-shioyaki, not when -: Yellowtail is milder and meatier, and it is thicker so it takes longer over the heat.
+- zander for sea-bass: works when technique/poach, technique/pan-fry, technique/bake-in-parchment, not when -: Both have firm, fine, white flesh; the taste is a little sweeter from the sea fish.
+- zander for trout: works when technique/pan-fry, not when -: Zander is paler and leaner, so it has less richness than trout.
+- zander for white-fish: works when technique/bake-in-parchment, technique/poach, dish/fish-en-papillote, not when -: It is a particular fish where the original was any lean white fillet, so the taste is more distinct.

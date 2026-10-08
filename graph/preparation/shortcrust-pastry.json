@@ -1,7 +1,13 @@
 {
   "id": "preparation/shortcrust-pastry",
   "tier": "drafted",
-  "names": {"en": "Shortcrust pastry", "fr": "Pâte brisée"},
+  "names": {
+    "en": "Shortcrust pastry",
+    "fr": "Pâte brisée",
+    "es": "pasta brisa",
+    "it": "pasta brisé",
+    "tr": "Tart hamuru"
+  },
   "aliases": {"en": ["shortcrust", "pie pastry"]},
   "is": "A crisp, crumbly pastry of flour rubbed with cold butter and bound with a little water or egg.",
   "parts": [
@@ -23,5 +29,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1959325", "tier": "sourced"}
   ]
 }

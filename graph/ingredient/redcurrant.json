@@ -1,7 +1,7 @@
 {
   "id": "ingredient/redcurrant",
   "tier": "drafted",
-  "names": {"en": "Redcurrant", "fr": "Groseille"},
+  "names": {"en": "Redcurrant", "fr": "Groseille", "es": "grosella roja", "it": "ribes rosso"},
   "aliases": {"en": ["redcurrants", "red currant"]},
   "is_a": [],
   "part_of": [],
@@ -20,5 +20,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q14714085", "tier": "sourced"}
+  ]
 }

@@ -1,0 +1,87 @@
+{
+  "id": "recipe/lamb-tagine-with-prunes",
+  "tier": "drafted",
+  "names": {"en": "Lamb tagine with prunes and almonds"},
+  "aliases": {},
+  "makes": "dish/lamb-tagine-with-prunes",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/lamb-shoulder",
+      "amount": {"value": 800, "unit": "gram"},
+      "forms": ["form/large-pieces"],
+      "part": "main"
+    },
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/sliced"], "part": "onion"},
+    {"thing": "ingredient/smen", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/ginger", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "ginger"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cinnamon"},
+    {"thing": "ingredient/saffron", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "saffron"},
+    {"thing": "ingredient/prune", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "prune"},
+    {"thing": "ingredient/honey", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "honey"},
+    {"thing": "ingredient/water", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/almond", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "almond"},
+    {"thing": "ingredient/sesame-seed", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "sesame"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/tagine", "equipment/mixing-bowl", "equipment/frying-pan", "equipment/wooden-spoon",
+    "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak",
+      "works_on": ["ingredient/prune"],
+      "with": ["ingredient/water"],
+      "text": "Cover the prunes with warm water and leave them to plump while the lamb cooks.",
+      "time": {"from": 30, "to": 45, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-in-a-tagine",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": [
+        "ingredient/onion", "ingredient/smen", "ingredient/ginger", "ingredient/black-pepper", "ingredient/cinnamon",
+        "ingredient/saffron", "ingredient/water", "ingredient/salt", "ingredient/prune"
+      ],
+      "text": "Spread the sliced onion over the base of the tagine with the fat, the ginger, the pepper, the cinnamon and the saffron. Pour in a little water, lay the lamb on top and season it. Cover with the lid and cook over the lowest heat, without stirring, until the lamb is tender. Check a piece against a trusted guide to doneness. Drain the prunes, scatter them over the meat and cook on, covered, until the sauce is short.",
+      "time": {"from": 120, "to": 150, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/braising-liquid"],
+      "with": ["ingredient/honey"],
+      "text": "Lift the lamb and the prunes aside. Stir the honey into the sauce and boil it down in the open dish until it is dark, glossy and clings to a spoon. Put the meat and the prunes back.",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/sesame-seed"],
+      "with": ["ingredient/almond"],
+      "text": "Toast the sesame seeds and the almonds in a dry pan, shaking it often, until they turn pale gold.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["ingredient/almond", "ingredient/sesame-seed"],
+      "text": "Scatter the toasted almonds and sesame seeds over the lamb and serve from the tagine.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

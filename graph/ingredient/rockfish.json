@@ -25,6 +25,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/conger-eel",
+      "allows": true,
+      "when": ["technique/simmer", "dish/soupe-de-poisson"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Rockfish gives a lighter, cleaner broth and less richness.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q113330459", "tier": "sourced"}
+  ]
 }

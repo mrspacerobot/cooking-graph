@@ -1,0 +1,41 @@
+{
+  "id": "dish/caponata",
+  "tier": "drafted",
+  "names": {"en": "Caponata", "fr": "Caponata"},
+  "aliases": {"en": ["caponata siciliana", "Sicilian caponata"]},
+  "is": "A Sicilian dish of fried aubergine, celery, onion, tomato, green olives and capers, tossed in a sweet-sour syrup of vinegar and sugar. It is served at room temperature, and the flavours settle and deepen if it waits a day.",
+  "parts": [
+    {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},
+    {"id": "celery", "role": "aromatic", "options": ["ingredient/celery"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "olive",
+      "role": "filling",
+      "options": ["ingredient/green-olive", "ingredient/olive"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "caper", "role": "seasoning", "options": ["ingredient/capers"], "optional": false, "tier": "drafted"},
+    {"id": "agrodolce", "role": "sauce", "options": ["preparation/agrodolce"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/salt-and-drain", "tier": "drafted"},
+    {"thing": "technique/make-agrodolce", "tier": "drafted"},
+    {"thing": "technique/saute", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1034806", "tier": "sourced"}
+  ]
+}

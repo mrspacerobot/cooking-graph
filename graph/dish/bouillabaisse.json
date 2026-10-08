@@ -1,0 +1,51 @@
+{
+  "id": "dish/bouillabaisse",
+  "tier": "drafted",
+  "names": {"en": "Bouillabaisse", "fr": "Bouillabaisse"},
+  "aliases": {"en": ["Marseille fish stew", "bouillabaisse marseillaise"], "fr": ["bouillabaisse marseillaise"]},
+  "is": "A Marseille fish stew. Rockfish, onion, fennel, tomato and saffron make a broth that is strained, then potatoes and the fish go into it in turn, the firm fish first and the delicate fish last. Broth and fish are served together, with toasts and rouille.",
+  "parts": [
+    {"id": "broth-fish", "role": "main", "options": ["ingredient/rockfish"], "optional": false, "tier": "drafted"},
+    {
+      "id": "firm-fish",
+      "role": "main",
+      "options": ["ingredient/monkfish", "ingredient/conger-eel"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "delicate-fish",
+      "role": "main",
+      "options": ["ingredient/red-mullet", "ingredient/whiting"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "potato", "role": "base", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "fennel", "role": "aromatic", "options": ["ingredient/fennel"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "saffron", "role": "seasoning", "options": ["ingredient/saffron"], "optional": false, "tier": "drafted"},
+    {"id": "orange", "role": "seasoning", "options": ["ingredient/orange"], "optional": false, "tier": "drafted"},
+    {"id": "olive-oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "toasts", "role": "side", "options": ["ingredient/baguette"], "optional": false, "tier": "drafted"},
+    {"id": "rouille", "role": "sauce", "options": ["preparation/rouille"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/strain", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/provencal", "tier": "drafted"}
+  ],
+  "same_as": []
+}

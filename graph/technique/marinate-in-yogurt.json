@@ -1,0 +1,61 @@
+{
+  "id": "technique/marinate-in-yogurt",
+  "tier": "drafted",
+  "names": {"en": "Marinate in yogurt"},
+  "aliases": {"en": ["yogurt marinade", "marinate in spiced yogurt", "dahi marinade"]},
+  "does": "Steeps meat or firm cheese in yogurt that has been mixed with a spice paste and salt, so that the mild acid of the yogurt softens the surface and the spices are carried right into it. The coat browns and chars in strong heat.",
+  "how": [
+    "Make the spice paste first, with garlic, ginger, fresh chilli, ground spices, salt and a little lemon juice.",
+    "Whisk the paste into thick yogurt. Hang the yogurt in a cloth first if it is thin, so that the marinade clings and does not run off.",
+    "Cut a few slashes into thick pieces of meat so that the marinade can get in.",
+    "Turn the food in the marinade until every surface is coated, cover the bowl and keep it in the fridge. Tough cuts want a long wait. Tender pieces and paneer want a short one.",
+    "Lift the food out and let the extra drip away before it meets the heat. Thick yogurt left on it will steam and not char."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The marinade sits on the food as an even, thick coat that does not slide off."},
+    {"sense": "feel", "text": "Thick pieces of meat feel a little softer under the finger after the wait."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving paneer or tender pieces in the yogurt for too long, so that they turn mushy and sour.",
+      "fix": "Give them a short wait only, and give the long wait to tough cuts."
+    },
+    {
+      "mistake": "Using thin, watery yogurt, so that the marinade runs off and the food steams in the pan.",
+      "fix": "Hang the yogurt in a cloth to drain, or strain it, before the paste goes in."
+    },
+    {
+      "mistake": "Using a metal bowl that reacts with the acid.",
+      "fix": "Use a glass, china or steel bowl that does not take on a metallic taste."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "ingredient/paneer", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/plain-yogurt"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["preparation/spice-paste", "ingredient/salt"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon-juice"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-spice-paste",
+      "why": "The marinade is built on a paste of garlic, ginger, chilli and ground spices, so the paste has to be made first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/marinate",
+      "differs": "The liquid is thick yogurt and not wine or vinegar, and it carries a spice paste into the food. Its lactic acid is gentle, so it tenderises without turning the surface chalky, and the coat is meant to stay on and char in hot, dry heat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

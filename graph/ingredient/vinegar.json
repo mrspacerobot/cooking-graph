@@ -1,7 +1,7 @@
 {
   "id": "ingredient/vinegar",
   "tier": "drafted",
-  "names": {"en": "Vinegar", "fr": "Vinaigre"},
+  "names": {"en": "Vinegar", "fr": "Vinaigre", "es": "vinagre", "it": "aceto", "tr": "sirke"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -35,5 +35,8 @@
     "note": "A named vinegar such as red wine or sherry vinegar has a file of its own. This one stands for any vinegar a recipe does not name, so every answer is strict."
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q41354", "tier": "sourced"}
+  ]
 }

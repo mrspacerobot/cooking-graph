@@ -1,7 +1,7 @@
 {
   "id": "preparation/court-bouillon",
   "tier": "drafted",
-  "names": {"en": "Court-bouillon", "fr": "Court-bouillon"},
+  "names": {"en": "Court-bouillon", "fr": "Court-bouillon", "tr": "Balık bulyon"},
   "aliases": {"en": ["court bouillon"]},
   "is": "Water simmered briefly with wine or vinegar, vegetables, herbs and salt: a quick, sharp, scented liquid for poaching fish.",
   "parts": [
@@ -40,5 +40,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3001487", "tier": "sourced"}
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/rosemary",
   "tier": "drafted",
-  "names": {"en": "Rosemary", "fr": "Romarin"},
+  "names": {"en": "Rosemary", "fr": "Romarin", "es": "romero", "it": "rosmarino"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -21,9 +21,22 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/thyme",
+      "allows": true,
+      "when": ["dish/roast-potatoes", "technique/roast"],
+      "not_when": ["dish/ratatouille", "preparation/bouquet-garni"],
+      "ratio": null,
+      "caveat": "It is far more resinous and strong, so use much less, and keep it out of a gentle bundle where it takes over.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"},
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q68315046", "tier": "sourced"}
   ]
 }

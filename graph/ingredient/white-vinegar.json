@@ -1,0 +1,34 @@
+{
+  "id": "ingredient/white-vinegar",
+  "tier": "drafted",
+  "names": {"en": "White vinegar", "fr": "Vinaigre blanc"},
+  "aliases": {"en": ["distilled white vinegar", "spirit vinegar"]},
+  "is_a": [
+    {"thing": "ingredient/vinegar", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A clear, sharp, plain vinegar with no colour and little flavour beyond its sourness. It pickles, cuts through fat, sets the whites of poaching eggs and brightens a sauce. It turns harsh if it is boiled hard, so it goes in late or is cooked down on purpose.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/alcohol", "basis": "Vinegar keeps a trace of the alcohol it is made from.", "certain": false},
+      {"fact": "fact/gluten", "basis": "Recorded strictly: it may be made from grain.", "certain": false},
+      {
+        "fact": "fact/sulphites",
+        "basis": "Recorded strictly, as vinegars are often kept with sulphites.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg", "fact/fish", "fact/lupin",
+      "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "dish/zenzai",
+  "tier": "drafted",
+  "names": {"en": "Zenzai"},
+  "aliases": {"en": ["sweet red bean soup with rice cake", "red bean soup with mochi"]},
+  "is": "A warm, sweet soup of whole azuki beans simmered until soft and sweetened with sugar, served in a bowl with a piece of toasted mochi that has puffed and turned soft and stretchy inside.",
+  "parts": [
+    {"id": "beans", "role": "main", "options": ["ingredient/azuki-bean"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "mochi", "role": "topping", "options": ["ingredient/mochi"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweeten", "tier": "drafted"},
+    {"thing": "technique/toast-mochi", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q11270244", "tier": "sourced"}
+  ]
+}

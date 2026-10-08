@@ -1,7 +1,7 @@
 {
   "id": "dish/takikomi-gohan",
   "tier": "drafted",
-  "names": {"en": "Takikomi gohan"},
+  "names": {"en": "Takikomi gohan", "fr": "Takikomigohan"},
   "aliases": {"en": ["Japanese mixed rice", "seasoned mixed rice"]},
   "is": "Rice cooked together with dashi, soy sauce, mirin and sake, and with small pieces of burdock, mushroom and fried tofu, so that the seasoning cooks into every grain. It is rested, fluffed and served with a green herb on top.",
   "parts": [
@@ -30,5 +30,8 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q388983", "tier": "sourced"}
   ]
 }

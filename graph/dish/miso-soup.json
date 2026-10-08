@@ -1,0 +1,25 @@
+{
+  "id": "dish/miso-soup",
+  "tier": "drafted",
+  "names": {"en": "Miso soup", "es": "sopa de miso", "it": "zuppa di miso", "tr": "Miso çorbası", "fr": "soupe miso"},
+  "aliases": {"en": ["misoshiru", "Japanese miso soup"]},
+  "is": "A light soup of dashi in which miso is stirred smooth at the end and never boiled, with cubes of soft tofu, softened wakame and a scatter of spring onion.",
+  "parts": [
+    {"id": "dashi", "role": "liquid", "options": ["preparation/dashi"], "optional": false, "tier": "drafted"},
+    {"id": "miso", "role": "seasoning", "options": ["ingredient/miso"], "optional": false, "tier": "drafted"},
+    {"id": "tofu", "role": "filling", "options": ["ingredient/tofu"], "optional": false, "tier": "drafted"},
+    {"id": "wakame", "role": "filling", "options": ["ingredient/wakame"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "garnish", "options": ["ingredient/spring-onion"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/dissolve-miso", "tier": "drafted"},
+    {"thing": "technique/cube-tofu", "tier": "drafted"},
+    {"thing": "technique/rehydrate-seaweed", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q471866", "tier": "sourced"}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dish/pommes-puree",
+  "tier": "drafted",
+  "names": {"en": "Pommes purée", "fr": "Pommes purée"},
+  "aliases": {},
+  "is": "The French side dish of potatoes boiled in salted water, dried over the heat, crushed hot and beaten smooth with butter and warm, nutmeg-scented milk. This dish gives the whole order of the work, which the bare preparation does not.",
+  "parts": [
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "nutmeg", "role": "seasoning", "options": ["ingredient/nutmeg"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/boil", "tier": "drafted"},
+    {"thing": "technique/dry", "tier": "drafted"},
+    {"thing": "technique/mash", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": []
+}

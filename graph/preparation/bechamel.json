@@ -1,8 +1,8 @@
 {
   "id": "preparation/bechamel",
   "tier": "drafted",
-  "names": {"en": "Béchamel", "fr": "Béchamel"},
-  "aliases": {"en": ["white sauce", "béchamel sauce"]},
+  "names": {"en": "Béchamel", "fr": "Béchamel", "it": "Besciamella", "tr": "Beşamel sos"},
+  "aliases": {"en": ["white sauce", "béchamel sauce"], "fr": ["sauce béchamel"]},
   "is": "Milk thickened with a pale roux and simmered until smooth, the white sauce behind gratins and cheese sauces.",
   "parts": [
     {"id": "roux", "role": "thickener", "options": ["preparation/roux"], "optional": false, "tier": "drafted"},
@@ -19,5 +19,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q209974", "tier": "sourced"}
   ]
 }

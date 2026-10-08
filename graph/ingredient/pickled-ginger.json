@@ -29,5 +29,6 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

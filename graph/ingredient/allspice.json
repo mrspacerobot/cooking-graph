@@ -1,7 +1,7 @@
 {
   "id": "ingredient/allspice",
   "tier": "drafted",
-  "names": {"en": "Allspice", "fr": "Piment de la Jamaïque"},
+  "names": {"en": "Allspice", "fr": "Piment de la Jamaïque", "tr": "yeni bahar"},
   "aliases": {"en": ["Jamaica pepper"]},
   "is_a": [],
   "part_of": [],
@@ -21,8 +21,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cinnamon",
+      "allows": true,
+      "when": ["dish/arayes", "dish/kousa-mahshi"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It tastes peppery and clove-like instead of sweet and woody.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1963621", "tier": "sourced"}
   ]
 }

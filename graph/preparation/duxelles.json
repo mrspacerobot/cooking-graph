@@ -1,7 +1,7 @@
 {
   "id": "preparation/duxelles",
   "tier": "drafted",
-  "names": {"en": "Duxelles", "fr": "Duxelles"},
+  "names": {"en": "Duxelles", "fr": "Duxelles", "es": "Salsa Duxelle"},
   "aliases": {},
   "is": "A dry, dark paste of finely minced mushrooms and shallot cooked in butter until their water is gone. It is spread, stuffed or folded into a filling.",
   "parts": [
@@ -17,5 +17,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1268122", "tier": "sourced"}
   ]
 }

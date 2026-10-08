@@ -1,7 +1,7 @@
 {
   "id": "ingredient/roquefort",
   "tier": "drafted",
-  "names": {"en": "Roquefort", "fr": "Roquefort"},
+  "names": {"en": "Roquefort", "fr": "Roquefort", "es": "queso roquefort", "tr": "Rokfor peyniri"},
   "aliases": {"en": ["Roquefort cheese"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +24,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q189221", "tier": "sourced"}
+  ]
 }

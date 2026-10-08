@@ -1,0 +1,84 @@
+{
+  "id": "recipe/karaage",
+  "tier": "drafted",
+  "names": {"en": "Karaage"},
+  "aliases": {},
+  "makes": "dish/karaage",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/ginger", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "ginger"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/sake", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "sake"},
+    {"thing": "ingredient/potato-starch", "amount": {"value": 6, "unit": "tablespoon"}, "forms": [], "part": "starch"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/mixing-bowl", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/thermometer", "equipment/wire-rack", "equipment/slotted-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cut-into-small-pieces",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Cut the thighs, skin on, into bite-sized pieces of about the same size.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/ginger", "ingredient/garlic"],
+      "with": [],
+      "text": "Mince the ginger and the garlic as fine as you can, or grate them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/marinate-in-soy-sauce",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/soy-sauce", "ingredient/sake", "ingredient/ginger", "ingredient/garlic"],
+      "text": "Mix the soy sauce and the sake with the ginger and the garlic in a bowl. Work the chicken through it with your hands and leave it for a short while, turning the pieces once. Lift them out and let the extra liquid drip off.",
+      "time": {"from": 15, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/coat-in-starch",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/potato-starch"],
+      "text": "Turn each piece in the potato starch, press lightly and tap off the loose starch. Coat just before the oil.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/double-fry",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/oil"],
+      "text": "Heat the oil to a moderate heat and fry the pieces in small batches until pale and just firm, then lift them onto a rack. Heat the oil much hotter and fry them again until the crust is crisp and golden. Cut into the thickest piece and check it against a trusted guide to doneness.",
+      "time": {"from": 6, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/lemon"],
+      "text": "Serve at once, with a wedge of lemon to squeeze over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/butter",
   "tier": "drafted",
-  "names": {"en": "Butter", "fr": "Beurre"},
+  "names": {"en": "Butter", "fr": "Beurre", "es": "mantequilla", "it": "burro", "tr": "tereyağı"},
   "aliases": {"en": ["unsalted butter", "cold butter"]},
   "is_a": [],
   "part_of": [],
@@ -20,8 +20,35 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/ghee",
+      "allows": false,
+      "when": [],
+      "not_when": [
+        "technique/deep-fry", "technique/fry-masala-base", "technique/sear", "technique/temper-spices-in-hot-fat"
+      ],
+      "ratio": null,
+      "caveat": "The milk solids in butter burn at the heat these need, and leave a bitter taste.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/smen",
+      "allows": true,
+      "when": [
+        "dish/harira", "dish/lamb-tagine-with-prunes", "dish/msemen", "dish/tangia-marrakchia",
+        "preparation/msemen-dough"
+      ],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is milder and lacks the aged tang.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q34172", "tier": "sourced"}
   ]
 }

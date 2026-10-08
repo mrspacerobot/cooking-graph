@@ -1,0 +1,27 @@
+{
+  "id": "dish/spaghetti-all-amatriciana",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti all'amatriciana", "fr": "Spaghetti à l'amatriciana"},
+  "aliases": {"en": ["spaghetti amatriciana", "pasta all'amatriciana"]},
+  "is": "Spaghetti in a sauce from the hills of Amatrice: cured pork jowl rendered until its fat runs, then a quick tomato sauce with a little chilli cooked in that fat, and sharp grated sheep's cheese over the top.",
+  "parts": [
+    {"id": "pasta", "role": "main", "options": ["ingredient/spaghetti"], "optional": false, "tier": "drafted"},
+    {"id": "guanciale", "role": "filling", "options": ["ingredient/guanciale"], "optional": false, "tier": "drafted"},
+    {"id": "sauce", "role": "sauce", "options": ["preparation/tomato-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "cheese", "role": "topping", "options": ["ingredient/pecorino"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/render", "tier": "drafted"},
+    {"thing": "technique/make-a-tomato-sauce", "tier": "drafted"},
+    {"thing": "technique/boil-pasta", "tier": "drafted"},
+    {"thing": "technique/toss-pasta-with-sauce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q135629302", "tier": "sourced"}
+  ]
+}

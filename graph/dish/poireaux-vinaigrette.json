@@ -2,7 +2,7 @@
   "id": "dish/poireaux-vinaigrette",
   "tier": "drafted",
   "names": {"en": "Poireaux vinaigrette", "fr": "Poireaux vinaigrette"},
-  "aliases": {"en": ["leeks vinaigrette", "leeks in vinaigrette"]},
+  "aliases": {"en": ["leeks vinaigrette", "leeks in vinaigrette"], "fr": ["Poireau vinaigrette"]},
   "is": "Leeks boiled until completely tender, drained well and served just warm under a mustardy vinaigrette.",
   "parts": [
     {"id": "leek", "role": "main", "options": ["ingredient/leek"], "optional": false, "tier": "drafted"},
@@ -28,5 +28,8 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q105333550", "tier": "sourced"}
   ]
 }

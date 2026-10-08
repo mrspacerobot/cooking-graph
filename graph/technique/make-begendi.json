@@ -1,0 +1,66 @@
+{
+  "id": "technique/make-begendi",
+  "tier": "drafted",
+  "names": {"en": "Make begendi"},
+  "aliases": {"en": ["smoky aubergine cream", "aubergine cream"]},
+  "does": "Beats the soft flesh of charred aubergine into a cooked white sauce of flour, butter and milk with melted cheese, to a thick, pale, smoky cream that is spooned out under braised meat.",
+  "how": [
+    "Pull the charred flesh off the skin, drain off the bitter juice and mash the flesh with a fork to a pulp.",
+    "Cook the flour in the butter to a roux, without letting it colour.",
+    "Whisk in warm milk a little at a time and stir until the sauce is thick and smooth.",
+    "Stir in the aubergine and the cheese and keep stirring until the cheese has melted.",
+    "Season, and loosen with a splash of milk if it is stiff. It should hold its shape on a spoon.",
+    "Spoon it out warm, so that it can carry a ladle of stew."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "A thick, pale cream flecked with the dark of the smoke, that holds a soft peak on the spoon."
+    },
+    {"sense": "smell", "text": "A smoky, sweet smell of charred aubergine with a note of melted cheese."},
+    {"sense": "taste", "text": "Smooth and smoky, with no raw flour."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the aubergine with its bitter juice, which thins the cream and sours it.",
+      "fix": "Drain the flesh first."
+    },
+    {"mistake": "Adding the milk all at once, so that the roux lumps.", "fix": "Whisk it in a little at a time."},
+    {
+      "mistake": "Leaving the cream on a hot flame once the cheese is in, so that it turns stringy and catches.",
+      "fix": "Keep the heat low and stir."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/aubergine", "tier": "drafted"},
+    {"thing": "preparation/roux", "tier": "drafted"},
+    {"thing": "ingredient/milk", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/smoky-aubergine-cream", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk", "equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/milk"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/char",
+      "why": "The aubergine is charred whole over a flame first, which gives the cream its smoke.",
+      "tier": "drafted"
+    },
+    {"thing": "technique/make-a-roux", "why": "The cream is built on a roux.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/make-a-bechamel",
+      "differs": "Charred aubergine flesh and a melting cheese are stirred into the white sauce, and there is no nutmeg. It is cooked thick, to serve as a bed under meat and not as a sauce poured over it.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

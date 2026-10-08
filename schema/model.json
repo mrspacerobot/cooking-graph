@@ -20,6 +20,14 @@
         "caveat": {"is": "text"}
       }
     },
+    "same_as": {
+      "is": "object",
+      "fields": {
+        "source": {"is": "ref", "kinds": ["source"]},
+        "id": {"is": "label"},
+        "tier": {"is": "word", "from": "tiers"}
+      }
+    },
     "part": {
       "is": "object",
       "fields": {
@@ -156,7 +164,8 @@
           }
         },
         "stands_in_for": {"is": "list", "of": {"is": "shape", "name": "stand_in"}},
-        "in_pantry_of": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
+        "in_pantry_of": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}},
+        "same_as": {"is": "list", "of": {"is": "shape", "name": "same_as"}}
       }
     },
     "technique": {
@@ -224,7 +233,8 @@
         "groups": {"is": "list", "of": {"is": "link", "to": ["group"]}},
         "teaches": {"is": "list", "of": {"is": "link", "to": ["technique"]}},
         "stands_in_for": {"is": "list", "of": {"is": "shape", "name": "stand_in"}},
-        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
+        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}},
+        "same_as": {"is": "list", "of": {"is": "shape", "name": "same_as"}}
       }
     },
     "dish": {
@@ -237,7 +247,8 @@
         "is": {"is": "text"},
         "parts": {"is": "list", "at_least": 1, "of": {"is": "shape", "name": "part"}},
         "teaches": {"is": "list", "of": {"is": "link", "to": ["technique"]}},
-        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}}
+        "belongs_to": {"is": "list", "of": {"is": "link", "to": ["cuisine"]}},
+        "same_as": {"is": "list", "of": {"is": "shape", "name": "same_as"}}
       }
     },
     "recipe": {
@@ -335,6 +346,88 @@
             }
           }
         }
+      }
+    },
+    "reviewer": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "kind": {"is": "word", "from": "reviewer_kinds"},
+        "model_id": {"is": "label", "or_null": true},
+        "knows": {
+          "is": "list",
+          "of": {
+            "is": "object",
+            "fields": {
+              "cuisine": {"is": "ref", "kinds": ["cuisine"]},
+              "how": {"is": "word", "from": "know_ways"}
+            }
+          }
+        },
+        "safety_authority": {"is": "note", "or_null": true},
+        "added_on": {"is": "date"}
+      }
+    },
+    "review": {
+      "home": "graph",
+      "fields": {
+        "id": {"is": "id"},
+        "reviewer": {"is": "ref", "kinds": ["reviewer"]},
+        "on": {"is": "date"},
+        "grants": {"is": "word", "from": "tiers"},
+        "cuisine": {"is": "ref", "kinds": ["cuisine"], "or_null": true},
+        "mode": {"is": "word", "from": "review_modes"},
+        "sample": {
+          "is": "object",
+          "or_null": true,
+          "fields": {
+            "seed": {"is": "label"},
+            "per_hundred": {"is": "integer", "at_least": 1},
+            "kinds": {"is": "list", "at_least": 1, "of": {"is": "label"}},
+            "cuisine": {"is": "ref", "kinds": ["cuisine"]}
+          }
+        },
+        "against": {
+          "is": "list",
+          "at_least": 1,
+          "of": {
+            "is": "object",
+            "fields": {
+              "how": {"is": "word", "from": "against_ways"},
+              "source": {"is": "ref", "kinds": ["source"], "or_null": true},
+              "note": {"is": "note"}
+            }
+          }
+        },
+        "covers": {
+          "is": "list",
+          "at_least": 1,
+          "of": {
+            "is": "object",
+            "fields": {
+              "thing": {"is": "ref", "kinds": ["fact", "cuisine", "equipment", "form", "group", "ingredient", "technique", "preparation", "dish", "recipe", "program"]},
+              "field": {"is": "label", "or_null": true},
+              "target": {"is": "label", "or_null": true},
+              "seen": {"is": "label"},
+              "verdict": {"is": "word", "from": "verdicts"},
+              "note": {"is": "note", "or_null": true}
+            }
+          }
+        },
+        "rulings": {
+          "is": "list",
+          "of": {
+            "is": "object",
+            "fields": {
+              "probe": {"is": "ref", "kinds": ["safety-probe"]},
+              "fact": {"is": "ref", "kinds": ["fact"]},
+              "stands": {"is": "word", "from": "stands"},
+              "why": {"is": "note"}
+            }
+          }
+        },
+        "supersedes": {"is": "list", "of": {"is": "ref", "kinds": ["review"]}},
+        "note": {"is": "note", "or_null": true}
       }
     },
     "dish-probe": {

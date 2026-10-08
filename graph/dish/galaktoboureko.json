@@ -1,0 +1,31 @@
+{
+  "id": "dish/galaktoboureko",
+  "tier": "drafted",
+  "names": {"en": "Galaktoboureko", "tr": "Laz böreği"},
+  "aliases": {"en": ["Greek custard pie"]},
+  "is": "A pie of buttered phyllo around a thick semolina custard, baked until the top is crisp and golden, then soaked with a cool syrup while the pie is still hot and left to cool and set before it is cut.",
+  "parts": [
+    {"id": "phyllo", "role": "base", "options": ["ingredient/phyllo"], "optional": false, "tier": "drafted"},
+    {
+      "id": "custard",
+      "role": "filling",
+      "options": ["preparation/semolina-custard"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "syrup", "role": "sauce", "options": ["preparation/sugar-syrup"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/layer-phyllo", "tier": "drafted"},
+    {"thing": "technique/bake-a-phyllo-pie", "tier": "drafted"},
+    {"thing": "technique/soak-in-syrup", "tier": "drafted"},
+    {"thing": "technique/temper", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1283052", "tier": "sourced"}
+  ]
+}

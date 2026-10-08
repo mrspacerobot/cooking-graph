@@ -69,6 +69,7 @@ class SafetyRecords(unittest.TestCase):
         cream["safety"] = drafting.safety(self.kitchen.root, [("fact/dairy", "A milk product.", True)])
         cream["stands_in_for"] = []
         cream["in_pantry_of"] = drafting.links("cuisine/french")
+        cream["same_as"] = []
         self.assertEqual("graph/ingredient/cream.json", drafting.put(self.kitchen.root, cream))
         self.assertEqual([], check.check_repository(self.kitchen.root))
 

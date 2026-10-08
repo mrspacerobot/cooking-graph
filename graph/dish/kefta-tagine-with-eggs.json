@@ -1,0 +1,48 @@
+{
+  "id": "dish/kefta-tagine-with-eggs",
+  "tier": "drafted",
+  "names": {"en": "Kefta tagine with eggs"},
+  "aliases": {"en": ["kefta mkaouara", "kefta mkawra"]},
+  "is": "Small meatballs of spiced minced lamb simmered in a sauce of tomato, garlic, cumin and paprika, with eggs broken into the sauce at the end and left to poach until the whites are set.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/ground-lamb", "ingredient/minced-beef"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "aromatic",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "paprika", "role": "seasoning", "options": ["ingredient/paprika"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "sauce",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "olive-oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "topping", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/shape-meatballs", "tier": "drafted"},
+    {"thing": "technique/make-a-tomato-sauce", "tier": "drafted"},
+    {"thing": "technique/poach", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": []
+}

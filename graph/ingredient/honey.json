@@ -1,7 +1,7 @@
 {
   "id": "ingredient/honey",
   "tier": "drafted",
-  "names": {"en": "Honey", "fr": "Miel"},
+  "names": {"en": "Honey", "fr": "Miel", "it": "miele", "tr": "bal"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -20,10 +20,23 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/sugar",
+      "allows": true,
+      "when": ["preparation/agrodolce", "preparation/pancake-batter"],
+      "not_when": ["technique/make-a-caramel"],
+      "ratio": null,
+      "caveat": "It is sweeter and wetter, and tastes floral.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/moroccan", "tier": "drafted"},
     {"thing": "cuisine/greek", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q10987", "tier": "sourced"}
   ]
 }

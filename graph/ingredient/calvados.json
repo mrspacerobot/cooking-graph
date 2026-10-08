@@ -1,7 +1,7 @@
 {
   "id": "ingredient/calvados",
   "tier": "drafted",
-  "names": {"en": "Calvados", "fr": "Calvados"},
+  "names": {"en": "Calvados", "fr": "Calvados", "tr": "Kalvados"},
   "aliases": {"en": ["apple brandy"]},
   "is_a": [],
   "part_of": [],
@@ -21,5 +21,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3268", "tier": "sourced"}
+  ]
 }

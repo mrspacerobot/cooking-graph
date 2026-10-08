@@ -1,7 +1,7 @@
 {
   "id": "ingredient/vanilla",
   "tier": "drafted",
-  "names": {"en": "Vanilla", "fr": "Vanille"},
+  "names": {"en": "Vanilla", "fr": "Vanille", "es": "vainilla", "it": "vaniglia", "tr": "vanilya"},
   "aliases": {"en": ["vanilla pod", "vanilla bean"]},
   "is_a": [],
   "part_of": [],
@@ -20,5 +20,8 @@
     "note": "This is the pod. Vanilla extract is made with alcohol and is another thing."
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q13241", "tier": "sourced"}
+  ]
 }

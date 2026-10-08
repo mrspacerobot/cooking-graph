@@ -1,0 +1,72 @@
+{
+  "id": "recipe/croquetas-de-jamon",
+  "tier": "drafted",
+  "names": {"en": "Croquetas de jamón", "fr": "Croquettes au jambon"},
+  "aliases": {},
+  "makes": "dish/croquetas-de-jamon",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/butter", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/minced"], "part": "paste"},
+    {"thing": "ingredient/flour", "amount": {"value": 70, "unit": "gram"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/milk", "amount": {"value": 600, "unit": "millilitre"}, "forms": [], "part": "paste"},
+    {
+      "thing": "ingredient/serrano-ham",
+      "amount": {"value": 100, "unit": "gram"},
+      "forms": ["form/chopped"],
+      "part": "paste"
+    },
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/flour", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "preparation/breadcrumbs", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "crumbs"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/saucepan", "equipment/wooden-spoon",
+    "equipment/mixing-bowl", "equipment/baking-sheet", "equipment/slotted-spoon", "equipment/thermometer",
+    "equipment/wire-rack"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-croqueta-paste",
+      "works_on": ["ingredient/flour", "ingredient/milk"],
+      "with": ["ingredient/butter", "ingredient/onion", "ingredient/serrano-ham", "ingredient/nutmeg"],
+      "text": "Melt the butter in a wide pan and soften the onion in it without colour. Stir in the flour, then the chopped ham. Beat in the warm milk a little at a time until the mixture is very thick and pulls away from the pan in one mass. Season with nutmeg. Spread it in a shallow dish, press a sheet of film onto it and chill it until it is firm all the way through.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": ["preparation/croqueta-paste"]
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Beat the eggs in a shallow dish.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape-and-crumb-croquetas",
+      "works_on": ["preparation/croqueta-paste"],
+      "with": ["ingredient/flour", "ingredient/egg", "preparation/breadcrumbs"],
+      "text": "Roll spoonfuls of the cold paste between floured hands into short logs. Roll each in flour, turn it through the egg and cover it all round in crumbs. Lay them on a tray and chill them for a short while.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-croquetas",
+      "works_on": ["preparation/croqueta-paste"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Heat the oil until a crumb dropped in sizzles at once. Fry a few croquetas at a time, turning them, until they are deep golden. Lift them out onto a rack and serve hot.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

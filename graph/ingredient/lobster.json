@@ -1,7 +1,7 @@
 {
   "id": "ingredient/lobster",
   "tier": "drafted",
-  "names": {"en": "Lobster", "fr": "Homard"},
+  "names": {"en": "Lobster", "fr": "Homard", "it": "aragosta"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -22,6 +22,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/shrimp",
+      "allows": true,
+      "when": ["technique/cook-al-ajillo"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Cut pieces are larger and need longer in the pan, and the taste is richer.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q61864890", "tier": "sourced"}
+  ]
 }

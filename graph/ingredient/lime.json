@@ -1,7 +1,7 @@
 {
   "id": "ingredient/lime",
   "tier": "drafted",
-  "names": {"en": "Lime", "fr": "Citron vert"},
+  "names": {"en": "Lime", "fr": "Citron vert", "es": "lima", "it": "limetta", "tr": "Misket limonu"},
   "aliases": {"en": ["limes"]},
   "is_a": [],
   "part_of": [],
@@ -20,5 +20,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q13195", "tier": "sourced"}
+  ]
 }

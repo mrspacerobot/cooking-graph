@@ -2,7 +2,7 @@
   "id": "ingredient/orange-blossom-water",
   "tier": "drafted",
   "names": {"en": "Orange blossom water", "fr": "Eau de fleur d'oranger"},
-  "aliases": {"en": ["orange flower water"]},
+  "aliases": {"en": ["orange flower water", "mazahar"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -23,5 +23,6 @@
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/moroccan", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

@@ -25,5 +25,8 @@
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"},
     {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q20730193", "tier": "sourced"}
   ]
 }

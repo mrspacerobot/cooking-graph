@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/japanese-short-grain-rice",
+  "tier": "drafted",
+  "names": {"en": "Japanese short-grain rice", "fr": "Riz japonais à grains ronds"},
+  "aliases": {},
+  "is_a": [
+    {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/starches", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A plump, round-grained rice that turns sticky and tender when it is washed, soaked and steamed. The grains cling together softly, which suits rice balls, sushi and a bowl eaten with chopsticks.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/fennel",
   "tier": "drafted",
-  "names": {"en": "Fennel", "fr": "Fenouil"},
+  "names": {"en": "Fennel", "fr": "Fenouil", "it": "finocchio"},
   "aliases": {"en": ["fennel bulb"]},
   "is_a": [],
   "part_of": [],
@@ -21,6 +21,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/celery",
+      "allows": true,
+      "when": ["technique/make-a-soffritto"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sweeter and leaves a note of aniseed in the base.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q115618652", "tier": "sourced"}
+  ]
 }

@@ -22,6 +22,19 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/minced-beef",
+      "allows": true,
+      "when": ["dish/hachis-parmentier"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Shred it fine. It is drier and milder than browned mince, so add stock or butter.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q4938329", "tier": "sourced"}
+  ]
 }

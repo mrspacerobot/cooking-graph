@@ -1,7 +1,7 @@
 {
   "id": "ingredient/sugar",
   "tier": "drafted",
-  "names": {"en": "Sugar", "fr": "Sucre"},
+  "names": {"en": "Sugar", "fr": "Sucre", "es": "azúcar", "it": "zuccheri", "tr": "şeker"},
   "aliases": {"en": ["white sugar", "caster sugar", "granulated sugar"]},
   "is_a": [],
   "part_of": [],
@@ -22,8 +22,33 @@
     ],
     "note": "Beet sugar is not whitened with bone char. The stricter answer is recorded until a sugar that is known to be free of it is its own ingredient."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/brown-sugar",
+      "allows": true,
+      "when": [
+        "preparation/agrodolce", "technique/glaze", "technique/make-a-syrup", "technique/make-agrodolce",
+        "technique/sweeten"
+      ],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is paler and has less of the caramel taste.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/honey",
+      "allows": true,
+      "when": ["preparation/agrodolce", "preparation/pancake-batter"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is plainer and drier, with no floral note.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q11002", "tier": "sourced"}
   ]
 }

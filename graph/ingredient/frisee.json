@@ -21,6 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/lettuce",
+      "allows": true,
+      "when": ["dish/salade-de-chevre-chaud"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is bitterer and sturdier, so it holds up under warm cheese.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
 }

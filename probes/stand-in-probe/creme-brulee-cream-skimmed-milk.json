@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/creme-brulee-cream-skimmed-milk",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Creme brulee",
+  "ingredient": "cream",
+  "candidate": "skimmed milk",
+  "verdict": "does-not-work",
+  "why": "Without the fat of cream the custard sets thin and watery and cannot carry a crisp sugar top."
+}

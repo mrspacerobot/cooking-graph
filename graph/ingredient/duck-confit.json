@@ -1,7 +1,7 @@
 {
   "id": "ingredient/duck-confit",
   "tier": "drafted",
-  "names": {"en": "Duck confit", "fr": "Confit de canard"},
+  "names": {"en": "Duck confit", "fr": "Confit de canard", "es": "Confit de pato", "tr": "Ördek konfi"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -23,5 +23,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2992515", "tier": "sourced"}
+  ]
 }

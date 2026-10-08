@@ -1,6 +1,8 @@
 # The review record
 
-A design, not yet built. It answers the open question in `docs/cycle-two.md`: how a review is put on record. Today `tiers_earned` refuses every tier above drafted and `safety_earned` refuses every verified safety record, so no reviewer can approve anything. This document says what replaces them.
+Stage one is built (the kinds, the hash, `./review`, and six rules, see changes 31 and 32 in `docs/model.md`). Stages two to four are still designs. It answers the open question in `docs/cycle-two.md`: how a review is put on record. Today `tiers_earned` refuses every tier above drafted and `safety_earned` refuses every verified safety record, so no reviewer can approve anything. This document says what replaces them.
+
+**What stage one built, and what it refuses.** Built: the kinds `reviewer` and `review`; `tools/review_hash.py`; `./review show` and `./review seal`; the rules `email-in-repo`, `tier-not-earned`, `review-stale`, `model-grants-too-much`, `reviewer-does-not-know-cuisine`, `review-unlinked`; and the review counts in `./numbers`. Refused by `review-not-built` until their stages: a sample record, rulings, a review of a safety record, `verified` and `cook-tested`. Nobody has written a real record. The first one is for a person to write.
 
 ## 1. What a record is
 
@@ -19,7 +21,7 @@ Two new kinds, both in `graph/`, neither with a `tier` or `names` (a record is h
 
 **How a reviewer is named.** The slug is chosen by the owner, never taken from a real name, a handle or an email: `reviewer/owner`, `reviewer/french-1`, `reviewer/judge-opus`. The roster that says which human is `french-1` is kept by the owner outside the repository. The repository holds no name, no email, no address and no link to a profile. A rule refuses an email address anywhere in the repository (`email-in-repo`). A reviewer file is added only in a pull request the owner merges, so adding a reviewer is the owner's act of trust.
 
-**`review`** - `graph/review/<date>-<reviewer-slug>-<topic>.json`. One record is one review session.
+**`review`** - `graph/review/<reviewer-slug>-<topic>-<date>.json`. One record is one review session.
 
 | Field | What it holds |
 |---|---|
@@ -118,11 +120,11 @@ Worked example. The reviewer file:
 }
 ```
 
-The record (`graph/review/2026-10-14-owner-deglaze-butter.json`; the hashes are made up, `./review seal` would print the real ones):
+The record (`graph/review/owner-deglaze-butter-2026-10-14.json`, a slug starts with a letter, so the day comes last; the hashes are made up, `./review seal` would print the real ones):
 
 ```json
 {
-  "id": "review/2026-10-14-owner-deglaze-butter",
+  "id": "review/owner-deglaze-butter-2026-10-14",
   "reviewer": "reviewer/owner",
   "on": "2026-10-14",
   "grants": "reviewed",

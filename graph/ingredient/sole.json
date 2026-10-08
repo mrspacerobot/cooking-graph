@@ -1,7 +1,7 @@
 {
   "id": "ingredient/sole",
   "tier": "drafted",
-  "names": {"en": "Sole", "fr": "Sole"},
+  "names": {"en": "Sole", "fr": "Sole", "es": "lenguado", "it": "sogliola"},
   "aliases": {"en": ["Dover sole"]},
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
@@ -25,5 +25,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q11688697", "tier": "sourced"}
+  ]
 }

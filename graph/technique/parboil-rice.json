@@ -1,0 +1,59 @@
+{
+  "id": "technique/parboil-rice",
+  "tier": "drafted",
+  "names": {"en": "Parboil rice"},
+  "aliases": {"en": ["boil rice until nearly done", "half-cook rice", "par-cook rice"]},
+  "does": "Boils rinsed and soaked rice in a large pot of well-salted water, with whole spices if the dish asks for them, only until each grain is nearly tender with a firm core, then drains it at once. The grains finish later, in steam, in a layered dish.",
+  "how": [
+    "Rinse the rice in several changes of cold water until the water is nearly clear, then leave it to soak in cold water for a good while and drain it.",
+    "Bring a large pot of water to a rolling boil with plenty of salt, and the whole spices if there are any. The water should taste of the sea.",
+    "Slide in the rice, bring the water back to the boil and stir once, gently, to stop the grains sticking.",
+    "Test a grain often. It is ready when it snaps cleanly and shows a white, firm core when pressed between the fingers.",
+    "Drain it at once into a colander and spread it out. Do not rinse it. It must not be left to sit and go on cooking."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "A grain bends but then snaps, and the core is firm and chalky white."},
+    {"sense": "see", "text": "The grains have grown long and are still separate, with no mush in the water."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling the rice until it is soft, so that it turns to paste during the final steaming.",
+      "fix": "Drain it while the core is still firm. It has a long steam still to come."
+    },
+    {
+      "mistake": "Skipping the rinse and the soak, so that the grains clump and break.",
+      "fix": "Rinse until the water is nearly clear, then soak before boiling."
+    },
+    {
+      "mistake": "Salting the water too lightly, so that the finished dish tastes flat.",
+      "fix": "Salt the water boldly. Most of it goes down the drain."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/basmati-rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/stockpot"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/colander"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/rinse",
+      "why": "Rice for layering must lose its loose starch first or it clumps, so rinsing comes before boiling.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/cook-rice",
+      "differs": "The rice is boiled in a great deal of water, as pasta is, and drained while a firm core remains. It is not cooked in a measured amount of water until all the water is gone. The last of the cooking is done later in steam.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

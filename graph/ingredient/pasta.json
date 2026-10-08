@@ -1,8 +1,8 @@
 {
   "id": "ingredient/pasta",
   "tier": "drafted",
-  "names": {"en": "Pasta", "fr": "Pâtes"},
-  "aliases": {},
+  "names": {"en": "Pasta", "fr": "Pâtes", "it": "pasta italiana", "tr": "makarna"},
+  "aliases": {"fr": ["pâtes alimentaires"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -29,5 +29,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q178", "tier": "sourced"}
+  ]
 }

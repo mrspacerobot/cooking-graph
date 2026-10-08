@@ -1,7 +1,7 @@
 {
   "id": "ingredient/creme-fraiche",
   "tier": "drafted",
-  "names": {"en": "Crème fraîche", "fr": "Crème fraîche"},
+  "names": {"en": "Crème fraîche", "fr": "Crème fraîche", "tr": "Krem fraîche"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -35,5 +35,8 @@
   ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1142459", "tier": "sourced"}
   ]
 }

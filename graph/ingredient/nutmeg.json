@@ -1,7 +1,13 @@
 {
   "id": "ingredient/nutmeg",
   "tier": "drafted",
-  "names": {"en": "Nutmeg", "fr": "Noix de muscade"},
+  "names": {
+    "en": "Nutmeg",
+    "fr": "Noix de muscade",
+    "es": "nuez moscada",
+    "it": "noce moscata",
+    "tr": "Küçük Hindistan cevizi"
+  },
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -24,5 +30,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q83165", "tier": "sourced"}
   ]
 }

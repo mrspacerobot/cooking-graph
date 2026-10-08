@@ -1,7 +1,7 @@
 {
   "id": "ingredient/parmesan",
   "tier": "drafted",
-  "names": {"en": "Parmesan", "fr": "Parmesan"},
+  "names": {"en": "Parmesan", "fr": "Parmesan", "es": "queso parmesano", "tr": "Parmesan peyniri"},
   "aliases": {"en": ["Parmigiano Reggiano"]},
   "is_a": [],
   "part_of": [],
@@ -23,6 +23,37 @@
     ],
     "note": "Animal rennet is taken from the stomach of a calf."
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/kefalotyri",
+      "allows": true,
+      "when": ["dish/pastitsio"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It browns to a crust the same way, with a milder and nuttier taste.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/pecorino",
+      "allows": true,
+      "when": ["preparation/pesto", "dish/pastitsio", "dish/spaghetti-alla-carbonara"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is milder and nuttier, so the sauce tastes less sharp, and a little more salt may be wanted.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/gruyere",
+      "allows": true,
+      "when": ["dish/homard-thermidor", "dish/soupe-de-poisson"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is saltier and sharper, and browns to a dry crust instead of melting smoothly.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q155922", "tier": "sourced"}
+  ]
 }

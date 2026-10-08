@@ -24,5 +24,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q67445480", "tier": "sourced"}
   ]
 }

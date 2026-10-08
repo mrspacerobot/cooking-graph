@@ -1,0 +1,65 @@
+{
+  "id": "technique/cook-bulgur-pilaf",
+  "tier": "drafted",
+  "names": {"en": "Cook bulgur pilaf"},
+  "aliases": {"en": ["bulgur pilavi", "bulgur pilaf"]},
+  "does": "Fries coarse bulgur in fat with softened onion and a spoon of paste until every grain is coated, then covers it with hot liquid and leaves it under a lid, without stirring, until the grains have swollen, drunk the liquid and stand apart.",
+  "how": [
+    "Soften the onion in the fat, then stir in the pepper or tomato paste and fry it until the colour deepens.",
+    "Add the bulgur and stir for a short while until each grain is coated and smells toasty.",
+    "Pour in hot water or stock, a little more than the volume of the bulgur, and add salt. Bring it to a boil.",
+    "Cover and turn the heat to its lowest. Do not stir.",
+    "When the liquid has gone, take the pan off the heat, lay a cloth under the lid and leave it to stand.",
+    "Fluff the grains with a fork before serving."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Small steam holes show in the surface and no liquid is left in the pan."},
+    {"sense": "feel", "text": "The grains are plump and tender with a slight bite, and they fall apart when fluffed."},
+    {"sense": "taste", "text": "A nutty, savoury taste with the sweetness of the onion and paste."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring while it cooks, which breaks the grains and turns them sticky.",
+      "fix": "Stir only when the grains are coated, and fluff at the end."
+    },
+    {
+      "mistake": "Pouring in too much liquid, which leaves a wet porridge.",
+      "fix": "Measure the liquid and use only a little more than the bulgur."
+    },
+    {
+      "mistake": "Serving it straight from the heat, so that it is wet and clumped.",
+      "fix": "Let it stand under a cloth and lid first."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/coarse-bulgur", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "tier": "drafted"
+    },
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/stock"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/sweat",
+      "why": "The onion is softened in the fat before the grain goes in.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/cook-pilaf",
+      "differs": "The grain is coarse bulgur, which is already steamed and dried, so it needs no washing or soaking and takes less liquid and less time than rice. A spoon of pepper or tomato paste goes in with the onion for colour and body.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

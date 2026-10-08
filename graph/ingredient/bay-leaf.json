@@ -1,8 +1,8 @@
 {
   "id": "ingredient/bay-leaf",
   "tier": "drafted",
-  "names": {"en": "Bay leaf", "fr": "Laurier"},
-  "aliases": {"en": ["bay", "laurel leaf"]},
+  "names": {"en": "Bay leaf", "fr": "Laurier", "es": "laurel", "it": "alloro", "tr": "Akdeniz Defnesi"},
+  "aliases": {"en": ["bay", "laurel leaf"], "fr": ["feuille de laurier"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -24,5 +24,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2370943", "tier": "sourced"}
   ]
 }

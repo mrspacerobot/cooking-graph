@@ -1,7 +1,12 @@
 {
   "id": "ingredient/fenugreek-leaf",
   "tier": "drafted",
-  "names": {"en": "Fenugreek leaf", "fr": "Feuille de fenugrec"},
+  "names": {
+    "en": "Fenugreek leaf",
+    "fr": "Feuille de fenugrec",
+    "es": "hoja de fenegreco",
+    "it": "foglie di trigonella"
+  },
   "aliases": {"en": ["methi leaf"]},
   "is_a": [],
   "part_of": [],
@@ -22,5 +27,8 @@
   "stands_in_for": [],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q104054829", "tier": "sourced"}
   ]
 }

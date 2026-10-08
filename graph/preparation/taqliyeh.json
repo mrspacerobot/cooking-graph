@@ -1,0 +1,34 @@
+{
+  "id": "preparation/taqliyeh",
+  "tier": "drafted",
+  "names": {"en": "Taqliyeh"},
+  "aliases": {"en": ["taqliye", "tuqliyeh"]},
+  "is": "A sizzling mix of crushed garlic and fresh coriander fried briefly in hot fat and stirred into stews, soups and dishes of pulses at the end, for a sharp, fresh scent.",
+  "parts": [
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "aromatic",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/ghee", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-a-taqliyeh", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

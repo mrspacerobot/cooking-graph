@@ -1,0 +1,31 @@
+{
+  "id": "dish/tiramisu",
+  "tier": "drafted",
+  "names": {"en": "Tiramisu", "fr": "Tiramisu"},
+  "aliases": {},
+  "is": "A cold dessert of crisp sponge fingers dipped in strong coffee and layered with a soft cream of mascarpone and a sweet egg-yolk foam flavoured with Marsala, dusted with cocoa and chilled until it can be cut in squares.",
+  "parts": [
+    {"id": "biscuits", "role": "main", "options": ["ingredient/savoiardi"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cream",
+      "role": "filling",
+      "options": ["preparation/mascarpone-cream"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "coffee", "role": "liquid", "options": ["ingredient/coffee"], "optional": false, "tier": "drafted"},
+    {"id": "cocoa", "role": "topping", "options": ["ingredient/cocoa-powder"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/whisk-over-a-bain-marie", "tier": "drafted"},
+    {"thing": "technique/make-a-mascarpone-cream", "tier": "drafted"},
+    {"thing": "technique/dip", "tier": "drafted"},
+    {"thing": "technique/layer-a-cold-dessert", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q131582", "tier": "sourced"}
+  ]
+}

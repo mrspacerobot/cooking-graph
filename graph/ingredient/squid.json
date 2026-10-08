@@ -2,7 +2,7 @@
   "id": "ingredient/squid",
   "tier": "drafted",
   "names": {"en": "Squid", "fr": "Calmar"},
-  "aliases": {},
+  "aliases": {"en": ["calamar"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -20,6 +20,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cuttlefish",
+      "allows": true,
+      "when": ["dish/arroz-negro"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is softer and gives less ink, and turns tough if left too long.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
 }

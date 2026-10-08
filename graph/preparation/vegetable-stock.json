@@ -41,8 +41,28 @@
     {"thing": "technique/simmer", "tier": "drafted"},
     {"thing": "technique/strain", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/vegetable-stock",
+      "allows": true,
+      "when": ["dish/poireaux-braises", "dish/vichyssoise", "technique/add-stock-gradually", "technique/simmer"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "Homemade stock is unsalted and its taste is fresher, so season it at the end.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "preparation/white-chicken-stock",
+      "allows": true,
+      "when": ["dish/poireaux-braises", "dish/vichyssoise"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is lighter and sweeter, with less body.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

@@ -33,5 +33,8 @@
   ],
   "belongs_to": [
     {"thing": "cuisine/savoyard", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1759775", "tier": "sourced"}
   ]
 }

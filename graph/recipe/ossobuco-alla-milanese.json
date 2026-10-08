@@ -1,0 +1,142 @@
+{
+  "id": "recipe/ossobuco-alla-milanese",
+  "tier": "drafted",
+  "names": {"en": "Ossobuco alla milanese", "fr": "Osso buco à la milanaise"},
+  "aliases": {},
+  "makes": "dish/ossobuco-alla-milanese",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/veal-shank", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "veal"},
+    {"thing": "ingredient/flour", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "fat"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "onion"
+    },
+    {"thing": "ingredient/white-wine", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 400, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 20, "unit": "gram"},
+      "forms": ["form/chopped"],
+      "part": "gremolata"
+    },
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "gremolata"},
+    {"thing": "ingredient/garlic", "amount": {"value": 1, "unit": "clove"}, "forms": [], "part": "gremolata"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "seasoning"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "seasoning"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/dutch-oven", "equipment/wooden-spoon", "equipment/tongs",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/grater"
+  ],
+  "steps": [
+    {
+      "technique": "technique/trim",
+      "works_on": ["ingredient/veal-shank"],
+      "with": [],
+      "text": "Cut through the thin skin round the edge of each piece in a few places, so that it does not curl or shrink away from the bone as it cooks. Leave the marrow in the bone.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/veal-shank"],
+      "with": ["ingredient/butter", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Brown the pieces on both cut faces in half of the butter in a wide, heavy pot over medium-high heat, in a single layer. Lift them out.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter"],
+      "text": "Lower the heat and soften the onion in the rest of the butter, until it is soft and has taken no colour. Leave the browned bits stuck to the pot.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sprinkle-with-flour",
+      "works_on": ["ingredient/veal-shank", "ingredient/onion"],
+      "with": ["ingredient/flour"],
+      "text": "Put the veal back, scatter the flour over the pieces and the onion and turn them over the heat until no white shows.",
+      "time": {"value": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine"],
+      "text": "Pour in the wine and scrape the bottom of the pot clean. Let it bubble until the sharp smell has gone.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pan-sauce"]
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/veal-shank"],
+      "with": ["preparation/pan-sauce", "ingredient/chicken-stock"],
+      "text": "Stand the pieces upright so that the marrow stays in the bone and pour in the stock until it comes about half way up the meat. Bring it to a bare tremble, cover, and cook in a low oven, turning the pieces once or twice, until the meat is tender enough to part with a spoon. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 1.5, "to": 2, "unit": "hour"},
+      "temperature": {"value": 160, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/make-a-gremolata",
+      "works_on": ["ingredient/parsley", "ingredient/lemon", "ingredient/garlic"],
+      "with": [],
+      "text": "Chop the parsley very fine with the grated zest of the lemon and the garlic. Make it just before serving and keep it raw.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/gremolata"]
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/braising-liquid"],
+      "with": [],
+      "text": "Lift out the meat and keep it warm. Skim the fat, then boil the sauce down in the open pot until it coats a spoon.",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/braising-liquid"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Taste the sauce and adjust the salt and pepper.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/veal-shank"],
+      "with": ["preparation/braising-liquid", "preparation/gremolata"],
+      "text": "Serve each piece with its sauce spooned over and the gremolata scattered on top at the table.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "preparation/croqueta-paste",
+  "tier": "drafted",
+  "names": {"en": "Croqueta paste"},
+  "aliases": {"en": ["croqueta filling", "croqueta dough"]},
+  "is": "A very thick white sauce of butter, flour and milk with ham, cooked until it leaves the pan in one mass and chilled until firm, so that it can be rolled, coated and fried.",
+  "parts": [
+    {"id": "fat", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {
+      "id": "ham",
+      "role": "filling",
+      "options": ["ingredient/serrano-ham", "ingredient/ham"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": true, "tier": "drafted"},
+    {"id": "nutmeg", "role": "seasoning", "options": ["ingredient/nutmeg"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-croqueta-paste", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

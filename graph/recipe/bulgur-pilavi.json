@@ -1,0 +1,62 @@
+{
+  "id": "recipe/bulgur-pilavi",
+  "tier": "drafted",
+  "names": {"en": "Turkish bulgur pilaf"},
+  "aliases": {},
+  "makes": "dish/bulgur-pilavi",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/coarse-bulgur", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "bulgur"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/water", "amount": {"value": 600, "unit": "millilitre"}, "forms": [], "part": "liquid"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/wooden-spoon", "equipment/chefs-knife",
+    "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the onion small.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter", "ingredient/tomato-paste"],
+      "text": "Melt the butter in a pan over a gentle heat and soften the onion without colour. Stir in the tomato paste and fry it until the colour deepens.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-bulgur-pilaf",
+      "works_on": ["ingredient/coarse-bulgur"],
+      "with": ["ingredient/water", "ingredient/salt", "ingredient/butter"],
+      "text": "Stir the bulgur into the pan until each grain is coated. Pour in the hot water, add the salt and bring to a boil. Cover, turn the heat to its lowest and leave it alone until the water has gone. Take the pan off the heat, lay a cloth under the lid and let it stand, then fluff with a fork.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/coarse-bulgur"],
+      "with": [],
+      "text": "Serve hot, heaped in a warm dish.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

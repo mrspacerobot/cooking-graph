@@ -24,6 +24,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/guanciale",
+      "allows": true,
+      "when": ["dish/spaghetti-alla-carbonara"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "It is smoked and leaner, so the sauce tastes of smoke and carries less fat.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/pancetta",
+      "allows": true,
+      "when": ["dish/spaghetti-alla-carbonara", "technique/render"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The smoke comes through in the sauce, which is not the classic taste.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
 }

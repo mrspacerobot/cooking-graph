@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/cheese-souffle-gruyere-comte",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Cheese souffle",
+  "ingredient": "Gruyere",
+  "candidate": "Comte",
+  "verdict": "works",
+  "why": "Comte is a close Alpine cousin that melts the same way and gives a similar nutty flavour."
+}

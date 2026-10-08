@@ -28,8 +28,21 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/yakisoba-noodle",
+      "allows": true,
+      "when": ["dish/yakisoba"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is thicker and softer, so boil it, drain it well and fry it quickly so that it does not break.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q471861", "tier": "sourced"}
   ]
 }

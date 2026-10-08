@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/paella-bomba-rice-arborio-rice",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Paella valenciana",
+  "ingredient": "bomba rice",
+  "candidate": "arborio rice",
+  "verdict": "works-with-caveat",
+  "why": "Arborio takes less stock and releases more starch, so the paella leans creamy and must not be stirred or it turns to risotto."
+}

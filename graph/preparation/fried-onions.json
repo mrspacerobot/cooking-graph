@@ -1,0 +1,33 @@
+{
+  "id": "preparation/fried-onions",
+  "tier": "drafted",
+  "names": {"en": "Fried onions"},
+  "aliases": {"en": ["birista", "beresta", "crisp fried onions"]},
+  "is": "Thinly sliced onions fried in plenty of fat until deep brown and crisp, then drained. They are layered into rice, scattered on top of a dish or crushed into a gravy.",
+  "parts": [
+    {
+      "id": "onion",
+      "role": "main",
+      "options": ["ingredient/onion", "ingredient/shallot"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/ghee"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/fry-onions-deep-brown", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

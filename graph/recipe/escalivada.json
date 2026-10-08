@@ -1,0 +1,92 @@
+{
+  "id": "recipe/escalivada",
+  "tier": "drafted",
+  "names": {"en": "Escalivada"},
+  "aliases": {},
+  "makes": "dish/escalivada",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/aubergine", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "aubergine"},
+    {"thing": "ingredient/bell-pepper", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 5, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/roasting-tin", "equipment/tongs", "equipment/mixing-bowl",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Roast the whole onions in their skins, with a little of the oil, in a hot oven until they are soft all the way to the middle.",
+      "time": {"from": 45, "to": 60, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/char",
+      "works_on": ["ingredient/aubergine", "ingredient/bell-pepper"],
+      "with": [],
+      "text": "Set the aubergines and the red peppers on a flame or a hot grill and turn them with tongs until the skins are blackened and the flesh has collapsed. Put them in a bowl, cover it and leave them until they are cool enough to handle. Peel off the skins and lift out the stems and seeds, without rinsing.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/aubergine", "ingredient/bell-pepper", "ingredient/onion"],
+      "with": [],
+      "text": "Peel the onions. Tear or cut the aubergine, the peppers and the onions into long strips.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/salt"],
+      "text": "Crush the garlic with a little of the salt to a damp paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/aubergine", "ingredient/bell-pepper", "ingredient/onion"],
+      "with": ["ingredient/garlic", "ingredient/olive-oil"],
+      "text": "Lay the strips in a dish and turn them with the garlic and the rest of the oil.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/aubergine", "ingredient/bell-pepper", "ingredient/onion"],
+      "with": ["ingredient/salt"],
+      "text": "Taste, and add salt where it is wanted.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/aubergine", "ingredient/bell-pepper", "ingredient/onion"],
+      "with": [],
+      "text": "Serve warm or at room temperature, with bread.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

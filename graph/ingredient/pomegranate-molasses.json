@@ -1,8 +1,8 @@
 {
   "id": "ingredient/pomegranate-molasses",
   "tier": "drafted",
-  "names": {"en": "Pomegranate molasses", "fr": "Mélasse de grenade"},
-  "aliases": {"en": ["dibs rumman", "nar eksisi"]},
+  "names": {"en": "Pomegranate molasses", "fr": "Mélasse de grenade", "es": "melaza de granada"},
+  "aliases": {"en": ["dibs rumman", "nar eksisi"], "fr": ["Narsharab"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -28,5 +28,8 @@
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q108946643", "tier": "sourced"}
   ]
 }

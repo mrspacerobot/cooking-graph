@@ -1,0 +1,134 @@
+{
+  "id": "recipe/palak-paneer",
+  "tier": "drafted",
+  "names": {"en": "Palak paneer"},
+  "aliases": {},
+  "makes": "dish/palak-paneer",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/paneer", "amount": {"value": 250, "unit": "gram"}, "forms": ["form/diced"], "part": "paneer"},
+    {"thing": "ingredient/spinach", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "spinach"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "litre"}, "forms": [], "part": "blanching-water"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/diced"], "part": "onion"},
+    {
+      "thing": "ingredient/tomato",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/chopped"],
+      "part": "tomato"
+    },
+    {"thing": "ingredient/ginger", "amount": {"value": 15, "unit": "gram"}, "forms": ["form/minced"], "part": "ginger"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {
+      "thing": "ingredient/green-chilli",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "green-chilli"
+    },
+    {"thing": "ingredient/ghee", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/turmeric", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "turmeric"},
+    {
+      "thing": "ingredient/red-chilli-powder",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "chilli-powder"
+    },
+    {
+      "thing": "preparation/garam-masala",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "garam-masala"
+    },
+    {"thing": "ingredient/cream", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/colander", "equipment/blender", "equipment/saute-pan",
+    "equipment/wooden-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/blanch",
+      "works_on": ["ingredient/spinach"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Drop the spinach into a large pot of boiling salted water for moments only, until it wilts and turns bright green, then lift it into cold water at once.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/squeeze",
+      "works_on": ["ingredient/spinach"],
+      "with": [],
+      "text": "Squeeze the spinach hard by the handful to wring out the water.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/spinach"],
+      "with": [],
+      "text": "Blend the spinach to a smooth purée with a splash of cold water. Keep it bright and green.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/temper-spices-in-hot-fat",
+      "works_on": ["ingredient/cumin"],
+      "with": ["ingredient/ghee"],
+      "text": "Heat the ghee in a wide pan until a cumin seed sizzles at once, then add the cumin and let it darken a shade.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-masala-base",
+      "works_on": ["ingredient/onion", "ingredient/tomato"],
+      "with": [
+        "ingredient/ginger", "ingredient/garlic", "ingredient/green-chilli", "ingredient/turmeric",
+        "ingredient/red-chilli-powder", "ingredient/ghee"
+      ],
+      "text": "Add the onion and cook until golden. Stir in the ginger, the garlic and the green chilli, then the turmeric and the chilli powder for a moment, then the tomato. Cook, mashing it down, until the fat shows at the edge of the paste.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-in-masala-gravy",
+      "works_on": ["ingredient/paneer"],
+      "with": ["ingredient/spinach", "preparation/garam-masala", "ingredient/salt"],
+      "text": "Stir the spinach purée into the base and bring it to a gentle simmer. Add the paneer and the garam masala and simmer, uncovered, just until the paneer is hot and has taken on the flavour. Do not boil it hard, or the cheese turns rubbery.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/spinach"],
+      "with": ["ingredient/salt", "ingredient/cream"],
+      "text": "Taste the gravy and adjust the salt. Stir in the cream.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/spinach"],
+      "with": [],
+      "text": "Serve the palak paneer hot, with a swirl of cream on top if wanted.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

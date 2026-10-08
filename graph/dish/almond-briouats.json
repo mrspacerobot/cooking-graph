@@ -1,0 +1,45 @@
+{
+  "id": "dish/almond-briouats",
+  "tier": "drafted",
+  "names": {"en": "Almond briouats"},
+  "aliases": {"en": ["almond briouat", "almond pastry triangles"]},
+  "is": "Small triangles of paper-thin warqa filled with a sweet paste of ground almonds scented with cinnamon and orange blossom water, fried until golden and dipped in warm honey.",
+  "parts": [
+    {
+      "id": "warqa",
+      "role": "base",
+      "options": ["ingredient/warqa", "ingredient/phyllo"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "almond", "role": "filling", "options": ["ingredient/almond"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "cinnamon", "role": "seasoning", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "blossom",
+      "role": "seasoning",
+      "options": ["ingredient/orange-blossom-water"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "butter",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/smen"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/sunflower-oil"], "optional": false, "tier": "drafted"},
+    {"id": "honey", "role": "coating", "options": ["ingredient/honey"], "optional": false, "tier": "drafted"},
+    {"id": "sesame", "role": "garnish", "options": ["ingredient/sesame-seed"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fold-briouats", "tier": "drafted"},
+    {"thing": "technique/fry-briouats", "tier": "drafted"},
+    {"thing": "technique/grind", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -2,7 +2,7 @@
   "id": "ingredient/bulgur",
   "tier": "drafted",
   "names": {"en": "Bulgur", "fr": "Boulgour"},
-  "aliases": {"en": ["burghul", "bulghur"]},
+  "aliases": {"en": ["burghul", "bulghur"], "fr": ["boulghour"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -27,5 +27,8 @@
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"},
     {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q250432", "tier": "sourced"}
   ]
 }

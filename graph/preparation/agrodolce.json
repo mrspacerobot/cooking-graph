@@ -27,5 +27,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q16826169", "tier": "sourced"}
   ]
 }

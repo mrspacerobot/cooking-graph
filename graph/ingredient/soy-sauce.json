@@ -1,7 +1,7 @@
 {
   "id": "ingredient/soy-sauce",
   "tier": "drafted",
-  "names": {"en": "Soy sauce", "fr": "Sauce soja"},
+  "names": {"en": "Soy sauce", "fr": "Sauce soja", "es": "salsa de soya", "it": "salsa di soia", "tr": "soya sosu"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -25,5 +25,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q229385", "tier": "sourced"}
+  ]
 }

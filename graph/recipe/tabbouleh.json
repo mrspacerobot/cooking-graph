@@ -1,0 +1,107 @@
+{
+  "id": "recipe/tabbouleh",
+  "tier": "drafted",
+  "names": {"en": "Tabbouleh", "fr": "Taboulé libanais"},
+  "aliases": {},
+  "makes": "dish/tabbouleh",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/parsley", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/mint", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "mint"},
+    {"thing": "ingredient/tomato", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {"thing": "ingredient/fine-bulgur", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "bulgur"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 80, "unit": "millilitre"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 80, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/allspice", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "allspice"}
+  ],
+  "equipment": [
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/fine-sieve", "equipment/mixing-bowl",
+    "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/tomato"],
+      "with": [],
+      "text": "Dice the tomatoes small with a very sharp knife, so that they are cut and not crushed.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drain",
+      "works_on": ["ingredient/tomato"],
+      "with": [],
+      "text": "Tip the diced tomatoes into a sieve set over a bowl and let the juice drip out. Keep the juice.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/soak-bulgur",
+      "works_on": ["ingredient/fine-bulgur"],
+      "with": ["ingredient/lemon-juice"],
+      "text": "Rinse the bulgur in a sieve, tip it into a bowl and pour over the tomato juice and a spoonful of the lemon juice, just enough to cover. Leave it until the grains are tender, then press out any liquid left.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley", "ingredient/mint"],
+      "with": [],
+      "text": "Wash the herbs and dry them very well, because wet herbs turn to a dark paste. Pick the parsley from its thick stems and chop it very fine with a sharp knife. Chop the mint last and only lightly, so that it does not bruise.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/spring-onion"],
+      "with": [],
+      "text": "Slice the spring onions thin.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/tomato", "ingredient/fine-bulgur", "ingredient/spring-onion"],
+      "with": [
+        "ingredient/parsley", "ingredient/mint", "ingredient/lemon-juice", "ingredient/olive-oil", "ingredient/allspice"
+      ],
+      "text": "Just before serving, fold the tomatoes, the bulgur and the spring onions into the herbs with the lemon juice and the oil, and the allspice if it is used. Mix gently, so that the herbs stay light.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/salt", "ingredient/lemon-juice"],
+      "text": "Taste, and adjust the salt and the lemon juice. It should taste sharp and green.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/tomato", "ingredient/fine-bulgur"],
+      "with": [],
+      "text": "Pile the salad in a shallow bowl and serve it at once, while the herbs are still bright.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

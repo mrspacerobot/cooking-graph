@@ -1,0 +1,26 @@
+{
+  "id": "dish/tsipoura-sti-schara",
+  "tier": "drafted",
+  "names": {"en": "Grilled sea bream with ladolemono"},
+  "aliases": {"en": ["tsipoura sti schara"]},
+  "is": "A whole sea bream scaled, gutted, seasoned and grilled over fierce heat, then dressed at the table with ladolemono, a loose sauce of olive oil and lemon, and a scatter of parsley.",
+  "parts": [
+    {"id": "fish", "role": "main", "options": ["ingredient/sea-bream"], "optional": false, "tier": "drafted"},
+    {"id": "dressing", "role": "sauce", "options": ["preparation/ladolemono"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "oregano", "role": "aromatic", "options": ["ingredient/oregano"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/scale-a-fish", "tier": "drafted"},
+    {"thing": "technique/gut-a-fish", "tier": "drafted"},
+    {"thing": "technique/grill", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

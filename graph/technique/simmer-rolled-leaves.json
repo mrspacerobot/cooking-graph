@@ -1,0 +1,62 @@
+{
+  "id": "technique/simmer-rolled-leaves",
+  "tier": "drafted",
+  "names": {"en": "Simmer rolled leaves"},
+  "aliases": {"en": ["cook stuffed vine leaves", "simmer stuffed leaves", "simmer warak enab"]},
+  "does": "Cooks filled, rolled leaves packed snugly seam down in a lined pot, weighed down with a plate, in a little oil, lemon juice and water. The leaves turn soft and tart and the rice inside swells and softens.",
+  "how": [
+    "Line the base of a wide pot with slices of tomato or a few spare leaves, so that the rolls do not catch.",
+    "Pack the rolls tightly, seam down, in circles, layer on layer, so that none can unroll.",
+    "Pour in the olive oil and the lemon juice, add water to come part of the way up the rolls, and salt the liquid.",
+    "Set a plate that fits inside the pot upside down on the rolls, so that they stay put.",
+    "Cover, bring to a gentle simmer and cook on a low heat until the leaves are tender and the filling has swelled. Leave the rolls to cool in the pot."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The rolls are plump and have kept their shape, and the liquid is mostly taken up and glossy with oil."
+    },
+    {"sense": "feel", "text": "A leaf is tender and the rice inside is soft when a roll is pressed."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Packing the rolls loosely, so that they float and unroll.",
+      "fix": "Pack them tight and weigh them with a plate."
+    },
+    {
+      "mistake": "Covering the rolls completely with liquid, so that the filling washes out and the dish turns watery.",
+      "fix": "Add liquid only part of the way up."
+    },
+    {
+      "mistake": "Cooking on a high heat, which splits the leaves and breaks the rolls.",
+      "fix": "Keep the pot at a gentle simmer."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/vine-leaf", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon-juice", "ingredient/lemon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/roll",
+      "why": "The leaves are filled and rolled first, and a loose roll will not survive the pot.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/braise-in-olive-oil",
+      "differs": "The food is rolled leaves packed seam down and held under a plate, in liquid that comes only part of the way up, and it is left to cool in the pot.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/naan-yogurt-milk",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Naan",
+  "ingredient": "yogurt",
+  "candidate": "milk",
+  "verdict": "works",
+  "why": "Many naan doughs are made with milk and the bread is still soft and puffs well in a hot pan or oven."
+}

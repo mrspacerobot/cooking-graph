@@ -1,0 +1,98 @@
+{
+  "id": "recipe/kefta-tagine-with-eggs",
+  "tier": "drafted",
+  "names": {"en": "Kefta tagine with eggs"},
+  "aliases": {},
+  "makes": "dish/kefta-tagine-with-eggs",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/ground-lamb", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/parsley", "amount": {"value": 8, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 8, "unit": "sprig"}, "forms": [], "part": "coriander"},
+    {"thing": "ingredient/cumin", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/paprika", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "paprika"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {
+      "thing": "ingredient/tomato",
+      "amount": {"value": 800, "unit": "gram"},
+      "forms": ["form/chopped"],
+      "part": "tomato"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "olive-oil"},
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/mixing-bowl", "equipment/spoon", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/onion", "ingredient/garlic", "ingredient/parsley", "ingredient/coriander-leaf"],
+      "with": [],
+      "text": "Mince the onion, the garlic, the parsley and the coriander very fine.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": [
+        "ingredient/onion", "ingredient/parsley", "ingredient/coriander-leaf", "ingredient/cumin",
+        "ingredient/black-pepper", "ingredient/salt"
+      ],
+      "text": "Work the lamb in a bowl with the onion, half of the herbs, half of the cumin, the pepper and half of the salt, squeezing it with the hands until it is sticky and holds together.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape-meatballs",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": [],
+      "text": "Roll the mince between wet palms into small, even balls.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tomato"],
+      "with": [
+        "ingredient/olive-oil", "ingredient/garlic", "ingredient/paprika", "ingredient/cumin", "ingredient/salt"
+      ],
+      "text": "Warm the oil in a wide pan with the garlic, the paprika and the rest of the cumin for a moment, then add the tomatoes and the rest of the salt and cook them down until they make a thick, bright sauce.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": ["preparation/tomato-sauce"],
+      "text": "Lay the meatballs in the sauce, add a splash of water if it is thick, cover and simmer, turning them once, until they are firm. Check one against a trusted guide to doneness.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/egg"],
+      "with": ["preparation/tomato-sauce"],
+      "text": "Make small hollows between the meatballs and break an egg into each. Cover the pan and let the eggs poach gently in the sauce until the whites are set and the yolks are as soft as you like. Scatter with the herbs that were kept back.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    }
+  ]
+}

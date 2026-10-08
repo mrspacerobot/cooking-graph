@@ -1,7 +1,7 @@
 {
   "id": "ingredient/truffle",
   "tier": "drafted",
-  "names": {"en": "Truffle", "fr": "Truffe"},
+  "names": {"en": "Truffle", "fr": "Truffe", "es": "trufa", "it": "tartufo", "tr": "Trüf mantarı"},
   "aliases": {"en": ["black truffle"]},
   "is_a": [],
   "part_of": [],
@@ -20,5 +20,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2690965", "tier": "sourced"}
+  ]
 }

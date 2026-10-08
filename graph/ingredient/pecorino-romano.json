@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/pecorino-romano",
+  "tier": "drafted",
+  "names": {"en": "Pecorino Romano", "fr": "Pecorino romano"},
+  "aliases": {"en": ["romano"]},
+  "is_a": [
+    {"thing": "ingredient/pecorino", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/grating-cheeses", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A very hard, pale, salty and sharp cheese of sheep's milk, made around Rome. It is grated fine over pasta and melts into a sauce, where it is saltier and sharper than Parmesan, so a dish needs less salt when it goes in.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from the milk of sheep.", "certain": true},
+      {"fact": "fact/slaughter-product", "basis": "It is traditionally set with lamb rennet.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

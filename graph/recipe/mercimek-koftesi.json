@@ -1,0 +1,125 @@
+{
+  "id": "recipe/mercimek-koftesi",
+  "tier": "drafted",
+  "names": {"en": "Red lentil kofte"},
+  "aliases": {},
+  "makes": "dish/mercimek-koftesi",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/red-lentil", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "mixture"},
+    {"thing": "ingredient/fine-bulgur", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "mixture"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "mixture"},
+    {
+      "thing": "ingredient/red-pepper-paste",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "mixture"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 60, "unit": "millilitre"}, "forms": [], "part": "mixture"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "mixture"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "mixture"},
+    {"thing": "ingredient/water", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/parsley", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "herb"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/mixing-bowl", "equipment/wooden-spoon",
+    "equipment/saute-pan", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/red-lentil"],
+      "with": ["ingredient/water"],
+      "text": "Simmer the lentils in the water until they are very soft and fall apart, stirring now and then. Leave a little water in the pan.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the onion small.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil", "ingredient/red-pepper-paste", "ingredient/cumin"],
+      "text": "Soften the onion in the olive oil without colour, then stir in the pepper paste and the cumin and fry for a short while.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/swell-bulgur-in-hot-liquid",
+      "works_on": ["ingredient/fine-bulgur"],
+      "with": ["ingredient/red-lentil", "ingredient/water"],
+      "text": "Take the lentils off the heat and stir in the bulgur. Cover at once and leave until the grains have swollen and the mixture is thick.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/fine-bulgur"],
+      "with": [
+        "ingredient/red-lentil", "ingredient/onion", "ingredient/red-pepper-paste", "ingredient/cumin",
+        "ingredient/olive-oil"
+      ],
+      "text": "Tip the swollen mixture into a bowl, add the onion and paste, and knead with wet hands until it is smooth and holds when pressed.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/lentil-bulgur-mixture"]
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/fine-bulgur"],
+      "with": ["ingredient/salt", "ingredient/lemon-juice"],
+      "text": "Taste, and add the salt and lemon juice until the mixture is sharp and savoury.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape-a-finger-kofte",
+      "works_on": ["preparation/lentil-bulgur-mixture"],
+      "with": ["ingredient/water"],
+      "text": "With wet hands, squeeze small lumps in the fist into ridged ovals and set them on a platter.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/spring-onion", "ingredient/parsley"],
+      "with": [],
+      "text": "Mince the spring onions and the parsley.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/spring-onion"],
+      "with": ["ingredient/parsley", "ingredient/lemon-juice"],
+      "text": "Scatter the spring onion and parsley over the platter and serve cold, with extra lemon.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

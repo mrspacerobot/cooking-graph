@@ -1,6 +1,6 @@
 """The numbers: what the graph holds, how far it can be trusted, and how many probes it answers."""
 
-from tools import probes, question_probes, safety_probes
+from tools import probes, question_probes, review_rules, safety_probes
 from tools.reading import nested
 
 SAFETY_STATES = ("unverified", "verified")
@@ -14,7 +14,8 @@ def count_things(things):
     """How many things of each kind sit at each tier."""
     counts = {}
     for thing in things.values():
-        add_one(counts.setdefault(thing.kind, {}), thing.data["tier"])
+        if "tier" in thing.data:  # a reviewer and a review are history and carry no tier
+            add_one(counts.setdefault(thing.kind, {}), thing.data["tier"])
     return counts
 
 
@@ -83,6 +84,21 @@ def count_stand_ins(things):
     return {"positive": positive, "exclusion_only": len(rows) - positive}
 
 
+def count_reviews(things):
+    """How many review records exist, how many are live, by what kind of reviewer, and which tiers they back."""
+    records = [thing for thing in things.values() if thing.kind == "review"]
+    by_kind = {}
+    for record in records:
+        reviewer = things.get(record.data["reviewer"])
+        if reviewer is not None:
+            add_one(by_kind, reviewer.data["kind"])
+    backed = {}
+    for units in review_rules.backing(things).values():
+        for one in units:
+            add_one(backed, one.grants)
+    return {"records": len(records), "live": len(review_rules.live_records(things)), "by_reviewer_kind": by_kind, "backed_units": backed}
+
+
 def count(things):
     return {
         "things": count_things(things),
@@ -101,6 +117,7 @@ def count(things):
         "parts_by_kind": {kind: count_parts(things, (kind,)) for kind in ("dish", "preparation")},
         "stand_in_statements": count_stand_ins(things),
         "safety_probes": safety_probes.counts(safety_probes.run(things)),
+        "reviews": count_reviews(things),
     }
 
 
@@ -170,6 +187,12 @@ def render(counts, model, words):
         lines.append("%s parts with more than one option: %s" % (kind.capitalize(), probes.as_share(pair)))
     stand_ins = counts["stand_in_statements"]
     lines.append("Stand-in statements: %d positive, %d exclusion-only" % (stand_ins["positive"], stand_ins["exclusion_only"]))
+    reviews = counts["reviews"]
+    if reviews["records"]:
+        lines.append("Reviews: %d records, %d live; by reviewer: %s; units backed, by tier: %s" % (
+            reviews["records"], reviews["live"],
+            ", ".join("%s %d" % item for item in sorted(reviews["by_reviewer_kind"].items())),
+            ", ".join("%s %d" % item for item in sorted(reviews["backed_units"].items()))))
     lines.append("")
     lines.extend(["| Question probes | Set | Answered |", "|---|---|---|"])
     for kind, sets in counts["question_probes"].items():

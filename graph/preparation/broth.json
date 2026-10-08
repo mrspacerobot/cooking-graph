@@ -1,7 +1,7 @@
 {
   "id": "preparation/broth",
   "tier": "drafted",
-  "names": {"en": "Broth", "fr": "Bouillon"},
+  "names": {"en": "Broth", "fr": "Bouillon", "it": "brodo", "tr": "et suyu"},
   "aliases": {"en": ["cooking broth"]},
   "is": "The liquid left when meat, poultry or vegetables have simmered in water: the stock a dish makes for itself.",
   "parts": [],
@@ -10,5 +10,8 @@
   ],
   "teaches": [],
   "stands_in_for": [],
-  "belongs_to": []
+  "belongs_to": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q275068", "tier": "sourced"}
+  ]
 }

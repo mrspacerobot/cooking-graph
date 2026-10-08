@@ -1,0 +1,82 @@
+{
+  "id": "recipe/pulpo-a-la-gallega",
+  "tier": "drafted",
+  "names": {"en": "Pulpo a la gallega"},
+  "aliases": {},
+  "makes": "dish/pulpo-a-la-gallega",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/octopus", "amount": {"value": 1.5, "unit": "kilogram"}, "forms": [], "part": "octopus"},
+    {"thing": "ingredient/potato", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/water", "amount": {"value": 5, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/paprika", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "paprika"},
+    {"thing": "ingredient/coarse-salt", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/tongs", "equipment/kitchen-scissors",
+    "equipment/slotted-spoon", "equipment/chefs-knife", "equipment/cutting-board", "equipment/paring-knife"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cook-octopus",
+      "works_on": ["ingredient/octopus"],
+      "with": ["ingredient/water"],
+      "text": "Bring the water to a rolling boil. Dip the octopus in and out of it a few times, then lower it in and cook at a steady bubbling until a knife slips into the thickest part of an arm with no pull. Lift it out, cover it with a cloth and let it rest. Snip the arms into rounds with the scissors. Check the thickest part against a trusted guide to doneness.",
+      "time": {"from": 40, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/water", "ingredient/coarse-salt"],
+      "text": "Add the whole potatoes to the octopus water with some of the coarse salt and boil them until a knife slips in.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Peel the potatoes while they are still warm.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Cut the potatoes into thick slices.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/octopus"],
+      "text": "Lay the potato slices in a dish and put the octopus rounds on top.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/olive-oil", "ingredient/coarse-salt", "ingredient/paprika"],
+      "text": "Drizzle with plenty of olive oil and finish with coarse salt and the paprika.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

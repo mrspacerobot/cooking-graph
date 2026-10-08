@@ -1,0 +1,65 @@
+{
+  "id": "technique/make-a-pesto",
+  "tier": "drafted",
+  "names": {"en": "Make a pesto"},
+  "aliases": {"en": ["pesto genovese", "make pesto alla genovese", "pesto alla genovese"]},
+  "does": "Crushes fresh basil leaves with a little coarse salt and garlic in a mortar, then pine nuts, then grated hard cheese, and works in olive oil last, into a thick, green, raw sauce. It is the sauce of Genoa and the coast of Liguria, and it is never cooked.",
+  "how": [
+    "Pick the basil leaves and dry them. Wet leaves make a dull, watery sauce.",
+    "Pound the garlic with coarse salt in a stone mortar until it is a paste.",
+    "Add the pine nuts and pound them in, then the basil a handful at a time, grinding each lot against the wall in circles until it is a rough green paste.",
+    "Work in the grated cheese, then pour in the olive oil in a thin stream, stirring, until the sauce is thick and glossy.",
+    "Keep it raw. Stir it into hot pasta off the heat, loosened with a spoonful of the cooking water."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The paste is bright green and thick, with the oil bound into it and not floating on top."
+    },
+    {"sense": "smell", "text": "It smells of fresh basil, with no trace of bitterness."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Chopping the basil in a fast blade, which warms it and turns it dark and bitter.",
+      "fix": "Pound it in a mortar, or pulse it briefly with chilled things."
+    },
+    {
+      "mistake": "Heating the pesto in the pan, which dulls the basil and splits the oil.",
+      "fix": "Stir it into the pasta off the heat."
+    },
+    {
+      "mistake": "Pouring in all the oil at once, so that the sauce does not bind.",
+      "fix": "Add it in a thin stream, stirring."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/basil", "tier": "drafted"},
+    {"thing": "ingredient/pine-nut", "tier": "drafted"},
+    {"thing": "ingredient/garlic", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/pesto", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/mortar-and-pestle"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/pound",
+      "why": "A pesto starts as a pounded paste, and a cook has to be able to grind food in a mortar without bruising it.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/pound",
+      "differs": "The ingredients go in a fixed order, from the hardest to the softest, and the oil and cheese are worked in at the end. The sauce is never heated, and it is a finished sauce and not just a paste.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

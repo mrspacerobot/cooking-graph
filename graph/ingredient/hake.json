@@ -25,9 +25,47 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/monkfish",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/sear", "technique/simmer"],
+      "ratio": null,
+      "caveat": "The soft flakes fall apart in a hard sear or a long simmer, where monkfish holds together.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/salt-cod",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/bacalao-a-la-vizcaina", "dish/bacalao-al-pil-pil", "technique/confit", "technique/desalt"],
+      "ratio": null,
+      "caveat": "Fresh flesh lacks the firm salted texture and the gelatine that binds the sauce.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/white-fish",
+      "allows": true,
+      "when": ["technique/bake-in-parchment", "technique/poach"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is a particular fish where the original was any lean white fillet, so the taste is more distinct.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/whiting",
+      "allows": true,
+      "when": ["technique/poach"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "Both are soft and flake easily, so handle the fillet gently.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/spanish", "tier": "drafted"},
     {"thing": "cuisine/french", "tier": "drafted"}
-  ]
+  ],
+  "same_as": []
 }

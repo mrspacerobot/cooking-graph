@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/baklava-pistachios-walnuts",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Baklava",
+  "ingredient": "pistachios",
+  "candidate": "walnuts",
+  "verdict": "works",
+  "why": "Walnut baklava is a long standing version in its own right and the nuts layer and soak up syrup just as well."
+}

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/apple",
   "tier": "drafted",
-  "names": {"en": "Apple", "fr": "Pomme"},
+  "names": {"en": "Apple", "fr": "Pomme", "es": "manzana", "it": "mela", "tr": "elma"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -22,5 +22,8 @@
     "note": null
   },
   "stands_in_for": [],
-  "in_pantry_of": []
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q89", "tier": "sourced"}
+  ]
 }

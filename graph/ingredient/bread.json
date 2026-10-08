@@ -1,7 +1,7 @@
 {
   "id": "ingredient/bread",
   "tier": "drafted",
-  "names": {"en": "Bread", "fr": "Pain"},
+  "names": {"en": "Bread", "fr": "Pain", "es": "pan", "it": "pane", "tr": "ekmek"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -29,6 +29,46 @@
     ],
     "note": "Bread of unknown kind."
   },
-  "stands_in_for": [],
-  "in_pantry_of": []
+  "stands_in_for": [
+    {
+      "thing": "ingredient/sandwich-bread",
+      "allows": true,
+      "when": ["dish/croque-monsieur"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The crumb is more open and less even, so it toasts less evenly.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/stale-bread",
+      "allows": true,
+      "when": ["preparation/salsa-vizcaina"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Dry it in a low oven first, or it turns pasty.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/baguette",
+      "allows": true,
+      "when": ["dish/salade-de-chevre-chaud"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is softer and less crisp, so the crumbs come out finer and the toasts come out larger.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/potato",
+      "allows": true,
+      "when": ["preparation/rouille"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It makes a coarser thickener and a looser texture.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q7802", "tier": "sourced"}
+  ]
 }

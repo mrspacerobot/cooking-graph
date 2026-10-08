@@ -1,0 +1,58 @@
+{
+  "id": "recipe/sutlac",
+  "tier": "drafted",
+  "names": {"en": "Sutlac"},
+  "aliases": {},
+  "makes": "dish/sutlac",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/rice", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/milk", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "milk"},
+    {"thing": "ingredient/water", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/sugar", "amount": {"value": 120, "unit": "gram"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/rice-flour", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "flour"}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saucepan", "equipment/wooden-spoon", "equipment/colander"],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/water"],
+      "text": "Wash the rice in cold water until the rinsing water is no longer cloudy, and drain it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-sutlac",
+      "works_on": ["ingredient/rice", "ingredient/milk"],
+      "with": ["ingredient/water", "ingredient/sugar"],
+      "text": "Simmer the rice in the water until it is soft, then pour in the milk and stir in the sugar. Simmer gently, stirring often, until the rice is very soft and the milk has begun to thicken.",
+      "time": {"from": 25, "to": 35, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/thicken",
+      "works_on": ["ingredient/milk"],
+      "with": ["ingredient/rice-flour"],
+      "text": "Whisk the rice flour smooth in a little cold milk. Stir it into the pan and simmer for a short while, stirring, until the pudding coats the spoon.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/rice"],
+      "with": [],
+      "text": "Pour the pudding into bowls while it is still loose and leave it to cool and set.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

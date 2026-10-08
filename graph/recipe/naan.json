@@ -1,0 +1,76 @@
+{
+  "id": "recipe/naan",
+  "tier": "drafted",
+  "names": {"en": "Naan"},
+  "aliases": {},
+  "makes": "dish/naan",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/flour", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/yeast", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/sugar", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/plain-yogurt", "amount": {"value": 120, "unit": "gram"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/milk", "amount": {"value": 120, "unit": "millilitre"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/ghee", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "ghee"}
+  ],
+  "equipment": [
+    "equipment/mixing-bowl", "equipment/tava", "equipment/tongs", "equipment/stovetop", "equipment/rolling-pin"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-naan-dough",
+      "works_on": ["ingredient/flour"],
+      "with": [
+        "ingredient/yeast", "ingredient/sugar", "ingredient/salt", "ingredient/plain-yogurt", "ingredient/milk",
+        "ingredient/sunflower-oil"
+      ],
+      "text": "Stir the yeast and the sugar into the warm milk until foamy. Mix the flour and the salt in a bowl, add the yeast milk, the yogurt and the oil, and knead until the dough is smooth, soft and only a little sticky.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/naan-dough"]
+    },
+    {
+      "technique": "technique/make-naan-dough",
+      "works_on": ["preparation/naan-dough"],
+      "with": [],
+      "text": "Put the dough in an oiled bowl, cover it and leave it in a warm place until it has swelled and is light and springy.",
+      "time": {"from": 1, "to": 2, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-a-naan",
+      "works_on": ["preparation/naan-dough"],
+      "with": [],
+      "text": "Divide the dough into equal balls and let them rest under a cloth. Flatten each on a floured board and pull it by hand into a teardrop, a little thicker than a chapati.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-a-naan",
+      "works_on": ["preparation/naan-dough"],
+      "with": [],
+      "text": "Heat the iron plate until very hot. Wet one face of a naan lightly and lay it on the plate wet side down. Cook until bubbles rise across the top and the underside is spotted brown, then turn it with the tongs and blister the top over the flame in a few dark spots.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-a-naan",
+      "works_on": ["preparation/naan-dough"],
+      "with": ["ingredient/ghee"],
+      "text": "Brush each naan at once with melted ghee and keep the bread wrapped in a cloth while the rest are cooked.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

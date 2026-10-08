@@ -1,8 +1,8 @@
 {
   "id": "preparation/tomato-sauce",
   "tier": "drafted",
-  "names": {"en": "Tomato sauce", "fr": "Sauce tomate à l'italienne"},
-  "aliases": {"en": ["salsa di pomodoro", "sugo di pomodoro"]},
+  "names": {"en": "Tomato sauce", "fr": "Sauce tomate à l'italienne", "es": "salsa de tomate", "tr": "domates sosu"},
+  "aliases": {"en": ["salsa di pomodoro", "sugo di pomodoro"], "fr": ["sauce tomate"]},
   "is": "A sauce of tomatoes cooked in olive oil until they break down, thick and bright. It is often scented with garlic or chilli and finished with torn basil.",
   "parts": [
     {
@@ -25,5 +25,8 @@
   "stands_in_for": [],
   "belongs_to": [
     {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3596097", "tier": "sourced"}
   ]
 }

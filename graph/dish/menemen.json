@@ -1,0 +1,31 @@
+{
+  "id": "dish/menemen",
+  "tier": "drafted",
+  "names": {"en": "Menemen"},
+  "aliases": {"en": ["Turkish scrambled eggs with tomato and pepper"]},
+  "is": "Whole eggs set gently in softened green pepper and tomato, stirred only a little so that the dish stays loose, juicy and streaked. It is eaten from the pan with bread.",
+  "parts": [
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "aromatic", "options": ["ingredient/green-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "base", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "chilli", "role": "garnish", "options": ["ingredient/chili-flakes"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-menemen", "tier": "drafted"},
+    {"thing": "technique/sweat", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1920415", "tier": "sourced"}
+  ]
+}

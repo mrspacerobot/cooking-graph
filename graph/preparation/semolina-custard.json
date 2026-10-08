@@ -1,0 +1,25 @@
+{
+  "id": "preparation/semolina-custard",
+  "tier": "drafted",
+  "names": {"en": "Semolina custard"},
+  "aliases": {},
+  "is": "A thick custard of milk cooked with semolina and sugar, scented with vanilla and finished with egg and butter. It is the filling of the Greek custard pie.",
+  "parts": [
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "semolina", "role": "thickener", "options": ["ingredient/semolina"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "vanilla", "role": "seasoning", "options": ["ingredient/vanilla"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/temper", "tier": "drafted"},
+    {"thing": "technique/stir", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

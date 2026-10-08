@@ -1,8 +1,14 @@
 {
   "id": "ingredient/tomato-paste",
   "tier": "drafted",
-  "names": {"en": "Tomato paste", "fr": "Concentré de tomate"},
-  "aliases": {"en": ["tomato purée", "tomato concentrate"]},
+  "names": {
+    "en": "Tomato paste",
+    "fr": "Concentré de tomate",
+    "es": "pasta de tomate",
+    "it": "concentrato di pomodoro",
+    "tr": "domates salçası"
+  },
+  "aliases": {"en": ["tomato purée", "tomato concentrate"], "fr": ["double concentré de tomates"]},
   "is_a": [
     {"thing": "ingredient/tomato", "tier": "drafted"}
   ],
@@ -21,8 +27,39 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/red-pepper-paste",
+      "allows": true,
+      "when": ["dish/bulgur-pilavi", "dish/kisir", "dish/kuru-fasulye", "preparation/lentil-bulgur-mixture"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is tangier and has no pepper note.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tinned-tomatoes",
+      "allows": true,
+      "when": ["dish/fasolada", "preparation/kima", "preparation/ragu"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is far more concentrated, so loosen it with water.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tomato",
+      "allows": true,
+      "when": ["dish/bamieh-bi-zeit", "dish/green-beans-braised-in-olive-oil", "dish/kousa-mahshi", "preparation/kima"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is far more concentrated, so loosen it with water.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1499073", "tier": "sourced"}
   ]
 }

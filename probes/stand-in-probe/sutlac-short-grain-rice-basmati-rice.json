@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/sutlac-short-grain-rice-basmati-rice",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Sutlac",
+  "ingredient": "short grain rice",
+  "candidate": "basmati rice",
+  "verdict": "works-with-caveat",
+  "why": "Basmati cooks in the milk but gives up less starch, so the pudding is looser and the grains stay distinct."
+}

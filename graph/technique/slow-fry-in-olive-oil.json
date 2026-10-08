@@ -1,0 +1,67 @@
+{
+  "id": "technique/slow-fry-in-olive-oil",
+  "tier": "drafted",
+  "names": {"en": "Slow-fry in olive oil"},
+  "aliases": {"en": ["pochar", "poach potatoes in oil", "cook potatoes slowly in olive oil"]},
+  "does": "Cooks thin slices of potato and onion in a deep pool of olive oil that is kept well below frying heat, turning them now and then, until they are soft and silky and have taken almost no colour. The oil is poured off afterwards and kept.",
+  "how": [
+    "Slice the potato thin and even, and the onion thinner. Salt them lightly and turn them over by hand, so that the salt goes through evenly.",
+    "Pour olive oil into a wide, deep pan until it comes about halfway up the food, and warm it over a medium heat until a slice dropped in bubbles gently.",
+    "Add the potato and onion, then turn the heat down at once, so that the oil only shimmers and nothing fries hard.",
+    "Turn the slices over now and then with a spoon, breaking up any that cling together, until they give way under the edge of the spoon and have hardly taken any colour.",
+    "Tip everything into a colander set over a bowl. Keep the oil, which now tastes of potato and onion, for the next frying."
+  ],
+  "cues": [
+    {
+      "sense": "feel",
+      "text": "A slice breaks when it is pressed with the edge of a spoon, and bends without cracking."
+    },
+    {
+      "sense": "see",
+      "text": "The oil only shimmers and barely bubbles, and the slices stay pale, at most a light gold."
+    },
+    {"sense": "smell", "text": "A sweet, mild smell of potato and onion, with nothing toasty about it."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying too hot, so that the slices crisp and brown outside and stay hard inside.",
+      "fix": "Turn the heat down until the oil only shimmers."
+    },
+    {
+      "mistake": "Using too little oil, so that the slices stick together and fry in patches.",
+      "fix": "Use enough to come about halfway up the food, and turn it often."
+    },
+    {
+      "mistake": "Throwing the oil away, which wastes a flavoured oil.",
+      "fix": "Strain it and keep it for frying or for the next batch."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/potato", "tier": "drafted"},
+    {"thing": "ingredient/onion", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/colander", "equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/slice",
+      "why": "Slices of one thickness soften at one pace, so a cook has to be able to cut them even first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/confit",
+      "differs": "The food is a shallow heap of thin slices turned in a pan and not lying under the fat. The oil is a little warmer, the cooking far shorter, and the oil is poured off and reused after it, not left round the food.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

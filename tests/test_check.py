@@ -45,6 +45,10 @@ class CheckerTest(unittest.TestCase):
     def break_file(self, path, change):
         self.kitchen.change(path, change)
 
+    def hidden(self, path):
+        """Where the checker reports a problem about which set a probe is in: the folder of its kind, never the probe."""
+        return "/".join(path.split("/")[:2])
+
 
 class TheSmallKitchenIsValid(CheckerTest):
     def test_no_issue_before_anything_is_broken(self):
@@ -329,6 +333,35 @@ def regulated(tier="sourced", standing="mandatory"):
         "note": None,
         "tier": tier,
     }
+
+
+class SameAs(CheckerTest):
+    def row(self, tier="sourced", source="source/kitchen-law", identifier="Q34172"):
+        return {"source": source, "id": identifier, "tier": tier}
+
+    def test_a_sourced_id_from_a_source_that_allows_use_is_accepted(self):
+        self.break_file(BUTTER, lambda thing: thing.update(same_as=[self.row()]))
+        self.assertEqual([], self.issues())
+
+    def test_a_drafted_id_is_accepted(self):
+        self.break_file(BUTTER, lambda thing: thing.update(same_as=[self.row("drafted")]))
+        self.assertEqual([], self.issues())
+
+    def test_an_id_from_a_source_that_does_not_allow_use_may_not_be_sourced(self):
+        self.break_file("graph/source/kitchen-law.json", lambda source: source.update(commercial_use="share-alike"))
+        self.break_file(BUTTER, lambda thing: thing.update(same_as=[self.row()]))
+        self.assertIn((BUTTER, "same-as-source-not-allowed"), {(issue.path, issue.rule) for issue in self.issues()})
+
+    def test_the_thing_stays_drafted_whatever_an_id_says(self):
+        self.break_file(BUTTER, lambda thing: thing.update(tier="sourced", same_as=[self.row()]))
+        self.expect(BUTTER, "tier-not-earned")
+
+    def test_the_same_id_on_two_things_of_one_kind_is_refused(self):
+        self.break_file(BUTTER, lambda thing: thing.update(same_as=[self.row()]))
+        self.break_file("graph/ingredient/flour.json", lambda thing: thing.update(same_as=[self.row()]))
+        found = {(issue.path, issue.rule) for issue in self.issues()}
+        self.assertIn((BUTTER, "same-id-twice"), found)
+        self.assertIn(("graph/ingredient/flour.json", "same-id-twice"), found)
 
 
 class Sources(CheckerTest):
@@ -661,12 +694,12 @@ class Probes(CheckerTest):
     def test_a_probe_moved_out_of_the_held_back_set(self):
         path = self.kitchen.held_back_path()
         self.break_file(path, lambda probe: probe.update(set="growing"))
-        self.expect(path, "held-back-rule")
+        self.expect(self.hidden(path), "held-back-rule")
 
     def test_a_probe_moved_into_the_held_back_set(self):
         self.assertNotEqual(PROBE, self.kitchen.held_back_path())
         self.break_file(PROBE, lambda probe: probe.update(set="held-back"))
-        self.expect(PROBE, "held-back-rule")
+        self.expect(self.hidden(PROBE), "held-back-rule")
 
     def test_a_dish_drafted_towards_a_held_back_probe(self):
         path = self.kitchen.held_back_path()
@@ -674,7 +707,7 @@ class Probes(CheckerTest):
         self.break_file(DISH, lambda thing: thing.update(aliases={"en": ["buttered onions baked"]}))
         found = {(issue.path, issue.rule) for issue in self.issues()}
         self.assertIn((DISH, "drafted-towards-held-back"), found)
-        self.assertIn((path, "level-dish-held-back"), found)
+        self.assertIn((self.hidden(path), "level-dish-held-back"), found)
 
     def test_a_preparation_drafted_towards_a_held_back_probe(self):
         path = self.kitchen.held_back_path()
@@ -683,7 +716,19 @@ class Probes(CheckerTest):
         found = {(issue.path, issue.rule) for issue in self.issues()}
         self.assertIn((ROUX, "drafted-towards-held-back"), found)
         # The probe may no longer be held back either: what it asks about is written.
-        self.assertIn((path, "held-back-rule"), found)
+        self.assertIn((self.hidden(path), "held-back-rule"), found)
+
+    def test_the_set_rules_never_name_a_probe(self):
+        """A drafter reads this output. It may not learn which dish a held-back probe asks about."""
+        path = self.kitchen.held_back_path()
+        self.break_file(path, lambda probe: probe.update(dish="Buttered onions baked"))
+        self.break_file(DISH, lambda thing: thing.update(aliases={"en": ["buttered onions baked"]}))
+        slug = path.split("/")[-1][: -len(".json")]
+        said = [issue for issue in self.issues() if issue.rule in ("held-back-rule", "level-dish-held-back")]
+        self.assertTrue(said)
+        for issue in said:
+            self.assertNotIn(slug, " ".join(issue))
+            self.assertNotIn("baked", " ".join(issue))
 
     def test_two_probes_about_one_dish(self):
         self.break_file(PROBE, lambda probe: probe.update(dish="Onion soup"))

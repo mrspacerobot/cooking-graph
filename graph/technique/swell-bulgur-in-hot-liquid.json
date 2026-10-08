@@ -1,0 +1,57 @@
+{
+  "id": "technique/swell-bulgur-in-hot-liquid",
+  "tier": "drafted",
+  "names": {"en": "Swell bulgur in hot liquid"},
+  "aliases": {"en": ["swell bulgur in hot lentils"]},
+  "does": "Stirs fine bulgur into a pan of hot, freshly cooked lentils or other hot liquid, covers it and leaves it off the heat until the grains have swollen and softened in the liquid and taken its flavour.",
+  "how": [
+    "Cook the lentils until they are very soft, with enough water left in the pan to wet the bulgur.",
+    "Take the pan off the heat and stir in the bulgur.",
+    "Cover at once and leave it to stand until the grains are swollen and the mixture is thick.",
+    "Stir it once and let it cool until it can be handled."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The liquid has gone and the mixture is thick and damp, with no dry grains left."},
+    {"sense": "feel", "text": "The grains are tender all through, with no hard core when pressed."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the pan on the heat, so that the bulgur cooks to a paste.",
+      "fix": "Take the pan off the heat before the bulgur goes in."
+    },
+    {
+      "mistake": "Using too little liquid, which leaves hard grains.",
+      "fix": "Leave more liquid in the pan, or sprinkle on hot water and cover again."
+    },
+    {
+      "mistake": "Lifting the lid to look, which lets the heat out.",
+      "fix": "Leave it covered until the stand is over."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/fine-bulgur", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "The lentils are simmered until soft before the bulgur is stirred in.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/soak-bulgur",
+      "differs": "The liquid is hot, and the bulgur swells in the heat of a covered pan taken off the stove, instead of soaking in cool liquid with no heat at all. It takes the flavour of what was cooked in the liquid.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

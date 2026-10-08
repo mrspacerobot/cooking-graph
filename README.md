@@ -94,6 +94,7 @@ the browser instructions in `AGENTS.md`.
 | `./recipes <technique>` | Recipes whose steps use the technique, teaching dishes first |
 | `./kitchen <technique> [food ...] [--avoid <fact>]` | Recipes ranked by missing required parts, with each line's available option, stand-in or missing ingredient |
 | `./swap-gaps [--list [--top N]] [--new]` | A work list for drafting swaps: counts of recipe lines with no swap where a technique card names one, the pairs most recipes share, and foods in no stand-in row. Writes nothing |
+| `./vocabulary [--names]` | The closed list a photo or voice step chooses from: every ingredient, preparation and technique by id, with its English name, aliases and groups. Graph only, never a probe. A label that matches nothing is none |
 | `./compose --technique <t> [--technique <t> ...] [food ...] [--avoid <fact>] [--servings <n>] [--top <n>]` | Recipes that practise the techniques, covering the most first, adapted to what is at home: stand-ins, amounts converted by a recorded ratio and scaled to servings, and each step with what to read in place of what |
 
 They need Python 3.9 or later and nothing else.

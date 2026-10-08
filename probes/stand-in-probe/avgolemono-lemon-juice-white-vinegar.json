@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/avgolemono-lemon-juice-white-vinegar",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Avgolemono soup",
+  "ingredient": "lemon juice",
+  "candidate": "white vinegar",
+  "verdict": "does-not-work",
+  "why": "The soup is named for its lemon and vinegar gives a harsh sourness with none of the fragrance the dish is built on."
+}

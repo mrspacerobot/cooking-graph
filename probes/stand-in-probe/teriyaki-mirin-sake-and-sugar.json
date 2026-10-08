@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/teriyaki-mirin-sake-and-sugar",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Chicken teriyaki",
+  "ingredient": "mirin",
+  "candidate": "sake with sugar",
+  "verdict": "works",
+  "why": "Mirin is itself a sweet rice wine, so sake sweetened with sugar gives the same gloss and balance in the glaze."
+}

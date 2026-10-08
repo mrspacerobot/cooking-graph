@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/pesto-alla-genovese-pine-nuts-walnuts",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Pesto alla genovese",
+  "ingredient": "pine nuts",
+  "candidate": "walnuts",
+  "verdict": "works-with-caveat",
+  "why": "Walnuts give the body the sauce needs but taste earthier and slightly bitter, so the pesto is no longer truly Genoese."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/horiatiki-feta-halloumi",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Horiatiki salad",
+  "ingredient": "feta",
+  "candidate": "halloumi",
+  "verdict": "does-not-work",
+  "why": "Halloumi is firm and squeaky when raw and will not crumble into the tomatoes and cucumber the way feta does."
+}

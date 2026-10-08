@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/spanakopita-filo-puff-pastry",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Spanakopita",
+  "ingredient": "filo pastry",
+  "candidate": "puff pastry",
+  "verdict": "works-with-caveat",
+  "why": "Puff pastry encloses the spinach and feta well but bakes into a thick buttery pie rather than thin shattering layers."
+}

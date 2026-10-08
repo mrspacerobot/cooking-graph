@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/tarte-tatin-puff-pastry-shortcrust-pastry",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Tarte tatin",
+  "ingredient": "puff pastry",
+  "candidate": "shortcrust pastry",
+  "verdict": "works",
+  "why": "Shortcrust is a traditional base for tatin and bakes into a sturdy lid that holds the caramelised apples when turned out."
+}

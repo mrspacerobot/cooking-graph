@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/dal-tadka-ghee-butter",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Dal tadka",
+  "ingredient": "ghee",
+  "candidate": "butter",
+  "verdict": "works-with-caveat",
+  "why": "Butter scorches at the heat needed to bloom the spices, so clarify it beforehand or mix it with a little oil."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/coq-au-vin-red-wine-white-wine",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Coq au vin",
+  "ingredient": "red wine",
+  "candidate": "white wine",
+  "verdict": "works-with-caveat",
+  "why": "The chicken braises just as well but the dish is paler and lighter, the version known as coq au vin blanc."
+}

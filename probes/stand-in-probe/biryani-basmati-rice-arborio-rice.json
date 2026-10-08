@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/biryani-basmati-rice-arborio-rice",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Chicken biryani",
+  "ingredient": "basmati rice",
+  "candidate": "arborio rice",
+  "verdict": "does-not-work",
+  "why": "Arborio is starchy and short and clumps into a sticky mass where biryani needs long separate fluffy grains."
+}

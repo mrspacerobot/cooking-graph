@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/carbonara-pecorino-romano-parmigiano-reggiano",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Spaghetti alla carbonara",
+  "ingredient": "Pecorino Romano",
+  "candidate": "Parmigiano Reggiano",
+  "verdict": "works",
+  "why": "Parmigiano melts into the egg the same way and many Roman cooks blend or swap the cheeses, trading sharpness for a rounder taste."
+}

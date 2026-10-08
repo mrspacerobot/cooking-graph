@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/gazpacho-sherry-vinegar-red-wine-vinegar",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Gazpacho",
+  "ingredient": "sherry vinegar",
+  "candidate": "red wine vinegar",
+  "verdict": "works",
+  "why": "Red wine vinegar brings the same bright acidity to the raw tomato and the difference in flavour is slight in a cold soup."
+}

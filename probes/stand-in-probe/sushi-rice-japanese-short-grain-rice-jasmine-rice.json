@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/sushi-rice-japanese-short-grain-rice-jasmine-rice",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Sushi rice",
+  "ingredient": "Japanese short grain rice",
+  "candidate": "jasmine rice",
+  "verdict": "does-not-work",
+  "why": "Jasmine grains are long and dry and will not cling together, so nigiri and rolls fall apart in the hand."
+}

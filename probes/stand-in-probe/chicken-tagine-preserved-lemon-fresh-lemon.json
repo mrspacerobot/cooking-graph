@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/chicken-tagine-preserved-lemon-fresh-lemon",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Chicken tagine with preserved lemon and olives",
+  "ingredient": "preserved lemon",
+  "candidate": "fresh lemon",
+  "verdict": "works-with-caveat",
+  "why": "Fresh lemon gives sharpness but not the mellow salty depth of the cured rind, so add salt and go easy on the peel."
+}

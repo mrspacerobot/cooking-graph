@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/tiramisu-mascarpone-cottage-cheese",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Tiramisu",
+  "ingredient": "mascarpone",
+  "candidate": "cottage cheese",
+  "verdict": "does-not-work",
+  "why": "Cottage cheese is grainy, wet and tangy and cannot whip into the smooth rich cream that holds the layers."
+}

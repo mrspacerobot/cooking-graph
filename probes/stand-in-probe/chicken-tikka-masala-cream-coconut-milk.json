@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/chicken-tikka-masala-cream-coconut-milk",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Chicken tikka masala",
+  "ingredient": "cream",
+  "candidate": "coconut milk",
+  "verdict": "works-with-caveat",
+  "why": "Coconut milk gives richness and keeps the sauce dairy free but adds a sweet coconut note that changes the dish."
+}

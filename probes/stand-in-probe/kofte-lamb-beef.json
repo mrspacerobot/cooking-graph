@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/kofte-lamb-beef",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Kofte",
+  "ingredient": "lamb",
+  "candidate": "beef",
+  "verdict": "works",
+  "why": "Beef kofte is common across Turkey and the spices and onion carry the flavour whichever meat is used."
+}

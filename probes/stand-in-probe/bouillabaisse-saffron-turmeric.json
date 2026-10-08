@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/bouillabaisse-saffron-turmeric",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Bouillabaisse",
+  "ingredient": "saffron",
+  "candidate": "turmeric",
+  "verdict": "works-with-caveat",
+  "why": "Turmeric gives the golden colour but none of the honeyed, hay-like aroma that saffron brings to the broth."
+}

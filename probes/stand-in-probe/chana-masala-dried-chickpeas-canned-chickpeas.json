@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/chana-masala-dried-chickpeas-canned-chickpeas",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Chana masala",
+  "ingredient": "dried chickpeas",
+  "candidate": "canned chickpeas",
+  "verdict": "works",
+  "why": "Canned chickpeas are already cooked and simmer happily in the spiced tomato gravy with no soaking needed."
+}

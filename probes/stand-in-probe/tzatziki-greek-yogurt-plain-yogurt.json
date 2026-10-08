@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/tzatziki-greek-yogurt-plain-yogurt",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Tzatziki",
+  "ingredient": "Greek yogurt",
+  "candidate": "plain yogurt",
+  "verdict": "works-with-caveat",
+  "why": "Thin yogurt makes a runny dip unless it is strained through cloth for a few hours before mixing."
+}

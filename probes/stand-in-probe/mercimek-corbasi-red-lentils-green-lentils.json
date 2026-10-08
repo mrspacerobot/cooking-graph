@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/mercimek-corbasi-red-lentils-green-lentils",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Mercimek corbasi",
+  "ingredient": "red lentils",
+  "candidate": "green lentils",
+  "verdict": "does-not-work",
+  "why": "Green lentils hold their shape and never collapse into the smooth golden soup that red lentils make on their own."
+}

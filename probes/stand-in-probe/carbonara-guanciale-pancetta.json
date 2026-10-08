@@ -1,0 +1,12 @@
+{
+  "id": "stand-in-probe/carbonara-guanciale-pancetta",
+  "tier": "drafted",
+  "batch": "stand-ins-2",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "recipe": "Spaghetti alla carbonara",
+  "ingredient": "guanciale",
+  "candidate": "pancetta",
+  "verdict": "works-with-caveat",
+  "why": "Pancetta renders and crisps in the same way but is leaner and milder, so the sauce loses some of its porky depth."
+}

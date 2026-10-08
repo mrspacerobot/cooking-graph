@@ -35,6 +35,25 @@ The probes are free text because a blind writer cannot know ids. The product doe
 - The plural reading matters for typed or spoken input. A photo path does not need it.
 - Nothing was drafted for the held-back questions, and nothing in this note names one.
 
+## Content-only score and what is left
+
+To take naming out, a model that saw the closed list from `./vocabulary` (and the dish names) mapped every word of the 32 growing questions to an id or "none". Scored on those ids, `./compose` still answers 0 of 32. The first thing that stops each growing question:
+
+| First blocker | Probes |
+|---|---|
+| The dish is not in the graph | 14 |
+| The best recipe leaves a technique out | 8 |
+| A technique has no match (temper eggs, stew, make a vinaigrette, dress, poach in oil) | 5 |
+| The pantry is short of required parts | 3 |
+| A food has no match (smoked paprika, dry vermouth, plaice, whole spices) | 1 |
+| No recipe of the dish uses these techniques | 1 |
+
+My first reading was that all five unknown technique phrases were naming. That was too generous: four of the five the mapper refused are not in the graph under any name.
+
+## The guards now cover compose probes
+
+The rule that keeps a drafter from writing a dish a held-back probe asks for covered dish probes only. It now covers compose probes too, and a probe whose dish is already written is never held back. Running `./probe reset-sets` under the new rule moved 8 probes: gambas al ajillo, lamb tagine with prunes, mujaddara and spanakopita went from held back to growing (their dishes were in the graph long before the probes), and the next four in hash order went the other way. Those four I had already read as growing probes: chana masala, chicken teriyaki, moussaka and spaghetti carbonara. So four of the eight held-back compose-1 probes are not clean. No growth round writes those four dishes, and a fresh batch from a new writer is needed for a clean held-back set.
+
 ## Doubts
 
 - One writer, one model, 40 questions. The count is small and the writer may favour well-known dishes.

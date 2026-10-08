@@ -5,7 +5,9 @@ import unittest
 from tests.small_kitchen import SmallKitchen
 from tests.test_queries import kitchen
 from tests.test_question_probes import add
-from tools import check, numbers, probes, question_probes
+import copy
+
+from tools import check, numbers, probe_rules, probes, question_probes
 from tools.reading import Thing
 
 
@@ -67,6 +69,46 @@ class ComposeProbeTest(unittest.TestCase):
         self.assertEqual((1, 1), numbers.count(self.things)["question_probes"]["compose-probe"]["held-back"])
 
 
+class ComposeProbeProtectionTest(unittest.TestCase):
+    """A dish that a held-back compose probe asks for is not written for it, as with a held-back dish probe."""
+
+    def setUp(self):
+        self.things = kitchen()
+
+    def add_dish(self, name):
+        dish = copy.deepcopy(self.things["dish/buttered-onions"].data)
+        dish.update(id="dish/" + name.lower().replace(" ", "-"), names={"en": name}, aliases={})
+        self.things[dish["id"]] = Thing("", "dish", dish)
+
+    def test_a_written_dish_is_never_held_back_and_an_unwritten_one_may_be(self):
+        written = [compose_probe(slug="w%d" % n, dishes=["Buttered onions"]) for n in range(8)]
+        unwritten = [compose_probe(slug="u%d" % n, dishes=["Onion tart"]) for n in range(8)]
+        for data in written + unwritten:
+            add(self.things, data)
+        expected = probe_rules.expected_sets(self.things)
+        self.assertEqual({"growing"}, {expected[data["id"]] for data in written})
+        self.assertIn("held-back", {expected[data["id"]] for data in unwritten})
+
+    def test_writing_a_dish_a_held_back_compose_probe_asks_for_is_reported(self):
+        add(self.things, compose_probe("held-back", dishes=["Onion tart"]))
+        self.assertEqual([], probe_rules.nothing_drafted_towards_held_back(self.things))
+        self.add_dish("Onion tart")
+        issues = probe_rules.nothing_drafted_towards_held_back(self.things)
+        self.assertEqual(["drafted-towards-held-back"], [issue.rule for issue in issues])
+
+    def test_the_issue_never_names_the_probe(self):
+        add(self.things, compose_probe("held-back", slug="hidden-sentinel", dishes=["Onion tart"]))
+        self.add_dish("Onion tart")
+        text = " ".join(str(issue) for issue in probe_rules.nothing_drafted_towards_held_back(self.things))
+        self.assertNotIn("sentinel", text)
+        self.assertNotIn("compose-probe", text)
+
+    def test_a_dish_only_a_growing_compose_probe_asks_for_may_be_written(self):
+        add(self.things, compose_probe("growing", dishes=["Onion tart"]))
+        self.add_dish("Onion tart")
+        self.assertEqual([], probe_rules.nothing_drafted_towards_held_back(self.things))
+
+
 class ComposeProbeSchemaTest(unittest.TestCase):
     def setUp(self):
         self.kitchen = SmallKitchen()
@@ -93,10 +135,11 @@ class ComposeProbeSchemaTest(unittest.TestCase):
         held = probes.held_back_ids(ids)
         for probe_id in ids:
             self.kitchen.write("probes/%s.json" % probe_id, compose_probe("held-back" if probe_id in held else "growing",
-                                                                         slug=probe_id.split("/")[1], at_home=[probe_id]))
+                                                                         slug=probe_id.split("/")[1], at_home=[probe_id],
+                                                                         dishes=["Onion tart"]))
         self.assertNotIn("held-back-rule", {issue.rule for issue in check.check_repository(self.kitchen.root)})
         first = sorted(held)[0]
-        self.kitchen.write("probes/%s.json" % first, compose_probe("growing", slug=first.split("/")[1], at_home=[first]))
+        self.kitchen.write("probes/%s.json" % first, compose_probe("growing", slug=first.split("/")[1], at_home=[first], dishes=["Onion tart"]))
         self.assertIn("held-back-rule", {issue.rule for issue in check.check_repository(self.kitchen.root)})
 
     def test_the_same_question_twice_in_a_batch_is_rejected(self):

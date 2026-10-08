@@ -73,6 +73,13 @@ def names_of_what_is_written(things):
     return found
 
 
+def asked_dishes(probe):
+    """The plain names of the dishes a probe asks about: a dish probe names one, a compose probe a list."""
+    if "dishes" in probe:
+        return {names.plain(dish) for dish in probe["dishes"]}
+    return probes.dish_names(probe)
+
+
 def may_not_be_held_back(things, probe_ids):
     """The dish probes that are never held back: a level is practised through their dish, or their dish is written.
 
@@ -81,7 +88,7 @@ def may_not_be_held_back(things, probe_ids):
     because a hash fell badly.
     """
     taken = names_of_level_dishes(things) | names_of_what_is_written(things)
-    return {probe_id for probe_id in probe_ids if probes.dish_names(things[probe_id].data) & taken}
+    return {probe_id for probe_id in probe_ids if asked_dishes(things[probe_id].data) & taken}
 
 
 def expected_sets(things):
@@ -93,7 +100,7 @@ def expected_sets(things):
             batches.setdefault(thing.data["batch"], []).append(thing_id)
         for batch, probe_ids in sorted(batches.items()):
             never = set()
-            if kind == "dish-probe":
+            if kind in ("dish-probe", "compose-probe"):
                 never = may_not_be_held_back(things, probe_ids)
             held_back = probes.held_back_ids(probe_ids, never)
             for probe_id in probe_ids:
@@ -162,9 +169,10 @@ def one_probe_per_dish_in_a_batch(things):
 def nothing_drafted_towards_held_back(things):
     """Nothing is written for a held-back dish probe. Held-back probes test the graph, they never grow it."""
     held_back_names = set()
-    for thing_id, thing in of_kind(things, "dish-probe"):
-        if thing.data["set"] == "held-back":
-            held_back_names.update(probes.dish_names(thing.data))
+    for kind in ("dish-probe", "compose-probe"):
+        for thing_id, thing in of_kind(things, kind):
+            if thing.data["set"] == "held-back":
+                held_back_names.update(asked_dishes(thing.data))
     issues = []
     for kind in WRITTEN_KINDS:
         for thing_id, thing in of_kind(things, kind):

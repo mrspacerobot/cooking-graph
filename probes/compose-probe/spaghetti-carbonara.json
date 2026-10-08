@@ -2,7 +2,7 @@
   "id": "compose-probe/spaghetti-carbonara",
   "tier": "drafted",
   "batch": "compose-1",
-  "set": "growing",
+  "set": "held-back",
   "written_by": "claude-opus-5-5",
   "techniques": ["render", "boil pasta", "emulsify"],
   "at_home": ["spaghetti", "eggs", "pancetta", "pecorino romano", "black pepper", "salt"],

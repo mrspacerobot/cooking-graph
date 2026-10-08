@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/focaccia-genovese-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["knead", "proof", "bake"],
+  "at_home": ["bread flour", "dried yeast", "olive oil", "salt", "rosemary", "water"],
+  "dishes": ["focaccia genovese", "rosemary focaccia"],
+  "why": "A simple oily dough gives a soft, salty bread with a crisp base."
+}

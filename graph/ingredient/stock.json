@@ -61,6 +61,24 @@
       "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
       "caveat": "Stock has none of the sharpness or aroma of wine, so the sauce is rounder and sweeter. A little acid at the end brings some back.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/beef-stock",
+      "allows": true,
+      "when": ["technique/braise"],
+      "not_when": ["dish/blanquette-de-veau"],
+      "ratio": null,
+      "caveat": "It gives a milder, less beefy braise with less body.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/red-wine",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a lighter sauce with no tannin or acidity, so it may need a splash of acid.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

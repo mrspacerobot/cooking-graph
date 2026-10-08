@@ -88,6 +88,15 @@
       "ratio": null,
       "caveat": "Its fruity flavour changes the finish. Keep it below the point where it smokes.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/smen",
+      "allows": true,
+      "when": ["technique/marinate", "technique/steam-couscous", "technique/sweat"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is fruity instead of tangy and aged.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

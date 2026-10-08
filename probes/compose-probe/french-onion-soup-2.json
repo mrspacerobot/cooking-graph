@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/french-onion-soup-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["caramelize", "simmer", "toast"],
+  "at_home": ["onions", "butter", "chicken stock", "baguette", "gruyere", "dry white wine", "thyme", "salt"],
+  "dishes": ["french onion soup"],
+  "why": "Slowly browned onions make a deep soup even when chicken stock has to stand in for beef stock."
+}

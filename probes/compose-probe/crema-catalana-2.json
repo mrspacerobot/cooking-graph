@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/crema-catalana-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["infuse", "whisk", "caramelize"],
+  "at_home": ["milk", "eggs", "sugar", "lemon", "cinnamon stick", "cornstarch"],
+  "dishes": ["crema catalana"],
+  "why": "A citrus and cinnamon custard with a burnt sugar crust is a simple Catalan dessert."
+}

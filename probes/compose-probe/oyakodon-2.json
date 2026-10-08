@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/oyakodon-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["simmer", "steam"],
+  "at_home": ["chicken thighs", "eggs", "onion", "soy sauce", "mirin", "chicken stock", "short grain rice"],
+  "dishes": ["oyakodon"],
+  "why": "Chicken and egg simmered in a sweet soy broth over rice is a fast one-bowl meal, with chicken stock standing in for dashi."
+}

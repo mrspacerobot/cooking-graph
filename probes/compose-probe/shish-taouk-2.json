@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/shish-taouk-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["marinate", "grill"],
+  "at_home": ["chicken breast", "plain yogurt", "lemon", "garlic", "paprika", "tomato paste", "olive oil", "salt"],
+  "dishes": ["shish taouk"],
+  "why": "A yogurt and lemon marinade keeps lean chicken juicy over a hot grill."
+}

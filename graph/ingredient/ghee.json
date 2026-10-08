@@ -81,6 +81,15 @@
       "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
       "caveat": "It tastes nutty and rich and stands high heat well.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/coconut-oil",
+      "allows": true,
+      "when": ["technique/temper-spices-in-hot-fat"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a nutty, buttery taste in place of the coconut taste.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

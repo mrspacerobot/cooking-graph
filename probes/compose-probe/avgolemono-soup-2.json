@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/avgolemono-soup-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["simmer", "whisk", "temper"],
+  "at_home": ["chicken", "rice", "eggs", "lemons", "onion", "salt"],
+  "dishes": ["avgolemono soup", "kotosoupa avgolemono"],
+  "why": "Egg and lemon whisked into hot broth make a silky soup from a plain boiled chicken."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "compose-probe/thai-green-curry-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["fry", "simmer"],
+  "at_home": [
+    "chicken thighs",
+    "green curry paste",
+    "coconut milk",
+    "fish sauce",
+    "italian basil",
+    "eggplant",
+    "brown sugar"
+  ],
+  "dishes": ["thai green curry", "gaeng keow wan gai"],
+  "why": "Frying the paste in coconut cream before simmering builds a fragrant curry, with Italian basil and brown sugar standing in for Thai basil and palm sugar."
+}

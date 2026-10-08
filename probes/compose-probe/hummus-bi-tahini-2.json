@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/hummus-bi-tahini-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["soak", "boil", "blend"],
+  "at_home": ["dried chickpeas", "tahini", "lemon", "garlic", "olive oil", "baking soda", "salt"],
+  "dishes": ["hummus bi tahini"],
+  "why": "Chickpeas cooked from dry and blended with tahini give a smoother hummus than canned ones."
+}

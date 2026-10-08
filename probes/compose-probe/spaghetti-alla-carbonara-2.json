@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/spaghetti-alla-carbonara-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["fry", "boil", "emulsify"],
+  "at_home": ["spaghetti", "eggs", "pecorino", "pancetta", "black pepper", "salt"],
+  "dishes": ["spaghetti alla carbonara"],
+  "why": "Eggs and cheese turn into a creamy sauce with pasta water, and pancetta stands in for guanciale."
+}

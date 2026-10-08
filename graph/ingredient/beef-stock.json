@@ -49,6 +49,15 @@
       "ratio": null,
       "caveat": "It is darker and stronger and takes over delicate flavours.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/stock",
+      "allows": true,
+      "when": ["technique/braise"],
+      "not_when": ["dish/blanquette-de-veau"],
+      "ratio": null,
+      "caveat": "It gives a darker, beefier braise that can overpower a delicate dish.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

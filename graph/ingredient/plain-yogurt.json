@@ -47,6 +47,15 @@
       "ratio": null,
       "caveat": "It is thinner, so drain it first or the sauce runs.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/lemon-juice",
+      "allows": true,
+      "when": ["technique/make-spice-paste"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a milder, creamier tang and a thicker paste that clings to food.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

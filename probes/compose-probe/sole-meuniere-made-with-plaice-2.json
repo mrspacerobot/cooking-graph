@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/sole-meuniere-made-with-plaice-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["dredge", "pan-fry", "brown butter"],
+  "at_home": ["plaice fillets", "flour", "butter", "lemon", "parsley", "salt"],
+  "dishes": ["sole meuniere made with plaice", "plaice a la meuniere"],
+  "why": "Floured flatfish fried in butter with lemon is quick and elegant, and plaice stands in well for sole."
+}

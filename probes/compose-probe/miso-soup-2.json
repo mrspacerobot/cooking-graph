@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/miso-soup-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["steep", "simmer"],
+  "at_home": ["kombu", "bonito flakes", "miso", "silken tofu", "dried wakame", "spring onions"],
+  "dishes": ["miso soup"],
+  "why": "A quick homemade dashi makes miso soup far better than instant."
+}

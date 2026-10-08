@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/coq-au-vin-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["sear", "deglaze", "braise"],
+  "at_home": ["chicken thighs", "red wine", "bacon", "mushrooms", "pearl onions", "butter", "flour", "thyme", "salt"],
+  "dishes": ["coq au vin"],
+  "why": "It turns cheap chicken and a bottle of red into a deep, glossy French stew."
+}

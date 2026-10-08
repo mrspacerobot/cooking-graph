@@ -82,6 +82,27 @@
       "ratio": null,
       "caveat": "The food tastes flatter, since plain water has no aromatics or acid. Season the water well.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": true,
+      "when": [
+        "technique/simmer", "technique/cook-rice", "technique/cook-polenta", "technique/swell-bulgur-in-hot-liquid",
+        "technique/steam-couscous"
+      ],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The result is thinner and plainer, so season harder and use more aromatics.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/lemon-juice",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/make-spice-paste", "technique/season", "technique/toss"],
+      "ratio": null,
+      "caveat": "Water adds no acid or brightness, so the dish or dressing turns flat.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

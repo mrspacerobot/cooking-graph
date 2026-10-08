@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/osso-buco-alla-milanese-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["dredge", "sear", "braise"],
+  "at_home": [
+    "veal shanks",
+    "flour",
+    "onion",
+    "carrot",
+    "celery",
+    "dry white wine",
+    "canned tomatoes",
+    "lemon",
+    "parsley"
+  ],
+  "dishes": ["osso buco alla milanese"],
+  "why": "Shanks need slow cooking to go tender, and the marrow makes the sauce rich."
+}

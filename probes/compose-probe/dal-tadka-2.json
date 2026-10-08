@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/dal-tadka-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["boil", "temper"],
+  "at_home": [
+    "red lentils",
+    "cumin seeds",
+    "ghee",
+    "garlic",
+    "onion",
+    "tomato",
+    "turmeric",
+    "dried red chillies",
+    "salt"
+  ],
+  "dishes": ["dal tadka", "masoor dal"],
+  "why": "A sizzling spiced ghee poured over soft lentils makes an everyday dal, with red lentils standing in for toor dal."
+}

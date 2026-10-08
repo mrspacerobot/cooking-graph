@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/butter-chicken-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["marinate", "roast", "simmer"],
+  "at_home": [
+    "chicken thighs",
+    "plain yogurt",
+    "garam masala",
+    "canned tomatoes",
+    "butter",
+    "cream",
+    "ginger",
+    "garlic",
+    "salt"
+  ],
+  "dishes": ["butter chicken", "chicken tikka masala"],
+  "why": "Yogurt-marinated chicken is charred and then finished in a mild buttery tomato sauce."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/tonkatsu-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["bread", "deep-fry"],
+  "at_home": ["pork loin chops", "flour", "eggs", "panko", "vegetable oil", "cabbage", "salt"],
+  "dishes": ["tonkatsu"],
+  "why": "Panko gives pork cutlets a light, crunchy crust to eat with shredded cabbage."
+}

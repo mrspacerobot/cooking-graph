@@ -90,6 +90,15 @@
       "ratio": null,
       "caveat": "It lacks the herbal scent, so the sauce is plainer.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": ["technique/braise"],
+      "ratio": null,
+      "caveat": "It gives a brighter, more acidic sauce with less body than stock.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

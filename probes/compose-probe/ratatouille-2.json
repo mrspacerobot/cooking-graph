@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/ratatouille-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["saute", "simmer"],
+  "at_home": ["eggplant", "zucchini", "bell peppers", "tomatoes", "onion", "garlic", "olive oil", "thyme", "salt"],
+  "dishes": ["ratatouille"],
+  "why": "It is the classic way to turn a glut of summer vegetables into one soft Provencal stew."
+}

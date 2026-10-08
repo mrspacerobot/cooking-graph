@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/spanakopita-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["wilt", "layer", "bake"],
+  "at_home": ["spinach", "feta", "filo pastry", "eggs", "olive oil", "spring onions", "dill"],
+  "dishes": ["spanakopita"],
+  "why": "Greens and feta wrapped in crisp filo make a pie that is good warm or cold."
+}

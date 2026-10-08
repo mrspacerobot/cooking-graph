@@ -1,0 +1,20 @@
+{
+  "id": "compose-probe/gazpacho-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["soak", "blend"],
+  "at_home": [
+    "ripe tomatoes",
+    "cucumber",
+    "green pepper",
+    "garlic",
+    "stale bread",
+    "olive oil",
+    "red wine vinegar",
+    "salt"
+  ],
+  "dishes": ["gazpacho", "salmorejo"],
+  "why": "Ripe tomatoes and old bread become a cold soup for a hot day, with red wine vinegar in place of sherry vinegar."
+}

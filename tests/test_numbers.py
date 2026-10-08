@@ -56,6 +56,13 @@ class NumbersTest(unittest.TestCase):
         self.assertEqual(1, counts["answerable"])
         self.assertEqual(1, counts["agreeing"])
 
+    def test_swap_gaps_are_counted_and_rendered(self):
+        counts = self.count()
+        self.assertEqual({"lines": 2, "with_swap": 0, "with_gap": 1, "gap_pairs": 1, "new_foods": 5}, counts["swap_gaps"])
+        things, _ = check.read_repository(self.kitchen.root)
+        model, words = reading.read_schema(self.kitchen.root)
+        self.assertIn("Recipe lines with a swap offered: 0 of 2", numbers.render(numbers.count(things), model, words))
+
     def test_positive_and_exclusion_only_statements_are_counted_separately(self):
         self.assertEqual({"positive": 1, "exclusion_only": 0}, self.count()["stand_in_statements"])
 

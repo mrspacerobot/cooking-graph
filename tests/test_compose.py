@@ -176,5 +176,37 @@ class ComposeTest(unittest.TestCase):
         self.assertNotEqual(0, none.returncode)
 
 
+BUTTER_CHICKEN = ["--technique", "technique/marinate-in-yogurt", "--technique", "technique/fry-masala-base",
+                  "--technique", "technique/cook-in-masala-gravy"]
+
+
+class ButterChickenTest(unittest.TestCase):
+    """The real graph: a cook with no butter still gets the fat of the masala base."""
+
+    def butter_line(self, at_home, *more):
+        run = subprocess.run([os.path.join(REPOSITORY, "compose"), *BUTTER_CHICKEN, *more, *at_home],
+                             capture_output=True, text=True, check=True)
+        recipe = next(row for row in json.loads(run.stdout)["recipes"] if row["recipe"] == "recipe/butter-chicken")
+        return next(line for part in recipe["parts"] for line in part["lines"] if line["original"] == "ingredient/butter")
+
+    def test_ghee_stands_in_for_the_butter_with_its_amount(self):
+        line = self.butter_line(["ingredient/ghee"])
+        self.assertEqual(("stand-in", "ingredient/ghee"), (line["status"], line["choice"]["thing"]))
+        self.assertEqual({"value": 50, "unit": "gram"}, line["amount"]["for_home"])
+
+    def test_oil_stands_in_without_an_invented_amount(self):
+        line = self.butter_line(["ingredient/oil"])
+        self.assertEqual(("stand-in", "ingredient/oil"), (line["status"], line["choice"]["thing"]))
+        self.assertIsNone(line["amount"]["for_home"])
+        self.assertIn("No ratio", line["amount"]["note"])
+
+    def test_avoiding_milk_refuses_ghee_and_keeps_oil(self):
+        line = self.butter_line(["ingredient/ghee", "ingredient/oil"], "--avoid", "fact/milk")
+        self.assertEqual("ingredient/oil", line["choice"]["thing"])
+
+    def test_with_neither_the_butter_is_missing(self):
+        self.assertEqual("missing", self.butter_line(["ingredient/cream"])["status"])
+
+
 if __name__ == "__main__":
     unittest.main()

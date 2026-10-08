@@ -60,6 +60,15 @@
       "ratio": null,
       "caveat": "It is nutty and buttery instead of fruity.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/butter",
+      "allows": true,
+      "when": ["technique/fry-masala-base"],
+      "not_when": ["technique/mount-with-butter", "technique/make-brown-butter"],
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "caveat": "It is pure fat with no water or milk solids, so the base is a little richer and does not catch as easily. The flavour is nuttier.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

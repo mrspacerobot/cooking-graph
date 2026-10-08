@@ -43,6 +43,15 @@
       "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
       "caveat": "It is neutral too, though the taste can vary with the kind.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/butter",
+      "allows": true,
+      "when": ["technique/fry-masala-base"],
+      "not_when": ["technique/mount-with-butter", "technique/make-brown-butter"],
+      "ratio": null,
+      "caveat": "It loses the buttery taste. Use a neutral oil, and the gravy will need its richness from the cream.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

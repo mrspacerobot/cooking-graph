@@ -25,7 +25,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/kashmiri-red-chilli-powder",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/spice-paste", "technique/make-spice-paste"],
+      "ratio": null,
+      "caveat": "It gives red colour but brings woodsmoke and almost no heat, so the paste no longer tastes of its cuisine.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/red-chilli-powder",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/spice-paste", "technique/make-spice-paste"],
+      "ratio": null,
+      "caveat": "It has far less heat and brings a smoky taste that the paste should not have.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],

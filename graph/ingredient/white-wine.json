@@ -81,6 +81,15 @@
       "ratio": null,
       "caveat": "It gives the sauce wine depth and a little acidity.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/dry-vermouth",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It lacks the herbal scent, so the sauce is plainer.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

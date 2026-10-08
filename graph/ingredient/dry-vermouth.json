@@ -31,7 +31,35 @@
     ],
     "note": "The mix of herbs and spices is a house secret and is not listed on every bottle. It is recorded here as holding none of the other facts, which a person must check on the bottle in hand."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/dry-sherry",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is lighter and herbal where sherry is nutty, so the sauce loses its depth.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/marsala",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/tiramisu", "preparation/mascarpone-cream"],
+      "ratio": null,
+      "caveat": "Dry vermouth is not sweet and tastes of herbs, so the dessert loses its sweet wine flavour.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/white-wine",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": ["preparation/court-bouillon"],
+      "ratio": null,
+      "caveat": "It is sharper and more herbal than wine, so use a little less and boil it down well.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

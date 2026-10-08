@@ -23,7 +23,35 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/firm-tofu",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/deep-fry", "technique/pan-fry", "technique/press-tofu", "technique/stir-fry"],
+      "ratio": null,
+      "caveat": "Silken tofu has not been pressed and breaks up in the pan, so it cannot be cut, pressed or browned.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/fried-tofu",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/takikomi-gohan", "technique/deep-fry", "technique/simmer"],
+      "ratio": null,
+      "caveat": "Silken tofu has no fried skin and falls apart in a simmering broth, so it does not soak up the liquid the same way.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tofu",
+      "allows": true,
+      "when": ["dish/miso-soup"],
+      "not_when": ["technique/press-tofu", "technique/stir-fry"],
+      "ratio": null,
+      "caveat": "It is much softer and holds no shape under pressing or stirring, so slide it in gently at the end.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],

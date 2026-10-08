@@ -40,6 +40,10 @@ The compose score did not move. Nine new dishes exist, and none answers its ques
 - **Croque madame:** the probe asks for `make a roux` and `grill`. The béchamel is an ingredient whose own recipe makes a roux, but a dish's techniques are read from its own steps only.
 - **Free-text words** such as "ripe tomatoes" and "plaice fillets" still fail an exact match, which a closed-list photo step does not suffer.
 
+## Swaps for the new foods
+
+Two blind drafters wrote rows for 41 pairs involving the new foods (36 from `./candidates` and 5 added by hand: the tofus, and paprika with smoked paprika). They wrote 13 and 24 rows. `./stand-in-merge` kept the 12 both wrote (6 allowing, 6 exclusions), disputed 0, and left 13 that only one drafter wrote unapplied. Foods in no stand-in row went from 299 to 291. The swap most worth having, smoked paprika for plain paprika in Spanish sauces, was written by one drafter only and is not applied; a person can rule on it. The merguez and chorizo exclusions are also one-drafter and wait.
+
 ## Doubts
 
 - Hyderabadi dum biryani overlaps `chicken-biryani`, which already carries the alias dum biryani. It was kept for its regional differences (raw marinated lamb, longer dum). Delete the two files if no overlap is wanted.

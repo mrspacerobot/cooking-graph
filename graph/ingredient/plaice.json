@@ -24,7 +24,35 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/monkfish",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/bouillabaisse", "technique/sear", "technique/simmer"],
+      "ratio": null,
+      "caveat": "Plaice is soft and flaky and falls apart in a stew where monkfish stays in firm pieces.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/salt-cod",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/bacalao-a-la-vizcaina", "dish/bacalao-al-pil-pil", "technique/confit", "technique/desalt"],
+      "ratio": null,
+      "caveat": "Plaice is fresh and soft, with none of the firm, cured flake that the dish is built on.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sole",
+      "allows": true,
+      "when": ["dish/sole-meuniere"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is softer and wetter, so pat it dry, flour it well and turn it gently.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

@@ -1,0 +1,43 @@
+{
+  "id": "dish/arroz-con-pollo",
+  "tier": "drafted",
+  "names": {"en": "Arroz con pollo"},
+  "aliases": {"en": ["Spanish chicken and rice", "chicken and rice"]},
+  "is": "A Spanish family dish of chicken and rice cooked together in one wide pot. The chicken is browned, the rice is stirred through a sofrito of onion, pepper and tomato, and everything cooks in a saffron stock under a lid, so that the rice takes up the flavour of the chicken. Unlike a paella it is cooked covered in a deeper pot, and it has no toasted crust. Peas and a squeeze of lemon are common.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "rice", "role": "main", "options": ["ingredient/rice"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "wine", "role": "acid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {"id": "sofrito", "role": "base", "options": ["preparation/sofrito"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "preparation/white-chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "saffron", "role": "seasoning", "options": ["ingredient/saffron"], "optional": false, "tier": "drafted"},
+    {"id": "peas", "role": "side", "options": ["ingredient/peas"], "optional": true, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"},
+    {"id": "lemon", "role": "garnish", "options": ["ingredient/lemon"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/make-a-sofrito", "tier": "drafted"},
+    {"thing": "technique/cook-pilaf", "tier": "drafted"},
+    {"thing": "technique/infuse", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

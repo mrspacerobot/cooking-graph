@@ -1,0 +1,29 @@
+{
+  "id": "dish/plain-paratha",
+  "tier": "drafted",
+  "names": {"en": "Plain paratha"},
+  "aliases": {"en": ["paratha", "sada paratha", "tawa paratha", "triangle paratha"]},
+  "is": "A layered, flaky flat bread of whole wheat dough. A rolled round is brushed with ghee, folded into a triangle, rolled out lightly and cooked on a hot iron plate with more ghee until it is golden in spots.",
+  "parts": [
+    {"id": "dough", "role": "main", "options": ["preparation/chapati-dough"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dusting-flour",
+      "role": "coating",
+      "options": ["ingredient/whole-wheat-flour"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "layering-ghee", "role": "fat", "options": ["ingredient/ghee"], "optional": false, "tier": "drafted"},
+    {"id": "cooking-ghee", "role": "fat", "options": ["ingredient/ghee"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-atta-dough", "tier": "drafted"},
+    {"thing": "technique/roll-out-a-chapati", "tier": "drafted"},
+    {"thing": "technique/fold-a-paratha", "tier": "drafted"},
+    {"thing": "technique/cook-a-paratha", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

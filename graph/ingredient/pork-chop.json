@@ -2,7 +2,7 @@
   "id": "ingredient/pork-chop",
   "tier": "drafted",
   "names": {"en": "Pork chop", "fr": "Côte de porc", "es": "chuleta de cerdo", "it": "costoletta di maiale"},
-  "aliases": {"fr": ["côtelette de porc"]},
+  "aliases": {"fr": ["côtelette de porc"], "en": ["pork loin chop"]},
   "is_a": [],
   "part_of": [],
   "groups": [

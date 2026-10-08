@@ -1,0 +1,111 @@
+{
+  "id": "recipe/suppli-al-telefono",
+  "tier": "drafted",
+  "names": {"en": "Suppli al telefono"},
+  "aliases": {},
+  "makes": "dish/suppli",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/minced"], "part": "onion"},
+    {"thing": "ingredient/arborio-rice", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/white-wine", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {"thing": "preparation/tomato-sauce", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 800, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "finish"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 60, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/mozzarella",
+      "amount": {"value": 200, "unit": "gram"},
+      "forms": ["form/batons"],
+      "part": "centre"
+    },
+    {"thing": "ingredient/flour", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/egg", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "preparation/breadcrumbs", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "crumbs"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/saucepan", "equipment/dutch-oven", "equipment/wooden-spoon",
+    "equipment/ladle", "equipment/baking-sheet", "equipment/mixing-bowl", "equipment/slotted-spoon",
+    "equipment/thermometer", "equipment/wire-rack", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Soften the onion in the fat in a wide, heavy pan over low heat, with a little salt, until it is soft and glassy and has taken no colour.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast-rice",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": ["ingredient/white-wine", "ingredient/olive-oil"],
+      "text": "Tip the dry rice into the onion and stir over medium heat until the edges of the grains turn translucent and the rice is hot. Pour in the wine and stir until it has been taken up.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/add-stock-gradually",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": ["preparation/tomato-sauce", "ingredient/chicken-stock"],
+      "text": "Stir in the tomato sauce, then add the hot stock a ladle at a time, stirring, and give each ladle time to be taken up before the next goes in. Stop when the grains are tender with a firm bite at the centre and the rice is thick and red-gold, thicker than a risotto for eating.",
+      "time": {"from": 16, "to": 18, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mantecare",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": ["ingredient/butter", "ingredient/parmesan", "ingredient/salt"],
+      "text": "Take the pan off the heat. Beat in the cold butter and the cheese until the rice is glossy and clings together. Taste, and add salt if it needs it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape-a-stuffed-rice-ball",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": ["ingredient/mozzarella", "ingredient/flour", "ingredient/egg", "preparation/breadcrumbs"],
+      "text": "Spread the risotto thin on a tray, let it cool right down and chill it until it is stiff. With wet hands, press a handful of rice into the palm, lay a stick of well-drained mozzarella along the middle and close the rice over it into a small oval, with the ends closed. Roll each in flour, turn it through the beaten egg and cover it in crumbs. Lay them on a tray and chill them for a short while.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["cooling-and-keeping"],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-rice-balls",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Heat the oil in a deep, heavy pan until a crumb sizzles at once. Fry a few at a time, turning them, until they are deep golden all round. Lift them out onto a rack and let them rest briefly. Break one open to see the cheese pull into strings.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": {"value": 170, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": [],
+      "text": "Serve the suppli warm, on a plate lined with paper, while the shells are crisp.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

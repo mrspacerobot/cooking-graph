@@ -1,0 +1,69 @@
+{
+  "id": "dish/fish-molee",
+  "tier": "drafted",
+  "names": {"en": "Fish molee"},
+  "aliases": {"en": ["meen moilee", "meen molee", "fish moilee", "kerala fish stew", "fish in coconut milk"]},
+  "is": "Fish poached gently in a mild, creamy gravy of coconut milk with onion, ginger, green chilli and curry leaves. It is pale, not red, and is soured with only a little lemon at the end.",
+  "parts": [
+    {
+      "id": "fish",
+      "role": "main",
+      "options": ["ingredient/kingfish", "ingredient/white-fish"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "coconut-oil", "role": "fat", "options": ["ingredient/coconut-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "curry-leaf",
+      "role": "aromatic",
+      "options": ["ingredient/curry-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "onion",
+      "role": "aromatic",
+      "options": ["ingredient/onion", "ingredient/shallot"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "green-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/green-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {"id": "thin-milk", "role": "liquid", "options": ["ingredient/coconut-milk"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "thick-milk",
+      "role": "enrichment",
+      "options": ["ingredient/coconut-milk"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lemon-juice", "role": "acid", "options": ["ingredient/lemon-juice"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/temper-spices-in-hot-fat", "tier": "drafted"},
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

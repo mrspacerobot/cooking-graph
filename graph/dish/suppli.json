@@ -1,0 +1,67 @@
+{
+  "id": "dish/suppli",
+  "tier": "drafted",
+  "names": {"en": "Suppli", "it": "supplì"},
+  "aliases": {
+    "en": ["supplì", "suppli al telefono", "supplì al telefono", "Roman rice croquettes"],
+    "it": ["supplì al telefono"]
+  },
+  "is": "A Roman fried rice croquette: rice cooked risotto-style in tomato, cooled, shaped round a piece of mozzarella into a small oval, coated in egg and crumbs and fried. Pulled apart, the cheese stretches into long strings, which is why it is called al telefono, after the telephone wire. It is a cousin of the Sicilian arancini and not the same dish: the rice is cooked in tomato and not coloured with saffron, the centre is stringy mozzarella and not ragu and peas, and the shape is a small oval and not a ball or a cone.",
+  "parts": [
+    {
+      "id": "rice",
+      "role": "main",
+      "options": ["ingredient/arborio-rice", "ingredient/carnaroli-rice", "ingredient/vialone-nano-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/butter"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "wine", "role": "acid", "options": ["ingredient/white-wine"], "optional": true, "tier": "drafted"},
+    {"id": "tomato", "role": "base", "options": ["preparation/tomato-sauce"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/beef-stock", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "finish", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "enrichment",
+      "options": ["ingredient/parmesan", "ingredient/pecorino-romano"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "centre", "role": "filling", "options": ["ingredient/mozzarella"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "coating", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "crumbs", "role": "coating", "options": ["preparation/breadcrumbs"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/toast-rice", "tier": "drafted"},
+    {"thing": "technique/add-stock-gradually", "tier": "drafted"},
+    {"thing": "technique/mantecare", "tier": "drafted"},
+    {"thing": "technique/shape-a-stuffed-rice-ball", "tier": "drafted"},
+    {"thing": "technique/fry-rice-balls", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

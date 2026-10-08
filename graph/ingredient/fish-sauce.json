@@ -1,0 +1,48 @@
+{
+  "id": "ingredient/fish-sauce",
+  "tier": "drafted",
+  "names": {"en": "Fish sauce", "fr": "Sauce de poisson"},
+  "aliases": {"en": ["nam pla", "nuoc mam"], "es": ["salsa de pescado"], "it": ["salsa di pesce"]},
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/seasoning-liquids", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A thin, very salty, deeply savoury liquid drawn from fermented anchovy. It smells strong from the bottle and turns round and meaty in heat. It goes in by the drop, as a salt with more depth.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "It is made from fermented anchovy.", "certain": true},
+      {
+        "fact": "fact/crustaceans",
+        "basis": "Recorded strictly: some are made with shrimp or krill as well.",
+        "certain": false
+      },
+      {
+        "fact": "fact/soy",
+        "basis": "Recorded strictly: some bought ones are boosted with hydrolysed soy protein.",
+        "certain": false
+      },
+      {
+        "fact": "fact/wheat",
+        "basis": "Recorded strictly: some bought ones are boosted with hydrolysed wheat protein.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Recorded strictly: some bought ones are boosted with hydrolysed wheat protein.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/egg", "fact/lupin", "fact/meat",
+      "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

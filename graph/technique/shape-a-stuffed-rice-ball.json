@@ -1,0 +1,69 @@
+{
+  "id": "technique/shape-a-stuffed-rice-ball",
+  "tier": "drafted",
+  "names": {"en": "Shape and crumb stuffed rice balls"},
+  "aliases": {"en": ["shape arancini", "shape suppli", "shape rice balls round a filling", "crumb stuffed rice balls"]},
+  "does": "Presses cold, firm risotto round a small piece of filling into a ball, a cone or an oval, and coats it in flour, beaten egg and crumbs in turn, so that it fries with a crisp shell around a soft, savoury middle.",
+  "how": [
+    "Cook the risotto a little firmer and thicker than for eating. Spread it out thin on a tray and let it cool right down, then chill it until it is stiff and holds together when pressed.",
+    "Have the filling cold and in small pieces. Set out shallow dishes in a row: flour, beaten egg and crumbs.",
+    "Wet the hands. Press a handful of rice into a hollow in the palm, set the filling in the middle, close the rice over it and turn it into the shape wanted, pressing out any crack or gap.",
+    "Roll it in the flour and shake off the extra, turn it through the egg, then roll it in the crumbs, pressing so that they cover it all round.",
+    "Lay them on a tray without touching and chill them for a short while before frying, so that the shell holds."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "Cold rice holds together when pressed and does not cling to wet hands."},
+    {"sense": "see", "text": "Each ball is closed all round, with no filling showing and an even coat of crumbs."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Shaping risotto that is warm or loose, which sticks to the hands and bursts in the oil.",
+      "fix": "Cook the risotto a little firmer, then cool it right down and chill it until it is stiff."
+    },
+    {
+      "mistake": "Leaving a gap over the filling, through which it leaks out in the hot oil.",
+      "fix": "Close the rice all the way over the filling and press out any crack before the coat goes on."
+    },
+    {
+      "mistake": "Packing in too much filling, so that the rice wall is thin and splits.",
+      "fix": "Use a small piece of filling and enough rice to wrap it with a firm wall all round."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/risotto-rices", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "coating", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/egg"], "tier": "drafted"},
+    {"role": "coating", "options": ["preparation/breadcrumbs"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-sheet"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/add-stock-gradually",
+      "why": "There is no risotto to shape until it has been cooked, then cooled and chilled.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/mantecare",
+      "why": "The beaten-in butter and cheese make the rice cling together when it is cold.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/shape-and-crumb-croquetas",
+      "differs": "The mixture is whole grains of cold risotto and not a smooth paste, and it is pressed round a piece of filling, which a croqueta does not have. The shell is the same flour, egg and crumbs.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/shape-by-hand",
+      "differs": "The rice is risotto cooked in stock and chilled until stiff, and not plain warm rice, and it is wrapped round a filling and then coated in flour, egg and crumbs to be fried. Onigiri are plain rice pressed warm with salted hands and eaten as they are.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

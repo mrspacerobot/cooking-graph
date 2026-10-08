@@ -1,0 +1,68 @@
+{
+  "id": "technique/fry-rice-balls",
+  "tier": "drafted",
+  "names": {"en": "Fry rice balls"},
+  "aliases": {"en": ["fry arancini", "fry suppli", "fry the rice balls"]},
+  "does": "Fries coated, filled rice balls a few at a time in hot oil deep enough to cover them, turning them until the shell is deep golden all round and the filling inside is hot and soft.",
+  "how": [
+    "Heat plenty of oil in a deep, heavy pan and hold it steady. A crumb dropped in should sizzle at once and rise.",
+    "Lower a few balls in with a slotted spoon. Do not crowd the pan, or the oil cools and the shells go greasy.",
+    "Turn them gently until they are deep golden all round. Keep the heat moderate, so that the warmth reaches the filling before the shell gets too dark.",
+    "Lift them out onto a rack and let the oil run off. Rest them briefly before serving, because the middle stays very hot."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A sharp, steady sizzle as they go in, which quietens as the shell sets."},
+    {"sense": "see", "text": "An even deep gold all round, with no cracks in the shell."},
+    {"sense": "feel", "text": "A ball is light for its size and the shell feels firm and dry when pressed."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying in oil that is too hot, so that the shell turns dark while the filling is still cold.",
+      "fix": "Keep the oil at a steady, moderate heat and use a thermometer."
+    },
+    {
+      "mistake": "Frying in oil that is not hot enough, so that the shell soaks up oil and splits.",
+      "fix": "Wait until a crumb sizzles at once, and fry only a few at a time."
+    },
+    {
+      "mistake": "Crowding the pan, which cools the oil.",
+      "fix": "Fry in small batches and let the oil heat up again between them."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/risotto-rices", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"], "tier": "drafted"},
+    {
+      "role": "tool",
+      "options": ["equipment/slotted-spoon", "equipment/thermometer", "equipment/wire-rack"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/shape-a-stuffed-rice-ball",
+      "why": "There is nothing to fry until the balls are shaped, coated and chilled.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/deep-fry",
+      "differs": "The food is a filled ball of rice in a crumb shell, and the filling has to be hot all through when the shell is done, so the oil is held steady and moderate and only a few go in each time.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/fry-croquetas",
+      "differs": "The balls are larger and hold a filling in a firm rice wall, and not a soft paste, so they stay in the oil a little longer at a slightly gentler heat for the middle to warm.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

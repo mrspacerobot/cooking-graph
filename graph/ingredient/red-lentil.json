@@ -7,7 +7,9 @@
     {"thing": "ingredient/lentil", "tier": "drafted"}
   ],
   "part_of": [],
-  "groups": [],
+  "groups": [
+    {"thing": "group/pulses", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A small, split, orange-red lentil that needs no soaking. In a gentle simmer it falls apart within a short time into a thick, soft purée, which is why it thickens soups.",
   "safety": {

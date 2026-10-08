@@ -1,0 +1,68 @@
+{
+  "id": "dish/kerala-fish-curry",
+  "tier": "drafted",
+  "names": {"en": "Kerala fish curry"},
+  "aliases": {"en": ["meen curry", "kerala meen curry", "meen vevichathu", "kottayam fish curry", "red fish curry"]},
+  "is": "Fish simmered in a red, sour gravy of chilli, ginger, garlic and shallot soured with tamarind, started with mustard, fenugreek and curry leaves in coconut oil. There is no coconut milk in it, and it is often left to settle so that the flavour deepens.",
+  "parts": [
+    {
+      "id": "fish",
+      "role": "main",
+      "options": ["ingredient/kingfish", "ingredient/mackerel", "ingredient/white-fish"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "tamarind", "role": "acid", "options": ["ingredient/tamarind"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "paste", "role": "seasoning", "options": ["preparation/spice-paste"], "optional": false, "tier": "drafted"},
+    {
+      "id": "shallot",
+      "role": "aromatic",
+      "options": ["ingredient/shallot", "ingredient/onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "green-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/green-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "coconut-oil", "role": "fat", "options": ["ingredient/coconut-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "mustard-seed",
+      "role": "seasoning",
+      "options": ["ingredient/mustard-seed"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fenugreek-seed",
+      "role": "seasoning",
+      "options": ["ingredient/fenugreek-seed"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "curry-leaf",
+      "role": "aromatic",
+      "options": ["ingredient/curry-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/infuse", "tier": "drafted"},
+    {"thing": "technique/make-spice-paste", "tier": "drafted"},
+    {"thing": "technique/temper-spices-in-hot-fat", "tier": "drafted"},
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/fry-masala-base", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,61 @@
+{
+  "id": "technique/cook-a-paratha",
+  "tier": "drafted",
+  "names": {"en": "Cook a paratha"},
+  "aliases": {"en": ["cook paratha on a tava", "fry a paratha on the plate"]},
+  "does": "Cooks a folded and lightly rolled round of atta dough on a hot iron plate, spooning a little ghee over one face and then the other, until each face is golden in spots and the layers inside have set apart, flaky and soft. The bread stays on the plate from start to end.",
+  "how": [
+    "Heat the iron plate until a sprinkle of flour dropped on it browns slowly.",
+    "Lay the bread on the plate and cook until the first face is dry in spots and the bread has turned pale and a little puffy.",
+    "Turn it, spoon ghee over the top and let it sink in at the edge.",
+    "Turn it again, spoon ghee on the other face and press the edges gently with the spatula, until both faces are golden brown in spots.",
+    "Lift it out and, while it is hot, crush it lightly between the palms so that the layers open."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Golden brown spots spread over both faces and the layers lift a little at the edge."},
+    {"sense": "hear", "text": "The ghee sizzles softly at the edge of the bread and does not spit."},
+    {"sense": "feel", "text": "The bread is crisp at the surface, and the layers spring apart when it is pressed."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using too little ghee or a plate that is not hot, so that the bread dries and turns leathery.",
+      "fix": "Heat the plate first and spoon ghee on each face as it cooks."
+    },
+    {
+      "mistake": "Pressing hard on the bread, which squeezes the layers together.",
+      "fix": "Press only gently at the edges, and crush it lightly after cooking."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/chapati-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/tava"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/ghee"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/fold-a-paratha",
+      "why": "The layers are made by the folding, and the plate only sets them apart, so folding comes first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/griddle",
+      "differs": "Ghee is spooned over each face as it cooks, so the bread browns in ghee and not on a dry or barely oiled plate, and the folded layers set apart inside.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/cook-a-chapati",
+      "differs": "The bread stays on the plate from start to end and is never lifted to puff on the open flame. A paratha is meant to be flaky and golden, and a chapati is meant to swell into a ball.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

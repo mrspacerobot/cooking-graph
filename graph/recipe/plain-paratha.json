@@ -1,0 +1,77 @@
+{
+  "id": "recipe/plain-paratha",
+  "tier": "drafted",
+  "names": {"en": "Plain paratha"},
+  "aliases": {},
+  "makes": "dish/plain-paratha",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/whole-wheat-flour", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "dough"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "dough"},
+    {
+      "thing": "ingredient/whole-wheat-flour",
+      "amount": {"value": 40, "unit": "gram"},
+      "forms": [],
+      "part": "dusting-flour"
+    },
+    {"thing": "ingredient/ghee", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "layering-ghee"},
+    {"thing": "ingredient/ghee", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "cooking-ghee"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/mixing-bowl", "equipment/rolling-pin", "equipment/tava", "equipment/spatula",
+    "equipment/pastry-brush"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-atta-dough",
+      "works_on": ["ingredient/whole-wheat-flour"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Put the flour and the salt in a bowl and work in the water a little at a time until the dough is soft and smooth. Cover it with a damp cloth and leave it to rest, then tear off equal balls and roll them smooth between the palms.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/chapati-dough"]
+    },
+    {
+      "technique": "technique/roll-out-a-chapati",
+      "works_on": ["preparation/chapati-dough"],
+      "with": ["ingredient/whole-wheat-flour"],
+      "text": "Flatten a ball in a little dry flour and roll it from the centre outwards, turning it after each stroke, into an even round a little thicker than a chapati.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fold-a-paratha",
+      "works_on": ["preparation/chapati-dough"],
+      "with": ["ingredient/ghee", "ingredient/whole-wheat-flour"],
+      "text": "Brush the round all over with soft ghee and dust it with flour. Fold it in half, brush the top with ghee again and fold it once more into a triangle.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roll-out-a-chapati",
+      "works_on": ["preparation/chapati-dough"],
+      "with": ["ingredient/whole-wheat-flour"],
+      "text": "Dust the triangle with flour and roll it out lightly and evenly, keeping its shape, until it is about the size of a small plate.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-a-paratha",
+      "works_on": ["preparation/chapati-dough"],
+      "with": ["ingredient/ghee"],
+      "text": "Lay the triangle on a hot iron plate and cook until the first face is dry in spots. Turn it, spoon ghee over the top, turn it again, spoon ghee on the other face and press the edges gently, until both faces are golden brown in spots. Crush it lightly between the palms to open the layers, and keep the finished breads wrapped in a cloth.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

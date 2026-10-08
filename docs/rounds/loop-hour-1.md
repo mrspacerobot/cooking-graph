@@ -25,3 +25,18 @@ A second compose batch, `compose-2`, 40 questions written by `claude-opus-5-5` f
 - Plain yogurt for lemon juice in a spice paste, and the stock-for-water rows in braise and grain cooking, are moderate-confidence calls that two drafters of one model agreed on.
 - Eight pairs the drafters wrote against each other (for example butter for olive oil) wait for a person.
 - Every ratio is from memory.
+
+## Tick 3: content for the growing compose-2 gaps
+
+Three worktree agents wrote 9 dishes with recipes (arancini, suppli, arroz con pollo, crema catalana, fish molee, Kerala fish curry, masoor dal, plain paratha, vegetable biryani), 5 technique cards (shape a stuffed rice ball, fry rice balls, burn a sugar crust, fold a paratha, cook a paratha; each a variant with a "differs" sentence) and 2 foods (fish sauce, green curry paste). `./merge` copied 25 files and refused none; `./twins` shows only the two old pairs. Shish taouk was drafted and deleted because the checker reported a held-back probe asks for it (4 files, not restored). Gazpacho, imam bayildi and oyakodon were left out for the same reason, and the Thai dishes wait for a decision on a new cuisine.
+
+Small data fixes from the agents' change requests: chicken breast joins the poultry group, red lentil joins the pulses group (so the redundant single entry on `simmer` was dropped), and pork chop gains the alias pork loin chop. Not done on purpose: widening `grill` to poultry, `cook-on-dum` to vegetables, and `cook-pilaf`, which are card decisions for a reviewer.
+
+| | Before the hour | After tick 3 |
+|---|---|---|
+| Dishes / recipes / techniques | 169 / 188 / 278 | 178 / 197 / 283 |
+| Recipe lines with a swap offered | 463 of 1648 | 522 of 1782 |
+| Foods in no stand-in row | 291 | 292 |
+| Compose probes, growing / held back | 1 of 32 / 0 of 8 | 1 of 64 / 0 of 16 |
+
+Compose did not move again. On the growing compose-2 questions, with pantry words that do not match exactly dropped, the first blocker is a generic technique the best recipe does not name in 17 of 32 (saute, simmer, pan-fry, toast, soak, boil, whisk, puree and similar), a dish absent in 5, a pantry shortfall in 8 and no recipe using the techniques in 2. The dishes are there; their steps use more specific technique names that are not linked to the general ones.

@@ -1,0 +1,25 @@
+{
+  "id": "dish/crema-catalana",
+  "tier": "drafted",
+  "names": {"en": "Crema catalana", "fr": "Crème catalane", "es": "crema catalana"},
+  "aliases": {"en": ["Catalan cream", "Catalan custard", "crema cremada"]},
+  "is": "A Catalan custard of milk scented with lemon peel and cinnamon, thickened with egg yolks and a little cornstarch on the stove, set cold in shallow dishes and finished with a thin crust of burnt sugar. Unlike a French creme brulee it is cooked on the stove and not baked, it is made with milk and not cream, and it is scented with lemon and cinnamon and not vanilla.",
+  "parts": [
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "aromatic", "options": ["ingredient/lemon-zest"], "optional": false, "tier": "drafted"},
+    {"id": "cinnamon", "role": "aromatic", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"},
+    {"id": "yolks", "role": "thickener", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "starch", "role": "thickener", "options": ["ingredient/cornstarch"], "optional": false, "tier": "drafted"},
+    {"id": "topping", "role": "topping", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/infuse", "tier": "drafted"},
+    {"thing": "technique/make-a-custard", "tier": "drafted"},
+    {"thing": "technique/burn-a-sugar-crust", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

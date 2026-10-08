@@ -1,0 +1,72 @@
+{
+  "id": "technique/burn-a-sugar-crust",
+  "tier": "drafted",
+  "names": {"en": "Burn a sugar crust"},
+  "aliases": {"en": ["cremar", "burn the sugar top", "brulee the top", "torch the sugar"]},
+  "does": "Sprinkles a thin, even layer of sugar over a cold, set custard and melts it with strong heat from above until it turns into a thin, glassy, amber crust that cracks under a spoon, while the custard beneath stays cold. The Catalan word for it is cremar, to burn.",
+  "how": [
+    "Have the custard cold and firm, with a dry surface. Get the torch lit or the grill very hot before the sugar goes on.",
+    "Scatter an even, thin layer of sugar over the surface, tilting the dish so that it reaches every corner, and tip off the extra.",
+    "Pass the flame slowly just above the sugar, or slide the dish close under a very hot grill, until the sugar melts and turns amber. Keep it moving so that it browns evenly and does not scorch.",
+    "Leave it a moment to harden into a glassy crust, and serve soon after."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sugar melts to a clear syrup and darkens evenly to deep amber, with no black patch."},
+    {"sense": "hear", "text": "The hardened crust cracks with a light tap of a spoon."},
+    {"sense": "smell", "text": "Toasted and bittersweet. A sharp, acrid smell means it has burnt."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using a thick layer of sugar, so that the crust is hard and gritty in places and still sugar in others.",
+      "fix": "Scatter a thin layer and tip off the extra."
+    },
+    {
+      "mistake": "Holding the flame still, which scorches one spot and leaves the rest pale.",
+      "fix": "Keep the flame moving in slow passes over the whole surface."
+    },
+    {
+      "mistake": "Burning a warm custard, which softens and melts the crust.",
+      "fix": "Chill the custard until it is cold and firm first."
+    },
+    {
+      "mistake": "Burning the sugar long before serving, so that the crust draws moisture and goes soft.",
+      "fix": "Burn it just before the dish goes to the table."
+    }
+  ],
+  "works_on": [
+    {"thing": "group/sugars", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "seasoning", "options": ["ingredient/sugar"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/grill"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/ramekin"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/set",
+      "why": "The custard has to be cold and firm before the sugar goes on, or the crust melts into it.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/make-a-caramel",
+      "why": "A cook who knows how sugar melts and darkens can judge the colour of the crust.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/make-a-caramel",
+      "differs": "The sugar is scattered dry in a thin layer over a cold custard and burned in place in moments by heat from above, so that it sets as a crust on the dish. A caramel is cooked in a pan to a syrup that is used apart.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "technique/gratinate",
+      "differs": "The top that browns is sugar, not cheese or sauce, and it is burned for moments only so that the cold custard beneath stays cold. A gratin is browned on a hot dish that is eaten warm.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

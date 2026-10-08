@@ -3,7 +3,7 @@
 Written by `./safety strict`. An ingredient holds a fact for certain, or the fact is recorded strictly because a common form of the ingredient may hold it.
 The rows below are the strict ones. How strict to be is for the owner to rule, reason by reason. Every safety record is unverified either way.
 
-344 of the 628 facts that ingredients hold are strict.
+353 of the 638 facts that ingredients hold are strict.
 
 | Fact | Basis | Ingredients |
 |---|---|---|
@@ -29,7 +29,9 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/celery` | Recorded strictly: some ketchups are spiced with celery. | ketchup |
 | `fact/celery` | Spice mixes and extracts for sausages often hold celery. | andouillette |
 | `fact/celery` | Stock is usually made with celery, and stock cubes often hold it. | beef-stock, chicken-stock, fish-stock, stock, vegetable-stock |
+| `fact/crustaceans` | Recorded strictly: most are made with shrimp paste. | green-curry-paste |
 | `fact/crustaceans` | Recorded strictly: some are blended with crab or shrimp. | fish-cake, kamaboko |
+| `fact/crustaceans` | Recorded strictly: some are made with shrimp or krill as well. | fish-sauce |
 | `fact/egg` | Enriched loaves may hold egg. | bread, stale-bread |
 | `fact/egg` | Fresh pasta is usually made with egg, and dried pasta sometimes is. | crozets, pasta |
 | `fact/egg` | Fresh pasta is usually made with egg. | ravioles |
@@ -51,6 +53,7 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/fish` | Made from wine, which may be cleared with isinglass from fish. | red-wine-vinegar, sherry-vinegar, vinegar, white-wine-vinegar |
 | `fact/fish` | Often made with wine, which may be cleared with isinglass from fish. | dijon-mustard |
 | `fact/fish` | Recorded strictly: some are made with anchovy, as Worcestershire sauce is. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
+| `fact/fish` | Recorded strictly: some are made with fish sauce. | green-curry-paste |
 | `fact/fish` | Recorded strictly: some are seasoned with dried bonito. | umeboshi |
 | `fact/fish` | Recorded strictly: some miso has fish stock added. | miso, red-miso, white-miso |
 | `fact/fish` | Some wines are cleared with fish finings. | dry-sherry |
@@ -69,6 +72,8 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/gluten` | Recorded strictly: many are bound with wheat starch or flour. | fish-cake, kamaboko |
 | `fact/gluten` | Recorded strictly: most soba is blended with wheat flour. | soba-noodle |
 | `fact/gluten` | Recorded strictly: some bottled mirin-style seasonings are made with other grains. | mirin |
+| `fact/gluten` | Recorded strictly: some bought ones are boosted with hydrolysed wheat protein. | fish-sauce |
+| `fact/gluten` | Recorded strictly: some bought ones hold soy sauce, which is brewed with wheat. | green-curry-paste |
 | `fact/gluten` | Recorded strictly: some miso is made with wheat or barley. | miso, red-miso, white-miso |
 | `fact/gluten` | Recorded strictly: they usually hold soy sauce, which is brewed with wheat. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
 | `fact/gluten` | Some are bound with bread or flour. | andouillette |
@@ -148,6 +153,8 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/soy` | Oil sold only as vegetable oil is often pressed from soybeans. | oil |
 | `fact/soy` | Recorded strictly: bottled brown sauces of this kind usually hold soy sauce. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
 | `fact/soy` | Recorded strictly: many are seasoned with soy sauce or soy protein. | fish-cake, kamaboko |
+| `fact/soy` | Recorded strictly: some bought ones are boosted with hydrolysed soy protein. | fish-sauce |
+| `fact/soy` | Recorded strictly: some bought ones hold soy sauce. | green-curry-paste |
 | `fact/soy` | Recorded strictly: some bread is made with soy flour. | panko |
 | `fact/soy` | Recorded strictly: some sprouts sold under this name are grown from soybeans. | bean-sprout |
 | `fact/soy` | Some bought pita holds soy flour. | pita-bread |
@@ -208,6 +215,8 @@ The rows below are the strict ones. How strict to be is for the owner to rule, r
 | `fact/wheat` | Recorded strictly: many are bound with wheat starch or flour. | fish-cake, kamaboko |
 | `fact/wheat` | Recorded strictly: most soba is blended with wheat flour. | soba-noodle |
 | `fact/wheat` | Recorded strictly: some bottled mirin-style seasonings are made with other grains. | mirin |
+| `fact/wheat` | Recorded strictly: some bought ones are boosted with hydrolysed wheat protein. | fish-sauce |
+| `fact/wheat` | Recorded strictly: some bought ones hold soy sauce, which is brewed with wheat. | green-curry-paste |
 | `fact/wheat` | Recorded strictly: some miso is made with wheat or barley. | miso, red-miso, white-miso |
 | `fact/wheat` | Recorded strictly: they usually hold soy sauce, which is brewed with wheat. | okonomiyaki-sauce, tonkatsu-sauce, yakisoba-sauce |
 | `fact/wheat` | Some are bound with bread or flour. | andouillette |

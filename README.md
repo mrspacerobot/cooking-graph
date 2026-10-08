@@ -117,7 +117,7 @@ These are internal exploration commands. Every answer says safety records are un
 Avoidance excludes strict `contains` answers too. Preparations are checked through every option
 of every part; a missing answer or a cycle fails closed. This is deliberately conservative.
 
-Only direct statements are used. No reverse or chained stand-in is inferred. A line's context
+A request for a technique also finds its variants (`variant_of`, at any depth): `boil` finds `boil-pasta`, `emulsify` finds `beat-tahini-sauce`. Exact use ranks first, each recipe says `exact` and which `variants_used`, and `./compose` lists `covered_by_variant`. A variant does not stand in for its parent the other way round. Only direct statements are used. No reverse or chained stand-in is inferred. A line's context
 is what the recipe makes and the techniques and preparations of steps that handle that line. An explicit
 `not_when` overrides a positive statement or a part option. A replacement must fit each
 technique that works on the original. A part option supplies no ratio or caveat unless a

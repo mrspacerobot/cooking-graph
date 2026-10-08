@@ -61,13 +61,23 @@
       "makes": []
     },
     {
+      "technique": "technique/emulsify-off-the-heat",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/egg-yolk", "ingredient/pecorino", "preparation/rendered-fat", "ingredient/water"],
+      "text": "Keep the pan off the heat. Loosen the egg mixture with a splash of the hot cooking water and a spoonful of the rendered fat, stirring, until it is a smooth, pourable cream with no streaks.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
       "technique": "technique/toss-pasta-with-sauce",
       "works_on": ["ingredient/spaghetti"],
       "with": [
         "ingredient/guanciale", "preparation/rendered-fat", "ingredient/egg", "ingredient/egg-yolk",
         "ingredient/pecorino", "ingredient/water"
       ],
-      "text": "Lift the spaghetti straight into the pan with the guanciale and its fat, off the heat. Pour in the egg mixture and toss quickly, adding the cooking water a splash at a time, until the egg has warmed into a glossy cream that clings to every strand. Do not return the pan to the heat.",
+      "text": "Lift the spaghetti straight into the pan with the guanciale and its fat, off the heat. Pour in the egg cream and toss quickly, adding more cooking water a splash at a time, until it turns glossy and clings to every strand. Do not return the pan to the heat.",
       "time": null,
       "temperature": null,
       "safety_points": ["raw-or-lightly-cooked-egg"],

@@ -114,6 +114,19 @@ class RealGraphTest(unittest.TestCase):
         self.assertIn("recipe/spaghetti-alla-carbonara", rows)
         self.assertIn("technique/boil-pasta", rows["recipe/spaghetti-alla-carbonara"]["variants_used"])
 
+    def test_emulsify_finds_carbonara_through_binding_a_sauce_off_the_heat(self):
+        rows = {row["recipe"]: row for row in self.run_command("recipes", "technique/emulsify")["recipes"]}
+        self.assertIn("recipe/spaghetti-alla-carbonara", rows)
+        self.assertEqual(["technique/emulsify-off-the-heat"], rows["recipe/spaghetti-alla-carbonara"]["variants_used"])
+        self.assertFalse(rows["recipe/spaghetti-alla-carbonara"]["exact"])
+
+    def test_compose_covers_emulsify_and_boil_pasta_with_carbonara(self):
+        answer = self.run_command("compose", "--technique", "technique/emulsify", "--technique", "technique/boil-pasta",
+                                  "--top", "50", "ingredient/spaghetti")
+        row = next(one for one in answer["recipes"] if one["recipe"] == "recipe/spaghetti-alla-carbonara")
+        self.assertEqual([], row["uncovered"])
+        self.assertEqual({"technique/emulsify": ["technique/emulsify-off-the-heat"]}, row["covered_by_variant"])
+
     def test_emulsify_finds_the_tahini_sauce(self):
         rows = self.run_command("recipes", "technique/emulsify")["recipes"]
         used = {one for row in rows for one in row["variants_used"]}

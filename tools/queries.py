@@ -251,8 +251,28 @@ def compose_recipe(things, row, home, avoided, factor):
     return answer
 
 
+def own_techniques(recipe):
+    return {step["technique"] for step in recipe["steps"]}
+
+
+def preparation_techniques(things, recipe_id, made_by, seen):
+    """Techniques of the recipes that make the preparations this recipe names, at any depth. A loop ends."""
+    found = set()
+    for line in things[recipe_id].data["ingredients"]:
+        for made in made_by.get(line["thing"], []):
+            if made not in seen:
+                seen.add(made)
+                found |= own_techniques(things[made].data)
+                found |= preparation_techniques(things, made, made_by, seen)
+    return found
+
+
 def compose(things, technique_words, at_home, avoid=(), servings=None, top=5):
-    """Recipes that practise the techniques, adapted to what is at home: the stand-ins, amounts and steps as read."""
+    """Recipes that practise the techniques, adapted to what is at home: the stand-ins, amounts and steps as read.
+
+    A technique counts when a step uses it, when a step uses a variant of it, or when the recipe of a preparation
+    the dish names does. Exact use ranks first.
+    """
     if not technique_words:
         raise ValueError("name at least one technique")
     if top < 1:
@@ -260,23 +280,31 @@ def compose(things, technique_words, at_home, avoid=(), servings=None, top=5):
     techniques = resolve_many(things, technique_words, ("technique",))
     home = resolve_many(things, at_home, FOODS)
     avoided = resolve_many(things, avoid, ("fact",))
-    found = {}
-    for technique_id in techniques:
-        for row in recipes(things, technique_id)["recipes"]:
-            earlier = found.get(row["recipe"], row)
-            found[row["recipe"]] = {"recipe": row["recipe"], "makes": row["makes"], "tier": row["tier"],
-                                    "teaches": row["teaches"] or earlier["teaches"]}
+    kin = {one: family(things, one) for one in techniques}
+    made_by = {}
+    for recipe_id, thing in things.items():
+        if thing.kind == "recipe":
+            made_by.setdefault(thing.data["makes"], []).append(recipe_id)
     answers = []
-    for recipe_id, row in found.items():
-        used = {step["technique"] for step in things[recipe_id].data["steps"]}
-        kin = {one: family(things, one) for one in techniques}
-        covered = [one for one in techniques if kin[one] & used]
-        by_variant = {one: sorted(kin[one] & used - {one}) for one in covered if one not in used}
-        exact = sum(one in used for one in techniques)
-        row = dict(row, covered=covered, uncovered=[one for one in techniques if one not in covered],
-                   covered_by_variant=by_variant, exact_count=exact)
-        factor, asked, note = scaling(things[recipe_id].data, servings)
+    for recipe_id, thing in sorted(things.items()):
+        if thing.kind != "recipe":
+            continue
+        own = own_techniques(thing.data)
+        through = preparation_techniques(things, recipe_id, made_by, {recipe_id}) - own
+        covered = [one for one in techniques if kin[one] & (own | through)]
+        if not covered:
+            continue
+        whole = things[thing.data["makes"]].data
+        by_variant = {one: sorted(kin[one] & own - {one}) for one in covered if one not in own and kin[one] & own}
+        by_preparation = {one: sorted(kin[one] & through) for one in covered if not kin[one] & own}
+        row = {"recipe": recipe_id, "makes": whole["id"], "tier": thing.data["tier"],
+               "teaches": any(one["thing"] in kin[t] for one in whole.get("teaches", []) for t in techniques),
+               "covered": covered, "uncovered": [one for one in techniques if one not in covered],
+               "covered_by_variant": by_variant, "covered_by_preparation": by_preparation,
+               "exact_count": sum(one in own for one in techniques)}
+        factor, asked, note = scaling(thing.data, servings)
         answer = compose_recipe(things, row, home, avoided, factor)
         answers.append(dict(answer, servings=asked, scaling_note=note))
-    answers.sort(key=lambda row: (len(row["uncovered"]), row["missing_count"], -row["exact_count"], not row["teaches"], row["recipe"]))
+    answers.sort(key=lambda row: (len(row["uncovered"]), row["missing_count"], len(row["covered_by_preparation"]),
+                                  -row["exact_count"], not row["teaches"], row["recipe"]))
     return {"techniques": techniques, "at_home": home, "avoid": avoided, "safety": SAFETY, "recipes": answers[:top]}

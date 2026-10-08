@@ -44,6 +44,15 @@ The compose score did not move. Nine new dishes exist, and none answers its ques
 
 Two blind drafters wrote rows for 41 pairs involving the new foods (36 from `./candidates` and 5 added by hand: the tofus, and paprika with smoked paprika). They wrote 13 and 24 rows. `./stand-in-merge` kept the 12 both wrote (6 allowing, 6 exclusions), disputed 0, and left 13 that only one drafter wrote unapplied. Foods in no stand-in row went from 299 to 291. The swap most worth having, smoked paprika for plain paprika in Spanish sauces, was written by one drafter only and is not applied; a person can rule on it. The merguez and chorizo exclusions are also one-drafter and wait.
 
+## Follow-up fixes
+
+- `./compose` now counts the techniques in the recipes of the preparations a dish names (`covered_by_preparation`), at any depth. Croque madame now covers `make-a-roux` through its bechamel.
+- `make-avgolemono` is also a variant of `temper`, so tempering eggs finds the soup.
+- The ragu recipe's long step is split into browning and a simmer, the simmer pointing at the minced beef because the ragu preparation is in no group the `simmer` card covers.
+- Not changed, on purpose: `sear` does not work on minced meat and `deglaze` works only on a pan fond, so the ragu and risotto probes that ask for them stay unanswered rather than stretch the cards.
+
+Score after: compose probes still 1 of 32 growing and 0 of 8 held back. What changed is where the new dishes wait. Avgolemono now has every technique and waits on the pantry (the probe's cook has no chicken thigh, water or lemon juice). Croque madame waits only on `grill`, the ragu on `sear`, both risottos on `deglaze`. Five growing questions still fail on a free-text word.
+
 ## Doubts
 
 - Hyderabadi dum biryani overlaps `chicken-biryani`, which already carries the alias dum biryani. It was kept for its regional differences (raw marinated lamb, longer dum). Delete the two files if no overlap is wanted.

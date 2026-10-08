@@ -103,6 +103,73 @@ class VariantQueryTest(unittest.TestCase):
         self.assertEqual([], answer["recipes"][0]["uncovered"])
 
 
+class PreparationTest(unittest.TestCase):
+    """A dish practises the techniques of the recipes that make the preparations it uses."""
+
+    def setUp(self):
+        self.things = kitchen()
+        recipe = self.things["recipe/buttered-onions"].data
+        recipe["steps"][0]["technique"] = "technique/sweat"
+        recipe["ingredients"][1]["thing"] = "preparation/roux"
+        self.roux = self.make_recipe("recipe/roux", "preparation/roux", "technique/mince", [])
+
+    def make_recipe(self, recipe_id, makes, technique, lines):
+        recipe = copy.deepcopy(self.things["recipe/buttered-onions"].data)
+        recipe.update(id=recipe_id, makes=makes)
+        recipe["ingredients"] = [dict(recipe["ingredients"][0], thing=thing, part="onion") for thing in lines]
+        recipe["steps"] = [dict(recipe["steps"][0], technique=technique)]
+        self.things[recipe_id] = Thing("", "recipe", recipe)
+        return recipe
+
+    def compose(self, techniques, home=("ingredient/onion", "preparation/roux")):
+        return queries.compose(self.things, techniques, list(home))
+
+    def row(self, answer, recipe_id="recipe/buttered-onions"):
+        return next(one for one in answer["recipes"] if one["recipe"] == recipe_id)
+
+    def test_a_technique_of_a_preparation_recipe_is_covered_and_says_so(self):
+        row = self.row(self.compose(["sweat", "mince"]))
+        self.assertEqual(([], ["technique/mince", "technique/sweat"]), (row["uncovered"], sorted(row["covered"])))
+        self.assertEqual({"technique/mince": ["technique/mince"]}, row["covered_by_preparation"])
+        self.assertEqual({}, row["covered_by_variant"])
+
+    def test_a_dish_found_only_through_a_preparation_is_a_candidate(self):
+        self.assertEqual(["recipe/buttered-onions"], [one["recipe"] for one in self.compose(["mince"])["recipes"]
+                                                       if one["recipe"] == "recipe/buttered-onions"])
+
+    def test_the_preparation_recipe_itself_is_not_changed_by_it(self):
+        row = self.row(self.compose(["mince"]), "recipe/roux")
+        self.assertEqual({}, row["covered_by_preparation"])
+
+    def test_a_preparation_of_a_preparation_counts(self):
+        self.make_recipe("recipe/juices", "preparation/onion-juices", "technique/gentle", [])
+        variant(self.things, "gentle", "technique/sweat")
+        self.things["recipe/roux"].data["ingredients"] = [
+            dict(self.things["recipe/buttered-onions"].data["ingredients"][0], thing="preparation/onion-juices", part="butter")]
+        row = self.row(self.compose(["gentle"]))
+        self.assertEqual({"technique/gentle": ["technique/gentle"]}, row["covered_by_preparation"])
+
+    def test_a_preparation_loop_ends(self):
+        self.things["recipe/roux"].data["ingredients"] = [
+            dict(self.things["recipe/buttered-onions"].data["ingredients"][0], thing="preparation/roux", part="butter")]
+        self.assertEqual([], self.row(self.compose(["sweat", "mince"]))["uncovered"])
+
+    def test_the_dishes_own_steps_rank_before_a_preparation(self):
+        other = copy.deepcopy(self.things["recipe/buttered-onions"].data)
+        other["id"] = "recipe/a-onions"
+        other["ingredients"][1]["thing"] = "ingredient/butter"
+        other["steps"].append(dict(other["steps"][0], technique="technique/mince", **{"with": []}))
+        self.things[other["id"]] = Thing("", "recipe", other)
+        ids = [one["recipe"] for one in self.compose(["sweat", "mince"], ("ingredient/onion", "preparation/roux", "ingredient/butter"))["recipes"]]
+        self.assertLess(ids.index("recipe/a-onions"), ids.index("recipe/buttered-onions"))
+
+    def test_a_requested_technique_nothing_uses_stays_uncovered(self):
+        card = copy.deepcopy(self.things["technique/mince"].data)
+        card.update(id="technique/other", names={"en": "other"}, aliases={}, variant_of=[])
+        self.things[card["id"]] = Thing("", "technique", card)
+        self.assertEqual(["technique/other"], self.row(self.compose(["sweat", "other"]))["uncovered"])
+
+
 class RealGraphTest(unittest.TestCase):
     def run_command(self, *arguments):
         run = subprocess.run([os.path.join(REPOSITORY, arguments[0]), *arguments[1:]], capture_output=True, text=True)
@@ -126,6 +193,13 @@ class RealGraphTest(unittest.TestCase):
         row = next(one for one in answer["recipes"] if one["recipe"] == "recipe/spaghetti-alla-carbonara")
         self.assertEqual([], row["uncovered"])
         self.assertEqual({"technique/emulsify": ["technique/emulsify-off-the-heat"]}, row["covered_by_variant"])
+
+    def test_croque_madame_makes_a_roux_through_its_bechamel(self):
+        answer = self.run_command("compose", "--technique", "technique/make-a-roux", "--technique", "technique/layer",
+                                  "--top", "60", "ingredient/butter")
+        row = next(one for one in answer["recipes"] if one["recipe"] == "recipe/croque-madame")
+        self.assertEqual([], row["uncovered"])
+        self.assertEqual({"technique/make-a-roux": ["technique/make-a-roux"]}, row["covered_by_preparation"])
 
     def test_emulsify_finds_the_tahini_sauce(self):
         rows = self.run_command("recipes", "technique/emulsify")["recipes"]

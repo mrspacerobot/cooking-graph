@@ -57,6 +57,11 @@
       "thing": "technique/thicken-with-egg-yolk",
       "differs": "The lemon juice is beaten into the eggs, whole or yolks only, and there is no cream. The hot liquid is the broth of the dish itself, and the sauce is stirred back in off the boil and never boiled again, where the French liaison is made with cream.",
       "tier": "drafted"
+    },
+    {
+      "thing": "technique/temper",
+      "differs": "The eggs are tempered with hot broth and then beaten with lemon juice into the soup, off the boil, so that they thicken it as a sauce and do not set in strands.",
+      "tier": "drafted"
     }
   ],
   "belongs_to": [

@@ -38,6 +38,15 @@
       "ratio": null,
       "caveat": "It makes a richer, softer batter that browns faster.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/water",
+      "allows": true,
+      "when": ["technique/cook-polenta", "technique/make-atta-dough"],
+      "not_when": ["technique/blanch", "technique/boil-pasta", "technique/deglaze", "technique/pressure-cook"],
+      "ratio": null,
+      "caveat": "It gives a richer, softer result and browns and scorches more easily. It curdles on a pan deglaze and foams over in a hard boil or a pressure cooker.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

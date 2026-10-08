@@ -58,6 +58,24 @@
       "ratio": null,
       "caveat": "The sauce comes out paler and lighter, without the roasted depth.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/water",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": ["technique/make-choux-pastry"],
+      "ratio": null,
+      "caveat": "It gives a savoury, lightly gelled base in place of plain water.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/white-wine",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "It has none of the sharpness or aroma of wine, so the sauce is rounder and sweeter. A little acid at the end brings some back.",
+      "tier": "drafted"
     }
   ],
   "belongs_to": [

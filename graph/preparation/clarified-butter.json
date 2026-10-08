@@ -24,6 +24,24 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
       "caveat": "It has no milk solids, so it stands far more heat before it burns. For the same reason it cannot thicken a sauce or brown to a nutty butter.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/olive-oil",
+      "allows": true,
+      "when": ["technique/saute", "technique/sear", "technique/sweat", "technique/wilt", "technique/layer-phyllo"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It tastes of butter and not of olive, and it stands high heat well. Brushed between phyllo it gives a crisp, buttery sheet.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sunflower-oil",
+      "allows": true,
+      "when": ["technique/pan-fry", "technique/saute", "technique/sear"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It stands more heat than most fats and gives a clear buttery taste, with no milk solids to burn.",
+      "tier": "drafted"
     }
   ],
   "belongs_to": [

@@ -29,7 +29,40 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": true,
+      "when": ["technique/braise", "technique/deglaze", "technique/simmer"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "A general stock may be lighter or have a different taste, so the dish turns out a little less deep in chicken flavour.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/water",
+      "allows": true,
+      "when": [
+        "technique/cook-rice", "technique/cook-polenta", "technique/cook-rice-with-lentils", "technique/cook-a-paella",
+        "technique/swell-bulgur-in-hot-liquid", "technique/steam-couscous", "technique/simmer"
+      ],
+      "not_when": [
+        "technique/blanch", "technique/boil-pasta", "technique/rinse", "technique/soak", "technique/soak-in-water"
+      ],
+      "ratio": null,
+      "caveat": "It adds savoury depth and some body, and it may already be salted, so season carefully.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/white-wine",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "Stock has none of the sharpness or aroma of wine, so the sauce is rounder and sweeter. A little acid at the end brings some back.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

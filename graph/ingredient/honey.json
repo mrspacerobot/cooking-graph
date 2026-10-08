@@ -29,6 +29,15 @@
       "ratio": null,
       "caveat": "It is sweeter and wetter, and tastes floral.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sugar",
+      "allows": true,
+      "when": ["technique/make-naan-dough", "technique/cook-sutlac", "technique/sweeten"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sweeter and wetter, tastes floral and browns sooner.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

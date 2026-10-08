@@ -52,6 +52,15 @@
       "ratio": null,
       "caveat": "It loses the buttery taste. Use a neutral oil, and the gravy will need its richness from the cream.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/ghee",
+      "allows": true,
+      "when": ["technique/temper-spices-in-hot-fat", "technique/saute", "technique/cook-a-chapati"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It lacks the nutty, buttery taste and richness of ghee.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

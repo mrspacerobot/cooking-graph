@@ -78,6 +78,29 @@
       "ratio": null,
       "caveat": "It is paler and lighter in body, so the sauce looks lighter.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/water",
+      "allows": true,
+      "when": [
+        "technique/cook-rice", "technique/cook-polenta", "technique/cook-a-paella",
+        "technique/swell-bulgur-in-hot-liquid", "technique/steam-couscous", "technique/simmer"
+      ],
+      "not_when": [
+        "technique/blanch", "technique/boil-pasta", "technique/rinse", "technique/soak", "technique/soak-in-water"
+      ],
+      "ratio": null,
+      "caveat": "It adds a clear chicken taste and some body, and it may already be salted, so season carefully.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/white-wine",
+      "allows": true,
+      "when": ["technique/deglaze", "technique/toast-rice"],
+      "not_when": ["technique/make-a-bearnaise"],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "Stock has none of the sharpness or aroma of wine, so the sauce is rounder and sweeter. It cannot give the sharp reduction a bearnaise starts from.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

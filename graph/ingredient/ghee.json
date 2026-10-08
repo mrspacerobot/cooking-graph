@@ -69,6 +69,18 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
       "caveat": "It is pure fat with no water or milk solids, so the base is a little richer and does not catch as easily. The flavour is nuttier.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/oil",
+      "allows": true,
+      "when": [
+        "technique/fry-masala-base", "technique/temper-spices-in-hot-fat", "technique/roast", "technique/stir-fry",
+        "technique/fry-a-cutlet"
+      ],
+      "not_when": ["technique/double-fry"],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "It tastes nutty and rich and stands high heat well.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

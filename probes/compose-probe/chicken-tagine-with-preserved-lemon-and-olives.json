@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/chicken-tagine-with-preserved-lemon-and-olives",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["marinate", "braise"],
+  "at_home": [
+    "chicken thighs",
+    "onion",
+    "garlic",
+    "ginger",
+    "saffron",
+    "green olives",
+    "lemon",
+    "coriander leaves",
+    "olive oil"
+  ],
+  "dishes": ["chicken tagine with preserved lemon and olives"],
+  "why": "Fresh lemon zest and juice stand in for preserved lemon in a spiced chicken braise with olives."
+}

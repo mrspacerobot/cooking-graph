@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/imam-bayildi",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["fry", "stuff", "braise"],
+  "at_home": ["eggplants", "onions", "tomatoes", "garlic", "olive oil", "parsley", "sugar", "salt"],
+  "dishes": ["imam bayildi"],
+  "why": "Fried eggplants stuffed with soft onion and tomato and braised in olive oil are a famous Turkish meze."
+}

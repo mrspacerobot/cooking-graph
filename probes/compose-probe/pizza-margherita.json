@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/pizza-margherita",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["knead", "proof", "bake"],
+  "at_home": ["bread flour", "dried yeast", "salt", "olive oil", "canned tomatoes", "mozzarella", "basil"],
+  "dishes": ["pizza margherita"],
+  "why": "A kneaded and proofed dough with tomato, mozzarella and basil makes a homemade pizza."
+}

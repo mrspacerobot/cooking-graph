@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/blanquette-de-veau",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["make a roux", "poach", "enrich with egg yolk"],
+  "at_home": ["veal shoulder", "carrots", "onion", "button mushrooms", "butter", "flour", "cream", "eggs", "lemon"],
+  "dishes": ["blanquette de veau"],
+  "why": "Gently poached veal in a pale roux sauce finished with yolk and cream is a classic French family stew."
+}

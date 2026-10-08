@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/dal-tadka",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["boil", "temper spices"],
+  "at_home": [
+    "red lentils",
+    "ghee",
+    "cumin seeds",
+    "garlic",
+    "dried red chillies",
+    "turmeric",
+    "onion",
+    "tomato",
+    "salt"
+  ],
+  "dishes": ["dal tadka"],
+  "why": "Red lentils stand in for toor dal, and a sizzling ghee tadka poured over makes a comforting dal."
+}

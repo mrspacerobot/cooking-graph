@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/menemen",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["saute", "scramble"],
+  "at_home": ["eggs", "green peppers", "tomatoes", "onion", "butter", "red pepper flakes", "salt"],
+  "dishes": ["menemen"],
+  "why": "Peppers and tomatoes softened in butter with loosely scrambled eggs make a Turkish breakfast pan."
+}

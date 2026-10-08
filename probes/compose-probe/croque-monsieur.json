@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/croque-monsieur",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["make a roux", "grill"],
+  "at_home": ["sandwich bread", "ham", "gruyere", "butter", "flour", "milk", "nutmeg", "salt"],
+  "dishes": ["croque monsieur", "croque madame"],
+  "why": "A little bechamel turns a ham and cheese toastie into a proper French cafe lunch."
+}

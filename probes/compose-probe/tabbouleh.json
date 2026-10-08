@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/tabbouleh",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["soak", "chop finely", "dress"],
+  "at_home": ["fine bulgur", "flat-leaf parsley", "mint", "tomatoes", "lemon", "olive oil", "spring onions", "salt"],
+  "dishes": ["tabbouleh"],
+  "why": "A heap of finely chopped parsley with a little soaked bulgur and lemon is the Lebanese herb salad."
+}

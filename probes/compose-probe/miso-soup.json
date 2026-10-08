@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/miso-soup",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["make dashi", "simmer"],
+  "at_home": ["kombu", "katsuobushi", "miso", "silken tofu", "dried wakame", "spring onions"],
+  "dishes": ["miso soup"],
+  "why": "A fresh dashi with miso, tofu and wakame is the everyday Japanese soup."
+}

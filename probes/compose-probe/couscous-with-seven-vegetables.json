@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/couscous-with-seven-vegetables",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["steam", "simmer"],
+  "at_home": [
+    "couscous",
+    "carrots",
+    "zucchini",
+    "turnip",
+    "canned chickpeas",
+    "onion",
+    "ras el hanout",
+    "butter",
+    "chicken"
+  ],
+  "dishes": ["couscous with seven vegetables", "couscous royale"],
+  "why": "Couscous steamed over a simmering vegetable and chicken stew is the Moroccan Friday meal."
+}

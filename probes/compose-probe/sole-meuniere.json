@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/sole-meuniere",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["dredge", "pan-fry", "brown butter"],
+  "at_home": ["plaice fillets", "flour", "butter", "lemon", "parsley", "salt", "black pepper"],
+  "dishes": ["sole meuniere", "fish meuniere"],
+  "why": "No sole in the house, but thin plaice fillets take the same floured pan-fry and nutty brown butter."
+}

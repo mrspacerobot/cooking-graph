@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/salmorejo",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["soak bread", "blend", "emulsify"],
+  "at_home": ["ripe tomatoes", "stale bread", "garlic", "olive oil", "red wine vinegar", "eggs", "salt"],
+  "dishes": ["salmorejo", "gazpacho"],
+  "why": "Red wine vinegar stands in for sherry vinegar in a cold blended tomato soup thickened with bread and oil."
+}

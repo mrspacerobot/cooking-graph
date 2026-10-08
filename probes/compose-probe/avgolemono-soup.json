@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/avgolemono-soup",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["simmer", "temper eggs"],
+  "at_home": ["chicken", "rice", "eggs", "lemons", "onion", "salt", "black pepper"],
+  "dishes": ["avgolemono soup", "kotosoupa avgolemono"],
+  "why": "Chicken broth thickened with tempered egg and lemon makes a silky Greek soup."
+}

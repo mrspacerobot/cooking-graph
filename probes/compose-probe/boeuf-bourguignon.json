@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/boeuf-bourguignon",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["sear", "deglaze", "braise"],
+  "at_home": ["beef chuck", "bacon", "carrots", "onions", "garlic", "red wine", "thyme", "flour", "salt"],
+  "dishes": ["boeuf bourguignon"],
+  "why": "A tough cut seared, deglazed with red wine and braised slowly turns tender and rich."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/chicken-katsu",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["bread", "deep fry"],
+  "at_home": [
+    "chicken thighs",
+    "panko",
+    "flour",
+    "eggs",
+    "cabbage",
+    "rice",
+    "vegetable oil",
+    "worcestershire sauce",
+    "ketchup"
+  ],
+  "dishes": ["chicken katsu"],
+  "why": "Panko crumbed chicken fried crisp, with worcestershire and ketchup standing in for tonkatsu sauce."
+}

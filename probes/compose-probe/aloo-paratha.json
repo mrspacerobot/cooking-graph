@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/aloo-paratha",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["knead", "roll out", "pan-fry"],
+  "at_home": ["whole wheat flour", "potatoes", "green chillies", "cumin seeds", "coriander leaves", "ghee", "salt"],
+  "dishes": ["aloo paratha"],
+  "why": "Spiced potato rolled inside a soft wheat dough and fried in ghee makes a filling breakfast."
+}

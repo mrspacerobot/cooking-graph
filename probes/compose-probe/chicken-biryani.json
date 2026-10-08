@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/chicken-biryani",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["marinate", "parboil", "steam"],
+  "at_home": [
+    "chicken thighs",
+    "basmati rice",
+    "plain yogurt",
+    "onions",
+    "ghee",
+    "whole spices",
+    "saffron",
+    "mint",
+    "salt"
+  ],
+  "dishes": ["chicken biryani", "hyderabadi dum biryani"],
+  "why": "Marinated chicken layered with parboiled rice and sealed to steam gives a fragrant festive biryani."
+}

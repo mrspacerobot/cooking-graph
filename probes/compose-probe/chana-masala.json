@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/chana-masala",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["fry masala base", "simmer"],
+  "at_home": [
+    "canned chickpeas",
+    "onion",
+    "tomatoes",
+    "ginger",
+    "garlic",
+    "garam masala",
+    "ground cumin",
+    "vegetable oil",
+    "lemon"
+  ],
+  "dishes": ["chana masala"],
+  "why": "Chickpeas simmered in a well fried onion and tomato masala make a hearty vegetarian curry, with lemon in place of amchur."
+}

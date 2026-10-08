@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/flour",
+      "allows": true,
+      "when": ["preparation/fresh-pasta-dough"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The dough is firmer and coarser, and the pasta holds its bite.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/moroccan", "tier": "drafted"},
     {"thing": "cuisine/greek", "tier": "drafted"},

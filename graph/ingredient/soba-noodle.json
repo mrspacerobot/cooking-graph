@@ -25,7 +25,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/yakisoba-noodle",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/yakisoba", "technique/fry-noodles-in-sauce", "technique/stir-fry"],
+      "ratio": null,
+      "caveat": "The buckwheat strands break and go soft in a hot stir-fry.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],

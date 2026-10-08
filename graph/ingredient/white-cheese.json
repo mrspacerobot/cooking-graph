@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/kashkaval-cheese",
+      "allows": true,
+      "when": ["dish/gozleme"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It stays crumbly and brine-salty instead of melting into strings.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],

@@ -35,10 +35,16 @@ class StandInMergeTest(unittest.TestCase):
         result = self.merge([change(when=["technique/saute", "technique/sear"])], [change(when=["technique/sear", "technique/fry"])])
         self.assertEqual(["technique/sear"], result.agreed[0]["add"]["when"])
 
-    def test_contexts_that_share_nothing_are_disputed(self):
+    def test_contexts_that_share_nothing_are_kept_together_and_flagged(self):
         result = self.merge([change(when=["technique/saute"])], [change(when=["technique/poach"])])
+        self.assertEqual([], result.disputed)
+        self.assertEqual(["technique/poach", "technique/saute"], sorted(result.agreed[0]["add"]["when"]))
+        self.assertIn("contexts differ", result.agreed[0]["why"])
+
+    def test_a_context_one_drafter_names_that_the_other_excludes_is_disputed(self):
+        result = self.merge([change(when=["technique/saute"])], [change(when=["technique/poach"], not_when=["technique/saute"])])
         self.assertEqual([], result.agreed)
-        self.assertEqual("contexts-do-not-overlap", result.disputed[0].why)
+        self.assertEqual("context-contradicted", result.disputed[0].why)
 
     def test_one_drafter_naming_no_context_takes_the_context_of_the_other(self):
         result = self.merge([change(when=[])], [change(when=["technique/saute"])])
@@ -89,11 +95,16 @@ class StandInMergeTest(unittest.TestCase):
         two = self.merge(second, first)
         self.assertEqual(sorted(x["file"] + x["add"]["thing"] for x in one.agreed), sorted(x["file"] + x["add"]["thing"] for x in two.agreed))
 
+    def test_the_report_counts_the_rows_whose_contexts_differ(self):
+        result = self.merge([change(when=["technique/saute"])], [change(when=["technique/poach"])])
+        self.assertTrue(any("contexts differ" in line and "1" in line for line in stand_in_merge.report(result)))
+
     def test_the_report_names_counts_and_every_dispute_and_single(self):
-        result = self.merge([change(when=["technique/saute"]), change(file="graph/ingredient/oil.json")], [change(when=["technique/poach"])])
+        result = self.merge([change(when=["technique/saute"]), change(file="graph/ingredient/oil.json")],
+                            [change(when=["technique/poach"], not_when=["technique/saute"])])
         lines = stand_in_merge.report(result)
         self.assertTrue(any(line.startswith("agreed: 0") for line in lines))
-        self.assertTrue(any("contexts-do-not-overlap" in line and "ghee" in line for line in lines))
+        self.assertTrue(any("context-contradicted" in line and "ghee" in line for line in lines))
         self.assertTrue(any("only one drafter" in line and "oil" in line for line in lines))
 
 

@@ -23,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/carnaroli-rice",
+      "allows": true,
+      "when": ["dish/risotto-ai-funghi-porcini"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It takes up more liquid and gives a looser, softer risotto.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],

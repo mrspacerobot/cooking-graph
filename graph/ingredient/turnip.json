@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/daikon",
+      "allows": true,
+      "when": ["technique/simmer"],
+      "not_when": ["technique/grate-daikon"],
+      "ratio": null,
+      "caveat": "It is more peppery and drier, with a firmer bite.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

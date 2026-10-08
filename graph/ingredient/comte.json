@@ -36,6 +36,24 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
       "caveat": "It melts and browns with a nutty flavour; the age of the cheese changes how strong it tastes.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/beaufort",
+      "allows": true,
+      "when": ["technique/gratinate"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It browns and melts as well, with a nuttier and slightly sharper taste.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/emmental",
+      "allows": true,
+      "when": ["dish/croque-monsieur"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It melts and browns as well, with a stronger nutty taste than emmental.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

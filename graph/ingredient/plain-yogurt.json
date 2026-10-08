@@ -29,6 +29,24 @@
       "ratio": null,
       "caveat": "Its acidity and milk proteins can curdle in the hot liaison. A yogurt sauce is a different method.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/creme-fraiche",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/reduce", "technique/simmer"],
+      "ratio": null,
+      "caveat": "Yogurt curdles and splits in a hot sauce where creme fraiche stays smooth.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/strained-yogurt",
+      "allows": true,
+      "when": ["preparation/garlic-yogurt"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is thinner, so drain it first or the sauce runs.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

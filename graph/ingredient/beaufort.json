@@ -23,7 +23,26 @@
     ],
     "note": "Animal rennet is taken from the stomach of a calf."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/comte",
+      "allows": true,
+      "when": ["technique/gratinate"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It melts evenly and browns well, and tastes a little sweeter and less nutty.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/gruyere",
+      "allows": true,
+      "when": ["technique/gratinate", "dish/french-onion-soup", "dish/croque-monsieur"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It melts as smoothly and browns as deep, with a slightly sweeter, milder taste.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

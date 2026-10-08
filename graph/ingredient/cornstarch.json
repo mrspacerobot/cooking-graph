@@ -19,7 +19,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/flour",
+      "allows": true,
+      "when": ["technique/thicken"],
+      "not_when": ["technique/make-a-bechamel", "technique/make-a-roux"],
+      "ratio": {"stand_in": 0.5, "original": 1, "by": "weight"},
+      "caveat": "It thickens quickly to a clear gloss, with no raw flour taste, but it does not suit a roux.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/potato-starch",
+      "allows": true,
+      "when": ["dish/karaage"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "It gives a harder, crunchier coating.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

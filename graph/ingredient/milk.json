@@ -29,6 +29,15 @@
       "ratio": null,
       "caveat": "Milk alone leaves a thinner cooking liquid here. Changing the reduction or thickening is a different method.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/water",
+      "allows": true,
+      "when": ["preparation/choux-pastry", "preparation/pancake-batter"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It makes a richer, softer batter that browns faster.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

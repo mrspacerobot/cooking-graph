@@ -22,7 +22,35 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/beef-fillet",
+      "allows": true,
+      "when": ["technique/sear"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It has more flavour and more chew, and the cut is usually less thick.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/rib-steak",
+      "allows": true,
+      "when": ["dish/steak-au-poivre", "technique/sear"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is leaner, so the pan gets less fat and the taste is less rich.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/pork-belly",
+      "allows": true,
+      "when": ["dish/nikujaga"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is leaner, so the broth is cleaner. Slice it thin.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

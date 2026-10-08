@@ -25,7 +25,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/pancetta",
+      "allows": true,
+      "when": ["dish/spaghetti-alla-carbonara"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives more fat and a stronger, peppery taste.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],

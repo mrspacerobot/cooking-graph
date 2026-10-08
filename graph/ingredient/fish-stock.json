@@ -35,7 +35,37 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/beef-stock",
+      "allows": false,
+      "when": [],
+      "not_when": [
+        "dish/boeuf-bourguignon", "dish/french-onion-soup", "dish/ossobuco-alla-milanese", "technique/braise"
+      ],
+      "ratio": null,
+      "caveat": "Fish stock tastes of the sea and has none of the depth of a beef stock.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/vegetable-stock",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/pasta-e-fagioli", "dish/risotto-ai-funghi-porcini", "dish/vichyssoise"],
+      "ratio": null,
+      "caveat": "Fish stock tastes of the sea, and vegetable dishes lose their own flavour.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/coq-au-vin", "dish/vichyssoise", "preparation/avgolemono"],
+      "ratio": null,
+      "caveat": "Its sea flavour takes over and clashes with the dish.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q5454675", "tier": "sourced"}

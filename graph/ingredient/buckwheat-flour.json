@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/flour",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/fresh-pasta-dough"],
+      "ratio": null,
+      "caveat": "It has no gluten, so a dough made only of it will not hold together.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],

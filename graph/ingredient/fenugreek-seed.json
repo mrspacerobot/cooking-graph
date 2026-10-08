@@ -22,7 +22,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cumin",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/temper-spices-in-hot-fat"],
+      "ratio": null,
+      "caveat": "It turns very bitter in hot fat and tastes of maple, nothing like cumin.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/mustard-seed",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/temper-spices-in-hot-fat"],
+      "ratio": null,
+      "caveat": "It does not crackle, and it turns bitter fast where mustard seed turns nutty.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],

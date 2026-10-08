@@ -26,7 +26,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/morcilla",
+      "allows": true,
+      "when": ["technique/pan-fry"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is milder and lacks the paprika, so the dish loses some of its warmth.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q15462145", "tier": "sourced"}

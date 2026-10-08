@@ -26,7 +26,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/small-pasta",
+      "allows": true,
+      "when": ["dish/pasta-e-fagioli"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The little tubes stay firm in a thick soup and hold broth inside.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],

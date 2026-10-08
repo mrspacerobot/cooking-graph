@@ -34,6 +34,15 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
       "caveat": "The grains are denser and less airy than couscous steamed by hand, and they take their taste from the liquid alone and not from the steam of a stew.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/fine-bulgur",
+      "allows": true,
+      "when": ["dish/tabbouleh", "dish/kisir"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is softer and milder, and swells fast in the liquid so it is not soaked long.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

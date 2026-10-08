@@ -40,6 +40,15 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "Bought stock is salted and has little gelatine, so it turns salty before it turns syrupy when it is boiled down.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": true,
+      "when": ["dish/cote-de-porc-charcutiere", "dish/navarin-d-agneau", "technique/braise"],
+      "not_when": ["dish/poulet-a-l-estragon", "dish/vichyssoise", "preparation/avgolemono", "preparation/veloute"],
+      "ratio": null,
+      "caveat": "It is darker and stronger and takes over delicate flavours.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/pigeon-pea",
+      "allows": true,
+      "when": ["dish/dal-tadka"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The taste is plainer and the dal thickens harder.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

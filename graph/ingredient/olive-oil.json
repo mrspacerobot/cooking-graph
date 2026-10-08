@@ -43,6 +43,33 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "Its fruity flavour changes the finish. Keep it below the point where it smokes.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/duck-fat",
+      "allows": true,
+      "when": ["dish/roast-potatoes", "dish/roasted-root-vegetables"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is lighter and fruity, and gives a less crisp, less rich result.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/ghee",
+      "allows": true,
+      "when": ["dish/mloukhieh", "preparation/taqliyeh"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is fruity instead of nutty and buttery.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/smen",
+      "allows": true,
+      "when": ["dish/harira", "dish/lamb-tagine-with-prunes", "preparation/msemen-dough"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is fruity instead of tangy and aged.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

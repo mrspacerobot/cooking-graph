@@ -26,7 +26,35 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/ditalini",
+      "allows": true,
+      "when": ["dish/pasta-e-fagioli"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The grains are lighter and soften faster in a thick bean soup, so add it late.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/spaghetti",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/spaghetti-all-amatriciana", "dish/spaghetti-alla-carbonara", "dish/spaghetti-alle-vongole"],
+      "ratio": null,
+      "caveat": "The tiny grains cannot be twirled or tossed like long strands and sit in a heap.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/vermicelli",
+      "allows": true,
+      "when": ["dish/chicken-broth-with-vermicelli"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The grains sit in the broth like rice and need longer than the fine strands.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/greek", "tier": "drafted"}
   ],

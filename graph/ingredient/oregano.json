@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/thyme",
+      "allows": true,
+      "when": ["dish/roasted-root-vegetables", "technique/grill", "technique/roast"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It tastes sharper and more peppery, so use a little less.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/greek", "tier": "drafted"}
   ],

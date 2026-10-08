@@ -26,7 +26,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/trenette",
+      "allows": true,
+      "when": ["dish/trenette-al-pesto"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The round rods hold the sauce less well than flat ribbons, so toss them well.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],

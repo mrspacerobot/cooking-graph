@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/kabocha",
+      "allows": true,
+      "when": ["technique/puree"],
+      "not_when": ["technique/simmer"],
+      "ratio": null,
+      "caveat": "It is wetter and less sweet, and its skin should be peeled away.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q165308", "tier": "sourced"}

@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/onion",
+      "allows": true,
+      "when": ["technique/sweat", "technique/simmer"],
+      "not_when": ["technique/fry-onions-deep-brown"],
+      "ratio": null,
+      "caveat": "It is milder and silkier and gives less of the deep sweetness of onion.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

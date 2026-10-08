@@ -42,6 +42,24 @@
       "ratio": null,
       "caveat": "It tastes sharper and lacks the citrus fragrance. Adjust the sharpness at the finish.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/red-wine-vinegar",
+      "allows": true,
+      "when": ["preparation/agrodolce", "preparation/vinaigrette"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is lighter and cleaner, with less fruit.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/white-wine",
+      "allows": true,
+      "when": ["preparation/court-bouillon"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sharper and has no wine fruit, so use less.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

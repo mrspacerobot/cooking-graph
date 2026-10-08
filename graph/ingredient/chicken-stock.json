@@ -49,6 +49,35 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "Bought stock is salted and has little gelatine. Season at the end, and do not expect a sauce made by boiling it down to thicken or set.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/beef-stock",
+      "allows": true,
+      "when": ["dish/ossobuco-alla-milanese", "technique/braise"],
+      "not_when": ["technique/reduce"],
+      "ratio": null,
+      "caveat": "The dish comes out paler and milder, with less depth.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/vegetable-stock",
+      "allows": true,
+      "when": ["dish/poireaux-braises", "dish/vichyssoise", "technique/add-stock-gradually", "technique/simmer"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "It adds a meaty taste and body that the vegetable one lacks.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "preparation/brown-stock",
+      "allows": true,
+      "when": [
+        "dish/coq-au-vin", "dish/cote-de-porc-charcutiere", "dish/navarin-d-agneau", "dish/poulet-saute-chasseur"
+      ],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is paler and lighter in body, so the sauce looks lighter.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

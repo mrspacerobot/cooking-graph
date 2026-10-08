@@ -24,7 +24,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/tomato-paste",
+      "allows": true,
+      "when": ["dish/bulgur-pilavi", "dish/kisir", "dish/kuru-fasulye", "preparation/lentil-bulgur-mixture"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sweeter and smokier, with a pepper note.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],

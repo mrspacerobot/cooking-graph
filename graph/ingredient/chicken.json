@@ -22,7 +22,35 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/capon",
+      "allows": true,
+      "when": ["technique/roast"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is smaller and drier, so it needs less time and some extra fat.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/guinea-fowl",
+      "allows": true,
+      "when": ["technique/roast", "technique/braise"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is milder and has less of the gamey taste.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chicken-thigh",
+      "allows": true,
+      "when": ["dish/mloukhieh", "dish/weeknight-chicken-with-couscous"],
+      "not_when": ["dish/karaage"],
+      "ratio": null,
+      "caveat": "Breast pieces dry out sooner than thigh, so take them out of the pot earlier.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

@@ -23,7 +23,20 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cabbage",
+      "allows": true,
+      "when": [
+        "dish/cabbage-thoran", "dish/seven-vegetable-couscous", "technique/braise", "technique/shred-cabbage",
+        "technique/stir-fry"
+      ],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is firmer and takes longer to soften.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],

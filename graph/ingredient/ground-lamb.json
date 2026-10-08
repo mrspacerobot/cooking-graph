@@ -23,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/minced-beef",
+      "allows": true,
+      "when": ["dish/kefta-brochettes"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "It is fattier and stronger in taste, and it shrinks more as it cooks.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/moroccan", "tier": "drafted"}
   ],

@@ -38,22 +38,30 @@ def merged_ratio(first, second):
 
 
 def merged_row(first, second):
-    """The kept row, or a reason it cannot be kept."""
+    """The kept row and a note, or None and the reason it cannot be kept.
+
+    The note is "contexts differ" when both drafters said the swap works but named different
+    contexts and neither excludes the other's: both are kept, and the report says so.
+    """
     a, b = first["add"], second["add"]
     if a["allows"] != b["allows"]:
         return None, "verdicts-differ"
     if not a["allows"]:
         if a["when"] or b["when"]:
             return None, "exclusion-with-a-context"
-        return dict(a, when=[], not_when=sorted(set(a["not_when"]) | set(b["not_when"]), key=str), ratio=None), None
+        return dict(a, when=[], not_when=sorted(set(a["not_when"]) | set(b["not_when"])), ratio=None), None
+    differ = False
     if a["when"] and b["when"]:
         shared = [one for one in a["when"] if one in b["when"]]
         if not shared:
-            return None, "contexts-do-not-overlap"
+            if set(a["when"]) & set(b["not_when"]) or set(b["when"]) & set(a["not_when"]):
+                return None, "context-contradicted"
+            shared = sorted(set(a["when"]) | set(b["when"]))
+            differ = True
     else:
         shared = a["when"] or b["when"]
     return dict(a, when=shared, not_when=sorted(set(a["not_when"]) | set(b["not_when"])),
-                ratio=merged_ratio(a["ratio"], b["ratio"]), tier="drafted"), None
+                ratio=merged_ratio(a["ratio"], b["ratio"]), tier="drafted"), ("contexts differ" if differ else None)
 
 
 def merge(first, second):
@@ -64,12 +72,12 @@ def merge(first, second):
         if pair not in one or pair not in two:
             single.append(one.get(pair) or two[pair])
             continue
-        row, why = merged_row(one[pair], two[pair])
+        row, note = merged_row(one[pair], two[pair])
         if row is None:
-            disputed.append(Dispute(pair[0], pair[1], why, one[pair]["add"], two[pair]["add"]))
+            disputed.append(Dispute(pair[0], pair[1], note, one[pair]["add"], two[pair]["add"]))
         else:
-            agreed.append({"file": pair[0], "field": "stands_in_for", "add": dict(row, tier="drafted"),
-                           "why": "both drafters wrote this pair"})
+            reason = "both drafters wrote this pair" + ("; contexts differ, both kept" if note else "")
+            agreed.append({"file": pair[0], "field": "stands_in_for", "add": dict(row, tier="drafted"), "why": reason})
     return Result(agreed, disputed, single)
 
 
@@ -79,7 +87,8 @@ def describe(row):
 
 
 def report(result):
-    lines = ["agreed: %d rows kept" % len(result.agreed),
+    differ = sum("contexts differ" in one["why"] for one in result.agreed)
+    lines = ["agreed: %d rows kept, of which %d where contexts differ and both were kept" % (len(result.agreed), differ),
              "disputed: %d pairs for the owner" % len(result.disputed),
              "single: %d pairs only one drafter wrote, not kept" % len(result.single)]
     for dispute in result.disputed:

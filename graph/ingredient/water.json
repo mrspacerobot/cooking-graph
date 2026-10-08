@@ -19,7 +19,44 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": true,
+      "when": ["dish/poulet-roti"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The pan juices make the flavour here, so the liquid is thinner but still works.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/egg",
+      "allows": true,
+      "when": ["preparation/shortcrust-pastry"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The pastry is less rich and a little crisper.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/stock",
+      "allows": true,
+      "when": ["dish/pasta-e-fagioli", "dish/bulgur-pilavi", "dish/hunkar-begendi"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is thinner and less savoury, so season and add aromatics.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/vegetable-stock",
+      "allows": true,
+      "when": ["dish/pasta-e-fagioli"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is thinner and plainer, so season more.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

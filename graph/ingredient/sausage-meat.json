@@ -33,7 +33,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/ground-pork",
+      "allows": true,
+      "when": ["technique/shape-meatballs"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "It is already seasoned, so the other salt and spice must be cut back.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/minced-beef",
+      "allows": true,
+      "when": ["preparation/ragu", "technique/make-a-ragu"],
+      "not_when": ["dish/kefta-brochettes"],
+      "ratio": null,
+      "caveat": "It is already seasoned and fatty, so less salt is needed and the sauce is richer.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q995566", "tier": "sourced"}

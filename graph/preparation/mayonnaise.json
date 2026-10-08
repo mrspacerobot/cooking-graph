@@ -35,7 +35,17 @@
   "teaches": [
     {"thing": "technique/emulsify", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/rouille",
+      "allows": true,
+      "when": ["dish/soupe-de-poisson"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Stir in crushed garlic, chilli and saffron first, or it will taste mild and look pale.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

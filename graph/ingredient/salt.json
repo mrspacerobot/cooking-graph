@@ -19,7 +19,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/coarse-salt",
+      "allows": true,
+      "when": ["dish/pulpo-a-la-gallega"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is finer and tastes saltier by volume, so go gently.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

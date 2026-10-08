@@ -23,7 +23,44 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/ground-lamb",
+      "allows": true,
+      "when": ["dish/kefta-brochettes"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "It is leaner and milder, so the dish is drier and less rich.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/ground-pork",
+      "allows": true,
+      "when": ["preparation/kima", "technique/shape-meatballs"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "It is leaner, so the dish is drier and tastes beefier.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/boiled-beef",
+      "allows": true,
+      "when": ["dish/hachis-parmentier"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Brown it well and season it firmly, as it lacks the deep taste of beef boiled in stock.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sausage-meat",
+      "allows": true,
+      "when": ["preparation/ragu"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is leaner and plain, so add salt, fat and spices to match.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

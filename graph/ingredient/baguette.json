@@ -25,7 +25,17 @@
     ],
     "note": "By tradition made of flour, water, salt and yeast only."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/bread",
+      "allows": true,
+      "when": ["dish/salade-de-chevre-chaud", "preparation/breadcrumbs"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a crisper crust and a lighter, airier crumb.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

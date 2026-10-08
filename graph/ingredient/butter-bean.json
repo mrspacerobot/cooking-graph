@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/white-beans",
+      "allows": true,
+      "when": ["dish/cassoulet", "dish/fasolada", "technique/braise", "technique/simmer"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "They are larger and creamier and can fall apart if cooked hard.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

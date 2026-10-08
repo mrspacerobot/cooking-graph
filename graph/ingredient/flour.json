@@ -21,7 +21,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cornstarch",
+      "allows": true,
+      "when": ["technique/thicken"],
+      "not_when": [],
+      "ratio": {"stand_in": 2.0, "original": 1, "by": "weight"},
+      "caveat": "The liquid turns cloudier and needs to simmer longer so the raw taste cooks out.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/semolina",
+      "allows": true,
+      "when": ["preparation/fresh-pasta-dough"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The dough is softer and the pasta less firm to the bite.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

@@ -21,7 +21,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/oregano",
+      "allows": true,
+      "when": ["dish/souvlaki"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is softer and less sharp, with a gentler warmth.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/rosemary",
+      "allows": true,
+      "when": ["dish/pasta-e-fagioli", "technique/roast"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is gentler and less resinous, so the soup tastes less piney.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

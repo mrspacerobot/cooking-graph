@@ -22,7 +22,28 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/mackerel",
+      "allows": true,
+      "when": ["technique/grill"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Both are oily and strongly flavoured; the size and the bones differ.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sea-bass",
+      "allows": false,
+      "when": [],
+      "not_when": [
+        "technique/bake-in-a-salt-crust", "technique/bake-in-parchment", "technique/poach", "technique/steam"
+      ],
+      "ratio": null,
+      "caveat": "It is small, soft and oily, so it cannot be treated like a firm whole fish.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/moroccan", "tier": "drafted"}
   ],

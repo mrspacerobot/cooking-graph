@@ -30,7 +30,17 @@
     ],
     "note": "The stricter answer is recorded, as for sugar."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/sugar",
+      "allows": true,
+      "when": ["preparation/agrodolce", "preparation/sugar-syrup"],
+      "not_when": ["preparation/creme-anglaise"],
+      "ratio": null,
+      "caveat": "It tastes of caramel, colours the syrup dark and browns sooner.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q11190742", "tier": "sourced"}

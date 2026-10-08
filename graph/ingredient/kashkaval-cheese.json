@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/white-cheese",
+      "allows": true,
+      "when": ["dish/gozleme"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It melts and stretches instead of staying crumbly, and is less salty.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],

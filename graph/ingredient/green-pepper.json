@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/red-pepper",
+      "allows": true,
+      "when": ["technique/saute"],
+      "not_when": ["dish/escalivada", "technique/char"],
+      "ratio": null,
+      "caveat": "It is grassier and a little bitter, with a firmer wall.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"},
     {"thing": "cuisine/spanish", "tier": "drafted"}

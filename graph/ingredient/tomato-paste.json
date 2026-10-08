@@ -27,7 +27,35 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/red-pepper-paste",
+      "allows": true,
+      "when": ["dish/bulgur-pilavi", "dish/kisir", "dish/kuru-fasulye", "preparation/lentil-bulgur-mixture"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is tangier and has no pepper note.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tinned-tomatoes",
+      "allows": true,
+      "when": ["dish/fasolada", "preparation/kima", "preparation/ragu"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is far more concentrated, so loosen it with water.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tomato",
+      "allows": true,
+      "when": ["dish/bamieh-bi-zeit", "dish/green-beans-braised-in-olive-oil", "dish/kousa-mahshi", "preparation/kima"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is far more concentrated, so loosen it with water.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

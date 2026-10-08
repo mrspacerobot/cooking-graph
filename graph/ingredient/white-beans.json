@@ -21,7 +21,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/borlotti-bean",
+      "allows": true,
+      "when": ["dish/pasta-e-fagioli"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "The broth stays paler and the taste is milder.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/butter-bean",
+      "allows": true,
+      "when": ["technique/simmer"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "They are smaller and less floury.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

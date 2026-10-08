@@ -39,6 +39,24 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "Bought stock is salted. Season at the end.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": true,
+      "when": ["dish/risotto-ai-funghi-porcini", "dish/vichyssoise"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "It is thinner and has less depth, so the dish turns out lighter.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/beef-stock",
+      "allows": true,
+      "when": ["dish/risotto-ai-funghi-porcini"],
+      "not_when": ["dish/ossobuco-alla-milanese"],
+      "ratio": null,
+      "caveat": "It is thinner and lacks the meaty depth.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

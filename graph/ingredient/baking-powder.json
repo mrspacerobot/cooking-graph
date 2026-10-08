@@ -27,7 +27,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/baking-soda",
+      "allows": true,
+      "when": ["preparation/khoya-dough"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is weaker, so use more, and the lift is gentler.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q29476", "tier": "sourced"}

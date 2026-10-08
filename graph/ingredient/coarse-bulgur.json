@@ -25,7 +25,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/rice",
+      "allows": true,
+      "when": ["technique/cook-pilaf"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is nuttier and chewier and takes up liquid in a different measure, so check the pot.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"},
     {"thing": "cuisine/lebanese", "tier": "drafted"}

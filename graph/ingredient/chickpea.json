@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/fava-bean",
+      "allows": true,
+      "when": ["technique/fry-fritters"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The fritter is paler and nuttier, and is ground from the soaked seed.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/moroccan", "tier": "drafted"},

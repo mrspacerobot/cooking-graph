@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/parsley",
+      "allows": true,
+      "when": ["dish/weeknight-chicken-with-couscous"],
+      "not_when": ["dish/tabbouleh", "technique/make-a-gremolata"],
+      "ratio": null,
+      "caveat": "The taste is stronger and more citrusy, and not everyone likes it.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"},
     {"thing": "cuisine/lebanese", "tier": "drafted"},

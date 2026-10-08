@@ -19,7 +19,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/paprika",
+      "allows": true,
+      "when": ["preparation/chilli-butter"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is hotter and gives flecks instead of an even colour.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

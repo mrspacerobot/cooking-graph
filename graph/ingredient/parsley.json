@@ -21,7 +21,53 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/chervil",
+      "allows": true,
+      "when": ["dish/sole-meuniere", "technique/garnish"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The finish is plainer and grassier, without the faint aniseed of chervil.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chives",
+      "allows": true,
+      "when": ["dish/oeufs-mayonnaise", "dish/poireaux-vinaigrette"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives green freshness as a garnish but none of the mild onion taste.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/coriander-leaf",
+      "allows": true,
+      "when": ["dish/weeknight-chicken-with-couscous"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It keeps the green freshness but loses the bright citrus note.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/dill",
+      "allows": true,
+      "when": ["dish/dolmades", "dish/lahanodolmades", "dish/spanakopita"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is grassier and lacks the aniseed note.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/mint",
+      "allows": true,
+      "when": ["dish/dolmades", "dish/fattoush", "dish/kisir"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is grassier, with no cool note.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

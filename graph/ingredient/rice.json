@@ -21,7 +21,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/coarse-bulgur",
+      "allows": true,
+      "when": ["technique/cook-bulgur-pilaf", "dish/bulgur-pilavi"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is softer and milder, without the nutty chew of the wheat.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/vermicelli",
+      "allows": true,
+      "when": ["dish/harira"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It takes longer to soften and thickens the soup more.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],

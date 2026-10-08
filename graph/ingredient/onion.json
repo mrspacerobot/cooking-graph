@@ -31,6 +31,15 @@
       "ratio": null,
       "caveat": "Stronger and less sweet. Cut it finer and sweat it a little longer.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/spring-onion",
+      "allows": true,
+      "when": ["dish/lahanodolmades", "dish/spanakopita"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sharper and sweeter, and needs a little longer to soften.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/mussel",
+      "allows": true,
+      "when": ["technique/steam", "dish/moules-marinieres"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Clams are smaller and need purging of grit, and they give a saltier liquor.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"},
     {"thing": "cuisine/spanish", "tier": "drafted"}

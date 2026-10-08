@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/calfs-liver",
+      "allows": true,
+      "when": ["technique/pan-fry", "technique/sear"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It has a stronger taste, and the thin skin and tubes must be trimmed away.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/moroccan", "tier": "drafted"}
   ],

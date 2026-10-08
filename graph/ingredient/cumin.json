@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/mustard-seed",
+      "allows": true,
+      "when": ["technique/temper-spices-in-hot-fat"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives an earthy scent in place of the nutty one and does not crackle, so watch the fat for the first sizzle.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"},
     {"thing": "cuisine/moroccan", "tier": "drafted"},

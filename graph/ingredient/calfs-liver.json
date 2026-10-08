@@ -22,7 +22,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/foie-gras",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/pan-fry", "technique/sear"],
+      "ratio": null,
+      "caveat": "It is lean and grainy and has no fat that melts in the pan, so the silky richness is missing.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/lamb-liver",
+      "allows": true,
+      "when": ["technique/pan-fry", "technique/sear"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is milder and more tender, and it still turns grainy if it is cooked on.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

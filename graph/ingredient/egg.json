@@ -20,7 +20,29 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/egg-yolk",
+      "allows": false,
+      "when": [],
+      "not_when": [
+        "preparation/hollandaise", "technique/make-a-bearnaise", "technique/make-a-custard", "technique/make-a-sabayon",
+        "technique/thicken-with-egg-yolk"
+      ],
+      "ratio": null,
+      "caveat": "The white thins and sets the mixture, so it turns pale, loose and cloudy instead of rich.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/water",
+      "allows": true,
+      "when": ["preparation/shortcrust-pastry"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The pastry is richer and more tender, and browns more.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

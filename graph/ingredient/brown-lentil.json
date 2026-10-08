@@ -23,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/green-lentils",
+      "allows": true,
+      "when": ["dish/harira", "technique/simmer"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "They are softer and earthier.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],

@@ -26,7 +26,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/lyon-sausage",
+      "allows": true,
+      "when": ["technique/poach", "technique/reheat"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is finer and milder, without the pieces of fat.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

@@ -25,7 +25,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cornstarch",
+      "allows": true,
+      "when": ["dish/karaage", "technique/coat-in-starch"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "It gives a clearer gel and a paler, thinner crust, and it breaks down if boiled hard.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],

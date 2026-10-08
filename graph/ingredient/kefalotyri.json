@@ -23,7 +23,26 @@
     ],
     "note": "Animal rennet is taken from the stomach of a young calf, kid or lamb."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/pecorino",
+      "allows": true,
+      "when": ["dish/pastitsio", "dish/spaghetti-alla-carbonara", "technique/gratinate"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is hard, salty and sharp in the same way, with a milder sheep's milk taste.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/parmesan",
+      "allows": true,
+      "when": ["dish/pastitsio"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is saltier and sharper, and browns well on top.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/greek", "tier": "drafted"}
   ],

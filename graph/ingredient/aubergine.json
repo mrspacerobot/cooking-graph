@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/courgette",
+      "allows": true,
+      "when": ["technique/roast"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It soaks up more oil, turns creamier and darker, and takes longer to soften.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

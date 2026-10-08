@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/veal-bones",
+      "allows": true,
+      "when": ["technique/simmer"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives much more gelatine, so the stock may set firm when cold.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

@@ -23,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/red-chilli-powder",
+      "allows": true,
+      "when": ["preparation/spice-paste", "technique/make-spice-paste"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The paste turns a bright red with far less heat, so add more if heat is wanted.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],

@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/parsley",
+      "allows": true,
+      "when": ["dish/dolmades", "dish/gozleme", "dish/spanakopita"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is feathery and aniseed-like instead of grassy.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/greek", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"}

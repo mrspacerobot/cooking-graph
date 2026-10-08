@@ -23,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/beef-bones",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/brown-stock", "technique/simmer"],
+      "ratio": null,
+      "caveat": "It gives little gelatine and a lot of fat, which clouds the stock.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

@@ -22,7 +22,20 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/plain-yogurt",
+      "allows": true,
+      "when": [
+        "preparation/garlic-yogurt", "technique/make-garlic-yogurt", "technique/make-raita",
+        "technique/marinate-in-yogurt"
+      ],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is thicker and richer, so loosen it with a little water or milk.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],

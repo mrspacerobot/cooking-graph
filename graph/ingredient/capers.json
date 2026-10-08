@@ -23,7 +23,17 @@
     ],
     "note": "Whether a trace of alcohol in vinegar counts is for a person to decide."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cornichons",
+      "allows": true,
+      "when": ["preparation/tartar-sauce", "technique/make-tartar-sauce"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "They are smaller and saltier, with less crunch.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

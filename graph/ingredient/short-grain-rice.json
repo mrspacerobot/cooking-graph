@@ -23,7 +23,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/basmati-rice",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/chicken-biryani", "technique/cook-pilaf"],
+      "ratio": null,
+      "caveat": "The grains turn sticky and soft, where this needs dry separate grains.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/rice",
+      "allows": true,
+      "when": ["dish/dolmades"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is stickier and holds the filling together.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],

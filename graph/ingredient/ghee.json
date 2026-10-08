@@ -42,6 +42,24 @@
       "ratio": null,
       "caveat": "It supplies the fat for the yolk emulsion with a nuttier flavour and less water.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/oil",
+      "allows": true,
+      "when": ["dish/palak-paneer", "preparation/fried-onions"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It tastes nutty and rich, and browns the onions sooner.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/olive-oil",
+      "allows": true,
+      "when": ["dish/mloukhieh", "preparation/taqliyeh"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is nutty and buttery instead of fruity.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/celery",
+      "allows": true,
+      "when": ["technique/make-a-soffritto"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is sweeter and leaves a note of aniseed in the base.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

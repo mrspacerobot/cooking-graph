@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/chickpea",
+      "allows": true,
+      "when": ["technique/fry-fritters"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The fritter is greener and earthier.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],

@@ -40,7 +40,26 @@
     {"thing": "technique/simmer", "tier": "drafted"},
     {"thing": "technique/strain", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": true,
+      "when": ["technique/simmer"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "Homemade stock is unsalted and sets to a jelly, so season it and expect more body.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "preparation/brown-stock",
+      "allows": true,
+      "when": ["dish/coq-au-vin", "dish/poulet-saute-chasseur"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The sauce comes out paler and lighter, without the roasted depth.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

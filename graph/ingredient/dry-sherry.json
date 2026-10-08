@@ -27,7 +27,44 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/madeira",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is drier and sharper, so the sauce loses its sweetness.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/marsala",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/tiramisu", "preparation/mascarpone-cream"],
+      "ratio": null,
+      "caveat": "Dry sherry is not sweet, and the dessert depends on a sweet wine.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/vin-jaune",
+      "allows": true,
+      "when": ["technique/reduce"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is fortified and sharper, but it has the same nutty depth.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/white-wine",
+      "allows": true,
+      "when": ["technique/deglaze"],
+      "not_when": ["dish/moules-marinieres", "preparation/court-bouillon"],
+      "ratio": null,
+      "caveat": "It is nuttier and more potent, so use a smaller splash and boil it down well.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],

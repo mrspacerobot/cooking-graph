@@ -26,7 +26,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/spaghetti",
+      "allows": true,
+      "when": ["dish/spaghetti-all-amatriciana", "dish/spaghetti-alla-carbonara"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "The flat ribbons hold more sauce and have a little more chew.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],

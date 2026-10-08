@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/egg",
+      "allows": true,
+      "when": ["dish/spaghetti-alla-carbonara"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is richer and more golden, and makes a silkier sauce.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q181409", "tier": "sourced"}

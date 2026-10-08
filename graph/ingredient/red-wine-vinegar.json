@@ -33,7 +33,35 @@
     ],
     "note": "Whether what cleared the wine is still in the vinegar is for a person to decide."
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/lemon",
+      "allows": true,
+      "when": ["preparation/vinaigrette"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a winey sourness without the citrus note.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/lemon-juice",
+      "allows": true,
+      "when": ["dish/melitzanosalata"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a winey sourness with no citrus note.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/white-wine-vinegar",
+      "allows": true,
+      "when": ["preparation/agrodolce", "preparation/vinaigrette"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is darker and fruitier, and colours the sauce.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

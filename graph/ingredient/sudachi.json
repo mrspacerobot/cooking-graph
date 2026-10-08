@@ -19,7 +19,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/lemon",
+      "allows": true,
+      "when": ["dish/karaage", "dish/saba-shioyaki"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is greener and more fragrant, with a sharper edge.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],

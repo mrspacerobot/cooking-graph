@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/paprika",
+      "allows": true,
+      "when": ["dish/pulpo-a-la-gallega", "preparation/salsa-brava", "preparation/sofrito"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It brings heat the mild kind lacks.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],

@@ -23,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/sardine",
+      "allows": true,
+      "when": ["technique/grill"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Both are oily and strongly flavoured; the size and the bones differ.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],

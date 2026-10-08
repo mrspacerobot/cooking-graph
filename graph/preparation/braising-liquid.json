@@ -9,7 +9,17 @@
     {"thing": "group/cooking-liquors", "tier": "drafted"}
   ],
   "teaches": [],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/jus",
+      "allows": true,
+      "when": ["technique/reduce"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is gentler and has more body from the meat that cooked in it.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [],
   "same_as": []
 }

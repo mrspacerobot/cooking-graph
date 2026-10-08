@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/bread",
+      "allows": true,
+      "when": ["preparation/rouille"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It makes a smoother, milder thickener.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

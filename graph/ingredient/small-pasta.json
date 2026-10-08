@@ -26,7 +26,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/ditalini",
+      "allows": true,
+      "when": ["dish/pasta-e-fagioli"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The shapes are smaller and soften faster, so add them late.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/vermicelli",
+      "allows": true,
+      "when": ["dish/chicken-broth-with-vermicelli"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The shapes are chunkier and need longer in the broth.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],

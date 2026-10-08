@@ -29,7 +29,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/mirin",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/nikujaga", "dish/takikomi-gohan", "dish/tamagoyaki", "technique/glaze", "technique/simmer"],
+      "ratio": null,
+      "caveat": "Vinegar is sour and not sweet, so it ruins the balance of the simmering liquid.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],

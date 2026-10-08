@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cinnamon",
+      "allows": true,
+      "when": ["dish/arayes", "dish/kousa-mahshi"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It tastes peppery and clove-like instead of sweet and woody.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],

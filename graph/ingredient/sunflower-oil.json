@@ -34,6 +34,51 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "Tastes of nothing. Olive oil whisked hard can turn bitter, so a plain oil gives a milder mayonnaise.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/butter",
+      "allows": true,
+      "when": ["dish/menemen", "dish/bulgur-pilavi", "dish/kuru-fasulye", "dish/msemen", "preparation/msemen-dough"],
+      "not_when": ["dish/mushrooms-with-garlic-and-parsley", "technique/mount-with-butter"],
+      "ratio": null,
+      "caveat": "It loses the buttery taste and the browning, but it heats hotter before it smokes.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/duck-fat",
+      "allows": true,
+      "when": ["dish/roast-potatoes", "dish/roasted-root-vegetables"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is plain and gives a less rich, less savoury crust.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/oil",
+      "allows": true,
+      "when": ["dish/karaage", "dish/sfenj", "dish/tonkatsu", "dish/yakisoba"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "It is light and neutral, and suits frying well.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/smen",
+      "allows": true,
+      "when": ["dish/msemen", "preparation/msemen-dough"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is plain, with none of the aged tang.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "preparation/clarified-butter",
+      "allows": true,
+      "when": ["dish/sole-meuniere"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It loses the nutty butter taste, so the fish tastes plainer.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

@@ -176,6 +176,54 @@ class ComposeTest(unittest.TestCase):
         self.assertNotEqual(0, none.returncode)
 
 
+class PluralTest(unittest.TestCase):
+    """A cook types lemons and onions. An exact name always wins, and a guess must be unique."""
+
+    def setUp(self):
+        self.things = kitchen()
+
+    def resolve(self, word, kinds=("ingredient", "preparation")):
+        return queries.resolve(self.things, word, kinds)
+
+    def test_a_plural_reads_as_the_one_thing_it_names(self):
+        self.assertEqual("ingredient/onion", self.resolve("onions"))
+        self.assertEqual("ingredient/onion", self.resolve("Onions"))
+
+    def test_the_other_plural_endings(self):
+        for plural, slug in (("berries", "berry"), ("tomatoes", "tomato"), ("peaches", "peach")):
+            food = copy.deepcopy(self.things["ingredient/onion"].data)
+            food.update(id="ingredient/" + slug, names={"en": slug.capitalize()}, aliases={})
+            self.things[food["id"]] = Thing("", "ingredient", food)
+            with self.subTest(plural=plural):
+                self.assertEqual("ingredient/" + slug, self.resolve(plural))
+
+    def test_an_exact_name_wins_over_a_plural_reading(self):
+        food = copy.deepcopy(self.things["ingredient/butter"].data)
+        food.update(id="ingredient/onions-pickled", names={"en": "Onions"}, aliases={})
+        self.things[food["id"]] = Thing("", "ingredient", food)
+        self.assertEqual("ingredient/onions-pickled", self.resolve("onions"))
+
+    def test_a_plural_that_could_be_two_things_is_an_error(self):
+        food = copy.deepcopy(self.things["ingredient/onion"].data)
+        food.update(id="ingredient/onion-red", names={"en": "Onion"}, aliases={})
+        self.things[food["id"]] = Thing("", "ingredient", food)
+        with self.assertRaises(ValueError):
+            self.resolve("onions")
+
+    def test_a_word_that_names_nothing_stays_an_error_and_a_short_word_is_not_cut(self):
+        with self.assertRaises(ValueError):
+            self.resolve("futures")
+        food = copy.deepcopy(self.things["ingredient/onion"].data)
+        food.update(id="ingredient/ca", names={"en": "Ca"}, aliases={})
+        self.things[food["id"]] = Thing("", "ingredient", food)
+        with self.assertRaises(ValueError):
+            self.resolve("cas")
+
+    def test_compose_takes_a_plural_in_the_pantry(self):
+        answer = queries.compose(self.things, ["sweat"], ["onions", "oil"])
+        self.assertEqual(["ingredient/oil", "ingredient/onion"], answer["at_home"])
+
+
 BUTTER_CHICKEN = ["--technique", "technique/marinate-in-yogurt", "--technique", "technique/fry-masala-base",
                   "--technique", "technique/cook-in-masala-gravy"]
 

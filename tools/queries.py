@@ -6,11 +6,28 @@ SAFETY = "Safety records are unverified. Internal graph exploration only; nothin
 FOODS = ("ingredient", "preparation")
 
 
+def singular_forms(word):
+    """What a plural may be the plural of, for a word of four letters or more. A guess, so resolve wants it unique."""
+    plain = names.plain(word)
+    forms = []
+    for ending, instead in (("ies", "y"), ("oes", "o"), ("es", ""), ("s", "")):
+        if plain.endswith(ending) and len(plain) - len(ending) >= 3:
+            forms.append(plain[:-len(ending)] + instead)
+    return forms
+
+
+def named(things, plain_word, kinds):
+    return sorted(thing_id for thing_id, thing in things.items()
+                  if thing.kind in kinds and plain_word in names.plain_names(thing.data))
+
+
 def resolve(things, word, kinds):
+    """An id, else an exact name, else the one thing a plural reads as. Ambiguity is an error, never a pick."""
     if word in things and things[word].kind in kinds:
         return word
-    matches = sorted(thing_id for thing_id, thing in things.items()
-                     if thing.kind in kinds and names.plain(word) in names.plain_names(thing.data))
+    matches = named(things, names.plain(word), kinds)
+    if not matches:
+        matches = sorted({found for form in singular_forms(word) for found in named(things, form, kinds)})
     if len(matches) != 1:
         raise ValueError("unknown or ambiguous %s: %s" % ("/".join(kinds), word))
     return matches[0]

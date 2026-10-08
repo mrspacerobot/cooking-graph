@@ -98,7 +98,7 @@ the browser instructions in `AGENTS.md`.
 
 They need Python 3.9 or later and nothing else.
 
-The three questions accept exact ids or unambiguous names and aliases. Quote names with spaces.
+The three questions accept exact ids or unambiguous names and aliases, and read a plural (lemons) as the one thing it names when no exact name matches. Quote names with spaces.
 Repeat `--avoid` for several facts. Output is deterministic JSON. A broken repository or an unknown
 or ambiguous input is an error, never a partial answer.
 

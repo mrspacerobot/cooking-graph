@@ -39,12 +39,26 @@ def query(labels, languages):
 }""" % (values, " ".join(FOOD_CLASSES), wanted)
 
 
-def entities(answer):
-    """One entity per item from a SPARQL answer. Every item the query returns is a food."""
+def query_any(labels, languages):
+    """Items with these English labels, of any class, with their descriptions. For a person to read."""
+    values = " ".join(quote(label) + "@en" for label in labels)
+    wanted = ", ".join(quote(language) for language in languages)
+    return """SELECT ?item ?enLabel ?desc ?lang ?name WHERE {
+  VALUES ?enLabel { %s }
+  ?item rdfs:label ?enLabel .
+  OPTIONAL { ?item schema:description ?desc . FILTER(LANG(?desc) = "en") }
+  OPTIONAL { ?item rdfs:label ?name . BIND(LANG(?name) AS ?lang) FILTER(?lang IN (%s)) }
+}""" % (values, wanted)
+
+
+def entities(answer, food=True):
+    """One entity per item from a SPARQL answer. A query for foods returns only foods; a query for any class does not."""
     found = {}
     for row in answer["results"]["bindings"]:
         qid = row["item"]["value"].rsplit("/", 1)[-1]
-        one = found.setdefault(qid, {"label": row["enLabel"]["value"], "qid": qid, "food": True, "labels": {}})
+        one = found.setdefault(qid, {"label": row["enLabel"]["value"], "qid": qid, "food": food, "labels": {}})
+        if "desc" in row:
+            one["description"] = row["desc"]["value"]
         if "lang" in row and "name" in row:
             one["labels"][row["lang"]["value"]] = row["name"]["value"]
     return list(found.values())
@@ -65,13 +79,14 @@ def ask(text, tries=4):
     raise RuntimeError("unreachable")
 
 
-def fetch(labels, languages, progress=None):
-    """Entities for the labels, a batch at a time."""
+def fetch(labels, languages, progress=None, any_class=False):
+    """Entities for the labels, a batch at a time. With any_class, items of every class come back, with their descriptions."""
     wanted = sorted({variant for label in labels for variant in variants(label)})
     found = {}
     for start in range(0, len(wanted), BATCH):
         batch = wanted[start:start + BATCH]
-        for one in entities(ask(query(batch, languages))):
+        text = query_any(batch, languages) if any_class else query(batch, languages)
+        for one in entities(ask(text), food=not any_class):
             found[(one["qid"], one["label"])] = one
         if progress:
             progress(min(start + BATCH, len(wanted)), len(wanted))

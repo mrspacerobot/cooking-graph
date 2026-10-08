@@ -18,7 +18,7 @@ def entity(label, qid, labels=None, food=True):
 BUTTER = entity("butter", "Q34172", {"es": "mantequilla", "it": "burro", "tr": "tereyağı", "fr": "beurre"})
 
 
-class WikidataTest(unittest.TestCase):
+class WikidataBase(unittest.TestCase):
     def setUp(self):
         self.kitchen = SmallKitchen()
         self.addCleanup(self.kitchen.close)
@@ -38,6 +38,8 @@ class WikidataTest(unittest.TestCase):
         with open(os.path.join(self.kitchen.root, path), encoding="utf-8") as handle:
             return json.load(handle)
 
+
+class WikidataTest(WikidataBase):
     def test_an_exact_english_label_matches_and_brings_an_id_and_names(self):
         plan = self.plan([BUTTER])
         self.assertEqual(1, len(plan.changes))
@@ -185,6 +187,65 @@ class WikidataTest(unittest.TestCase):
         self.assertEqual({}, found["Q7"]["labels"])
         self.assertTrue(found["Q7"]["food"])
         self.assertEqual("salt", found["Q7"]["label"])
+
+
+def candidate(label, qid, description, labels=None):
+    return {"label": label, "qid": qid, "food": False, "description": description, "labels": labels or {}}
+
+
+class ProposeAndChooseTest(WikidataBase):
+    """A second pass: items that are no food by class are proposed from their description, and a person chooses."""
+
+    def test_a_description_that_names_a_food_passes(self):
+        for text in ("edible tuber", "culinary or medicinal herb", "spice of a plant", "fish, ambiguous vernacular name", "Thai salad"):
+            self.assertTrue(wikidata.sounds_like_food(text), text)
+
+    def test_a_description_that_names_something_else_does_not_pass(self):
+        for text in ("family name", "painting by Charles Jacque", "Wikimedia disambiguation page", "town in Alaska, United States", "restaurant in Peel en Maas", ""):
+            self.assertFalse(wikidata.sounds_like_food(text), text)
+
+    def test_a_thing_with_no_match_gets_a_proposal_when_a_description_sounds_like_food(self):
+        found = wikidata.propose(self.things(), [candidate("flour", "Q9", "edible tuber"), candidate("flour", "Q8", "family name")])
+        self.assertEqual([("ingredient/flour", "Q9")], [(one.thing, one.qid) for one in found])
+
+    def test_a_thing_that_already_has_an_id_gets_no_proposal(self):
+        self.kitchen.change("graph/ingredient/flour.json", lambda food: food.update(same_as=[{"source": SOURCE, "id": "Q36465", "tier": "sourced"}]))
+        self.assertEqual([], wikidata.propose(self.things(), [candidate("flour", "Q9", "edible tuber")]))
+
+    def test_a_proposal_through_an_alias_says_so(self):
+        self.kitchen.change("graph/ingredient/flour.json", lambda food: food.update(aliases={"en": ["wheat powder"]}))
+        found = wikidata.propose(self.things(), [candidate("wheat powder", "Q9", "edible powder")])
+        self.assertEqual("wheat powder", found[0].via)
+
+    def test_a_chosen_item_is_taken_even_when_it_is_no_food_by_class(self):
+        chosen = [{"thing": "ingredient/flour", "id": "Q9", "why": "Read and chosen."}]
+        plan = wikidata.plan(self.things(), [candidate("grain powder", "Q9", "edible powder", {"es": "harina"})], SOURCE, LANGUAGES, (), chosen)
+        self.assertEqual("Q9", plan.changes[0].same_as["id"])
+        self.assertEqual({"es": "harina"}, plan.changes[0].names)
+
+    def test_a_chosen_item_that_was_not_fetched_is_reported(self):
+        chosen = [{"thing": "ingredient/flour", "id": "Q9", "why": "Read and chosen."}]
+        plan = wikidata.plan(self.things(), [], SOURCE, LANGUAGES, (), chosen)
+        self.assertEqual("chosen-not-fetched", plan.skipped[0].why)
+
+    def test_a_choice_settles_an_ambiguous_label(self):
+        entities = [entity("butter", "Q34172"), entity("butter", "Q99999")]
+        chosen = [{"thing": "ingredient/butter", "id": "Q34172", "why": "The dairy product."}]
+        plan = wikidata.plan(self.things(), entities, SOURCE, LANGUAGES, (), chosen)
+        self.assertEqual("Q34172", plan.changes[0].same_as["id"])
+        self.assertEqual([], [skip for skip in plan.skipped if skip.why == "ambiguous"])
+
+    def test_the_query_for_a_second_pass_asks_for_descriptions_and_any_class(self):
+        text = wikidata_fetch.query_any(["dill"], ("es",))
+        self.assertIn("schema:description", text)
+        self.assertNotIn("wd:Q2095", text)
+
+    def test_a_sparql_answer_keeps_the_description(self):
+        answer = {"results": {"bindings": [
+            {"item": {"value": "http://www.wikidata.org/entity/Q59659860"}, "enLabel": {"value": "dill"}, "desc": {"value": "herb"}}]}}
+        found = wikidata_fetch.entities(answer, food=False)
+        self.assertEqual("herb", found[0]["description"])
+        self.assertFalse(found[0]["food"])
 
 
 if __name__ == "__main__":

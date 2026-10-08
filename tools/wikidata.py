@@ -7,6 +7,7 @@ Nothing is overwritten, and a second run changes nothing.
 """
 
 import copy
+import re
 from collections import namedtuple
 
 from tools import names, writing
@@ -15,6 +16,48 @@ from tools.rules import SAME_AS_KINDS, of_kind
 Change = namedtuple("Change", ["thing", "same_as", "names", "aliases"])
 Skip = namedtuple("Skip", ["thing", "why", "detail"])
 Plan = namedtuple("Plan", ["changes", "skipped", "matched"])
+Proposal = namedtuple("Proposal", ["thing", "qid", "label", "description", "via", "labels"])
+
+FOOD_WORDS = ("edible", "culinary", "spice", "herb", "vegetable", "fruit", "dish", "food", "sauce", "cheese", "fish", "meat", "cut of",
+              "bread", "pasta", "dessert", "soup", "salad", "cereal", "grain", "legume", "nut", "seed", "oil", "beverage", "drink", "wine",
+              "sausage", "cake", "pastry", "noodle", "rice", "bean", "mushroom", "seaweed", "condiment", "dairy", "egg", "pepper", "sugar",
+              "flour", "powder", "paste", "stew", "cooking", "kitchen", "shellfish", "mollus", "crustacean", "tuber", "berry", "citrus")
+NOT_FOOD_WORDS = ("disambiguation", "family name", "given name", "film", "painting", "television", "song", "album", "single", "village", "town",
+                  "city", "river", "restaurant", "company", "enterprise", "building", "character", "human", "footballer", "singer", "software",
+                  "python", "magazine", "novel", "play", "band", "ship", "crater", "municipality", "district", "township", "community",
+                  "settlement", "episode", "video game", "organization", "publishing", "station", "hill", "library", "deity", "kingdom",
+                  "country", "poet", "wrestler", "tug", "shipwreck", "house", "print", "textile", "business", "motorcycle")
+
+
+def words_in(text, words):
+    return re.search(r"\b(?:%s)" % "|".join(re.escape(word) for word in words), text.lower()) is not None
+
+
+def sounds_like_food(description):
+    """A description from Wikidata that names a food and not a place, a person, a work or a company. A person still reads each one."""
+    return bool(description) and words_in(description, FOOD_WORDS) and not words_in(description, NOT_FOOD_WORDS)
+
+
+def all_english_names(data):
+    return [data["names"]["en"]] + data.get("aliases", {}).get("en", [])
+
+
+def propose(things, entities):
+    """Items that might be a thing but were not taken: any class, a description that sounds like a food. For a person to read."""
+    by_label = {}
+    for one in entities:
+        by_label.setdefault(names.plain(one["label"]), []).append(one)
+    found = []
+    for kind in SAME_AS_KINDS:
+        for thing_id, thing in of_kind(things, kind):
+            if thing.data["same_as"]:
+                continue
+            for name in all_english_names(thing.data):
+                for one in by_label.get(names.plain(name), []):
+                    if sounds_like_food(one.get("description", "")):
+                        via = None if name == thing.data["names"]["en"] else name
+                        found.append(Proposal(thing_id, one["qid"], one["label"], one["description"], via, one["labels"]))
+    return sorted(found, key=lambda one: (one.thing, one.qid))
 
 
 def english_names(data):
@@ -89,12 +132,16 @@ def new_names(thing, item, languages, held, claimed, refused=frozenset()):
     return added, aliases, skipped
 
 
-def plan(things, entities, source_id, languages, refused=()):
+def plan(things, entities, source_id, languages, refused=(), chosen=()):
     """What would change. Raises ValueError when the source may not be used in a product that is sold.
 
     `refused` lists names a person read and found wrong for the thing, as rows of thing, language and label.
     They are never written, so a later run does not bring them back.
+
+    `chosen` lists items a person read and chose for a thing, as rows of thing, id and why. They are taken
+    whatever their class, and they settle an ambiguous label.
     """
+    chosen = {row["thing"]: row["id"] for row in chosen}
     refused = {(row["thing"], row["language"], names.plain(row["label"])) for row in refused}
     source = things.get(source_id)
     if source is None or source.data["commercial_use"] != "allowed":
@@ -105,10 +152,18 @@ def plan(things, entities, source_id, languages, refused=()):
     found = candidates_for(things, entities)
     single = {}
     for thing_id, items in sorted(found.items()):
+        if thing_id in chosen:
+            continue
         if len(items) > 1:
             skipped.append(Skip(thing_id, "ambiguous", ", ".join(sorted(items))))
         else:
             single[thing_id] = next(iter(items.values()))
+    for thing_id, qid in sorted(chosen.items()):
+        item = next((one for one in entities if one["qid"] == qid), None)
+        if thing_id not in things or item is None:
+            skipped.append(Skip(thing_id, "chosen-not-fetched", qid))
+        else:
+            single[thing_id] = item
     owners = {}
     for thing_id, item in single.items():
         owners.setdefault((families(things[thing_id].kind), item["qid"]), []).append(thing_id)
@@ -145,6 +200,16 @@ def apply(root, things, the_plan, dry_run=False):
                 data["aliases"].setdefault(language, []).extend(labels)
             writing.write_thing(root, data)
     return len(the_plan.changes)
+
+
+def proposal_lines(proposals):
+    """One line per proposal, for a person to read and choose from."""
+    lines = []
+    for one in proposals:
+        via = "" if one.via is None else " (through the alias '%s')" % one.via
+        names_in = ", ".join("%s:%s" % pair for pair in sorted(one.labels.items()))
+        lines.append("%s %s '%s'%s: %s [%s]" % (one.thing, one.qid, one.label, via, one.description, names_in))
+    return lines
 
 
 def report(the_plan, total):

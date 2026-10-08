@@ -1,7 +1,7 @@
 {
   "id": "ingredient/zander",
   "tier": "drafted",
-  "names": {"en": "Zander", "fr": "Sandre"},
+  "names": {"en": "Zander", "fr": "Sandre", "tr": "Sudak balığı"},
   "aliases": {"en": ["pike-perch", "pikeperch"]},
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
@@ -37,5 +37,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q146641", "tier": "sourced"}
+  ]
 }

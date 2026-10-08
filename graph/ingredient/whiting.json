@@ -1,7 +1,7 @@
 {
   "id": "ingredient/whiting",
   "tier": "drafted",
-  "names": {"en": "Whiting", "fr": "Merlan"},
+  "names": {"en": "Whiting", "fr": "Merlan", "it": "Merlango"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -35,5 +35,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q273083", "tier": "sourced"}
+  ]
 }

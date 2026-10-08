@@ -1,8 +1,8 @@
 {
   "id": "ingredient/vermicelli",
   "tier": "drafted",
-  "names": {"en": "Vermicelli", "fr": "Vermicelles"},
-  "aliases": {},
+  "names": {"en": "Vermicelli", "fr": "Vermicelles", "tr": "Tel şehriye"},
+  "aliases": {"fr": ["vermicelle"]},
   "is_a": [
     {"thing": "ingredient/pasta", "tier": "drafted"}
   ],
@@ -49,5 +49,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q20027", "tier": "sourced"}
+  ]
 }

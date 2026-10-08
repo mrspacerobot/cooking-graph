@@ -1,7 +1,7 @@
 {
   "id": "preparation/hollandaise",
   "tier": "drafted",
-  "names": {"en": "Hollandaise", "fr": "Sauce hollandaise"},
+  "names": {"en": "Hollandaise", "fr": "Sauce hollandaise", "es": "salsa holandesa", "it": "Salsa olandese"},
   "aliases": {"en": ["hollandaise sauce"]},
   "is": "A warm sauce of butter whisked into egg yolks that have been cooked to a foam, sharpened with lemon.",
   "parts": [
@@ -53,5 +53,7 @@
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q58259", "tier": "sourced"}
+  ]
 }

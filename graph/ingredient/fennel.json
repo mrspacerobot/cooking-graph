@@ -1,7 +1,7 @@
 {
   "id": "ingredient/fennel",
   "tier": "drafted",
-  "names": {"en": "Fennel", "fr": "Fenouil"},
+  "names": {"en": "Fennel", "fr": "Fenouil", "it": "finocchio"},
   "aliases": {"en": ["fennel bulb"]},
   "is_a": [],
   "part_of": [],
@@ -33,5 +33,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q115618652", "tier": "sourced"}
+  ]
 }

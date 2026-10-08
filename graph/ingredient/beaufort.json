@@ -1,7 +1,7 @@
 {
   "id": "ingredient/beaufort",
   "tier": "drafted",
-  "names": {"en": "Beaufort", "fr": "Beaufort"},
+  "names": {"en": "Beaufort", "fr": "Beaufort", "tr": "Beaufort peyniri"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -44,5 +44,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q781150", "tier": "sourced"}
+  ]
 }

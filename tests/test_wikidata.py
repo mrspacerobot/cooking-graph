@@ -125,6 +125,15 @@ class WikidataTest(WikidataBase):
         self.assertIn("it", plan.changes[0].names)
         self.assertIn("read-and-refused", {skip.why for skip in plan.skipped})
 
+    def test_a_scientific_name_written_the_same_in_two_languages_is_not_a_name(self):
+        plan = self.plan([entity("butter", "Q34172", {"es": "Bos taurus", "it": "Bos taurus", "tr": "tereyağı"})])
+        self.assertEqual({"tr": "tereyağı"}, plan.changes[0].names)
+        self.assertIn("scientific-name", {skip.why for skip in plan.skipped})
+
+    def test_a_two_word_name_in_one_language_only_is_kept(self):
+        plan = self.plan([entity("butter", "Q34172", {"es": "Arroz negro"})])
+        self.assertEqual({"es": "Arroz negro"}, plan.changes[0].names)
+
     def test_a_label_in_another_script_is_not_written(self):
         plan = self.plan([entity("butter", "Q34172", {"ja": "バター", "es": "mantequilla"})], languages=("es", "ja"))
         self.assertEqual({"es": "mantequilla"}, plan.changes[0].names)

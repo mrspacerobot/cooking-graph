@@ -1,7 +1,7 @@
 {
   "id": "dish/tortilla-espanola",
   "tier": "drafted",
-  "names": {"en": "Tortilla española", "fr": "Tortilla espagnole"},
+  "names": {"en": "Tortilla española", "fr": "Tortilla espagnole", "it": "tortilla di patate", "tr": "İspanyol omleti"},
   "aliases": {"en": ["Spanish omelette", "tortilla de patatas", "Spanish potato omelette"]},
   "is": "A thick round cake of eggs and potato, with onion if it is liked. The potato is cooked soft and slowly in olive oil, folded into beaten egg and set in a small pan, then turned over with a plate. It is eaten warm or at room temperature and the middle may be left soft or set firm.",
   "parts": [
@@ -19,5 +19,7 @@
   "belongs_to": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q281751", "tier": "sourced"}
+  ]
 }

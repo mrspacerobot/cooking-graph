@@ -1,7 +1,7 @@
 {
   "id": "ingredient/kashkaval-cheese",
   "tier": "drafted",
-  "names": {"en": "Kashkaval cheese"},
+  "names": {"en": "Kashkaval cheese", "tr": "kaşkaval"},
   "aliases": {"en": ["kashkaval", "kasar", "kasar peyniri"]},
   "is_a": [],
   "part_of": [],
@@ -35,5 +35,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q7220270", "tier": "sourced"}
+  ]
 }

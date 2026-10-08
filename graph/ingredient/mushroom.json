@@ -1,8 +1,8 @@
 {
   "id": "ingredient/mushroom",
   "tier": "drafted",
-  "names": {"en": "Mushroom", "fr": "Champignon de Paris"},
-  "aliases": {"en": ["button mushroom", "white mushroom", "mushrooms"]},
+  "names": {"en": "Mushroom", "fr": "Champignon de Paris", "es": "seta"},
+  "aliases": {"en": ["button mushroom", "white mushroom", "mushrooms"], "fr": ["champignon"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -42,5 +42,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q83093", "tier": "sourced"}
+  ]
 }

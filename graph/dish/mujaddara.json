@@ -1,7 +1,7 @@
 {
   "id": "dish/mujaddara",
   "tier": "drafted",
-  "names": {"en": "Mujaddara"},
+  "names": {"en": "Mujaddara", "it": "mejadra", "tr": "Müceddere", "fr": "Mjadra"},
   "aliases": {"en": ["mjaddara", "moujaddara", "mujadara", "lentils and rice with fried onions"]},
   "is": "Brown lentils and rice cooked together with cumin in one pot, then heaped with onions fried until dark and crisp. It is eaten warm or at room temperature, with yogurt or a raw salad on the side.",
   "parts": [
@@ -28,5 +28,7 @@
   "belongs_to": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q2663815", "tier": "sourced"}
+  ]
 }

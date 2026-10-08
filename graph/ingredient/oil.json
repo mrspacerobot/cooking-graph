@@ -1,8 +1,8 @@
 {
   "id": "ingredient/oil",
   "tier": "drafted",
-  "names": {"en": "Oil", "fr": "Huile"},
-  "aliases": {"en": ["cooking oil", "vegetable oil", "neutral oil"]},
+  "names": {"en": "Oil", "fr": "Huile", "es": "aceite vegetal", "it": "olio vegetale", "tr": "Bitkisel yağ"},
+  "aliases": {"en": ["cooking oil", "vegetable oil", "neutral oil"], "fr": ["huile végétale"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -46,5 +46,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q4739805", "tier": "sourced"}
+  ]
 }

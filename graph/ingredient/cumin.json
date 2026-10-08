@@ -1,8 +1,8 @@
 {
   "id": "ingredient/cumin",
   "tier": "drafted",
-  "names": {"en": "Cumin", "fr": "Cumin"},
-  "aliases": {"en": ["jeera", "kamoun", "comino", "cumin seed"]},
+  "names": {"en": "Cumin", "fr": "Cumin", "es": "semilla de comino", "it": "seme di cumino"},
+  "aliases": {"en": ["jeera", "kamoun", "comino", "cumin seed"], "fr": ["graines de cumin"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -39,5 +39,7 @@
     {"thing": "cuisine/lebanese", "tier": "drafted"},
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q57328174", "tier": "sourced"}
+  ]
 }

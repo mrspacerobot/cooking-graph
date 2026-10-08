@@ -1,7 +1,7 @@
 {
   "id": "ingredient/yam",
   "tier": "drafted",
-  "names": {"en": "Yam", "fr": "Igname"},
+  "names": {"en": "Yam", "fr": "Igname", "es": "ñame"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -21,5 +21,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q8047551", "tier": "sourced"}
+  ]
 }

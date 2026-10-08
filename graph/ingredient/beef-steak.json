@@ -1,7 +1,7 @@
 {
   "id": "ingredient/beef-steak",
   "tier": "drafted",
-  "names": {"en": "Beef steak", "fr": "Steak"},
+  "names": {"en": "Beef steak", "fr": "Steak", "es": "filete", "it": "bistecca"},
   "aliases": {"en": ["steak", "sirloin steak", "rump steak"]},
   "is_a": [],
   "part_of": [],
@@ -52,5 +52,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q213062", "tier": "sourced"}
+  ]
 }

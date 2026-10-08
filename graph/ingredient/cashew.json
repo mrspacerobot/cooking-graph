@@ -1,7 +1,7 @@
 {
   "id": "ingredient/cashew",
   "tier": "drafted",
-  "names": {"en": "Cashew", "fr": "Noix de cajou"},
+  "names": {"en": "Cashew", "fr": "Noix de cajou", "es": "anacardo", "it": "anacardo"},
   "aliases": {"en": ["cashew nut"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +24,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q7885904", "tier": "sourced"}
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/allspice",
   "tier": "drafted",
-  "names": {"en": "Allspice", "fr": "Piment de la Jamaïque"},
+  "names": {"en": "Allspice", "fr": "Piment de la Jamaïque", "tr": "yeni bahar"},
   "aliases": {"en": ["Jamaica pepper"]},
   "is_a": [],
   "part_of": [],
@@ -35,5 +35,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/lebanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q1963621", "tier": "sourced"}
+  ]
 }

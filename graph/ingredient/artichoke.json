@@ -1,7 +1,7 @@
 {
   "id": "ingredient/artichoke",
   "tier": "drafted",
-  "names": {"en": "Artichoke", "fr": "Artichaut"},
+  "names": {"en": "Artichoke", "fr": "Artichaut", "es": "alcachofa", "it": "carciofo", "tr": "enginar"},
   "aliases": {"en": ["globe artichoke"]},
   "is_a": [],
   "part_of": [],
@@ -23,5 +23,7 @@
   },
   "stands_in_for": [],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q23041430", "tier": "sourced"}
+  ]
 }

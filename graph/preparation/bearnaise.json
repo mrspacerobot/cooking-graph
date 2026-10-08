@@ -1,7 +1,13 @@
 {
   "id": "preparation/bearnaise",
   "tier": "drafted",
-  "names": {"en": "Béarnaise", "fr": "Sauce béarnaise"},
+  "names": {
+    "en": "Béarnaise",
+    "fr": "Sauce béarnaise",
+    "es": "salsa bearnesa",
+    "it": "Salsa bernese",
+    "tr": "Béarnaise sosu"
+  },
   "aliases": {"en": ["bearnaise sauce", "béarnaise sauce", "sauce bearnaise"]},
   "is": "A warm, thick sauce of egg yolk and butter, sharpened with a reduction of vinegar, wine, shallot and tarragon, and finished with fresh tarragon. It is spooned beside grilled or seared beef.",
   "parts": [
@@ -36,5 +42,7 @@
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q58265", "tier": "sourced"}
+  ]
 }

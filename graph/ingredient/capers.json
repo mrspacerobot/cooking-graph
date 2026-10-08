@@ -1,8 +1,8 @@
 {
   "id": "ingredient/capers",
   "tier": "drafted",
-  "names": {"en": "Capers", "fr": "Câpres"},
-  "aliases": {"en": ["caper"]},
+  "names": {"en": "Capers", "fr": "Câpres", "es": "alcaparra", "it": "cappero"},
+  "aliases": {"en": ["caper"], "fr": ["câpre"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -37,5 +37,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3229775", "tier": "sourced"}
+  ]
 }

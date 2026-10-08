@@ -1,7 +1,7 @@
 {
   "id": "ingredient/turnip",
   "tier": "drafted",
-  "names": {"en": "Turnip", "fr": "Navet"},
+  "names": {"en": "Turnip", "fr": "Navet", "es": "nabo", "it": "rapa", "tr": "şalgam"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -33,5 +33,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q3916957", "tier": "sourced"}
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "id": "ingredient/plain-yogurt",
   "tier": "drafted",
-  "names": {"en": "Plain yogurt", "fr": "Yaourt nature"},
-  "aliases": {"en": ["plain yoghurt", "yogurt", "yoghurt"]},
+  "names": {"en": "Plain yogurt", "fr": "Yaourt nature", "es": "yogur"},
+  "aliases": {"en": ["plain yoghurt", "yogurt", "yoghurt"], "fr": ["yaourt"]},
   "is_a": [],
   "part_of": [],
   "groups": [],
@@ -52,5 +52,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q13317", "tier": "sourced"}
+  ]
 }

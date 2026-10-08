@@ -22,3 +22,13 @@ A person (here, the agent running the import) read all 320 matches and the names
 - Names in Japanese, Hindi, Arabic and Greek were not taken, because a name in another script must bring a romanization and Wikidata does not give one.
 - 339 things had no match or were skipped. They are only counted here. The skip list is printed by `./wikidata --dry-run`.
 - FoodOn was not used.
+
+## Second pass: propose, read, choose
+
+- 339 things had no id. `./wikidata --propose` asked for items of any class for their names and aliases and printed those whose description sounds like a food: 149 proposals for 107 things. It writes nothing.
+- All 149 were read. 79 ids were chosen and are listed in `schema/wikidata-chosen.json`. The rest were refused for a reason that shows in the description: a colour, a stew with the same name, a work, a ship, the general
+  kind when ours is a variety (crab for brown crab), a plant species when ours is the food, a British dish for a French one (cauliflower cheese), or two items that were equally good.
+- 399 of 659 things now carry a sourced `same_as` row (475 sourced statements in all). Things stay drafted.
+- Eight more names the reading found wrong were added to `schema/wikidata-refused.json` and removed: for example a species name on courgette, "el frijol ancho" for butter bean, and a Turkish word for cod on whiting.
+  A species name written the same in two languages is now skipped by the tool.
+- Doubts: a choice is a reading by a model, not a cook. Some ids point at the nearest sense (oil as vegetable oil, egg as whole egg). 260 things still have no id.

@@ -102,6 +102,15 @@ def is_plain_name(label):
         and "." not in label and len(label) <= LONGEST_NAME
 
 
+def is_scientific(label, item, languages):
+    """Two words, a capital then lower case, written the same in at least two languages: a species, not what a cook says."""
+    words = label.split()
+    if len(words) != 2 or not words[0][:1].isupper() or not words[1].islower():
+        return False
+    same = [language for language in languages if names.plain(item["labels"].get(language, "")) == names.plain(label)]
+    return len(same) >= 2
+
+
 def new_names(thing, item, languages, held, claimed, refused=frozenset()):
     """The names and aliases to add for one thing, and the labels left out and why."""
     added, aliases, skipped = {}, {}, []
@@ -114,12 +123,14 @@ def new_names(thing, item, languages, held, claimed, refused=frozenset()):
         plain = names.plain(label)
         if not names.is_latin(label):
             skipped.append(Skip(thing.data["id"], "not-latin", "%s: %s" % (language, label)))
-        elif (thing.data["id"], language, plain) in refused:
-            skipped.append(Skip(thing.data["id"], "read-and-refused", "%s: %s" % (language, label)))
-        elif not is_plain_name(label):
-            skipped.append(Skip(thing.data["id"], "not-a-plain-name", "%s: %s" % (language, label)))
         elif plain in own:
             continue
+        elif (thing.data["id"], language, plain) in refused:
+            skipped.append(Skip(thing.data["id"], "read-and-refused", "%s: %s" % (language, label)))
+        elif is_scientific(label, item, languages):
+            skipped.append(Skip(thing.data["id"], "scientific-name", "%s: %s" % (language, label)))
+        elif not is_plain_name(label):
+            skipped.append(Skip(thing.data["id"], "not-a-plain-name", "%s: %s" % (language, label)))
         elif held.get((family, plain), set()) - {thing.data["id"]} or claimed.get((family, plain), thing.data["id"]) != thing.data["id"]:
             who = sorted(held.get((family, plain), set()) | {claimed.get((family, plain), "")} - {thing.data["id"], ""})
             skipped.append(Skip(thing.data["id"], "name-held", "%s: %s is held by %s" % (language, label, ", ".join(who))))

@@ -1,7 +1,7 @@
 {
   "id": "ingredient/bread",
   "tier": "drafted",
-  "names": {"en": "Bread", "fr": "Pain"},
+  "names": {"en": "Bread", "fr": "Pain", "es": "pan", "it": "pane", "tr": "ekmek"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -68,5 +68,7 @@
     }
   ],
   "in_pantry_of": [],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q7802", "tier": "sourced"}
+  ]
 }

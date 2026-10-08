@@ -1,7 +1,7 @@
 {
   "id": "ingredient/ginger",
   "tier": "drafted",
-  "names": {"en": "Ginger", "fr": "Gingembre"},
+  "names": {"en": "Ginger", "fr": "Gingembre", "es": "jengibre", "it": "zenzero"},
   "aliases": {"en": ["fresh ginger", "root ginger"]},
   "is_a": [],
   "part_of": [],
@@ -24,5 +24,7 @@
     {"thing": "cuisine/indian", "tier": "drafted"},
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q15046077", "tier": "sourced"}
+  ]
 }

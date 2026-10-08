@@ -1,8 +1,8 @@
 {
   "id": "ingredient/fenugreek-seed",
   "tier": "drafted",
-  "names": {"en": "Fenugreek seed", "fr": "Fenugrec"},
-  "aliases": {"en": ["methi seed", "methi dana"]},
+  "names": {"en": "Fenugreek seed", "fr": "Fenugrec", "es": "semilla de alholva", "it": "seme di fieno greco"},
+  "aliases": {"en": ["methi seed", "methi dana"], "fr": ["graine de fenugrec"]},
   "is_a": [],
   "part_of": [],
   "groups": [
@@ -45,5 +45,7 @@
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q57659978", "tier": "sourced"}
+  ]
 }

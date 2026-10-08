@@ -1,7 +1,13 @@
 {
   "id": "preparation/mashed-potato",
   "tier": "drafted",
-  "names": {"en": "Potato purée", "fr": "Purée de pommes de terre"},
+  "names": {
+    "en": "Potato purée",
+    "fr": "Purée de pommes de terre",
+    "es": "puré de papas",
+    "it": "purè di patate",
+    "tr": "Patates püresi"
+  },
   "aliases": {"en": ["mashed potato", "mashed potatoes", "mash"]},
   "is": "Boiled potatoes crushed while hot and beaten smooth with butter and hot milk.",
   "parts": [
@@ -21,5 +27,7 @@
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q322787", "tier": "sourced"}
+  ]
 }

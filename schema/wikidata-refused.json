@@ -70,5 +70,53 @@
   "language": "es",
   "label": "Fubá",
   "why": "The Brazilian cornmeal, narrower than cornmeal."
+ },
+ {
+  "thing": "ingredient/courgette",
+  "language": "es",
+  "label": "cucurbita pepo",
+  "why": "A species name, not what a cook says."
+ },
+ {
+  "thing": "ingredient/butter-bean",
+  "language": "es",
+  "label": "el frijol ancho",
+  "why": "Written with an article, and ancho is another bean."
+ },
+ {
+  "thing": "ingredient/basil",
+  "language": "it",
+  "label": "foglie di basilico",
+  "why": "That means basil leaves. The word is basilico."
+ },
+ {
+  "thing": "ingredient/mushroom",
+  "language": "it",
+  "label": "fungo epigeo",
+  "why": "A technical term, not the word for a mushroom."
+ },
+ {
+  "thing": "ingredient/mushroom",
+  "language": "tr",
+  "label": "şapkalı mantar",
+  "why": "A technical term, not the word for a mushroom."
+ },
+ {
+  "thing": "ingredient/kashkaval-cheese",
+  "language": "fr",
+  "label": "Cașcaval",
+  "why": "Romanian spelling, not French."
+ },
+ {
+  "thing": "ingredient/whiting",
+  "language": "tr",
+  "label": "Bakalyaro",
+  "why": "That is the Turkish word for cod."
+ },
+ {
+  "thing": "preparation/sofrito",
+  "language": "fr",
+  "label": "sofregit",
+  "why": "The Catalan word, not French."
  }
 ]

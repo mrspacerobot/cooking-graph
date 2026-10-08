@@ -1,7 +1,7 @@
 {
   "id": "ingredient/rosemary",
   "tier": "drafted",
-  "names": {"en": "Rosemary", "fr": "Romarin"},
+  "names": {"en": "Rosemary", "fr": "Romarin", "es": "romero", "it": "rosmarino"},
   "aliases": {},
   "is_a": [],
   "part_of": [],
@@ -36,5 +36,7 @@
     {"thing": "cuisine/italian", "tier": "drafted"},
     {"thing": "cuisine/french", "tier": "drafted"}
   ],
-  "same_as": []
+  "same_as": [
+    {"source": "source/wikidata", "id": "Q68315046", "tier": "sourced"}
+  ]
 }

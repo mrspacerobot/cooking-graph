@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/moussaka",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["fry", "make a roux", "bake"],
+  "at_home": ["eggplants", "ground beef", "onion", "canned tomatoes", "cinnamon", "butter", "flour", "milk", "eggs"],
+  "dishes": ["moussaka"],
+  "why": "Ground beef stands in for lamb under fried eggplant and a thick bechamel baked into a Greek classic."
+}

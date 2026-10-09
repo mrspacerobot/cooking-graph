@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/risotto-bianco-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["toast", "deglaze", "simmer"],
+  "at_home": ["arborio rice", "onion", "butter", "parmesan", "chicken stock", "dry vermouth", "salt"],
+  "dishes": ["risotto bianco", "risotto alla parmigiana"],
+  "why": "A plain parmesan risotto is a pantry supper, and dry vermouth stands in for white wine."
+}

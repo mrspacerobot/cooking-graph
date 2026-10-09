@@ -21,7 +21,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/kashmiri-red-chilli-powder",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/spice-paste", "technique/fry-masala-base"],
+      "ratio": null,
+      "caveat": "Turmeric turns the dish yellow, not red, and has an earthy edge instead of mild chilli warmth.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/red-chilli-powder",
+      "allows": false,
+      "when": [],
+      "not_when": ["preparation/spice-paste", "technique/fry-masala-base"],
+      "ratio": null,
+      "caveat": "Turmeric gives a yellow colour and earthy bitterness but no heat.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"},
     {"thing": "cuisine/moroccan", "tier": "drafted"}

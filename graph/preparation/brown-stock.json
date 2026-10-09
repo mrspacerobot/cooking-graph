@@ -57,6 +57,15 @@
       "ratio": null,
       "caveat": "A dark stock turns a pale sauce brown and gives it a roasted taste.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": true,
+      "when": ["technique/braise"],
+      "not_when": ["dish/blanquette-de-veau", "preparation/veloute"],
+      "ratio": null,
+      "caveat": "It gives a darker, deeper braise with more body, and it can overpower a pale, delicate dish.",
+      "tier": "drafted"
     }
   ],
   "belongs_to": [

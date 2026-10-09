@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/hummus",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["soak", "boil", "blend"],
+  "at_home": ["dried chickpeas", "tahini", "lemon", "garlic", "baking soda", "olive oil", "salt"],
+  "dishes": ["hummus"],
+  "why": "Soaked and well boiled chickpeas blended with tahini and lemon make the smoothest hummus."
+}

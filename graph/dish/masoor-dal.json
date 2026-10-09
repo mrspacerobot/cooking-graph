@@ -1,0 +1,55 @@
+{
+  "id": "dish/masoor-dal",
+  "tier": "drafted",
+  "names": {"en": "Masoor dal"},
+  "aliases": {"en": ["masoor dal tadka", "red lentil dal", "lal masoor dal", "red lentil curry"]},
+  "is": "Split red lentils simmered with turmeric, ginger and tomato until they melt into a soft, golden porridge, then topped at the end with a hot tempering of garlic, cumin, dried chilli and asafoetida in ghee.",
+  "parts": [
+    {"id": "dal", "role": "main", "options": ["ingredient/red-lentil"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "acid", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "green-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/green-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "tempering-fat", "role": "fat", "options": ["ingredient/ghee"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dried-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/dried-red-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "asafoetida",
+      "role": "seasoning",
+      "options": ["ingredient/asafoetida"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "lemon-juice", "role": "acid", "options": ["ingredient/lemon-juice"], "optional": true, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/temper-spices-in-hot-fat", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

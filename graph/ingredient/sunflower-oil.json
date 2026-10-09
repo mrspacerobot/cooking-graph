@@ -79,6 +79,35 @@
       "ratio": null,
       "caveat": "It loses the nutty butter taste, so the fish tastes plainer.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/butter",
+      "allows": true,
+      "when": [
+        "technique/pan-fry", "technique/saute", "technique/sear", "technique/sweat", "technique/make-a-roux",
+        "technique/griddle", "technique/roast"
+      ],
+      "not_when": [
+        "technique/baste", "technique/make-brown-butter", "technique/make-shortcrust-pastry", "technique/mantecare"
+      ],
+      "ratio": null,
+      "caveat": "It has no butter taste and does not brown the same way, but it takes more heat before it burns. It cannot give the nutty brown, the cold-butter finish or the flaky short pastry that butter does.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/olive-oil",
+      "allows": true,
+      "when": [
+        "technique/sear", "technique/saute", "technique/pan-fry", "technique/sweat", "technique/roast",
+        "technique/fry-fritters", "technique/cook-a-tortilla"
+      ],
+      "not_when": [
+        "technique/braise-in-olive-oil", "technique/confit", "technique/garnish", "technique/make-a-pesto",
+        "technique/slow-fry-in-olive-oil"
+      ],
+      "ratio": null,
+      "caveat": "It tastes of nothing, so the dish loses the fruity note of olive oil. Where the oil is the main flavour it is a poor swap.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

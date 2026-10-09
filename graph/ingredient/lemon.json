@@ -46,6 +46,15 @@
       "ratio": null,
       "caveat": "It is yellow and rounder, with a less green perfume.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/lemon-juice",
+      "allows": true,
+      "when": ["technique/make-avgolemono"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The juice must be squeezed fresh and strained of seeds, and it tastes brighter than bottled juice.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

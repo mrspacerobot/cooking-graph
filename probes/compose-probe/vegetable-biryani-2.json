@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/vegetable-biryani-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["fry", "layer", "steam"],
+  "at_home": [
+    "basmati rice",
+    "onions",
+    "ghee",
+    "whole spices",
+    "mixed vegetables",
+    "plain yogurt",
+    "saffron",
+    "mint",
+    "salt"
+  ],
+  "dishes": ["vegetable biryani"],
+  "why": "Layering spiced vegetables and part-cooked rice and sealing the pot gives a fragrant one-pot feast."
+}

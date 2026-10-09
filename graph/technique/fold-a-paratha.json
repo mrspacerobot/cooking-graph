@@ -1,0 +1,53 @@
+{
+  "id": "technique/fold-a-paratha",
+  "tier": "drafted",
+  "names": {"en": "Fold a paratha"},
+  "aliases": {"en": ["triangle fold for paratha", "fold paratha layers"]},
+  "does": "Brushes a rolled round of atta dough with ghee, dusts it with a little flour, and folds it over on itself into a half-moon and then a triangle, so that the dough is stacked in thin layers with ghee between them. The folded piece is then rolled out again, lightly.",
+  "how": [
+    "Brush the whole rolled round with soft ghee and dust it with a little dry flour.",
+    "Fold the round in half to a half-moon, brush the top with ghee again and dust it lightly.",
+    "Fold the half-moon in half once more, into a triangle with its layers stacked inside.",
+    "Press the edges gently so that the layers stay together, and roll the triangle out lightly with even strokes."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The cut edge of the folded triangle shows thin stripes of dough and ghee."},
+    {"sense": "feel", "text": "The triangle rolls out smoothly and the layers do not slide apart."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Rolling hard after folding, so that the ghee is pressed out and the layers fuse into one.",
+      "fix": "Roll lightly and evenly, and stop as soon as the triangle is the size of the plate."
+    },
+    {
+      "mistake": "Leaving the dough dry between the folds, so that the finished bread is tough and not flaky.",
+      "fix": "Brush every fold with ghee, right to the edges."
+    }
+  ],
+  "works_on": [
+    {"thing": "preparation/chapati-dough", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "fat", "options": ["ingredient/ghee"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/whole-wheat-flour"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/rolling-pin", "equipment/pastry-brush"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/roll-out-a-chapati",
+      "why": "The folds start from a round of dough that is rolled even, so a cook has to be able to roll one first.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/fold-dough",
+      "differs": "The dough is a soft atta dough that is not rested between folds, the fat is ghee brushed on by hand, and it is folded once or twice into a half-moon or triangle and rolled out again lightly. It is not a pastry that is turned and rolled many times.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ]
+}

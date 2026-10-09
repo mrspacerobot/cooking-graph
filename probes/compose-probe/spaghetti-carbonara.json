@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/spaghetti-carbonara",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["render", "boil pasta", "emulsify"],
+  "at_home": ["spaghetti", "eggs", "pancetta", "pecorino romano", "black pepper", "salt"],
+  "dishes": ["spaghetti carbonara"],
+  "why": "Pancetta stands in for guanciale, and its fat, egg, cheese and pasta water make the silky carbonara sauce."
+}

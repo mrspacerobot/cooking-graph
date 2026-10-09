@@ -24,7 +24,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/ghee",
+      "allows": true,
+      "when": ["technique/fry-masala-base", "technique/saute", "technique/temper-spices-in-hot-fat"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a coconut taste in place of the nutty, buttery taste of ghee.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],

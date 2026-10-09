@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/lamb-tagine-with-prunes",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["brown", "braise", "toast nuts"],
+  "at_home": ["lamb shoulder", "prunes", "onion", "cinnamon", "honey", "almonds", "butter", "ginger", "saffron"],
+  "dishes": ["lamb tagine with prunes"],
+  "why": "Lamb braised with sweet prunes and honey and topped with toasted almonds is a festive tagine."
+}

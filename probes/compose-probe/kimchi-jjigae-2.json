@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/kimchi-jjigae-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["saute", "simmer"],
+  "at_home": ["sour kimchi", "pork belly", "firm tofu", "gochugaru", "garlic", "spring onions", "sesame oil"],
+  "dishes": ["kimchi jjigae"],
+  "why": "Old, sour kimchi cooked down with pork makes a warming Korean stew."
+}

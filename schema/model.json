@@ -539,6 +539,51 @@
           "is": "note"
         }
       }
+    },
+    "compose-probe": {
+      "home": "probes",
+      "fields": {
+        "id": {
+          "is": "id"
+        },
+        "tier": {
+          "is": "word",
+          "from": "tiers"
+        },
+        "batch": {
+          "is": "slug"
+        },
+        "set": {
+          "is": "word",
+          "from": "probe_sets"
+        },
+        "written_by": {
+          "is": "slug"
+        },
+        "techniques": {
+          "is": "list",
+          "at_least": 1,
+          "of": {
+            "is": "label"
+          }
+        },
+        "at_home": {
+          "is": "list",
+          "of": {
+            "is": "label"
+          }
+        },
+        "dishes": {
+          "is": "list",
+          "at_least": 1,
+          "of": {
+            "is": "label"
+          }
+        },
+        "why": {
+          "is": "note"
+        }
+      }
     }
   }
 }

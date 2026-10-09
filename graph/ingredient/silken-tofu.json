@@ -1,0 +1,59 @@
+{
+  "id": "ingredient/silken-tofu",
+  "tier": "drafted",
+  "names": {"en": "Silken tofu", "fr": "Tofu soyeux"},
+  "aliases": {"en": ["kinugoshi tofu", "kinugoshi"], "es": ["tofu sedoso"]},
+  "is_a": [
+    {"thing": "ingredient/tofu", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Tofu set whole in its own carton or mould, with the curds neither cut nor pressed, so it keeps all its water and stays smooth, quivering and close to a custard. Firm tofu is made of curds that are broken up and pressed into a block, which is why it can be cut, pressed and fried. Silken tofu cannot take pressing or hard frying and falls apart in a pan that is stirred. It is slid into hot soup at the end, blended into a sauce or a dressing, or eaten cold with a sauce poured over.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/soy", "basis": "It is made of soy milk.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts",
+      "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/firm-tofu",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/deep-fry", "technique/pan-fry", "technique/press-tofu", "technique/stir-fry"],
+      "ratio": null,
+      "caveat": "Silken tofu has not been pressed and breaks up in the pan, so it cannot be cut, pressed or browned.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/fried-tofu",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/takikomi-gohan", "technique/deep-fry", "technique/simmer"],
+      "ratio": null,
+      "caveat": "Silken tofu has no fried skin and falls apart in a simmering broth, so it does not soak up the liquid the same way.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tofu",
+      "allows": true,
+      "when": ["dish/miso-soup"],
+      "not_when": ["technique/press-tofu", "technique/stir-fry"],
+      "ratio": null,
+      "caveat": "It is much softer and holds no shape under pressing or stirring, so slide it in gently at the end.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

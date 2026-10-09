@@ -16,7 +16,17 @@
   "teaches": [
     {"thing": "technique/make-a-roux", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/veloute",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/blanquette-de-veau"],
+      "ratio": null,
+      "caveat": "Bechamel is built on milk and tastes creamy, while veloute is built on stock and carries its savoury flavour.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

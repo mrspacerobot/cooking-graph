@@ -1,0 +1,82 @@
+{
+  "id": "recipe/croque-madame",
+  "tier": "drafted",
+  "names": {"en": "Croque madame"},
+  "aliases": {},
+  "makes": "dish/croque-madame",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/sandwich-bread",
+      "amount": {"value": 4, "unit": "slice"},
+      "forms": [],
+      "part": "sandwich-bread"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 25, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "preparation/bechamel", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/ham", "amount": {"value": 2, "unit": "slice"}, "forms": [], "part": "ham"},
+    {
+      "thing": "ingredient/gruyere",
+      "amount": {"value": 100, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "gruyere"
+    },
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"}
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/grill", "equipment/baking-sheet", "equipment/frying-pan", "equipment/stovetop",
+    "equipment/spatula"
+  ],
+  "steps": [
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/sandwich-bread", "preparation/bechamel", "ingredient/ham", "ingredient/gruyere"],
+      "with": ["ingredient/butter"],
+      "text": "Butter one side of each slice of bread with part of the butter. Lay half of them, buttered side down, on a baking sheet. Spread them with a little béchamel, then add the ham and half the cheese. Close with the other slices, buttered side up.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/sandwich-bread"],
+      "with": [],
+      "text": "Bake until the bread is crisp and golden underneath.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["preparation/bechamel", "ingredient/gruyere"],
+      "with": [],
+      "text": "Spread the tops with the rest of the béchamel and cover them with the rest of the cheese. Put them under a hot grill until the top is blistered and golden.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pan-fry",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/butter"],
+      "text": "While the sandwiches brown, melt the rest of the butter in a frying pan over medium heat. Break in the eggs and fry them gently, without turning, until the whites are set and the yolks are still soft.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Slide a fried egg onto each sandwich and serve at once.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

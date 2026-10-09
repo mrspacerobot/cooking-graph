@@ -1,6 +1,6 @@
 """The numbers: what the graph holds, how far it can be trusted, and how many probes it answers."""
 
-from tools import probes, question_probes, review_rules, safety_probes
+from tools import probes, question_probes, review_rules, safety_probes, swap_gaps
 from tools.reading import nested
 
 SAFETY_STATES = ("unverified", "verified")
@@ -116,6 +116,7 @@ def count(things):
         "question_probes": question_probes.counts(question_probes.run(things)),
         "parts_by_kind": {kind: count_parts(things, (kind,)) for kind in ("dish", "preparation")},
         "stand_in_statements": count_stand_ins(things),
+        "swap_gaps": swap_gaps.counts(things),
         "safety_probes": safety_probes.counts(safety_probes.run(things)),
         "reviews": count_reviews(things),
     }
@@ -187,6 +188,9 @@ def render(counts, model, words):
         lines.append("%s parts with more than one option: %s" % (kind.capitalize(), probes.as_share(pair)))
     stand_ins = counts["stand_in_statements"]
     lines.append("Stand-in statements: %d positive, %d exclusion-only" % (stand_ins["positive"], stand_ins["exclusion_only"]))
+    gaps = counts["swap_gaps"]
+    lines.append("Recipe lines with a swap offered: %d of %d; with a plausible swap not offered: %d (%d pairs); foods in no stand-in row: %d" % (
+        gaps["with_swap"], gaps["lines"], gaps["with_gap"], gaps["gap_pairs"], gaps["new_foods"]))
     reviews = counts["reviews"]
     if reviews["records"]:
         lines.append("Reviews: %d records, %d live; by reviewer: %s; units backed, by tier: %s" % (

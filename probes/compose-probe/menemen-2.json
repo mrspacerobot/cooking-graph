@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/menemen-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["saute", "scramble"],
+  "at_home": ["eggs", "tomatoes", "green peppers", "onion", "olive oil", "chilli flakes", "salt"],
+  "dishes": ["menemen"],
+  "why": "Soft eggs stirred into peppers and tomatoes make a fast Turkish breakfast."
+}

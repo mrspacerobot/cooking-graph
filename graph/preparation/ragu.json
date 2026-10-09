@@ -2,13 +2,13 @@
   "id": "preparation/ragu",
   "tier": "drafted",
   "names": {"en": "Ragu", "fr": "Ragù"},
-  "aliases": {"en": ["ragù"]},
+  "aliases": {"en": ["ragù", "ragù alla bolognese", "bolognese sauce"]},
   "is": "A thick sauce of minced or chopped meat cooked very slowly with a soffritto, wine and tomato until it clings to pasta or fills a rice ball. Each region has its own, such as the ragu of Bologna and the ragu of Sicily.",
   "parts": [
     {
       "id": "meat",
       "role": "main",
-      "options": ["ingredient/minced-beef", "ingredient/sausage-meat"],
+      "options": ["ingredient/minced-beef", "ingredient/sausage-meat", "ingredient/ground-pork", "ingredient/pancetta"],
       "optional": false,
       "tier": "drafted"
     },

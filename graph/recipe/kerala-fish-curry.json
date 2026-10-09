@@ -1,0 +1,130 @@
+{
+  "id": "recipe/kerala-fish-curry",
+  "tier": "drafted",
+  "names": {"en": "Kerala fish curry"},
+  "aliases": {},
+  "makes": "dish/kerala-fish-curry",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/kingfish",
+      "amount": {"value": 600, "unit": "gram"},
+      "forms": ["form/large-pieces"],
+      "part": "fish"
+    },
+    {"thing": "ingredient/tamarind", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "tamarind"},
+    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/water", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {
+      "thing": "ingredient/kashmiri-red-chilli-powder",
+      "amount": {"value": 1.5, "unit": "tablespoon"},
+      "forms": [],
+      "part": "paste"
+    },
+    {"thing": "ingredient/turmeric", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/ginger", "amount": {"value": 20, "unit": "gram"}, "forms": ["form/grated"], "part": "paste"},
+    {"thing": "ingredient/garlic", "amount": {"value": 5, "unit": "clove"}, "forms": ["form/minced"], "part": "paste"},
+    {"thing": "ingredient/water", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "paste"},
+    {
+      "thing": "ingredient/coconut-oil",
+      "amount": {"value": 3, "unit": "tablespoon"},
+      "forms": [],
+      "part": "coconut-oil"
+    },
+    {
+      "thing": "ingredient/mustard-seed",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "mustard-seed"
+    },
+    {
+      "thing": "ingredient/fenugreek-seed",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "fenugreek-seed"
+    },
+    {"thing": "ingredient/curry-leaf", "amount": {"value": 2, "unit": "sprig"}, "forms": [], "part": "curry-leaf"},
+    {
+      "thing": "ingredient/shallot",
+      "amount": {"value": 6, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "shallot"
+    },
+    {
+      "thing": "ingredient/green-chilli",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "green-chilli"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/mixing-bowl", "equipment/blender", "equipment/saucepan", "equipment/fine-sieve",
+    "equipment/wooden-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/infuse",
+      "works_on": ["ingredient/water"],
+      "with": ["ingredient/tamarind"],
+      "text": "Steep the tamarind in the warm water for a while, then squeeze and rub it through the fingers and strain off the sour juice. Throw away the seeds and fibres.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-spice-paste",
+      "works_on": [
+        "ingredient/kashmiri-red-chilli-powder", "ingredient/turmeric", "ingredient/ginger", "ingredient/garlic"
+      ],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Work the chilli powder, the turmeric, the ginger and the garlic with the water and a little salt to a smooth red paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/spice-paste"]
+    },
+    {
+      "technique": "technique/temper-spices-in-hot-fat",
+      "works_on": ["ingredient/mustard-seed", "ingredient/fenugreek-seed", "ingredient/curry-leaf"],
+      "with": ["ingredient/coconut-oil"],
+      "text": "Heat the coconut oil in a wide pan until a mustard seed jumps at once. Add the mustard, the fenugreek and the curry leaves and let them crackle and darken a shade.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/shallot"],
+      "with": ["ingredient/coconut-oil", "ingredient/green-chilli"],
+      "text": "Add the shallots and the green chilli to the same pan and cook gently until the shallots are soft and glossy.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-masala-base",
+      "works_on": ["preparation/spice-paste"],
+      "with": ["ingredient/coconut-oil"],
+      "text": "Lower the heat, stir in the paste and cook it, stirring, until the raw smell is gone and the oil parts from it at the edge. Add a splash of water whenever it sticks.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/kingfish"],
+      "with": ["preparation/spice-paste", "ingredient/tamarind", "ingredient/water", "ingredient/salt"],
+      "text": "Pour in the tamarind juice and the rest of the water and add the salt. Bring it to a boil, lay in the fish, and simmer gently, shaking the pan now and then instead of stirring, until the gravy has thickened a little and the oil shines on top. Check a piece of fish against a trusted guide to doneness.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

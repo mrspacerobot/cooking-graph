@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/ratatouille",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["saute", "stew"],
+  "at_home": ["eggplant", "zucchini", "red bell peppers", "tomatoes", "onion", "garlic", "olive oil", "thyme", "salt"],
+  "dishes": ["ratatouille"],
+  "why": "Summer vegetables sauteed and stewed together in olive oil make a Provencal classic."
+}

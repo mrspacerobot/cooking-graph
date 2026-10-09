@@ -70,6 +70,33 @@
       "ratio": null,
       "caveat": "It is fruity instead of tangy and aged.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/butter",
+      "allows": true,
+      "when": ["technique/sear", "technique/saute", "technique/sweat", "technique/pan-fry", "technique/roast"],
+      "not_when": ["technique/baste", "technique/make-shortcrust-pastry", "technique/mantecare"],
+      "ratio": null,
+      "caveat": "It gives a cooking fat with a fruity taste and no butter aroma. It will not give the foaming, browning butter for basting, the cold-butter finish or a flaky short pastry.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sunflower-oil",
+      "allows": true,
+      "when": ["technique/pan-fry", "technique/sweat", "technique/make-naan-dough"],
+      "not_when": ["technique/fry-briouats", "technique/fry-sfenj"],
+      "ratio": null,
+      "caveat": "Its fruity flavour changes the finish. Keep it below the point where it smokes.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/smen",
+      "allows": true,
+      "when": ["technique/marinate", "technique/steam-couscous", "technique/sweat"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is fruity instead of tangy and aged.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

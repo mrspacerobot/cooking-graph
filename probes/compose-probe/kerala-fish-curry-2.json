@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/kerala-fish-curry-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["temper", "simmer"],
+  "at_home": [
+    "firm white fish",
+    "coconut milk",
+    "mustard seeds",
+    "curry leaves",
+    "onion",
+    "tomato",
+    "turmeric",
+    "chilli powder",
+    "tamarind"
+  ],
+  "dishes": ["kerala fish curry", "fish molee"],
+  "why": "A tangy coconut curry cooks fish gently, with tamarind standing in for kokum."
+}

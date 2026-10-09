@@ -14,7 +14,17 @@
     {"thing": "group/woody-herbs", "tier": "drafted"}
   ],
   "teaches": [],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/bay-leaf",
+      "allows": true,
+      "when": ["technique/braise", "technique/simmer"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The bundle holds a bay leaf already but adds thyme, parsley and leek, so the pot tastes a little greener and more herbal.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

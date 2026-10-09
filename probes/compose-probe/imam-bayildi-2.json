@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/imam-bayildi-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["fry", "stuff", "bake"],
+  "at_home": ["eggplants", "onions", "tomatoes", "garlic", "olive oil", "parsley", "sugar", "salt"],
+  "dishes": ["imam bayildi", "karniyarik without meat"],
+  "why": "Fried eggplants filled with sweet onion and tomato turn silky in the oven."
+}

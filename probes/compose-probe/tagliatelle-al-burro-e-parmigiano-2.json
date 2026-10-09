@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/tagliatelle-al-burro-e-parmigiano-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["knead", "roll", "boil"],
+  "at_home": ["00 flour", "eggs", "butter", "parmesan", "salt"],
+  "dishes": ["tagliatelle al burro e parmigiano", "fettuccine alfredo in the Roman style"],
+  "why": "Flour and eggs become silky fresh pasta that only needs butter and cheese."
+}

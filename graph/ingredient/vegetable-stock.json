@@ -57,6 +57,29 @@
       "ratio": null,
       "caveat": "It is thinner and lacks the meaty depth.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chicken-stock",
+      "allows": true,
+      "when": ["technique/braise", "technique/deglaze", "technique/simmer"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is thinner and has less depth, so the dish turns out lighter.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/water",
+      "allows": true,
+      "when": [
+        "technique/cook-rice", "technique/cook-polenta", "technique/cook-rice-with-lentils",
+        "technique/swell-bulgur-in-hot-liquid", "technique/steam-couscous", "technique/simmer"
+      ],
+      "not_when": [
+        "technique/blanch", "technique/boil-pasta", "technique/rinse", "technique/soak", "technique/soak-in-water"
+      ],
+      "ratio": null,
+      "caveat": "It adds a mild savoury depth, and it may already be salted, so season carefully.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

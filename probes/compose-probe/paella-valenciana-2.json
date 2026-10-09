@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/paella-valenciana-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["saute", "simmer"],
+  "at_home": [
+    "arborio rice",
+    "chicken thighs",
+    "smoked paprika",
+    "saffron",
+    "canned tomatoes",
+    "green beans",
+    "olive oil",
+    "chicken stock",
+    "salt"
+  ],
+  "dishes": ["paella valenciana", "arroz con pollo"],
+  "why": "Chicken and rice cooked flat in one pan soak up saffron and stock, with arborio standing in for bomba."
+}

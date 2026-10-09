@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/chicken-piccata",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["dredge", "deglaze", "mount with butter"],
+  "at_home": [
+    "chicken breasts",
+    "flour",
+    "lemon",
+    "capers",
+    "butter",
+    "dry white wine",
+    "chicken stock",
+    "parsley",
+    "salt"
+  ],
+  "dishes": ["chicken piccata"],
+  "why": "Thin floured chicken with a bright lemon caper pan sauce is a quick weeknight Italian-American dish."
+}

@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+"""swap-gaps: where a swap is plausible and the graph offers none. It writes nothing.
+
+./swap-gaps                the counts
+./swap-gaps --list [--top N]  the gaps, most recipes first (default 25)
+./swap-gaps --new          foods that are in no stand-in row at all
+"""
+
+import argparse
+import os
+import sys
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+
+from tools import check, swap_gaps  # noqa: E402
+
+parser = argparse.ArgumentParser(prog="swap-gaps", description="A work list for drafting swaps. A listed pair may be a poor swap.")
+parser.add_argument("--list", action="store_true", help="list the gaps, most recipes first")
+parser.add_argument("--top", type=int, default=25, help="how many gaps to list")
+parser.add_argument("--new", action="store_true", help="list foods with no stand-in row at all")
+args = parser.parse_args()
+
+things, issues = check.read_repository(ROOT)
+if issues:
+    print("swap-gaps: ./check finds %d issues" % len(issues), file=sys.stderr)
+    sys.exit(1)
+if args.new:
+    foods = swap_gaps.new_foods(things)
+    print("\n".join(foods))
+    print("swap-gaps: %d foods in no stand-in row. Draft their swaps (see AGENTS.md)." % len(foods))
+elif args.list:
+    print("\n".join(swap_gaps.listing(swap_gaps.analyse(things), args.top)))
+else:
+    print("\n".join(swap_gaps.summary(swap_gaps.analyse(things), swap_gaps.new_foods(things))))

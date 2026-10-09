@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/mujaddara-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["simmer", "fry", "caramelize"],
+  "at_home": ["brown lentils", "long grain rice", "onions", "olive oil", "cumin", "salt"],
+  "dishes": ["mujaddara"],
+  "why": "Lentils and rice crowned with deeply browned onions make a cheap and filling meal."
+}

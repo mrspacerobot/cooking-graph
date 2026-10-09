@@ -6,11 +6,28 @@ SAFETY = "Safety records are unverified. Internal graph exploration only; nothin
 FOODS = ("ingredient", "preparation")
 
 
+def singular_forms(word):
+    """What a plural may be the plural of, for a word of four letters or more. A guess, so resolve wants it unique."""
+    plain = names.plain(word)
+    forms = []
+    for ending, instead in (("ies", "y"), ("oes", "o"), ("es", ""), ("s", "")):
+        if plain.endswith(ending) and len(plain) - len(ending) >= 3:
+            forms.append(plain[:-len(ending)] + instead)
+    return forms
+
+
+def named(things, plain_word, kinds):
+    return sorted(thing_id for thing_id, thing in things.items()
+                  if thing.kind in kinds and plain_word in names.plain_names(thing.data))
+
+
 def resolve(things, word, kinds):
+    """An id, else an exact name, else the one thing a plural reads as. Ambiguity is an error, never a pick."""
     if word in things and things[word].kind in kinds:
         return word
-    matches = sorted(thing_id for thing_id, thing in things.items()
-                     if thing.kind in kinds and names.plain(word) in names.plain_names(thing.data))
+    matches = named(things, names.plain(word), kinds)
+    if not matches:
+        matches = sorted({found for form in singular_forms(word) for found in named(things, form, kinds)})
     if len(matches) != 1:
         raise ValueError("unknown or ambiguous %s: %s" % ("/".join(kinds), word))
     return matches[0]
@@ -96,16 +113,37 @@ def stand_ins(things, recipe_word, avoid=()):
     return {"recipe": recipe_id, "safety": SAFETY, "avoid": avoided, "lines": lines}
 
 
+def family(things, technique_id):
+    """The technique and every technique that is a variant of it, at any depth. A kind of boil is a boil, not the reverse."""
+    children = {}
+    for thing_id, thing in things.items():
+        if thing.kind == "technique":
+            for row in thing.data["variant_of"]:
+                children.setdefault(row["thing"], []).append(thing_id)
+    found, waiting = {technique_id}, [technique_id]
+    while waiting:
+        for child in children.get(waiting.pop(), []):
+            if child not in found:
+                found.add(child)
+                waiting.append(child)
+    return found
+
+
 def recipes(things, technique_word):
     technique_id = resolve(things, technique_word, ("technique",))
+    kin = family(things, technique_id)
     found = []
     for recipe_id, thing in sorted(things.items()):
-        if thing.kind != "recipe" or not any(step["technique"] == technique_id for step in thing.data["steps"]):
+        if thing.kind != "recipe":
+            continue
+        used = {step["technique"] for step in thing.data["steps"]}
+        if not used & kin:
             continue
         whole = things[thing.data["makes"]].data
-        teaches = any(row["thing"] == technique_id for row in whole["teaches"])
-        found.append({"recipe": recipe_id, "makes": whole["id"], "teaches": teaches, "tier": thing.data["tier"]})
-    found.sort(key=lambda row: (not row["teaches"], row["recipe"]))
+        teaches = any(row["thing"] in kin for row in whole["teaches"])
+        found.append({"recipe": recipe_id, "makes": whole["id"], "teaches": teaches, "tier": thing.data["tier"],
+                      "exact": technique_id in used, "variants_used": sorted(used & kin - {technique_id})})
+    found.sort(key=lambda row: (not row["exact"], not row["teaches"], row["recipe"]))
     return {"technique": technique_id, "safety": SAFETY, "recipes": found}
 
 
@@ -141,5 +179,132 @@ def kitchen(things, technique_word, at_home, avoid=()):
     answer["at_home"] = home
     answer["avoid"] = avoided
     answer["recipes"] = [home_recipe(things, row, home, avoided) for row in answer["recipes"]]
-    answer["recipes"].sort(key=lambda row: (row["missing_count"], not row["teaches"], row["recipe"]))
+    answer["recipes"].sort(key=lambda row: (row["missing_count"], not row["exact"], not row["teaches"], row["recipe"]))
     return answer
+
+
+# A ratio is by weight, volume or count. A unit outside this table (a pinch) has no measure, so no ratio applies.
+MEASURE_OF_UNIT = {"gram": "weight", "kilogram": "weight", "millilitre": "volume", "litre": "volume",
+                   "teaspoon": "volume", "tablespoon": "volume", "piece": "count", "clove": "count",
+                   "sprig": "count", "leaf": "count", "slice": "count"}
+
+
+def number(value):
+    value = round(value, 2)
+    return int(value) if value == int(value) else value
+
+
+def amount_of(amount, factor):
+    return {"value": number(amount["value"] * factor), "unit": amount["unit"]}
+
+
+def scaling(recipe, servings):
+    """The factor to multiply every amount by, the servings asked for, and a note when they cannot be applied."""
+    if servings is None:
+        return 1, None, None
+    if servings <= 0:
+        raise ValueError("servings must be more than zero")
+    yields = recipe["yields"]
+    if yields["unit"] != "serving":
+        return 1, None, "The recipe yields in %s, not servings; amounts are as written." % yields["unit"]
+    return servings / yields["value"], {"from": number(yields["value"]), "to": number(servings)}, None
+
+
+def line_amount(amount, status, choice, factor):
+    needed = amount_of(amount, factor)
+    answer = {"original": needed, "for_home": None, "note": None}
+    if status == "at-home":
+        answer["for_home"] = needed
+    elif status != "missing":
+        ratio = choice["ratio"]
+        if ratio is None:
+            answer["note"] = "No ratio is recorded for this swap, so the amount is not converted."
+        elif MEASURE_OF_UNIT.get(amount["unit"]) != ratio["by"]:
+            answer["note"] = "The recorded ratio is by %s and does not fit this amount, so it is not converted." % ratio["by"]
+        else:
+            answer["for_home"] = amount_of(amount, factor * ratio["stand_in"] / ratio["original"])
+    return answer
+
+
+def steps_as_read(recipe, parts):
+    """Each step as written, and which ingredient to read in place of which, from the parts already answered."""
+    replaced = {line["original"]: line["choice"]["thing"] for part in parts for line in part["lines"]
+                if line["status"] not in ("at-home", "missing")}
+    return [{"technique": step["technique"], "text": step["text"], "time": step["time"],
+             "temperature": step["temperature"], "safety_points": step["safety_points"],
+             "read_as": [{"original": thing_id, "instead": replaced[thing_id]}
+                         for thing_id in step["works_on"] + step["with"] if thing_id in replaced]}
+            for step in recipe["steps"]]
+
+
+def compose_recipe(things, row, home, avoided, factor):
+    answer = home_recipe(things, row, home, avoided)
+    recipe = things[row["recipe"]].data
+    amounts = {(line["part"], line["thing"]): line["amount"] for line in recipe["ingredients"]}
+    answer["missing"] = []
+    for part in answer["parts"]:
+        for line in part["lines"]:
+            line["amount"] = line_amount(amounts[(part["part"], line["original"])], line["status"], line["choice"], factor)
+            if line["status"] == "missing" and not part["optional"]:
+                answer["missing"].append({"part": part["part"], "original": line["original"]})
+    answer["steps"] = steps_as_read(recipe, answer["parts"])
+    return answer
+
+
+def own_techniques(recipe):
+    return {step["technique"] for step in recipe["steps"]}
+
+
+def preparation_techniques(things, recipe_id, made_by, seen):
+    """Techniques of the recipes that make the preparations this recipe names, at any depth. A loop ends."""
+    found = set()
+    for line in things[recipe_id].data["ingredients"]:
+        for made in made_by.get(line["thing"], []):
+            if made not in seen:
+                seen.add(made)
+                found |= own_techniques(things[made].data)
+                found |= preparation_techniques(things, made, made_by, seen)
+    return found
+
+
+def compose(things, technique_words, at_home, avoid=(), servings=None, top=5):
+    """Recipes that practise the techniques, adapted to what is at home: the stand-ins, amounts and steps as read.
+
+    A technique counts when a step uses it, when a step uses a variant of it, or when the recipe of a preparation
+    the dish names does. Exact use ranks first.
+    """
+    if not technique_words:
+        raise ValueError("name at least one technique")
+    if top < 1:
+        raise ValueError("top must be at least one")
+    techniques = resolve_many(things, technique_words, ("technique",))
+    home = resolve_many(things, at_home, FOODS)
+    avoided = resolve_many(things, avoid, ("fact",))
+    kin = {one: family(things, one) for one in techniques}
+    made_by = {}
+    for recipe_id, thing in things.items():
+        if thing.kind == "recipe":
+            made_by.setdefault(thing.data["makes"], []).append(recipe_id)
+    answers = []
+    for recipe_id, thing in sorted(things.items()):
+        if thing.kind != "recipe":
+            continue
+        own = own_techniques(thing.data)
+        through = preparation_techniques(things, recipe_id, made_by, {recipe_id}) - own
+        covered = [one for one in techniques if kin[one] & (own | through)]
+        if not covered:
+            continue
+        whole = things[thing.data["makes"]].data
+        by_variant = {one: sorted(kin[one] & own - {one}) for one in covered if one not in own and kin[one] & own}
+        by_preparation = {one: sorted(kin[one] & through) for one in covered if not kin[one] & own}
+        row = {"recipe": recipe_id, "makes": whole["id"], "tier": thing.data["tier"],
+               "teaches": any(one["thing"] in kin[t] for one in whole.get("teaches", []) for t in techniques),
+               "covered": covered, "uncovered": [one for one in techniques if one not in covered],
+               "covered_by_variant": by_variant, "covered_by_preparation": by_preparation,
+               "exact_count": sum(one in own for one in techniques)}
+        factor, asked, note = scaling(thing.data, servings)
+        answer = compose_recipe(things, row, home, avoided, factor)
+        answers.append(dict(answer, servings=asked, scaling_note=note))
+    answers.sort(key=lambda row: (len(row["uncovered"]), row["missing_count"], len(row["covered_by_preparation"]),
+                                  -row["exact_count"], not row["teaches"], row["recipe"]))
+    return {"techniques": techniques, "at_home": home, "avoid": avoided, "safety": SAFETY, "recipes": answers[:top]}

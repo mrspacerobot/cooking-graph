@@ -40,6 +40,15 @@
       "ratio": null,
       "caveat": "The result is much richer and heavier, so thin it with water.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/milk",
+      "allows": true,
+      "when": ["technique/mash", "technique/infuse", "technique/make-crepes"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "The result is much richer and heavier. Thin it if the dish should stay light.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

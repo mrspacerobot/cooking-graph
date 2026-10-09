@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/mujaddara",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["caramelize onions", "simmer"],
+  "at_home": ["brown lentils", "coarse bulgur", "onions", "olive oil", "ground cumin", "salt"],
+  "dishes": ["mujaddara"],
+  "why": "No rice in the house, but bulgur makes the other traditional mujaddara of lentils under deeply browned onions."
+}

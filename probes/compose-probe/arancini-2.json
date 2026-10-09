@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/arancini-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["simmer", "bread", "deep-fry"],
+  "at_home": [
+    "arborio rice",
+    "chicken stock",
+    "mozzarella",
+    "eggs",
+    "breadcrumbs",
+    "flour",
+    "vegetable oil",
+    "parmesan",
+    "salt"
+  ],
+  "dishes": ["arancini", "suppli"],
+  "why": "Rice cooked like a risotto is shaped around cheese, crumbed and fried into crisp balls."
+}

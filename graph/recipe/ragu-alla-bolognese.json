@@ -1,0 +1,71 @@
+{
+  "id": "recipe/ragu-alla-bolognese",
+  "tier": "drafted",
+  "names": {"en": "Ragu alla bolognese"},
+  "aliases": {},
+  "makes": "preparation/ragu",
+  "yields": {"value": 800, "unit": "millilitre"},
+  "ingredients": [
+    {"thing": "ingredient/minced-beef", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "meat"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/minced"],
+      "part": "soffritto"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/minced"],
+      "part": "soffritto"
+    },
+    {
+      "thing": "ingredient/celery",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/minced"],
+      "part": "soffritto"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "soffritto"},
+    {"thing": "ingredient/white-wine", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/milk", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "milk"},
+    {"thing": "ingredient/beef-stock", "amount": {"value": 400, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/wooden-spoon", "equipment/chefs-knife",
+    "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-a-soffritto",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Warm the olive oil in the pot over low heat. Add the onion, carrot and celery, minced very fine, with a little of the salt. Cook slowly, stirring often, until they melt into a soft, golden mass.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/soffritto"]
+    },
+    {
+      "technique": "technique/make-a-ragu",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["preparation/soffritto", "ingredient/white-wine", "ingredient/tomato-paste", "ingredient/milk"],
+      "text": "Raise the heat a little and add the beef in small lots, breaking it up with the spoon and letting each lot take colour. Pour in the wine and let it bubble away almost completely. Stir in the tomato paste, then the milk.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["preparation/soffritto", "ingredient/beef-stock", "ingredient/salt"],
+      "text": "Add the stock, turn the heat low and leave the pot with the lid ajar, stirring now and then, until the beef is very tender, the sauce is thick and the fat shows at the edge. Season with the rest of the salt at the end. Check the beef against a trusted guide to doneness.",
+      "time": {"from": 2, "to": 3, "unit": "hour"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/ragu"]
+    }
+  ]
+}

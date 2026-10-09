@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/chapati-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["knead", "roll", "griddle"],
+  "at_home": ["whole wheat flour", "water", "ghee", "salt", "cumin seeds"],
+  "dishes": ["chapati", "plain paratha"],
+  "why": "Flour and water give fresh flatbreads to eat with any curry."
+}

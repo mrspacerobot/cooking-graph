@@ -37,7 +37,17 @@
   "teaches": [
     {"thing": "technique/simmer", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/water",
+      "allows": true,
+      "when": ["technique/poach"],
+      "not_when": ["technique/make-choux-pastry"],
+      "ratio": null,
+      "caveat": "It adds a gentle savoury, acidic note to the poaching liquid, and the food comes out cleaner in taste.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

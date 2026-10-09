@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/oyakodon",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["simmer", "cook rice"],
+  "at_home": ["chicken thighs", "eggs", "onion", "chicken stock", "soy sauce", "mirin", "sugar", "rice"],
+  "dishes": ["oyakodon"],
+  "why": "Chicken stock stands in for dashi as chicken and onion simmer and set in egg over rice."
+}

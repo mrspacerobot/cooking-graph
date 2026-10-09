@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/salade-lyonnaise",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["poach", "render", "make a vinaigrette"],
+  "at_home": [
+    "frisee lettuce",
+    "eggs",
+    "streaky bacon",
+    "red wine vinegar",
+    "dijon mustard",
+    "shallot",
+    "stale bread",
+    "olive oil",
+    "salt"
+  ],
+  "dishes": ["salade lyonnaise"],
+  "why": "With streaky bacon standing in for lardons, a poached egg on bitter leaves with warm bacon dressing is a full meal."
+}

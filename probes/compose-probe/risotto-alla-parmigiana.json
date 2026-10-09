@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/risotto-alla-parmigiana",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["toast rice", "deglaze", "mount with butter"],
+  "at_home": ["arborio rice", "onion", "dry vermouth", "chicken stock", "parmesan", "butter", "salt"],
+  "dishes": ["risotto alla parmigiana", "risotto bianco"],
+  "why": "Dry vermouth stands in for the white wine, and the rice is finished with cold butter and parmesan for a creamy risotto."
+}

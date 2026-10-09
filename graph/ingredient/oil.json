@@ -43,6 +43,42 @@
       "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
       "caveat": "It is neutral too, though the taste can vary with the kind.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/butter",
+      "allows": true,
+      "when": ["technique/fry-masala-base"],
+      "not_when": ["technique/mount-with-butter", "technique/make-brown-butter"],
+      "ratio": null,
+      "caveat": "It loses the buttery taste. Use a neutral oil, and the gravy will need its richness from the cream.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/ghee",
+      "allows": true,
+      "when": ["technique/temper-spices-in-hot-fat", "technique/saute", "technique/cook-a-chapati"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It lacks the nutty, buttery taste and richness of ghee.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/coconut-oil",
+      "allows": true,
+      "when": ["technique/temper-spices-in-hot-fat"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It lacks the coconut taste and aroma.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/ghee",
+      "allows": true,
+      "when": ["technique/cook-a-naan", "technique/fry-and-soak-in-syrup", "technique/make-a-taqliyeh"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It lacks the nutty, buttery taste and richness of ghee.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

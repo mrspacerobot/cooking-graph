@@ -35,7 +35,8 @@
     {"thing": "technique/boil-pasta", "tier": "drafted"},
     {"thing": "technique/toss-pasta-with-sauce", "tier": "drafted"},
     {"thing": "technique/render", "tier": "drafted"},
-    {"thing": "technique/whisk", "tier": "drafted"}
+    {"thing": "technique/whisk", "tier": "drafted"},
+    {"thing": "technique/emulsify-off-the-heat", "tier": "drafted"}
   ],
   "belongs_to": [
     {"thing": "cuisine/italian", "tier": "drafted"}

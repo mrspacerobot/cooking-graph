@@ -562,6 +562,13 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 - **Not yet:** Japanese, Hindi, Arabic and Greek names. Techniques and cuisines have no `same_as`. FoodOn is recorded as a source and nothing is imported from it.
 - **No promotion:** the rows are sourced because a person can open the source and see the id there. The things stay drafted.
 
+### 34. A probe that names several techniques: compose-probe (compose)
+
+- **Example:** a cook with chicken thighs, butter and lemon asks for the sear and the butter mount together. A `kitchen-probe` names one `technique`, so it cannot say that the recipe must practise both, and the first `./compose` could not be measured on its main input.
+- **Now:** a new kind `compose-probe` lives in `probes/`, apart from the graph. It has `id`, `tier`, `batch`, `set` and `written_by` as every probe does, and `techniques` (a list of names, at least one), `at_home` (names), `dishes` (names, at least one) and `why`. The hash rule holds back one in five within the kind and batch, as for a dish probe: a probe whose dish is already written, or that a level is practised through, is passed over for the next in the hash order, and a dish that a held-back compose probe asks for may not be written (`drafted-towards-held-back`, which names the dish file and never the probe). It is answered when every expected dish has a recipe that practises every named technique and has no required part missing, counting stand-ins at home as `./compose` does. It measures recall of the expected dishes, not whether every returned recipe deserves a cook's approval. A question is its techniques and its pantry, in any order or case: the same question twice in a batch is refused (`same-question-twice`). It is counted in `./numbers`, growing and held back apart, and never listed.
+- **Not yet:** a probe about amounts, servings or the read-as list of a step. The first batch asks only whether the right dishes come back.
+- **No promotion:** the probes are drafted by another writer than the drafter of the graph.
+
 ## Decisions where the starting model was silent
 
 These are not changes. The starting model names kinds and statements, not files, so the first files had to settle them.

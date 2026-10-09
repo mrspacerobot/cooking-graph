@@ -1,0 +1,128 @@
+{
+  "id": "recipe/fish-molee",
+  "tier": "drafted",
+  "names": {"en": "Fish molee"},
+  "aliases": {},
+  "makes": "dish/fish-molee",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/kingfish",
+      "amount": {"value": 600, "unit": "gram"},
+      "forms": ["form/large-pieces"],
+      "part": "fish"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/turmeric", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "turmeric"},
+    {
+      "thing": "ingredient/coconut-oil",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "coconut-oil"
+    },
+    {"thing": "ingredient/curry-leaf", "amount": {"value": 2, "unit": "sprig"}, "forms": [], "part": "curry-leaf"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/sliced"], "part": "onion"},
+    {
+      "thing": "ingredient/ginger",
+      "amount": {"value": 20, "unit": "gram"},
+      "forms": ["form/julienne"],
+      "part": "ginger"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": ["form/sliced"], "part": "garlic"},
+    {
+      "thing": "ingredient/green-chilli",
+      "amount": {"value": 3, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "green-chilli"
+    },
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {
+      "thing": "ingredient/coconut-milk",
+      "amount": {"value": 150, "unit": "millilitre"},
+      "forms": [],
+      "part": "thin-milk"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {
+      "thing": "ingredient/coconut-milk",
+      "amount": {"value": 200, "unit": "millilitre"},
+      "forms": [],
+      "part": "thick-milk"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/lemon-juice",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "lemon-juice"
+    }
+  ],
+  "equipment": ["equipment/stovetop", "equipment/saute-pan", "equipment/wooden-spoon"],
+  "steps": [
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/kingfish"],
+      "with": ["ingredient/salt", "ingredient/turmeric"],
+      "text": "Rub the fish pieces with the first of the salt and the turmeric and leave them aside while the gravy base is made.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/temper-spices-in-hot-fat",
+      "works_on": ["ingredient/curry-leaf"],
+      "with": ["ingredient/coconut-oil"],
+      "text": "Heat the coconut oil in a wide pan over a medium heat and add the curry leaves. Let them crackle for a moment.",
+      "time": {"from": 30, "to": 60, "unit": "second"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/garlic"],
+      "with": ["ingredient/coconut-oil", "ingredient/ginger", "ingredient/green-chilli", "ingredient/black-pepper"],
+      "text": "Add the onion and the garlic and cook gently, without letting them take colour, until they are soft and clear. Add the ginger, the green chilli and the pepper and cook for a short while longer.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/kingfish"],
+      "with": ["ingredient/coconut-milk", "ingredient/water"],
+      "text": "Pour in the thin coconut milk and the water and bring them just to a gentle simmer. Lay in the fish in a single layer, and poach it with the pan partly covered, turning the pieces once with care. Do not let the milk boil hard. Check a piece of fish against a trusted guide to doneness.",
+      "time": {"from": 6, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/kingfish"],
+      "with": ["ingredient/coconut-milk"],
+      "text": "Stir in the thick coconut milk and warm it through below a simmer, shaking the pan gently, until the gravy is glossy and just coats a spoon.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/kingfish"],
+      "with": ["ingredient/salt", "ingredient/lemon-juice"],
+      "text": "Taste the gravy and add the rest of the salt and the lemon juice a little at a time. Serve it hot with rice or with appam.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

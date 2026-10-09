@@ -1,0 +1,98 @@
+{
+  "id": "recipe/chicken-tagine-with-preserved-lemon-and-olives",
+  "tier": "drafted",
+  "names": {"en": "Chicken tagine with preserved lemon and olives"},
+  "aliases": {},
+  "makes": "dish/chicken-tagine-with-preserved-lemon-and-olives",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 1000, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/sliced"], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/ginger", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "ginger"},
+    {"thing": "ingredient/turmeric", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "turmeric"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/saffron", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "saffron"},
+    {
+      "thing": "preparation/preserved-lemon",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": [],
+      "part": "preserved-lemon"
+    },
+    {"thing": "ingredient/green-olive", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "olive"},
+    {"thing": "ingredient/water", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 8, "unit": "sprig"}, "forms": [], "part": "coriander"},
+    {"thing": "ingredient/parsley", "amount": {"value": 8, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/tagine", "equipment/mixing-bowl", "equipment/wooden-spoon", "equipment/spoon",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["preparation/preserved-lemon", "ingredient/green-olive"],
+      "with": ["ingredient/water"],
+      "text": "Rinse the preserved lemons and the olives under cold water to take off some of the brine. Quarter the lemons, scrape away the pulp and keep the rind.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["preparation/preserved-lemon", "ingredient/coriander-leaf", "ingredient/parsley"],
+      "with": [],
+      "text": "Cut the lemon rind into thin strips, and chop the coriander and the parsley together.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-in-a-tagine",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [
+        "ingredient/onion", "ingredient/garlic", "ingredient/olive-oil", "ingredient/ginger", "ingredient/turmeric",
+        "ingredient/black-pepper", "ingredient/saffron", "ingredient/water", "ingredient/salt"
+      ],
+      "text": "Spread the sliced onion over the base of the tagine with the oil, the garlic, the ginger, the turmeric, the pepper and the saffron. Pour in the water, lay the chicken on top and season lightly, as the lemon and the olives will be salty. Cover with the lid and cook over the lowest heat, without stirring, until the chicken is tender. Check a piece against a trusted guide to doneness.",
+      "time": {"from": 45, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/cook-in-a-tagine",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["preparation/preserved-lemon", "ingredient/green-olive"],
+      "text": "Scatter the lemon rind and the olives over the chicken, cover again and cook on until the flavours have joined and the sauce is short.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/braising-liquid"],
+      "with": [],
+      "text": "Lift the chicken aside. Boil the sauce down in the open dish until it is golden and clings to a spoon, then put the chicken back.",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/coriander-leaf", "ingredient/parsley"],
+      "text": "Scatter the coriander and the parsley over the chicken and serve from the tagine.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

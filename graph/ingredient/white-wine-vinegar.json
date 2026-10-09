@@ -60,6 +60,15 @@
       "ratio": null,
       "caveat": "It is sharper and has no wine fruit, so use less.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/lemon",
+      "allows": true,
+      "when": ["technique/season"],
+      "not_when": ["technique/garnish"],
+      "ratio": null,
+      "caveat": "It gives a sharp sourness without the citrus aroma. It cannot be used as a garnish the way a wedge of lemon can.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

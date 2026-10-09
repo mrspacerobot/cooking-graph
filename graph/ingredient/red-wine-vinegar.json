@@ -60,6 +60,24 @@
       "ratio": null,
       "caveat": "It is darker and fruitier, and colours the sauce.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/lemon",
+      "allows": true,
+      "when": ["technique/season", "technique/toss"],
+      "not_when": ["technique/garnish"],
+      "ratio": null,
+      "caveat": "It brings a sharper winey sourness and no citrus aroma. It cannot take the place of a lemon wedge or slice on the plate.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/white-wine-vinegar",
+      "allows": true,
+      "when": ["technique/season"],
+      "not_when": ["technique/make-a-bearnaise", "technique/poach"],
+      "ratio": null,
+      "caveat": "It is darker and fruitier and tints what it touches. It would stain poached eggs or fish and spoil the pale colour of a bearnaise.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

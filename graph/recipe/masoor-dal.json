@@ -1,0 +1,70 @@
+{
+  "id": "recipe/masoor-dal",
+  "tier": "drafted",
+  "names": {"en": "Masoor dal"},
+  "aliases": {},
+  "makes": "dish/masoor-dal",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/red-lentil", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "dal"},
+    {"thing": "ingredient/water", "amount": {"value": 800, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/turmeric", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "turmeric"},
+    {"thing": "ingredient/ginger", "amount": {"value": 15, "unit": "gram"}, "forms": ["form/grated"], "part": "ginger"},
+    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/diced"], "part": "tomato"},
+    {
+      "thing": "ingredient/green-chilli",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "green-chilli"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/ghee", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "tempering-fat"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": ["form/sliced"], "part": "garlic"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {
+      "thing": "ingredient/dried-red-chilli",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": [],
+      "part": "dried-chilli"
+    },
+    {"thing": "ingredient/asafoetida", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "asafoetida"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "lemon-juice"},
+    {
+      "thing": "ingredient/coriander-leaf",
+      "amount": {"value": 10, "unit": "gram"},
+      "forms": ["form/chopped"],
+      "part": "coriander"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/colander", "equipment/saucepan", "equipment/frying-pan", "equipment/wooden-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/red-lentil"],
+      "with": [
+        "ingredient/water", "ingredient/turmeric", "ingredient/ginger", "ingredient/tomato", "ingredient/green-chilli",
+        "ingredient/salt"
+      ],
+      "text": "Rinse the lentils in a colander under cold water, turning them with your fingers, until the water is nearly clear, and drain them well. Put them in a saucepan with the water, the turmeric, the ginger, the tomato and the green chilli. Bring to a boil, skim off the foam, and then simmer gently, stirring now and then, until the lentils have fallen apart into a soft porridge. Add a splash of hot water if it thickens too much. Stir in the salt, beat the dal with a wooden spoon for a moment to make it smooth, and taste.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/temper-spices-in-hot-fat",
+      "works_on": ["ingredient/cumin", "ingredient/dried-red-chilli", "ingredient/asafoetida"],
+      "with": [
+        "ingredient/ghee", "ingredient/garlic", "ingredient/red-lentil", "ingredient/lemon-juice",
+        "ingredient/coriander-leaf"
+      ],
+      "text": "Heat the ghee in a small pan until a cumin seed sizzles at once. Add the cumin, the dried chillies and the asafoetida, then the garlic, and cook just until the garlic turns pale gold and the scent rises. Pour the sizzling ghee and spices over the dal at once and stir once. Sharpen with the lemon juice, scatter the coriander over the top and serve it hot.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

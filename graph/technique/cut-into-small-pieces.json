@@ -40,6 +40,11 @@
       "thing": "technique/dice",
       "differs": "The pieces are small but cut by eye and not to an exact cube, since they only need to blend into rice or a filling.",
       "tier": "drafted"
+    },
+    {
+      "thing": "technique/chop",
+      "differs": "The pieces are small and loose, cut to spread through rice, a filling or a sauce, so the exact shape still does not matter.",
+      "tier": "drafted"
     }
   ],
   "belongs_to": []

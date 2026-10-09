@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/seven-vegetable-couscous-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["steam", "simmer"],
+  "at_home": [
+    "couscous",
+    "carrots",
+    "zucchini",
+    "turnip",
+    "canned chickpeas",
+    "onion",
+    "ras el hanout",
+    "butter",
+    "salt"
+  ],
+  "dishes": ["seven vegetable couscous"],
+  "why": "Couscous steamed over a pot of simmering vegetables takes in their flavour."
+}

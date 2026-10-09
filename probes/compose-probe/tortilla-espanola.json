@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/tortilla-espanola",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["poach in oil", "fry"],
+  "at_home": ["potatoes", "eggs", "onion", "olive oil", "salt"],
+  "dishes": ["tortilla espanola"],
+  "why": "Potatoes and onion gently cooked in olive oil and set in egg make the Spanish omelette from five things."
+}

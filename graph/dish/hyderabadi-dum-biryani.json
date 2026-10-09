@@ -1,0 +1,62 @@
+{
+  "id": "dish/hyderabadi-dum-biryani",
+  "tier": "drafted",
+  "names": {"en": "Hyderabadi dum biryani", "fr": "Biryani dum de Hyderabad"},
+  "aliases": {"en": ["Hyderabadi biryani", "Hyderabadi lamb biryani", "kacchi biryani", "Hyderabadi mutton biryani"]},
+  "is": "The biryani of Hyderabad, made the kacchi way: raw lamb marinated for a long time in spiced yogurt, mint and crisp fried onion is layered with basmati rice that is boiled only until nearly tender, then sealed in a heavy pot with a rope of dough and cooked in its own steam, so that the meat and the rice finish together. Rose water and saffron milk scent the top. It differs from a chicken biryani in the meat, the long marinade and the raw meat going into the pot.",
+  "parts": [
+    {
+      "id": "lamb",
+      "role": "main",
+      "options": ["ingredient/lamb-shoulder", "ingredient/lamb-shank"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "rice", "role": "base", "options": ["ingredient/basmati-rice"], "optional": false, "tier": "drafted"},
+    {"id": "yogurt", "role": "coating", "options": ["ingredient/plain-yogurt"], "optional": false, "tier": "drafted"},
+    {"id": "paste", "role": "seasoning", "options": ["preparation/spice-paste"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fried-onions",
+      "role": "topping",
+      "options": ["preparation/fried-onions"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "rice-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "cardamom", "role": "seasoning", "options": ["ingredient/cardamom"], "optional": false, "tier": "drafted"},
+    {"id": "cinnamon", "role": "seasoning", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"},
+    {"id": "clove", "role": "seasoning", "options": ["ingredient/clove"], "optional": false, "tier": "drafted"},
+    {"id": "bay-leaf", "role": "aromatic", "options": ["ingredient/bay-leaf"], "optional": false, "tier": "drafted"},
+    {"id": "saffron", "role": "seasoning", "options": ["ingredient/saffron"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {
+      "id": "rose-water",
+      "role": "seasoning",
+      "options": ["ingredient/rose-water"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "ghee", "role": "fat", "options": ["ingredient/ghee"], "optional": false, "tier": "drafted"},
+    {"id": "mint", "role": "aromatic", "options": ["ingredient/mint"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "seal-flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "seal-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-on-dum", "tier": "drafted"},
+    {"thing": "technique/parboil-rice", "tier": "drafted"},
+    {"thing": "technique/marinate-in-yogurt", "tier": "drafted"},
+    {"thing": "technique/fry-onions-deep-brown", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

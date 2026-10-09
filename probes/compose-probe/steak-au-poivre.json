@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/steak-au-poivre",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["sear", "flambe", "deglaze"],
+  "at_home": ["sirloin steak", "black peppercorns", "cognac", "cream", "butter", "shallot", "salt"],
+  "dishes": ["steak au poivre"],
+  "why": "Crushed pepper, a seared steak and a cognac cream pan sauce is a fast bistro dinner."
+}

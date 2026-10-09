@@ -1,0 +1,46 @@
+{
+  "id": "dish/avgolemono-soup",
+  "tier": "drafted",
+  "names": {"en": "Avgolemono soup"},
+  "aliases": {"en": ["kotosoupa avgolemono", "Greek lemon chicken soup", "Greek egg and lemon soup"]},
+  "is": "A Greek soup of chicken and rice in a light broth, finished off the boil with a sauce of egg and lemon that turns it pale, creamy and sharp.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken-breast", "ingredient/chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "rice",
+      "role": "base",
+      "options": ["ingredient/rice", "ingredient/short-grain-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": true, "tier": "drafted"},
+    {"id": "celery", "role": "aromatic", "options": ["ingredient/celery"], "optional": true, "tier": "drafted"},
+    {"id": "avgolemono", "role": "sauce", "options": ["preparation/avgolemono"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": true, "tier": "drafted"},
+    {
+      "id": "dill",
+      "role": "garnish",
+      "options": ["ingredient/dill", "ingredient/parsley"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/make-avgolemono", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/cook-rice", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

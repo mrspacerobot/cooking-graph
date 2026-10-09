@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/ile-flottante-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["whisk", "poach", "caramelize"],
+  "at_home": ["eggs", "sugar", "milk", "vanilla", "salt"],
+  "dishes": ["ile flottante"],
+  "why": "Eggs, milk and sugar are all it takes for soft meringue islands on custard with a caramel drizzle."
+}

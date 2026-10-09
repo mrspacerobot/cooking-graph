@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/rosemary",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/roast"],
+      "ratio": null,
+      "caveat": "Bay leaf is mild and does not give the piney, resinous note rosemary brings.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

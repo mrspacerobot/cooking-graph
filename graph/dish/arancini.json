@@ -1,0 +1,72 @@
+{
+  "id": "dish/arancini",
+  "tier": "drafted",
+  "names": {"en": "Arancini", "it": "arancini"},
+  "aliases": {"en": ["arancine", "Sicilian rice balls", "fried risotto balls"], "it": ["arancine"]},
+  "is": "A Sicilian street food of cold risotto coloured with saffron, shaped round a filling of ragu and cheese, coated in egg and crumbs and fried until deep gold. In Catania they are shaped into a cone, like the volcano, and in Palermo they are round and are called arancine, in the feminine. The name means little oranges.",
+  "parts": [
+    {
+      "id": "rice",
+      "role": "main",
+      "options": ["ingredient/arborio-rice", "ingredient/carnaroli-rice", "ingredient/vialone-nano-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "wine", "role": "acid", "options": ["ingredient/white-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "saffron", "role": "seasoning", "options": ["ingredient/saffron"], "optional": false, "tier": "drafted"},
+    {"id": "finish", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "enrichment",
+      "options": ["ingredient/parmesan", "ingredient/pecorino-romano"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "ragu", "role": "filling", "options": ["preparation/ragu"], "optional": false, "tier": "drafted"},
+    {"id": "peas", "role": "filling", "options": ["ingredient/peas"], "optional": true, "tier": "drafted"},
+    {
+      "id": "centre",
+      "role": "filling",
+      "options": ["ingredient/mozzarella", "ingredient/caciocavallo"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "coating", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "crumbs", "role": "coating", "options": ["preparation/breadcrumbs"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/toast-rice", "tier": "drafted"},
+    {"thing": "technique/add-stock-gradually", "tier": "drafted"},
+    {"thing": "technique/mantecare", "tier": "drafted"},
+    {"thing": "technique/shape-a-stuffed-rice-ball", "tier": "drafted"},
+    {"thing": "technique/fry-rice-balls", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -7,10 +7,16 @@
     "es": "Lenguado a la meunière",
     "it": "sogliola alla mugnaia"
   },
-  "aliases": {"en": ["sole in brown butter"]},
+  "aliases": {"en": ["sole in brown butter", "fish meunière"], "fr": ["sole à la meunière"]},
   "is": "A sole dusted with flour, fried golden in butter, and finished with nut-brown butter, lemon juice and parsley.",
   "parts": [
-    {"id": "sole", "role": "main", "options": ["ingredient/sole"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sole",
+      "role": "main",
+      "options": ["ingredient/sole", "ingredient/plaice"],
+      "optional": false,
+      "tier": "drafted"
+    },
     {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
     {
       "id": "fat",

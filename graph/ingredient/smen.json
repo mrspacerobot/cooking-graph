@@ -34,6 +34,15 @@
       "ratio": null,
       "caveat": "It is stronger, aged and tangy, with a cheesy edge.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/olive-oil",
+      "allows": true,
+      "when": ["technique/steam-couscous"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a tangy, aged butter taste and richness in place of fruity oil.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

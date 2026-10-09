@@ -1,0 +1,20 @@
+{
+  "id": "compose-probe/agedashi-tofu-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["dredge", "deep-fry", "simmer"],
+  "at_home": [
+    "firm tofu",
+    "cornstarch",
+    "soy sauce",
+    "mirin",
+    "dashi powder",
+    "daikon",
+    "spring onions",
+    "vegetable oil"
+  ],
+  "dishes": ["agedashi tofu"],
+  "why": "Crisp fried tofu in a warm light broth is a classic izakaya dish, with cornstarch standing in for potato starch."
+}

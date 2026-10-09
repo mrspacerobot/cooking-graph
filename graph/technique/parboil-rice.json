@@ -53,6 +53,11 @@
       "thing": "technique/cook-rice",
       "differs": "The rice is boiled in a great deal of water, as pasta is, and drained while a firm core remains. It is not cooked in a measured amount of water until all the water is gone. The last of the cooking is done later in steam.",
       "tier": "drafted"
+    },
+    {
+      "thing": "technique/boil",
+      "differs": "The food is rice, boiled in a large pot of well-salted water only until nearly tender, to be finished later by steaming.",
+      "tier": "drafted"
     }
   ],
   "belongs_to": []

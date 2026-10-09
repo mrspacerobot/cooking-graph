@@ -1,0 +1,60 @@
+{
+  "id": "ingredient/plaice",
+  "tier": "drafted",
+  "names": {"en": "Plaice", "fr": "Plie"},
+  "aliases": {"en": ["European plaice"], "fr": ["carrelet"], "es": ["solla"], "it": ["platessa"]},
+  "is_a": [
+    {"thing": "ingredient/white-fish", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/lean-fish", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A flatfish with soft, mild, white flesh that flakes at a touch, and brown skin with orange spots. It is a lean fish that sets fast and dries out fast, so it is cooked briefly: floured and fried in butter, or poached or baked in fillets. Its flesh is softer and wetter than sole, and it breaks if it is turned roughly.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "It is fish.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/monkfish",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/bouillabaisse", "technique/sear", "technique/simmer"],
+      "ratio": null,
+      "caveat": "Plaice is soft and flaky and falls apart in a stew where monkfish stays in firm pieces.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/salt-cod",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/bacalao-a-la-vizcaina", "dish/bacalao-al-pil-pil", "technique/confit", "technique/desalt"],
+      "ratio": null,
+      "caveat": "Plaice is fresh and soft, with none of the firm, cured flake that the dish is built on.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sole",
+      "allows": true,
+      "when": ["dish/sole-meuniere"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It is softer and wetter, so pat it dry, flour it well and turn it gently.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/french", "tier": "drafted"}
+  ],
+  "same_as": []
+}

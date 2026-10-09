@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/chicken-teriyaki",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["pan-fry", "glaze"],
+  "at_home": ["chicken thighs", "soy sauce", "mirin", "sake", "sugar", "rice", "ginger"],
+  "dishes": ["chicken teriyaki"],
+  "why": "Crisp skinned chicken glazed in a reduced soy and mirin sauce is a simple Japanese dinner."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/french-onion-soup",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["caramelize onions", "deglaze", "gratinate"],
+  "at_home": ["onions", "butter", "beef stock", "dry white wine", "baguette", "gruyere", "thyme", "salt"],
+  "dishes": ["french onion soup"],
+  "why": "Deeply caramelized onions in stock under a cheesy crouton make a warming soup from very little."
+}

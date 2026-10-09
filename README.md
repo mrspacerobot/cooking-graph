@@ -24,7 +24,7 @@ unverified. Nothing here may be shown to a cook or exported to an app.
 | `graph/source/` | The pages a fact was read in, each with the day it was read and its reuse terms |
 | `probes/dish-probe/` | The dish probes: well-known dishes the graph must be able to express |
 | `probes/safety-probe/` | The safety probes: what a well-known dish holds and does not hold |
-| `probes/stand-in-probe/`, `probes/kitchen-probe/` | Independent question probes, with one in five held back by the hash rule |
+| `probes/stand-in-probe/`, `probes/kitchen-probe/`, `probes/compose-probe/` | Independent question probes, with one in five held back by the hash rule. A compose probe names several techniques and a pantry |
 | `schema/model.json` | The model: every kind, its fields and what each may hold |
 | `schema/words.json` | The closed word lists: tiers, units, roles |
 | `tools/`, `tests/` | The commands and their tests. Python standard library only |
@@ -93,10 +93,13 @@ the browser instructions in `AGENTS.md`.
 | `./stand-ins <recipe> [--avoid <fact>]` | Other part options, contextual stand-ins and recorded exclusions, for every recipe line |
 | `./recipes <technique>` | Recipes whose steps use the technique, teaching dishes first |
 | `./kitchen <technique> [food ...] [--avoid <fact>]` | Recipes ranked by missing required parts, with each line's available option, stand-in or missing ingredient |
+| `./swap-gaps [--list [--top N]] [--new]` | A work list for drafting swaps: counts of recipe lines with no swap where a technique card names one, the pairs most recipes share, and foods in no stand-in row. Writes nothing |
+| `./vocabulary [--names]` | The closed list a photo or voice step chooses from: every ingredient, preparation and technique by id, with its English name, aliases and groups. Graph only, never a probe. A label that matches nothing is none |
+| `./compose --technique <t> [--technique <t> ...] [food ...] [--avoid <fact>] [--servings <n>] [--top <n>]` | Recipes that practise the techniques, covering the most first, adapted to what is at home: stand-ins, amounts converted by a recorded ratio and scaled to servings, and each step with what to read in place of what |
 
 They need Python 3.9 or later and nothing else.
 
-The three questions accept exact ids or unambiguous names and aliases. Quote names with spaces.
+The three questions accept exact ids or unambiguous names and aliases, and read a plural (lemons) as the one thing it names when no exact name matches. Quote names with spaces.
 Repeat `--avoid` for several facts. Output is deterministic JSON. A broken repository or an unknown
 or ambiguous input is an error, never a partial answer.
 
@@ -106,18 +109,24 @@ For example:
 ./stand-ins recipe/sole-meuniere --avoid fact/milk
 ./recipes technique/sear
 ./kitchen technique/sear ingredient/salmon ingredient/sunflower-oil ingredient/salt
+./compose --technique technique/sear --technique technique/mount-with-butter --servings 4 \
+  ingredient/chicken-thigh ingredient/butter ingredient/olive-oil ingredient/lemon ingredient/salt
 ```
 
 These are internal exploration commands. Every answer says safety records are unverified.
 Avoidance excludes strict `contains` answers too. Preparations are checked through every option
 of every part; a missing answer or a cycle fails closed. This is deliberately conservative.
 
-Only direct statements are used. No reverse or chained stand-in is inferred. A line's context
+A request for a technique also finds its variants (`variant_of`, at any depth): `boil` finds `boil-pasta`, `emulsify` finds `beat-tahini-sauce`. Exact use ranks first, each recipe says `exact` and which `variants_used`, and `./compose` lists `covered_by_variant`. A variant does not stand in for its parent the other way round. `./compose` also counts a technique used by the recipe of a preparation the dish names, at any depth (croque madame makes a roux through its bechamel); it lists these as `covered_by_preparation`, and ranks a dish's own steps first. Only direct statements are used. No reverse or chained stand-in is inferred. A line's context
 is what the recipe makes and the techniques and preparations of steps that handle that line. An explicit
 `not_when` overrides a positive statement or a part option. A replacement must fit each
 technique that works on the original. A part option supplies no ratio or caveat unless a
-stand-in statement records them. Recipe amounts and starting forms are returned unchanged;
-the commands do not adapt steps, calculate converted amounts or test a recipe in a kitchen.
+stand-in statement records them. `./stand-ins`, `./recipes` and `./kitchen` return recipe amounts and
+starting forms unchanged. `./compose` converts an amount only where a stand-in statement records a ratio
+of the same measure (weight, volume or count) as the amount's unit; otherwise it says why it did not.
+It never edits a step's words: each step comes back as written, with a `read_as` list of what to read in
+place of what. None of the commands tests a recipe in a kitchen, and `./compose` does not write a new
+recipe: it adapts one the graph already holds, with no model involved.
 An exclusion-only statement has `allows: false`: it asserts only its `not_when`,
 and never enables the replacement in other contexts.
 

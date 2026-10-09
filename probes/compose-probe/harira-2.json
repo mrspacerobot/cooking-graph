@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/harira-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["saute", "simmer", "thicken"],
+  "at_home": ["canned chickpeas", "red lentils", "tomatoes", "onion", "celery", "cilantro", "flour", "lemon", "ginger"],
+  "dishes": ["harira"],
+  "why": "A thick spiced soup of pulses is how many Moroccan families break the Ramadan fast, and it works without meat."
+}

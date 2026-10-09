@@ -60,6 +60,36 @@
       "ratio": null,
       "caveat": "It is nutty and buttery instead of fruity.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/butter",
+      "allows": true,
+      "when": ["technique/fry-masala-base"],
+      "not_when": ["technique/mount-with-butter", "technique/make-brown-butter"],
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "caveat": "It is pure fat with no water or milk solids, so the base is a little richer and does not catch as easily. The flavour is nuttier.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/oil",
+      "allows": true,
+      "when": [
+        "technique/fry-masala-base", "technique/temper-spices-in-hot-fat", "technique/roast", "technique/stir-fry",
+        "technique/fry-a-cutlet"
+      ],
+      "not_when": ["technique/double-fry"],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
+      "caveat": "It tastes nutty and rich and stands high heat well.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/coconut-oil",
+      "allows": true,
+      "when": ["technique/temper-spices-in-hot-fat"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It gives a nutty, buttery taste in place of the coconut taste.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

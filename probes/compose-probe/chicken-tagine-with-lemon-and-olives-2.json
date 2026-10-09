@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/chicken-tagine-with-lemon-and-olives-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["brown", "braise"],
+  "at_home": [
+    "chicken thighs",
+    "onion",
+    "garlic",
+    "ginger",
+    "turmeric",
+    "green olives",
+    "lemon",
+    "saffron",
+    "olive oil"
+  ],
+  "dishes": ["chicken tagine with lemon and olives", "djaj mqualli"],
+  "why": "Chicken stewed with olives and lemon is a Moroccan classic, with fresh lemon zest standing in for preserved lemon."
+}

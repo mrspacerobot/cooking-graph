@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/paella-valenciana",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["brown", "make a sofrito", "simmer"],
+  "at_home": [
+    "bomba rice",
+    "chicken thighs",
+    "green beans",
+    "tomato",
+    "saffron",
+    "smoked paprika",
+    "olive oil",
+    "chicken stock",
+    "garlic"
+  ],
+  "dishes": ["paella valenciana"],
+  "why": "Browned chicken, a tomato sofrito and rice left to simmer undisturbed give a paella with a crisp base."
+}

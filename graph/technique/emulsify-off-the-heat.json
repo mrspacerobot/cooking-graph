@@ -1,0 +1,73 @@
+{
+  "id": "technique/emulsify-off-the-heat",
+  "tier": "drafted",
+  "names": {"en": "Emulsify off the heat"},
+  "aliases": {
+    "en": [
+      "bind an egg sauce",
+      "emulsify with starchy water",
+      "make a cream with pasta water",
+      "emulsify off the heat"
+    ]
+  },
+  "does": "Binds fat, egg and a hard cheese into one glossy cream with hot starchy water, off the heat. No fat is whisked in drop by drop: the starch in the water and the warmth of the pasta hold it together, and it splits or scrambles if the heat comes back.",
+  "how": [
+    "Have everything ready before the pasta is done: the fat in the pan, the egg and cheese mixed in a bowl, and a mug of hot starchy cooking water.",
+    "Take the pan off the heat. Heat is what splits this kind of sauce.",
+    "Loosen the egg and cheese with a splash of the hot water, stirring, until it is a smooth pourable cream with no streaks.",
+    "Bring it together with the fat and the pasta, adding more water a splash at a time and tossing, until it turns glossy and clings.",
+    "Serve at once. It is at its best straight away and sets as it cools."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "A smooth, glossy cream that coats the back of a spoon, with no lumps of cooked egg and no puddle of oil."
+    },
+    {"sense": "feel", "text": "It flows like thin cream and clings to the pasta as it is tossed."},
+    {"sense": "hear", "text": "The pan has stopped sizzling before the egg goes in."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the pan on the heat, so that the egg scrambles into flecks.",
+      "fix": "Take the pan off the heat before the egg goes in, and keep it off."
+    },
+    {
+      "mistake": "Using water that has gone cool or has no starch, so that the sauce stays thin and slides off.",
+      "fix": "Use hot water from the pasta pot, and add it a splash at a time."
+    },
+    {
+      "mistake": "Adding all the water at once, so that the sauce turns watery.",
+      "fix": "Add it a splash at a time and stop when it is glossy."
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "ingredient/egg-yolk", "tier": "drafted"},
+    {"thing": "group/grating-cheeses", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/emulsified", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs", "equipment/whisk"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/boil-pasta",
+      "why": "The starchy water that binds the sauce comes from cooking the pasta.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/emulsify",
+      "differs": "No fat is added drop by drop. The sauce is bound with hot starchy water, off the heat, and it splits or scrambles if the heat returns.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/ragu-alla-bolognese",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["make a soffritto", "brown", "simmer"],
+  "at_home": [
+    "ground beef",
+    "ground pork",
+    "onion",
+    "carrot",
+    "celery",
+    "tomato paste",
+    "milk",
+    "dry white wine",
+    "olive oil"
+  ],
+  "dishes": ["ragu alla bolognese"],
+  "why": "A slow simmered meat sauce built on soffritto is the base for tagliatelle or lasagne."
+}

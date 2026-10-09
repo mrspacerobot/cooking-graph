@@ -2,7 +2,9 @@
   "id": "technique/emulsify",
   "tier": "drafted",
   "names": {"en": "Emulsify", "fr": "Émulsionner"},
-  "aliases": {"en": ["make an emulsion", "emulsify a sauce", "whisk an emulsion"]},
+  "aliases": {
+    "en": ["make an emulsion", "emulsify a sauce", "whisk an emulsion", "make a vinaigrette", "whisk a vinaigrette"]
+  },
   "does": "Makes fat and a water-based liquid hold together as one smooth sauce, by breaking one into droplets too small to find each other again.",
   "how": [
     "Start with the water-based part and whatever helps it hold: egg yolk, mustard, or a liquid boiled down until syrupy.",

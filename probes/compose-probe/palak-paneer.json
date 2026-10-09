@@ -1,0 +1,11 @@
+{
+  "id": "compose-probe/palak-paneer",
+  "tier": "drafted",
+  "batch": "compose-1",
+  "set": "growing",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["blanch", "puree", "fry masala base"],
+  "at_home": ["spinach", "firm tofu", "onion", "garlic", "ginger", "green chillies", "cumin seeds", "cream", "ghee"],
+  "dishes": ["palak paneer"],
+  "why": "Firm tofu stands in for paneer in a bright spinach gravy made from blanched, pureed greens."
+}

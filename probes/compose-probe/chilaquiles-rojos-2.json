@@ -1,0 +1,21 @@
+{
+  "id": "compose-probe/chilaquiles-rojos-2",
+  "tier": "drafted",
+  "batch": "compose-2",
+  "set": "held-back",
+  "written_by": "claude-opus-5-5",
+  "techniques": ["toast", "blend", "fry"],
+  "at_home": [
+    "corn tortillas",
+    "tomatoes",
+    "dried guajillo chiles",
+    "onion",
+    "garlic",
+    "eggs",
+    "feta",
+    "vegetable oil",
+    "salt"
+  ],
+  "dishes": ["chilaquiles rojos"],
+  "why": "Stale tortillas fried crisp and tossed in a toasted chile sauce make a hearty Mexican breakfast, with feta standing in for queso fresco."
+}

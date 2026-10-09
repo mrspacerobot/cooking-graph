@@ -1,0 +1,61 @@
+{
+  "id": "dish/chicken-tagine-with-preserved-lemon-and-olives",
+  "tier": "drafted",
+  "names": {
+    "en": "Chicken tagine with preserved lemon and olives",
+    "fr": "Tajine de poulet aux citrons confits et aux olives"
+  },
+  "aliases": {
+    "en": ["chicken tagine with preserved lemons", "djaj emshmel", "chicken with preserved lemon and olives"],
+    "fr": ["tajine de poulet au citron confit"]
+  },
+  "is": "Chicken cooked slowly in a clay tagine on a bed of onion with ginger, turmeric and saffron, with only a little water, then finished with strips of preserved lemon rind and green olives until the sauce is short, golden and sharp with lemon.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/smen", "ingredient/butter"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "ginger", "role": "seasoning", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "saffron", "role": "seasoning", "options": ["ingredient/saffron"], "optional": true, "tier": "drafted"},
+    {
+      "id": "preserved-lemon",
+      "role": "acid",
+      "options": ["preparation/preserved-lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "olive", "role": "filling", "options": ["ingredient/green-olive"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-in-a-tagine", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": []
+}

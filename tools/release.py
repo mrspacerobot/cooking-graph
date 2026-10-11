@@ -54,10 +54,12 @@ def included_things(things):
     return {thing_id: thing for thing_id, thing in things.items() if thing.path.startswith("graph/")}
 
 
-def artifact_of(things):
+def artifact_of(things, channel="draft"):
+    """The channel is inside the artifact, so a checksum of the artifact covers it and a manifest cannot change it."""
     included = included_things(things)
     return {
         "artifactSchemaVersion": ARTIFACT_SCHEMA_VERSION,
+        "channel": channel,
         "things": {thing_id: included[thing_id].data for thing_id in sorted(included)},
     }
 
@@ -143,7 +145,7 @@ def write_release(root, channel, source):
     failing = [gate for gate in gates_of(things) if not gate.passed]
     if channel == "production" and failing:
         raise Refused(failing)
-    encoded = encode(artifact_of(things))
+    encoded = encode(artifact_of(things, channel))
     manifest = encode(manifest_of(things, encoded, channel, source))
     folder = os.path.join(root, OUT)
     os.makedirs(folder, exist_ok=True)

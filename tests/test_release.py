@@ -57,6 +57,17 @@ class ContentTest(KitchenCase):
         for thing_id, data in artifact["things"].items():
             self.assertEqual(self.things[thing_id].data, data)
 
+    def test_the_artifact_carries_its_channel_so_that_its_hash_covers_it(self):
+        draft = release.encode(release.artifact_of(self.things, "draft"))
+        production = release.encode(release.artifact_of(self.things, "production"))
+        self.assertEqual("draft", json.loads(draft)["channel"])
+        self.assertEqual("production", json.loads(production)["channel"])
+        self.assertNotEqual(hashlib.sha256(draft).hexdigest(), hashlib.sha256(production).hexdigest())
+
+    def test_the_manifest_and_the_artifact_name_the_same_channel(self):
+        release.write_release(self.kitchen.root, "draft", SOURCE)
+        self.assertEqual(json.loads(self.read_out("manifest.json"))["channel"], json.loads(self.read_out("graph-artifact.json"))["channel"])
+
     def test_the_same_content_gives_the_same_bytes_in_two_folders(self):
         other = SmallKitchen()
         self.addCleanup(other.close)
@@ -75,7 +86,7 @@ class ContentTest(KitchenCase):
 
 class ManifestTest(KitchenCase):
     def manifest(self, channel="draft"):
-        encoded = release.encode(release.artifact_of(self.things))
+        encoded = release.encode(release.artifact_of(self.things, channel))
         return release.manifest_of(self.things, encoded, channel, SOURCE), encoded
 
     def test_it_names_the_version_the_commit_the_channel_and_the_hash(self):

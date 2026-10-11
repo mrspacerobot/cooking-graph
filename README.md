@@ -84,7 +84,7 @@ the browser instructions in `AGENTS.md`.
 `./release` turns `graph/` into one artifact for a server to load: `graph-artifact.json`, a `manifest.json` (schema
 version, graph version, source commit, content hash, channel, the gate results, counts by kind and tier, the fact list)
 and `SHA256SUMS`. The same commit always gives the same artifact bytes and the same hash; the time of the build is in
-the manifest only. Probes are never included. The `draft` channel is for internal development. The `production` channel
+the manifest only. The channel is written inside the artifact as well, so its hash covers it. Probes are never included. The `draft` channel is for internal development. The `production` channel
 is refused until every gate passes: all included things at tier reviewed or higher, every ingredient's safety verified
 by a person, no open safety point in any recipe, and a live review record. Today it fails all four.
 

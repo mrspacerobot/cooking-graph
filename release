@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+"""release: write the graph's versioned, checksummed artifact. Production is refused until its gates pass."""
+
+import os
+import sys
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+
+from tools import release  # noqa: E402
+
+sys.exit(release.main(ROOT, sys.argv[1:]))

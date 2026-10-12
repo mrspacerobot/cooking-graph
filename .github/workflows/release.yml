@@ -1,0 +1,42 @@
+# Builds the graph artifact and attaches it to a GitHub Release named after its version.
+# Run it by hand from the Actions tab, on main. The Tomi backend pins a version of this artifact.
+name: Release artifact
+
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: "draft for internal use, production only when every gate passes"
+        type: choice
+        options: [draft, production]
+        default: draft
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      CHANNEL: ${{ inputs.channel }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+      - name: Check the tools and every file of the graph
+        run: ./check
+      - name: Build the artifact
+        run: ./release --channel "$CHANNEL"
+      - name: Verify the checksums
+        run: cd out/release && shasum -a 256 -c SHA256SUMS
+      - name: Publish the release
+        run: |
+          VERSION=$(python3 -c "import json; print(json.load(open('out/release/manifest.json'))['graphVersion'])")
+          FLAG=""
+          if [ "$CHANNEL" = "draft" ]; then FLAG="--prerelease"; fi
+          gh release create "graph-v$VERSION" out/release/graph-artifact.json out/release/manifest.json out/release/SHA256SUMS \
+            $FLAG --target "$GITHUB_SHA" --title "Graph $VERSION ($CHANNEL channel)" \
+            --notes "Channel: $CHANNEL. See manifest.json for the gates and counts. A draft artifact is for internal development and is never shown to a cook."

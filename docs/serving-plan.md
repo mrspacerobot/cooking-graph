@@ -96,6 +96,8 @@ The phone talks to the gateway only. Open: whether the gateway and the graph ser
 ## Phases
 
 0. In this repository: decide the export format, write `./release` and its gates with tests, generate the golden vectors.
+   Status: `./release`, its four production gates, the manifest and the release workflow exist ([issue 14](https://github.com/mrspacerobot/cooking-graph/issues/14)).
+   The format is a JSON bundle with a checksum. Not built yet: the precomputed indexes and the golden vectors.
 1. Spike: the same artifact, endpoints and vectors in Rust and in Go. Measure startup index time, p50 and p99 latency and memory on the
    current graph and on a copy ten times larger. Write the numbers and the decision here.
 2. `resolve`, with a contract test built from a cleaned copy of the proof of concept's structure. The file itself stays Git-ignored.

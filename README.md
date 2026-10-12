@@ -79,11 +79,25 @@ Then open the printed file path. The command reports when automatic browser
 opening fails. An agent giving a first visual walkthrough should follow
 the browser instructions in `AGENTS.md`.
 
+## The release artifact
+
+`./release` turns `graph/` into one artifact for a server to load: `graph-artifact.json`, a `manifest.json` (schema
+version, graph version, source commit, content hash, channel, the gate results, counts by kind and tier, the fact list)
+and `SHA256SUMS`. The same commit always gives the same artifact bytes and the same hash; the time of the build is in
+the manifest only. The channel is written inside the artifact as well, so its hash covers it. Probes are never included. The `draft` channel is for internal development. The `production` channel
+is refused until every gate passes: all included things at tier reviewed or higher, every ingredient's safety verified
+by a person, no open safety point in any recipe, and a live review record. Today it fails all four.
+
+On GitHub, `Check` runs `./check` and a draft build on every pull request. The `Release artifact` workflow, started by
+hand on `main` from the Actions tab, builds the artifact and attaches it to a release named `graph-v<graph version>`.
+The Tomi backend pins one such version.
+
 ## Commands
 
 | Command | What it does |
 |---|---|
 | `./check` | Runs the tests of the tools, then reads every file strictly and lists every issue |
+| `./release [--channel draft\|production]` | Writes the graph's versioned, checksummed artifact to `out/release`. Production is refused until its gates pass |
 | `./view [--no-open]` | Builds the current graph's interactive HTML page and opens it in the default browser |
 | `./probe` | Runs the dish probes and lists what the graph lacks. Held-back probes are counted, never shown |
 | `./probe questions [batch]` | Runs the stand-in and kitchen questions; shows only growing gaps and aggregate held-back counts |

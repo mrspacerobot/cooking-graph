@@ -91,7 +91,7 @@ So question 2 can already be worked out from the files. Questions 1 and 3 have t
 1. **Three commands,** tests first, standard library only, no model involved, the same input always giving the same output:
    - the stand-ins for a recipe: for each line, the other options of its part and whatever stands in for the ingredient, with the context, the ratio and the caveat where the graph has them. Asked to avoid a fact, it leaves out what holds it, and always says the safety records are unverified;
    - the recipes for a technique: those whose steps use it, the ones whose dish teaches it first;
-   - what to cook for a technique with what is at home: the recipes ranked by how little is missing, and for each part the option the cook has, the stand-in, or "missing".
+   - what to cook for a technique with what is at home: the recipes ranked by how little is missing, and for each part the option the cook has, the stand-in, or "missing" (go and buy it). A line whose original holds an avoided fact and that has no allowed alternative is "refused", not "missing": nothing can be bought to fix it. A dish with a refused part is itself refused, listed last by `./kitchen` and left out of `./compose`, which names it under `refused`.
 2. **Probes for these questions, written by another model** than the one that drafts, with one in five held back as always:
    - stand-in probes: a recipe, an ingredient, a candidate, and whether it works, works with a caveat, or does not, and why;
    - kitchen probes: a technique, what is at home, and the dishes a good cook would make of it.

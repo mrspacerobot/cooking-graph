@@ -126,9 +126,11 @@ class ComposeTest(unittest.TestCase):
         self.things["ingredient/oil"].data["safety"] = {
             "state": "unverified", "free_of": ["fact/gluten"], "note": None,
             "contains": [{"fact": "fact/dairy", "basis": "Unknown processing.", "certain": False}]}
-        answer = self.first(at_home=("ingredient/onion", "ingredient/butter", "ingredient/oil"), avoid=("milk",))
-        self.assertEqual("missing", answer["parts"][1]["lines"][0]["status"])
-        self.assertEqual(1, answer["missing_count"])
+        home = ("ingredient/onion", "ingredient/butter", "ingredient/oil")
+        answer = queries.kitchen(self.things, "sweat", list(home), ["milk"])["recipes"][0]
+        self.assertEqual("refused", answer["parts"][1]["lines"][0]["status"])
+        self.assertEqual("refused", answer["status"])
+        self.assertEqual([], self.compose(at_home=home, avoid=("milk",))["recipes"])
 
     def test_every_answer_says_the_safety_records_are_unverified(self):
         self.assertIn("unverified", self.compose()["safety"])
@@ -249,8 +251,19 @@ class ButterChickenTest(unittest.TestCase):
         self.assertIn("No ratio", line["amount"]["note"])
 
     def test_avoiding_milk_refuses_ghee_and_keeps_oil(self):
-        line = self.butter_line(["ingredient/ghee", "ingredient/oil"], "--avoid", "fact/milk")
-        self.assertEqual("ingredient/oil", line["choice"]["thing"])
+        """Asked of the stand-ins, not of compose: the yoghurt has no safe alternative, so compose refuses the whole dish."""
+        run = subprocess.run([os.path.join(REPOSITORY, "stand-ins"), "recipe/butter-chicken", "--avoid", "fact/milk"],
+                             capture_output=True, text=True, check=True)
+        line = next(row for row in json.loads(run.stdout)["lines"] if row["original"] == "ingredient/butter")
+        self.assertEqual(["ingredient/oil"], [one["thing"] for one in line["options"]])
+        self.assertIn("ingredient/ghee", [one["thing"] for one in line["excluded"]])
+
+    def test_avoiding_milk_refuses_the_whole_butter_chicken_because_the_yoghurt_has_no_safe_alternative(self):
+        run = subprocess.run([os.path.join(REPOSITORY, "compose"), *BUTTER_CHICKEN, "--avoid", "fact/milk",
+                              "ingredient/ghee", "ingredient/oil"], capture_output=True, text=True, check=True)
+        answer = json.loads(run.stdout)
+        self.assertNotIn("recipe/butter-chicken", [row["recipe"] for row in answer["recipes"]])
+        self.assertIn("recipe/butter-chicken", answer["refused"])
 
     def test_with_neither_the_butter_is_missing(self):
         self.assertEqual("missing", self.butter_line(["ingredient/cream"])["status"])

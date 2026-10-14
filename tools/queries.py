@@ -148,24 +148,40 @@ def recipes(things, technique_word):
 
 
 def home_line(things, line, home, avoided):
-    if line["original"] in home and query_safety.free_of(things, line["original"], avoided):
+    """What the cook can do about one recipe line: use the original, use an allowed alternative they have, buy one,
+    or nothing at all. `refused` is that last case: the original is not safe for what is avoided and no alternative
+    is allowed, so buying anything cannot help. It is never `missing`, which means "go and buy it"."""
+    original_is_safe = query_safety.free_of(things, line["original"], avoided)
+    if line["original"] in home and original_is_safe:
         return {"original": line["original"], "status": "at-home", "choice": choice(line["original"], "original")}
     options = [one for one in line["options"] if one["thing"] in home]
     if options:
         return {"original": line["original"], "status": options[0]["basis"], "choice": options[0]}
+    if not original_is_safe and not line["options"]:
+        return {"original": line["original"], "status": "refused", "choice": None}
     return {"original": line["original"], "status": "missing", "choice": None}
 
 
+def part_status(selected):
+    """`refused` beats `missing`: a part that cannot be made safely is not one that is merely not at home."""
+    if not selected:
+        return "omitted"
+    statuses = {line["status"] for line in selected}
+    if "refused" in statuses:
+        return "refused"
+    return "missing" if "missing" in statuses else "filled"
+
+
 def home_recipe(things, row, home, avoided):
-    answer = dict(row, parts=[], missing_count=0)
+    answer = dict(row, parts=[], missing_count=0, status="ok")
     lines = stand_ins(things, row["recipe"], avoided)["lines"]
     for part in things[row["makes"]].data["parts"]:
         selected = [home_line(things, line, home, avoided) for line in lines if line["part"] == part["id"]]
-        status = "omitted"
-        if selected:
-            status = "filled"
-            if any(line["status"] == "missing" for line in selected):
-                status = "missing"
+        status = part_status(selected)
+        if status == "refused" and part["optional"]:
+            status = "omitted"
+        if status == "refused":
+            answer["status"] = "refused"
         if status == "missing" and not part["optional"]:
             answer["missing_count"] += 1
         answer["parts"].append({"part": part["id"], "optional": part["optional"], "status": status, "lines": selected})
@@ -179,7 +195,8 @@ def kitchen(things, technique_word, at_home, avoid=()):
     answer["at_home"] = home
     answer["avoid"] = avoided
     answer["recipes"] = [home_recipe(things, row, home, avoided) for row in answer["recipes"]]
-    answer["recipes"].sort(key=lambda row: (row["missing_count"], not row["exact"], not row["teaches"], row["recipe"]))
+    answer["recipes"].sort(key=lambda row: (row["status"] == "refused", row["missing_count"], not row["exact"],
+                                            not row["teaches"], row["recipe"]))
     return answer
 
 
@@ -215,7 +232,7 @@ def line_amount(amount, status, choice, factor):
     answer = {"original": needed, "for_home": None, "note": None}
     if status == "at-home":
         answer["for_home"] = needed
-    elif status != "missing":
+    elif status not in ("missing", "refused"):
         ratio = choice["ratio"]
         if ratio is None:
             answer["note"] = "No ratio is recorded for this swap, so the amount is not converted."
@@ -229,7 +246,7 @@ def line_amount(amount, status, choice, factor):
 def steps_as_read(recipe, parts):
     """Each step as written, and which ingredient to read in place of which, from the parts already answered."""
     replaced = {line["original"]: line["choice"]["thing"] for part in parts for line in part["lines"]
-                if line["status"] not in ("at-home", "missing")}
+                if line["status"] not in ("at-home", "missing", "refused")}
     return [{"technique": step["technique"], "text": step["text"], "time": step["time"],
              "temperature": step["temperature"], "safety_points": step["safety_points"],
              "read_as": [{"original": thing_id, "instead": replaced[thing_id]}
@@ -285,7 +302,7 @@ def compose(things, technique_words, at_home, avoid=(), servings=None, top=5):
     for recipe_id, thing in things.items():
         if thing.kind == "recipe":
             made_by.setdefault(thing.data["makes"], []).append(recipe_id)
-    answers = []
+    answers, refused = [], []
     for recipe_id, thing in sorted(things.items()):
         if thing.kind != "recipe":
             continue
@@ -304,7 +321,11 @@ def compose(things, technique_words, at_home, avoid=(), servings=None, top=5):
                "exact_count": sum(one in own for one in techniques)}
         factor, asked, note = scaling(thing.data, servings)
         answer = compose_recipe(things, row, home, avoided, factor)
+        if answer["status"] == "refused":
+            refused.append(recipe_id)
+            continue
         answers.append(dict(answer, servings=asked, scaling_note=note))
     answers.sort(key=lambda row: (len(row["uncovered"]), row["missing_count"], len(row["covered_by_preparation"]),
                                   -row["exact_count"], not row["teaches"], row["recipe"]))
-    return {"techniques": techniques, "at_home": home, "avoid": avoided, "safety": SAFETY, "recipes": answers[:top]}
+    return {"techniques": techniques, "at_home": home, "avoid": avoided, "safety": SAFETY, "recipes": answers[:top],
+            "refused": refused}

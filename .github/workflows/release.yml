@@ -1,8 +1,12 @@
 # Builds the graph artifact and attaches it to a GitHub Release named after its version.
-# Run it by hand from the Actions tab, on main. The Tomi backend pins a version of this artifact.
+# A merge to main that changes the artifact publishes a draft release by itself. The production channel is only
+# ever run by hand from the Actions tab, because it is gated on safety review. The Tomi backend pins a version.
 name: Release artifact
 
 on:
+  push:
+    branches: [main]
+    paths: ["graph/**", "tools/**", "release", ".github/workflows/release.yml"]
   workflow_dispatch:
     inputs:
       channel:
@@ -19,7 +23,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     env:
-      CHANNEL: ${{ inputs.channel }}
+      CHANNEL: ${{ inputs.channel || 'draft' }}
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
@@ -35,6 +39,10 @@ jobs:
       - name: Publish the release
         run: |
           VERSION=$(python3 -c "import json; print(json.load(open('out/release/manifest.json'))['graphVersion'])")
+          if gh release view "graph-v$VERSION" >/dev/null 2>&1; then
+            echo "graph-v$VERSION is already published; nothing to do."
+            exit 0
+          fi
           FLAG=""
           if [ "$CHANNEL" = "draft" ]; then FLAG="--prerelease"; fi
           gh release create "graph-v$VERSION" out/release/graph-artifact.json out/release/manifest.json out/release/serving-vectors.json out/release/SHA256SUMS \

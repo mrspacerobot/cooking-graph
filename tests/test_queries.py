@@ -193,3 +193,48 @@ class QueryTest(unittest.TestCase):
         for line in mounted:
             self.assertNotIn("ingredient/olive-oil", [one["thing"] for one in line["options"]])
             self.assertIn("ingredient/olive-oil", [one["thing"] for one in line["excluded"]])
+
+    def no_safe_fat(self):
+        """Butter holds dairy and nothing stands in for it: with dairy avoided there is no safe way to make the recipe."""
+        self.things["ingredient/oil"].data["stands_in_for"] = []
+
+    def test_a_line_with_no_safe_way_is_refused_never_listed_as_missing(self):
+        self.no_safe_fat()
+        answer = queries.kitchen(self.things, "sweat", ["ingredient/onion", "ingredient/butter"], ["fact/dairy"])["recipes"][0]
+        self.assertEqual("refused", answer["parts"][1]["lines"][0]["status"])
+        self.assertEqual("refused", answer["parts"][1]["status"])
+        self.assertEqual("refused", answer["status"])
+        self.assertEqual(0, answer["missing_count"])
+
+    def test_an_unsafe_line_with_a_safe_alternative_to_buy_is_still_missing(self):
+        answer = queries.kitchen(self.things, "sweat", ["ingredient/onion", "ingredient/butter"], ["fact/dairy"])["recipes"][0]
+        self.assertEqual("missing", answer["parts"][1]["lines"][0]["status"])
+        self.assertEqual("ok", answer["status"])
+
+    def test_a_refused_optional_part_is_left_out_and_the_recipe_stands(self):
+        self.no_safe_fat()
+        self.things["dish/buttered-onions"].data["parts"][1]["optional"] = True
+        answer = queries.kitchen(self.things, "sweat", ["ingredient/onion", "ingredient/butter"], ["fact/dairy"])["recipes"][0]
+        self.assertEqual("refused", answer["parts"][1]["lines"][0]["status"])
+        self.assertEqual("omitted", answer["parts"][1]["status"])
+        self.assertEqual("ok", answer["status"])
+
+    def test_kitchen_lists_a_refused_recipe_after_every_other(self):
+        self.no_safe_fat()
+        extra = copy.deepcopy(self.recipe)
+        extra["id"] = "recipe/z-onions"
+        extra["ingredients"] = extra["ingredients"][:1]
+        self.things[extra["id"]] = Thing("", "recipe", extra)
+        result = queries.kitchen(self.things, "sweat", ["ingredient/onion"], ["fact/dairy"])["recipes"]
+        self.assertEqual(["recipe/z-onions", "recipe/buttered-onions"], [one["recipe"] for one in result])
+
+    def test_compose_never_offers_a_refused_recipe_and_says_which_it_left_out(self):
+        self.no_safe_fat()
+        answer = queries.compose(self.things, ["sweat"], ["ingredient/onion", "ingredient/butter"], ["fact/dairy"])
+        self.assertEqual([], answer["recipes"])
+        self.assertEqual(["recipe/buttered-onions"], answer["refused"])
+
+    def test_compose_still_offers_a_recipe_that_is_safe(self):
+        answer = queries.compose(self.things, ["sweat"], ["ingredient/onion", "ingredient/oil"], ["fact/dairy"])
+        self.assertEqual(["recipe/buttered-onions"], [one["recipe"] for one in answer["recipes"]])
+        self.assertEqual([], answer["refused"])

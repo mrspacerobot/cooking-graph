@@ -37,6 +37,6 @@ jobs:
           VERSION=$(python3 -c "import json; print(json.load(open('out/release/manifest.json'))['graphVersion'])")
           FLAG=""
           if [ "$CHANNEL" = "draft" ]; then FLAG="--prerelease"; fi
-          gh release create "graph-v$VERSION" out/release/graph-artifact.json out/release/manifest.json out/release/SHA256SUMS \
+          gh release create "graph-v$VERSION" out/release/graph-artifact.json out/release/manifest.json out/release/serving-vectors.json out/release/SHA256SUMS \
             $FLAG --target "$GITHUB_SHA" --title "Graph $VERSION ($CHANNEL channel)" \
             --notes "Channel: $CHANNEL. See manifest.json for the gates and counts. A draft artifact is for internal development and is never shown to a cook."

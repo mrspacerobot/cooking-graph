@@ -6,7 +6,7 @@ import os
 import unittest
 
 from tests.small_kitchen import REPOSITORY, SmallKitchen
-from tools import check, numbers, release
+from tools import check, numbers, release, serving
 from tools.reading import Thing
 
 SOURCE = release.Source(commit="1102817abcdef1234567890abcdef1234567890a", date="2026-10-11", built_at="2026-10-11T12:00:00Z")
@@ -54,6 +54,7 @@ class ContentTest(KitchenCase):
     def test_the_artifact_carries_its_schema_version_and_the_data_unchanged(self):
         artifact = release.artifact_of(self.things)
         self.assertEqual(release.ARTIFACT_SCHEMA_VERSION, artifact["artifactSchemaVersion"])
+        self.assertEqual(serving.serving_of(self.things), artifact["serving"])
         for thing_id, data in artifact["things"].items():
             self.assertEqual(self.things[thing_id].data, data)
 
@@ -91,7 +92,7 @@ class ManifestTest(KitchenCase):
 
     def test_it_names_the_version_the_commit_the_channel_and_the_hash(self):
         manifest, encoded = self.manifest()
-        self.assertEqual(1, manifest["artifactSchemaVersion"])
+        self.assertEqual(2, manifest["artifactSchemaVersion"])
         self.assertEqual("2026.10.11-1102817", manifest["graphVersion"])
         self.assertEqual(SOURCE.commit, manifest["sourceCommit"])
         self.assertEqual("draft", manifest["channel"])
@@ -169,20 +170,26 @@ class WriteTest(KitchenCase):
     def out(self):
         return os.path.join(self.kitchen.root, "out", "release")
 
-    def test_a_draft_release_writes_the_artifact_the_manifest_and_the_sums(self):
+    def test_a_draft_release_writes_the_artifact_the_manifest_the_vectors_and_the_sums(self):
         release.write_release(self.kitchen.root, "draft", SOURCE)
-        self.assertEqual(["SHA256SUMS", "graph-artifact.json", "manifest.json"], sorted(os.listdir(self.out())))
+        self.assertEqual(["SHA256SUMS", "graph-artifact.json", "manifest.json", "serving-vectors.json"],
+                         sorted(os.listdir(self.out())))
 
     def test_the_manifest_hash_matches_the_artifact_file(self):
         release.write_release(self.kitchen.root, "draft", SOURCE)
         manifest = json.loads(self.read_out("manifest.json"))
         self.assertEqual(hashlib.sha256(self.read_out("graph-artifact.json")).hexdigest(), manifest["contentSha256"])
 
-    def test_the_sums_file_checks_both_files(self):
+    def test_the_sums_file_checks_the_artifact_the_manifest_and_the_vectors(self):
         release.write_release(self.kitchen.root, "draft", SOURCE)
         for line in self.read_out("SHA256SUMS").decode("utf-8").splitlines():
             digest, name = line.split("  ")
             self.assertEqual(digest, hashlib.sha256(self.read_out(name)).hexdigest(), name)
+
+    def test_the_sums_list_every_file_but_itself(self):
+        release.write_release(self.kitchen.root, "draft", SOURCE)
+        names = [line.split("  ")[1] for line in self.read_out("SHA256SUMS").decode("utf-8").splitlines()]
+        self.assertEqual(["graph-artifact.json", "manifest.json", "serving-vectors.json"], names)
 
     def test_releasing_twice_gives_the_same_artifact_and_hash(self):
         release.write_release(self.kitchen.root, "draft", SOURCE)

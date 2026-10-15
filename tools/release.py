@@ -12,13 +12,14 @@ import os
 import subprocess
 from collections import namedtuple
 
-from tools import check, numbers, review_rules
+from tools import check, numbers, review_rules, serving
 
-ARTIFACT_SCHEMA_VERSION = 1
+ARTIFACT_SCHEMA_VERSION = 2
 CHANNELS = ("draft", "production")
 OUT = os.path.join("out", "release")
 ARTIFACT_FILE = "graph-artifact.json"
 MANIFEST_FILE = "manifest.json"
+VECTORS_FILE = "serving-vectors.json"
 SUMS_FILE = "SHA256SUMS"
 
 GATE_TIERS = "every included thing is at tier reviewed or higher"
@@ -61,6 +62,7 @@ def artifact_of(things, channel="draft"):
         "artifactSchemaVersion": ARTIFACT_SCHEMA_VERSION,
         "channel": channel,
         "things": {thing_id: included[thing_id].data for thing_id in sorted(included)},
+        "serving": serving.serving_of(included),
     }
 
 
@@ -136,7 +138,7 @@ def sums_of(files):
 
 
 def write_release(root, channel, source):
-    """Read the graph strictly, check the channel's gates, and write the three files. Returns the manifest."""
+    """Read the graph strictly, check the channel's gates, and write the files. Returns the manifest."""
     if channel not in CHANNELS:
         raise ValueError("the channel is one of %s" % ", ".join(CHANNELS))
     things, issues = check.read_repository(root)
@@ -147,9 +149,10 @@ def write_release(root, channel, source):
         raise Refused(failing)
     encoded = encode(artifact_of(things, channel))
     manifest = encode(manifest_of(things, encoded, channel, source))
+    vectors = encode(serving.vectors_of(included_things(things)))
     folder = os.path.join(root, OUT)
     os.makedirs(folder, exist_ok=True)
-    files = {ARTIFACT_FILE: encoded, MANIFEST_FILE: manifest}
+    files = {ARTIFACT_FILE: encoded, MANIFEST_FILE: manifest, VECTORS_FILE: vectors}
     for name, content in files.items():
         write_file(folder, name, content)
     write_file(folder, SUMS_FILE, sums_of(files))

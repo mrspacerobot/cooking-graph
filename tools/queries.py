@@ -329,3 +329,30 @@ def compose(things, technique_words, at_home, avoid=(), servings=None, top=5):
                                   -row["exact_count"], not row["teaches"], row["recipe"]))
     return {"techniques": techniques, "at_home": home, "avoid": avoided, "safety": SAFETY, "recipes": answers[:top],
             "refused": refused}
+
+
+def required_lines(things, recipe):
+    """The lines of the parts a dish cannot leave out, and the lines of the optional parts by part."""
+    optional = {part["id"] for part in things[recipe["makes"]].data["parts"] if part["optional"]}
+    required = [line for line in recipe["ingredients"] if line["part"] not in optional]
+    left_out = {}
+    for line in recipe["ingredients"]:
+        if line["part"] in optional:
+            left_out.setdefault(line["part"], []).append(line)
+    return required, left_out
+
+
+def as_written(things, recipe_word, avoid=()):
+    """Can the recipe be made exactly as written for a cook who avoids these facts? No stand-ins are tried.
+
+    `ok` when every required line is free of what is avoided; optional parts that are not are named in `leave_out`.
+    Otherwise `refused`, with the foods that are the reason.
+    """
+    recipe_id = resolve(things, recipe_word, ("recipe",))
+    avoided = resolve_many(things, avoid, ("fact",))
+    required, optional = required_lines(things, things[recipe_id].data)
+    blocking = sorted({line["thing"] for line in required if not query_safety.free_of(things, line["thing"], avoided)})
+    leave_out = sorted(part for part, lines in optional.items()
+                       if any(not query_safety.free_of(things, line["thing"], avoided) for line in lines))
+    status = "refused" if blocking else "ok"
+    return {"recipe": recipe_id, "avoid": avoided, "status": status, "because": blocking, "leave_out": leave_out}

@@ -85,7 +85,7 @@ the browser instructions in `AGENTS.md`.
 version, graph version, source commit, content hash, channel, the gate results, counts by kind and tier, the fact list),
 `serving-vectors.json` and `SHA256SUMS`. The artifact holds the graph files and a `serving` section: for each recipe, its
 techniques, ingredients and equipment, and the facts it is not free of as written, so a server only compares sets. The
-vectors are cases written by the reference (`queries.as_written`): a set of avoided facts and the recipes it offers, so a
+vectors are cases written by the reference (`queries.can_make`): a set of avoided facts and the recipes it offers, so a
 server can prove it agrees with the rules. The same commit always gives the same artifact bytes and the same hash; the time of the build is in
 the manifest only. The channel is written inside the artifact as well, so its hash covers it. Probes are never included. The `draft` channel is for internal development. The `production` channel
 is refused until every gate passes: all included things at tier reviewed or higher, every ingredient's safety verified

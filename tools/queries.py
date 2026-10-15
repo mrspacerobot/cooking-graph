@@ -342,17 +342,28 @@ def required_lines(things, recipe):
     return required, left_out
 
 
-def as_written(things, recipe_word, avoid=()):
-    """Can the recipe be made exactly as written for a cook who avoids these facts? No stand-ins are tried.
+def can_make(things, recipe_word, avoid=()):
+    """Can the recipe be made for a cook who avoids these facts, with the swaps the graph allows?
 
-    `ok` when every required line is free of what is avoided; optional parts that are not are named in `leave_out`.
-    Otherwise `refused`, with the foods that are the reason.
+    A line is fine when its food is free of what is avoided, or when one of its allowed swaps is. `ok` when every
+    required line is fine, with the swaps used; otherwise `refused`, with the foods that have no way. Optional parts
+    that have no way are named in `leave_out`.
     """
     recipe_id = resolve(things, recipe_word, ("recipe",))
     avoided = resolve_many(things, avoid, ("fact",))
-    required, optional = required_lines(things, things[recipe_id].data)
-    blocking = sorted({line["thing"] for line in required if not query_safety.free_of(things, line["thing"], avoided)})
-    leave_out = sorted(part for part, lines in optional.items()
-                       if any(not query_safety.free_of(things, line["thing"], avoided) for line in lines))
+    optional = {part["id"] for part in things[things[recipe_id].data["makes"]].data["parts"] if part["optional"]}
+    blocking, leave_out, swaps = set(), set(), []
+    for line in stand_ins(things, recipe_id, avoided)["lines"]:
+        if query_safety.free_of(things, line["original"], avoided):
+            continue
+        if line["options"]:
+            swaps.append({"original": line["original"], "instead": line["options"][0]["thing"]})
+        elif line["part"] in optional:
+            leave_out.add(line["part"])
+        else:
+            blocking.add(line["original"])
     status = "refused" if blocking else "ok"
-    return {"recipe": recipe_id, "avoid": avoided, "status": status, "because": blocking, "leave_out": leave_out}
+    if blocking:
+        swaps = []
+    return {"recipe": recipe_id, "avoid": avoided, "status": status, "because": sorted(blocking),
+            "leave_out": sorted(leave_out), "swaps": swaps}

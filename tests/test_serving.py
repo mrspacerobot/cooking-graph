@@ -3,8 +3,9 @@
 import itertools
 import unittest
 
+from tests.small_kitchen import REPOSITORY
 from tests.test_queries import kitchen
-from tools import queries, serving
+from tools import check, queries, release, serving
 
 MILK, GLUTEN, DAIRY_FREE_OIL_FACTS = "fact/dairy", "fact/gluten", "fact/dairy"
 
@@ -45,10 +46,34 @@ class ServingTest(unittest.TestCase):
         facts = section["facts"]
         for size in range(0, 3):
             for avoided in itertools.combinations(facts, size):
-                reference = queries.as_written(self.things, self.recipe_id, list(avoided))
-                entry = section["recipes"][self.recipe_id]
-                offered = not set(avoided) & set(entry["unsafe_for"])
+                reference = queries.can_make(self.things, self.recipe_id, list(avoided))
+                offered = serving.offered(section["recipes"][self.recipe_id], set(avoided))
                 self.assertEqual(reference["status"] == "ok", offered, avoided)
+
+    def line(self, thing_id):
+        lines = self.section()["recipes"][self.recipe_id]["lines"]
+        return next(one for one in lines if one["thing"] == thing_id)
+
+    def test_a_line_lists_the_swaps_the_graph_allows_with_what_each_is_unsafe_for(self):
+        swap = self.line("ingredient/butter")["swaps"][0]
+        self.assertEqual("ingredient/oil", swap["thing"])
+        self.assertEqual("The flavour changes.", swap["caveat"])
+        self.assertEqual({"stand_in": 1, "original": 1, "by": "weight"}, swap["ratio"])
+        self.assertNotIn("fact/dairy", swap["unsafe_for"])
+
+    def test_a_recipe_is_offered_to_a_cook_who_avoids_a_fact_when_a_safe_swap_exists(self):
+        entry = self.section()["recipes"][self.recipe_id]
+        self.assertIn("fact/dairy", entry["unsafe_for"])
+        self.assertTrue(serving.offered(entry, {"fact/dairy"}))
+
+    def test_a_recipe_is_refused_when_the_swap_is_unsafe_too(self):
+        self.things["ingredient/oil"].data["safety"]["free_of"] = ["fact/gluten"]
+        entry = self.section()["recipes"][self.recipe_id]
+        self.assertFalse(serving.offered(entry, {"fact/dairy"}))
+
+    def test_a_swap_the_graph_forbids_in_this_dish_is_not_listed(self):
+        self.things["ingredient/oil"].data["stands_in_for"][0]["not_when"] = ["technique/sweat"]
+        self.assertEqual([], self.line("ingredient/butter")["swaps"])
 
     def test_the_section_is_the_same_for_any_file_order(self):
         reversed_things = dict(reversed(list(self.things.items())))
@@ -84,9 +109,34 @@ class VectorsTest(unittest.TestCase):
     def test_each_case_lists_what_the_reference_offers_and_nothing_else(self):
         for case in self.cases():
             offered = [recipe for recipe in ("recipe/buttered-onions",)
-                       if queries.as_written(self.things, recipe, case["avoid"])["status"] == "ok"]
+                       if queries.can_make(self.things, recipe, case["avoid"])["status"] == "ok"]
             self.assertEqual(offered, case["offered"], case["avoid"])
 
     def test_the_vectors_are_the_same_for_any_file_order(self):
         reversed_things = dict(reversed(list(self.things.items())))
         self.assertEqual(serving.vectors_of(self.things), serving.vectors_of(reversed_things))
+
+
+class RealGraphTest(unittest.TestCase):
+    """The shipped graph: what the server would offer from the section is what the reference offers, for every case."""
+
+    @classmethod
+    def setUpClass(cls):
+        things, issues = check.read_repository(REPOSITORY)
+        assert not issues
+        cls.things = release.included_things(things)
+
+    def test_the_section_offers_exactly_what_the_reference_offers_in_every_case(self):
+        section = serving.serving_of(self.things)
+        for case in serving.vectors_of(self.things)["cases"]:
+            avoided = set(case["avoid"])
+            from_section = [recipe_id for recipe_id, entry in section["recipes"].items()
+                            if serving.offered(entry, avoided)]
+            self.assertEqual(case["offered"], from_section, case["avoid"])
+
+    def test_swaps_make_more_recipes_available_than_the_food_as_written(self):
+        section = serving.serving_of(self.things)
+        avoided = {"fact/milk"}
+        as_written = [one for one, entry in section["recipes"].items() if not avoided & set(entry["unsafe_for"])]
+        with_swaps = [one for one, entry in section["recipes"].items() if serving.offered(entry, avoided)]
+        self.assertGreater(len(with_swaps), len(as_written))

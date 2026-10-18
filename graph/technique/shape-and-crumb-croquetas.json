@@ -4,6 +4,7 @@
   "names": {"en": "Shape and crumb croquetas"},
   "aliases": {"en": ["rebozar", "shape croquetas", "crumb croquetas", "coat croquetas"]},
   "does": "Rolls cold, firm croqueta paste into small logs or balls and coats each one in flour, beaten egg and breadcrumbs in turn, so that it fries with a crisp shell and a soft, creamy middle.",
+  "intro": null,
   "how": [
     "Set out shallow dishes in a row: flour, beaten egg and breadcrumbs, in that order. Have a tray ready.",
     "Scoop a spoonful of the chilled paste and roll it between floured hands into a short log or a ball. Keep them all one size.",
@@ -29,6 +30,7 @@
       "fix": "Keep one hand for the flour and the crumbs and the other for the egg."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/croqueta-paste", "tier": "drafted"}
   ],

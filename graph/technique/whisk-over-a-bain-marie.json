@@ -4,6 +4,7 @@
   "names": {"en": "Whisk over a bain marie"},
   "aliases": {"en": ["whisk over simmering water", "make a zabaione", "make a zabaglione"]},
   "does": "Whisks egg yolks, sugar and a sweet wine such as Marsala in a bowl set over barely simmering water, until they swell into a thick, pale, warm foam that holds a ribbon. This is the Italian zabaione, also spelt zabaglione, served warm as it is or chilled and folded into mascarpone cream.",
+  "intro": null,
   "how": [
     "Set a heatproof bowl over a pan of water at a bare simmer. The bowl must not touch the water.",
     "Whisk the yolks with the sugar in the bowl until pale, then add the wine.",
@@ -29,6 +30,7 @@
       "fix": "Whisk without a pause, scraping the sides."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg-yolk", "tier": "drafted"}
   ],

@@ -4,6 +4,7 @@
   "names": {"en": "Grind", "fr": "Moudre"},
   "aliases": {"en": ["grind to a powder", "grind to a paste", "grind fine"], "fr": ["broyer"]},
   "does": "Breaks hard or firm food down to a powder, a coarse meal or a paste, by crushing it in a mortar, milling it in a grinder or running it through a blade, so that it blends into a dish or binds into a dough.",
+  "intro": null,
   "how": [
     "Dry whole spices lightly in a warm pan first, so that they grind finer and smell stronger, then let them cool.",
     "Soak dried pulses and drain them well before grinding them, and cut meat into strips and chill it first.",
@@ -30,6 +31,7 @@
       "fix": "Add a spoonful at a time and stop as soon as it turns."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/whole-spices", "tier": "drafted"},
     {"thing": "group/pulses", "tier": "drafted"},

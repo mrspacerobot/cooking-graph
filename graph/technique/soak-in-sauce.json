@@ -4,6 +4,7 @@
   "names": {"en": "Soak in sauce"},
   "aliases": {"en": ["steep in sauce", "marinate after frying", "nanbanzuke"]},
   "does": "Steeps just-fried food in a sharp, sweet sauce while it is still hot, so that it drinks up the sauce and turns juicy and flavoured through.",
+  "intro": null,
   "how": [
     "Make the sauce ahead and have it in a shallow dish.",
     "Fry the food and lift it out of the oil, shaking off the excess.",
@@ -24,6 +25,7 @@
       "fix": "Lift it out after a short while."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/lean-fish", "tier": "drafted"},
     {"thing": "ingredient/chicken-thigh", "tier": "drafted"}

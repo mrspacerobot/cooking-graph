@@ -4,6 +4,7 @@
   "names": {"en": "Fold", "fr": "Incorporer"},
   "aliases": {"en": ["fold in", "fold together"]},
   "does": "Combines a light, airy mixture with a heavier one while keeping as much of the air as possible.",
+  "intro": null,
   "how": [
     "Stir a small part of the whipped mixture into the heavy one to loosen it.",
     "Tip the rest on top.",
@@ -22,6 +23,7 @@
       "fix": "Cut, lift and turn. Stop early: a few streaks do less harm than more folding."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg-white", "tier": "drafted"},
     {"thing": "ingredient/cream", "tier": "drafted"}

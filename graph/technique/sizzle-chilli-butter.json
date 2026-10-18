@@ -4,6 +4,7 @@
   "names": {"en": "Sizzle chilli butter"},
   "aliases": {"en": ["kizdirilmis tereyagi", "sizzled red butter"]},
   "does": "Melts butter, takes it off the heat and stirs in dried chilli flakes or paprika, which sizzle for a moment and turn the butter bright red and fragrant. It is spooned over yogurt, eggs, dumplings or soup at the last moment.",
+  "intro": null,
   "how": [
     "Melt the butter in a small pan over a gentle heat until it foams, and stop before it browns.",
     "Take the pan off the heat and stir in the chilli flakes or the paprika.",
@@ -28,6 +29,7 @@
       "fix": "Make it as the dish is ready and spoon it over while it is hot."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/butter", "tier": "drafted"},
     {"thing": "ingredient/chili-flakes", "tier": "drafted"},

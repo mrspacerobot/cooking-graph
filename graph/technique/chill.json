@@ -4,6 +4,7 @@
   "names": {"en": "Chill", "fr": "Refroidir"},
   "aliases": {"en": ["cool", "cool down", "cool quickly"]},
   "does": "Brings hot food down to the cold of the fridge quickly, so that it keeps well and so that a cold dish is truly cold.",
+  "intro": null,
   "how": [
     "Move the hot food out of its pot into a wide, shallow container.",
     "Stand the container in iced water and stir now and then.",
@@ -20,6 +21,7 @@
     },
     {"mistake": "Seasoning a soup while it is hot and serving it cold.", "fix": "Taste it again when it is cold."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/stocks", "tier": "drafted"},
     {"thing": "group/sauces", "tier": "drafted"},

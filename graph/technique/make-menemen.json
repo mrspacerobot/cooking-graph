@@ -4,6 +4,7 @@
   "names": {"en": "Make menemen"},
   "aliases": {"en": ["menemen"]},
   "does": "Sets whole eggs gently in a pan of softened tomato and pepper, breaking them in and stirring only lightly, so that the dish ends loose and juicy, streaked with white and yolk, instead of in fine curds.",
+  "intro": null,
   "how": [
     "Soften the peppers in butter or oil, then add the tomato and cook until it has collapsed into a thick, juicy base. Salt it.",
     "Lower the heat. Break the eggs straight on to the base and leave them until the edges begin to set.",
@@ -32,6 +33,7 @@
       "fix": "Cook the tomato down until it is thick before the eggs go in."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],

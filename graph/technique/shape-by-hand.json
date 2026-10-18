@@ -4,6 +4,7 @@
   "names": {"en": "Shape by hand"},
   "aliases": {"en": ["shape rice by hand", "shape onigiri", "form rice balls"]},
   "does": "Presses a portion of warm cooked rice between wet, salted hands into a firm triangle, ball or barrel that holds together but is not packed hard.",
+  "intro": null,
   "how": [
     "Wet your hands in cold water, rub a little salt over the palms and shake off the excess.",
     "Scoop up a portion of warm rice and press it lightly into a ball.",
@@ -21,6 +22,7 @@
       "fix": "Wet and salt your hands each time."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}

@@ -4,6 +4,7 @@
   "names": {"en": "Break the crust", "fr": "Casser la croûte"},
   "aliases": {"en": ["push the crust down", "break the crust of a cassoulet"], "fr": ["casser la croûte du cassoulet"]},
   "does": "Presses the golden crust that forms on top of a slowly baked pot of beans and meat down into the pot, so that it soaks up the juices and thickens them, then lets a fresh crust form. It is done several times, and the last crust is left whole for the table.",
+  "intro": null,
   "how": [
     "Sprinkle a thick layer of crumbs over the beans and meat, with the liquid just below the top.",
     "Bake at a low heat until a golden crust has formed on the top.",
@@ -25,6 +26,7 @@
       "fix": "Add a ladle of hot liquid whenever the beans no longer shine."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/white-beans", "tier": "drafted"},
     {"thing": "preparation/breadcrumbs", "tier": "drafted"}

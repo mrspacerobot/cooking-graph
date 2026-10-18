@@ -4,6 +4,7 @@
   "names": {"en": "Sweeten"},
   "aliases": {"en": ["add sugar", "sweeten to taste"]},
   "does": "Adds sugar to a food a little at a time and tastes after each addition, to bring it to the right level of sweetness without hiding its own taste.",
+  "intro": null,
   "how": [
     "Cook the food until it is soft enough to take up the sugar.",
     "Add the sugar in portions, stirring each in until it has dissolved.",
@@ -24,6 +25,7 @@
       "fix": "Cook them soft first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/azuki-bean", "tier": "drafted"},
     {"thing": "group/firm-fruits", "tier": "drafted"}

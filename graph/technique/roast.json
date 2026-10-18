@@ -4,6 +4,12 @@
   "names": {"en": "Roast", "fr": "Rôtir"},
   "aliases": {"en": ["roast in the oven", "oven-roast", "roasting"]},
   "does": "Cooks food uncovered in the dry heat of a hot oven, so that the outside browns while the inside cooks in its own juices.",
+  "intro": {
+    "what": "Roasting uses the dry heat of an oven to brown food in an uncovered tin.",
+    "why": "It connects surface dryness and space in the tin with browning and the juices left for a sauce.",
+    "idea": "Dry heat and space",
+    "tier": "drafted"
+  },
   "how": [
     "Dry the surface of the food well.",
     "Season it, and rub it with a little fat.",
@@ -22,6 +28,48 @@
       "fix": "Leave space around every piece, or use a second tin."
     },
     {"mistake": "Carving a roast straight from the oven.", "fix": "Rest it first, loosely covered."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does the uncovered dry heat of roasting help develop?",
+      "choices": ["A browned surface.", "A deliberately pale, steamed surface.", "A surface submerged in stock."],
+      "answer": 0,
+      "because": "Uncovered dry oven heat browns the outside of the food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What do you do to the surface before seasoning and adding fat?",
+      "choices": ["Soak the surface and leave it wet.", "Dry the surface well.", "Wrap the food tightly in foil."],
+      "answer": 1,
+      "because": "Start with a dry surface before seasoning and adding a little fat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the browning described here?",
+      "choices": [
+        "A pale surface in pooled water.",
+        "A wet, pale surface with little colour in the tin.",
+        "A golden-brown surface and browned juices in the tin."
+      ],
+      "answer": 2,
+      "because": "A golden-brown surface and browned juices in the tin show the browning this method develops.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Food in a crowded tin is steaming and staying pale. What would you change?",
+      "choices": [
+        "Leave room around the pieces or use another tin.",
+        "Pack more food into the same tin.",
+        "Cover the tin tightly to trap steam."
+      ],
+      "answer": 0,
+      "because": "Crowded pieces steam and stay pale. More space, or another tin, gives them room to brown.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/roasting-joints", "tier": "drafted"},

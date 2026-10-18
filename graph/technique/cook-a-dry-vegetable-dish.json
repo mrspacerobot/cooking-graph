@@ -4,6 +4,7 @@
   "names": {"en": "Cook a dry vegetable dish"},
   "aliases": {"en": ["sabzi", "sukhi sabzi", "sookhi sabji", "dry vegetable curry"]},
   "does": "Cooks cut vegetables in spiced fat with no added water, under a lid over a low heat, so that they soften in their own steam and end up coated in a thick spiced paste, with no gravy left in the pan.",
+  "intro": null,
   "how": [
     "Cut the vegetables into pieces of an even size and pat them dry.",
     "Start the pan with a tempering of whole spices and a masala base cooked until its fat parts.",
@@ -32,6 +33,7 @@
       "fix": "Take the lid off for the end of the cooking and let the moisture cook away."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "ingredient/cauliflower", "tier": "drafted"}

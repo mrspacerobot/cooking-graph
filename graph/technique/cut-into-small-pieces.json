@@ -4,6 +4,7 @@
   "names": {"en": "Cut into small pieces"},
   "aliases": {"en": ["cut into small bits", "chop into small pieces"]},
   "does": "Cuts food into small, loose pieces, not exact cubes, so that they spread through rice, a filling or a sauce.",
+  "intro": null,
   "how": [
     "Trim the food, take out any bone or tough stem, and slice it first if it is wide.",
     "Cut the slices across into small, rough pieces.",
@@ -23,6 +24,7 @@
       "fix": "Use a sharp knife and a clear board."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/mushrooms", "tier": "drafted"},

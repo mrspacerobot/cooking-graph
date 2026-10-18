@@ -4,6 +4,7 @@
   "names": {"en": "Make tartar sauce"},
   "aliases": {"en": ["make tartare sauce"]},
   "does": "Folds finely chopped pickles, boiled egg and onion into mayonnaise, to make a thick, creamy sauce with a sharp bite for fried food.",
+  "intro": null,
   "how": [
     "Chop the pickles, the boiled egg and a little onion small. Squeeze the onion dry in a cloth if it is strong.",
     "Put the mayonnaise in a bowl and fold in the chopped pieces.",
@@ -18,6 +19,7 @@
     {"mistake": "Chopping the pickles too coarsely, so that the sauce is lumpy.", "fix": "Chop them small."},
     {"mistake": "Leaving the pickles wet, which thins the sauce.", "fix": "Pat them dry before they go in."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/mayonnaise", "tier": "drafted"},
     {"thing": "ingredient/cornichons", "tier": "drafted"},

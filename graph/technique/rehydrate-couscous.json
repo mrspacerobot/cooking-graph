@@ -4,6 +4,7 @@
   "names": {"en": "Rehydrate couscous", "fr": "Réhydrater le couscous"},
   "aliases": {"en": ["soak couscous", "hydrate couscous", "make instant couscous"]},
   "does": "Swells precooked, dried couscous grains in hot liquid poured over them off the heat, and lets them stand covered until the liquid is taken up, so that no steaming is needed.",
+  "intro": null,
   "how": [
     "Put the grains in a wide bowl with a little salt and a spoonful of oil or butter, and rub until every grain is coated, so that they do not clump when the liquid arrives.",
     "Bring the liquid, plain water or a well-flavoured stock, to a boil. Measure it by volume against the grains: about the same amount, a little more for a softer grain.",
@@ -38,6 +39,7 @@
       "fix": "Coat the dry grains with oil or butter before the liquid goes on."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/instant-couscous", "tier": "drafted"}
   ],

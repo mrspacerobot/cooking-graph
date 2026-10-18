@@ -4,6 +4,7 @@
   "names": {"en": "Coat in starch"},
   "aliases": {"en": ["dust with starch", "coat in potato starch", "dredge in starch"]},
   "does": "Dusts a piece of food, often after it has been marinated, in a thin layer of potato starch or cornstarch just before frying. It fries to a crisp, light, pale crust.",
+  "intro": null,
   "how": [
     "Pat the food dry and shake off any marinade that is dripping.",
     "Tip the starch into a tray and turn each piece in it, pressing lightly.",
@@ -18,6 +19,7 @@
     {"mistake": "Coating too thickly, which turns gluey and heavy.", "fix": "Shake off the loose starch."},
     {"mistake": "Coating long before frying, so that the starch gets wet.", "fix": "Coat right before the oil."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/lean-fish", "tier": "drafted"},
     {"thing": "ingredient/chicken-thigh", "tier": "drafted"},

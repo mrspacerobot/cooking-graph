@@ -4,6 +4,7 @@
   "names": {"en": "Confit", "fr": "Confire"},
   "aliases": {"en": ["cook slowly in fat", "poach in oil", "slow-cook in oil"], "fr": ["mettre en confit"]},
   "does": "Cooks food slowly while it lies covered in fat held far below a simmer, so that it turns tender and silky and the fat takes up its flavour. The food is lifted out and the scented fat is kept.",
+  "intro": null,
   "how": [
     "Season or cure the food first if it needs it, and dry it well.",
     "Choose a pot just big enough for the food to lie in one snug layer, with the fat covering it.",
@@ -25,6 +26,7 @@
       "fix": "Use a smaller pot, so that the fat covers the food."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/salt-cod", "tier": "drafted"},
     {"thing": "ingredient/garlic", "tier": "drafted"},

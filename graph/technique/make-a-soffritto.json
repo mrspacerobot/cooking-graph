@@ -4,6 +4,7 @@
   "names": {"en": "Make a soffritto"},
   "aliases": {"en": ["soffritto", "cook a soffritto", "fare il soffritto"]},
   "does": "Cooks very finely chopped onion, carrot and celery slowly in olive oil, until they melt together into a soft, sweet, golden base on which the rest of the dish is built.",
+  "intro": null,
   "how": [
     "Chop the onion, carrot and celery very fine and as even as you can, so that they melt into the dish and do not show as pieces.",
     "Warm olive oil in a wide, heavy pan over low heat, then add the vegetables with a little salt.",
@@ -28,6 +29,7 @@
       "fix": "Give it the time it needs."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"},
     {"thing": "ingredient/carrot", "tier": "drafted"},

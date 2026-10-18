@@ -4,6 +4,7 @@
   "names": {"en": "Make shortcrust pastry", "fr": "Faire une pâte brisée"},
   "aliases": {"en": ["make pie pastry", "rub in the butter"], "fr": ["faire la pâte brisée", "sabler la pâte"]},
   "does": "Rubs cold butter into flour with the fingertips until the mixture looks like fine crumbs, then binds it with a little cold water into a dough. Baked, the dough is short, which means crumbly and tender, and not chewy. It is rested in a cool place before it is rolled.",
+  "intro": null,
   "how": [
     "Cut the cold butter into small pieces and put it in a bowl with the flour and a little salt.",
     "Rub the butter into the flour with the tips of the fingers, lifting the mixture as you go to let in air, until it looks like fine crumbs with no big lumps of butter left.",
@@ -32,6 +33,7 @@
       "fix": "Press it together once, and leave it alone."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"}
   ],

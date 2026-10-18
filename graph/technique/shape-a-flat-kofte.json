@@ -4,6 +4,7 @@
   "names": {"en": "Shape a flat kofte"},
   "aliases": {"en": ["shape izgara kofte", "shape grilled kofte"]},
   "does": "Presses a portion of rested kofte mixture between wet palms into a short, flat oval with a shallow dent from the thumb, so that it holds together over the fire and cooks fast and evenly, and is cooked afterwards on a grill or in a pan.",
+  "intro": null,
   "how": [
     "Keep a bowl of water beside the work and wet the hands lightly, so the mixture does not stick.",
     "Take a portion about the size of a walnut and roll it once between the palms to bring it together.",
@@ -32,6 +33,7 @@
       "fix": "Wet the hands lightly and often."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/minced-meat", "tier": "drafted"}
   ],

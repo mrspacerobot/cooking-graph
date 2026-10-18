@@ -56,6 +56,42 @@ class ReviewSiteTest(unittest.TestCase):
         self.assertEqual({'stand_in': 1, 'original': 1, 'by': 'weight'}, claim['ratio'])
         self.assertEqual('The flavour changes.', claim['caveat'])
 
+    def foundation_payload(self):
+        program = json.loads(Path(REPOSITORY, 'graph/program/french-foundations.json').read_text())
+        program['courses'] = [program['courses'][0]]
+        program['courses'][0]['skills'] = [program['courses'][0]['skills'][0]]
+        program['courses'][0]['skills'][0]['levels'][0]['teaches'] = [
+            {'thing': 'technique/sweat', 'tier': 'drafted'}]
+        self.things[program['id']] = Thing('graph/program/french-foundations.json', 'program', program)
+        return review_site.payload(self.things, 'abc123')
+
+    def test_lesson_preview_keeps_technique_source_tiers_and_empty_gaps(self):
+        data = self.foundation_payload()
+        first = next(row for row in data['entries'].values() if row['kind'] == 'class')
+        self.assertEqual('foundations', first['course_slug'])
+        self.assertEqual('program/french-foundations', first['program_id'])
+        card = first['teaching_cards'][0]
+        self.assertEqual('technique/sweat', card['id'])
+        self.assertEqual('drafted', card['tier'])
+        self.assertEqual('drafted', card['link_tier'])
+        self.assertIsNone(card['intro'])
+        self.assertEqual([], card['quiz'])
+
+    def test_lesson_hash_changes_when_its_displayed_intro_or_quiz_changes(self):
+        before = next(row for row in self.foundation_payload()['entries'].values() if row['kind'] == 'class')
+        card = self.things['technique/sweat'].data
+        card['intro'] = {'what': 'Softens vegetables gently.', 'why': 'Builds a gentle base.',
+                         'idea': 'Gentle heat', 'tier': 'drafted'}
+        after = self.foundation_payload()['entries'][before['id']]
+        self.assertNotEqual(before['hash'], after['hash'])
+        self.assertEqual(card['intro'], after['teaching_cards'][0]['intro'])
+        card['quiz'] = [{'id': 'purpose', 'question': 'Why gentle heat?',
+                         'choices': ['To soften.', 'To brown.'], 'answer': 0,
+                         'because': 'It keeps browning down.', 'tier': 'drafted'}]
+        final = self.foundation_payload()['entries'][before['id']]
+        self.assertNotEqual(after['hash'], final['hash'])
+        self.assertEqual(card['quiz'], final['teaching_cards'][0]['quiz'])
+
     def test_recipe_uses_the_query_engine_and_links_to_reviewable_claims(self):
         data = review_site.payload(self.things, 'abc123')
         fat = data['entries']['recipe/buttered-onions']['substitutions'][1]

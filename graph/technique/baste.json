@@ -4,6 +4,12 @@
   "names": {"en": "Baste", "fr": "Arroser"},
   "aliases": {"en": ["spoon over", "baste with butter", "butter-baste"]},
   "does": "Spoons hot fat or juices over food as it cooks, so that the top browns and stays moist.",
+  "intro": {
+    "what": "Basting means spooning hot fat or juices over food while it cooks.",
+    "why": "It helps you pay attention to surface browning and to how butter changes in a hot pan.",
+    "idea": "Surface browning",
+    "tier": "drafted"
+  },
   "how": [
     "Tilt the pan so that the fat pools at the near edge.",
     "Scoop it up with a spoon and pour it over the food, again and again.",
@@ -25,6 +31,56 @@
     {
       "mistake": "Leaving the oven door open while basting a roast, so that the oven loses its heat.",
       "fix": "Take the tin out, baste, and put it straight back."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does basting help you do?",
+      "choices": [
+        "Keeping the surface moist and helping it brown.",
+        "Removing all the fat from the pan.",
+        "Stopping the surface from taking any colour."
+      ],
+      "answer": 0,
+      "because": "Spooning hot fat or juices over the food helps its surface brown and stay moist.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you gather fat for basting in a pan?",
+      "choices": [
+        "Keep the pan level and scoop from its centre.",
+        "Tilt the pan so the fat pools at the near edge.",
+        "Spread the fat across the pan before scooping it up."
+      ],
+      "answer": 1,
+      "because": "Tilting the pan collects the fat in a pool that is easier to scoop up.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "When basting with butter, what change tells you to stop?",
+      "choices": [
+        "The surface begins to glisten.",
+        "The butter first begins to foam.",
+        "The foam dies down and darkens."
+      ],
+      "answer": 2,
+      "because": "Butter that darkens too far can leave a bitter taste. Stop when its foam dies down and darkens.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "How would you avoid losing oven heat while basting a roast?",
+      "choices": [
+        "Keep the tin inside and leave the door open between spoonfuls.",
+        "Take the tin out, baste promptly, and return it.",
+        "Baste slowly inside the oven with the door open."
+      ],
+      "answer": 1,
+      "because": "An open oven door lets heat escape. Work promptly and close the door again.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

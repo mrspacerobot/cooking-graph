@@ -4,6 +4,12 @@
   "names": {"en": "Scramble", "fr": "Brouiller"},
   "aliases": {"en": ["soft scramble", "scramble eggs"]},
   "does": "Stirs beaten eggs over gentle heat until they set into small, soft, creamy curds.",
+  "intro": {
+    "what": "This gentle scramble method stirs beaten eggs into small, soft, creamy curds.",
+    "why": "It teaches you to respond to texture by stirring and moving the pan away from excess heat.",
+    "idea": "Gentle curds",
+    "tier": "drafted"
+  },
   "how": [
     "Whisk the eggs with salt until no streaks of white are left.",
     "Melt butter in a pan over low heat until it foams.",
@@ -23,6 +29,52 @@
     {
       "mistake": "Waiting until the eggs look done in the pan.",
       "fix": "Take them off while they still look too wet. They go on setting on the way to the plate."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Which texture is the aim of this scramble method?",
+      "choices": ["Small, soft, creamy curds.", "Large, dry, rubbery curds.", "A firm sheet for rolling."],
+      "answer": 0,
+      "because": "This gentle method aims for small, soft, creamy curds rather than large, dry ones.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you stir the eggs for this gentle scramble?",
+      "choices": [
+        "Only across the surface, leaving the base untouched.",
+        "Continuously, scraping the bottom and corners.",
+        "Only after a browned layer has formed."
+      ],
+      "answer": 1,
+      "because": "Stir continuously and scrape the bottom and corners so you do not leave eggs sitting against the hot pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which spoon trail matches the texture described here?",
+      "choices": [
+        "A dry gap that never closes.",
+        "No trail in a completely watery mixture.",
+        "A trail that closes slowly."
+      ],
+      "answer": 2,
+      "because": "A spoon trail that closes slowly matches the thick, creamy texture of this scramble.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The curds are forming too fast. What would you do?",
+      "choices": [
+        "Lift the pan off the heat and keep stirring.",
+        "Keep the pan on the heat and stir faster.",
+        "Reduce stirring so the curds have time to join together."
+      ],
+      "answer": 0,
+      "because": "Fast-forming curds signal too much heat for this gentle method. Lift the pan away and keep stirring.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,7 @@
   "names": {"en": "Cover with a drop lid"},
   "aliases": {"en": ["otoshibuta", "cover with otoshibuta", "use a drop lid", "cover with drop lid"]},
   "does": "Lays a lid that is smaller than the pot straight on the food, so that the simmering liquid is pushed up and over every piece. The pieces cook evenly in a small amount of liquid and stay still.",
+  "intro": null,
   "how": [
     "Arrange the food in a single layer in a wide pot and add just enough liquid to come part of the way up.",
     "Bring the liquid to a simmer.",
@@ -25,6 +26,7 @@
       "fix": "Turn the heat down until it only bubbles gently."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "ingredient/kabocha", "tier": "drafted"},

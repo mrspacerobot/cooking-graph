@@ -4,6 +4,12 @@
   "names": {"en": "Poach", "fr": "Pocher"},
   "aliases": {"en": ["poach gently", "poaching", "poach eggs"]},
   "does": "Cooks delicate food gently in liquid that is hot but never boils.",
+  "intro": {
+    "what": "Poaching cooks delicate food in gently heated liquid without a rolling boil.",
+    "why": "It teaches you to control liquid movement so that delicate food is not knocked about.",
+    "idea": "Gentle liquid",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the liquid until it trembles, with small bubbles on the bottom of the pan and almost none rising.",
     "Slide the food in gently.",
@@ -27,6 +33,56 @@
     {
       "mistake": "Using an old egg, whose thin white spreads into rags.",
       "fix": "Use the freshest eggs you have, and drain off the watery part of the white through a sieve."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why does this method keep the liquid from boiling?",
+      "choices": [
+        "To treat delicate food gently.",
+        "To use movement in the water to keep the food from breaking.",
+        "To stop the liquid from losing any volume."
+      ],
+      "answer": 0,
+      "because": "Boiling can tear delicate food apart. Gentle liquid movement treats it more softly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you add food to the poaching liquid?",
+      "choices": [
+        "Tip the food in with a quick splash to separate the pieces.",
+        "Slide it in gently.",
+        "Stir it rapidly into a rolling boil."
+      ],
+      "answer": 1,
+      "because": "Slide the food gently into the liquid instead of splashing it into a rolling boil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which surface matches the gentle liquid heat used for poaching?",
+      "choices": [
+        "A rolling surface with large breaking bubbles.",
+        "A still, cold surface without steam.",
+        "A shivering, steaming surface that does not roll."
+      ],
+      "answer": 2,
+      "because": "A shivering, steaming surface without rolling bubbles shows the gentle liquid movement used here.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The liquid starts boiling after the food goes in. What should you change?",
+      "choices": [
+        "Turn the heat down or add a splash of cold liquid.",
+        "Turn the heat up to maintain the rolling boil.",
+        "Stir harder to keep the bubbles moving."
+      ],
+      "answer": 0,
+      "because": "Lowering the heat or adding a splash of cold liquid brings the liquid back away from a boil.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

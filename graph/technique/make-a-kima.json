@@ -4,6 +4,7 @@
   "names": {"en": "Make a kima"},
   "aliases": {"en": ["make kima", "make a Greek meat sauce"]},
   "does": "Cooks minced meat with softened onion, tomato and a little red wine, scented with cinnamon, allspice and a bay leaf, until it is a thick, moist, mildly sweet sauce that sits under a white sauce in a baked dish or is spooned over pasta.",
+  "intro": null,
   "how": [
     "Soften the onion and garlic in olive oil first, and keep the pan wide so that the meat browns and does not stew.",
     "Add the minced meat in small lots and break it up with a spoon. Let it take colour before more goes in.",
@@ -30,6 +31,7 @@
       "fix": "Add it in small lots and let each take colour."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/minced-meat", "tier": "drafted"}
   ],

@@ -4,6 +4,7 @@
   "names": {"en": "Melt", "fr": "Fondre"},
   "aliases": {"en": ["melt chocolate", "melt gently", "melt over a water bath"]},
   "does": "Turns chocolate or a solid fat liquid over gentle heat, without letting it colour, scorch or seize.",
+  "intro": null,
   "how": [
     "Chop chocolate into small, even pieces, and cut butter into cubes.",
     "Set a bowl over a pan of barely simmering water, with the bottom of the bowl clear of the water.",
@@ -24,6 +25,7 @@
       "fix": "Melt it over water, and off the heat for the last lumps."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/dark-chocolate", "tier": "drafted"},
     {"thing": "ingredient/butter", "tier": "drafted"}

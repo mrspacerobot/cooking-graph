@@ -4,6 +4,7 @@
   "names": {"en": "Wrap in nori"},
   "aliases": {"en": ["wrap with nori", "wrap in seaweed"]},
   "does": "Wraps a sheet of dried seaweed around shaped rice just before eating, so that the seaweed stays crisp and does not turn soggy against the moist rice.",
+  "intro": null,
   "how": [
     "Cut a sheet of nori into strips or squares, or fold it to fit the rice shape.",
     "Hold the shaped rice in one hand and lay the nori against the rice.",
@@ -24,6 +25,7 @@
       "fix": "Keep it in a closed container, and crisp it briefly over a flame if needed."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}

@@ -4,6 +4,7 @@
   "names": {"en": "Cook a naan"},
   "aliases": {"en": ["cook naan on a tava", "stretch and cook naan", "blister naan"]},
   "does": "Stretches a rested ball of naan dough by hand into a teardrop, cooks it on a very hot iron plate until it puffs and blisters, then holds it for a moment over the open flame to char it in spots. The finished bread is brushed with ghee and kept soft under a cloth.",
+  "intro": null,
   "how": [
     "Divide the risen dough into equal balls, cover them, and let them rest for a short while.",
     "Flatten a ball on a floured board, then pull and press it by hand into a teardrop, a little thicker than a chapati.",
@@ -34,6 +35,7 @@
       "fix": "Hold it over the flame only for a moment, turning it with tongs."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/naan-dough", "tier": "drafted"}
   ],

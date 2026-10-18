@@ -4,6 +4,7 @@
   "names": {"en": "Carve", "fr": "Découper"},
   "aliases": {"en": ["carve a chicken", "carve a roast", "slice a roast"]},
   "does": "Cuts a rested roast or bird into portions, following the joints and cutting across the grain.",
+  "intro": null,
   "how": [
     "Rest the meat first, and catch its juices for the sauce.",
     "For a bird, cut through the skin between the leg and the body, bend the leg out and cut through the joint.",
@@ -26,6 +27,7 @@
       "fix": "Look for the lines of the fibres and cut across them."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/roasting-joints", "tier": "drafted"}

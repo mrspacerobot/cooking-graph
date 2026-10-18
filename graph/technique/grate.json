@@ -4,6 +4,7 @@
   "names": {"en": "Grate", "fr": "Râper"},
   "aliases": {"en": ["shred"]},
   "does": "Rubs firm food against a rough surface to turn it into fine shreds.",
+  "intro": null,
   "how": [
     "Chill a soft cheese first, so that it shreds and does not smear.",
     "Hold the grater steady on the board or over a bowl.",
@@ -19,6 +20,7 @@
       "fix": "Stop early and chop the end with a knife."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/grating-cheeses", "tier": "drafted"},
     {"thing": "group/root-vegetables", "tier": "drafted"},

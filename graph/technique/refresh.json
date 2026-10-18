@@ -6,6 +6,7 @@
     "en": ["shock", "refresh in iced water", "cool in iced water", "plunge into iced water", "shock in cold water"]
   },
   "does": "Stops the cooking at once by plunging hot food into iced water, which keeps green vegetables bright and firm.",
+  "intro": null,
   "how": [
     "Have a large bowl of water and ice ready before the food is cooked.",
     "Lift the food straight from the pot into the iced water.",
@@ -22,6 +23,7 @@
       "fix": "Take it out as soon as it is cold and drain it on a cloth."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/green-vegetables", "tier": "drafted"},
     {"thing": "group/root-vegetables", "tier": "drafted"},

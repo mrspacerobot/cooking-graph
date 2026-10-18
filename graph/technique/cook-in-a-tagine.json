@@ -4,6 +4,7 @@
   "names": {"en": "Cook in a tagine", "fr": "Cuire en tajine"},
   "aliases": {"en": ["tagine", "tajine", "cook a tagine", "cook in a tajine"], "fr": ["tajine"]},
   "does": "Cooks meat or poultry slowly over low heat in a shallow earthenware dish under a tall cone lid, on a bed of sliced onion, fat and spices, with only a little water. The steam rises into the cone, cools and runs back down, so the food stews in its own juices and the sauce stays short and strong.",
+  "intro": null,
   "how": [
     "Spread sliced onion over the base of the dish with the fat and the spices, and pour in a little water, only enough to wet the base.",
     "Lay the meat on top and season it. Do not brown it first.",
@@ -33,6 +34,7 @@
       "fix": "Leave it covered and check only near the end."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/braising-cuts", "tier": "drafted"},
     {"thing": "group/poultry", "tier": "drafted"}

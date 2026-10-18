@@ -7,6 +7,12 @@
     "fr": ["omelette roulée"]
   },
   "does": "Sets beaten eggs into a thin, tender sheet with a creamy middle, and rolls it into a smooth, pale cylinder.",
+  "intro": {
+    "what": "This French-style omelette method forms beaten eggs into a pale sheet and rolls it into a smooth cylinder.",
+    "why": "It teaches you to coordinate stirring, pan movement and folding while controlling surface colour.",
+    "idea": "Stir, tilt and roll",
+    "tier": "drafted"
+  },
   "how": [
     "Heat butter in a pan over medium heat until it foams and the foam starts to fall.",
     "Pour in the beaten eggs and stir fast in small circles while shaking the pan.",
@@ -30,6 +36,52 @@
     {
       "mistake": "Waiting for the top to dry before rolling, which leaves the middle firm and dull.",
       "fix": "Roll while the top is still wet. The heat inside finishes it."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Which shape and surface does this omelette method aim for?",
+      "choices": ["A deeply browned flat round.", "A smooth, pale cylinder.", "Loose browned curds."],
+      "answer": 1,
+      "because": "This French-style omelette is rolled into a smooth cylinder with a pale surface, rather than browned or broken into curds.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "After pouring in the eggs, how do you move the eggs and pan?",
+      "choices": [
+        "Leave the pan still and never stir.",
+        "Wait for the bottom to brown before moving the eggs.",
+        "Stir in small circles while shaking the pan."
+      ],
+      "answer": 2,
+      "because": "Stirring in small circles while shaking the pan helps form the thin sheet that you will roll.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which pan movement suggests the omelette is free enough to roll?",
+      "choices": [
+        "It slides freely when the pan is shaken.",
+        "It stays firmly stuck despite shaking.",
+        "Its skin becomes brown and leathery."
+      ],
+      "answer": 0,
+      "because": "An omelette that slides freely is not stuck to the pan, so you can begin folding and rolling it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The skin is browning and becoming leathery. What should you change?",
+      "choices": [
+        "Raise the heat to speed up the rolling.",
+        "Lift the pan off the heat while stirring and turn the heat down.",
+        "Press the eggs into the hot pan without moving them."
+      ],
+      "answer": 1,
+      "because": "Excess heat browns and toughens the skin. Lift the pan away while stirring and lower the heat.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

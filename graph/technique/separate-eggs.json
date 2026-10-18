@@ -4,6 +4,7 @@
   "names": {"en": "Separate eggs", "fr": "Séparer les œufs"},
   "aliases": {"en": ["separate", "separate an egg", "separate yolks from whites"], "fr": ["séparer"]},
   "does": "Parts the yolk of an egg from its white, so that each can be used alone: the yolks to enrich or thicken, the whites to whip.",
+  "intro": null,
   "how": [
     "Set out a small bowl to separate over, and a larger bowl for the whites that are clean.",
     "Crack the egg on a flat surface, not on a rim, and open it over the small bowl with the yolk in one half of the shell.",
@@ -23,6 +24,7 @@
       "fix": "Crack it on a flat surface."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],

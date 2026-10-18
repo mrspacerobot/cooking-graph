@@ -4,6 +4,7 @@
   "names": {"en": "Double fry"},
   "aliases": {"en": ["fry twice", "twice-fry", "fry in stages"]},
   "does": "Fries food in rounds: first at a moderate heat to cook it, then a rest, and again in hotter oil to crisp and brown the outside. The result is tender inside and crunchy outside, and stays crisp longer.",
+  "intro": null,
   "how": [
     "Heat the oil to a moderate heat and fry the pieces until pale and just firm. Do not crowd the pot.",
     "Lift them onto a rack and let them rest, so that the heat spreads to the middle.",
@@ -21,6 +22,7 @@
     },
     {"mistake": "Frying too many pieces at once, which cools the oil.", "fix": "Fry in small batches."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "ingredient/chicken-thigh", "tier": "drafted"}

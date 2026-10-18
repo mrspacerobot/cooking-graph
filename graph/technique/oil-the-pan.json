@@ -4,6 +4,7 @@
   "names": {"en": "Oil the pan"},
   "aliases": {"en": ["wipe the pan with oil", "grease the pan lightly"]},
   "does": "Wipes a thin film of oil over the pan with a folded paper towel, to keep thin layers of batter or egg from sticking, with no pool of oil left to fry them.",
+  "intro": null,
   "how": [
     "Warm the pan over a medium heat.",
     "Fold a paper towel, dip the corner in oil and wipe it over the whole surface of the pan, including the sides.",
@@ -18,6 +19,7 @@
     {"mistake": "Pouring oil straight in, so that the layers fry and turn pitted.", "fix": "Wipe on a thin film only."},
     {"mistake": "Skipping the oil between layers, so that later layers stick.", "fix": "Oil again each time."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/oil", "tier": "drafted"}
   ],

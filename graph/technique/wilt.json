@@ -4,6 +4,7 @@
   "names": {"en": "Wilt", "fr": "Tomber"},
   "aliases": {"en": ["wilt down"]},
   "does": "Collapses tender leaves with brief heat, so that they turn soft and dark and lose most of their bulk.",
+  "intro": null,
   "how": [
     "Wash the leaves and leave the water that clings to them.",
     "Melt a little fat in a wide pan over medium heat.",
@@ -19,6 +20,7 @@
       "fix": "Stop the moment they collapse, and drain them."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/leafy-greens", "tier": "drafted"}
   ],

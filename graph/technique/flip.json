@@ -4,6 +4,7 @@
   "names": {"en": "Flip", "fr": "Retourner"},
   "aliases": {"en": ["turn over", "flip over"], "fr": ["retourner à la spatule"]},
   "does": "Turns food over in the pan or on the griddle at the right moment, so that its other side cooks and browns while the first side has set enough to hold together.",
+  "intro": null,
   "how": [
     "Wait until the underside has set and browned, and the food moves freely when the pan is shaken.",
     "Slide a wide spatula fully under the food, so that none of it hangs over the edge.",
@@ -29,6 +30,7 @@
       "fix": "Turn it in one quick motion, close to the pan."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/steaks-and-chops", "tier": "drafted"},
     {"thing": "group/lean-fish", "tier": "drafted"},

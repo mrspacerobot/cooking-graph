@@ -4,6 +4,7 @@
   "names": {"en": "Make a gremolata"},
   "aliases": {"en": ["gremolata", "make gremolata"]},
   "does": "Chops parsley very fine with lemon zest and a little raw garlic, to be scattered over a rich, slow-cooked dish at the very end, where its sharp freshness cuts through the fat. Nothing is cooked.",
+  "intro": null,
   "how": [
     "Pick the parsley leaves from the stalks and dry them well.",
     "Grate the zest of the lemon in fine strips, taking only the yellow.",
@@ -22,6 +23,7 @@
     },
     {"mistake": "Chopping wet parsley, which turns to a paste.", "fix": "Dry the leaves first."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/parsley", "tier": "drafted"},
     {"thing": "ingredient/lemon", "tier": "drafted"},

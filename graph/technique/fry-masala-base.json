@@ -4,6 +4,7 @@
   "names": {"en": "Fry a masala base"},
   "aliases": {"en": ["bhuna", "bhunao", "bhuno", "cook the masala", "fry until the oil separates"]},
   "does": "Cooks onion, ginger and garlic, ground spices and tomato in fat over a medium heat, stirring often and sprinkling a little water when the pan dries, until the water of the vegetables is gone and the fat parts from the paste and shines on its edge. This is the base of a gravy.",
+  "intro": null,
   "how": [
     "Heat the fat and cook the sliced or chopped onion until it is soft and golden.",
     "Add the ginger and garlic paste or the spice paste and stir until the raw smell goes.",
@@ -36,6 +37,7 @@
       "fix": "Keep a medium heat and be patient. The wait is the point."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"},
     {"thing": "ingredient/tomato", "tier": "drafted"},

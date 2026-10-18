@@ -4,6 +4,7 @@
   "names": {"en": "Burn a sugar crust"},
   "aliases": {"en": ["cremar", "burn the sugar top", "brulee the top", "torch the sugar"]},
   "does": "Sprinkles a thin, even layer of sugar over a cold, set custard and melts it with strong heat from above until it turns into a thin, glassy, amber crust that cracks under a spoon, while the custard beneath stays cold. The Catalan word for it is cremar, to burn.",
+  "intro": null,
   "how": [
     "Have the custard cold and firm, with a dry surface. Get the torch lit or the grill very hot before the sugar goes on.",
     "Scatter an even, thin layer of sugar over the surface, tilting the dish so that it reaches every corner, and tip off the extra.",
@@ -33,6 +34,7 @@
       "fix": "Burn it just before the dish goes to the table."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/sugars", "tier": "drafted"}
   ],

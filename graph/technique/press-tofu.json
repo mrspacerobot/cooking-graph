@@ -4,6 +4,7 @@
   "names": {"en": "Press tofu"},
   "aliases": {"en": ["press the tofu", "drain tofu", "press and drain tofu"]},
   "does": "Presses water out of a block of firm tofu under a light weight, so that it is firmer, absorbs a sauce and browns instead of steaming.",
+  "intro": null,
   "how": [
     "Wrap the block in a clean cloth or paper towels.",
     "Set it on a tray or a board, put a plate and a light weight on top and tilt the tray so the water runs off.",
@@ -18,6 +19,7 @@
     {"mistake": "Pressing with a heavy weight, which cracks the block.", "fix": "Use a plate or a light bowl only."},
     {"mistake": "Skipping the drying, so that the tofu spits in the pan.", "fix": "Pat it dry."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/firm-tofu", "tier": "drafted"}
   ],

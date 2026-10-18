@@ -4,6 +4,7 @@
   "names": {"en": "Wrap", "fr": "Envelopper"},
   "aliases": {"en": ["wrap up", "enclose in a wrapper"], "fr": ["envelopper dans"]},
   "does": "Encloses a filling or a piece of food in a wrapper, such as caul fat, a leaf, a thin omelette or a cloth, and closes it by folding or pulling, so that it keeps its shape and its juices as it cooks.",
+  "intro": null,
   "how": [
     "Lay the wrapper out flat and make sure it is soft enough to bend without tearing.",
     "Set the food or the filling in the middle, with a border all round.",
@@ -24,6 +25,7 @@
       "fix": "Pull the wrapper snug and set it seam side down, or tie it."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/minced-meat", "tier": "drafted"},
     {"thing": "group/offal", "tier": "drafted"},

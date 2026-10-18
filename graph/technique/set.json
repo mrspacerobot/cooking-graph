@@ -4,6 +4,7 @@
   "names": {"en": "Set"},
   "aliases": {"en": ["let set", "leave to set", "set in a mould"]},
   "does": "Leaves a hot, cooked mixture to cool undisturbed in its mould or tin until it firms enough to hold its shape and be cut.",
+  "intro": null,
   "how": [
     "Pour or spoon the mixture into the mould or tin while it is still hot. Press it into the corners and smooth the top.",
     "Leave it somewhere cool and still. Do not stir it, shake it or cut it while it sets.",
@@ -25,6 +26,7 @@
       "fix": "Cook it longer next time, until it comes away from the sides of the pan before it is poured."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/semolina", "tier": "drafted"},
     {"thing": "ingredient/gelatin", "tier": "drafted"},

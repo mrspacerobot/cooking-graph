@@ -4,6 +4,7 @@
   "names": {"en": "Rest and fluff"},
   "aliases": {"en": ["rest the rice", "fluff the rice", "rest and fluff the rice"]},
   "does": "Leaves cooked rice covered off the heat for a while, so that the steam spreads evenly through the grains, then cuts through it with a paddle to let the steam out and loosen the grains.",
+  "intro": null,
   "how": [
     "As soon as the rice is cooked, take it off the heat and keep the lid on.",
     "Leave it to rest, undisturbed, so that the grains finish steaming.",
@@ -24,6 +25,7 @@
       "fix": "Cut and fold with a wet paddle."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}

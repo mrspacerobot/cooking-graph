@@ -4,6 +4,7 @@
   "names": {"en": "Marinate in yogurt"},
   "aliases": {"en": ["yogurt marinade", "marinate in spiced yogurt", "dahi marinade"]},
   "does": "Steeps meat or firm cheese in yogurt that has been mixed with a spice paste and salt, so that the mild acid of the yogurt softens the surface and the spices are carried right into it. The coat browns and chars in strong heat.",
+  "intro": null,
   "how": [
     "Make the spice paste first, with garlic, ginger, fresh chilli, ground spices, salt and a little lemon juice.",
     "Whisk the paste into thick yogurt. Hang the yogurt in a cloth first if it is thin, so that the marinade clings and does not run off.",
@@ -29,6 +30,7 @@
       "fix": "Use a glass, china or steel bowl that does not take on a metallic taste."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/braising-cuts", "tier": "drafted"},

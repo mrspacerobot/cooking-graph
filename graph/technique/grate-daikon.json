@@ -4,6 +4,7 @@
   "names": {"en": "Grate daikon"},
   "aliases": {"en": ["daikon oroshi", "grate Japanese radish"]},
   "does": "Grates a daikon on a fine grater into a wet, light, snowy mound, which is eaten raw beside rich or grilled food to freshen the mouth.",
+  "intro": null,
   "how": [
     "Peel the daikon, or leave the skin on if it is tender, and cut it into a piece that is easy to hold.",
     "Grate it with firm, even strokes on the finest side of the grater, in one direction.",
@@ -18,6 +19,7 @@
     {"mistake": "Grating long ahead, so that it turns bitter and watery.", "fix": "Grate it just before serving."},
     {"mistake": "Squeezing it dry, which leaves it harsh.", "fix": "Drain it lightly only."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/daikon", "tier": "drafted"}
   ],

@@ -4,6 +4,7 @@
   "names": {"en": "Slow-fry in olive oil"},
   "aliases": {"en": ["pochar", "poach potatoes in oil", "cook potatoes slowly in olive oil"]},
   "does": "Cooks thin slices of potato and onion in a deep pool of olive oil that is kept well below frying heat, turning them now and then, until they are soft and silky and have taken almost no colour. The oil is poured off afterwards and kept.",
+  "intro": null,
   "how": [
     "Slice the potato thin and even, and the onion thinner. Salt them lightly and turn them over by hand, so that the salt goes through evenly.",
     "Pour olive oil into a wide, deep pan until it comes about halfway up the food, and warm it over a medium heat until a slice dropped in bubbles gently.",
@@ -36,6 +37,7 @@
       "fix": "Strain it and keep it for frying or for the next batch."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/potato", "tier": "drafted"},
     {"thing": "ingredient/onion", "tier": "drafted"}

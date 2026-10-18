@@ -4,6 +4,7 @@
   "names": {"en": "Make crepes", "fr": "Faire des crêpes"},
   "aliases": {"en": ["make a crepe", "cook crepes"], "fr": ["cuire les crêpes"]},
   "does": "Cooks a thin batter of flour, egg and milk in a hot buttered pan, a ladle at a time, into thin pancakes that are folded or rolled round a filling.",
+  "intro": null,
   "how": [
     "Whisk the flour, the eggs and a little salt, then add the milk slowly, whisking, until the batter is smooth and as thin as pouring cream.",
     "Leave the batter to rest, so that the flour swells and the bubbles settle.",
@@ -27,6 +28,7 @@
     },
     {"mistake": "Adding all the milk at once, which leaves lumps.", "fix": "Add it slowly, whisking all the time."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"}
   ],

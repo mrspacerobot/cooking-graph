@@ -4,6 +4,7 @@
   "names": {"en": "Cut into chunks"},
   "aliases": {"en": ["cut into bite-sized pieces", "cut into large pieces"]},
   "does": "Cuts a firm food into large, bite-sized pieces of about the same size, bigger and less exact than dice, so that they stay whole through a long simmer.",
+  "intro": null,
   "how": [
     "Peel the food if it needs peeling, and cut it in half or in long strips to get a flat base.",
     "Cut across into thick pieces that fit one mouthful.",
@@ -23,6 +24,7 @@
       "fix": "Cut it in halves on a steady board first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "ingredient/kabocha", "tier": "drafted"},

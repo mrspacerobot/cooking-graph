@@ -4,6 +4,7 @@
   "names": {"en": "Cut into batons", "fr": "Tailler en bâtonnets"},
   "aliases": {"en": ["cut into sticks", "cut batons", "cut into chips"]},
   "does": "Cuts food into even, square-sided sticks.",
+  "intro": null,
   "how": [
     "Peel the vegetable and trim its sides flat to make a block.",
     "Slice the block into slabs as thick as the sticks you want.",
@@ -26,6 +27,7 @@
       "fix": "Hold the knife straight and take the same width at every cut."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"}
   ],

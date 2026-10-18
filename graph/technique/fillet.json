@@ -4,6 +4,7 @@
   "names": {"en": "Fillet", "fr": "Lever les filets"},
   "aliases": {"en": ["fillet a fish", "take off the fillets", "lift the fillets"], "fr": ["fileter"]},
   "does": "Cuts the flesh of a fish away from its bones in whole, clean pieces.",
+  "intro": null,
   "how": [
     "Lay the fish flat. Cut behind the head and the fin, down to the backbone.",
     "Turn the blade flat and run it along the backbone toward the tail in long strokes, keeping it against the bones.",
@@ -25,6 +26,7 @@
       "fix": "Keep the flat of the blade pressed against the backbone."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/round-fish", "tier": "drafted"}
   ],

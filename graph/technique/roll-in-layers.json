@@ -4,6 +4,7 @@
   "names": {"en": "Roll in layers"},
   "aliases": {"en": ["roll in layers", "roll layers of egg", "layered omelette roll"]},
   "does": "Cooks a thin layer of egg in a pan, rolls it up while it is still soft, then pours more egg into the room left behind, cooks it and rolls again, so that the block grows layer upon layer.",
+  "intro": null,
   "how": [
     "Oil the pan and heat it. Pour in a thin layer of beaten egg and tilt it to cover the pan.",
     "When the egg is almost set but still wet on top, roll it up toward the far side with chopsticks or a spatula.",
@@ -25,6 +26,7 @@
       "fix": "Roll while the top is still wet."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],

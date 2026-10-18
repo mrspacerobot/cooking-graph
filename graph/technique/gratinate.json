@@ -4,6 +4,12 @@
   "names": {"en": "Gratinate", "fr": "Gratiner"},
   "aliases": {"en": ["gratin", "brown under the grill", "broil", "glaze under the grill"]},
   "does": "Browns the top of a dish under strong heat from above, until it forms a golden crust.",
+  "intro": {
+    "what": "Gratinating browns the top of a dish under strong heat from above.",
+    "why": "It separates making a golden crust from warming the dish beneath it, and teaches close attention to fast browning.",
+    "idea": "Top heat",
+    "tier": "drafted"
+  },
   "how": [
     "Cover the dish with what will brown: cheese, crumbs, or a sauce rich in butter or cream.",
     "Set it on a high shelf, under a grill that is already hot.",
@@ -19,6 +25,52 @@
     {
       "mistake": "Grilling a dish that is cold in the middle, so that the top burns before the inside is hot.",
       "fix": "Warm the dish in the oven first, then brown the top."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is gratinating intended to create?",
+      "choices": ["A golden crust on top.", "A pale, wet topping.", "A crust on the bottom alone."],
+      "answer": 0,
+      "because": "Strong heat from above browns the topping into a crust.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How does this method position the dish for browning?",
+      "choices": [
+        "On a low shelf in a cold oven.",
+        "On a high shelf beneath an already hot grill.",
+        "Under a tight lid away from top heat."
+      ],
+      "answer": 1,
+      "because": "An already hot grill supplies the strong heat from above that browns the topping.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended crust?",
+      "choices": [
+        "A pale topping without any colour.",
+        "A black surface with a bitter smell.",
+        "A blistered, golden-brown top bubbling at the rim."
+      ],
+      "answer": 2,
+      "because": "A blistered golden-brown crust is the aim. A sharp, bitter smell suggests the topping has gone too far.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The dish is cold in the middle before you brown its top. What comes first?",
+      "choices": [
+        "Warm the dish in the oven, then brown the top.",
+        "Move the cold dish closer to the grill to heat the middle faster.",
+        "Add the topping and grill the cold dish straight away."
+      ],
+      "answer": 0,
+      "because": "The top can burn before a cold middle warms. Warm the dish first, then use the grill to brown its surface.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

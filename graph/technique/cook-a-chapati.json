@@ -4,6 +4,7 @@
   "names": {"en": "Cook a chapati"},
   "aliases": {"en": ["cook roti on a tava", "puff a chapati", "puff a phulka"]},
   "does": "Cooks a thin round of atta dough for a short time on each face on a dry, hot iron plate, then lays it straight on the open flame, where the steam inside swells it into a soft ball. The finished bread is brushed with ghee and kept soft under a cloth.",
+  "intro": null,
   "how": [
     "Heat the iron plate until it is hot all over. A dusting of flour dropped on it should brown at once.",
     "Lay the rolled round on the hot plate. When small bubbles show on the top, turn it.",
@@ -33,6 +34,7 @@
       "fix": "Hold it there for moments only and turn it."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/chapati-dough", "tier": "drafted"}
   ],

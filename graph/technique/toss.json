@@ -4,6 +4,7 @@
   "names": {"en": "Toss", "fr": "Mélanger"},
   "aliases": {"en": ["toss a salad", "dress", "bind", "mix", "combine", "toss in sauce"], "fr": ["fatiguer la salade"]},
   "does": "Coats every piece evenly with a dressing or a sauce by lifting and turning.",
+  "intro": null,
   "how": [
     "Put the food in a bowl far larger than it needs.",
     "Add the dressing a little at a time, around the edge and not on top.",
@@ -23,6 +24,7 @@
       "fix": "Add it in stages and stop when everything is lightly coated."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/starches", "tier": "drafted"},

@@ -2,6 +2,7 @@
 
 import json
 import os
+from pathlib import Path
 import shutil
 import tempfile
 import unittest
@@ -69,11 +70,11 @@ class MergeTest(unittest.TestCase):
 
     def test_a_file_that_already_exists_is_never_overwritten(self):
         self.put("butter", "Butter", aliases=["a different alias"])
-        before = open(os.path.join(self.kitchen.root, "graph/ingredient/butter.json"), encoding="utf-8").read()
+        before = Path(self.kitchen.root, "graph/ingredient/butter.json").read_text(encoding="utf-8")
         result = self.run_merge()
         self.assertEqual(["graph/ingredient/butter.json"], result.changed)
         self.assertEqual([], result.copied)
-        after = open(os.path.join(self.kitchen.root, "graph/ingredient/butter.json"), encoding="utf-8").read()
+        after = Path(self.kitchen.root, "graph/ingredient/butter.json").read_text(encoding="utf-8")
         self.assertEqual(before, after)
 
     def test_an_identical_file_is_not_news(self):

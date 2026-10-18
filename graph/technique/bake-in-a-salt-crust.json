@@ -4,6 +4,7 @@
   "names": {"en": "Bake in a salt crust", "fr": "Cuire en croûte de sel"},
   "aliases": {"en": ["salt-bake", "bake in salt", "cook in a salt crust"]},
   "does": "Seals food inside a shell of damp salt, so that it cooks in its own steam and is seasoned gently through its skin.",
+  "intro": null,
   "how": [
     "Mix coarse salt with enough egg white or water for it to feel like wet sand.",
     "Spread a bed of the salt on a tray, lay the food on it with its skin on, and pack the rest of the salt over it until nothing shows.",
@@ -24,6 +25,7 @@
       "fix": "Patch every crack with more damp salt before it goes into the oven."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/round-fish", "tier": "drafted"},
     {"thing": "group/poultry", "tier": "drafted"},

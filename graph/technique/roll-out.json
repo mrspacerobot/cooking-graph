@@ -4,6 +4,7 @@
   "names": {"en": "Roll out", "fr": "Abaisser"},
   "aliases": {"en": ["roll out dough", "roll flat", "rolling out"], "fr": ["étaler la pâte"]},
   "does": "Flattens a dough with a rolling pin into an even sheet of the thickness the dish asks for, whether thin enough to see through, for a filled pastry, or thick enough to stay soft, for a flat bread.",
+  "intro": null,
   "how": [
     "Rest the dough first, or it will spring back. Shape it into a flat round or square before the pin touches it.",
     "Dust the surface and the pin lightly with flour, so that the dough slides and does not stick.",
@@ -29,6 +30,7 @@
       "fix": "Roll from the middle outwards and stop short of the edge."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"},
     {"thing": "group/pastry", "tier": "drafted"}

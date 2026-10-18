@@ -4,6 +4,7 @@
   "names": {"en": "Fry fritters"},
   "aliases": {"en": ["fry in spoonfuls", "make fritters"]},
   "does": "Drops spoonfuls of a thick mixture of grated vegetable, egg, cheese and a little flour into hot oil, flattens them lightly and turns them once, so that each fritter is crisp and golden outside and soft inside.",
+  "intro": null,
   "how": [
     "Make the mixture thick enough to sit on a spoon. If it runs, stir in a little more flour. If it is stiff and dry, loosen it with a spoonful of water.",
     "Warm a shallow layer of oil in a wide pan until a crumb of the mixture sizzles at once.",
@@ -32,6 +33,7 @@
       "fix": "Wait until the underside is golden and the edges are set."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/courgette-fritter-mixture", "tier": "drafted"}
   ],

@@ -4,6 +4,7 @@
   "names": {"en": "Blind bake", "fr": "Cuire à blanc"},
   "aliases": {"en": ["bake blind", "pre-bake"]},
   "does": "Bakes an empty pastry case, so that a wet filling does not leave the base raw and soggy.",
+  "intro": null,
   "how": [
     "Line the tin with the pastry and chill it until firm.",
     "Prick the base with a fork, cover it with paper and fill it with baking beans.",
@@ -23,6 +24,7 @@
       "fix": "Wait until the edges hold their shape."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/pastry", "tier": "drafted"}
   ],

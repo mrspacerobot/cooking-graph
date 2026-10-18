@@ -4,6 +4,7 @@
   "names": {"en": "Reheat"},
   "aliases": {"en": ["reheat gently", "ribollire"]},
   "does": "Brings food that was cooked earlier back to a hot, bubbling state, gently enough that it neither dries out nor catches on the pan. Beans and soups often taste better for the rest, and the Tuscan ribollita is made for exactly that: a soup that is boiled again.",
+  "intro": null,
   "how": [
     "Take the food from the fridge a little ahead of time if it is thick and dense.",
     "Put it in a heavy pan with a splash of stock or water, to loosen it and stop it catching.",
@@ -28,6 +29,7 @@
     },
     {"mistake": "Boiling hard, so that beans break and fall apart.", "fix": "Keep it at a gentle bubble."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/pulses", "tier": "drafted"},
     {"thing": "group/stocks", "tier": "drafted"}

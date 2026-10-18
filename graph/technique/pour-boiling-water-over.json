@@ -6,6 +6,7 @@
     "en": ["pour boiling water over tofu", "scald with boiling water", "abura nuki", "remove oil with boiling water"]
   },
   "does": "Pours boiling water over a ready-made food, to wash off the surface oil or the smell from the making before it goes into a pot or a dish. The food is not cooked, only scalded.",
+  "intro": null,
   "how": [
     "Put the food in a colander or a heatproof bowl.",
     "Pour boiling water over it, slowly and evenly, so that every surface is touched.",
@@ -26,6 +27,7 @@
       "fix": "Scald it first, every time."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/processed-simmering-foods", "tier": "drafted"}
   ],

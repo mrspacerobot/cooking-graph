@@ -4,6 +4,7 @@
   "names": {"en": "Bake in parchment", "fr": "Cuire en papillote"},
   "aliases": {"en": ["en papillote", "cook en papillote", "bake in a parcel", "bake in paper"]},
   "does": "Seals food in a paper parcel, so that it steams in its own juices in the oven.",
+  "intro": null,
   "how": [
     "Cut a large sheet of paper and fold it in half.",
     "Lay the vegetables and then the fish on one side of the fold, with butter, seasoning and a splash of liquid.",
@@ -25,6 +26,7 @@
       "fix": "Cut them fine and soften them in butter first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/fish-and-shellfish", "tier": "drafted"}
   ],

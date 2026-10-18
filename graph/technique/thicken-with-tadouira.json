@@ -4,6 +4,7 @@
   "names": {"en": "Thicken with tadouira"},
   "aliases": {"en": ["tadouira", "thicken a soup with flour paste"]},
   "does": "Stirs a loose paste of flour and cold water into a hot soup in a slow stream, then keeps the soup at a simmer until the flour has lost its raw taste, so that the soup turns silky and gains body. Beaten egg is sometimes stirred in at the end.",
+  "intro": null,
   "how": [
     "Whisk the flour into plenty of cold water until it is as smooth and loose as cream, with no lump left.",
     "Bring the soup to a steady simmer and keep stirring as you pour the paste in, in a thin stream.",
@@ -31,6 +32,7 @@
       "fix": "Let it simmer on until the taste is gone."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/stocks", "tier": "drafted"}
   ],

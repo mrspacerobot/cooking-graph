@@ -4,6 +4,7 @@
   "names": {"en": "Cube tofu"},
   "aliases": {"en": ["cut tofu into cubes", "dice tofu"]},
   "does": "Cuts a block of soft tofu into neat cubes with a wet blade and a slicing motion, without pressing, so that the cubes keep their corners and do not break.",
+  "intro": null,
   "how": [
     "Lift the block out of its water and let it drain for a short while on a board.",
     "Wet a thin, sharp knife.",
@@ -21,6 +22,7 @@
     },
     {"mistake": "Cutting with a dry knife, so that the tofu drags and tears.", "fix": "Wet the blade."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/tofu", "tier": "drafted"}
   ],

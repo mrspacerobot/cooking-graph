@@ -4,6 +4,7 @@
   "names": {"en": "Make a sauce", "fr": "Faire une sauce"},
   "aliases": {"en": ["build a sauce", "make a simple sauce"]},
   "does": "Builds a sauce from a flavouring base cooked in fat, a liquid and a short simmer, until it coats a spoon. It is seasoned at the end, and strained or blended if it should be smooth.",
+  "intro": null,
   "how": [
     "Cook the flavouring base in the fat first: a roux, tomato, or a spice such as paprika stirred into oil off the heat.",
     "Add the liquid a little at a time, whisking, until the sauce is smooth.",
@@ -26,6 +27,7 @@
       "fix": "Take the pan off the heat first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/stocks", "tier": "drafted"},
     {"thing": "ingredient/tomato", "tier": "drafted"},

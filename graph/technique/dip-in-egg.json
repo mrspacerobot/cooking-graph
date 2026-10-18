@@ -4,6 +4,7 @@
   "names": {"en": "Dip in egg", "fr": "Passer à l'œuf"},
   "aliases": {"en": ["dip in beaten egg", "coat in egg"], "fr": ["tremper dans l'œuf battu"]},
   "does": "Draws food through beaten egg, so that it takes a thin, even coat that browns in the pan, or holds a crumb or flour coat in place.",
+  "intro": null,
   "how": [
     "Beat the egg in a shallow dish with a little salt until the white and yolk are one.",
     "Have the food ready, dry on the surface or just floured, and slightly firm.",
@@ -24,6 +25,7 @@
       "fix": "Let the extra run off before the piece goes in."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/breads", "tier": "drafted"},
     {"thing": "group/poultry", "tier": "drafted"},

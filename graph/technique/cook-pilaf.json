@@ -4,6 +4,7 @@
   "names": {"en": "Cook pilaf", "fr": "Cuire en pilaf"},
   "aliases": {"en": ["pilaf", "pilaf method"]},
   "does": "Cooks rice by coating it in hot fat with sweated onion, then letting it absorb a measured amount of hot stock under a lid.",
+  "intro": null,
   "how": [
     "Sweat finely cut onion in butter without colour.",
     "Stir in the rice until every grain is coated and turns glassy at the edges.",
@@ -27,6 +28,7 @@
       "fix": "Measure the rice by volume and the stock against it. With too much, it turns to porridge."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"}
   ],

@@ -7,6 +7,7 @@
     "fr": ["presser les feuilles"]
   },
   "does": "Presses the water out of cooked leaves by the handful, or in a sieve, so that they can be seasoned and mixed without turning the dish watery.",
+  "intro": null,
   "how": [
     "Let the cooked leaves cool enough to handle.",
     "Take up a handful and close the fist, or press the leaves against the side of a sieve with a spoon.",
@@ -30,6 +31,7 @@
       "fix": "Squeeze again until only a few drops come out."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/spinach", "tier": "drafted"},
     {"thing": "ingredient/chard", "tier": "drafted"},

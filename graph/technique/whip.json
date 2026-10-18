@@ -4,6 +4,7 @@
   "names": {"en": "Whip", "fr": "Monter"},
   "aliases": {"en": ["whip egg whites", "whisk to peaks", "beat egg whites", "whip cream"]},
   "does": "Beats air into egg whites or cream until they hold a peak.",
+  "intro": null,
   "how": [
     "Start with a clean, dry bowl, with no trace of fat or yolk in it.",
     "Whisk slowly at first, until the whites are a loose foam.",
@@ -24,6 +25,7 @@
       "fix": "Separate each egg over a small bowl first, and wipe the mixing bowl clean."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg-white", "tier": "drafted"},
     {"thing": "ingredient/cream", "tier": "drafted"}

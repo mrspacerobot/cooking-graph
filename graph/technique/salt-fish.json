@@ -4,6 +4,7 @@
   "names": {"en": "Salt fish"},
   "aliases": {"en": ["salt the fish", "shio furi", "lightly salt fish"]},
   "does": "Sprinkles fresh fish with a little salt and leaves it for a short while before grilling or frying, to season it, firm the flesh and draw out the surface water and smell. It is not the long curing of salt cod.",
+  "intro": null,
   "how": [
     "Pat the fish dry.",
     "Sprinkle salt evenly over both sides, and a little more on the tail and fins if the fish is whole.",
@@ -21,6 +22,7 @@
       "fix": "Wipe it dry as soon as water shows and cook it."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/round-fish", "tier": "drafted"}
   ],

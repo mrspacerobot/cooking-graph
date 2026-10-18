@@ -4,6 +4,7 @@
   "names": {"en": "Salt and squeeze"},
   "aliases": {"en": ["salt and squeeze the slices", "rub with salt and squeeze"]},
   "does": "Rubs thin slices of a watery or bitter vegetable with salt, leaves them to wilt a little, and squeezes them by hand to wring out the bitter liquid. They keep a firm bite and a milder taste.",
+  "intro": null,
   "how": [
     "Slice the vegetable thin and put it in a bowl.",
     "Sprinkle on salt and rub it in lightly with your hands.",
@@ -18,6 +19,7 @@
     {"mistake": "Adding salt in a heap, which makes the slices too salty.", "fix": "Sprinkle evenly and rub lightly."},
     {"mistake": "Squeezing too hard, which bruises them.", "fix": "Squeeze firmly but not to a pulp."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/bitter-melon", "tier": "drafted"},
     {"thing": "ingredient/cucumber", "tier": "drafted"}

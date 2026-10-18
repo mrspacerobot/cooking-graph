@@ -135,9 +135,11 @@ One kitchen move, defined by what it does to food.
 | Field | What it holds |
 |---|---|
 | `does` | A sentence that says what the move does to food |
+| `intro` | A culinary introduction, or null when not yet drafted. It has `what` the technique does, `why` it matters beyond this dish, an optional named `idea` and its own `tier` |
 | `how` | The move in a few short beats, at least two |
 | `cues` | What tells the cook it is right, at least one. Each has a `sense` (see, hear, smell, feel, taste) and a `text` |
 | `mistakes` | The mistakes people really make, at least one. Each has the `mistake` and its `fix` |
+| `quiz` | Reusable understanding questions, empty when not yet drafted. Each has a permanent local `id`, `question`, two to four distinct `choices`, zero-based `answer`, an explanation `because` and its own `tier`. A quiz needs an introduction. Four questions is the foundation editorial target, not a model limit |
 | `works_on` | What the move is done to. Statement. It points at groups. It may name a single ingredient or preparation only where nothing else in the graph behaves like it, and never more than three |
 | `makes` | What it leaves: forms or preparations. Statement |
 | `needs` | What it cannot be done without. Statement. Each row has a `role` and `options`: equipment, ingredients or preparations, any one of which will do |
@@ -568,6 +570,14 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 - **Now:** a new kind `compose-probe` lives in `probes/`, apart from the graph. It has `id`, `tier`, `batch`, `set` and `written_by` as every probe does, and `techniques` (a list of names, at least one), `at_home` (names), `dishes` (names, at least one) and `why`. The hash rule holds back one in five within the kind and batch, as for a dish probe: a probe whose dish is already written, or that a level is practised through, is passed over for the next in the hash order, and a dish that a held-back compose probe asks for may not be written (`drafted-towards-held-back`, which names the dish file and never the probe). It is answered when every expected dish has a recipe that practises every named technique and has no required part missing, counting stand-ins at home as `./compose` does. It measures recall of the expected dishes, not whether every returned recipe deserves a cook's approval. A question is its techniques and its pantry, in any order or case: the same question twice in a batch is refused (`same-question-twice`). It is counted in `./numbers`, growing and held back apart, and never listed.
 - **Not yet:** a probe about amounts, servings or the read-as list of a step. The first batch asks only whether the right dishes come back.
 - **No promotion:** the probes are drafted by another writer than the drafter of the graph.
+
+### 35. Technique introductions and reusable understanding questions (issue 6)
+
+- **Example:** French foundations named mirepoix and linked dice, but a home cook could not see why an even cut matters, or check after cooking whether they understood it.
+- **Now:** `technique.intro` explains `what` the move is, `why` it matters for cooking understanding, and an optional named `idea`. `technique.quiz` contains questions with a permanent local `id`, a `question`, distinct `choices`, a zero-based `answer`, and feedback `because`. Both the introduction and each question carry their own `tier`. A missing draft is represented as null and an empty list, without claiming coverage. Four questions is an editorial target for foundation techniques, not a validity constraint.
+- **Identity and review:** question ids are permanent within their technique and never track list position. A question is reviewed through the technique id, field `quiz`, and its local id as `target`; an introduction uses field `intro` with no target. Each hash includes its wording and answer but excludes tiers. Editing the approved unit invalidates that approval. Whole-technique approval covers the included introduction and questions too. Production releases require every included statement, including these units, to reach reviewed.
+- **Boundaries:** the graph holds culinary explanations and a reusable question catalogue. Programs retain teaching sequence and cuisine scope. Tomi supplies narration, when to ask, selections, attempts, scores and progress. Quiz performance is not culinary review or safety evidence. New generated explanations and questions remain drafted. No questions here are evaluation probes.
+- **Rules:** `quiz-answer-out-of-range`, `quiz-too-many-choices`, `quiz-without-intro` and `quiz-id-twice` supplement strict schema validation. Existing prose rules reject numeric quantities in sentences and unsupported safety or doneness claims.
 
 ## Decisions where the starting model was silent
 

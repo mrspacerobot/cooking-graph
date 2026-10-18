@@ -4,6 +4,7 @@
   "names": {"en": "Trim", "fr": "Parer"},
   "aliases": {"en": ["trim the fat", "trim and tidy", "top and tail", "turn an artichoke"]},
   "does": "Cuts away what will not be eaten or will not cook well: sinew, surplus fat, tough leaves, stalks and ragged edges.",
+  "intro": null,
   "how": [
     "Slide the tip of the knife under a strip of sinew, angle the blade up against it and draw the knife along, so that the sinew comes away with almost no meat.",
     "Leave a thin, even layer of fat on a joint that will be roasted.",
@@ -24,6 +25,7 @@
       "fix": "Rub each cut with lemon, or drop the trimmed artichoke into water sharpened with lemon."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/roasting-joints", "tier": "drafted"},
     {"thing": "group/steaks-and-chops", "tier": "drafted"},

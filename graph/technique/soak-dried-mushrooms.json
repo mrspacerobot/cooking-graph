@@ -4,6 +4,7 @@
   "names": {"en": "Soak dried mushrooms"},
   "aliases": {"en": ["rehydrate dried mushrooms"]},
   "does": "Steeps dried mushrooms in warm water until they are plump and soft, and keeps the dark, fragrant soaking water, strained of grit, to flavour the dish.",
+  "intro": null,
   "how": [
     "Rinse the dried mushrooms quickly under cold water to take off loose dust.",
     "Cover them with warm water, not hot, in a bowl, and press them down so that they stay under.",
@@ -28,6 +29,7 @@
     },
     {"mistake": "Using hot water, which can leave the mushrooms tasting flat.", "fix": "Use warm water."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/porcini-mushroom", "tier": "drafted"},
     {"thing": "ingredient/morel", "tier": "drafted"}

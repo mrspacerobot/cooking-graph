@@ -4,6 +4,7 @@
   "names": {"en": "Loosen noodles"},
   "aliases": {"en": ["separate the noodles", "loosen the noodles"]},
   "does": "Pulls apart a clump of steamed, oiled noodles, with a splash of water or a short warming in the pan, until each strand is free and ready to be stir-fried.",
+  "intro": null,
   "how": [
     "Put the clump in a hot pan or in a bowl, and add a splash of water.",
     "Cover for a very short time to steam, so that the strands relax.",
@@ -21,6 +22,7 @@
     },
     {"mistake": "Adding too much water, so that the noodles are soggy.", "fix": "Use only a splash."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/yakisoba-noodle", "tier": "drafted"},
     {"thing": "ingredient/udon-noodle", "tier": "drafted"}

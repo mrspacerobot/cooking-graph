@@ -4,6 +4,7 @@
   "names": {"en": "Marinate", "fr": "Mariner"},
   "aliases": {"en": ["steep in a marinade", "marinade"]},
   "does": "Steeps food in a seasoned liquid before it is cooked, so that its surface takes on the flavour.",
+  "intro": null,
   "how": [
     "Mix the wine or the acid with the aromatics and a little oil.",
     "Turn the food in it until it is coated, in a bowl that acid does not attack.",
@@ -27,6 +28,7 @@
       "fix": "It flavours the surface. Only long, gentle cooking makes a tough cut tender."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/braising-cuts", "tier": "drafted"},
     {"thing": "group/poultry", "tier": "drafted"}

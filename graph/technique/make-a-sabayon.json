@@ -4,6 +4,12 @@
   "names": {"en": "Make a sabayon", "fr": "Monter un sabayon"},
   "aliases": {"en": ["whisk yolks over heat", "cook the yolks to a ribbon", "sabayon", "whisk over heat"]},
   "does": "Whisks egg yolks with a little liquid over gentle heat until they are thick, pale and foamy, ready to take butter.",
+  "intro": {
+    "what": "This sabayon method whisks egg yolks with liquid over gentle heat into a pale foam before butter is added.",
+    "why": "It teaches you to balance whisking and gentle heat while watching the mixture thicken.",
+    "idea": "Heat and whisking",
+    "tier": "drafted"
+  },
   "how": [
     "Put the yolks and a spoonful of water for each in a round-bottomed bowl.",
     "Set it over a pan of barely simmering water, or over the lowest heat.",
@@ -25,6 +31,56 @@
     {
       "mistake": "Stopping early, so that the sauce stays thin however much butter goes in.",
       "fix": "Whisk until the trail holds."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is this sabayon method preparing before butter is added?",
+      "choices": [
+        "A thin liquid with separated fat.",
+        "A thick, pale, foamy yolk mixture.",
+        "Firm scrambled pieces of yolk."
+      ],
+      "answer": 1,
+      "because": "For this sauce method, yolks and liquid are whisked into a thick, pale foam before butter is added.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you control the bowl and whisking as the sabayon heats?",
+      "choices": [
+        "Leave it over a rolling boil without stirring.",
+        "Stop whisking whenever it begins to thicken.",
+        "Whisk continuously and lift it away when it feels hot."
+      ],
+      "answer": 2,
+      "because": "Too much heat can scramble the yolks. Keep whisking and lift the bowl away whenever it feels hot.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which cue shows the texture this method aims for?",
+      "choices": [
+        "The whisk leaves a trail that holds briefly.",
+        "The mixture stays thin with no visible trail.",
+        "Grains of set yolk appear around the edge."
+      ],
+      "answer": 0,
+      "because": "A trail that holds briefly shows the yolk mixture has thickened, rather than staying thin.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The mixture stays thin because you stopped whisking early. What would you do?",
+      "choices": [
+        "Add the butter now so it supplies the missing thickness.",
+        "Continue whisking gently until the trail holds.",
+        "Raise the heat sharply so the mixture thickens faster."
+      ],
+      "answer": 1,
+      "because": "Adding butter too early can leave this sauce thin. Keep whisking gently until the trail holds.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

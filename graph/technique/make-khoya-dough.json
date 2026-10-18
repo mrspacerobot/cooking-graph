@@ -4,6 +4,7 @@
   "names": {"en": "Make khoya dough"},
   "aliases": {"en": ["make gulab jamun dough"]},
   "does": "Crumbles khoya and works it with a little flour, milk and a trace of raising agent into a soft, smooth dough with no cracks, and rolls it into small balls that will not split in the fat.",
+  "intro": null,
   "how": [
     "Crumble the khoya fine, with no lumps, in a wide bowl.",
     "Add a little flour and the raising agent, and mix lightly with the fingertips.",
@@ -29,6 +30,7 @@
       "fix": "Add a drop of milk and roll again until the surface is smooth."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/khoya", "tier": "drafted"}
   ],

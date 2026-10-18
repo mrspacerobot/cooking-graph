@@ -4,6 +4,7 @@
   "names": {"en": "Soak rice"},
   "aliases": {"en": ["soak the rice"]},
   "does": "Leaves washed rice in cold water until the grains have turned white and plump all through, so that they cook evenly and come out tender in the middle.",
+  "intro": null,
   "how": [
     "Put the washed, drained rice in the pot or in a bowl and cover it with cold water.",
     "Leave it until the grains turn from clear to chalky white.",
@@ -24,6 +25,7 @@
       "fix": "Drain it and add the measured water."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}

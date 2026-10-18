@@ -4,6 +4,7 @@
   "names": {"en": "Cook rice with lentils"},
   "aliases": {"en": ["cook mujaddara", "cook rice and lentils together", "mujaddara method"]},
   "does": "Cooks rice in the pot where lentils have been simmering, so that the rice takes up the lentil water and its flavour, and the rice and the lentils finish together under one lid as a dish of tender grains and whole lentils.",
+  "intro": null,
   "how": [
     "Simmer the lentils in plenty of water until they are tender outside but still firm at the centre.",
     "Wash the rice until the water is much less cloudy, and drain it.",
@@ -30,6 +31,7 @@
       "fix": "Stir once to settle the rice, then leave it alone."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/brown-lentil", "tier": "drafted"}

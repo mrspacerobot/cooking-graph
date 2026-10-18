@@ -4,6 +4,7 @@
   "names": {"en": "Grill over charcoal"},
   "aliases": {"en": ["charcoal grill", "grill over coals"]},
   "does": "Cooks skewered minced meat over glowing coals, turning it often, so that the outside takes a smoky crust while the inside stays juicy.",
+  "intro": null,
   "how": [
     "Let the coals burn down until they are covered in grey ash and glow evenly, with no tall flame.",
     "Lay the skewers across the coals, close enough to sizzle at once.",
@@ -27,6 +28,7 @@
       "fix": "Leave it alone between turns."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/minced-meat", "tier": "drafted"}
   ],

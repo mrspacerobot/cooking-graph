@@ -4,6 +4,7 @@
   "names": {"en": "Skewer", "fr": "Embrocher"},
   "aliases": {"en": ["thread on skewers", "put on skewers"], "fr": ["enfiler sur des brochettes"]},
   "does": "Threads pieces of food, or presses a mince round a flat skewer, so that they can be turned as one and cook evenly over fierce heat, with their juices held in.",
+  "intro": null,
   "how": [
     "Soak wooden skewers in water first, so that they do not scorch. Metal skewers need no soaking.",
     "Cut the food into pieces of an even size, so that they cook at the same pace.",
@@ -29,6 +30,7 @@
       "fix": "Chill the mince and press it firmly with wet hands."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/minced-meat", "tier": "drafted"},
     {"thing": "group/steaks-and-chops", "tier": "drafted"},

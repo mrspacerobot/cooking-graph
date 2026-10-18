@@ -4,6 +4,7 @@
   "names": {"en": "Grind a chutney"},
   "aliases": {"en": ["grind fresh chutney", "grind a wet chutney"]},
   "does": "Grinds fresh coconut or fresh herbs with green chilli, ginger, salt and a little cold water in a blender or on a stone into a coarse, moist paste, which is served raw as a fresh relish.",
+  "intro": null,
   "how": [
     "Put the coconut or the herbs in the blender with the green chilli, the ginger, the salt and any thickener, such as roasted split chickpeas.",
     "Add a little cold water to start. Pulse and scrape down the sides.",
@@ -29,6 +30,7 @@
     },
     {"mistake": "Using warm water, which turns the herbs dark and the coconut sour sooner.", "fix": "Use cold water."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/coconut", "tier": "drafted"},
     {"thing": "ingredient/coriander-leaf", "tier": "drafted"},

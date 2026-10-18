@@ -4,6 +4,7 @@
   "names": {"en": "Bake a phyllo pie"},
   "aliases": {"en": ["bake filo pie", "bake a filo pie"]},
   "does": "Bakes a pie of oiled phyllo sheets at a steady moderate heat until the layers dry out, turn golden and crackle, and the filling inside is set.",
+  "intro": null,
   "how": [
     "Heat the oven before the pie goes in, and set the dish on a rack in the middle.",
     "Brush the top once more with fat just before baking, so that it browns evenly.",
@@ -29,6 +30,7 @@
       "fix": "Leave it uncovered on a rack."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/phyllo", "tier": "drafted"}
   ],

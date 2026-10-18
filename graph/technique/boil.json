@@ -4,6 +4,7 @@
   "names": {"en": "Boil", "fr": "Bouillir"},
   "aliases": {"en": ["boil in salted water", "cook in boiling water"], "fr": ["cuire à l'anglaise"]},
   "does": "Cooks food in plenty of fast-bubbling salted water, so that it is done quickly and evenly.",
+  "intro": null,
   "how": [
     "Fill a large pot with far more water than the food needs.",
     "Bring it to a rolling boil and salt it until it tastes pleasantly salty.",
@@ -24,6 +25,7 @@
       "fix": "Salt it well. Food boiled in plain water tastes flat, however it is seasoned later."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/green-vegetables", "tier": "drafted"},
     {"thing": "group/root-vegetables", "tier": "drafted"},

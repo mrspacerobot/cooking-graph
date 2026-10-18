@@ -4,6 +4,7 @@
   "names": {"en": "Swell bulgur in hot liquid"},
   "aliases": {"en": ["swell bulgur in hot lentils"]},
   "does": "Stirs fine bulgur into a pan of hot, freshly cooked lentils or other hot liquid, covers it and leaves it off the heat until the grains have swollen and softened in the liquid and taken its flavour.",
+  "intro": null,
   "how": [
     "Cook the lentils until they are very soft, with enough water left in the pan to wet the bulgur.",
     "Take the pan off the heat and stir in the bulgur.",
@@ -28,6 +29,7 @@
       "fix": "Leave it covered until the stand is over."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/fine-bulgur", "tier": "drafted"}
   ],

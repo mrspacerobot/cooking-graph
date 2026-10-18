@@ -4,6 +4,7 @@
   "names": {"en": "Fry croquetas"},
   "aliases": {"en": ["fry croquettes", "fry the croquetas"]},
   "does": "Fries coated croquetas in a few at a time in hot oil deep enough to cover them, turning them until the shell is deep golden all round and the paste inside has melted soft.",
+  "intro": null,
   "how": [
     "Heat plenty of oil in a deep, heavy pan. A crumb dropped in should sizzle at once and rise.",
     "Lower a few croquetas in with a slotted spoon. Do not crowd the pan, or the oil cools and the shells go greasy.",
@@ -26,6 +27,7 @@
     },
     {"mistake": "Piercing the shell with a fork while turning.", "fix": "Turn them with a slotted spoon."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/croqueta-paste", "tier": "drafted"}
   ],

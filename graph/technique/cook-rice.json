@@ -4,6 +4,7 @@
   "names": {"en": "Cook rice", "fr": "Cuire le riz"},
   "aliases": {"en": ["boil rice", "steam rice", "cook rice by absorption"], "fr": ["cuire du riz"]},
   "does": "Cooks washed rice in a measured amount of water in a covered pot until all the water is taken up, then leaves it covered off the heat so that the grains finish plump, tender and separate, or lightly sticky for a short-grain kind.",
+  "intro": null,
   "how": [
     "Wash the rice in several changes of cold water, swirling it, until the water is much less cloudy. Drain it well.",
     "Put it in a pot with a tight lid and add the measured water. A short-grain rice takes a little less water than a long-grain one.",
@@ -30,6 +31,7 @@
       "fix": "Measure the water against the rice, and use a little less for a short-grain kind."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}

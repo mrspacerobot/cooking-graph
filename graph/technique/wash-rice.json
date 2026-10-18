@@ -4,6 +4,7 @@
   "names": {"en": "Wash rice"},
   "aliases": {"en": ["wash the rice", "rinse rice until the water runs nearly clear"]},
   "does": "Rubs rice gently in cold water and pours the cloudy water away, again and again, to take off the loose starch, so that the cooked grains are separate and clean-tasting.",
+  "intro": null,
   "how": [
     "Put the rice in a large bowl and cover it with cold water. Stir quickly with your hand and pour the cloudy water away at once.",
     "Rub the rice lightly with the heel of the hand in a circular motion.",
@@ -22,6 +23,7 @@
     },
     {"mistake": "Rubbing hard, which breaks the grains.", "fix": "Rub lightly."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}

@@ -4,6 +4,7 @@
   "names": {"en": "Clarify", "fr": "Clarifier"},
   "aliases": {"en": ["clarify a stock", "clarify a consommé"]},
   "does": "Clears a cloudy stock by simmering it with egg white and minced meat, which rise as a raft and trap what clouds it.",
+  "intro": null,
   "how": [
     "Mix egg white, minced lean meat and finely cut vegetables into a cold stock with no fat on it.",
     "Heat slowly, stirring gently, until the mixture starts to rise and clump.",
@@ -21,6 +22,7 @@
     },
     {"mistake": "Starting with a warm or fatty stock.", "fix": "Chill the stock and lift off all the fat first."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/stocks", "tier": "drafted"}
   ],

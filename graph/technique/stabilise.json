@@ -7,6 +7,7 @@
     "fr": ["stabiliser"]
   },
   "does": "Prepares yogurt so that it can be heated and simmered without splitting into curds and thin liquid. A starch or a beaten egg white is mixed into the cold yogurt, and the yogurt is stirred one way as it heats.",
+  "intro": null,
   "how": [
     "Whisk the yogurt smooth in a pan, off the heat.",
     "Mix a little cornstarch with cold water until smooth, or beat an egg white loose, and whisk it into the yogurt.",
@@ -31,6 +32,7 @@
       "fix": "Hold it at a gentle simmer."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/plain-yogurt", "tier": "drafted"}
   ],

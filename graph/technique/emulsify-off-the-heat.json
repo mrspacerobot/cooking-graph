@@ -11,6 +11,7 @@
     ]
   },
   "does": "Binds fat, egg and a hard cheese into one glossy cream with hot starchy water, off the heat. No fat is whisked in drop by drop: the starch in the water and the warmth of the pasta hold it together, and it splits or scrambles if the heat comes back.",
+  "intro": null,
   "how": [
     "Have everything ready before the pasta is done: the fat in the pan, the egg and cheese mixed in a bowl, and a mug of hot starchy cooking water.",
     "Take the pan off the heat. Heat is what splits this kind of sauce.",
@@ -40,6 +41,7 @@
       "fix": "Add it a splash at a time and stop when it is glossy."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"},
     {"thing": "ingredient/egg-yolk", "tier": "drafted"},

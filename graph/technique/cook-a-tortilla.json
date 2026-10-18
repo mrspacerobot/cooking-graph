@@ -6,6 +6,7 @@
     "en": ["make a tortilla", "cook a tortilla espanola", "cook a Spanish omelette", "cook a tortilla de patatas"]
   },
   "does": "Sets a mix of beaten egg and soft cooked potato in a small pan into a thick, round cake, golden outside and tender or even creamy in the middle. It is turned over once with the help of a plate.",
+  "intro": null,
   "how": [
     "Heat a spoonful of the kept oil in a small non-stick pan over a medium heat, so that it coats the base and the sides.",
     "Pour in the mix of egg and potato and press it level. It should hiss softly, not spit.",
@@ -35,6 +36,7 @@
       "fix": "Use a small, deep pan, so that the cake is thick."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"},
     {"thing": "ingredient/potato", "tier": "drafted"}

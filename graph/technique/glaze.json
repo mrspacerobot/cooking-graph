@@ -4,6 +4,7 @@
   "names": {"en": "Glaze", "fr": "Glacer"},
   "aliases": {"en": ["glaze vegetables", "glaze in butter"]},
   "does": "Cooks small vegetables in a little water, butter and sugar until the water has gone and they are left tender and coated in a shiny syrup.",
+  "intro": null,
   "how": [
     "Put the vegetables in a wide pan in a single layer.",
     "Add water to come half way up them, with butter, a little sugar and salt.",
@@ -22,6 +23,7 @@
     },
     {"mistake": "Walking away at the end, when the syrup burns.", "fix": "Stay, and keep them rolling."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/alliums", "tier": "drafted"}

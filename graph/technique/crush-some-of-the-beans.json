@@ -4,6 +4,7 @@
   "names": {"en": "Crush some of the beans"},
   "aliases": {"en": ["mash some of the beans", "thicken a bean soup with its own beans"]},
   "does": "Presses a few spoonfuls of cooked, tender beans or other pulses against the side of the pot, or lifts out a ladle of them with a little broth and crushes them, then stirs the paste back in, so that the soup turns creamy and thick without flour or cream while the rest of the beans stay whole.",
+  "intro": null,
   "how": [
     "Wait until the beans are completely tender, or they will not crush.",
     "Lift a ladle of beans, with a little of their broth, into a bowl.",
@@ -25,6 +26,7 @@
       "fix": "Crush only a ladle or so and leave the rest whole."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/pulses", "tier": "drafted"}
   ],

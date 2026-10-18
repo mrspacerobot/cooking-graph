@@ -4,6 +4,7 @@
   "names": {"en": "Shape meatballs"},
   "aliases": {"en": ["roll meatballs", "form meatballs"]},
   "does": "Rolls seasoned minced meat between wet palms into round balls of an even size, so that they hold together and cook at the same pace.",
+  "intro": null,
   "how": [
     "Knead the minced meat with its seasoning until it holds together, and chill it briefly so that it handles well.",
     "Wet the hands, or rub them with a little oil, so that the meat does not stick.",
@@ -26,6 +27,7 @@
     },
     {"mistake": "Working with dry hands, so that the meat sticks and tears.", "fix": "Wet or oil the hands often."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/minced-meat", "tier": "drafted"}
   ],

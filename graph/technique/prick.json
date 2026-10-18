@@ -4,6 +4,7 @@
   "names": {"en": "Prick", "fr": "Piquer"},
   "aliases": {"en": ["prick with a fork", "pierce the skin", "dock"], "fr": ["piquer à la fourchette"]},
   "does": "Makes small holes in a skin or a crust with the tip of a knife or a fork, so that steam can leave and the skin does not split or the crust puff.",
+  "intro": null,
   "how": [
     "Dry the surface, so that the tip does not slip.",
     "Prick evenly all over with the point, a little way in, about as far apart as the width of a fork.",
@@ -23,6 +24,7 @@
       "fix": "Prick evenly, all over."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/andouillette", "tier": "drafted"},
     {"thing": "ingredient/pork-sausage", "tier": "drafted"},

@@ -4,6 +4,7 @@
   "names": {"en": "Stuff", "fr": "Farcir"},
   "aliases": {"en": ["fill", "stuff with a filling", "stuff and roll"]},
   "does": "Fills a hollow, a pocket or a rolled slice with a seasoned mixture, which flavours the food from inside and keeps it moist.",
+  "intro": null,
   "how": [
     "Season the filling well and let it cool before it goes in.",
     "Fill loosely. A filling swells as it cooks, and one that is packed tight bursts its wrapper.",
@@ -25,6 +26,7 @@
       "fix": "Cool the filling first, and stuff just before the food goes on the heat."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/watery-vegetables", "tier": "drafted"},

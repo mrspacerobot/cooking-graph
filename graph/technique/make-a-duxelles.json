@@ -4,6 +4,7 @@
   "names": {"en": "Make a duxelles", "fr": "Faire une duxelles"},
   "aliases": {"en": ["cook a duxelles", "make a mushroom paste"]},
   "does": "Cooks finely minced mushrooms and shallot in butter until all their water has gone, to a dark, dry paste that is spread or stuffed for its deep flavour.",
+  "intro": null,
   "how": [
     "Wipe the mushrooms clean with a cloth. Do not soak them.",
     "Mince the mushrooms and the shallot very fine, with a knife.",
@@ -21,6 +22,7 @@
     },
     {"mistake": "Chopping the mushrooms coarse, so that the filling falls apart.", "fix": "Mince them very fine."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/mushroom", "tier": "drafted"},
     {"thing": "ingredient/shallot", "tier": "drafted"}

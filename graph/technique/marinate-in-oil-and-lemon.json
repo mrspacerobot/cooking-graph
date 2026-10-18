@@ -4,6 +4,7 @@
   "names": {"en": "Marinate in oil and lemon"},
   "aliases": {"en": ["marinate in ladolemono"]},
   "does": "Turns small pieces of meat in olive oil, lemon juice, oregano and garlic for a short while before they are grilled, so that the surface takes up the flavour and the oil keeps the meat from drying on the fire.",
+  "intro": null,
   "how": [
     "Cut the meat into even pieces so that they take the marinade and cook at the same pace.",
     "Mix the oil, the lemon juice, the oregano, the crushed garlic and a little salt in a bowl.",
@@ -29,6 +30,7 @@
       "fix": "Use a little salt and season again at the end."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/pork-tenderloin", "tier": "drafted"},
     {"thing": "ingredient/chicken-thigh", "tier": "drafted"}

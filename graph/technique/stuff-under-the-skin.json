@@ -4,6 +4,7 @@
   "names": {"en": "Stuff under the skin", "fr": "Glisser sous la peau"},
   "aliases": {"en": ["slide under the skin", "stuff beneath the skin"], "fr": ["farcir sous la peau"]},
   "does": "Slides a flavouring, such as slices of truffle or a soft herb butter, between the skin and the flesh of a bird, so that it seasons the meat directly and keeps the breast moist as it cooks.",
+  "intro": null,
   "how": [
     "Dry the bird well. Start at the neck end and work a finger gently between the skin and the breast, then loosen the skin over the whole breast and a little way down the legs, without tearing it.",
     "Season the flesh under the skin.",
@@ -25,6 +26,7 @@
       "fix": "Use thin flat slices, or a soft smooth butter spread evenly."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"}
   ],

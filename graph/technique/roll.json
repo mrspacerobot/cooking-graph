@@ -4,6 +4,7 @@
   "names": {"en": "Roll", "fr": "Rouler"},
   "aliases": {"en": ["roll up", "roll up around a filling"], "fr": ["rouler autour d'une farce"]},
   "does": "Rolls a flat wrapper, such as a leaf, a sheet of dough or a thin pancake, up around a line of filling into a neat cylinder, with the ends folded in so that nothing can fall out.",
+  "intro": null,
   "how": [
     "Soften the wrapper if it is stiff, by blanching a leaf or covering a sheet of dough with a damp cloth.",
     "Lay it flat with the side that should show on the outside facing down, and set a line of filling near the edge closest to you.",
@@ -28,6 +29,7 @@
       "fix": "Soften it first with a quick blanch or a damp cloth."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/vine-leaf", "tier": "drafted"},
     {"thing": "group/leafy-heads", "tier": "drafted"},

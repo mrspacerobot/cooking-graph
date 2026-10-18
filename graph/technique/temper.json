@@ -4,6 +4,7 @@
   "names": {"en": "Temper"},
   "aliases": {"en": ["temper eggs", "temper the eggs", "temper the yolks"]},
   "does": "Warms eggs or yolks gently by whisking a little hot liquid into them, so that they can then join the hot liquid in the pan without turning to specks. The word here is for eggs, not for chocolate.",
+  "intro": null,
   "how": [
     "Whisk the eggs or yolks, usually with the sugar, in a bowl big enough to take the liquid.",
     "Heat the milk or cream until it steams. It must not be boiling.",
@@ -25,6 +26,7 @@
       "fix": "Take the liquid off the heat first, and warm the eggs with a little of it."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"},
     {"thing": "ingredient/egg-yolk", "tier": "drafted"}

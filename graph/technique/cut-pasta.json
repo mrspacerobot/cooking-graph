@@ -4,6 +4,7 @@
   "names": {"en": "Cut pasta"},
   "aliases": {"en": ["cut the pasta", "tagliare la pasta", "cut pasta into ribbons"]},
   "does": "Cuts a thin sheet of rolled pasta dough into ribbons, strips or squares of even size, so that they cook at the same speed.",
+  "intro": null,
   "how": [
     "Roll the dough out thin and let the sheet dry for a short while, until it feels leathery and no longer sticks.",
     "Dust the sheet lightly with flour, then fold it loosely into a flat roll, or leave it as a sheet.",
@@ -28,6 +29,7 @@
       "fix": "Toss it in flour and lay it loosely in nests."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/fresh-pasta-dough", "tier": "drafted"}
   ],

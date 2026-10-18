@@ -4,6 +4,7 @@
   "names": {"en": "Cook in a masala gravy"},
   "aliases": {"en": ["simmer in gravy", "simmer in a curry sauce", "cook a curry"]},
   "does": "Simmers pieces of meat, bird or firm cheese in a gravy made from a fried masala base, with a little water or cream, until they are tender and the gravy has thickened and clings to them.",
+  "intro": null,
   "how": [
     "Start from a masala base cooked until its fat has parted.",
     "Add the pieces, raw or already roasted or fried, and stir them into the base for a moment so that they are coated.",
@@ -34,6 +35,7 @@
       "fix": "Take the pan off the heat for a moment, or lower the heat, before the cream goes in."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/braising-cuts", "tier": "drafted"},

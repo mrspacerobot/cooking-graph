@@ -4,6 +4,7 @@
   "names": {"en": "Plate", "fr": "Dresser"},
   "aliases": {"en": ["serve", "dish up", "plate up", "assemble"]},
   "does": "Arranges the finished parts on a plate, so that each reaches the table at its best.",
+  "intro": null,
   "how": [
     "Warm the plates for hot food and chill them for cold.",
     "Have every part ready before the first one is plated.",
@@ -24,6 +25,7 @@
       "fix": "Put the sauce beside it or under it."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/starches", "tier": "drafted"},

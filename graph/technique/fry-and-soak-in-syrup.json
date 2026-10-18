@@ -4,6 +4,7 @@
   "names": {"en": "Fry and soak in syrup"},
   "aliases": {"en": ["fry in ghee and soak in syrup"]},
   "does": "Fries balls of dough slowly in ghee over a gentle heat until they are deep brown and cooked to the middle, then drops them into warm sugar syrup, which they drink up until they are soft, swollen and sweet to the centre.",
+  "intro": null,
   "how": [
     "Make the syrup first and keep it warm. It should be thin and sticky, not thick.",
     "Heat the ghee or oil gently. A test ball should rise slowly, with a few bubbles, and not brown at once.",
@@ -29,6 +30,7 @@
       "fix": "Boil it just until it turns sticky."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/khoya-dough", "tier": "drafted"}
   ],

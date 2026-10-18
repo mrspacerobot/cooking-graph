@@ -4,6 +4,7 @@
   "names": {"en": "Shake the pan", "fr": "Secouer la poêle"},
   "aliases": {"en": ["swirl the pan", "shake the pan in circles", "shake the saucepan"]},
   "does": "Moves fish that gives up its own gelatine in a pan by holding the handle and shaking the pan in small circles, with no spoon or whisk, so that delicate pieces stay whole while the oil and the juices slowly bind into a creamy sauce.",
+  "intro": null,
   "how": [
     "Use a wide pan, with the fish in a single layer in a little oil and a splash of liquid, over a low, steady heat.",
     "Hold the handle and shake the pan back and forth in small circles, so that the sauce swirls round the pieces.",
@@ -24,6 +25,7 @@
       "fix": "Keep the heat low, and lift the pan off it for a moment when the sauce gets hot."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/salt-cod", "tier": "drafted"},
     {"thing": "ingredient/white-fish", "tier": "drafted"},

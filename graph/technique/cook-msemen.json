@@ -4,6 +4,7 @@
   "names": {"en": "Cook msemen"},
   "aliases": {},
   "does": "Stretches a folded square of layered dough out thin again with oiled fingertips, lays it on a hot, lightly oiled griddle and cooks both faces until it is golden in speckles and its layers have set apart, so that it comes away in flaky sheets.",
+  "intro": null,
   "how": [
     "Heat a flat griddle or a wide pan over a medium heat and oil it lightly.",
     "Press the folded square out with oiled fingertips, to a flat square that is still in layers.",
@@ -26,6 +27,7 @@
       "fix": "Keep the heat moderate."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/msemen-dough", "tier": "drafted"}
   ],

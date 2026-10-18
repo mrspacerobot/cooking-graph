@@ -4,6 +4,7 @@
   "names": {"en": "Make raita"},
   "aliases": {"en": ["raita"]},
   "does": "Whisks cold yogurt smooth and stirs in a cool, drained raw or cooked vegetable, with salt and a roasted ground spice, to make a cooling side that tempers the heat of a spiced meal.",
+  "intro": null,
   "how": [
     "Whisk cold yogurt in a bowl until it is smooth and creamy. Thin it with a splash of cold water only if it is very thick.",
     "Wring the vegetable dry, or drain it well, so that it does not thin the yogurt.",
@@ -28,6 +29,7 @@
       "fix": "Mix it shortly before serving, or squeeze the vegetable very dry."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/plain-yogurt", "tier": "drafted"},
     {"thing": "ingredient/cucumber", "tier": "drafted"}

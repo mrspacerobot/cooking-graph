@@ -4,6 +4,7 @@
   "names": {"en": "Dredge", "fr": "Fariner"},
   "aliases": {"en": ["flour", "coat in flour", "dredge in flour"]},
   "does": "Coats a piece of food in a thin layer of flour just before it is fried, so that it browns evenly and does not stick.",
+  "intro": null,
   "how": [
     "Dry the food and season it.",
     "Lay it in a plate of flour and turn it to coat every side.",
@@ -20,6 +21,7 @@
     },
     {"mistake": "Leaving a thick coat on, which falls off in the pan and burns.", "fix": "Tap the piece well."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/lean-fish", "tier": "drafted"},
     {"thing": "group/steaks-and-chops", "tier": "drafted"},

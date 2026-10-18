@@ -4,6 +4,7 @@
   "names": {"en": "Make a caramel", "fr": "Faire un caramel"},
   "aliases": {"en": ["caramelize sugar", "cook sugar to caramel", "caramel"]},
   "does": "Cooks sugar until it melts and browns to an amber syrup with a bittersweet taste.",
+  "intro": null,
   "how": [
     "Put the sugar in a clean, heavy, pale pan with just enough water to wet it.",
     "Heat it without stirring. Swirl the pan if it colours unevenly.",
@@ -25,6 +26,7 @@
       "fix": "Stay with it, and have the liquid ready beside the stove."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/sugars", "tier": "drafted"}
   ],

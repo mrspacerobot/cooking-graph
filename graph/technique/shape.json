@@ -4,6 +4,7 @@
   "names": {"en": "Shape", "fr": "Façonner"},
   "aliases": {"en": ["form", "mould", "shape quenelles", "shape between spoons"], "fr": ["mouler"]},
   "does": "Forms a soft mixture into even pieces that hold together when they are cooked.",
+  "intro": null,
   "how": [
     "Chill the mixture first. A cold mixture holds its shape and does not stick.",
     "For quenelles, dip a pair of spoons in hot water, scoop the mixture with the first, and pass it back and forth between them until its sides are smooth.",
@@ -24,6 +25,7 @@
       "fix": "Chill it until it is firm before you start."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/mashed-potato", "tier": "drafted"},
     {"thing": "ingredient/minced-beef", "tier": "drafted"},

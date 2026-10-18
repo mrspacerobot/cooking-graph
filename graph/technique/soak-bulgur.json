@@ -4,6 +4,7 @@
   "names": {"en": "Soak bulgur", "fr": "Faire gonfler le boulgour"},
   "aliases": {"en": ["soak the bulgur", "soak fine bulgur", "hydrate bulgur"], "fr": ["tremper le boulgour"]},
   "does": "Leaves fine bulgur in just enough cool liquid for the grains to swell and turn tender, with no cooking at all. The liquid can be water, lemon juice or the juice of tomatoes, and it flavours the grain as it goes in.",
+  "intro": null,
   "how": [
     "Rinse the bulgur in a sieve and let the water run off. Tip it into a bowl.",
     "Pour over cool water, or lemon juice or tomato juice, to just cover the grains. They take up the liquid as they swell.",
@@ -24,6 +25,7 @@
       "fix": "Coarse grades are simmered. Only the fine grades are soaked."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/fine-bulgur", "tier": "drafted"}
   ],

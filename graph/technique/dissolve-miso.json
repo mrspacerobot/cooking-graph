@@ -4,6 +4,7 @@
   "names": {"en": "Dissolve miso"},
   "aliases": {"en": ["stir in miso", "dissolve the miso"]},
   "does": "Stirs miso smooth into a little warm liquid away from the main pot, and then stirs it into the pot at the end, so that it never clumps and its scent is not boiled away.",
+  "intro": null,
   "how": [
     "Heat the soup or stock and turn off the heat or lower it until the liquid only trembles.",
     "Put the miso in a ladle or a small sieve and lower it into the liquid.",
@@ -24,6 +25,7 @@
       "fix": "Take it off the heat first and serve right away."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/miso", "tier": "drafted"}
   ],

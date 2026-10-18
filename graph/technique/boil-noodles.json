@@ -4,6 +4,7 @@
   "names": {"en": "Boil noodles"},
   "aliases": {"en": ["boil soba", "boil udon", "cook noodles"]},
   "does": "Cooks noodles in a large pot of rapidly boiling water, stirring them loose at the start, and lifts them out the moment they are tender, so that they are springy and not gummy.",
+  "intro": null,
   "how": [
     "Bring a large pot of water to a rolling boil. Do not salt it for dry buckwheat noodles.",
     "Fan the noodles into the water and stir with long chopsticks or tongs so that they do not clump.",
@@ -22,6 +23,7 @@
       "fix": "Lift them out as soon as they are tender."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/noodles", "tier": "drafted"}
   ],

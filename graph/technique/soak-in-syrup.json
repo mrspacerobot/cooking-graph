@@ -4,6 +4,7 @@
   "names": {"en": "Soak in syrup"},
   "aliases": {"en": ["pour syrup over", "syrup the pastry"]},
   "does": "Pours a cool syrup over a pastry as it comes hot from the oven, so that the syrup runs into every layer and the pastry drinks it up while the top stays crisp.",
+  "intro": null,
   "how": [
     "Make the syrup ahead and let it cool fully. Hot pastry takes cool syrup. Hot syrup on hot pastry turns it soggy.",
     "Cut the pastry into portions before it is baked, so that the syrup can run down the cuts.",
@@ -29,6 +30,7 @@
       "fix": "Stop boiling the syrup while it is still thin enough to run off a spoon."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/phyllo", "tier": "drafted"}
   ],

@@ -4,6 +4,12 @@
   "names": {"en": "Mount with butter", "fr": "Monter au beurre"},
   "aliases": {"en": ["monter au beurre", "finish with butter", "swirl in butter", "whisk in cold butter"]},
   "does": "Whisks cold butter into a hot liquid off the boil, so that it melts into a smooth, glossy, lightly thickened sauce and not into a layer of fat.",
+  "intro": {
+    "what": "Mounting with butter brings cold butter into a reduced hot liquid away from the boil.",
+    "why": "It teaches you to build gloss and light thickness while keeping the butter from separating into oil.",
+    "idea": "A smooth finish",
+    "tier": "drafted"
+  },
   "how": [
     "Boil the liquid down first, until only a few syrupy, strong spoonfuls are left in the pan.",
     "Take the pan off the heat, or turn the heat to its lowest.",
@@ -26,6 +32,56 @@
     {
       "mistake": "Too much liquid left in the pan, so that the butter cannot thicken it.",
       "fix": "Reduce further before the butter goes in."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What finish is this method intended to give a sauce?",
+      "choices": [
+        "A clear layer of fat on top.",
+        "A thinner sauce with visible pools of butter.",
+        "A smooth, glossy, lightly thickened finish."
+      ],
+      "answer": 2,
+      "because": "Butter held in the sauce gives a smooth, glossy finish. Separate pools of fat mean it has split.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How is the butter added in this method?",
+      "choices": [
+        "Cold and in small additions, whisking or swirling each in.",
+        "Melted and poured in all at once over high heat.",
+        "Soft and left unstirred on a rolling boil."
+      ],
+      "answer": 0,
+      "because": "Small additions of cold butter, whisked in away from the boil, help it join the sauce rather than melt into a separate layer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended sauce?",
+      "choices": [
+        "Clear fat beads around a thin centre.",
+        "An opaque, glossy sauce without clear fat at the edge.",
+        "A separate pool of melted butter."
+      ],
+      "answer": 1,
+      "because": "An opaque, glossy sauce without clear fat at the edge shows the finish this method aims for.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce splits after getting too hot. What could help bring it together?",
+      "choices": [
+        "Boil harder to drive off the fat.",
+        "Add more melted butter over high heat.",
+        "Take it off the heat and whisk in a little cold water or cream."
+      ],
+      "answer": 2,
+      "because": "Excess heat can split the sauce. Take it off the heat; whisking in a little cold water or cream may help bring it together.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

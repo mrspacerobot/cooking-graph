@@ -4,6 +4,12 @@
   "names": {"en": "Braise", "fr": "Braiser"},
   "aliases": {"en": ["braise slowly", "pot-roast", "stew", "braising"]},
   "does": "Cooks food slowly in a little liquid in a covered pot, after browning it, until it is tender and the liquid has become its sauce.",
+  "intro": {
+    "what": "Braising combines browning with slow cooking in a covered pot with a little liquid.",
+    "why": "It connects surface flavour, gentle heat and texture, while the cooking liquid becomes a sauce.",
+    "idea": "Gentle heat",
+    "tier": "drafted"
+  },
   "how": [
     "Brown the meat well in the pot and take it out.",
     "Soften the vegetables in the same pot, then loosen the fond with the wine or the stock.",
@@ -32,6 +38,56 @@
     {
       "mistake": "Stopping when the meat is cooked but still tough.",
       "fix": "Keep going. A tough cut turns tender only after a long time at a simmer."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What distinguishes this braising method?",
+      "choices": [
+        "A dry uncovered pan throughout.",
+        "Browning followed by gentle cooking with a little liquid under a lid.",
+        "A full pot of rapidly boiling liquid throughout."
+      ],
+      "answer": 1,
+      "because": "Browning develops flavour first. Gentle cooking under a lid then tenderises the food while the liquid becomes a sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How much of the meat should the liquid cover in this method?",
+      "choices": [
+        "Enough to submerge it completely.",
+        "Just a shallow film touching the bottom of the meat.",
+        "About half, with the top standing clear."
+      ],
+      "answer": 2,
+      "because": "In this method, the meat sits partly above the liquid. Covering it completely would leave too much liquid for the intended sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which description matches the intended movement of the liquid?",
+      "choices": [
+        "A bubble now and then under the lid.",
+        "A rolling boil that shakes the lid.",
+        "Constant bubbling across the whole surface."
+      ],
+      "answer": 0,
+      "because": "A bubble now and then shows the gentle movement of a bare simmer, rather than a vigorous boil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The liquid has begun to boil vigorously. What would you change?",
+      "choices": [
+        "Add a tighter lid and keep the heat high.",
+        "Lower the heat or move the pot to a low oven.",
+        "Remove the lid but leave the heat setting unchanged."
+      ],
+      "answer": 1,
+      "because": "A vigorous boil can leave the meat dry and stringy. Lower the heat to restore gentle cooking.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

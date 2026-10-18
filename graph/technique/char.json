@@ -4,6 +4,7 @@
   "names": {"en": "Char", "fr": "Griller à la flamme"},
   "aliases": {"en": ["blister", "blacken", "char over a flame"], "fr": ["noircir à la flamme"]},
   "does": "Burns the skin of a whole vegetable black over an open flame or a fierce heat, so that the flesh inside turns soft, smoky and sweet, and the charred skin can be peeled away.",
+  "intro": null,
   "how": [
     "Set the whole vegetable directly on a gas flame, on a hot grill or on a barbecue.",
     "Turn it now and then with tongs, until the skin is blackened and blistered all over and the flesh has gone soft and collapsed.",
@@ -27,6 +28,7 @@
     },
     {"mistake": "Leaving it uncovered, so that the skin sticks.", "fix": "Cover it while it steams and cools."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/aubergine", "tier": "drafted"},
     {"thing": "ingredient/bell-pepper", "tier": "drafted"},

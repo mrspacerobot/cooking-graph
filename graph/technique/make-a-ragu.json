@@ -4,6 +4,7 @@
   "names": {"en": "Make a ragu", "fr": "Ragù"},
   "aliases": {"en": ["make a ragù", "make ragu", "make a meat ragu"]},
   "does": "Cooks minced meat very slowly with a soffritto, wine and tomato until it turns into a thick, rich sauce that clings to pasta or fills a rice ball. Every region has its own ragu, and this card holds the common method.",
+  "intro": null,
   "how": [
     "Make a soffritto in a wide, heavy pot and cook it until it is soft and golden.",
     "Add the minced meat in small lots and break it up with a spoon. Let it brown before moving on, and stir so that it cooks in fine crumbs.",
@@ -32,6 +33,7 @@
       "fix": "Break it up as it browns."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/minced-meat", "tier": "drafted"}
   ],

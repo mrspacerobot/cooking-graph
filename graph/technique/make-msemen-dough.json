@@ -4,6 +4,7 @@
   "names": {"en": "Make msemen dough"},
   "aliases": {},
   "does": "Works flour and fine semolina with warm salted water, by hand and for a good while, on an oiled surface, until the dough is smooth, soft and stretchy, then divides it into balls and rests them under oil so that they can later be stretched paper thin.",
+  "intro": null,
   "how": [
     "Mix the flour, the semolina and the salt, and add warm water a little at a time until a soft, wet dough forms.",
     "Oil the hands and the work surface and work the dough with the heels of the hands for a good while, until it is smooth, soft and stretchy.",
@@ -27,6 +28,7 @@
       "fix": "Rest the oiled balls until they relax."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"},
     {"thing": "ingredient/semolina", "tier": "drafted"}

@@ -4,6 +4,7 @@
   "names": {"en": "Shave"},
   "aliases": {"en": ["sasagaki", "shave into slivers"]},
   "does": "Whittles a long root into thin, curled slivers, turning it against the knife as a pencil is sharpened. The slivers cook fast and keep a crunch.",
+  "intro": null,
   "how": [
     "Scrub the root and scrape off the skin, but not too hard, as most of the taste lies just under it.",
     "Hold the root at a slant and turn it against the knife, taking thin slivers as it turns.",
@@ -21,6 +22,7 @@
     },
     {"mistake": "Cutting thick slivers, which stay hard.", "fix": "Shave them thin."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/burdock", "tier": "drafted"},
     {"thing": "ingredient/carrot", "tier": "drafted"}

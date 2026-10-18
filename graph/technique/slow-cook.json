@@ -4,6 +4,7 @@
   "names": {"en": "Slow cook"},
   "aliases": {"en": ["cook slowly in a sealed pot"]},
   "does": "Cooks a tough cut for a very long time at the lowest heat in a closed pot with only a little liquid, so that it softens in its own juices and fat until it falls apart, with its taste deep and little left to reduce.",
+  "intro": null,
   "how": [
     "Season the meat early, and rub it with the spices and the fat.",
     "Pack it snugly into the pot with the aromatics, and add only a little liquid, well below the top of the meat.",
@@ -30,6 +31,7 @@
       "fix": "Use the lowest heat and a heavy pot."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/braising-cuts", "tier": "drafted"}
   ],

@@ -4,6 +4,12 @@
   "names": {"en": "Sprinkle with flour", "fr": "Singer"},
   "aliases": {"en": ["singer", "dust with flour"]},
   "does": "Scatters flour over food that is already cooking in fat and cooks it for a moment, so that the liquid added next thickens as it simmers.",
+  "intro": {
+    "what": "This method scatters flour over food already cooking in fat before adding liquid.",
+    "why": "It teaches another route to thickening a sauce, with attention to even coating and cooking the flour first.",
+    "idea": "Coat before adding liquid",
+    "tier": "drafted"
+  },
   "how": [
     "Scatter the flour evenly over the hot, fat-coated food, not in a heap.",
     "Stir until no white shows.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Adding the liquid at once, before the flour has cooked.",
       "fix": "Give it a moment on the heat first."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the flour meant to do when liquid is added?",
+      "choices": [
+        "Keep the liquid completely thin.",
+        "Thicken the liquid as it simmers.",
+        "Keep the cooking fat separate from the sauce."
+      ],
+      "answer": 1,
+      "because": "Flour cooked on the fat-coated food thickens the liquid added next.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the flour meet the food?",
+      "choices": [
+        "As a heap left on top.",
+        "In a heap stirred in after all the liquid has been added.",
+        "Scattered evenly over hot food already coated in fat."
+      ],
+      "answer": 2,
+      "because": "Scattering flour evenly coats the food without leaving heaps that can form lumps.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What appearance should follow stirring in the flour?",
+      "choices": [
+        "A thin paste coating the pieces, with no white flour showing.",
+        "Loose white heaps between the pieces.",
+        "Dry flour floating on liquid added immediately."
+      ],
+      "answer": 0,
+      "because": "No loose white flour should remain visible: it forms a thin paste coating the pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A heap of flour has formed lumps. What would help prevent this next time?",
+      "choices": [
+        "Add the flour all at once and rely on stirring to break it up.",
+        "Scatter the flour evenly or use a sieve.",
+        "Add all the liquid before stirring the flour."
+      ],
+      "answer": 1,
+      "because": "Scattering flour or using a sieve avoids heaps that turn into lumps.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

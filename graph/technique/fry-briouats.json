@@ -4,6 +4,7 @@
   "names": {"en": "Fry briouats"},
   "aliases": {},
   "does": "Fries small folded pastries in a good depth of hot oil, turning them until they are golden and crisp, then dips them while hot in warm honey scented with orange blossom water and scatters them with toasted sesame seeds.",
+  "intro": null,
   "how": [
     "Warm the honey gently with a spoonful of water and the orange blossom water, and keep it at the side of the stove.",
     "Heat the oil in a wide pan to about a finger deep, until a scrap of warqa sizzles at once.",
@@ -30,6 +31,7 @@
       "fix": "Warm it gently and keep it just hot."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/warqa", "tier": "drafted"}
   ],

@@ -4,6 +4,7 @@
   "names": {"en": "Layer a cold dessert"},
   "aliases": {"en": ["layer biscuits and cream", "build a layered dessert"]},
   "does": "Builds a dessert without baking it, from dipped biscuits and a soft cream laid in even layers in a dish, dusts the top and chills it for long enough that the layers soften into each other and the whole can be cut in squares.",
+  "intro": null,
   "how": [
     "Have the dipped biscuits and the cream within reach before the first layer goes down.",
     "Lay a single layer of biscuits side by side in the dish, close together with no gaps.",
@@ -29,6 +30,7 @@
       "fix": "Dust it on just before serving."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/savoiardi", "tier": "drafted"},
     {"thing": "preparation/mascarpone-cream", "tier": "drafted"}

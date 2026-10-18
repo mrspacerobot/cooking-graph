@@ -4,6 +4,7 @@
   "names": {"en": "Make a syrup"},
   "aliases": {"en": ["make syrup", "boil a syrup", "make a sugar syrup"]},
   "does": "Dissolves sugar in water over heat and simmers it briefly to a clear, lightly thick liquid, which soaks into pastry, sweetens fruit and drinks, or glazes a cake.",
+  "intro": null,
   "how": [
     "Put the sugar and the water in a saucepan, with a strip of lemon peel or a stick of cinnamon if the syrup is to be flavoured.",
     "Stir over a gentle heat until every grain has dissolved, then stop stirring.",
@@ -26,6 +27,7 @@
       "fix": "Take it off the heat while it is still clear and pale."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/sugars", "tier": "drafted"}
   ],

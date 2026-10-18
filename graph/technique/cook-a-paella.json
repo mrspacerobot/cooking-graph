@@ -4,6 +4,7 @@
   "names": {"en": "Cook a paella"},
   "aliases": {"en": ["make a paella", "cook rice in a paella pan"]},
   "does": "Cooks short-grain rice in a thin, even layer in a wide, shallow pan, in a well-flavoured broth, with no lid and no stirring, until the rice has taken the broth up and a thin toasted crust, the socarrat, forms on the bottom.",
+  "intro": null,
   "how": [
     "Bring the flavoured broth, which has already simmered with its meat and vegetables, to a lively boil in the paella pan. Taste it: it should taste a little strong, as the rice will soften it.",
     "Scatter the rice evenly over the pan in one layer and stir once to spread it. Do not stir again.",
@@ -33,6 +34,7 @@
       "fix": "Listen for the crackle, smell the pan, and take it off the heat when it smells toasty."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
   ],

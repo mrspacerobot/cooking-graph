@@ -4,6 +4,7 @@
   "names": {"en": "Dry", "fr": "Sécher"},
   "aliases": {"en": ["pat dry", "dry off", "dry in the pot"], "fr": ["éponger"]},
   "does": "Takes the wet off the surface of food so that it browns, crisps or clings instead of steaming. For food that has been boiled, it lets the last water steam away and leaves a dry skin.",
+  "intro": null,
   "how": [
     "For raw food, pat it all over with a clean cloth or paper, on every side, and let it stand a little in the air if it is still wet.",
     "For food that has been boiled, drain it well, then return it to the empty, still-hot pot over a very low heat.",
@@ -24,6 +25,7 @@
       "fix": "Dry it in the hot pot, over a very low heat."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/salad-leaves", "tier": "drafted"},

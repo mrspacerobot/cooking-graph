@@ -4,6 +4,7 @@
   "names": {"en": "Pressure cook"},
   "aliases": {"en": ["pressure cook the dal", "cook in a pressure cooker", "pressure-cook"]},
   "does": "Cooks pulses in a sealed pot that holds steam in, so that the liquid gets hotter than in an open pot and hard dried seeds soften and fall apart in a fraction of the usual time.",
+  "intro": null,
   "how": [
     "Rinse the pulses. Soak the large hard kinds such as kidney beans, if the recipe asks.",
     "Put them in the pot with plenty of water and a little turmeric. Fill the pot no more than half, as pulses swell and foam.",
@@ -34,6 +35,7 @@
       "fix": "Cover them with plenty of water. Add more if the dish is too thick."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/pulses", "tier": "drafted"}
   ],

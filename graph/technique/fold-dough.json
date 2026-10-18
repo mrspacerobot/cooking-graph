@@ -4,6 +4,7 @@
   "names": {"en": "Fold dough"},
   "aliases": {"en": ["fold the dough", "fold over the dough"]},
   "does": "Folds a sheet or a round of dough over itself, from the sides and into a square or a letter, so that it stacks into layers or gains strength, and so that any fat or oil brushed between the layers stays shut in them.",
+  "intro": null,
   "how": [
     "Rest the dough first, so that it relaxes and does not spring back.",
     "Stretch or roll it into an even sheet on a lightly oiled or floured surface.",
@@ -25,6 +26,7 @@
       "fix": "Brush the fat right to the edges."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/msemen-dough", "tier": "drafted"},
     {"thing": "preparation/puff-pastry", "tier": "drafted"},

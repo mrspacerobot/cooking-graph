@@ -4,6 +4,7 @@
   "names": {"en": "Proof", "fr": "Faire pousser la pâte"},
   "aliases": {"en": ["prove", "let rise", "let the dough rise", "rise"], "fr": ["laisser pousser"]},
   "does": "Leaves shaped yeast dough in a warm, still place to rise, so that the yeast fills it with gas and it swells and turns light, airy and ready to bake or fry.",
+  "intro": null,
   "how": [
     "Shape the dough and set it in a lightly oiled bowl, or on a tray, with room to swell.",
     "Cover it with a damp cloth or oiled film, so that its skin does not dry out.",
@@ -30,6 +31,7 @@
       "fix": "Check it often and bake it as soon as it is ready."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"}
   ],

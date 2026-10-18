@@ -4,6 +4,7 @@
   "names": {"en": "Toast rice"},
   "aliases": {"en": ["tostatura", "toast the rice", "toast the rice in fat"]},
   "does": "Stirs raw rice in hot fat until the outside of each grain turns translucent and the grains are hot and dry, so that they keep their shape and take up stock slowly. The Italian name for this first step of a risotto is tostatura.",
+  "intro": null,
   "how": [
     "Make the base of the dish first in the same wide pan, such as onion softened in butter, and leave it soft.",
     "Tip in the dry, unwashed rice and stir over medium heat, so that every grain is coated in fat.",
@@ -32,6 +33,7 @@
       "fix": "Coat them in hot fat first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/risotto-rices", "tier": "drafted"}
   ],

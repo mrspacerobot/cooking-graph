@@ -4,6 +4,7 @@
   "names": {"en": "Grill", "fr": "Griller"},
   "aliases": {"en": ["chargrill", "cook under the grill", "grill under a hot grill"]},
   "does": "Cooks food close to fierce, direct heat, so that its surface colours and chars lightly while the inside stays moist.",
+  "intro": null,
   "how": [
     "Heat the grill until it is very hot before the food goes near it.",
     "Dry the food, oil it lightly and season it.",
@@ -25,6 +26,7 @@
       "fix": "Leave it alone until it has coloured, then turn it once."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/steaks-and-chops", "tier": "drafted"},
     {"thing": "group/round-fish", "tier": "drafted"},

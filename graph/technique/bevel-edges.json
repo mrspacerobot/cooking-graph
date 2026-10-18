@@ -4,6 +4,7 @@
   "names": {"en": "Bevel edges"},
   "aliases": {"en": ["mentori", "round the corners", "round off the edges"]},
   "does": "Shaves the sharp corners from cut pieces of a firm vegetable, so that they hold their shape and do not break or cloud the liquid while they simmer.",
+  "intro": null,
   "how": [
     "Cut the vegetable into chunks.",
     "Hold a chunk in one hand and run a knife around its sharp edges, taking off a thin sliver from each corner.",
@@ -21,6 +22,7 @@
       "fix": "Bevel the edges of any piece that will simmer for long."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "ingredient/kabocha", "tier": "drafted"},

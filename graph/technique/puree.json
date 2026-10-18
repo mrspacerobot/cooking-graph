@@ -4,6 +4,7 @@
   "names": {"en": "Puree", "fr": "Mixer"},
   "aliases": {"en": ["blend", "blend until smooth", "purée", "liquidise"], "fr": ["réduire en purée"]},
   "does": "Breaks cooked food down until it is smooth, in a blender or through a sieve.",
+  "intro": null,
   "how": [
     "Cook the food until it is completely soft. Nothing firm will blend smooth.",
     "Blend with only part of the cooking liquid at first.",
@@ -28,6 +29,7 @@
       "fix": "Blend a potato soup only briefly, or push it through a sieve."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/lean-fish", "tier": "drafted"},

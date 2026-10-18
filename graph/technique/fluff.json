@@ -4,6 +4,7 @@
   "names": {"en": "Fluff", "fr": "Égrainer"},
   "aliases": {"en": ["fluff with a fork", "fluff up", "rake the grains apart"]},
   "does": "Loosens cooked grains with a fork or the fingertips, lifting and separating them, so that the steam escapes and each grain stands apart instead of sitting in a block.",
+  "intro": null,
   "how": [
     "Wait until the grains have taken up their liquid and the steam is no longer heavy.",
     "Add a little butter or a trickle of oil, so that the grains stay loose.",
@@ -29,6 +30,7 @@
       "fix": "Fluff them once more just before serving."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/couscous", "tier": "drafted"},
     {"thing": "ingredient/instant-couscous", "tier": "drafted"},

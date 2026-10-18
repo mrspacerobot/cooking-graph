@@ -4,6 +4,7 @@
   "names": {"en": "Fry a cutlet"},
   "aliases": {"en": ["fry katsu", "deep-fry a crumbed cutlet"]},
   "does": "Fries a crumbed cutlet whole in deep oil, turning it once, until the crust is deep gold. It is then stood upright to drain, rested a little and cut across in strips, so that the crust stays crisp.",
+  "intro": null,
   "how": [
     "Heat deep oil in a heavy pan to a moderate heat, enough to cover the cutlet.",
     "Test it with a few flakes of panko, which should sink briefly and then rise in a stream of fine bubbles.",
@@ -30,6 +31,7 @@
       "fix": "Let it rest for a short while first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/pork-loin", "tier": "drafted"},
     {"thing": "ingredient/pork-tenderloin", "tier": "drafted"}

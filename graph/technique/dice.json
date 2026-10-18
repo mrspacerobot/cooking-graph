@@ -4,6 +4,12 @@
   "names": {"en": "Dice", "fr": "Tailler en dés"},
   "aliases": {"en": ["cube", "cut into dice", "cut into cubes"]},
   "does": "Cuts food into even cubes, so that every piece cooks at the same speed.",
+  "intro": {
+    "what": "Dicing cuts food into even cubes.",
+    "why": "Even pieces cook at a similar pace, so the cut helps you control texture as well as appearance.",
+    "idea": "Even size",
+    "tier": "drafted"
+  },
   "how": [
     "Trim the piece so that it has a flat side and sits still on the board.",
     "Cut it into slabs as thick as the cube you want.",
@@ -26,6 +32,56 @@
     {
       "mistake": "Chasing a round vegetable that rolls under the knife.",
       "fix": "Cut a thin slice off one side first and rest it on that flat."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why aim for even cubes when dicing?",
+      "choices": [
+        "So the outside of every piece browns before any centre softens.",
+        "So the pieces cook at a similar pace.",
+        "So stirring becomes unnecessary during cooking."
+      ],
+      "answer": 1,
+      "because": "Even-sized pieces cook at a similar pace, so small pieces do not soften long before larger ones.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What sequence makes cubes after you have a flat, stable piece?",
+      "choices": [
+        "Cut slabs of different thicknesses, then chop the pile together.",
+        "Slice across a rounded piece without trimming.",
+        "Cut slabs, then sticks, then across the sticks."
+      ],
+      "answer": 2,
+      "because": "Slabs become sticks, then cubes. Matching the thickness at each stage keeps the final pieces even.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the finished pile look like?",
+      "choices": [
+        "Cubes of a similar size with square edges.",
+        "A mixture of thin shards and large chunks.",
+        "Long strips with tapered ends."
+      ],
+      "answer": 0,
+      "because": "Similar-sized cubes with square edges show that the cuts stayed consistent.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A round vegetable rolls as you try to cut it. What should you change first?",
+      "choices": [
+        "Hold it more firmly on its rounded side and continue slicing.",
+        "Trim a flat side and rest it on that side.",
+        "Start with curved slices while it rests on its round side."
+      ],
+      "answer": 1,
+      "because": "A flat resting side keeps the vegetable from rolling while you cut.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

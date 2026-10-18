@@ -4,6 +4,7 @@
   "names": {"en": "Rehydrate seaweed"},
   "aliases": {"en": ["soak wakame", "soak dried seaweed"]},
   "does": "Soaks dried seaweed in cold water until it swells and turns soft, silky and bright green, then squeezes out the water and cuts away any hard rib.",
+  "intro": null,
   "how": [
     "Put a small handful of dried seaweed in a large bowl, as it swells to many times its size.",
     "Cover it with cold water and leave it until it is soft and glossy.",
@@ -24,6 +25,7 @@
       "fix": "Lift it out as soon as it is soft."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/wakame", "tier": "drafted"}
   ],

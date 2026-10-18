@@ -20,7 +20,7 @@ def entry(data, kind, source):
     return record
 
 
-def classes(program):
+def classes(program, graph):
     """Levels are reviewable lessons; their parent program remains the source."""
     for course in program['courses']:
         for skill in course['skills']:
@@ -28,9 +28,21 @@ def classes(program):
                 identifier = '/'.join(['class', program['id'].split('/')[1],
                                        course['slug'], skill['slug'], str(level['number'])])
                 data = dict(level, id=identifier, tier=program['tier'],
-                            program=program['names']['en'], course=course['names']['en'],
+                            program=program['names']['en'], program_id=program['id'],
+                            course=course['names']['en'], course_slug=course['slug'],
                             skill=skill['names']['en'], skill_slug=skill['slug'],
                             comes_after=skill['comes_after'])
+                # The lesson hash covers the technique writing displayed inside it.
+                data['teaching_cards'] = []
+                for row in level['teaches']:
+                    technique = graph.get(row['thing'])
+                    if technique is None:
+                        continue
+                    card = technique.data
+                    data['teaching_cards'].append(dict(
+                        id=card['id'], names=card['names'], does=card['does'],
+                        tier=card['tier'], link_tier=row['tier'],
+                        intro=card.get('intro'), quiz=card.get('quiz', [])))
                 yield entry(data, 'class', program['id'])
 
 
@@ -85,7 +97,7 @@ def payload(things, commit):
             record = entry(data, thing.kind, thing.data['id'])
             entries[record['id']] = record
         elif thing.kind == 'program':
-            for record in classes(thing.data):
+            for record in classes(thing.data, graph):
                 entries[record['id']] = record
     # Food labels support navigation without exporting ingredient safety assertions.
     labels = {}

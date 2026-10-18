@@ -4,6 +4,7 @@
   "names": {"en": "Purge clams"},
   "aliases": {"en": ["spurgare le vongole", "soak clams in salted water"]},
   "does": "Leaves live clams in cold, well-salted water, like the sea, so that they open a little, breathe and spit out the sand they hold, before they are cooked.",
+  "intro": null,
   "how": [
     "Look over the clams. Throw away any that are broken, or that stay open when they are tapped on the counter.",
     "Stir plenty of salt into cold water until it tastes like the sea, in a bowl wide enough to hold the clams in a single layer.",
@@ -30,6 +31,7 @@
       "fix": "Lay them in a single layer somewhere cool."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/clam", "tier": "drafted"}
   ],

@@ -4,6 +4,7 @@
   "names": {"en": "Boil pasta", "fr": "Cuire les pâtes"},
   "aliases": {"en": ["cook pasta", "cook pasta al dente", "cuocere la pasta"], "fr": ["cuire les pâtes al dente"]},
   "does": "Cooks pasta in a large pot of fast-bubbling water that is salted well, and stops while the heart of each piece still has a little bite. It is lifted out with some of its starchy water kept back, and goes to its sauce without rinsing.",
+  "intro": null,
   "how": [
     "Fill the biggest pot to hand with water, so that the pasta can move freely, and bring it to a rolling boil.",
     "Salt the water generously once it boils. It should taste lightly of the sea, because this is the only chance to season the pasta itself.",
@@ -36,6 +37,7 @@
       "fix": "Take it out a little early when it is to finish in the sauce."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/pasta", "tier": "drafted"}
   ],

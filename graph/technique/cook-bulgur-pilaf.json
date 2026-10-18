@@ -4,6 +4,7 @@
   "names": {"en": "Cook bulgur pilaf"},
   "aliases": {"en": ["bulgur pilavi", "bulgur pilaf"]},
   "does": "Fries coarse bulgur in fat with softened onion and a spoon of paste until every grain is coated, then covers it with hot liquid and leaves it under a lid, without stirring, until the grains have swollen, drunk the liquid and stand apart.",
+  "intro": null,
   "how": [
     "Soften the onion in the fat, then stir in the pepper or tomato paste and fry it until the colour deepens.",
     "Add the bulgur and stir for a short while until each grain is coated and smells toasty.",
@@ -31,6 +32,7 @@
       "fix": "Let it stand under a cloth and lid first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/coarse-bulgur", "tier": "drafted"}
   ],

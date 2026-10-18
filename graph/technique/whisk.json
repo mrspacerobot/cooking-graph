@@ -4,6 +4,7 @@
   "names": {"en": "Whisk", "fr": "Fouetter"},
   "aliases": {"en": ["beat", "beat eggs", "whisk together", "whisk in", "whisk eggs"]},
   "does": "Beats a liquid with a whisk until it is blended and smooth.",
+  "intro": null,
   "how": [
     "Use a bowl large enough that nothing slops over.",
     "Tilt the bowl and beat in quick strokes that cross the middle.",
@@ -18,6 +19,7 @@
       "fix": "Stop as soon as the streaks of white are gone."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/emulsified-sauces", "tier": "drafted"},
     {"thing": "group/roux-sauces", "tier": "drafted"},

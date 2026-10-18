@@ -4,6 +4,7 @@
   "names": {"en": "Make brown butter", "fr": "Faire un beurre noisette"},
   "aliases": {"en": ["brown butter", "brown the butter", "beurre noisette"]},
   "does": "Cooks butter until its milk solids turn nut-brown and it smells of hazelnuts.",
+  "intro": null,
   "how": [
     "Melt the butter in a pale pan, so that you can see its colour.",
     "Let it foam. The foam is its water boiling off.",
@@ -21,6 +22,7 @@
       "fix": "Pour it straight over the food, or into a cold dish."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/butter", "tier": "drafted"}
   ],

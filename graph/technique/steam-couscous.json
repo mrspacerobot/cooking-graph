@@ -4,6 +4,7 @@
   "names": {"en": "Steam couscous", "fr": "Cuire le couscous à la vapeur"},
   "aliases": {"en": ["steam the couscous", "couscous steaming"]},
   "does": "Swells dry couscous grains in the steam of a simmering stew, in rounds, so that each grain turns light and separate. The grains are rubbed with water and oil, steamed, tipped out, sprinkled again and raked apart, then steamed once more until they are tender.",
+  "intro": null,
   "how": [
     "Tip the dry grains into a wide dish, sprinkle them with salted water and rub them between the palms until every grain is damp and nothing is clumped. Work in a little oil.",
     "Bring the stew, or plain water, to a simmer in the base of the couscoussier. Seal the seam between the base and the top with a strip of damp cloth or a paste of flour and water, so that no steam escapes there.",
@@ -34,6 +35,7 @@
       "fix": "Keep them above the liquid, where only the steam reaches them."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/couscous", "tier": "drafted"}
   ],

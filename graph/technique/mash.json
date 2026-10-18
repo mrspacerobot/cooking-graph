@@ -4,6 +4,7 @@
   "names": {"en": "Mash", "fr": "Écraser"},
   "aliases": {"en": ["mash potatoes", "make a potato purée"]},
   "does": "Crushes boiled potatoes while they are hot and dry, then beats in butter and hot milk to make a smooth purée.",
+  "intro": null,
   "how": [
     "Boil floury potatoes in their skins or in large pieces, starting in cold salted water.",
     "Drain them and let them steam dry for a moment.",
@@ -24,6 +25,7 @@
       "fix": "Mash them hot, straight after they have steamed dry."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/potato", "tier": "drafted"}
   ],

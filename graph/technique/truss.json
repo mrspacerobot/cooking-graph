@@ -4,6 +4,7 @@
   "names": {"en": "Truss", "fr": "Brider"},
   "aliases": {"en": ["tie a chicken", "truss a bird", "tie a joint", "tie", "tie with string"], "fr": ["ficeler"]},
   "does": "Ties a bird or a joint into a compact shape, so that it cooks evenly and keeps its form.",
+  "intro": null,
   "how": [
     "Tuck the wing tips under the back of the bird.",
     "Pass a length of string under the tail, cross it over the ends of the drumsticks and pull them together.",
@@ -26,6 +27,7 @@
       "fix": "Draw the legs in against the breast."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/roasting-joints", "tier": "drafted"}

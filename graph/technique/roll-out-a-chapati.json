@@ -4,6 +4,7 @@
   "names": {"en": "Roll out a chapati"},
   "aliases": {"en": ["roll chapati", "roll out roti"]},
   "does": "Rolls a ball of atta dough into a thin, even round, a little at a time, turning it often, so that it is the same thickness all over and puffs evenly when it is cooked.",
+  "intro": null,
   "how": [
     "Flatten a ball of dough in a dish of dry flour, coating both faces lightly.",
     "Roll from the centre outwards with short, firm strokes. Give the dough a small turn after each stroke, so that it grows into a round.",
@@ -26,6 +27,7 @@
     },
     {"mistake": "Stacking rolled rounds without flour, so that they stick.", "fix": "Cook each one as it is rolled."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/chapati-dough", "tier": "drafted"}
   ],

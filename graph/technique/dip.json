@@ -4,6 +4,7 @@
   "names": {"en": "Dip"},
   "aliases": {"en": ["dip in coffee", "dip the biscuits"]},
   "does": "Passes a dry, absorbent biscuit or slice through a liquid for a moment only, so that the outside takes up flavour and softens while the centre stays dry enough to hold the dish together.",
+  "intro": null,
   "how": [
     "Pour the liquid into a shallow dish wide enough to take a whole piece, and let it cool if it is hot.",
     "Hold each piece flat and pass it through the liquid in one quick motion, turning it once.",
@@ -24,6 +25,7 @@
       "fix": "Let the liquid cool first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/savoiardi", "tier": "drafted"}
   ],

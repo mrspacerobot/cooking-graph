@@ -4,6 +4,7 @@
   "names": {"en": "Fry onions to deep brown"},
   "aliases": {"en": ["birista", "beresta", "crisp fried onions"]},
   "does": "Fries thinly sliced onions in a generous amount of fat until their water has gone and they turn deep brown and crisp, then lifts them out to drain. They are crushed into a marinade, layered into rice, scattered on top, or stirred into a gravy.",
+  "intro": null,
   "how": [
     "Slice the onions thin and even, so that they brown together. Spread them out to dry a little if they are wet.",
     "Heat plenty of fat in a wide pan until a slice sizzles at once, then add the onions in a loose layer.",
@@ -36,6 +37,7 @@
       "fix": "Lift them out and spread them on paper at once."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"},
     {"thing": "ingredient/shallot", "tier": "drafted"}

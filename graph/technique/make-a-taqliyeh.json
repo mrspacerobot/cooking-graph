@@ -4,6 +4,7 @@
   "names": {"en": "Make a taqliyeh"},
   "aliases": {"en": ["make taqliyeh", "fry garlic and coriander", "garlic and coriander sizzle"]},
   "does": "Fries crushed raw garlic and chopped fresh coriander in hot fat for a short moment, until the garlic smells sweet and the coriander wilts and darkens, then stirs the sizzling mixture into the pot, most often at the end. It gives a stew, a soup or a dish of pulses a sharp, fresh scent.",
+  "intro": null,
   "how": [
     "Crush the garlic with salt to a rough paste, and chop the coriander fine.",
     "Heat the fat in a small pan until it shimmers.",
@@ -30,6 +31,7 @@
       "fix": "Chop the leaves and tender stems fine."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/garlic", "tier": "drafted"},
     {"thing": "ingredient/coriander-leaf", "tier": "drafted"}

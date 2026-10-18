@@ -4,6 +4,7 @@
   "names": {"en": "Pound", "fr": "Piler"},
   "aliases": {"en": ["pound in a mortar", "crush in a mortar", "pound to a paste"]},
   "does": "Crushes food in a mortar until it becomes a paste.",
+  "intro": null,
   "how": [
     "Start with the hardest thing: garlic, with a little coarse salt to grip it.",
     "Pound straight down to break it, then grind in circles against the wall of the mortar.",
@@ -20,6 +21,7 @@
       "fix": "Add a few leaves at a time."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/whole-spices", "tier": "drafted"},
     {"thing": "group/tender-herbs", "tier": "drafted"},

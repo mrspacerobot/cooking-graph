@@ -4,6 +4,7 @@
   "names": {"en": "Pan-fry", "fr": "Poêler"},
   "aliases": {"en": ["fry", "shallow-fry", "fry in a pan"]},
   "does": "Cooks a flat piece of food in a thin layer of hot fat, turning it once.",
+  "intro": null,
   "how": [
     "Heat a film of fat in the pan over medium heat.",
     "Lay the food in, away from you, and leave it alone.",
@@ -20,6 +21,7 @@
       "fix": "Turn it once. If it sticks, it is not ready to turn."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/lean-fish", "tier": "drafted"},
     {"thing": "group/steaks-and-chops", "tier": "drafted"},

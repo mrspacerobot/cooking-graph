@@ -4,6 +4,7 @@
   "names": {"en": "Scale a fish", "fr": "Écailler le poisson"},
   "aliases": {"en": ["scale", "scale the fish", "descale"], "fr": ["écailler"]},
   "does": "Scrapes the scales off the skin of a whole fish, so that none are left to catch in the mouth or to make the skin gritty.",
+  "intro": null,
   "how": [
     "Hold the fish firmly by the tail on a board that cannot slip. A deep sink or a large tray catches the flying scales.",
     "With the back of a knife, scrape from the tail towards the head in short firm strokes, against the way the scales lie.",
@@ -24,6 +25,7 @@
       "fix": "Use the back of the blade, in short firm strokes."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/round-fish", "tier": "drafted"}
   ],

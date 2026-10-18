@@ -4,6 +4,7 @@
   "names": {"en": "Add stock gradually"},
   "aliases": {"en": ["add stock a ladle at a time", "ladle in the stock", "add the stock gradually"]},
   "does": "Adds hot stock to rice a ladle at a time, stirring as each addition is taken up, so that the grains cook evenly and rub their starch off into a creamy sauce.",
+  "intro": null,
   "how": [
     "Keep the stock hot in a pot beside the pan, at a bare simmer, so that it never stops the rice from cooking.",
     "Add enough stock to just cover the rice and stir. Keep the heat at a lively bubble.",
@@ -31,6 +32,7 @@
       "fix": "Add the next ladle as soon as the trail from the spoon stays open."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/risotto-rices", "tier": "drafted"}
   ],

@@ -4,6 +4,7 @@
   "names": {"en": "Fry rice balls"},
   "aliases": {"en": ["fry arancini", "fry suppli", "fry the rice balls"]},
   "does": "Fries coated, filled rice balls a few at a time in hot oil deep enough to cover them, turning them until the shell is deep golden all round and the filling inside is hot and soft.",
+  "intro": null,
   "how": [
     "Heat plenty of oil in a deep, heavy pan and hold it steady. A crumb dropped in should sizzle at once and rise.",
     "Lower a few balls in with a slotted spoon. Do not crowd the pan, or the oil cools and the shells go greasy.",
@@ -29,6 +30,7 @@
       "fix": "Fry in small batches and let the oil heat up again between them."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/risotto-rices", "tier": "drafted"}
   ],

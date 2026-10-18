@@ -4,6 +4,7 @@
   "names": {"en": "Salt and drain", "fr": "Faire dégorger"},
   "aliases": {"en": ["degorge", "salt to draw out water", "purge with salt", "salt"], "fr": ["dégorger"]},
   "does": "Draws water out of a watery vegetable with salt before it is cooked or dressed, so that it keeps its bite and does not flood the dish.",
+  "intro": null,
   "how": [
     "Slice or dice the vegetable and toss it with fine salt.",
     "Leave it in a colander over a bowl until it has given up its water.",
@@ -23,6 +24,7 @@
       "fix": "Taste before you add any more salt."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/cucumber", "tier": "drafted"},
     {"thing": "ingredient/aubergine", "tier": "drafted"},

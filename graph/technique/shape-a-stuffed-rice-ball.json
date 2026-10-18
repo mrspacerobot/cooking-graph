@@ -4,6 +4,7 @@
   "names": {"en": "Shape and crumb stuffed rice balls"},
   "aliases": {"en": ["shape arancini", "shape suppli", "shape rice balls round a filling", "crumb stuffed rice balls"]},
   "does": "Presses cold, firm risotto round a small piece of filling into a ball, a cone or an oval, and coats it in flour, beaten egg and crumbs in turn, so that it fries with a crisp shell around a soft, savoury middle.",
+  "intro": null,
   "how": [
     "Cook the risotto a little firmer and thicker than for eating. Spread it out thin on a tray and let it cool right down, then chill it until it is stiff and holds together when pressed.",
     "Have the filling cold and in small pieces. Set out shallow dishes in a row: flour, beaten egg and crumbs.",
@@ -29,6 +30,7 @@
       "fix": "Use a small piece of filling and enough rice to wrap it with a firm wall all round."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/risotto-rices", "tier": "drafted"}
   ],

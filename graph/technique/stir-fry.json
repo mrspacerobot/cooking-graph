@@ -4,6 +4,7 @@
   "names": {"en": "Stir-fry", "fr": "Sauter au wok"},
   "aliases": {"en": ["stir-fry in a wok", "stir fry in a hot pan", "fry rice"], "fr": ["sauter à feu vif"]},
   "does": "Cooks small, even pieces very fast in a little hot oil in a wide pan, keeping them moving all the time with a spoon or a spatula, so that they take colour at the edges and stay crisp or just tender inside.",
+  "intro": null,
   "how": [
     "Cut everything small and even, and have it all at hand before the pan goes on, because the cooking is quick.",
     "Heat a wok or wide pan until very hot, then add a little oil and swirl it.",
@@ -27,6 +28,7 @@
     },
     {"mistake": "Leaving the food still for long, so that it scorches.", "fix": "Keep it moving."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/watery-vegetables", "tier": "drafted"},

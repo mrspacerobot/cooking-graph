@@ -4,6 +4,7 @@
   "names": {"en": "Grind sesame"},
   "aliases": {"en": ["grind sesame seeds", "grind toasted sesame", "suribachi grind"]},
   "does": "Toasts sesame seeds until they are fragrant, then grinds them in a ridged bowl to a rough, oily paste with some seeds left half whole, ready to coat vegetables or to thicken a dressing.",
+  "intro": null,
   "how": [
     "Toast the seeds in a dry pan, shaking them, until they smell nutty and begin to pop.",
     "Tip them into the ridged bowl while they are still warm.",
@@ -21,6 +22,7 @@
       "fix": "Stop while the seeds are still half whole."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/sesame-seed", "tier": "drafted"}
   ],

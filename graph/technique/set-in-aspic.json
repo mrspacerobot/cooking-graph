@@ -4,6 +4,7 @@
   "names": {"en": "Set in aspic", "fr": "Prendre en gelée"},
   "aliases": {"en": ["set in jelly", "aspic", "set in a savoury jelly"], "fr": ["mettre en gelée", "en gelée"]},
   "does": "Holds cooked food in a clear, savoury jelly, which sets as it cools and turns a loose mixture into a firm block that can be turned out and cut in slices.",
+  "intro": null,
   "how": [
     "Make the jelly from a clear, well-flavoured stock with enough gelatin to hold it. Soak the gelatin in cold water first, then melt it into the warm stock.",
     "Let the jelly cool until it is syrupy and just starting to thicken, before it meets the food.",
@@ -29,6 +30,7 @@
       "fix": "Leave it to chill until it is firm all the way through."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/cooked-meats", "tier": "drafted"},
     {"thing": "preparation/white-chicken-stock", "tier": "drafted"},

@@ -4,6 +4,7 @@
   "names": {"en": "Make dashi"},
   "aliases": {"en": ["make Japanese stock", "make kombu and bonito stock"]},
   "does": "Steeps dried kelp and dried bonito in hot water for a short time, to draw out a clear, savoury stock. Nothing is boiled long: a long boil turns the stock bitter and cloudy.",
+  "intro": null,
   "how": [
     "Wipe the kelp with a damp cloth and leave the white bloom on, as it carries taste. Put it in cold water and bring the water up slowly.",
     "Take the kelp out just before the water boils.",
@@ -23,6 +24,7 @@
     {"mistake": "Squeezing the bonito in the sieve, which clouds the stock.", "fix": "Let it drip by itself."},
     {"mistake": "Simmering the bonito, which makes the stock fishy.", "fix": "Steep it off the heat only."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/kombu", "tier": "drafted"},
     {"thing": "ingredient/bonito-flakes", "tier": "drafted"}

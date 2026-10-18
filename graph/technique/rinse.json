@@ -4,6 +4,7 @@
   "names": {"en": "Rinse", "fr": "Rincer"},
   "aliases": {"en": ["wash", "rinse under cold water", "wash and drain", "rinse in cold water"], "fr": ["laver"]},
   "does": "Washes food in cold water, to carry off grit, loose starch, or the salt and brine it was kept in.",
+  "intro": null,
   "how": [
     "Put the food in a colander, or in a large bowl of cold water.",
     "Run cold water over it, or move it about in the bowl with your hands.",
@@ -24,6 +25,7 @@
       "fix": "Taste as you go, and stop while they still have bite."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/pickles", "tier": "drafted"},
     {"thing": "group/pulses", "tier": "drafted"},

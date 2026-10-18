@@ -4,6 +4,7 @@
   "names": {"en": "Fold a paratha"},
   "aliases": {"en": ["triangle fold for paratha", "fold paratha layers"]},
   "does": "Brushes a rolled round of atta dough with ghee, dusts it with a little flour, and folds it over on itself into a half-moon and then a triangle, so that the dough is stacked in thin layers with ghee between them. The folded piece is then rolled out again, lightly.",
+  "intro": null,
   "how": [
     "Brush the whole rolled round with soft ghee and dust it with a little dry flour.",
     "Fold the round in half to a half-moon, brush the top with ghee again and dust it lightly.",
@@ -24,6 +25,7 @@
       "fix": "Brush every fold with ghee, right to the edges."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/chapati-dough", "tier": "drafted"}
   ],

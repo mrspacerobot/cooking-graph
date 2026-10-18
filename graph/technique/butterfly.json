@@ -4,6 +4,7 @@
   "names": {"en": "Butterfly", "fr": "Ouvrir en papillon"},
   "aliases": {"en": ["butterfly a fish", "open a fish flat"]},
   "does": "Cuts a small fish open along the belly, takes out the backbone and opens the flesh flat like a book, so that it cooks fast and evenly and takes a marinade, a paste or a stuffing on its whole inner face.",
+  "intro": null,
   "how": [
     "Scale and gut the fish, rinse the belly and pat it dry.",
     "Open the belly from the gut cut to the tail with a small sharp knife and lay the fish open, skin side up, on the board.",
@@ -28,6 +29,7 @@
       "fix": "Lift it slowly from the head end, and cut it free at the tail."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/sardine", "tier": "drafted"},
     {"thing": "ingredient/mackerel", "tier": "drafted"},

@@ -4,6 +4,7 @@
   "names": {"en": "Keep warm"},
   "aliases": {},
   "does": "Holds finished food at a gentle heat, below a simmer, so that it stays hot and goes on taking up flavour until it is served.",
+  "intro": null,
   "how": [
     "Take the pot off the strong heat and turn the flame as low as it goes, or move the food to a warm place.",
     "Keep the food covered so that it does not dry or skin over.",
@@ -21,6 +22,7 @@
     },
     {"mistake": "Leaving it uncovered, so that a skin forms or it dries.", "fix": "Cover it."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/stocks", "tier": "drafted"},
     {"thing": "group/sauces", "tier": "drafted"},

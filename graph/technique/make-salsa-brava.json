@@ -4,6 +4,7 @@
   "names": {"en": "Make salsa brava"},
   "aliases": {"en": ["make brava sauce", "make bravas sauce"]},
   "does": "Toasts a little flour in olive oil, takes the pan off the heat to stir in sweet and hot paprika, then whisks in water and tomato paste and simmers it to a thin, glossy, brick-red sauce with a sharp bite, to spoon over fried potatoes.",
+  "intro": null,
   "how": [
     "Warm the olive oil in a small pan over a low heat. Stir in the flour and cook it, stirring, until it smells nutty and has only just darkened.",
     "Take the pan off the heat and stir in the sweet paprika and the hot paprika. Paprika scorches in hot oil and turns the sauce bitter.",
@@ -33,6 +34,7 @@
       "fix": "Loosen it with a little water until it flows off the spoon."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"},
     {"thing": "ingredient/paprika", "tier": "drafted"}

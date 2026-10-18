@@ -4,6 +4,7 @@
   "names": {"en": "Make spice paste"},
   "aliases": {"en": ["make a masala paste", "make masala paste"]},
   "does": "Works ground spices, with fresh garlic, ginger or chilli, salt and a little liquid, into a thick paste by pounding or blending. The paste clings to fish, meat or vegetables, and seasons them all over.",
+  "intro": null,
   "how": [
     "Pound or blend the garlic, ginger and fresh chilli with the salt to a rough mash. The salt helps break them down.",
     "Add the ground spices.",
@@ -25,6 +26,7 @@
       "fix": "Cook it gently, with a splash of liquid, or use it as a coating."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/ground-spices", "tier": "drafted"},
     {"thing": "ingredient/garlic", "tier": "drafted"},

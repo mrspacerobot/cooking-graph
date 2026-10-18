@@ -4,6 +4,7 @@
   "names": {"en": "Make a mascarpone cream"},
   "aliases": {"en": ["mascarpone cream", "make tiramisu cream"]},
   "does": "Loosens soft mascarpone with a cooled, sweet egg-yolk foam into a smooth, thick cream that holds its shape in a spoon. It is the cream of tiramisu and of other cold layered desserts.",
+  "intro": null,
   "how": [
     "Cool the egg-yolk foam completely. A warm foam melts the cheese into a loose soup.",
     "Put the mascarpone into a wide bowl and stir it with a spatula only until it is smooth. Never beat it hard.",
@@ -21,6 +22,7 @@
     },
     {"mistake": "Mixing in a foam that is still warm, which thins the cheese.", "fix": "Let the foam cool first."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/mascarpone", "tier": "drafted"}
   ],

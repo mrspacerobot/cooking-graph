@@ -4,6 +4,7 @@
   "names": {"en": "Fold briouats"},
   "aliases": {},
   "does": "Cuts sheets of warqa into long strips, puts a spoonful of filling at one end of each strip and folds the end over it again and again, corner to corner, into a small neat triangle, with the loose end sealed down with a dab of fat.",
+  "intro": null,
   "how": [
     "Keep the warqa under a damp cloth. Cut a sheet into strips as wide as a hand, and brush each strip lightly with melted butter.",
     "Put a small spoonful of filling at one end, a little in from the corner.",
@@ -22,6 +23,7 @@
       "fix": "Cut only a few at a time and keep the rest under a damp cloth."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/warqa", "tier": "drafted"}
   ],

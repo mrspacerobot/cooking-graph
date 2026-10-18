@@ -4,6 +4,12 @@
   "names": {"en": "Julienne", "fr": "Tailler en julienne"},
   "aliases": {"en": ["cut into julienne", "cut into matchsticks"]},
   "does": "Cuts food into fine, even strips the length of a matchstick.",
+  "intro": {
+    "what": "Julienne cuts vegetables into fine, even strips.",
+    "why": "It teaches you to build a precise cut from flat sheets and keep the strips consistent.",
+    "idea": "Fine strips",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the vegetable into lengths as long as the strips you want.",
     "Slice each length into thin, flat sheets.",
@@ -17,6 +23,52 @@
     {
       "mistake": "Stacking too many sheets, so the pile slides and the strips come out as wedges.",
       "fix": "Stack only a few sheets at a time and keep the pile flat."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Which shape is the aim of julienne?",
+      "choices": ["Tiny cubes.", "Fine, even strips.", "Large, uneven wedges."],
+      "answer": 1,
+      "because": "Julienne means fine strips of an even length and width, rather than cubes or wedges.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do the flat sheets become strips?",
+      "choices": [
+        "Slice the stack across its width into short pieces.",
+        "Cut across them into cubes immediately.",
+        "Slice the stacked sheets lengthwise."
+      ],
+      "answer": 2,
+      "because": "Slicing lengthwise keeps the intended strip length. Match the width of each strip to the thickness of the sheets.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which pile most closely matches julienne?",
+      "choices": [
+        "Fine strips of a similar length that fall apart from each other.",
+        "A wet mash of tiny pieces.",
+        "Broad wedges with different thicknesses."
+      ],
+      "answer": 0,
+      "because": "Fine, even strips that separate from each other show a consistent julienne cut.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The stack slides and your strips become wedges. What would you change?",
+      "choices": [
+        "Stack more sheets to make it heavier.",
+        "Use fewer sheets and keep the pile flat.",
+        "Press the loose pile into a tall heap."
+      ],
+      "answer": 1,
+      "because": "A tall stack can slide and turn the cuts into wedges. Keep the stack small and flat.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

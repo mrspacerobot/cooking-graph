@@ -4,6 +4,7 @@
   "names": {"en": "Beat sfenj dough"},
   "aliases": {},
   "does": "Mixes flour, warm water, yeast and salt into a very wet, sticky dough and beats it by hand in a bowl, with a wet hand, lifting and slapping it, until it turns stretchy and full of air. It is far too soft to knead on a board.",
+  "intro": null,
   "how": [
     "Stir the yeast into part of the warm water with the sugar and let it foam.",
     "Put the flour and the salt in a large bowl and pour in the yeast water and the rest of the water.",
@@ -21,6 +22,7 @@
     },
     {"mistake": "Stopping too soon, which leaves a dough without air.", "fix": "Beat until it stretches and bubbles."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"}
   ],

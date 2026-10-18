@@ -4,6 +4,7 @@
   "names": {"en": "Peel", "fr": "Éplucher"},
   "aliases": {"en": ["skin", "shell"], "fr": ["décortiquer"]},
   "does": "Takes off the skin or the shell, and as little as possible of what lies under it.",
+  "intro": null,
   "how": [
     "Wash the vegetable first, so that dirt does not travel from the skin to the flesh.",
     "Draw a peeler along its length in long strokes, turning it as you go.",
@@ -20,6 +21,7 @@
       "fix": "Peel just before use, or hold the pieces under water with a little lemon juice."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/alliums", "tier": "drafted"},

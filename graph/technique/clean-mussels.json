@@ -7,6 +7,7 @@
     "fr": ["ébarber les moules", "gratter les moules"]
   },
   "does": "Scrubs the shells of mussels and pulls off the tuft of fibres at the hinge, which is called the beard, so that nothing gritty reaches the pot. Mussels are cleaned just before they are cooked.",
+  "intro": null,
   "how": [
     "Tip the mussels into a bowl of cold water and lift them out by the handful, leaving the grit in the bottom of the bowl.",
     "Tap any open shell on the side of the bowl. Leave out any that stays open.",
@@ -28,6 +29,7 @@
       "fix": "Pull towards the hinge end."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/mussel", "tier": "drafted"}
   ],

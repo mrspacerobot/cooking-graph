@@ -4,6 +4,7 @@
   "names": {"en": "Cook a paratha"},
   "aliases": {"en": ["cook paratha on a tava", "fry a paratha on the plate"]},
   "does": "Cooks a folded and lightly rolled round of atta dough on a hot iron plate, spooning a little ghee over one face and then the other, until each face is golden in spots and the layers inside have set apart, flaky and soft. The bread stays on the plate from start to end.",
+  "intro": null,
   "how": [
     "Heat the iron plate until a sprinkle of flour dropped on it browns slowly.",
     "Lay the bread on the plate and cook until the first face is dry in spots and the bread has turned pale and a little puffy.",
@@ -26,6 +27,7 @@
       "fix": "Press only gently at the edges, and crush it lightly after cooking."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/chapati-dough", "tier": "drafted"}
   ],

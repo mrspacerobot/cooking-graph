@@ -4,6 +4,7 @@
   "names": {"en": "Make agrodolce"},
   "aliases": {"en": ["agrodolce", "make an agrodolce"]},
   "does": "Melts sugar into hot vinegar and cooks it down to a glossy sweet-sour syrup, which is poured over fried vegetables, fish or meat, or cooked into them. It is a balance and not a caramel: the sugar is never taken to colour. Sicilian kitchens use it for caponata.",
+  "intro": null,
   "how": [
     "Warm the vinegar in a small pan over medium heat with the sugar, and stir until the sugar has dissolved.",
     "Let it bubble gently until it thickens a little and smells mellow and not sharp.",
@@ -24,6 +25,7 @@
       "fix": "Dissolve and cook them together first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/sugars", "tier": "drafted"},
     {"thing": "ingredient/vinegar", "tier": "drafted"}

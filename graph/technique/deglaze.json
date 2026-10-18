@@ -4,6 +4,12 @@
   "names": {"en": "Deglaze", "fr": "Déglacer"},
   "aliases": {"en": ["deglaze the pan", "deglaze the fond"]},
   "does": "Dissolves the browned layer stuck to a hot pan with a splash of liquid, turning it into the base of a sauce.",
+  "intro": {
+    "what": "Deglazing loosens the browned layer on a pan with liquid and a spoon.",
+    "why": "It shows how the brown traces left by cooking can become the base of a sauce.",
+    "idea": "Flavour from the pan",
+    "tier": "drafted"
+  },
   "how": [
     "Pour off the fat, and keep everything brown that sticks to the pan.",
     "Soften a little shallot or garlic in the pan first, if the sauce calls for it.",
@@ -23,6 +29,56 @@
     {
       "mistake": "Leaving all the fat in, so that the sauce is greasy and will not come together.",
       "fix": "Pour the fat off first. The flavour is in the brown bits, not in the fat."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does deglazing turn into a sauce base?",
+      "choices": [
+        "The brown layer stuck to the pan.",
+        "Only the fat floating in the pan.",
+        "Blackened residue from any burnt pan."
+      ],
+      "answer": 0,
+      "because": "Liquid dissolves the browned layer, or fond, and carries it into the sauce base.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What do you do with the excess fat before deglazing?",
+      "choices": [
+        "Leave all of it in.",
+        "Pour it off while keeping the browned bits.",
+        "Wipe out the browned bits and keep the fat."
+      ],
+      "answer": 1,
+      "because": "Excess fat can leave the sauce greasy. Pour it off while keeping the browned layer for flavour.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which change shows that the browned layer is loosening?",
+      "choices": [
+        "The pan stays coated and the liquid stays unchanged.",
+        "Clear fat collects around an untouched layer.",
+        "The pan comes clean under the spoon and the liquid darkens."
+      ],
+      "answer": 2,
+      "because": "As the browned layer dissolves, the pan comes clean under the spoon and the liquid takes on its colour.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The fond has burnt black and tastes bitter. What would you do?",
+      "choices": [
+        "Add more liquid to preserve all of it.",
+        "Wipe it out and build the sauce without it.",
+        "Scrape harder to include the black layer."
+      ],
+      "answer": 1,
+      "because": "Bitter, burnt fond would carry bitterness into the sauce. Wipe it out and build the sauce without it.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,7 @@
   "names": {"en": "Roast spices"},
   "aliases": {"en": ["dry-roast spices", "dry roast whole spices"]},
   "does": "Roasts whole spices in a dry, heavy pan over a low heat until they darken a shade and smell strong, then cools them, so that they can be ground into a blend or a powder that keeps its scent.",
+  "intro": null,
   "how": [
     "Set a heavy dry pan over a low heat and let it warm.",
     "Add the spices that take the longest first, such as coriander seed and cumin, and the softer ones a little later. Roast each at its own pace if they differ.",
@@ -29,6 +30,7 @@
       "fix": "Cool them completely first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/whole-spices", "tier": "drafted"}
   ],

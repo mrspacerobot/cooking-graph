@@ -4,6 +4,7 @@
   "names": {"en": "Deep-fry", "fr": "Frire"},
   "aliases": {"en": ["fry in deep oil", "deep-fat fry"]},
   "does": "Cooks food under hot oil, so that its surface dries to a crisp shell while the inside steams.",
+  "intro": null,
   "how": [
     "Dry the food well. Water makes hot oil spit and boil over.",
     "Fill a deep, heavy pan no more than a third full of oil and heat it.",
@@ -35,6 +36,7 @@
       "fix": "Take the pan off the heat at once and let it cool."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/lean-fish", "tier": "drafted"}

@@ -4,6 +4,7 @@
   "names": {"en": "Blanch", "fr": "Blanchir"},
   "aliases": {"en": ["parboil"]},
   "does": "Plunges food briefly into boiling water, to clean bones, loosen skins or set the colour of green vegetables.",
+  "intro": null,
   "how": [
     "For bones, cover them with cold water, bring it to a boil, then drain them and rinse off the scum.",
     "For vegetables, drop them into fast-boiling salted water.",
@@ -22,6 +23,7 @@
       "fix": "Take them out early. They are cooked again later."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/bones", "tier": "drafted"},
     {"thing": "group/green-vegetables", "tier": "drafted"},

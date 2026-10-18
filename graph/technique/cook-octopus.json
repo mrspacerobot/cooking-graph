@@ -4,6 +4,7 @@
   "names": {"en": "Cook octopus Galician style"},
   "aliases": {"en": ["pulpo a feira", "asustar el pulpo", "scare the octopus"]},
   "does": "Cooks a whole octopus in plenty of water, first dipping it in and out of the boil several times so that the arms curl and the skin stays on, then lets it bubble steadily until the thickest part of an arm is tender. It is rested, then snipped into rounds with scissors.",
+  "intro": null,
   "how": [
     "Bring a large pot of water to a rolling boil. Hold the octopus by the head with tongs and dip it in and out of the water, a few times, for a moment each time. The arms curl up.",
     "Lower it in completely. When the water comes back to a boil, turn the heat down to a steady bubbling.",
@@ -30,6 +31,7 @@
       "fix": "Snip them with scissors straight onto the dish."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/octopus", "tier": "drafted"}
   ],

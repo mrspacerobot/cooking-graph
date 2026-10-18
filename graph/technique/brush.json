@@ -4,6 +4,7 @@
   "names": {"en": "Brush", "fr": "Badigeonner"},
   "aliases": {"en": ["brush with oil", "brush with butter", "paint with oil"], "fr": ["dorer au pinceau"]},
   "does": "Paints a thin, even film of oil, melted butter or beaten egg onto a surface with a soft brush, so that it browns and shines in the heat, keeps from drying out, or does not stick.",
+  "intro": null,
   "how": [
     "Have the oil, butter or egg ready in a small bowl, and the food in front of you.",
     "Dip only the tip of the brush, and press the extra off against the rim of the bowl.",
@@ -25,6 +26,7 @@
       "fix": "Use a light touch and a soft brush."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/pastry", "tier": "drafted"},
     {"thing": "ingredient/pita-bread", "tier": "drafted"},

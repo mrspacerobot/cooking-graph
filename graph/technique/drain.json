@@ -4,6 +4,7 @@
   "names": {"en": "Drain", "fr": "Égoutter"},
   "aliases": {"en": ["drain well", "drain in a colander", "drain on a rack"], "fr": ["laisser égoutter"]},
   "does": "Lets water or oil run off food after it has been boiled, soaked, salted or fried, so that it is not watery or greasy when it meets the next step.",
+  "intro": null,
   "how": [
     "Tip boiled food into a colander set in the sink, and give it a good shake. Keep a ladleful of the cooking water if the dish will want it.",
     "Leave soaked or salted food in a colander for a while, and press out the rest of the water with the hands or a cloth.",
@@ -28,6 +29,7 @@
       "fix": "Shake it well, and press out what a cloth can take."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/pasta", "tier": "drafted"},
     {"thing": "group/pulses", "tier": "drafted"},

@@ -4,6 +4,7 @@
   "names": {"en": "Griddle", "fr": "Cuire sur une plaque"},
   "aliases": {"en": ["cook on a griddle", "griddle cook", "cook on a plancha"], "fr": ["cuire à la plancha"]},
   "does": "Cooks flat foods on a wide, flat, heavy surface that is dry or only lightly oiled, so that they brown in speckles and spots on each face and stay soft within, without being fried in a pool of fat.",
+  "intro": null,
   "how": [
     "Heat the griddle well in advance, until it is evenly hot all over and a drop of water skips off it.",
     "Wipe it with a thin film of oil, or leave it dry for a dough that holds its own fat.",
@@ -27,6 +28,7 @@
       "fix": "Stack it in a cloth to keep it soft."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"},
     {"thing": "group/breads", "tier": "drafted"}

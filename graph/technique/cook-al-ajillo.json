@@ -4,6 +4,7 @@
   "names": {"en": "Cook al ajillo"},
   "aliases": {"en": ["al ajillo", "sizzle in garlic oil", "cook in garlic oil", "cook in garlic and chilli oil"]},
   "does": "Cooks small pieces of shellfish or mushroom for a short time in a generous pool of olive oil scented with sliced garlic and a piece of hot pepper, in a shallow earthenware dish. The oil becomes the sauce, and the food reaches the table still sizzling in it.",
+  "intro": null,
   "how": [
     "Put the olive oil, the sliced garlic and the pieces of hot pepper in a cold earthenware dish and set it over a medium heat, so that the garlic warms along with the oil.",
     "Let the oil heat until the garlic starts to bubble gently and turns pale gold. Do not let it brown.",
@@ -30,6 +31,7 @@
     },
     {"mistake": "Adding wet shrimp, which spit and cool the oil.", "fix": "Pat them dry first."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/shrimp", "tier": "drafted"},
     {"thing": "ingredient/mushroom", "tier": "drafted"}

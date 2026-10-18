@@ -4,6 +4,7 @@
   "names": {"en": "Make rillettes", "fr": "Faire des rillettes"},
   "aliases": {"en": ["make potted pork"]},
   "does": "Cooks cut meat very slowly in its own fat and a little wine until it can be pulled apart with a fork, shreds it, mixes it back with some of the melted fat and packs it in a pot under a layer of fat, to be spread cold on bread.",
+  "intro": null,
   "how": [
     "Cut the meat and the fatty belly into pieces of about the same size, and season them generously.",
     "Put the meat in a heavy pot with a little white wine, garlic and herbs, cover it and cook at the gentlest heat in the oven until it falls apart and sits in a pool of clear fat.",
@@ -30,6 +31,7 @@
       "fix": "Taste the mixture and season it boldly while it is still warm."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/pork-shoulder", "tier": "drafted"},
     {"thing": "ingredient/pork-belly", "tier": "drafted"}

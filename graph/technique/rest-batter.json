@@ -4,6 +4,7 @@
   "names": {"en": "Rest batter"},
   "aliases": {"en": ["let the batter rest", "rest the batter"]},
   "does": "Leaves a mixed batter to stand, so that the flour takes up its liquid and the batter turns smooth and thickens a little. Cooked after resting, it spreads evenly and comes out tender.",
+  "intro": null,
   "how": [
     "Cover the bowl of batter.",
     "Leave it to stand in a cool place, or in the fridge if it will wait for long.",
@@ -24,6 +25,7 @@
       "fix": "Give it only one gentle stir."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/pancake-batter", "tier": "drafted"}
   ],

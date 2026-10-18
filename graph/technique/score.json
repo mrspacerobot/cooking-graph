@@ -4,6 +4,7 @@
   "names": {"en": "Score", "fr": "Quadriller"},
   "aliases": {"en": ["score the skin", "score the fat", "crosshatch", "score fat", "score skin"]},
   "does": "Cuts shallow lines through skin or fat, so that the fat can melt out and the skin crisps without curling.",
+  "intro": null,
   "how": [
     "Chill the piece so that the fat is firm.",
     "Draw a sharp knife across the fat in parallel lines a finger apart, cutting through the fat but not into the flesh.",
@@ -18,6 +19,7 @@
       "fix": "Use the tip of the knife with a light hand, and stop when the colour changes."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/duck-breast", "tier": "drafted"}
   ],

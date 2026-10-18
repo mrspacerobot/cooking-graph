@@ -4,6 +4,7 @@
   "names": {"en": "Chop", "fr": "Hacher"},
   "aliases": {"en": ["chop finely", "chop roughly", "hand-chop"]},
   "does": "Cuts food into small, uneven pieces, where the exact shape does not matter.",
+  "intro": null,
   "how": [
     "Gather the food into a low pile.",
     "Hold the tip of the knife on the board with your free hand.",
@@ -23,6 +24,7 @@
       "fix": "Cut it by hand with a sharp knife: slices, then strips, then small cubes."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/tender-herbs", "tier": "drafted"},
     {"thing": "group/pickles", "tier": "drafted"},

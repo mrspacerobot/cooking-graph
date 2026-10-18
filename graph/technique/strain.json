@@ -4,6 +4,12 @@
   "names": {"en": "Strain", "fr": "Passer"},
   "aliases": {"en": ["sieve", "pass through a sieve", "strain through a sieve"], "fr": ["passer au chinois"]},
   "does": "Pours a liquid through a sieve, so that the solids stay behind and the liquid comes out clear.",
+  "intro": {
+    "what": "Straining passes liquid through a sieve while leaving solids behind.",
+    "why": "It teaches you to choose between clarity and a thicker texture when deciding whether to press the solids.",
+    "idea": "Clarity or thickness",
+    "tier": "drafted"
+  },
   "how": [
     "Set a fine sieve over a pot or a bowl large enough for all the liquid.",
     "Ladle the liquid in, a little at a time at first.",
@@ -17,6 +23,56 @@
     {
       "mistake": "Tipping a full stockpot over the sieve in one go, which stirs up the sediment and clouds the stock.",
       "fix": "Ladle from the top and leave the last cloudy part in the pot."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does straining separate?",
+      "choices": [
+        "Fat from water without using a sieve.",
+        "Only foam lifted from the surface with a ladle.",
+        "Liquid that passes through a sieve from solids that stay behind."
+      ],
+      "answer": 2,
+      "because": "Liquid passes through the sieve while the solids stay behind.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When straining a clear stock, how should the solids drain?",
+      "choices": [
+        "Under their own weight, without pressing.",
+        "By being crushed hard through the mesh.",
+        "By stirring the sediment vigorously first."
+      ],
+      "answer": 0,
+      "because": "For a clear stock, let the liquid drain under its own weight. Pressing the solids is reserved here for a thicker soup or sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What can help you judge whether the strained stock is clear?",
+      "choices": [
+        "Suspended sediment hides the ladle.",
+        "The bottom of the ladle can be seen through the stock.",
+        "A thick mash coats the sieve."
+      ],
+      "answer": 1,
+      "because": "Seeing the bottom of the ladle through the stock is a useful cue to its clarity.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Pouring the whole stockpot at once has stirred up sediment. What would you change?",
+      "choices": [
+        "Pour more slowly but still include all the sediment.",
+        "Press every solid through the mesh.",
+        "Ladle from the top and leave the last cloudy part behind."
+      ],
+      "answer": 2,
+      "because": "Tipping in the sediment can cloud the stock. Ladle from the top and leave the last cloudy liquid behind.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

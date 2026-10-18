@@ -4,6 +4,7 @@
   "names": {"en": "Make a tomato sauce", "fr": "Faire une sauce tomate"},
   "aliases": {"en": ["make a quick tomato sauce", "make salsa di pomodoro"]},
   "does": "Cooks tomatoes in olive oil, with garlic or chilli, until they break down into a thick, bright sauce, with no cream or flour. A quick sauce is done in the time the pasta takes to boil, and a slow one grows deeper and sweeter.",
+  "intro": null,
   "how": [
     "Warm olive oil gently with whole garlic, or with chilli, until the oil smells of it. Do not let the garlic brown.",
     "Add the tomatoes, crushed or chopped, with a little salt, and bring to a bubble.",
@@ -31,6 +32,7 @@
       "fix": "Stir and lower the heat."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/tomato", "tier": "drafted"},
     {"thing": "ingredient/tinned-tomatoes", "tier": "drafted"}

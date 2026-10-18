@@ -4,6 +4,7 @@
   "names": {"en": "Cook sutlac"},
   "aliases": {"en": ["sutlac", "Turkish rice pudding"]},
   "does": "Simmers washed rice in water until it is soft, then in plenty of milk with sugar, stirring often, until the grains are very tender and the milk has thickened to a loose, creamy pudding that sets a little as it cools.",
+  "intro": null,
   "how": [
     "Wash the rice and simmer it in water until it is soft and has drunk most of the water.",
     "Pour in the milk and stir in the sugar. Bring it back to a gentle simmer.",
@@ -36,6 +37,7 @@
       "fix": "Soften the rice in water first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/milk", "tier": "drafted"}

@@ -4,6 +4,7 @@
   "names": {"en": "Fry sfenj"},
   "aliases": {"en": ["fry Moroccan doughnuts"]},
   "does": "Shapes lumps of very soft, risen dough into rings with a wet hand and drops them into hot oil, turning them once, until they puff up golden with a thin crisp crust and a light, chewy crumb. They are lifted out at once, drained and tossed in sugar.",
+  "intro": null,
   "how": [
     "Heat the oil until a scrap of dough dropped in sizzles and rises at once.",
     "Wet one hand and a plate. Pull off a lump of dough, flatten it, and poke a hole through the middle with a wet thumb.",
@@ -24,6 +25,7 @@
     {"mistake": "Putting in too many at once, which cools the oil.", "fix": "Fry a few at a time."},
     {"mistake": "Handling the dough with dry hands, which sticks and tears it.", "fix": "Wet the hand each time."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"}
   ],

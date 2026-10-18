@@ -7,6 +7,7 @@
     "fr": ["faire tremper", "dessaler"]
   },
   "does": "Leaves food in a liquid until it has taken the liquid up, softened, or given up its salt.",
+  "intro": null,
   "how": [
     "Cover the food with plenty of liquid, as it will swell.",
     "For dried pulses and dried fruit, use cold water and leave them until they are plump.",
@@ -24,6 +25,7 @@
     },
     {"mistake": "Leaving pulses or salt cod to soak in a warm kitchen.", "fix": "Soak them in the fridge."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/breads", "tier": "drafted"},
     {"thing": "group/pulses", "tier": "drafted"},

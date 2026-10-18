@@ -4,6 +4,7 @@
   "names": {"en": "Simmer rolled leaves"},
   "aliases": {"en": ["cook stuffed vine leaves", "simmer stuffed leaves", "simmer warak enab"]},
   "does": "Cooks filled, rolled leaves packed snugly seam down in a lined pot, weighed down with a plate, in a little oil, lemon juice and water. The leaves turn soft and tart and the rice inside swells and softens.",
+  "intro": null,
   "how": [
     "Line the base of a wide pot with slices of tomato or a few spare leaves, so that the rolls do not catch.",
     "Pack the rolls tightly, seam down, in circles, layer on layer, so that none can unroll.",
@@ -32,6 +33,7 @@
       "fix": "Keep the pot at a gentle simmer."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/vine-leaf", "tier": "drafted"}
   ],

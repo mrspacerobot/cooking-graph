@@ -4,6 +4,7 @@
   "names": {"en": "Coat in panko"},
   "aliases": {"en": ["crumb with panko", "coat in panko crumbs", "flour, egg and panko coat"]},
   "does": "Covers a cutlet in layers, first flour, then beaten egg and then coarse panko flakes, which fry into a light, shaggy, golden crust that stays crisp.",
+  "intro": null,
   "how": [
     "Season the meat and pat it dry.",
     "Set out trays in a row: flour, beaten egg and panko.",
@@ -30,6 +31,7 @@
       "fix": "Coat just before frying."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/pork-loin", "tier": "drafted"},
     {"thing": "ingredient/pork-tenderloin", "tier": "drafted"}

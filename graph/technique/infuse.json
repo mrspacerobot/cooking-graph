@@ -4,6 +4,7 @@
   "names": {"en": "Infuse", "fr": "Infuser"},
   "aliases": {"en": ["infuse the milk", "infuse in warm liquid", "steep in warm liquid"], "fr": ["faire infuser"]},
   "does": "Lets a flavouring steep in a warm liquid until the liquid has taken on its scent, colour and taste, and then lifts or strains the flavouring out. It is the reverse of soaking, where the food takes up the liquid.",
+  "intro": null,
   "how": [
     "Warm the liquid until it steams. Do not let it boil hard, which dulls a delicate scent and makes milk climb the pan.",
     "Add the flavouring, such as strips of peel, a stick of cinnamon, a split vanilla pod, threads of saffron or herbs, and take the pan off the heat.",
@@ -24,6 +25,7 @@
       "fix": "Taste it, and leave it longer if it is weak."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/creams", "tier": "drafted"},
     {"thing": "group/stocks", "tier": "drafted"},

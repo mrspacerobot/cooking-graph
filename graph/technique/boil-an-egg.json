@@ -4,6 +4,7 @@
   "names": {"en": "Boil an egg"},
   "aliases": {"en": ["soft-boil", "hard-boil", "boil eggs", "cook eggs in the shell"]},
   "does": "Cooks an egg in its shell in gently boiling water, to a runny, soft or firm yolk.",
+  "intro": null,
   "how": [
     "Bring a pan of water to a gentle boil.",
     "Lower the eggs in on a spoon, straight from the fridge.",
@@ -26,6 +27,7 @@
       "fix": "Lower them in on a spoon and keep the boil gentle."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],

@@ -4,6 +4,7 @@
   "names": {"en": "Fold a gozleme"},
   "aliases": {"en": ["gozleme", "fold a filled flatbread"]},
   "does": "Scatters a filling over one half of a thin round of dough, folds the other half over it and presses the edges shut, so that the filling is held in a flat parcel that cooks on a dry griddle.",
+  "intro": null,
   "how": [
     "Roll the dough out into a thin, even round and brush off the loose flour.",
     "Scatter a thin layer of filling over one half, leaving a clear rim at the edge.",
@@ -25,6 +26,7 @@
       "fix": "Brush the rim clean before pressing it shut."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"}
   ],

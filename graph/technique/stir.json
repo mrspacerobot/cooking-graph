@@ -7,6 +7,7 @@
     "fr": ["remuer sans cesse"]
   },
   "does": "Moves a spoon through food as it heats, scraping the base of the pan, so that it cooks evenly, does not catch and scorch, and stays smooth.",
+  "intro": null,
   "how": [
     "Use a spoon with a flat edge, or a wooden spoon, and a pan with a heavy base.",
     "Keep the heat gentle and reach the whole base and the corners with each pass.",
@@ -32,6 +33,7 @@
       "fix": "Turn the heat down."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/sauces", "tier": "drafted"},
     {"thing": "ingredient/rice", "tier": "drafted"},

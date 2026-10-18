@@ -4,6 +4,7 @@
   "names": {"en": "Make a béarnaise", "fr": "Faire une béarnaise"},
   "aliases": {"en": ["make bearnaise", "make béarnaise sauce"], "fr": ["faire une sauce béarnaise"]},
   "does": "Makes a warm sauce of egg yolk and butter, as a hollandaise is made, but sharpened with a strong reduction of vinegar, white wine, shallot and tarragon in place of lemon juice, and finished with chopped tarragon.",
+  "intro": null,
   "how": [
     "Put the vinegar, the wine, the chopped shallot and part of the tarragon in a small pan and boil them down until only a few spoonfuls of strong, sharp liquid are left.",
     "Strain the reduction and let it cool a little.",
@@ -37,6 +38,7 @@
       "fix": "Keep it in a warm bowl, away from direct heat."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg-yolk", "tier": "drafted"},
     {"thing": "ingredient/shallot", "tier": "drafted"},

@@ -4,6 +4,7 @@
   "names": {"en": "Sandwich"},
   "aliases": {"en": ["sandwich with a filling", "sandwich together"]},
   "does": "Places a filling between flat pieces of soft bread or pancake, so that it holds together and is eaten in one hand.",
+  "intro": null,
   "how": [
     "Lay out the bottom pieces in a row.",
     "Spoon or spread the filling on each, leaving a narrow edge clear.",
@@ -21,6 +22,7 @@
     },
     {"mistake": "Using pieces that are too hot, which melts the filling.", "fix": "Let them cool a little first."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/breads", "tier": "drafted"},
     {"thing": "preparation/crepe", "tier": "drafted"}

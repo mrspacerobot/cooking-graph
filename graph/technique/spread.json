@@ -4,6 +4,7 @@
   "names": {"en": "Spread", "fr": "Tartiner"},
   "aliases": {"en": ["spread on", "spread over"], "fr": ["étaler sur"]},
   "does": "Smooths a soft paste, mash or butter over a surface in an even layer with the back of a spoon or a knife, so that every bite carries some and the edges stay clear.",
+  "intro": null,
   "how": [
     "Have the paste soft enough to move. Loosen it with a little oil or water if it is stiff.",
     "Put a spoonful in the middle of the surface.",
@@ -24,6 +25,7 @@
       "fix": "Push it out in circles until the layer is even, to just short of the rim."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"},
     {"thing": "ingredient/pita-bread", "tier": "drafted"},

@@ -4,6 +4,7 @@
   "names": {"en": "Warm crêpes in orange sauce", "fr": "Réchauffer les crêpes au beurre d'orange"},
   "aliases": {"en": ["crepes suzette method", "flame crepes in orange sauce"], "fr": ["flamber les crêpes Suzette"]},
   "does": "Folds cooked crepes into a hot sauce of caramel, orange and butter, warms them in it and sets a spirit alight over them at the end. The crepes soak up the sauce, and the flame burns off the harshness of the spirit.",
+  "intro": null,
   "how": [
     "Make the sauce first in a wide pan: stir the orange juice, some zest and the butter into a pale caramel and simmer until it is syrupy.",
     "Fold each crepe in half and in half again, to make a fan.",
@@ -30,6 +31,7 @@
       "fix": "Warm them just long enough to coat them, and serve at once."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/crepe", "tier": "drafted"}
   ],

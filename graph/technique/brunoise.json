@@ -4,6 +4,12 @@
   "names": {"en": "Brunoise", "fr": "Tailler en brunoise"},
   "aliases": {"en": ["cut into brunoise", "dice finely"]},
   "does": "Cuts food into tiny, even cubes that melt into a sauce or sit as a neat garnish.",
+  "intro": {
+    "what": "Brunoise cuts vegetables into tiny, even cubes.",
+    "why": "It teaches precise cuts for vegetables that blend into a sauce or make a fine garnish.",
+    "idea": "Even cuts",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the vegetable into thin slabs, then into julienne strips.",
     "Gather the strips into a tight bundle.",
@@ -22,6 +28,52 @@
     {
       "mistake": "A blunt knife crushes instead of cutting, so the shallot weeps and turns bitter.",
       "fix": "Sharpen the knife. A clean cut stays dry."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Which result is the aim of brunoise?",
+      "choices": ["Long, broad ribbons.", "Rough chunks of different sizes.", "Tiny, even cubes."],
+      "answer": 2,
+      "because": "Tiny, even cubes can blend into a sauce or make a fine garnish.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "After cutting thin slabs, what comes before the final crosscuts?",
+      "choices": [
+        "Cutting the slabs into fine strips.",
+        "Chopping the whole pile repeatedly.",
+        "Make crosscuts directly through the slabs before cutting strips."
+      ],
+      "answer": 0,
+      "because": "The width of the strips sets the width of the cubes. Cut across those strips to finish the shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which pile most closely matches the intended cut?",
+      "choices": [
+        "A wet mash of crushed pieces.",
+        "Small, even cubes resembling coarse grains.",
+        "Strips mixed with broad wedges."
+      ],
+      "answer": 1,
+      "because": "Brunoise should look like tiny, even cubes, almost like coarse grains.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Your cubes are too large. What change would improve the next batch?",
+      "choices": [
+        "Rock the knife repeatedly over the finished pile.",
+        "Make narrower crosscuts but leave the thick strips unchanged.",
+        "Cut thinner strips before making the crosscuts."
+      ],
+      "answer": 2,
+      "because": "Thinner strips make smaller cubes. Repeatedly chopping the finished pile can bruise it into a wet mash.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

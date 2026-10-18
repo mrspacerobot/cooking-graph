@@ -4,6 +4,7 @@
   "names": {"en": "Garnish"},
   "aliases": {"en": ["garnish with herbs", "finish with a garnish"]},
   "does": "Adds a small, fresh or crisp finishing touch just before serving, such as a herb, a seed, a flake or a shaving, for scent, colour or crunch.",
+  "intro": null,
   "how": [
     "Keep the garnish ready at the side, cut or measured.",
     "Add it as the last step, when the food is hot or just plated.",
@@ -18,6 +19,7 @@
     {"mistake": "Adding the garnish too early, so that it wilts or sinks.", "fix": "Add it at the last moment."},
     {"mistake": "Using too much, so that it hides the food.", "fix": "Use only a small amount."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/starches", "tier": "drafted"},

@@ -4,6 +4,7 @@
   "names": {"en": "Beat tahini sauce"},
   "aliases": {"en": ["make tahini sauce", "loosen tahini", "make taratour"]},
   "does": "Beats tahini with lemon juice and cold water into a pale, smooth, pourable sauce. The paste stiffens and looks curdled when the first liquid goes in, then turns silky and loose as more water is beaten in.",
+  "intro": null,
   "how": [
     "Stir the tahini well first, as its oil rises to the top. If garlic is used, crush it with salt and stir it into the lemon juice.",
     "Put the tahini in a bowl and stir in the lemon juice. The paste will seize and thicken, as it should.",
@@ -33,6 +34,7 @@
       "fix": "Stir the jar well before measuring."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/tahini", "tier": "drafted"}
   ],

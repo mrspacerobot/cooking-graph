@@ -4,6 +4,7 @@
   "names": {"en": "Cook rice with its flavourings"},
   "aliases": {"en": ["takikomi", "cook takikomi rice", "cook seasoned mixed rice"]},
   "does": "Cooks washed, soaked rice together with a seasoned stock and small pieces of vegetables, mushrooms or tofu, so that the taste cooks into every grain.",
+  "intro": null,
   "how": [
     "Put the washed, soaked, drained rice in the pot or the rice cooker and level it.",
     "Pour in the seasoned stock, in place of plain water, up to the usual level. Stir once, then leave it still.",
@@ -25,6 +26,7 @@
       "fix": "Use the same amount of liquid as for plain rice, counting the seasonings as part of it."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}

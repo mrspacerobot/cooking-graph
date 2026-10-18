@@ -4,6 +4,7 @@
   "names": {"en": "Make naan dough"},
   "aliases": {"en": ["mix naan dough", "make the naan dough"]},
   "does": "Works flour, yeast, yogurt, milk and a little oil into a soft, slightly sticky dough, then leaves it covered to rise until it is puffy and light. The yogurt and the yeast together make a dough that stays soft and chewy once it is cooked on a hot plate.",
+  "intro": null,
   "how": [
     "Stir the yeast and the sugar into the warm milk and leave them until the top turns foamy.",
     "Mix the flour and the salt in a large bowl, make a well, and pour in the yeast milk, the yogurt and the oil.",
@@ -29,6 +30,7 @@
       "fix": "Cover the bowl with a damp cloth or a plate."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"},
     {"thing": "preparation/naan-dough", "tier": "drafted"}

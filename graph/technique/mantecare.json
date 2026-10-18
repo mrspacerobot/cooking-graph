@@ -4,6 +4,7 @@
   "names": {"en": "Beat in butter and cheese"},
   "aliases": {"en": ["mantecatura", "mantecare", "finish a risotto", "finish with butter and cheese"]},
   "does": "Takes the pan off the heat and beats cold butter and grated hard cheese hard into the rice, so that fat and starch blend into a creamy, glossy, flowing finish. The Italian name is mantecatura.",
+  "intro": null,
   "how": [
     "When the rice is a few moments from ready, take the pan off the heat. The risotto should still be loose, because it tightens as it rests.",
     "Add cold butter in cubes and a generous handful of finely grated cheese.",
@@ -31,6 +32,7 @@
       "fix": "Keep the pan loose and wet before the finish."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/risotto-rices", "tier": "drafted"}
   ],

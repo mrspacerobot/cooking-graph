@@ -4,6 +4,7 @@
   "names": {"en": "Gut a fish", "fr": "Vider le poisson"},
   "aliases": {"en": ["gut", "gut the fish", "draw a fish"], "fr": ["vider"]},
   "does": "Opens the belly of a whole fish and takes out the guts and the gills, then rinses the cavity, so that the fish can be cooked whole or filleted without a bitter taste.",
+  "intro": null,
   "how": [
     "Lay the fish on a board with the belly towards you.",
     "Slide the tip of the knife in at the vent near the tail and slit the belly up to the gills, shallow, with the blade pointing up so that the guts are not pierced.",
@@ -25,6 +26,7 @@
       "fix": "Cut them out at both ends and rinse the cavity."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/round-fish", "tier": "drafted"}
   ],

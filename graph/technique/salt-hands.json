@@ -4,6 +4,7 @@
   "names": {"en": "Salt hands"},
   "aliases": {"en": ["wet and salt your hands", "salt the hands"]},
   "does": "Wets the hands and rubs salt over the palms before shaping warm rice, so that the rice does not stick and is lightly seasoned from the outside.",
+  "intro": null,
   "how": [
     "Keep a bowl of cold water and a small dish of salt beside the board.",
     "Dip your fingers in the water and shake off the excess.",
@@ -18,6 +19,7 @@
     {"mistake": "Using too much salt, so that the rice is too salty.", "fix": "Rub on only a light dusting."},
     {"mistake": "Using hot water, which burns the hands and makes the rice stick.", "fix": "Use cold water."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/salt", "tier": "drafted"}
   ],

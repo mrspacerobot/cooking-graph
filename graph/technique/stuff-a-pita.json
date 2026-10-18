@@ -4,6 +4,7 @@
   "names": {"en": "Stuff a pita", "fr": "Garnir un pain pita"},
   "aliases": {"en": ["fill a pita", "stuff pita bread", "fill the pita"], "fr": ["farcir un pain pita"]},
   "does": "Opens a round of pita and spreads a thin layer of raw, spiced meat mixture inside, then presses the bread shut, so that the filling cooks and the bread crisps and soaks up its juices on the heat.",
+  "intro": null,
   "how": [
     "Cut round the edge of the pita with a knife, or split it along one side, and open it into layers.",
     "Spread the filling thinly and evenly over the inner face of one layer, right to the edge.",
@@ -24,6 +25,7 @@
       "fix": "Warm the bread first, so that it bends."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/pita-bread", "tier": "drafted"}
   ],

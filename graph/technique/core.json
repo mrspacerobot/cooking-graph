@@ -4,6 +4,7 @@
   "names": {"en": "Core", "fr": "Évider"},
   "aliases": {"en": ["remove the core", "hollow out", "core out"]},
   "does": "Takes out the hard centre, the seeds or the pith of a fruit or vegetable, or hollows it out, so that the flesh is left as an even wall that cooks evenly or holds a filling.",
+  "intro": null,
   "how": [
     "Cut off the top, or push the corer in from the stem end, keeping the wall of the flesh even.",
     "Twist the corer, or run the tip of a small knife round the inside, and lift out the core and seeds.",
@@ -28,6 +29,7 @@
       "fix": "Leave a wall of about the width of a finger."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/firm-fruits", "tier": "drafted"},
     {"thing": "group/leafy-heads", "tier": "drafted"},

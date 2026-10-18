@@ -7,6 +7,7 @@
     "fr": ["enrober de chapelure"]
   },
   "does": "Covers a piece of meat in a layer of breadcrumbs over a sticky coat of mustard or beaten egg, which turns into a crisp crust when the piece is cooked.",
+  "intro": null,
   "how": [
     "Pat the pieces dry and season them.",
     "Brush a thin, even layer of mustard or beaten egg over every side, so that the crumbs have something to hold to.",
@@ -24,6 +25,7 @@
     },
     {"mistake": "Coating wet meat, so that the crumbs go soggy and fall off.", "fix": "Pat the meat dry first."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/pork-shoulder", "tier": "drafted"},
     {"thing": "ingredient/veal-escalope", "tier": "drafted"},

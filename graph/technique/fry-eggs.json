@@ -4,6 +4,7 @@
   "names": {"en": "Fry eggs"},
   "aliases": {"en": ["fry an egg", "huevos fritos"]},
   "does": "Cooks eggs in a generous depth of hot olive oil, so that the whites puff, bubble and turn lacy and crisp at the edges while the yolks stay soft.",
+  "intro": null,
   "how": [
     "Heat a good depth of olive oil in a small, deep frying pan until a breadcrumb dropped in sizzles at once.",
     "Break each egg into a small bowl first, so that a broken yolk or a shell is found before the pan.",
@@ -32,6 +33,7 @@
       "fix": "Break the egg into a small bowl first and slide it in low."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],

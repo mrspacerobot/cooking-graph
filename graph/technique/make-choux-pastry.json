@@ -4,6 +4,7 @@
   "names": {"en": "Make choux pastry", "fr": "Faire une pâte à choux"},
   "aliases": {"en": ["choux pastry", "choux paste", "make choux paste"], "fr": ["pâte à choux"]},
   "does": "Cooks flour into boiling water and butter to a thick, smooth paste, then beats in eggs until it turns glossy and soft enough to spoon or pipe. Baked, the paste puffs into hollow shells. Poached, it makes light dumplings.",
+  "intro": null,
   "how": [
     "Bring the water, the butter and a little salt to a boil, so that the butter has melted by the time the water bubbles.",
     "Take the pan off the heat, tip in all the flour at once and beat hard with a wooden spoon.",
@@ -33,6 +34,7 @@
       "fix": "Add it a little at a time and stop when the paste falls from the spoon in a thick ribbon."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"}
   ],

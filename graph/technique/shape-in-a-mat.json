@@ -4,6 +4,7 @@
   "names": {"en": "Shape in a mat"},
   "aliases": {"en": ["shape in mat", "shape with a bamboo mat", "press in a rolling mat"]},
   "does": "Rolls a warm, soft food up in a bamboo mat and presses it, so that it sets into a firm, even block with square edges.",
+  "intro": null,
   "how": [
     "Lay the mat on the board with the bamboo sticks running side to side.",
     "Place the warm food at the near edge and roll the mat over it tightly.",
@@ -24,6 +25,7 @@
       "fix": "Squeeze the whole length of the mat with both hands."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],

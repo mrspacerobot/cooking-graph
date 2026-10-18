@@ -4,6 +4,7 @@
   "names": {"en": "Make avgolemono"},
   "aliases": {"en": ["egg-lemon liaison", "thicken with egg and lemon"]},
   "does": "Beats eggs with lemon juice until frothy, warms them with ladles of hot broth, and stirs them back into the pot off the boil, where they turn the broth into a pale, creamy, sharp sauce.",
+  "intro": null,
   "how": [
     "Take the pot off the heat and let the liquid stop bubbling, because a boiling pot sets the eggs into threads.",
     "Beat the eggs in a bowl until pale and frothy, then beat in the lemon juice a little at a time.",
@@ -30,6 +31,7 @@
       "fix": "Beat the lemon juice into the eggs first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/broth", "tier": "drafted"},
     {"thing": "preparation/braising-liquid", "tier": "drafted"},

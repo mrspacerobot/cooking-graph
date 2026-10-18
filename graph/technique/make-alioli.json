@@ -4,6 +4,7 @@
   "names": {"en": "Make alioli"},
   "aliases": {"en": ["make allioli", "pound alioli"]},
   "does": "Works garlic with salt in a mortar to a smooth paste, then works in olive oil drop by drop with the pestle, always in one direction, until the paste turns into a thick, pale, glossy sauce. No egg is used: the garlic holds the oil.",
+  "intro": null,
   "how": [
     "Peel the garlic and take out any green shoot, which is bitter. Pound it with a little salt in the mortar until it is a smooth paste with no lumps.",
     "Start turning the pestle in one direction only, and add the oil a drop at a time. Wait until each drop has been taken up before adding more.",
@@ -29,6 +30,7 @@
       "fix": "Cut each clove open and take the shoot out."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/garlic", "tier": "drafted"},
     {"thing": "ingredient/olive-oil", "tier": "drafted"}

@@ -4,6 +4,7 @@
   "names": {"en": "Laminate", "fr": "Feuilleter"},
   "aliases": {"en": ["laminate a dough", "layer a dough with fat"]},
   "does": "Builds a dough into many thin layers with fat between them, by rolling or stretching it out, spreading it with fat, folding it over and repeating, so that in the heat each layer cooks apart from the next and the finished bread or pastry comes away in flaky sheets.",
+  "intro": null,
   "how": [
     "Start from a smooth dough that has rested and is soft enough to stretch thin.",
     "Roll or stretch it out as thin as it will go without tearing.",
@@ -26,6 +27,7 @@
       "fix": "Roll with an even, light pressure and rest the dough when it fights back."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "preparation/msemen-dough", "tier": "drafted"},
     {"thing": "preparation/puff-pastry", "tier": "drafted"}

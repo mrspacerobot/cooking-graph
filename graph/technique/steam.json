@@ -4,6 +4,7 @@
   "names": {"en": "Steam", "fr": "Cuire à la vapeur"},
   "aliases": {"en": ["steam open", "cook in steam", "steam open shellfish"], "fr": ["faire ouvrir"]},
   "does": "Cooks food in the steam of a little boiling liquid under a tight lid, so that nothing of it is washed away.",
+  "intro": null,
   "how": [
     "Bring a shallow layer of water or wine to a boil in a wide pot.",
     "Set the food in a basket above the liquid, or straight into the pot for shellfish, and cover it at once with a tight lid.",
@@ -25,6 +26,7 @@
       "fix": "Take the pot off the heat the moment most of the shells are open."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/green-vegetables", "tier": "drafted"},
     {"thing": "group/root-vegetables", "tier": "drafted"},

@@ -4,6 +4,7 @@
   "names": {"en": "Make begendi"},
   "aliases": {"en": ["smoky aubergine cream", "aubergine cream"]},
   "does": "Beats the soft flesh of charred aubergine into a cooked white sauce of flour, butter and milk with melted cheese, to a thick, pale, smoky cream that is spooned out under braised meat.",
+  "intro": null,
   "how": [
     "Pull the charred flesh off the skin, drain off the bitter juice and mash the flesh with a fork to a pulp.",
     "Cook the flour in the butter to a roux, without letting it colour.",
@@ -31,6 +32,7 @@
       "fix": "Keep the heat low and stir."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/aubergine", "tier": "drafted"},
     {"thing": "preparation/roux", "tier": "drafted"},

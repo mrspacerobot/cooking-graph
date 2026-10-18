@@ -4,6 +4,7 @@
   "names": {"en": "Mash with a fork"},
   "aliases": {"en": ["fork-mash"]},
   "does": "Breaks soft, cooked flesh into a rough, stringy mash with a fork, so that some texture is left and the smoky taste of the food is not lost to a machine.",
+  "intro": null,
   "how": [
     "Make sure the flesh is completely soft, and let any bitter juice drain off.",
     "Put the flesh in a bowl and press and drag a fork through it until it falls into strands and small soft lumps.",
@@ -24,6 +25,7 @@
       "fix": "Keep it on the heat until it has collapsed completely."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/aubergine", "tier": "drafted"}
   ],

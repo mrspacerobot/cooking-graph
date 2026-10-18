@@ -4,6 +4,7 @@
   "names": {"en": "Make a Vizcaina sauce"},
   "aliases": {"en": ["make salsa vizcaina", "make Biscay sauce", "make a Biscayne sauce"]},
   "does": "Cooks a large quantity of onion very slowly in olive oil until it is sweet and soft, joins it with the pulp of dried choricero peppers that have been soaked until soft, simmers them together and rubs the sauce through a sieve into a thick, smooth, sweet, brick-red sauce for salt cod.",
+  "intro": null,
   "how": [
     "Cover the dried peppers with hot water and leave them until they are soft and wrinkled. Split them, scrape the pulp from the skins and keep the soaking water.",
     "Cook plenty of sliced onion with the garlic in olive oil, with the lid ajar, over a very low heat until it is soft, sweet and pale. Do not let it brown.",
@@ -30,6 +31,7 @@
     },
     {"mistake": "Salting early, before the sauce has reduced, which leaves it too salty.", "fix": "Season at the end."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"},
     {"thing": "ingredient/choricero-pepper", "tier": "drafted"}

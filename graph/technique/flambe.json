@@ -4,6 +4,7 @@
   "names": {"en": "Flambé", "fr": "Flamber"},
   "aliases": {"en": ["flame", "set alight", "flame with brandy"]},
   "does": "Sets light to a spirit poured over hot food. The flame burns away its harshness and leaves its flavour. Some of the alcohol stays in the dish.",
+  "intro": null,
   "how": [
     "Take the pan off the heat and clear the space above it.",
     "Pour in the spirit from a ladle or a small glass, never from the bottle.",
@@ -28,6 +29,7 @@
       "fix": "Clear the space above the pan before you light it."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/steaks-and-chops", "tier": "drafted"},

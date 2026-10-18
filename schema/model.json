@@ -176,6 +176,16 @@
         "names": {"is": "names"},
         "aliases": {"is": "aliases"},
         "does": {"is": "text"},
+        "intro": {
+          "is": "object",
+          "or_null": true,
+          "fields": {
+            "what": {"is": "text"},
+            "why": {"is": "text"},
+            "idea": {"is": "label", "or_null": true},
+            "tier": {"is": "word", "from": "tiers"}
+          }
+        },
         "how": {"is": "list", "at_least": 2, "of": {"is": "text"}},
         "cues": {
           "is": "list",
@@ -196,6 +206,20 @@
             "fields": {
               "mistake": {"is": "text"},
               "fix": {"is": "text"}
+            }
+          }
+        },
+        "quiz": {
+          "is": "list",
+          "of": {
+            "is": "object",
+            "fields": {
+              "id": {"is": "slug"},
+              "question": {"is": "text"},
+              "choices": {"is": "list", "at_least": 2, "of": {"is": "text"}},
+              "answer": {"is": "integer", "at_least": 0},
+              "because": {"is": "text"},
+              "tier": {"is": "word", "from": "tiers"}
             }
           }
         },

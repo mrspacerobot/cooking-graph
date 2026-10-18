@@ -4,6 +4,7 @@
   "names": {"en": "Marinate in soy sauce"},
   "aliases": {"en": ["steep in soy and sake"]},
   "does": "Steeps pieces of poultry for a short while in soy sauce and sake with ginger and garlic, so that the flavour sinks in and the surface is seasoned. The salty liquid is let drip off before frying and is not kept for the pot.",
+  "intro": null,
   "how": [
     "Cut the meat into even, bite-sized pieces, so that each takes up the same amount of flavour.",
     "In a bowl, mix the soy sauce and the sake with finely grated ginger and garlic.",
@@ -28,6 +29,7 @@
       "fix": "Let the extra liquid drip off first."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"}
   ],

@@ -4,6 +4,7 @@
   "names": {"en": "Turn", "fr": "Tourner"},
   "aliases": {"en": ["turn vegetables", "turn potatoes", "cut into barrels"]},
   "does": "Pares a vegetable into a neat barrel with curved sides, so that every piece cooks in the same time and rolls in the pan.",
+  "intro": null,
   "how": [
     "Cut the vegetable into pieces of one length, and split large ones into halves or quarters.",
     "Hold a piece between thumb and finger and draw a small knife from end to end in one curved stroke.",
@@ -23,6 +24,7 @@
       "fix": "Cut all the pieces to one length before you start."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"}
   ],

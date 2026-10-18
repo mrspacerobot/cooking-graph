@@ -4,6 +4,7 @@
   "names": {"en": "Pour over", "fr": "Verser sur"},
   "aliases": {"en": ["pour on", "pour the sauce over", "pour the cream over"]},
   "does": "Pours a liquid or a loose sauce onto food laid in a dish, slowly and from the side, so that it settles into the gaps without washing off the top.",
+  "intro": null,
   "how": [
     "Lay the food out in the dish first, in the way it is to be served.",
     "Pour from low down near the rim, in a thin steady stream, and not straight onto the middle.",
@@ -20,6 +21,7 @@
     },
     {"mistake": "Filling the dish to the brim, so that it spills in the oven.", "fix": "Leave a gap below the rim."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/creams", "tier": "drafted"},
     {"thing": "group/sauces", "tier": "drafted"},

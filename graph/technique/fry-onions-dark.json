@@ -4,6 +4,7 @@
   "names": {"en": "Fry onions until dark"},
   "aliases": {"en": ["fry onions until crisp", "fry onions dark"]},
   "does": "Fries thinly sliced onions in a generous layer of hot oil until they turn deep brown and crisp at the edges, then lifts them out to drain. They bring a bittersweet crunch to rice and lentils, and the oil they leave behind is full of their flavour.",
+  "intro": null,
   "how": [
     "Slice the onions thin and evenly, so that they brown at one pace.",
     "Heat a good depth of oil in a wide, heavy pan until a slice sizzles the moment it goes in.",
@@ -33,6 +34,7 @@
       "fix": "Wait until a slice sizzles at once."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"}
   ],

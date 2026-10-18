@@ -4,6 +4,7 @@
   "names": {"en": "Mince"},
   "aliases": {"en": ["mince finely", "chop to a paste"]},
   "does": "Cuts food so fine that it melts into a dish and leaves no piece to bite on.",
+  "intro": null,
   "how": [
     "Slice the food thinly, then cut across the slices.",
     "Rock the knife over the pile, scraping it together now and then, until no piece stands out.",
@@ -19,6 +20,7 @@
       "fix": "Mince it last, just before it goes into the pan."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/alliums", "tier": "drafted"},
     {"thing": "group/tender-herbs", "tier": "drafted"},

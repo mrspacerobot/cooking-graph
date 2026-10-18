@@ -4,6 +4,7 @@
   "names": {"en": "Bake a tarte Tatin", "fr": "Faire une tarte Tatin"},
   "aliases": {"en": ["make a tatin", "bake a tatin"], "fr": ["cuire une tarte Tatin"]},
   "does": "Cooks apples in butter and caramel in a heavy ovenproof pan, covers them with a sheet of pastry and bakes the tart upside down. It is turned out onto a plate, so that the pastry becomes the base and the glossy caramelised apples are on top.",
+  "intro": null,
   "how": [
     "Cook the sugar in the pan to a deep amber caramel, take the pan off the heat and stir in the butter.",
     "Pack the halved apples tightly into the caramel, rounded side down, in a ring and then a centre. They shrink as they cook, so they must be crowded.",
@@ -33,6 +34,7 @@
       "fix": "Rest it briefly so that the caramel thickens, and turn it out over a plate with a deep rim."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/apple", "tier": "drafted"},
     {"thing": "preparation/puff-pastry", "tier": "drafted"}

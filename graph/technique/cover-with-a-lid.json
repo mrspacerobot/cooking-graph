@@ -4,6 +4,7 @@
   "names": {"en": "Cover with a lid"},
   "aliases": {"en": ["cover with lid", "put a lid on"]},
   "does": "Puts a lid over a pot or a dish, so that steam and heat stay in and the food cooks gently in its own moisture.",
+  "intro": null,
   "how": [
     "Choose a lid that fits the pot or the dish well.",
     "Put it on once the food is heated and the liquid is in.",
@@ -24,6 +25,7 @@
       "fix": "Use a lid that sits snugly, or cover the dish tightly with foil."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/starches", "tier": "drafted"},

@@ -7,6 +7,7 @@
     "fr": ["tremper dans la pâte à frire"]
   },
   "does": "Dips food in a thin, wet mixture of flour and cold liquid, so that it fries with a light, crisp, airy coat that is lighter than a crumb coat.",
+  "intro": null,
   "how": [
     "Stir the flour into cold liquid just until it is smooth enough to coat a spoon. A few lumps do no harm.",
     "Keep the batter cold and use it soon after it is made.",
@@ -32,6 +33,7 @@
       "fix": "Fry a few at a time."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/lean-fish", "tier": "drafted"},
     {"thing": "group/crustaceans", "tier": "drafted"},

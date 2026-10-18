@@ -4,6 +4,7 @@
   "names": {"en": "Make a pesto"},
   "aliases": {"en": ["pesto genovese", "make pesto alla genovese", "pesto alla genovese"]},
   "does": "Crushes fresh basil leaves with a little coarse salt and garlic in a mortar, then pine nuts, then grated hard cheese, and works in olive oil last, into a thick, green, raw sauce. It is the sauce of Genoa and the coast of Liguria, and it is never cooked.",
+  "intro": null,
   "how": [
     "Pick the basil leaves and dry them. Wet leaves make a dull, watery sauce.",
     "Pound the garlic with coarse salt in a stone mortar until it is a paste.",
@@ -32,6 +33,7 @@
       "fix": "Add it in a thin stream, stirring."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/basil", "tier": "drafted"},
     {"thing": "ingredient/pine-nut", "tier": "drafted"},

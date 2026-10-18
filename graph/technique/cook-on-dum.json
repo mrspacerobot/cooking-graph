@@ -4,6 +4,7 @@
   "names": {"en": "Cook on dum"},
   "aliases": {"en": ["dum", "dum cooking", "seal the pot and cook slowly"]},
   "does": "Layers marinated meat and nearly cooked rice in a heavy pot, closes the lid tightly, often with a rope of dough, and finishes the dish in its own steam over a very low heat. Nothing is stirred, and the pot is opened at the table.",
+  "intro": null,
   "how": [
     "Spread the marinated meat in an even layer on the bottom of a heavy pot, with a little ghee.",
     "Pile the nearly cooked rice over the meat in loose layers, with herbs, crisp fried onions and ghee between them. Do not press it down.",
@@ -41,6 +42,7 @@
       "fix": "Dig down to the bottom with a flat spoon and lift the layers out whole."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/basmati-rice", "tier": "drafted"},
     {"thing": "ingredient/chicken-thigh", "tier": "drafted"},

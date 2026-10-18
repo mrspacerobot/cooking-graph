@@ -4,6 +4,7 @@
   "names": {"en": "Bake a soufflé", "fr": "Faire un soufflé"},
   "aliases": {"en": ["make a souffle"], "fr": ["cuire un soufflé"]},
   "does": "Bakes a thick, flavoured base that has been lightened with whipped egg white, in a dish coated so that the mixture can climb. The trapped air swells in the oven and lifts the mixture high above the rim. It sinks soon after it comes out, so it is served at once.",
+  "intro": null,
   "how": [
     "Brush the dish all over with soft butter, using upward strokes so that the butter makes lines for the mixture to climb. Coat it with a dusting of grated cheese or flour and tip out the extra.",
     "Warm the base and beat the egg yolks and the cheese into it. Season it boldly, because the whites will dilute it.",
@@ -40,6 +41,7 @@
       "fix": "Butter the dish in upward strokes and coat it well."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/egg-white", "tier": "drafted"},
     {"thing": "preparation/bechamel", "tier": "drafted"}

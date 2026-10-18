@@ -4,6 +4,12 @@
   "names": {"en": "Make a roux", "fr": "Faire un roux"},
   "aliases": {"en": ["cook a roux", "cook flour in butter"]},
   "does": "Cooks flour in melted butter to a paste that thickens a liquid without lumps or a raw taste.",
+  "intro": {
+    "what": "A roux is flour cooked in butter to make a paste for thickening liquid.",
+    "why": "It teaches you to cook the flour, choose the colour and add liquid gradually for a smooth sauce.",
+    "idea": "Flour thickening",
+    "tier": "drafted"
+  },
   "how": [
     "Melt the butter over medium-low heat until it foams.",
     "Tip in an equal weight of flour, all at once, and stir until smooth.",
@@ -23,6 +29,52 @@
     {
       "mistake": "Pouring in all the liquid at once, which makes lumps.",
       "fix": "Add it in stages and whisk each one smooth. A lumpy sauce can be rescued through a sieve."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What job does the roux do in this method?",
+      "choices": ["Thicken a liquid.", "Separate fat from liquid.", "Form a crisp coating on top of a finished sauce."],
+      "answer": 0,
+      "because": "The cooked flour paste thickens the liquid added to it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you add liquid to the roux in this method?",
+      "choices": [
+        "All at once without stirring.",
+        "In stages, whisking each addition smooth.",
+        "Pour it in quickly and whisk only after all of it is added."
+      ],
+      "answer": 1,
+      "because": "Adding liquid in stages and whisking each addition smooth helps prevent lumps.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How does the smell change as the roux cooks and darkens?",
+      "choices": [
+        "It smells of browned butter before any flour smell changes.",
+        "It stays raw and dusty throughout.",
+        "From raw flour towards biscuit and toasted nuts."
+      ],
+      "answer": 2,
+      "because": "As the roux cooks, its smell changes from raw flour towards biscuit, then toasted nuts as it darkens.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "You added liquid while the paste still smelled of raw flour. What step did you skip?",
+      "choices": [
+        "Cooking and stirring the roux until its smell changes towards biscuit.",
+        "Adding the liquid all at once before stirring.",
+        "Leaving the raw flour untouched in the melted butter."
+      ],
+      "answer": 0,
+      "because": "Cook and stir the flour paste before adding liquid. The change from raw flour towards a biscuit smell gives you a cue.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

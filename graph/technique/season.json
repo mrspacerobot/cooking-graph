@@ -4,6 +4,7 @@
   "names": {"en": "Season", "fr": "Assaisonner"},
   "aliases": {"en": ["season to taste", "taste and adjust", "adjust the seasoning"]},
   "does": "Brings out the taste of a dish with salt, and balances it with pepper, acid or fat.",
+  "intro": null,
   "how": [
     "Salt in small steps as the dish cooks, not only at the end.",
     "Taste before serving, from a clean spoon.",
@@ -20,6 +21,7 @@
     },
     {"mistake": "Seasoning without tasting.", "fix": "Taste every time. No amount on paper replaces it."}
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/starches", "tier": "drafted"},

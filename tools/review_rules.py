@@ -47,6 +47,8 @@ def backing(things):
 
 def statement_of(where, node):
     """The field and target of an object that is one statement or part of a file, or None."""
+    if where == "intro":
+        return "intro", None
     matched = STATEMENT.match(where)
     if matched is None:
         return None

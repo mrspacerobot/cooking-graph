@@ -4,6 +4,7 @@
   "names": {"en": "Make atta dough"},
   "aliases": {"en": ["knead chapati dough", "make roti dough", "make chapati dough", "knead atta"]},
   "does": "Works whole wheat flour and water into a soft, smooth dough with no yeast, then lets it rest. A rested dough is easy to roll thin and cooks into a soft, flexible flat bread.",
+  "intro": null,
   "how": [
     "Put the flour in a wide bowl with a little salt, and make a well.",
     "Add warm water a little at a time, and bring the flour together with the fingers of one hand.",
@@ -32,6 +33,7 @@
       "fix": "Cover it with a damp cloth or a plate."
     }
   ],
+  "quiz": [],
   "works_on": [
     {"thing": "ingredient/whole-wheat-flour", "tier": "drafted"}
   ],

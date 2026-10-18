@@ -1,6 +1,7 @@
 """The review site carries drafts and provenance, never probes or safety claims."""
 
 import contextlib
+import copy
 import io
 import json
 import tempfile
@@ -44,6 +45,61 @@ class ReviewSiteTest(unittest.TestCase):
         self.assertEqual(program['courses'][0]['skills'][0]['levels'][0]['teaches'], first['teaches'])
         self.assertEqual([], first['comes_after'])
         self.assertEqual(1, first['number'])
+
+    def test_substitution_claim_can_be_reviewed_with_its_context_and_source(self):
+        data = review_site.payload(self.things, 'abc123')
+        claims = [row for row in data['entries'].values() if row['kind'] == 'substitution']
+        claim = next(row for row in claims if row['candidate'] == 'ingredient/oil' and row['original'] == 'ingredient/butter')
+        self.assertEqual('ingredient/oil', claim['source'])
+        self.assertEqual('drafted', claim['tier'])
+        self.assertEqual(['technique/sweat'], claim['when'])
+        self.assertEqual({'stand_in': 1, 'original': 1, 'by': 'weight'}, claim['ratio'])
+        self.assertEqual('The flavour changes.', claim['caveat'])
+
+    def test_recipe_uses_the_query_engine_and_links_to_reviewable_claims(self):
+        data = review_site.payload(self.things, 'abc123')
+        fat = data['entries']['recipe/buttered-onions']['substitutions'][1]
+        option = next(row for row in fat['options'] if row['thing'] == 'ingredient/oil')
+        self.assertEqual('stand-in', option['basis'])
+        self.assertIn('technique/sweat', fat['context'])
+        self.assertEqual('ingredient/oil', data['entries'][option['claims'][0]]['candidate'])
+
+    def test_recipe_links_the_matching_claim_instead_of_another_context_for_the_same_pair(self):
+        other = copy.deepcopy(self.things['ingredient/oil'].data['stands_in_for'][0])
+        other.update(when=['technique/mince'], caveat='Another context.')
+        self.things['ingredient/oil'].data['stands_in_for'].append(other)
+        data = review_site.payload(self.things, 'abc123')
+        oil = next(row for row in data['entries']['recipe/buttered-onions']['substitutions'][1]['options'] if row['thing'] == 'ingredient/oil')
+        self.assertEqual(1, len(oil['claims']))
+        self.assertEqual(['technique/sweat'], data['entries'][oil['claims'][0]]['when'])
+
+    def test_exclusions_win_over_part_options_and_missing_context_is_not_a_ban(self):
+        self.things['dish/buttered-onions'].data['parts'][1]['options'].append('ingredient/oil')
+        raw = self.things['ingredient/oil'].data['stands_in_for'][0]
+        raw['not_when'] = ['technique/sweat']
+        fat = review_site.payload(self.things, 'abc123')['entries']['recipe/buttered-onions']['substitutions'][1]
+        self.assertEqual([], fat['options'])
+        excluded = next(row for row in fat['excluded'] if row['thing'] == 'ingredient/oil')
+        self.assertEqual('not-in-this-context', excluded['reason'])
+        self.things['dish/buttered-onions'].data['parts'][1]['options'].remove('ingredient/oil')
+        raw.update(when=['technique/mince'], not_when=[])
+        fat = review_site.payload(self.things, 'abc123')['entries']['recipe/buttered-onions']['substitutions'][1]
+        self.assertEqual('no-matching-context', next(row for row in fat['excluded'] if row['thing'] == 'ingredient/oil')['reason'])
+
+    def test_recipe_review_hash_changes_when_a_substitution_changes(self):
+        before = review_site.payload(self.things, 'abc123')['entries']['recipe/buttered-onions']['hash']
+        self.things['ingredient/oil'].data['stands_in_for'][0]['caveat'] = 'A different finish.'
+        after = review_site.payload(self.things, 'abc123')['entries']['recipe/buttered-onions']['hash']
+        self.assertNotEqual(before, after)
+
+    def test_part_option_has_no_invented_claim_or_ratio(self):
+        self.things['ingredient/oil'].data['stands_in_for'] = []
+        self.things['dish/buttered-onions'].data['parts'][1]['options'].append('ingredient/oil')
+        data = review_site.payload(self.things, 'abc123')
+        option = data['entries']['recipe/buttered-onions']['substitutions'][1]['options'][0]
+        self.assertEqual('part-option', option['basis'])
+        self.assertIsNone(option['ratio'])
+        self.assertEqual([], option['claims'])
 
     def test_entry_hash_changes_only_when_its_content_changes(self):
         before = review_site.payload(self.things, 'old')['entries']['technique/sweat']['hash']

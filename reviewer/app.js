@@ -2,7 +2,7 @@
 
 const notebook = JSON.parse(document.getElementById("review-data").textContent);
 const entries = Object.values(notebook.entries);
-const kinds = {class: "Foundation classes", technique: "Techniques", recipe: "Recipes"};
+const kinds = {class: "Foundation classes", technique: "Techniques", recipe: "Recipes", substitution: "Substitutions"};
 let category = "class";
 let selected = null;
 let filtered = [];
@@ -41,7 +41,10 @@ function list(rows) { return `<ul>${rows.map(row => `<li>${escapeText(row)}</li>
 function measure(value) {
   if (!value) return "";
   const amount = value.value ?? `${value.from} to ${value.to}`;
-  return `${amount} ${label(value.unit)}`;
+  const symbols = {gram: "g", kilogram: "kg", millilitre: "ml", litre: "l", celsius: "°C", millimetre: "mm", centimetre: "cm"};
+  const plurals = {leaf: "leaves", pinch: "pinches"};
+  const unit = symbols[value.unit] || (value.value === 1 ? label(value.unit) : plurals[value.unit] || label(value.unit) + "s");
+  return `${amount} ${unit}`;
 }
 
 function recipesFor(ids) {
@@ -49,6 +52,60 @@ function recipesFor(ids) {
 }
 
 function recipeLinks(records) { return links(records.map(record => record.id)); }
+
+function ratioText(ratio) {
+  return ratio ? `${ratio.stand_in} substitute : ${ratio.original} original, by ${ratio.by}.` : "No ratio recorded. Equal amounts are not established.";
+}
+
+function claimContext(record) {
+  const unrestricted = record.allows ? "No positive context restriction recorded; exclusions still apply." : "This exclusion-only claim does not permit use in other contexts.";
+  return `<p><strong>Applies in:</strong> ${record.when.length ? record.when.map(link).join(", ") : unrestricted}</p>` +
+    `<p><strong>Excluded in:</strong> ${record.not_when.length ? record.not_when.map(link).join(", ") : "No exclusions recorded."}</p>`;
+}
+
+function substitutionBody(record) {
+  const recipes = entries.filter(other => other.kind === "recipe" && other.substitutions.some(line =>
+    [...line.options, ...line.excluded].some(row => row.claims.includes(record.id))));
+  return `<p class="lead">${escapeText(nameOf(record.candidate))} in place of ${escapeText(nameOf(record.original))}</p>
+    <p class="notice">This is a directional claim for review. Its tier and context matter; safety and allergens remain unverified.</p>
+    <p><span class="badge ${record.allows ? "" : "blocked-badge"}">${record.allows ? "Conditional substitution" : "Explicit exclusion"}</span></p>` +
+    section("When this claim applies", claimContext(record)) +
+    section("Ratio", `<p>${escapeText(ratioText(record.ratio))}</p>`) +
+    section("Caveat", `<p>${escapeText(record.caveat || "No caveat recorded.")}</p>`) +
+    section("Recipes where this candidate is checked", recipes.length ? `<p class="fine">Open a recipe to see whether its complete context offers or excludes this candidate.</p>${recipeLinks(recipes)}` : "<p>No recipe currently checks this candidate.</p>");
+}
+
+function substitutionCandidate(row) {
+  const reasons = {
+    "not-in-this-context": "Explicitly excluded in this recipe's context.",
+    "no-matching-context": "No matching context is recorded. This does not establish that the swap cannot work.",
+    "method-not-supported": "The recorded technique does not support this candidate. A method change may be needed.",
+    "avoided-or-unknown-fact": "The query cannot offer this candidate. Safety remains unverified."
+  };
+  return `<div class="swap-candidate ${row.reason === "not-in-this-context" ? "blocked" : row.reason ? "unknown" : ""}">
+    <p><strong>${escapeText(nameOf(row.thing))}</strong>${row.tier ? ` <span class="badge tier">${escapeText(row.tier)}</span>` : ""}</p>
+    ${row.reason ? `<p>${escapeText(reasons[row.reason] || label(row.reason))}</p>` : ""}
+    ${row.basis === "part-option" ? "<p>Listed as another option for this dish part.</p>" : ""}
+    ${row.caveat ? `<p>${escapeText(row.caveat)}</p>` : ""}
+    ${row.basis ? `<p class="fine">${escapeText(ratioText(row.ratio))}</p>` : ""}
+    ${row.basis === "stand-in" ? `<div class="fine">${claimContext(row)}</div>` : ""}
+    <div class="links">${row.claims.map((id, index) => `<a href="${href(id)}">Review recorded claim${row.claims.length > 1 ? ` ${index + 1}` : ""}</a>`).join("")}</div>
+  </div>`;
+}
+
+function recipeSubstitutions(record) {
+  const first = record.substitutions.findIndex(line => line.options.length || line.excluded.some(row => row.reason === "not-in-this-context"));
+  return `<p>These recorded options need review in this recipe's context. Safety and allergens remain unverified.</p>` + record.substitutions.map((line, index) => {
+    const blocked = line.excluded.filter(row => row.reason === "not-in-this-context");
+    const unknown = line.excluded.filter(row => row.reason !== "not-in-this-context");
+    return `<details class="swap-line" ${index === first ? "open" : ""}><summary><strong>${escapeText(nameOf(line.original))}</strong><span>${line.options.length} listed ${line.options.length === 1 ? "option" : "options"} · ${blocked.length} explicit ${blocked.length === 1 ? "exclusion" : "exclusions"}</span></summary>
+      <p class="fine">Original amount: ${escapeText(measure(line.amount))}. Context checked: ${line.context.map(link).join(", ")}.</p>
+      ${line.options.length ? `<h4>Listed alternatives</h4>${line.options.map(substitutionCandidate).join("")}` : "<p>No applicable alternative is recorded. That is a gap in the graph, not a claim that none exists.</p>"}
+      ${blocked.length ? `<h4>Explicit exclusions</h4>${blocked.map(substitutionCandidate).join("")}` : ""}
+      ${unknown.length ? `<details><summary>${unknown.length} ${unknown.length === 1 ? "candidate" : "candidates"} without an applicable claim</summary>${unknown.map(substitutionCandidate).join("")}</details>` : ""}
+    </details>`;
+  }).join("");
+}
 
 function classBody(record) {
   const practice = record.through.map(row => row.thing);
@@ -65,6 +122,7 @@ function classBody(record) {
 
 function techniqueBody(record) {
   const recipes = entries.filter(other => other.kind === "recipe" && other.steps.some(step => step.technique === record.id));
+  const claims = entries.filter(other => other.kind === "substitution" && [...other.when, ...other.not_when].includes(record.id));
   return `<p class="lead">${escapeText(record.does)}</p>` +
     section("How it works", `<ol>${record.how.map(text => `<li>${escapeText(text)}</li>`).join("")}</ol>`) +
     section("What to look for", list(record.cues.map(cue => `${label(cue.sense)}: ${cue.text}`))) +
@@ -73,12 +131,14 @@ function techniqueBody(record) {
     section("What you need", `<ul class="plain-list">${record.needs.map(row => `<li><strong>${escapeText(label(row.role))}</strong> <small>(${escapeText(row.tier)})</small>${links(row.options)}</li>`).join("")}</ul>`) +
     section("Learn first", record.comes_after.length ? `<ul>${record.comes_after.map(row => `<li>${link(row.thing)} (${escapeText(row.tier)})<p>${escapeText(row.why)}</p></li>`).join("")}</ul>` : "") +
     section("Variant of", record.variant_of.length ? `<ul>${record.variant_of.map(row => `<li>${link(row.thing)} (${escapeText(row.tier)})<p>${escapeText(row.differs)}</p></li>`).join("")}</ul>` : "") +
-    section("Recipes that use this technique", recipes.length ? recipeLinks(recipes) : "<p>No recipe is listed yet.</p>");
+    section("Recipes that use this technique", recipes.length ? recipeLinks(recipes) : "<p>No recipe is listed yet.</p>") +
+    section("Substitution claims naming this technique", claims.length ? `<p class="fine">Includes conditional substitutions and exclusions. Open each claim to review its direction and full context.</p>${recipeLinks(claims)}` : "<p>No substitution claim names this technique yet.</p>");
 }
 
 function recipeBody(record) {
   return `<p class="lead">Makes ${escapeText(nameOf(record.makes))} · ${escapeText(measure(record.yields))}</p>` +
     section("Ingredients", `<ul class="plain-list">${record.ingredients.map(row => `<li>${escapeText(measure(row.amount))} <strong>${escapeText(nameOf(row.thing))}</strong>${row.forms.length ? `, ${escapeText(row.forms.map(nameOf).join(", "))}` : ""}</li>`).join("")}</ul>`) +
+    section("Substitutions to review", recipeSubstitutions(record)) +
     section("Equipment", links(record.equipment)) +
     section("Method to review", `<ol>${record.steps.map(step => `<li><strong>${link(step.technique)}</strong><p>${escapeText(step.text)}</p><p class="step-meta">${[
       measure(step.time), measure(step.temperature),
@@ -89,12 +149,14 @@ function recipeBody(record) {
 }
 
 function cuisineIds(record) {
+  if (record.kind === "substitution") return [...new Set([record.candidate, record.original, ...record.when, ...record.not_when].flatMap(id => notebook.names[id]?.cuisines || []))];
   const source = record.kind === "recipe" ? record.makes : record.source;
   return notebook.names[source]?.cuisines || [];
 }
 
 function subtitle(record) {
   if (record.kind === "class") return `${record.course} / ${record.skill} / Lesson ${record.number}`;
+  if (record.kind === "substitution") return `${record.allows ? "Conditional substitution" : "Explicit exclusion"} · ${[...record.when, ...record.not_when].map(nameOf).join(", ") || "See full context"}`;
   return cuisineIds(record).map(nameOf).join(", ") || label(record.kind);
 }
 
@@ -137,7 +199,7 @@ function feedbackForm() {
         `<label class="rating"><input type="radio" name="rating" value="${number}">${number}</label>`).join("")}</div>
         <p class="fine">1 = needs a lot of work · 5 = clear and useful</p></fieldset>
       <label for="feedback-kind">What would you like us to look at?</label>
-      <select id="feedback-kind" name="kind"><option>General feedback</option><option>Wording or clarity</option><option>Technique or method</option><option>Amounts or timing</option><option>Class order or practice</option><option>Safety concern</option></select>
+      <select id="feedback-kind" name="kind"><option>General feedback</option><option>Wording or clarity</option><option>Technique or method</option><option>Substitution or ingredient option</option><option>Amounts or timing</option><option>Class order or practice</option><option>Safety concern</option></select>
       <label for="feedback-notes">Your notes or suggested changes (optional)</label>
       <textarea id="feedback-notes" name="notes" maxlength="1200" placeholder="For example: I’d explain this step a little differently…"></textarea>
       <p id="draft-status" class="fine" role="status"></p>
@@ -223,7 +285,8 @@ function connectFeedback(record) {
 function showEntry(record, focus) {
   selected = record;
   category = record.kind;
-  const body = record.kind === "class" ? classBody(record) : record.kind === "technique" ? techniqueBody(record) : recipeBody(record);
+  const renderers = {class: classBody, technique: techniqueBody, recipe: recipeBody, substitution: substitutionBody};
+  const body = renderers[record.kind](record);
   const content = document.getElementById("content");
   content.innerHTML = `<div class="badges"><span class="badge">${escapeText(kinds[record.kind])}</span><span class="badge tier">${escapeText(record.tier)}</span></div>
     <p class="eyebrow">${escapeText(subtitle(record))}</p><h2>${escapeText(titleOf(record))}</h2>${body}${feedbackForm()}

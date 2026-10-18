@@ -1,11 +1,12 @@
 # Review the cooking notebook
 
 The notebook is an editorial review site for someone who knows cooking. It has
-foundation classes, technique cards and recipes, drawn from the current graph.
+foundation classes, technique cards, recipes and substitution claims, drawn from the current graph.
 It is separate from the force graph at `./view` and the gated production export.
 Everything keeps its earned tier. The page prominently warns that drafts and
 unverified safety information are not cooking guidance. No ingredient safety
-assertions or substitution claims are exported to this site, and no probes appear.
+assertions are exported to this site, and no probes appear. Substitution claims
+retain their direction, tier, positive context, exclusions, ratio and caveat.
 
 ## Try it before publication
 
@@ -41,12 +42,27 @@ It follows GitHub's [custom Pages workflow](https://docs.github.com/en/pages/get
 
 ## Give feedback
 
-Choose **Foundation classes**, **Techniques** or **Recipes**. Search by names,
+Choose **Foundation classes**, **Techniques**, **Recipes** or **Substitutions**. Search by names,
 aliases or class topic, or filter by cuisine. Classes follow the program's order,
 with prerequisites, linked techniques and recipes for practice. Techniques link
 to recipes that use that exact technique; variants are linked separately.
 Recipes show their quantities, equipment, method, time, temperature and any
 open safety points. Each class level can be reviewed separately.
+
+Each recipe also has **Substitutions to review**, grouped by ingredient. It uses
+the existing `./stand-ins` engine, with the same recipe context, technique
+compatibility and exclusion rules. Explicit exclusions win over listed dish
+options. Candidates without an applicable claim stay separate from explicit
+exclusions: a gap in the graph is not a statement that a swap cannot work.
+Each listed option preserves its ratio and caveat; absent ratios are not invented
+or treated as equal amounts. Safety and allergens remain unverified.
+
+The **Substitutions** view makes each recorded directional claim independently
+reviewable. Search for a food, open a claim and check its positive and negative
+contexts before giving feedback. Recipe alternatives link to their recorded claims,
+and technique cards link to claims that name that technique. These links do not
+make a claim applicable to every recipe that uses the technique. Dish part options
+without a stand-in claim can be discussed through feedback on their recipe.
 
 Choose a rating from 1 to 5, write a suggestion, or do both. A rating describes
 how clear and useful the entry is, not a food safety judgement. Choose a topic
@@ -70,6 +86,9 @@ Each issue or downloaded note identifies the class or card, immutable source
 commit and entry SHA-256. The class source is its program record; the class ID
 also identifies its course, skill and level. The owner can see what was read even
 after the graph changes. Ratings are not aggregated or displayed on the site.
+Substitution feedback points to the candidate food's source record; its content
+identifier distinguishes the exact claim. Recipe review hashes include the computed
+substitution answers, so changed swaps do not reuse drafts about the older answers.
 
 ## Act on suggestions
 

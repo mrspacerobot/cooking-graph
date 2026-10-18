@@ -5,7 +5,7 @@ import json
 import sys
 from pathlib import Path
 
-from tools import check
+from tools import check, queries
 from tools.viewer import metadata
 
 REPOSITORY = 'mrspacerobot/cooking-graph'
@@ -34,24 +34,61 @@ def classes(program):
                 yield entry(data, 'class', program['id'])
 
 
+def substitutions(graph):
+    """Each directional claim gets its own feedback target, without safety facts."""
+    for thing in graph.values():
+        if thing.kind not in queries.FOODS:
+            continue
+        for row in thing.data['stands_in_for']:
+            candidate = thing.data['id']
+            original = row['thing']
+            digest = hashlib.sha256(json.dumps(row, sort_keys=True).encode('utf-8')).hexdigest()
+            data = {field: row[field] for field in ('tier', 'allows', 'when', 'not_when', 'ratio', 'caveat')}
+            data.update(id='substitution/%s/%s' % (candidate, digest),
+                        candidate=candidate, original=original,
+                        names={'en': '%s for %s' % (thing.data['names']['en'], graph[original].data['names']['en'])})
+            yield entry(data, 'substitution', candidate)
+
+
+def recipe_substitutions(graph, recipe_id, claims):
+    # Reuse the same context, method and exclusion rules as ./stand-ins.
+    # The query's safety message and avoidance facts are not exported.
+    lines = queries.stand_ins(graph, recipe_id)['lines']
+    for line in lines:
+        for row in line['options'] + line['excluded']:
+            found = claims.get((row['thing'], line['original']), [])
+            if row.get('basis') == 'stand-in':
+                fields = ('tier', 'allows', 'when', 'not_when', 'ratio', 'caveat')
+                found = [claim for claim in found if all(claim[field] == row[field] for field in fields)]
+            elif row.get('basis') == 'part-option':
+                found = []
+            row['claims'] = [claim['id'] for claim in found]
+    return lines
+
+
 def payload(things, commit):
-    graph = [thing for _, thing in sorted(things.items()) if thing.path.startswith('graph/')]
-    entries = {}
-    for thing in graph:
+    graph = {identifier: thing for identifier, thing in sorted(things.items()) if thing.path.startswith('graph/')}
+    entries = {row['id']: row for row in substitutions(graph)}
+    claims = {}
+    for row in entries.values():
+        claims.setdefault((row['candidate'], row['original']), []).append(row)
+    for thing in graph.values():
         if thing.kind in ('technique', 'recipe'):
-            record = entry(thing.data, thing.kind, thing.data['id'])
+            data = dict(thing.data)
+            if thing.kind == 'recipe':
+                data['substitutions'] = recipe_substitutions(graph, data['id'], claims)
+            record = entry(data, thing.kind, thing.data['id'])
             entries[record['id']] = record
         elif thing.kind == 'program':
             for record in classes(thing.data):
                 entries[record['id']] = record
-    # Labels and dish links are enough to navigate. Ingredient safety assertions
-    # and stand-in claims do not belong in this editorial site.
+    # Food labels support navigation without exporting ingredient safety assertions.
     labels = {}
-    for thing in graph:
+    for thing in graph.values():
         if thing.kind in LABEL_KINDS:
             labels[thing.data['id']] = {
                 'name': thing.data.get('names', {}).get('en', thing.data['id']),
-                'cuisines': [row['thing'] for row in thing.data.get('belongs_to', [])],
+                'cuisines': [row['thing'] for row in thing.data.get('belongs_to', []) + thing.data.get('in_pantry_of', [])],
             }
     return {'entries': entries, 'names': labels, 'commit': commit, 'repository': REPOSITORY}
 

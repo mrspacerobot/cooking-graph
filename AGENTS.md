@@ -76,6 +76,8 @@ Every thing and every statement carries one tier:
 
 ## Showing the graph in a browser
 
+- **For editorial feedback, `./review-site` builds `out/site/index.html`.** This separate notebook lets an invited reviewer read foundation classes, techniques and recipes and prepare GitHub issues with ratings and suggestions. It is a draft review surface, never a production export or cooking guide. Keep the draft and safety warning visible, omit ingredient safety assertions and probes, and preserve tiers. Feedback never promotes a tier or verifies safety. See `docs/review-website.md` for Pages setup and access requirements.
+
 - **For a visual walkthrough, run `./view` from the repository root** after reading this file and `docs/handover.md`. It rebuilds `out/graph.html` from the current working files and opens the default browser. The owner asked for this direct clone-and-open path; use it when a colleague asks to see or explore the graph.
 - **The page works independently of the agent.** It has no review session to keep alive or end. The colleague can keep exploring after your turn finishes and give feedback in the conversation.
 - **No Lavish, package installation or application server is needed.** The generator uses Python's standard library. The owner's interactive viewer uses pinned browser-only CDN libraries: force-graph 1.52.0, DaisyUI 5.5.19 and Tailwind's browser runtime 4.2.4. This does not change the stack of the graph tools.

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>The cooking notebook - review together</title>
+  <link rel="icon" href="data:,">
+  <style>__REVIEW_STYLE__</style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to the entry</a>
+  <header class="masthead">
+    <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">✳</span> The cooking notebook</a>
+    <span class="edition">A work in progress, made better together</span>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">A seat at the kitchen table</p>
+      <h1>A little of your know-how<br> goes a long way.</h1>
+      <p>Read a lesson, look over a recipe, or revisit a technique.<br> Tell us what’s clear and what you’d do differently.</p>
+    </section>
+    <aside class="notice"><strong>Drafts for review.</strong> These entries have not all been checked by a cook. Safety and allergen information is unverified. Use this site to review the writing, not as cooking guidance.</aside>
+    <div class="workspace">
+      <section class="library" aria-label="Browse the notebook">
+        <nav id="categories" aria-label="Entry types"></nav>
+        <label for="search">Find something to review</label>
+        <input type="search" id="search" placeholder="Try eggs, sauces, or knife cuts" autocomplete="off">
+        <div class="filter-row">
+          <label for="cuisine">Cuisine</label><select id="cuisine"><option value="">All cuisines</option></select>
+        </div>
+        <p id="result-count" class="muted" role="status"></p>
+        <div id="entry-list"></div>
+      </section>
+      <article id="content" tabindex="-1" aria-label="Selected entry"></article>
+    </div>
+    <footer><span>The cooking notebook · Editorial review</span><a id="source-link" target="_blank" rel="noopener">View this edition on GitHub</a></footer>
+  </main>
+  <noscript><p class="notice">Please enable JavaScript to browse entries and prepare feedback.</p></noscript>
+  <script type="application/json" id="review-data">__REVIEW_DATA__</script>
+  <script>__REVIEW_SCRIPT__</script>
+</body>
+</html>

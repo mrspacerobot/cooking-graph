@@ -1,0 +1,90 @@
+:root { color-scheme: light; --paper: #f7f5ee; --ink: #293b30; --muted: #626c60; --line: #dcded2; --green: #3f593e; --white: #fffefa; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.65 system-ui, sans-serif; }
+a { color: var(--green); text-underline-offset: 4px; }
+button, input, select, textarea { font: inherit; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button, input, select, textarea { border: 1px solid var(--line); border-radius: 8px; background: var(--white); color: var(--ink); }
+button { min-height: 44px; padding: 8px 14px; }
+input, select, textarea { padding: 10px 12px; max-width: 100%; }
+input[type=search], textarea { width: 100%; }
+textarea { resize: vertical; min-height: 130px; }
+:focus-visible { outline: 3px solid #b66c36; outline-offset: 4px; }
+.skip { position: absolute; top: -80px; background: white; padding: 10px; z-index: 2; }
+.skip:focus { top: 10px; }
+.masthead { display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); padding: 24px 5vw; }
+.brand { text-decoration: none; font: 600 23px/1.2 Georgia, serif; color: var(--ink); }
+.brand-mark { font-size: 32px; vertical-align: middle; margin-right: 8px; }
+.edition, .eyebrow { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.edition, .muted { color: var(--muted); }
+main { max-width: 1440px; margin: auto; padding: 0 5vw; }
+.intro { padding: 45px 0 30px; }
+.eyebrow { color: var(--green); font-weight: 650; }
+h1, h2, h3 { font-family: Georgia, serif; font-weight: 400; line-height: 1.18; }
+h1 { font-size: clamp(35px, 4.2vw, 60px); letter-spacing: -.035em; margin: 13px 0 20px; }
+h2 { font-size: clamp(29px, 3vw, 42px); margin: 12px 0 20px; letter-spacing: -.025em; }
+h3 { font-size: 24px; margin: 28px 0 12px; }
+p { margin: 10px 0 16px; }
+.intro > p:last-child { color: var(--muted); }
+.notice { font-size: 14px; background: #eeead9; border-left: 3px solid #a08338; padding: 13px 18px; border-radius: 0 6px 6px 0; margin-bottom: 32px; }
+.workspace { display: grid; grid-template-columns: minmax(260px, 330px) minmax(0, 1fr); gap: 34px; align-items: start; }
+.workspace > *, .filter-row > * { min-width: 0; }
+.library { position: sticky; top: 20px; }
+#categories { display: flex; gap: 5px; margin-bottom: 24px; }
+#categories button { font-size: 14px; padding: 8px 10px; flex: 1; border-color: transparent; background: transparent; }
+#categories button[aria-pressed=true] { background: var(--green); color: white; }
+label, legend { font-size: 14px; font-weight: 600; display: block; margin-bottom: 7px; }
+.filter-row { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+.filter-row label { margin: 0; }
+.filter-row select { flex: 1; font-size: 14px; }
+#result-count { font-size: 13px; margin: 16px 0 8px; }
+#entry-list { max-height: 62vh; overflow-y: auto; padding: 3px; }
+.entry { width: 100%; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; text-align: left; padding: 14px 12px; display: block; }
+.entry { text-decoration: none; }
+.entry:hover { background: #eeefe6; }
+.entry[aria-current=true] { background: #e7ecdf; border-radius: 7px; box-shadow: inset 3px 0 var(--green); }
+.entry strong { display: block; font-size: 16px; font-weight: 600; }
+.entry small { color: var(--muted); display: block; font-size: 12px; margin-top: 3px; }
+#content { background: var(--white); padding: clamp(22px, 3.5vw, 48px); border: 1px solid var(--line); border-radius: 10px; min-height: 500px; overflow-wrap: anywhere; }
+.badges { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.badge { padding: 3px 10px; border-radius: 30px; font-size: 12px; background: #eff0e7; }
+.badge.tier { background: #f3ead5; }
+.lead { font-size: 19px; color: #4e5d50; }
+ol { padding-left: 25px; }
+li { padding-left: 4px; margin: 10px 0; }
+.links { display: flex; gap: 8px; flex-wrap: wrap; }
+.links a { border: 1px solid var(--line); padding: 5px 10px; border-radius: 6px; font-size: 14px; text-decoration: none; }
+.links a:hover { background: #eff0e7; }
+.plain-list { list-style: none; padding: 0; }
+.plain-list li { border-bottom: 1px solid var(--line); padding: 10px 0; margin: 0; }
+.step-meta { color: var(--muted); font-size: 13px; }
+.feedback { margin-top: 38px; padding-top: 8px; border-top: 1px solid var(--line); }
+.feedback h3 { margin-top: 20px; }
+.feedback > p { color: var(--muted); font-size: 14px; }
+fieldset { padding: 0; margin: 20px 0; border: 0; }
+.ratings { display: flex; flex-wrap: wrap; gap: 8px; }
+.rating { font-weight: 400; margin: 0; border: 1px solid var(--line); padding: 8px 12px; border-radius: 8px; cursor: pointer; min-height: 44px; }
+.rating:has(input:checked) { background: #e7ecdf; border-color: var(--green); }
+.rating input { accent-color: var(--green); margin: 0 5px 0 0; }
+.feedback select { display: block; width: 100%; margin-bottom: 16px; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+.primary { background: var(--green); color: white; border-color: var(--green); }
+.button { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 14px; border-radius: 8px; text-decoration: none; }
+.fine { color: var(--muted); font-size: 12px; }
+.feedback-status { font-size: 14px; min-height: 1.65em; }
+.bottom-nav { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.bottom-nav a { font-size: 14px; }
+footer { border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; margin-top: 48px; padding: 24px 0; color: var(--muted); font-size: 12px; }
+@media (max-width: 760px) {
+  .masthead { padding: 18px 5vw; }
+  .brand { font-size: 20px; }
+  .edition { display: none; }
+  .intro { padding: 24px 0 16px; }
+  .intro br { display: none; }
+  .workspace { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .library { position: static; }
+  #entry-list { max-height: 230px; }
+  #categories { margin-bottom: 18px; }
+  .notice { margin-bottom: 24px; }
+}

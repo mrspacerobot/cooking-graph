@@ -4,6 +4,8 @@ Written on 7 October 2026 for an agent or a person picking this up cold. Read `A
 
 ## Current status and next steps
 
+- Editorial review website (issue 6): `./review-site` builds a self-contained notebook at `out/site/index.html` with foundation lessons, techniques and recipes. Ratings and suggestions open prepared GitHub issues or download as text; no feedback changes tiers. The Pages workflow builds previews on pull requests and deploys only from `main`. The owner must configure Settings > Pages for GitHub Actions, check visibility for this private repository, and invite the reviewer. See `docs/review-website.md`. This is an editorial draft surface; ingredient safety assertions and probes are omitted.
+
 - [PR 1](https://github.com/mrspacerobot/cooking-graph/pull/1) (the first slice, `1-first-slice`) was merged by the owner on 7 October 2026 as an internal draft baseline, and [issue 3](https://github.com/mrspacerobot/cooking-graph/issues/3) is closed. The cycle-two follow-up is on the branch `claude/modest-clarke-n2wbsf`, with no pull request yet. The owner reviews and merges; an agent never merges. The merge did not promote any tier, verify safety records or permit an export.
 - Completed: the first graph slice, strict checker and schema; the question commands, independent probes and one stand-in growth round; the standalone interactive browser viewer. `./view` builds the current working files and opens the browser. See `README.md` for a fresh clone.
 - Current validation: `./check` passes 434 tests and reads 1971 files strictly. Content remains drafted except for the inherited sourced facts; all 427 ingredient safety records are unverified.

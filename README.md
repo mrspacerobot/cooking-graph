@@ -168,3 +168,11 @@ References in older reports and commits are historical; use the links above for 
 ## Rules
 
 Read `AGENTS.md` before changing anything.
+
+## Review the cooking notebook
+
+For a readable review site with foundation classes, techniques, recipes, ratings
+and suggestions, run `./review-site` and open `out/site/index.html`.
+See [the review website guide](docs/review-website.md) for publishing on GitHub
+Pages and inviting a reviewer. Feedback opens a prepared GitHub issue for the
+reviewer to submit, or downloads as a text file. The site is for reviewing drafts.

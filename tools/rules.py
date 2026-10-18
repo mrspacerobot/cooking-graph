@@ -92,13 +92,9 @@ def held(thing):
 
 
 def safety_earned(things):
-    """No safety fact is verified yet. Only a person can verify one, against an authoritative source."""
-    issues = []
-    for thing_id, thing in of_kind(things, "ingredient"):
-        if thing.data["safety"]["state"] != "unverified":
-            message = "no safety fact is verified until a person checked it and that is on record"
-            issues.append(Issue(thing.path, "safety.state", "safety-not-earned", message))
-    return issues
+    """Only a person's live, evidenced review can verify ingredient safety."""
+    from tools.review_rules import safety_not_earned
+    return safety_not_earned(things)
 
 
 def facts_answered(things):

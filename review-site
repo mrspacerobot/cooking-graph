@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+"""Build the GitHub Pages editorial review site from this checkout."""
+
+import sys
+from pathlib import Path
+
+from tools import review_site
+
+sys.exit(review_site.main(Path(__file__).resolve().parent))

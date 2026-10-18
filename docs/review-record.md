@@ -1,8 +1,20 @@
 # The review record
 
-Stage one is built (the kinds, the hash, `./review`, and six rules, see changes 31 and 32 in `docs/model.md`). Stages two to four are still designs. It answers the open question in `docs/cycle-two.md`: how a review is put on record. Today `tiers_earned` refuses every tier above drafted and `safety_earned` refuses every verified safety record, so no reviewer can approve anything. This document says what replaces them.
+Stage one and ingredient safety verification are built. A person can grant
+`reviewed` for culinary content, or separately verify an ingredient's safety
+record with evidence. Sampling, safety-probe rulings, verified culinary content
+and cook-tested tiers remain later stages. The separate website approval page
+prepares human decisions; `./review apply` validates and writes their records on
+a branch. Only the owner's merge makes them part of the shared graph.
 
-**What stage one built, and what it refuses.** Built: the kinds `reviewer` and `review`; `tools/review_hash.py`; `./review show` and `./review seal`; the rules `email-in-repo`, `tier-not-earned`, `review-stale`, `model-grants-too-much`, `reviewer-does-not-know-cuisine`, `review-unlinked`; and the review counts in `./numbers`. Refused by `review-not-built` until their stages: a sample record, rulings, a review of a safety record, `verified` and `cook-tested`. Nobody has written a real record. The first one is for a person to write.
+**What is built.** The reviewer and review kinds, native content hashes, the
+culinary review rules and counts, human ingredient safety verification, and
+website approval files. `verified` is accepted only for a session covering
+ingredient safety units; it does not grant the verified culinary tier. A model
+cannot verify safety. A source-backed review needs a recorded source and a
+nonempty explanation of what the person checked. Only an explicit
+owner-granted `safety_authority` permits verification without a source.
+No factual approval was made by building these tools.
 
 ## 1. What a record is
 
@@ -15,7 +27,7 @@ Two new kinds, both in `graph/`, neither with a `tier` or `names` (a record is h
 | `id` | `reviewer/<slug>` |
 | `kind` | `person`, `model` or `test-cook` (closed list `reviewer_kinds`) |
 | `model_id` | For a model, its id, such as `claude-sonnet-5-5`. `null` otherwise |
-| `knows` | The cuisines this reviewer can answer for. Rows of `cuisine` and `how` (closed list `know_ways`: cooks-it-at-home, cooks-it-for-work, trained-in-it, lives-or-lived-there, studies-it). Self-declared. Empty for a model |
+| `knows` | The cuisines this reviewer can answer for. Rows of `cuisine` and `how` (closed list `know_ways`: cooks-it-at-home, cooks-it-for-work, trained-in-it, lives-or-lived-there, studies-it, owner-authorized). The last records the owner's explicit endorsement without inventing experience. Empty for a model |
 | `safety_authority` | A note on what makes this person an authority on safety, or `null`. Only the owner sets it |
 | `added_on` | The day the owner accepted this reviewer |
 
@@ -146,7 +158,14 @@ The record (`graph/review/owner-deglaze-butter-2026-10-14.json`, a slug starts w
 
 The pull request also sets `"tier": "reviewed"` on both files and on their statements. The checker then finds a live approved record by a person who knows French, with the right `seen`. Butter's `safety.state` stays `unverified`: the record has no `safety` row.
 
-**Stage 2 - safety.** `safety-not-earned` (new), `ruling-by-model`, `rulings` in `./safety`, the "Ruled" section and the new columns. Verify butter's `safety` against a fetched source, then one strict ingredient (white wine) to prove the strict path. Tests: `test_review_safety.py`.
+**Stage 2 - safety.** Ingredient verification and `safety-not-earned` are built,
+with tests in `test_review_safety.py`. The hash covers every answer, basis,
+certainty flag and note. Editing them makes verification stale. A whole-card
+approval cannot verify safety, and verifying a strict answer leaves it strict.
+The importer requires evidence for each ingredient approval independently.
+Rejected safety decisions can request corrections without claiming verification.
+Probe rulings, the "Ruled" document section and new reporting columns remain
+unbuilt. No disagreement is settled by approving an ingredient.
 
 **Stage 3 - samples.** `./review sample`, `sample-not-drawn`, the reject-rate table in `./numbers`, `review-edited` (with `./check --base origin/main` in CI). Tests: `test_review_sample.py`, `test_review_history.py`.
 

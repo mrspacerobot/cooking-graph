@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>The cooking notebook - review together</title>
+  <link rel="icon" href="data:,">
+  <style>__REVIEW_STYLE__</style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to the entry</a>
+  <header class="masthead">
+    <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">✳</span> The cooking notebook</a>
+    <a href="approvals.html">Approvals page</a>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">A seat at the kitchen table</p>
+      <h1>A little of your know-how<br> goes a long way.</h1>
+      <p>Read a lesson, a recipe or an ingredient swap, the way you would read a recipe card. Then tell us what is clear and what you would do differently.</p>
+      <ol class="steps" aria-label="How it works">
+        <li>Pick something from the list. Recipes are a good place to start.</li>
+        <li>Read it slowly, as if you were about to cook it.</li>
+        <li>Give it a score, write a note, or both. Then send it.</li>
+      </ol>
+    </section>
+    <aside class="notice"><strong>Please read this first: these are drafts.</strong> These entries have not all been checked by a cook. Safety and allergen information is unverified. Use this site to review the writing, not as cooking guidance.</aside>
+    <div class="workspace">
+      <section class="library" id="library" aria-label="Browse the notebook" tabindex="-1">
+        <nav id="categories" aria-label="What would you like to read?"></nav>
+        <label for="search">Search by name</label>
+        <input type="search" id="search" placeholder="Try eggs, sauces, or knife cuts" autocomplete="off">
+        <div class="filter-row">
+          <label for="cuisine">Cuisine</label><select id="cuisine"><option value="">All cuisines</option></select>
+        </div>
+        <div class="filter-row">
+          <label for="progress-filter">Show</label>
+          <select id="progress-filter"><option value="all">Everything</option><option value="todo">Not read yet (To look at)</option><option value="looked">Looked over</option><option value="revisit">Marked to revisit</option><option value="draft">With an unsent note</option></select>
+        </div>
+        <div class="progress-box">
+          <p id="progress-headline"></p>
+          <progress id="progress-meter" max="1" value="0" aria-labelledby="progress-headline"></progress>
+          <p id="progress-summary" class="fine"></p>
+        </div>
+        <p id="result-count" role="status"></p>
+        <div id="entry-list"></div>
+      </section>
+      <article id="content" tabindex="-1" aria-label="Selected entry"></article>
+    </div>
+    <footer><span>The cooking notebook · Editorial review</span><a id="source-link" target="_blank" rel="noopener">View this edition on GitHub</a></footer>
+  </main>
+  <noscript><p class="notice">Please enable JavaScript to browse entries and prepare feedback.</p></noscript>
+  <script type="application/json" id="review-data">__REVIEW_DATA__</script>
+  <script>__REVIEW_WORDS__</script>
+  <script>__REVIEW_PROGRESS__</script>
+  <script>__REVIEW_SCRIPT__</script>
+</body>
+</html>

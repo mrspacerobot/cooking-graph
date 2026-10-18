@@ -1,0 +1,24 @@
+{
+  "id": "reviewer/culinary-2",
+  "kind": "person",
+  "model_id": null,
+  "knows": [
+    {"cuisine": "cuisine/burgundian", "how": "owner-authorized"},
+    {"cuisine": "cuisine/french", "how": "owner-authorized"},
+    {"cuisine": "cuisine/gascon", "how": "owner-authorized"},
+    {"cuisine": "cuisine/greek", "how": "owner-authorized"},
+    {"cuisine": "cuisine/indian", "how": "owner-authorized"},
+    {"cuisine": "cuisine/italian", "how": "owner-authorized"},
+    {"cuisine": "cuisine/japanese", "how": "owner-authorized"},
+    {"cuisine": "cuisine/lebanese", "how": "owner-authorized"},
+    {"cuisine": "cuisine/lyonnais", "how": "owner-authorized"},
+    {"cuisine": "cuisine/mediterranean", "how": "owner-authorized"},
+    {"cuisine": "cuisine/moroccan", "how": "owner-authorized"},
+    {"cuisine": "cuisine/provencal", "how": "owner-authorized"},
+    {"cuisine": "cuisine/savoyard", "how": "owner-authorized"},
+    {"cuisine": "cuisine/spanish", "how": "owner-authorized"},
+    {"cuisine": "cuisine/turkish", "how": "owner-authorized"}
+  ],
+  "safety_authority": null,
+  "added_on": "2026-10-18"
+}

@@ -1,0 +1,55 @@
+name: Review notebook
+
+on:
+  push:
+    branches: [main]
+    paths: ["graph/**", "reviewer/**", "tools/**", "schema/**", "review-site", ".github/workflows/pages.yml"]
+  pull_request:
+    paths: ["graph/**", "reviewer/**", "tools/**", "schema/**", "review-site", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: review-notebook-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+      - name: Check the tools and graph
+        run: ./check
+      - name: Build the editorial review site
+        run: ./review-site
+      - name: Save a downloadable preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-notebook-preview
+          path: out/site/*.html
+      - name: Package the Pages site
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out/site
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Publish the review notebook
+        id: deployment
+        uses: actions/deploy-pages@v4

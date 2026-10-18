@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""review: show a card with the hash a review record must carry. It writes nothing.
+"""review: inspect a review unit or apply an approval file from a human.
 
 ./review show technique/deglaze
 ./review seal technique/deglaze                           the hash of the whole card
 ./review seal technique/deglaze works_on group/sauces     the hash of one statement
+./review apply cooking-approvals.txt [--reviewer reviewer/culinary-1]
 """
 
 import os
@@ -12,20 +13,28 @@ import sys
 ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
 
-from tools import check, review_tool  # noqa: E402
+from tools import approval_packets, check, reading, review_tool  # noqa: E402
 
 arguments = sys.argv[1:]
-if len(arguments) < 2 or arguments[0] not in ("show", "seal"):
+if len(arguments) < 2 or arguments[0] not in ("show", "seal", "apply"):
     sys.exit(__doc__)
 things, issues = check.read_repository(ROOT)
 if issues:
     print("review: ./check finds %d issues" % len(issues), file=sys.stderr)
     sys.exit(1)
 try:
-    if arguments[0] == "show":
+    if arguments[0] == 'apply':
+        import argparse
+        parser = argparse.ArgumentParser(description='Apply a human approval file on a review branch.')
+        parser.add_argument('packet')
+        parser.add_argument('--reviewer')
+        options = parser.parse_args(arguments[1:])
+        changed = approval_packets.apply(ROOT, reading.read_json(options.packet), options.reviewer)
+        print('Prepared %d graph files. Run ./check and submit a pull request for owner merge.' % len(changed))
+    elif arguments[0] == "show":
         print("\n".join(review_tool.show(things, arguments[1])))
     else:
         print(review_tool.seal(things, *arguments[1:4]))
-except ValueError as error:
+except (ValueError, OSError) as error:
     print("review: %s" % error, file=sys.stderr)
     sys.exit(1)

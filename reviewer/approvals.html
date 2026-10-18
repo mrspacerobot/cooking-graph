@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><title>Human approvals - The cooking notebook</title>
+  <link rel="icon" href="data:,"><style>__APPROVAL_STYLE__</style>
+</head>
+<body>
+  <a class="skip" href="#approval-content">Skip to the entry</a>
+  <header class="masthead"><a class="brand" href="index.html">✳ The cooking notebook</a><a href="index.html">Back to the notebook</a></header>
+  <main>
+    <section class="intro"><p class="eyebrow">A human has the last word</p><h1>Check the facts.<br> Put your approval on record.</h1>
+      <p>Review culinary content and ingredient safety separately. Read the evidence, approve what you have checked, and flag what needs a correction.</p></section>
+    <aside class="notice"><strong>These are claims awaiting human verification.</strong> An allergen or dietary answer shown here is not a verified food recommendation. Approval decisions take effect only after the owner applies and merges the review.</aside>
+    <section class="approval-session" aria-label="Approval session">
+      <label for="approval-reviewer">Human reviewer</label><select id="approval-reviewer"></select>
+      <p id="reviewer-scope" class="fine"></p>
+      <div class="actions"><button type="button" id="download-approvals" class="primary">Download approval file</button><a id="submit-approvals" class="button" target="_blank" rel="noopener">Submit decisions on GitHub ↗</a></div>
+      <p id="session-status" class="fine" role="status"></p>
+      <p class="fine">For a large batch, download the file and attach it to the GitHub issue. The owner confirms who submitted it, applies it on a branch and reviews the changes.</p>
+    </section>
+    <div class="workspace">
+      <section class="library" aria-label="Approval queue">
+        <label for="approval-search">Find an entry</label><input id="approval-search" type="search" placeholder="Try butter, eggs, or sauces">
+        <div class="filter-row"><label for="approval-mode">Review</label><select id="approval-mode"><option value="safety">Ingredient safety</option><option value="content">Culinary content</option></select></div>
+        <div class="filter-row"><label for="approval-kind">Kind</label><select id="approval-kind"><option value="">All kinds</option></select></div>
+        <div class="filter-row"><label for="approval-filter">Queue</label><select id="approval-filter"><option value="pending">Awaiting a decision</option><option value="decided">Decisions in this browser</option><option value="all">All entries</option></select></div>
+        <p id="approval-count" class="fine" role="status"></p><div id="approval-list"></div>
+      </section>
+      <article id="approval-content" tabindex="-1" aria-label="Entry to approve"></article>
+    </div>
+    <footer><span>Human approvals · An exact version, a named reviewer, an evidence trail</span><a href="index.html">Explore the notebook</a></footer>
+  </main>
+  <noscript><p class="notice">Please enable JavaScript to review entries and prepare approval decisions.</p></noscript>
+  <script type="application/json" id="approval-data">__APPROVAL_DATA__</script><script>__APPROVAL_SCRIPT__</script>
+</body>
+</html>

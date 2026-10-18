@@ -2,8 +2,8 @@
 
 A tier above drafted is backed when a live record of a reviewer approved it and
 the thing is as the reviewer saw it. Only stage one is built: a person who knows
-the cuisine may grant reviewed. Verified, a second reviewer, safety, samples and
-rulings are refused until they are built.
+the cuisine may grant reviewed. A person may verify ingredient safety against
+evidence. Verified culinary content, samples and rulings remain later stages.
 """
 
 import json
@@ -90,6 +90,40 @@ def reviewer_of(things, record):
     return things.get(record.data["reviewer"])
 
 
+def is_safety_record(record):
+    covers = record.data['covers']
+    return bool(covers) and all(row['field'] == 'safety' and row['target'] is None for row in covers)
+
+
+def safety_evidence(things, record):
+    reviewer = reviewer_of(things, record)
+    if reviewer is None or reviewer.data['kind'] != 'person':
+        return False
+    against = record.data['against']
+    if reviewer.data['safety_authority'] and any(row['note'] for row in against):
+        return True
+    return any(row['how'] == 'source' and row['note'] and row['source'] in things
+               and things[row['source']].kind == 'source'
+               and things[row['source']].data['url'] and things[row['source']].data['read_on']
+               for row in against)
+
+
+def safety_not_earned(things):
+    approved = backing(things)
+    issues = []
+    for thing_id, thing in of_kind(things, 'ingredient'):
+        if thing.data['safety']['state'] != 'verified':
+            continue
+        candidates = approved.get((thing_id, 'safety', None), [])
+        earned = any(one.grants == 'verified' and one.seen == review_hash.seen(thing.data, 'safety')
+                     and is_safety_record(things[one.review_id]) and safety_evidence(things, things[one.review_id])
+                     for one in candidates)
+        if not earned:
+            issues.append(Issue(thing.path, 'safety.state', 'safety-not-earned',
+                                'verified safety needs a live human approval of this exact safety record, with source evidence or owner-granted authority'))
+    return issues
+
+
 def model_grants_too_much(things):
     """A model may rank and flag. It grants nothing above sourced, and sourced only against a source."""
     issues = []
@@ -136,6 +170,8 @@ def reviewer_does_not_know_cuisine(things):
         reviewer = reviewer_of(things, record)
         if reviewer is None or reviewer.data["kind"] != "person" or rank(record.data["grants"]) < rank("reviewed"):
             continue
+        if is_safety_record(record):
+            continue
         reviewer = reviewer.data
         cuisine = record.data["cuisine"]
         if cuisine is None:
@@ -173,7 +209,8 @@ def review_unlinked(things):
             if cover["verdict"] == "approved":
                 unit = (cover["thing"], cover["field"], cover["target"])
                 granted.setdefault((unit, record.data["grants"]), set()).add(record_id)
-    for (unit, grants), holders in sorted(granted.items()):
+    order = lambda item: (item[0][0][0], item[0][0][1] or '', item[0][0][2] or '', item[0][1])
+    for (unit, grants), holders in sorted(granted.items(), key=order):
         if len(holders) > 1:
             for record_id in sorted(holders):
                 message = "another live record already grants '%s' to the same unit" % grants
@@ -194,7 +231,7 @@ def review_unlinked(things):
 
 
 def review_not_built(things):
-    """Samples, rulings, safety, verified and cook-tested are later stages. A record that uses them is refused."""
+    """Safety verification is distinct from the later verified culinary tier."""
     issues = []
     for record_id, record in of_kind(things, "review"):
         data = record.data
@@ -202,9 +239,16 @@ def review_not_built(things):
             issues.append(Issue(record.path, "mode", "review-not-built", "samples are not built yet"))
         if data["rulings"]:
             issues.append(Issue(record.path, "rulings", "review-not-built", "rulings on safety disagreements are not built yet"))
-        if any(cover["field"] == "safety" for cover in data["covers"]):
-            issues.append(Issue(record.path, "covers", "review-not-built", "a safety record cannot be reviewed yet"))
-        if data["grants"] in NOT_BUILT:
+        safety = is_safety_record(record)
+        if any(cover['field'] == 'safety' for cover in data['covers']):
+            if not safety or data['grants'] != 'verified':
+                issues.append(Issue(record.path, 'covers', 'review-not-built', 'a safety review covers only safety units and grants verified'))
+            reviewer = reviewer_of(things, record)
+            if reviewer is None or reviewer.data['kind'] != 'person' or (any(cover['verdict'] == 'approved' for cover in data['covers']) and not safety_evidence(things, record)):
+                issues.append(Issue(record.path, 'against', 'safety-not-earned', 'a safety review needs a person and recorded evidence'))
+            if any(cover['thing'] in things and things[cover['thing']].kind != 'ingredient' for cover in data['covers']):
+                issues.append(Issue(record.path, 'covers', 'safety-not-earned', 'only an ingredient has a safety record'))
+        if data["grants"] in NOT_BUILT and not (safety and data['grants'] == 'verified'):
             issues.append(Issue(record.path, "grants", "review-not-built", "'%s' is not built yet" % data["grants"]))
     return issues
 

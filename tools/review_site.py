@@ -5,7 +5,7 @@ import json
 import sys
 from pathlib import Path
 
-from tools import check, queries
+from tools import approval_site, check, queries
 from tools.viewer import metadata
 
 REPOSITORY = 'mrspacerobot/cooking-graph'
@@ -121,6 +121,7 @@ def main(root, assets=None):
     destination = Path(root, 'out', 'site')
     destination.mkdir(parents=True, exist_ok=True)
     (destination / 'index.html').write_text(page(assets or root, data), encoding='utf-8')
+    (destination / 'approvals.html').write_text(approval_site.page(assets or root, approval_site.payload(things, data['commit'])), encoding='utf-8')
     (destination / '.nojekyll').touch()
     print('Built %d review entries: %s' % (len(data['entries']), (destination / 'index.html').resolve()))
     return 0

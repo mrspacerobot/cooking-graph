@@ -8,7 +8,7 @@
   "commercial_uses": ["allowed", "share-alike", "not-allowed", "unclear"],
   "languages": ["en", "fr", "es", "it", "tr"],
   "reviewer_kinds": ["person", "model", "test-cook"],
-  "know_ways": ["cooks-it-at-home", "cooks-it-for-work", "trained-in-it", "lives-or-lived-there", "studies-it"],
+  "know_ways": ["cooks-it-at-home", "cooks-it-for-work", "trained-in-it", "lives-or-lived-there", "studies-it", "owner-authorized"],
   "verdicts": ["approved", "rejected"],
   "against_ways": ["source", "own-knowledge", "test-cook"],
   "review_modes": ["rows", "sample"],

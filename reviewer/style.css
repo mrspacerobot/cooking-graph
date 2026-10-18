@@ -87,6 +87,24 @@ summary { cursor: pointer; min-height: 44px; padding: 8px 0; }
 .swap-candidate.unknown { border-color: #959585; background: #f4f3ed; }
 .blocked-badge { background: #f5dfd7; color: #7d3b2e; }
 h4 { font-size: 16px; margin: 18px 0 8px; }
+.approval-session { padding: 20px; margin-bottom: 28px; border: 1px solid var(--line); border-radius: 8px; background: var(--white); }
+.approval-session select { width: 100%; }
+#approval-content { background: var(--white); border: 1px solid var(--line); padding: clamp(20px, 3vw, 40px); border-radius: 10px; overflow-wrap: anywhere; min-width: 0; }
+#approval-list { max-height: 65vh; overflow: auto; }
+.fact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.fact-card { border: 1px solid var(--line); border-radius: 8px; padding: 16px; min-width: 0; }
+.fact-card h3 { margin: 0 0 10px; font-size: 21px; }
+.fact-card details { font-size: 13px; }
+.record-fields { margin: 12px 0; }
+.record-fields dt { font-weight: 600; text-transform: capitalize; }
+.record-fields dd { margin: 4px 0 16px; border-left: 1px solid var(--line); padding-left: 8px; min-width: 0; }
+.record-fields ul { padding-left: 16px; }
+.record-fields li { padding-left: 0; }
+#decision-sources { display: block; width: 100%; margin-bottom: 16px; white-space: normal; }
+.attestation { display: flex; align-items: flex-start; gap: 10px; font-size: 16px; margin: 18px 0; }
+.attestation input { width: 20px; height: 20px; flex: 0 0 auto; margin-top: 4px; accent-color: var(--green); }
+button:disabled { opacity: .5; cursor: default; }
+@media (max-width: 760px) { .fact-grid { grid-template-columns: minmax(0, 1fr); } }
 footer { border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; margin-top: 48px; padding: 24px 0; color: var(--muted); font-size: 12px; }
 @media (max-width: 760px) {
   .masthead { padding: 18px 5vw; }

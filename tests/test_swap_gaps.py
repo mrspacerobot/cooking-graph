@@ -2,10 +2,12 @@
 
 import copy
 import os
+from pathlib import Path
+import shutil
 import subprocess
 import unittest
 
-from tests.small_kitchen import REPOSITORY
+from tests.small_kitchen import REPOSITORY, SmallKitchen
 from tests.test_queries import kitchen
 from tools import swap_gaps
 from tools.reading import Thing
@@ -95,18 +97,31 @@ class SwapGapsTest(unittest.TestCase):
         self.assertEqual(swap_gaps.analyse(self.things), swap_gaps.analyse(reversed_things))
 
     def test_the_command_lists_gaps_new_foods_and_writes_nothing(self):
-        path = os.path.join(REPOSITORY, "swap-gaps")
-        before = subprocess.run(["git", "status", "--porcelain"], cwd=REPOSITORY, capture_output=True, text=True).stdout
-        summary = subprocess.run([path], capture_output=True, text=True)
+        # A real command in an isolated checkout proves it writes nothing without
+        # confusing concurrent editing in the developer's checkout with a write.
+        fixture = SmallKitchen()
+        self.addCleanup(fixture.close)
+        shutil.copytree(os.path.join(REPOSITORY, 'tools'), os.path.join(fixture.root, 'tools'),
+                        ignore=shutil.ignore_patterns('__pycache__'))
+        path = os.path.join(fixture.root, 'swap-gaps')
+        shutil.copy2(os.path.join(REPOSITORY, 'swap-gaps'), path)
+
+        def snapshot():
+            return {str(file.relative_to(fixture.root)): file.read_bytes()
+                    for file in Path(fixture.root).rglob('*')
+                    if file.is_file() and '__pycache__' not in file.parts}
+
+        before = snapshot()
+        summary = subprocess.run([path], cwd=fixture.root, capture_output=True, text=True)
         self.assertEqual(0, summary.returncode, summary.stderr)
         self.assertIn("recipe lines", summary.stdout)
-        listed = subprocess.run([path, "--list", "--top", "3"], capture_output=True, text=True)
+        listed = subprocess.run([path, "--list", "--top", "3"], cwd=fixture.root, capture_output=True, text=True)
         self.assertEqual(0, listed.returncode, listed.stderr)
         self.assertLessEqual(len(listed.stdout.strip().splitlines()), 4)
-        new = subprocess.run([path, "--new"], capture_output=True, text=True)
+        new = subprocess.run([path, "--new"], cwd=fixture.root, capture_output=True, text=True)
         self.assertEqual(0, new.returncode, new.stderr)
         self.assertIn("foods", new.stdout)
-        after = subprocess.run(["git", "status", "--porcelain"], cwd=REPOSITORY, capture_output=True, text=True).stdout
+        after = snapshot()
         self.assertEqual(before, after)
 
     def test_the_counts_for_the_numbers_are_the_totals_and_the_new_foods(self):

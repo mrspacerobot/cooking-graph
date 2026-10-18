@@ -178,3 +178,9 @@ to keep your place; progress and feedback drafts are saved in this browser.
 See [the review website guide](docs/review-website.md) for publishing on GitHub
 Pages and inviting a reviewer. Feedback opens a prepared GitHub issue for the
 reviewer to submit, or downloads as a text file. The site is for reviewing drafts.
+
+The separate **Human approvals** page shows unapproved culinary content and
+ingredient safety facts, including allergens, with their evidence. A registered
+person can prepare approval or correction decisions. The owner confirms the
+human author, runs `./review apply cooking-approvals.txt` on a branch, checks the
+result and merges the pull request. See [the human approval guide](docs/human-approvals.md).

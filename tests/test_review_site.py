@@ -154,4 +154,4 @@ class ReviewSiteTest(unittest.TestCase):
                 with patch.object(review_site, 'metadata', return_value={'commit': 'abc123'}):
                     with contextlib.redirect_stdout(io.StringIO()):
                         self.assertEqual(0, review_site.main(root, assets=REPOSITORY))
-            self.assertEqual(['.nojekyll', 'index.html'], sorted(p.name for p in Path(root, 'out/site').iterdir()))
+            self.assertEqual(['.nojekyll', 'approvals.html', 'index.html'], sorted(p.name for p in Path(root, 'out/site').iterdir()))

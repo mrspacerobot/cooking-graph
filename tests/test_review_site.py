@@ -108,6 +108,32 @@ class ReviewSiteTest(unittest.TestCase):
         after = review_site.payload(self.things, 'new')['entries']['technique/sweat']['hash']
         self.assertNotEqual(before, after)
 
+    def test_technique_discovery_uses_variants_in_the_engine_order(self):
+        child = copy.deepcopy(self.things['technique/sweat'].data)
+        child.update(id='technique/gentle-sweat', names={'en': 'Gentle sweat'},
+                     variant_of=[{'thing': 'technique/sweat', 'tier': 'drafted', 'differs': 'A gentler heat.'}])
+        self.things[child['id']] = Thing('graph/technique/gentle-sweat.json', 'technique', child)
+        recipe = copy.deepcopy(self.things['recipe/buttered-onions'].data)
+        recipe['id'] = 'recipe/a-gentle-onions'
+        recipe['steps'][0]['technique'] = child['id']
+        self.things[recipe['id']] = Thing('graph/recipe/a-gentle-onions.json', 'recipe', recipe)
+        data = review_site.payload(self.things, 'abc123')
+        parent = data['entries']['technique/sweat']
+        self.assertEqual(['recipe/buttered-onions', 'recipe/a-gentle-onions'], [row['recipe'] for row in parent['recipes']])
+        self.assertTrue(parent['recipes'][0]['exact'])
+        self.assertEqual([child['id']], parent['recipes'][1]['variants_used'])
+        self.assertEqual([{'thing': child['id'], 'tier': 'drafted', 'differs': 'A gentler heat.'}], parent['variants'])
+        self.assertEqual(['recipe/a-gentle-onions'], [row['recipe'] for row in data['entries'][child['id']]['recipes']])
+
+    def test_preparations_are_readable_reviewable_records_with_their_parts(self):
+        data = review_site.payload(self.things, 'abc123')
+        preparation = data['entries']['preparation/roux']
+        self.assertEqual('preparation', preparation['kind'])
+        self.assertEqual('preparation/roux', preparation['source'])
+        self.assertEqual(self.things['preparation/roux'].data['parts'], preparation['parts'])
+        self.assertEqual(self.things['preparation/roux'].data['is'], preparation['is'])
+        self.assertEqual('drafted', preparation['tier'])
+
     def test_page_cannot_be_broken_out_of_by_graph_text(self):
         self.things['technique/sweat'].data['does'] = '</script><script>alert(1)</script>'
         page = review_site.page(REPOSITORY, review_site.payload(self.things, 'abc123'))

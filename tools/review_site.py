@@ -73,10 +73,15 @@ def payload(things, commit):
     for row in entries.values():
         claims.setdefault((row['candidate'], row['original']), []).append(row)
     for thing in graph.values():
-        if thing.kind in ('technique', 'recipe'):
+        if thing.kind in ('technique', 'recipe', 'preparation'):
             data = dict(thing.data)
             if thing.kind == 'recipe':
                 data['substitutions'] = recipe_substitutions(graph, data['id'], claims)
+            elif thing.kind == 'technique':
+                data['recipes'] = queries.recipes(graph, data['id'])['recipes']
+                data['variants'] = [dict(row, thing=other.data['id'])
+                                    for other in graph.values() if other.kind == 'technique'
+                                    for row in other.data['variant_of'] if row['thing'] == data['id']]
             record = entry(data, thing.kind, thing.data['id'])
             entries[record['id']] = record
         elif thing.kind == 'program':
@@ -100,6 +105,7 @@ def page(root, data):
     for marker, content in (
         ('__REVIEW_STYLE__', (assets / 'style.css').read_text(encoding='utf-8')),
         ('__REVIEW_DATA__', encoded),
+        ('__REVIEW_PROGRESS__', (assets / 'progress.js').read_text(encoding='utf-8')),
         ('__REVIEW_SCRIPT__', (assets / 'app.js').read_text(encoding='utf-8')),
     ):
         text = text.replace(marker, content)

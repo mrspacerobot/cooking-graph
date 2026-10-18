@@ -60,6 +60,9 @@ li { padding-left: 4px; margin: 10px 0; }
 .plain-list li { border-bottom: 1px solid var(--line); padding: 10px 0; margin: 0; }
 .step-meta { color: var(--muted); font-size: 13px; }
 .feedback { margin-top: 38px; padding-top: 8px; border-top: 1px solid var(--line); }
+.progress-panel { margin-top: 32px; border-top: 1px solid var(--line); }
+.progress-panel button[aria-pressed=true] { background: #e7ecdf; border-color: var(--green); }
+.entry .progress-label { color: var(--green); font-weight: 600; }
 .feedback h3 { margin-top: 20px; }
 .feedback > p { color: var(--muted); font-size: 14px; }
 fieldset { padding: 0; margin: 20px 0; border: 0; }

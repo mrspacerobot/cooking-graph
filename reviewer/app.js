@@ -2,7 +2,7 @@
 
 const notebook = JSON.parse(document.getElementById("review-data").textContent);
 const entries = Object.values(notebook.entries);
-const kinds = {class: "Foundation classes", technique: "Techniques", recipe: "Recipes", substitution: "Substitutions"};
+const kinds = {class: "Foundation classes", technique: "Techniques", recipe: "Recipes", substitution: "Substitutions", preparation: "Preparations"};
 let category = "class";
 let selected = null;
 let filtered = [];
@@ -66,7 +66,7 @@ function claimContext(record) {
 function substitutionBody(record) {
   const recipes = entries.filter(other => other.kind === "recipe" && other.substitutions.some(line =>
     [...line.options, ...line.excluded].some(row => row.claims.includes(record.id))));
-  return `<p class="lead">${escapeText(nameOf(record.candidate))} in place of ${escapeText(nameOf(record.original))}</p>
+  return `<p class="lead">${link(record.candidate)} in place of ${link(record.original)}</p>
     <p class="notice">This is a directional claim for review. Its tier and context matter; safety and allergens remain unverified.</p>
     <p><span class="badge ${record.allows ? "" : "blocked-badge"}">${record.allows ? "Conditional substitution" : "Explicit exclusion"}</span></p>` +
     section("When this claim applies", claimContext(record)) +
@@ -83,7 +83,7 @@ function substitutionCandidate(row) {
     "avoided-or-unknown-fact": "The query cannot offer this candidate. Safety remains unverified."
   };
   return `<div class="swap-candidate ${row.reason === "not-in-this-context" ? "blocked" : row.reason ? "unknown" : ""}">
-    <p><strong>${escapeText(nameOf(row.thing))}</strong>${row.tier ? ` <span class="badge tier">${escapeText(row.tier)}</span>` : ""}</p>
+    <p><strong>${link(row.thing)}</strong>${row.tier ? ` <span class="badge tier">${escapeText(row.tier)}</span>` : ""}</p>
     ${row.reason ? `<p>${escapeText(reasons[row.reason] || label(row.reason))}</p>` : ""}
     ${row.basis === "part-option" ? "<p>Listed as another option for this dish part.</p>" : ""}
     ${row.caveat ? `<p>${escapeText(row.caveat)}</p>` : ""}
@@ -121,7 +121,6 @@ function classBody(record) {
 }
 
 function techniqueBody(record) {
-  const recipes = entries.filter(other => other.kind === "recipe" && other.steps.some(step => step.technique === record.id));
   const claims = entries.filter(other => other.kind === "substitution" && [...other.when, ...other.not_when].includes(record.id));
   return `<p class="lead">${escapeText(record.does)}</p>` +
     section("How it works", `<ol>${record.how.map(text => `<li>${escapeText(text)}</li>`).join("")}</ol>`) +
@@ -131,13 +130,14 @@ function techniqueBody(record) {
     section("What you need", `<ul class="plain-list">${record.needs.map(row => `<li><strong>${escapeText(label(row.role))}</strong> <small>(${escapeText(row.tier)})</small>${links(row.options)}</li>`).join("")}</ul>`) +
     section("Learn first", record.comes_after.length ? `<ul>${record.comes_after.map(row => `<li>${link(row.thing)} (${escapeText(row.tier)})<p>${escapeText(row.why)}</p></li>`).join("")}</ul>` : "") +
     section("Variant of", record.variant_of.length ? `<ul>${record.variant_of.map(row => `<li>${link(row.thing)} (${escapeText(row.tier)})<p>${escapeText(row.differs)}</p></li>`).join("")}</ul>` : "") +
-    section("Recipes that use this technique", recipes.length ? recipeLinks(recipes) : "<p>No recipe is listed yet.</p>") +
+    section("Variants to explore", record.variants.length ? `<ul>${record.variants.map(row => `<li>${link(row.thing)} (${escapeText(row.tier)})<p>${escapeText(row.differs)}</p></li>`).join("")}</ul>` : "") +
+    section("Recipes that use this technique", record.recipes.length ? `<p class="fine">Includes variants. Exact use comes first, then recipes that teach the technique.</p><ul class="plain-list">${record.recipes.map(row => `<li>${link(row.recipe)}<p class="fine">${row.exact ? "Uses this technique directly" : `Uses a variant: ${row.variants_used.map(link).join(", ")}`}${row.teaches ? " · Teaching recipe" : ""} · ${escapeText(row.tier)}</p></li>`).join("")}</ul>` : "<p>No recipe is listed yet.</p>") +
     section("Substitution claims naming this technique", claims.length ? `<p class="fine">Includes conditional substitutions and exclusions. Open each claim to review its direction and full context.</p>${recipeLinks(claims)}` : "<p>No substitution claim names this technique yet.</p>");
 }
 
 function recipeBody(record) {
-  return `<p class="lead">Makes ${escapeText(nameOf(record.makes))} · ${escapeText(measure(record.yields))}</p>` +
-    section("Ingredients", `<ul class="plain-list">${record.ingredients.map(row => `<li>${escapeText(measure(row.amount))} <strong>${escapeText(nameOf(row.thing))}</strong>${row.forms.length ? `, ${escapeText(row.forms.map(nameOf).join(", "))}` : ""}</li>`).join("")}</ul>`) +
+  return `<p class="lead">Makes ${link(record.makes)} · ${escapeText(measure(record.yields))}</p>` +
+    section("Ingredients", `<ul class="plain-list">${record.ingredients.map(row => `<li>${escapeText(measure(row.amount))} <strong>${link(row.thing)}</strong>${row.forms.length ? `, ${escapeText(row.forms.map(nameOf).join(", "))}` : ""}</li>`).join("")}</ul>`) +
     section("Substitutions to review", recipeSubstitutions(record)) +
     section("Equipment", links(record.equipment)) +
     section("Method to review", `<ol>${record.steps.map(step => `<li><strong>${link(step.technique)}</strong><p>${escapeText(step.text)}</p><p class="step-meta">${[
@@ -146,6 +146,19 @@ function recipeBody(record) {
       step.with.length ? "With: " + step.with.map(nameOf).join(", ") : "",
       step.safety_points.length ? "Open safety points: " + step.safety_points.map(label).join(", ") : ""
     ].filter(Boolean).map(escapeText).join(" · ")}</p></li>`).join("")}</ol>`);
+}
+
+function preparationBody(record) {
+  const madeBy = recipesFor([record.id]);
+  const usedBy = entries.filter(other => other.kind === "recipe" && other.makes !== record.id &&
+    (other.ingredients.some(row => row.thing === record.id) || other.steps.some(step => step.makes.includes(record.id))));
+  const claims = entries.filter(other => other.kind === "substitution" && [other.candidate, other.original].includes(record.id));
+  return `<p class="lead">${escapeText(record.is)}</p>` +
+    section("Components", record.parts.length ? `<ul class="plain-list">${record.parts.map(part => `<li><strong>${escapeText(label(part.id))}</strong> · ${escapeText(label(part.role))}${part.optional ? " · Optional" : " · Required"} <span class="badge tier">${escapeText(part.tier)}</span>${links(part.options)}</li>`).join("")}</ul>` : "<p>No separate components are recorded. This preparation may be made within a recipe step.</p>") +
+    section("Recipes to make this preparation", madeBy.length ? recipeLinks(madeBy) : "<p>No separate recipe is recorded. Check the recipes that use or make it below.</p>") +
+    section("Techniques to look over", record.teaches.length ? links(record.teaches) : "<p>No teaching technique is recorded.</p>") +
+    section("Recipes that use or make it", usedBy.length ? recipeLinks(usedBy) : "<p>No other recipe is listed yet.</p>") +
+    section("Substitution claims to review", claims.length ? recipeLinks(claims) : "<p>No substitution claim is recorded yet.</p>");
 }
 
 function cuisineIds(record) {
@@ -171,12 +184,14 @@ function updateLibrary() {
   document.querySelectorAll("[data-kind]").forEach(button => button.setAttribute("aria-pressed", button.dataset.kind === category));
   const query = document.getElementById("search").value.toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
   const cuisine = document.getElementById("cuisine").value;
-  filtered = entries.filter(record => record.kind === category && searchText(record).includes(query) && (!cuisine || cuisineIds(record).includes(cuisine)));
+  const matches = entries.filter(record => record.kind === category && searchText(record).includes(query) && (!cuisine || cuisineIds(record).includes(cuisine)));
+  updateProgressSummary(matches);
+  filtered = matches.filter(record => progressMatches(record, document.getElementById("progress-filter").value));
   if (category !== "class") filtered.sort((a, b) => titleOf(a).localeCompare(titleOf(b)));
   document.getElementById("result-count").textContent = `${filtered.length} ${category === "class" ? "classes" : kinds[category].toLowerCase()}`;
   document.getElementById("entry-list").innerHTML = filtered.length ? filtered.map(record =>
-    `<a class="entry" href="${href(record.id)}" aria-current="${selected?.id === record.id}"><strong>${escapeText(titleOf(record))}</strong><small>${escapeText(subtitle(record))}</small></a>`).join("") :
-    '<p class="muted">No matches. Try another word or cuisine.</p>';
+    `<a class="entry" href="${href(record.id)}" aria-current="${selected?.id === record.id}"><strong>${escapeText(titleOf(record))}</strong><small>${escapeText(subtitle(record))}</small><small class="progress-label">${progressLabel(record)}</small></a>`).join("") :
+    '<p class="muted">No matches. Try another word, cuisine or progress filter.</p>';
   updateNext();
 }
 
@@ -249,7 +264,8 @@ function connectFeedback(record) {
     try {
       localStorage.setItem(key, JSON.stringify(feedbackValue()));
       status.textContent = "Draft saved in this browser. It has not been sent.";
-    } catch { status.textContent = "Draft saving is unavailable. You can still send or download feedback."; }
+    } catch { progressPersistent = false; status.textContent = "Draft saving is unavailable. You can still send or download feedback."; }
+    trackFeedbackDraft(record, feedbackValue());
     document.getElementById("feedback-status").textContent = "";
   };
   form.addEventListener("input", save);
@@ -285,15 +301,16 @@ function connectFeedback(record) {
 function showEntry(record, focus) {
   selected = record;
   category = record.kind;
-  const renderers = {class: classBody, technique: techniqueBody, recipe: recipeBody, substitution: substitutionBody};
+  const renderers = {class: classBody, technique: techniqueBody, recipe: recipeBody, substitution: substitutionBody, preparation: preparationBody};
   const body = renderers[record.kind](record);
   const content = document.getElementById("content");
   content.innerHTML = `<div class="badges"><span class="badge">${escapeText(kinds[record.kind])}</span><span class="badge tier">${escapeText(record.tier)}</span></div>
-    <p class="eyebrow">${escapeText(subtitle(record))}</p><h2>${escapeText(titleOf(record))}</h2>${body}${feedbackForm()}
+    <p class="eyebrow">${escapeText(subtitle(record))}</p><h2>${escapeText(titleOf(record))}</h2>${body}${progressPanel(record)}${feedbackForm()}
     <nav id="entry-navigation" class="bottom-nav" aria-label="More entries"></nav>
     <p class="fine"><a href="https://github.com/${notebook.repository}/blob/${notebook.commit}/graph/${record.source}.json" target="_blank" rel="noopener">Read the source entry on GitHub ↗</a></p>`;
   document.title = `${titleOf(record)} - The cooking notebook`;
   connectFeedback(record);
+  connectProgress(record);
   updateLibrary();
   if (focus) {
     content.focus({preventScroll: true});
@@ -325,6 +342,15 @@ document.getElementById("categories").addEventListener("click", event => {
 });
 document.getElementById("search").addEventListener("input", updateLibrary);
 document.getElementById("cuisine").addEventListener("change", updateLibrary);
+document.getElementById("progress-filter").addEventListener("change", updateLibrary);
 document.getElementById("source-link").href = `https://github.com/${notebook.repository}/tree/${notebook.commit}`;
 window.addEventListener("hashchange", () => navigate(true));
+loadProgress();
+window.addEventListener("storage", event => {
+  if (!event.key || event.key.startsWith("cooking-notebook")) {
+    loadProgress();
+    updateLibrary();
+    if (selected) updateProgressPanel(selected);
+  }
+});
 navigate(false);

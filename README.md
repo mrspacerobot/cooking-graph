@@ -171,8 +171,10 @@ Read `AGENTS.md` before changing anything.
 
 ## Review the cooking notebook
 
-For a readable review site with foundation classes, techniques, recipes,
-contextual substitutions, ratings and suggestions, run `./review-site` and open `out/site/index.html`.
+For a readable review site with foundation classes, techniques and their variants,
+preparations, recipes, contextual substitutions, ratings and suggestions, run
+`./review-site` and open `out/site/index.html`. Mark your progress and filter entries
+to keep your place; progress and feedback drafts are saved in this browser.
 See [the review website guide](docs/review-website.md) for publishing on GitHub
 Pages and inviting a reviewer. Feedback opens a prepared GitHub issue for the
 reviewer to submit, or downloads as a text file. The site is for reviewing drafts.

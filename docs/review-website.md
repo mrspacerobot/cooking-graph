@@ -1,7 +1,7 @@
 # Review the cooking notebook
 
 The notebook is an editorial review site for someone who knows cooking. It has
-foundation classes, technique cards, recipes and substitution claims, drawn from the current graph.
+foundation classes, technique cards, preparations, recipes and substitution claims, drawn from the current graph.
 It is separate from the force graph at `./view` and the gated production export.
 Everything keeps its earned tier. The page prominently warns that drafts and
 unverified safety information are not cooking guidance. No ingredient safety
@@ -42,12 +42,21 @@ It follows GitHub's [custom Pages workflow](https://docs.github.com/en/pages/get
 
 ## Give feedback
 
-Choose **Foundation classes**, **Techniques**, **Recipes** or **Substitutions**. Search by names,
+Choose **Foundation classes**, **Techniques**, **Preparations**, **Recipes** or **Substitutions**. Search by names,
 aliases or class topic, or filter by cuisine. Classes follow the program's order,
 with prerequisites, linked techniques and recipes for practice. Techniques link
-to recipes that use that exact technique; variants are linked separately.
+to recipes using the technique or its variants, using the existing `./recipes`
+engine's order: exact use first, then teaching recipes. Each result identifies
+direct use or the variants it uses. Technique pages also link to their variants
+with the recorded differences, and to any parent technique.
 Recipes show their quantities, equipment, method, time, temperature and any
 open safety points. Each class level can be reviewed separately.
+
+Preparation names in ingredient lists and other cards are clickable. Their pages
+show definitions, required and optional components with their tiers, techniques,
+recipes to make them, recipes that use or produce them, and related substitution
+claims. A preparation with no separate recipe says so. Each preparation can be
+rated or corrected through its own feedback form.
 
 Each recipe also has **Substitutions to review**, grouped by ingredient. It uses
 the existing `./stand-ins` engine, with the same recipe context, technique
@@ -89,6 +98,30 @@ after the graph changes. Ratings are not aggregated or displayed on the site.
 Substitution feedback points to the candidate food's source record; its content
 identifier distinguishes the exact claim. Recipe review hashes include the computed
 substitution answers, so changed swaps do not reuse drafts about the older answers.
+
+## Keep your place
+
+Mark an entry **Looked over**, **Revisit**, or **To look at**. The **Review progress**
+filter finds each group, or entries with a feedback draft. Counts follow the
+selected category, cuisine and search. Draft feedback is listed as a draft;
+opening GitHub or downloading it never marks it as sent or complete.
+
+Progress is stored in this browser for the exact entry version, with the time
+you marked it. A changed entry starts again as **To look at**. Progress is not
+shared across devices, does not change graph tiers, and is separate from formal
+culinary approval. If storage is blocked, progress lasts only for the current
+visit and the site says so.
+
+**Find feedback on GitHub** opens the repository's issues filtered by the entry ID.
+Submitted suggestions, discussion and resolution remain in GitHub, which requires
+sign-in and access to the private repository. The static site does not fetch or
+publish private issue text.
+
+## Exploration tools still outside the website
+
+Pantry matching (`./kitchen`) and adaptation for several techniques, pantry and
+servings (`./compose`) are available on the command line. They do not yet have
+website controls. Allergen and dietary filters remain gated by safety verification.
 
 ## Act on suggestions
 

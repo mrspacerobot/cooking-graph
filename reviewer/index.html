@@ -29,6 +29,11 @@
         <div class="filter-row">
           <label for="cuisine">Cuisine</label><select id="cuisine"><option value="">All cuisines</option></select>
         </div>
+        <div class="filter-row">
+          <label for="progress-filter">Review progress</label>
+          <select id="progress-filter"><option value="all">All entries</option><option value="todo">To look at</option><option value="looked">Looked over</option><option value="revisit">Revisit</option><option value="draft">With feedback draft</option></select>
+        </div>
+        <p id="progress-summary" class="fine"></p>
         <p id="result-count" class="muted" role="status"></p>
         <div id="entry-list"></div>
       </section>
@@ -38,6 +43,7 @@
   </main>
   <noscript><p class="notice">Please enable JavaScript to browse entries and prepare feedback.</p></noscript>
   <script type="application/json" id="review-data">__REVIEW_DATA__</script>
+  <script>__REVIEW_PROGRESS__</script>
   <script>__REVIEW_SCRIPT__</script>
 </body>
 </html>

@@ -55,9 +55,9 @@ have no authored learning content in this round.
   draft claims, not a guarantee that every sauce can be rescued.
 - `emulsify` repeats a fresh yolk or mustard restart from the source card.
   A reviewer should check its scope across the sauces linked to the card.
-- `braise` repeats a liquid level around halfway up the meat. Covered pot
-  shape, food and recipe can change the needed liquid; the question is
-  explicitly about this recorded method.
+- `braise` asks about partial submersion of the meat. Covered pot shape,
+  food and recipe can change the needed liquid; the question is explicitly
+  about this method rather than a universal liquid proportion.
 - `make-a-roux` questions avoid the card's categorical claim that no later
   simmering can remove a raw flour taste, and avoid presenting opposite
   roux/liquid temperatures as the only valid approach.
@@ -96,3 +96,14 @@ of 140 drafted units: 28 introductions and 112 questions.
 These measures test the existing graph tools, not the quality or learning
 value of the new teaching questions. This round did not author or inspect
 probe content, or change names, cooking methods or practice recipes.
+
+## Validation
+
+`./check` passed all 645 tests and read 2,101 records strictly with no issues.
+`./numbers` produced the counts above. The review site builds 987 entries.
+Browser checks covered curriculum and lesson navigation, question and answer
+expansion, reading progress persistence, plain technique explanations and
+expanded-section preservation. Layouts have no horizontal overflow at 320,
+390, 768 and 1440 pixels, and dark mode keeps the existing readable theme.
+The browser console reported no errors. JavaScript syntax and whitespace
+checks passed. Generated pages and local screenshots are not committed.

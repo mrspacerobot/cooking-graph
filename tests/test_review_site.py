@@ -141,6 +141,15 @@ class ReviewSiteTest(unittest.TestCase):
         self.assertIn('\\u003c/script>', page)
         self.assertNotIn('__REVIEW_', page)
 
+    def test_page_explains_every_tier_in_plain_words_and_keeps_the_draft_warning(self):
+        page = review_site.page(REPOSITORY, review_site.payload(self.things, 'abc123'))
+        words = json.loads(Path(REPOSITORY, 'schema/words.json').read_text())
+        for tier in words['tiers']:
+            self.assertIn("'%s':" % tier, page)
+        self.assertIn('Safety and allergen information is unverified.', page)
+        self.assertIn('not as cooking guidance', page)
+        self.assertNotIn('\u2014', page)
+
     def test_build_refuses_invalid_graph_and_does_not_write(self):
         with tempfile.TemporaryDirectory() as root:
             with patch.object(review_site.check, 'read_repository', return_value=({}, ['broken'])):

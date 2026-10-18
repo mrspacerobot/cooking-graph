@@ -29,11 +29,14 @@ function loadProgress() {
   }
 }
 
+function progressState(record) {
+  const state = reviewProgress.get(record.id)?.state;
+  if (state === "looked" || state === "revisit") return state;
+  return feedbackDrafts.has(record.id) ? "draft" : "todo";
+}
+
 function progressLabel(record) {
-  const marker = reviewProgress.get(record.id);
-  if (marker?.state === "looked") return "Looked over";
-  if (marker?.state === "revisit") return "Revisit";
-  return feedbackDrafts.has(record.id) ? "Feedback draft" : "To look at";
+  return {looked: "Looked over", revisit: "Revisit", draft: "Note not sent yet", todo: "To look at"}[progressState(record)];
 }
 
 function progressMatches(record, filter) {
@@ -42,35 +45,40 @@ function progressMatches(record, filter) {
   return (reviewProgress.get(record.id)?.state || "todo") === filter;
 }
 
-function updateProgressSummary(records) {
+function updateProgressSummary(records, title) {
   const looked = records.filter(record => reviewProgress.get(record.id)?.state === "looked").length;
   const revisit = records.filter(record => reviewProgress.get(record.id)?.state === "revisit").length;
   const drafts = records.filter(record => feedbackDrafts.has(record.id)).length;
-  document.getElementById("progress-summary").textContent = `${looked} of ${records.length} looked over · ${revisit} to revisit · ${drafts} feedback drafts`;
+  document.getElementById("progress-headline").textContent = `${looked} of ${records.length} ${title} looked over`;
+  const meter = document.getElementById("progress-meter");
+  meter.max = Math.max(records.length, 1);
+  meter.value = looked;
+  document.getElementById("progress-summary").textContent = `${revisit} marked to revisit · ${drafts} with a note not sent yet`;
 }
 
 function progressPanel(record) {
   const query = new URLSearchParams({q: `is:issue in:body "${record.id}"`});
   return `<section class="progress-panel" aria-labelledby="progress-title">
-    <h3 id="progress-title">Your place in the notebook</h3>
-    <p id="entry-progress" class="fine" role="status"></p>
-    <div class="actions" role="group" aria-label="Mark your progress">${[["todo", "To look at"], ["looked", "Looked over"], ["revisit", "Revisit"]].map(([state, title]) =>
+    <h3 id="progress-title">Done with this one?</h3>
+    <p>Mark it so you can find your place next time.</p>
+    <div class="choice-row" role="group" aria-label="Mark your progress">${[["looked", "Looked over"], ["revisit", "Revisit later"], ["todo", "To look at"]].map(([state, title]) =>
       `<button type="button" data-progress-state="${state}" aria-pressed="false">${title}</button>`).join("")}</div>
+    <p id="entry-progress" class="fine" role="status"></p>
     <p id="progress-storage-note" class="fine"></p>
-    <p class="fine">These markers do not confirm feedback was submitted or formally approve an entry.
-      <a href="https://github.com/${notebook.repository}/issues?${escapeText(query.toString())}" target="_blank" rel="noopener">Find feedback on GitHub ↗</a></p>
+    <p class="fine">Marking an entry does not send your note or approve the entry.
+      <a href="https://github.com/${notebook.repository}/issues?${escapeText(query.toString())}" target="_blank" rel="noopener">See notes already sent on GitHub ↗</a></p>
   </section>`;
 }
 
 function updateProgressPanel(record) {
   const marker = reviewProgress.get(record.id);
   const date = marker?.at && !Number.isNaN(Date.parse(marker.at)) ? new Date(marker.at).toLocaleString() : "";
-  document.getElementById("entry-progress").textContent = progressLabel(record) + (date ? ` · Marked ${date}` : "");
+  document.getElementById("entry-progress").textContent = "Right now: " + progressLabel(record) + (date ? ` · marked ${date}` : "");
   document.querySelectorAll("[data-progress-state]").forEach(button =>
     button.setAttribute("aria-pressed", button.dataset.progressState === (marker?.state || "todo")));
   document.getElementById("progress-storage-note").textContent = progressPersistent ?
-    "Progress is saved in this browser for this version of the entry. It is not shared across devices." :
-    "Browser storage is unavailable. Progress is kept for this visit only.";
+    "Your marks are kept in this browser only, for this version of the entry. They do not move to other devices." :
+    "This browser cannot save your marks. They last only until you close the page.";
 }
 
 function connectProgress(record) {

@@ -16,7 +16,11 @@ Pull requests also build a `review-notebook-preview` artifact in Actions;
 download and unzip it, then open `index.html` to review that branch.
 
 The visual design is a separate, light notebook for reading and giving feedback.
-It uses system fonts, large text, keyboard navigation and a layout for phones.
+It is written for a home cook who may read on a phone or tablet: large, high-contrast
+text, big tap targets, short plain wording and a light or dark look that follows
+the device. Each tier is shown with a plain sentence saying what it means. A
+three-step guide at the top says what to do: pick an entry, read it, then score
+it or write a note and send it.
 Source assets live in `reviewer/`. Never edit generated files in `out/site/`.
 
 ## Put it on GitHub Pages
@@ -73,7 +77,7 @@ and technique cards link to claims that name that technique. These links do not
 make a claim applicable to every recipe that uses the technique. Dish part options
 without a stand-in claim can be discussed through feedback on their recipe.
 
-Choose a rating from 1 to 5, write a suggestion, or do both. A rating describes
+Choose a score from 1 (needs a lot of work) to 5 (clear and useful), write a suggestion, or do both. A rating describes
 how clear and useful the entry is, not a food safety judgement. Choose a topic
 such as wording, method or a safety concern to help triage it.
 
@@ -82,7 +86,7 @@ to submit it. The notebook cannot confirm submission and does not mark feedback
 as sent. GitHub provides the durable shared record and the submitter's identity.
 This uses GitHub's supported [issue URL parameters](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue).
 
-**Download feedback** saves a plain text file to share with the owner without
+**Save to a file** saves a plain text file to share with the owner without
 GitHub sign-in. Downloading does not send anything. Notes that exceed GitHub's
 URL limit can also be shared this way.
 
@@ -101,8 +105,9 @@ substitution answers, so changed swaps do not reuse drafts about the older answe
 
 ## Keep your place
 
-Mark an entry **Looked over**, **Revisit**, or **To look at**. The **Review progress**
-filter finds each group, or entries with a feedback draft. Counts follow the
+Under **Done with this one?**, mark an entry **Looked over**, **Revisit later**, or **To look at**.
+The **Show** filter finds each group, or entries with a note not sent yet. A bar shows
+how many in the current list are looked over, such as "12 of 40 recipes looked over". Counts follow the
 selected category, cuisine and search. Draft feedback is listed as a draft;
 opening GitHub or downloading it never marks it as sent or complete.
 

@@ -1,6 +1,6 @@
 # Put human approvals on record
 
-Open **Human approvals** from the notebook, or open `out/site/approvals.html`
+Open the **Approvals page** from the notebook, or open `out/site/approvals.html`
 after running `./review-site`. This is a separate review page. Unverified safety
 assertions are displayed here for a human to check, never as food recommendations.
 
@@ -19,9 +19,9 @@ reviewer's own knowledge into an authoritative allergen reference.
 
 ## Use the page
 
-1. Choose your assigned reviewer alias. Different reviewers keep separate
+1. Choose your assigned reviewer name (alias), shown without its `reviewer/` prefix. Different reviewers keep separate
    staged decisions in this browser.
-2. Choose **Ingredient safety** or **Culinary content**. Search for an entry or
+2. Under **What are you checking?**, choose **Ingredient safety** or **Cooking content**. Search for an entry or
    filter its kind. The queue starts with units awaiting a decision.
 3. Read the exact version. Culinary content includes its statements and parts,
    with ingredient safety excluded. Ingredient safety shows every allergen and
@@ -29,14 +29,14 @@ reviewer's own knowledge into an authoritative allergen reference.
    ingredient note, fact definitions and recorded references.
 4. Open the sources and check the ingredient itself. A regulator's definition
    of an allergen does not establish whether a particular food contains it.
-   Choose the source records you checked and explain what supports the answers.
+   Tick the source records you checked and explain what supports the answers.
    When a needed source is absent, flag the correction and have it recorded
    before trying to approve that safety unit.
 5. Confirm you are a human who personally checked this version. Approve it or
    request a correction. A safety approval must cover every safety answer for
    that ingredient. It keeps strict answers strict. These are staged decisions,
    not changes to the graph.
-6. Submit the decisions on GitHub. A small batch is included in the prepared
+6. Send the decisions with **Send on GitHub**, or keep them with **Save to a file**. A small batch is included in the prepared
    issue. For a large batch, download `cooking-approvals.txt` and attach it to
    the issue before selecting Create issue. GitHub supports attaching text
    files in its [web interface](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/attaching-files).

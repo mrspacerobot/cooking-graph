@@ -185,13 +185,13 @@ function updateLibrary() {
   const query = document.getElementById("search").value.toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
   const cuisine = document.getElementById("cuisine").value;
   const matches = entries.filter(record => record.kind === category && searchText(record).includes(query) && (!cuisine || cuisineIds(record).includes(cuisine)));
-  updateProgressSummary(matches);
+  updateProgressSummary(matches, kinds[category].toLowerCase());
   filtered = matches.filter(record => progressMatches(record, document.getElementById("progress-filter").value));
   if (category !== "class") filtered.sort((a, b) => titleOf(a).localeCompare(titleOf(b)));
-  document.getElementById("result-count").textContent = `${filtered.length} ${category === "class" ? "classes" : kinds[category].toLowerCase()}`;
+  document.getElementById("result-count").textContent = `Showing ${filtered.length} ${kinds[category].toLowerCase()}`;
   document.getElementById("entry-list").innerHTML = filtered.length ? filtered.map(record =>
-    `<a class="entry" href="${href(record.id)}" aria-current="${selected?.id === record.id}"><strong>${escapeText(titleOf(record))}</strong><small>${escapeText(subtitle(record))}</small><small class="progress-label">${progressLabel(record)}</small></a>`).join("") :
-    '<p class="muted">No matches. Try another word, cuisine or progress filter.</p>';
+    `<a class="entry" href="${href(record.id)}" aria-current="${selected?.id === record.id}"><strong>${escapeText(titleOf(record))}</strong><small>${escapeText(subtitle(record))}</small><small class="progress-label" data-state="${progressState(record)}">${progressLabel(record)}</small></a>`).join("") :
+    '<p class="muted">Nothing matches. Try another word, or set Cuisine and Show back to everything.</p>';
   updateNext();
 }
 
@@ -200,30 +200,39 @@ function updateNext() {
   if (!nav || !selected) return;
   const index = filtered.findIndex(record => record.id === selected.id);
   nav.innerHTML = index < 0 ? "" : [
-    index > 0 ? `<a href="${href(filtered[index - 1].id)}">← ${escapeText(titleOf(filtered[index - 1]))}</a>` : "",
-    index < filtered.length - 1 ? `<a href="${href(filtered[index + 1].id)}">${escapeText(titleOf(filtered[index + 1]))} →</a>` : ""
+    index > 0 ? `<a class="previous" href="${href(filtered[index - 1].id)}"><small>Previous</small>← ${escapeText(titleOf(filtered[index - 1]))}</a>` : "",
+    index < filtered.length - 1 ? `<a class="next" href="${href(filtered[index + 1].id)}"><small>Next</small>${escapeText(titleOf(filtered[index + 1]))} →</a>` : ""
   ].join("");
 }
+
+const ratingWords = {1: "Needs a lot of work", 2: "Needs work", 3: "All right", 4: "Good", 5: "Clear and useful"};
 
 function feedbackForm() {
   return `<section class="feedback" aria-labelledby="feedback-title">
     <h3 id="feedback-title">What do you think?</h3>
-    <p>Rate how clear and useful this entry is, or suggest a change. Your experience helps us improve it.</p>
+    <p>A score, a note, or both. Every bit helps.</p>
     <form id="feedback-form">
-      <fieldset><legend>Your rating (optional)</legend><div class="ratings">${[1, 2, 3, 4, 5].map(number =>
-        `<label class="rating"><input type="radio" name="rating" value="${number}">${number}</label>`).join("")}</div>
-        <p class="fine">1 = needs a lot of work · 5 = clear and useful</p></fieldset>
-      <label for="feedback-kind">What would you like us to look at?</label>
-      <select id="feedback-kind" name="kind"><option>General feedback</option><option>Wording or clarity</option><option>Technique or method</option><option>Substitution or ingredient option</option><option>Amounts or timing</option><option>Class order or practice</option><option>Safety concern</option></select>
-      <label for="feedback-notes">Your notes or suggested changes (optional)</label>
-      <textarea id="feedback-notes" name="notes" maxlength="1200" placeholder="For example: I’d explain this step a little differently…"></textarea>
-      <p id="draft-status" class="fine" role="status"></p>
-      <div class="actions"><a class="primary button" id="send-feedback" href="https://github.com/${notebook.repository}/issues/new" target="_blank" rel="noopener">Continue to GitHub ↗</a><button type="button" id="download-feedback">Download feedback</button></div>
-      <p class="fine">GitHub sign-in and repository access are required. On the next page, select “Create issue” to send. Downloading saves a text file you can share yourself.</p>
-      <p class="feedback-status" id="feedback-status" role="status" aria-live="polite"></p>
+      <fieldset><legend>1. How clear and useful is it? (optional)</legend><div class="ratings">${[1, 2, 3, 4, 5].map(number =>
+        `<label class="rating"><input type="radio" name="rating" value="${number}"><b>${number}</b><span>${ratingWords[number]}</span></label>`).join("")}</div>
+        <p class="fine">This scores the writing, not whether the food is safe.</p></fieldset>
+      <div class="field"><label for="feedback-notes">2. What would you change? (optional)</label>
+      <textarea id="feedback-notes" name="notes" maxlength="1200" placeholder="For example: I would add the salt earlier, or this step needs more time."></textarea>
+      <p id="draft-status" class="fine" role="status"></p></div>
+      <div class="field"><label for="feedback-kind">Is your note mostly about one thing? (optional)</label>
+      <select id="feedback-kind" name="kind"><option>General feedback</option><option>Wording or clarity</option><option>Technique or method</option><option>Substitution or ingredient option</option><option>Amounts or timing</option><option>Class order or practice</option><option>Safety concern</option></select></div>
+      <fieldset><legend>3. Send it</legend>
+      <div class="actions"><a class="primary button" id="send-feedback" href="https://github.com/${notebook.repository}/issues/new" target="_blank" rel="noopener">Continue to GitHub ↗</a><button type="button" id="download-feedback">Save to a file</button></div>
+      <p class="fine"><strong>Continue to GitHub</strong> opens a ready-made message. Sign in, then press the green <strong>Create issue</strong> button to send it. <strong>Save to a file</strong> keeps a copy you can email or hand to the owner yourself.</p>
+      <p class="feedback-status" id="feedback-status" role="status" aria-live="polite"></p></fieldset>
     </form>
-    <p class="fine">Feedback is a suggestion. It does not automatically approve an entry or verify its safety.</p>
+    <p class="fine">Your note is a suggestion. It does not approve the entry or confirm that anything is safe.</p>
   </section>`;
+}
+
+function feedbackMessage(text, problem) {
+  const status = document.getElementById("feedback-status");
+  status.textContent = text;
+  status.classList.toggle("problem", Boolean(problem));
 }
 
 function feedbackValue() {
@@ -242,7 +251,7 @@ function feedbackText(record, value) {
 
 function feedbackValid(value) {
   if (value.rating || value.notes.trim()) return true;
-  document.getElementById("feedback-status").textContent = "Please choose a rating or add a note first.";
+  feedbackMessage("Please choose a score or write a note first.", true);
   return false;
 }
 
@@ -257,16 +266,16 @@ function connectFeedback(record) {
       form.elements.kind.value = saved.kind;
       if (!form.elements.kind.value) form.elements.kind.selectedIndex = 0;
       form.elements.notes.value = saved.notes || "";
-      status.textContent = "Your draft was restored from this browser. It has not been sent.";
+      status.textContent = "Welcome back. Your unsent note is here, just as you left it.";
     }
-  } catch { status.textContent = "Draft saving is unavailable in this browser. You can still send or download feedback."; }
+  } catch { status.textContent = "This browser cannot keep unsent notes. You can still send it or save it to a file."; }
   const save = () => {
     try {
       localStorage.setItem(key, JSON.stringify(feedbackValue()));
-      status.textContent = "Draft saved in this browser. It has not been sent.";
-    } catch { progressPersistent = false; status.textContent = "Draft saving is unavailable. You can still send or download feedback."; }
+      status.textContent = "Kept in this browser as you type. Not sent yet.";
+    } catch { progressPersistent = false; status.textContent = "This browser cannot keep unsent notes. You can still send it or save it to a file."; }
     trackFeedbackDraft(record, feedbackValue());
-    document.getElementById("feedback-status").textContent = "";
+    feedbackMessage("");
   };
   form.addEventListener("input", save);
   form.addEventListener("change", save);
@@ -279,11 +288,11 @@ function connectFeedback(record) {
     url.searchParams.set("body", feedbackText(record, value));
     if (url.href.length > 8000) {
       event.preventDefault();
-      document.getElementById("feedback-status").textContent = "These notes are too long for a GitHub link. Shorten them or download the feedback to share.";
+      feedbackMessage("This note is too long to open on GitHub. Make it a little shorter, or save it to a file and share that.", true);
       return;
     }
     event.currentTarget.href = url.href;
-    document.getElementById("feedback-status").textContent = "Finish by selecting “Create issue” on GitHub. This site cannot confirm whether it was sent.";
+    feedbackMessage("Thank you! GitHub opened in a new tab. Press “Create issue” there to send it. This page cannot tell whether it was sent.");
   });
   document.getElementById("download-feedback").addEventListener("click", () => {
     const value = feedbackValue();
@@ -294,7 +303,7 @@ function connectFeedback(record) {
     anchor.download = record.id.replaceAll("/", "-") + "-feedback.txt";
     anchor.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
-    document.getElementById("feedback-status").textContent = "Feedback downloaded. Share the file with the notebook owner to send it.";
+    feedbackMessage("Thank you! The file is saved. Send it to the owner to share your note. Saving alone does not send it.");
   });
 }
 
@@ -304,13 +313,20 @@ function showEntry(record, focus) {
   const renderers = {class: classBody, technique: techniqueBody, recipe: recipeBody, substitution: substitutionBody, preparation: preparationBody};
   const body = renderers[record.kind](record);
   const content = document.getElementById("content");
-  content.innerHTML = `<div class="badges"><span class="badge">${escapeText(kinds[record.kind])}</span><span class="badge tier">${escapeText(record.tier)}</span></div>
-    <p class="eyebrow">${escapeText(subtitle(record))}</p><h2>${escapeText(titleOf(record))}</h2>${body}${progressPanel(record)}${feedbackForm()}
+  content.innerHTML = `<button type="button" class="to-list">↑ Back to the list</button>
+    <div class="badges"><span class="badge">${escapeText(kinds[record.kind])}</span><span class="badge tier">${escapeText(record.tier)}</span></div>
+    <p class="eyebrow">${escapeText(subtitle(record))}</p><h2>${escapeText(titleOf(record))}</h2>
+    <p class="tier-note"><strong>What “${escapeText(record.tier)}” means:</strong> ${escapeText(plainTier(record.tier))}</p>${body}${feedbackForm()}${progressPanel(record)}
     <nav id="entry-navigation" class="bottom-nav" aria-label="More entries"></nav>
     <p class="fine"><a href="https://github.com/${notebook.repository}/blob/${notebook.commit}/graph/${record.source}.json" target="_blank" rel="noopener">Read the source entry on GitHub ↗</a></p>`;
   document.title = `${titleOf(record)} - The cooking notebook`;
   connectFeedback(record);
   connectProgress(record);
+  content.querySelector(".to-list").addEventListener("click", () => {
+    const library = document.getElementById("library");
+    library.focus({preventScroll: true});
+    library.scrollIntoView({block: "start"});
+  });
   updateLibrary();
   if (focus) {
     content.focus({preventScroll: true});

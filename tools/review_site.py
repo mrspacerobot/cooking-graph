@@ -105,6 +105,7 @@ def page(root, data):
     for marker, content in (
         ('__REVIEW_STYLE__', (assets / 'style.css').read_text(encoding='utf-8')),
         ('__REVIEW_DATA__', encoded),
+        ('__REVIEW_WORDS__', (assets / 'words.js').read_text(encoding='utf-8')),
         ('__REVIEW_PROGRESS__', (assets / 'progress.js').read_text(encoding='utf-8')),
         ('__REVIEW_SCRIPT__', (assets / 'app.js').read_text(encoding='utf-8')),
     ):

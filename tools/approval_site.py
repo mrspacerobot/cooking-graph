@@ -38,6 +38,7 @@ def page(root, data):
     for marker, value in (
         ('__APPROVAL_STYLE__', (assets / 'style.css').read_text(encoding='utf-8')),
         ('__APPROVAL_DATA__', encoded),
+        ('__APPROVAL_WORDS__', (assets / 'words.js').read_text(encoding='utf-8')),
         ('__APPROVAL_SCRIPT__', (assets / 'approvals.js').read_text(encoding='utf-8')),
     ):
         text = text.replace(marker, value)

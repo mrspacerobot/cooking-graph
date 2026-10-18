@@ -2,6 +2,7 @@
 
 import json
 import unittest
+from pathlib import Path
 
 from tests.small_kitchen import REPOSITORY, reviewer
 from tests.test_queries import kitchen
@@ -47,3 +48,12 @@ class ApprovalSiteTest(unittest.TestCase):
         self.assertIn('\\u003c/script>', text)
         self.assertNotIn('__APPROVAL_', text)
         self.assertNotIn('"contains"', json.dumps(review_site.payload(self.things, 'a' * 40)))
+
+    def test_page_explains_tiers_and_safety_states_and_keeps_its_warning(self):
+        text = approval_site.page(REPOSITORY, approval_site.payload(self.things, 'a' * 40))
+        words = json.loads((Path(REPOSITORY) / 'schema/words.json').read_text())
+        for word in words['tiers'] + words['safety_states']:
+            self.assertIn("'%s':" % word, text)
+        self.assertIn('not a verified food recommendation', text)
+        self.assertNotIn('__REVIEW_', text)
+        self.assertNotIn('\u2014', text)

@@ -4,6 +4,8 @@ Written on 7 October 2026 for an agent or a person picking this up cold. Read `A
 
 ## Current status and next steps
 
+- Reviewer-friendly design (issue 6): both review pages were reworked for a home cook on a phone or tablet: larger high-contrast type, big tap targets, a numbered "what to do" guide, a plain sentence for every tier (`reviewer/words.js`), a looked-over progress bar, word-labelled 1 to 5 scores, friendly confirmations, tickable source boxes on the approvals page, and automatic dark mode. Guards, tiers and warnings are unchanged. Checked at 320, 390, 768 and 1440 px.
+
 - Human approval page (issue 6): `./review-site` also builds `out/site/approvals.html`, with separate culinary and ingredient-safety queues, every safety fact, source evidence, human attestation and downloadable approval decisions. The owner authorized two anonymous human reviewers for all current cuisines; neither has safety authority. `./review apply` checks exact hashes, reviewer scope and per-ingredient evidence and prepares review records on a branch for owner merge. Ingredient safety verification is now supported; no actual factual tier or safety state was promoted by this implementation. See `docs/human-approvals.md` and `docs/rounds/human-approval-website.md`.
 
 - Website coverage follow-up (issue 6): technique discovery now uses `./recipes`, including variants and teaching order. Preparations have reviewable pages and links from recipes and other cards. Version-specific progress markers and draft filters keep a reviewer's place in the browser; GitHub retains submitted feedback and formal tiers stay separate. Pantry matching and multi-technique adaptation remain command-line tools and are the next website gaps. See `docs/review-website.md`.

@@ -4,7 +4,12 @@
   "names": {"en": "Fry a masala base"},
   "aliases": {"en": ["bhuna", "bhunao", "bhuno", "cook the masala", "fry until the oil separates"]},
   "does": "Cooks onion, ginger and garlic, ground spices and tomato in fat over a medium heat, stirring often and sprinkling a little water when the pan dries, until the water of the vegetables is gone and the fat parts from the paste and shines on its edge. This is the base of a gravy.",
-  "intro": null,
+  "intro": {
+    "what": "This masala base cooks onion, aromatics, spices and tomato in fat into a concentrated paste.",
+    "why": "It teaches you to develop the base before adding gravy liquid, watching for the fat to shine at the edges.",
+    "idea": "Develop the paste",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the fat and cook the sliced or chopped onion until it is soft and golden.",
     "Add the ginger and garlic paste or the spice paste and stir until the raw smell goes.",
@@ -37,7 +42,56 @@
       "fix": "Keep a medium heat and be patient. The wait is the point."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why cook the masala paste before adding gravy liquid?",
+      "choices": [
+        "To keep the tomato pieces firm and separate.",
+        "To preserve the sharp raw smell of garlic.",
+        "To develop it beyond a raw, thin-tasting base."
+      ],
+      "answer": 2,
+      "because": "Adding liquid before the paste develops can leave the gravy tasting raw and thin.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What do you do when the spices begin catching in a dry pan?",
+      "choices": [
+        "Sprinkle in a little water and keep the heat moderate.",
+        "Raise the heat to finish them quickly.",
+        "Leave them dry until the tomato is ready."
+      ],
+      "answer": 0,
+      "because": "A little water and moderate heat help keep the ground spices from scorching.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What indicates the paste has developed in this method?",
+      "choices": [
+        "Tomato floats in a loose watery mixture.",
+        "Shiny fat gathers at the edge of a deeper-coloured paste.",
+        "The garlic still smells sharply raw."
+      ],
+      "answer": 1,
+      "because": "Separated shiny fat and a deeper colour accompany a thick paste with a rounded roasted scent.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The paste starts sticking as the pan dries. What would you change?",
+      "choices": [
+        "Keep high heat and add gravy liquid immediately.",
+        "Stop stirring so a crust forms underneath.",
+        "Use medium heat and scrape with a little water when it sticks."
+      ],
+      "answer": 2,
+      "because": "Moderate heat and loosening stuck paste with water let the base develop without scorching.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"},
     {"thing": "ingredient/tomato", "tier": "drafted"},

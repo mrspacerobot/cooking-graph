@@ -7,7 +7,12 @@
     "fr": ["ébarber les moules", "gratter les moules"]
   },
   "does": "Scrubs the shells of mussels and pulls off the tuft of fibres at the hinge, which is called the beard, so that nothing gritty reaches the pot. Mussels are cleaned just before they are cooked.",
-  "intro": null,
+  "intro": {
+    "what": "Shells are scrubbed and the fibrous beards removed before mussels enter the pot.",
+    "why": "Careful cleaning separates grit from the shellfish and shows why direction matters when removing an attached fibre.",
+    "idea": "Remove grit without rough handling",
+    "tier": "drafted"
+  },
   "how": [
     "Tip the mussels into a bowl of cold water and lift them out by the handful, leaving the grit in the bottom of the bowl.",
     "Tap any open shell on the side of the bowl. Leave out any that stays open.",
@@ -29,7 +34,52 @@
       "fix": "Pull towards the hinge end."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the cleaning step intended to remove?",
+      "choices": [
+        "Shell grit and the attached fibrous beard.",
+        "The entire shell before cooking.",
+        "The hinge that joins the shell."
+      ],
+      "answer": 0,
+      "because": "Cleaning removes exterior debris and fibres before they reach the pot.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "In which direction should the beard be pulled?",
+      "choices": ["Toward the pointed end.", "Toward the hinge end.", "Straight away while twisting the shell apart."],
+      "answer": 1,
+      "because": "Pulling toward the hinge avoids the tearing associated with pulling the other way.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What visual cue shows beard removal?",
+      "choices": [
+        "The beard remains stretched along the shell.",
+        "Fibres still hang below a polished shell.",
+        "No fibrous tuft projects from the hinge area."
+      ],
+      "answer": 2,
+      "because": "Looking at the hinge area checks whether the attached tuft remains.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Grit from the bowl ends up back with the mussels. What should change?",
+      "choices": [
+        "Lift the mussels out and leave the settled grit behind.",
+        "Pour the whole bowl through the mussels again.",
+        "Stir the sediment up before lifting them."
+      ],
+      "answer": 0,
+      "because": "Lifting the mussels away separates them from debris that has settled below.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/mussel", "tier": "drafted"}
   ],

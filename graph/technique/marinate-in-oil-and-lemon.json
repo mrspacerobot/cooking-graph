@@ -4,7 +4,12 @@
   "names": {"en": "Marinate in oil and lemon"},
   "aliases": {"en": ["marinate in ladolemono"]},
   "does": "Turns small pieces of meat in olive oil, lemon juice, oregano and garlic for a short while before they are grilled, so that the surface takes up the flavour and the oil keeps the meat from drying on the fire.",
-  "intro": null,
+  "intro": {
+    "what": "This marinade coats small meat pieces with olive oil, lemon, oregano and garlic before grilling.",
+    "why": "It teaches you to flavour the surface without a prolonged acidic soak or excess liquid dripping onto the fire.",
+    "idea": "Coat, then drain",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the meat into even pieces so that they take the marinade and cook at the same pace.",
     "Mix the oil, the lemon juice, the oregano, the crushed garlic and a little salt in a bowl.",
@@ -30,7 +35,56 @@
       "fix": "Use a little salt and season again at the end."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the main flavouring role of this marinade?",
+      "choices": [
+        "Seasoning the interior as strongly as the surface.",
+        "Making every tough cut tender regardless of cooking.",
+        "Seasoning the surface with lemon, herbs and garlic."
+      ],
+      "answer": 2,
+      "because": "The coating gives the surface its lemon, oregano and garlic flavour before grilling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen before the coated pieces go onto the grill?",
+      "choices": [
+        "Lift them out and let excess marinade drip off.",
+        "Pour all the marinade over the fire with the pieces.",
+        "Leave them dripping in a deep coating."
+      ],
+      "answer": 0,
+      "because": "Excess dripping marinade can flare and scorch, so drain the pieces before grilling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches evenly coated pieces?",
+      "choices": [
+        "Some pieces are dry while others sit in a pool.",
+        "Every piece shines with a glossy film.",
+        "A chalky surface replaces the glossy coating."
+      ],
+      "answer": 1,
+      "because": "Turning distributes a thin glossy coat instead of leaving uneven dry and pooled patches.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A prolonged lemon soak leaves the surface chalky and dry. What would you change next time?",
+      "choices": [
+        "Leave it longer to reverse the chalkiness.",
+        "Add more lemon and extend the wait.",
+        "Keep the marinating period short."
+      ],
+      "answer": 2,
+      "because": "This lemon marinade is intended as a short surface-flavouring step, not a prolonged soak.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/pork-tenderloin", "tier": "drafted"},
     {"thing": "ingredient/chicken-thigh", "tier": "drafted"}

@@ -4,7 +4,12 @@
   "names": {"en": "Make avgolemono"},
   "aliases": {"en": ["egg-lemon liaison", "thicken with egg and lemon"]},
   "does": "Beats eggs with lemon juice until frothy, warms them with ladles of hot broth, and stirs them back into the pot off the boil, where they turn the broth into a pale, creamy, sharp sauce.",
-  "intro": null,
+  "intro": {
+    "what": "Avgolemono warms beaten eggs and lemon with broth before combining them into a creamy sauce.",
+    "why": "It teaches you to bring eggs and hot liquid together gradually while keeping the pot away from boiling.",
+    "idea": "Warm eggs gradually",
+    "tier": "drafted"
+  },
   "how": [
     "Take the pot off the heat and let the liquid stop bubbling, because a boiling pot sets the eggs into threads.",
     "Beat the eggs in a bowl until pale and frothy, then beat in the lemon juice a little at a time.",
@@ -31,7 +36,56 @@
       "fix": "Beat the lemon juice into the eggs first."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does the egg-lemon mixture give the broth?",
+      "choices": [
+        "A pale, creamy sauce with lemon sharpness.",
+        "Firm egg threads in a clear broth.",
+        "A clear thin broth with a sharper lemon note."
+      ],
+      "answer": 0,
+      "because": "Gradual warming and gentle heat let the eggs thicken the broth smoothly instead of forming threads.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What happens before the eggs return to the pot?",
+      "choices": [
+        "Pour them cold into a rolling boil.",
+        "Beat hot broth into them gradually to warm them.",
+        "Add lemon to the boiling pot and then the eggs."
+      ],
+      "answer": 1,
+      "because": "Warming the eggs with broth and taking the pot off the boil avoid setting them abruptly into strings.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended sauce?",
+      "choices": [
+        "Clear liquid with separate egg strings.",
+        "A grainy mixture separating as it bubbles.",
+        "Pale yellow and creamy, coating a spoon."
+      ],
+      "answer": 2,
+      "because": "A smooth coating is the intended texture, rather than grains or set egg threads.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce begins bubbling after the eggs go in. What would you do?",
+      "choices": [
+        "Remove it from the heat and whisk gently.",
+        "Keep boiling until the grains disappear.",
+        "Raise the heat to thicken it faster."
+      ],
+      "answer": 0,
+      "because": "Bubbling can split and grain the sauce; removing the heat limits that change.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/broth", "tier": "drafted"},
     {"thing": "preparation/braising-liquid", "tier": "drafted"},

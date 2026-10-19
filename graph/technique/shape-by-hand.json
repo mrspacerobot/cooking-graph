@@ -4,7 +4,12 @@
   "names": {"en": "Shape by hand"},
   "aliases": {"en": ["shape rice by hand", "shape onigiri", "form rice balls"]},
   "does": "Presses a portion of warm cooked rice between wet, salted hands into a firm triangle, ball or barrel that holds together but is not packed hard.",
-  "intro": null,
+  "intro": {
+    "what": "Hand-shaping presses warm rice into a ball, triangle or barrel without packing it hard.",
+    "why": "It teaches you to find the light pressure that joins grains while preserving an airy feel.",
+    "idea": "Press only until it holds",
+    "tier": "drafted"
+  },
   "how": [
     "Wet your hands in cold water, rub a little salt over the palms and shake off the excess.",
     "Scoop up a portion of warm rice and press it lightly into a ball.",
@@ -22,7 +27,56 @@
       "fix": "Wet and salt your hands each time."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why avoid packing the rice hard?",
+      "choices": [
+        "To keep the shape light rather than dense.",
+        "To ensure the grains remain completely loose.",
+        "To squeeze out every space between grains."
+      ],
+      "answer": 0,
+      "because": "The rice needs enough contact to hold together without being compressed into a heavy mass.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How are corners formed while shaping?",
+      "choices": [
+        "Flatten it completely before cutting corners away.",
+        "Turn the rice in a cupped hand while the other presses an edge.",
+        "Keep it still and squeeze only the centre."
+      ],
+      "answer": 1,
+      "because": "Turning lets gentle pressure define the outline without crushing the whole portion.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suggests suitable shaping pressure?",
+      "choices": [
+        "The shape is hard and tightly compacted.",
+        "The rice falls apart as soon as it is lifted.",
+        "The rice holds when lifted but still feels light."
+      ],
+      "answer": 2,
+      "because": "Light cohesion balances structural support with space between the grains.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Rice sticks to dry hands and tears. What should change?",
+      "choices": [
+        "Wet and lightly salt the hands again.",
+        "Press harder with dry palms.",
+        "Let a thicker layer of rice build up on the hands."
+      ],
+      "answer": 0,
+      "because": "Damp hands release the rice more readily, protecting the surface while shaping.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}

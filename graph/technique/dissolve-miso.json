@@ -4,7 +4,12 @@
   "names": {"en": "Dissolve miso"},
   "aliases": {"en": ["stir in miso", "dissolve the miso"]},
   "does": "Stirs miso smooth into a little warm liquid away from the main pot, and then stirs it into the pot at the end, so that it never clumps and its scent is not boiled away.",
-  "intro": null,
+  "intro": {
+    "what": "Miso is loosened in warm liquid and blended into soup near the end without boiling it again.",
+    "why": "Working the paste smooth prevents hidden lumps, while gentle finishing preserves the aroma that miso brings to the soup.",
+    "idea": "Smooth paste and retained aroma",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the soup or stock and turn off the heat or lower it until the liquid only trembles.",
     "Put the miso in a ladle or a small sieve and lower it into the liquid.",
@@ -25,7 +30,56 @@
       "fix": "Take it off the heat first and serve right away."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why dissolve miso separately rather than dropping in a lump?",
+      "choices": [
+        "To keep its flavour separate from the broth until serving.",
+        "To make the paste settle rather than cloud the soup.",
+        "To distribute it without clots of paste."
+      ],
+      "answer": 2,
+      "because": "Loosening the paste first helps it disperse evenly through the soup.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the main pot be heated when miso is added?",
+      "choices": [
+        "Off the heat or lowered until the liquid only trembles.",
+        "At a vigorous rolling boil.",
+        "Boiled harder after the paste enters."
+      ],
+      "answer": 0,
+      "because": "The method uses gentle finishing to avoid dulling the miso aroma.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests the paste has dispersed?",
+      "choices": [
+        "Dense paste clots below clear liquid.",
+        "Even cloudiness without lumps.",
+        "Dry crumbs floating above an unchanged broth."
+      ],
+      "answer": 1,
+      "because": "A uniformly cloudy soup shows that the miso has been worked into the liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The soup contains sunken clumps of miso. What should change?",
+      "choices": [
+        "Drop in another intact lump.",
+        "Boil the clumps harder without working them.",
+        "Loosen the paste in warm liquid before blending it in."
+      ],
+      "answer": 2,
+      "because": "Working the paste smooth addresses the clumps instead of relying on harsh boiling.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/miso", "tier": "drafted"}
   ],

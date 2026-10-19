@@ -4,7 +4,12 @@
   "names": {"en": "Make agrodolce"},
   "aliases": {"en": ["agrodolce", "make an agrodolce"]},
   "does": "Melts sugar into hot vinegar and cooks it down to a glossy sweet-sour syrup, which is poured over fried vegetables, fish or meat, or cooked into them. It is a balance and not a caramel: the sugar is never taken to colour. Sicilian kitchens use it for caponata.",
-  "intro": null,
+  "intro": {
+    "what": "Agrodolce cooks vinegar and sugar together into a glossy sweet-sour glaze.",
+    "why": "It teaches balance between sweetness and sharpness without taking the sugar into caramel.",
+    "idea": "Balance sweet and sour",
+    "tier": "drafted"
+  },
   "how": [
     "Warm the vinegar in a small pan over medium heat with the sugar, and stir until the sugar has dissolved.",
     "Let it bubble gently until it thickens a little and smells mellow and not sharp.",
@@ -25,7 +30,56 @@
       "fix": "Dissolve and cook them together first."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What flavour balance is the aim of agrodolce?",
+      "choices": [
+        "Sweetness and sharpness together, neither dominating.",
+        "Sweetness alone with no noticeable vinegar.",
+        "A bitter caramel flavour overpowering the vinegar."
+      ],
+      "answer": 0,
+      "because": "Agrodolce balances sweet and sour rather than turning the sugar into bitter caramel.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you begin the sweet-sour syrup?",
+      "choices": [
+        "Brown the sugar dark before adding vinegar.",
+        "Warm vinegar with sugar and stir until dissolved.",
+        "Pour raw sugar and vinegar separately onto the food."
+      ],
+      "answer": 1,
+      "because": "Cooking the dissolved sugar and vinegar together avoids a grainy, sharply raw finish.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What coating should the syrup leave?",
+      "choices": [
+        "Dry sugar grains on the spoon.",
+        "A thick dark coating that leaves a heavy trail.",
+        "A thin, shining layer on a spoon."
+      ],
+      "answer": 2,
+      "because": "A thin glossy coating shows the gently thickened syrup, rather than burnt sugar.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The glaze tastes cloyingly sweet. How would you adjust it?",
+      "choices": [
+        "Add vinegar to restore the balance.",
+        "Add sugar to deepen the sweetness.",
+        "Boil hard until the sugar browns."
+      ],
+      "answer": 0,
+      "because": "More vinegar can balance excessive sweetness; browning the sugar would change the intended glaze.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/sugars", "tier": "drafted"},
     {"thing": "ingredient/vinegar", "tier": "drafted"}

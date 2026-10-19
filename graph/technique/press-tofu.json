@@ -4,7 +4,12 @@
   "names": {"en": "Press tofu"},
   "aliases": {"en": ["press the tofu", "drain tofu", "press and drain tofu"]},
   "does": "Presses water out of a block of firm tofu under a light weight, so that it is firmer, absorbs a sauce and browns instead of steaming.",
-  "intro": null,
+  "intro": {
+    "what": "Pressing removes free water from firm tofu under a light weight.",
+    "why": "It teaches you to control surface moisture before seeking a browned exterior.",
+    "idea": "Firm tofu, light pressure",
+    "tier": "drafted"
+  },
   "how": [
     "Wrap the block in a clean cloth or paper towels.",
     "Set it on a tray or a board, put a plate and a light weight on top and tilt the tray so the water runs off.",
@@ -19,7 +24,56 @@
     {"mistake": "Pressing with a heavy weight, which cracks the block.", "fix": "Use a plate or a light bowl only."},
     {"mistake": "Skipping the drying, so that the tofu spits in the pan.", "fix": "Pat it dry."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why press firm tofu before pan cooking?",
+      "choices": [
+        "To keep more free water on its surface.",
+        "To remove water that would encourage steaming instead of browning.",
+        "To break it into a soft puree."
+      ],
+      "answer": 1,
+      "because": "Reducing excess water helps the surface brown rather than spend its early pan contact shedding moisture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should released water be handled during pressing?",
+      "choices": [
+        "Leave the block sitting in pooled water.",
+        "Pour collected water back over the cloth.",
+        "Let it run away from the wrapped block on a tilted tray."
+      ],
+      "answer": 2,
+      "because": "Drainage separates the tofu from the moisture being pressed out.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance is consistent with pressing?",
+      "choices": [
+        "A wet cloth and a slightly thinner block.",
+        "A dry cloth around a swollen block.",
+        "A cracked block beneath a very heavy weight."
+      ],
+      "answer": 0,
+      "because": "Water transferred to the cloth and a little compression show moisture leaving the block.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The tofu cracked under a heavy weight. What would you change next time?",
+      "choices": [
+        "Add more weight to flatten the cracks.",
+        "Use a lighter weight.",
+        "Press harder before wrapping it."
+      ],
+      "answer": 1,
+      "because": "Firm tofu needs gentle pressure; excessive force damages its structure.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/firm-tofu", "tier": "drafted"}
   ],

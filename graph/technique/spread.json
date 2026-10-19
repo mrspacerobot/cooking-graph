@@ -4,7 +4,12 @@
   "names": {"en": "Spread", "fr": "Tartiner"},
   "aliases": {"en": ["spread on", "spread over"], "fr": ["étaler sur"]},
   "does": "Smooths a soft paste, mash or butter over a surface in an even layer with the back of a spoon or a knife, so that every bite carries some and the edges stay clear.",
-  "intro": null,
+  "intro": {
+    "what": "Spreading smooths a soft paste across a surface in an even layer.",
+    "why": "It teaches you to adjust paste consistency before applying pressure to a delicate base.",
+    "idea": "Soften before spreading",
+    "tier": "drafted"
+  },
   "how": [
     "Have the paste soft enough to move. Loosen it with a little oil or water if it is stiff.",
     "Put a spoonful in the middle of the surface.",
@@ -25,7 +30,56 @@
       "fix": "Push it out in circles until the layer is even, to just short of the rim."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why spread filling or paste evenly?",
+      "choices": [
+        "To concentrate nearly all of it in the middle.",
+        "To distribute it across bites without an overloaded centre.",
+        "To force it over the rim."
+      ],
+      "answer": 1,
+      "because": "A consistent layer gives more even coverage while a clear rim contains it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should spreading begin?",
+      "choices": [
+        "At the rim, pushing everything off the edge.",
+        "By pressing a stiff mound repeatedly in place.",
+        "From the middle, moving outward in gentle circles."
+      ],
+      "answer": 2,
+      "because": "Gentle outward movement distributes the paste gradually without tearing the base.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the spoon feel like as paste spreads?",
+      "choices": [
+        "It glides instead of dragging.",
+        "It catches and tears the base.",
+        "It leaves an immovable mound behind."
+      ],
+      "answer": 0,
+      "because": "A gliding spoon indicates the paste is soft enough to distribute without excess force.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The paste tears the dough as you spread it. What should change?",
+      "choices": [
+        "Press harder with the back of the spoon.",
+        "Loosen the stiff paste with a little oil first.",
+        "Add dry flour to thicken the paste."
+      ],
+      "answer": 1,
+      "because": "Softening the paste addresses its resistance rather than transferring more force to the dough.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"},
     {"thing": "ingredient/pita-bread", "tier": "drafted"},

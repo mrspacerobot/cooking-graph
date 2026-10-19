@@ -4,7 +4,12 @@
   "names": {"en": "Make a Vizcaina sauce"},
   "aliases": {"en": ["make salsa vizcaina", "make Biscay sauce", "make a Biscayne sauce"]},
   "does": "Cooks a large quantity of onion very slowly in olive oil until it is sweet and soft, joins it with the pulp of dried choricero peppers that have been soaked until soft, simmers them together and rubs the sauce through a sieve into a thick, smooth, sweet, brick-red sauce for salt cod.",
-  "intro": null,
+  "intro": {
+    "what": "This salsa vizcaína slowly softens onion with dried choricero pepper pulp, then sieves it smooth.",
+    "why": "It teaches you to develop onion sweetness without browning and remove pepper skin for a thick smooth sauce.",
+    "idea": "Soft pale onion, smooth pepper sauce",
+    "tier": "drafted"
+  },
   "how": [
     "Cover the dried peppers with hot water and leave them until they are soft and wrinkled. Split them, scrape the pulp from the skins and keep the soaking water.",
     "Cook plenty of sliced onion with the garlic in olive oil, with the lid ajar, over a very low heat until it is soft, sweet and pale. Do not let it brown.",
@@ -31,7 +36,56 @@
     },
     {"mistake": "Salting early, before the sauce has reduced, which leaves it too salty.", "fix": "Season at the end."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why rub the sauce through a sieve?",
+      "choices": [
+        "To remove pepper skin and make it smooth.",
+        "To leave pieces of pepper skin for texture.",
+        "To remove most of the onion so the sauce becomes thin."
+      ],
+      "answer": 0,
+      "because": "Sieving leaves pepper skin behind while the softened sauce passes through.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the onion cook before pepper is added?",
+      "choices": [
+        "Over strong heat until dark brown.",
+        "Very gently until soft, sweet and pale.",
+        "Briefly so it keeps a hard raw centre."
+      ],
+      "answer": 1,
+      "because": "This version develops a soft onion base while keeping it pale before the pepper is added.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What appearance should the onion have before the pepper goes in?",
+      "choices": [
+        "Dark brown with crisp edges.",
+        "Firm white pieces retaining a raw bite.",
+        "Pale, soft and translucent."
+      ],
+      "answer": 2,
+      "because": "Pale translucence and softness show the slow onion base has developed without browning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The reduced sauce tastes too salty. What would you change next time?",
+      "choices": [
+        "Season only after the sauce has reduced.",
+        "Salt it more heavily before reducing.",
+        "Keep adding soaking water without tasting at the end."
+      ],
+      "answer": 0,
+      "because": "Reduction concentrates salt, so make the final seasoning adjustment afterwards.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"},
     {"thing": "ingredient/choricero-pepper", "tier": "drafted"}

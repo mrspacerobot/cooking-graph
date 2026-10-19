@@ -4,7 +4,12 @@
   "names": {"en": "Make a caramel", "fr": "Faire un caramel"},
   "aliases": {"en": ["caramelize sugar", "cook sugar to caramel", "caramel"]},
   "does": "Cooks sugar until it melts and browns to an amber syrup with a bittersweet taste.",
-  "intro": null,
+  "intro": {
+    "what": "Making caramel heats sugar until it melts and turns into an amber, bittersweet syrup.",
+    "why": "It teaches close attention to colour and smell as sugar moves quickly from browning to burning.",
+    "idea": "Watch the amber stage",
+    "tier": "drafted"
+  },
   "how": [
     "Put the sugar in a clean, heavy, pale pan with just enough water to wet it.",
     "Heat it without stirring. Swirl the pan if it colours unevenly.",
@@ -26,7 +31,52 @@
       "fix": "Stay with it, and have the liquid ready beside the stove."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What change makes the sugar into caramel?",
+      "choices": [
+        "It stays clear while water is added repeatedly.",
+        "It melts and browns to amber.",
+        "It forms pale dry crystals."
+      ],
+      "answer": 1,
+      "because": "Caramel develops amber colour and bittersweet flavour as the sugar browns.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you even out the colour while the sugar melts?",
+      "choices": [
+        "Stir continuously with a spoon.",
+        "Scrape the melting sugar into a pile.",
+        "Swirl the pan rather than stirring the sugar."
+      ],
+      "answer": 2,
+      "because": "Stirring can encourage crystals in this method; swirling moves the sugar without stirring it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which colour is the intended stopping cue?",
+      "choices": ["Deep amber like dark honey.", "Colourless syrup.", "Black syrup giving off smoke."],
+      "answer": 0,
+      "because": "Deep amber is the target; smoke and an acrid smell mean it has gone too far.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The caramel burned while you fetched the finishing liquid. What would you change next time?",
+      "choices": [
+        "Use higher heat to shorten the wait.",
+        "Have the liquid ready and stay beside the pan.",
+        "Start checking only after smoke appears."
+      ],
+      "answer": 1,
+      "because": "The change from amber to burnt is fast, so prepare the finishing liquid before that stage.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/sugars", "tier": "drafted"}
   ],

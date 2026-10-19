@@ -4,7 +4,12 @@
   "names": {"en": "Thicken with tadouira"},
   "aliases": {"en": ["tadouira", "thicken a soup with flour paste"]},
   "does": "Stirs a loose paste of flour and cold water into a hot soup in a slow stream, then keeps the soup at a simmer until the flour has lost its raw taste, so that the soup turns silky and gains body. Beaten egg is sometimes stirred in at the end.",
-  "intro": null,
+  "intro": {
+    "what": "Tadouira thickens soup with a loose flour-and-cold-water paste added gradually.",
+    "why": "It teaches you to separate smooth mixing from cooking out flour for a silky soup.",
+    "idea": "Smooth paste, gentle simmer",
+    "tier": "drafted"
+  },
   "how": [
     "Whisk the flour into plenty of cold water until it is as smooth and loose as cream, with no lump left.",
     "Bring the soup to a steady simmer and keep stirring as you pour the paste in, in a thin stream.",
@@ -32,7 +37,56 @@
       "fix": "Let it simmer on until the taste is gone."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does tadouira add to soup?",
+      "choices": [
+        "Flour flavour left raw at the point of serving.",
+        "Body and a silky texture.",
+        "Thickness without any need to simmer the flour."
+      ],
+      "answer": 1,
+      "because": "The dispersed flour thickens the liquid as it cooks, giving the soup more body.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the flour paste first be mixed?",
+      "choices": [
+        "Stir dry flour directly into boiling soup.",
+        "Whisk flour directly into hot broth before checking for lumps.",
+        "Whisk flour into cold water until smooth and loose."
+      ],
+      "answer": 2,
+      "because": "Cold water lets the flour disperse smoothly before it meets heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which change accompanies the soup thickening?",
+      "choices": [
+        "It becomes glossy and coats the spoon.",
+        "It becomes thinner and leaves the spoon bare.",
+        "Dry flour lumps rise unchanged."
+      ],
+      "answer": 0,
+      "because": "A coating on the spoon shows body developing through the liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The soup thickens but still tastes of raw flour. What should change?",
+      "choices": [
+        "Remove it immediately as soon as it coats a spoon.",
+        "Continue a gentle simmer rather than stopping at the first thickening.",
+        "Stir in more uncooked flour paste at serving."
+      ],
+      "answer": 1,
+      "because": "Thickening and losing raw flour flavour are different stages, so the soup needs further gentle cooking.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/stocks", "tier": "drafted"}
   ],

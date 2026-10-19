@@ -4,7 +4,12 @@
   "names": {"en": "Add stock gradually"},
   "aliases": {"en": ["add stock a ladle at a time", "ladle in the stock", "add the stock gradually"]},
   "does": "Adds hot stock to rice a ladle at a time, stirring as each addition is taken up, so that the grains cook evenly and rub their starch off into a creamy sauce.",
-  "intro": null,
+  "intro": {
+    "what": "Hot stock is stirred gradually into rice to build a loose, creamy sauce.",
+    "why": "The grains release starch as they move together. Watching absorption helps you manage the sauce without letting the pan catch.",
+    "idea": "Starch and absorption",
+    "tier": "drafted"
+  },
   "how": [
     "Keep the stock hot in a pot beside the pan, at a bare simmer, so that it never stops the rice from cooking.",
     "Add enough stock to just cover the rice and stir. Keep the heat at a lively bubble.",
@@ -32,7 +37,56 @@
       "fix": "Add the next ladle as soon as the trail from the spoon stays open."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What makes gradual stock additions useful here?",
+      "choices": [
+        "They help the rice release starch into a creamy sauce.",
+        "They keep all the surface starch inside the grains.",
+        "They let the rice cook without any movement."
+      ],
+      "answer": 0,
+      "because": "Stirring with gradual additions encourages starch to thicken the liquid around the grains.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should the next stock addition go in?",
+      "choices": [
+        "While the rice is still floating in deep stock.",
+        "When the spoon trail stays open as the liquid is absorbed.",
+        "After the rice has stuck to the base."
+      ],
+      "answer": 1,
+      "because": "The trail shows that the previous liquid has been taken up; adding then avoids a dry pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How should the rice move when the pan is shaken?",
+      "choices": [
+        "It should stay in a stiff mound.",
+        "It should float in clear stock.",
+        "It should flow loosely together."
+      ],
+      "answer": 2,
+      "because": "Loose movement shows that the starch and liquid form a flowing sauce rather than a dry mass.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Cold stock keeps interrupting the bubbling. What would help?",
+      "choices": [
+        "Keep the stock hot beside the pan.",
+        "Keep the stock cold but pause the pan between additions.",
+        "Add all the cold stock at once to restore the bubbling."
+      ],
+      "answer": 0,
+      "because": "Hot stock avoids repeatedly cooling the rice as new liquid enters.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/risotto-rices", "tier": "drafted"}
   ],

@@ -4,7 +4,12 @@
   "names": {"en": "Roll in layers"},
   "aliases": {"en": ["roll in layers", "roll layers of egg", "layered omelette roll"]},
   "does": "Cooks a thin layer of egg in a pan, rolls it up while it is still soft, then pours more egg into the room left behind, cooks it and rolls again, so that the block grows layer upon layer.",
-  "intro": null,
+  "intro": {
+    "what": "This Japanese-style egg method rolls successive thin layers into a tender block.",
+    "why": "It teaches you to coordinate setting and rolling so each new layer joins the previous roll.",
+    "idea": "Join thin layers",
+    "tier": "drafted"
+  },
   "how": [
     "Oil the pan and heat it. Pour in a thin layer of beaten egg and tilt it to cover the pan.",
     "When the egg is almost set but still wet on top, roll it up toward the far side with chopsticks or a spatula.",
@@ -26,7 +31,56 @@
       "fix": "Roll while the top is still wet."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What builds the layered egg block?",
+      "choices": [
+        "Successive thin egg layers rolled around the earlier roll.",
+        "A thick egg sheet folded only after cooling.",
+        "Loose curds pressed together at the end."
+      ],
+      "answer": 0,
+      "because": "Rolling each thin layer around the earlier roll builds the layered structure.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Why lift the existing roll when adding more egg?",
+      "choices": [
+        "To let the roll dry before joining.",
+        "To let fresh egg run underneath it.",
+        "To remove the roll until the new sheet is firm."
+      ],
+      "answer": 1,
+      "because": "Fresh egg beneath the roll helps the new layer join the block as it cooks.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance shows the intended layered structure?",
+      "choices": [
+        "A dense centre without visible layers.",
+        "Separate egg sheets that slide apart.",
+        "Many thin spirals in the finished block."
+      ],
+      "answer": 2,
+      "because": "Thin layers wrapped successively remain visible as spirals through the block.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The egg layers are not joining. What would you change for the next layer?",
+      "choices": [
+        "Roll while the new layer is still wet on top.",
+        "Wait until each layer is completely dry.",
+        "Cool each sheet before rolling it."
+      ],
+      "answer": 0,
+      "because": "A still-moist surface allows neighbouring layers to bond instead of remaining separate sheets.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],

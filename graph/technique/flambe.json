@@ -4,7 +4,12 @@
   "names": {"en": "Flambé", "fr": "Flamber"},
   "aliases": {"en": ["flame", "set alight", "flame with brandy"]},
   "does": "Sets light to a spirit poured over hot food. The flame burns away its harshness and leaves its flavour. Some of the alcohol stays in the dish.",
-  "intro": null,
+  "intro": {
+    "what": "A spirit is ignited over hot food as an aromatic finishing technique.",
+    "why": "Flambé connects a changing aroma with a visible flame. Careful preparation and controlled pouring belong to the method, not just the dramatic appearance.",
+    "idea": "An aromatic flame finish",
+    "tier": "drafted"
+  },
   "how": [
     "Take the pan off the heat and clear the space above it.",
     "Pour in the spirit from a ladle or a small glass, never from the bottle.",
@@ -29,7 +34,56 @@
       "fix": "Clear the space above the pan before you light it."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What culinary role does the spirit have in flambé?",
+      "choices": [
+        "It contributes an aromatic finish to the food.",
+        "To brown a dry crust over the food surface.",
+        "To reduce the sauce until it becomes spoon-coating."
+      ],
+      "answer": 0,
+      "because": "The technique uses the spirit for its contribution to the finished flavour and aroma.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How is the spirit introduced in this method?",
+      "choices": [
+        "Directly from the bottle into the heated pan.",
+        "From a separate ladle or small glass while the pan is off the heat.",
+        "From an open bottle held over an existing flame."
+      ],
+      "answer": 1,
+      "because": "Preparing a separate vessel avoids pouring from the bottle near the pan flame.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What visible flame movement is described?",
+      "choices": [
+        "Tall flames stay at the same height throughout.",
+        "Flames keep growing as the pan is shaken.",
+        "Blue flames rise and then subside."
+      ],
+      "answer": 2,
+      "because": "The rising and subsiding blue flame is the visible change used to observe this stage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "You are about to pour spirit straight from the bottle. What should change?",
+      "choices": [
+        "Set the bottle aside and use a separate vessel as described.",
+        "Move the bottle closer to the hot pan.",
+        "Begin pouring before taking the pan off the heat."
+      ],
+      "answer": 0,
+      "because": "Separating the pouring vessel from the bottle avoids the flame path described in this method.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/steaks-and-chops", "tier": "drafted"},

@@ -4,7 +4,12 @@
   "names": {"en": "Stuff a pita", "fr": "Garnir un pain pita"},
   "aliases": {"en": ["fill a pita", "stuff pita bread", "fill the pita"], "fr": ["farcir un pain pita"]},
   "does": "Opens a round of pita and spreads a thin layer of raw, spiced meat mixture inside, then presses the bread shut, so that the filling cooks and the bread crisps and soaks up its juices on the heat.",
-  "intro": null,
+  "intro": {
+    "what": "This arayes-style preparation spreads a thin meat filling inside pita before cooking.",
+    "why": "It teaches you to make a flat even filling rather than a thick mound beneath delicate bread.",
+    "idea": "Thin even filling",
+    "tier": "drafted"
+  },
   "how": [
     "Cut round the edge of the pita with a knife, or split it along one side, and open it into layers.",
     "Spread the filling thinly and evenly over the inner face of one layer, right to the edge.",
@@ -25,7 +30,56 @@
       "fix": "Warm the bread first, so that it bends."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why distribute the filling evenly inside pita?",
+      "choices": [
+        "To avoid a thick centre beneath faster-browning bread.",
+        "To concentrate nearly all the meat in the middle.",
+        "To leave empty bread across most of the surface."
+      ],
+      "answer": 0,
+      "because": "A thin even layer reduces the contrast between thick filling and the bread surrounding it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What happens after spreading the filling?",
+      "choices": [
+        "Leave the layers loose and sliding.",
+        "Close the bread and press it firmly flat.",
+        "Add a tall extra mound before closing."
+      ],
+      "answer": 1,
+      "because": "Firm flat contact holds the layers together around the distributed filling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suggests the filled pita is assembled neatly?",
+      "choices": [
+        "A raised loose centre under a shifting top.",
+        "A cracked shell around an uneven lump.",
+        "Flat and firm without layers sliding apart."
+      ],
+      "answer": 2,
+      "because": "A stable flat shape indicates that the filling and bread are in even contact.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pita cracks as it is opened. What should change?",
+      "choices": [
+        "Warm it first so it bends.",
+        "Use a drier colder piece.",
+        "Pull the brittle layers apart more sharply."
+      ],
+      "answer": 0,
+      "because": "A little warmth makes the bread more flexible for opening without splitting.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/pita-bread", "tier": "drafted"}
   ],

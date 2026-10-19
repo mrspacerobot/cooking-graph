@@ -4,7 +4,12 @@
   "names": {"en": "Make spice paste"},
   "aliases": {"en": ["make a masala paste", "make masala paste"]},
   "does": "Works ground spices, with fresh garlic, ginger or chilli, salt and a little liquid, into a thick paste by pounding or blending. The paste clings to fish, meat or vegetables, and seasons them all over.",
-  "intro": null,
+  "intro": {
+    "what": "This method works spices and fresh aromatics with just enough liquid to make a thick coating.",
+    "why": "It teaches you to join dry powders evenly while keeping the paste thick enough to cling to food.",
+    "idea": "Add only enough liquid",
+    "tier": "drafted"
+  },
   "how": [
     "Pound or blend the garlic, ginger and fresh chilli with the salt to a rough mash. The salt helps break them down.",
     "Add the ground spices.",
@@ -26,7 +31,56 @@
       "fix": "Cook it gently, with a splash of liquid, or use it as a coating."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What consistency should a coating spice paste have?",
+      "choices": [
+        "Thin enough to pour away from the food.",
+        "Dry powder that will not join the aromatics.",
+        "Thick enough to cling rather than run off."
+      ],
+      "answer": 2,
+      "because": "The paste needs enough moisture to combine but enough body to stay on the food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should liquid enter the spice mixture?",
+      "choices": [
+        "Gradually while working it in.",
+        "All at once before checking the thickness.",
+        "Keep adding after it already runs freely."
+      ],
+      "answer": 0,
+      "because": "Gradual additions let you stop at a paste that clings instead of becoming too thin.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests the powders are evenly mixed?",
+      "choices": [
+        "Dry powder patches over a wet mash.",
+        "An even colour without dry streaks.",
+        "A clear liquid layer surrounding loose spices."
+      ],
+      "answer": 1,
+      "because": "No dry streaks show the powders and aromatics have joined the paste.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Strong frying heat scorched the spice paste. What would you change next time?",
+      "choices": [
+        "Continue frying dry until the powders darken.",
+        "Increase heat to drive off every trace of moisture quickly.",
+        "Cook it gently with a little liquid, or use it as a coating."
+      ],
+      "answer": 2,
+      "because": "Gentler cooking and some liquid limit scorching of the ground spices.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/ground-spices", "tier": "drafted"},
     {"thing": "ingredient/garlic", "tier": "drafted"},

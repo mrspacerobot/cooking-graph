@@ -4,7 +4,12 @@
   "names": {"en": "Whip", "fr": "Monter"},
   "aliases": {"en": ["whip egg whites", "whisk to peaks", "beat egg whites", "whip cream"]},
   "does": "Beats air into egg whites or cream until they hold a peak.",
-  "intro": null,
+  "intro": {
+    "what": "Whipping incorporates air until a foam can hold a peak; this method describes egg whites.",
+    "why": "It teaches you to distinguish a glossy supporting foam from a dry overworked one.",
+    "idea": "Stop at a glossy peak",
+    "tier": "drafted"
+  },
   "how": [
     "Start with a clean, dry bowl, with no trace of fat or yolk in it.",
     "Whisk slowly at first, until the whites are a loose foam.",
@@ -25,7 +30,56 @@
       "fix": "Separate each egg over a small bowl first, and wipe the mixing bowl clean."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does whipping egg whites build?",
+      "choices": [
+        "A smooth liquid with no incorporated air.",
+        "A firm cooked sheet of egg.",
+        "An airy foam that holds a peak."
+      ],
+      "answer": 2,
+      "because": "Whisking incorporates air into a structure that can support a peak rather than simply blend the liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the egg-white bowl be prepared?",
+      "choices": [
+        "Clean and dry without grease or yolk.",
+        "Lightly greased so the foam releases.",
+        "Coated with egg yolk before adding whites."
+      ],
+      "answer": 0,
+      "because": "Grease or yolk interferes with the rise of an egg-white foam.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance marks the intended peak here?",
+      "choices": [
+        "Dry and grainy with leaking liquid.",
+        "Glossy and smooth with a slightly bending tip.",
+        "A liquid mixture that runs flat immediately."
+      ],
+      "answer": 1,
+      "because": "The peak should have structure while the foam retains gloss and smoothness.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Whites turn dry and grainy after the peak stage. What should change next time?",
+      "choices": [
+        "Keep beating until the grains disappear.",
+        "Wait for liquid to leak out before stopping.",
+        "Stop at the glossy peak instead of continuing."
+      ],
+      "answer": 2,
+      "because": "Continuing beyond the desired peak damages the smooth foam rather than strengthening it.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg-white", "tier": "drafted"},
     {"thing": "ingredient/cream", "tier": "drafted"}

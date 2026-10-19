@@ -4,7 +4,12 @@
   "names": {"en": "Plate", "fr": "Dresser"},
   "aliases": {"en": ["serve", "dish up", "plate up", "assemble"]},
   "does": "Arranges the finished parts on a plate, so that each reaches the table at its best.",
-  "intro": null,
+  "intro": {
+    "what": "Plating arranges finished components so their temperature and textures last to the table.",
+    "why": "It teaches you to coordinate readiness and place sauces without softening a crisp surface.",
+    "idea": "Protect the finished texture",
+    "tier": "drafted"
+  },
   "how": [
     "Warm the plates for hot food and chill them for cold.",
     "Have every part ready before the first one is plated.",
@@ -25,7 +30,52 @@
       "fix": "Put the sauce beside it or under it."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why have every component ready before plating begins?",
+      "choices": [
+        "To assemble without leaving early portions waiting.",
+        "To let the first plated food cool while the rest cooks.",
+        "To replace checking the final arrangement."
+      ],
+      "answer": 0,
+      "because": "Coordinated readiness reduces the time finished components wait on the plate.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should sauce go beside a crisp skin or crust?",
+      "choices": ["Directly over the crisp surface.", "Beside it or underneath it.", "Pooled over every exposed edge."],
+      "answer": 1,
+      "because": "Keeping sauce off the crisp surface helps preserve its texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests a clear plate arrangement?",
+      "choices": [
+        "Components hidden beneath an overflowing sauce.",
+        "Food crowded across a smeared rim.",
+        "Distinct components and a clean rim."
+      ],
+      "answer": 2,
+      "because": "Separation and a clean rim make each finished part easy to recognise.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A hot sauce cooled and set before reaching the table. What would you change next time?",
+      "choices": [
+        "Use warmed plates for the hot dish.",
+        "Use colder plates to set the sauce faster.",
+        "Plate the sauce well before the other components."
+      ],
+      "answer": 0,
+      "because": "A warm plate takes less heat from the food during assembly and service.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/starches", "tier": "drafted"},

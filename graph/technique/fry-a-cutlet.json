@@ -4,7 +4,12 @@
   "names": {"en": "Fry a cutlet"},
   "aliases": {"en": ["fry katsu", "deep-fry a crumbed cutlet"]},
   "does": "Fries a crumbed cutlet whole in deep oil, turning it once, until the crust is deep gold. It is then stood upright to drain, rested a little and cut across in strips, so that the crust stays crisp.",
-  "intro": null,
+  "intro": {
+    "what": "This crumbed-cutlet method deep-fries the cutlet whole, then drains it upright before slicing.",
+    "why": "It teaches you to protect a crisp crust through moderate frying heat, draining and gentle cutting.",
+    "idea": "Protect the crust",
+    "tier": "drafted"
+  },
   "how": [
     "Heat deep oil in a heavy pan to a moderate heat, enough to cover the cutlet.",
     "Test it with a few flakes of panko, which should sink briefly and then rise in a stream of fine bubbles.",
@@ -31,7 +36,56 @@
       "fix": "Let it rest for a short while first."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why stand the fried cutlet upright to drain?",
+      "choices": [
+        "So the crust sits in its draining oil.",
+        "So oil runs off instead of pooling under the crust.",
+        "So the underside softens before slicing."
+      ],
+      "answer": 1,
+      "because": "A flat cutlet can steam in pooled oil; upright draining helps its crust stay crisp.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you check the oil before adding the cutlet?",
+      "choices": [
+        "Panko stays pale at the bottom without bubbling.",
+        "Panko turns dark immediately on contact.",
+        "Panko sinks briefly then rises with fine bubbles."
+      ],
+      "answer": 2,
+      "because": "The brief sinking and rising test matches the moderate frying heat used here.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended crust?",
+      "choices": [
+        "Even deep gold on both sides.",
+        "A black crust with pale patches.",
+        "A pale coating that looks saturated with oil."
+      ],
+      "answer": 0,
+      "because": "Even gold is the intended crust colour, rather than rapid overbrowning or a greasy pale coating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The crust shatters when sliced. What would you change?",
+      "choices": [
+        "Press straight down hard with a blunt knife.",
+        "Use a sharp knife with a light sawing motion after resting.",
+        "Tear the cutlet apart before draining."
+      ],
+      "answer": 1,
+      "because": "Resting and gentle sawing avoid crushing the brittle crust while cutting strips.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/pork-loin", "tier": "drafted"},
     {"thing": "ingredient/pork-tenderloin", "tier": "drafted"}

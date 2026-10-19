@@ -4,7 +4,12 @@
   "names": {"en": "Marinate in yogurt"},
   "aliases": {"en": ["yogurt marinade", "marinate in spiced yogurt", "dahi marinade"]},
   "does": "Steeps meat or firm cheese in yogurt that has been mixed with a spice paste and salt, so that the mild acid of the yogurt softens the surface and the spices are carried right into it. The coat browns and chars in strong heat.",
-  "intro": null,
+  "intro": {
+    "what": "This yogurt marinade mixes spice paste into thick yogurt to coat meat or firm cheese.",
+    "why": "It teaches you to control coating thickness and draining so the food browns rather than steaming under excess yogurt.",
+    "idea": "A clinging coating",
+    "tier": "drafted"
+  },
   "how": [
     "Make the spice paste first, with garlic, ginger, fresh chilli, ground spices, salt and a little lemon juice.",
     "Whisk the paste into thick yogurt. Hang the yogurt in a cloth first if it is thin, so that the marinade clings and does not run off.",
@@ -30,7 +35,56 @@
       "fix": "Use a glass, china or steel bowl that does not take on a metallic taste."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use thick rather than watery yogurt?",
+      "choices": [
+        "So the food sits in a loose pool for cooking.",
+        "So the spice coating clings instead of running off.",
+        "So no surface coating remains."
+      ],
+      "answer": 1,
+      "because": "Drained thick yogurt holds the spice paste on the food instead of releasing a watery coating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you prepare yogurt that is too thin?",
+      "choices": [
+        "Add it with all its watery liquid.",
+        "Heat the finished marinade until it reduces.",
+        "Drain it in a cloth before adding the spice paste."
+      ],
+      "answer": 2,
+      "because": "Straining removes excess liquid before the marinade is mixed.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended marinade on the food?",
+      "choices": [
+        "An even coat that stays on the surface.",
+        "A watery pool beneath mostly bare pieces.",
+        "Dry spice streaks above separate yogurt liquid."
+      ],
+      "answer": 0,
+      "because": "An even clinging coat shows the yogurt and paste have combined at the intended thickness.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A heavy yogurt coating makes the food steam instead of char. What would you change next time?",
+      "choices": [
+        "Spoon more yogurt over it as it cooks.",
+        "Let excess marinade drip away before heating.",
+        "Pack the coated pieces closely together."
+      ],
+      "answer": 1,
+      "because": "Excess yogurt left on the food steams; draining it back leaves a coating more suited to browning.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/braising-cuts", "tier": "drafted"},

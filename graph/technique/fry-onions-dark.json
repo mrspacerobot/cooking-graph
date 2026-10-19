@@ -4,7 +4,12 @@
   "names": {"en": "Fry onions until dark"},
   "aliases": {"en": ["fry onions until crisp", "fry onions dark"]},
   "does": "Fries thinly sliced onions in a generous layer of hot oil until they turn deep brown and crisp at the edges, then lifts them out to drain. They bring a bittersweet crunch to rice and lentils, and the oil they leave behind is full of their flavour.",
-  "intro": null,
+  "intro": {
+    "what": "This method fries thin onions until deeply browned, then drains them for a bittersweet crunch.",
+    "why": "It teaches you to control the last stage of browning and judge crispness after cooling.",
+    "idea": "Watch the last colour",
+    "tier": "drafted"
+  },
   "how": [
     "Slice the onions thin and evenly, so that they brown at one pace.",
     "Heat a good depth of oil in a wide, heavy pan until a slice sizzles the moment it goes in.",
@@ -34,7 +39,52 @@
       "fix": "Wait until a slice sizzles at once."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What do these fried onions add to rice and lentils?",
+      "choices": ["A pale, soft layer with no browning.", "A bittersweet crunch.", "A wet onion sauce."],
+      "answer": 1,
+      "because": "Deep browning and draining produce a crisp topping rather than a soft onion base.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the slices sit in the pan?",
+      "choices": [
+        "Packed tightly into a deep mound.",
+        "Pressed together under a lid.",
+        "In a loose layer, using batches if needed."
+      ],
+      "answer": 2,
+      "because": "A loose layer avoids crowding that makes the onions steam and stay limp.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How can you judge crispness after lifting out a piece?",
+      "choices": [
+        "Let it cool and see whether it snaps.",
+        "Judge only by softness while it is still hot.",
+        "Look for black edges before testing it."
+      ],
+      "answer": 0,
+      "because": "The onions crisp further as they cool; a cooled piece should snap.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The onions are becoming greasy from a cool start. What would you change next time?",
+      "choices": [
+        "Add all the onions before heating the oil.",
+        "Wait until an onion slice sizzles immediately.",
+        "Use a tighter pile to retain the heat."
+      ],
+      "answer": 1,
+      "because": "Starting in properly heated oil avoids the greasy result of a cool start.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"}
   ],

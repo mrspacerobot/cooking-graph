@@ -4,7 +4,12 @@
   "names": {"en": "Mince"},
   "aliases": {"en": ["mince finely", "chop to a paste"]},
   "does": "Cuts food so fine that it melts into a dish and leaves no piece to bite on.",
-  "intro": null,
+  "intro": {
+    "what": "Mincing cuts food very finely so distinct pieces do not stand out in the dish.",
+    "why": "It teaches you to recognise an even fine cut and prepare strong aromatics close to when they are needed.",
+    "idea": "Fine and even",
+    "tier": "drafted"
+  },
   "how": [
     "Slice the food thinly, then cut across the slices.",
     "Rock the knife over the pile, scraping it together now and then, until no piece stands out.",
@@ -20,7 +25,56 @@
       "fix": "Mince it last, just before it goes into the pan."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why mince an aromatic rather than leave large pieces?",
+      "choices": [
+        "So it blends into the dish without large pieces to bite on.",
+        "So a few bites contain most of the aromatic.",
+        "So every piece stays large and distinct."
+      ],
+      "answer": 0,
+      "because": "Very fine cutting lets the food blend in rather than remain as noticeable chunks.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you keep the pile together as you mince?",
+      "choices": [
+        "Spread the pieces widely and stop gathering them.",
+        "Rock the knife and scrape the pile together as needed.",
+        "Press once with the blade and leave the pieces coarse."
+      ],
+      "answer": 1,
+      "because": "Gathering the pile lets repeated rocking cuts reach the remaining larger pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the finished pile look like?",
+      "choices": [
+        "Long strips mixed with large chunks.",
+        "A few whole cloves beside finely cut pieces.",
+        "Fine and even with no piece standing out."
+      ],
+      "answer": 2,
+      "because": "An even fine pile shows the larger pieces have been cut down consistently.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Garlic tastes harsh after being minced long ahead. What would you change next time?",
+      "choices": [
+        "Mince it just before it goes into the pan.",
+        "Mince it earlier and leave it exposed longer.",
+        "Crush it into finer pieces far in advance."
+      ],
+      "answer": 0,
+      "because": "Preparing minced garlic close to use avoids the harshness described after a long wait.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/alliums", "tier": "drafted"},
     {"thing": "group/tender-herbs", "tier": "drafted"},

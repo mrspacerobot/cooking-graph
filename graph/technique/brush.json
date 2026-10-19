@@ -4,7 +4,12 @@
   "names": {"en": "Brush", "fr": "Badigeonner"},
   "aliases": {"en": ["brush with oil", "brush with butter", "paint with oil"], "fr": ["dorer au pinceau"]},
   "does": "Paints a thin, even film of oil, melted butter or beaten egg onto a surface with a soft brush, so that it browns and shines in the heat, keeps from drying out, or does not stick.",
-  "intro": null,
+  "intro": {
+    "what": "A soft brush spreads a thin film of fat or egg across a surface.",
+    "why": "Controlling the film helps you avoid puddles and dry patches while treating delicate dough gently.",
+    "idea": "An even surface film",
+    "tier": "drafted"
+  },
   "how": [
     "Have the oil, butter or egg ready in a small bowl, and the food in front of you.",
     "Dip only the tip of the brush, and press the extra off against the rim of the bowl.",
@@ -26,7 +31,56 @@
       "fix": "Use a light touch and a soft brush."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim when brushing a surface?",
+      "choices": [
+        "Thick puddles around every fold.",
+        "A thin even film suited to the dish.",
+        "A heavy coating concentrated at the centre."
+      ],
+      "answer": 1,
+      "because": "An even film treats the whole surface without loading edges with excess liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the brush be loaded?",
+      "choices": [
+        "Submerge the bristles and carry all the liquid across.",
+        "Pour liquid directly into the folds first.",
+        "Dip the tip and remove excess on the bowl rim."
+      ],
+      "answer": 2,
+      "because": "Removing excess makes the amount easier to control.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What shows even brushing?",
+      "choices": [
+        "An even shine without puddles or dry patches.",
+        "A wet edge around a dull centre.",
+        "Torn dough beneath thick streaks."
+      ],
+      "answer": 0,
+      "because": "An even shine shows coverage without excessive liquid collecting.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Soft dough tears under the brush. What should change?",
+      "choices": [
+        "Press harder to spread the film faster.",
+        "Use a softer brush and a lighter touch.",
+        "Drag a heavily loaded brush repeatedly across it."
+      ],
+      "answer": 1,
+      "because": "Gentle brushing spreads the film without damaging the delicate surface.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/pastry", "tier": "drafted"},
     {"thing": "ingredient/pita-bread", "tier": "drafted"},

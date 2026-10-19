@@ -139,7 +139,7 @@ One kitchen move, defined by what it does to food.
 | `how` | The move in a few short beats, at least two |
 | `cues` | What tells the cook it is right, at least one. Each has a `sense` (see, hear, smell, feel, taste) and a `text` |
 | `mistakes` | The mistakes people really make, at least one. Each has the `mistake` and its `fix` |
-| `quiz` | Reusable understanding questions, empty when not yet drafted. Each has a permanent local `id`, `question`, two to four distinct `choices`, zero-based `answer`, an explanation `because` and its own `tier`. A quiz needs an introduction. Four questions is the foundation editorial target, not a model limit |
+| `quiz` | Reusable understanding questions, empty when not yet drafted. Each has a permanent local `id`, `question`, two to four distinct `choices`, zero-based `answer`, an explanation `because` and its own `tier`. A quiz needs an introduction. Four questions is the current editorial target, not a model limit |
 | `works_on` | What the move is done to. Statement. It points at groups. It may name a single ingredient or preparation only where nothing else in the graph behaves like it, and never more than three |
 | `makes` | What it leaves: forms or preparations. Statement |
 | `needs` | What it cannot be done without. Statement. Each row has a `role` and `options`: equipment, ingredients or preparations, any one of which will do |

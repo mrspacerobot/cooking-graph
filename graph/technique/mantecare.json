@@ -4,7 +4,12 @@
   "names": {"en": "Beat in butter and cheese"},
   "aliases": {"en": ["mantecatura", "mantecare", "finish a risotto", "finish with butter and cheese"]},
   "does": "Takes the pan off the heat and beats cold butter and grated hard cheese hard into the rice, so that fat and starch blend into a creamy, glossy, flowing finish. The Italian name is mantecatura.",
-  "intro": null,
+  "intro": {
+    "what": "Mantecatura beats cold butter and grated cheese into loose risotto away from the heat.",
+    "why": "It teaches you to bring fat and starch together into a flowing finish rather than a stiff or oily rice dish.",
+    "idea": "Finish off the heat",
+    "tier": "drafted"
+  },
   "how": [
     "When the rice is a few moments from ready, take the pan off the heat. The risotto should still be loose, because it tightens as it rests.",
     "Add cold butter in cubes and a generous handful of finely grated cheese.",
@@ -32,7 +37,52 @@
       "fix": "Keep the pan loose and wet before the finish."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture is the aim of mantecatura?",
+      "choices": [
+        "A stiff mound that stands without spreading.",
+        "Glossy creamy rice that flows.",
+        "Separate butter pools around dry rice."
+      ],
+      "answer": 1,
+      "because": "The finish combines fat and starch into creamy rice that spreads rather than standing in a lump.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What do you do before beating in butter and cheese?",
+      "choices": ["Turn the heat up strongly.", "Boil away all the remaining liquid.", "Take the pan off the heat."],
+      "answer": 2,
+      "because": "Strong heat can make the cheese stringy and separate the butter, so finish away from the heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should happen when the risotto is spooned onto a plate?",
+      "choices": [
+        "It spreads slowly like a wave.",
+        "It stays as a firm dry mound.",
+        "Clear oil runs away from the grains."
+      ],
+      "answer": 0,
+      "because": "A glossy flowing wave shows the loose creamy texture intended by this finish.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The finished risotto is too stiff. What would you change?",
+      "choices": [
+        "Return it to high heat to dry it further.",
+        "Loosen it with a little hot stock away from strong heat.",
+        "Add more grated cheese without loosening it."
+      ],
+      "answer": 1,
+      "because": "A little stock restores flow; the rice should stay loose before the finish because it tightens as it rests.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/risotto-rices", "tier": "drafted"}
   ],

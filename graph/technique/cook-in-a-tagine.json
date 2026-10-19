@@ -4,7 +4,12 @@
   "names": {"en": "Cook in a tagine", "fr": "Cuire en tajine"},
   "aliases": {"en": ["tagine", "tajine", "cook a tagine", "cook in a tajine"], "fr": ["tajine"]},
   "does": "Cooks meat or poultry slowly over low heat in a shallow earthenware dish under a tall cone lid, on a bed of sliced onion, fat and spices, with only a little water. The steam rises into the cone, cools and runs back down, so the food stews in its own juices and the sauce stays short and strong.",
-  "intro": null,
+  "intro": {
+    "what": "A cone-lidded earthenware tagine cooks gently with restrained added water.",
+    "why": "The lid returns condensed steam to the dish. Keeping that cycle intact develops a concentrated sauce without treating the pot as a deep stew.",
+    "idea": "Condensation under the cone",
+    "tier": "drafted"
+  },
   "how": [
     "Spread sliced onion over the base of the dish with the fat and the spices, and pour in a little water, only enough to wet the base.",
     "Lay the meat on top and season it. Do not brown it first.",
@@ -34,7 +39,56 @@
       "fix": "Leave it covered and check only near the end."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does the cone lid return to the dish?",
+      "choices": [
+        "Dry oven air that browns the meat.",
+        "Moisture condensed from rising steam.",
+        "Oil splashed upward from the pot base."
+      ],
+      "answer": 1,
+      "because": "Steam cools against the lid and runs back toward the food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should this tagine begin on the stove?",
+      "choices": [
+        "Over fierce direct heat from the start.",
+        "With the empty clay dish heated until smoking.",
+        "Over low heat, with a diffuser if needed."
+      ],
+      "answer": 2,
+      "because": "Gradual gentle heating protects the base and supports the restrained bubbling of this method.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What bubbling pattern belongs to this cooking style?",
+      "choices": [
+        "Occasional small bubbles near the sauce edge.",
+        "A violent rolling boil across the dish.",
+        "Dry smoking patches around the base."
+      ],
+      "answer": 0,
+      "because": "Quiet bubbling fits the low-heat cooking and concentrated sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce became thin after covering the food in water. What would you change next time?",
+      "choices": [
+        "Add more water whenever steam reaches the lid.",
+        "Begin with less water and rely on the covered moisture cycle.",
+        "Leave the lid open throughout to release all steam."
+      ],
+      "answer": 1,
+      "because": "The tagine returns moisture, so excessive added water dilutes the intended sauce.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/braising-cuts", "tier": "drafted"},
     {"thing": "group/poultry", "tier": "drafted"}

@@ -4,7 +4,12 @@
   "names": {"en": "Char", "fr": "Griller à la flamme"},
   "aliases": {"en": ["blister", "blacken", "char over a flame"], "fr": ["noircir à la flamme"]},
   "does": "Burns the skin of a whole vegetable black over an open flame or a fierce heat, so that the flesh inside turns soft, smoky and sweet, and the charred skin can be peeled away.",
-  "intro": null,
+  "intro": {
+    "what": "Whole vegetables blacken and blister over strong heat before their skins are removed.",
+    "why": "Here the dark skin is a temporary layer. The goal is soft smoky flesh rather than keeping the burnt outer surface.",
+    "idea": "Smoke beneath the skin",
+    "tier": "drafted"
+  },
   "how": [
     "Set the whole vegetable directly on a gas flame, on a hot grill or on a barbecue.",
     "Turn it now and then with tongs, until the skin is blackened and blistered all over and the flesh has gone soft and collapsed.",
@@ -28,7 +33,56 @@
     },
     {"mistake": "Leaving it uncovered, so that the skin sticks.", "fix": "Cover it while it steams and cools."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is kept after charring the whole vegetable?",
+      "choices": [
+        "The blackened skin as the main part of the finished vegetable.",
+        "Firm flesh with all the smoky juices washed away.",
+        "The softened smoky flesh beneath the skin."
+      ],
+      "answer": 2,
+      "because": "The skin takes the direct heat and is peeled away to reveal the flesh.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Why cover the vegetable after taking it off the heat?",
+      "choices": [
+        "Trapped steam helps loosen the skin.",
+        "The cover dries the skin onto the flesh.",
+        "The cover crisps the blackened skin before peeling."
+      ],
+      "answer": 0,
+      "because": "Steam beneath the cover makes the blackened skin easier to remove.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What combination of cues belongs to this method?",
+      "choices": [
+        "Pale tight skin and rigid flesh.",
+        "Blistered dark skin and sagging soft flesh.",
+        "A dry hollow centre with crisp flesh."
+      ],
+      "answer": 1,
+      "because": "The intended change includes both the outer skin and the softened interior texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Rinsing removed much of the smoky taste. What should change?",
+      "choices": [
+        "Rinse longer under stronger running water.",
+        "Soak the peeled vegetable before using it.",
+        "Wipe or pull the loosened skin away by hand."
+      ],
+      "answer": 2,
+      "because": "Removing the skin without rinsing retains more of the smoky flavour.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/aubergine", "tier": "drafted"},
     {"thing": "ingredient/bell-pepper", "tier": "drafted"},

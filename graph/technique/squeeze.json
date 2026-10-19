@@ -7,7 +7,12 @@
     "fr": ["presser les feuilles"]
   },
   "does": "Presses the water out of cooked leaves by the handful, or in a sieve, so that they can be seasoned and mixed without turning the dish watery.",
-  "intro": null,
+  "intro": {
+    "what": "Squeezing removes retained water from cooked leaves before mixing or seasoning.",
+    "why": "It teaches you how excess water can dilute a dish and keep dressing from coating the leaves.",
+    "idea": "Remove water before seasoning",
+    "tier": "drafted"
+  },
   "how": [
     "Let the cooked leaves cool enough to handle.",
     "Take up a handful and close the fist, or press the leaves against the side of a sieve with a spoon.",
@@ -31,7 +36,56 @@
       "fix": "Squeeze again until only a few drops come out."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why squeeze cooked leaves before mixing them into a dish?",
+      "choices": [
+        "To keep every drop of cooking liquid in the mixture.",
+        "To prevent them taking any seasoning.",
+        "To avoid adding excess water."
+      ],
+      "answer": 2,
+      "because": "Removing free water keeps the leaves from diluting the mixture or shedding their dressing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen after squeezing leaves into a tight ball?",
+      "choices": [
+        "Shake them loose before chopping or seasoning.",
+        "Keep them compressed as a hard lump.",
+        "Return them to water before dressing."
+      ],
+      "answer": 0,
+      "because": "Loosening restores an open texture so chopping and seasoning can be more even.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suggests enough water has been pressed out?",
+      "choices": [
+        "A soaked ball streams water under light pressure.",
+        "Damp compact leaves release very little more water.",
+        "The surface is dry but the centre drips freely."
+      ],
+      "answer": 1,
+      "because": "The aim is to remove free water while leaving the leaves naturally damp.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Dressing slides off wet leaves. What should change?",
+      "choices": [
+        "Add more water before the dressing.",
+        "Leave the water and double the dressing immediately.",
+        "Squeeze them again before seasoning."
+      ],
+      "answer": 2,
+      "because": "Free water prevents the intended coating and dilutes the seasoning.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/spinach", "tier": "drafted"},
     {"thing": "ingredient/chard", "tier": "drafted"},

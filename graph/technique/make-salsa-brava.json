@@ -4,7 +4,12 @@
   "names": {"en": "Make salsa brava"},
   "aliases": {"en": ["make brava sauce", "make bravas sauce"]},
   "does": "Toasts a little flour in olive oil, takes the pan off the heat to stir in sweet and hot paprika, then whisks in water and tomato paste and simmers it to a thin, glossy, brick-red sauce with a sharp bite, to spoon over fried potatoes.",
-  "intro": null,
+  "intro": {
+    "what": "This salsa brava cooks a flour base, adds paprika away from heat and simmers it into a glossy red sauce.",
+    "why": "It teaches you to protect paprika from scorching while building a sauce loose enough to flow over potatoes.",
+    "idea": "Protect paprika from heat",
+    "tier": "drafted"
+  },
   "how": [
     "Warm the olive oil in a small pan over a low heat. Stir in the flour and cook it, stirring, until it smells nutty and has only just darkened.",
     "Take the pan off the heat and stir in the sweet paprika and the hot paprika. Paprika scorches in hot oil and turns the sauce bitter.",
@@ -34,7 +39,56 @@
       "fix": "Loosen it with a little water until it flows off the spoon."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What body should this salsa brava have?",
+      "choices": [
+        "A stiff flour paste that holds a firm mound.",
+        "A watery liquid without any spoon coating.",
+        "A thin glossy coating that flows from the spoon."
+      ],
+      "answer": 2,
+      "because": "The sauce should lightly coat and flow, rather than cling as a heavy paste.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When do you stir paprika into the flour and oil?",
+      "choices": [
+        "After taking the pan off the heat.",
+        "While the oil is at its hottest on the flame.",
+        "Before leaving it to fry dark and dry."
+      ],
+      "answer": 0,
+      "because": "Paprika scorches readily in hot oil, so move the pan away from the heat first.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the finished sauce?",
+      "choices": [
+        "Pale sauce with dry flour lumps.",
+        "Smooth brick red with a thin glossy spoon coating.",
+        "A dark grainy paste that will not flow."
+      ],
+      "answer": 1,
+      "because": "A smooth light coating shows the gradual liquid addition and gentle simmer have formed the sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce has become a paste that clings heavily. What would you do?",
+      "choices": [
+        "Reduce it further to remove more water.",
+        "Add extra flour to thicken it again.",
+        "Loosen it with a little water until it flows."
+      ],
+      "answer": 2,
+      "because": "A little water restores the flowing consistency intended for spooning over potatoes.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"},
     {"thing": "ingredient/paprika", "tier": "drafted"}

@@ -4,7 +4,12 @@
   "names": {"en": "Boil noodles"},
   "aliases": {"en": ["boil soba", "boil udon", "cook noodles"]},
   "does": "Cooks noodles in a large pot of rapidly boiling water, stirring them loose at the start, and lifts them out the moment they are tender, so that they are springy and not gummy.",
-  "intro": null,
+  "intro": {
+    "what": "Noodles cook in boiling water and are drained when they reach a springy bite.",
+    "why": "Separating the strands and controlling their time in water keeps the texture distinct instead of gummy.",
+    "idea": "Separate springy strands",
+    "tier": "drafted"
+  },
   "how": [
     "Bring a large pot of water to a rolling boil. Do not salt it for dry buckwheat noodles.",
     "Fan the noodles into the water and stir with long chopsticks or tongs so that they do not clump.",
@@ -23,7 +28,56 @@
       "fix": "Lift them out as soon as they are tender."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why loosen the noodles as they enter the water?",
+      "choices": [
+        "To increase contact so the strands stick together.",
+        "To keep the inner strands away from the water.",
+        "To prevent them cooking in a stuck mass."
+      ],
+      "answer": 2,
+      "because": "Stirring at the start helps water reach separate strands rather than a clump.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What happens to noodles intended for a cold dish after draining?",
+      "choices": [
+        "They are rinsed.",
+        "They remain in the hot cooking water.",
+        "They are pressed into a dense pile before draining."
+      ],
+      "answer": 0,
+      "because": "This method calls for rinsing the drained noodles when they will be eaten cold.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What texture is the intended cue when tasting a strand?",
+      "choices": [
+        "A gummy surface around a hard centre.",
+        "A clean springy bite without a hard core.",
+        "A strand that falls apart when lifted."
+      ],
+      "answer": 1,
+      "because": "A springy bite distinguishes the intended texture from a hard centre or a collapsing noodle.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Noodles became too soft while sitting in the cooking water. What would you change next time?",
+      "choices": [
+        "Leave them in the hot water until the dish is assembled.",
+        "Stop stirring but let them rest in the cooking water.",
+        "Drain as soon as they reach the intended texture."
+      ],
+      "answer": 2,
+      "because": "Draining ends their continued time in cooking water before the texture deteriorates.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/noodles", "tier": "drafted"}
   ],

@@ -7,7 +7,12 @@
     "fr": ["remuer sans cesse"]
   },
   "does": "Moves a spoon through food as it heats, scraping the base of the pan, so that it cooks evenly, does not catch and scorch, and stays smooth.",
-  "intro": null,
+  "intro": {
+    "what": "Stirring moves food gently across the pan base as it heats and thickens.",
+    "why": "It teaches you to sense thickening through the spoon while preventing local catching.",
+    "idea": "Reach the whole base",
+    "tier": "drafted"
+  },
   "how": [
     "Use a spoon with a flat edge, or a wooden spoon, and a pan with a heavy base.",
     "Keep the heat gentle and reach the whole base and the corners with each pass.",
@@ -33,7 +38,56 @@
       "fix": "Turn the heat down."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why scrape the base while stirring a thickening mixture?",
+      "choices": [
+        "To break every grain into paste.",
+        "To keep the surface moving while the base stays still.",
+        "To move food away from the hottest contact surface before it catches."
+      ],
+      "answer": 2,
+      "because": "The base catches first, so stirring must reach the pan contact layer rather than only the top.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Which parts of the pan should each stirring pass reach?",
+      "choices": [
+        "The whole base and corners.",
+        "Only the centre of the surface.",
+        "The sides just above the base, without sweeping the bottom."
+      ],
+      "answer": 0,
+      "because": "A broad pass moves mixture from places where it could otherwise remain still and scorch.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What does increasing drag on the spoon suggest?",
+      "choices": [
+        "The mixture is necessarily burning.",
+        "The mixture is thickening.",
+        "The mixture has become thinner."
+      ],
+      "answer": 1,
+      "because": "A thickening mixture resists the spoon more even when its surface remains smooth.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Rice pudding became pasty under hard stirring. What would you change next time?",
+      "choices": [
+        "Stir faster to break up the remaining grains.",
+        "Press the grains against the base.",
+        "Stir more gently, only enough to prevent catching."
+      ],
+      "answer": 2,
+      "because": "Aggressive stirring breaks grains; gentler movement preserves texture while still protecting the base.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/sauces", "tier": "drafted"},
     {"thing": "ingredient/rice", "tier": "drafted"},

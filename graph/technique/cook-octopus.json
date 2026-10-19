@@ -4,7 +4,12 @@
   "names": {"en": "Cook octopus Galician style"},
   "aliases": {"en": ["pulpo a feira", "asustar el pulpo", "scare the octopus"]},
   "does": "Cooks a whole octopus in plenty of water, first dipping it in and out of the boil several times so that the arms curl and the skin stays on, then lets it bubble steadily until the thickest part of an arm is tender. It is rested, then snipped into rounds with scissors.",
-  "intro": null,
+  "intro": {
+    "what": "Octopus is dipped into boiling water, simmered gently and cut into rounds with scissors.",
+    "why": "This method pays attention to the curled shape, skin and tender texture rather than treating vigorous boiling as the goal.",
+    "idea": "Gentle simmer and clean rounds",
+    "tier": "drafted"
+  },
   "how": [
     "Bring a large pot of water to a rolling boil. Hold the octopus by the head with tongs and dip it in and out of the water, a few times, for a moment each time. The arms curl up.",
     "Lower it in completely. When the water comes back to a boil, turn the heat down to a steady bubbling.",
@@ -31,7 +36,56 @@
       "fix": "Snip them with scissors straight onto the dish."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use scissors for the final rounds here?",
+      "choices": [
+        "They stretch the arms into straighter portions.",
+        "They press the rounds firmly flat as they cut.",
+        "They avoid squashing the arms against a board."
+      ],
+      "answer": 2,
+      "because": "Snipping produces rounds without the pressure that can crush them under a knife.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "After the initial dips and immersion, how should the water move?",
+      "choices": [
+        "With steady gentle bubbling.",
+        "At a fierce rolling boil throughout.",
+        "Without movement as soon as the octopus enters."
+      ],
+      "answer": 0,
+      "because": "The method reduces the heat after immersion to avoid a harsh boil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What change is observed after the initial dips?",
+      "choices": [
+        "The arms remain limp while the skin loosens.",
+        "The arms curl and the skin remains attached.",
+        "The arms curl while the skin peels away."
+      ],
+      "answer": 1,
+      "because": "Curling arms with attached skin are the preparation cues described for the dipping stage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Rounds became flattened when sliced on a board. What should change?",
+      "choices": [
+        "Press the knife more firmly through the arms.",
+        "Flatten the arms before slicing.",
+        "Snip them directly with kitchen scissors."
+      ],
+      "answer": 2,
+      "because": "Scissors reduce the board pressure that can squash the rounds.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/octopus", "tier": "drafted"}
   ],

@@ -4,7 +4,12 @@
   "names": {"en": "Seal with dough", "fr": "Luter"},
   "aliases": {"en": ["lute", "seal the pot with dough", "seal the lid with paste"], "fr": ["luter la cocotte"]},
   "does": "Closes the gap between a pot and its lid with a rope of plain flour paste, so that no steam leaves during a long, slow bake. The seal is broken open at the table.",
-  "intro": null,
+  "intro": {
+    "what": "A flour-paste rope seals the join between a pot and its lid for a slow bake.",
+    "why": "It teaches you how retaining steam limits liquid loss from a covered dish.",
+    "idea": "An unbroken steam seal",
+    "tier": "drafted"
+  },
   "how": [
     "Mix flour with just enough water to make a stiff paste that rolls between the hands and does not stick.",
     "Fill the pot, then put the lid on.",
@@ -26,7 +31,56 @@
       "fix": "Run a wet finger round the whole join before the pot goes in the oven."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does the dough ring control?",
+      "choices": [
+        "The rate of browning on an uncovered surface.",
+        "The thickness of the food inside the pot.",
+        "Steam escaping through the lid join."
+      ],
+      "answer": 2,
+      "because": "Closing the join helps retain moisture during the covered bake.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should the paste rope be pressed?",
+      "choices": [
+        "Into the join between the lid and pot.",
+        "On top of the lid without covering its join to the pot.",
+        "Around the pot below the join, leaving the gap open."
+      ],
+      "answer": 0,
+      "because": "The seal works by closing the route where steam would otherwise leave.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests the join is sealed?",
+      "choices": [
+        "Separate pieces with openings between them.",
+        "An unbroken ring without gaps.",
+        "A rope that has slipped down the outside."
+      ],
+      "answer": 1,
+      "because": "A continuous ring closes the join all around the pot.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The paste runs instead of holding its shape. What should change?",
+      "choices": [
+        "Add more water to make it easier to spread.",
+        "Leave a thinner wet coating around the rim.",
+        "Work in flour until it becomes stiff and pliable."
+      ],
+      "answer": 2,
+      "because": "A stiff paste stays in the join instead of sliding away and exposing gaps.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"},
     {"thing": "ingredient/water", "tier": "drafted"}

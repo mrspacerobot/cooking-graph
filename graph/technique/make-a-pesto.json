@@ -4,7 +4,12 @@
   "names": {"en": "Make a pesto"},
   "aliases": {"en": ["pesto genovese", "make pesto alla genovese", "pesto alla genovese"]},
   "does": "Crushes fresh basil leaves with a little coarse salt and garlic in a mortar, then pine nuts, then grated hard cheese, and works in olive oil last, into a thick, green, raw sauce. It is the sauce of Genoa and the coast of Liguria, and it is never cooked.",
-  "intro": null,
+  "intro": {
+    "what": "This Ligurian-style pesto crushes basil, garlic, pine nuts and cheese, then incorporates olive oil.",
+    "why": "It teaches you to preserve a fresh herb sauce and bind the oil without heating the basil.",
+    "idea": "Keep the basil fresh",
+    "tier": "drafted"
+  },
   "how": [
     "Pick the basil leaves and dry them. Wet leaves make a dull, watery sauce.",
     "Pound the garlic with coarse salt in a stone mortar until it is a paste.",
@@ -33,7 +38,56 @@
       "fix": "Add it in a thin stream, stirring."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why mix this pesto into pasta off the heat?",
+      "choices": [
+        "To cook the basil until its colour darkens.",
+        "To preserve the basil and avoid splitting the oil.",
+        "To reduce it into a dry coating."
+      ],
+      "answer": 1,
+      "because": "Heating pesto in the pan dulls the basil and can separate the oil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you incorporate olive oil into the paste?",
+      "choices": [
+        "All at once before crushing the leaves.",
+        "After boiling the paste until dry.",
+        "In a thin stream while stirring."
+      ],
+      "answer": 2,
+      "because": "Gradual oil additions help it bind into the thick paste rather than float separately.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended pesto?",
+      "choices": [
+        "Bright green and thick, with oil held in the paste.",
+        "Dark leaves beneath a separate pool of oil.",
+        "A pale watery paste with wet leaf clumps."
+      ],
+      "answer": 0,
+      "because": "The intended sauce keeps a bright colour and holds its oil rather than separating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The basil warms and darkens during fast blade processing. What would you change next time?",
+      "choices": [
+        "Run the blade longer until the paste is very warm.",
+        "Use a mortar or brief pulses with chilled ingredients.",
+        "Heat the leaves before blending."
+      ],
+      "answer": 1,
+      "because": "Gentle grinding or brief cool processing avoids warming and dulling the basil.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/basil", "tier": "drafted"},
     {"thing": "ingredient/pine-nut", "tier": "drafted"},

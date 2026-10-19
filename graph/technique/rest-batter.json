@@ -4,7 +4,12 @@
   "names": {"en": "Rest batter"},
   "aliases": {"en": ["let the batter rest", "rest the batter"]},
   "does": "Leaves a mixed batter to stand, so that the flour takes up its liquid and the batter turns smooth and thickens a little. Cooked after resting, it spreads evenly and comes out tender.",
-  "intro": null,
+  "intro": {
+    "what": "Resting gives mixed batter time to become smoother as flour absorbs liquid.",
+    "why": "It teaches you to distinguish hydration from extra mixing when adjusting batter texture.",
+    "idea": "Let flour hydrate",
+    "tier": "drafted"
+  },
   "how": [
     "Cover the bowl of batter.",
     "Leave it to stand in a cool place, or in the fridge if it will wait for long.",
@@ -25,7 +30,56 @@
       "fix": "Give it only one gentle stir."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why rest a flour batter before cooking?",
+      "choices": [
+        "To let flour absorb liquid and the batter smooth out.",
+        "To dry the surface into a skin.",
+        "To separate the flour from the liquid."
+      ],
+      "answer": 0,
+      "because": "Absorption continues after mixing, making the batter smoother and slightly thicker.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should rested batter be mixed before use?",
+      "choices": [
+        "Beat vigorously until very foamy.",
+        "Stir gently rather than beating it again.",
+        "Scrape off the thick surface without mixing."
+      ],
+      "answer": 1,
+      "because": "A gentle stir evens the mixture without undoing the texture gained during the rest.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What change would you expect after resting?",
+      "choices": [
+        "Dry flour remaining separate at the surface.",
+        "A thinner mixture with more obvious grit.",
+        "A smoother batter that has thickened slightly."
+      ],
+      "answer": 2,
+      "because": "Flour taking up liquid accounts for the slight thickening and smoother feel.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The rested batter is too thick to spread. What should you do?",
+      "choices": [
+        "Loosen it with a splash of liquid.",
+        "Beat it harder without adding liquid.",
+        "Add more dry flour before cooking."
+      ],
+      "answer": 0,
+      "because": "Liquid adjusts an over-thick batter directly; extra flour would thicken it further.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/pancake-batter", "tier": "drafted"}
   ],

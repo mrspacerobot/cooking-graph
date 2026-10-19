@@ -4,7 +4,12 @@
   "names": {"en": "Make naan dough"},
   "aliases": {"en": ["mix naan dough", "make the naan dough"]},
   "does": "Works flour, yeast, yogurt, milk and a little oil into a soft, slightly sticky dough, then leaves it covered to rise until it is puffy and light. The yogurt and the yeast together make a dough that stays soft and chewy once it is cooked on a hot plate.",
-  "intro": null,
+  "intro": {
+    "what": "This naan dough combines yeast, yogurt and milk into a soft dough that rises before shaping.",
+    "why": "It teaches you to recognise a light, slightly tacky dough without drying it through excess flour.",
+    "idea": "Soft dough, light rise",
+    "tier": "drafted"
+  },
   "how": [
     "Stir the yeast and the sugar into the warm milk and leave them until the top turns foamy.",
     "Mix the flour and the salt in a large bowl, make a well, and pour in the yeast milk, the yogurt and the oil.",
@@ -30,7 +35,56 @@
       "fix": "Cover the bowl with a damp cloth or a plate."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What dough texture supports the soft, chewy naan in this method?",
+      "choices": [
+        "Soft and slightly sticky.",
+        "Dry and stiff without any tackiness.",
+        "Loose enough to pour like batter."
+      ],
+      "answer": 0,
+      "because": "A soft slightly tacky dough gives this bread its intended texture; excess flour makes it dry.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the bowl be kept while the dough rises?",
+      "choices": [
+        "Uncovered beside strong drying heat.",
+        "Covered in a warm place.",
+        "Open and heavily dusted until a skin forms."
+      ],
+      "answer": 1,
+      "because": "Covering keeps the surface from drying as the dough rises.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which change shows the dough has risen?",
+      "choices": [
+        "It stays dense at the starting size.",
+        "A dry hard crust forms on top.",
+        "It swells and feels light and springy."
+      ],
+      "answer": 2,
+      "because": "Swelling and a light springy feel accompany the rise, rather than a dry skin.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Extra flour has made the dough dry and the bread tough. What would you change next time?",
+      "choices": [
+        "Keep the dough soft and dust the board only lightly.",
+        "Work in flour until all tackiness disappears.",
+        "Leave the dough uncovered to firm it further."
+      ],
+      "answer": 0,
+      "because": "A little tackiness is expected; too much added flour makes the bread dry and tough.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"},
     {"thing": "preparation/naan-dough", "tier": "drafted"}

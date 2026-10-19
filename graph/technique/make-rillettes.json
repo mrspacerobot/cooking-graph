@@ -4,7 +4,12 @@
   "names": {"en": "Make rillettes", "fr": "Faire des rillettes"},
   "aliases": {"en": ["make potted pork"]},
   "does": "Cooks cut meat very slowly in its own fat and a little wine until it can be pulled apart with a fork, shreds it, mixes it back with some of the melted fat and packs it in a pot under a layer of fat, to be spread cold on bread.",
-  "intro": null,
+  "intro": {
+    "what": "Rillettes are made by slowly softening meat, pulling it into threads and mixing in fat to make a spread.",
+    "why": "It teaches you to preserve a ragged shredded texture rather than pounding the meat into a heavy paste.",
+    "idea": "Threads rather than purée",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the meat and the fatty belly into pieces of about the same size, and season them generously.",
     "Put the meat in a heavy pot with a little white wine, garlic and herbs, cover it and cook at the gentlest heat in the oven until it falls apart and sits in a pool of clear fat.",
@@ -31,7 +36,56 @@
       "fix": "Taste the mixture and season it boldly while it is still warm."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture distinguishes these rillettes?",
+      "choices": [
+        "A completely smooth blended paste.",
+        "Dry cubes left separate from the fat.",
+        "Soft ragged threads made spreadable with fat."
+      ],
+      "answer": 2,
+      "because": "Fork-shredded threads retain the intended texture while mixed-in fat makes them spreadable.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you break up the softened meat?",
+      "choices": [
+        "Pull it apart with forks while warm.",
+        "Blend it until completely smooth.",
+        "Pound it into a dense paste."
+      ],
+      "answer": 0,
+      "because": "Pulling creates threads; blending or pounding produces a heavy paste.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended mixture?",
+      "choices": [
+        "A uniform purée without any strands.",
+        "Ragged meat threads glistening with fat.",
+        "Large dry pieces in a separate pool of fat."
+      ],
+      "answer": 1,
+      "because": "Visible threads and incorporated fat give the intended spreadable texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Strong heat has fried and dried the meat. What would you change next time?",
+      "choices": [
+        "Leave the pot uncovered over stronger heat.",
+        "Skip slow softening and blend the firm pieces.",
+        "Use gentle heat with the pot covered."
+      ],
+      "answer": 2,
+      "because": "Gentle covered cooking softens the meat instead of frying it dry.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/pork-shoulder", "tier": "drafted"},
     {"thing": "ingredient/pork-belly", "tier": "drafted"}

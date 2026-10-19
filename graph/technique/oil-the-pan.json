@@ -4,7 +4,12 @@
   "names": {"en": "Oil the pan"},
   "aliases": {"en": ["wipe the pan with oil", "grease the pan lightly"]},
   "does": "Wipes a thin film of oil over the pan with a folded paper towel, to keep thin layers of batter or egg from sticking, with no pool of oil left to fry them.",
-  "intro": null,
+  "intro": {
+    "what": "This method wipes a thin film of oil across a warm pan for thin batter or egg layers.",
+    "why": "It teaches you to prevent sticking without leaving enough pooled oil to fry and pit delicate layers.",
+    "idea": "A film rather than a pool",
+    "tier": "drafted"
+  },
   "how": [
     "Warm the pan over a medium heat.",
     "Fold a paper towel, dip the corner in oil and wipe it over the whole surface of the pan, including the sides.",
@@ -19,7 +24,56 @@
     {"mistake": "Pouring oil straight in, so that the layers fry and turn pitted.", "fix": "Wipe on a thin film only."},
     {"mistake": "Skipping the oil between layers, so that later layers stick.", "fix": "Oil again each time."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why wipe on oil instead of pouring it in?",
+      "choices": [
+        "To immerse the batter in oil.",
+        "To leave a thin film without a frying pool.",
+        "To create a deep crisp crust on each layer."
+      ],
+      "answer": 1,
+      "because": "A thin film prevents sticking while excess pooled oil fries and pits the layers.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How often should you refresh the oil when making successive layers?",
+      "choices": [
+        "Oil only before the first layer.",
+        "Add a deep pool after the first layer.",
+        "Wipe again between layers."
+      ],
+      "answer": 2,
+      "because": "A fresh thin film helps each layer release rather than letting later layers stick.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the oiled pan look like?",
+      "choices": [
+        "Lightly shiny without pooled oil.",
+        "Dry and matte with no oil anywhere.",
+        "A deep pool gathering at the edge."
+      ],
+      "answer": 0,
+      "because": "A light shine shows the intended film without excess frying oil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Later layers begin sticking after you skip wiping. What would you change?",
+      "choices": [
+        "Keep using the dry pan without oil.",
+        "Refresh the thin film before each layer.",
+        "Pour in enough oil to surround the next layer."
+      ],
+      "answer": 1,
+      "because": "Repeated thin wiping restores the coating that later layers need without creating a pool.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/oil", "tier": "drafted"}
   ],

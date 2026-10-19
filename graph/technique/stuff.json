@@ -4,7 +4,12 @@
   "names": {"en": "Stuff", "fr": "Farcir"},
   "aliases": {"en": ["fill", "stuff with a filling", "stuff and roll"]},
   "does": "Fills a hollow, a pocket or a rolled slice with a seasoned mixture, which flavours the food from inside and keeps it moist.",
-  "intro": null,
+  "intro": {
+    "what": "Stuffing encloses a seasoned mixture in a pocket, hollow or rolled slice.",
+    "why": "It teaches you to leave expansion room and close seams without overpacking the wrapper.",
+    "idea": "Room for filling to swell",
+    "tier": "drafted"
+  },
   "how": [
     "Season the filling well and let it cool before it goes in.",
     "Fill loosely. A filling swells as it cooks, and one that is packed tight bursts its wrapper.",
@@ -26,7 +31,52 @@
       "fix": "Cool the filling first, and stuff just before the food goes on the heat."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why should a stuffing not be packed tightly?",
+      "choices": [
+        "Tight packing should stop the filling expanding at all.",
+        "Dense packing is needed to hold every kind of filling.",
+        "It needs room to swell without splitting its wrapper."
+      ],
+      "answer": 2,
+      "because": "A filling can expand during cooking, so a little space reduces pressure against the enclosure.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should filling sit on a slice that will be rolled?",
+      "choices": [
+        "Spread short of the edges before rolling and tying.",
+        "Pile it beyond the edges before tying.",
+        "Leave the filling only along the outside seam."
+      ],
+      "answer": 0,
+      "because": "Clear edges help the slice close around the filling rather than force it out.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suits an assembled stuffed shape?",
+      "choices": ["Drum-tight and stretched.", "Plump with a little give.", "Loose with filling spilling from seams."],
+      "answer": 1,
+      "because": "A little give indicates room in the enclosure without leaving it open.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The wrapper split as the filling swelled. What would you change next time?",
+      "choices": [
+        "Pack the next filling more tightly.",
+        "Stretch a thinner wrapper around the same large filling.",
+        "Fill more loosely and leave expansion room."
+      ],
+      "answer": 2,
+      "because": "Less packing pressure allows expansion without forcing the wrapper apart.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/watery-vegetables", "tier": "drafted"},

@@ -4,7 +4,12 @@
   "names": {"en": "Fluff", "fr": "Égrainer"},
   "aliases": {"en": ["fluff with a fork", "fluff up", "rake the grains apart"]},
   "does": "Loosens cooked grains with a fork or the fingertips, lifting and separating them, so that the steam escapes and each grain stands apart instead of sitting in a block.",
-  "intro": null,
+  "intro": {
+    "what": "Cooked grains are lifted and allowed to fall apart gently with a fork or fingertips.",
+    "why": "Separating is different from stirring or pressing. Gentle lifting releases steam and loosens clumps without smearing the grains into paste.",
+    "idea": "Lift and separate grains",
+    "tier": "drafted"
+  },
   "how": [
     "Wait until the grains have taken up their liquid and the steam is no longer heavy.",
     "Add a little butter or a trickle of oil, so that the grains stay loose.",
@@ -30,7 +35,56 @@
       "fix": "Fluff them once more just before serving."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is fluffing intended to do?",
+      "choices": [
+        "Loosen grains so they stand apart.",
+        "Pack the grains together so they keep their heat.",
+        "Stir the grains into a creamy mixture."
+      ],
+      "answer": 0,
+      "because": "Lifting separates the grains and lets trapped steam escape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What movement is used when fluffing?",
+      "choices": [
+        "Hard circular stirring against the pot.",
+        "Light lifting from below, letting the grains fall.",
+        "Firm pressing with the back of a spoon."
+      ],
+      "answer": 1,
+      "because": "Lifting separates without the crushing associated with heavy stirring.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which result matches properly loosened grains?",
+      "choices": [
+        "A solid block that resists the fork.",
+        "A smeared paste around intact dry lumps.",
+        "Distinct grain outlines with no wet clumps."
+      ],
+      "answer": 2,
+      "because": "Loose outlines and easy movement show separation rather than compression.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Wet grains smeared while being fluffed. What would you change next time?",
+      "choices": [
+        "Wait until the liquid has been taken up before gentle lifting.",
+        "Press the wet grains harder with the fork.",
+        "Stir faster while loose liquid remains."
+      ],
+      "answer": 0,
+      "because": "Wet grains are easily smeared; absorption should precede the separating movement.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/couscous", "tier": "drafted"},
     {"thing": "ingredient/instant-couscous", "tier": "drafted"},

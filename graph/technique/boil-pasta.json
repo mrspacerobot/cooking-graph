@@ -4,7 +4,12 @@
   "names": {"en": "Boil pasta", "fr": "Cuire les pâtes"},
   "aliases": {"en": ["cook pasta", "cook pasta al dente", "cuocere la pasta"], "fr": ["cuire les pâtes al dente"]},
   "does": "Cooks pasta in a large pot of fast-bubbling water that is salted well, and stops while the heart of each piece still has a little bite. It is lifted out with some of its starchy water kept back, and goes to its sauce without rinsing.",
-  "intro": null,
+  "intro": {
+    "what": "Pasta boils in ample salted water, then moves hot and unrinsed into its sauce.",
+    "why": "Starch left on the pasta and saved in its cooking water helps connect the pasta with the sauce.",
+    "idea": "Starch helps sauce cling",
+    "tier": "drafted"
+  },
   "how": [
     "Fill the biggest pot to hand with water, so that the pasta can move freely, and bring it to a rolling boil.",
     "Salt the water generously once it boils. It should taste lightly of the sea, because this is the only chance to season the pasta itself.",
@@ -37,7 +42,56 @@
       "fix": "Take it out a little early when it is to finish in the sauce."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep some pasta cooking water?",
+      "choices": [
+        "Its starch can help bring the sauce and pasta together.",
+        "It rinses the pasta clean of all remaining surface starch.",
+        "It washes starch off before serving."
+      ],
+      "answer": 0,
+      "because": "The cooking water carries starch that can help the sauce coat the pasta.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What happens after draining pasta in this method?",
+      "choices": [
+        "Rinse thoroughly and leave it to dry.",
+        "Move it straight to the sauce without rinsing.",
+        "Toss it in oil and wait until cold."
+      ],
+      "answer": 1,
+      "because": "Moving it hot and wet retains starch and lets it meet the sauce promptly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which bite describes al dente here?",
+      "choices": [
+        "Soft throughout with no resistance.",
+        "A chalky hard centre under a gummy surface.",
+        "Tender outside with a small firm centre."
+      ],
+      "answer": 2,
+      "because": "Al dente keeps a firm bite without leaving a chalky centre.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Rinsing left pasta that did not hold its sauce well. What would you change on the next batch?",
+      "choices": [
+        "Skip rinsing and retain some cooking water.",
+        "Rinse until the water is completely clear.",
+        "Coat the drained pasta in more oil."
+      ],
+      "answer": 0,
+      "because": "Rinsing removes surface starch that helps the sauce cling.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/pasta", "tier": "drafted"}
   ],

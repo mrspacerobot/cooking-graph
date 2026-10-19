@@ -4,7 +4,12 @@
   "names": {"en": "Cut pasta"},
   "aliases": {"en": ["cut the pasta", "tagliare la pasta", "cut pasta into ribbons"]},
   "does": "Cuts a thin sheet of rolled pasta dough into ribbons, strips or squares of even size, so that they cook at the same speed.",
-  "intro": null,
+  "intro": {
+    "what": "A rolled pasta sheet is cut into even ribbons or other shapes, then separated before it sticks.",
+    "why": "The surface needs to be dry enough to release, yet flexible enough to fold. Consistent cuts help the pieces cook at a similar pace.",
+    "idea": "Flexible but not sticky",
+    "tier": "drafted"
+  },
   "how": [
     "Roll the dough out thin and let the sheet dry for a short while, until it feels leathery and no longer sticks.",
     "Dust the sheet lightly with flour, then fold it loosely into a flat roll, or leave it as a sheet.",
@@ -29,7 +34,56 @@
       "fix": "Toss it in flour and lay it loosely in nests."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep the cut pasta strips an even width?",
+      "choices": [
+        "They cook at a similar pace.",
+        "Narrow strips should soften before broad strips.",
+        "Uneven edges prevent the pasta from sticking."
+      ],
+      "answer": 0,
+      "because": "Consistent width limits differences in how quickly the strips soften.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What condition should the sheet reach before loose folding and cutting?",
+      "choices": [
+        "Wet enough to glue itself together.",
+        "Flexible and no longer sticky.",
+        "Brittle enough to snap when folded."
+      ],
+      "answer": 1,
+      "because": "A flexible dry surface folds without sticking or breaking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should happen when the cut strips are shaken?",
+      "choices": [
+        "They remain glued into a flat roll.",
+        "They crumble into dry fragments.",
+        "They separate with clean edges."
+      ],
+      "answer": 2,
+      "because": "Clean separate strips show that the surface and cuts allow the pasta to release.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The cut pasta stuck into a damp lump on the tray. What would you change next time?",
+      "choices": [
+        "Dust it lightly and arrange it in loose nests.",
+        "Press the damp strips into a tighter heap.",
+        "Wet the tray before laying the strips down."
+      ],
+      "answer": 0,
+      "because": "Light flour and loose placement keep damp surfaces from resting tightly together.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/fresh-pasta-dough", "tier": "drafted"}
   ],

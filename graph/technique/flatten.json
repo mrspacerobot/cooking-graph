@@ -4,7 +4,12 @@
   "names": {"en": "Flatten", "fr": "Aplatir"},
   "aliases": {"en": ["flatten the escalopes", "beat thin", "pound thin", "pound meat"], "fr": ["battre les escalopes"]},
   "does": "Beats a slice of meat to an even, thin sheet between layers of paper, so that it cooks in moments and stays tender.",
-  "intro": null,
+  "intro": {
+    "what": "A meat slice is gently beaten between paper into an even sheet without tears.",
+    "why": "The aim is consistent thickness rather than maximum thinness. Working from the middle prevents a thick centre surrounded by fragile edges.",
+    "idea": "Even thickness without tearing",
+    "tier": "drafted"
+  },
   "how": [
     "Trim away any sinew or skin from the slice, and nick the edge in a few places so that it does not curl.",
     "Lay the slice between sheets of parchment paper.",
@@ -25,7 +30,56 @@
       "fix": "Start in the middle and work outwards."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why aim for even thickness across the slice?",
+      "choices": [
+        "To keep a thicker centre that supports the thinner edges.",
+        "To avoid a thick centre cooking differently from thin edges.",
+        "To roughen the surface without changing its thickness."
+      ],
+      "answer": 1,
+      "because": "Consistent thickness reduces the contrast between the centre and edges during cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should the flattening strokes begin?",
+      "choices": [
+        "At the edges until they become very thin.",
+        "Only at a corner of the slice.",
+        "In the middle, working outward."
+      ],
+      "answer": 2,
+      "because": "Starting centrally addresses the thick part before working toward the edges.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the flattened slice look like?",
+      "choices": [
+        "An even sheet without holes.",
+        "Torn edges around a thick centre.",
+        "A narrow strip with punctures throughout."
+      ],
+      "answer": 0,
+      "because": "An unbroken even sheet shows that the pressure has spread rather than torn the meat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Sharp hard blows tore holes in the meat. What would you change on the next slice?",
+      "choices": [
+        "Use sharper impacts on the torn areas.",
+        "Use the flat of the pan with steady even pressure.",
+        "Keep striking the thinnest edges hardest."
+      ],
+      "answer": 1,
+      "because": "Broad controlled pressure spreads the meat without concentrating the impact into tears.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/veal-escalope", "tier": "drafted"},
     {"thing": "ingredient/pork-tenderloin", "tier": "drafted"}

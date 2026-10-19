@@ -4,7 +4,12 @@
   "names": {"en": "Toss pasta with sauce"},
   "aliases": {"en": ["finish pasta in the sauce", "toss the pasta", "saltare la pasta", "ripassare la pasta"]},
   "does": "Moves just-drained pasta into the sauce and tosses it over the heat with a splash of the starchy cooking water, so that sauce and water bind into a glossy coat that clings to every piece. The pasta is dressed in the pan and not on the plate.",
-  "intro": null,
+  "intro": {
+    "what": "Finishing pasta in its sauce brings them together with a little starchy cooking water.",
+    "why": "It teaches you to adjust liquid while tossing until the sauce clings instead of pooling.",
+    "idea": "Finish together in the pan",
+    "tier": "drafted"
+  },
   "how": [
     "Have the sauce ready in a wide pan before the pasta is drained, with a mug of the cooking water set aside.",
     "Lift the pasta straight from the pot into the pan, still wet and hot, a little before it is ready.",
@@ -33,7 +38,56 @@
       "fix": "Add it a splash at a time and watch the sauce."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why finish pasta with sauce and cooking water in the pan?",
+      "choices": [
+        "To build a glossy coat that clings to the pasta.",
+        "To keep sauce entirely separate from the pasta.",
+        "To thicken the sauce while leaving it separate from the pasta."
+      ],
+      "answer": 0,
+      "because": "Tossing with starchy water helps sauce distribute and bind around the pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should reserved cooking water be added?",
+      "choices": [
+        "All at once before checking consistency.",
+        "In small splashes while watching the sauce.",
+        "Only after serving the pasta on dry plates."
+      ],
+      "answer": 1,
+      "because": "Gradual additions let you loosen and bind the coating without flooding the pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance is the aim?",
+      "choices": [
+        "A puddle beneath otherwise dry pasta.",
+        "A thick clump with a bare sauce-free surface.",
+        "A glossy coat without dry patches or loose liquid."
+      ],
+      "answer": 2,
+      "because": "A clinging thin coating shows sauce and pasta coming together rather than remaining separate.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "An egg-based sauce formed scrambled pieces. What would you change next time?",
+      "choices": [
+        "Take the pan off the heat before finishing that sauce.",
+        "Toss over stronger heat until the pieces disappear.",
+        "Keep the same high heat but stir more slowly."
+      ],
+      "answer": 0,
+      "because": "Gentler residual heat helps the egg form a cream instead of separate set pieces.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/pasta", "tier": "drafted"}
   ],

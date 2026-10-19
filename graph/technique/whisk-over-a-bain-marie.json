@@ -4,7 +4,12 @@
   "names": {"en": "Whisk over a bain marie"},
   "aliases": {"en": ["whisk over simmering water", "make a zabaione", "make a zabaglione"]},
   "does": "Whisks egg yolks, sugar and a sweet wine such as Marsala in a bowl set over barely simmering water, until they swell into a thick, pale, warm foam that holds a ribbon. This is the Italian zabaione, also spelt zabaglione, served warm as it is or chilled and folded into mascarpone cream.",
-  "intro": null,
+  "intro": {
+    "what": "Italian zabaione whisks yolks, sugar and wine over gentle steam into a warm pale foam.",
+    "why": "It teaches you to coordinate continuous movement and indirect heat until a ribbon holds on the surface.",
+    "idea": "Gentle heat, holding ribbon",
+    "tier": "drafted"
+  },
   "how": [
     "Set a heatproof bowl over a pan of water at a bare simmer. The bowl must not touch the water.",
     "Whisk the yolks with the sugar in the bowl until pale, then add the wine.",
@@ -30,7 +35,56 @@
       "fix": "Whisk without a pause, scraping the sides."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the intended texture of zabaione?",
+      "choices": [
+        "A thick pale foam that holds a ribbon.",
+        "A thin liquid with no lasting trail.",
+        "Separate firm curds floating in wine."
+      ],
+      "answer": 0,
+      "because": "Whisking while gently warming develops an airy mixture with enough body to leave a ribbon.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should the bowl sit over the water?",
+      "choices": [
+        "Immersed deeply in a rolling boil.",
+        "Above it without touching the barely simmering water.",
+        "Resting directly on the pan base without water."
+      ],
+      "answer": 1,
+      "because": "The water bath supplies indirect heat while keeping the bowl away from direct contact with boiling water.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which whisk cue suggests the intended texture?",
+      "choices": [
+        "The mixture runs like thin liquid without a mark.",
+        "Small solid egg grains collect around the edge.",
+        "A ribbon briefly remains on the surface."
+      ],
+      "answer": 2,
+      "because": "A holding ribbon shows thickened foam rather than a mixture that is still too loose.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Egg sets against the bowl edges while the middle stays loose. What should change?",
+      "choices": [
+        "Whisk continuously, reaching the sides and bottom.",
+        "Leave the sides untouched and whisk only the centre.",
+        "Stop whisking and increase the boil."
+      ],
+      "answer": 0,
+      "because": "Moving mixture away from the heated bowl surfaces limits local setting.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg-yolk", "tier": "drafted"}
   ],

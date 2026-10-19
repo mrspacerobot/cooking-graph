@@ -4,7 +4,12 @@
   "names": {"en": "Layer a cold dessert"},
   "aliases": {"en": ["layer biscuits and cream", "build a layered dessert"]},
   "does": "Builds a dessert without baking it, from dipped biscuits and a soft cream laid in even layers in a dish, dusts the top and chills it for long enough that the layers soften into each other and the whole can be cut in squares.",
-  "intro": null,
+  "intro": {
+    "what": "This chilled dessert method alternates dipped biscuits and soft cream in even layers.",
+    "why": "It teaches you to connect resting texture with neat slices and delay a dry cocoa finish until serving.",
+    "idea": "Let the layers settle",
+    "tier": "drafted"
+  },
   "how": [
     "Have the dipped biscuits and the cream within reach before the first layer goes down.",
     "Lay a single layer of biscuits side by side in the dish, close together with no gaps.",
@@ -30,7 +35,56 @@
       "fix": "Dust it on just before serving."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why chill the assembled dessert before cutting?",
+      "choices": [
+        "To keep the biscuits hard and separate from the cream.",
+        "To make the cream run between the layers.",
+        "To let the layers meld and the cream become firm enough to slice."
+      ],
+      "answer": 2,
+      "because": "Chilling lets biscuits soften into the cream while the dessert firms enough for clean portions.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should cocoa be sifted over the top?",
+      "choices": [
+        "Just before serving.",
+        "Before the assembled dessert begins chilling.",
+        "Before adding the first cream layer."
+      ],
+      "answer": 0,
+      "because": "A late dusting stays dry and dark rather than dissolving into a damp top.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What shows the dessert has the intended slicing texture?",
+      "choices": [
+        "The cream flows out as the biscuit layers slide.",
+        "The knife cuts without cream running and the biscuits are soft.",
+        "Hard biscuits drag through loose cream."
+      ],
+      "answer": 1,
+      "because": "A clean cut depends on firm cream and softened biscuits working together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The layers slide and cream runs when cut. What would you change?",
+      "choices": [
+        "Cut sooner while the cream is looser.",
+        "Add cocoa to hide the slipping layers.",
+        "Chill it longer until the cream is firm."
+      ],
+      "answer": 2,
+      "because": "A short chill leaves the cream too loose to support the layers.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/savoiardi", "tier": "drafted"},
     {"thing": "preparation/mascarpone-cream", "tier": "drafted"}

@@ -4,7 +4,12 @@
   "names": {"en": "Dry", "fr": "Sécher"},
   "aliases": {"en": ["pat dry", "dry off", "dry in the pot"], "fr": ["éponger"]},
   "does": "Takes the wet off the surface of food so that it browns, crisps or clings instead of steaming. For food that has been boiled, it lets the last water steam away and leaves a dry skin.",
-  "intro": null,
+  "intro": {
+    "what": "Surface water is removed before browning or coating; boiled food can also steam dry in a warm pot.",
+    "why": "A wet surface behaves differently in heat and beneath a coating. Removing that moisture helps the next technique achieve its intended texture.",
+    "idea": "Surface moisture changes the next step",
+    "tier": "drafted"
+  },
   "how": [
     "For raw food, pat it all over with a clean cloth or paper, on every side, and let it stand a little in the air if it is still wet.",
     "For food that has been boiled, drain it well, then return it to the empty, still-hot pot over a very low heat.",
@@ -25,7 +30,56 @@
       "fix": "Dry it in the hot pot, over a very low heat."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why dry a surface before browning it?",
+      "choices": [
+        "To limit surface steaming that interferes with browning.",
+        "To retain moisture on the surface as a browning glaze.",
+        "To let the food steam before its surface begins browning."
+      ],
+      "answer": 0,
+      "because": "Removing surface water lets the next heating stage act on the food without first steaming off that wet layer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How are boiled pieces dried in this method?",
+      "choices": [
+        "Leave them resting in a little of their cooking water.",
+        "Return them to the empty warm pot over very low heat and shake gently.",
+        "Pile them on a cold plate and cover to retain their steam."
+      ],
+      "answer": 1,
+      "because": "Gentle pot heat lets the remaining surface water steam away.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests the surface is drying?",
+      "choices": [
+        "Glossy with running droplets.",
+        "Submerged in a fresh puddle.",
+        "Matt rather than shining with water."
+      ],
+      "answer": 2,
+      "because": "A matt surface shows that the visible water film has gone.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Boiled food stays damp on a cold plate. What should change?",
+      "choices": [
+        "Use the empty warm pot to let surface moisture escape.",
+        "Cover the cold plate to collect steam.",
+        "Return the food to cold water."
+      ],
+      "answer": 0,
+      "because": "The warm pot helps moisture leave instead of settling back onto the food.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/salad-leaves", "tier": "drafted"},

@@ -4,7 +4,12 @@
   "names": {"en": "Make croqueta paste"},
   "aliases": {"en": ["make croqueta filling", "make croqueta dough", "make the croqueta base"]},
   "does": "Cooks flour in butter with a little onion, stirs in chopped ham, then beats in warm milk a little at a time over the heat until the mixture is so thick that it pulls away from the pan in one mass. Spread in a tray and chilled, it sets firm enough to shape by hand.",
-  "intro": null,
+  "intro": {
+    "what": "This croqueta method cooks a thick milk-and-roux paste with finely chopped ham, then chills it for shaping.",
+    "why": "It teaches you to judge a paste that will hold its shape instead of slumping when formed and fried.",
+    "idea": "Thicken before shaping",
+    "tier": "drafted"
+  },
   "how": [
     "Melt the butter in a wide pan over a gentle heat and soften the finely chopped onion in it without colour.",
     "Stir in the flour and cook it, stirring, until it smells of biscuit.",
@@ -34,7 +39,56 @@
       "fix": "Chill it overnight if there is time; a cold paste is easy to roll."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why cook croqueta paste thicker than a coating sauce?",
+      "choices": [
+        "So it pours freely around the filling.",
+        "So it stays fluid while being rolled.",
+        "So it firms enough to shape after chilling."
+      ],
+      "answer": 2,
+      "because": "A loose paste slumps; the cooked and chilled mixture needs body for hand shaping.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you incorporate milk?",
+      "choices": [
+        "Warm and gradually, beating each addition smooth.",
+        "Cold and all at once before mixing.",
+        "With the roux left unstirred until the milk boils."
+      ],
+      "answer": 0,
+      "because": "Gradual warm milk additions and firm mixing build a smooth thick paste without lumps.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What movement shows the paste has thickened sufficiently?",
+      "choices": [
+        "It flows back immediately behind the spoon.",
+        "It pulls away from the pan as a mass.",
+        "Milk pools around separate flour lumps."
+      ],
+      "answer": 1,
+      "because": "A paste gathering into a mass has developed more body than a loose sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The chilled paste still slumps when shaped. What would you change next time?",
+      "choices": [
+        "Shape it sooner while it is warm and loose.",
+        "Add the milk all at once and shorten the cooking.",
+        "Cook it until it pulls away from the pan, then chill until firm."
+      ],
+      "answer": 2,
+      "because": "Both sufficient thickening and chilling are needed for a paste that holds its shape.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"},
     {"thing": "ingredient/milk", "tier": "drafted"}

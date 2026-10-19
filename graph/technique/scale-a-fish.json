@@ -4,7 +4,12 @@
   "names": {"en": "Scale a fish", "fr": "Écailler le poisson"},
   "aliases": {"en": ["scale", "scale the fish", "descale"], "fr": ["écailler"]},
   "does": "Scrapes the scales off the skin of a whole fish, so that none are left to catch in the mouth or to make the skin gritty.",
-  "intro": null,
+  "intro": {
+    "what": "Scaling scrapes the overlapping scales from fish skin before further preparation.",
+    "why": "It teaches you to work against the direction of the scales while preserving the skin.",
+    "idea": "Work against the scales",
+    "tier": "drafted"
+  },
   "how": [
     "Hold the fish firmly by the tail on a board that cannot slip. A deep sink or a large tray catches the flying scales.",
     "With the back of a knife, scrape from the tail towards the head in short firm strokes, against the way the scales lie.",
@@ -25,7 +30,56 @@
       "fix": "Use the back of the blade, in short firm strokes."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why remove scales from fish skin?",
+      "choices": [
+        "To avoid rough gritty scales in the finished skin.",
+        "To cut the flesh into portions.",
+        "To remove the skin along with the scales."
+      ],
+      "answer": 0,
+      "because": "Scaling cleans the skin surface while leaving the skin itself intact.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Which tool movement lifts scales?",
+      "choices": [
+        "Long strokes with the sharp edge from head toward tail.",
+        "Short strokes with the back of the blade from tail toward head.",
+        "Smooth strokes along the direction the scales lie."
+      ],
+      "answer": 1,
+      "because": "Working against their overlap lifts scales; the blunt back limits cutting into the skin.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How can remaining scales be found after rinsing?",
+      "choices": [
+        "Feel only from head toward tail.",
+        "Look only at the centre of the side.",
+        "Run a finger from tail toward head for rough edges."
+      ],
+      "answer": 2,
+      "because": "Feeling against the scale direction catches edges that might otherwise lie flat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Scraping presses scales flat instead of lifting them. What should change?",
+      "choices": [
+        "Work from tail toward head.",
+        "Continue from head toward tail with more force.",
+        "Switch to cutting through the skin."
+      ],
+      "answer": 0,
+      "because": "Changing direction works against the overlap and lifts the scales rather than smoothing them down.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/round-fish", "tier": "drafted"}
   ],

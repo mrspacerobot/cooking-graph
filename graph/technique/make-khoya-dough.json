@@ -4,7 +4,12 @@
   "names": {"en": "Make khoya dough"},
   "aliases": {"en": ["make gulab jamun dough"]},
   "does": "Crumbles khoya and works it with a little flour, milk and a trace of raising agent into a soft, smooth dough with no cracks, and rolls it into small balls that will not split in the fat.",
-  "intro": null,
+  "intro": {
+    "what": "Khoya dough gently combines crumbled milk solids with flour and milk into smooth balls for frying.",
+    "why": "It teaches you to stop mixing once the dough holds and remove surface cracks before shaping is finished.",
+    "idea": "Gentle mixing, unbroken surface",
+    "tier": "drafted"
+  },
   "how": [
     "Crumble the khoya fine, with no lumps, in a wide bowl.",
     "Add a little flour and the raising agent, and mix lightly with the fingertips.",
@@ -30,7 +35,56 @@
       "fix": "Add a drop of milk and roll again until the surface is smooth."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why work khoya dough gently?",
+      "choices": [
+        "To avoid tough, chewy fried balls.",
+        "To develop the strongest possible bread-like stretch.",
+        "To turn it into a firm dry dough."
+      ],
+      "answer": 0,
+      "because": "Hard working makes these balls tough rather than tender.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you add milk?",
+      "choices": [
+        "All at once before checking softness.",
+        "Gradually, pressing the mixture together gently.",
+        "Only after kneading hard until the dough cracks."
+      ],
+      "answer": 1,
+      "because": "Gradual milk additions help reach a soft smooth dough without overworking it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should a shaped ball look like?",
+      "choices": [
+        "Dry cracks all around its surface.",
+        "Loose crumbs that barely hold together.",
+        "Smooth with an unbroken surface."
+      ],
+      "answer": 2,
+      "because": "A smooth surface matters because cracks can open during frying.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A shaped ball has cracks. What would you do before frying?",
+      "choices": [
+        "Add a little milk and roll it smooth again.",
+        "Leave the cracks and use hotter fat.",
+        "Dust heavily with flour to harden the surface."
+      ],
+      "answer": 0,
+      "because": "A little milk and gentle reshaping close cracks before they can split open.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/khoya", "tier": "drafted"}
   ],

@@ -4,7 +4,12 @@
   "names": {"en": "Toast", "fr": "Toaster"},
   "aliases": {"en": ["toast the bread", "dry-roast", "toast nuts", "toast sesame"], "fr": ["torréfier"]},
   "does": "Dries and browns bread, nuts or spices in dry heat, which makes them crisp and wakes their scent.",
-  "intro": null,
+  "intro": {
+    "what": "Toasting uses dry heat to crisp bread or develop the scent of nuts and spices.",
+    "why": "It teaches you to watch small colour changes and account for heat remaining in the pan.",
+    "idea": "Stop before scorching",
+    "tier": "drafted"
+  },
   "how": [
     "Spread the food in a single layer on a tray or in a dry pan.",
     "Use a moderate heat: an oven, a grill or a pan with no fat.",
@@ -25,7 +30,52 @@
       "fix": "Tip them onto a cold plate at once."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does dry toasting develop?",
+      "choices": [
+        "Moist softness without colour change.",
+        "A coating of absorbed cooking fat.",
+        "Crispness and a warm toasted aroma."
+      ],
+      "answer": 2,
+      "because": "Dry heat removes moisture and develops colour and aroma without added fat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen to nuts after toasting in a hot pan?",
+      "choices": [
+        "Tip them onto a cold plate.",
+        "Leave them in the pan until serving.",
+        "Cover them tightly in the hot pan."
+      ],
+      "answer": 0,
+      "because": "Residual pan heat continues browning even after direct heat is removed.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which smell suggests toasting has gone too far?",
+      "choices": ["A warm nutty scent.", "An acrid smell.", "A gently strengthening toasted aroma."],
+      "answer": 1,
+      "because": "An acrid smell indicates scorching rather than desirable toasted flavour.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Nuts burned after the heat was switched off. What would you change next time?",
+      "choices": [
+        "Keep them in the pan but stir less.",
+        "Cover the pan to hold the heat.",
+        "Remove them from the hot pan promptly."
+      ],
+      "answer": 2,
+      "because": "Moving them onto a cooler surface stops the pan continuing to brown them.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/breads", "tier": "drafted"},
     {"thing": "group/whole-spices", "tier": "drafted"},

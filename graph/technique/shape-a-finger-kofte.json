@@ -4,7 +4,12 @@
   "names": {"en": "Shape a finger kofte"},
   "aliases": {"en": ["shape mercimek koftesi", "fist-pressed kofte"]},
   "does": "Squeezes a small lump of a soft, cool mixture in the closed fist, so that it takes the print of the fingers and comes out as a small ridged oval, with nothing cooked afterwards.",
-  "intro": null,
+  "intro": {
+    "what": "This köfte method squeezes a prepared soft mixture into ridged finger-shaped ovals.",
+    "why": "It teaches you to judge whether a mixture has enough cohesion to hold the marks made by your hand.",
+    "idea": "Shape with the fingers",
+    "tier": "drafted"
+  },
   "how": [
     "Keep a bowl of water beside the work and wet the hands lightly.",
     "Take a small lump of the mixture and close the fist around it.",
@@ -30,7 +35,56 @@
       "fix": "Take about the same amount each time."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What gives these köfte their characteristic ridges?",
+      "choices": [
+        "Rolling each piece smooth on the board.",
+        "Flattening it with a rolling pin.",
+        "Squeezing the mixture along the fingers in a closed fist."
+      ],
+      "answer": 2,
+      "because": "The mixture takes the imprint of the fingers as the fist closes around it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the hands be prepared?",
+      "choices": [
+        "Keep them lightly wet while shaping.",
+        "Leave them dry so the mixture grips.",
+        "Coat them with a thick dry flour layer."
+      ],
+      "answer": 0,
+      "because": "Light moisture reduces sticking and helps the surface release without tearing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which result shows sufficient cohesion?",
+      "choices": [
+        "It slumps flat on the platter.",
+        "An oval holds together when lifted.",
+        "It crumbles as soon as it is picked up."
+      ],
+      "answer": 1,
+      "because": "A cohesive mixture retains its oval shape and finger marks during handling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The shaped pieces slump. What should happen before shaping again?",
+      "choices": [
+        "Wet the loose mixture more heavily.",
+        "Squeeze larger pieces with less pressure.",
+        "Let the mixture swell further or knead in fine bulgur."
+      ],
+      "answer": 2,
+      "because": "More absorption or fine bulgur can give a loose mixture the body needed to retain a shape.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/lentil-bulgur-mixture", "tier": "drafted"}
   ],

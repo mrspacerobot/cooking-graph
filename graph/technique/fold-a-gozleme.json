@@ -4,7 +4,12 @@
   "names": {"en": "Fold a gozleme"},
   "aliases": {"en": ["gozleme", "fold a filled flatbread"]},
   "does": "Scatters a filling over one half of a thin round of dough, folds the other half over it and presses the edges shut, so that the filling is held in a flat parcel that cooks on a dry griddle.",
-  "intro": null,
+  "intro": {
+    "what": "Thin dough is folded over a spread filling and sealed into a flat gözleme parcel.",
+    "why": "The filling and rim have different jobs: a restrained filling keeps the parcel flat, while a clean rim lets the dough adhere.",
+    "idea": "A filling that leaves room to seal",
+    "tier": "drafted"
+  },
   "how": [
     "Roll the dough out into a thin, even round and brush off the loose flour.",
     "Scatter a thin layer of filling over one half, leaving a clear rim at the edge.",
@@ -26,7 +31,56 @@
       "fix": "Brush the rim clean before pressing it shut."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why spread the filling thinly rather than pile it high?",
+      "choices": [
+        "To fill the sealing rim as fully as the centre.",
+        "To keep the flat parcel from bursting.",
+        "To stretch the dough tightly around a raised mound."
+      ],
+      "answer": 1,
+      "because": "A restrained filling allows the dough to close without excessive pressure from inside.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should remain clear when spreading the filling?",
+      "choices": [
+        "A bare centre surrounded by a thick ring of filling.",
+        "Only the surface that will touch the griddle.",
+        "The sealing rim around the edge."
+      ],
+      "answer": 2,
+      "because": "A clear rim provides dough-to-dough contact for the seal.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the sealed rim feel like?",
+      "choices": [
+        "Thinly pressed and joined without gaps.",
+        "Floury and loose with open sections.",
+        "Thick with filling separating the dough."
+      ],
+      "answer": 0,
+      "because": "A continuous joined rim keeps the filling within the parcel.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The floured rim will not stick shut. What should change?",
+      "choices": [
+        "Add a heavier flour layer between the edges.",
+        "Brush away loose flour before pressing it together.",
+        "Push more filling into the opening."
+      ],
+      "answer": 1,
+      "because": "Loose flour separates the dough surfaces instead of helping them adhere.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"}
   ],

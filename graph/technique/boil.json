@@ -4,7 +4,12 @@
   "names": {"en": "Boil", "fr": "Bouillir"},
   "aliases": {"en": ["boil in salted water", "cook in boiling water"], "fr": ["cuire à l'anglaise"]},
   "does": "Cooks food in plenty of fast-bubbling salted water, so that it is done quickly and evenly.",
-  "intro": null,
+  "intro": {
+    "what": "Food cooks in a large pot of actively bubbling water.",
+    "why": "Recognizing the strength of the boil and the food texture helps you manage heat after food enters the pot.",
+    "idea": "Maintaining the boil",
+    "tier": "drafted"
+  },
   "how": [
     "Fill a large pot with far more water than the food needs.",
     "Bring it to a rolling boil and salt it until it tastes pleasantly salty.",
@@ -25,7 +30,56 @@
       "fix": "Salt it well. Food boiled in plain water tastes flat, however it is seasoned later."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use ample water in this boiling method?",
+      "choices": [
+        "It prevents any movement between the pieces.",
+        "It helps maintain the boil when food is added.",
+        "It replaces the need to restore heat after adding food."
+      ],
+      "answer": 1,
+      "because": "A larger volume is less easily cooled by the incoming food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen after food enters the pot?",
+      "choices": [
+        "Keep the reduced heat without restoring bubbling.",
+        "Leave the food resting while the water cools.",
+        "Bring the water back to a rolling boil."
+      ],
+      "answer": 2,
+      "because": "Adding food can slow bubbling, so the method calls for restoring the boil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What does a rolling boil look like?",
+      "choices": [
+        "Large bubbles keep moving even when stirred.",
+        "A still surface with occasional tiny bubbles.",
+        "A steaming surface with small bubbles only around the edge."
+      ],
+      "answer": 0,
+      "because": "Persistent large bubbles distinguish boiling from gentler heating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pot stops boiling and vegetables become dull. What should change?",
+      "choices": [
+        "Pack more vegetables into the same water.",
+        "Use a larger pot with more water and avoid crowding.",
+        "Keep the heat lower after adding the food."
+      ],
+      "answer": 1,
+      "because": "More water and less crowding help the pot recover its boil.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/green-vegetables", "tier": "drafted"},
     {"thing": "group/root-vegetables", "tier": "drafted"},

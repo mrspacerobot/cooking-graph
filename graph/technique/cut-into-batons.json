@@ -4,7 +4,12 @@
   "names": {"en": "Cut into batons", "fr": "Tailler en bâtonnets"},
   "aliases": {"en": ["cut into sticks", "cut batons", "cut into chips"]},
   "does": "Cuts food into even, square-sided sticks.",
-  "intro": null,
+  "intro": {
+    "what": "Food is cut into even square-sided sticks from a squared block.",
+    "why": "The shape begins before the final cut: matching slab thickness and stick width makes the pieces cook at a similar pace.",
+    "idea": "Slabs become even sticks",
+    "tier": "drafted"
+  },
   "how": [
     "Peel the vegetable and trim its sides flat to make a block.",
     "Slice the block into slabs as thick as the sticks you want.",
@@ -27,7 +32,56 @@
       "fix": "Hold the knife straight and take the same width at every cut."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why aim for matching baton thickness?",
+      "choices": [
+        "The sticks cook at a similar pace.",
+        "Uneven sticks should soften at deliberately different rates.",
+        "The shape matters but differences in thickness do not affect cooking."
+      ],
+      "answer": 0,
+      "because": "Even thickness avoids large differences in cooking between the sticks.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What is done before cutting slabs?",
+      "choices": [
+        "Leave the vegetable round and cut wedges.",
+        "Trim the sides to create a flat-sided block.",
+        "Slice slabs while leaving the curved outer sides in place."
+      ],
+      "answer": 1,
+      "because": "A squared starting block gives the sticks flat faces rather than tapered sides.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should batons look like?",
+      "choices": [
+        "Tapered wedges of different widths.",
+        "Small irregular crumbs.",
+        "Straight sticks with flat faces and square corners."
+      ],
+      "answer": 2,
+      "because": "The square-sided stick shape distinguishes batons from wedges or chopped pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sticks came out as wedges. What should change?",
+      "choices": [
+        "Square the vegetable before slicing.",
+        "Keep its rounded sides for the next batch.",
+        "Angle every slab differently."
+      ],
+      "answer": 0,
+      "because": "Flat starting faces remove the curve that causes wedge-shaped pieces.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"}
   ],

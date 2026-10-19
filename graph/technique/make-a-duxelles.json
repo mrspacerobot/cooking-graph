@@ -4,7 +4,12 @@
   "names": {"en": "Make a duxelles", "fr": "Faire une duxelles"},
   "aliases": {"en": ["cook a duxelles", "make a mushroom paste"]},
   "does": "Cooks finely minced mushrooms and shallot in butter until all their water has gone, to a dark, dry paste that is spread or stuffed for its deep flavour.",
-  "intro": null,
+  "intro": {
+    "what": "Duxelles cooks finely minced mushrooms and shallot into a dry, deeply flavoured paste.",
+    "why": "It teaches you to remove mushroom moisture before using the paste as a filling or spread.",
+    "idea": "Cook off mushroom water",
+    "tier": "drafted"
+  },
   "how": [
     "Wipe the mushrooms clean with a cloth. Do not soak them.",
     "Mince the mushrooms and the shallot very fine, with a knife.",
@@ -22,7 +27,52 @@
     },
     {"mistake": "Chopping the mushrooms coarse, so that the filling falls apart.", "fix": "Mince them very fine."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why cook duxelles until dry?",
+      "choices": [
+        "To concentrate it without making a filling soggy.",
+        "To keep loose mushroom liquid in the filling.",
+        "To preserve large separate mushroom pieces."
+      ],
+      "answer": 0,
+      "because": "A wet paste can steam and make the surrounding filling soggy.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How finely should you cut the mushrooms and shallot?",
+      "choices": ["Into large uneven chunks.", "Very finely with a knife.", "Into broad slices left separate."],
+      "answer": 1,
+      "because": "Fine mincing helps the finished filling hold together instead of falling apart.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What appearance suggests the intended consistency?",
+      "choices": [
+        "Grey pieces floating in watery liquid.",
+        "A loose paste whose spoon track fills immediately.",
+        "A dark, dry paste that holds a spoon line."
+      ],
+      "answer": 2,
+      "because": "A lasting spoon line and a dry pan show the mushroom water has cooked off.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The paste is still wet and would soak the filling. What would you do?",
+      "choices": [
+        "Continue cooking until the pan is dry.",
+        "Stop and add it straight to the filling.",
+        "Cover the pan tightly to trap the moisture."
+      ],
+      "answer": 0,
+      "because": "Continue removing the water before using the paste, rather than trapping it in the filling.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/mushroom", "tier": "drafted"},
     {"thing": "ingredient/shallot", "tier": "drafted"}

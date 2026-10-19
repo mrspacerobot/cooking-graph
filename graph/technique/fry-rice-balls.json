@@ -4,7 +4,12 @@
   "names": {"en": "Fry rice balls"},
   "aliases": {"en": ["fry arancini", "fry suppli", "fry the rice balls"]},
   "does": "Fries coated, filled rice balls a few at a time in hot oil deep enough to cover them, turning them until the shell is deep golden all round and the filling inside is hot and soft.",
-  "intro": null,
+  "intro": {
+    "what": "This method deep-fries coated, filled rice balls to an evenly golden shell.",
+    "why": "It teaches you to balance shell colour with moderate heat and avoid cooling the oil through crowding.",
+    "idea": "Manage the frying batch",
+    "tier": "drafted"
+  },
   "how": [
     "Heat plenty of oil in a deep, heavy pan and hold it steady. A crumb dropped in should sizzle at once and rise.",
     "Lower a few balls in with a slotted spoon. Do not crowd the pan, or the oil cools and the shells go greasy.",
@@ -30,7 +35,56 @@
       "fix": "Fry in small batches and let the oil heat up again between them."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use steady, moderate heat for these filled rice balls?",
+      "choices": [
+        "To let warmth reach the filling before the shell becomes too dark.",
+        "To darken the shell as quickly as possible.",
+        "To keep the coating pale and soft."
+      ],
+      "answer": 0,
+      "because": "Very hot oil can darken the shell while the filling remains cold.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you arrange the frying batch?",
+      "choices": [
+        "Fill the pan tightly to keep them from turning.",
+        "Lower in only a few balls without crowding.",
+        "Add the full batch before heating the oil."
+      ],
+      "answer": 1,
+      "because": "A small batch avoids cooling the oil and making the shells greasy.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which shell matches the intended appearance?",
+      "choices": [
+        "Dark patches around a pale shell.",
+        "A pale, greasy shell splitting open.",
+        "Even deep gold without cracks."
+      ],
+      "answer": 2,
+      "because": "Gentle turning and steady heat aim for even colour around an intact shell.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The oil cools as a large batch goes in. What would you change?",
+      "choices": [
+        "Fry smaller batches and let the oil reheat between them.",
+        "Keep adding balls to use the same oil.",
+        "Press the balls together so they support each other."
+      ],
+      "answer": 0,
+      "because": "Crowding cools the oil; smaller batches and reheating address that drop.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/risotto-rices", "tier": "drafted"}
   ],

@@ -4,7 +4,12 @@
   "names": {"en": "Shape and crumb stuffed rice balls"},
   "aliases": {"en": ["shape arancini", "shape suppli", "shape rice balls round a filling", "crumb stuffed rice balls"]},
   "does": "Presses cold, firm risotto round a small piece of filling into a ball, a cone or an oval, and coats it in flour, beaten egg and crumbs in turn, so that it fries with a crisp shell around a soft, savoury middle.",
-  "intro": null,
+  "intro": {
+    "what": "This arancini-style method encloses filling in firm risotto and coats the shape in crumbs.",
+    "why": "It teaches you to manage a soft filling inside a continuous rice wall and an even outer shell.",
+    "idea": "Close every gap",
+    "tier": "drafted"
+  },
   "how": [
     "Cook the risotto a little firmer and thicker than for eating. Spread it out thin on a tray and let it cool right down, then chill it until it is stiff and holds together when pressed.",
     "Have the filling cold and in small pieces. Set out shallow dishes in a row: flour, beaten egg and crumbs.",
@@ -30,7 +35,52 @@
       "fix": "Use a small piece of filling and enough rice to wrap it with a firm wall all round."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What must the rice do around the filling?",
+      "choices": [
+        "Leave a small opening for filling to escape.",
+        "Form a continuous wall without gaps.",
+        "Make a very thin patch only at the base."
+      ],
+      "answer": 1,
+      "because": "A continuous rice enclosure supports the filling beneath the crumb shell.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What is the coating order?",
+      "choices": ["Crumbs, flour, then egg.", "Egg, crumbs, then loose flour.", "Flour, beaten egg, then crumbs."],
+      "answer": 2,
+      "because": "Flour, egg and crumbs build the coating in stages so the shell covers the rice evenly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suits rice before shaping?",
+      "choices": [
+        "Cold and firm enough to hold when pressed.",
+        "Warm and loose between the fingers.",
+        "Fluid enough to run from the palm."
+      ],
+      "answer": 0,
+      "because": "Firm chilled rice holds a wall around the filling instead of clinging and slumping.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The rice wall split around a large filling. What would you change when shaping the next ball?",
+      "choices": [
+        "Stretch the same thin wall further.",
+        "Use less filling and enough rice to enclose it firmly.",
+        "Hide the exposed filling beneath loose crumbs."
+      ],
+      "answer": 1,
+      "because": "Reducing the filling leaves enough rice to form an intact supporting wall.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/risotto-rices", "tier": "drafted"}
   ],

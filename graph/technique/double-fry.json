@@ -4,7 +4,12 @@
   "names": {"en": "Double fry"},
   "aliases": {"en": ["fry twice", "twice-fry", "fry in stages"]},
   "does": "Fries food in rounds: first at a moderate heat to cook it, then a rest, and again in hotter oil to crisp and brown the outside. The result is tender inside and crunchy outside, and stays crisp longer.",
-  "intro": null,
+  "intro": {
+    "what": "An initial gentler fry is followed by a rest and a hotter finishing fry.",
+    "why": "Separating these stages lets the earlier heating and later crisping serve different purposes rather than forcing the exterior to brown immediately.",
+    "idea": "Rest before final crisping",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the oil to a moderate heat and fry the pieces until pale and just firm. Do not crowd the pot.",
     "Lift them onto a rack and let them rest, so that the heat spreads to the middle.",
@@ -22,7 +27,56 @@
     },
     {"mistake": "Frying too many pieces at once, which cools the oil.", "fix": "Fry in small batches."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the role of the hotter finishing fry?",
+      "choices": [
+        "To crisp and brown the exterior.",
+        "To continue only the gentle softening without colour.",
+        "To keep the crust as pale as after the initial fry."
+      ],
+      "answer": 0,
+      "because": "The later stage develops the crisp browned shell after the earlier heating and rest.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What belongs between the frying stages?",
+      "choices": [
+        "Immediate return to hotter oil without resting.",
+        "A rest on a rack.",
+        "A covered wait in a bowl of the used frying oil."
+      ],
+      "answer": 1,
+      "because": "The rack rest allows heat to spread through the pieces before the final crisping.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How does the appearance change across the stages?",
+      "choices": [
+        "Dark after the initial fry, then pale after the finishing fry.",
+        "Equally dark after both stages, with no further surface change.",
+        "Pale after the initial fry, then golden after the finishing fry."
+      ],
+      "answer": 2,
+      "because": "The colour change reflects the different roles of the gentler and hotter stages.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The exterior browned too early after the rest was skipped. What would you change on the next batch?",
+      "choices": [
+        "Restore the rack rest before the hotter fry.",
+        "Skip the initial stage and brown harder.",
+        "Pack the pieces tightly together during frying."
+      ],
+      "answer": 0,
+      "because": "The intervening rest is part of balancing the interior heating with later surface browning.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "ingredient/chicken-thigh", "tier": "drafted"}

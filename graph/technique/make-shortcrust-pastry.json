@@ -4,7 +4,12 @@
   "names": {"en": "Make shortcrust pastry", "fr": "Faire une pâte brisée"},
   "aliases": {"en": ["make pie pastry", "rub in the butter"], "fr": ["faire la pâte brisée", "sabler la pâte"]},
   "does": "Rubs cold butter into flour with the fingertips until the mixture looks like fine crumbs, then binds it with a little cold water into a dough. Baked, the dough is short, which means crumbly and tender, and not chewy. It is rested in a cool place before it is rolled.",
-  "intro": null,
+  "intro": {
+    "what": "Shortcrust rubs cold butter into flour, then uses a little cold water to bind the crumbs.",
+    "why": "It teaches you to stop handling once the dough holds, preserving a tender crumb instead of bread-like chew.",
+    "idea": "Bind without kneading",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the cold butter into small pieces and put it in a bowl with the flour and a little salt.",
     "Rub the butter into the flour with the tips of the fingers, lifting the mixture as you go to let in air, until it looks like fine crumbs with no big lumps of butter left.",
@@ -33,7 +38,56 @@
       "fix": "Press it together once, and leave it alone."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture is the aim of shortcrust?",
+      "choices": [
+        "Elastic and stretchy like kneaded bread.",
+        "Crumbly and tender rather than chewy.",
+        "A smooth chewy crust with no crumbling."
+      ],
+      "answer": 1,
+      "because": "Shortcrust aims for tenderness, which excessive kneading can replace with chew.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you finish bringing the moistened crumbs together?",
+      "choices": [
+        "Knead until perfectly smooth and elastic.",
+        "Beat until warm and glossy.",
+        "Press them into a round without kneading."
+      ],
+      "answer": 2,
+      "because": "Pressing binds the crumbs without developing the elastic texture this pastry avoids.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What feel suggests enough water has been added?",
+      "choices": [
+        "The dough holds when pinched but does not stick to fingers.",
+        "Dry crumbs fall apart whenever pinched.",
+        "A sticky paste smears over the hands."
+      ],
+      "answer": 0,
+      "because": "Stop when the crumbs bind; excess water makes the pastry tougher and encourages shrinkage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Warm handling makes the butter melt and the pastry greasy. What would you change next time?",
+      "choices": [
+        "Use warm palms to blend the butter completely.",
+        "Work quickly with fingertips and keep the butter and bowl cool.",
+        "Keep kneading until the grease disappears."
+      ],
+      "answer": 1,
+      "because": "Cold butter and brief fingertip handling preserve the intended crumbly pastry texture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"}
   ],

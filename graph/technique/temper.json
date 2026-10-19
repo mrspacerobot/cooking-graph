@@ -4,7 +4,12 @@
   "names": {"en": "Temper"},
   "aliases": {"en": ["temper eggs", "temper the eggs", "temper the yolks"]},
   "does": "Warms eggs or yolks gently by whisking a little hot liquid into them, so that they can then join the hot liquid in the pan without turning to specks. The word here is for eggs, not for chocolate.",
-  "intro": null,
+  "intro": {
+    "what": "Egg tempering gradually warms beaten eggs with hot liquid before they join the pan.",
+    "why": "It teaches you to control a temperature change so a creamy mixture does not become speckled egg.",
+    "idea": "Warm eggs gradually",
+    "tier": "drafted"
+  },
   "how": [
     "Whisk the eggs or yolks, usually with the sugar, in a bowl big enough to take the liquid.",
     "Heat the milk or cream until it steams. It must not be boiling.",
@@ -26,7 +31,56 @@
       "fix": "Take the liquid off the heat first, and warm the eggs with a little of it."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim of tempering eggs?",
+      "choices": [
+        "To warm them gradually while keeping the mixture smooth.",
+        "To cook them into separate firm pieces first.",
+        "To cool the hot liquid completely before mixing."
+      ],
+      "answer": 0,
+      "because": "Small whisked additions spread warmth through the eggs without a sudden local shock.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the first hot liquid be added?",
+      "choices": [
+        "All at once without whisking.",
+        "In a thin stream while whisking continuously.",
+        "Only after pouring the eggs into boiling liquid."
+      ],
+      "answer": 1,
+      "because": "A slow stream and whisking distribute heat instead of allowing hot liquid to set isolated egg.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suits tempered eggs?",
+      "choices": [
+        "Speckled with separate cooked egg pieces.",
+        "Firm curds surrounded by thin liquid.",
+        "Smooth and glossy without threads of set egg."
+      ],
+      "answer": 2,
+      "because": "The eggs should join the liquid as a continuous mixture rather than setting into strands.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Eggs form specks after hot liquid is poured in at once. What should change next time?",
+      "choices": [
+        "Add the liquid gradually while whisking.",
+        "Use a faster unwhisked pour.",
+        "Keep the eggs still so the specks settle."
+      ],
+      "answer": 0,
+      "because": "Gradual addition avoids concentrated heat setting parts of the eggs before they mix.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"},
     {"thing": "ingredient/egg-yolk", "tier": "drafted"}

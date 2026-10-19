@@ -4,7 +4,12 @@
   "names": {"en": "Shape a flat kofte"},
   "aliases": {"en": ["shape izgara kofte", "shape grilled kofte"]},
   "does": "Presses a portion of rested kofte mixture between wet palms into a short, flat oval with a shallow dent from the thumb, so that it holds together over the fire and cooks fast and evenly, and is cooked afterwards on a grill or in a pan.",
-  "intro": null,
+  "intro": {
+    "what": "This köfte method shapes rested mixture into flat ovals with a shallow thumb dent.",
+    "why": "It teaches you to control thickness and cohesion before the pieces meet the heat.",
+    "idea": "Even flat ovals",
+    "tier": "drafted"
+  },
   "how": [
     "Keep a bowl of water beside the work and wet the hands lightly, so the mixture does not stick.",
     "Take a portion about the size of a walnut and roll it once between the palms to bring it together.",
@@ -33,7 +38,56 @@
       "fix": "Wet the hands lightly and often."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why flatten the köfte evenly?",
+      "choices": [
+        "To avoid a thick centre heating differently from the edges.",
+        "To make the centre deliberately thicker.",
+        "To remove the need to rest the mixture."
+      ],
+      "answer": 0,
+      "because": "Even thickness reduces differences between the centre and edges during cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What does the shallow thumb dent help control?",
+      "choices": [
+        "The amount of surface moisture.",
+        "The middle puffing up during cooking.",
+        "The mixture sticking to the hands."
+      ],
+      "answer": 1,
+      "because": "A shallow central dent helps the oval retain a flatter shape as it cooks.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which shape suggests well-formed flat köfte?",
+      "choices": [
+        "Round balls with thick centres.",
+        "Ragged ovals that split when lifted.",
+        "Smooth even ovals without edge cracks."
+      ],
+      "answer": 2,
+      "because": "A smooth cohesive oval can be lifted while retaining its even thickness.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Pieces crack and fall apart during shaping. What should change?",
+      "choices": [
+        "Work the mixture until sticky and let it rest cold.",
+        "Shape the loose mixture into larger portions.",
+        "Dry the hands and squeeze only the cracked edges."
+      ],
+      "answer": 0,
+      "because": "Working and resting develops cohesion before individual pieces are formed.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/minced-meat", "tier": "drafted"}
   ],

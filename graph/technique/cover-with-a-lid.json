@@ -4,7 +4,12 @@
   "names": {"en": "Cover with a lid"},
   "aliases": {"en": ["cover with lid", "put a lid on"]},
   "does": "Puts a lid over a pot or a dish, so that steam and heat stay in and the food cooks gently in its own moisture.",
-  "intro": null,
+  "intro": {
+    "what": "A well-fitting lid keeps steam and heat around food in the pot.",
+    "why": "Covering changes moisture loss, so repeatedly opening the pot interrupts the cooking environment you are trying to maintain.",
+    "idea": "Retain steam and heat",
+    "tier": "drafted"
+  },
   "how": [
     "Choose a lid that fits the pot or the dish well.",
     "Put it on once the food is heated and the liquid is in.",
@@ -25,7 +30,56 @@
       "fix": "Use a lid that sits snugly, or cover the dish tightly with foil."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does a close-fitting lid mainly retain?",
+      "choices": [
+        "Dry outside air circulating across the surface.",
+        "The same evaporation as an open pot, without retaining steam.",
+        "Steam and heat."
+      ],
+      "answer": 2,
+      "because": "The lid limits moisture and heat escaping from the pot.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the lid fit?",
+      "choices": [
+        "Snugly against the pot or dish.",
+        "With a wide gap around the rim.",
+        "Loosely tilted so steam escapes freely."
+      ],
+      "answer": 0,
+      "because": "A snug fit supports the enclosed cooking environment.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What can appear on the inside of a working lid?",
+      "choices": [
+        "A completely dry inner surface throughout steaming.",
+        "Condensed drops that run back down.",
+        "Drops gathering only on the outside while the inside stays dry."
+      ],
+      "answer": 1,
+      "because": "Steam cools on the lid and gathers into drops.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Frequent checking keeps releasing steam. What should change?",
+      "choices": [
+        "Lift it more often to equalize the air.",
+        "Set it aside while expecting the same moisture retention.",
+        "Leave the lid closed during the covered stage."
+      ],
+      "answer": 2,
+      "because": "Opening the lid repeatedly releases the heat and steam that covering was meant to retain.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/starches", "tier": "drafted"},

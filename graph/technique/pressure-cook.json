@@ -4,7 +4,12 @@
   "names": {"en": "Pressure cook"},
   "aliases": {"en": ["pressure cook the dal", "cook in a pressure cooker", "pressure-cook"]},
   "does": "Cooks pulses in a sealed pot that holds steam in, so that the liquid gets hotter than in an open pot and hard dried seeds soften and fall apart in a fraction of the usual time.",
-  "intro": null,
+  "intro": {
+    "what": "This pulse-cooking method uses a sealed pressure pot to soften dried seeds more quickly.",
+    "why": "It teaches you to distinguish pressure cooking from open-pot simmering and to judge the texture sought for the dish.",
+    "idea": "Pressure changes the cooking method",
+    "tier": "drafted"
+  },
   "how": [
     "Rinse the pulses. Soak the large hard kinds such as kidney beans, if the recipe asks.",
     "Put them in the pot with plenty of water and a little turmeric. Fill the pot no more than half, as pulses swell and foam.",
@@ -35,7 +40,56 @@
       "fix": "Cover them with plenty of water. Add more if the dish is too thick."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "How does pressure cooking differ from an open simmer?",
+      "choices": [
+        "Retained pressure allows the liquid to become hotter.",
+        "The sealed pot works mainly by evaporating water faster.",
+        "The sealed pot softens pulses mainly by drying their surfaces."
+      ],
+      "answer": 0,
+      "because": "A pressure pot retains steam and operates differently from an open pot, allowing hotter liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "In this stovetop method, what follows a steady hiss or whistle?",
+      "choices": [
+        "Lower the heat to maintain steady activity.",
+        "Keep increasing heat until the valve spits wildly.",
+        "Remove it from the heat so the hiss stops for the whole cooking stage."
+      ],
+      "answer": 0,
+      "because": "Once pressure is established, the described method reduces heat rather than continuing to increase it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture is sought for split pulses intended for a creamy dish?",
+      "choices": [
+        "They retain hard dry centres.",
+        "They break down into a thick creamy mixture when stirred.",
+        "They remain rigid and separate despite stirring."
+      ],
+      "answer": 1,
+      "because": "Softened split pulses can lose their individual shape and give body to the liquid; this is a texture cue only.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pulses scorch because the pot began with too little water. What should change next time?",
+      "choices": [
+        "Begin with less water to concentrate the flavour faster.",
+        "Keep the same dry setup and increase the heat.",
+        "Begin with ample water appropriate to the pot and method."
+      ],
+      "answer": 2,
+      "because": "Pulses absorb liquid, so an inadequate initial supply can leave the base dry and catching.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/pulses", "tier": "drafted"}
   ],

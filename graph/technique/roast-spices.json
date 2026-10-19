@@ -4,7 +4,12 @@
   "names": {"en": "Roast spices"},
   "aliases": {"en": ["dry-roast spices", "dry roast whole spices"]},
   "does": "Roasts whole spices in a dry, heavy pan over a low heat until they darken a shade and smell strong, then cools them, so that they can be ground into a blend or a powder that keeps its scent.",
-  "intro": null,
+  "intro": {
+    "what": "Roasting whole spices in a dry pan deepens their aroma before grinding.",
+    "why": "It teaches you to judge fragrant warmth, avoid scorching and account for spices that heat at different rates.",
+    "idea": "Follow the aroma",
+    "tier": "drafted"
+  },
   "how": [
     "Set a heavy dry pan over a low heat and let it warm.",
     "Add the spices that take the longest first, such as coriander seed and cumin, and the softer ones a little later. Roast each at its own pace if they differ.",
@@ -30,7 +35,52 @@
       "fix": "Cool them completely first."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why dry-roast whole spices before grinding?",
+      "choices": [
+        "To make them absorb cooking fat.",
+        "To leave their aroma unchanged.",
+        "To develop a deeper warm aroma."
+      ],
+      "answer": 2,
+      "because": "Gentle dry heat develops the scent before the spices are cooled and ground.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should spices with different roasting speeds be handled?",
+      "choices": [
+        "Start slower ones first or roast kinds separately.",
+        "Add them together and wait for the hardest to darken.",
+        "Add the softest first and leave them longest."
+      ],
+      "answer": 0,
+      "because": "Different spices can scorch at different rates, so staggered or separate roasting allows closer control.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which smell suggests spices have scorched?",
+      "choices": ["A deep warm scent.", "A sharp bitter smell.", "A strengthening fragrant aroma."],
+      "answer": 1,
+      "because": "A bitter sharp smell signals scorching rather than the warm aroma sought from roasting.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Freshly ground roasted spices clumped. What would you change before grinding the next batch?",
+      "choices": [
+        "Grind them while still hot.",
+        "Keep them covered in the warm pan.",
+        "Cool the spices completely before grinding."
+      ],
+      "answer": 2,
+      "because": "Grinding hot spices can leave a damp or gummy powder; cooling first helps it stay loose.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/whole-spices", "tier": "drafted"}
   ],

@@ -4,7 +4,12 @@
   "names": {"en": "Bake a soufflé", "fr": "Faire un soufflé"},
   "aliases": {"en": ["make a souffle"], "fr": ["cuire un soufflé"]},
   "does": "Bakes a thick, flavoured base that has been lightened with whipped egg white, in a dish coated so that the mixture can climb. The trapped air swells in the oven and lifts the mixture high above the rim. It sinks soon after it comes out, so it is served at once.",
-  "intro": null,
+  "intro": {
+    "what": "A soufflé combines a flavoured base with whipped whites that expand in the oven.",
+    "why": "Keeping the folded mixture airy connects gentle mixing with the rise you see during baking.",
+    "idea": "Preserving trapped air",
+    "tier": "drafted"
+  },
   "how": [
     "Brush the dish all over with soft butter, using upward strokes so that the butter makes lines for the mixture to climb. Coat it with a dusting of grated cheese or flour and tip out the extra.",
     "Warm the base and beat the egg yolks and the cheese into it. Season it boldly, because the whites will dilute it.",
@@ -41,7 +46,56 @@
       "fix": "Butter the dish in upward strokes and coat it well."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What lifts a soufflé in the oven?",
+      "choices": [
+        "The butter coating itself produces the rising foam.",
+        "The weight of the base pushes the whites above the rim.",
+        "Air held in the mixture expands."
+      ],
+      "answer": 2,
+      "because": "Whipped whites hold air that expands with heat and raises the mixture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the whipped whites meet the loosened base?",
+      "choices": [
+        "Fold them in gently with a spatula.",
+        "Whisk them briskly until no trace of air remains.",
+        "Stir them in firmly until completely uniform."
+      ],
+      "answer": 0,
+      "because": "Folding combines the mixtures while retaining the air needed for the rise.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What texture should the whipped whites have before folding?",
+      "choices": [
+        "A grainy mass with dull broken clumps.",
+        "Glossy peaks that hold without looking dry.",
+        "A thin foam that runs flat immediately."
+      ],
+      "answer": 1,
+      "because": "Glossy peaks blend more readily than dry clumps while still holding air.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A soufflé collapsed after the door opened early. What would you change on the next attempt?",
+      "choices": [
+        "Open the door more often to check the height.",
+        "Begin with a cooler oven and increase heat after opening.",
+        "Keep the oven door shut during the early rise."
+      ],
+      "answer": 2,
+      "because": "Opening early chills the expanding mixture and can disrupt its rise.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg-white", "tier": "drafted"},
     {"thing": "preparation/bechamel", "tier": "drafted"}

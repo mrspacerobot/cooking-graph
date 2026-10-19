@@ -4,7 +4,12 @@
   "names": {"en": "Sandwich"},
   "aliases": {"en": ["sandwich with a filling", "sandwich together"]},
   "does": "Places a filling between flat pieces of soft bread or pancake, so that it holds together and is eaten in one hand.",
-  "intro": null,
+  "intro": {
+    "what": "Sandwiching holds filling between flat pieces of bread or pancake.",
+    "why": "It teaches you to distribute filling so the layers hold together without spilling.",
+    "idea": "Leave an edge",
+    "tier": "drafted"
+  },
   "how": [
     "Lay out the bottom pieces in a row.",
     "Spoon or spread the filling on each, leaving a narrow edge clear.",
@@ -22,7 +27,56 @@
     },
     {"mistake": "Using pieces that are too hot, which melts the filling.", "fix": "Let them cool a little first."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What helps a filled sandwich hold together?",
+      "choices": [
+        "A mound of filling concentrated at the rim.",
+        "A top pressed hard against an overflowing filling.",
+        "An even filling layer that lightly joins the pieces."
+      ],
+      "answer": 2,
+      "because": "Evenly distributed filling supports contact without being forced out at the edge.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should filling be spread before adding the top?",
+      "choices": [
+        "Evenly, leaving a narrow clear edge.",
+        "Right over every edge.",
+        "As a tall central pile without spreading."
+      ],
+      "answer": 0,
+      "because": "A clear edge gives filling room to spread under gentle pressure.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests the filling is well distributed?",
+      "choices": [
+        "It bulges from a single side.",
+        "It shows evenly at the edge without squeezing out.",
+        "The top slides over an uneven mound."
+      ],
+      "answer": 1,
+      "because": "Even contact keeps the layers aligned and the filling contained.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The filling melted when the pieces were assembled. What would you change next time?",
+      "choices": [
+        "Press the top down harder while hot.",
+        "Add more filling to the hot pieces.",
+        "Let overly hot bread or pancake pieces cool a little."
+      ],
+      "answer": 2,
+      "because": "Reducing heat transferred from the outer pieces helps the filling retain its intended texture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/breads", "tier": "drafted"},
     {"thing": "preparation/crepe", "tier": "drafted"}

@@ -4,7 +4,12 @@
   "names": {"en": "Wash rice"},
   "aliases": {"en": ["wash the rice", "rinse rice until the water runs nearly clear"]},
   "does": "Rubs rice gently in cold water and pours the cloudy water away, again and again, to take off the loose starch, so that the cooked grains are separate and clean-tasting.",
-  "intro": null,
+  "intro": {
+    "what": "Washing rice removes loose surface starch with repeated gentle rinsing.",
+    "why": "It teaches you to recognise nearly clear water without damaging the grains in pursuit of perfect clarity.",
+    "idea": "Gentle washing, nearly clear water",
+    "tier": "drafted"
+  },
   "how": [
     "Put the rice in a large bowl and cover it with cold water. Stir quickly with your hand and pour the cloudy water away at once.",
     "Rub the rice lightly with the heel of the hand in a circular motion.",
@@ -23,7 +28,56 @@
     },
     {"mistake": "Rubbing hard, which breaks the grains.", "fix": "Rub lightly."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does this rice-washing method remove?",
+      "choices": [
+        "All starch from the inside of every grain.",
+        "Loose starch from the grain surfaces.",
+        "The outer husk rather than loose surface material."
+      ],
+      "answer": 1,
+      "because": "Rinsing carries away loose surface starch rather than extracting the grain’s whole interior.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the rice be rubbed?",
+      "choices": [
+        "Hard enough to break the grains.",
+        "Dry against the bowl before adding water.",
+        "Lightly with the hand rather than crushed."
+      ],
+      "answer": 2,
+      "because": "Gentle rubbing loosens surface material while preserving the grains.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which water appearance marks the intended washing endpoint?",
+      "choices": [
+        "Nearly clear rather than perfectly transparent.",
+        "Thick and milky with every rinse.",
+        "Clear only after the grains have broken down."
+      ],
+      "answer": 0,
+      "because": "The aim is to remove much of the loose starch without excessive washing or damage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The rice breaks during washing. What should change?",
+      "choices": [
+        "Apply harder pressure for fewer passes.",
+        "Rub more lightly.",
+        "Grind the grains firmly against the bowl."
+      ],
+      "answer": 1,
+      "because": "Less force preserves the grains while water carries away the loosened starch.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}

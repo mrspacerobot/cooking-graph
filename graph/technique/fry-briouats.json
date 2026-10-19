@@ -4,7 +4,12 @@
   "names": {"en": "Fry briouats"},
   "aliases": {},
   "does": "Fries small folded pastries in a good depth of hot oil, turning them until they are golden and crisp, then dips them while hot in warm honey scented with orange blossom water and scatters them with toasted sesame seeds.",
-  "intro": null,
+  "intro": {
+    "what": "This briouat method fries folded pastries until crisp, then dips them briefly in warm scented honey.",
+    "why": "It teaches you to add a glossy sweet coat without losing the crackling pastry beneath it.",
+    "idea": "Glaze without soaking",
+    "tier": "drafted"
+  },
   "how": [
     "Warm the honey gently with a spoonful of water and the orange blossom water, and keep it at the side of the stove.",
     "Heat the oil in a wide pan to about a finger deep, until a scrap of warqa sizzles at once.",
@@ -31,7 +36,56 @@
       "fix": "Warm it gently and keep it just hot."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What finish are you aiming for after the honey dip?",
+      "choices": [
+        "A thin glossy coating over pastry that still crackles.",
+        "Pastry softened completely by a long honey soak.",
+        "A thick hard honey shell hiding the pastry."
+      ],
+      "answer": 0,
+      "because": "Brief dipping adds sweetness and shine while preserving the crisp pastry.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen between frying and the honey dip?",
+      "choices": [
+        "Dip them into honey while they still carry pooled frying oil.",
+        "Let the excess oil run off briefly.",
+        "Leave them flat in the collected frying oil before dipping."
+      ],
+      "answer": 1,
+      "because": "Draining excess frying oil comes before the warm honey coating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which pastry appearance matches the frying stage?",
+      "choices": [
+        "Pale sheets heavy with oil.",
+        "Black edges around a wet pale centre.",
+        "Even gold with fine blisters in the layers."
+      ],
+      "answer": 2,
+      "because": "Golden blistered layers are the intended fried texture before coating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The honey-coated pastries have become soggy. What would you change next time?",
+      "choices": [
+        "Dip briefly and move them onto a rack.",
+        "Leave them in honey until fully saturated.",
+        "Pile them in the honey while still draining oil."
+      ],
+      "answer": 0,
+      "because": "A prolonged honey soak softens the pastry; a brief dip and rack preserve more crispness.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/warqa", "tier": "drafted"}
   ],

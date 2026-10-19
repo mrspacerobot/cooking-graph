@@ -4,7 +4,12 @@
   "names": {"en": "Soak in sauce"},
   "aliases": {"en": ["steep in sauce", "marinate after frying", "nanbanzuke"]},
   "does": "Steeps just-fried food in a sharp, sweet sauce while it is still hot, so that it drinks up the sauce and turns juicy and flavoured through.",
-  "intro": null,
+  "intro": {
+    "what": "This method steeps freshly fried food in a sharp sweet sauce while it is hot.",
+    "why": "It teaches you to use absorption to flavour a crust while controlling how far that crust softens.",
+    "idea": "Soak without turning mushy",
+    "tier": "drafted"
+  },
   "how": [
     "Make the sauce ahead and have it in a shallow dish.",
     "Fry the food and lift it out of the oil, shaking off the excess.",
@@ -25,7 +30,52 @@
       "fix": "Lift it out after a short while."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does the sauce soak contribute to fried food?",
+      "choices": [
+        "A drier crust with no sauce absorbed.",
+        "A coating that must stay entirely separate.",
+        "A juicy sauce-flavoured texture."
+      ],
+      "answer": 2,
+      "because": "Steeping lets sauce enter the hot food rather than remaining only on its surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should fried food meet the prepared sauce?",
+      "choices": [
+        "While still hot after excess oil is shaken off.",
+        "Only after cooling completely on a tray.",
+        "While still carrying a pool of frying oil."
+      ],
+      "answer": 0,
+      "because": "Add the food hot for this absorption method, after shaking off excess frying oil so it does not enter the sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture is the aim after a brief steep?",
+      "choices": [
+        "A fully dissolved crust and collapsed pieces.",
+        "A slightly softened crust with juicy food beneath.",
+        "A dry interior unchanged by the sauce."
+      ],
+      "answer": 1,
+      "because": "Some softening is intended, but the food should retain its structure.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The fried pieces became mushy. What would you change next time?",
+      "choices": ["Leave them soaking longer.", "Cover them with more sauce and wait.", "Lift them out sooner."],
+      "answer": 2,
+      "because": "A shorter steep limits the amount of structural softening while retaining sauce flavour.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/lean-fish", "tier": "drafted"},
     {"thing": "ingredient/chicken-thigh", "tier": "drafted"}

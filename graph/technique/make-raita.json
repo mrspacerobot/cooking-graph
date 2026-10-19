@@ -4,7 +4,12 @@
   "names": {"en": "Make raita"},
   "aliases": {"en": ["raita"]},
   "does": "Whisks cold yogurt smooth and stirs in a cool, drained raw or cooked vegetable, with salt and a roasted ground spice, to make a cooling side that tempers the heat of a spiced meal.",
-  "intro": null,
+  "intro": {
+    "what": "Raita stirs drained vegetables and roasted spice into smooth cold yogurt.",
+    "why": "It teaches you to control vegetable moisture so a cool, creamy side does not become watery.",
+    "idea": "Drain before mixing",
+    "tier": "drafted"
+  },
   "how": [
     "Whisk cold yogurt in a bowl until it is smooth and creamy. Thin it with a splash of cold water only if it is very thick.",
     "Wring the vegetable dry, or drain it well, so that it does not thin the yogurt.",
@@ -29,7 +34,56 @@
       "fix": "Mix it shortly before serving, or squeeze the vegetable very dry."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What role does raita play beside a spiced meal?",
+      "choices": [
+        "A hot reduced sauce cooked into the dish.",
+        "A cool, gently tangy contrast.",
+        "A dry crisp topping."
+      ],
+      "answer": 1,
+      "because": "Cold yogurt and vegetables provide the cooling side described in this method.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you prepare watery vegetables before mixing?",
+      "choices": [
+        "Add them with all their released water.",
+        "Warm them in the yogurt until the water evaporates.",
+        "Drain or squeeze them well."
+      ],
+      "answer": 2,
+      "because": "Removing vegetable water keeps the yogurt creamy instead of thinning it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended raita?",
+      "choices": [
+        "Thick and creamy without a pool of water.",
+        "Watery liquid separated around the vegetables.",
+        "Grainy yogurt that has been heated."
+      ],
+      "answer": 0,
+      "because": "Even vegetables in thick yogurt show that excess moisture has been controlled.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Raita turns watery after standing for a long time. What would you change next time?",
+      "choices": [
+        "Mix earlier with the vegetable liquid included.",
+        "Mix it closer to serving or squeeze the vegetables more thoroughly.",
+        "Heat the finished yogurt to reduce it."
+      ],
+      "answer": 1,
+      "because": "Vegetables can release water as they sit; closer mixing or better draining limits that thinning.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/plain-yogurt", "tier": "drafted"},
     {"thing": "ingredient/cucumber", "tier": "drafted"}

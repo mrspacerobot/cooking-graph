@@ -4,7 +4,12 @@
   "names": {"en": "Braise in olive oil"},
   "aliases": {"en": ["zeytinyagli", "cook zeytinyagli style", "olive oil braise", "braise vegetables in olive oil"]},
   "does": "Cooks vegetables slowly under a lid in a generous amount of olive oil with only a little water and no browning first, until they are very soft and sweet and the oil and their own juices have become the sauce. The dish is eaten warm or at room temperature, never piping hot.",
-  "intro": null,
+  "intro": {
+    "what": "Vegetables soften gently under a lid in olive oil and their own juices without preliminary browning.",
+    "why": "The oil belongs to the finished sauce. Gentle heat and gentle movement preserve a soft flavour and intact pieces.",
+    "idea": "Oil and vegetable juices",
+    "tier": "drafted"
+  },
   "how": [
     "Soften the onion in the olive oil over a gentle heat until it is soft and has not taken colour.",
     "Add the vegetables, and the tomato if there is any, and turn them in the oil until they shine. Season with salt, and add a little sugar if the vegetables or the tomato are sharp.",
@@ -39,7 +44,56 @@
       "fix": "Use a generous amount. The oil is part of the sauce, and it is meant to stay."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What becomes the sauce in this method?",
+      "choices": [
+        "A separately browned layer from the pan base.",
+        "A large volume of clear added cooking water.",
+        "Olive oil combined with vegetable juices."
+      ],
+      "answer": 2,
+      "because": "The vegetables release moisture that joins the oil around them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the vegetables be moved during cooking?",
+      "choices": [
+        "Shake the pan gently rather than stirring hard.",
+        "Beat them vigorously with a spoon.",
+        "Press them against the pan to break them down."
+      ],
+      "answer": 0,
+      "because": "Gentle movement helps the softened pieces remain intact.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture is intended?",
+      "choices": [
+        "Firm pieces with heavily browned edges.",
+        "Very soft pieces that still hold their shape.",
+        "A smooth puree without distinct pieces."
+      ],
+      "answer": 1,
+      "because": "The method softens vegetables deeply while avoiding rough handling that breaks them apart.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The vegetables ended up in a thin soup. What would you change next time?",
+      "choices": [
+        "Add more water to cover them deeply.",
+        "Rinse away the oil before cooking.",
+        "Use less added water; the vegetables release their own."
+      ],
+      "answer": 2,
+      "because": "Excess added water dilutes the intended glossy oil-and-juice sauce.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/green-beans", "tier": "drafted"},
     {"thing": "ingredient/artichoke", "tier": "drafted"},

@@ -1,5 +1,9 @@
 # Foundation introductions and question catalog
 
+Follow-up: `docs/rounds/all-technique-learning-content.md` extends this first
+pass to all 283 techniques. The counts below record the original foundation
+round.
+
 The French foundation program teaches 28 distinct techniques across 37 levels.
 This round adds an introduction and four questions to each of those techniques:
 28 introductions and 112 questions, all `drafted`. It adds no techniques,

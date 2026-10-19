@@ -4,7 +4,12 @@
   "names": {"en": "Bake a phyllo pie"},
   "aliases": {"en": ["bake filo pie", "bake a filo pie"]},
   "does": "Bakes a pie of oiled phyllo sheets at a steady moderate heat until the layers dry out, turn golden and crackle, and the filling inside is set.",
-  "intro": null,
+  "intro": {
+    "what": "Oiled phyllo layers bake into a crisp shell around a filling.",
+    "why": "A golden top can hide damp pastry underneath. Managing heat and escaping steam helps the whole layered crust become crisp.",
+    "idea": "Drying pastry layers",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the oven before the pie goes in, and set the dish on a rack in the middle.",
     "Brush the top once more with fat just before baking, so that it browns evenly.",
@@ -30,7 +35,56 @@
       "fix": "Leave it uncovered on a rack."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use moderate heat for this layered pie?",
+      "choices": [
+        "It keeps all the phyllo soft.",
+        "It gives the inner layers time to dry as the top colours.",
+        "It browns only the exposed edges."
+      ],
+      "answer": 1,
+      "because": "Fierce heat can darken the surface before the layers underneath lose their moisture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen before slicing the baked pie?",
+      "choices": [
+        "Cover it tightly to trap steam.",
+        "Slice immediately while the filling runs.",
+        "Let it settle uncovered."
+      ],
+      "answer": 2,
+      "because": "Settling helps the filling firm, while leaving it uncovered avoids steaming the crust soft.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which sign suggests crisp phyllo layers?",
+      "choices": [
+        "Dry golden edges and a crackling crust.",
+        "A pale top that bends silently.",
+        "Wet folds clinging to the dish."
+      ],
+      "answer": 0,
+      "because": "Dry curled edges and crackling are texture clues for the pastry, rather than evidence about the filling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The top darkens while lower layers stay doughy. What should change?",
+      "choices": [
+        "Raise the heat to colour the top faster.",
+        "Use gentler heat and allow the layers to dry longer.",
+        "Cover the hot pie tightly after baking."
+      ],
+      "answer": 1,
+      "because": "Gentler heat allows moisture to leave the lower layers before the top burns.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/phyllo", "tier": "drafted"}
   ],

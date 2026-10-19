@@ -4,7 +4,12 @@
   "names": {"en": "Cook rice with lentils"},
   "aliases": {"en": ["cook mujaddara", "cook rice and lentils together", "mujaddara method"]},
   "does": "Cooks rice in the pot where lentils have been simmering, so that the rice takes up the lentil water and its flavour, and the rice and the lentils finish together under one lid as a dish of tender grains and whole lentils.",
-  "intro": null,
+  "intro": {
+    "what": "Rice finishes in the lentil cooking liquid after the lentils have begun softening.",
+    "why": "The starting textures must be coordinated so the rice can absorb flavour while the lentils remain whole.",
+    "idea": "Coordinate different grains",
+    "tier": "drafted"
+  },
   "how": [
     "Simmer the lentils in plenty of water until they are tender outside but still firm at the centre.",
     "Wash the rice until the water is much less cloudy, and drain it.",
@@ -31,7 +36,56 @@
       "fix": "Stir once to settle the rice, then leave it alone."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use the lentil cooking liquid for the rice?",
+      "choices": [
+        "It carries lentil flavour into the rice.",
+        "It prevents lentil flavour reaching the rice.",
+        "It seasons only the outside after the rice has finished cooking."
+      ],
+      "answer": 0,
+      "because": "The rice absorbs the seasoned lentil liquid as the ingredients finish together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What lentil texture is wanted when rice is added?",
+      "choices": [
+        "Completely collapsed into puree.",
+        "Softening outside but still firm at the centre.",
+        "Completely firm despite having started simmering."
+      ],
+      "answer": 1,
+      "because": "The lentils need room to soften further while the rice cooks.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What texture should the finished mixture retain?",
+      "choices": [
+        "A sticky paste with no whole lentils.",
+        "Hard grains sitting in loose water.",
+        "Tender distinct rice grains and whole lentils."
+      ],
+      "answer": 2,
+      "because": "The intended result brings the textures together without dissolving the lentils.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The lentils dissolved before the rice finished. What would you change next time?",
+      "choices": [
+        "Add the rice before the lentils become fully soft.",
+        "Simmer the lentils into puree before adding rice.",
+        "Stir harder to redistribute the broken lentils."
+      ],
+      "answer": 0,
+      "because": "Starting the shared stage earlier preserves the lentils while the rice absorbs liquid.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/rice", "tier": "drafted"},
     {"thing": "ingredient/brown-lentil", "tier": "drafted"}

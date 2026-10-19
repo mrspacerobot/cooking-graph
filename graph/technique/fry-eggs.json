@@ -4,7 +4,12 @@
   "names": {"en": "Fry eggs"},
   "aliases": {"en": ["fry an egg", "huevos fritos"]},
   "does": "Cooks eggs in a generous depth of hot olive oil, so that the whites puff, bubble and turn lacy and crisp at the edges while the yolks stay soft.",
-  "intro": null,
+  "intro": {
+    "what": "This olive-oil method fries eggs with puffed whites and lacy, crisp edges.",
+    "why": "It teaches you to direct hot oil onto the white and manage browning without breaking the yolk.",
+    "idea": "Direct the oil",
+    "tier": "drafted"
+  },
   "how": [
     "Heat a good depth of olive oil in a small, deep frying pan until a breadcrumb dropped in sizzles at once.",
     "Break each egg into a small bowl first, so that a broken yolk or a shell is found before the pan.",
@@ -33,7 +38,52 @@
       "fix": "Break the egg into a small bowl first and slide it in low."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture does this egg-frying method aim for at the edge?",
+      "choices": ["Lacy and crisp.", "Pale and limp.", "Smooth and firm without bubbles."],
+      "answer": 0,
+      "because": "Hot oil makes the white puff and frill into crisp edges.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you add the egg without breaking the yolk?",
+      "choices": [
+        "Crack it directly high above the pan.",
+        "Slide it from a small bowl close to the oil.",
+        "Pour it rapidly into the centre from above."
+      ],
+      "answer": 1,
+      "because": "A bowl lets you spot broken yolks or shell before sliding the egg in low.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What suggests the oil was too cool?",
+      "choices": [
+        "A lively crackle as the egg enters.",
+        "Golden, lacy edges around the white.",
+        "A pale, limp white spread thin and greasy."
+      ],
+      "answer": 2,
+      "because": "Cool oil lets the egg spread into a greasy, limp white rather than puffing its edges.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The white is turning brown and leathery too quickly. What would you change?",
+      "choices": [
+        "Lower the heat and spoon oil over the white.",
+        "Increase the heat to warm the yolk faster.",
+        "Leave the same heat and stop spooning oil."
+      ],
+      "answer": 0,
+      "because": "Excess heat darkens the white too quickly; lower it and direct the oil over the white.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],

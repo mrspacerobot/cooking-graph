@@ -4,7 +4,12 @@
   "names": {"en": "Pour over", "fr": "Verser sur"},
   "aliases": {"en": ["pour on", "pour the sauce over", "pour the cream over"]},
   "does": "Pours a liquid or a loose sauce onto food laid in a dish, slowly and from the side, so that it settles into the gaps without washing off the top.",
-  "intro": null,
+  "intro": {
+    "what": "Pouring over adds liquid to arranged food gently from the side of its dish.",
+    "why": "It teaches you to fill gaps without dislodging seasoning, toppings or the arrangement.",
+    "idea": "Pour low from the side",
+    "tier": "drafted"
+  },
   "how": [
     "Lay the food out in the dish first, in the way it is to be served.",
     "Pour from low down near the rim, in a thin steady stream, and not straight onto the middle.",
@@ -21,7 +26,56 @@
     },
     {"mistake": "Filling the dish to the brim, so that it spills in the oven.", "fix": "Leave a gap below the rim."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why pour near the side rather than onto the middle?",
+      "choices": [
+        "To let liquid settle without washing off the top.",
+        "To push the topping away from the centre.",
+        "To leave the gaps beneath the food completely dry."
+      ],
+      "answer": 0,
+      "because": "A gentle side stream reaches the gaps with less force against the exposed surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What helps liquid settle into the gaps after pouring?",
+      "choices": [
+        "Shake the dish hard enough to move the pieces.",
+        "Tap the dish gently.",
+        "Press the topping down into the liquid."
+      ],
+      "answer": 1,
+      "because": "Gentle tapping settles the liquid without dismantling the arrangement.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suits a dish whose tops should brown?",
+      "choices": [
+        "All tops submerged beneath a full dish.",
+        "Liquid overflowing a crowded rim.",
+        "An even liquid level with the tops still exposed."
+      ],
+      "answer": 2,
+      "because": "Exposed tops can brown while liquid surrounds the lower parts.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Pouring washed the topping off. What would you change next time?",
+      "choices": [
+        "Pour from low near the rim in a thin stream.",
+        "Pour faster from higher above the centre.",
+        "Direct the stream onto the topping’s highest point."
+      ],
+      "answer": 0,
+      "because": "Reducing the height and force of the stream protects the surface arrangement.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/creams", "tier": "drafted"},
     {"thing": "group/sauces", "tier": "drafted"},

@@ -4,7 +4,12 @@
   "names": {"en": "Confit", "fr": "Confire"},
   "aliases": {"en": ["cook slowly in fat", "poach in oil", "slow-cook in oil"], "fr": ["mettre en confit"]},
   "does": "Cooks food slowly while it lies covered in fat held far below a simmer, so that it turns tender and silky and the fat takes up its flavour. The food is lifted out and the scented fat is kept.",
-  "intro": null,
+  "intro": {
+    "what": "Food cooks gently while submerged in fat that barely moves.",
+    "why": "Confit treats fat as a gentle cooking medium rather than a fierce frying bath, developing a tender texture without the same browning.",
+    "idea": "Gentle cooking in fat",
+    "tier": "drafted"
+  },
   "how": [
     "Season or cure the food first if it needs it, and dry it well.",
     "Choose a pot just big enough for the food to lie in one snug layer, with the fat covering it.",
@@ -26,7 +31,56 @@
       "fix": "Use a smaller pot, so that the fat covers the food."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "How does this confit method differ from frying?",
+      "choices": [
+        "The food is exposed above the fat to brown.",
+        "The fat stays gentle rather than sizzling around the food.",
+        "The fat is kept at a vigorous boil."
+      ],
+      "answer": 1,
+      "because": "Confit relies on restrained heat instead of the active heat used to form a fried crust.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the pot fit the food?",
+      "choices": [
+        "So widely that much of the food stays exposed.",
+        "With the food packed above the fat line.",
+        "Snugly enough for the fat to cover it."
+      ],
+      "answer": 2,
+      "because": "A snug pot helps provide full coverage without exposed parts drying.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the fat look like during cooking?",
+      "choices": [
+        "A slight shiver with occasional bubbles.",
+        "A vigorous rolling boil.",
+        "A surface spitting around a browned crust."
+      ],
+      "answer": 0,
+      "because": "Subtle movement is the cue for gentle fat rather than frying.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The food starts sizzling and browning. What should change?",
+      "choices": [
+        "Raise the heat to deepen the crust.",
+        "Lower the heat and move the pan off it briefly if needed.",
+        "Expose more of the food above the fat."
+      ],
+      "answer": 1,
+      "because": "Reducing the heat restores the gentle medium this method requires.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/salt-cod", "tier": "drafted"},
     {"thing": "ingredient/garlic", "tier": "drafted"},

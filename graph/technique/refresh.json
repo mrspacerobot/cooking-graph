@@ -6,7 +6,12 @@
     "en": ["shock", "refresh in iced water", "cool in iced water", "plunge into iced water", "shock in cold water"]
   },
   "does": "Stops the cooking at once by plunging hot food into iced water, which keeps green vegetables bright and firm.",
-  "intro": null,
+  "intro": {
+    "what": "Refreshing plunges hot food into iced water to halt further softening.",
+    "why": "It teaches you to manage the heat that food retains after leaving the pan.",
+    "idea": "Stop lingering heat",
+    "tier": "drafted"
+  },
   "how": [
     "Have a large bowl of water and ice ready before the food is cooked.",
     "Lift the food straight from the pot into the iced water.",
@@ -23,7 +28,56 @@
       "fix": "Take it out as soon as it is cold and drain it on a cloth."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why refresh green vegetables after cooking?",
+      "choices": [
+        "To stop further cooking and retain firmness.",
+        "To keep softening them slowly.",
+        "To draw out as much flavour as possible."
+      ],
+      "answer": 0,
+      "because": "Rapid cooling checks the continued softening caused by heat remaining in the vegetables.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should the iced-water bowl be prepared?",
+      "choices": [
+        "After the food has cooled on a plate.",
+        "Before the food leaves the cooking pot.",
+        "After draining the vegetables for serving."
+      ],
+      "answer": 1,
+      "because": "Having the cooling bath ready allows an immediate transfer rather than continued cooking while you prepare it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture check guides removal from the bath?",
+      "choices": [
+        "Only the outside feels cool.",
+        "The piece has become waterlogged.",
+        "The piece feels cold to the middle."
+      ],
+      "answer": 2,
+      "because": "Cooling the centre removes lingering heat; further soaking adds no benefit to this step.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The refreshed vegetables taste washed out. What should change?",
+      "choices": [
+        "Drain them as soon as they are cold.",
+        "Leave them soaking until service.",
+        "Replace the bath repeatedly while they wait."
+      ],
+      "answer": 0,
+      "because": "Prolonged soaking washes out flavour, so cooling and draining should be separate steps.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/green-vegetables", "tier": "drafted"},
     {"thing": "group/root-vegetables", "tier": "drafted"},

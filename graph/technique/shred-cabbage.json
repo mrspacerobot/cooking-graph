@@ -4,7 +4,12 @@
   "names": {"en": "Shred cabbage"},
   "aliases": {"en": ["shred the cabbage", "cut cabbage into fine threads"]},
   "does": "Cuts cabbage into very fine, long threads, which stay crisp and fresh. They are then often soaked briefly in cold water, so that they fluff and stiffen.",
-  "intro": null,
+  "intro": {
+    "what": "Fine cabbage shredding makes long light threads for a crisp accompaniment.",
+    "why": "It teaches you how thin cutting and thorough drying influence both bite and the liquid on the plate.",
+    "idea": "Fine threads, dry finish",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the cabbage into wedges and cut out the hard core.",
     "Stack a few leaves, roll them up tightly and slice them across as thin as paper.",
@@ -22,7 +27,56 @@
     },
     {"mistake": "Serving them wet, so that the plate floods.", "fix": "Drain and dry them well."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture is sought from these cabbage threads?",
+      "choices": [
+        "Thick tough strips with a firm core.",
+        "A crushed wet cabbage paste.",
+        "Fine loose strands with a crisp bite."
+      ],
+      "answer": 2,
+      "because": "Very thin slicing creates a lighter accompaniment while retaining crunch.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How are stacked cabbage leaves prepared for fine slicing?",
+      "choices": [
+        "Roll them tightly and slice across the roll.",
+        "Leave them loosely piled and chop at random.",
+        "Slice through the hard core with the leaves."
+      ],
+      "answer": 0,
+      "because": "A compact roll steadies the leaves for consistent thin cuts.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which movement suggests light fine shreds?",
+      "choices": [
+        "They fall as dense stiff wedges.",
+        "They spring up loosely when lifted.",
+        "They cling together in a wet paste."
+      ],
+      "answer": 1,
+      "because": "Fine separate threads lift lightly instead of forming a heavy mass.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The cabbage watered down the plate. What would you change next time?",
+      "choices": [
+        "Serve it directly from the soaking bowl.",
+        "Add dressing before draining the water.",
+        "Drain well and dry it in a cloth after soaking."
+      ],
+      "answer": 2,
+      "because": "Removing free water keeps the cabbage from diluting the rest of the dish.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/cabbage", "tier": "drafted"}
   ],

@@ -4,7 +4,12 @@
   "names": {"en": "Bake in parchment", "fr": "Cuire en papillote"},
   "aliases": {"en": ["en papillote", "cook en papillote", "bake in a parcel", "bake in paper"]},
   "does": "Seals food in a paper parcel, so that it steams in its own juices in the oven.",
-  "intro": null,
+  "intro": {
+    "what": "A tightly folded paper parcel holds food and its juices together in the oven.",
+    "why": "The seal creates a small steaming environment, showing how an enclosure changes moisture and aroma during cooking.",
+    "idea": "A sealed steaming parcel",
+    "tier": "drafted"
+  },
   "how": [
     "Cut a large sheet of paper and fold it in half.",
     "Lay the vegetables and then the fish on one side of the fold, with butter, seasoning and a splash of liquid.",
@@ -26,7 +31,56 @@
       "fix": "Cut them fine and soften them in butter first."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does the paper parcel mainly retain?",
+      "choices": [
+        "Steam and aromatic juices.",
+        "Dry oven air moving freely across the food.",
+        "Only the added butter, while steam escapes freely."
+      ],
+      "answer": 0,
+      "because": "The tightly folded parcel contains moisture and aromas released inside it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the paper edges be closed?",
+      "choices": [
+        "With a wide opening along the top.",
+        "With tight overlapping folds.",
+        "With a loose fold that unrolls easily."
+      ],
+      "answer": 1,
+      "because": "Tight overlapping folds help retain the steam needed for the parcel method.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What does a puffed parcel suggest?",
+      "choices": [
+        "The parcel has lost all of its liquid.",
+        "The folds have opened and released the steam.",
+        "Steam has collected inside the sealed paper."
+      ],
+      "answer": 2,
+      "because": "The paper expands as steam collects inside the sealed folds.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Steam escapes through loose edges. What needs attention?",
+      "choices": [
+        "Make the folds tighter and secure the ends.",
+        "Widen the openings to release more steam.",
+        "Spread the paper flat around the food."
+      ],
+      "answer": 0,
+      "because": "A better seal restores the moist enclosure rather than letting steam escape.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/fish-and-shellfish", "tier": "drafted"}
   ],

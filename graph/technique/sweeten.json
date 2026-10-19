@@ -4,7 +4,12 @@
   "names": {"en": "Sweeten"},
   "aliases": {"en": ["add sugar", "sweeten to taste"]},
   "does": "Adds sugar to a food a little at a time and tastes after each addition, to bring it to the right level of sweetness without hiding its own taste.",
-  "intro": null,
+  "intro": {
+    "what": "Sweetening adds sugar gradually until it balances rather than hides the food’s own taste.",
+    "why": "It teaches you to dissolve additions fully and judge the result before adding more.",
+    "idea": "Balance before adding more",
+    "tier": "drafted"
+  },
   "how": [
     "Cook the food until it is soft enough to take up the sugar.",
     "Add the sugar in portions, stirring each in until it has dissolved.",
@@ -25,7 +30,56 @@
       "fix": "Cook them soft first."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What should balanced sweetness preserve?",
+      "choices": [
+        "The flavour of the food beneath the sugar.",
+        "Only the taste of sugar.",
+        "A gritty layer of undissolved sugar."
+      ],
+      "answer": 0,
+      "because": "Sweetness should support the ingredient rather than overwhelm its character.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should the next sugar addition be judged?",
+      "choices": [
+        "Before the previous sugar has dissolved.",
+        "After stirring the previous addition until dissolved and tasting.",
+        "Only after adding all the sugar available."
+      ],
+      "answer": 1,
+      "because": "Dissolving distributes sweetness so tasting can guide the next addition accurately.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance indicates the sugar has dissolved?",
+      "choices": [
+        "A pile of crystals sits at the base.",
+        "Dry sugar coats the surface.",
+        "No sugar grains remain visible."
+      ],
+      "answer": 2,
+      "because": "Sugar needs to dissolve into the food rather than remain as separate gritty crystals.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A batch becomes overwhelmingly sweet. What should change next time?",
+      "choices": [
+        "Add sugar gradually and taste between additions.",
+        "Add the entire amount before tasting.",
+        "Judge the sweetness before the previous addition has dissolved."
+      ],
+      "answer": 0,
+      "because": "Small additions let you stop before sweetness masks the food.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/azuki-bean", "tier": "drafted"},
     {"thing": "group/firm-fruits", "tier": "drafted"}

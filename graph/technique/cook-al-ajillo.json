@@ -4,7 +4,12 @@
   "names": {"en": "Cook al ajillo"},
   "aliases": {"en": ["al ajillo", "sizzle in garlic oil", "cook in garlic oil", "cook in garlic and chilli oil"]},
   "does": "Cooks small pieces of shellfish or mushroom for a short time in a generous pool of olive oil scented with sliced garlic and a piece of hot pepper, in a shallow earthenware dish. The oil becomes the sauce, and the food reaches the table still sizzling in it.",
-  "intro": null,
+  "intro": {
+    "what": "Garlic and pepper scent olive oil before small pieces cook in the same shallow dish.",
+    "why": "The oil becomes the sauce, so managing the garlic colour controls the flavour of the whole dish.",
+    "idea": "Garlic flavours the oil",
+    "tier": "drafted"
+  },
   "how": [
     "Put the olive oil, the sliced garlic and the pieces of hot pepper in a cold earthenware dish and set it over a medium heat, so that the garlic warms along with the oil.",
     "Let the oil heat until the garlic starts to bubble gently and turns pale gold. Do not let it brown.",
@@ -31,7 +36,56 @@
     },
     {"mistake": "Adding wet shrimp, which spit and cool the oil.", "fix": "Pat them dry first."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why does garlic colour matter especially here?",
+      "choices": [
+        "The oil is discarded before serving.",
+        "Brown garlic gives the same mild flavour as pale gold garlic.",
+        "The garlic flavours all the oil that becomes the sauce."
+      ],
+      "answer": 2,
+      "because": "Bitter garlic affects the whole pool of oil surrounding the food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How does the garlic begin cooking in this method?",
+      "choices": [
+        "In cold oil that warms with it.",
+        "Thrown into already smoking oil.",
+        "Dry in the dish before oil is added."
+      ],
+      "answer": 0,
+      "because": "Warming garlic with the oil gives more control before it reaches pale gold.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which garlic cue is intended before adding the food?",
+      "choices": [
+        "Dark brown with a sharp bitter smell.",
+        "Pale gold with a sweet aroma.",
+        "Black edges and a smoking dish."
+      ],
+      "answer": 1,
+      "because": "Pale gold develops garlic flavour without the bitterness of excessive browning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The garlic made the oil bitter. What should change next time?",
+      "choices": [
+        "Keep browning the garlic before adding food.",
+        "Leave the garlic in smoking oil longer.",
+        "Add the food while the garlic is pale gold rather than brown."
+      ],
+      "answer": 2,
+      "because": "Stopping the garlic at the intended colour prevents its burnt flavour spreading through the sauce.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/shrimp", "tier": "drafted"},
     {"thing": "ingredient/mushroom", "tier": "drafted"}

@@ -4,7 +4,12 @@
   "names": {"en": "Fry fritters"},
   "aliases": {"en": ["fry in spoonfuls", "make fritters"]},
   "does": "Drops spoonfuls of a thick mixture of grated vegetable, egg, cheese and a little flour into hot oil, flattens them lightly and turns them once, so that each fritter is crisp and golden outside and soft inside.",
-  "intro": null,
+  "intro": {
+    "what": "Frying these vegetable fritters makes flattened spoonfuls crisp outside and soft within.",
+    "why": "It connects mixture thickness, space in the pan and patient turning with a fritter that holds together.",
+    "idea": "Set before turning",
+    "tier": "drafted"
+  },
   "how": [
     "Make the mixture thick enough to sit on a spoon. If it runs, stir in a little more flour. If it is stiff and dry, loosen it with a spoonful of water.",
     "Warm a shallow layer of oil in a wide pan until a crumb of the mixture sizzles at once.",
@@ -33,7 +38,56 @@
       "fix": "Wait until the underside is golden and the edges are set."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why flatten the spoonfuls lightly in this method?",
+      "choices": [
+        "To spread them into a joined sheet.",
+        "To form flat rounds for frying.",
+        "To squeeze their liquid into the oil."
+      ],
+      "answer": 1,
+      "because": "The spoonfuls are pressed into separate flat rounds rather than left as tall lumps.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How thick should the mixture be before frying?",
+      "choices": [
+        "Thin enough to pour in a stream.",
+        "Dry enough to crumble apart.",
+        "Thick enough to sit on a spoon."
+      ],
+      "answer": 2,
+      "because": "A mixture that sits on a spoon can be dropped and flattened into separate fritters.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which cue suggests a fritter can be turned?",
+      "choices": [
+        "A golden underside and edges that look set.",
+        "A pale underside with loose edges.",
+        "The first bubbles before the underside colours."
+      ],
+      "answer": 0,
+      "because": "Waiting for colour and set edges helps the fritter hold together as it turns.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The fritters steamed and joined together. What would you change for the next batch?",
+      "choices": [
+        "Press them closer to share the heat.",
+        "Fry fewer at a time with space between them.",
+        "Add more mixture to fill the spaces."
+      ],
+      "answer": 1,
+      "because": "Space between fritters prevents crowding that makes them steam and merge.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/courgette-fritter-mixture", "tier": "drafted"}
   ],

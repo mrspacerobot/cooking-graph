@@ -4,7 +4,12 @@
   "names": {"en": "Fry croquetas"},
   "aliases": {"en": ["fry croquettes", "fry the croquetas"]},
   "does": "Fries coated croquetas in a few at a time in hot oil deep enough to cover them, turning them until the shell is deep golden all round and the paste inside has melted soft.",
-  "intro": null,
+  "intro": {
+    "what": "Frying croquetas turns their coating into a crisp golden shell around a soft paste.",
+    "why": "It teaches you to keep frying heat steady and turn a delicate shell without piercing it.",
+    "idea": "Keep the shell intact",
+    "tier": "drafted"
+  },
   "how": [
     "Heat plenty of oil in a deep, heavy pan. A crumb dropped in should sizzle at once and rise.",
     "Lower a few croquetas in with a slotted spoon. Do not crowd the pan, or the oil cools and the shells go greasy.",
@@ -27,7 +32,56 @@
     },
     {"mistake": "Piercing the shell with a fork while turning.", "fix": "Turn them with a slotted spoon."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why fry croquetas in small batches?",
+      "choices": [
+        "To keep the coating pale and soft.",
+        "To avoid cooling the oil and making the shells greasy.",
+        "To let the shells press tightly against each other."
+      ],
+      "answer": 1,
+      "because": "Crowding lowers the oil heat, which can make the shell absorb oil and leak.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you turn them?",
+      "choices": [
+        "By piercing the shell with a fork.",
+        "By squeezing the middle firmly with a fork.",
+        "Gently with a slotted spoon."
+      ],
+      "answer": 2,
+      "because": "A slotted spoon turns the croqueta without puncturing its coating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which shell appearance is the aim?",
+      "choices": [
+        "Even deep gold without cracks.",
+        "A pale shell with paste leaking through cracks.",
+        "Dark patches around a wet coating."
+      ],
+      "answer": 0,
+      "because": "An evenly coloured intact shell is the intended result of gentle frying and turning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The oil cools when a large batch goes in. What would you change for the next batch?",
+      "choices": [
+        "Add the next batch before the oil recovers.",
+        "Fry fewer and let the oil heat up again.",
+        "Keep the pan tightly packed to stop movement."
+      ],
+      "answer": 1,
+      "because": "Smaller batches and reheating address the drop in oil heat caused by crowding.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/croqueta-paste", "tier": "drafted"}
   ],

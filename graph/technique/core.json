@@ -4,7 +4,12 @@
   "names": {"en": "Core", "fr": "Évider"},
   "aliases": {"en": ["remove the core", "hollow out", "core out"]},
   "does": "Takes out the hard centre, the seeds or the pith of a fruit or vegetable, or hollows it out, so that the flesh is left as an even wall that cooks evenly or holds a filling.",
-  "intro": null,
+  "intro": {
+    "what": "The hard centre, seeds or pith are removed while an intact wall of flesh remains.",
+    "why": "When the food will hold a filling, the wall is part of the structure: careless hollowing can create leaks or collapse.",
+    "idea": "A hollow centre with intact walls",
+    "tier": "drafted"
+  },
   "how": [
     "Cut off the top, or push the corer in from the stem end, keeping the wall of the flesh even.",
     "Twist the corer, or run the tip of a small knife round the inside, and lift out the core and seeds.",
@@ -29,7 +34,56 @@
       "fix": "Leave a wall of about the width of a finger."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why preserve an even unbroken wall when coring for a filling?",
+      "choices": [
+        "It holds the filling without leaking.",
+        "It lets the filling drain through the sides.",
+        "It lets the filling spread through a deliberately thin broken shell."
+      ],
+      "answer": 0,
+      "because": "The remaining flesh forms the container for the filling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should the corer be guided?",
+      "choices": [
+        "Against the outer wall until it cuts through.",
+        "Through the centre while keeping the wall intact.",
+        "Across the exterior without reaching the core."
+      ],
+      "answer": 1,
+      "because": "A centred path removes the hard middle without puncturing the surrounding flesh.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should remain after coring?",
+      "choices": [
+        "A hard seed-filled centre under torn sides.",
+        "A paper-thin broken shell of flesh.",
+        "A clean hollow with an even intact wall."
+      ],
+      "answer": 2,
+      "because": "The hollow should be cleared without sacrificing the structure around it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The wall collapsed after excessive scooping. What would you change next time?",
+      "choices": [
+        "Remove less surrounding flesh.",
+        "Scrape the wall thinner before filling.",
+        "Cut openings through the base."
+      ],
+      "answer": 0,
+      "because": "Keeping sufficient flesh preserves the hollowed food structure.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/firm-fruits", "tier": "drafted"},
     {"thing": "group/leafy-heads", "tier": "drafted"},

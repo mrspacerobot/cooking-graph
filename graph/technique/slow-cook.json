@@ -4,7 +4,12 @@
   "names": {"en": "Slow cook"},
   "aliases": {"en": ["cook slowly in a sealed pot"]},
   "does": "Cooks a tough cut for a very long time at the lowest heat in a closed pot with only a little liquid, so that it softens in its own juices and fat until it falls apart, with its taste deep and little left to reduce.",
-  "intro": null,
+  "intro": {
+    "what": "This slow-cooking method softens a tough cut in a tightly closed pot with little liquid.",
+    "why": "It teaches you how low heat and retained moisture develop texture without a large volume of broth.",
+    "idea": "Low heat, closed pot",
+    "tier": "drafted"
+  },
   "how": [
     "Season the meat early, and rub it with the spices and the fat.",
     "Pack it snugly into the pot with the aromatics, and add only a little liquid, well below the top of the meat.",
@@ -31,7 +36,56 @@
       "fix": "Use the lowest heat and a heavy pot."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep the pot tightly closed for most of this method?",
+      "choices": [
+        "To let liquid evaporate as quickly as possible.",
+        "To retain steam and moisture during slow cooking.",
+        "To brown the top as in an open roasting tin."
+      ],
+      "answer": 1,
+      "because": "The closed pot holds moisture around the meat while it softens slowly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the added liquid relate to the meat?",
+      "choices": [
+        "Completely submerge it as for a broth.",
+        "Reach the meat surface without leaving the top exposed.",
+        "Remain well below its top."
+      ],
+      "answer": 2,
+      "because": "This method depends on a small amount of liquid and the juices released into the closed pot.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture change is being sought?",
+      "choices": [
+        "The meat gives way under light fork pressure.",
+        "The meat remains springy and resistant.",
+        "Only a crisp surface develops."
+      ],
+      "answer": 0,
+      "because": "Giving way under light fork pressure shows the softened texture this method aims for.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce is thin because too much liquid was added. What should change next time?",
+      "choices": [
+        "Add more stock to speed the softening.",
+        "Start with little liquid below the top of the meat.",
+        "Open the lid repeatedly throughout cooking."
+      ],
+      "answer": 1,
+      "because": "Limiting added liquid keeps the resulting juices concentrated without excessive later reduction.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/braising-cuts", "tier": "drafted"}
   ],

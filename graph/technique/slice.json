@@ -4,7 +4,12 @@
   "names": {"en": "Slice", "fr": "Émincer"},
   "aliases": {"en": ["cut into slices", "slice thinly"]},
   "does": "Cuts food into flat pieces of one thickness.",
-  "intro": null,
+  "intro": {
+    "what": "Slicing cuts food into flat pieces of consistent thickness with a forward-and-down stroke.",
+    "why": "It teaches you to guide the blade smoothly instead of crushing food with downward pressure.",
+    "idea": "Slide rather than crush",
+    "tier": "drafted"
+  },
   "how": [
     "Give the food a flat side to rest on.",
     "Hold it with your fingertips tucked back and your knuckles against the side of the blade.",
@@ -25,7 +30,56 @@
     },
     {"mistake": "Slices that grow thicker as the hand tires.", "fix": "Slow down. Even matters more than fast."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the main aim of slicing evenly?",
+      "choices": [
+        "Flat pieces of consistent thickness.",
+        "Chunks with varied thicknesses.",
+        "A finely crushed mixture."
+      ],
+      "answer": 0,
+      "because": "Consistent cuts give the slices a predictable shape rather than an uneven chopped texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the blade move through the food?",
+      "choices": [
+        "Straight down with repeated heavy pressure.",
+        "Forward and down in a smooth stroke.",
+        "Sideways against the guiding fingers."
+      ],
+      "answer": 1,
+      "because": "Using the length of the blade cuts more smoothly than forcing the edge straight downward.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What might a repeated knock on the board suggest?",
+      "choices": [
+        "The slices are necessarily even.",
+        "The blade is moving quietly forward through the food.",
+        "A downward chopping action rather than a smooth slicing stroke."
+      ],
+      "answer": 2,
+      "because": "The sound can reveal a hard downward movement instead of a controlled sliding cut.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Soft tomato is being crushed rather than sliced. What should change?",
+      "choices": [
+        "Slide forward as you cut and check blade sharpness.",
+        "Press harder directly downward.",
+        "Make faster downward blows."
+      ],
+      "answer": 0,
+      "because": "A sliding sharp edge cuts the skin and flesh with less crushing pressure.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/alliums", "tier": "drafted"},

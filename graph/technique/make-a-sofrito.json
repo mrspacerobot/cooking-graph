@@ -4,7 +4,12 @@
   "names": {"en": "Make a sofrito"},
   "aliases": {"en": ["make sofrito", "cook a sofrito"]},
   "does": "Cooks onion, garlic and ripe tomato slowly in a generous amount of olive oil until their water has gone and what is left is a dark, sweet, jammy paste. It is the base of rice dishes, stews and sauces.",
-  "intro": null,
+  "intro": {
+    "what": "This tomato-based sofrito slowly cooks onion, garlic and tomato in olive oil to a jammy paste.",
+    "why": "It teaches you to wait for moisture to leave and sweetness to develop without scorching the base.",
+    "idea": "From watery tomato to jammy paste",
+    "tier": "drafted"
+  },
   "how": [
     "Chop the onion and the garlic fine, if they are used. Grate or chop the tomato and keep its juice.",
     "Warm a generous amount of olive oil in a wide pan over a low to medium heat.",
@@ -35,7 +40,56 @@
       "fix": "Take the pan off the heat first."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What distinguishes the developed sofrito from its starting mixture?",
+      "choices": [
+        "Firm tomato pieces suspended in water.",
+        "Raw garlic remaining sharply scented.",
+        "A dark, sweet, jammy paste rather than wet sharp tomato."
+      ],
+      "answer": 2,
+      "because": "Slow cooking removes water and develops the sweet concentrated base.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you handle the heat as tomato cooks down?",
+      "choices": [
+        "Keep it low to moderate rather than hurrying it.",
+        "Use the strongest heat until the garlic darkens.",
+        "Cover tightly so all tomato water stays in."
+      ],
+      "answer": 0,
+      "because": "Rushing over high heat scorches the garlic and paste instead of developing it gently.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which cue suggests the sofrito has developed?",
+      "choices": [
+        "Bright wet tomato with a sharp raw smell.",
+        "Oil seeps at the edges of a deep brick-coloured paste.",
+        "A loose mixture without visible thickening."
+      ],
+      "answer": 1,
+      "because": "Oil at the edges and a dark jammy texture show the tomato has cooked down.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The paste starts sticking as the pan dries. What would you do?",
+      "choices": [
+        "Raise the heat to finish browning it.",
+        "Stop stirring and wait for a crust.",
+        "Lower the heat and add a little water."
+      ],
+      "answer": 2,
+      "because": "Gentler heat and a splash of water loosen the paste before it scorches.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"},
     {"thing": "ingredient/garlic", "tier": "drafted"},

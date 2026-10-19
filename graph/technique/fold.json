@@ -4,7 +4,12 @@
   "names": {"en": "Fold", "fr": "Incorporer"},
   "aliases": {"en": ["fold in", "fold together"]},
   "does": "Combines a light, airy mixture with a heavier one while keeping as much of the air as possible.",
-  "intro": null,
+  "intro": {
+    "what": "Folding brings an airy mixture into a heavier mixture while preserving its volume.",
+    "why": "It teaches you to lift and turn gently, stopping before repeated mixing knocks the air out.",
+    "idea": "Preserve the air",
+    "tier": "drafted"
+  },
   "how": [
     "Stir a small part of the whipped mixture into the heavy one to loosen it.",
     "Tip the rest on top.",
@@ -23,7 +28,56 @@
       "fix": "Cut, lift and turn. Stop early: a few streaks do less harm than more folding."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why fold rather than stir an airy mixture vigorously?",
+      "choices": [
+        "To retain as much of its air as possible.",
+        "To make the foam denser before combining it.",
+        "To remove large bubbles through vigorous mixing."
+      ],
+      "answer": 0,
+      "because": "The aim is to combine the mixtures while keeping the volume provided by the air.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What movement combines the mixtures gently?",
+      "choices": [
+        "Stir quickly around the bowl in circles.",
+        "Cut down, sweep across the bottom and lift over.",
+        "Press the mixtures firmly against the bowl sides."
+      ],
+      "answer": 1,
+      "because": "Cutting, lifting and turning combines the mixture without the flattening effect of circular stirring.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What appearance suggests successful folding?",
+      "choices": [
+        "A flat batter that has lost much of its volume.",
+        "Separate heavy lumps beneath untouched foam.",
+        "A light mixture that still stands in soft mounds."
+      ],
+      "answer": 2,
+      "because": "Soft mounds and retained volume show the mixture has stayed light as it combined.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Repeated stirring has flattened the batter. What would you change next time?",
+      "choices": [
+        "Use lifting folds and stop before overmixing.",
+        "Stir faster until the volume returns.",
+        "Continue stirring until every tiny streak disappears."
+      ],
+      "answer": 0,
+      "because": "Overworking knocks air out; a few remaining streaks do less harm than excessive folding.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg-white", "tier": "drafted"},
     {"thing": "ingredient/cream", "tier": "drafted"}

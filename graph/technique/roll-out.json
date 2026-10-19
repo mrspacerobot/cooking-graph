@@ -4,7 +4,12 @@
   "names": {"en": "Roll out", "fr": "Abaisser"},
   "aliases": {"en": ["roll out dough", "roll flat", "rolling out"], "fr": ["étaler la pâte"]},
   "does": "Flattens a dough with a rolling pin into an even sheet of the thickness the dish asks for, whether thin enough to see through, for a filled pastry, or thick enough to stay soft, for a flat bread.",
-  "intro": null,
+  "intro": {
+    "what": "Rolling out flattens rested dough into an even sheet with a pin.",
+    "why": "It teaches you to balance dough relaxation, light flouring and controlled pressure.",
+    "idea": "Even pressure, rested dough",
+    "tier": "drafted"
+  },
   "how": [
     "Rest the dough first, or it will spring back. Shape it into a flat round or square before the pin touches it.",
     "Dust the surface and the pin lightly with flour, so that the dough slides and does not stick.",
@@ -30,7 +35,56 @@
       "fix": "Roll from the middle outwards and stop short of the edge."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the main aim when rolling out a dough sheet?",
+      "choices": [
+        "A thin rim surrounding a thick centre.",
+        "As much surface flour as the dough can take.",
+        "Even thickness suited to the dish."
+      ],
+      "answer": 2,
+      "because": "Even thickness makes the sheet behave consistently when cut, filled or cooked.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should each rolling stroke begin?",
+      "choices": [
+        "In the middle, working outward while turning the dough.",
+        "At the rim, pressing toward the centre.",
+        "Across the edges repeatedly without turning."
+      ],
+      "answer": 0,
+      "because": "Working outward and turning spreads the dough while avoiding a persistently thick middle.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suggests the sheet is not sticking?",
+      "choices": [
+        "It stretches while its base stays fixed.",
+        "It slides freely when nudged.",
+        "It tears whenever it is lifted."
+      ],
+      "answer": 1,
+      "because": "A sheet that slides can be turned without pulling and tearing attached patches.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The dough keeps shrinking back under the pin. What should you do?",
+      "choices": [
+        "Press harder until it stops resisting.",
+        "Keep adding flour while forcing it wider.",
+        "Cover it and let it rest before rolling again."
+      ],
+      "answer": 2,
+      "because": "Resting lets a tense dough relax; more force or flour does not address that resistance.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"},
     {"thing": "group/pastry", "tier": "drafted"}

@@ -4,7 +4,12 @@
   "names": {"en": "Peel", "fr": "Éplucher"},
   "aliases": {"en": ["skin", "shell"], "fr": ["décortiquer"]},
   "does": "Takes off the skin or the shell, and as little as possible of what lies under it.",
-  "intro": null,
+  "intro": {
+    "what": "Peeling removes skin or shell while keeping as much of the food beneath as possible.",
+    "why": "It teaches you to follow a curved surface rather than cut away useful flesh with the covering.",
+    "idea": "Follow the surface",
+    "tier": "drafted"
+  },
   "how": [
     "Wash the vegetable first, so that dirt does not travel from the skin to the flesh.",
     "Draw a peeler along its length in long strokes, turning it as you go.",
@@ -21,7 +26,56 @@
       "fix": "Peel just before use, or hold the pieces under water with a little lemon juice."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim when peeling a vegetable?",
+      "choices": [
+        "Cut away a thick layer with every stroke.",
+        "Leave deep grooves to show where the skin was.",
+        "Remove the skin with minimal loss beneath it."
+      ],
+      "answer": 2,
+      "because": "Controlled shallow removal keeps more useful flesh while leaving a clean surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should a thick knobbly vegetable be prepared for knife peeling?",
+      "choices": [
+        "Cut a flat base and follow its curve downward.",
+        "Balance it on its rounded end and cut straight slabs.",
+        "Cut deeply across the middle before removing skin."
+      ],
+      "answer": 0,
+      "because": "A flat base steadies the vegetable while the blade follows its natural contour.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which surface suggests careful peeling?",
+      "choices": [
+        "Deep cuts beside remaining strips of skin.",
+        "Smooth flesh without skin patches or deep gouges.",
+        "Ragged flesh under an intact outer shell."
+      ],
+      "answer": 1,
+      "because": "A clean smooth surface shows the covering removed without needless loss of flesh.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Peeled celeriac browned while waiting. What would you change next time?",
+      "choices": [
+        "Leave it exposed for longer before cooking.",
+        "Dry the cut pieces in warm air.",
+        "Peel near use or hold it in water with a little lemon."
+      ],
+      "answer": 2,
+      "because": "Limiting exposure or protecting the cut surface reduces browning after peeling.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/alliums", "tier": "drafted"},

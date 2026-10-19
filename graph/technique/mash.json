@@ -4,7 +4,12 @@
   "names": {"en": "Mash", "fr": "Écraser"},
   "aliases": {"en": ["mash potatoes", "make a potato purée"]},
   "does": "Crushes boiled potatoes while they are hot and dry, then beats in butter and hot milk to make a smooth purée.",
-  "intro": null,
+  "intro": {
+    "what": "This potato mash crushes hot, steam-dried potatoes, then incorporates butter and hot milk.",
+    "why": "It teaches you to choose gentle tools and control moisture for a soft purée without gluey stretch.",
+    "idea": "Hot and dry before mashing",
+    "tier": "drafted"
+  },
   "how": [
     "Boil floury potatoes in their skins or in large pieces, starting in cold salted water.",
     "Drain them and let them steam dry for a moment.",
@@ -25,7 +30,56 @@
       "fix": "Mash them hot, straight after they have steamed dry."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture should this potato mash have?",
+      "choices": [
+        "Elastic and sticky like a stretched paste.",
+        "Smooth and soft without gluey stretch.",
+        "Wet liquid around firm potato lumps."
+      ],
+      "answer": 1,
+      "because": "The intended purée is smooth and glossy, with neither lumps nor gluey elasticity.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should you rice or mill the potatoes?",
+      "choices": [
+        "Once cold and still soaked in cooking water.",
+        "Before draining any water from the pot.",
+        "While hot, after draining and briefly steaming dry."
+      ],
+      "answer": 2,
+      "because": "Hot, steam-dried potatoes mash more readily than cold or waterlogged ones.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which spoon cue matches the intended texture?",
+      "choices": [
+        "A soft peak without lumps or stretchiness.",
+        "Long sticky strings when the spoon lifts.",
+        "Firm lumps surrounded by loose milk."
+      ],
+      "answer": 0,
+      "because": "A smooth soft peak shows the intended body without the gluey texture of overprocessing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Blade processing has made the potatoes gluey. What would you change next time?",
+      "choices": [
+        "Run the blender longer to break the gluey texture.",
+        "Use a ricer, mill or masher and stop when smooth.",
+        "Add cold potatoes to the processor and beat harder."
+      ],
+      "answer": 1,
+      "because": "The blender can turn potatoes gluey; gentler mashing tools preserve the intended texture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/potato", "tier": "drafted"}
   ],

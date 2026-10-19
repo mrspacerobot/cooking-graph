@@ -72,7 +72,8 @@ There is no quiz score or cooking-completion control. Empty introductions,
 question catalogs and practice recipes are shown as explicit gaps.
 
 Technique cards show the same introduction and question catalog alongside the
-existing method, cues and mistakes. A lesson's reading hash includes the technique
+existing method, cues and mistakes. Choose **Techniques** and filter by cuisine
+to review techniques outside the French foundation course too. A lesson's reading hash includes the technique
 introductions and questions displayed in it, so changed writing starts fresh
 reading progress rather than reusing marks for the previous version.
 

@@ -4,7 +4,12 @@
   "names": {"en": "Steam couscous", "fr": "Cuire le couscous à la vapeur"},
   "aliases": {"en": ["steam the couscous", "couscous steaming"]},
   "does": "Swells dry couscous grains in the steam of a simmering stew, in rounds, so that each grain turns light and separate. The grains are rubbed with water and oil, steamed, tipped out, sprinkled again and raked apart, then steamed once more until they are tender.",
-  "intro": null,
+  "intro": {
+    "what": "Traditional couscous steaming hydrates grains in stages above simmering liquid.",
+    "why": "It teaches you to combine loose grain handling, steam circulation and gradual wetting for separate tender grains.",
+    "idea": "Steam through loose grains",
+    "tier": "drafted"
+  },
   "how": [
     "Tip the dry grains into a wide dish, sprinkle them with salted water and rub them between the palms until every grain is damp and nothing is clumped. Work in a little oil.",
     "Bring the stew, or plain water, to a simmer in the base of the couscoussier. Seal the seam between the base and the top with a strip of damp cloth or a paste of flour and water, so that no steam escapes there.",
@@ -35,7 +40,56 @@
       "fix": "Keep them above the liquid, where only the steam reaches them."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep these couscous grains above the liquid?",
+      "choices": [
+        "To keep them dry throughout the process.",
+        "To soften them with steam rather than turn them into a wet paste.",
+        "To let them sit directly in the stew."
+      ],
+      "answer": 1,
+      "because": "The perforated upper pot exposes the grains to steam without immersing them in broth.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the grains sit in the perforated top?",
+      "choices": [
+        "Pressed firmly into a dense block.",
+        "Wrapped tightly so steam cannot enter.",
+        "Piled loosely so steam can pass through."
+      ],
+      "answer": 2,
+      "because": "Loose piling leaves routes for steam through the whole bed of grains.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which sign confirms steam is moving through the pile?",
+      "choices": [
+        "Steam appears across the top of the grains.",
+        "Steam leaks only from the join below.",
+        "The surface stays dry while the base clumps."
+      ],
+      "answer": 0,
+      "because": "Steam showing through the pile demonstrates circulation rather than escape around it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The grains turn gluey after wetting. What should change?",
+      "choices": [
+        "Pour on more water at once.",
+        "Sprinkle water gradually and rake apart the lumps.",
+        "Press the wet grains together before steaming."
+      ],
+      "answer": 1,
+      "because": "Small additions and separation control absorption without creating a sticky mass.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/couscous", "tier": "drafted"}
   ],

@@ -4,7 +4,12 @@
   "names": {"en": "Toast mochi"},
   "aliases": {"en": ["grill mochi", "toast rice cake"]},
   "does": "Browns pieces of hard rice cake under a grill, in a dry pan or in an oven until they puff, blister and turn soft and stretchy inside, with a lightly crisp skin.",
-  "intro": null,
+  "intro": {
+    "what": "Toasting mochi makes hard rice cake puff and soften beneath a lightly crisp skin.",
+    "why": "It teaches you to match surface browning with internal softening and leave room for expansion.",
+    "idea": "Watch for puffing",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the mochi into pieces and set them apart on a tray or in a dry pan.",
     "Cook over a gentle heat and watch them, as they puff quickly.",
@@ -22,7 +27,56 @@
       "fix": "Use a moderate heat and watch."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What contrast is sought when toasting mochi?",
+      "choices": [
+        "A lightly crisp skin around a soft stretchy centre.",
+        "A dark hard shell around a rigid centre.",
+        "A wet uncoloured surface throughout."
+      ],
+      "answer": 0,
+      "because": "Gentle toasting develops surface colour while the rice cake swells and softens.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should mochi pieces be arranged?",
+      "choices": [
+        "Touching closely in a packed layer.",
+        "Apart from each other on the tray or pan.",
+        "Stacked so their surfaces join."
+      ],
+      "answer": 1,
+      "because": "Space lets each piece expand without fusing to its neighbours.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance marks the intended change?",
+      "choices": [
+        "Unchanged flat pieces with hard centres.",
+        "Blackened edges around a rigid block.",
+        "Puffed pieces with golden patches."
+      ],
+      "answer": 2,
+      "because": "Puffing and golden patches show expansion and moderate surface browning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The outside scorched before the mochi softened. What would you change next time?",
+      "choices": [
+        "Use a gentler heat and watch closely.",
+        "Increase the heat to puff it faster.",
+        "Leave it untouched over the same strong heat."
+      ],
+      "answer": 0,
+      "because": "Less intense heat gives the centre more time to soften before the outside burns.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/mochi", "tier": "drafted"}
   ],

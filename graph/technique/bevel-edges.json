@@ -4,7 +4,12 @@
   "names": {"en": "Bevel edges"},
   "aliases": {"en": ["mentori", "round the corners", "round off the edges"]},
   "does": "Shaves the sharp corners from cut pieces of a firm vegetable, so that they hold their shape and do not break or cloud the liquid while they simmer.",
-  "intro": null,
+  "intro": {
+    "what": "Sharp corners are shaved from firm vegetable pieces before simmering.",
+    "why": "Corners can break away in liquid. Rounding them helps the pieces retain their outline and keeps fragments from clouding the broth.",
+    "idea": "Protecting a cut shape",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the vegetable into chunks.",
     "Hold a chunk in one hand and run a knife around its sharp edges, taking off a thin sliver from each corner.",
@@ -22,7 +27,56 @@
       "fix": "Bevel the edges of any piece that will simmer for long."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why round the corners of these vegetable pieces?",
+      "choices": [
+        "To make every piece soften into the liquid.",
+        "To limit corners breaking into the simmering liquid.",
+        "To expose a larger rough face on each piece."
+      ],
+      "answer": 1,
+      "because": "Removing vulnerable corners helps the pieces hold their shape and reduces loose fragments.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should the knife remove vegetable?",
+      "choices": [
+        "Across the entire centre of each piece.",
+        "Deep into the broad flat faces.",
+        "Along the sharp corners, shaving lightly."
+      ],
+      "answer": 2,
+      "because": "The aim is to round the corners while retaining the body of the cut piece.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should a bevelled piece look like?",
+      "choices": [
+        "A chunk with smooth rounded corners.",
+        "A much smaller piece with most of its broad faces removed.",
+        "A jagged piece with sharp points."
+      ],
+      "answer": 0,
+      "because": "Rounded corners show the vulnerable edges have been removed without carving away the whole piece.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Too much vegetable is being lost while beveling. What should change?",
+      "choices": [
+        "Cut deeper into each flat face.",
+        "Shave the corners more lightly.",
+        "Keep trimming the broad faces as well as the corners."
+      ],
+      "answer": 1,
+      "because": "Light shaving rounds the corners without unnecessary waste.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "ingredient/kabocha", "tier": "drafted"},

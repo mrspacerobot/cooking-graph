@@ -4,7 +4,12 @@
   "names": {"en": "Puree", "fr": "Mixer"},
   "aliases": {"en": ["blend", "blend until smooth", "purée", "liquidise"], "fr": ["réduire en purée"]},
   "does": "Breaks cooked food down until it is smooth, in a blender or through a sieve.",
-  "intro": null,
+  "intro": {
+    "what": "Pureeing breaks softened food into a smooth mixture.",
+    "why": "It teaches you to control texture through softness, added liquid and sieving.",
+    "idea": "Control the liquid",
+    "tier": "drafted"
+  },
   "how": [
     "Cook the food until it is completely soft. Nothing firm will blend smooth.",
     "Blend with only part of the cooking liquid at first.",
@@ -29,7 +34,56 @@
       "fix": "Blend a potato soup only briefly, or push it through a sieve."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim of pureeing cooked food?",
+      "choices": [
+        "Small separate pieces suspended in broth.",
+        "A smooth texture without grains or strings.",
+        "A coarse mixture with a firm bite."
+      ],
+      "answer": 1,
+      "because": "Soft food can be broken down into a continuous mixture rather than separate pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the cooking liquid be added?",
+      "choices": [
+        "Pour it all in before blending.",
+        "Discard it all before checking texture.",
+        "Hold some back and add it gradually."
+      ],
+      "answer": 2,
+      "because": "Gradual additions let you stop at the desired thickness instead of making the puree too thin.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What would suggest a puree needs more smoothing?",
+      "choices": [
+        "Grit or strings remain in its texture.",
+        "It falls smoothly from the spoon.",
+        "It has an even appearance when stirred."
+      ],
+      "answer": 0,
+      "because": "Grit and strings interrupt a smooth texture; a fine sieve can remove remaining pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Blended potato soup has become gluey. What would you change next time?",
+      "choices": [
+        "Blend harder until it looks glossy.",
+        "Blend briefly or push it through a sieve.",
+        "Keep blending while adding more potatoes."
+      ],
+      "answer": 1,
+      "because": "Prolonged hard blending makes potato mixtures gluey; gentler processing avoids that change.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},
     {"thing": "group/lean-fish", "tier": "drafted"},

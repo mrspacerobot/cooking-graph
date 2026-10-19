@@ -7,7 +7,12 @@
     "fr": ["tremper dans la pâte à frire"]
   },
   "does": "Dips food in a thin, wet mixture of flour and cold liquid, so that it fries with a light, crisp, airy coat that is lighter than a crumb coat.",
-  "intro": null,
+  "intro": {
+    "what": "Food is dipped in a cold flour mixture before frying to form a light crisp coat.",
+    "why": "Batter texture depends on gentle mixing and temperature. It shows why a perfectly smooth mixture is not always the best goal.",
+    "idea": "A light wet coating",
+    "tier": "drafted"
+  },
   "how": [
     "Stir the flour into cold liquid just until it is smooth enough to coat a spoon. A few lumps do no harm.",
     "Keep the batter cold and use it soon after it is made.",
@@ -33,7 +38,52 @@
       "fix": "Fry a few at a time."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What kind of coat is this batter intended to make?",
+      "choices": ["A dense chewy shell.", "A light, airy crisp coat.", "A dry loose crumb layer."],
+      "answer": 1,
+      "because": "The wet mixture expands and crisps during frying, unlike a separately applied crumb coat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How much mixing does the flour mixture need?",
+      "choices": [
+        "Beat until completely smooth and elastic.",
+        "Work the mixture until it becomes elastic and stretchy.",
+        "Stir just until it comes together; small lumps can remain."
+      ],
+      "answer": 2,
+      "because": "Heavy mixing develops toughness that works against a light coating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How should the batter cling to a spoon?",
+      "choices": [
+        "As a thin even film that runs slowly.",
+        "As a stiff lump that will not move.",
+        "As clear liquid with flour at the bottom."
+      ],
+      "answer": 0,
+      "because": "A flowing film indicates a coating texture rather than a thick dough or separated liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The fried coating is tough after vigorous beating. What should change?",
+      "choices": [
+        "Beat the next batter longer.",
+        "Mix the next batter more gently.",
+        "Let the mixed batter stand warm."
+      ],
+      "answer": 1,
+      "because": "Gentler mixing limits the toughness that can develop from beating flour and liquid.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/lean-fish", "tier": "drafted"},
     {"thing": "group/crustaceans", "tier": "drafted"},

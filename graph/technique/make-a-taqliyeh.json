@@ -4,7 +4,12 @@
   "names": {"en": "Make a taqliyeh"},
   "aliases": {"en": ["make taqliyeh", "fry garlic and coriander", "garlic and coriander sizzle"]},
   "does": "Fries crushed raw garlic and chopped fresh coriander in hot fat for a short moment, until the garlic smells sweet and the coriander wilts and darkens, then stirs the sizzling mixture into the pot, most often at the end. It gives a stew, a soup or a dish of pulses a sharp, fresh scent.",
-  "intro": null,
+  "intro": {
+    "what": "Taqliyeh briefly fries crushed garlic and fresh coriander, then adds the sizzling mixture to a finished pot.",
+    "why": "It teaches you to catch pale garlic colour and preserve a bright aromatic finish.",
+    "idea": "A brief aromatic finish",
+    "tier": "drafted"
+  },
   "how": [
     "Crush the garlic with salt to a rough paste, and chop the coriander fine.",
     "Heat the fat in a small pan until it shimmers.",
@@ -31,7 +36,56 @@
       "fix": "Chop the leaves and tender stems fine."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why add taqliyeh near the end?",
+      "choices": [
+        "To cook away every fresh coriander note.",
+        "To keep its sharp, fresh scent bright.",
+        "To soften it through the entire long simmer."
+      ],
+      "answer": 1,
+      "because": "Prolonged cooking after addition loses the fresh finishing scent.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When do you add the coriander to the garlic?",
+      "choices": [
+        "After the garlic has become dark brown.",
+        "Before heating the fat, then leave it to stew.",
+        "When the garlic is pale gold and smells sweet."
+      ],
+      "answer": 2,
+      "because": "Pale gold is the intended garlic stage; coriander is added before garlic browns too far.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the mixture before addition?",
+      "choices": [
+        "Pale-gold garlic and wilted dark-green coriander.",
+        "Brown garlic and dry black leaves.",
+        "White raw garlic and unwilted coriander."
+      ],
+      "answer": 0,
+      "because": "The brief frying wilts the coriander while keeping garlic from turning bitter brown.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The garlic browns and makes the pot bitter. What would you change next time?",
+      "choices": [
+        "Wait for darker garlic before adding coriander.",
+        "Add coriander at pale gold and remove from heat promptly.",
+        "Keep the finished mixture on strong heat."
+      ],
+      "answer": 1,
+      "because": "Promptly ending the frying at pale gold avoids carrying bitter garlic into the pot.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/garlic", "tier": "drafted"},
     {"thing": "ingredient/coriander-leaf", "tier": "drafted"}

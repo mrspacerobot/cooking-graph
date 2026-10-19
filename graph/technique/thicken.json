@@ -4,7 +4,12 @@
   "names": {"en": "Thicken", "fr": "Lier"},
   "aliases": {"en": ["thicken a sauce", "thicken with starch", "thicken with cornstarch"], "fr": ["lier une sauce"]},
   "does": "Gives a thin hot liquid more body by stirring in a starch, mixed smooth in a little cold liquid first, and bringing it to a simmer so that the starch swells and the liquid turns glossy and coats a spoon.",
-  "intro": null,
+  "intro": {
+    "what": "This method thickens hot liquid with starch first dispersed in cold liquid.",
+    "why": "It teaches you to control lumps and stop before the sauce becomes too stiff on cooling.",
+    "idea": "Disperse before heating",
+    "tier": "drafted"
+  },
   "how": [
     "Mix the starch with a little cold liquid until it is smooth, with no lumps.",
     "Bring the liquid to a gentle simmer and stir it round.",
@@ -33,7 +38,56 @@
       "fix": "Add a little at a time and stop while it still pours."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What happens as dispersed starch heats in the sauce?",
+      "choices": [
+        "It removes all moisture from the pan.",
+        "It separates fat into a clear top layer.",
+        "It swells and gives the liquid more body."
+      ],
+      "answer": 2,
+      "because": "Swollen starch thickens the surrounding liquid so it can coat a spoon.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should starch be added to the hot liquid?",
+      "choices": [
+        "As a smooth cold-liquid mixture poured in while stirring.",
+        "As a heap of dry powder without stirring.",
+        "Scatter dry starch over the hot surface and wait before stirring."
+      ],
+      "answer": 0,
+      "because": "Cold dispersion separates the starch before heat thickens it, reducing lumps.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which spoon cue indicates added body?",
+      "choices": [
+        "No resistance and no coating at all.",
+        "A little more drag and a coating on the back.",
+        "Hard dry lumps scraping the base."
+      ],
+      "answer": 1,
+      "because": "A smooth increase in resistance indicates thickening rather than clumping.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce becomes too stiff after cooling. What should change next time?",
+      "choices": [
+        "Keep thickening until it barely moves while hot.",
+        "Add all the starch before checking texture.",
+        "Add starch gradually and stop while it still pours."
+      ],
+      "answer": 2,
+      "because": "Cooling can increase the apparent thickness, so the hot sauce should retain flow.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/cooking-liquors", "tier": "drafted"},
     {"thing": "group/stocks", "tier": "drafted"},

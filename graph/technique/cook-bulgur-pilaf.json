@@ -4,7 +4,12 @@
   "names": {"en": "Cook bulgur pilaf"},
   "aliases": {"en": ["bulgur pilavi", "bulgur pilaf"]},
   "does": "Fries coarse bulgur in fat with softened onion and a spoon of paste until every grain is coated, then covers it with hot liquid and leaves it under a lid, without stirring, until the grains have swollen, drunk the liquid and stand apart.",
-  "intro": null,
+  "intro": {
+    "what": "Coated bulgur grains absorb hot liquid under a lid, then rest before being fluffed.",
+    "why": "Coating, undisturbed absorption and resting each support separate plump grains instead of a sticky porridge.",
+    "idea": "Absorption with a resting stage",
+    "tier": "drafted"
+  },
   "how": [
     "Soften the onion in the fat, then stir in the pepper or tomato paste and fry it until the colour deepens.",
     "Add the bulgur and stir for a short while until each grain is coated and smells toasty.",
@@ -32,7 +37,56 @@
       "fix": "Let it stand under a cloth and lid first."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why avoid stirring while the bulgur absorbs liquid?",
+      "choices": [
+        "To limit broken grains and stickiness.",
+        "To turn the grains into a thick paste.",
+        "To keep the seasoning only at the surface."
+      ],
+      "answer": 0,
+      "because": "Stirring during absorption can damage the grains and make them cling together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When are the grains fluffed?",
+      "choices": [
+        "Continuously while liquid is absorbed.",
+        "After cooking and a covered rest.",
+        "Before the hot liquid enters the pan."
+      ],
+      "answer": 1,
+      "because": "Resting precedes the gentle final separation with a fork.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture describes the intended bulgur?",
+      "choices": [
+        "A wet paste without distinct grains.",
+        "Dry hard grains floating in excess stock.",
+        "Plump grains with a slight bite that separate when fluffed."
+      ],
+      "answer": 2,
+      "because": "The aim is tender but distinct grains, rather than porridge or unabsorbed liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pilaf is wet and clumped when served directly from the heat. What should change?",
+      "choices": [
+        "Include the covered resting stage before fluffing.",
+        "Stir vigorously while serving it straight away.",
+        "Add more liquid immediately before serving."
+      ],
+      "answer": 0,
+      "because": "Resting lets the moisture settle before the grains are separated.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/coarse-bulgur", "tier": "drafted"}
   ],

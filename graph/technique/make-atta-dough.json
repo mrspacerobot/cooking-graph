@@ -4,7 +4,12 @@
   "names": {"en": "Make atta dough"},
   "aliases": {"en": ["knead chapati dough", "make roti dough", "make chapati dough", "knead atta"]},
   "does": "Works whole wheat flour and water into a soft, smooth dough with no yeast, then lets it rest. A rested dough is easy to roll thin and cooks into a soft, flexible flat bread.",
-  "intro": null,
+  "intro": {
+    "what": "Atta dough brings whole wheat flour and water into a soft dough for thin flatbreads.",
+    "why": "It teaches you to balance softness and resting so the dough rolls readily instead of springing back.",
+    "idea": "Softness and rest",
+    "tier": "drafted"
+  },
   "how": [
     "Put the flour in a wide bowl with a little salt, and make a well.",
     "Add warm water a little at a time, and bring the flour together with the fingers of one hand.",
@@ -33,7 +38,56 @@
       "fix": "Cover it with a damp cloth or a plate."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why rest the atta dough before rolling?",
+      "choices": [
+        "To dry it into a firm crust.",
+        "To make it resist the rolling pin more strongly.",
+        "To let it relax so it rolls thin more easily."
+      ],
+      "answer": 2,
+      "because": "Skipping the rest leaves dough that springs back instead of rolling out easily.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you bring in the water?",
+      "choices": [
+        "Add it gradually while bringing the flour together.",
+        "Pour it all in before checking softness.",
+        "Keep the dough deliberately stiff from the start."
+      ],
+      "answer": 0,
+      "because": "Gradual addition helps reach a soft dough rather than a stiff mixture that makes hard breads.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What feel matches the rested dough?",
+      "choices": [
+        "Stiff, cracked and resistant.",
+        "Soft and smooth, springing back slowly without sticking.",
+        "A wet paste that cannot be shaped."
+      ],
+      "answer": 1,
+      "because": "The dough should be soft and smooth rather than stiff or runny.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The dough forms a dry crust while resting. What would you change?",
+      "choices": [
+        "Leave it uncovered to relax faster.",
+        "Dust heavily with flour before every rest.",
+        "Keep it covered with a damp cloth or plate."
+      ],
+      "answer": 2,
+      "because": "Covering prevents the surface drying into cracks that carry into the bread.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/whole-wheat-flour", "tier": "drafted"}
   ],

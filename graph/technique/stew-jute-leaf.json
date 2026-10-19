@@ -4,7 +4,12 @@
   "names": {"en": "Stew jute leaf"},
   "aliases": {"en": ["cook jute leaf", "cook molokhia", "simmer jute leaf in broth"]},
   "does": "Simmers finely chopped jute leaf in hot broth, uncovered, until the leaves give up their slippery thickness and the broth turns dark green and silky. It is kept just below a boil, stirred little, and finished with a taqliyeh of garlic and coriander.",
-  "intro": null,
+  "intro": {
+    "what": "This jute-leaf stew gently thickens broth with finely chopped leaves and finishes with garlic-coriander taqliyeh.",
+    "why": "It teaches you to control a leaf’s natural silky texture through fine cutting and gentle heat.",
+    "idea": "Fine leaves, silky broth",
+    "tier": "drafted"
+  },
   "how": [
     "Strip fresh leaves from their stems, wash and dry them well, and chop them very fine. Frozen leaves go in as they are. Dried leaves are soaked briefly first.",
     "Bring the broth to a gentle simmer and keep it hot.",
@@ -31,7 +36,56 @@
     },
     {"mistake": "Adding lemon juice early, which dulls the green.", "fix": "Add it at the end."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What do chopped jute leaves contribute to the broth?",
+      "choices": [
+        "A dark-green silky thickness.",
+        "Separate leafy pieces that leave the broth thin.",
+        "A completely smooth puree without visible leaves."
+      ],
+      "answer": 0,
+      "because": "The leaves disperse through the broth and give it its characteristic silky body.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When are taqliyeh and lemon added in this method?",
+      "choices": [
+        "Before the broth begins heating.",
+        "After taking the pot off the heat at the end.",
+        "Only after the leaves have been strained out."
+      ],
+      "answer": 1,
+      "because": "Finishing additions preserve their distinct role rather than boiling them throughout the leaf cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture is the aim?",
+      "choices": [
+        "Large tough strings in thin broth.",
+        "A stiff dry mass of clumped leaves.",
+        "Silky broth with suspended leaves rather than long strings."
+      ],
+      "answer": 2,
+      "because": "Fine leaves distribute through the liquid and create a smooth slippery body.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Long leaf strings remained in the stew. What would you change before cooking the next batch?",
+      "choices": [
+        "Chop the leaves more finely before cooking.",
+        "Leave them whole and stir harder.",
+        "Add the lemon earlier instead of cutting."
+      ],
+      "answer": 0,
+      "because": "Finer cutting reduces the long strands that interrupt the intended silky texture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/jute-leaf", "tier": "drafted"}
   ],

@@ -4,7 +4,12 @@
   "names": {"en": "Make a gremolata"},
   "aliases": {"en": ["gremolata", "make gremolata"]},
   "does": "Chops parsley very fine with lemon zest and a little raw garlic, to be scattered over a rich, slow-cooked dish at the very end, where its sharp freshness cuts through the fat. Nothing is cooked.",
-  "intro": null,
+  "intro": {
+    "what": "Gremolata finely chops parsley, lemon zest and raw garlic into a fresh finish.",
+    "why": "It teaches you to add contrast to a rich dish without cooking away the bright scent of the garnish.",
+    "idea": "Freshness at the finish",
+    "tier": "drafted"
+  },
   "how": [
     "Pick the parsley leaves from the stalks and dry them well.",
     "Grate the zest of the lemon in fine strips, taking only the yellow.",
@@ -23,7 +28,56 @@
     },
     {"mistake": "Chopping wet parsley, which turns to a paste.", "fix": "Dry the leaves first."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does gremolata bring to a rich dish?",
+      "choices": [
+        "A long-cooked vegetable base.",
+        "A sharp, fresh contrast at the end.",
+        "A thick sauce cooked into the pot."
+      ],
+      "answer": 1,
+      "because": "Fresh parsley, lemon and garlic finish the dish with a bright contrast.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Which part of the lemon peel should you grate?",
+      "choices": [
+        "The white pith beneath the zest.",
+        "A thick shaving containing all the pith.",
+        "The yellow zest without the white pith."
+      ],
+      "answer": 2,
+      "because": "The yellow zest supplies the lemon scent without the bitter white pith.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches freshly made gremolata?",
+      "choices": [
+        "Fine, even pieces that are still bright green.",
+        "A dull green paste dissolved into the sauce.",
+        "Large wet parsley clumps with white pith."
+      ],
+      "answer": 0,
+      "because": "Dry leaves and fine chopping preserve a bright, even finishing mixture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The gremolata loses freshness after cooking in the pot. What would you change next time?",
+      "choices": [
+        "Add it before the slow cooking begins.",
+        "Scatter it over the dish at the very end.",
+        "Cook it separately until the parsley darkens."
+      ],
+      "answer": 1,
+      "because": "Early cooking dulls the fresh finish; add it at serving instead.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/parsley", "tier": "drafted"},
     {"thing": "ingredient/lemon", "tier": "drafted"},

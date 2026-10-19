@@ -4,7 +4,12 @@
   "names": {"en": "Boil an egg"},
   "aliases": {"en": ["soft-boil", "hard-boil", "boil eggs", "cook eggs in the shell"]},
   "does": "Cooks an egg in its shell in gently boiling water, to a runny, soft or firm yolk.",
-  "intro": null,
+  "intro": {
+    "what": "An egg cooks in its shell in gently boiling water, then is cooled to limit further setting.",
+    "why": "Connecting gentle handling, heat and prompt cooling helps you control yolk texture.",
+    "idea": "Controlling the set",
+    "tier": "drafted"
+  },
   "how": [
     "Bring a pan of water to a gentle boil.",
     "Lower the eggs in on a spoon, straight from the fridge.",
@@ -27,7 +32,56 @@
       "fix": "Lower them in on a spoon and keep the boil gentle."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What changes as an egg remains in the hot water?",
+      "choices": [
+        "The shell becomes progressively thicker.",
+        "The yolk becomes more firmly set.",
+        "The yolk texture stays unchanged once the white sets."
+      ],
+      "answer": 1,
+      "because": "Heat changes the egg texture from softer toward firmer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should eggs be lowered into the pan?",
+      "choices": [
+        "Dropped onto the bottom through a fierce boil.",
+        "Slide them into the empty pan before adding the boiling water.",
+        "On a spoon into gently boiling water."
+      ],
+      "answer": 2,
+      "because": "A spoon controls the entry and reduces impacts that can crack the shells.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance describes a firm yolk without the overcooking defect noted here?",
+      "choices": [
+        "A firm yolk that remains yellow.",
+        "A yolk surrounded by a grey-green ring.",
+        "A yolk that runs freely when opened."
+      ],
+      "answer": 0,
+      "because": "Yellow describes the intended appearance; the grey-green ring is a defect associated with prolonged heating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A grey-green ring developed around the yolk. What should change?",
+      "choices": [
+        "Boil longer before beginning to cool.",
+        "Avoid prolonged boiling and cool promptly afterward.",
+        "Leave the eggs in their hot water after cooking."
+      ],
+      "answer": 1,
+      "because": "Prolonged heating can produce the ring; prompt cooling limits further cooking.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],

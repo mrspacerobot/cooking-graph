@@ -4,7 +4,12 @@
   "names": {"en": "Skewer", "fr": "Embrocher"},
   "aliases": {"en": ["thread on skewers", "put on skewers"], "fr": ["enfiler sur des brochettes"]},
   "does": "Threads pieces of food, or presses a mince round a flat skewer, so that they can be turned as one and cook evenly over fierce heat, with their juices held in.",
-  "intro": null,
+  "intro": {
+    "what": "Skewering supports evenly cut pieces or shaped mince so they turn together over heat.",
+    "why": "It teaches you to balance firm attachment with enough space for heat to reach the food.",
+    "idea": "Secure with room for heat",
+    "tier": "drafted"
+  },
   "how": [
     "Soak wooden skewers in water first, so that they do not scorch. Metal skewers need no soaking.",
     "Cut the food into pieces of an even size, so that they cook at the same pace.",
@@ -30,7 +35,56 @@
       "fix": "Chill the mince and press it firmly with wet hands."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why leave space between skewered pieces?",
+      "choices": [
+        "To make them spin independently when turned.",
+        "To press their juices into adjacent pieces.",
+        "To allow heat to reach their surfaces."
+      ],
+      "answer": 2,
+      "because": "Packed surfaces shield each other from heat; space improves exposure.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should foods that cook at different rates be arranged?",
+      "choices": [
+        "Put each kind on its own skewer.",
+        "Alternate them randomly on the same skewer.",
+        "Use larger fast-cooking pieces without checking sizes."
+      ],
+      "answer": 0,
+      "because": "Separate skewers allow different foods to be moved or removed independently.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which handling cue suggests food is attached firmly?",
+      "choices": [
+        "The pieces hang loosely and rotate independently.",
+        "The pieces turn with the skewer instead of spinning.",
+        "Mince slides along the skewer when lifted."
+      ],
+      "answer": 1,
+      "because": "Secure attachment lets the skewer control which faces meet the heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Mince falls off the skewer. What should change?",
+      "choices": [
+        "Leave gaps between mince and skewer.",
+        "Warm the mixture before lightly draping it on.",
+        "Chill it and press it firmly around a flat skewer with wet hands."
+      ],
+      "answer": 2,
+      "because": "A firm cohesive mixture in close contact with the skewer is less likely to detach.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/minced-meat", "tier": "drafted"},
     {"thing": "group/steaks-and-chops", "tier": "drafted"},

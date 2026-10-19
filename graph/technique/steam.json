@@ -4,7 +4,12 @@
   "names": {"en": "Steam", "fr": "Cuire à la vapeur"},
   "aliases": {"en": ["steam open", "cook in steam", "steam open shellfish"], "fr": ["faire ouvrir"]},
   "does": "Cooks food in the steam of a little boiling liquid under a tight lid, so that nothing of it is washed away.",
-  "intro": null,
+  "intro": {
+    "what": "Steaming uses vapour retained under a lid to cook food with little boiling liquid.",
+    "why": "It teaches you how a closed cooking space carries heat without immersing a basket of food.",
+    "idea": "Retain the steam",
+    "tier": "drafted"
+  },
   "how": [
     "Bring a shallow layer of water or wine to a boil in a wide pot.",
     "Set the food in a basket above the liquid, or straight into the pot for shellfish, and cover it at once with a tight lid.",
@@ -26,7 +31,56 @@
       "fix": "Take the pot off the heat the moment most of the shells are open."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What carries heat to vegetables in a steaming basket?",
+      "choices": [
+        "Only the dry metal of the lid.",
+        "Complete immersion in cold liquid.",
+        "Steam rising from the boiling liquid below."
+      ],
+      "answer": 2,
+      "because": "The basket holds food above the liquid where rising vapour transfers heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should a vegetable basket sit?",
+      "choices": [
+        "Above the boiling liquid beneath a tight lid.",
+        "Submerged fully beneath the liquid.",
+        "Above an uncovered pot with most steam escaping."
+      ],
+      "answer": 0,
+      "because": "Keeping food above the liquid preserves the steaming method while the lid retains vapour.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which sound is consistent with active steaming in this covered-pot method?",
+      "choices": [
+        "The scrape of dry food catching on the base.",
+        "A steadily rattling lid.",
+        "The crackle of an uncovered frying pan."
+      ],
+      "answer": 1,
+      "because": "Boiling liquid beneath the closed lid generates the steam used in this covered-pot method.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Frequent lid lifting slows the steaming. What should change?",
+      "choices": [
+        "Lift it even more often to vent the pot.",
+        "Leave the pot uncovered throughout.",
+        "Keep the lid closed between necessary checks."
+      ],
+      "answer": 2,
+      "because": "Each opening releases steam and heat from the enclosed cooking space.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/green-vegetables", "tier": "drafted"},
     {"thing": "group/root-vegetables", "tier": "drafted"},

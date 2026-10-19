@@ -4,7 +4,12 @@
   "names": {"en": "Proof", "fr": "Faire pousser la pâte"},
   "aliases": {"en": ["prove", "let rise", "let the dough rise", "rise"], "fr": ["laisser pousser"]},
   "does": "Leaves shaped yeast dough in a warm, still place to rise, so that the yeast fills it with gas and it swells and turns light, airy and ready to bake or fry.",
-  "intro": null,
+  "intro": {
+    "what": "Proofing lets shaped yeast dough swell before baking or frying.",
+    "why": "It teaches you to judge dough by its response to touch rather than by waiting alone.",
+    "idea": "Watch the dough",
+    "tier": "drafted"
+  },
   "how": [
     "Shape the dough and set it in a lightly oiled bowl, or on a tray, with room to swell.",
     "Cover it with a damp cloth or oiled film, so that its skin does not dry out.",
@@ -31,7 +36,56 @@
       "fix": "Check it often and bake it as soon as it is ready."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why proof shaped yeast dough?",
+      "choices": [
+        "To let gas make it light and airy.",
+        "To dry its outer skin.",
+        "To tighten its shape by pressing out gas."
+      ],
+      "answer": 0,
+      "because": "Yeast produces gas that expands the dough; gentle handling preserves that airy structure.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the dough be covered while it rises?",
+      "choices": [
+        "With a dry cloth pressed into its surface.",
+        "With a damp cloth or oiled film.",
+        "With no cover so a skin forms."
+      ],
+      "answer": 1,
+      "because": "A cover protects the surface from drying while the dough expands.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which response to a light fingertip press suggests the dough has risen enough?",
+      "choices": [
+        "The dent springs back immediately.",
+        "The dough collapses under the touch.",
+        "The dent fills back slowly."
+      ],
+      "answer": 2,
+      "because": "A slowly returning dent distinguishes puffy dough from a tight dough or a collapsing one.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Dough becomes loose in a very hot proofing spot. What should change next time?",
+      "choices": [
+        "Use a gently warm place and allow more time.",
+        "Use a hotter place for a shorter wait.",
+        "Remove the cover to dry the dough."
+      ],
+      "answer": 0,
+      "because": "Gentle warmth allows a steadier rise without the loose texture associated with excess heat.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"}
   ],

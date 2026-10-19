@@ -4,7 +4,12 @@
   "names": {"en": "Make a mascarpone cream"},
   "aliases": {"en": ["mascarpone cream", "make tiramisu cream"]},
   "does": "Loosens soft mascarpone with a cooled, sweet egg-yolk foam into a smooth, thick cream that holds its shape in a spoon. It is the cream of tiramisu and of other cold layered desserts.",
-  "intro": null,
+  "intro": {
+    "what": "This dessert cream gently folds cooled sweet yolk foam into mascarpone.",
+    "why": "It teaches you to preserve a thick, smooth texture by cooling the foam and avoiding hard beating.",
+    "idea": "Cool and fold gently",
+    "tier": "drafted"
+  },
   "how": [
     "Cool the egg-yolk foam completely. A warm foam melts the cheese into a loose soup.",
     "Put the mascarpone into a wide bowl and stir it with a spatula only until it is smooth. Never beat it hard.",
@@ -22,7 +27,52 @@
     },
     {"mistake": "Mixing in a foam that is still warm, which thins the cheese.", "fix": "Let the foam cool first."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture should the mascarpone cream have?",
+      "choices": [
+        "Thick and smooth enough to hold a soft peak.",
+        "Thin enough to run from the spatula.",
+        "Grainy with visible pools of oil."
+      ],
+      "answer": 0,
+      "because": "The cream must hold its shape for a layered dessert rather than run or split.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the yolk foam be prepared before mixing?",
+      "choices": ["Fold it in while still warm.", "Cool it completely.", "Warm it again before every addition."],
+      "answer": 1,
+      "because": "Warm foam thins the mascarpone into a loose mixture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance indicates mixing can stop?",
+      "choices": [
+        "Visible foam streaks among cheese lumps.",
+        "An oily, grainy mixture.",
+        "Smooth, glossy cream without streaks or grains."
+      ],
+      "answer": 2,
+      "because": "Stop when the cream is smooth and even rather than continuing to beat it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Hard beating makes the mascarpone grainy and oily. What would you change next time?",
+      "choices": [
+        "Stir gently only until smooth, then fold in the foam.",
+        "Beat faster to remove the grains.",
+        "Keep beating after all streaks disappear."
+      ],
+      "answer": 0,
+      "because": "Hard beating can spoil the texture; gentle stirring and folding avoid overworking the cheese.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/mascarpone", "tier": "drafted"}
   ],

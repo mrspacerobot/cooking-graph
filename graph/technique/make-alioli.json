@@ -4,7 +4,12 @@
   "names": {"en": "Make alioli"},
   "aliases": {"en": ["make allioli", "pound alioli"]},
   "does": "Works garlic with salt in a mortar to a smooth paste, then works in olive oil drop by drop with the pestle, always in one direction, until the paste turns into a thick, pale, glossy sauce. No egg is used: the garlic holds the oil.",
-  "intro": null,
+  "intro": {
+    "what": "This alioli works olive oil gradually into a smooth garlic paste in a mortar.",
+    "why": "It teaches you to build a thick emulsion patiently, waiting for each oil addition to join the paste.",
+    "idea": "Let each addition bind",
+    "tier": "drafted"
+  },
   "how": [
     "Peel the garlic and take out any green shoot, which is bitter. Pound it with a little salt in the mortar until it is a smooth paste with no lumps.",
     "Start turning the pestle in one direction only, and add the oil a drop at a time. Wait until each drop has been taken up before adding more.",
@@ -30,7 +35,56 @@
       "fix": "Cut each clove open and take the shoot out."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim when working oil into garlic?",
+      "choices": [
+        "A separate pool of oil around garlic pieces.",
+        "A thick, pale, glossy sauce.",
+        "A thin vinegar dressing with coarse garlic."
+      ],
+      "answer": 1,
+      "because": "The garlic paste should hold the oil as a thick sauce rather than leave separate layers.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you add oil at the beginning?",
+      "choices": [
+        "In a generous stream before the paste thickens.",
+        "All at once, then begin turning the pestle.",
+        "Very slowly, waiting for each addition to be taken up."
+      ],
+      "answer": 2,
+      "because": "Slow initial additions give the paste time to take up the oil without splitting.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which change shows the sauce is developing?",
+      "choices": [
+        "It turns pale and creamy and clings to the mortar.",
+        "It becomes grainy with clear oil outside it.",
+        "It stays translucent and loose as oil pools."
+      ],
+      "answer": 0,
+      "because": "Paleness, thickness and clinging show the developing sauce rather than separation.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce splits after oil is added too quickly. How would you restart?",
+      "choices": [
+        "Pour in more oil rapidly to thicken it.",
+        "Pound fresh garlic with a little water and work the split sauce in slowly.",
+        "Keep the same speed and change pestle direction."
+      ],
+      "answer": 1,
+      "because": "A fresh garlic base provides a restart into which the split sauce can be incorporated slowly.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/garlic", "tier": "drafted"},
     {"thing": "ingredient/olive-oil", "tier": "drafted"}

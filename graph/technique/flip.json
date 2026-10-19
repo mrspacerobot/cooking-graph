@@ -4,7 +4,12 @@
   "names": {"en": "Flip", "fr": "Retourner"},
   "aliases": {"en": ["turn over", "flip over"], "fr": ["retourner à la spatule"]},
   "does": "Turns food over in the pan or on the griddle at the right moment, so that its other side cooks and browns while the first side has set enough to hold together.",
-  "intro": null,
+  "intro": {
+    "what": "Food is turned after its underside has formed enough structure to move as a whole.",
+    "why": "A successful turn starts before lifting: release, support and a controlled motion help preserve the shape while exposing the other face to the pan.",
+    "idea": "Release before turning",
+    "tier": "drafted"
+  },
   "how": [
     "Wait until the underside has set and browned, and the food moves freely when the pan is shaken.",
     "Slide a wide spatula fully under the food, so that none of it hangs over the edge.",
@@ -30,7 +35,56 @@
       "fix": "Turn it in one quick motion, close to the pan."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why wait until the underside has set before flipping?",
+      "choices": [
+        "So the upper side becomes the only side that browns.",
+        "So the food stays firmly attached to the pan.",
+        "So the food can hold together during the turn."
+      ],
+      "answer": 2,
+      "because": "A formed underside provides structure that soft food lacks earlier in cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the spatula support the food?",
+      "choices": [
+        "Fully underneath it with a suitably wide blade.",
+        "Under a narrow corner with most of it hanging over.",
+        "Pressing down on top while pulling the pan away."
+      ],
+      "answer": 0,
+      "because": "Full support limits folding or tearing as the food leaves the pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What suggests the food has released enough to turn?",
+      "choices": [
+        "Its centre stays fixed while the edges stretch.",
+        "It slides when the pan is shaken.",
+        "The whole piece clings tightly to the base."
+      ],
+      "answer": 1,
+      "because": "Free movement shows the underside is no longer gripping the pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The food folds around a narrow spatula. What should change?",
+      "choices": [
+        "Lift it higher with the same narrow support.",
+        "Let more of the piece hang beyond the blade.",
+        "Use a wider spatula or a plate-assisted turn."
+      ],
+      "answer": 2,
+      "because": "Broader support carries the soft food as a shape instead of bending it around a narrow edge.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/steaks-and-chops", "tier": "drafted"},
     {"thing": "group/lean-fish", "tier": "drafted"},

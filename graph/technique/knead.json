@@ -4,7 +4,12 @@
   "names": {"en": "Knead", "fr": "Pétrir"},
   "aliases": {"en": ["knead the dough", "knead by hand", "work the dough", "knead dough"], "fr": ["pétrir la pâte"]},
   "does": "Works a dough, or a loose mixture such as minced meat or soaked bulgur, with the heels of the hands, pressing and turning it until it comes together and holds its shape. In a dough this builds the stretch that gives bread its chew. In a mixture it binds the pieces so that they do not fall apart in the pan.",
-  "intro": null,
+  "intro": {
+    "what": "Kneading presses and turns dough or a binding mixture until it holds together.",
+    "why": "It teaches you to distinguish elastic dough from a mixture that needs only enough working to bind.",
+    "idea": "Work until it holds",
+    "tier": "drafted"
+  },
   "how": [
     "Bring the mixture together in a wide bowl or on a clean surface, with just enough liquid to make it hold.",
     "Press a dough away from you with the heel of the hand, fold it back over itself, give it a quarter turn and press again.",
@@ -37,7 +42,52 @@
       "fix": "Keep the meat cold, and stop as soon as the mixture turns sticky."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does kneading build in bread dough?",
+      "choices": ["Stretch and chew.", "A deliberately crumbly texture.", "Separate dry pieces that do not join."],
+      "answer": 0,
+      "because": "Working dough builds the stretch that contributes to bread's chew.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you knead a dough with your hands?",
+      "choices": [
+        "Work only the top without folding.",
+        "Press away with the heel, fold back and turn before repeating.",
+        "Stir the surface while leaving dry patches untouched."
+      ],
+      "answer": 1,
+      "because": "Pressing, folding and turning works the dough evenly as it comes together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which change suggests the dough has been worked sufficiently?",
+      "choices": [
+        "It stays rough and tears immediately.",
+        "It becomes drier with every addition of flour.",
+        "It becomes smooth and elastic and springs back."
+      ],
+      "answer": 2,
+      "because": "A smooth, elastic dough that springs back differs from rough, underworked dough.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The dough became dry and heavy after extra flour. What would you change next time?",
+      "choices": [
+        "Keep it slightly tacky and dust only as needed.",
+        "Add more flour until no tackiness remains.",
+        "Rub dry flour into every fold."
+      ],
+      "answer": 0,
+      "because": "Excess flour makes the dough dry and heavy; a little tackiness is expected here.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"},
     {"thing": "group/minced-meat", "tier": "drafted"},

@@ -4,7 +4,12 @@
   "names": {"en": "Rehydrate seaweed"},
   "aliases": {"en": ["soak wakame", "soak dried seaweed"]},
   "does": "Soaks dried seaweed in cold water until it swells and turns soft, silky and bright green, then squeezes out the water and cuts away any hard rib.",
-  "intro": null,
+  "intro": {
+    "what": "This method softens dried seaweed in cold water before draining and trimming it.",
+    "why": "It teaches you to allow for swelling and stop soaking when the desired bite remains.",
+    "idea": "Allow room to swell",
+    "tier": "drafted"
+  },
   "how": [
     "Put a small handful of dried seaweed in a large bowl, as it swells to many times its size.",
     "Cover it with cold water and leave it until it is soft and glossy.",
@@ -25,7 +30,56 @@
       "fix": "Lift it out as soon as it is soft."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why give dried seaweed plenty of room in the bowl?",
+      "choices": [
+        "It expands considerably as it absorbs water.",
+        "It must be kept pressed against the bowl.",
+        "It shrinks as it softens."
+      ],
+      "answer": 0,
+      "because": "Water opens and expands the dried seaweed, so a small dry portion can occupy much more room.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What comes after soaking and draining in this method?",
+      "choices": [
+        "Leave the hard rib attached to keep it chewy.",
+        "Squeeze lightly and cut away any hard rib.",
+        "Return it to the water until it breaks down."
+      ],
+      "answer": 1,
+      "because": "Light squeezing removes excess water while trimming removes tough parts that soaking has not softened.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suggests the seaweed has softened?",
+      "choices": [
+        "Soft outside with a brittle centre.",
+        "Slimy and losing all its bite.",
+        "Soft and slippery without a hard dry centre."
+      ],
+      "answer": 2,
+      "because": "The dry centre should soften while the seaweed still retains some texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The seaweed became slimy and lost its bite. What would you change next time?",
+      "choices": [
+        "Lift it out as soon as it softens.",
+        "Keep soaking until its colour fades.",
+        "Use a longer soak in more water."
+      ],
+      "answer": 0,
+      "because": "Prolonged soaking can damage the desired texture; checking softness prevents unnecessary waiting.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/wakame", "tier": "drafted"}
   ],

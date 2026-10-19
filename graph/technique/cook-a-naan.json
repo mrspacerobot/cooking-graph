@@ -4,7 +4,12 @@
   "names": {"en": "Cook a naan"},
   "aliases": {"en": ["cook naan on a tava", "stretch and cook naan", "blister naan"]},
   "does": "Stretches a rested ball of naan dough by hand into a teardrop, cooks it on a very hot iron plate until it puffs and blisters, then holds it for a moment over the open flame to char it in spots. The finished bread is brushed with ghee and kept soft under a cloth.",
-  "intro": null,
+  "intro": {
+    "what": "Rested naan dough is stretched by hand, cooked on a hot plate and blistered over a flame.",
+    "why": "Keeping its body and cooking it briskly supports a soft bread with raised bubbles and charred spots.",
+    "idea": "Soft bread with blisters",
+    "tier": "drafted"
+  },
   "how": [
     "Divide the risen dough into equal balls, cover them, and let them rest for a short while.",
     "Flatten a ball on a floured board, then pull and press it by hand into a teardrop, a little thicker than a chapati.",
@@ -35,7 +40,56 @@
       "fix": "Hold it over the flame only for a moment, turning it with tongs."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why avoid rolling this naan as thinly as a chapati?",
+      "choices": [
+        "A thinner sheet holds more moisture through a longer cooking.",
+        "Its thicker stretched shape helps retain the intended soft body.",
+        "A thicker shape should prevent the surface from blistering."
+      ],
+      "answer": 1,
+      "because": "This method preserves more dough thickness for a puffy, flexible bread.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Which face meets the hot plate first?",
+      "choices": [
+        "The face already coated in melted ghee.",
+        "A face covered with a thick flour crust.",
+        "The lightly wetted face."
+      ],
+      "answer": 2,
+      "because": "The wetted face sticks to the plate and supports the cooking described in this method.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What does the intended naan look and feel like?",
+      "choices": [
+        "Raised bubbles and brown spots, with a flexible texture.",
+        "A flat pale sheet that cracks when bent.",
+        "A uniformly black and brittle crust."
+      ],
+      "answer": 0,
+      "because": "Blisters and spotted browning accompany the soft bread rather than an all-over burnt surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The naan becomes leathery before puffing. What should change?",
+      "choices": [
+        "Start on a cooler plate and cook more slowly.",
+        "Heat the plate thoroughly before adding it.",
+        "Roll it thinner and let it dry on the plate."
+      ],
+      "answer": 1,
+      "because": "A properly heated plate encourages quick bubbling before the bread loses too much moisture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/naan-dough", "tier": "drafted"}
   ],

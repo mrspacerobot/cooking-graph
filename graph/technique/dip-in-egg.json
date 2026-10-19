@@ -4,7 +4,12 @@
   "names": {"en": "Dip in egg", "fr": "Passer à l'œuf"},
   "aliases": {"en": ["dip in beaten egg", "coat in egg"], "fr": ["tremper dans l'œuf battu"]},
   "does": "Draws food through beaten egg, so that it takes a thin, even coat that browns in the pan, or holds a crumb or flour coat in place.",
-  "intro": null,
+  "intro": {
+    "what": "Food passes through beaten egg to receive a thin film before cooking or another coating.",
+    "why": "The egg should cover the surface without soaking or pooling. That distinction helps a coating cling without becoming heavy or ragged.",
+    "idea": "A film rather than a soak",
+    "tier": "drafted"
+  },
   "how": [
     "Beat the egg in a shallow dish with a little salt until the white and yolk are one.",
     "Have the food ready, dry on the surface or just floured, and slightly firm.",
@@ -25,7 +30,56 @@
       "fix": "Let the extra run off before the piece goes in."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What can the egg film do in a layered coating?",
+      "choices": [
+        "Help the next crumb or flour layer cling.",
+        "Soften the crumbs before they touch the food.",
+        "Keep the food dry beneath a loose crumb layer."
+      ],
+      "answer": 0,
+      "because": "A thin sticky egg film provides contact for the next layer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen after lifting food from the egg?",
+      "choices": [
+        "Carry thick drips directly into the pan.",
+        "Let the excess drip off before continuing.",
+        "Leave the food soaking until it loses its shape."
+      ],
+      "answer": 1,
+      "because": "Draining excess leaves a film rather than a thick loose layer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance is intended after dipping?",
+      "choices": [
+        "A thick pool hanging from the edge.",
+        "Dry bare patches across the surface.",
+        "A thin glossy coat without heavy drips."
+      ],
+      "answer": 2,
+      "because": "A smooth film gives coverage while avoiding excess egg.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A bread slice fell apart in the egg. What would you change for the next slice?",
+      "choices": [
+        "Draw it through and lift it promptly.",
+        "Leave it soaking until fully limp.",
+        "Press it under the egg for longer."
+      ],
+      "answer": 0,
+      "because": "Brief surface dipping limits absorption that weakens an absorbent slice.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/breads", "tier": "drafted"},
     {"thing": "group/poultry", "tier": "drafted"},

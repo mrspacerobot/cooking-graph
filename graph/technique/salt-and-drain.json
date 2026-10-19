@@ -4,7 +4,12 @@
   "names": {"en": "Salt and drain", "fr": "Faire dégorger"},
   "aliases": {"en": ["degorge", "salt to draw out water", "purge with salt", "salt"], "fr": ["dégorger"]},
   "does": "Draws water out of a watery vegetable with salt before it is cooked or dressed, so that it keeps its bite and does not flood the dish.",
-  "intro": null,
+  "intro": {
+    "what": "Salting and draining draws excess water from watery vegetables before dressing or cooking.",
+    "why": "It teaches you to control the liquid a vegetable contributes to the finished dish.",
+    "idea": "Remove excess water",
+    "tier": "drafted"
+  },
   "how": [
     "Slice or dice the vegetable and toss it with fine salt.",
     "Leave it in a colander over a bowl until it has given up its water.",
@@ -24,7 +29,52 @@
       "fix": "Taste before you add any more salt."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why salt and drain a watery vegetable?",
+      "choices": [
+        "To retain all its water beneath the dressing.",
+        "To keep released water from flooding the dish.",
+        "To replace drying after rinsing."
+      ],
+      "answer": 1,
+      "because": "Removing released water beforehand limits dilution of the pan or dressing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should salted vegetables drain?",
+      "choices": ["In their collected liquid.", "In a sealed bowl without drainage.", "In a colander over a bowl."],
+      "answer": 2,
+      "because": "A colander separates the vegetable from water as it is released.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which change shows water has been drawn out?",
+      "choices": [
+        "Liquid below the colander and limp glossy pieces.",
+        "Dry rigid pieces and no collected liquid.",
+        "Wet pieces sitting in their own liquid without drainage."
+      ],
+      "answer": 0,
+      "because": "Collected liquid and more flexible pieces show moisture leaving the vegetable.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The finished dish was too salty after this step. What would you change next time?",
+      "choices": [
+        "Salt the dressing as heavily as usual.",
+        "Taste before adding further salt.",
+        "Add more salt to finish drying the pieces."
+      ],
+      "answer": 1,
+      "because": "The vegetable already carries salt, so later seasoning needs adjustment.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/cucumber", "tier": "drafted"},
     {"thing": "ingredient/aubergine", "tier": "drafted"},

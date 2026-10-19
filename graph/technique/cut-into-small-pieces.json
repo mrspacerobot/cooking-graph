@@ -4,7 +4,12 @@
   "names": {"en": "Cut into small pieces"},
   "aliases": {"en": ["cut into small bits", "chop into small pieces"]},
   "does": "Cuts food into small, loose pieces, not exact cubes, so that they spread through rice, a filling or a sauce.",
-  "intro": null,
+  "intro": {
+    "what": "Food is cut into small rough pieces that can be scattered through a mixture.",
+    "why": "The cut supports even distribution without requiring exact cubes. A clear board and a sharp blade help soft ingredients keep their texture.",
+    "idea": "Small pieces spread evenly",
+    "tier": "drafted"
+  },
   "how": [
     "Trim the food, take out any bone or tough stem, and slice it first if it is wide.",
     "Cut the slices across into small, rough pieces.",
@@ -24,7 +29,56 @@
       "fix": "Use a sharp knife and a clear board."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why cut food small for rice or a filling?",
+      "choices": [
+        "So it stays as a large central lump.",
+        "So every piece must have a perfect square outline.",
+        "So it distributes through the mixture."
+      ],
+      "answer": 2,
+      "because": "Small loose pieces can spread among the other ingredients.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What helps keep soft food from being squashed while cutting?",
+      "choices": [
+        "A sharp knife and a clear board.",
+        "A crowded board and heavy pressure.",
+        "A blunt blade dragged across a pile."
+      ],
+      "answer": 0,
+      "because": "Clear space and a clean cutting stroke limit crushing of soft food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the finished pieces allow you to do?",
+      "choices": [
+        "Place them as large separate chunks around the dish.",
+        "Scatter them easily with a spoon.",
+        "Arrange them as intact broad slices."
+      ],
+      "answer": 1,
+      "because": "Small similar pieces can be scattered instead of staying in large clumps.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Large pieces will not spread through the rice. What should change?",
+      "choices": [
+        "Leave the largest pieces intact.",
+        "Press the rice into the large pieces.",
+        "Cut them smaller before mixing."
+      ],
+      "answer": 2,
+      "because": "Reducing the pieces makes even distribution possible without crushing the surrounding mixture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/mushrooms", "tier": "drafted"},

@@ -4,7 +4,12 @@
   "names": {"en": "Beat sfenj dough"},
   "aliases": {},
   "does": "Mixes flour, warm water, yeast and salt into a very wet, sticky dough and beats it by hand in a bowl, with a wet hand, lifting and slapping it, until it turns stretchy and full of air. It is far too soft to knead on a board.",
-  "intro": null,
+  "intro": {
+    "what": "Sfenj uses a very wet dough beaten by hand in a bowl until stretchy and bubbly.",
+    "why": "The stickiness is part of the method. Learning to work with it preserves the airy texture instead of turning it into a firm kneading dough.",
+    "idea": "Working a wet dough",
+    "tier": "drafted"
+  },
   "how": [
     "Stir the yeast into part of the warm water with the sugar and let it foam.",
     "Put the flour and the salt in a large bowl and pour in the yeast water and the rest of the water.",
@@ -22,7 +27,56 @@
     },
     {"mistake": "Stopping too soon, which leaves a dough without air.", "fix": "Beat until it stretches and bubbles."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep sfenj dough wet rather than firm?",
+      "choices": [
+        "A firmer dough develops the same texture without beating.",
+        "Extra flour creates the air bubbles instead of beating.",
+        "The wet dough supports the intended airy texture."
+      ],
+      "answer": 2,
+      "because": "Adding flour to remove stickiness changes this soft dough toward a denser result.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How is this dough worked?",
+      "choices": [
+        "Lift and slap it in the bowl with a wet hand.",
+        "Knead it on a board with extra flour.",
+        "Press it flat and leave it unworked."
+      ],
+      "answer": 0,
+      "because": "The dough is too soft for board kneading; bowl beating develops stretch and incorporates air.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What shows that beating has developed the dough?",
+      "choices": [
+        "It remains short and tears before stretching.",
+        "It stretches in strands and shows bubbles.",
+        "It stays in sticky lumps without visible bubbles."
+      ],
+      "answer": 1,
+      "because": "Stretch and visible bubbles are the texture and air clues used in this method.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The dough feels too sticky to handle. What should you change?",
+      "choices": [
+        "Add flour until it becomes a firm ball.",
+        "Dust the bowl heavily and stop beating.",
+        "Wet your hand rather than adding flour."
+      ],
+      "answer": 2,
+      "because": "Wetting the hand makes the sticky dough easier to work while preserving its intended softness.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"}
   ],

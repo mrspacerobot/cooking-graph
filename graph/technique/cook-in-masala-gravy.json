@@ -4,7 +4,12 @@
   "names": {"en": "Cook in a masala gravy"},
   "aliases": {"en": ["simmer in gravy", "simmer in a curry sauce", "cook a curry"]},
   "does": "Simmers pieces of meat, bird or firm cheese in a gravy made from a fried masala base, with a little water or cream, until they are tender and the gravy has thickened and clings to them.",
-  "intro": null,
+  "intro": {
+    "what": "Pieces simmer gently in a fried masala base loosened into a coating gravy.",
+    "why": "The balance between added liquid and reduced sauce controls whether the masala clings while the pieces soften.",
+    "idea": "A gravy that coats",
+    "tier": "drafted"
+  },
   "how": [
     "Start from a masala base cooked until its fat has parted.",
     "Add the pieces, raw or already roasted or fried, and stir them into the base for a moment so that they are coated.",
@@ -35,7 +40,56 @@
       "fix": "Take the pan off the heat for a moment, or lower the heat, before the cream goes in."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What consistency is this gravy intended to reach?",
+      "choices": [
+        "A clear broth that leaves the pieces bare.",
+        "A dry burnt paste fixed to the pan.",
+        "Thick enough to cling to the pieces."
+      ],
+      "answer": 2,
+      "because": "The sauce should surround and coat rather than remain watery or catch on the base.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How is liquid added to the fried masala base?",
+      "choices": [
+        "Hot and gradually, followed by gentle simmering.",
+        "Cold in a large sudden addition, then hard boiling.",
+        "Only after the base has scorched dry."
+      ],
+      "answer": 0,
+      "because": "Gradual hot additions give control over the gravy while maintaining the cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended gravy?",
+      "choices": [
+        "Watery with uncombined raw spice floating above it.",
+        "Thick and glossy with fat shining at the edge.",
+        "Dry black patches beneath a separated liquid."
+      ],
+      "answer": 1,
+      "because": "A glossy coating is the visual texture cue for the finished gravy.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The gravy split when cream met a hard boil. What would you change next time?",
+      "choices": [
+        "Add cream while increasing the boil.",
+        "Keep boiling harder until the separation disappears.",
+        "Lower the heat or take the pan off it before adding cream."
+      ],
+      "answer": 2,
+      "because": "Reducing the heat before the finishing cream avoids the harsh boiling associated with splitting.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/poultry", "tier": "drafted"},
     {"thing": "group/braising-cuts", "tier": "drafted"},

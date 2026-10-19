@@ -4,7 +4,12 @@
   "names": {"en": "Gut a fish", "fr": "Vider le poisson"},
   "aliases": {"en": ["gut", "gut the fish", "draw a fish"], "fr": ["vider"]},
   "does": "Opens the belly of a whole fish and takes out the guts and the gills, then rinses the cavity, so that the fish can be cooked whole or filleted without a bitter taste.",
-  "intro": null,
+  "intro": {
+    "what": "Gutting opens a whole fish to remove the guts and gills and clean the cavity.",
+    "why": "It teaches precise shallow cutting and careful removal so bitter contents do not taint the flesh.",
+    "idea": "Keep the belly cut shallow",
+    "tier": "drafted"
+  },
   "how": [
     "Lay the fish on a board with the belly towards you.",
     "Slide the tip of the knife in at the vent near the tail and slit the belly up to the gills, shallow, with the blade pointing up so that the guts are not pierced.",
@@ -26,7 +31,56 @@
       "fix": "Cut them out at both ends and rinse the cavity."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why avoid piercing the guts while opening the fish?",
+      "choices": [
+        "Their contents can taint the flesh with bitterness.",
+        "It keeps the flesh connected along the backbone.",
+        "It keeps the opening narrow for whole-fish presentation."
+      ],
+      "answer": 0,
+      "because": "A shallow cut protects the guts from being pierced and spilling bitter contents.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you make the belly slit?",
+      "choices": [
+        "Deeply towards the backbone.",
+        "Shallowly, with the blade tip pointing up.",
+        "By sawing firmly through the contents."
+      ],
+      "answer": 1,
+      "because": "A shallow upward-pointing cut opens the belly without cutting into the guts.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should you see after rinsing the cavity?",
+      "choices": [
+        "Gills still attached inside the opening.",
+        "A dark strip of blood left along the backbone.",
+        "A pale cavity without dark blood along the backbone."
+      ],
+      "answer": 2,
+      "because": "Rubbing away the dark blood and rinsing leaves the cavity visibly clear.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A sauce became bitter after the gills were left in. What would you change in the preparation next time?",
+      "choices": [
+        "Cut them away at both ends and rinse the cavity.",
+        "Rinse only the outside of the fish.",
+        "Leave them attached and use more sauce liquid."
+      ],
+      "answer": 0,
+      "because": "This preparation removes the gills rather than carrying their bitter taste into the sauce.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/round-fish", "tier": "drafted"}
   ],

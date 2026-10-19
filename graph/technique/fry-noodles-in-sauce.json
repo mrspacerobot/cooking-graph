@@ -4,7 +4,12 @@
   "names": {"en": "Fry noodles in sauce"},
   "aliases": {"en": ["fry noodles with sauce"]},
   "does": "Tosses loosened noodles in a very hot pan with meat and vegetables that are already cooked, and pours a sweet, tangy sauce round the edge of the pan, until the noodles are coated, lightly browned in places and still separate.",
-  "intro": null,
+  "intro": {
+    "what": "This method tosses loosened noodles with cooked additions and sauce in a hot pan.",
+    "why": "It teaches you to coat strands while keeping them separate, rather than letting them stew in sauce.",
+    "idea": "Coat without stewing",
+    "tier": "drafted"
+  },
   "how": [
     "Have the noodles loosened, the sauce mixed and everything else cut and at hand.",
     "Cook the meat and the firmest vegetables first in a hot pan with a little oil, then add the leaves and sprouts for a short time.",
@@ -30,7 +35,56 @@
       "fix": "Use a wide pan, or cook in batches."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What result are you aiming for when frying these noodles in sauce?",
+      "choices": [
+        "Coated strands that stay separate.",
+        "Soft strands sitting in a wet pool.",
+        "A compact noodle cake with a firm crust."
+      ],
+      "answer": 0,
+      "because": "The sauce should be taken up around separate strands, with no wet pool remaining.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where do you pour the sauce?",
+      "choices": [
+        "Onto the centre of the noodle pile.",
+        "Around the edge of the hot pan.",
+        "Into the noodles before the pan is heated."
+      ],
+      "answer": 1,
+      "because": "Sauce sizzles on the metal at the pan edge before being tossed through the noodles.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What appearance matches the intended finish?",
+      "choices": [
+        "Pale clumps floating in excess sauce.",
+        "Torn strands in a soft, wet mass.",
+        "Evenly brown, separate strands without pooled sauce."
+      ],
+      "answer": 2,
+      "because": "Separate coated strands and no wet pool show the sauce has been taken up.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The noodles tore while you broke up a clump in the pan. What would you change next time?",
+      "choices": [
+        "Loosen them before adding them to the pan.",
+        "Pull the clump apart forcefully as it fries.",
+        "Add extra sauce to stew the clump apart."
+      ],
+      "answer": 0,
+      "because": "Loosening noodles first avoids tearing them while trying to break up a clump in the pan.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/yakisoba-noodle", "tier": "drafted"},
     {"thing": "ingredient/udon-noodle", "tier": "drafted"}

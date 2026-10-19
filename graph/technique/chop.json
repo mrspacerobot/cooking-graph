@@ -4,7 +4,12 @@
   "names": {"en": "Chop", "fr": "Hacher"},
   "aliases": {"en": ["chop finely", "chop roughly", "hand-chop"]},
   "does": "Cuts food into small, uneven pieces, where the exact shape does not matter.",
-  "intro": null,
+  "intro": {
+    "what": "Food is cut into small pieces when a precise geometric shape is unnecessary.",
+    "why": "Stopping at the intended fineness preserves distinct pieces and avoids turning delicate ingredients into paste.",
+    "idea": "Size without rigid shape",
+    "tier": "drafted"
+  },
   "how": [
     "Gather the food into a low pile.",
     "Hold the tip of the knife on the board with your free hand.",
@@ -24,7 +29,56 @@
       "fix": "Cut it by hand with a sharp knife: slices, then strips, then small cubes."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "When is chopping useful?",
+      "choices": [
+        "When every piece must be a perfect cube.",
+        "When small pieces matter more than exact shape.",
+        "When the aim is a completely smooth puree."
+      ],
+      "answer": 1,
+      "because": "Chopping controls fineness without requiring the repeated geometry of a precise dice.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How is the pile worked in this method?",
+      "choices": [
+        "Press the blade flat to crush the pile.",
+        "Chop only the centre without gathering outer pieces.",
+        "Rock the knife across it, then gather it together again."
+      ],
+      "answer": 2,
+      "because": "Gathering the pile lets repeated rocking cuts reach the pieces evenly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should chopped herbs look like?",
+      "choices": [
+        "Small distinct pieces that remain dry and separate.",
+        "A dark wet paste smeared on the board.",
+        "Whole leaves mixed with crushed stems."
+      ],
+      "answer": 0,
+      "because": "Separate pieces indicate cutting without excessive bruising and moisture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Wet herbs turned into a dark paste. What should change?",
+      "choices": [
+        "Chop them wetter and work them longer.",
+        "Dry them before chopping and stop when fine enough.",
+        "Crush them against the board before cutting."
+      ],
+      "answer": 1,
+      "because": "Drying and limiting the cutting reduce the tendency to bruise herbs into paste.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/tender-herbs", "tier": "drafted"},
     {"thing": "group/pickles", "tier": "drafted"},

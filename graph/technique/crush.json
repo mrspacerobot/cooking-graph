@@ -4,7 +4,12 @@
   "names": {"en": "Crush", "fr": "Écraser à plat"},
   "aliases": {"en": ["crush garlic", "crush the garlic", "crush garlic with salt"], "fr": ["écraser l'ail"]},
   "does": "Presses a clove of garlic flat under the blade of a knife, or under a pestle, and works it with salt into a damp, rough paste that melts into a dressing or a sauce.",
-  "intro": null,
+  "intro": {
+    "what": "Garlic is pressed and worked with salt into a damp paste for a dressing or sauce.",
+    "why": "Changing pieces into paste lets the garlic disperse rather than remain as distinct chopped fragments.",
+    "idea": "From fragments to paste",
+    "tier": "drafted"
+  },
   "how": [
     "Peel the clove and set it on a board with a little salt. The salt grips it and wears it down.",
     "Lay the flat of a broad knife on the clove and press down with the heel of the hand until it splits.",
@@ -25,7 +30,56 @@
       "fix": "Stir it into the acid or the oil soon after it is done."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why make garlic into paste for this method?",
+      "choices": [
+        "So it stays in firm separate cubes.",
+        "So it disperses into the dressing or sauce.",
+        "So the cloves keep their whole shape."
+      ],
+      "answer": 1,
+      "because": "A damp paste combines with the liquid more readily than intact pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What role does salt play during crushing here?",
+      "choices": [
+        "It keeps the garlic sliding freely.",
+        "It keeps the garlic pieces firm while only the juices spread.",
+        "It helps grip and abrade the garlic."
+      ],
+      "answer": 2,
+      "because": "Salt provides grip and abrasion while the garlic is worked down.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance shows the intended result?",
+      "choices": [
+        "A pale damp paste without lumps.",
+        "Dry intact cloves with split skins.",
+        "Large firm cubes on a wet board."
+      ],
+      "answer": 0,
+      "because": "The visible pieces should have been worked into a cohesive wet paste.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Garlic slides around and remains in pieces. What should change?",
+      "choices": [
+        "Polish the board with oil first.",
+        "Work it with salt as this method describes.",
+        "Keep pressing intact cloves without working them."
+      ],
+      "answer": 1,
+      "because": "Salt helps prevent sliding while the garlic is worn into paste.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/garlic", "tier": "drafted"}
   ],

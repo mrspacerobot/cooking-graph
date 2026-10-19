@@ -4,7 +4,12 @@
   "names": {"en": "Cube tofu"},
   "aliases": {"en": ["cut tofu into cubes", "dice tofu"]},
   "does": "Cuts a block of soft tofu into neat cubes with a wet blade and a slicing motion, without pressing, so that the cubes keep their corners and do not break.",
-  "intro": null,
+  "intro": {
+    "what": "Soft tofu is sliced with a wet blade into cubes that keep their smooth sides.",
+    "why": "A delicate ingredient needs a gliding cut rather than pressure. Gentle transfer preserves the shape after cutting too.",
+    "idea": "Slice without crushing",
+    "tier": "drafted"
+  },
   "how": [
     "Lift the block out of its water and let it drain for a short while on a board.",
     "Wet a thin, sharp knife.",
@@ -22,7 +27,56 @@
     },
     {"mistake": "Cutting with a dry knife, so that the tofu drags and tears.", "fix": "Wet the blade."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why avoid pressing down hard on soft tofu?",
+      "choices": [
+        "It makes the cubes hold sharper corners.",
+        "It removes the need to wet the blade.",
+        "It crushes the block instead of leaving intact cubes."
+      ],
+      "answer": 2,
+      "because": "Soft tofu yields easily, so pressure can break it into crumbs.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the knife pass through the tofu?",
+      "choices": [
+        "Draw a wet blade through in a smooth slicing motion.",
+        "Push a dry blade straight down forcefully.",
+        "Saw repeatedly while compressing the block."
+      ],
+      "answer": 0,
+      "because": "A wet gliding blade reduces dragging and crushing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the cubes look like?",
+      "choices": [
+        "Crumbly with torn edges.",
+        "Smooth-sided with clean corners.",
+        "Compressed into flat ragged sheets."
+      ],
+      "answer": 1,
+      "because": "Clean sides and corners show the block was sliced without breaking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Tofu drags against the knife and tears. What should change?",
+      "choices": [
+        "Press harder with the same dry blade.",
+        "Use rougher sawing strokes.",
+        "Wet the blade before slicing."
+      ],
+      "answer": 2,
+      "because": "Wetting the blade reduces the drag that tears the delicate tofu.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/tofu", "tier": "drafted"}
   ],

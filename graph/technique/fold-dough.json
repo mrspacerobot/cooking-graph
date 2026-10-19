@@ -4,7 +4,12 @@
   "names": {"en": "Fold dough"},
   "aliases": {"en": ["fold the dough", "fold over the dough"]},
   "does": "Folds a sheet or a round of dough over itself, from the sides and into a square or a letter, so that it stacks into layers or gains strength, and so that any fat or oil brushed between the layers stays shut in them.",
-  "intro": null,
+  "intro": {
+    "what": "Rested dough is spread into a sheet and folded over itself in the shape the dish requires.",
+    "why": "Folding can build structure and stack layers. When the dish uses fat between folds, complete coverage and gentle handling preserve that separation.",
+    "idea": "Relax, spread, fold, rest",
+    "tier": "drafted"
+  },
   "how": [
     "Rest the dough first, so that it relaxes and does not spring back.",
     "Stretch or roll it into an even sheet on a lightly oiled or floured surface.",
@@ -26,7 +31,56 @@
       "fix": "Brush the fat right to the edges."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What can folding create in a layered dough?",
+      "choices": [
+        "A thicker sheet with the layers pressed firmly together.",
+        "Stacked sheets with the prescribed fat between them.",
+        "A tightly rolled strand with no sheet-like layers."
+      ],
+      "answer": 1,
+      "because": "Folding stacks the dough surfaces; separating fat keeps those surfaces from simply joining.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen before stretching tense dough?",
+      "choices": [
+        "Pull harder while it springs back.",
+        "Fold it tightly without spreading it.",
+        "Let it rest until it relaxes."
+      ],
+      "answer": 2,
+      "because": "Resting reduces the resistance that makes tense dough shrink or tear.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What can show that a layered fold has remained distinct?",
+      "choices": [
+        "Fine even lines along a cut edge.",
+        "A solid fused edge without lines.",
+        "A ragged dry edge filled with holes."
+      ],
+      "answer": 0,
+      "because": "Lines along the edge reveal the stacked sheets inside the dough.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The layers welded together at dry corners. What would you change next time?",
+      "choices": [
+        "Leave a wider dry border around every fold.",
+        "Carry the prescribed fat to the edges before folding.",
+        "Press the dry corners together harder."
+      ],
+      "answer": 1,
+      "because": "Fat coverage at the corners helps maintain separation there as well as at the centre.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/msemen-dough", "tier": "drafted"},
     {"thing": "preparation/puff-pastry", "tier": "drafted"},

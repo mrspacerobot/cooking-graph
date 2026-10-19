@@ -4,7 +4,12 @@
   "names": {"en": "Stir-fry", "fr": "Sauter au wok"},
   "aliases": {"en": ["stir-fry in a wok", "stir fry in a hot pan", "fry rice"], "fr": ["sauter à feu vif"]},
   "does": "Cooks small, even pieces very fast in a little hot oil in a wide pan, keeping them moving all the time with a spoon or a spatula, so that they take colour at the edges and stay crisp or just tender inside.",
-  "intro": null,
+  "intro": {
+    "what": "Stir-frying cooks small pieces quickly in a hot wide pan while keeping them moving.",
+    "why": "It teaches you to coordinate preparation, pan space and ingredient order before cooking begins.",
+    "idea": "Prepare first, move quickly",
+    "tier": "drafted"
+  },
   "how": [
     "Cut everything small and even, and have it all at hand before the pan goes on, because the cooking is quick.",
     "Heat a wok or wide pan until very hot, then add a little oil and swirl it.",
@@ -28,7 +33,56 @@
     },
     {"mistake": "Leaving the food still for long, so that it scorches.", "fix": "Keep it moving."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why prepare everything before heating a stir-fry pan?",
+      "choices": [
+        "The ingredients must all enter at exactly the same moment.",
+        "The fast cooking leaves little time for preparation between additions.",
+        "Prepared ingredients need no attention in the pan."
+      ],
+      "answer": 1,
+      "because": "Having ingredients ready lets you add them in the required order without leaving others to scorch.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should sauces be added in this method?",
+      "choices": [
+        "At the start before the pan heats.",
+        "In enough volume to submerge the ingredients throughout.",
+        "Near the end so they coat rather than stew the food."
+      ],
+      "answer": 2,
+      "because": "Late sauce additions keep quick hot-pan cooking from becoming prolonged simmering.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What can a fading sizzle suggest?",
+      "choices": [
+        "The pan has been crowded and cooled.",
+        "Browning is necessarily complete.",
+        "The heat is reaching every piece more strongly."
+      ],
+      "answer": 0,
+      "because": "A load of food can cool the pan, reducing the sizzle and encouraging stewing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Crowded food is stewing in pooled water. What should change?",
+      "choices": [
+        "Keep the whole batch in the pan and stir faster.",
+        "Cook smaller batches in the hot pan.",
+        "Cover tightly to retain the moisture."
+      ],
+      "answer": 1,
+      "because": "Smaller batches preserve heat and space so released moisture does not dominate the cooking.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},
     {"thing": "group/watery-vegetables", "tier": "drafted"},

@@ -4,7 +4,12 @@
   "names": {"en": "Sizzle chilli butter"},
   "aliases": {"en": ["kizdirilmis tereyagi", "sizzled red butter"]},
   "does": "Melts butter, takes it off the heat and stirs in dried chilli flakes or paprika, which sizzle for a moment and turn the butter bright red and fragrant. It is spooned over yogurt, eggs, dumplings or soup at the last moment.",
-  "intro": null,
+  "intro": {
+    "what": "Chilli butter uses residual heat in melted butter to release dried pepper colour and aroma.",
+    "why": "It teaches you that delicate spices can bloom without staying over direct heat.",
+    "idea": "Use residual heat",
+    "tier": "drafted"
+  },
   "how": [
     "Melt the butter in a small pan over a gentle heat until it foams, and stop before it browns.",
     "Take the pan off the heat and stir in the chilli flakes or the paprika.",
@@ -29,7 +34,52 @@
       "fix": "Make it as the dish is ready and spoon it over while it is hot."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the intended character of this chilli butter?",
+      "choices": [
+        "Dark brown with a bitter pepper taste.",
+        "Bright red and fragrant without a scorched edge.",
+        "Pale butter with dry unheated flakes."
+      ],
+      "answer": 1,
+      "because": "Brief gentle sizzling releases the pepper’s colour and aroma without scorching it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should chilli or paprika be added?",
+      "choices": [
+        "Before heating the butter over a strong flame.",
+        "After browning the butter deeply.",
+        "After taking the foaming melted butter off the heat."
+      ],
+      "answer": 2,
+      "because": "Residual heat is enough for the flakes, reducing the chance of burning them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which smell suggests the intended result?",
+      "choices": ["Warm sweet dried-pepper aroma.", "A sharp scorched smell.", "A bitter burnt-butter smell."],
+      "answer": 0,
+      "because": "A warm pepper scent indicates blooming rather than scorching.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The chilli turned black and bitter. What would you change next time?",
+      "choices": [
+        "Keep the pan on the heat and stir faster.",
+        "Remove the butter from the heat before adding it.",
+        "Brown the butter further before adding more chilli."
+      ],
+      "answer": 1,
+      "because": "Direct heat after the flakes are added can scorch them quickly.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/butter", "tier": "drafted"},
     {"thing": "ingredient/chili-flakes", "tier": "drafted"},

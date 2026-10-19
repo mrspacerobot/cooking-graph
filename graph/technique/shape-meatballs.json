@@ -4,7 +4,12 @@
   "names": {"en": "Shape meatballs"},
   "aliases": {"en": ["roll meatballs", "form meatballs"]},
   "does": "Rolls seasoned minced meat between wet palms into round balls of an even size, so that they hold together and cook at the same pace.",
-  "intro": null,
+  "intro": {
+    "what": "Meatball shaping turns a cohesive mince mixture into lightly rolled portions of similar size.",
+    "why": "It teaches you to control portion size and handling pressure without making the mixture dense.",
+    "idea": "Equal portions, light pressure",
+    "tier": "drafted"
+  },
   "how": [
     "Knead the minced meat with its seasoning until it holds together, and chill it briefly so that it handles well.",
     "Wet the hands, or rub them with a little oil, so that the meat does not stick.",
@@ -27,7 +32,56 @@
     },
     {"mistake": "Working with dry hands, so that the meat sticks and tears.", "fix": "Wet or oil the hands often."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why portion meatballs consistently?",
+      "choices": [
+        "So they can be packed more tightly when rolling.",
+        "So the surface needs no smoothing.",
+        "So their sizes do not cause different cooking rates."
+      ],
+      "answer": 2,
+      "because": "Similar portions produce similar-sized balls rather than pieces that respond differently to heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How can the portions be kept consistent?",
+      "choices": [
+        "Measure them out with a spoon before rolling.",
+        "Judge each size only after cooking.",
+        "Pull off random amounts and press them equally hard."
+      ],
+      "answer": 0,
+      "because": "Portioning before shaping separates size control from the rolling motion.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches well-shaped meatballs?",
+      "choices": [
+        "A mix of large and small rough pieces.",
+        "Similar-sized smooth balls without cracks.",
+        "Deep seams left around each ball."
+      ],
+      "answer": 1,
+      "because": "A smooth cohesive surface holds together during handling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Rolled meatballs became dense and heavy. What would you change next time?",
+      "choices": [
+        "Pack them more firmly to remove all spaces.",
+        "Roll them repeatedly for a longer time.",
+        "Use light pressure only until each ball holds."
+      ],
+      "answer": 2,
+      "because": "Excess pressure compacts the mixture; light rolling keeps it less dense.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/minced-meat", "tier": "drafted"}
   ],

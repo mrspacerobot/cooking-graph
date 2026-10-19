@@ -4,7 +4,12 @@
   "names": {"en": "Break the crust", "fr": "Casser la croûte"},
   "aliases": {"en": ["push the crust down", "break the crust of a cassoulet"], "fr": ["casser la croûte du cassoulet"]},
   "does": "Presses the golden crust that forms on top of a slowly baked pot of beans and meat down into the pot, so that it soaks up the juices and thickens them, then lets a fresh crust form. It is done several times, and the last crust is left whole for the table.",
-  "intro": null,
+  "intro": {
+    "what": "A browned crust on a bean pot is pressed into the juices before a fresh crust forms.",
+    "why": "This repeated movement makes the surface part of the thickened interior while preserving a final crisp top.",
+    "idea": "Crust feeds the sauce",
+    "tier": "drafted"
+  },
   "how": [
     "Sprinkle a thick layer of crumbs over the beans and meat, with the liquid just below the top.",
     "Bake at a low heat until a golden crust has formed on the top.",
@@ -26,7 +31,56 @@
       "fix": "Add a ladle of hot liquid whenever the beans no longer shine."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why press a formed crust into the bean pot?",
+      "choices": [
+        "It absorbs juices and helps thicken them.",
+        "It keeps the crumbs permanently separate from the sauce.",
+        "It keeps a permanent dry lid above the beans."
+      ],
+      "answer": 0,
+      "because": "The submerged crust takes up liquid and becomes part of the thickened beans.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should the crust be pressed down?",
+      "choices": [
+        "While the crumbs are still pale and damp.",
+        "After it has turned golden.",
+        "Only after the pot has dried out."
+      ],
+      "answer": 1,
+      "because": "The crust needs to form before it can be broken into the juices.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What contrast should the spoon encounter?",
+      "choices": [
+        "A wet loose topping above dry beans.",
+        "A burnt surface above thin clear water.",
+        "A crisp surface above creamy moist beans."
+      ],
+      "answer": 2,
+      "because": "The method combines a browned top with a thick, moist interior.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Pale crumbs become paste and no new crust forms. What should change?",
+      "choices": [
+        "Wait for browning before pressing them down.",
+        "Press the pale crumbs down sooner.",
+        "Stir the topping continuously."
+      ],
+      "answer": 0,
+      "because": "Waiting lets a proper crust develop before it meets the liquid.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/white-beans", "tier": "drafted"},
     {"thing": "preparation/breadcrumbs", "tier": "drafted"}

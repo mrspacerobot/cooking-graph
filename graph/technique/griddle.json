@@ -4,7 +4,12 @@
   "names": {"en": "Griddle", "fr": "Cuire sur une plaque"},
   "aliases": {"en": ["cook on a griddle", "griddle cook", "cook on a plancha"], "fr": ["cuire à la plancha"]},
   "does": "Cooks flat foods on a wide, flat, heavy surface that is dry or only lightly oiled, so that they brown in speckles and spots on each face and stay soft within, without being fried in a pool of fat.",
-  "intro": null,
+  "intro": {
+    "what": "Griddling browns flat foods on a heavy flat surface with little or no added oil.",
+    "why": "It teaches you to distinguish spotted browning from frying in fat and to keep finished flatbreads soft.",
+    "idea": "A hot flat surface",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the griddle well in advance, until it is evenly hot all over and a drop of water skips off it.",
     "Wipe it with a thin film of oil, or leave it dry for a dough that holds its own fat.",
@@ -28,7 +33,56 @@
       "fix": "Stack it in a cloth to keep it soft."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What distinguishes this griddle method from shallow frying?",
+      "choices": [
+        "A dry or lightly oiled surface rather than a pool of fat.",
+        "A deep layer of oil around each piece.",
+        "A covered pan full of steam."
+      ],
+      "answer": 0,
+      "because": "The griddle browns in spots using a dry surface or a thin film of oil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should you turn the food?",
+      "choices": [
+        "Immediately after laying it down.",
+        "When the underside has brown spots and lifts easily.",
+        "As soon as the top puffs, even if the underside still clings."
+      ],
+      "answer": 1,
+      "because": "Allow the first face to colour and release before turning to brown the other.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the first face developing?",
+      "choices": [
+        "A wet pale underside with no spots.",
+        "An even coating of deep frying oil.",
+        "Brown speckles underneath and puffing or bubbles on top."
+      ],
+      "answer": 2,
+      "because": "Speckles and puffing are the visible cues of browning on the hot flat surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Finished pieces are drying and becoming stiff. What would you change?",
+      "choices": [
+        "Stack them in a cloth.",
+        "Spread them uncovered to cool completely.",
+        "Leave them on the hot griddle between servings."
+      ],
+      "answer": 0,
+      "because": "A cloth keeps the finished pieces soft instead of exposing them to drying air.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"},
     {"thing": "group/breads", "tier": "drafted"}

@@ -4,7 +4,12 @@
   "names": {"en": "Set in aspic", "fr": "Prendre en gelée"},
   "aliases": {"en": ["set in jelly", "aspic", "set in a savoury jelly"], "fr": ["mettre en gelée", "en gelée"]},
   "does": "Holds cooked food in a clear, savoury jelly, which sets as it cools and turns a loose mixture into a firm block that can be turned out and cut in slices.",
-  "intro": null,
+  "intro": {
+    "what": "Aspic surrounds cooked food in a clear savoury jelly that firms as it cools.",
+    "why": "It teaches you to coordinate jelly thickness, filling distribution and chilling for a sliceable shape.",
+    "idea": "Pour as jelly thickens",
+    "tier": "drafted"
+  },
   "how": [
     "Make the jelly from a clear, well-flavoured stock with enough gelatin to hold it. Soak the gelatin in cold water first, then melt it into the warm stock.",
     "Let the jelly cool until it is syrupy and just starting to thicken, before it meets the food.",
@@ -30,7 +35,56 @@
       "fix": "Leave it to chill until it is firm all the way through."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does aspic contribute to the assembled dish?",
+      "choices": [
+        "A hot sauce meant to stay fluid.",
+        "A dry crumb coating around separate pieces.",
+        "A savoury jelly that holds the food in a sliceable shape."
+      ],
+      "answer": 2,
+      "because": "The cooling jelly binds the arranged pieces into a shape that can be turned out and sliced.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should the jelly meet the food?",
+      "choices": [
+        "When cooled to a syrupy texture and beginning to thicken.",
+        "While still very hot and freely flowing.",
+        "Only after it has formed a solid block."
+      ],
+      "answer": 0,
+      "because": "Slight thickening helps suspend the pieces without the jelly being too firm to fill gaps.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suits a finished aspic set?",
+      "choices": [
+        "A stiff rubbery resistance.",
+        "A gentle tremble while holding its shape when cut.",
+        "A liquid centre that flows out on slicing."
+      ],
+      "answer": 1,
+      "because": "A gentle set supports the food without the rubbery texture of excessive gelatin.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The jelly is stiff and rubbery. What should change next time?",
+      "choices": [
+        "Add more gelatin for stronger slices.",
+        "Chill the same overly firm mixture longer.",
+        "Use less gelatin and aim for a gentle tremble."
+      ],
+      "answer": 2,
+      "because": "Too much gelatin makes a rigid texture; reducing it changes the strength of the set.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/cooked-meats", "tier": "drafted"},
     {"thing": "preparation/white-chicken-stock", "tier": "drafted"},

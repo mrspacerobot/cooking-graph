@@ -4,7 +4,12 @@
   "names": {"en": "Cook on dum"},
   "aliases": {"en": ["dum", "dum cooking", "seal the pot and cook slowly"]},
   "does": "Layers marinated meat and nearly cooked rice in a heavy pot, closes the lid tightly, often with a rope of dough, and finishes the dish in its own steam over a very low heat. Nothing is stirred, and the pot is opened at the table.",
-  "intro": null,
+  "intro": {
+    "what": "Layered rice and marinated meat finish in a tightly sealed pot over restrained heat.",
+    "why": "Dum depends on contained steam and intact layers. Keeping the pot closed matters more than repeated checking or stirring.",
+    "idea": "A sealed layered pot",
+    "tier": "drafted"
+  },
   "how": [
     "Spread the marinated meat in an even layer on the bottom of a heavy pot, with a little ghee.",
     "Pile the nearly cooked rice over the meat in loose layers, with herbs, crisp fried onions and ghee between them. Do not press it down.",
@@ -42,7 +47,52 @@
       "fix": "Dig down to the bottom with a flat spoon and lift the layers out whole."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why seal the lid closely for this dum method?",
+      "choices": [
+        "To retain the steam that finishes the layered dish.",
+        "To dry the upper rice with escaping steam.",
+        "To make stirring through the layers easier."
+      ],
+      "answer": 0,
+      "because": "The seal contains the moisture on which the undisturbed cooking depends.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should rice be placed over the meat?",
+      "choices": [
+        "Packed firmly into a dense block.",
+        "In loose layers without pressing it down.",
+        "Stirred into the meat before sealing."
+      ],
+      "answer": 1,
+      "because": "Loose layering preserves the structure rather than compressing or mixing the grains.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What sound fits the intended gentle cooking?",
+      "choices": ["Hard bubbling and loud spitting.", "A sharp crackle from a drying base.", "A faint steady hiss."],
+      "answer": 2,
+      "because": "The quiet hiss accompanies the restrained heat used after steam builds.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The base scorches while the pot stays sealed. What should change?",
+      "choices": [
+        "Reduce the heat and use the iron plate beneath the pot.",
+        "Increase the direct flame under the base.",
+        "Press the layers tightly against the bottom."
+      ],
+      "answer": 0,
+      "because": "The plate and lower heat moderate the heat reaching the bottom layer.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/basmati-rice", "tier": "drafted"},
     {"thing": "ingredient/chicken-thigh", "tier": "drafted"},

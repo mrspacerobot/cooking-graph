@@ -7,7 +7,12 @@
     "fr": ["stabiliser"]
   },
   "does": "Prepares yogurt so that it can be heated and simmered without splitting into curds and thin liquid. A starch or a beaten egg white is mixed into the cold yogurt, and the yogurt is stirred one way as it heats.",
-  "intro": null,
+  "intro": {
+    "what": "This yogurt method mixes in starch or egg white before gentle heating.",
+    "why": "It teaches you to protect a smooth texture by preparing the mixture and controlling heat.",
+    "idea": "Prepare before heating",
+    "tier": "drafted"
+  },
   "how": [
     "Whisk the yogurt smooth in a pan, off the heat.",
     "Mix a little cornstarch with cold water until smooth, or beat an egg white loose, and whisk it into the yogurt.",
@@ -32,7 +37,56 @@
       "fix": "Hold it at a gentle simmer."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does stabilising yogurt aim to prevent?",
+      "choices": [
+        "Separation into curds and thin liquid during heating.",
+        "All thickening of the yogurt.",
+        "Mixing yogurt with other liquids."
+      ],
+      "answer": 0,
+      "because": "The added stabiliser and gentle heat help maintain a smooth creamy mixture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When is the stabiliser mixed into the yogurt?",
+      "choices": [
+        "After the yogurt has boiled hard and separated.",
+        "While the yogurt is cold and off the heat.",
+        "Only after serving the hot sauce."
+      ],
+      "answer": 1,
+      "because": "Mixing before heating distributes the stabiliser through the yogurt in advance.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests a smooth heated yogurt sauce?",
+      "choices": [
+        "Small curds floating in thin liquid.",
+        "A clear watery border widening around grains.",
+        "Creamy without grains or a watery pool at the sides."
+      ],
+      "answer": 2,
+      "because": "Grains and separate liquid signal a loss of the intended continuous texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The prepared yogurt splits during hard boiling. What should change?",
+      "choices": [
+        "Heat gently and maintain only a bare simmer.",
+        "Boil harder to evaporate the separated liquid.",
+        "Add the stabiliser only after a vigorous boil."
+      ],
+      "answer": 0,
+      "because": "Stabilisation does not remove the need for gentle heat; hard boiling can still disrupt the texture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/plain-yogurt", "tier": "drafted"}
   ],

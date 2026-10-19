@@ -4,7 +4,12 @@
   "names": {"en": "Make a soffritto"},
   "aliases": {"en": ["soffritto", "cook a soffritto", "fare il soffritto"]},
   "does": "Cooks very finely chopped onion, carrot and celery slowly in olive oil, until they melt together into a soft, sweet, golden base on which the rest of the dish is built.",
-  "intro": null,
+  "intro": {
+    "what": "This soffritto slowly softens finely chopped onion, carrot and celery in olive oil.",
+    "why": "It teaches you to build a sweet base whose vegetables blend into the dish rather than remain hard pieces.",
+    "idea": "Soften before colouring deeply",
+    "tier": "drafted"
+  },
   "how": [
     "Chop the onion, carrot and celery very fine and as even as you can, so that they melt into the dish and do not show as pieces.",
     "Warm olive oil in a wide, heavy pan over low heat, then add the vegetables with a little salt.",
@@ -29,7 +34,56 @@
       "fix": "Give it the time it needs."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why chop the soffritto vegetables finely and evenly?",
+      "choices": [
+        "So they brown before their centres soften.",
+        "So they soften together and blend into the dish.",
+        "So they remain distinct pieces in the finished sauce."
+      ],
+      "answer": 1,
+      "because": "Even small pieces develop together instead of leaving a mixture of burnt and hard vegetables.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you control the heat?",
+      "choices": [
+        "Use high heat to brown before softening.",
+        "Keep the vegetables still over strong heat.",
+        "Keep it gentle and stir now and then."
+      ],
+      "answer": 2,
+      "because": "Gentle heat allows softening and sweetness before the base becomes dark or bitter.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What appearance matches a developed soffritto?",
+      "choices": [
+        "A soft golden mass with lightly tinted oil.",
+        "Hard bright pieces in clear oil.",
+        "Dark edges around firm centres."
+      ],
+      "answer": 0,
+      "because": "The vegetables should soften together into a golden base rather than keep hard centres.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The vegetables brown before they soften. What would you do?",
+      "choices": [
+        "Increase the heat to soften the centres faster.",
+        "Lower the heat and add a little water to hold back colour.",
+        "Move on immediately to the next ingredient."
+      ],
+      "answer": 1,
+      "because": "Lower heat and a little water slow browning while the vegetables soften.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"},
     {"thing": "ingredient/carrot", "tier": "drafted"},

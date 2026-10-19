@@ -4,7 +4,12 @@
   "names": {"en": "Grind a chutney"},
   "aliases": {"en": ["grind fresh chutney", "grind a wet chutney"]},
   "does": "Grinds fresh coconut or fresh herbs with green chilli, ginger, salt and a little cold water in a blender or on a stone into a coarse, moist paste, which is served raw as a fresh relish.",
-  "intro": null,
+  "intro": {
+    "what": "This fresh chutney method grinds coconut or herbs with chilli and ginger into a moist, coarse relish.",
+    "why": "It teaches you to use just enough cold water to move the blades while keeping texture and fresh flavour.",
+    "idea": "Coarse and fresh",
+    "tier": "drafted"
+  },
   "how": [
     "Put the coconut or the herbs in the blender with the green chilli, the ginger, the salt and any thickener, such as roasted split chickpeas.",
     "Add a little cold water to start. Pulse and scrape down the sides.",
@@ -30,7 +35,56 @@
     },
     {"mistake": "Using warm water, which turns the herbs dark and the coconut sour sooner.", "fix": "Use cold water."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture is the aim of this fresh chutney method?",
+      "choices": [
+        "A moist, coarse paste that holds on a spoon.",
+        "A thin liquid that pours freely.",
+        "A warm, completely smooth purée."
+      ],
+      "answer": 0,
+      "because": "A little texture and enough body to sit on a spoon distinguish this chutney from a thin purée.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you add water during grinding?",
+      "choices": [
+        "All at once before checking the texture.",
+        "Gradually, only until the blades catch and the paste turns.",
+        "Keep pouring after the mixture turns freely."
+      ],
+      "answer": 1,
+      "because": "Gradual additions help the blades move without thinning and diluting the chutney.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests the desired consistency?",
+      "choices": [
+        "A watery stream without body.",
+        "A stiff, dry mass stuck above the blades.",
+        "A coarse paste falling in a slow ribbon."
+      ],
+      "answer": 2,
+      "because": "A moist paste should move slowly from the spoon while retaining its coarse texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The chutney became warm and pasty during grinding. What would you change next time?",
+      "choices": [
+        "Pulse briefly and stop while it is still coarse.",
+        "Keep the motor running to smooth it further.",
+        "Use warm water to help the blades."
+      ],
+      "answer": 0,
+      "because": "Long grinding warms the paste; short pulses preserve the intended coarse texture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/coconut", "tier": "drafted"},
     {"thing": "ingredient/coriander-leaf", "tier": "drafted"},

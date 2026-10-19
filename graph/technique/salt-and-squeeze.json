@@ -4,7 +4,12 @@
   "names": {"en": "Salt and squeeze"},
   "aliases": {"en": ["salt and squeeze the slices", "rub with salt and squeeze"]},
   "does": "Rubs thin slices of a watery or bitter vegetable with salt, leaves them to wilt a little, and squeezes them by hand to wring out the bitter liquid. They keep a firm bite and a milder taste.",
-  "intro": null,
+  "intro": {
+    "what": "Salting and squeezing wilts thin vegetable slices before pressing out liquid.",
+    "why": "It teaches you to soften harshness while preserving a firm bite instead of crushing the vegetable.",
+    "idea": "Wilt, then squeeze",
+    "tier": "drafted"
+  },
   "how": [
     "Slice the vegetable thin and put it in a bowl.",
     "Sprinkle on salt and rub it in lightly with your hands.",
@@ -19,7 +24,52 @@
     {"mistake": "Adding salt in a heap, which makes the slices too salty.", "fix": "Sprinkle evenly and rub lightly."},
     {"mistake": "Squeezing too hard, which bruises them.", "fix": "Squeeze firmly but not to a pulp."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim of salting and squeezing these slices?",
+      "choices": [
+        "A stronger salty taste with the liquid retained.",
+        "Drier slices without changing their harshness.",
+        "A milder taste while retaining some bite."
+      ],
+      "answer": 2,
+      "because": "Released liquid carries away some harshness while gentle squeezing preserves the slices.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should salt be applied?",
+      "choices": [
+        "Sprinkle evenly and rub it in lightly.",
+        "Leave it in a heap on top.",
+        "Add it only after squeezing the dry slices."
+      ],
+      "answer": 0,
+      "because": "Even distribution avoids intensely salty patches and helps the slices wilt consistently.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel shows the slices are ready to squeeze?",
+      "choices": ["Rigid and snapping.", "Limp and flexible.", "Crushed into a paste."],
+      "answer": 1,
+      "because": "Wilting makes thin slices bend and release liquid without needing to be pulped.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The slices became bruised and pulpy. What would you change next time?",
+      "choices": [
+        "Twist them harder to remove every trace of water.",
+        "Chop them more finely after squeezing.",
+        "Squeeze firmly but with less crushing pressure."
+      ],
+      "answer": 2,
+      "because": "The aim is to expel liquid while preserving a recognisable vegetable texture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/bitter-melon", "tier": "drafted"},
     {"thing": "ingredient/cucumber", "tier": "drafted"}

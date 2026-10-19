@@ -4,7 +4,12 @@
   "names": {"en": "Make dashi"},
   "aliases": {"en": ["make Japanese stock", "make kombu and bonito stock"]},
   "does": "Steeps dried kelp and dried bonito in hot water for a short time, to draw out a clear, savoury stock. Nothing is boiled long: a long boil turns the stock bitter and cloudy.",
-  "intro": null,
+  "intro": {
+    "what": "This dashi gently extracts flavour from kelp and bonito into a clear savoury stock.",
+    "why": "It teaches you to draw flavour through brief steeping rather than long boiling or squeezing.",
+    "idea": "Extract gently",
+    "tier": "drafted"
+  },
   "how": [
     "Wipe the kelp with a damp cloth and leave the white bloom on, as it carries taste. Put it in cold water and bring the water up slowly.",
     "Take the kelp out just before the water boils.",
@@ -24,7 +29,52 @@
     {"mistake": "Squeezing the bonito in the sieve, which clouds the stock.", "fix": "Let it drip by itself."},
     {"mistake": "Simmering the bonito, which makes the stock fishy.", "fix": "Steep it off the heat only."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use gentle steeping rather than long boiling?",
+      "choices": [
+        "To preserve a clear stock without harsh bitterness.",
+        "To break the kelp down into a thick purée.",
+        "To make the stock deliberately cloudy."
+      ],
+      "answer": 0,
+      "because": "Long boiling can make this stock bitter and cloudy instead of clear and savoury.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When do you remove the kelp?",
+      "choices": [
+        "After a prolonged rolling boil.",
+        "Just before the water boils.",
+        "After crushing it together with the bonito."
+      ],
+      "answer": 1,
+      "because": "Removing kelp before boiling avoids the slimy, bitter result described for hard cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended dashi?",
+      "choices": ["Cloudy with pressed flakes suspended.", "A thick green paste.", "Pale gold and clear."],
+      "answer": 2,
+      "because": "Gentle extraction and unpressed straining preserve a clear stock.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Pressing bonito in the sieve clouds the stock. What would you change next time?",
+      "choices": [
+        "Let it drip through without pressing.",
+        "Squeeze harder to collect all the liquid.",
+        "Simmer the flakes longer before squeezing."
+      ],
+      "answer": 0,
+      "because": "Pressing carries material into the stock that clouds it; let the liquid drain by itself.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/kombu", "tier": "drafted"},
     {"thing": "ingredient/bonito-flakes", "tier": "drafted"}

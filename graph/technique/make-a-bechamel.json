@@ -4,7 +4,12 @@
   "names": {"en": "Make a béchamel"},
   "aliases": {"en": ["make bechamel", "make a white sauce"]},
   "does": "Cooks a pale roux, whisks warm milk into it a little at a time and simmers it to a smooth white sauce seasoned with nutmeg. Thin, it coats food. Thick, it holds a baked dish together.",
-  "intro": null,
+  "intro": {
+    "what": "Béchamel joins milk to a pale roux and simmers it into a smooth white sauce.",
+    "why": "It teaches you to add liquid gradually and choose thickness for coating food or binding a baked dish.",
+    "idea": "Smooth milk and roux",
+    "tier": "drafted"
+  },
   "how": [
     "Warm the milk in a second pan until it is hot but not boiling.",
     "Melt the butter in a saucepan, stir in an equal weight of flour and cook it, stirring, only until it smells like biscuit and has taken no colour.",
@@ -31,7 +36,56 @@
       "fix": "Simmer it gently until it tastes of milk and not of flour."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "How does the desired use affect the sauce thickness?",
+      "choices": [
+        "Looser for coating, thicker for holding a baked dish together.",
+        "Always equally thick regardless of use.",
+        "Thinner for binding a baked dish than for coating."
+      ],
+      "answer": 0,
+      "because": "Thickness serves the job: a coating sauce can be looser than a sauce that binds a dish.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you add milk to the pale roux?",
+      "choices": [
+        "All at once before beginning to whisk.",
+        "Gradually, whisking each addition smooth.",
+        "Only after browning the roux dark."
+      ],
+      "answer": 1,
+      "because": "Gradual additions help the paste join the milk smoothly instead of forming lumps.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches a smooth béchamel?",
+      "choices": [
+        "Brown sauce with floating flour lumps.",
+        "Thin milk separated from a grainy paste.",
+        "Ivory sauce flowing in a slow, even ribbon."
+      ],
+      "answer": 2,
+      "because": "A smooth ivory ribbon shows the milk and pale roux have combined.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce is starting to stick at the base. What would you change?",
+      "choices": [
+        "Keep the heat low and stir into the corners.",
+        "Raise the heat and stir only the surface.",
+        "Leave it still until a skin forms."
+      ],
+      "answer": 0,
+      "because": "Gentle heat and stirring across the base and corners reduce catching.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/roux", "tier": "drafted"},
     {"thing": "ingredient/milk", "tier": "drafted"}

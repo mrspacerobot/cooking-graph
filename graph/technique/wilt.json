@@ -4,7 +4,12 @@
   "names": {"en": "Wilt", "fr": "Tomber"},
   "aliases": {"en": ["wilt down"]},
   "does": "Collapses tender leaves with brief heat, so that they turn soft and dark and lose most of their bulk.",
-  "intro": null,
+  "intro": {
+    "what": "Wilting briefly heats tender leaves until they collapse and lose bulk.",
+    "why": "It teaches you to stop at a texture change instead of leaving delicate greens to release more water.",
+    "idea": "Stop when leaves collapse",
+    "tier": "drafted"
+  },
   "how": [
     "Wash the leaves and leave the water that clings to them.",
     "Melt a little fat in a wide pan over medium heat.",
@@ -20,7 +25,56 @@
       "fix": "Stop the moment they collapse, and drain them."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What change is sought when wilting tender leaves?",
+      "choices": [
+        "They form a crisp dry crust.",
+        "They remain rigid and unchanged.",
+        "They soften and collapse from their raw bulk."
+      ],
+      "answer": 2,
+      "because": "Brief heat softens the leaves so a large raw heap becomes a smaller limp mass.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should leaves be added to the pan?",
+      "choices": [
+        "By handfuls, turning them as they collapse.",
+        "Pressed into a dense unmoving stack.",
+        "Dry them completely and add the whole pile without turning."
+      ],
+      "answer": 0,
+      "because": "Gradual additions and turning expose fresh leaves as the earlier ones lose volume.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance fits wilted greens?",
+      "choices": [
+        "Pale rigid leaves holding the original heap.",
+        "Dark green glossy limp leaves with much less bulk.",
+        "Blackened crisp fragments around dry stems."
+      ],
+      "answer": 1,
+      "because": "Collapse and gloss distinguish wilting from leaving leaves raw or frying them until crisp.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The leaves became slimy while continuing to shed water. What would you change next time?",
+      "choices": [
+        "Leave them heating until all structure disappears.",
+        "Cover and keep cooking after collapse.",
+        "Remove them when they collapse and drain them."
+      ],
+      "answer": 2,
+      "because": "Continued heating beyond collapse can over-soften tender leaves and release excess liquid.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/leafy-greens", "tier": "drafted"}
   ],

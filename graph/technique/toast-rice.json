@@ -4,7 +4,12 @@
   "names": {"en": "Toast rice"},
   "aliases": {"en": ["tostatura", "toast the rice", "toast the rice in fat"]},
   "does": "Stirs raw rice in hot fat until the outside of each grain turns translucent and the grains are hot and dry, so that they keep their shape and take up stock slowly. The Italian name for this first step of a risotto is tostatura.",
-  "intro": null,
+  "intro": {
+    "what": "Tostatura warms dry risotto rice in fat before liquid is added.",
+    "why": "It teaches you to recognise a translucent grain edge without taking the rice into dark browning.",
+    "idea": "Translucent edges, pale centres",
+    "tier": "drafted"
+  },
   "how": [
     "Make the base of the dish first in the same wide pan, such as onion softened in butter, and leave it soft.",
     "Tip in the dry, unwashed rice and stir over medium heat, so that every grain is coated in fat.",
@@ -33,7 +38,56 @@
       "fix": "Coat them in hot fat first."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What makes this rice step different from dark dry-toasting?",
+      "choices": [
+        "The rice must become dark brown before stock.",
+        "The grains are coated in hot fat without being browned.",
+        "The grains are boiled in stock first."
+      ],
+      "answer": 1,
+      "because": "Tostatura heats the fat-coated rice to a translucent edge while preserving pale centres.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the rice enter the softened onion base?",
+      "choices": [
+        "Wet from rinsing and left unstirred.",
+        "Already boiled and drained.",
+        "Dry and unwashed, then stirred to coat in fat."
+      ],
+      "answer": 2,
+      "because": "Dry rice can coat in the fat while retaining the surface starch used in risotto.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance guides the end of this toasting step?",
+      "choices": [
+        "Translucent edges with a pearly centre.",
+        "Deep brown grains throughout.",
+        "Wet grains surrounded by cloudy stock."
+      ],
+      "answer": 0,
+      "because": "The changing edge shows heating without the scorched taste of excessive browning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The rice tasted scorched after toasting. What would you change next time?",
+      "choices": [
+        "Wait for the centres to brown as well.",
+        "Stop at translucent edges before browning develops.",
+        "Leave the grains still for a darker crust."
+      ],
+      "answer": 1,
+      "because": "The intended grain change is subtle translucence rather than a browned crust.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/risotto-rices", "tier": "drafted"}
   ],

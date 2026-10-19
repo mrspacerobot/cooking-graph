@@ -11,7 +11,12 @@
     ]
   },
   "does": "Binds fat, egg and a hard cheese into one glossy cream with hot starchy water, off the heat. No fat is whisked in drop by drop: the starch in the water and the warmth of the pasta hold it together, and it splits or scrambles if the heat comes back.",
-  "intro": null,
+  "intro": {
+    "what": "Egg, cheese, fat and hot starchy pasta water are brought into a glossy sauce off the heat.",
+    "why": "This method uses retained warmth and gradual water additions rather than returning the pan to the burner. Texture guides the balance between thick and watery.",
+    "idea": "Residual warmth and starchy water",
+    "tier": "drafted"
+  },
   "how": [
     "Have everything ready before the pasta is done: the fat in the pan, the egg and cheese mixed in a bowl, and a mug of hot starchy cooking water.",
     "Take the pan off the heat. Heat is what splits this kind of sauce.",
@@ -41,7 +46,56 @@
       "fix": "Add it a splash at a time and stop when it is glossy."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the intended result of this off-heat method?",
+      "choices": [
+        "Separate oil floating around firm egg flecks.",
+        "A glossy cream that clings to the pasta.",
+        "A watery broth that leaves the pasta bare."
+      ],
+      "answer": 1,
+      "because": "The components should combine into a coating cream rather than remain separated.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What happens to the pan before the egg mixture goes in?",
+      "choices": [
+        "It stays over moderate heat as the egg mixture is added.",
+        "It returns to the burner before the egg is mixed through.",
+        "It comes off the heat and stops sizzling."
+      ],
+      "answer": 2,
+      "because": "Removing direct heat limits the scrambling and splitting described for this sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests the sauce has come together?",
+      "choices": [
+        "Smooth gloss without egg lumps or oil puddles.",
+        "Firm egg flecks suspended in loose oil.",
+        "A clear watery pool beneath bare pasta."
+      ],
+      "answer": 0,
+      "because": "A continuous glossy coating shows the intended combined texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce became watery after a large water addition. What should change next time?",
+      "choices": [
+        "Pour in all the available water immediately.",
+        "Add the hot starchy water gradually and stop at a coating texture.",
+        "Replace the pasta water with cold plain water."
+      ],
+      "answer": 1,
+      "because": "Gradual additions let the cook control loosening before the sauce becomes too thin.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"},
     {"thing": "ingredient/egg-yolk", "tier": "drafted"},

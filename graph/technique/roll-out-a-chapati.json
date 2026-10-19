@@ -4,7 +4,12 @@
   "names": {"en": "Roll out a chapati"},
   "aliases": {"en": ["roll chapati", "roll out roti"]},
   "does": "Rolls a ball of atta dough into a thin, even round, a little at a time, turning it often, so that it is the same thickness all over and puffs evenly when it is cooked.",
-  "intro": null,
+  "intro": {
+    "what": "Rolling chapati turns atta dough into a thin even round for the hot plate.",
+    "why": "It teaches you how an even thickness and light dusting influence puffing and surface flavour.",
+    "idea": "Even round, light dusting",
+    "tier": "drafted"
+  },
   "how": [
     "Flatten a ball of dough in a dish of dry flour, coating both faces lightly.",
     "Roll from the centre outwards with short, firm strokes. Give the dough a small turn after each stroke, so that it grows into a round.",
@@ -27,7 +32,56 @@
     },
     {"mistake": "Stacking rolled rounds without flour, so that they stick.", "fix": "Cook each one as it is rolled."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why aim for the same thickness across a chapati?",
+      "choices": [
+        "To keep the edge crisp while the middle stays thick.",
+        "To help it cook and puff evenly.",
+        "To make extra dusting flour unnecessary in every case."
+      ],
+      "answer": 1,
+      "because": "An even round avoids thick patches that lag behind the rest during cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the dough move between rolling strokes?",
+      "choices": [
+        "Leave it fixed and roll across the same line.",
+        "Stretch only its outer edge by hand.",
+        "Turn it a little while rolling from the centre outward."
+      ],
+      "answer": 2,
+      "because": "Turning distributes the rolling strokes around the dough and helps maintain a round shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which sign suggests a well-rolled chapati round?",
+      "choices": [
+        "Even thickness and a smooth edge without cracks.",
+        "A thick centre and translucent rim.",
+        "A cracked edge around a sticky middle."
+      ],
+      "answer": 0,
+      "because": "A consistent sheet without tears is easier to lift and cooks more evenly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Loose flour burns on the hot plate. What should change?",
+      "choices": [
+        "Add a thicker flour coating before cooking.",
+        "Dust lightly and shake off excess before cooking.",
+        "Leave loose flour beneath each round."
+      ],
+      "answer": 1,
+      "because": "Dusting should prevent sticking; excess flour left on the surface can burn and taste bitter.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/chapati-dough", "tier": "drafted"}
   ],

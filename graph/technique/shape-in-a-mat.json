@@ -4,7 +4,12 @@
   "names": {"en": "Shape in a mat"},
   "aliases": {"en": ["shape in mat", "shape with a bamboo mat", "press in a rolling mat"]},
   "does": "Rolls a warm, soft food up in a bamboo mat and presses it, so that it sets into a firm, even block with square edges.",
-  "intro": null,
+  "intro": {
+    "what": "A bamboo mat shapes warm soft food into an even block as it firms.",
+    "why": "It teaches you to use distributed pressure and warmth to control shape without cracking.",
+    "idea": "Press along the length",
+    "tier": "drafted"
+  },
   "how": [
     "Lay the mat on the board with the bamboo sticks running side to side.",
     "Place the warm food at the near edge and roll the mat over it tightly.",
@@ -25,7 +30,56 @@
       "fix": "Squeeze the whole length of the mat with both hands."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does pressing in the mat create?",
+      "choices": [
+        "Loose pieces separated by the bamboo.",
+        "An even block with straight sides.",
+        "A thin sheet stretched across the board."
+      ],
+      "answer": 1,
+      "because": "The rolled mat supports the food while pressure defines its sides and edges.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should the food be shaped in the mat?",
+      "choices": [
+        "Only after it is cold and stiff.",
+        "After slicing it into finished portions.",
+        "While still warm and pliable."
+      ],
+      "answer": 2,
+      "because": "Warm soft food can take the mat’s shape without the cracking caused by stiffness.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the block do when cut?",
+      "choices": [
+        "Hold together with an even outline.",
+        "Slump into a loose mound.",
+        "Break along cracks from rolling."
+      ],
+      "answer": 0,
+      "because": "A firm coherent block shows that it has taken and retained its shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "An end of the block became thinner than the rest. What would you change next time?",
+      "choices": [
+        "Squeeze that thin end harder.",
+        "Press evenly along the whole mat with both hands.",
+        "Press only at the centre of the mat."
+      ],
+      "answer": 1,
+      "because": "Distributed pressure prevents local compression from narrowing parts of the block.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"}
   ],

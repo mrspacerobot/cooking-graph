@@ -4,7 +4,12 @@
   "names": {"en": "Whisk", "fr": "Fouetter"},
   "aliases": {"en": ["beat", "beat eggs", "whisk together", "whisk in", "whisk eggs"]},
   "does": "Beats a liquid with a whisk until it is blended and smooth.",
-  "intro": null,
+  "intro": {
+    "what": "Whisking blends a liquid until its colour and texture are even.",
+    "why": "It teaches you to distinguish simple blending from whipping a foam.",
+    "idea": "Blend without over-aerating",
+    "tier": "drafted"
+  },
   "how": [
     "Use a bowl large enough that nothing slops over.",
     "Tilt the bowl and beat in quick strokes that cross the middle.",
@@ -19,7 +24,56 @@
       "fix": "Stop as soon as the streaks of white are gone."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim of basic whisking here?",
+      "choices": [
+        "The tallest possible stiff foam in every mixture.",
+        "A smooth evenly blended liquid.",
+        "Separate streaks of each ingredient."
+      ],
+      "answer": 1,
+      "because": "Whisking brings ingredients together; it need not continue until a foam forms.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should strokes move through the bowl?",
+      "choices": [
+        "Quick strokes only at the surface without crossing the middle.",
+        "Short strokes at a single edge while leaving the bowl upright.",
+        "Quick strokes crossing the middle in a tilted roomy bowl."
+      ],
+      "answer": 2,
+      "because": "Strokes through the mixture distribute ingredients while a roomy bowl limits splashing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance shows omelette eggs are blended?",
+      "choices": [
+        "Even yellow with the white streaks gone.",
+        "Distinct white streaks beneath a yellow surface.",
+        "A dry peak holding on the whisk."
+      ],
+      "answer": 0,
+      "because": "An even colour indicates the whites and yolks have combined without requiring a foam.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "An omelette turns spongy after its eggs were whisked into foam. What should change?",
+      "choices": [
+        "Whip to a stiffer peak next time.",
+        "Stop whisking once the white streaks disappear.",
+        "Keep incorporating air after the eggs look even."
+      ],
+      "answer": 1,
+      "because": "For this use, blending is enough; added foam changes the intended omelette texture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "group/emulsified-sauces", "tier": "drafted"},
     {"thing": "group/roux-sauces", "tier": "drafted"},

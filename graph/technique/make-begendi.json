@@ -4,7 +4,12 @@
   "names": {"en": "Make begendi"},
   "aliases": {"en": ["smoky aubergine cream", "aubergine cream"]},
   "does": "Beats the soft flesh of charred aubergine into a cooked white sauce of flour, butter and milk with melted cheese, to a thick, pale, smoky cream that is spooned out under braised meat.",
-  "intro": null,
+  "intro": {
+    "what": "Beğendi combines mashed charred aubergine with a pale white sauce and melted cheese.",
+    "why": "It teaches you to balance a smoky vegetable pulp with a smooth sauce thick enough to support a stew.",
+    "idea": "Smoky pulp, smooth sauce",
+    "tier": "drafted"
+  },
   "how": [
     "Pull the charred flesh off the skin, drain off the bitter juice and mash the flesh with a fork to a pulp.",
     "Cook the flour in the butter to a roux, without letting it colour.",
@@ -32,7 +37,56 @@
       "fix": "Keep the heat low and stir."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture should beğendi provide beneath the stew?",
+      "choices": [
+        "A thin broth that runs across the plate.",
+        "A thick cream that holds its shape on a spoon.",
+        "Dry aubergine pieces separate from cheese."
+      ],
+      "answer": 1,
+      "because": "The aubergine and sauce should form a thick, spoonable base for the stew.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you add milk to the pale roux?",
+      "choices": [
+        "All at once before any whisking.",
+        "After leaving the flour paste unstirred to brown.",
+        "Gradually, whisking until smooth."
+      ],
+      "answer": 2,
+      "because": "Gradual milk additions avoid lumps while building a smooth white sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended finish?",
+      "choices": [
+        "A pale smoky-flecked cream holding a soft peak.",
+        "A watery mixture with floating aubergine pieces.",
+        "Long cheese strings stuck to the pan."
+      ],
+      "answer": 0,
+      "because": "A thick, pale cream combines the aubergine and melted cheese without becoming stringy.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The aubergine juice thins the cream and makes it sour. What would you change next time?",
+      "choices": [
+        "Add all the juice before the milk.",
+        "Drain the flesh before combining it with the sauce.",
+        "Keep the juice and use higher heat after adding cheese."
+      ],
+      "answer": 1,
+      "because": "Draining the aubergine avoids carrying excess bitter liquid into the cream.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/aubergine", "tier": "drafted"},
     {"thing": "preparation/roux", "tier": "drafted"},

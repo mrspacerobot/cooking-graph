@@ -4,7 +4,12 @@
   "names": {"en": "Fry onions to deep brown"},
   "aliases": {"en": ["birista", "beresta", "crisp fried onions"]},
   "does": "Fries thinly sliced onions in a generous amount of fat until their water has gone and they turn deep brown and crisp, then lifts them out to drain. They are crushed into a marinade, layered into rice, scattered on top, or stirred into a gravy.",
-  "intro": null,
+  "intro": {
+    "what": "This method fries thin onions deep brown and drains them so they crisp as they cool.",
+    "why": "It teaches you to anticipate continued darkening and lift onions out before the final colour goes too far.",
+    "idea": "Lift before overbrowning",
+    "tier": "drafted"
+  },
   "how": [
     "Slice the onions thin and even, so that they brown together. Spread them out to dry a little if they are wet.",
     "Heat plenty of fat in a wide pan until a slice sizzles at once, then add the onions in a loose layer.",
@@ -37,7 +42,56 @@
       "fix": "Lift them out and spread them on paper at once."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why lift the onions out of the fat to cool?",
+      "choices": [
+        "So they stop developing any crispness.",
+        "So they retain a coating of pooled fat.",
+        "So they drain and crisp instead of becoming soft and greasy."
+      ],
+      "answer": 2,
+      "because": "Onions left cooling in hot fat can become soft and greasy; draining lets them crisp.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you adjust heat as their colour deepens?",
+      "choices": [
+        "Lower it and stay beside the pan.",
+        "Raise it to speed the final browning.",
+        "Keep it high and leave them unattended."
+      ],
+      "answer": 0,
+      "because": "The final darkening happens quickly, so lower heat and close attention matter.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What happens to the sound as water leaves the onions?",
+      "choices": [
+        "A quiet start grows into a constant roar.",
+        "A loud sizzle fades to a quiet crackle.",
+        "The sound stays unchanged throughout."
+      ],
+      "answer": 1,
+      "because": "Less water remains as frying progresses, and the loud sizzle fades.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The onions kept darkening into bitterness after lifting. What would you change for the next batch?",
+      "choices": [
+        "Wait for darker edges before draining.",
+        "Leave them in the fat until cool.",
+        "Lift them a shade lighter because they continue darkening."
+      ],
+      "answer": 2,
+      "because": "The fat carried on the onions continues darkening them after lifting, so anticipate that change.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/onion", "tier": "drafted"},
     {"thing": "ingredient/shallot", "tier": "drafted"}

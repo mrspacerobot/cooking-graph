@@ -4,7 +4,12 @@
   "names": {"en": "Make garlic yogurt"},
   "aliases": {"en": ["sarimsakli yogurt", "garlic yoghurt"]},
   "does": "Stirs crushed, salted garlic into cold, thick yogurt until it is smooth and evenly scented, so that it can be spooned under or over hot and cold food. The yogurt is never heated.",
-  "intro": null,
+  "intro": {
+    "what": "Garlic yogurt mixes a smooth salted garlic paste through cold thick yogurt.",
+    "why": "It teaches you to distribute a strong flavour evenly while keeping a cool, smooth sauce that spreads.",
+    "idea": "Smooth garlic, even flavour",
+    "tier": "drafted"
+  },
   "how": [
     "Crush the garlic with the salt to a smooth paste, so that no raw lump is left to bite.",
     "Spoon the yogurt into a bowl and beat it with a spoon until it is smooth. Loosen very thick yogurt with a splash of cold water if it will not spread.",
@@ -29,7 +34,56 @@
       "fix": "Add water a splash at a time and stop as soon as it spreads."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why crush the garlic to a paste before mixing?",
+      "choices": [
+        "To leave distinct strong pieces throughout.",
+        "To remove the need to stir the yogurt.",
+        "To avoid harsh lumps in individual bites."
+      ],
+      "answer": 2,
+      "because": "A smooth garlic paste distributes the flavour instead of leaving harsh pockets.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you loosen yogurt that is too thick to spread?",
+      "choices": [
+        "Add cold water gradually, stopping when it spreads.",
+        "Pour in plenty of water before checking it.",
+        "Heat it strongly until it becomes thin."
+      ],
+      "answer": 0,
+      "because": "Gradual water additions loosen the texture without making it run off the food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the finished mixture?",
+      "choices": [
+        "Large garlic pieces in streaked yogurt.",
+        "Smooth and even without garlic streaks.",
+        "Separate watery liquid around grainy yogurt."
+      ],
+      "answer": 1,
+      "because": "Smooth yogurt and finely crushed garlic combine into an evenly scented sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Heating makes the yogurt split and turn grainy. What would you change next time?",
+      "choices": [
+        "Heat it harder until the grains disappear.",
+        "Add it to the pot while the liquid boils.",
+        "Keep it cold and spoon it onto the dish at serving."
+      ],
+      "answer": 2,
+      "because": "Keeping the sauce away from direct cooking heat protects its smooth texture.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/strained-yogurt", "tier": "drafted"},
     {"thing": "ingredient/plain-yogurt", "tier": "drafted"}

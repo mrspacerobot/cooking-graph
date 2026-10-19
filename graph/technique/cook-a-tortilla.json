@@ -6,7 +6,12 @@
     "en": ["make a tortilla", "cook a tortilla espanola", "cook a Spanish omelette", "cook a tortilla de patatas"]
   },
   "does": "Sets a mix of beaten egg and soft cooked potato in a small pan into a thick, round cake, golden outside and tender or even creamy in the middle. It is turned over once with the help of a plate.",
-  "intro": null,
+  "intro": {
+    "what": "Egg and softened potato form a thick Spanish tortilla that is turned with a plate.",
+    "why": "Gentle heat and a coherent underside let you manage a substantial egg cake without tearing it during the turn.",
+    "idea": "A gentle set before turning",
+    "tier": "drafted"
+  },
   "how": [
     "Heat a spoonful of the kept oil in a small non-stick pan over a medium heat, so that it coats the base and the sides.",
     "Pour in the mix of egg and potato and press it level. It should hiss softly, not spit.",
@@ -36,7 +41,56 @@
       "fix": "Use a small, deep pan, so that the cake is thick."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use a suitably small pan for this tortilla?",
+      "choices": [
+        "To spread the mixture as thinly as possible.",
+        "To keep a thick cake rather than a thin dry layer.",
+        "To make the egg set as a very thin outer film."
+      ],
+      "answer": 1,
+      "because": "Pan size controls the depth and texture of the tortilla.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should you check before the plate-assisted turn?",
+      "choices": [
+        "The underside is still loose and runs freely.",
+        "The cake is stuck firmly to the base.",
+        "The edge is firm and the cake slides when shaken."
+      ],
+      "answer": 2,
+      "because": "A coherent moving cake is easier to turn without tearing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What pan movement suggests the tortilla is released?",
+      "choices": [
+        "The cake slides freely when the pan is shaken.",
+        "The pan moves but the cake stays fixed.",
+        "Only loose egg moves around a stuck base."
+      ],
+      "answer": 0,
+      "because": "Sliding shows that the cake can move as a joined shape before the turn.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The outside scorches before the centre starts setting. What should change?",
+      "choices": [
+        "Raise the heat to darken the surface faster.",
+        "Lower the heat for gentler cooking.",
+        "Keep the heat high but turn the cake repeatedly."
+      ],
+      "answer": 1,
+      "because": "Gentler heat gives the thicker mixture time to change without burning the exterior.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/egg", "tier": "drafted"},
     {"thing": "ingredient/potato", "tier": "drafted"}

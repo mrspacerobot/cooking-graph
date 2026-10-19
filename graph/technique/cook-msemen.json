@@ -4,7 +4,12 @@
   "names": {"en": "Cook msemen"},
   "aliases": {},
   "does": "Stretches a folded square of layered dough out thin again with oiled fingertips, lays it on a hot, lightly oiled griddle and cooks both faces until it is golden in speckles and its layers have set apart, so that it comes away in flaky sheets.",
-  "intro": null,
+  "intro": {
+    "what": "A folded square of msemen dough is stretched gently and cooked on an oiled griddle.",
+    "why": "The folds need room to remain distinct: fingertip shaping and moderate heat preserve flaky sheets beneath the crisp surface.",
+    "idea": "Preserving msemen sheets",
+    "tier": "drafted"
+  },
   "how": [
     "Heat a flat griddle or a wide pan over a medium heat and oil it lightly.",
     "Press the folded square out with oiled fingertips, to a flat square that is still in layers.",
@@ -27,7 +32,52 @@
       "fix": "Keep the heat moderate."
     }
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What structure should this cooking method preserve?",
+      "choices": [
+        "A dense dough slab without layers.",
+        "Thin layers that pull apart in sheets.",
+        "A brittle crumb throughout the bread."
+      ],
+      "answer": 1,
+      "because": "Msemen is shaped in layers, so cooking should leave those layers distinguishable.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How is the folded square flattened before cooking?",
+      "choices": ["Rolled forcefully with a pin.", "Pressed until all the seams disappear.", "With oiled fingertips."],
+      "answer": 2,
+      "because": "Fingertips spread the square without crushing the folded layers together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the cooked bread?",
+      "choices": [
+        "Speckled golden faces with layered edges.",
+        "Black faces around a dense wet centre.",
+        "Pale faces sealed into a smooth solid slab."
+      ],
+      "answer": 0,
+      "because": "Spotted browning and visible layers match the intended griddle texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The outside burns while inner layers stay doughy. What should change?",
+      "choices": [
+        "Increase the griddle heat further.",
+        "Use more moderate heat.",
+        "Press the bread harder to fuse the layers."
+      ],
+      "answer": 1,
+      "because": "Moderating the heat gives the inner layers time to change before the surface burns.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "preparation/msemen-dough", "tier": "drafted"}
   ],

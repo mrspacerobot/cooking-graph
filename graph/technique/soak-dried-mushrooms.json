@@ -4,7 +4,12 @@
   "names": {"en": "Soak dried mushrooms"},
   "aliases": {"en": ["rehydrate dried mushrooms"]},
   "does": "Steeps dried mushrooms in warm water until they are plump and soft, and keeps the dark, fragrant soaking water, strained of grit, to flavour the dish.",
-  "intro": null,
+  "intro": {
+    "what": "Soaking restores dried mushrooms and produces a fragrant liquid that can flavour the dish.",
+    "why": "It teaches you to recover useful flavour while separating the grit that settles beneath it.",
+    "idea": "Save flavour, leave grit",
+    "tier": "drafted"
+  },
   "how": [
     "Rinse the dried mushrooms quickly under cold water to take off loose dust.",
     "Cover them with warm water, not hot, in a bowl, and press them down so that they stay under.",
@@ -29,7 +34,56 @@
     },
     {"mistake": "Using hot water, which can leave the mushrooms tasting flat.", "fix": "Use warm water."}
   ],
-  "quiz": [],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep the mushroom soaking liquid?",
+      "choices": [
+        "It replaces the need to remove grit.",
+        "It carries mushroom flavour that can enrich the dish.",
+        "It makes the mushrooms unnecessary in every dish."
+      ],
+      "answer": 1,
+      "because": "The liquid takes on aroma during soaking, but needs straining before use.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the soaking liquid be recovered?",
+      "choices": [
+        "Tip it all in quickly without straining.",
+        "Stir the sediment through it before pouring.",
+        "Pour slowly through a fine sieve and leave the sediment behind."
+      ],
+      "answer": 2,
+      "because": "Slow straining and leaving the dregs separates useful liquid from settled grit.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suggests the mushrooms have rehydrated?",
+      "choices": [
+        "Plump and pliable without a hard dry centre.",
+        "Soft edges around a brittle centre.",
+        "Rigid pieces that snap when bent."
+      ],
+      "answer": 0,
+      "because": "Water must reach the dried interior for the pieces to become flexible throughout.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Grit reached the finished sauce. What would you change next time?",
+      "choices": [
+        "Rinse the mushrooms but use the soaking liquid unstrained.",
+        "Strain the liquid and avoid pouring in the dregs.",
+        "Stir the soaking bowl harder before pouring."
+      ],
+      "answer": 1,
+      "because": "Grit is carried with the liquid unless the sediment is separated deliberately.",
+      "tier": "drafted"
+    }
+  ],
   "works_on": [
     {"thing": "ingredient/porcini-mushroom", "tier": "drafted"},
     {"thing": "ingredient/morel", "tier": "drafted"}

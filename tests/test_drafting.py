@@ -129,9 +129,9 @@ class OneOfEachKind(unittest.TestCase):
                 ingredients=[drafting.line("i/leek", 2, "piece", "f/diced", part="leeks"), drafting.line("i/butter", 20, "gram", part="leeks")],
                 equipment=["e/pan"],
                 steps=[
-                    drafting.step("t/dice", ["i/leek"], "Cut the leeks into even cubes."),
+                    drafting.step("t/dice", ["i/leek"], "Cut the {leeks.leek} into even cubes."),
                     drafting.step(
-                        "t/sweat", ["i/leek"], "Soften the leeks in the butter.", using=["i/butter"],
+                        "t/sweat", ["i/leek"], "Soften the {leeks.leek} in the {leeks.butter}.", using=["i/butter"],
                         time=drafting.span(8, 10, "minute"), safety=["cooling-and-keeping"], makes=["p/roux"],
                     ),
                 ],

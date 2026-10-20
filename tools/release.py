@@ -14,7 +14,7 @@ from collections import namedtuple
 
 from tools import check, numbers, review_rules, serving
 
-ARTIFACT_SCHEMA_VERSION = 2
+ARTIFACT_SCHEMA_VERSION = 3
 CHANNELS = ("draft", "production")
 OUT = os.path.join("out", "release")
 ARTIFACT_FILE = "graph-artifact.json"

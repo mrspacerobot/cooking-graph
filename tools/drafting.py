@@ -199,7 +199,13 @@ def line(thing_id, value, unit, *forms, part=None):
 
 
 def step(technique_id, works_on, text, using=(), time=None, temperature=None, safety=(), makes=()):
-    """One step of a recipe: what the technique works on, what it is done with, and what it leaves behind."""
+    """One step of a recipe: what the technique works on, what it is done with, and what it leaves behind.
+
+    The text names the foods of the recipe's lines only through placeholders, `{part}` (or `{part.ingredient}` when the
+    part holds several foods), and puts text that belongs to an optional part in a clause, `[part: ... {part} ...]`.
+    The part of a line is the slug of its food unless `line(..., part=...)` names another. `./check` rejects a plain
+    mention of such a food. See docs/recipe-steps.md.
+    """
     return {
         "technique": full(technique_id),
         "works_on": all_full(works_on),

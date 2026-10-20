@@ -160,7 +160,7 @@ def recipe():
             "technique": "technique/sweat",
             "works_on": ["ingredient/onion"],
             "with": ["ingredient/butter"],
-            "text": "Soften the onions in the butter over low heat.",
+            "text": "Soften the {onion} in the {roux} over low heat.",
             "time": {"from": 8, "to": 10, "unit": "minute"},
             "temperature": None,
             "safety_points": ["cooling-and-keeping"],

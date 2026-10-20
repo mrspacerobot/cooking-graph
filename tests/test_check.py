@@ -475,6 +475,7 @@ class Recipes(CheckerTest):
                 {"thing": "ingredient/flour", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "flour"},
             ]
             thing["steps"][0]["works_on"] = []
+            thing["steps"][0]["text"] = "Melt the {butter} [flour: and stir in the {flour}]."
             thing["steps"][0]["with"] = ["ingredient/butter", "ingredient/flour"]
             thing["steps"].append(dict(thing["steps"][0], works_on=[], **{"with": ["preparation/roux"]}))
 
@@ -543,6 +544,7 @@ class Recipes(CheckerTest):
         def forget_the_roux(thing):
             thing["ingredients"] = thing["ingredients"][:1]
             thing["steps"][0]["with"] = []
+            thing["steps"][0]["text"] = "Soften the {onion}."
 
         self.break_file(RECIPE, forget_the_roux)
         self.expect(RECIPE, "part-not-filled")

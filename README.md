@@ -29,6 +29,7 @@ unverified. Nothing here may be shown to a cook or exported to an app.
 | `schema/words.json` | The closed word lists: tiers, units, roles |
 | `tools/`, `tests/` | The commands and their tests. Python standard library only |
 | `viewer/` | The interactive browser page's template, styles and JavaScript |
+| `docs/recipe-steps.md` | How a recipe step's text is written so that code can swap a food or leave out a part |
 | `docs/model.md` | The model in words, and every change to the starting model with the example that forced it |
 | `docs/night-one.md` | The report of the first night: what to open first, the numbers, the doubts, the open questions |
 | `docs/strict-answers.md` | Every answer that an ingredient holds a fact strictly and not for certain. Written by `./safety strict` |
@@ -141,8 +142,8 @@ technique that works on the original. A part option supplies no ratio or caveat 
 stand-in statement records them. `./stand-ins`, `./recipes` and `./kitchen` return recipe amounts and
 starting forms unchanged. `./compose` converts an amount only where a stand-in statement records a ratio
 of the same measure (weight, volume or count) as the amount's unit; otherwise it says why it did not.
-It never edits a step's words: each step comes back as written, with a `read_as` list of what to read in
-place of what. None of the commands tests a recipe in a kitchen, and `./compose` does not write a new
+Each step's words are written for the foods the cook uses (placeholders filled with the stand-in's name, the clauses of a
+left-out part dropped, see `docs/recipe-steps.md`), with a `read_as` list of what stands in for what. None of the commands tests a recipe in a kitchen, and `./compose` does not write a new
 recipe: it adapts one the graph already holds, with no model involved.
 An exclusion-only statement has `allows: false`: it asserts only its `not_when`,
 and never enables the replacement in other contexts.

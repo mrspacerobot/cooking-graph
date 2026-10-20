@@ -117,7 +117,7 @@ class PreparationTest(unittest.TestCase):
         recipe = copy.deepcopy(self.things["recipe/buttered-onions"].data)
         recipe.update(id=recipe_id, makes=makes)
         recipe["ingredients"] = [dict(recipe["ingredients"][0], thing=thing, part="onion") for thing in lines]
-        recipe["steps"] = [dict(recipe["steps"][0], technique=technique)]
+        recipe["steps"] = [dict(recipe["steps"][0], technique=technique, text="Mix it.")]
         self.things[recipe_id] = Thing("", "recipe", recipe)
         return recipe
 

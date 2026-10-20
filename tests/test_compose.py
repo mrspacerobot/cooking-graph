@@ -42,6 +42,7 @@ class ComposeTest(unittest.TestCase):
     def test_a_recipe_covering_every_technique_ranks_before_a_complete_one_that_covers_fewer(self):
         self.add_recipe_with_mince()
         self.recipe["ingredients"] = self.recipe["ingredients"][:1]
+        self.recipe["steps"][0]["text"] = "Soften the {onion}."
         answer = self.compose(("sweat", "mince"), ("ingredient/onion",))["recipes"]
         self.assertEqual(["recipe/z-onions", "recipe/buttered-onions"], [row["recipe"] for row in answer])
         self.assertEqual(([], ["technique/mince"]), (answer[0]["uncovered"], answer[1]["uncovered"]))
@@ -107,12 +108,20 @@ class ComposeTest(unittest.TestCase):
     def test_a_step_says_how_to_read_a_replaced_ingredient(self):
         step = self.first()["steps"][0]
         self.assertEqual([{"original": "ingredient/butter", "instead": "ingredient/oil"}], step["read_as"])
-        self.assertEqual(self.recipe["steps"][0]["text"], step["text"])
+        self.assertEqual("Soften the onion in the oil over low heat.", step["text"])
         self.assertEqual(["cooling-and-keeping"], step["safety_points"])
 
     def test_a_step_with_nothing_replaced_reads_as_written(self):
         answer = self.first(at_home=("ingredient/onion", "ingredient/butter"))
         self.assertEqual([], answer["steps"][0]["read_as"])
+        self.assertEqual("Soften the onion in the butter over low heat.", answer["steps"][0]["text"])
+
+    def test_a_step_of_a_part_left_out_is_dropped_and_its_clause_goes(self):
+        self.recipe["steps"][0]["text"] = "Soften the {onion} in the {butter} [garnish: and add the {garnish}]."
+        self.recipe["ingredients"].append({"thing": "ingredient/onion-skin", "part": "garnish", "forms": [],
+                                           "amount": {"value": 1, "unit": "pinch"}})
+        answer = self.first(at_home=("ingredient/onion", "ingredient/butter"), avoid=("milk",))
+        self.assertTrue(all("garnish" not in step["text"] for step in answer["steps"]))
 
     def test_missing_lines_are_listed_and_keep_the_amount_needed(self):
         answer = self.first(at_home=("ingredient/onion",))

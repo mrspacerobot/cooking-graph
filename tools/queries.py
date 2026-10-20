@@ -1,6 +1,6 @@
 """Deterministic graph questions. Only explicit, direct knowledge is used."""
 
-from tools import group_rules, names, query_safety
+from tools import group_rules, names, query_safety, recipe_text
 
 SAFETY = "Safety records are unverified. Internal graph exploration only; nothing may be exported or shown to a cook."
 FOODS = ("ingredient", "preparation")
@@ -243,15 +243,26 @@ def line_amount(amount, status, choice, factor):
     return answer
 
 
-def steps_as_read(recipe, parts):
-    """Each step as written, and which ingredient to read in place of which, from the parts already answered."""
-    replaced = {line["original"]: line["choice"]["thing"] for part in parts for line in part["lines"]
-                if line["status"] not in ("at-home", "missing", "refused")}
-    return [{"technique": step["technique"], "text": step["text"], "time": step["time"],
+def swaps_made(parts):
+    """{(part, original food): food in use} for the lines a cook fills with an alternative."""
+    return {(part["part"], line["original"]): line["choice"]["thing"] for part in parts for line in part["lines"]
+            if line["status"] not in ("at-home", "missing", "refused")}
+
+
+def steps_as_read(things, recipe, parts):
+    """Each step with its words written for the foods the cook uses: stand-ins named, left-out parts dropped.
+
+    A step whose text is empty once the parts are left out is not listed. `read_as` still says which food stands
+    in for which in the step."""
+    swaps = swaps_made(parts)
+    replaced = {original: instead for (_, original), instead in swaps.items()}
+    left_out = [part["part"] for part in parts if part["status"] == "omitted"]
+    texts = dict(recipe_text.rendered_steps(things, recipe, swaps, left_out))
+    return [{"technique": step["technique"], "text": texts[number], "time": step["time"],
              "temperature": step["temperature"], "safety_points": step["safety_points"],
              "read_as": [{"original": thing_id, "instead": replaced[thing_id]}
                          for thing_id in step["works_on"] + step["with"] if thing_id in replaced]}
-            for step in recipe["steps"]]
+            for number, step in enumerate(recipe["steps"], start=1) if number in texts]
 
 
 def compose_recipe(things, row, home, avoided, factor):
@@ -264,7 +275,7 @@ def compose_recipe(things, row, home, avoided, factor):
             line["amount"] = line_amount(amounts[(part["part"], line["original"])], line["status"], line["choice"], factor)
             if line["status"] == "missing" and not part["optional"]:
                 answer["missing"].append({"part": part["part"], "original": line["original"]})
-    answer["steps"] = steps_as_read(recipe, answer["parts"])
+    answer["steps"] = steps_as_read(things, recipe, answer["parts"])
     return answer
 
 

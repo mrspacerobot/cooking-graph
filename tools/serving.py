@@ -7,7 +7,7 @@ cook when its food or one of its swaps is safe for what they avoid; a recipe is 
 unsafe for, and never make the recipe unsafe.
 """
 
-from tools import queries, query_safety
+from tools import queries, query_safety, recipe_text, step_text
 
 
 def facts_in(things):
@@ -66,7 +66,8 @@ def offered(entry, avoided):
 def serving_of(things):
     facts = facts_in(things)
     recipes = sorted(thing_id for thing_id, thing in things.items() if thing.kind == "recipe")
-    return {"facts": facts, "recipes": {recipe_id: recipe_entry(things, recipe_id, facts) for recipe_id in recipes}}
+    return {"facts": facts, "step_text": {"proper_name_words": list(step_text.PROPER_NAME_WORDS)},
+            "recipes": {recipe_id: recipe_entry(things, recipe_id, facts) for recipe_id in recipes}}
 
 
 def avoid_sets(facts):
@@ -86,4 +87,35 @@ def vectors_of(things):
     for avoid in avoid_sets(facts_in(things)):
         offered = [recipe for recipe in recipes if queries.can_make(things, recipe, avoid)["status"] == "ok"]
         cases.append({"avoid": avoid, "offered": offered})
-    return {"cases": cases}
+    return {"cases": cases, "step_text_cases": step_text_cases(things, recipes)}
+
+
+def first_swaps(things, recipe_id):
+    """Every line that has a swap, replaced by its first swap: {(part, food): stand-in}."""
+    lines = queries.stand_ins(things, recipe_id)["lines"]
+    return {(line["part"], line["original"]): line["options"][0]["thing"] for line in lines if line["options"]}
+
+
+def step_text_case(things, recipe_id, swaps, left_out):
+    recipe = things[recipe_id].data
+    steps = recipe_text.rendered_steps(things, recipe, swaps, left_out)
+    return {"recipe": recipe_id, "left_out": sorted(left_out),
+            "swaps": [{"part": part, "thing": food, "instead": instead} for (part, food), instead in sorted(swaps.items())],
+            "steps": [{"step": number, "text": text} for number, text in steps]}
+
+
+def step_text_cases(things, recipes):
+    """What a server must render for each recipe: as written, with each optional part left out, and with every
+    line that has a swap swapped. Written by the reference (`recipe_text`), so a server that renders the same
+    text is proven against it."""
+    cases = []
+    for recipe_id in recipes:
+        recipe = things[recipe_id].data
+        optional = sorted({part["id"] for part in things[recipe["makes"]].data["parts"] if part["optional"]})
+        cases.append(step_text_case(things, recipe_id, {}, []))
+        cases.extend(step_text_case(things, recipe_id, {}, [part]) for part in optional
+                     if any(line["part"] == part for line in recipe["ingredients"]))
+        swaps = first_swaps(things, recipe_id)
+        if swaps:
+            cases.append(step_text_case(things, recipe_id, swaps, []))
+    return cases

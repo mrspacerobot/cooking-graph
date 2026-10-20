@@ -179,7 +179,7 @@ One way to make a dish or a preparation, with amounts and steps. No recipe here 
 | `yields` | How much: a number of servings, or an amount for a preparation |
 | `ingredients` | The lines, at least one. Each has the `thing` (an ingredient, or a preparation made ahead), its `amount`, the `forms` it is in before the first step, and the `part` of the dish it fills, by that part's id |
 | `equipment` | The equipment it needs |
-| `steps` | The steps in order, at least one. Each has one `technique`, what the technique `works_on`, what it is done `with` (the fat, the salt, the liquid poured in), its `text`, a `time` or `null`, a `temperature` or `null`, its `safety_points`, and what it `makes` |
+| `steps` | The steps in order, at least one. Each has one `technique`, what the technique `works_on`, what it is done `with` (the fat, the salt, the liquid poured in), its `text` (written in the step-text format of `docs/recipe-steps.md`: `{part}` placeholders and `[part: ...]` clauses), a `time` or `null`, a `temperature` or `null`, its `safety_points`, and what it `makes` |
 
 `works_on` means one thing everywhere. On a step it is what the technique acts on, and it must be something the technique's card works on, directly or through a group. Deglazing works on the fond, with the wine.
 
@@ -568,6 +568,13 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 - **Now:** a new kind `compose-probe` lives in `probes/`, apart from the graph. It has `id`, `tier`, `batch`, `set` and `written_by` as every probe does, and `techniques` (a list of names, at least one), `at_home` (names), `dishes` (names, at least one) and `why`. The hash rule holds back one in five within the kind and batch, as for a dish probe: a probe whose dish is already written, or that a level is practised through, is passed over for the next in the hash order, and a dish that a held-back compose probe asks for may not be written (`drafted-towards-held-back`, which names the dish file and never the probe). It is answered when every expected dish has a recipe that practises every named technique and has no required part missing, counting stand-ins at home as `./compose` does. It measures recall of the expected dishes, not whether every returned recipe deserves a cook's approval. A question is its techniques and its pantry, in any order or case: the same question twice in a batch is refused (`same-question-twice`). It is counted in `./numbers`, growing and held back apart, and never listed.
 - **Not yet:** a probe about amounts, servings or the read-as list of a step. The first batch asks only whether the right dishes come back.
 - **No promotion:** the probes are drafted by another writer than the drafter of the graph.
+
+### 35. Step text a server can change: placeholders and clauses (issue 22)
+
+- **Example:** `recipe/soft-scrambled-eggs`, step 3, said "stir in the cold butter and the cream". The Tomi server swaps foods and leaves out optional parts in code, never with a model, and it could not change that sentence. Leaving out an optional part left its words in the step.
+- **What did not fit:** `text` was free prose, so a swap or a left-out part could only be shown beside an untouched recipe.
+- **Now:** the shape of `text` is unchanged (it stays a text), but its content has a format: `{part}` or `{part.ingredient}` names the food of a recipe line through the `part` it fills, and `[part: text]` marks text that belongs to an optional part. `./check` rejects a step that names a food of its lines in plain words (`step-plain-ingredient`), a placeholder for a part the recipe has no line for (`step-part-unknown`), an ingredient the part lacks (`step-ingredient-unknown`), a bare part that holds several foods (`step-ingredient-ambiguous`), text of an optional part outside a clause (`step-optional-unmarked`), a clause on a required part (`step-clause-on-required-part`) and bad brackets (`step-text-malformed`). All 197 recipes were rewritten. The artifact schema version goes from 2 to 3: `serving.step_text.proper_name_words` is new and `serving-vectors.json` has `step_text_cases`. `./compose` writes each step for the foods the cook uses. The format is in `docs/recipe-steps.md`.
+- **Not yet:** number agreement (a swapped food is written in the singular or plural the graph names it), and short forms of a name ("the oil" for olive oil) are not found by the check.
 
 ## Decisions where the starting model was silent
 

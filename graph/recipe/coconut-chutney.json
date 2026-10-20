@@ -46,7 +46,7 @@
       "with": [
         "ingredient/roasted-gram", "ingredient/green-chilli", "ingredient/ginger", "ingredient/salt", "ingredient/water"
       ],
-      "text": "Blend the coconut with the roasted split chickpeas, the green chilli, the ginger and the salt, adding the cold water a spoonful at a time, until the paste is coarse, moist and just thick enough to hold on a spoon. Taste, and adjust the salt.",
+      "text": "Blend the {coconut} with the roasted split chickpeas, the {green-chilli}, the {ginger} and the {salt}, adding the cold {water} a spoonful at a time, until the paste is coarse, moist and just thick enough to hold on a spoon. Taste, and adjust the {salt}.",
       "time": {"from": 1, "to": 2, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
@@ -58,7 +58,7 @@
         "ingredient/mustard-seed", "ingredient/black-gram", "ingredient/curry-leaf", "ingredient/dried-red-chilli"
       ],
       "with": ["ingredient/coconut-oil"],
-      "text": "Heat the coconut oil in a small pan until a mustard seed sizzles at once. Add the mustard seeds and wait for them to pop, then the urad dal until it turns golden, then the dried chilli and the curry leaves. Pour the hot oil and the spices at once over the chutney and stir them in.",
+      "text": "Heat the {tempering-fat} in a small pan until a {mustard-seed} sizzles at once. Add the {mustard-seed} and wait for them to pop, then the {urad} until it turns golden, then the dried chilli and the {curry-leaf}. Pour the hot {tempering-fat} and the spices at once over the chutney and stir them in.",
       "time": {"from": 1, "to": 2, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

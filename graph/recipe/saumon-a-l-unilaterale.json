@@ -21,7 +21,7 @@
       "technique": "technique/sear",
       "works_on": ["ingredient/salmon"],
       "with": ["ingredient/salt", "ingredient/olive-oil"],
-      "text": "Dry the skin very well and salt the fillets. Heat the oil in a heavy pan over medium-high heat. Lay the fillets in skin side down and press each one flat for a moment, so that the skin does not curl.",
+      "text": "Dry the skin very well and {salt} the fillets. Heat the {fat} in a heavy pan over medium-high heat. Lay the fillets in skin side down and press each one flat for a moment, so that the skin does not curl.",
       "time": null,
       "temperature": null,
       "safety_points": [],

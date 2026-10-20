@@ -53,7 +53,7 @@
         "ingredient/white-wine", "ingredient/garlic", "preparation/bouquet-garni", "ingredient/salt",
         "ingredient/black-pepper", "ingredient/nutmeg"
       ],
-      "text": "Put the meat in a heavy pot with the wine, the garlic, the herbs, the salt and the pepper. Cover and cook in a very low oven until the meat falls apart and sits in a pool of clear fat. Take out the herbs, lift the meat from the fat and pull it into ragged threads with a pair of forks. Mix in enough of the warm fat to make it spreadable, add the nutmeg, and taste. Pack it firmly into jars and seal the tops with a layer of fat. Keep it cold.",
+      "text": "Put the meat in a heavy pot with the {wine}, the {garlic}, the herbs, the {salt} and the {pepper}. Cover and cook in a very low oven until the meat falls apart and sits in a pool of clear fat. Take out the herbs, lift the meat from the fat and pull it into ragged threads with a pair of forks. Mix in enough of the warm fat to make it spreadable, add the {nutmeg}, and taste. Pack it firmly into jars and seal the tops with a layer of fat. Keep it cold.",
       "time": {"from": 240, "to": 300, "unit": "minute"},
       "temperature": {"value": 120, "unit": "celsius"},
       "safety_points": ["doneness", "cooling-and-keeping"],
@@ -63,7 +63,7 @@
       "technique": "technique/season",
       "works_on": ["ingredient/pork-shoulder", "ingredient/pork-belly"],
       "with": [],
-      "text": "Taste a little of the cold rillettes after a day and add salt or pepper if they taste flat. Cold food tastes milder.",
+      "text": "Taste a little of the cold rillettes after a day and add {salt} or {pepper} if they taste flat. Cold food tastes milder.",
       "time": null,
       "temperature": null,
       "safety_points": [],

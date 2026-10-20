@@ -4,3 +4,4 @@ __pycache__/
 .venv/
 out/
 .playwright-mcp/
+cloud/config.json

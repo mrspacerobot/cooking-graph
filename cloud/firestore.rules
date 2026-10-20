@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // One shared notebook account. Sign-up is disabled in Authentication,
+    // and the rule also names the account, so no other login can read or write.
+    match /notebook/{record} {
+      allow read, write: if request.auth != null
+        && request.auth.token.email == 'notebook@cooking-notebook-20261019.example';
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

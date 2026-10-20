@@ -119,14 +119,14 @@ function questionCatalog(card) {
   if (!questions.length) return '<p class="content-gap">No questions have been drafted for this technique yet.</p>';
   return `<p class="fine">${questions.length} questions for review. Open an answer to check the reasoning. These are the technique’s reusable questions, not a scored exam.</p>
     <ol class="question-catalog">${questions.map(question => `<li><p><strong>${escapeText(question.question)}</strong></p>
-      <ol type="A" class="question-choices">${question.choices.map(choice => `<li>${escapeText(choice)}</li>`).join("")}</ol>
+      <ol type="A" class="question-choices">${question.choices.map(choice => `<li>${window.notebookCloudEnabled ? `<label><input type="radio" name="quiz-${escapeText(card.id)}-${escapeText(question.id)}" data-quiz-card="${escapeText(card.id)}" data-quiz-question="${escapeText(question.id)}" value="${question.choices.indexOf(choice)}"> ${escapeText(choice)}</label>` : escapeText(choice)}</li>`).join("")}</ol>
       <details class="answer-review"><summary>Check the answer and explanation</summary><p><strong>Recorded answer: ${escapeText(question.choices[question.answer])}</strong></p>
       <p>${escapeText(question.because)}</p><p class="fine">${escapeText(question.tier)} · ${escapeText(plainTier(question.tier))}</p></details></li>`).join("")}</ol>`;
 }
 
 function lessonFlow() {
   return `<div class="lesson-flow"><p class="eyebrow">The planned Tomi lesson</p><ol class="steps"><li><strong>Understand</strong><br>Tomi introduces the technique and why it matters.</li><li><strong>Cook and notice</strong><br>Practise it in a dish and notice what changes.</li><li><strong>Think it through</strong><br>After cooking, answer a short quiz and learn why.</li></ol>
-    <p class="fine">You are reviewing this learning sequence. This notebook is not cooking guidance and does not record cooking or quiz completion.</p></div>`;
+    <p class="fine">You are reviewing this learning sequence. This notebook is not cooking guidance and ${window.notebookCloudEnabled ? "saves your answers for shared review. Answering does not approve a claim." : "does not record cooking or quiz completion."}</p></div>`;
 }
 
 function prerequisiteLinks(record) {
@@ -279,9 +279,9 @@ function feedbackForm() {
       <p id="draft-status" class="fine" role="status"></p></div>
       <div class="field"><label for="feedback-kind">Is your note mostly about one thing? (optional)</label>
       <select id="feedback-kind" name="kind"><option>General feedback</option><option>Wording or clarity</option><option>Technique or method</option><option>Substitution or ingredient option</option><option>Amounts or timing</option><option>Class order or practice</option><option>Safety concern</option></select></div>
-      <fieldset><legend>3. Send it</legend>
-      <div class="actions"><a class="primary button" id="send-feedback" href="https://github.com/${notebook.repository}/issues/new" target="_blank" rel="noopener">Continue to GitHub ↗</a><button type="button" id="download-feedback">Save to a file</button></div>
-      <p class="fine"><strong>Continue to GitHub</strong> opens a ready-made message. Sign in, then press the green <strong>Create issue</strong> button to send it. <strong>Save to a file</strong> keeps a copy you can email or hand to the owner yourself.</p>
+      <fieldset><legend>${window.notebookCloudEnabled ? "3. Saved together" : "3. Send it"}</legend>
+      <div class="actions"><a class="primary button" id="send-feedback" ${window.notebookCloudEnabled ? "hidden" : ""} href="https://github.com/${notebook.repository}/issues/new" target="_blank" rel="noopener">Continue to GitHub ↗</a><button type="button" id="download-feedback">Save to a file</button></div>
+      ${window.notebookCloudEnabled ? '<p class="fine">Your score and note save automatically. Both of you can come back and continue here.</p>' : `<p class="fine"><strong>Continue to GitHub</strong> opens a ready-made message. Sign in, then press the green <strong>Create issue</strong> button to send it. <strong>Save to a file</strong> keeps a copy you can email or hand to the owner yourself.</p>`}
       <p class="feedback-status" id="feedback-status" role="status" aria-live="polite"></p></fieldset>
     </form>
     <p class="fine">Your note is a suggestion. It does not approve the entry or confirm that anything is safe.</p>
@@ -329,10 +329,9 @@ function connectFeedback(record) {
     }
   } catch { status.textContent = "This browser cannot keep unsent notes. You can still send it or save it to a file."; }
   const save = () => {
-    try {
-      localStorage.setItem(key, JSON.stringify(feedbackValue()));
-      status.textContent = "Kept in this browser as you type. Not sent yet.";
-    } catch { progressPersistent = false; status.textContent = "This browser cannot keep unsent notes. You can still send it or save it to a file."; }
+    saveNotebookValue(key, feedbackValue());
+    status.textContent = window.notebookCloudEnabled ? "Your note is being saved to the shared notebook." :
+      (progressPersistent ? "Kept in this browser as you type. Not sent yet." : "This browser cannot keep unsent notes. Save a copy to a file.");
     trackFeedbackDraft(record, feedbackValue());
     feedbackMessage("");
   };
@@ -381,6 +380,7 @@ function showEntry(record, focus) {
   document.title = `${titleOf(record)} - The cooking notebook`;
   connectFeedback(record);
   connectProgress(record);
+  window.dispatchEvent(new Event("notebook-entry"));
   content.querySelector(".to-list").addEventListener("click", () => {
     const library = document.getElementById("library");
     library.focus({preventScroll: true});
@@ -430,11 +430,19 @@ document.getElementById("progress-filter").addEventListener("change", updateLibr
 document.getElementById("source-link").href = `https://github.com/${notebook.repository}/tree/${notebook.commit}`;
 window.addEventListener("hashchange", () => navigate(true));
 loadProgress();
+function refreshFromStorage(rerender) {
+  loadProgress();
+  updateLibrary();
+  if (!selected) return;
+  if (rerender) showEntry(selected, false);
+  else updateProgressPanel(selected);
+}
 window.addEventListener("storage", event => {
-  if (!event.key || event.key.startsWith("cooking-notebook")) {
-    loadProgress();
-    updateLibrary();
-    if (selected) updateProgressPanel(selected);
-  }
+  if (!event.key || event.key.startsWith("cooking-notebook")) refreshFromStorage(false);
+});
+// A change from another device. Never redraw the page under someone who is typing.
+window.addEventListener("notebook-remote", event => {
+  const touched = event.detail.keys.some(key => selected && key.includes(selected.id));
+  refreshFromStorage(touched && !event.detail.editing);
 });
 navigate(false);

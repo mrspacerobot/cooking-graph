@@ -4,6 +4,14 @@ const reviewProgress = new Map();
 const feedbackDrafts = new Set();
 let progressPersistent = true;
 
+function saveNotebookValue(key, value) {
+  try {
+    if (value === null) localStorage.removeItem(key);
+    else localStorage.setItem(key, JSON.stringify(value));
+  } catch { progressPersistent = false; }
+  window.dispatchEvent(new CustomEvent("notebook-save", {detail: {key, value}}));
+}
+
 function progressKey(record) { return `cooking-notebook-progress:${record.id}:${record.hash}`; }
 
 function storedValue(key) {
@@ -65,8 +73,8 @@ function progressPanel(record) {
       `<button type="button" data-progress-state="${state}" aria-pressed="false">${title}</button>`).join("")}</div>
     <p id="entry-progress" class="fine" role="status"></p>
     <p id="progress-storage-note" class="fine"></p>
-    <p class="fine">Marking an entry does not send your note or approve the entry.
-      <a href="https://github.com/${notebook.repository}/issues?${escapeText(query.toString())}" target="_blank" rel="noopener">See notes already sent on GitHub ↗</a></p>
+    <p class="fine">${window.notebookCloudEnabled ? "Marks and notes are shared. They do not approve the entry." : "Marking an entry does not send your note or approve the entry."}
+      <a ${window.notebookCloudEnabled ? "hidden" : ""} href="https://github.com/${notebook.repository}/issues?${escapeText(query.toString())}" target="_blank" rel="noopener">See notes already sent on GitHub ↗</a></p>
   </section>`;
 }
 
@@ -76,6 +84,10 @@ function updateProgressPanel(record) {
   document.getElementById("entry-progress").textContent = "Right now: " + progressLabel(record) + (date ? ` · marked ${date}` : "");
   document.querySelectorAll("[data-progress-state]").forEach(button =>
     button.setAttribute("aria-pressed", button.dataset.progressState === (marker?.state || "todo")));
+  if (window.notebookCloudEnabled) {
+    document.getElementById("progress-storage-note").textContent = "Your marks are shared across devices when the notebook says Saved.";
+    return;
+  }
   document.getElementById("progress-storage-note").textContent = progressPersistent ?
     "Your marks are kept in this browser only, for this version of the entry. They do not move to other devices." :
     "This browser cannot save your marks. They last only until you close the page.";
@@ -89,10 +101,7 @@ function connectProgress(record) {
     const state = button.dataset.progressState;
     if (state === "todo") reviewProgress.delete(record.id);
     else reviewProgress.set(record.id, {state, at: new Date().toISOString()});
-    try {
-      if (state === "todo") localStorage.removeItem(progressKey(record));
-      else localStorage.setItem(progressKey(record), JSON.stringify(reviewProgress.get(record.id)));
-    } catch { progressPersistent = false; }
+    saveNotebookValue(progressKey(record), state === "todo" ? null : reviewProgress.get(record.id));
     updateProgressPanel(record);
     updateLibrary();
   });

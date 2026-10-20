@@ -1,0 +1,11 @@
+{
+  "email": "notebook@cooking-notebook-20261019.example",
+  "firebase": {
+    "apiKey": "PUBLIC_WEB_API_KEY",
+    "appId": "1:542241264387:web:b722ee770f214bb3c34f36",
+    "authDomain": "cooking-notebook-20261019.firebaseapp.com",
+    "messagingSenderId": "542241264387",
+    "projectId": "cooking-notebook-20261019",
+    "storageBucket": "cooking-notebook-20261019.firebasestorage.app"
+  }
+}

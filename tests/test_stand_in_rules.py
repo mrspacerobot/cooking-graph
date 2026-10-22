@@ -30,3 +30,32 @@ class StandInRuleTest(unittest.TestCase):
 
     def test_missing_flag_is_rejected(self):
         self.assertIn("missing-field", self.found(lambda row: row.pop("allows")))
+
+
+FLOUR = "graph/ingredient/flour.json"
+
+
+class RatioMeasureTest(unittest.TestCase):
+    """Flour stands in for the butter, whose recipe line is in grams, so a ratio for it must be by weight."""
+
+    def setUp(self):
+        self.kitchen = SmallKitchen()
+        self.addCleanup(self.kitchen.close)
+
+    def found(self, ratio):
+        row = {"thing": "ingredient/butter", "allows": True, "when": ["technique/sweat"], "not_when": [],
+               "ratio": ratio, "caveat": "It is not a fat.", "tier": "drafted"}
+        self.kitchen.change(FLOUR, lambda data: data["stands_in_for"].append(row))
+        return {issue.rule for issue in check.check_repository(self.kitchen.root) if issue.path == FLOUR}
+
+    def test_a_ratio_by_another_measure_than_its_line_is_rejected(self):
+        self.assertIn("ratio-measure-mismatch", self.found({"stand_in": 2, "original": 1, "by": "volume"}))
+
+    def test_a_ratio_by_the_measure_of_its_line_is_valid(self):
+        self.assertEqual(set(), self.found({"stand_in": 2, "original": 1, "by": "weight"}))
+
+    def test_a_one_to_one_ratio_leaves_the_amount_alone_whatever_it_is_by(self):
+        self.assertEqual(set(), self.found({"stand_in": 1, "original": 1, "by": "volume"}))
+
+    def test_no_ratio_is_valid(self):
+        self.assertEqual(set(), self.found(None))

@@ -36,7 +36,7 @@
       "allows": true,
       "when": ["dish/karaage"],
       "not_when": [],
-      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "volume"},
       "caveat": "It gives a harder, crunchier coating.",
       "tier": "drafted"
     }

@@ -29,7 +29,7 @@
       "allows": true,
       "when": ["dish/pot-au-feu"],
       "not_when": [],
-      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "ratio": null,
       "caveat": "It is milder and juicier and cooks soft sooner.",
       "tier": "drafted"
     }

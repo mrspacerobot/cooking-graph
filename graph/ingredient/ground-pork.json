@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Ground pork", "fr": "Porc haché", "es": "carne picada de cerdo"},
   "aliases": {"en": ["minced pork", "pork mince"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

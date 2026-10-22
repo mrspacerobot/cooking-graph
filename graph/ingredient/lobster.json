@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lobster", "fr": "Homard", "it": "aragosta"},
   "aliases": {},
+  "plurals": {"en": "Lobsters", "fr": "Homards", "it": "aragoste"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

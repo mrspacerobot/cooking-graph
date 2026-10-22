@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chicken breast", "fr": "Blanc de poulet"},
   "aliases": {"en": ["chicken breasts"]},
+  "plurals": {"en": "Chicken breasts", "fr": "Blancs de poulet"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/chicken", "tier": "drafted"}

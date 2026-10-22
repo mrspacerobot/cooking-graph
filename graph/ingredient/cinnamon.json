@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cinnamon", "fr": "Cannelle", "es": "canela", "it": "cannella", "tr": "Tarçın"},
   "aliases": {"en": ["cinnamon stick"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Shiitake"},
   "aliases": {"en": ["shiitake mushroom"]},
+  "plurals": {"en": "Shiitake"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

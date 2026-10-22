@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pork tenderloin", "fr": "Filet mignon de porc"},
   "aliases": {"en": ["pork fillet"]},
+  "plurals": {"en": "Pork tenderloins", "fr": "Filets mignon de porc"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

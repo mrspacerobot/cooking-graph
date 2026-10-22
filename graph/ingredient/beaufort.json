@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beaufort", "fr": "Beaufort", "tr": "Beaufort peyniri"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

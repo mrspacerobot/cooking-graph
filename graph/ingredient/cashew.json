@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cashew", "fr": "Noix de cajou", "es": "anacardo", "it": "anacardo"},
   "aliases": {"en": ["cashew nut"]},
+  "plurals": {"en": "Cashews", "fr": "Noix de cajou", "es": "anacardos", "it": "anacardi"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

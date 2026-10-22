@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Redcurrant", "fr": "Groseille", "es": "grosella roja", "it": "ribes rosso"},
   "aliases": {"en": ["redcurrants", "red currant"]},
+  "plurals": {"en": "Redcurrants", "fr": "Groseilles", "es": "grosellas rojas", "it": "ribes rossi"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Green peppercorns", "fr": "Poivre vert"},
   "aliases": {},
+  "plurals": {"en": "Green peppercorns", "fr": "Poivres verts"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

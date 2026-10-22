@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Grape", "fr": "Raisin", "es": "uva", "it": "uva", "tr": "üzüm"},
   "aliases": {"en": ["grapes", "white grapes"]},
+  "plurals": {"en": "Grapes", "fr": "Raisins", "es": "uvas", "it": "uve", "tr": "üzümler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

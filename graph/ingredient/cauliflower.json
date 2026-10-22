@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cauliflower", "fr": "Chou-fleur", "es": "coliflor", "it": "cavolfiore"},
   "aliases": {},
+  "plurals": {"en": "Cauliflowers", "fr": "Choux-fleurs", "es": "coliflores", "it": "cavolfiori"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

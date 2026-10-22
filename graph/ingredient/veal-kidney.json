@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Veal kidney", "fr": "Rognon de veau"},
   "aliases": {"en": ["calf's kidney"]},
+  "plurals": {"en": "Veal kidneys", "fr": "Rognons de veau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

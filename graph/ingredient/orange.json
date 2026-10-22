@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Orange", "fr": "Orange", "es": "naranja", "it": "arancia", "tr": "Portakal"},
   "aliases": {},
+  "plurals": {"en": "Oranges", "fr": "Oranges", "es": "naranjas", "it": "arance", "tr": "Portakallar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

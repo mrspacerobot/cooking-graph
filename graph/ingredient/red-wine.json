@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Red wine", "fr": "Vin rouge", "es": "vino tinto", "it": "vino rosso", "tr": "kırmızı şarap"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

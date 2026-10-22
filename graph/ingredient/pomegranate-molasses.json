@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pomegranate molasses", "fr": "Mélasse de grenade", "es": "melaza de granada"},
   "aliases": {"en": ["dibs rumman", "nar eksisi"], "fr": ["Narsharab"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Parmesan rind", "fr": "Croûte de parmesan"},
   "aliases": {"en": ["Parmigiano Reggiano rind"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/parmesan", "tier": "drafted"}

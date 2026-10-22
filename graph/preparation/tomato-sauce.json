@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Tomato sauce", "fr": "Sauce tomate à l'italienne", "es": "salsa de tomate", "tr": "domates sosu"},
   "aliases": {"en": ["salsa di pomodoro", "sugo di pomodoro"], "fr": ["sauce tomate"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A sauce of tomatoes cooked in olive oil until they break down, thick and bright. It is often scented with garlic or chilli and finished with torn basil.",
   "parts": [
     {

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pistachio", "fr": "Pistache"},
   "aliases": {"en": ["pistachios"]},
+  "plurals": {"en": "Pistachios", "fr": "Pistaches"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

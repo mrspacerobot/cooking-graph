@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fromage blanc", "fr": "Fromage blanc", "es": "Fromage frais"},
   "aliases": {"en": ["fresh white cheese"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

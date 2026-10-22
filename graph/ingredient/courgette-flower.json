@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Courgette flower", "fr": "Fleur de courgette"},
   "aliases": {"en": ["zucchini flower", "courgette blossom"]},
+  "plurals": {"en": "Courgette flowers", "fr": "Fleurs de courgette"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/courgette", "tier": "drafted"}

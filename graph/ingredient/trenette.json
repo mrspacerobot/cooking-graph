@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Trenette", "fr": "Trenette"},
   "aliases": {"en": ["trenette pasta"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/pasta", "tier": "drafted"}
   ],

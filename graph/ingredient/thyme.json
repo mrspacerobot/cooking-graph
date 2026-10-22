@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Thyme", "fr": "Thym", "es": "tomillo", "it": "timo", "tr": "Kekik"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Kamaboko"},
   "aliases": {"en": ["steamed fish paste loaf"]},
+  "plurals": {"en": "Kamaboko"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/fish-cake", "tier": "drafted"}
   ],

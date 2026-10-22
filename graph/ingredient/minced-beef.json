@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Minced beef", "fr": "Bœuf haché"},
   "aliases": {"en": ["ground beef"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

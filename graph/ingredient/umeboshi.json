@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Umeboshi"},
   "aliases": {"en": ["pickled plum", "salted plum"]},
+  "plurals": {"en": "Umeboshi"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

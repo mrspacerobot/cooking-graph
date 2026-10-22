@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chickpea", "fr": "Pois chiche", "it": "cece", "tr": "nohut"},
   "aliases": {"en": ["garbanzo", "garbanzo bean", "kabuli chana", "chickpeas", "dried chickpeas"]},
+  "plurals": {"en": "Chickpeas", "fr": "Pois chiches", "it": "ceci", "tr": "nohutlar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

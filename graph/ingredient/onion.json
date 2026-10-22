@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Onion", "fr": "Oignon", "es": "cebolla", "it": "cipolla", "tr": "soğan"},
   "aliases": {"en": ["yellow onion", "brown onion"]},
+  "plurals": {"en": "Onions", "fr": "Oignons", "es": "cebollas", "it": "cipolle", "tr": "soğanlar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

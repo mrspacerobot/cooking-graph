@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Avgolemono"},
   "aliases": {"en": ["egg and lemon sauce", "avgolemono sauce"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A sauce of eggs beaten with lemon juice and warmed with hot broth, which turns a pot of broth pale, creamy and sharp. It thickens soups and the juices of stuffed vegetables.",
   "parts": [
     {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},

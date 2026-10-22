@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Rack of lamb", "fr": "Carré d'agneau"},
   "aliases": {},
+  "plurals": {"en": "Racks of lamb", "fr": "Carrés d'agneau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

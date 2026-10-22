@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Frogs' legs", "fr": "Cuisses de grenouilles"},
   "aliases": {"en": ["frog legs"]},
+  "plurals": {"en": "Frogs' legs", "fr": "Cuisses de grenouilles"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

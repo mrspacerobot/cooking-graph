@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Turnip", "fr": "Navet", "es": "nabo", "it": "rapa", "tr": "şalgam"},
   "aliases": {},
+  "plurals": {"en": "Turnips", "fr": "Navets", "es": "nabos", "it": "rape", "tr": "şalgamlar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

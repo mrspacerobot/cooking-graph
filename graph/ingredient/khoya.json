@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Khoya"},
   "aliases": {"en": ["khoa", "mawa"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Bulgur", "fr": "Boulgour"},
   "aliases": {"en": ["burghul", "bulghur"], "fr": ["boulghour"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

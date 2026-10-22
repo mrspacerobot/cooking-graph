@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Bitter melon"},
   "aliases": {"en": ["goya", "bitter gourd"]},
+  "plurals": {"en": "Bitter melons"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

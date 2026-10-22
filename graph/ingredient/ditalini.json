@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Ditalini", "fr": "Ditalini", "it": "ditali"},
   "aliases": {},
+  "plurals": {"en": "Ditalini", "fr": "Ditalini", "it": "ditali"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/small-pasta", "tier": "drafted"}
   ],

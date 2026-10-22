@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Couscous", "fr": "Couscous", "es": "cuscús", "it": "cuscus", "tr": "Kuskus"},
   "aliases": {"en": ["couscous grains", "seksu"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

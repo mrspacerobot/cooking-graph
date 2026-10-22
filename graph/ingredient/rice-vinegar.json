@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Rice vinegar", "es": "vinagre de arroz", "it": "aceto di riso", "fr": "Vinaigre de riz"},
   "aliases": {"en": ["rice wine vinegar"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/vinegar", "tier": "drafted"}
   ],

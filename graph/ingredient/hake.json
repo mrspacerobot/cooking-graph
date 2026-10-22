@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Hake", "fr": "Merlu"},
   "aliases": {"en": ["European hake", "merluza"]},
+  "plurals": {"en": "Hake", "fr": "Merlus"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],

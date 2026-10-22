@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Strawberry", "fr": "Fraise", "es": "fresa", "it": "fragola", "tr": "çilek"},
   "aliases": {"en": ["strawberries"]},
+  "plurals": {"en": "Strawberries", "fr": "Fraises", "es": "fresas", "it": "fragole", "tr": "çilekler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

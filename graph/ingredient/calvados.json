@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Calvados", "fr": "Calvados", "tr": "Kalvados"},
   "aliases": {"en": ["apple brandy"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

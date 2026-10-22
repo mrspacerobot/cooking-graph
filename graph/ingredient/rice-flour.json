@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Rice flour", "es": "harina de arroz", "it": "farina di riso", "fr": "farine de riz"},
   "aliases": {"en": ["pirinc unu"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Parsnip", "fr": "Panais"},
   "aliases": {},
+  "plurals": {"en": "Parsnips", "fr": "Panais"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

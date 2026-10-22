@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Allspice", "fr": "Piment de la Jamaïque", "tr": "yeni bahar"},
   "aliases": {"en": ["Jamaica pepper"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

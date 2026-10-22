@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Flank steak", "fr": "Bavette", "es": "arrachera", "it": "bavetta", "tr": "Böğür bifteği"},
   "aliases": {"en": ["bavette", "skirt steak"]},
+  "plurals": {"en": "Flank steaks", "fr": "Bavettes", "es": "arracheras", "it": "bavette", "tr": "Böğür biftekleri"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/beef-steak", "tier": "drafted"}
   ],

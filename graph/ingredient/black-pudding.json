@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Black pudding", "fr": "Boudin noir", "es": "budín negro"},
   "aliases": {"en": ["blood sausage"]},
+  "plurals": {"en": "Black puddings", "fr": "Boudins noirs", "es": "budines negros"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

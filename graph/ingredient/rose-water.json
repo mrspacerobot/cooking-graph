@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Rose water", "fr": "Eau de rose", "es": "agua de rosas", "it": "acqua di rose", "tr": "gülsuyu"},
   "aliases": {"en": ["rosewater", "maward"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

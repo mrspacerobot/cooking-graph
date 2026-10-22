@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beef fillet", "fr": "Filet de bœuf"},
   "aliases": {"en": ["beef tenderloin"]},
+  "plurals": {"en": "Beef fillets", "fr": "Filets de bœuf"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

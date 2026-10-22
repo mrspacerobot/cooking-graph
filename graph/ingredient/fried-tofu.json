@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fried tofu"},
   "aliases": {"en": ["aburaage", "fried tofu pouch"]},
+  "plurals": {"en": "Fried tofus"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fish cake"},
   "aliases": {"en": ["Japanese fish cake", "fish paste cake"]},
+  "plurals": {"en": "Fish cakes"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

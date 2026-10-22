@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Coarse salt", "fr": "Gros sel"},
   "aliases": {"en": ["coarse sea salt", "sal gorda"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/salt", "tier": "drafted"}
   ],

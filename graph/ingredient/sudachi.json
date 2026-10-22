@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sudachi"},
   "aliases": {"en": ["sudachi lime"]},
+  "plurals": {"en": "Sudachi"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

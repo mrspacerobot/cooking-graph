@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Vegetable stock", "fr": "Bouillon de légumes"},
   "aliases": {"en": ["vegetable broth", "bought vegetable stock"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/stock", "tier": "drafted"}
   ],

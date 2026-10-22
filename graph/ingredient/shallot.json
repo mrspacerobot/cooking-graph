@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Shallot", "fr": "Échalote", "it": "scalogno"},
   "aliases": {"en": ["shallots"]},
+  "plurals": {"en": "Shallots", "fr": "Échalotes", "it": "scalogni"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

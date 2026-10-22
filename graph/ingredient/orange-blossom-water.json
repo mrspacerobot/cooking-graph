@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Orange blossom water", "fr": "Eau de fleur d'oranger"},
   "aliases": {"en": ["orange flower water", "mazahar"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

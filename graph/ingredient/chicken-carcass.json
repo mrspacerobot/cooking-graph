@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chicken carcass", "fr": "Carcasse de poulet"},
   "aliases": {"en": ["chicken bones", "chicken frame"]},
+  "plurals": {"en": "Chicken carcasses", "fr": "Carcasses de poulet"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/chicken", "tier": "drafted"}

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Mussel", "fr": "Moule", "it": "cozza", "tr": "Midye"},
   "aliases": {"en": ["mussels"]},
+  "plurals": {"en": "Mussels", "fr": "Moules", "it": "cozze", "tr": "Midyeler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Savoiardi", "fr": "Biscuits à la cuillère"},
   "aliases": {"en": ["ladyfingers", "lady fingers", "sponge fingers"]},
+  "plurals": {"en": "Savoiardi", "fr": "Biscuits à la cuillère"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

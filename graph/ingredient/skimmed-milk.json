@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Skimmed milk", "fr": "Lait écrémé"},
   "aliases": {"en": ["skim milk"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/milk", "tier": "drafted"}
   ],

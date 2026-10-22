@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cottage cheese", "fr": "Fromage cottage"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

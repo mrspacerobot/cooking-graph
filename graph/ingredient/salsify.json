@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Salsify", "fr": "Salsifis"},
   "aliases": {"en": ["salsify root"]},
+  "plurals": {"en": "Salsifies", "fr": "Salsifis"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

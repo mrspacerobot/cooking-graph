@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Walnut", "fr": "Noix", "es": "nuez", "it": "noce", "tr": "ceviz"},
   "aliases": {"en": ["walnuts", "walnut halves"]},
+  "plurals": {"en": "Walnuts", "fr": "Noix", "es": "nueces", "it": "noci", "tr": "cevizler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

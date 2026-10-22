@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cumin", "fr": "Cumin", "es": "semilla de comino", "it": "seme di cumino"},
   "aliases": {"en": ["jeera", "kamoun", "comino", "cumin seed"], "fr": ["graines de cumin"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

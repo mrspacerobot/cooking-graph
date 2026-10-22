@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Coffee", "fr": "Café", "it": "caffè", "tr": "kahve"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

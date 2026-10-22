@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Coconut oil", "fr": "Huile de coco"},
   "aliases": {"en": ["virgin coconut oil"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

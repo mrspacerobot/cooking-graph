@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Stock", "fr": "Bouillon", "es": "caldo", "it": "Fondo di cucina"},
   "aliases": {"en": ["broth"], "fr": ["fond"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

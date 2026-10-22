@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Brown lentil", "fr": "Lentille brune"},
   "aliases": {"en": ["brown lentils"]},
+  "plurals": {"en": "Brown lentils", "fr": "Lentilles brunes"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/lentil", "tier": "drafted"}
   ],

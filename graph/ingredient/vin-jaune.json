@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Vin jaune", "fr": "Vin jaune"},
   "aliases": {"en": ["yellow wine"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

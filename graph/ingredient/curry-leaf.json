@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Curry leaf", "fr": "Feuille de curry"},
   "aliases": {"en": ["curry leaves", "kadi patta", "kari patta"]},
+  "plurals": {"en": "Curry leaves", "fr": "Feuilles de curry"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

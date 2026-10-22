@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lemon zest", "fr": "Zeste de citron", "es": "cáscara de limón", "it": "scorza di limone"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/lemon", "tier": "drafted"}

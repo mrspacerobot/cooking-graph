@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Morcilla"},
   "aliases": {},
+  "plurals": {"en": "Morcillas"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

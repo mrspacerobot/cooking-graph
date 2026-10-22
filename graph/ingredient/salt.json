@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Salt", "fr": "Sel"},
   "aliases": {"en": ["fine salt", "sea salt"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

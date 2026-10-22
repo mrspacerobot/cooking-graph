@@ -9,6 +9,8 @@
     "tr": "sade yağ"
   },
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "Butter with its water and milk solids taken out. What is left is pure fat, which stands much more heat before it burns.",
   "parts": [
     {"id": "butter", "role": "main", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"}

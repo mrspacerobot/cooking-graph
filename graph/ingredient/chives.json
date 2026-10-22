@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chives", "fr": "Ciboulette", "es": "cebollino"},
   "aliases": {"en": ["chive"]},
+  "plurals": {"en": "Chives", "fr": "Ciboulettes", "es": "cebollinos"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

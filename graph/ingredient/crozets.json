@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Crozets", "fr": "Crozets"},
   "aliases": {"en": ["Savoy pasta squares"]},
+  "plurals": {"en": "Crozets", "fr": "Crozets"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Kolot cheese"},
   "aliases": {"en": ["kolot peyniri"]},
+  "plurals": {"en": "Kolot cheeses"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

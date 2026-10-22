@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sweet vinegar sauce"},
   "aliases": {"en": ["nanban sauce", "nanban-zu"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A sharp, sweet, salty sauce of rice vinegar, sugar and soy sauce, warmed until the sugar has dissolved. Hot fried food is steeped in it.",
   "parts": [
     {"id": "vinegar", "role": "acid", "options": ["ingredient/rice-vinegar"], "optional": false, "tier": "drafted"},

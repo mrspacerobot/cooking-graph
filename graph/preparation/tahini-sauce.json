@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Tahini sauce"},
   "aliases": {"en": ["taratour", "taratoor"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Tahini beaten with lemon juice and cold water into a pale, smooth sauce, thick enough to dip in or loose enough to pour. It carries a dip such as baba ghanoush and goes over fish and falafel.",
   "parts": [
     {"id": "tahini", "role": "base", "options": ["ingredient/tahini"], "optional": false, "tier": "drafted"},

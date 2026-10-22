@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pasta", "fr": "Pâtes", "it": "pasta italiana", "tr": "makarna"},
   "aliases": {"fr": ["pâtes alimentaires"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

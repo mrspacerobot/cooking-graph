@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sweet red bean paste"},
   "aliases": {"en": ["anko", "azuki bean paste"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

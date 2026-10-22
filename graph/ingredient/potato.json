@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Potato", "fr": "Pomme de terre", "es": "papa", "it": "patata", "tr": "patates"},
   "aliases": {},
+  "plurals": {"en": "Potatoes", "fr": "Pommes de terre", "es": "papas", "it": "patate", "tr": "patatesler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

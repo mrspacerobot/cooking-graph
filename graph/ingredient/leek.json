@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Leek", "fr": "Poireau", "es": "puerro", "it": "porro", "tr": "Pırasa"},
   "aliases": {},
+  "plurals": {"en": "Leeks", "fr": "Poireaux", "es": "puerros", "it": "porri", "tr": "Pırasalar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

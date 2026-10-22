@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Salt pork", "fr": "Petit salé"},
   "aliases": {"en": ["salted pork"], "fr": ["porc salé"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

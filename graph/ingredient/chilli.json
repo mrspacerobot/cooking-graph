@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chilli", "fr": "Piment", "it": "peperoncino", "tr": "acı biber"},
   "aliases": {"en": ["chili", "chile", "chilli pepper", "chili pepper", "hot pepper"]},
+  "plurals": {"en": "Chillis", "fr": "Piments", "it": "peperoncini", "tr": "acı biberler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

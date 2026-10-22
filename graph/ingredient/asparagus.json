@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Asparagus", "fr": "Asperge", "es": "espárragos", "it": "asparago"},
   "aliases": {"en": ["asparagus spears"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

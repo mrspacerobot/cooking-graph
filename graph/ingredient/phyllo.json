@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Phyllo", "fr": "Pâte filo", "es": "masa filo", "it": "pasta fillo", "tr": "Yufka"},
   "aliases": {"en": ["filo", "phyllo pastry", "filo pastry", "phyllo dough"], "fr": ["pâte phyllo"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

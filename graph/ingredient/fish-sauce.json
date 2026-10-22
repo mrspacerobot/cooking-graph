@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fish sauce", "fr": "Sauce de poisson"},
   "aliases": {"en": ["nam pla", "nuoc mam"], "es": ["salsa de pescado"], "it": ["salsa di pesce"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

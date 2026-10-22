@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Roux", "fr": "Roux", "tr": "Meyane"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "Flour cooked in an equal weight of butter. It thickens a liquid without lumps or a raw taste.",
   "parts": [
     {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},

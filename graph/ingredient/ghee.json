@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Ghee", "it": "Ghi", "tr": "sarı yağ", "fr": "Ghî"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

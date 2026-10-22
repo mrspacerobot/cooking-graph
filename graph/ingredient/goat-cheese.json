@@ -9,6 +9,8 @@
     "tr": "Keçi peyniri"
   },
   "aliases": {"en": ["goat's cheese", "chèvre"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

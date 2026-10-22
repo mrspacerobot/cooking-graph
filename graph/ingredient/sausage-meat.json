@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sausage meat", "fr": "Chair à saucisse"},
   "aliases": {"en": ["sausagemeat", "pork sausage meat"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

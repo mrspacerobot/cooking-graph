@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beef shank", "fr": "Jarret de bœuf"},
   "aliases": {},
+  "plurals": {"en": "Beef shanks", "fr": "Jarrets de bœuf"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/beef", "tier": "drafted"}

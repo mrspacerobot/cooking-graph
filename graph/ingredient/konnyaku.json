@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Konnyaku"},
   "aliases": {"en": ["konjac cake", "devil's tongue jelly"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

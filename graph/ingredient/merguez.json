@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Merguez", "fr": "Merguez"},
   "aliases": {"en": ["merguez sausage", "lamb sausage"]},
+  "plurals": {"en": "Merguez", "fr": "Merguez"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

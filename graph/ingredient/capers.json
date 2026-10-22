@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Capers", "fr": "Câpres", "es": "alcaparra", "it": "cappero"},
   "aliases": {"en": ["caper"], "fr": ["câpre"]},
+  "plurals": {"en": "Capers", "fr": "Câpres", "es": "alcaparras", "it": "capperi"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

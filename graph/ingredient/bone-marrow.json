@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Bone marrow", "fr": "Moelle"},
   "aliases": {"en": ["beef marrow"], "fr": ["moelle osseuse"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/marrow-bone", "tier": "drafted"}

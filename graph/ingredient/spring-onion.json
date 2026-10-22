@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Spring onion", "fr": "Oignon nouveau"},
   "aliases": {"en": ["scallion", "green onion", "salad onion"]},
+  "plurals": {"en": "Spring onions", "fr": "Oignons nouveaux"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

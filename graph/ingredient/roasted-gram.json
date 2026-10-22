@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Roasted gram"},
   "aliases": {"en": ["pottukadalai", "fried gram"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

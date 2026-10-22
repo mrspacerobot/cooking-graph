@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Poaching liquid", "fr": "Cuisson"},
   "aliases": {"en": ["cooking liquor"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "The liquid left after food has been poached in it. It has taken on the flavour of the food, and is often boiled down into a sauce or a syrup.",
   "parts": [],
   "groups": [

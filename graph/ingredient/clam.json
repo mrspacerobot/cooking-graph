@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Clam", "fr": "Palourde", "it": "vongola"},
   "aliases": {"en": ["vongole", "almeja"]},
+  "plurals": {"en": "Clams", "fr": "Palourdes", "it": "vongole"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

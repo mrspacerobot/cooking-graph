@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chicory", "fr": "Endive"},
   "aliases": {"en": ["Belgian endive", "witloof", "Belgian endives"], "fr": ["chicorée"]},
+  "plurals": {"en": "Chicories", "fr": "Endives"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

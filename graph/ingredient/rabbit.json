@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Rabbit", "fr": "Lapin"},
   "aliases": {},
+  "plurals": {"en": "Rabbits", "fr": "Lapins"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

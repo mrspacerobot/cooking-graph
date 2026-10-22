@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Duck breast", "fr": "Magret de canard"},
   "aliases": {"en": ["magret"]},
+  "plurals": {"en": "Duck breasts", "fr": "Magrets de canard"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/duck", "tier": "drafted"}

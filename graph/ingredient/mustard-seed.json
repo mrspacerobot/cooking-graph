@@ -9,6 +9,14 @@
     "tr": "hardal tohumu"
   },
   "aliases": {"en": ["rai"], "fr": ["graines de moutarde"]},
+  "plurals": {
+    "en": "Mustard seeds",
+    "fr": "Graines de moutarde",
+    "es": "granos de mostaza",
+    "it": "semi di senape",
+    "tr": "hardal tohumları"
+  },
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Amchur"},
   "aliases": {"en": ["amchoor", "dried mango powder", "mango powder"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

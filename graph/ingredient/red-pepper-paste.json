@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Red pepper paste"},
   "aliases": {"en": ["biber salcasi", "Turkish red pepper paste"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

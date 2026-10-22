@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Spice paste"},
   "aliases": {"en": ["masala paste"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick paste of ground spices, fresh garlic, ginger or chilli, salt and a little liquid, worked together so that it clings to fish, meat or vegetables.",
   "parts": [
     {

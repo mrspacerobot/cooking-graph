@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Garlic", "fr": "Ail", "es": "ajo", "it": "aglio", "tr": "sarımsak"},
   "aliases": {"fr": ["tête d'ail"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

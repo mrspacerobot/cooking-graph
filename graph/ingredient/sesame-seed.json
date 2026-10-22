@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sesame seed", "fr": "Graine de sésame", "es": "semillas de sésamo", "it": "seme di sesamo"},
   "aliases": {"en": ["sesame seeds", "goma"], "fr": ["graines de sésame"]},
+  "plurals": {"en": "Sesame seeds", "fr": "Graines de sésame", "es": "semillas de sésamo", "it": "semi di sesamo"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

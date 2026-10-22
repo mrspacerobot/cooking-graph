@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Basmati rice", "fr": "Riz basmati", "tr": "Basmati pirinci"},
   "aliases": {"en": ["basmati"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/rice", "tier": "drafted"}
   ],

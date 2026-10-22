@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cherry", "fr": "Cerise", "es": "cereza", "it": "ciliegia", "tr": "kiraz"},
   "aliases": {"en": ["cherries"]},
+  "plurals": {"en": "Cherries", "fr": "Cerises", "es": "cerezas", "it": "ciliegie", "tr": "kirazlar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

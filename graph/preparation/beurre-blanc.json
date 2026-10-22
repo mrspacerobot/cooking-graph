@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beurre blanc", "fr": "Beurre blanc"},
   "aliases": {"en": ["white butter sauce"], "fr": ["beurre nantais"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A warm sauce of cold butter whisked into a sharp reduction of shallot, white wine and vinegar.",
   "parts": [
     {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},

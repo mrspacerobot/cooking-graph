@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Boiled beef", "fr": "Bœuf bouilli"},
   "aliases": {"en": ["leftover boiled beef", "cold boiled beef"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

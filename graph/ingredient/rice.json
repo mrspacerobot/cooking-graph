@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Rice", "fr": "Riz", "es": "arroz", "it": "riso", "tr": "pirinç"},
   "aliases": {"en": ["white rice"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

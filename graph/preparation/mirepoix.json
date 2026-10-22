@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Mirepoix", "fr": "Mirepoix", "tr": "mirpua"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "Onion, carrot and celery cut to one size, the aromatic base of stocks, braises and sauces. The longer the cooking, the larger the cut.",
   "parts": [
     {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},

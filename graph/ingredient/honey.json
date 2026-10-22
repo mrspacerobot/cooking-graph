@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Honey", "fr": "Miel", "it": "miele", "tr": "bal"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

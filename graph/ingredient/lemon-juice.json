@@ -9,6 +9,8 @@
     "tr": "limon suyu"
   },
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/lemon", "tier": "drafted"}

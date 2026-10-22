@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Anthotyro"},
   "aliases": {"en": ["anthotiro"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

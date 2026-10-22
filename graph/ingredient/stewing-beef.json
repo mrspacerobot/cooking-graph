@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Stewing beef", "fr": "Bœuf à braiser"},
   "aliases": {"en": ["braising beef", "beef chuck", "beef shin"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

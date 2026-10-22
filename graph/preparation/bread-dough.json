@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Bread dough", "fr": "Pâte à pain"},
   "aliases": {"en": ["yeast dough"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Flour, water, yeast and salt kneaded until elastic and left to rise.",
   "parts": [
     {"id": "flour", "role": "main", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},

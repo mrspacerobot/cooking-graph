@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Plaice", "fr": "Plie"},
   "aliases": {"en": ["European plaice"], "fr": ["carrelet"], "es": ["solla"], "it": ["platessa"]},
+  "plurals": {"en": "Plaice", "fr": "Plies"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],

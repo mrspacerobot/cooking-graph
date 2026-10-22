@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Kabocha"},
   "aliases": {"en": ["Japanese pumpkin", "kabocha squash"]},
+  "plurals": {"en": "Kabocha"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/pumpkin", "tier": "drafted"}
   ],

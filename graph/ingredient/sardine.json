@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sardine", "fr": "Sardine", "es": "sardina", "it": "sardina", "tr": "Sardalya"},
   "aliases": {},
+  "plurals": {"en": "Sardines", "fr": "Sardines", "es": "sardinas", "it": "sardine", "tr": "Sardalyalar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

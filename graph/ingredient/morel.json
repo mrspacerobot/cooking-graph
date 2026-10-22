@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Morel", "fr": "Morille"},
   "aliases": {"en": ["morels"]},
+  "plurals": {"en": "Morels", "fr": "Morilles"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

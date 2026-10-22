@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Artichoke", "fr": "Artichaut", "es": "alcachofa", "it": "carciofo", "tr": "enginar"},
   "aliases": {"en": ["globe artichoke"]},
+  "plurals": {"en": "Artichokes", "fr": "Artichauts", "es": "alcachofas", "it": "carciofi", "tr": "enginarlar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

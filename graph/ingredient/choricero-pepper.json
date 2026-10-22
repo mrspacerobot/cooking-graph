@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Choricero pepper"},
   "aliases": {"en": ["pimiento choricero"]},
+  "plurals": {"en": "Choricero peppers"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

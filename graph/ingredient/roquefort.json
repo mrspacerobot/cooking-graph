@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Roquefort", "fr": "Roquefort", "es": "queso roquefort", "tr": "Rokfor peyniri"},
   "aliases": {"en": ["Roquefort cheese"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

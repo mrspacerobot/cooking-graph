@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cheddar", "fr": "Cheddar"},
   "aliases": {"en": ["cheddar cheese"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Smoky aubergine cream"},
   "aliases": {"en": ["begendi"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick white sauce of flour, butter and milk with charred aubergine flesh and melted cheese beaten in, served warm under braised meat.",
   "parts": [
     {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},

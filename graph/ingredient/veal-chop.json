@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Veal chop", "fr": "Côte de veau"},
   "aliases": {},
+  "plurals": {"en": "Veal chops", "fr": "Côtes de veau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pita bread", "fr": "Pain pita"},
   "aliases": {"en": ["pitta bread", "pita", "pitta"]},
+  "plurals": {"en": "Pita breads", "fr": "Pains pita"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

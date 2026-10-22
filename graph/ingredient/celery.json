@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Celery", "fr": "Céleri", "es": "apio", "it": "sedano", "tr": "Kereviz"},
   "aliases": {"en": ["celery stalk", "celery stick"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

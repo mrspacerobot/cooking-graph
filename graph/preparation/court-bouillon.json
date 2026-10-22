@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Court-bouillon", "fr": "Court-bouillon", "tr": "Balık bulyon"},
   "aliases": {"en": ["court bouillon"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Water simmered briefly with wine or vinegar, vegetables, herbs and salt: a quick, sharp, scented liquid for poaching fish.",
   "parts": [
     {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},

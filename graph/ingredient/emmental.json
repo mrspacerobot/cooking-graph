@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Emmental", "fr": "Emmental", "es": "queso emmental", "tr": "Emmental peyniri"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

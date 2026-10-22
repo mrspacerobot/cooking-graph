@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Andouillette", "fr": "Andouillette"},
   "aliases": {"en": ["chitterling sausage"]},
+  "plurals": {"en": "Andouillettes", "fr": "Andouillettes"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

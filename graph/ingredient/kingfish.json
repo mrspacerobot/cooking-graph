@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Kingfish"},
   "aliases": {"en": ["seer fish", "surmai", "neymeen"]},
+  "plurals": {"en": "Kingfish"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

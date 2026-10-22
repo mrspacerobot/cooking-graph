@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Bean sprout", "it": "germoglio di legume"},
   "aliases": {"en": ["mung bean sprouts", "moyashi"]},
+  "plurals": {"en": "Bean sprouts", "it": "germogli di legume"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

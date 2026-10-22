@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Silken tofu", "fr": "Tofu soyeux"},
   "aliases": {"en": ["kinugoshi tofu", "kinugoshi"], "es": ["tofu sedoso"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/tofu", "tier": "drafted"}
   ],

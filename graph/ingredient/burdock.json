@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Burdock", "it": "Bardana radice"},
   "aliases": {"en": ["gobo", "burdock root"]},
+  "plurals": {"en": "Burdocks", "it": "radici di bardana"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

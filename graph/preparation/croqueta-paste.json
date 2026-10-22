@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Croqueta paste"},
   "aliases": {"en": ["croqueta filling", "croqueta dough"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A very thick white sauce of butter, flour and milk with ham, cooked until it leaves the pan in one mass and chilled until firm, so that it can be rolled, coated and fried.",
   "parts": [
     {"id": "fat", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},

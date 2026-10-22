@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Garam masala"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "A warm blend of dry-roasted whole spices ground to a powder. It is added near the end of cooking, or stirred in at the end, since its scent fades with long heat.",
   "parts": [
     {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},

@@ -4,6 +4,12 @@
   "names": {"en": "Chill", "fr": "Refroidir"},
   "aliases": {"en": ["cool", "cool down", "cool quickly"]},
   "does": "Brings hot food down to the cold of the fridge quickly, so that it keeps well and so that a cold dish is truly cold.",
+  "intro": {
+    "what": "Food is cooled in shallow containers, with an iced-water bath assisting the temperature change.",
+    "why": "Container shape affects how heat leaves the food. Cold dishes also need tasting at their serving temperature.",
+    "idea": "Shape and heat transfer",
+    "tier": "drafted"
+  },
   "how": [
     "Move the hot food out of its pot into a wide, shallow container.",
     "Stand the container in iced water and stir now and then.",
@@ -19,6 +25,56 @@
       "fix": "Divide it into shallow containers and cool them in iced water."
     },
     {"mistake": "Seasoning a soup while it is hot and serving it cold.", "fix": "Taste it again when it is cold."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why move food into shallow containers?",
+      "choices": [
+        "Heat can leave more readily than from a deep pot.",
+        "The shallow shape helps a surface skin trap heat inside.",
+        "A shallow layer holds its centre warm for longer."
+      ],
+      "answer": 0,
+      "because": "Shallower containers reduce the depth of food that heat must travel through.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How does the iced-water bath assist this method?",
+      "choices": [
+        "It is poured into the food to dilute it.",
+        "It draws heat from the container while the food is stirred.",
+        "It warms the container before refrigeration."
+      ],
+      "answer": 1,
+      "because": "Cold water around the container helps remove heat; stirring distributes temperature within the food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What handling cue is described for the chilled container?",
+      "choices": [
+        "The rim feels cold while the base stays warm.",
+        "Steam continues rising from the centre.",
+        "It feels cold across its surface."
+      ],
+      "answer": 2,
+      "because": "An evenly cold container is the handling observation described here; it does not measure the food’s centre temperature.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A cold soup tastes underseasoned after being seasoned hot. What should you do?",
+      "choices": [
+        "Taste it again at its serving temperature.",
+        "Assume the hot tasting still describes it exactly.",
+        "Warm it solely to avoid tasting it cold."
+      ],
+      "answer": 0,
+      "because": "Cold changes flavour perception, so seasoning should be assessed again for the cold dish.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/stocks", "tier": "drafted"},

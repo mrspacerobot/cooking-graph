@@ -4,6 +4,12 @@
   "names": {"en": "Fry and soak in syrup"},
   "aliases": {"en": ["fry in ghee and soak in syrup"]},
   "does": "Fries balls of dough slowly in ghee over a gentle heat until they are deep brown and cooked to the middle, then drops them into warm sugar syrup, which they drink up until they are soft, swollen and sweet to the centre.",
+  "intro": {
+    "what": "This sweet-making method gently fries dough balls, then lets them absorb warm, thin syrup.",
+    "why": "It teaches you to match gradual browning with a syrup consistency that soaks in rather than coating only the surface.",
+    "idea": "Slow browning, absorbent syrup",
+    "tier": "drafted"
+  },
   "how": [
     "Make the syrup first and keep it warm. It should be thin and sticky, not thick.",
     "Heat the ghee or oil gently. A test ball should rise slowly, with a few bubbles, and not brown at once.",
@@ -27,6 +33,56 @@
     {
       "mistake": "Making the syrup too thick, so that it sits on the surface and does not soak in.",
       "fix": "Boil it just until it turns sticky."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep the soaking syrup thin rather than thick?",
+      "choices": [
+        "So it forms a hard shell without soaking.",
+        "So it holds the balls above the liquid.",
+        "So it soaks into the balls instead of staying outside."
+      ],
+      "answer": 2,
+      "because": "Thick syrup sits on the surface rather than being absorbed into the sweet.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should a test ball behave in the frying fat?",
+      "choices": [
+        "Rise slowly with a few bubbles, without browning at once.",
+        "Turn dark immediately as soon as it enters.",
+        "Stay at the bottom without any bubbling."
+      ],
+      "answer": 0,
+      "because": "A gradual rise and slow colouring match the gentle frying used for these sweets.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What texture should the soaked ball have?",
+      "choices": [
+        "A hard dry shell with no swelling.",
+        "Soft and spongy, giving under a spoon without breaking.",
+        "A disintegrating mass falling apart in the syrup."
+      ],
+      "answer": 1,
+      "because": "Absorption makes the balls swell and soften while keeping their shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The syrup stays on the surface instead of soaking in. What would you change next time?",
+      "choices": [
+        "Boil it into a thicker glaze.",
+        "Use a cold dense syrup straight from storage.",
+        "Stop thickening it while it is still thin and sticky."
+      ],
+      "answer": 2,
+      "because": "A warm, thin syrup can be absorbed; excessive thickness prevents the intended soaking.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

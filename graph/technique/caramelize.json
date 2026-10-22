@@ -4,6 +4,12 @@
   "names": {"en": "Caramelize", "fr": "Caraméliser"},
   "aliases": {"en": ["caramelize onions", "caramelise", "brown slowly"]},
   "does": "Cooks onions slowly until their water is gone and their sugars turn deep brown, soft and sweet.",
+  "intro": {
+    "what": "This onion method cooks sliced onions slowly until they become soft, sweet and deeply browned.",
+    "why": "It teaches patience with browning and how to respond when the pan colours faster than the onions.",
+    "idea": "Slow browning",
+    "tier": "drafted"
+  },
   "how": [
     "Sweat sliced onions in butter with a little salt until soft.",
     "Take the lid off and keep the heat at medium-low.",
@@ -24,6 +30,56 @@
     {
       "mistake": "Crowding a small pan, so that the onions steam and never brown.",
       "fix": "Use the widest pan you have."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim of this onion method?",
+      "choices": [
+        "Deeply browned, soft, sweet onions.",
+        "Pale onions with a raw crunch.",
+        "Black edges around a pale centre."
+      ],
+      "answer": 0,
+      "because": "Slow cooking lets onions become soft, sweet and deeply browned throughout.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "After the onions have softened, how do you continue caramelizing them?",
+      "choices": [
+        "Keep them covered over high heat.",
+        "Remove the lid and use medium-low heat.",
+        "Stop before they take any colour."
+      ],
+      "answer": 1,
+      "because": "Remove the lid and continue over medium-low heat so the onions can brown gently.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which colour are you aiming for when caramelizing these onions?",
+      "choices": [
+        "Pale centres with black edges.",
+        "Soft and glassy without any browning.",
+        "Even deep amber without black edges."
+      ],
+      "answer": 2,
+      "because": "Aim for even deep amber. Black edges show that some of the onion has gone beyond browning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The brown film in the pan darkens faster than the onions. What would you do?",
+      "choices": [
+        "Add a little water and scrape up the film.",
+        "Raise the heat to catch the onions up.",
+        "Scrape only at the end so the brown film has time to develop."
+      ],
+      "answer": 0,
+      "because": "A little water loosens the brown film before it darkens too far. Scrape it back into the onions.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

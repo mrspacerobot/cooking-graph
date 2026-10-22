@@ -248,3 +248,45 @@ footer { border-top: 1px solid var(--line); display: flex; justify-content: spac
   .masthead { flex-wrap: wrap; gap: 4px 16px; }
   #categories button { font-size: 15px; padding: 6px 8px; }
 }
+
+/* The curriculum keeps the program's sections and prerequisites visible. */
+.curriculum { margin: 0 0 36px; padding: clamp(18px, 3vw, 32px); background: var(--green-soft); border: 1px solid var(--line); border-radius: 16px; scroll-margin-top: 20px; }
+.curriculum > p { max-width: 64em; }
+.curriculum h2 { font-size: clamp(28px, 3vw, 38px); }
+.curriculum-program > h3 { margin: 24px 0 6px; }
+.curriculum-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 20px 0; }
+.curriculum-course { min-width: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; overflow-wrap: anywhere; }
+.curriculum-course > h4 { display: flex; align-items: center; gap: 10px; margin: 0 0 16px; font-size: 22px; }
+.curriculum-course .step-number { flex: 0 0 32px; }
+.curriculum-skill { border-top: 1px solid var(--line-soft); }
+.curriculum-skill > summary { cursor: pointer; padding: 13px 0; font-weight: 650; min-height: 52px; }
+.curriculum-skill > summary span { font-size: 15px; color: var(--muted); font-weight: 400; white-space: nowrap; }
+.curriculum-skill ol { padding-left: 28px; margin: 0 0 12px; }
+.curriculum-skill li { padding-left: 2px; }
+.curriculum-skill li a { display: block; padding: 8px; border-radius: 8px; text-decoration: none; min-height: 52px; }
+.curriculum-skill li a:hover, .curriculum-skill li a[aria-current=true] { background: var(--green-soft); }
+.curriculum-skill li span { display: block; font-size: 15px; line-height: 1.45; margin-top: 4px; color: var(--muted); }
+.curriculum-skill .progress-label { color: var(--ink); }
+.curriculum-back { display: inline-block; min-height: 48px; padding: 8px 0; }
+.lesson-flow { margin: 24px 0; padding: 18px; background: var(--green-soft); border: 1px solid var(--line); border-radius: 12px; }
+.lesson-flow .steps { grid-template-columns: minmax(0, 1fr); margin-top: 12px; }
+.lesson-flow .fine { margin-bottom: 0; }
+.teaching-card { padding: 0 0 16px; margin: 0 0 20px; border-bottom: 1px solid var(--line-soft); }
+.teaching-card h4 { font-size: 22px; }
+.key-idea { padding: 12px 16px; background: var(--green-soft); border-radius: 8px; }
+.content-gap { color: var(--muted); background: var(--grey-soft); padding: 14px 16px; border-left: 3px solid var(--grey); border-radius: 6px; }
+.technique-questions { border: 1px solid var(--line); padding: 0 16px; border-radius: 10px; margin: 12px 0; }
+.technique-questions > summary, .answer-review > summary { cursor: pointer; min-height: 52px; padding: 12px 0; font-weight: 650; }
+.question-catalog { padding-left: 28px; }
+.question-catalog > li { padding: 0 0 20px 4px; margin-bottom: 20px; border-bottom: 1px solid var(--line-soft); }
+.question-catalog > li:last-child { border-bottom: 0; margin-bottom: 0; }
+.question-choices { padding-left: 26px; }
+.question-choices li { padding: 4px 0 4px 4px; }
+.answer-review { margin: 14px 0 0; padding: 0 14px; background: var(--green-soft); border-radius: 8px; }
+@media (max-width: 760px) {
+  .curriculum-grid { grid-template-columns: minmax(0, 1fr); }
+  .curriculum { padding: 18px 14px; }
+  .curriculum-course { padding: 16px 12px; }
+  .technique-questions { padding: 0 12px; }
+  .lesson-flow { padding: 14px 12px; }
+}

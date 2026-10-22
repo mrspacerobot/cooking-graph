@@ -4,6 +4,12 @@
   "names": {"en": "Make msemen dough"},
   "aliases": {},
   "does": "Works flour and fine semolina with warm salted water, by hand and for a good while, on an oiled surface, until the dough is smooth, soft and stretchy, then divides it into balls and rests them under oil so that they can later be stretched paper thin.",
+  "intro": {
+    "what": "Msemen dough works flour and fine semolina into soft, stretchy dough, then rests it in oiled balls.",
+    "why": "It teaches you to balance moisture, working and rest so the dough stretches thin without tearing.",
+    "idea": "Stretch after a rest",
+    "tier": "drafted"
+  },
   "how": [
     "Mix the flour, the semolina and the salt, and add warm water a little at a time until a soft, wet dough forms.",
     "Oil the hands and the work surface and work the dough with the heels of the hands for a good while, until it is smooth, soft and stretchy.",
@@ -25,6 +31,56 @@
     {
       "mistake": "Skipping the rest, so that the dough springs back and will not stretch.",
       "fix": "Rest the oiled balls until they relax."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why rest the oiled dough balls?",
+      "choices": [
+        "To dry the surface into a crust.",
+        "To make them spring back more strongly.",
+        "To let them relax for thin stretching."
+      ],
+      "answer": 2,
+      "because": "Resting relaxes dough that otherwise resists stretching and springs back.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you manage the hands and work surface?",
+      "choices": [
+        "Oil them while working the soft dough.",
+        "Keep adding dry flour until the dough is stiff.",
+        "Leave the wet dough stuck to a dry surface."
+      ],
+      "answer": 0,
+      "because": "Oil lets you work a soft moist dough without stiffening it with extra flour.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What does a small stretched piece show?",
+      "choices": [
+        "It tears immediately along dry cracks.",
+        "It becomes thin and translucent before breaking.",
+        "It stays a stiff opaque lump."
+      ],
+      "answer": 1,
+      "because": "A thin translucent stretch shows the soft elastic texture needed for msemen.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The dough springs back and will not stretch. What would you do?",
+      "choices": [
+        "Force it thinner immediately with harder pulling.",
+        "Dust with flour until it becomes firmer.",
+        "Rest the covered oiled balls until relaxed."
+      ],
+      "answer": 2,
+      "because": "Skipping rest leaves resistance; letting the oiled balls relax makes stretching easier.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

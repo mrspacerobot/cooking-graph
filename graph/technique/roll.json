@@ -4,6 +4,12 @@
   "names": {"en": "Roll", "fr": "Rouler"},
   "aliases": {"en": ["roll up", "roll up around a filling"], "fr": ["rouler autour d'une farce"]},
   "does": "Rolls a flat wrapper, such as a leaf, a sheet of dough or a thin pancake, up around a line of filling into a neat cylinder, with the ends folded in so that nothing can fall out.",
+  "intro": {
+    "what": "Rolling encloses filling in a leaf, dough sheet or thin pancake.",
+    "why": "It teaches you to balance filling, wrapper flexibility and firm shaping without stretching the wrapper.",
+    "idea": "Firm, not tight",
+    "tier": "drafted"
+  },
   "how": [
     "Soften the wrapper if it is stiff, by blanching a leaf or covering a sheet of dough with a damp cloth.",
     "Lay it flat with the side that should show on the outside facing down, and set a line of filling near the edge closest to you.",
@@ -26,6 +32,48 @@
     {
       "mistake": "Rolling a brittle leaf or sheet that cracks.",
       "fix": "Soften it first with a quick blanch or a damp cloth."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why fold in the sides before rolling?",
+      "choices": [
+        "To keep filling enclosed at the ends.",
+        "To make the wrapper narrower than its filling.",
+        "To leave openings for filling to expand through."
+      ],
+      "answer": 0,
+      "because": "Tucked sides close the ends as the wrapper forms a cylinder.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should the finished seam sit?",
+      "choices": ["Facing upward.", "Underneath the roll.", "Along an unsupported outer edge."],
+      "answer": 1,
+      "because": "The weight of the roll helps hold an underside seam closed.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How should a shaped roll feel?",
+      "choices": ["Loose enough to unwind.", "Stretched taut around the filling.", "Firm with a little give."],
+      "answer": 2,
+      "because": "A little give allows a firm enclosure without straining the wrapper.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A brittle wrapper cracks while rolling. What comes first?",
+      "choices": [
+        "Soften it with the method suited to the wrapper.",
+        "Add more filling to support it.",
+        "Roll it more tightly while dry."
+      ],
+      "answer": 0,
+      "because": "A softened leaf or sheet bends around filling more readily than a brittle one.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

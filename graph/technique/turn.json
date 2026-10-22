@@ -4,6 +4,12 @@
   "names": {"en": "Turn", "fr": "Tourner"},
   "aliases": {"en": ["turn vegetables", "turn potatoes", "cut into barrels"]},
   "does": "Pares a vegetable into a neat barrel with curved sides, so that every piece cooks in the same time and rolls in the pan.",
+  "intro": {
+    "what": "Turning pares vegetables into small barrels with curved faces and tapered ends.",
+    "why": "It teaches you consistent starting sizes and flowing knife strokes for an even finished shape.",
+    "idea": "Curved strokes, matching sizes",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the vegetable into pieces of one length, and split large ones into halves or quarters.",
     "Hold a piece between thumb and finger and draw a small knife from end to end in one curved stroke.",
@@ -21,6 +27,56 @@
     {
       "mistake": "Pieces of different sizes, which cook unevenly.",
       "fix": "Cut all the pieces to one length before you start."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why begin with vegetable pieces of matching length?",
+      "choices": [
+        "To keep every finished piece a different size.",
+        "To remove the need to judge thickness.",
+        "To make the finished barrels similar in size."
+      ],
+      "answer": 2,
+      "because": "Consistent starting pieces make a matching set easier to produce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should each curved face be cut?",
+      "choices": [
+        "Draw the small knife along the piece in a flowing curved stroke.",
+        "Make short downward chops across the face.",
+        "Cut deep square steps into the sides."
+      ],
+      "answer": 0,
+      "because": "A continuous curved motion creates the smooth barrel face rather than a stepped surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which shape is the aim?",
+      "choices": [
+        "Uneven wedges with jagged edges.",
+        "Small matching barrels with smooth curved faces.",
+        "Flat slabs with sharp square corners."
+      ],
+      "answer": 1,
+      "because": "The turned shape has flowing sides and consistent proportions across the pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Short cuts leave flat steps instead of a curve. What should change?",
+      "choices": [
+        "Make more short abrupt cuts at the same angle.",
+        "Press down harder at the centre of each step.",
+        "Use a longer flowing stroke while turning the wrist."
+      ],
+      "answer": 2,
+      "because": "A continuous stroke smooths the curve instead of accumulating separate flat cuts.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

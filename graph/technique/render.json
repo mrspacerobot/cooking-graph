@@ -4,6 +4,12 @@
   "names": {"en": "Render", "fr": "Faire fondre"},
   "aliases": {"en": ["render the fat", "render bacon", "render fat"]},
   "does": "Melts the fat out of bacon or skin over gentle heat, leaving the meat crisp and the fat clear for cooking.",
+  "intro": {
+    "what": "Rendering releases fat from bacon or skin over gentle heat before crisping the pieces.",
+    "why": "It teaches you to distinguish slowly melting fat from quickly browning a surface.",
+    "idea": "Melt before crisping",
+    "tier": "drafted"
+  },
   "how": [
     "Start with a cold pan and no added fat.",
     "Lay the pieces in a single layer and set the pan over medium-low heat.",
@@ -18,6 +24,56 @@
     {
       "mistake": "Starting in a hot pan, which browns the outside before the fat has melted, so that the pieces stay chewy.",
       "fix": "Start cold and take your time."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does rendering release for further cooking?",
+      "choices": [
+        "Only water released by the pieces.",
+        "Clear fat from the pieces.",
+        "Fat poured in separately at the start."
+      ],
+      "answer": 1,
+      "because": "Gentle heat melts fat out of the food so it can pool separately in the pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How does this pan-rendering method begin?",
+      "choices": [
+        "In a very hot pan with plenty of oil.",
+        "In a warm pan with added fat before the pieces go in.",
+        "In a cold pan without added fat."
+      ],
+      "answer": 2,
+      "because": "Starting cold gives fat time to run before the exterior browns too quickly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests fat is rendering?",
+      "choices": [
+        "Clear fat pools as the pieces shrink.",
+        "A dry crust forms while no fat appears.",
+        "The pieces swell in a cloudy liquid."
+      ],
+      "answer": 0,
+      "because": "As fat leaves the food, the pieces shrink and clear melted fat gathers around them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The outside browns but the pieces remain chewy. What should change next time?",
+      "choices": [
+        "Start hotter to form a faster crust.",
+        "Start cold and let the fat run slowly.",
+        "Add the pieces only when oil is smoking."
+      ],
+      "answer": 1,
+      "because": "Rapid browning can outpace fat release; a slower start allows rendering before final crisping.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

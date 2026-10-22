@@ -4,6 +4,12 @@
   "names": {"en": "Cook rice", "fr": "Cuire le riz"},
   "aliases": {"en": ["boil rice", "steam rice", "cook rice by absorption"], "fr": ["cuire du riz"]},
   "does": "Cooks washed rice in a measured amount of water in a covered pot until all the water is taken up, then leaves it covered off the heat so that the grains finish plump, tender and separate, or lightly sticky for a short-grain kind.",
+  "intro": {
+    "what": "Washed rice absorbs measured water under a tight lid, then rests covered off the heat.",
+    "why": "Steam retention and rice type shape the texture. Separate long grains and lightly clinging short grains need not look identical.",
+    "idea": "Absorption under a lid",
+    "tier": "drafted"
+  },
   "how": [
     "Wash the rice in several changes of cold water, swirling it, until the water is much less cloudy. Drain it well.",
     "Put it in a pot with a tight lid and add the measured water. A short-grain rice takes a little less water than a long-grain one.",
@@ -28,6 +34,56 @@
     {
       "mistake": "Using too much water, so that the rice turns soft and wet.",
       "fix": "Measure the water against the rice, and use a little less for a short-grain kind."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why leave the lid on during the low-heat stage?",
+      "choices": [
+        "To evaporate water as freely as possible.",
+        "To retain steam around the rice.",
+        "To make frequent stirring easier."
+      ],
+      "answer": 1,
+      "because": "The covered absorption method depends on keeping steam within the pot.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What follows removal from the heat?",
+      "choices": [
+        "Immediate vigorous stirring with the lid open.",
+        "Rinsing the hot grains before they rest.",
+        "A covered rest before fluffing or folding."
+      ],
+      "answer": 2,
+      "because": "Resting precedes gentle separation and is part of the texture-building sequence.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance can belong to the absorption stage ending?",
+      "choices": [
+        "Steam holes with no loose water at the edge.",
+        "Unchanged dry grains above a deep pool.",
+        "A constantly stirred paste spreading over the rim."
+      ],
+      "answer": 0,
+      "because": "Visible holes and disappearing water are the described absorption cues.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The upper grains stay hard after repeated lid lifting. What should change?",
+      "choices": [
+        "Lift it more frequently to release steam.",
+        "Keep the lid closed through cooking and resting.",
+        "Remove the lid as soon as the heat is lowered."
+      ],
+      "answer": 1,
+      "because": "Frequent opening loses the steam that should stay around the upper rice.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

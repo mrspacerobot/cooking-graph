@@ -4,6 +4,12 @@
   "names": {"en": "Sear", "fr": "Saisir"},
   "aliases": {"en": ["brown", "pan-sear", "sear in a hot pan", "searing"]},
   "does": "Browns the surface of meat or fish fast in a very hot pan, building a crust full of flavour while the inside stays underdone.",
+  "intro": {
+    "what": "Searing browns the surface of meat or fish quickly in a very hot pan.",
+    "why": "It teaches you to control surface moisture and pan contact to build a flavourful crust.",
+    "idea": "Surface browning",
+    "tier": "drafted"
+  },
   "how": [
     "Dry the surface well. Wet food steams before it browns.",
     "Salt it just before it goes in.",
@@ -32,6 +38,52 @@
     {
       "mistake": "Putting food in the pan while its surface is wet.",
       "fix": "Pat it dry with paper on every side first."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the main aim of searing?",
+      "choices": [
+        "To stew the food in its juices.",
+        "To build a browned, flavourful surface crust.",
+        "To keep the surface pale and wet."
+      ],
+      "answer": 1,
+      "because": "Fast surface browning builds a crust full of flavour.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What does this method do before the food meets the pan?",
+      "choices": ["Leave the surface dripping wet.", "Submerge it in stock.", "Dry its surface well."],
+      "answer": 2,
+      "because": "Wet food steams before it browns. Dry the surface well before it meets the pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which cue does this method use before turning a piece?",
+      "choices": [
+        "It releases from the pan and has a deep brown underside.",
+        "It is still stuck and pale underneath.",
+        "Its surface is wet and the pan has fallen silent."
+      ],
+      "answer": 0,
+      "because": "In this method, a deep brown underside and release from the pan are cues to turn rather than pull at a stuck surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Crowded pieces are stewing in their own juices. What would you change?",
+      "choices": [
+        "Pack them closer to increase contact.",
+        "Sear in batches with room between pieces and reheat between them.",
+        "Cover the pan to trap more liquid."
+      ],
+      "answer": 1,
+      "because": "Crowding makes pieces stew in their juices. Use batches with space between pieces and let the pan reheat.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

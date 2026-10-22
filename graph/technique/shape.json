@@ -4,6 +4,12 @@
   "names": {"en": "Shape", "fr": "Façonner"},
   "aliases": {"en": ["form", "mould", "shape quenelles", "shape between spoons"], "fr": ["mouler"]},
   "does": "Forms a soft mixture into even pieces that hold together when they are cooked.",
+  "intro": {
+    "what": "This shaping method forms chilled soft mixtures into smooth even portions.",
+    "why": "It teaches you to judge cohesion and use minimal handling for a lighter texture.",
+    "idea": "Handle as little as needed",
+    "tier": "drafted"
+  },
   "how": [
     "Chill the mixture first. A cold mixture holds its shape and does not stick.",
     "For quenelles, dip a pair of spoons in hot water, scoop the mixture with the first, and pass it back and forth between them until its sides are smooth.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Shaping a warm, loose mixture, which sticks to everything and falls apart in the pot.",
       "fix": "Chill it until it is firm before you start."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why make shaped portions similar in size?",
+      "choices": [
+        "To keep their cooking rates similar.",
+        "To make all mixtures equally firm.",
+        "To replace chilling a loose mixture."
+      ],
+      "answer": 0,
+      "because": "Size consistency limits differences in how each portion responds to heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How are spoon-shaped quenelles smoothed?",
+      "choices": [
+        "Shape only with the edge of a single dry spoon.",
+        "Pass the mixture between spoons dipped in hot water.",
+        "Press the mixture onto the board with a dry spoon."
+      ],
+      "answer": 1,
+      "because": "Warm wet spoons release the mixture as it is passed between them to form smooth sides.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suggests a portion is well shaped?",
+      "choices": [
+        "It runs off the spoon without a shape.",
+        "It is tightly packed and rigid.",
+        "It holds when lifted and gives a little when pressed."
+      ],
+      "answer": 2,
+      "because": "A little give with sufficient cohesion avoids both slumping and excessive compaction.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A warm loose mixture sticks and falls apart. What should happen first?",
+      "choices": [
+        "Chill it until firm before shaping.",
+        "Press it harder while it stays warm.",
+        "Make larger portions from the same loose mixture."
+      ],
+      "answer": 0,
+      "because": "Chilling gives the mixture more body so it can hold its shape with gentler handling.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Truss", "fr": "Brider"},
   "aliases": {"en": ["tie a chicken", "truss a bird", "tie a joint", "tie", "tie with string"], "fr": ["ficeler"]},
   "does": "Ties a bird or a joint into a compact shape, so that it cooks evenly and keeps its form.",
+  "intro": {
+    "what": "Trussing ties a bird or joint into a compact shape before cooking.",
+    "why": "It teaches you to control the outline with snug string while avoiding pressure that cuts into the flesh.",
+    "idea": "Snug, not tight",
+    "tier": "drafted"
+  },
   "how": [
     "Tuck the wing tips under the back of the bird.",
     "Pass a length of string under the tail, cross it over the ends of the drumsticks and pull them together.",
@@ -24,6 +30,56 @@
     {
       "mistake": "Leaving the legs splayed, so that the breast dries before the thighs are done.",
       "fix": "Draw the legs in against the breast."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the shaping aim of trussing?",
+      "choices": [
+        "A spread-out form with every limb extended.",
+        "A compact form with loose parts drawn in.",
+        "A deeply compressed shape with string grooves."
+      ],
+      "answer": 1,
+      "because": "Drawing loose parts toward the body gives the piece a more contained outline.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What happens to the wing tips in this bird-trussing method?",
+      "choices": [
+        "Pull them outward away from the body.",
+        "Tie them tightly across the exposed breast.",
+        "Tuck them underneath the back."
+      ],
+      "answer": 2,
+      "because": "Tucking keeps the tips from projecting beyond the compact shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests appropriate string tension?",
+      "choices": [
+        "Snug string that does not cut into the flesh.",
+        "Deep grooves where each loop bites in.",
+        "Loose loops hanging away from the surface."
+      ],
+      "answer": 0,
+      "because": "The string should support the outline without compressing and marking the flesh deeply.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The string cuts into the flesh. What should change?",
+      "choices": [
+        "Tighten every loop further.",
+        "Pull it snug with less tension.",
+        "Add more tight loops over the same grooves."
+      ],
+      "answer": 1,
+      "because": "More pressure is not needed once the string holds the shape; reducing tension limits cutting.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

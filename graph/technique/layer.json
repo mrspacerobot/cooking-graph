@@ -4,6 +4,12 @@
   "names": {"en": "Layer"},
   "aliases": {"en": ["build in layers", "layer up", "assemble in layers"]},
   "does": "Builds a dish in even layers, so that it cooks evenly and holds together when it is served.",
+  "intro": {
+    "what": "Layering builds a dish in even sheets of its different parts.",
+    "why": "It helps you distribute thickness and seasoning throughout a dish rather than concentrating them on top.",
+    "idea": "Even layers",
+    "tier": "drafted"
+  },
   "how": [
     "Have every part ready and within reach before you start.",
     "Spread each layer to the edges, in one even thickness.",
@@ -16,6 +22,56 @@
   "mistakes": [
     {"mistake": "Thick and thin patches, which cook at different speeds.", "fix": "Take a moment to level each layer."},
     {"mistake": "Seasoning only the top, which leaves the inside bland.", "fix": "Season lightly as you go."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why make each layer an even thickness?",
+      "choices": [
+        "To make stirring during cooking unnecessary in every layered dish.",
+        "To keep the flavours of the layers from mixing at all.",
+        "To help the dish cook evenly."
+      ],
+      "answer": 2,
+      "because": "Thick and thin patches cook at different speeds. Even layers help the dish cook evenly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should each layer be spread?",
+      "choices": [
+        "To the edges in an even thickness.",
+        "In a tall mound at the centre.",
+        "In thin patches with gaps between them."
+      ],
+      "answer": 0,
+      "because": "Spread each layer to the edges at an even thickness, rather than leaving a mound in the centre.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended result?",
+      "choices": [
+        "A steep mound with thin edges.",
+        "A level top and evenly thick layers in a cut portion.",
+        "Thick and thin patches throughout."
+      ],
+      "answer": 1,
+      "because": "A level top and layers of similar thickness show that the filling has been spread evenly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The inside tastes bland although the top is seasoned. What would you change next time?",
+      "choices": [
+        "Season only the final layer more heavily.",
+        "Season only the bottom before adding the other layers.",
+        "Season lightly between the layers as you build."
+      ],
+      "answer": 2,
+      "because": "Seasoning only the top leaves the inside bland. Season lightly between layers as you build.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},

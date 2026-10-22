@@ -4,6 +4,12 @@
   "names": {"en": "Soak in water"},
   "aliases": {"en": ["soak in cold water", "soak the vegetables in water"]},
   "does": "Puts cut vegetables in cold water for a short time, to keep them from browning, to rinse off loose starch and to take out the harsh bitterness.",
+  "intro": {
+    "what": "A brief cold-water soak protects cut vegetables and removes loose starch or harshness.",
+    "why": "It teaches you to separate useful surface washing from soaking long enough to lose flavour.",
+    "idea": "Brief soak, thorough drain",
+    "tier": "drafted"
+  },
   "how": [
     "Fill a bowl with cold water before cutting.",
     "Drop the pieces in as they are cut.",
@@ -17,6 +23,56 @@
   "mistakes": [
     {"mistake": "Soaking for too long, so that the pieces lose taste.", "fix": "Soak only briefly."},
     {"mistake": "Skipping the drain, so that water drips into the hot pan.", "fix": "Drain and pat dry."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why put some cut vegetables straight into cold water?",
+      "choices": [
+        "To draw out as much vegetable flavour as possible.",
+        "To limit surface browning while removing loose residue.",
+        "To make drying unnecessary later."
+      ],
+      "answer": 1,
+      "because": "Water protects exposed surfaces and carries off loose starch or some harshness.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen as the soaking water becomes cloudy or brown?",
+      "choices": [
+        "Swirl the pieces but keep the same discoloured water.",
+        "Drain the pieces, then return them to the same water.",
+        "Change the water during the brief soak."
+      ],
+      "answer": 2,
+      "because": "Changing the water removes what the vegetables have released.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance fits this soaking step?",
+      "choices": [
+        "Pale pieces in water that becomes cloudy or brown.",
+        "Dark dry edges around exposed pieces.",
+        "Browned pieces sitting in unchanged clear water."
+      ],
+      "answer": 0,
+      "because": "The water takes up surface residue while the cut pieces remain pale.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The vegetables drip water into the cooking pan. What should change?",
+      "choices": [
+        "Transfer more soaking water with them.",
+        "Drain and pat them dry first.",
+        "Skip draining but raise the heat."
+      ],
+      "answer": 1,
+      "because": "Draining and drying removes free surface water before the next cooking step.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"}

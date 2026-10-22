@@ -12,7 +12,7 @@ import os
 import subprocess
 from collections import namedtuple
 
-from tools import check, numbers, review_rules, serving
+from tools import check, numbers, reading, review_rules, serving
 
 ARTIFACT_SCHEMA_VERSION = 3
 CHANNELS = ("draft", "production")
@@ -22,7 +22,7 @@ MANIFEST_FILE = "manifest.json"
 VECTORS_FILE = "serving-vectors.json"
 SUMS_FILE = "SHA256SUMS"
 
-GATE_TIERS = "every included thing is at tier reviewed or higher"
+GATE_TIERS = "every included thing and statement is at tier reviewed or higher"
 GATE_SAFETY = "every included ingredient has its safety verified by a person"
 GATE_SAFETY_POINTS = "no recipe step has an open safety point"
 GATE_REVIEW = "a live review record exists"
@@ -77,8 +77,10 @@ def sha256_of(content):
 
 
 def tier_gate(things):
-    low = sorted(thing_id for thing_id, thing in things.items() if "tier" in thing.data and TIERS.index(thing.data["tier"]) < REVIEWED)
-    return Gate(GATE_TIERS, not low, "%d things are below reviewed" % len(low))
+    low = [(thing_id, where) for thing_id, thing in sorted(things.items())
+           for where, node in reading.nested(thing.data)
+           if "tier" in node and TIERS.index(node["tier"]) < REVIEWED]
+    return Gate(GATE_TIERS, not low, "%d things or statements are below reviewed" % len(low))
 
 
 def safety_gate(things):

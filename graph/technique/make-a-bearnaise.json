@@ -4,6 +4,12 @@
   "names": {"en": "Make a béarnaise", "fr": "Faire une béarnaise"},
   "aliases": {"en": ["make bearnaise", "make béarnaise sauce"], "fr": ["faire une sauce béarnaise"]},
   "does": "Makes a warm sauce of egg yolk and butter, as a hollandaise is made, but sharpened with a strong reduction of vinegar, white wine, shallot and tarragon in place of lemon juice, and finished with chopped tarragon.",
+  "intro": {
+    "what": "Béarnaise combines yolk and butter with a sharp vinegar, wine, shallot and tarragon reduction.",
+    "why": "It teaches you to balance a concentrated flavour base with gentle heat and gradual butter additions.",
+    "idea": "Sharp reduction, gentle emulsion",
+    "tier": "drafted"
+  },
   "how": [
     "Put the vinegar, the wine, the chopped shallot and part of the tarragon in a small pan and boil them down until only a few spoonfuls of strong, sharp liquid are left.",
     "Strain the reduction and let it cool a little.",
@@ -35,6 +41,56 @@
     {
       "mistake": "Keeping the sauce too hot while it waits, so that it separates.",
       "fix": "Keep it in a warm bowl, away from direct heat."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What gives this butter sauce its distinctive sharp tarragon flavour?",
+      "choices": [
+        "Lemon juice alone added after the butter.",
+        "Raw flour cooked in the butter.",
+        "A reduction of vinegar, wine, shallot and tarragon."
+      ],
+      "answer": 2,
+      "because": "The reduction supplies the sharp base, and chopped tarragon finishes the sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should butter enter the thickened yolks?",
+      "choices": [
+        "Very slowly at first, whisked in away from the heat.",
+        "All at once over direct high heat.",
+        "Before the reduction is strained or the yolks thickened."
+      ],
+      "answer": 0,
+      "because": "Gradual butter additions help the yolk mixture hold the sauce rather than split.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which cue indicates the yolks have thickened before butter is added?",
+      "choices": [
+        "They stay as thin as the starting liquid.",
+        "They fall in a ribbon.",
+        "They form firm grains at the bowl edge."
+      ],
+      "answer": 1,
+      "because": "A ribbon shows a thickened yolk mixture; grains suggest excess heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce separated while waiting in a hot place. What would you change about holding it next time?",
+      "choices": [
+        "Return it to a stronger flame.",
+        "Keep heating until the separated fat boils.",
+        "Keep it warm away from direct heat."
+      ],
+      "answer": 2,
+      "because": "Excess holding heat can separate this sauce, so keep it away from direct heat.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

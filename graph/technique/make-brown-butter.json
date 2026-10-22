@@ -4,6 +4,12 @@
   "names": {"en": "Make brown butter", "fr": "Faire un beurre noisette"},
   "aliases": {"en": ["brown butter", "brown the butter", "beurre noisette"]},
   "does": "Cooks butter until its milk solids turn nut-brown and it smells of hazelnuts.",
+  "intro": {
+    "what": "Brown butter heats butter until its milk solids colour and develop a nutty scent.",
+    "why": "It teaches you to watch changes in sound, colour and smell before residual pan heat turns browning into burning.",
+    "idea": "Nutty before bitter",
+    "tier": "drafted"
+  },
   "how": [
     "Melt the butter in a pale pan, so that you can see its colour.",
     "Let it foam. The foam is its water boiling off.",
@@ -19,6 +25,56 @@
     {
       "mistake": "Leaving it in the hot pan, where it goes from brown to black and bitter in moments.",
       "fix": "Pour it straight over the food, or into a cold dish."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What develops the nutty character of brown butter?",
+      "choices": [
+        "Keeping every solid pale while warming.",
+        "Whisking cold butter into hot liquid.",
+        "The milk solids browning."
+      ],
+      "answer": 2,
+      "because": "Browned milk solids give this butter its hazelnut-like scent.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Why choose a pale pan for this method?",
+      "choices": [
+        "So you can see the colour of the solids.",
+        "So the butter will never darken.",
+        "So swirling becomes unnecessary."
+      ],
+      "answer": 0,
+      "because": "A pale pan makes the change from golden to overdark solids easier to see.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches brown butter?",
+      "choices": [
+        "Black specks under dark smoke.",
+        "Golden-brown specks in clear amber fat.",
+        "White foam without any coloured solids."
+      ],
+      "answer": 1,
+      "because": "Golden-brown solids and amber fat accompany the nutty scent, before burning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The butter turned black after being taken off the heat. What would you change next time?",
+      "choices": [
+        "Leave it in the pan until the foam returns.",
+        "Cover the pan to retain its heat.",
+        "Pour it out of the hot pan promptly."
+      ],
+      "answer": 2,
+      "because": "Residual pan heat continues cooking the solids; pouring the butter out promptly limits further darkening.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

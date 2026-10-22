@@ -4,6 +4,12 @@
   "names": {"en": "Layer phyllo"},
   "aliases": {"en": ["layer filo", "layer phyllo sheets"]},
   "does": "Builds a pie from paper-thin sheets of phyllo laid one on another, each brushed with oil or melted butter, so that the baked pie is made of many crisp, flaky layers around its filling.",
+  "intro": {
+    "what": "Layering phyllo stacks thin sheets brushed with fat around a filling to make a crisp flaky pie.",
+    "why": "It teaches you to manage fragile sheets, even fat coverage and filling moisture.",
+    "idea": "Protect each thin sheet",
+    "tier": "drafted"
+  },
   "how": [
     "Keep the stack of sheets under a barely damp cloth and lift out only the sheet in hand, because open sheets dry and crack within moments.",
     "Brush the dish lightly with fat. Lay a sheet in, let the edges hang over the sides, and brush the whole sheet with fat right to the edges.",
@@ -32,6 +38,56 @@
     {
       "mistake": "Cutting the pie only after it is baked, so that the crust shatters.",
       "fix": "Cut through the top layers before baking."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why brush fat between the phyllo sheets?",
+      "choices": [
+        "To create separate crisp, flaky layers.",
+        "To make the sheets stick into a dense leathery layer.",
+        "To soak the base with the filling liquid."
+      ],
+      "answer": 0,
+      "because": "A thin, even coat helps layers bake flaky rather than sticking together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you keep sheets not yet in use?",
+      "choices": [
+        "Spread uncovered beside the dish.",
+        "Under a barely damp cloth, lifting out a sheet as needed.",
+        "Immersed in water until needed."
+      ],
+      "answer": 1,
+      "because": "Exposed sheets dry and crack quickly; a barely damp covering protects them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should a sheet look like after brushing?",
+      "choices": [
+        "Shiny only in the middle with dry edges.",
+        "Pools of fat collecting in folds.",
+        "Evenly shiny, including the edges."
+      ],
+      "answer": 2,
+      "because": "An even thin coat covers edges without leaving the pie greasy.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A wet filling made the base sheets soggy. What would you change next time?",
+      "choices": [
+        "Drain the filling well and let it cool before adding.",
+        "Add the wet filling immediately while hot.",
+        "Brush only the centre of the bottom sheet."
+      ],
+      "answer": 0,
+      "because": "Excess filling moisture soaks the delicate base; draining and cooling address that problem.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

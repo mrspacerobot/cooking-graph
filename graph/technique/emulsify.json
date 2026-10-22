@@ -6,6 +6,12 @@
     "en": ["make an emulsion", "emulsify a sauce", "whisk an emulsion", "make a vinaigrette", "whisk a vinaigrette"]
   },
   "does": "Makes fat and a water-based liquid hold together as one smooth sauce, by breaking one into droplets too small to find each other again.",
+  "intro": {
+    "what": "This whisked emulsion method brings fat and a water-based liquid together into a smooth sauce.",
+    "why": "It teaches you to add fat gradually and notice whether the sauce is holding together.",
+    "idea": "Fat and water",
+    "tier": "drafted"
+  },
   "how": [
     "Start with the water-based part and whatever helps it hold: egg yolk, mustard, or a liquid boiled down until syrupy.",
     "Add the fat very slowly at first, drop by drop, whisking all the time.",
@@ -24,6 +30,56 @@
     {
       "mistake": "Ingredients at very different temperatures, which makes a cold emulsion refuse to take.",
       "fix": "Let the egg, the mustard and the oil come to room temperature first."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim of this emulsion method?",
+      "choices": [
+        "A separate layer of oil over liquid.",
+        "Visible pools of fat in a watery sauce.",
+        "Fat and a water-based liquid held together as a smooth sauce."
+      ],
+      "answer": 2,
+      "because": "An emulsion holds fat and a water-based liquid together in a smooth sauce instead of separate layers.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you add fat at the start of this whisked emulsion method?",
+      "choices": [
+        "Very slowly while whisking continuously.",
+        "All at once before any whisking.",
+        "In large additions with long pauses."
+      ],
+      "answer": 0,
+      "because": "Adding fat too quickly can make the sauce separate. Begin very slowly while whisking continuously.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests the sauce is holding together?",
+      "choices": [
+        "Clear oil floating over a thin liquid.",
+        "A smooth, glossy sauce that thickens as fat is added.",
+        "An oily edge growing around a watery centre."
+      ],
+      "answer": 1,
+      "because": "A smooth, glossy sauce that thickens as fat goes in is holding together instead of separating into oil and liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Fat was added too quickly and the sauce separated. How would you restart this emulsion?",
+      "choices": [
+        "Keep whisking the same mixture and pour in the remaining fat steadily.",
+        "Add a large splash of oil and whisk faster.",
+        "Start with fresh yolk or mustard and whisk the broken sauce in slowly."
+      ],
+      "answer": 2,
+      "because": "A fresh yolk or mustard provides a new starting base. Whisk the broken sauce into it slowly to rebuild this emulsion.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

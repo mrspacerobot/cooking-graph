@@ -4,6 +4,12 @@
   "names": {"en": "Sauté", "fr": "Sauter"},
   "aliases": {"en": ["saute", "sauté in a hot pan", "sautéing"]},
   "does": "Cooks small pieces fast in a hot pan with a little fat, moving them so that they brown on all sides.",
+  "intro": {
+    "what": "Sautéing cooks small pieces quickly in a hot pan with a little fat.",
+    "why": "It teaches you to use space, movement and the sound of the pan to encourage browning.",
+    "idea": "Room to brown",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the pan first, then the fat, until the fat shimmers.",
     "Add the food in a single layer, with room between the pieces.",
@@ -25,6 +31,56 @@
     {
       "mistake": "Salting watery vegetables at the start, which draws their water into the pan.",
       "fix": "Salt mushrooms, courgette and aubergine near the end."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why leave room between the pieces when sautéing?",
+      "choices": [
+        "To make them steam in pooled liquid.",
+        "To keep the pan cool.",
+        "To help them brown instead of steaming."
+      ],
+      "answer": 2,
+      "because": "Crowding makes food steam instead of brown. Space between the pieces helps them colour.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What is heated first in this method?",
+      "choices": [
+        "The pan, then the fat.",
+        "The food in a cold pan.",
+        "The fat in a separate pan before transferring it."
+      ],
+      "answer": 0,
+      "because": "Heat the pan first, then the fat, and add the food when the fat shimmers.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended result?",
+      "choices": [
+        "Grey pieces sitting in pooled liquid.",
+        "Golden edges with no liquid pooling in the pan.",
+        "Pale, wet pieces in a crowded heap."
+      ],
+      "answer": 1,
+      "because": "Golden edges and no pooled liquid show browning rather than steaming in a wet pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pan is crowded and the food is steaming. What should you change?",
+      "choices": [
+        "Raise the heat and keep the full batch in the pan.",
+        "Stir the full batch continuously without letting the pan reheat.",
+        "Cook smaller batches and reheat the pan between them."
+      ],
+      "answer": 2,
+      "because": "Smaller batches avoid crowding. Let the pan reheat between them so each batch starts in a hot pan.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

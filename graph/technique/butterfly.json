@@ -4,6 +4,12 @@
   "names": {"en": "Butterfly", "fr": "Ouvrir en papillon"},
   "aliases": {"en": ["butterfly a fish", "open a fish flat"]},
   "does": "Cuts a small fish open along the belly, takes out the backbone and opens the flesh flat like a book, so that it cooks fast and evenly and takes a marinade, a paste or a stuffing on its whole inner face.",
+  "intro": {
+    "what": "A small fish is opened along the belly and its backbone removed while the skin joins the sides.",
+    "why": "Opening the fish flat creates a broad inner surface for seasoning while teaching careful work around bones and soft flesh.",
+    "idea": "Opening without separating",
+    "tier": "drafted"
+  },
   "how": [
     "Scale and gut the fish, rinse the belly and pat it dry.",
     "Open the belly from the gut cut to the tail with a small sharp knife and lay the fish open, skin side up, on the board.",
@@ -26,6 +32,56 @@
     {
       "mistake": "Pulling the backbone out fast, which tears the soft flesh.",
       "fix": "Lift it slowly from the head end, and cut it free at the tail."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What shape does butterflying create here?",
+      "choices": [
+        "An opened fish joined along the back.",
+        "Separate narrow fillets stacked together.",
+        "A whole fish left closed around the backbone."
+      ],
+      "answer": 0,
+      "because": "The fish opens flat while the skin keeps the sides connected.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the backbone be freed?",
+      "choices": [
+        "Pull sharply from the tail without supporting the flesh.",
+        "Lift slowly from the head end and cut it free at the tail.",
+        "Cut through the skin along the back first."
+      ],
+      "answer": 1,
+      "because": "Slow lifting and a controlled final cut limit tearing of the soft flesh.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended preparation?",
+      "choices": [
+        "The sides are separated into loose pieces.",
+        "The backbone holds the fish upright.",
+        "The sides lie flat together with the backbone removed."
+      ],
+      "answer": 2,
+      "because": "A joined flat shape shows the fish has been opened rather than separated into fillets.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sides parted because the back skin was cut. What would you change next time?",
+      "choices": [
+        "Work from the belly side and preserve the back skin.",
+        "Cut more deeply along the back.",
+        "Remove the skin before opening the belly."
+      ],
+      "answer": 0,
+      "because": "The back skin is the connection that keeps the opened fish together.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

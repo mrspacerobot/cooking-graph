@@ -4,6 +4,12 @@
   "names": {"en": "Rinse", "fr": "Rincer"},
   "aliases": {"en": ["wash", "rinse under cold water", "wash and drain", "rinse in cold water"], "fr": ["laver"]},
   "does": "Washes food in cold water, to carry off grit, loose starch, or the salt and brine it was kept in.",
+  "intro": {
+    "what": "Rinsing uses cold water to remove loose grit, starch or excess brine.",
+    "why": "It teaches you to remove unwanted residue while keeping the flavour and texture you want.",
+    "idea": "Wash and separate",
+    "tier": "drafted"
+  },
   "how": [
     "Put the food in a colander, or in a large bowl of cold water.",
     "Run cold water over it, or move it about in the bowl with your hands.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Rinsing sauerkraut or capers until none of their sharpness is left.",
       "fix": "Taste as you go, and stop while they still have bite."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What can rinsing remove from food?",
+      "choices": [
+        "Only dirt visible on the outside.",
+        "Loose grit, starch or excess brine.",
+        "All salt and flavour throughout the food."
+      ],
+      "answer": 1,
+      "because": "Cold water carries away loose material or excess brine, depending on the food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should washed leaves leave a bowl of water?",
+      "choices": [
+        "Tip leaves and water through a sieve together.",
+        "Stir the grit back up before draining.",
+        "Lift them out before emptying the bowl."
+      ],
+      "answer": 2,
+      "because": "Lifting separates the leaves from grit that has settled beneath them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What tasting cue guides rinsing brined food?",
+      "choices": [
+        "It remains pleasantly salty without harsh brine.",
+        "It loses every trace of sharpness.",
+        "It tastes exactly as harsh as before."
+      ],
+      "answer": 0,
+      "because": "Rinsing should moderate excess brine without washing away the food’s intended character.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Rinsed capers lost their sharpness. What would you change next time?",
+      "choices": [
+        "Rinse longer to equalise their flavour.",
+        "Taste as you rinse and stop while they retain bite.",
+        "Soak them in fresh water until bland."
+      ],
+      "answer": 1,
+      "because": "Checking flavour prevents excessive rinsing from removing the sharpness that makes the ingredient useful.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

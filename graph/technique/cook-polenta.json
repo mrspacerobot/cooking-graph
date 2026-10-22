@@ -4,6 +4,12 @@
   "names": {"en": "Cook polenta"},
   "aliases": {"en": ["make polenta", "cook polenta softly"]},
   "does": "Rains coarse maize meal in a thin stream into boiling salted water, stirring all the while, then cooks it for a long time over the lowest heat, stirring often, until it swells into a thick, smooth porridge that comes away from the sides of the pot. It is eaten soft and creamy, or poured out to set firm.",
+  "intro": {
+    "what": "Maize meal is stirred gradually into hot water and cooked gently into a smooth porridge.",
+    "why": "Thickening happens before the grains necessarily lose their grittiness. Texture, stirring and gentle heat all matter.",
+    "idea": "Thickening and softening differ",
+    "tier": "drafted"
+  },
   "how": [
     "Bring plenty of salted water to a boil in a heavy pot with a broad base.",
     "Lower the heat so that the water is just bubbling. With one hand let the meal fall in a thin stream, and stir with the other, so that no lumps form.",
@@ -27,6 +33,56 @@
     {
       "mistake": "Stopping as soon as it thickens, when the grains are still raw.",
       "fix": "Keep cooking and stirring until the grains are tender."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why continue cooking after the polenta first thickens?",
+      "choices": [
+        "Thickness proves the grains need no further attention.",
+        "Further cooking should make the thick mixture gritty again.",
+        "The grains still need to soften beyond initial thickening."
+      ],
+      "answer": 2,
+      "because": "A thick mixture can still taste gritty, so thickness alone is not the texture goal.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should maize meal enter the water?",
+      "choices": [
+        "In a thin stream while stirring.",
+        "As a compact heap without stirring.",
+        "As several large handfuls before stirring begins."
+      ],
+      "answer": 0,
+      "because": "Gradual scattering with stirring reduces clumps as the meal meets the water.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which taste texture matches the intended polenta?",
+      "choices": [
+        "A smooth liquid surrounding hard grains.",
+        "Soft without a gritty flour-like bite.",
+        "Dry flour sticking between the teeth."
+      ],
+      "answer": 1,
+      "because": "Softened grains lose the grittiness of the earlier stage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The base scorches while grains remain hard. What should change?",
+      "choices": [
+        "Increase the heat to thicken it faster.",
+        "Leave the base untouched until a crust forms.",
+        "Lower the heat and stir while scraping the base."
+      ],
+      "answer": 2,
+      "because": "Gentler heat and stirring limit scorching while the grains continue softening.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Desalt"},
   "aliases": {"en": ["desalt salt cod", "desalar"]},
   "does": "Draws most of the salt out of salt cod by leaving it in cold water that is changed again and again, so that the fish tastes of cod and not only of salt, and can be cooked on its own.",
+  "intro": {
+    "what": "Salt cod soaks in repeatedly refreshed cold water to reduce its strong saltiness before cooking.",
+    "why": "Salt removal is uneven through a thick piece. Understanding the changing water and remaining seasoning helps prevent an oversalted finished dish.",
+    "idea": "Salt moves into fresh water",
+    "tier": "drafted"
+  },
   "how": [
     "Rinse the surface salt off the pieces under cold water.",
     "Lay the pieces skin side up in a deep dish and cover them with plenty of cold water. Keep the dish in the fridge.",
@@ -30,6 +36,56 @@
     {
       "mistake": "Salting the dish as usual afterwards, so that it ends up far too salty.",
       "fix": "Taste the fish and the sauce before adding any salt."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why change the soaking water repeatedly?",
+      "choices": [
+        "To preserve the original brine strength around the fish.",
+        "To firm the outside while leaving its salt unchanged.",
+        "To replace water that has taken up salt."
+      ],
+      "answer": 2,
+      "because": "Fresh water replaces the salt-laden soaking liquid so salt can continue leaving the fish.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where is the soaking dish kept in this method?",
+      "choices": [
+        "In the fridge.",
+        "In a cool part of the kitchen without refrigeration.",
+        "At room temperature beneath a tight cover."
+      ],
+      "answer": 0,
+      "because": "The method calls for cold soaking in the fridge rather than warming the fish during the process.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What texture change accompanies soaking?",
+      "choices": [
+        "The flesh grows drier and stiffer.",
+        "The flesh swells and becomes softer and springier.",
+        "The centre stays as rigid as before while only the outside softens."
+      ],
+      "answer": 1,
+      "because": "Taking up water changes the texture from its earlier stiff salted state.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The finished dish was too salty after normal seasoning was added. What would you change next time?",
+      "choices": [
+        "Add the usual salt without tasting the dish.",
+        "Assume desalting removes every trace of seasoning.",
+        "Account for remaining salt before adding more seasoning."
+      ],
+      "answer": 2,
+      "because": "Desalted fish can still contribute salt, so further seasoning should reflect what remains.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

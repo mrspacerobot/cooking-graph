@@ -4,6 +4,12 @@
   "names": {"en": "Parboil rice"},
   "aliases": {"en": ["boil rice until nearly done", "half-cook rice", "par-cook rice"]},
   "does": "Boils rinsed and soaked rice in a large pot of well-salted water, with whole spices if the dish asks for them, only until each grain is nearly tender with a firm core, then drains it at once. The grains finish later, in steam, in a layered dish.",
+  "intro": {
+    "what": "This layered-rice method boils soaked grains only partway before draining for a later steaming stage.",
+    "why": "It teaches you to plan texture across successive cooking steps rather than finish the rice during the first boil.",
+    "idea": "Leave texture for the steam",
+    "tier": "drafted"
+  },
   "how": [
     "Rinse the rice in several changes of cold water until the water is nearly clear, then leave it to soak in cold water for a good while and drain it.",
     "Bring a large pot of water to a rolling boil with plenty of salt, and the whole spices if there are any. The water should taste of the sea.",
@@ -27,6 +33,56 @@
     {
       "mistake": "Salting the water too lightly, so that the finished dish tastes flat.",
       "fix": "Salt the water boldly. Most of it goes down the drain."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why drain this rice while its core is still firm?",
+      "choices": [
+        "It will be served immediately without further cooking.",
+        "It will soften further during the later steaming.",
+        "Its centre should remain dry in the finished dish."
+      ],
+      "answer": 1,
+      "because": "The first boil is deliberately incomplete because the layered dish still has a steaming stage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen when the grains reach the intended firm-core stage?",
+      "choices": [
+        "Leave them sitting in the hot water.",
+        "Continue boiling until they collapse.",
+        "Drain promptly and spread them out."
+      ],
+      "answer": 2,
+      "because": "Prompt draining limits further softening before the planned final steam.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture fits rice at the end of parboiling?",
+      "choices": [
+        "A grain bends then snaps with a firm chalky core.",
+        "A grain crushes into a completely soft paste.",
+        "A grain is unchanged and dry throughout."
+      ],
+      "answer": 0,
+      "because": "The outside has softened while a firm core leaves room for the later cooking step.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Rice turns pasty during the final steam. What should change next time?",
+      "choices": [
+        "Boil it fully soft before layering.",
+        "Stop the first boil while the core remains firm.",
+        "Leave drained rice in the hot cooking water."
+      ],
+      "answer": 1,
+      "because": "Fully softening rice before steaming gives it more cooking than the intended texture can tolerate.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

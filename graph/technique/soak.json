@@ -7,6 +7,12 @@
     "fr": ["faire tremper", "dessaler"]
   },
   "does": "Leaves food in a liquid until it has taken the liquid up, softened, or given up its salt.",
+  "intro": {
+    "what": "Soaking lets food absorb liquid, soften or release excess salt before another step.",
+    "why": "It teaches you to match the soak to its purpose instead of treating all ingredients alike.",
+    "idea": "Know why you soak",
+    "tier": "drafted"
+  },
   "how": [
     "Cover the food with plenty of liquid, as it will swell.",
     "For dried pulses and dried fruit, use cold water and leave them until they are plump.",
@@ -23,6 +29,56 @@
       "fix": "Use bread that is a day old or more, and lift it out as soon as the centre is soft."
     },
     {"mistake": "Leaving pulses or salt cod to soak in a warm kitchen.", "fix": "Soak them in the fridge."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why might salt cod be soaked in changing water?",
+      "choices": [
+        "To let it release excess salt.",
+        "To concentrate more salt in the flesh.",
+        "To brown its outside before cooking."
+      ],
+      "answer": 0,
+      "because": "Fresh cold water carries away released salt rather than keeping it around the fish.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should stale bread be handled in a soaking liquid?",
+      "choices": [
+        "Leave it until it disintegrates completely.",
+        "Turn it until the centre softens while it still holds together.",
+        "Wet only the crust and leave the centre dry."
+      ],
+      "answer": 1,
+      "because": "The aim is a hydrated slice that can still be lifted into the next preparation.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance indicates dried food has absorbed water?",
+      "choices": [
+        "It remains tightly wrinkled and dry.",
+        "It softens only at the surface while staying dry within.",
+        "It becomes plump and smoother."
+      ],
+      "answer": 2,
+      "because": "Absorbed liquid expands dried food and reduces its shrivelled appearance.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Soaked bread fell apart when lifted. What would you change next time?",
+      "choices": [
+        "Use stale bread and lift it out once the centre softens.",
+        "Leave the next slices in longer.",
+        "Use softer fresh bread for a longer soak."
+      ],
+      "answer": 0,
+      "because": "Staler bread holds its structure better, and ending the soak promptly avoids collapse.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/breads", "tier": "drafted"},

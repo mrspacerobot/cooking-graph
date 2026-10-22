@@ -129,6 +129,13 @@ class GatesTest(unittest.TestCase):
         things["technique/sear"] = thing("technique", {"tier": "drafted"})
         self.assertEqual([release.GATE_TIERS], self.failing(things))
 
+    def test_drafted_learning_content_on_a_reviewed_technique_fails_the_tier_gate(self):
+        for field, value in (("intro", {"tier": "drafted"}), ("quiz", [{"tier": "drafted"}])):
+            with self.subTest(field=field):
+                things = passing_things()
+                things["technique/sear"] = thing("technique", {"tier": "reviewed", field: value})
+                self.assertEqual([release.GATE_TIERS], self.failing(things))
+
     def test_an_unverified_ingredient_fails_the_safety_gate(self):
         things = passing_things()
         things["ingredient/egg"] = thing("ingredient", {"tier": "reviewed", "safety": {"state": "unverified"}})

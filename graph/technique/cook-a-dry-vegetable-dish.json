@@ -4,6 +4,12 @@
   "names": {"en": "Cook a dry vegetable dish"},
   "aliases": {"en": ["sabzi", "sukhi sabzi", "sookhi sabji", "dry vegetable curry"]},
   "does": "Cooks cut vegetables in spiced fat with no added water, under a lid over a low heat, so that they soften in their own steam and end up coated in a thick spiced paste, with no gravy left in the pan.",
+  "intro": {
+    "what": "Vegetables soften in spiced fat and their own steam before moisture is released from the pan.",
+    "why": "The lid is useful early and removed later: containing moisture softens the vegetables, while releasing it makes the spices cling.",
+    "idea": "Steam first, dry finish",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the vegetables into pieces of an even size and pat them dry.",
     "Start the pan with a tempering of whole spices and a masala base cooked until its fat parts.",
@@ -30,6 +36,56 @@
     {
       "mistake": "Leaving the lid on to the end, so that the dish is damp and not dry.",
       "fix": "Take the lid off for the end of the cooking and let the moisture cook away."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What distinguishes this dish from a watery stew?",
+      "choices": [
+        "Spices cling to the vegetables without a pool of gravy.",
+        "The vegetables float in a thin broth.",
+        "The vegetables are drained of their spice coating before serving."
+      ],
+      "answer": 0,
+      "because": "The final uncovered stage removes loose moisture and leaves a coating of spices.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How is the pan covered during this method?",
+      "choices": [
+        "Uncovered throughout to prevent any steam.",
+        "Covered for gentle softening, then uncovered to dry the finish.",
+        "Tightly covered even after moisture needs to leave."
+      ],
+      "answer": 1,
+      "because": "The changing use of the lid manages moisture differently at each stage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the finished vegetables look like?",
+      "choices": [
+        "Vegetables submerged in clear water.",
+        "A smooth paste with no remaining pieces.",
+        "Distinct pieces coated in a thick spice paste."
+      ],
+      "answer": 2,
+      "because": "The intended result retains vegetable pieces with a concentrated coating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The softened vegetables broke into mush during stirring. What would you change next time?",
+      "choices": [
+        "Stir more gently and less often.",
+        "Mash the pieces more firmly against the base.",
+        "Keep stirring vigorously as they soften."
+      ],
+      "answer": 0,
+      "because": "Soft vegetables need gentle movement to preserve their shape.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Dredge", "fr": "Fariner"},
   "aliases": {"en": ["flour", "coat in flour", "dredge in flour"]},
   "does": "Coats a piece of food in a thin layer of flour just before it is fried, so that it browns evenly and does not stick.",
+  "intro": {
+    "what": "A piece of food receives a thin flour dusting immediately before frying.",
+    "why": "Excess flour and waiting change that dry film into a heavy damp layer. Timing matters as much as coverage.",
+    "idea": "A dry dusting just before frying",
+    "tier": "drafted"
+  },
   "how": [
     "Dry the food and season it.",
     "Lay it in a plate of flour and turn it to coat every side.",
@@ -19,6 +25,56 @@
       "fix": "Flour at the last moment, when the fat is already hot."
     },
     {"mistake": "Leaving a thick coat on, which falls off in the pan and burns.", "fix": "Tap the piece well."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the flour layer intended to help with here?",
+      "choices": [
+        "A thick flour layer intended to absorb as much fat as possible.",
+        "A thick protective flour layer left loose around the food.",
+        "Even browning and less sticking during frying."
+      ],
+      "answer": 2,
+      "because": "The thin flour film treats the surface without adding a bulky loose layer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen after coating every side in flour?",
+      "choices": [
+        "Tap off flour that does not cling.",
+        "Pack on more flour until the food is hidden.",
+        "Wet the flour coating before frying."
+      ],
+      "answer": 0,
+      "because": "Removing loose flour keeps the intended dusting thin.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the dredged surface look like?",
+      "choices": [
+        "A thick opaque ridge of loose flour.",
+        "A thin dusty film with the food showing through.",
+        "A wet paste running off the piece."
+      ],
+      "answer": 1,
+      "because": "Seeing the food through the dusting indicates a light layer rather than excess flour.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The flour became a damp gummy paste while waiting. What would you change next time?",
+      "choices": [
+        "Dredge earlier and leave it standing longer.",
+        "Wet the coated pieces before they wait.",
+        "Dredge when the pan is ready for frying."
+      ],
+      "answer": 2,
+      "because": "Applying flour near the frying stage limits the time it has to absorb surface moisture.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/lean-fish", "tier": "drafted"},

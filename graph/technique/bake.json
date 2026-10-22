@@ -4,6 +4,12 @@
   "names": {"en": "Bake", "fr": "Cuire au four"},
   "aliases": {"en": ["bake in the oven", "oven-bake"]},
   "does": "Cooks food with the dry, even heat of an oven.",
+  "intro": {
+    "what": "Baking uses the dry heat of an oven to cook food.",
+    "why": "It teaches you to watch how food colours and to notice uneven oven heat.",
+    "idea": "Oven heat",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the oven fully before the food goes in.",
     "Set the dish on the middle shelf, with space around it for the air to move.",
@@ -22,6 +28,48 @@
     {
       "mistake": "Trusting the dial.",
       "fix": "Ovens run hot or cold. Learn yours, and judge by colour and feel as well as by time."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What provides the heat when you bake?",
+      "choices": ["Hot liquid around the food.", "Dry heat inside an oven.", "Steam trapped in a covered pot."],
+      "answer": 1,
+      "because": "Baking surrounds food with the dry heat of an oven.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you prepare the oven before baking?",
+      "choices": [
+        "Put the food in while the oven warms.",
+        "Put the dish near the door so you can check it often.",
+        "Heat the oven fully before adding the food."
+      ],
+      "answer": 2,
+      "because": "Heat the oven fully first, so the food does not sit in it throughout the warm-up.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What would suggest that the oven is browning unevenly?",
+      "choices": [
+        "The dish colours more on one side.",
+        "The top colours evenly.",
+        "The edges colour slightly more than the middle."
+      ],
+      "answer": 0,
+      "because": "More colour on one side shows uneven browning. Turn the dish if that side is browning faster.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The oven dial and the colour of the food seem to disagree. What should guide your next check?",
+      "choices": ["The dial alone.", "Colour and feel as well as time.", "The smell alone, without looking."],
+      "answer": 1,
+      "because": "Ovens can run hotter or cooler than their dials suggest. Check the food as well as the time.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

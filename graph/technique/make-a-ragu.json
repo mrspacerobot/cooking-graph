@@ -4,6 +4,12 @@
   "names": {"en": "Make a ragu", "fr": "Ragù"},
   "aliases": {"en": ["make a ragù", "make ragu", "make a meat ragu"]},
   "does": "Cooks minced meat very slowly with a soffritto, wine and tomato until it turns into a thick, rich sauce that clings to pasta or fills a rice ball. Every region has its own ragu, and this card holds the common method.",
+  "intro": {
+    "what": "This minced-meat ragù method slowly cooks browned meat with soffritto, wine and tomato.",
+    "why": "It teaches you to build a fine-textured sauce that clings, rather than a thin sauce around meat lumps.",
+    "idea": "Fine crumbs, slow sauce",
+    "tier": "drafted"
+  },
   "how": [
     "Make a soffritto in a wide, heavy pot and cook it until it is soft and golden.",
     "Add the minced meat in small lots and break it up with a spoon. Let it brown before moving on, and stir so that it cooks in fine crumbs.",
@@ -30,6 +36,56 @@
     {
       "mistake": "Leaving the meat in lumps, which makes a coarse sauce that does not cling.",
       "fix": "Break it up as it browns."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why break the minced meat up as it browns?",
+      "choices": [
+        "To keep large lumps separate from the sauce.",
+        "To prevent any surface browning.",
+        "To make fine crumbs in a sauce that clings."
+      ],
+      "answer": 2,
+      "because": "Large meat lumps make a coarse sauce that does not cling well.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the meat enter the soffritto pan?",
+      "choices": [
+        "In small lots that can brown before more is added.",
+        "All at once in a packed mound.",
+        "Only after filling the pot with liquid."
+      ],
+      "answer": 0,
+      "because": "Small lots avoid crowding that steams the meat instead of browning it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What shows the sauce has cooked down?",
+      "choices": [
+        "Watery liquid immediately filling every trail.",
+        "A thick spoon trail and glossy fat at the edge.",
+        "Firm raw-looking tomato pieces in thin liquid."
+      ],
+      "answer": 1,
+      "because": "A held spoon trail and fat showing at the edge accompany the intended thick sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce is thin and still tastes raw from rushing. What would you do?",
+      "choices": [
+        "Raise the heat sharply and stop stirring.",
+        "Add more liquid and serve immediately.",
+        "Continue gently over low heat as it cooks down."
+      ],
+      "answer": 2,
+      "because": "Slow gentle cooking develops this sauce beyond a thin, raw-tasting mixture.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

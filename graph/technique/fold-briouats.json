@@ -4,6 +4,12 @@
   "names": {"en": "Fold briouats"},
   "aliases": {},
   "does": "Cuts sheets of warqa into long strips, puts a spoonful of filling at one end of each strip and folds the end over it again and again, corner to corner, into a small neat triangle, with the loose end sealed down with a dab of fat.",
+  "intro": {
+    "what": "Warqa strips wrap a filling in repeated corner-to-corner folds that make a neat triangle.",
+    "why": "Keeping the pastry supple and the filling restrained lets the thin sheet close without cracks or exposed corners.",
+    "idea": "A supple triangular wrapper",
+    "tier": "drafted"
+  },
   "how": [
     "Keep the warqa under a damp cloth. Cut a sheet into strips as wide as a hand, and brush each strip lightly with melted butter.",
     "Put a small spoonful of filling at one end, a little in from the corner.",
@@ -20,6 +26,56 @@
     {
       "mistake": "Letting the strips dry out, so that they crack when folded.",
       "fix": "Cut only a few at a time and keep the rest under a damp cloth."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep unused warqa strips under a damp cloth?",
+      "choices": [
+        "To prevent drying that causes cracks during folding.",
+        "To dry the surfaces so the folds hold their corners.",
+        "To make the pastry soak up extra filling moisture."
+      ],
+      "answer": 0,
+      "because": "Supple warqa can fold around the filling without snapping.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How is the triangle carried along the strip?",
+      "choices": [
+        "Roll the strip into an open cylinder.",
+        "Fold it corner to corner repeatedly along the strip.",
+        "Gather the strip into loose pleats above the filling."
+      ],
+      "answer": 1,
+      "because": "The repeated diagonal folds enclose the filling within the triangular shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the finished briouat look like?",
+      "choices": [
+        "A loose strip with filling exposed at each end.",
+        "A split parcel with a thick mound pushing through.",
+        "A neat triangle with filling enclosed at the corners."
+      ],
+      "answer": 2,
+      "because": "Enclosed corners and a secured flap show the wrapper has closed around the filling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The warqa split around an overfilled centre. What would you change on the next parcel?",
+      "choices": [
+        "Use less filling so the folds can close.",
+        "Pack more filling against the split.",
+        "Stretch the dry strip harder across the mound."
+      ],
+      "answer": 0,
+      "because": "Reducing the filling relieves pressure on the thin wrapper.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Beat tahini sauce"},
   "aliases": {"en": ["make tahini sauce", "loosen tahini", "make taratour"]},
   "does": "Beats tahini with lemon juice and cold water into a pale, smooth, pourable sauce. The paste stiffens and looks curdled when the first liquid goes in, then turns silky and loose as more water is beaten in.",
+  "intro": {
+    "what": "Tahini is beaten with lemon juice and gradual additions of cold water into a creamy sauce.",
+    "why": "The paste can stiffen before it loosens. Recognizing that transition helps you manage texture without mistaking an expected change for failure.",
+    "idea": "Stiffening before loosening",
+    "tier": "drafted"
+  },
   "how": [
     "Stir the tahini well first, as its oil rises to the top. If garlic is used, crush it with salt and stir it into the lemon juice.",
     "Put the tahini in a bowl and stir in the lemon juice. The paste will seize and thicken, as it should.",
@@ -31,6 +37,56 @@
     {
       "mistake": "Using tahini from the top of the jar, where the oil has risen, so that the sauce is thin and oily.",
       "fix": "Stir the jar well before measuring."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture change is expected after lemon juice enters tahini?",
+      "choices": [
+        "The paste stiffens before added water loosens it.",
+        "The lemon should make it fully pourable before water is added.",
+        "The paste should stay the same thickness as before the lemon."
+      ],
+      "answer": 0,
+      "because": "Initial tightening is part of this method; beating in water afterward makes the sauce looser.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen before taking tahini from the jar?",
+      "choices": [
+        "Take only the oil from the top.",
+        "Stir the separated oil back into the paste.",
+        "Drain away all visible oil."
+      ],
+      "answer": 1,
+      "because": "Stirring the jar gives a consistent paste instead of an unusually oily portion.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests the sauce has come together?",
+      "choices": [
+        "Dark lumps under a clear oil layer.",
+        "Dry cracks around an unmixed paste.",
+        "Pale, creamy and glossy without oil floating above it."
+      ],
+      "answer": 2,
+      "because": "A uniform creamy appearance shows the paste and liquid have combined.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The paste tightened after adding lemon. What is the next move?",
+      "choices": [
+        "Beat in cold water gradually.",
+        "Stop adding water and beat the stiff paste alone.",
+        "Add more oil instead of continuing with water."
+      ],
+      "answer": 0,
+      "because": "Gradual water additions and beating loosen the expected stiff stage into a sauce.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

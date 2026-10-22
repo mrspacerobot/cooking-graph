@@ -4,6 +4,12 @@
   "names": {"en": "Cover with a drop lid"},
   "aliases": {"en": ["otoshibuta", "cover with otoshibuta", "use a drop lid", "cover with drop lid"]},
   "does": "Lays a lid that is smaller than the pot straight on the food, so that the simmering liquid is pushed up and over every piece. The pieces cook evenly in a small amount of liquid and stay still.",
+  "intro": {
+    "what": "A drop lid rests directly on food inside the pot while liquid simmers around it.",
+    "why": "Its position helps liquid wash over the pieces without rough stirring, supporting an even finish and intact shapes.",
+    "idea": "A lid resting on the food",
+    "tier": "drafted"
+  },
   "how": [
     "Arrange the food in a single layer in a wide pot and add just enough liquid to come part of the way up.",
     "Bring the liquid to a simmer.",
@@ -23,6 +29,56 @@
     {
       "mistake": "Letting the liquid boil hard under the lid, which knocks the pieces about.",
       "fix": "Turn the heat down until it only bubbles gently."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why place a drop lid directly on the food?",
+      "choices": [
+        "To keep all liquid away from the top pieces.",
+        "To help simmering liquid reach over the pieces.",
+        "To prevent liquid from reaching the sides of the pieces."
+      ],
+      "answer": 1,
+      "because": "The smaller lid channels the bubbling liquid around and over the food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should the lid sit?",
+      "choices": [
+        "Above the food on the pot rim.",
+        "Below the food against the pot base.",
+        "Inside the pot, on the food."
+      ],
+      "answer": 2,
+      "because": "Contact with the food distinguishes a drop lid from an ordinary pot lid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should be visible around the drop lid?",
+      "choices": [
+        "Gentle bubbles bringing liquid up around its edge.",
+        "Violent boiling throwing pieces against the lid.",
+        "A dry base with no moving liquid."
+      ],
+      "answer": 0,
+      "because": "Quiet liquid movement reaches the pieces without knocking them around.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pieces are knocked apart beneath the lid. What should change?",
+      "choices": [
+        "Raise the boil to move the lid faster.",
+        "Turn the heat down to a gentle simmer.",
+        "Stir hard around the lid."
+      ],
+      "answer": 1,
+      "because": "Gentler bubbling preserves the shapes the lid is meant to protect.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Season", "fr": "Assaisonner"},
   "aliases": {"en": ["season to taste", "taste and adjust", "adjust the seasoning"]},
   "does": "Brings out the taste of a dish with salt, and balances it with pepper, acid or fat.",
+  "intro": {
+    "what": "Seasoning adjusts salt, acid, pepper or fat to balance a dish.",
+    "why": "It teaches you to taste, change a little and taste again rather than rely on a fixed addition.",
+    "idea": "Taste and adjust",
+    "tier": "drafted"
+  },
   "how": [
     "Salt in small steps as the dish cooks, not only at the end.",
     "Taste before serving, from a clean spoon.",
@@ -19,6 +25,56 @@
       "fix": "Salt lightly anything that will reduce, and correct it at the end."
     },
     {"mistake": "Seasoning without tasting.", "fix": "Taste every time. No amount on paper replaces it."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What should successful seasoning bring forward?",
+      "choices": [
+        "The flavour of the dish rather than a dominant salt taste.",
+        "The strongest possible salt taste.",
+        "The same sharpness in every dish."
+      ],
+      "answer": 0,
+      "because": "Balance lets the ingredients taste more distinct without an addition overwhelming them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should follow a small seasoning addition?",
+      "choices": [
+        "Keep adding before mixing.",
+        "Stir, pause and taste again.",
+        "Judge the final dish from the dry seasoning alone."
+      ],
+      "answer": 1,
+      "because": "Mixing distributes the addition so the next taste reflects the whole dish.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which taste suggests seasoning is balanced?",
+      "choices": [
+        "Salt dominates the other flavours.",
+        "Acid masks all the other ingredients.",
+        "Bright and clear, with nothing standing out harshly."
+      ],
+      "answer": 2,
+      "because": "Balanced seasoning supports the dish’s own flavours rather than replacing them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A reduced sauce ended up too salty. What would you change next time?",
+      "choices": [
+        "Salt lightly before reducing and adjust at the end.",
+        "Add the full final seasoning before reduction.",
+        "Add more salt as the volume falls."
+      ],
+      "answer": 0,
+      "because": "Reduction concentrates salt with the liquid, so final adjustment should reflect its reduced state.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},

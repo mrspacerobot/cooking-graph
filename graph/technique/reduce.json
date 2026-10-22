@@ -4,6 +4,12 @@
   "names": {"en": "Reduce", "fr": "Réduire"},
   "aliases": {"en": ["boil down", "reduce by half", "reduce to a glaze"]},
   "does": "Boils a liquid down, so that its water leaves as steam and what remains is thicker and stronger.",
+  "intro": {
+    "what": "Reducing boils liquid uncovered so that water leaves as steam and the liquid grows thicker and stronger.",
+    "why": "It teaches you to connect evaporation with flavour and texture, and to season after concentrating a sauce.",
+    "idea": "Evaporation",
+    "tier": "drafted"
+  },
   "how": [
     "Use a wide pan. The wider the surface, the faster the water leaves.",
     "Boil steadily, uncovered.",
@@ -25,6 +31,56 @@
     {
       "mistake": "Walking away near the end, when a sauce goes from syrup to scorched in moments.",
       "fix": "Stay with it once it starts to thicken, and pull it off the heat early."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What happens to a liquid as it reduces?",
+      "choices": [
+        "It becomes more diluted.",
+        "It becomes thicker and stronger as water leaves.",
+        "It keeps the same strength while its colour changes."
+      ],
+      "answer": 1,
+      "because": "Water leaves as steam, so the remaining liquid becomes more concentrated and thicker.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Which pan setup helps liquid reduce?",
+      "choices": [
+        "A tightly covered narrow pot.",
+        "A wide pan under a tight lid.",
+        "A wide pan, boiling steadily without a lid."
+      ],
+      "answer": 2,
+      "because": "A wide surface lets water leave faster. Keeping the pan uncovered lets the steam escape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What spoon test helps you judge whether the sauce has thickened?",
+      "choices": [
+        "A finger leaves a clear path across the back of a coated spoon.",
+        "The liquid looks exactly as thin as at the start.",
+        "The spoon emerges without any coating."
+      ],
+      "answer": 0,
+      "because": "A coating that holds a clear path across the spoon shows the sauce has thickened.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A reduced sauce tastes too salty. What would you change next time?",
+      "choices": [
+        "Season to the final taste before starting to boil.",
+        "Season at the end of the reduction.",
+        "Cover the pan to keep all the water in."
+      ],
+      "answer": 1,
+      "because": "Salt concentrates along with the sauce. Season after reducing so you judge the concentrated liquid.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

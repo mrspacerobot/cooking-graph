@@ -4,6 +4,12 @@
   "names": {"en": "Salt fish"},
   "aliases": {"en": ["salt the fish", "shio furi", "lightly salt fish"]},
   "does": "Sprinkles fresh fish with a little salt and leaves it for a short while before grilling or frying, to season it, firm the flesh and draw out the surface water and smell. It is not the long curing of salt cod.",
+  "intro": {
+    "what": "This brief salting method seasons fresh fish and draws water to its surface before cooking.",
+    "why": "It teaches you to manage surface moisture and distinguish brief seasoning from a long salt cure.",
+    "idea": "Brief surface salting",
+    "tier": "drafted"
+  },
   "how": [
     "Pat the fish dry.",
     "Sprinkle salt evenly over both sides, and a little more on the tail and fins if the fish is whole.",
@@ -19,6 +25,48 @@
     {
       "mistake": "Leaving it too long, so that it turns dry and hard.",
       "fix": "Wipe it dry as soon as water shows and cook it."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "How does this method differ from curing salt cod?",
+      "choices": [
+        "It is brief surface seasoning before cooking.",
+        "It is a long drying cure.",
+        "It preserves fish for storage in salt."
+      ],
+      "answer": 0,
+      "because": "The purpose is seasoning and surface moisture control, not preservation.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen to the water that appears on the skin?",
+      "choices": ["Leave it pooled under the fish.", "Wipe it away before cooking.", "Rub it back in with more salt."],
+      "answer": 1,
+      "because": "Wiping removes the surface water drawn out by the salt.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which visible change guides the end of this brief salting step?",
+      "choices": ["The fish becomes hard and dry.", "A thick salt crust forms.", "Beads of water appear on the skin."],
+      "answer": 2,
+      "because": "Surface droplets show that water has been drawn out and can now be wiped away.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The fish becomes too salty. What should change next time?",
+      "choices": [
+        "Apply salt lightly and evenly.",
+        "Use a thicker salt coating in fewer places.",
+        "Leave the same heavy coating on longer."
+      ],
+      "answer": 0,
+      "because": "A light even coating seasons the surface without excessive salt accumulation.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

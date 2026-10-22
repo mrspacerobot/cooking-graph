@@ -4,6 +4,12 @@
   "names": {"en": "Make choux pastry", "fr": "Faire une pâte à choux"},
   "aliases": {"en": ["choux pastry", "choux paste", "make choux paste"], "fr": ["pâte à choux"]},
   "does": "Cooks flour into boiling water and butter to a thick, smooth paste, then beats in eggs until it turns glossy and soft enough to spoon or pipe. Baked, the paste puffs into hollow shells. Poached, it makes light dumplings.",
+  "intro": {
+    "what": "Choux cooks flour into water and butter, then beats in eggs to form a glossy paste.",
+    "why": "It teaches you to distinguish drying the first paste from loosening it with eggs to a texture that holds its shape.",
+    "idea": "Dry first, then loosen",
+    "tier": "drafted"
+  },
   "how": [
     "Bring the water, the butter and a little salt to a boil, so that the butter has melted by the time the water bubbles.",
     "Take the pan off the heat, tip in all the flour at once and beat hard with a wooden spoon.",
@@ -31,6 +37,52 @@
     {
       "mistake": "Adding all the egg at once, which leaves a paste too loose to hold its shape.",
       "fix": "Add it a little at a time and stop when the paste falls from the spoon in a thick ribbon."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What can this choux paste become when baked?",
+      "choices": ["Puffed, hollow shells.", "Flat brittle sheets without a cavity.", "A crumbly shortcrust shell."],
+      "answer": 0,
+      "because": "The cooked paste puffs into hollow shells rather than behaving like shortcrust.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should eggs enter the cooled paste?",
+      "choices": [
+        "All at once while the paste is still very hot.",
+        "Gradually, taking up each addition before adding more.",
+        "Before cooking the flour into the butter and water."
+      ],
+      "answer": 1,
+      "because": "Gradual additions let you judge the texture and avoid a paste too loose to hold its shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What texture tells you to stop adding egg?",
+      "choices": [
+        "A stiff ball that will not fall from the spoon.",
+        "A watery stream that cannot hold a shape.",
+        "Glossy paste falling in a slow, thick ribbon."
+      ],
+      "answer": 2,
+      "because": "A thick ribbon balances softness for piping with enough body to hold shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Egg cooks into strings when mixed with the paste. What would you change next time?",
+      "choices": [
+        "Let the cooked paste cool a little before adding egg.",
+        "Add the egg faster while the paste is hotter.",
+        "Keep the paste on the heat during the first egg addition."
+      ],
+      "answer": 0,
+      "because": "Very hot paste sets the egg instead of taking it up smoothly.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

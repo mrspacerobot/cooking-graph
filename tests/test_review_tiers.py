@@ -4,6 +4,7 @@ import unittest
 
 from tests.small_kitchen import SmallKitchen, cover, head, review, reviewer
 from tools import check, review_hash
+from tests.test_intro_quiz import sound_intro, sound_question
 
 SWEAT = "graph/technique/sweat.json"
 BUTTER = "graph/ingredient/butter.json"
@@ -78,6 +79,39 @@ class ReviewTierTest(unittest.TestCase):
     def test_a_whole_thing_record_backs_the_statements_inside_it(self):
         self.record()
         self.kitchen.change(SWEAT, lambda thing: thing["works_on"][0].update(tier="reviewed"))
+        self.assertEqual([], self.issues())
+
+    def learning_card(self):
+        self.kitchen.files[SWEAT].update(intro=sound_intro(), quiz=[sound_question()])
+        self.kitchen.write(SWEAT, self.kitchen.files[SWEAT])
+
+    def test_an_intro_can_be_reviewed_separately(self):
+        self.learning_card()
+        self.record(covers=[cover("technique/sweat", self.seen(SWEAT, "intro"), field="intro")])
+        self.kitchen.change(SWEAT, lambda card: card["intro"].update(tier="reviewed"))
+        self.assertEqual([], self.issues())
+        self.kitchen.change(SWEAT, lambda card: card["intro"].update(tier="reviewed", why="It builds a gentle base."))
+        self.assertIn((SWEAT, "review-stale"), self.rules())
+
+    def test_a_question_is_reviewed_by_its_id_and_edits_invalidate_it(self):
+        self.learning_card()
+        self.record(covers=[cover("technique/sweat", self.seen(SWEAT, "quiz", "gentle-heat"),
+                                  field="quiz", target="gentle-heat")])
+        self.kitchen.change(SWEAT, lambda card: card["quiz"][0].update(tier="reviewed"))
+        self.assertEqual([], self.issues())
+        self.kitchen.change(SWEAT, lambda card: card["quiz"][0].update(tier="reviewed", because="Gentle heat limits browning."))
+        self.assertIn((SWEAT, "review-stale"), self.rules())
+
+    def test_question_review_survives_reordering(self):
+        self.learning_card()
+        self.record(covers=[cover("technique/sweat", self.seen(SWEAT, "quiz", "gentle-heat"),
+                                  field="quiz", target="gentle-heat")])
+        def reorder(card):
+            card["quiz"][0]["tier"] = "reviewed"
+            other = sound_question()
+            other.update(id="other-cue", question="What changes in the pan?")
+            card["quiz"].insert(0, other)
+        self.kitchen.change(SWEAT, reorder)
         self.assertEqual([], self.issues())
 
     def test_a_model_may_not_grant_reviewed(self):

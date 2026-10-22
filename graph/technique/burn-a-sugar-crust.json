@@ -4,6 +4,12 @@
   "names": {"en": "Burn a sugar crust"},
   "aliases": {"en": ["cremar", "burn the sugar top", "brulee the top", "torch the sugar"]},
   "does": "Sprinkles a thin, even layer of sugar over a cold, set custard and melts it with strong heat from above until it turns into a thin, glassy, amber crust that cracks under a spoon, while the custard beneath stays cold. The Catalan word for it is cremar, to burn.",
+  "intro": {
+    "what": "A sugar layer is melted over cold custard into an amber crust that cracks under a spoon.",
+    "why": "This Catalan cremar method separates intense surface heat from the cold texture beneath it.",
+    "idea": "Surface caramel over cold custard",
+    "tier": "drafted"
+  },
   "how": [
     "Have the custard cold and firm, with a dry surface. Get the torch lit or the grill very hot before the sugar goes on.",
     "Scatter an even, thin layer of sugar over the surface, tilting the dish so that it reaches every corner, and tip off the extra.",
@@ -31,6 +37,52 @@
     {
       "mistake": "Burning the sugar long before serving, so that the crust draws moisture and goes soft.",
       "fix": "Burn it just before the dish goes to the table."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What contrast is the sugar crust meant to provide?",
+      "choices": [
+        "A loose syrup kept warm on the custard.",
+        "A thick layer of partly dissolved sugar crystals.",
+        "A brittle caramel top over cold custard."
+      ],
+      "answer": 2,
+      "because": "The melted sugar hardens separately from the custard beneath it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the flame move over the sugar?",
+      "choices": [
+        "In slow passes across the whole surface.",
+        "Held still above a darkening spot.",
+        "Only around the edge of the dish."
+      ],
+      "answer": 0,
+      "because": "Moving the flame distributes browning and limits scorched patches.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What suggests the hardened crust has the intended texture?",
+      "choices": [
+        "It bends softly under the spoon.",
+        "It cracks under a light spoon tap.",
+        "It remains loose gritty sugar."
+      ],
+      "answer": 1,
+      "because": "A brittle crack distinguishes the glassy caramel from syrup or unmelted sugar.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The crust softened while waiting for service. What would you change next time?",
+      "choices": ["Caramelize it much earlier.", "Start with warm custard.", "Caramelize it closer to serving."],
+      "answer": 2,
+      "because": "A waiting crust draws moisture and loses its crisp texture.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

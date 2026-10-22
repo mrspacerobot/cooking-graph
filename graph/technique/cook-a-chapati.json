@@ -4,6 +4,12 @@
   "names": {"en": "Cook a chapati"},
   "aliases": {"en": ["cook roti on a tava", "puff a chapati", "puff a phulka"]},
   "does": "Cooks a thin round of atta dough for a short time on each face on a dry, hot iron plate, then lays it straight on the open flame, where the steam inside swells it into a soft ball. The finished bread is brushed with ghee and kept soft under a cloth.",
+  "intro": {
+    "what": "A thin atta round cooks on a hot dry plate before puffing over an open flame.",
+    "why": "The bread needs enough heat to puff without drying on the plate. Steam gives the soft bread its inflated shape.",
+    "idea": "Steam puffs a thin bread",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the iron plate until it is hot all over. A dusting of flour dropped on it should brown at once.",
     "Lay the rolled round on the hot plate. When small bubbles show on the top, turn it.",
@@ -31,6 +37,52 @@
     {
       "mistake": "Leaving the bread on the flame, where it chars to ash.",
       "fix": "Hold it there for moments only and turn it."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What makes the chapati swell over the flame?",
+      "choices": [
+        "The flour dusting inflates as it browns.",
+        "Fat applied after cooking creates the internal puff.",
+        "Steam forming inside the bread."
+      ],
+      "answer": 2,
+      "because": "Steam expands between the bread surfaces and produces the puff.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should the first face be turned on the plate?",
+      "choices": [
+        "When small bubbles appear on top.",
+        "After it has dried into a rigid sheet.",
+        "Before any surface change appears."
+      ],
+      "answer": 0,
+      "because": "Early bubbles signal the change used for turning before the bread dries out.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What texture should the finished chapati have?",
+      "choices": ["Stiff and leathery.", "Soft and flexible.", "Brittle and dry throughout."],
+      "answer": 1,
+      "because": "The intended bread bends rather than becoming rigid from prolonged plate cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A chapati dried on the plate and would not puff. What would you change next time?",
+      "choices": [
+        "Keep it on the plate until it becomes stiffer.",
+        "Use a cooler plate and extend the cooking.",
+        "Turn promptly when bubbles appear and avoid prolonged plate cooking."
+      ],
+      "answer": 2,
+      "because": "Excess drying on the plate works against the later steam puff.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

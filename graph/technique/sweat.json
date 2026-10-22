@@ -4,6 +4,12 @@
   "names": {"en": "Sweat", "fr": "Suer"},
   "aliases": {"en": ["sweat without colour", "soften without colour", "cook until translucent"]},
   "does": "Softens cut vegetables in a little fat over low heat, so that they give up their water and turn sweet without browning.",
+  "intro": {
+    "what": "Sweating softens cut vegetables gently in a little fat without browning them.",
+    "why": "It teaches you to use gentle heat and watch for softness before colour develops.",
+    "idea": "Soften without browning",
+    "tier": "drafted"
+  },
   "how": [
     "Warm the fat in a wide pan over low heat.",
     "Add the vegetables with a little salt and stir to coat them.",
@@ -24,6 +30,56 @@
     {
       "mistake": "Too many vegetables in a small pan, so they stew in their own water.",
       "fix": "Use a wider pan, or let the water cook off before going on."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim of sweating vegetables?",
+      "choices": [
+        "Softness and sweetness without browning.",
+        "A lightly browned surface while the centre stays firm.",
+        "A crisp, deeply browned surface."
+      ],
+      "answer": 0,
+      "because": "Gentle heat softens the vegetables and brings out sweetness without browning them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the heat be managed in this method?",
+      "choices": [
+        "Use medium-high heat and stir constantly to avoid colour.",
+        "Keep it low and stir now and then.",
+        "Raise it whenever the vegetables soften."
+      ],
+      "answer": 1,
+      "because": "Low heat and occasional stirring keep the pieces from sitting long enough to colour.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which onion appearance matches sweating?",
+      "choices": [
+        "Black edges with a firm centre.",
+        "A crisp golden crust.",
+        "Glassy, limp pieces without brown edges."
+      ],
+      "answer": 2,
+      "because": "Glassy, limp onion without brown edges shows softening without browning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The edges are browning before the middle softens. What should you change?",
+      "choices": [
+        "Lower the heat and add a little water to halt the colouring.",
+        "Keep the heat high but stir more frequently.",
+        "Leave the pieces unstirred over the same heat."
+      ],
+      "answer": 0,
+      "because": "The heat is too high if edges brown before the middle softens. Lower it and add a little water to halt the colouring.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

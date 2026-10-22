@@ -137,9 +137,11 @@ One kitchen move, defined by what it does to food.
 | Field | What it holds |
 |---|---|
 | `does` | A sentence that says what the move does to food |
+| `intro` | A culinary introduction, or null when not yet drafted. It has `what` the technique does, `why` it matters beyond this dish, an optional named `idea` and its own `tier` |
 | `how` | The move in a few short beats, at least two |
 | `cues` | What tells the cook it is right, at least one. Each has a `sense` (see, hear, smell, feel, taste) and a `text` |
 | `mistakes` | The mistakes people really make, at least one. Each has the `mistake` and its `fix` |
+| `quiz` | Reusable understanding questions, empty when not yet drafted. Each has a permanent local `id`, `question`, two to four distinct `choices`, zero-based `answer`, an explanation `because` and its own `tier`. A quiz needs an introduction. Four questions is the current editorial target, not a model limit |
 | `works_on` | What the move is done to. Statement. It points at groups. It may name a single ingredient or preparation only where nothing else in the graph behaves like it, and never more than three |
 | `makes` | What it leaves: forms or preparations. Statement |
 | `needs` | What it cannot be done without. Statement. Each row has a `role` and `options`: equipment, ingredients or preparations, any one of which will do |
@@ -586,6 +588,14 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 - **What did not fit:** a placeholder could print only a singular name, so a step could not keep the number of the original wording, and a swap could not say whether the stand-in has a plural.
 - **Now:** an ingredient and a preparation have `plurals` (the plural of the name in each language it is named in) and `uncountable`. A food is either uncountable with no plurals, or countable with a plural for every language of its names. `./check` rejects a food that is neither (`plural-missing`, `uncountable-with-plural`, `plural-without-name`). A step writes `{part:plural}` or `{part.ingredient:plural}` for the plural; for a swap the stand-in's plural is printed, and an uncountable stand-in prints its name. The check also rejects the plural of an uncountable line (`step-plural-of-uncountable`), `a` or `an` before a plural (`step-article-before-plural`) and a singular verb straight after a plural (`step-number-disagrees`). `serving-vectors.json` has cases for plurals and for a swap to an uncountable food. The artifact schema version stays 3 (not yet released).
 - **Not yet:** the plurals in French, Spanish, Italian and Turkish were drafted by rule with a few fixes and have no native review. A singular placeholder followed by a plural verb is not checked, because a list ("the {a} and the {b} are") is correct.
+
+### 37. Technique introductions and reusable understanding questions (issue 6)
+
+- **Example:** French foundations named mirepoix and linked dice, but a home cook could not see why an even cut matters, or check after cooking whether they understood it.
+- **Now:** `technique.intro` explains `what` the move is, `why` it matters for cooking understanding, and an optional named `idea`. `technique.quiz` contains questions with a permanent local `id`, a `question`, distinct `choices`, a zero-based `answer`, and feedback `because`. Both the introduction and each question carry their own `tier`. A missing draft is represented as null and an empty list, without claiming coverage. Four questions is an editorial target for foundation techniques, not a validity constraint.
+- **Identity and review:** question ids are permanent within their technique and never track list position. A question is reviewed through the technique id, field `quiz`, and its local id as `target`; an introduction uses field `intro` with no target. Each hash includes its wording and answer but excludes tiers. Editing the approved unit invalidates that approval. Whole-technique approval covers the included introduction and questions too. Production releases require every included statement, including these units, to reach reviewed.
+- **Boundaries:** the graph holds culinary explanations and a reusable question catalogue. Programs retain teaching sequence and cuisine scope. Tomi supplies narration, when to ask, selections, attempts, scores and progress. Quiz performance is not culinary review or safety evidence. New generated explanations and questions remain drafted. No questions here are evaluation probes.
+- **Rules:** `quiz-answer-out-of-range`, `quiz-too-many-choices`, `quiz-without-intro` and `quiz-id-twice` supplement strict schema validation. Existing prose rules reject numeric quantities in sentences and unsupported safety or doneness claims.
 
 ## Decisions where the starting model was silent
 

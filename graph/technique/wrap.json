@@ -4,6 +4,12 @@
   "names": {"en": "Wrap", "fr": "Envelopper"},
   "aliases": {"en": ["wrap up", "enclose in a wrapper"], "fr": ["envelopper dans"]},
   "does": "Encloses a filling or a piece of food in a wrapper, such as caul fat, a leaf, a thin omelette or a cloth, and closes it by folding or pulling, so that it keeps its shape and its juices as it cooks.",
+  "intro": {
+    "what": "Wrapping encloses food in a flexible leaf, sheet or other covering and secures the seam.",
+    "why": "It teaches you to leave a useful border and balance a snug closure with room for the filling.",
+    "idea": "Overlap and secure",
+    "tier": "drafted"
+  },
   "how": [
     "Lay the wrapper out flat and make sure it is soft enough to bend without tearing.",
     "Set the food or the filling in the middle, with a border all round.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Wrapping loosely, so that the parcel falls open in the pan.",
       "fix": "Pull the wrapper snug and set it seam side down, or tie it."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why leave a border around the filling?",
+      "choices": [
+        "To leave the filling exposed at every side.",
+        "To allow the wrapper to overlap and close.",
+        "To make the wrapper stretch as thin as possible."
+      ],
+      "answer": 1,
+      "because": "The clear border supplies material for a complete enclosure instead of an overfilled seam.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the finished parcel be secured?",
+      "choices": [
+        "Leave the seam loose on top.",
+        "Fold the ends without letting the wrapper edges overlap.",
+        "Set it seam down or tie it."
+      ],
+      "answer": 2,
+      "because": "An underside seam or tie helps the overlapping wrapper stay in place.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance fits a neatly wrapped parcel?",
+      "choices": [
+        "A snug covering with no gaps and the seam underneath.",
+        "A loose covering with exposed filling.",
+        "Torn corners around an overfilled centre."
+      ],
+      "answer": 0,
+      "because": "A complete covering supports the shape without open routes for filling to escape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The wrapper split as the filling expanded. What would you change next time?",
+      "choices": [
+        "Stretch the next wrapper tighter over more filling.",
+        "Use less filling and leave a border.",
+        "Remove the overlap to fit extra filling."
+      ],
+      "answer": 1,
+      "because": "A smaller filling and enough wrapper reduce strain while keeping the enclosure complete.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

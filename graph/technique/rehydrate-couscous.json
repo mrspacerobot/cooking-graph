@@ -4,6 +4,12 @@
   "names": {"en": "Rehydrate couscous", "fr": "Réhydrater le couscous"},
   "aliases": {"en": ["soak couscous", "hydrate couscous", "make instant couscous"]},
   "does": "Swells precooked, dried couscous grains in hot liquid poured over them off the heat, and lets them stand covered until the liquid is taken up, so that no steaming is needed.",
+  "intro": {
+    "what": "Precooked dried couscous swells in hot liquid while standing covered off the heat.",
+    "why": "It teaches you how absorption and trapped steam can soften grains without boiling them in a pan.",
+    "idea": "Absorb under cover",
+    "tier": "drafted"
+  },
   "how": [
     "Put the grains in a wide bowl with a little salt and a spoonful of oil or butter, and rub until every grain is coated, so that they do not clump when the liquid arrives.",
     "Bring the liquid, plain water or a well-flavoured stock, to a boil. Measure it by volume against the grains: about the same amount, a little more for a softer grain.",
@@ -36,6 +42,56 @@
     {
       "mistake": "Skipping the oil, so that the grains stick in clumps.",
       "fix": "Coat the dry grains with oil or butter before the liquid goes on."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Which couscous is this covered-bowl method intended for?",
+      "choices": [
+        "Raw couscous needing repeated steaming.",
+        "Couscous already softened in a sauce.",
+        "Precooked dried couscous."
+      ],
+      "answer": 2,
+      "because": "Precooked dried grains can absorb hot liquid off the heat; traditional steaming is a different method.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen after hot liquid is poured over the grains?",
+      "choices": [
+        "Cover the bowl tightly and leave it off the heat.",
+        "Leave the bowl open and stir continuously.",
+        "Keep the grains boiling in the bowl."
+      ],
+      "answer": 0,
+      "because": "A tight cover retains steam while the grains absorb the liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which observation suggests absorption has taken place?",
+      "choices": [
+        "Dry grains sitting above a puddle.",
+        "Swollen grains with no liquid pooling beneath them.",
+        "A firm dry surface with liquid below."
+      ],
+      "answer": 1,
+      "because": "The grains take liquid into their structure rather than leaving it free at the bottom.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The top layer stayed dry while the grains beneath softened. What would you change next time?",
+      "choices": [
+        "Leave it uncovered to release more steam.",
+        "Stir the uncovered grains continuously while they stand.",
+        "Keep the bowl tightly covered during absorption."
+      ],
+      "answer": 2,
+      "because": "Escaping steam can leave the upper grains dry; covering retains moisture around them.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Cook pilaf", "fr": "Cuire en pilaf"},
   "aliases": {"en": ["pilaf", "pilaf method"]},
   "does": "Cooks rice by coating it in hot fat with sweated onion, then letting it absorb a measured amount of hot stock under a lid.",
+  "intro": {
+    "what": "Rice is coated in fat, then absorbs hot stock without stirring beneath a close lid.",
+    "why": "Coating and controlled absorption produce separate grains. Resting and gentle fluffing complete the texture without stirring it into creaminess.",
+    "idea": "Coat, absorb, rest",
+    "tier": "drafted"
+  },
   "how": [
     "Sweat finely cut onion in butter without colour.",
     "Stir in the rice until every grain is coated and turns glassy at the edges.",
@@ -25,6 +31,56 @@
     {
       "mistake": "Guessing the liquid.",
       "fix": "Measure the rice by volume and the stock against it. With too much, it turns to porridge."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture is this pilaf method intended to produce?",
+      "choices": [
+        "A smooth rice paste.",
+        "Distinct grains rather than a creamy mass.",
+        "Grains floating in leftover stock."
+      ],
+      "answer": 1,
+      "because": "The method limits disturbance so the grains retain their separate shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When is the hot stock added?",
+      "choices": [
+        "Before the onion has softened or rice is coated.",
+        "Only after the rice has finished resting.",
+        "After the rice is coated in fat."
+      ],
+      "answer": 2,
+      "because": "Coating comes before covered absorption in this sequence.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which surface appearance fits the intended result?",
+      "choices": [
+        "Steam holes and no remaining loose liquid.",
+        "A deep pool above the grains.",
+        "A stirred glossy paste without distinct grains."
+      ],
+      "answer": 0,
+      "because": "Steam holes and absorbed liquid accompany the separate-grain texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pilaf became porridge after the stock was guessed. What would you change next time?",
+      "choices": [
+        "Add stock without regard to the rice.",
+        "Measure the liquid against the rice.",
+        "Stir continuously to distribute the extra liquid."
+      ],
+      "answer": 1,
+      "because": "Controlling the liquid helps avoid more moisture than the rice can absorb into the intended texture.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

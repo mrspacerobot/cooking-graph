@@ -4,6 +4,12 @@
   "names": {"en": "Fry sfenj"},
   "aliases": {"en": ["fry Moroccan doughnuts"]},
   "does": "Shapes lumps of very soft, risen dough into rings with a wet hand and drops them into hot oil, turning them once, until they puff up golden with a thin crisp crust and a light, chewy crumb. They are lifted out at once, drained and tossed in sugar.",
+  "intro": {
+    "what": "Frying sfenj turns rings of very soft risen dough into golden, light, chewy fritters.",
+    "why": "It teaches you to handle sticky dough gently and keep frying heat steady through small batches.",
+    "idea": "Gentle handling of soft dough",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the oil until a scrap of dough dropped in sizzles and rises at once.",
     "Wet one hand and a plate. Pull off a lump of dough, flatten it, and poke a hole through the middle with a wet thumb.",
@@ -23,6 +29,56 @@
     },
     {"mistake": "Putting in too many at once, which cools the oil.", "fix": "Fry a few at a time."},
     {"mistake": "Handling the dough with dry hands, which sticks and tears it.", "fix": "Wet the hand each time."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture is the aim for sfenj?",
+      "choices": [
+        "A dense ring with a thick hard shell.",
+        "A thin crisp crust with a light, chewy crumb.",
+        "A pale ring heavy with oil."
+      ],
+      "answer": 1,
+      "because": "Hot oil makes the soft risen dough puff into a light ring with a thin crust.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you keep the soft dough from sticking as you shape it?",
+      "choices": [
+        "Work with dry hands and pull harder.",
+        "Keep adding dry flour to the shaping hand.",
+        "Wet your hand each time."
+      ],
+      "answer": 2,
+      "because": "A wet hand helps shape the sticky dough without tearing it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the frying rings?",
+      "choices": [
+        "They float, swell and turn evenly golden.",
+        "They stay flat and pale in quiet oil.",
+        "They darken on one side without swelling."
+      ],
+      "answer": 0,
+      "because": "Puffing and even gold on both sides are the visible cues for this method.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The rings were heavy and greasy from cool oil. What would you change before frying the next batch?",
+      "choices": [
+        "Add a full batch to bring the oil up gradually.",
+        "Test the oil with a scrap of dough before frying.",
+        "Leave the rings in the oil longer without changing the heat."
+      ],
+      "answer": 1,
+      "because": "A scrap should sizzle and rise immediately, helping avoid the cool start that makes heavy rings.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "preparation/bread-dough", "tier": "drafted"}

@@ -4,6 +4,12 @@
   "names": {"en": "Set"},
   "aliases": {"en": ["let set", "leave to set", "set in a mould"]},
   "does": "Leaves a hot, cooked mixture to cool undisturbed in its mould or tin until it firms enough to hold its shape and be cut.",
+  "intro": {
+    "what": "Setting lets a cooked mixture cool undisturbed until it can hold a cut shape.",
+    "why": "It teaches you to distinguish a hot flowing texture from the structure that develops during cooling.",
+    "idea": "Cool before cutting",
+    "tier": "drafted"
+  },
   "how": [
     "Pour or spoon the mixture into the mould or tin while it is still hot. Press it into the corners and smooth the top.",
     "Leave it somewhere cool and still. Do not stir it, shake it or cut it while it sets.",
@@ -23,6 +29,56 @@
     {
       "mistake": "Pouring in a mixture that was cooked too little, so that it never firms.",
       "fix": "Cook it longer next time, until it comes away from the sides of the pan before it is poured."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the purpose of setting a mixture in a mould?",
+      "choices": [
+        "To let it firm enough to hold its shape.",
+        "To keep it flowing for pouring.",
+        "To create a browned surface crust."
+      ],
+      "answer": 0,
+      "because": "The mixture gains structure as it cools, allowing cutting or unmoulding.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the mould be handled during setting?",
+      "choices": [
+        "Stir repeatedly to keep the surface soft.",
+        "Leave it still rather than stirring or shaking.",
+        "Shake often to loosen its edges."
+      ],
+      "answer": 1,
+      "because": "Movement disturbs a developing set and can crack the surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which cut suggests the mixture has set?",
+      "choices": [
+        "A loose centre flowing into the cut.",
+        "A warm mound that slumps after slicing.",
+        "A clean face that holds its shape."
+      ],
+      "answer": 2,
+      "because": "A clean stable face indicates structure through the mixture rather than only at its surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The shape slumped when turned out while still warm. What would you change next time?",
+      "choices": [
+        "Wait until it has cooled throughout.",
+        "Unmould earlier while it is more fluid.",
+        "Stir it repeatedly during cooling."
+      ],
+      "answer": 0,
+      "because": "Cooling through the centre allows the interior to support the shape.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

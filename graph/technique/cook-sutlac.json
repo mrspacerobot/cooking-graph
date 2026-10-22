@@ -4,6 +4,12 @@
   "names": {"en": "Cook sutlac"},
   "aliases": {"en": ["sutlac", "Turkish rice pudding"]},
   "does": "Simmers washed rice in water until it is soft, then in plenty of milk with sugar, stirring often, until the grains are very tender and the milk has thickened to a loose, creamy pudding that sets a little as it cools.",
+  "intro": {
+    "what": "Rice first softens in water, then simmers in milk into a loose creamy sütlaç.",
+    "why": "The pudding continues thickening as it cools, so the texture in the pan should be looser than the final bowl.",
+    "idea": "Allow for cooling thickness",
+    "tier": "drafted"
+  },
   "how": [
     "Wash the rice and simmer it in water until it is soft and has drunk most of the water.",
     "Pour in the milk and stir in the sugar. Bring it back to a gentle simmer.",
@@ -34,6 +40,56 @@
     {
       "mistake": "Adding the milk to hard rice, so that the grains stay firm in the thick milk.",
       "fix": "Soften the rice in water first."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why pour the pudding while it is still loose?",
+      "choices": [
+        "Cooling loosens it again, so stiffness in the pan is needed.",
+        "The pudding should stop thickening once poured.",
+        "It thickens further as it cools."
+      ],
+      "answer": 2,
+      "because": "Allowing for the cooling change prevents an overly stiff final pudding.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What happens before the milk is added?",
+      "choices": [
+        "The rice softens in water.",
+        "The rice is soaked briefly but left hard.",
+        "Dry rice enters the milk before any softening."
+      ],
+      "answer": 0,
+      "because": "This sequence softens the grains before the milk thickens around them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the pudding look like before pouring?",
+      "choices": [
+        "A rigid mass holding the spoon upright.",
+        "Creamy and spoon-coating but still loose.",
+        "Clear milk above hard dry grains."
+      ],
+      "answer": 1,
+      "because": "The pudding needs body without being cooked to its final cooled firmness.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Milk scorches against the pan base. What should change?",
+      "choices": [
+        "Leave it untouched over stronger heat.",
+        "Let a dark crust build before stirring.",
+        "Stir often over gentler heat, scraping the base."
+      ],
+      "answer": 2,
+      "because": "Gentle heat and scraping reduce the milk sticking and scorching underneath.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -165,9 +165,11 @@ def technique(slug, english, does, how, cues, mistakes, fr=None, also=None, work
     comes_after (technique, why) and variant_of (technique, what differs)."""
     move = thing("technique/" + slug, english, fr=fr, also=also)
     move["does"] = does
+    move["intro"] = None
     move["how"] = list(how)
     move["cues"] = [{"sense": sense, "text": text} for sense, text in cues]
     move["mistakes"] = [{"mistake": mistake, "fix": fix} for mistake, fix in mistakes]
+    move["quiz"] = []
     move["works_on"] = full_links(works_on)
     move["makes"] = full_links(makes)
     move["needs"] = [{"role": role, "options": all_full(options), "tier": DRAFTED} for role, options in needs]
@@ -237,3 +239,14 @@ def recipe(slug, english, makes, yields, ingredients, equipment, steps, fr=None,
     way["equipment"] = all_full(equipment)
     way["steps"] = list(steps)
     return way
+
+
+def intro(what, why, idea=None):
+    """Explain a technique and its wider cooking purpose, as a draft."""
+    return {"what": what, "why": why, "idea": idea, "tier": DRAFTED}
+
+
+def question(identifier, prompt, choices, answer, because):
+    """One reusable question with a permanent local id and a zero-based answer."""
+    return {"id": identifier, "question": prompt, "choices": list(choices),
+            "answer": answer, "because": because, "tier": DRAFTED}

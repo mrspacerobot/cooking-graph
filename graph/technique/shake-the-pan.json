@@ -4,6 +4,12 @@
   "names": {"en": "Shake the pan", "fr": "Secouer la poêle"},
   "aliases": {"en": ["swirl the pan", "shake the pan in circles", "shake the saucepan"]},
   "does": "Moves fish that gives up its own gelatine in a pan by holding the handle and shaking the pan in small circles, with no spoon or whisk, so that delicate pieces stay whole while the oil and the juices slowly bind into a creamy sauce.",
+  "intro": {
+    "what": "This fish method shakes the pan so cooking juices and oil form a creamy sauce without stirring the pieces.",
+    "why": "It teaches you to build an emulsion through gentle pan movement while protecting delicate fish.",
+    "idea": "Move sauce, preserve fish",
+    "tier": "drafted"
+  },
   "how": [
     "Use a wide pan, with the fish in a single layer in a little oil and a splash of liquid, over a low, steady heat.",
     "Hold the handle and shake the pan back and forth in small circles, so that the sauce swirls round the pieces.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Cooking over too high a heat, so that the sauce splits into oil and water.",
       "fix": "Keep the heat low, and lift the pan off it for a moment when the sauce gets hot."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why shake this fish pan instead of stirring with a spoon?",
+      "choices": [
+        "To break the fish into the sauce deliberately.",
+        "To bind the sauce while keeping delicate pieces whole.",
+        "To keep oil and juices permanently separate."
+      ],
+      "answer": 1,
+      "because": "Pan movement circulates the sauce without a spoon breaking the fish.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the pan move?",
+      "choices": [
+        "With hard vertical jolts over high heat.",
+        "By scraping the pieces across the base.",
+        "In small circles over low steady heat."
+      ],
+      "answer": 2,
+      "because": "Small circular movements swirl the liquid around intact pieces while gentle heat limits splitting.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which change shows the sauce binding?",
+      "choices": [
+        "Clear oily liquid turns pale and creamy.",
+        "Clear oil forms a widening layer on top.",
+        "The fish breaks into flakes in thin liquid."
+      ],
+      "answer": 0,
+      "because": "A pale creamy appearance shows oil and juices joining rather than separating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce separates as the pan gets too hot. What should change?",
+      "choices": [
+        "Increase the heat and shake harder.",
+        "Lower the heat and lift the pan away briefly.",
+        "Stir the fish vigorously with a spoon."
+      ],
+      "answer": 1,
+      "because": "Excess heat can split the sauce; reducing heat addresses the cause without damaging the fish.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

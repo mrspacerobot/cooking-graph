@@ -4,6 +4,12 @@
   "names": {"en": "Simmer", "fr": "Mijoter"},
   "aliases": {"en": ["simmer gently", "cook at a simmer", "gentle simmer", "simmer slowly"]},
   "does": "Cooks food in liquid that is kept just below a boil, so that it turns tender without being knocked about.",
+  "intro": {
+    "what": "Simmering keeps food in liquid that moves gently below a rolling boil.",
+    "why": "It teaches you to judge heat by the movement and sound of the liquid.",
+    "idea": "Gentle movement",
+    "tier": "drafted"
+  },
   "how": [
     "Bring the liquid up to a boil, then turn the heat down at once.",
     "Find the setting where a few bubbles break the surface now and then.",
@@ -23,6 +29,56 @@
       "fix": "Turn the heat down, or move the pot half off the burner."
     },
     {"mistake": "Covering the pot tightly, so that it climbs to a boil unseen.", "fix": "Leave the lid ajar."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep the liquid at a simmer in this method?",
+      "choices": [
+        "To cook as rapidly as a rolling boil with less noise.",
+        "To prevent any liquid from evaporating.",
+        "To cook gently without the movement of a rolling boil."
+      ],
+      "answer": 2,
+      "because": "Gentle liquid movement cooks the food without knocking it about as a rolling boil would.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "After bringing the liquid to a boil, what comes next?",
+      "choices": [
+        "Turn the heat down at once.",
+        "Cover tightly and increase the heat.",
+        "Keep the same rolling boil throughout."
+      ],
+      "answer": 0,
+      "because": "Once the liquid reaches a boil, turn the heat down to find a gentle simmer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which description matches a simmer?",
+      "choices": [
+        "A rolling surface and a rattling pot.",
+        "A shivering surface with a few bubbles now and then.",
+        "An almost still surface with no bubbles rising at all."
+      ],
+      "answer": 1,
+      "because": "Occasional bubbles and a shivering surface show a simmer. A rolling, rattling pot is boiling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A tightly covered pot keeps returning to a boil. What would you change?",
+      "choices": [
+        "Keep it tightly covered and increase the heat.",
+        "Stir hard without changing the lid or heat.",
+        "Leave the lid off or ajar and lower the heat."
+      ],
+      "answer": 2,
+      "because": "A tight lid can let heat build until the liquid boils. Leave the lid off or ajar and lower the heat.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},

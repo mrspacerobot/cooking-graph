@@ -4,6 +4,12 @@
   "names": {"en": "Toss", "fr": "Mélanger"},
   "aliases": {"en": ["toss a salad", "dress", "bind", "mix", "combine", "toss in sauce"], "fr": ["fatiguer la salade"]},
   "does": "Coats every piece evenly with a dressing or a sauce by lifting and turning.",
+  "intro": {
+    "what": "Tossing lifts and turns food so dressing coats the pieces lightly and evenly.",
+    "why": "It teaches you to distribute a small addition without crushing delicate ingredients.",
+    "idea": "Lift and turn",
+    "tier": "drafted"
+  },
   "how": [
     "Put the food in a bowl far larger than it needs.",
     "Add the dressing a little at a time, around the edge and not on top.",
@@ -21,6 +27,56 @@
     {
       "mistake": "Pouring on all the dressing at once, which drowns the food.",
       "fix": "Add it in stages and stop when everything is lightly coated."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim when tossing with dressing?",
+      "choices": [
+        "Dressing pooled beneath dry upper pieces.",
+        "Light even coating across the pieces.",
+        "A dense pile crushed into the dressing."
+      ],
+      "answer": 1,
+      "because": "Lifting from below brings undressed surfaces into contact without heavy stirring.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Why choose a bowl with plenty of room?",
+      "choices": [
+        "To keep the dressing away from the food.",
+        "To make pressing the leaves harder easier.",
+        "To lift and turn without compressing or spilling the food."
+      ],
+      "answer": 2,
+      "because": "Space permits gentle movement that distributes dressing while preserving delicate pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests enough dressing?",
+      "choices": [
+        "Pieces glisten without a pool at the bottom.",
+        "Dry patches remain above a deep puddle.",
+        "Dressing runs off every piece in streams."
+      ],
+      "answer": 0,
+      "because": "A light sheen indicates coating without excess free dressing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Leaves turned limp before service. What would you change next time?",
+      "choices": [
+        "Dress them earlier and leave them longer.",
+        "Toss them at the last moment.",
+        "Squeeze them harder into the dressing."
+      ],
+      "answer": 1,
+      "because": "Salt and acid act on dressed leaves over time, so late tossing better preserves their texture.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

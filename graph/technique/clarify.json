@@ -4,6 +4,12 @@
   "names": {"en": "Clarify", "fr": "Clarifier"},
   "aliases": {"en": ["clarify a stock", "clarify a consommé"]},
   "does": "Clears a cloudy stock by simmering it with egg white and minced meat, which rise as a raft and trap what clouds it.",
+  "intro": {
+    "what": "A raft of egg white and minced ingredients traps particles from cloudy stock.",
+    "why": "Clarity depends on letting that raft stay intact, showing why gentle heating can matter more than repeated stirring.",
+    "idea": "An undisturbed filtering raft",
+    "tier": "drafted"
+  },
   "how": [
     "Mix egg white, minced lean meat and finely cut vegetables into a cold stock with no fat on it.",
     "Heat slowly, stirring gently, until the mixture starts to rise and clump.",
@@ -20,6 +26,52 @@
       "fix": "Leave it alone and keep the heat very low."
     },
     {"mistake": "Starting with a warm or fatty stock.", "fix": "Chill the stock and lift off all the fat first."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does the raft do during clarification?",
+      "choices": [
+        "It thickens the stock into a cloudy sauce.",
+        "It breaks the cloudy particles into smaller suspended pieces.",
+        "It traps particles that cloud the stock."
+      ],
+      "answer": 2,
+      "because": "The raft gathers the suspended material so clear liquid can be drawn away.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What changes when a raft forms?",
+      "choices": [
+        "Stop stirring and keep the simmer gentle.",
+        "Stir harder to distribute the raft.",
+        "Bring the stock to a vigorous boil."
+      ],
+      "answer": 0,
+      "because": "An intact raft can trap particles; stirring or boiling breaks it apart.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the liquid visible through the raft opening look like?",
+      "choices": ["Opaque with floating crumbs.", "Clear like tea.", "Greasy with a thick cloudy layer."],
+      "answer": 1,
+      "because": "Clear liquid in the opening shows the suspended particles have been gathered away.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Stirring broke the raft and clouded the stock again. What would you change on the next attempt?",
+      "choices": [
+        "Beat the raft into smaller fragments.",
+        "Increase the boil to break it down.",
+        "Leave the formed raft undisturbed over gentle heat."
+      ],
+      "answer": 2,
+      "because": "Protecting the raft prevents trapped particles from being dispersed again.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/stocks", "tier": "drafted"}

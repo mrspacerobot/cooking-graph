@@ -4,6 +4,12 @@
   "names": {"en": "Crush some of the beans"},
   "aliases": {"en": ["mash some of the beans", "thicken a bean soup with its own beans"]},
   "does": "Presses a few spoonfuls of cooked, tender beans or other pulses against the side of the pot, or lifts out a ladle of them with a little broth and crushes them, then stirs the paste back in, so that the soup turns creamy and thick without flour or cream while the rest of the beans stay whole.",
+  "intro": {
+    "what": "Part of a pot of tender beans is crushed and stirred back into the broth.",
+    "why": "Using the beans themselves thickens the soup while leaving whole beans for contrast. The amount crushed changes that balance.",
+    "idea": "Thicken while keeping whole beans",
+    "tier": "drafted"
+  },
   "how": [
     "Wait until the beans are completely tender, or they will not crush.",
     "Lift a ladle of beans, with a little of their broth, into a bowl.",
@@ -23,6 +29,56 @@
     {
       "mistake": "Crushing nearly all of them, so that the soup turns to paste.",
       "fix": "Crush only a ladle or so and leave the rest whole."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why crush only part of the beans?",
+      "choices": [
+        "To thicken the broth while keeping whole beans.",
+        "To leave the broth clear and thin.",
+        "To remove every distinct bean from the soup."
+      ],
+      "answer": 0,
+      "because": "Crushed beans add body while the uncrushed portion keeps its shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What texture do the beans need before crushing?",
+      "choices": [
+        "Firm at the centre and difficult to press.",
+        "Tender enough to yield easily.",
+        "Still resistant enough to snap into gritty pieces."
+      ],
+      "answer": 1,
+      "because": "Tender beans form a paste that can blend into the broth.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What change should appear in the broth?",
+      "choices": [
+        "It becomes clear and watery.",
+        "It remains thin around separate hard bean fragments.",
+        "It becomes cloudy, creamy and more spoon-coating."
+      ],
+      "answer": 2,
+      "because": "The dispersed crushed beans give the broth body.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The soup became a paste after nearly all the beans were crushed. What would you change next time?",
+      "choices": [
+        "Crush a smaller portion and keep more whole.",
+        "Mash every remaining bean until smooth.",
+        "Remove all the broth before crushing."
+      ],
+      "answer": 0,
+      "because": "Keeping more whole beans preserves the intended contrast and limits excessive thickening.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Garnish"},
   "aliases": {"en": ["garnish with herbs", "finish with a garnish"]},
   "does": "Adds a small, fresh or crisp finishing touch just before serving, such as a herb, a seed, a flake or a shaving, for scent, colour or crunch.",
+  "intro": {
+    "what": "Garnishing adds a small finishing touch for scent, colour or crunch just before serving.",
+    "why": "It teaches you to preserve delicate finishes and use enough to complement the food without hiding it.",
+    "idea": "Finish at the last moment",
+    "tier": "drafted"
+  },
   "how": [
     "Keep the garnish ready at the side, cut or measured.",
     "Add it as the last step, when the food is hot or just plated.",
@@ -17,6 +23,56 @@
   "mistakes": [
     {"mistake": "Adding the garnish too early, so that it wilts or sinks.", "fix": "Add it at the last moment."},
     {"mistake": "Using too much, so that it hides the food.", "fix": "Use only a small amount."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the role of a garnish in this method?",
+      "choices": [
+        "A thick covering that hides the whole dish.",
+        "A base cooked into the food from the start.",
+        "A small finishing touch for scent, colour or crunch."
+      ],
+      "answer": 2,
+      "because": "A garnish finishes the dish lightly rather than replacing or covering it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should delicate garnishes be added?",
+      "choices": [
+        "At the last moment, or at the table.",
+        "Before the dish begins cooking.",
+        "Before reheating the plated dish."
+      ],
+      "answer": 0,
+      "because": "Late addition keeps delicate garnishes from wilting or sinking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the garnish look like on the food?",
+      "choices": [
+        "A dense blanket hiding the main food.",
+        "A light scatter visible on top.",
+        "Pieces submerged beneath the sauce."
+      ],
+      "answer": 1,
+      "because": "A small visible scatter adds a finish without concealing the dish.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The garnish wilted and sank. What would you change next time?",
+      "choices": [
+        "Add a thicker layer earlier.",
+        "Stir it into the dish before cooking.",
+        "Add it later, just before serving."
+      ],
+      "answer": 2,
+      "because": "Adding a delicate garnish too early lets it wilt or sink.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/vegetables", "tier": "drafted"},

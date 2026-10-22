@@ -4,6 +4,12 @@
   "names": {"en": "Reheat"},
   "aliases": {"en": ["reheat gently", "ribollire"]},
   "does": "Brings food that was cooked earlier back to a hot, bubbling state, gently enough that it neither dries out nor catches on the pan. Beans and soups often taste better for the rest, and the Tuscan ribollita is made for exactly that: a soup that is boiled again.",
+  "intro": {
+    "what": "This pan method warms previously cooked soups, beans or stews gently while stirring.",
+    "why": "It teaches you to balance heat and moisture so a thick mixture warms without sticking or breaking apart.",
+    "idea": "Gentle heat and moisture",
+    "tier": "drafted"
+  },
   "how": [
     "Take the food from the fridge a little ahead of time if it is thick and dense.",
     "Put it in a heavy pan with a splash of stock or water, to loosen it and stop it catching.",
@@ -27,6 +33,56 @@
       "fix": "Add a splash of stock or water first."
     },
     {"mistake": "Boiling hard, so that beans break and fall apart.", "fix": "Keep it at a gentle bubble."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use gentle heat for a thick bean soup?",
+      "choices": [
+        "To reduce it as fast as possible.",
+        "To warm it without catching or breaking the beans.",
+        "To brown the bottom before stirring."
+      ],
+      "answer": 1,
+      "because": "Gentle heat gives warmth time to spread while limiting sticking and damage to the beans.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What helps a thick soup move freely in the pan?",
+      "choices": [
+        "Heating it without stirring until the edges boil.",
+        "Pouring off its remaining liquid first.",
+        "A splash of stock or water and stirring from the bottom."
+      ],
+      "answer": 2,
+      "because": "Extra liquid loosens a dense mixture and stirring redistributes heat from the pan base.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which spoon movement suggests the base is not catching?",
+      "choices": [
+        "The spoon moves freely along the bottom.",
+        "The spoon drags over a stuck layer.",
+        "The spoon meets dry patches at the base."
+      ],
+      "answer": 0,
+      "because": "A freely moving spoon shows the mixture is not sticking to the base of the pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Beans are breaking apart during reheating. What should change?",
+      "choices": [
+        "Maintain a vigorous boil but stir less.",
+        "Keep the mixture at a gentle bubble.",
+        "Reduce the liquid so it heats faster."
+      ],
+      "answer": 1,
+      "because": "Hard boiling agitates tender beans; a gentler bubble limits that movement.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/pulses", "tier": "drafted"},

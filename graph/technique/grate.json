@@ -4,6 +4,12 @@
   "names": {"en": "Grate", "fr": "Râper"},
   "aliases": {"en": ["shred"]},
   "does": "Rubs firm food against a rough surface to turn it into fine shreds.",
+  "intro": {
+    "what": "Grating rubs firm food against a rough surface to make fine shreds.",
+    "why": "It teaches you to control texture and stop before the remaining piece becomes difficult to hold.",
+    "idea": "Shred rather than smear",
+    "tier": "drafted"
+  },
   "how": [
     "Chill a soft cheese first, so that it shreds and does not smear.",
     "Hold the grater steady on the board or over a bowl.",
@@ -17,6 +23,48 @@
     {
       "mistake": "Grating the last small piece and catching a knuckle.",
       "fix": "Stop early and chop the end with a knife."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What should grating produce?",
+      "choices": ["A smooth smeared paste.", "Thick slices with flat faces.", "Fine, loose shreds."],
+      "answer": 2,
+      "because": "The rough grating surface breaks firm food into fine shreds.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How can you help soft cheese grate cleanly?",
+      "choices": ["Chill it before grating.", "Warm it until very soft.", "Press it harder as it smears."],
+      "answer": 0,
+      "because": "Chilling soft cheese helps it shred instead of smearing on the grater.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests clean grating?",
+      "choices": [
+        "Smears clinging in a paste.",
+        "Loose, separate shreds.",
+        "A compressed clump without visible shreds."
+      ],
+      "answer": 1,
+      "because": "Separate shreds show the food is cutting against the grater rather than smearing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Only a small hard-to-hold end remains. What would you do?",
+      "choices": [
+        "Keep grating with fingertips against the teeth.",
+        "Press the last piece harder with your knuckles.",
+        "Stop grating and chop the end with a knife."
+      ],
+      "answer": 2,
+      "because": "Stop while enough remains to hold; chop the end instead of chasing it down the grater.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

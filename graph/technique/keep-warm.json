@@ -4,6 +4,12 @@
   "names": {"en": "Keep warm"},
   "aliases": {},
   "does": "Holds finished food at a gentle heat, below a simmer, so that it stays hot and goes on taking up flavour until it is served.",
+  "intro": {
+    "what": "This finishing method reduces heat after cooking and covers the food while it waits to be served.",
+    "why": "It teaches you to protect texture from continued simmering, drying and skin formation.",
+    "idea": "Protect the finished texture",
+    "tier": "drafted"
+  },
   "how": [
     "Take the pot off the strong heat and turn the flame as low as it goes, or move the food to a warm place.",
     "Keep the food covered so that it does not dry or skin over.",
@@ -20,6 +26,52 @@
       "fix": "Lower the heat until the liquid is still."
     },
     {"mistake": "Leaving it uncovered, so that a skin forms or it dries.", "fix": "Cover it."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why reduce the heat after finishing the dish?",
+      "choices": [
+        "To keep the food boiling until serving.",
+        "To reduce the sauce as quickly as possible.",
+        "To avoid continuing to cook it past the intended texture."
+      ],
+      "answer": 2,
+      "because": "Continued simmering can soften food beyond the intended tenderness.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you protect the surface from drying while it waits?",
+      "choices": [
+        "Keep it covered.",
+        "Leave it uncovered over the same heat.",
+        "Stir only the surface and leave the lid off."
+      ],
+      "answer": 0,
+      "because": "A cover reduces drying and skin formation on the finished dish.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What liquid movement matches this gentle finishing method?",
+      "choices": ["A steady rolling boil.", "Barely any movement.", "Constant bubbles across the whole surface."],
+      "answer": 1,
+      "because": "The aim is to avoid continued simmering, rather than keep cooking strongly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A skin forms while the food waits uncovered. What would you change?",
+      "choices": [
+        "Raise the heat beneath the uncovered pot.",
+        "Leave it exposed and stir only before serving.",
+        "Cover it."
+      ],
+      "answer": 2,
+      "because": "An uncovered surface can dry and form a skin; covering addresses that texture problem.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/stocks", "tier": "drafted"},

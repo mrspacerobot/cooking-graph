@@ -107,25 +107,82 @@ function recipeSubstitutions(record) {
   }).join("");
 }
 
+function introduction(card) {
+  if (!card.intro) return '<p class="content-gap">Introduction and why it matters have not been drafted yet.</p>';
+  return `<div class="technique-intro"><p>${escapeText(card.intro.what)}</p><p><strong>Why it matters:</strong> ${escapeText(card.intro.why)}</p>
+    ${card.intro.idea ? `<p class="key-idea">The idea to remember: <strong>${escapeText(card.intro.idea)}</strong></p>` : ""}
+    <p class="fine">Introduction: ${escapeText(card.intro.tier)} · ${escapeText(plainTier(card.intro.tier))}</p></div>`;
+}
+
+function questionCatalog(card) {
+  const questions = card.quiz || [];
+  if (!questions.length) return '<p class="content-gap">No questions have been drafted for this technique yet.</p>';
+  return `<p class="fine">${questions.length} questions for review. Open an answer to check the reasoning. These are the technique’s reusable questions, not a scored exam.</p>
+    <ol class="question-catalog">${questions.map(question => `<li><p><strong>${escapeText(question.question)}</strong></p>
+      <ol type="A" class="question-choices">${question.choices.map(choice => `<li>${escapeText(choice)}</li>`).join("")}</ol>
+      <details class="answer-review"><summary>Check the answer and explanation</summary><p><strong>Recorded answer: ${escapeText(question.choices[question.answer])}</strong></p>
+      <p>${escapeText(question.because)}</p><p class="fine">${escapeText(question.tier)} · ${escapeText(plainTier(question.tier))}</p></details></li>`).join("")}</ol>`;
+}
+
+function lessonFlow() {
+  return `<div class="lesson-flow"><p class="eyebrow">The planned Tomi lesson</p><ol class="steps"><li><strong>Understand</strong><br>Tomi introduces the technique and why it matters.</li><li><strong>Cook and notice</strong><br>Practise it in a dish and notice what changes.</li><li><strong>Think it through</strong><br>After cooking, answer a short quiz and learn why.</li></ol>
+    <p class="fine">You are reviewing this learning sequence. This notebook is not cooking guidance and does not record cooking or quiz completion.</p></div>`;
+}
+
+function prerequisiteLinks(record) {
+  return record.comes_after.map(row => {
+    const first = entries.find(other => other.kind === "class" && other.source === record.source && other.skill_slug === row.skill);
+    return first ? `<a href="${href(first.id)}">${escapeText(first.skill)}</a> <small>(${escapeText(row.tier)})</small>` : escapeText(label(row.skill));
+  });
+}
+
 function classBody(record) {
   const practice = record.through.map(row => row.thing);
-  const prerequisites = record.comes_after.map(row => {
-    const first = entries.find(other => other.kind === "class" && other.source === record.source && other.skill_slug === row.skill);
-    return first ? `<a href="${href(first.id)}">${escapeText(first.skill)}</a> (${escapeText(row.tier)})` : escapeText(label(row.skill));
-  });
-  return `<p class="lead">${escapeText(record.program)} · ${escapeText(record.skill)} · Lesson ${record.number}</p>` +
-    section("Before this class", prerequisites.length ? `<p>${prerequisites.join(", ")}</p>` : "<p>No earlier class is listed.</p>") +
-    section("Techniques to look over", links(record.teaches)) +
-    section("Practise through", links(record.through)) +
-    section("Recipes for this class", recipeLinks(recipesFor(practice)) || "<p>No recipe is listed yet.</p>");
+  const prerequisites = prerequisiteLinks(record);
+  const cards = record.teaching_cards || [];
+  return `<p class="lead">${escapeText(record.program)} · ${escapeText(record.skill)} · Lesson ${record.number}</p>
+    <a class="curriculum-back" href="#curriculum">↑ See the whole learning path</a>` +
+    lessonFlow() +
+    section("Learn first", prerequisites.length ? `<p>${prerequisites.join(", ")}</p>` : "<p>You can start this skill without an earlier skill in this program.</p>") +
+    section("1. Before cooking: the introduction", cards.length ? cards.map(card => `<div class="teaching-card"><h4>${link(card.id)}</h4><p class="fine">Technique: ${escapeText(card.tier)} · Lesson link: ${escapeText(card.link_tier)}</p>${introduction(card)}<p><a href="${href(card.id)}">Read the full technique card →</a></p></div>`).join("") : '<p class="content-gap">No teaching technique is recorded yet.</p>') +
+    section("2. Practice to review", `<p>These dishes or preparations are the lesson’s practice examples.</p>${links(record.through)}${recipeLinks(recipesFor(practice)) || '<p class="content-gap">No practice recipe is listed yet.</p>'}`) +
+    section("3. After cooking: questions to review", '<p>Questions belong to each technique and can be reused in other lessons. Please check whether the answers explain the cooking clearly.</p>' + (cards.length ? cards.map(card => `<details class="technique-questions"><summary>${escapeText(card.names.en)} · ${(card.quiz || []).length} questions</summary>${questionCatalog(card)}</details>`).join("") : '<p class="content-gap">No question catalog is linked yet.</p>'));
+}
+
+function curriculumOverview() {
+  const host = document.getElementById("curriculum");
+  const previousSkills = new Map([...host.querySelectorAll("[data-curriculum-skill]")].map(detail => [detail.dataset.curriculumSkill, detail.open]));
+  const lessons = entries.filter(record => record.kind === "class");
+  if (!lessons.length) { host.hidden = true; return; }
+  const programs = [...new Set(lessons.map(record => record.source))];
+  host.innerHTML = `<p class="eyebrow">Find your way through the foundations</p><h2 id="curriculum-title">A clear path, one skill at a time</h2>
+    <p>Each numbered lesson introduces techniques, gives a practice example, then reviews the ideas with questions. Start with a skill below. The links marked “Learn first” show what it builds on.</p>` + programs.map(id => {
+      const program = lessons.filter(record => record.source === id);
+      const courses = [...new Set(program.map(record => record.course_slug))];
+      return `<div class="curriculum-program"><h3>${escapeText(program[0].program)}</h3><p class="fine">${courses.length} sections · ${new Set(program.map(record => record.skill_slug)).size} skills · ${program.length} lessons. These lessons follow one cooking tradition. Other cuisines may teach these skills differently.</p>
+        <div class="curriculum-grid">${courses.map((slug, index) => {
+          const course = program.filter(record => record.course_slug === slug);
+          const skills = [...new Set(course.map(record => record.skill_slug))];
+          return `<section class="curriculum-course"><h4><span class="step-number">${index + 1}</span>${escapeText(course[0].course)}</h4>${skills.map(skill => {
+            const rows = course.filter(record => record.skill_slug === skill);
+            const prerequisites = prerequisiteLinks(rows[0]);
+            const key = `${id}/${slug}/${skill}`;
+            const open = previousSkills.has(key) ? previousSkills.get(key) : selected?.skill_slug === skill && selected?.source === id;
+            return `<details class="curriculum-skill" data-curriculum-skill="${escapeText(key)}" ${open ? "open" : ""}><summary>${escapeText(rows[0].skill)} <span>${rows.length} lessons</span></summary>
+              <p class="fine">${prerequisites.length ? `Learn first: ${prerequisites.join(", ")}` : 'A starting skill in this program.'}</p><ol>${rows.map(row => `<li><a href="${href(row.id)}" aria-current="${selected?.id === row.id}"><strong>${escapeText(row.names.en)}</strong><span>${escapeText(row.teaching_cards?.[0]?.intro?.what || row.teaching_cards?.[0]?.does || "No technique introduction is recorded yet.")}</span><span class="progress-label" data-state="${progressState(row)}">${progressLabel(row)}</span></a></li>`).join("")}</ol></details>`;
+          }).join("")}</section>`;
+        }).join("")}</div></div>`;
+    }).join("") + '<p class="fine">“Looked over” means personal reading progress in this browser. It does not mean a lesson was cooked, a quiz was passed, or a claim was approved.</p>';
 }
 
 function techniqueBody(record) {
   const claims = entries.filter(other => other.kind === "substitution" && [...other.when, ...other.not_when].includes(record.id));
   return `<p class="lead">${escapeText(record.does)}</p>` +
+    section("Before cooking: what and why", introduction(record)) +
     section("How it works", `<ol>${record.how.map(text => `<li>${escapeText(text)}</li>`).join("")}</ol>`) +
     section("What to look for", list(record.cues.map(cue => `${label(cue.sense)}: ${cue.text}`))) +
     section("Common mistakes", `<ul class="plain-list">${record.mistakes.map(row => `<li><strong>${escapeText(row.mistake)}</strong><p>${escapeText(row.fix)}</p></li>`).join("")}</ul>`) +
+    section("After cooking: question catalog", questionCatalog(record)) +
     section("Works on", links(record.works_on)) + section("Makes", links(record.makes)) +
     section("What you need", `<ul class="plain-list">${record.needs.map(row => `<li><strong>${escapeText(label(row.role))}</strong> <small>(${escapeText(row.tier)})</small>${links(row.options)}</li>`).join("")}</ul>`) +
     section("Learn first", record.comes_after.length ? `<ul>${record.comes_after.map(row => `<li>${link(row.thing)} (${escapeText(row.tier)})<p>${escapeText(row.why)}</p></li>`).join("")}</ul>` : "") +
@@ -177,10 +234,12 @@ function searchText(record) {
   const words = [titleOf(record), subtitle(record), record.id, ...Object.values(record.names),
     ...Object.values(record.aliases || {}).flat()];
   if (record.kind === "class") words.push(record.program, ...record.teaches.map(row => nameOf(row.thing)));
+  if (record.kind === "technique") words.push(record.intro?.what || "", record.intro?.why || "", ...(record.quiz || []).map(row => row.question));
   return words.join(" ").toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
 function updateLibrary() {
+  curriculumOverview();
   document.querySelectorAll("[data-kind]").forEach(button => button.setAttribute("aria-pressed", button.dataset.kind === category));
   const query = document.getElementById("search").value.toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
   const cuisine = document.getElementById("cuisine").value;
@@ -335,6 +394,15 @@ function showEntry(record, focus) {
 }
 
 function navigate(focus) {
+  if (location.hash === "#curriculum") {
+    if (!selected) {
+      const first = entries.find(record => record.kind === "class") || entries[0];
+      if (first) showEntry(first, false);
+    }
+    document.getElementById("curriculum").focus({preventScroll: true});
+    document.getElementById("curriculum").scrollIntoView({block: "start"});
+    return;
+  }
   let id;
   try { id = decodeURIComponent(location.hash.slice(1)); } catch { id = ""; }
   const record = notebook.entries[id] || entries.find(item => item.kind === "class") || entries[0];

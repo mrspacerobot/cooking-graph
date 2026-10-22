@@ -4,6 +4,12 @@
   "names": {"en": "Swell bulgur in hot liquid"},
   "aliases": {"en": ["swell bulgur in hot lentils"]},
   "does": "Stirs fine bulgur into a pan of hot, freshly cooked lentils or other hot liquid, covers it and leaves it off the heat until the grains have swollen and softened in the liquid and taken its flavour.",
+  "intro": {
+    "what": "Fine bulgur absorbs the remaining hot liquid in cooked lentils while standing covered off the heat.",
+    "why": "It teaches you to use retained heat and absorption to thicken a mixture without continued boiling.",
+    "idea": "Absorb off the heat",
+    "tier": "drafted"
+  },
   "how": [
     "Cook the lentils until they are very soft, with enough water left in the pan to wet the bulgur.",
     "Take the pan off the heat and stir in the bulgur.",
@@ -26,6 +32,56 @@
     {
       "mistake": "Lifting the lid to look, which lets the heat out.",
       "fix": "Leave it covered until the stand is over."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What thickens the hot lentil mixture in this method?",
+      "choices": [
+        "Evaporating all liquid over fierce heat.",
+        "Fine bulgur absorbing its remaining liquid.",
+        "Removing the lentils before adding grain."
+      ],
+      "answer": 1,
+      "because": "The bulgur swells as it takes up liquid, turning the mixture thick and damp.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen before adding the bulgur?",
+      "choices": [
+        "Keep the mixture at a rolling boil.",
+        "Drain away every trace of liquid.",
+        "Take the pan off the heat."
+      ],
+      "answer": 2,
+      "because": "Retained heat and liquid soften the fine grains during the covered stand.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture indicates the grains have hydrated?",
+      "choices": [
+        "Tender grains without a hard dry core.",
+        "A soft coating around hard centres.",
+        "Dry grains scattered through loose broth."
+      ],
+      "answer": 0,
+      "because": "Absorption needs to reach the centre rather than merely wet the surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The grains remain hard because the mixture was too dry. What should change?",
+      "choices": [
+        "Keep the same dry mixture uncovered.",
+        "Sprinkle in hot water and cover again.",
+        "Press the dry grains harder into the lentils."
+      ],
+      "answer": 1,
+      "because": "Additional moisture under cover gives the grains more liquid to absorb.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

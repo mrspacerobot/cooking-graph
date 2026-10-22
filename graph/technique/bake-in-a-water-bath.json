@@ -4,6 +4,12 @@
   "names": {"en": "Bake in a water bath", "fr": "Cuire au bain-marie"},
   "aliases": {"en": ["bain-marie", "cook in a water bath", "water bath"]},
   "does": "Bakes a delicate mixture in a dish that stands in hot water, so that it sets softly and evenly.",
+  "intro": {
+    "what": "A delicate mixture bakes in dishes surrounded by hot water.",
+    "why": "The water moderates heat around the dishes, helping you control a soft set instead of forcing the edges to become rubbery.",
+    "idea": "Gentle setting",
+    "tier": "drafted"
+  },
   "how": [
     "Stand the filled dishes in a deep tin.",
     "Pour hot water into the tin until it comes about half way up their sides.",
@@ -21,6 +27,56 @@
     {
       "mistake": "Starting with cold water, which slows everything down and gives an uneven result.",
       "fix": "Fill the tin with hot water from the kettle."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why surround the dishes with water?",
+      "choices": [
+        "To set the edges much faster than the middle.",
+        "To keep the mixture completely liquid while baking.",
+        "To help the mixture set gently and evenly."
+      ],
+      "answer": 2,
+      "because": "The surrounding water moderates the heat reaching the delicate mixture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What kind of water starts this method?",
+      "choices": [
+        "Hot water poured around the filled dishes.",
+        "Cold water added after the surface firms.",
+        "Water poured into the mixture itself."
+      ],
+      "answer": 0,
+      "because": "Starting with hot water gives the surrounding bath the intended role from the start.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture is the intended baking cue here?",
+      "choices": [
+        "A rigid centre with rubbery edges.",
+        "Set edges with a trembling centre.",
+        "A dry cracked surface throughout."
+      ],
+      "answer": 1,
+      "because": "The mixture continues setting after removal, so a trembling centre differs from over-firm edges.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The edges became rubbery while you waited for a firm centre. What would you change next time?",
+      "choices": [
+        "Wait for the centre to become more rigid.",
+        "Leave the dishes standing in the hot bath afterward.",
+        "Remove the dishes while the centre still trembles."
+      ],
+      "answer": 2,
+      "because": "Earlier removal limits further setting at the edges; the mixture continues to firm afterward.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

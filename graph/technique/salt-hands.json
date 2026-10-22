@@ -4,6 +4,12 @@
   "names": {"en": "Salt hands"},
   "aliases": {"en": ["wet and salt your hands", "salt the hands"]},
   "does": "Wets the hands and rubs salt over the palms before shaping warm rice, so that the rice does not stick and is lightly seasoned from the outside.",
+  "intro": {
+    "what": "Dampening and lightly salting the hands helps shape warm rice without sticking.",
+    "why": "It teaches you how a small change at the contact surface controls handling and outside seasoning.",
+    "idea": "Damp hands, light salt",
+    "tier": "drafted"
+  },
   "how": [
     "Keep a bowl of cold water and a small dish of salt beside the board.",
     "Dip your fingers in the water and shake off the excess.",
@@ -17,6 +23,56 @@
   "mistakes": [
     {"mistake": "Using too much salt, so that the rice is too salty.", "fix": "Rub on only a light dusting."},
     {"mistake": "Using hot water, which burns the hands and makes the rice stick.", "fix": "Use cold water."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why dampen and salt hands before shaping rice?",
+      "choices": [
+        "To make the rice release all its moisture.",
+        "To reduce sticking and lightly season the outside.",
+        "To season every grain equally throughout."
+      ],
+      "answer": 1,
+      "because": "Damp hands release the rice more easily while the salt contacts its outer surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should you do after dipping fingers in cold water?",
+      "choices": [
+        "Leave water dripping from the palms.",
+        "Dry the hands completely before shaping.",
+        "Shake off excess before rubbing on salt."
+      ],
+      "answer": 2,
+      "because": "Light dampness helps release the rice without soaking its surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel matches prepared hands?",
+      "choices": [
+        "Damp, lightly gritty, with rice releasing readily.",
+        "Dry and tacky with rice clinging.",
+        "Dripping wet with thick salt deposits."
+      ],
+      "answer": 0,
+      "because": "A light salt dusting on damp hands aids handling without a heavy coating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The outside of the shaped rice tasted too salty. What would you change for the next portion?",
+      "choices": [
+        "Rub on more salt before each portion.",
+        "Use a lighter dusting of salt on the hands.",
+        "Keep the heavy salt layer but shape harder."
+      ],
+      "answer": 1,
+      "because": "Surface seasoning comes from the hands, so reducing that dusting directly reduces salt on the rice.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "ingredient/salt", "tier": "drafted"}

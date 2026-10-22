@@ -4,6 +4,12 @@
   "names": {"en": "Laminate", "fr": "Feuilleter"},
   "aliases": {"en": ["laminate a dough", "layer a dough with fat"]},
   "does": "Builds a dough into many thin layers with fat between them, by rolling or stretching it out, spreading it with fat, folding it over and repeating, so that in the heat each layer cooks apart from the next and the finished bread or pastry comes away in flaky sheets.",
+  "intro": {
+    "what": "Laminating repeatedly folds dough with fat between the layers to make flaky sheets.",
+    "why": "It teaches you to preserve distinct layers through gentle rolling and rests matched to the fat being used.",
+    "idea": "Keep the layers distinct",
+    "tier": "drafted"
+  },
   "how": [
     "Start from a smooth dough that has rested and is soft enough to stretch thin.",
     "Roll or stretch it out as thin as it will go without tearing.",
@@ -24,6 +30,56 @@
     {
       "mistake": "Rolling so hard that the fat tears through the layers.",
       "fix": "Roll with an even, light pressure and rest the dough when it fights back."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What creates the flaky sheets in laminated dough?",
+      "choices": [
+        "Fat fully mixed through an unlayered dough.",
+        "Thin dough layers separated by fat.",
+        "A thick outer coating of flour."
+      ],
+      "answer": 1,
+      "because": "Layers separated by fat can cook apart instead of welding into a single mass.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should a butter-laminated dough rest between folds?",
+      "choices": [
+        "Uncovered in a warm place until the butter melts.",
+        "Over gentle heat to soften the fat into the dough.",
+        "Chilled, keeping the butter cold."
+      ],
+      "answer": 2,
+      "because": "Chilling preserves butter between the layers instead of letting it melt into the dough.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should a cut edge reveal before cooking?",
+      "choices": [
+        "Fine, even layers with fat between them.",
+        "An even solid mass without layers.",
+        "Large tears where fat has broken through."
+      ],
+      "answer": 0,
+      "because": "Visible fine layers show the dough and fat remain distinct.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Hard rolling is making fat tear through the dough. What would you change?",
+      "choices": [
+        "Press harder to force it flat.",
+        "Use light, even pressure and rest dough that resists.",
+        "Skip the rests and roll faster."
+      ],
+      "answer": 1,
+      "because": "Gentle pressure and resting reduce tearing while preserving the layers.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

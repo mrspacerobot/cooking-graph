@@ -4,6 +4,12 @@
   "names": {"en": "Deep-fry", "fr": "Frire"},
   "aliases": {"en": ["fry in deep oil", "deep-fat fry"]},
   "does": "Cooks food under hot oil, so that its surface dries to a crisp shell while the inside steams.",
+  "intro": {
+    "what": "Food cooks submerged in hot oil while its surface dries into a crisp shell.",
+    "why": "Oil heat and crowding affect the crust. Managing batches helps the surface crisp instead of becoming heavy and greasy.",
+    "idea": "Heat retained around the food",
+    "tier": "drafted"
+  },
   "how": [
     "Dry the food well. Water makes hot oil spit and boil over.",
     "Fill a deep, heavy pan no more than a third full of oil and heat it.",
@@ -33,6 +39,56 @@
     {
       "mistake": "Oil that smokes. It tastes acrid and is close to catching fire.",
       "fix": "Take the pan off the heat at once and let it cool."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What produces the crisp shell during deep-frying?",
+      "choices": [
+        "The surface absorbs water until it swells.",
+        "The food surface loses moisture in the hot oil.",
+        "The surface stays wet beneath a cool oil film."
+      ],
+      "answer": 1,
+      "because": "The drying surface becomes the crust while moisture within the food produces steam.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should a crowded load of food be handled?",
+      "choices": [
+        "Add it all together to cool the oil quickly.",
+        "Keep adding food as the bubbling slows.",
+        "Divide it into smaller batches and let the oil recover between them."
+      ],
+      "answer": 2,
+      "because": "Smaller batches limit the drop in oil heat and reduce pieces sticking together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which sound fits the intended frying action?",
+      "choices": [
+        "A lively even crackle around the food.",
+        "Complete silence around a newly added batch.",
+        "Violent spitting from a wet surface."
+      ],
+      "answer": 0,
+      "because": "An even crackle reflects the active frying described here; silence and harsh spitting suggest different conditions.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The crust was greasy after the pan was crowded. What would you change for the next batch?",
+      "choices": [
+        "Crowd the pan more tightly next time.",
+        "Fry smaller batches with recovery between them.",
+        "Keep lowering the heat while adding more food."
+      ],
+      "answer": 1,
+      "because": "Crowding cools the oil and undermines the drying and crisping of the surface.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

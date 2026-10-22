@@ -4,6 +4,12 @@
   "names": {"en": "Trim", "fr": "Parer"},
   "aliases": {"en": ["trim the fat", "trim and tidy", "top and tail", "turn an artichoke"]},
   "does": "Cuts away what will not be eaten or will not cook well: sinew, surplus fat, tough leaves, stalks and ragged edges.",
+  "intro": {
+    "what": "Trimming removes tough or unwanted parts while keeping useful food.",
+    "why": "It teaches you to follow the boundary between what should be removed and what should remain.",
+    "idea": "Remove carefully, keep the good part",
+    "tier": "drafted"
+  },
   "how": [
     "Slide the tip of the knife under a strip of sinew, angle the blade up against it and draw the knife along, so that the sinew comes away with almost no meat.",
     "Leave a thin, even layer of fat on a joint that will be roasted.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Leaving a cut artichoke in the air, where it turns brown within moments.",
       "fix": "Rub each cut with lemon, or drop the trimmed artichoke into water sharpened with lemon."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim of trimming sinew from meat?",
+      "choices": [
+        "Cut away a thick layer of meat with every strip.",
+        "Leave ragged sinew attached for easier slicing.",
+        "Remove the tough layer with little useful flesh."
+      ],
+      "answer": 2,
+      "because": "Following the sinew closely avoids wasting flesh while removing a tough part.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the blade angle when removing sinew?",
+      "choices": [
+        "Up against the sinew being removed.",
+        "Deeply down into the meat.",
+        "Flat across a thick slice of flesh."
+      ],
+      "answer": 0,
+      "because": "An upward angle follows the unwanted layer instead of cutting deeply into useful meat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which surface suggests careful trimming?",
+      "choices": [
+        "Deep gouges beneath remaining sinew.",
+        "Clean and even without silvery skin or ragged flaps.",
+        "Tough outer leaves still attached everywhere."
+      ],
+      "answer": 1,
+      "because": "A clean surface shows unwanted parts removed without unnecessary damage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A cut artichoke browns while you work. What should change?",
+      "choices": [
+        "Leave all cuts exposed until trimming is finished.",
+        "Dry the cut surfaces in warm air.",
+        "Rub cuts with lemon promptly or use lemon-sharpened water."
+      ],
+      "answer": 2,
+      "because": "Protecting the freshly exposed surfaces limits their rapid browning.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

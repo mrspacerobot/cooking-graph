@@ -4,6 +4,12 @@
   "names": {"en": "Skim", "fr": "Écumer"},
   "aliases": {"en": ["skim off the scum", "skim the fat", "degrease"], "fr": ["dégraisser"]},
   "does": "Lifts off the foam and fat that rise to the top of a simmering liquid, so that it stays clear and tastes clean.",
+  "intro": {
+    "what": "Skimming lifts foam and fat from the surface of a gently simmering liquid.",
+    "why": "It teaches you to remove what collects on top without stirring it back through a stock.",
+    "idea": "Work at the surface",
+    "tier": "drafted"
+  },
   "how": [
     "Bring the pot up slowly. The grey foam rises as it nears a simmer.",
     "Hold a ladle flat, just under the surface, and let the foam flow into it.",
@@ -21,6 +27,56 @@
     {
       "mistake": "Stirring a stock.",
       "fix": "Leave it still. Stirring spreads through the liquid what was rising to be skimmed."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What do you remove when skimming a stock?",
+      "choices": [
+        "Foam and fat that rise to the surface.",
+        "The clear liquid just beneath the foam.",
+        "Solids strained from the entire liquid through a sieve."
+      ],
+      "answer": 0,
+      "because": "Foam and fat rise to the surface, where you can lift them away from the liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you position the ladle to skim the surface?",
+      "choices": [
+        "Deep in the bottom of the pot.",
+        "Flat, just under the surface.",
+        "Tilted deep into the liquid to scoop from below the foam."
+      ],
+      "answer": 1,
+      "because": "A flat ladle held just below the surface lets the foam flow into it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which surface shows the result you want after skimming?",
+      "choices": [
+        "Grey foam covering the top.",
+        "Foam churned throughout a rolling boil.",
+        "A clear surface without grey foam."
+      ],
+      "answer": 2,
+      "because": "A surface without grey foam shows the result of skimming. A few bright beads of fat may still remain.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Stirring is spreading the foam through the stock. What should you change?",
+      "choices": [
+        "Leave it still and lift foam gently from the surface.",
+        "Continue stirring until the foam is too fine to see.",
+        "Bring it to a rolling boil before skimming."
+      ],
+      "answer": 0,
+      "because": "Stirring spreads through the stock what was rising to the surface. Leave it still and skim gently.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

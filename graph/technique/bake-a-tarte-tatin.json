@@ -4,6 +4,12 @@
   "names": {"en": "Bake a tarte Tatin", "fr": "Faire une tarte Tatin"},
   "aliases": {"en": ["make a tatin", "bake a tatin"], "fr": ["cuire une tarte Tatin"]},
   "does": "Cooks apples in butter and caramel in a heavy ovenproof pan, covers them with a sheet of pastry and bakes the tart upside down. It is turned out onto a plate, so that the pastry becomes the base and the glossy caramelised apples are on top.",
+  "intro": {
+    "what": "Apples cook in caramel beneath pastry, then the tart is inverted to expose the fruit.",
+    "why": "This method teaches you to judge caramel flavour, allow for shrinking fruit and manage the texture before turning the tart out.",
+    "idea": "Caramel and inversion",
+    "tier": "drafted"
+  },
   "how": [
     "Cook the sugar in the pan to a deep amber caramel, take the pan off the heat and stir in the butter.",
     "Pack the halved apples tightly into the caramel, rounded side down, in a ring and then a centre. They shrink as they cook, so they must be crowded.",
@@ -31,6 +37,52 @@
     {
       "mistake": "Turning the tart out at once, when the caramel is runny and still very hot.",
       "fix": "Rest it briefly so that the caramel thickens, and turn it out over a plate with a deep rim."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why are the apples packed tightly before baking?",
+      "choices": [
+        "They shrink and would otherwise leave gaps.",
+        "They expand and need to press against the pan.",
+        "They prevent the pastry from puffing."
+      ],
+      "answer": 0,
+      "because": "Crowding the apples accounts for the space they lose as they soften.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where does the pastry go before the tart enters the oven?",
+      "choices": [
+        "Under the caramel before the apples are added.",
+        "Over the apples, with the edge tucked inside the pan.",
+        "Between loose layers of apples."
+      ],
+      "answer": 1,
+      "because": "The tart bakes upside down; inversion later puts the pastry beneath the fruit.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which caramel colour gives the intended deeper flavour?",
+      "choices": ["Pale and almost clear.", "Black with smoking edges.", "Deep amber."],
+      "answer": 2,
+      "because": "Deep amber develops caramel flavour beyond simple sweetness without aiming for burnt sugar.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Gaps opened between the baked apples. What should change next time?",
+      "choices": [
+        "Pack the apples more tightly before cooking.",
+        "Leave wider spaces between the raw apples.",
+        "Use thinner pastry to fill the gaps."
+      ],
+      "answer": 0,
+      "because": "The fruit shrinks, so a close arrangement before cooking helps the finished surface remain full.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

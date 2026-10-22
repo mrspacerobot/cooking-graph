@@ -4,6 +4,12 @@
   "names": {"en": "Make a custard", "fr": "Cuire une crème anglaise"},
   "aliases": {"en": ["cook a custard", "stirred custard", "cook to nappe", "make custard"]},
   "does": "Thickens sweetened milk with egg yolks over gentle heat, stirring until it coats a spoon and before the yolks scramble.",
+  "intro": {
+    "what": "This stirred custard thickens sweetened milk with egg yolks over gentle heat.",
+    "why": "It teaches you to use the spoon coating as a texture cue while preventing the yolks from turning grainy.",
+    "idea": "Thicken gently",
+    "tier": "drafted"
+  },
   "how": [
     "Whisk the yolks with the sugar until pale.",
     "Heat the milk with the vanilla until it steams, and pour it slowly onto the yolks while whisking.",
@@ -25,6 +31,56 @@
     {
       "mistake": "Stopping too soon for fear of scrambling, which leaves a thin sauce.",
       "fix": "Trust the line on the spoon, not the clock."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture is the aim of this stirred custard?",
+      "choices": [
+        "Firm scrambled grains in milk.",
+        "A thin liquid unchanged from the milk.",
+        "A smooth sauce that coats a spoon."
+      ],
+      "answer": 2,
+      "because": "Gentle heat lets the yolks thicken the milk into a smooth coating sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should hot milk meet the yolks?",
+      "choices": [
+        "Pour it slowly while whisking.",
+        "Pour it all at once without stirring.",
+        "Add the yolks directly to strongly boiling milk."
+      ],
+      "answer": 0,
+      "because": "Slow pouring and whisking combine the hot milk with the yolks before gentle cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which spoon cue shows the intended thickness?",
+      "choices": [
+        "The coating runs back immediately without a line.",
+        "A line through the coating stays clear.",
+        "Dry grains collect on the spoon."
+      ],
+      "answer": 1,
+      "because": "A clear line that does not close shows the custard has thickened enough to coat the spoon.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The custard is beginning to turn grainy from excess heat. What would you do?",
+      "choices": [
+        "Increase the heat until it thickens further.",
+        "Leave it in the hot pan and stop stirring.",
+        "Remove it and strain into a cold bowl promptly."
+      ],
+      "answer": 2,
+      "because": "Removing heat and transferring promptly limits further scrambling of the yolks.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

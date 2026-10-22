@@ -4,6 +4,12 @@
   "names": {"en": "Coat in panko"},
   "aliases": {"en": ["crumb with panko", "coat in panko crumbs", "flour, egg and panko coat"]},
   "does": "Covers a cutlet in layers, first flour, then beaten egg and then coarse panko flakes, which fry into a light, shaggy, golden crust that stays crisp.",
+  "intro": {
+    "what": "Flour, egg and panko form a layered coating with loose coarse flakes.",
+    "why": "Each layer helps the next cling. A light touch keeps the panko texture open instead of pressing it into a dense crust.",
+    "idea": "Loose flakes in layers",
+    "tier": "drafted"
+  },
   "how": [
     "Season the meat and pat it dry.",
     "Set out trays in a row: flour, beaten egg and panko.",
@@ -28,6 +34,52 @@
     {
       "mistake": "Coating well ahead of the oil, so that the flakes soak up the egg and turn soft.",
       "fix": "Coat just before frying."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why avoid packing panko tightly?",
+      "choices": [
+        "Hard pressure creates more air spaces between the flakes.",
+        "Loose flakes make the intended light shaggy crust.",
+        "Packing firmly keeps the same light texture while making the crust thicker."
+      ],
+      "answer": 1,
+      "because": "Heavy pressure compacts the coating instead of retaining its loose texture.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Which coating order is used here?",
+      "choices": ["Panko, then flour, then egg.", "Egg, then panko, then flour.", "Flour, then egg, then panko."],
+      "answer": 2,
+      "because": "Flour prepares the surface, egg wets it, and panko clings to the outer layer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the coated piece look like before frying?",
+      "choices": [
+        "Dry flakes covering the faces and edges without bare spots.",
+        "Wet egg pooling between tightly crushed crumbs.",
+        "Bare edges around a thick central mound."
+      ],
+      "answer": 0,
+      "because": "Even dry coverage gives the crust its intended texture across the piece.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The coating became gummy with thick egg between the flakes. What should change?",
+      "choices": [
+        "Add more egg over the finished crumbs.",
+        "Let excess egg drip off before adding panko.",
+        "Press the wet flakes harder against the food."
+      ],
+      "answer": 1,
+      "because": "Draining excess egg prevents a thick wet layer from weighing down the coating.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -56,6 +56,27 @@ with the recorded differences, and to any parent technique.
 Recipes show their quantities, equipment, method, time, temperature and any
 open safety points. Each class level can be reviewed separately.
 
+The foundation path at the top keeps each program's own name and cuisine scope.
+Its numbered sections contain expandable skills and numbered lessons, with the
+techniques named underneath. **Learn first** links show the recorded skill
+dependencies; section numbers do not add prerequisites. Each lesson keeps its
+existing source ID and has a **See the whole learning path** link.
+
+Lesson previews show the planned Tomi sequence: introduce the technique and why
+it matters, practise it through a dish, then answer questions after cooking.
+This is a review of that proposed sequence, not an active cooking lesson.
+Introductions and question catalogs belong to techniques and are reused across
+lessons. Expand a technique's questions and **Check the answer and explanation**
+to review all choices, the recorded answer, its reasoning and its own tier.
+There is no quiz score or cooking-completion control. Empty introductions,
+question catalogs and practice recipes are shown as explicit gaps.
+
+Technique cards show the same introduction and question catalog alongside the
+existing method, cues and mistakes. Choose **Techniques** and filter by cuisine
+to review techniques outside the French foundation course too. A lesson's reading hash includes the technique
+introductions and questions displayed in it, so changed writing starts fresh
+reading progress rather than reusing marks for the previous version.
+
 Preparation names in ingredient lists and other cards are clickable. Their pages
 show definitions, required and optional components with their tiers, techniques,
 recipes to make them, recipes that use or produce them, and related substitution

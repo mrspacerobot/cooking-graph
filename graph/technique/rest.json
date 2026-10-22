@@ -4,6 +4,12 @@
   "names": {"en": "Rest", "fr": "Reposer"},
   "aliases": {"en": ["rest the meat", "let it rest"]},
   "does": "Leaves cooked meat alone off the heat for a while, so that its juices settle and stay in when it is cut.",
+  "intro": {
+    "what": "Resting leaves meat off the heat before it is carved.",
+    "why": "It asks you to plan a pause before slicing and to notice the effect on the juices and crust.",
+    "idea": "A pause before carving",
+    "tier": "drafted"
+  },
   "how": [
     "Lift the meat out of the pan onto a rack or a warm plate.",
     "Leave it uncovered, or loosely tented, somewhere warm.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Wrapping it tightly in foil, which steams the crust soft.",
       "fix": "Leave it open, or tent the foil loosely."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why rest meat before slicing it?",
+      "choices": [
+        "To keep browning the meat in the cooking pan.",
+        "To trap steam tightly against the crust.",
+        "To let juices settle before slicing."
+      ],
+      "answer": 2,
+      "because": "Resting gives juices time to settle, helping more stay in the meat when it is sliced.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where does the meat go to rest in this method?",
+      "choices": [
+        "Onto a rack or warm plate, away from the pan heat.",
+        "Back into the hot frying pan.",
+        "Into a tightly sealed foil parcel every time."
+      ],
+      "answer": 0,
+      "because": "Lift the meat out of the hot pan onto a rack or warm plate for its pause off the heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which observation is consistent with the intended result?",
+      "choices": [
+        "Juice floods the board immediately.",
+        "Little juice runs out when the meat is sliced.",
+        "A crisp crust turns wet beneath tight foil."
+      ],
+      "answer": 1,
+      "because": "Less juice running onto the board is the result this resting method aims for.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Tight foil has steamed the crust soft. What would you change?",
+      "choices": [
+        "Seal the foil around the edges to retain more warmth.",
+        "Leave it tightly wrapped until the crust dries again.",
+        "Leave it uncovered or tent the foil loosely."
+      ],
+      "answer": 2,
+      "because": "Tight foil traps steam against the crust. A loose tent or no cover avoids steaming it soft.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

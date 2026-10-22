@@ -4,6 +4,12 @@
   "names": {"en": "Slow-fry in olive oil"},
   "aliases": {"en": ["pochar", "poach potatoes in oil", "cook potatoes slowly in olive oil"]},
   "does": "Cooks thin slices of potato and onion in a deep pool of olive oil that is kept well below frying heat, turning them now and then, until they are soft and silky and have taken almost no colour. The oil is poured off afterwards and kept.",
+  "intro": {
+    "what": "This potato-and-onion method softens thin slices gently in olive oil with little browning.",
+    "why": "It teaches you to distinguish gentle oil cooking from the stronger heat used for a crisp crust.",
+    "idea": "Soften without crisping",
+    "tier": "drafted"
+  },
   "how": [
     "Slice the potato thin and even, and the onion thinner. Salt them lightly and turn them over by hand, so that the salt goes through evenly.",
     "Pour olive oil into a wide, deep pan until it comes about halfway up the food, and warm it over a medium heat until a slice dropped in bubbles gently.",
@@ -34,6 +40,56 @@
     {
       "mistake": "Throwing the oil away, which wastes a flavoured oil.",
       "fix": "Strain it and keep it for frying or for the next batch."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture is the aim of this potato-and-onion method?",
+      "choices": [
+        "Crisp browned slices.",
+        "Firm raw-textured slices in hot oil.",
+        "Soft silky slices with very little colour."
+      ],
+      "answer": 2,
+      "because": "Gentle oil heat softens the slices without the crust sought in hotter frying.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should slices that cling together be handled?",
+      "choices": [
+        "Turn them gently and separate them with a spoon.",
+        "Leave them packed together throughout cooking.",
+        "Press them into a firm layer against the base."
+      ],
+      "answer": 0,
+      "because": "Separating the slices exposes them more evenly to the warm oil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which oil movement suits this method?",
+      "choices": [
+        "A fierce constant frying action.",
+        "A shimmer with barely bubbling oil.",
+        "No movement because the oil is cold."
+      ],
+      "answer": 1,
+      "because": "Gentle bubbling indicates the softer oil-cooking approach rather than hard frying.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The slices crisp outside while remaining firm inside. What should change?",
+      "choices": [
+        "Increase the heat to deepen the crust.",
+        "Remove more oil and keep the heat high.",
+        "Lower the heat until the oil only shimmers."
+      ],
+      "answer": 2,
+      "because": "Less intense heat gives the slices time to soften before their surfaces brown.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

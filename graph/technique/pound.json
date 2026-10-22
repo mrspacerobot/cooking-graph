@@ -4,6 +4,12 @@
   "names": {"en": "Pound", "fr": "Piler"},
   "aliases": {"en": ["pound in a mortar", "crush in a mortar", "pound to a paste"]},
   "does": "Crushes food in a mortar until it becomes a paste.",
+  "intro": {
+    "what": "Pounding uses a mortar and pestle to turn firm aromatics and leaves into a paste.",
+    "why": "It teaches you to combine crushing and grinding while adding ingredients in manageable stages.",
+    "idea": "Break, then grind",
+    "tier": "drafted"
+  },
   "how": [
     "Start with the hardest thing: garlic, with a little coarse salt to grip it.",
     "Pound straight down to break it, then grind in circles against the wall of the mortar.",
@@ -18,6 +24,56 @@
     {
       "mistake": "Filling the mortar with leaves, which slide about and bruise without breaking down.",
       "fix": "Add a few leaves at a time."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the aim when pounding garlic and leaves for a paste?",
+      "choices": [
+        "Large leaves merely coated in oil.",
+        "A cohesive paste without whole leaf pieces.",
+        "Dry chopped pieces that remain separate."
+      ],
+      "answer": 1,
+      "because": "Breaking and grinding the ingredients brings them together instead of only bruising intact leaves.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the pestle move after firm ingredients have been broken down?",
+      "choices": [
+        "Tap only the loose top leaves.",
+        "Stir without pressing against the surface.",
+        "Grind in circles against the mortar wall."
+      ],
+      "answer": 2,
+      "because": "Grinding against the wall continues breaking the ingredients after the initial downward crushing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which smell change accompanies breaking garlic and basil?",
+      "choices": [
+        "Their scent rises sharply as they break down.",
+        "Their aroma disappears as soon as they are crushed.",
+        "Their aroma stays faint until oil is added."
+      ],
+      "answer": 0,
+      "because": "Breaking the aromatics releases their scent into the mortar and surrounding air.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A full mortar of leaves slides around without becoming paste. What should change?",
+      "choices": [
+        "Add all remaining leaves and press only on top.",
+        "Add leaves in smaller batches and grind each before adding more.",
+        "Pour in all the oil before breaking the leaves."
+      ],
+      "answer": 1,
+      "because": "Smaller additions keep the pestle in contact with the leaves instead of letting an overfilled pile slide.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

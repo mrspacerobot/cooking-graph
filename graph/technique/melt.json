@@ -4,6 +4,12 @@
   "names": {"en": "Melt", "fr": "Fondre"},
   "aliases": {"en": ["melt chocolate", "melt gently", "melt over a water bath"]},
   "does": "Turns chocolate or a solid fat liquid over gentle heat, without letting it colour, scorch or seize.",
+  "intro": {
+    "what": "Melting gently turns chocolate or solid fat into a smooth liquid without browning it.",
+    "why": "It teaches you to use gentle heat and residual warmth rather than overheating the last solid pieces.",
+    "idea": "Finish with residual warmth",
+    "tier": "drafted"
+  },
   "how": [
     "Chop chocolate into small, even pieces, and cut butter into cubes.",
     "Set a bowl over a pan of barely simmering water, with the bottom of the bowl clear of the water.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Heating chocolate straight on the flame or too fast, so that it scorches and turns thick and bitter.",
       "fix": "Melt it over water, and off the heat for the last lumps."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What distinguishes gentle melting from browning?",
+      "choices": [
+        "The solids develop a deep nut-brown colour.",
+        "The surface chars before the centre softens.",
+        "The solid becomes liquid without colouring or scorching."
+      ],
+      "answer": 2,
+      "because": "Melting aims for a smooth liquid while keeping browning and scorching out of the process.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should you take melting chocolate off the warm water?",
+      "choices": [
+        "While small lumps remain, then stir them in.",
+        "Only after heating the smooth liquid strongly.",
+        "After the chocolate becomes thick and smoky."
+      ],
+      "answer": 0,
+      "because": "Residual warmth melts the last small lumps without unnecessary additional heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches melted chocolate?",
+      "choices": [
+        "A stiff grainy paste.",
+        "Smooth and glossy without grainy streaks.",
+        "Dark scorched patches in a thick mass."
+      ],
+      "answer": 1,
+      "because": "A smooth glossy liquid shows melting without seizing or scorching.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A little water has made the chocolate seize. What would you change next time?",
+      "choices": [
+        "Let more steam condense into the bowl.",
+        "Use a stronger flame directly under the chocolate.",
+        "Keep bowl and spoon dry and the water at a bare simmer."
+      ],
+      "answer": 2,
+      "because": "Water entering chocolate can cause seizing; dry tools and gentle indirect heat avoid that mistake.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

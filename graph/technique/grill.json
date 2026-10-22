@@ -4,6 +4,12 @@
   "names": {"en": "Grill", "fr": "Griller"},
   "aliases": {"en": ["chargrill", "cook under the grill", "grill under a hot grill"]},
   "does": "Cooks food close to fierce, direct heat, so that its surface colours and chars lightly while the inside stays moist.",
+  "intro": {
+    "what": "Grilling uses fierce direct heat close to the food to brown and lightly char its surface.",
+    "why": "It teaches you to judge surface colour and adjust distance from heat for thicker pieces.",
+    "idea": "Distance controls direct heat",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the grill until it is very hot before the food goes near it.",
     "Dry the food, oil it lightly and season it.",
@@ -23,6 +29,52 @@
     {
       "mistake": "Turning it again and again, so that it never colours.",
       "fix": "Leave it alone until it has coloured, then turn it once."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does the direct heat of grilling develop?",
+      "choices": [
+        "A pale surface softened in liquid.",
+        "A thick wet coating without colour.",
+        "A coloured, lightly charred surface."
+      ],
+      "answer": 2,
+      "because": "Fierce direct heat colours the surface, with light charring rather than bitter black patches.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you turn food in this grilling method?",
+      "choices": [
+        "Leave it until the surface colours, then turn.",
+        "Turn constantly from the moment it meets the heat.",
+        "Turn before any colour can form."
+      ],
+      "answer": 0,
+      "because": "Leaving the surface still long enough lets it colour before turning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which smell matches the intended result?",
+      "choices": ["A sharp burnt smell.", "Toasting rather than burning.", "A raw scent with little toasted aroma."],
+      "answer": 1,
+      "because": "A toasted scent accompanies browning; a burnt smell suggests the surface has gone too far.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A thick piece has coloured outside before the inside warms. What would you change?",
+      "choices": [
+        "Move it closer to colour the outside faster.",
+        "Keep it close and turn it more rapidly.",
+        "Move it farther from the heat."
+      ],
+      "answer": 2,
+      "because": "Greater distance after colouring gives the inside time to warm without burning the surface.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

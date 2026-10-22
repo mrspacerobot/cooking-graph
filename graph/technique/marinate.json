@@ -4,6 +4,12 @@
   "names": {"en": "Marinate", "fr": "Mariner"},
   "aliases": {"en": ["steep in a marinade", "marinade"]},
   "does": "Steeps food in a seasoned liquid before it is cooked, so that its surface takes on the flavour.",
+  "intro": {
+    "what": "Marinating coats food in a seasoned liquid before cooking so the surface takes on flavour.",
+    "why": "It teaches you to separate surface flavouring from the later dry browning step.",
+    "idea": "Surface flavour before browning",
+    "tier": "drafted"
+  },
   "how": [
     "Mix the wine or the acid with the aromatics and a little oil.",
     "Turn the food in it until it is coated, in a bowl that acid does not attack.",
@@ -25,6 +31,56 @@
     {
       "mistake": "Expecting a marinade to make a tough cut tender.",
       "fix": "It flavours the surface. Only long, gentle cooking makes a tough cut tender."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does this marinade primarily flavour?",
+      "choices": [
+        "Every part equally far into a thick piece.",
+        "Only the liquid, leaving the food unchanged.",
+        "The surface of the food."
+      ],
+      "answer": 2,
+      "because": "The visible staining and scent concentrate at the surface rather than reaching far inside.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you distribute the seasoned liquid?",
+      "choices": [
+        "Turn the food until coated, then cover and refrigerate.",
+        "Leave part of the food dry above the liquid throughout.",
+        "Dry the food before its first contact with the marinade."
+      ],
+      "answer": 0,
+      "because": "Turning gives the surfaces contact with the seasoned liquid before the covered rest.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What might you see on meat lifted from a wine marinade?",
+      "choices": [
+        "Identical deep colour through the whole piece.",
+        "Surface staining that does not reach far inside.",
+        "A browned crust already formed by the marinade."
+      ],
+      "answer": 1,
+      "because": "Wine can stain the outside, illustrating the surface-focused effect of marinating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Wet marinated meat steams instead of browning. What would you change next time?",
+      "choices": [
+        "Pour extra marinade into the browning pan.",
+        "Cover the pan to retain the surface moisture.",
+        "Drain and pat it dry before browning."
+      ],
+      "answer": 2,
+      "because": "Removing surface moisture lets the browning step proceed instead of steaming the wet meat.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

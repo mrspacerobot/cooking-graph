@@ -4,6 +4,12 @@
   "names": {"en": "Infuse", "fr": "Infuser"},
   "aliases": {"en": ["infuse the milk", "infuse in warm liquid", "steep in warm liquid"], "fr": ["faire infuser"]},
   "does": "Lets a flavouring steep in a warm liquid until the liquid has taken on its scent, colour and taste, and then lifts or strains the flavouring out. It is the reverse of soaking, where the food takes up the liquid.",
+  "intro": {
+    "what": "Infusing steeps a flavouring in warm liquid, then removes it once the liquid has taken up its taste and scent.",
+    "why": "It teaches you to draw flavour into liquid gently and judge the result rather than relying only on waiting.",
+    "idea": "Flavour moves into liquid",
+    "tier": "drafted"
+  },
   "how": [
     "Warm the liquid until it steams. Do not let it boil hard, which dulls a delicate scent and makes milk climb the pan.",
     "Add the flavouring, such as strips of peel, a stick of cinnamon, a split vanilla pod, threads of saffron or herbs, and take the pan off the heat.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Straining too soon, so that the liquid is only faintly flavoured.",
       "fix": "Taste it, and leave it longer if it is weak."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What takes up flavour during an infusion?",
+      "choices": [
+        "Only the solid flavouring itself.",
+        "The liquid around the flavouring.",
+        "A dry pan beneath the flavouring."
+      ],
+      "answer": 1,
+      "because": "Infusion flavours the liquid, unlike soaking aimed at letting a solid take up liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you manage heat for delicate flavourings?",
+      "choices": [
+        "Keep the liquid at a hard boil throughout.",
+        "Begin in a dry hot pan without liquid.",
+        "Warm the liquid, then steep away from strong heat."
+      ],
+      "answer": 2,
+      "because": "Gentle steeping preserves delicate scent; hard boiling can make peel or saffron harsh.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What suggests the liquid has infused well?",
+      "choices": [
+        "It smells clearly of the flavouring.",
+        "It still has only a faint trace of scent.",
+        "Only the removed solids smell strongly."
+      ],
+      "answer": 0,
+      "because": "Judge the liquid itself for the flavour and scent it has taken up.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The liquid tasted weak after straining. What would you change next time?",
+      "choices": [
+        "Strain sooner to preserve the faint scent.",
+        "Let it steep longer and taste again before straining.",
+        "Boil it hard with the flavouring still in."
+      ],
+      "answer": 1,
+      "because": "More steeping can strengthen a weak infusion without using harsh boiling.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

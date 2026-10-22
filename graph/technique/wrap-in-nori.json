@@ -4,6 +4,12 @@
   "names": {"en": "Wrap in nori"},
   "aliases": {"en": ["wrap with nori", "wrap in seaweed"]},
   "does": "Wraps a sheet of dried seaweed around shaped rice just before eating, so that the seaweed stays crisp and does not turn soggy against the moist rice.",
+  "intro": {
+    "what": "Wrapping shaped rice in nori just before eating preserves the seaweed’s crisp texture.",
+    "why": "It teaches you how moisture moves from rice into a dry wrapper and why timing matters.",
+    "idea": "Keep nori crisp",
+    "tier": "drafted"
+  },
   "how": [
     "Cut a sheet of nori into strips or squares, or fold it to fit the rice shape.",
     "Hold the shaped rice in one hand and lay the nori against the rice.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Using nori that has gone soft in the air.",
       "fix": "Keep it in a closed container, and crisp it briefly over a flame if needed."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why wrap rice in nori close to eating?",
+      "choices": [
+        "To limit moisture softening the seaweed.",
+        "To let it become fully damp and chewy first.",
+        "To let the seaweed absorb moisture evenly before serving."
+      ],
+      "answer": 0,
+      "because": "Contact with moist rice gradually softens a dry crisp sheet.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should nori be attached to the rice?",
+      "choices": [
+        "Press hard enough to compact the rice deeply inside the sheet.",
+        "Press it lightly against the shaped surface.",
+        "Soak the sheet before wrapping."
+      ],
+      "answer": 1,
+      "because": "Light contact lets the sheet cling without deliberate wetting or breaking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which sound matches crisp nori?",
+      "choices": [
+        "A soft silent pull through a chewy sheet.",
+        "A wet squelch from a soaked wrapper.",
+        "A crackle when bitten."
+      ],
+      "answer": 2,
+      "because": "The crackle reflects a dry crisp structure rather than softened damp seaweed.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Nori became damp and chewy before service. What would you change next time?",
+      "choices": [
+        "Keep it separate and wrap close to eating.",
+        "Wrap earlier so it has longer contact with rice.",
+        "Dampen it before wrapping to help it cling."
+      ],
+      "answer": 0,
+      "because": "Reducing the time in contact with rice limits moisture transfer to the nori.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

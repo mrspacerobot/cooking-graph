@@ -4,6 +4,12 @@
   "names": {"en": "Purge clams"},
   "aliases": {"en": ["spurgare le vongole", "soak clams in salted water"]},
   "does": "Leaves live clams in cold, well-salted water, like the sea, so that they open a little, breathe and spit out the sand they hold, before they are cooked.",
+  "intro": {
+    "what": "Purging gives clams a cold salty-water bath to release sand before cooking.",
+    "why": "It teaches you to separate grit from food without pouring that grit back over it.",
+    "idea": "Leave the sand behind",
+    "tier": "drafted"
+  },
   "how": [
     "Look over the clams. Throw away any that are broken, or that stay open when they are tapped on the counter.",
     "Stir plenty of salt into cold water until it tastes like the sea, in a bowl wide enough to hold the clams in a single layer.",
@@ -28,6 +34,56 @@
     {
       "mistake": "Crowding them in a warm place, so that they do not open.",
       "fix": "Lay them in a single layer somewhere cool."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is purging intended to remove from clams?",
+      "choices": [
+        "Only loose dirt on the outside of the shells.",
+        "The water trapped between the shells.",
+        "Sand and grit held inside them."
+      ],
+      "answer": 2,
+      "because": "Clams release sand into the water; lifting them out separates them from the settled grit.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should clams be removed from the purging bowl?",
+      "choices": [
+        "Lift them out and leave the water behind.",
+        "Pour the bowl through a colander.",
+        "Stir up the bottom before draining."
+      ],
+      "answer": 0,
+      "because": "Grit settles beneath the clams, so lifting them avoids carrying that sediment back over them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which observation shows that sand has been released?",
+      "choices": [
+        "The water remains clear with no sediment.",
+        "Grit gathers on the bottom of the bowl.",
+        "The shells become polished on the outside."
+      ],
+      "answer": 1,
+      "because": "Settled sand shows grit has left the clams and collected below them.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Sand coats the clams again when you pour out the bowl. What would you change next time?",
+      "choices": [
+        "Rinse them with the same settled water.",
+        "Shake the bowl before pouring.",
+        "Lift the clams instead of tipping out the bowl."
+      ],
+      "answer": 2,
+      "because": "Pouring carries settled sand with the water; lifting leaves the grit behind.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

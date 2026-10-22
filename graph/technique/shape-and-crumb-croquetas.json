@@ -4,6 +4,12 @@
   "names": {"en": "Shape and crumb croquetas"},
   "aliases": {"en": ["rebozar", "shape croquetas", "crumb croquetas", "coat croquetas"]},
   "does": "Rolls cold, firm croqueta paste into small logs or balls and coats each one in flour, beaten egg and breadcrumbs in turn, so that it fries with a crisp shell and a soft, creamy middle.",
+  "intro": {
+    "what": "Croquetas are formed from cold firm paste and coated in flour, egg and crumbs.",
+    "why": "It teaches you to handle a creamy centre while building a complete shell around it.",
+    "idea": "Firm centre, complete coat",
+    "tier": "drafted"
+  },
   "how": [
     "Set out shallow dishes in a row: flour, beaten egg and breadcrumbs, in that order. Have a tray ready.",
     "Scoop a spoonful of the chilled paste and roll it between floured hands into a short log or a ball. Keep them all one size.",
@@ -27,6 +33,56 @@
     {
       "mistake": "Using the same hand for the dry coats and for the egg, which builds up gluey lumps on the fingers.",
       "fix": "Keep one hand for the flour and the crumbs and the other for the egg."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the purpose of the crumb shell?",
+      "choices": [
+        "A loose dusting that falls away in the oil.",
+        "A replacement for firming the paste.",
+        "A crisp outside around a soft creamy middle."
+      ],
+      "answer": 2,
+      "because": "The coating encloses the shaped paste and creates a contrasting crisp exterior.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How can gluey lumps on the fingers be reduced?",
+      "choices": [
+        "Keep a hand for dry coatings and the other for egg.",
+        "Use egg-coated fingers in the crumb bowl each time.",
+        "Mix flour, egg and crumbs into a paste first."
+      ],
+      "answer": 0,
+      "because": "Separating wet and dry handling limits coating building up on the fingers.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matters before frying?",
+      "choices": [
+        "Loose crumbs around an exposed paste centre.",
+        "An even crumb coat without bare patches.",
+        "A heavy coating only on the ends."
+      ],
+      "answer": 1,
+      "because": "Bare areas interrupt the shell and give soft filling a route out.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The paste squashes and sticks during shaping. What should change?",
+      "choices": [
+        "Shape it warmer with more pressure.",
+        "Add the egg coating before forming a shape.",
+        "Chill it until firm and flour the hands."
+      ],
+      "answer": 2,
+      "because": "Cold firm paste is easier to handle without collapsing into the hands.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

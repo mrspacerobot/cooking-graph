@@ -93,9 +93,11 @@ def ingredient(slug, english, contains, free_of, is_a=(), part_of=(), groups=(),
 def technique(slug, english):
     thing = head("technique/" + slug, english)
     thing["does"] = "Softens cut vegetables in fat over low heat."
+    thing["intro"] = None
     thing["how"] = ["Warm the fat over low heat.", "Stir now and then until soft."]
     thing["cues"] = [{"sense": "see", "text": "The pieces turn glassy."}]
     thing["mistakes"] = [{"mistake": "The heat is too high.", "fix": "Turn it down."}]
+    thing["quiz"] = []
     thing["works_on"] = [link("group/vegetables")]
     thing["makes"] = [link("form/minced")]
     thing["needs"] = [

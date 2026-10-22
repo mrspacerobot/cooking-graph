@@ -4,6 +4,12 @@
   "names": {"en": "Soak in syrup"},
   "aliases": {"en": ["pour syrup over", "syrup the pastry"]},
   "does": "Pours a cool syrup over a pastry as it comes hot from the oven, so that the syrup runs into every layer and the pastry drinks it up while the top stays crisp.",
+  "intro": {
+    "what": "This pastry method pours cool syrup over hot baked layers and leaves them uncovered to absorb it.",
+    "why": "It teaches you to balance absorption with preserving the pastry’s upper crust.",
+    "idea": "Absorb without trapping steam",
+    "tier": "drafted"
+  },
   "how": [
     "Make the syrup ahead and let it cool fully. Hot pastry takes cool syrup. Hot syrup on hot pastry turns it soggy.",
     "Cut the pastry into portions before it is baked, so that the syrup can run down the cuts.",
@@ -27,6 +33,56 @@
     {
       "mistake": "Using a syrup boiled too thick, which sits on top and does not soak in.",
       "fix": "Stop boiling the syrup while it is still thin enough to run off a spoon."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why cut the pastry before baking in this method?",
+      "choices": [
+        "To give syrup routes into the layers.",
+        "To prevent any syrup reaching the centre.",
+        "To keep the syrup only on the top."
+      ],
+      "answer": 0,
+      "because": "The cuts carry syrup downward instead of leaving it entirely on the surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should syrup meet the pastry in this method?",
+      "choices": [
+        "Pour hot syrup over hot pastry and cover it.",
+        "Pour cooled syrup slowly and evenly over the hot pastry.",
+        "Add a thick syrup only after sealing the surface."
+      ],
+      "answer": 1,
+      "because": "The cooled-syrup method encourages absorption while limiting the sogginess described for hot syrup on hot pastry.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What sound accompanies cool syrup meeting hot pastry?",
+      "choices": [
+        "The dry crackle of uncoated pastry alone.",
+        "The continued rolling boil of a syrup pan.",
+        "A sharp hiss."
+      ],
+      "answer": 2,
+      "because": "The temperature contrast creates a hiss as syrup contacts the hot layers.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The top softened while cooling under a lid. What would you change next time?",
+      "choices": [
+        "Leave the pastry uncovered until cold.",
+        "Use a tighter lid to retain more steam.",
+        "Cover while it is still hotter."
+      ],
+      "answer": 0,
+      "because": "A cover traps steam against the top, softening the crust that should remain crisp.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

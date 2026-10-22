@@ -4,6 +4,12 @@
   "names": {"en": "Score", "fr": "Quadriller"},
   "aliases": {"en": ["score the skin", "score the fat", "crosshatch", "score fat", "score skin"]},
   "does": "Cuts shallow lines through skin or fat, so that the fat can melt out and the skin crisps without curling.",
+  "intro": {
+    "what": "Scoring makes shallow cuts through skin or fat without cutting into the flesh.",
+    "why": "It teaches you to control knife depth so fat can render and skin can crisp without unnecessary damage below.",
+    "idea": "Control cut depth",
+    "tier": "drafted"
+  },
   "how": [
     "Chill the piece so that the fat is firm.",
     "Draw a sharp knife across the fat in parallel lines a finger apart, cutting through the fat but not into the flesh.",
@@ -16,6 +22,56 @@
     {
       "mistake": "Cutting into the flesh, so that the meat loses juice and dries where it was cut.",
       "fix": "Use the tip of the knife with a light hand, and stop when the colour changes."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is scoring skin or fat intended to encourage?",
+      "choices": [
+        "Deep cuts through the flesh for portioning.",
+        "Rendering and crisping without curling.",
+        "Keeping melted fat trapped under the skin."
+      ],
+      "answer": 1,
+      "because": "Shallow openings allow fat to escape and reduce the pull that can curl skin.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Why chill the piece before scoring?",
+      "choices": [
+        "Soft warm fat guides the knife more evenly.",
+        "Chilling makes deep flesh cuts necessary.",
+        "Firm fat is easier to cut precisely."
+      ],
+      "answer": 2,
+      "because": "Firm fat offers a more controlled surface for shallow knife work.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests cuts stayed within the fat?",
+      "choices": [
+        "White fat in the cuts without red flesh showing.",
+        "Red flesh visible along every line.",
+        "Deep gaps passing through the piece."
+      ],
+      "answer": 0,
+      "because": "The colour beneath each cut helps distinguish fat from flesh.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The knife keeps cutting into the meat. What should change?",
+      "choices": [
+        "Press harder to keep all cuts equally deep.",
+        "Use a light hand and stop when the colour changes.",
+        "Warm the fat until it smears."
+      ],
+      "answer": 1,
+      "because": "Light shallow cuts preserve the flesh while opening the fat layer.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Make a sauce", "fr": "Faire une sauce"},
   "aliases": {"en": ["build a sauce", "make a simple sauce"]},
   "does": "Builds a sauce from a flavouring base cooked in fat, a liquid and a short simmer, until it coats a spoon. It is seasoned at the end, and strained or blended if it should be smooth.",
+  "intro": {
+    "what": "This sauce method combines a flavouring base cooked in fat with gradually added liquid.",
+    "why": "It teaches you to build smoothness and spoon-coating body before making the final seasoning adjustment.",
+    "idea": "Build, thicken, season",
+    "tier": "drafted"
+  },
   "how": [
     "Cook the flavouring base in the fat first: a roux, tomato, or a spice such as paprika stirred into oil off the heat.",
     "Add the liquid a little at a time, whisking, until the sauce is smooth.",
@@ -24,6 +30,56 @@
     {
       "mistake": "Stirring a spice into hot oil, where it burns and turns the sauce bitter.",
       "fix": "Take the pan off the heat first."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why judge final seasoning after this sauce has simmered down?",
+      "choices": [
+        "Reduction can make the salt already present taste stronger.",
+        "Early salt stops the sauce thickening as liquid leaves.",
+        "Early salt prevents lumps when the liquid meets the base."
+      ],
+      "answer": 0,
+      "because": "Concentration can make early seasoning too salty, so judge the sauce after thickening.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you join the liquid to the cooked base?",
+      "choices": [
+        "Pour it all in before starting to mix.",
+        "Add it gradually while whisking.",
+        "Add the liquid only after the base has finished simmering."
+      ],
+      "answer": 1,
+      "because": "Gradual additions and whisking help prevent lumps as the sauce comes together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What spoon cue indicates the intended body?",
+      "choices": [
+        "A bare spoon without a coating.",
+        "Large dry lumps clinging to the spoon.",
+        "A coating that holds a clear line drawn through it."
+      ],
+      "answer": 2,
+      "because": "A spoon coating with a clear line shows a smooth thickened sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Paprika scorched when added to hot oil. What would you change next time?",
+      "choices": [
+        "Take the pan off the heat before stirring it in.",
+        "Leave the oil on high heat for longer.",
+        "Add the paprika before heating the empty pan."
+      ],
+      "answer": 0,
+      "because": "Moving the pan off the heat avoids burning the delicate spice into bitterness.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Marinate in soy sauce"},
   "aliases": {"en": ["steep in soy and sake"]},
   "does": "Steeps pieces of poultry for a short while in soy sauce and sake with ginger and garlic, so that the flavour sinks in and the surface is seasoned. The salty liquid is let drip off before frying and is not kept for the pot.",
+  "intro": {
+    "what": "This method briefly coats poultry pieces in soy sauce, sake, ginger and garlic before frying.",
+    "why": "It teaches you to distribute a salty marinade evenly and drain it before applying a dry coating.",
+    "idea": "Flavour briefly, drain well",
+    "tier": "drafted"
+  },
   "how": [
     "Cut the meat into even, bite-sized pieces, so that each takes up the same amount of flavour.",
     "In a bowl, mix the soy sauce and the sake with finely grated ginger and garlic.",
@@ -26,6 +32,56 @@
     {
       "mistake": "Coating the pieces while they are still dripping, which turns a dry coat to paste.",
       "fix": "Let the extra liquid drip off first."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep this soy marinade brief?",
+      "choices": [
+        "A long steep can make the pieces salty and firm.",
+        "More time removes the salt from the surface.",
+        "A longer steep keeps the saltiness from increasing."
+      ],
+      "answer": 0,
+      "because": "Soy supplies strong saltiness, and a prolonged steep can make the pieces firm and overly salty.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What do you do before applying the coating?",
+      "choices": [
+        "Coat the pieces while they are dripping.",
+        "Let excess marinade drip off.",
+        "Pour the remaining marinade into the dry coating."
+      ],
+      "answer": 1,
+      "because": "Extra liquid turns a dry coating into paste, so drain the pieces first.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What appearance suggests the marinade has coated evenly?",
+      "choices": [
+        "Dry pale patches among heavily stained pieces.",
+        "A dry coating already hiding all the marinade.",
+        "Even brown staining and a glistening surface."
+      ],
+      "answer": 2,
+      "because": "Even staining and gloss show the pieces have been turned through the marinade.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The dry coating becomes a paste on wet pieces. What would you change for the next batch?",
+      "choices": [
+        "Drain the excess marinade before coating.",
+        "Add more marinade while coating.",
+        "Keep the pieces submerged until the flour is added."
+      ],
+      "answer": 0,
+      "because": "Draining removes the extra liquid that changes the intended dry coat into paste.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

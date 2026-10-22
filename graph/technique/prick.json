@@ -4,6 +4,12 @@
   "names": {"en": "Prick", "fr": "Piquer"},
   "aliases": {"en": ["prick with a fork", "pierce the skin", "dock"], "fr": ["piquer à la fourchette"]},
   "does": "Makes small holes in a skin or a crust with the tip of a knife or a fork, so that steam can leave and the skin does not split or the crust puff.",
+  "intro": {
+    "what": "Pricking makes small shallow holes in a skin or pastry crust.",
+    "why": "It teaches you to create steam outlets without turning a delicate surface into tears or deep cuts.",
+    "idea": "Small even holes",
+    "tier": "drafted"
+  },
   "how": [
     "Dry the surface, so that the tip does not slip.",
     "Prick evenly all over with the point, a little way in, about as far apart as the width of a fork.",
@@ -21,6 +27,56 @@
     {
       "mistake": "Pricking unevenly, which leaves a patch that still splits or puffs.",
       "fix": "Prick evenly, all over."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What do the small holes made by pricking allow?",
+      "choices": [
+        "Steam to escape instead of forcing a surface to puff or split.",
+        "The entire filling to drain out freely.",
+        "A thick solid crust to become completely sealed."
+      ],
+      "answer": 0,
+      "because": "Small openings release steam that could otherwise lift or split the surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the holes be distributed?",
+      "choices": [
+        "Only in a dense cluster at an edge.",
+        "Evenly across the relevant surface.",
+        "As deep long slashes through the food."
+      ],
+      "answer": 1,
+      "because": "Even coverage avoids untreated patches where steam can still push the surface upward.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance fits careful pricking?",
+      "choices": [
+        "Long ragged splits across the surface.",
+        "Deep channels reaching the filling.",
+        "Small neat holes without tears."
+      ],
+      "answer": 2,
+      "because": "The aim is controlled small openings rather than structural damage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A pastry patch puffed while the rest stayed flat. What would you change next time?",
+      "choices": [
+        "Prick the surface more evenly, including missed areas.",
+        "Make every existing hole much deeper.",
+        "Leave more of the base unpricked."
+      ],
+      "answer": 0,
+      "because": "An unpricked patch can still trap steam even when neighbouring areas have outlets.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

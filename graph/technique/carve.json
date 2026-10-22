@@ -4,6 +4,12 @@
   "names": {"en": "Carve", "fr": "Découper"},
   "aliases": {"en": ["carve a chicken", "carve a roast", "slice a roast"]},
   "does": "Cuts a rested roast or bird into portions, following the joints and cutting across the grain.",
+  "intro": {
+    "what": "A rested roast or bird is divided into portions along joints and across muscle fibres.",
+    "why": "Finding the natural structure lets you make clean slices without sawing through bones or leaving long chewy fibres.",
+    "idea": "Follow joints and cross fibres",
+    "tier": "drafted"
+  },
   "how": [
     "Rest the meat first, and catch its juices for the sauce.",
     "For a bird, cut through the skin between the leg and the body, bend the leg out and cut through the joint.",
@@ -24,6 +30,56 @@
     {
       "mistake": "Slicing with the grain, which makes tender meat chewy.",
       "fix": "Look for the lines of the fibres and cut across them."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why cut meat across its grain?",
+      "choices": [
+        "It keeps the fibres as long as possible.",
+        "It shortens the fibres in each slice.",
+        "It leaves the longest fibres running through each portion."
+      ],
+      "answer": 1,
+      "because": "Crosswise slicing breaks up the long direction of the muscle fibres.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you separate a bird leg in this method?",
+      "choices": [
+        "Saw directly through the middle of the bone.",
+        "Pull the skin off before locating the joint.",
+        "Bend it outward to find and cut through the joint."
+      ],
+      "answer": 2,
+      "because": "The joint provides a natural separation instead of forcing the knife through bone.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What suggests a clean carving stroke?",
+      "choices": [
+        "Neat slices and joints separating without sawing.",
+        "Ragged slices with crushed edges.",
+        "Bone splinters through every portion."
+      ],
+      "answer": 0,
+      "because": "Clean cuts follow the structure and use controlled strokes.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Slices feel chewy after cutting along visible fibres. What should change?",
+      "choices": [
+        "Make longer slices along the same fibres.",
+        "Cut across the fibre direction.",
+        "Use short crushing strokes along the grain."
+      ],
+      "answer": 1,
+      "because": "Changing direction shortens the fibres in the resulting slices.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

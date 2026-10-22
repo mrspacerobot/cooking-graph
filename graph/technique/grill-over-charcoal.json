@@ -4,6 +4,12 @@
   "names": {"en": "Grill over charcoal"},
   "aliases": {"en": ["charcoal grill", "grill over coals"]},
   "does": "Cooks skewered minced meat over glowing coals, turning it often, so that the outside takes a smoky crust while the inside stays juicy.",
+  "intro": {
+    "what": "This method grills skewered minced meat over glowing coals, turning it often for a smoky crust.",
+    "why": "It teaches you to manage coals, turning and flare-ups instead of exposing the skewers to tall flames.",
+    "idea": "Glowing coals, even turning",
+    "tier": "drafted"
+  },
   "how": [
     "Let the coals burn down until they are covered in grey ash and glow evenly, with no tall flame.",
     "Lay the skewers across the coals, close enough to sizzle at once.",
@@ -25,6 +31,52 @@
     {
       "mistake": "Pressing the meat flat on the grate, which squeezes out the juice.",
       "fix": "Leave it alone between turns."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why wait for glowing coals rather than tall flames?",
+      "choices": [
+        "To keep the surface from browning.",
+        "To develop a smoky crust without blackening the outside too quickly.",
+        "To let flames touch every side continuously."
+      ],
+      "answer": 1,
+      "because": "Open flame blackens the outside too quickly; evenly glowing coals provide the intended grilling heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you turn these skewers?",
+      "choices": [
+        "Only after the first side blackens.",
+        "Keep the same side facing the coals throughout.",
+        "Often, so every side colours."
+      ],
+      "answer": 2,
+      "because": "Frequent turning distributes the browning instead of letting a single side burn.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What appearance is the aim on the meat?",
+      "choices": [
+        "Browning and dark speckles without black patches.",
+        "A pale surface with no colour.",
+        "A black crust on the side facing the coals."
+      ],
+      "answer": 0,
+      "because": "The intended crust is browned and speckled, rather than burnt black.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Dripping fat causes a flare-up below the skewers. What would you do?",
+      "choices": ["Hold them closer to the flames.", "Move the skewers aside.", "Press the meat down onto the grate."],
+      "answer": 1,
+      "because": "Moving skewers aside keeps a flare from blackening their surface.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

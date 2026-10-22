@@ -4,6 +4,12 @@
   "names": {"en": "Fold a paratha"},
   "aliases": {"en": ["triangle fold for paratha", "fold paratha layers"]},
   "does": "Brushes a rolled round of atta dough with ghee, dusts it with a little flour, and folds it over on itself into a half-moon and then a triangle, so that the dough is stacked in thin layers with ghee between them. The folded piece is then rolled out again, lightly.",
+  "intro": {
+    "what": "Ghee-brushed atta dough is folded into a triangle and rolled lightly to preserve layers.",
+    "why": "The fat between folds keeps the sheets distinct. Heavy rolling can undo the structure by forcing the fat out and pressing dough together.",
+    "idea": "Keep fat between the folds",
+    "tier": "drafted"
+  },
   "how": [
     "Brush the whole rolled round with soft ghee and dust it with a little dry flour.",
     "Fold the round in half to a half-moon, brush the top with ghee again and dust it lightly.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Leaving the dough dry between the folds, so that the finished bread is tough and not flaky.",
       "fix": "Brush every fold with ghee, right to the edges."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why brush ghee between the folds?",
+      "choices": [
+        "To make the folded surfaces adhere into a firmer sheet.",
+        "To season only the outside after the dough is cooked.",
+        "To keep the stacked dough layers distinct."
+      ],
+      "answer": 2,
+      "because": "The fat separates the folded surfaces and supports the flaky structure.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the folded triangle be rolled?",
+      "choices": [
+        "Lightly with even strokes.",
+        "Forcefully until ghee squeezes from the edges.",
+        "Only by pressing hard into the centre."
+      ],
+      "answer": 0,
+      "because": "Gentle rolling spreads the dough while retaining the fat between its layers.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should a cut edge show?",
+      "choices": [
+        "A solid dough block with no visible layers.",
+        "Fine stripes of dough and ghee.",
+        "Dry broken crumbs around an empty centre."
+      ],
+      "answer": 1,
+      "because": "Visible stripes show that the folded surfaces remain separated.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The layers fused after ghee was squeezed out. What would you change on the next piece?",
+      "choices": [
+        "Press harder until no fat remains inside.",
+        "Leave the dough dry between every fold.",
+        "Roll with less pressure after folding."
+      ],
+      "answer": 2,
+      "because": "Reducing pressure protects the separating fat and the folded structure.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

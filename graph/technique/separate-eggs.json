@@ -4,6 +4,12 @@
   "names": {"en": "Separate eggs", "fr": "Séparer les œufs"},
   "aliases": {"en": ["separate", "separate an egg", "separate yolks from whites"], "fr": ["séparer"]},
   "does": "Parts the yolk of an egg from its white, so that each can be used alone: the yolks to enrich or thicken, the whites to whip.",
+  "intro": {
+    "what": "Separating eggs keeps yolks and whites apart for their different cooking roles.",
+    "why": "It teaches you to protect whites intended for whipping while reserving yolks for richness or thickening.",
+    "idea": "Keep yolks out of whites",
+    "tier": "drafted"
+  },
   "how": [
     "Set out a small bowl to separate over, and a larger bowl for the whites that are clean.",
     "Crack the egg on a flat surface, not on a rim, and open it over the small bowl with the yolk in one half of the shell.",
@@ -21,6 +27,56 @@
     {
       "mistake": "Cracking the egg on the rim of a bowl, which pushes in shell and breaks the yolk.",
       "fix": "Crack it on a flat surface."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why separate eggs for different preparations?",
+      "choices": [
+        "To use the whites for richness and the yolks as the only whipping part.",
+        "Yolks enrich or thicken while whites can be whipped.",
+        "To whip both parts together after checking their colour."
+      ],
+      "answer": 1,
+      "because": "Each part has useful properties that a recipe may need independently.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Why separate each egg over a small bowl first?",
+      "choices": [
+        "To mix any broken yolk into all the whites immediately.",
+        "To avoid needing a separate place for yolks.",
+        "To check the white before adding it to the collected whites."
+      ],
+      "answer": 2,
+      "because": "An isolated egg can be checked without contaminating the whole bowl with yolk.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suits whites intended for whipping?",
+      "choices": [
+        "Clear whites without yellow streaks.",
+        "Whites with a broken yolk mixed through.",
+        "A uniformly yellow liquid."
+      ],
+      "answer": 0,
+      "because": "Yellow streaks indicate yolk contamination, which interferes with whipping the whites.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Cracking eggs on a bowl rim keeps breaking yolks. What should change?",
+      "choices": [
+        "Strike harder against the sharp rim.",
+        "Crack them on a flat surface.",
+        "Open each egg directly into the collected whites."
+      ],
+      "answer": 1,
+      "because": "A flat cracking surface reduces the rim pushing shell inward and damaging the yolk.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

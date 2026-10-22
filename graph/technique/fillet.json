@@ -4,6 +4,12 @@
   "names": {"en": "Fillet", "fr": "Lever les filets"},
   "aliases": {"en": ["fillet a fish", "take off the fillets", "lift the fillets"], "fr": ["fileter"]},
   "does": "Cuts the flesh of a fish away from its bones in whole, clean pieces.",
+  "intro": {
+    "what": "Fish flesh is separated from the skeleton in whole pieces by following the bones.",
+    "why": "The skeleton guides the knife. Long controlled strokes retain more flesh and reduce the tearing caused by sawing.",
+    "idea": "Let the bones guide the blade",
+    "tier": "drafted"
+  },
   "how": [
     "Lay the fish flat. Cut behind the head and the fin, down to the backbone.",
     "Turn the blade flat and run it along the backbone toward the tail in long strokes, keeping it against the bones.",
@@ -23,6 +29,56 @@
     {
       "mistake": "Lifting the blade away from the bones, which leaves flesh behind.",
       "fix": "Keep the flat of the blade pressed against the backbone."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep the blade close to the backbone?",
+      "choices": [
+        "To cut more flesh away with the skeleton.",
+        "To remove the skin before separating the flesh from the ribs.",
+        "To separate the flesh without leaving much on the skeleton."
+      ],
+      "answer": 2,
+      "because": "Following the bones keeps the separation near the skeleton rather than deep in the flesh.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What kind of stroke is used along the backbone?",
+      "choices": [
+        "Long light strokes with a sharp flexible blade.",
+        "Short sawing strokes that push through the flesh.",
+        "Cuts made while lifting the blade away from the backbone."
+      ],
+      "answer": 0,
+      "because": "Long light strokes follow the bones without tearing the fillet.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests economical filleting?",
+      "choices": [
+        "A ragged fillet beside thick flesh on the skeleton.",
+        "A whole smooth-edged fillet and little flesh left on the skeleton.",
+        "Many torn fragments still attached to the bones."
+      ],
+      "answer": 1,
+      "because": "The result should preserve the fillet while limiting flesh left behind.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A thick strip of flesh remained on the backbone. What would you change on the next fillet?",
+      "choices": [
+        "Angle the blade farther into the flesh.",
+        "Pull the fillet away before completing the cut.",
+        "Keep the blade closer against the bones."
+      ],
+      "answer": 2,
+      "because": "Moving away from the skeleton leaves more flesh attached to it.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

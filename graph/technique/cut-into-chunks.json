@@ -4,6 +4,12 @@
   "names": {"en": "Cut into chunks"},
   "aliases": {"en": ["cut into bite-sized pieces", "cut into large pieces"]},
   "does": "Cuts a firm food into large, bite-sized pieces of about the same size, bigger and less exact than dice, so that they stay whole through a long simmer.",
+  "intro": {
+    "what": "Firm food is cut into substantial roughly equal pieces rather than precise small dice.",
+    "why": "Similar size helps the pieces soften together, while their larger shape suits a longer simmer without disappearing.",
+    "idea": "Robust pieces of similar size",
+    "tier": "drafted"
+  },
   "how": [
     "Peel the food if it needs peeling, and cut it in half or in long strips to get a flat base.",
     "Cut across into thick pieces that fit one mouthful.",
@@ -21,6 +27,56 @@
     {
       "mistake": "Cutting a hard squash held in the air, which slips.",
       "fix": "Cut it in halves on a steady board first."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use larger chunks for a long simmer?",
+      "choices": [
+        "They dissolve before smaller pieces.",
+        "They retain their shape better than tiny pieces.",
+        "They remove the need to consider size."
+      ],
+      "answer": 1,
+      "because": "Larger pieces suit cooking where small fragments might break down too soon.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should hard squash rest while being cut?",
+      "choices": [
+        "Held above the board while cutting.",
+        "Balanced on its rounded skin.",
+        "On a stable cut face on the board."
+      ],
+      "answer": 2,
+      "because": "A stable cut face keeps the squash from moving while it is divided.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the pile of chunks look like?",
+      "choices": [
+        "Blocky pieces of roughly similar size.",
+        "Fine shreds mixed with large wedges.",
+        "Perfect thin ribbons."
+      ],
+      "answer": 0,
+      "because": "The pieces need not be precise dice, but their scale should remain consistent.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Small pieces dissolved while large pieces stayed firm. What should change?",
+      "choices": [
+        "Add more tiny fragments among the large pieces.",
+        "Keep the chunks closer in size.",
+        "Make the size differences more pronounced."
+      ],
+      "answer": 1,
+      "because": "Similar size reduces the difference in how quickly the pieces soften.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

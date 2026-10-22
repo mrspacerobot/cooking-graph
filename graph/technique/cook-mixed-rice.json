@@ -4,6 +4,12 @@
   "names": {"en": "Cook rice with its flavourings"},
   "aliases": {"en": ["takikomi", "cook takikomi rice", "cook seasoned mixed rice"]},
   "does": "Cooks washed, soaked rice together with a seasoned stock and small pieces of vegetables, mushrooms or tofu, so that the taste cooks into every grain.",
+  "intro": {
+    "what": "Rice absorbs seasoned stock beneath scattered vegetables, mushrooms or tofu.",
+    "why": "Layering the additions above the rice lets the grains cook evenly before a final fold distributes the pieces.",
+    "idea": "Seasoned liquid beneath toppings",
+    "tier": "drafted"
+  },
   "how": [
     "Put the washed, soaked, drained rice in the pot or the rice cooker and level it.",
     "Pour in the seasoned stock, in place of plain water, up to the usual level. Stir once, then leave it still.",
@@ -23,6 +29,56 @@
     {
       "mistake": "Adding too much stock and seasoning, so that the rice is soft and salty.",
       "fix": "Use the same amount of liquid as for plain rice, counting the seasonings as part of it."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Where does the rice take up its seasoning in this method?",
+      "choices": [
+        "From the seasoned cooking stock.",
+        "Only from toppings added after cooking.",
+        "From rinsing after the grains are cooked."
+      ],
+      "answer": 0,
+      "because": "Seasoned stock replaces plain water so its flavour enters the rice during absorption.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should the cut additions go before cooking?",
+      "choices": [
+        "Stirred repeatedly through the rice as it cooks.",
+        "Scattered on top of the levelled rice.",
+        "Packed below the rice in a dense layer."
+      ],
+      "answer": 1,
+      "because": "The method leaves the additions above the rice until the final fold.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What shows the stock has coloured the rice?",
+      "choices": [
+        "Only dry topping pieces have colour.",
+        "Pale grain clumps sit in dark liquid.",
+        "The grains are evenly tinted."
+      ],
+      "answer": 2,
+      "because": "Even tinting is the appearance expected from cooking the rice in seasoned liquid.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Rice cooked unevenly after the pieces were mixed in early. What would you change next time?",
+      "choices": [
+        "Leave the additions on top and fold them through after resting.",
+        "Stir the additions through more often during cooking.",
+        "Compress the additions firmly into the uncooked grains."
+      ],
+      "answer": 0,
+      "because": "Delaying the mixing preserves the level rice bed during absorption.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

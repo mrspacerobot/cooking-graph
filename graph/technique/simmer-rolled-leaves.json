@@ -4,6 +4,12 @@
   "names": {"en": "Simmer rolled leaves"},
   "aliases": {"en": ["cook stuffed vine leaves", "simmer stuffed leaves", "simmer warak enab"]},
   "does": "Cooks filled, rolled leaves packed snugly seam down in a lined pot, weighed down with a plate, in a little oil, lemon juice and water. The leaves turn soft and tart and the rice inside swells and softens.",
+  "intro": {
+    "what": "Filled leaves simmer gently while packed snugly in a lined pot.",
+    "why": "It teaches you to support delicate rolls and manage liquid as the filling swells.",
+    "idea": "Support the rolls",
+    "tier": "drafted"
+  },
   "how": [
     "Line the base of a wide pot with slices of tomato or a few spare leaves, so that the rolls do not catch.",
     "Pack the rolls tightly, seam down, in circles, layer on layer, so that none can unroll.",
@@ -30,6 +36,56 @@
     {
       "mistake": "Cooking on a high heat, which splits the leaves and breaks the rolls.",
       "fix": "Keep the pot at a gentle simmer."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why pack the rolls snugly and weigh them with a plate?",
+      "choices": [
+        "To keep them from floating and unrolling.",
+        "To press the filling out into the liquid.",
+        "To expose each seam to stronger bubbling."
+      ],
+      "answer": 0,
+      "because": "Support from neighbouring rolls and the plate helps the wrappers stay closed.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Why line the pot base with spare leaves or tomato?",
+      "choices": [
+        "To increase direct contact with the hot metal.",
+        "To keep the rolls from catching on the base.",
+        "To replace the liquid entirely."
+      ],
+      "answer": 1,
+      "because": "A lining separates delicate wrappers from the pot surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended result?",
+      "choices": [
+        "Split wrappers floating in a watery pot.",
+        "Loose filling washed out between leaves.",
+        "Plump intact rolls with mostly absorbed liquid."
+      ],
+      "answer": 2,
+      "because": "The filling swells while the supported wrappers retain their shapes.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The wrappers split during vigorous cooking. What would you change next time?",
+      "choices": [
+        "Keep the liquid at a gentle simmer.",
+        "Maintain the boil and stir the rolls.",
+        "Remove the plate and increase bubbling."
+      ],
+      "answer": 0,
+      "because": "Gentler liquid movement reduces stress on the delicate leaves.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

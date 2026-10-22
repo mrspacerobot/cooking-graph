@@ -4,6 +4,12 @@
   "names": {"en": "Soak rice"},
   "aliases": {"en": ["soak the rice"]},
   "does": "Leaves washed rice in cold water until the grains have turned white and plump all through, so that they cook evenly and come out tender in the middle.",
+  "intro": {
+    "what": "This rice method soaks washed grains in cold water before draining and cooking in fresh measured water.",
+    "why": "It teaches you to recognise hydration and keep soaking separate from final cooking-liquid control.",
+    "idea": "Hydrate, then measure",
+    "tier": "drafted"
+  },
   "how": [
     "Put the washed, drained rice in the pot or in a bowl and cover it with cold water.",
     "Leave it until the grains turn from clear to chalky white.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Cooking it in the soaking water, so that the amount of water is wrong.",
       "fix": "Drain it and add the measured water."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why soak the washed rice in this method?",
+      "choices": [
+        "To dry out the grain centres.",
+        "To remove the need for cooking liquid.",
+        "To hydrate the centres for more even softening."
+      ],
+      "answer": 2,
+      "because": "Absorbed water reaches into the grains before cooking begins.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What happens after the rice has soaked?",
+      "choices": [
+        "Drain it and cook in fresh measured water.",
+        "Keep adding unmeasured water to the soaking bowl.",
+        "Cook it with whatever soaking water remains."
+      ],
+      "answer": 0,
+      "because": "Separating the soak from cooking allows the cooking water to be controlled deliberately.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which colour change shows hydration here?",
+      "choices": [
+        "Only the outside looks white while a glassy centre remains.",
+        "Glassy grains turn evenly chalky white.",
+        "Only dry white tips appear on transparent centres."
+      ],
+      "answer": 1,
+      "because": "These grains turn evenly chalky white as water reaches their interiors.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The final water amount is inconsistent after soaking. What should change?",
+      "choices": [
+        "Leave the soaking liquid and top it up by eye.",
+        "Add extra water every time without draining.",
+        "Drain the soaking water before adding measured cooking water."
+      ],
+      "answer": 2,
+      "because": "Removing variable leftover soaking water makes the next addition more consistent.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Warm crêpes in orange sauce", "fr": "Réchauffer les crêpes au beurre d'orange"},
   "aliases": {"en": ["crepes suzette method", "flame crepes in orange sauce"], "fr": ["flamber les crêpes Suzette"]},
   "does": "Folds cooked crepes into a hot sauce of caramel, orange and butter, warms them in it and sets a spirit alight over them at the end. The crepes soak up the sauce, and the flame burns off the harshness of the spirit.",
+  "intro": {
+    "what": "This crêpes Suzette method warms folded crêpes in a glossy orange-caramel butter sauce.",
+    "why": "It teaches you to balance sauce concentration and brief coating so delicate pancakes absorb flavour without tearing.",
+    "idea": "Coat without over-soaking",
+    "tier": "drafted"
+  },
   "how": [
     "Make the sauce first in a wide pan: stir the orange juice, some zest and the butter into a pale caramel and simmer until it is syrupy.",
     "Fold each crepe in half and in half again, to make a fan.",
@@ -28,6 +34,56 @@
     {
       "mistake": "Soaking the crepes for too long, so that they turn limp and tear.",
       "fix": "Warm them just long enough to coat them, and serve at once."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why warm the crêpes briefly in the sauce?",
+      "choices": [
+        "To coat and flavour them while preserving their structure.",
+        "To keep most of the sauce separate from their folds.",
+        "To make them crisp through prolonged heating."
+      ],
+      "answer": 0,
+      "because": "A brief warming lets the sauce cling and soak in without making the crêpes excessively limp.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the sauce coat the crêpes?",
+      "choices": [
+        "Stir them vigorously into small pieces.",
+        "Spoon it over and turn the folded crêpes gently.",
+        "Leave their upper surfaces dry throughout."
+      ],
+      "answer": 1,
+      "because": "Gentle turning and spooning coat both sides without rough handling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suits the orange sauce?",
+      "choices": [
+        "A thin puddle beneath bare dry crêpes.",
+        "A dark bitter coating of burnt caramel.",
+        "A glossy coating that clings to the crêpes."
+      ],
+      "answer": 2,
+      "because": "A syrupy sauce stays on the crêpes rather than simply running away.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The crêpes became limp and tore in the sauce. What would you change next time?",
+      "choices": [
+        "Warm them only long enough to coat and serve promptly.",
+        "Leave them soaking for longer.",
+        "Turn and press them more forcefully."
+      ],
+      "answer": 0,
+      "because": "Delicate crêpes soften as they absorb sauce, so limiting the soak protects their structure.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

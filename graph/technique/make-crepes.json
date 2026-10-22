@@ -4,6 +4,12 @@
   "names": {"en": "Make crepes", "fr": "Faire des crêpes"},
   "aliases": {"en": ["make a crepe", "cook crepes"], "fr": ["cuire les crêpes"]},
   "does": "Cooks a thin batter of flour, egg and milk in a hot buttered pan, a ladle at a time, into thin pancakes that are folded or rolled round a filling.",
+  "intro": {
+    "what": "Making crêpes spreads a thin batter across a hot, lightly buttered pan into soft pancakes.",
+    "why": "It teaches you to connect pouring consistency with quick pan movement and a thin, even result.",
+    "idea": "Thin batter, quick swirl",
+    "tier": "drafted"
+  },
   "how": [
     "Whisk the flour, the eggs and a little salt, then add the milk slowly, whisking, until the batter is smooth and as thin as pouring cream.",
     "Leave the batter to rest, so that the flour swells and the bubbles settle.",
@@ -26,6 +32,56 @@
       "fix": "Wait until the pan is hot, and treat the first crepe as a test."
     },
     {"mistake": "Adding all the milk at once, which leaves lumps.", "fix": "Add it slowly, whisking all the time."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why keep the crêpe batter thin?",
+      "choices": [
+        "So it stays in a thick mound in the pan.",
+        "So it spreads into a thin pancake rather than a heavy doughy layer.",
+        "So no pan movement is needed."
+      ],
+      "answer": 1,
+      "because": "A thin pouring consistency lets the batter spread; thick batter makes heavy crêpes.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What do you do immediately after adding batter?",
+      "choices": [
+        "Leave it as a mound before spreading later.",
+        "Press it with the spatula once the underside colours.",
+        "Tilt and swirl the pan to spread it to the edge."
+      ],
+      "answer": 2,
+      "because": "Quick tilting spreads the liquid batter before it sets in a thick patch.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which cue suggests the crêpe can be turned?",
+      "choices": [
+        "Edges lift and the underside is golden.",
+        "The whole surface is still liquid and pale.",
+        "The edge sticks flat beneath a wet centre."
+      ],
+      "answer": 0,
+      "because": "Lifting edges and a golden underside show the first face has formed enough to turn.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The batter is thick and produces heavy crêpes. What would you do?",
+      "choices": [
+        "Add more flour to make spreading easier.",
+        "Whisk in milk gradually until it pours like thin cream.",
+        "Leave the thick batter longer in the pan."
+      ],
+      "answer": 1,
+      "because": "Gradually loosening the batter corrects the cause of a heavy, doughy layer.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "ingredient/flour", "tier": "drafted"}

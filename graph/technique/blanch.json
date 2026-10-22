@@ -4,6 +4,12 @@
   "names": {"en": "Blanch", "fr": "Blanchir"},
   "aliases": {"en": ["parboil"]},
   "does": "Plunges food briefly into boiling water, to clean bones, loosen skins or set the colour of green vegetables.",
+  "intro": {
+    "what": "Blanching briefly treats food in water, with different starts for bones and green vegetables.",
+    "why": "The purpose determines the method: preparing bones differs from brightening vegetables before later cooking.",
+    "idea": "Purpose changes the start",
+    "tier": "drafted"
+  },
   "how": [
     "For bones, cover them with cold water, bring it to a boil, then drain them and rinse off the scum.",
     "For vegetables, drop them into fast-boiling salted water.",
@@ -20,6 +26,52 @@
     {
       "mistake": "Leaving vegetables in until they are tender, when they were only meant to be set.",
       "fix": "Take them out early. They are cooked again later."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why blanch green vegetables in this method?",
+      "choices": [
+        "To make them fully soft before their later cooking.",
+        "To develop a roasted flavour on the surface.",
+        "To brighten them before later cooking."
+      ],
+      "answer": 2,
+      "because": "Here blanching prepares colour and texture; it is not intended to replace later cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do green vegetables enter the water here?",
+      "choices": [
+        "Into already boiling water, followed by prompt cooling.",
+        "Under cold water that warms slowly.",
+        "Into water after the heat has been turned off."
+      ],
+      "answer": 0,
+      "because": "The vegetable branch of this method uses boiling water and immediate cooling; the bone branch starts differently.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What visual change guides removal of green vegetables?",
+      "choices": ["Their edges turn brown.", "Their colour becomes vivid.", "Their surface becomes dry and wrinkled."],
+      "answer": 1,
+      "because": "Brightening is the cue for this brief preparatory treatment.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Vegetables became very soft during blanching. What should change?",
+      "choices": [
+        "Leave them longer before cooling.",
+        "Keep them in the warm draining water.",
+        "Lift them earlier and cool them promptly."
+      ],
+      "answer": 2,
+      "because": "This blanching step aims to prepare the vegetables without taking them through the later cooking stage.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

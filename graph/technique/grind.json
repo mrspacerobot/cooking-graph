@@ -4,6 +4,12 @@
   "names": {"en": "Grind", "fr": "Moudre"},
   "aliases": {"en": ["grind to a powder", "grind to a paste", "grind fine"], "fr": ["broyer"]},
   "does": "Breaks hard or firm food down to a powder, a coarse meal or a paste, by crushing it in a mortar, milling it in a grinder or running it through a blade, so that it blends into a dish or binds into a dough.",
+  "intro": {
+    "what": "Grinding breaks firm food into a powder, meal or paste suited to the dish.",
+    "why": "It teaches you to control batch size, heat and added liquid so the texture stays even.",
+    "idea": "Match the grind to the dish",
+    "tier": "drafted"
+  },
   "how": [
     "Dry whole spices lightly in a warm pan first, so that they grind finer and smell stronger, then let them cool.",
     "Soak dried pulses and drain them well before grinding them, and cut meat into strips and chill it first.",
@@ -28,6 +34,56 @@
     {
       "mistake": "Adding too much liquid to a paste, which turns it to soup.",
       "fix": "Add a spoonful at a time and stop as soon as it turns."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What determines when to stop grinding?",
+      "choices": [
+        "The longest time the machine can run.",
+        "A completely smooth result for every food.",
+        "The powder, meal or paste texture the dish needs."
+      ],
+      "answer": 2,
+      "because": "Grinding can produce different textures; stop at the texture needed rather than always making a smooth paste.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you run a grinder for these foods?",
+      "choices": [
+        "In short bursts with small batches.",
+        "Continuously with the bowl packed full.",
+        "Until the bowl feels warm, then add more food."
+      ],
+      "answer": 0,
+      "because": "Small batches and short bursts limit heating and help the grind stay even.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What suggests an uneven grind?",
+      "choices": [
+        "An even powder without whole pieces.",
+        "Dust mixed with pieces still left whole.",
+        "A paste that holds together when pressed."
+      ],
+      "answer": 1,
+      "because": "Whole pieces among dust show that some food has ground much faster than the rest.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The paste has become too thin after adding liquid. What would you change next time?",
+      "choices": [
+        "Pour all the liquid in before starting.",
+        "Keep adding liquid after the paste moves freely.",
+        "Add liquid gradually and stop when the blades turn."
+      ],
+      "answer": 2,
+      "because": "Only enough liquid to keep the blades moving is needed; excess turns the paste into soup.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

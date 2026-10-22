@@ -4,6 +4,12 @@
   "names": {"en": "Grate daikon"},
   "aliases": {"en": ["daikon oroshi", "grate Japanese radish"]},
   "does": "Grates a daikon on a fine grater into a wet, light, snowy mound, which is eaten raw beside rich or grilled food to freshen the mouth.",
+  "intro": {
+    "what": "This method finely grates daikon into a light, juicy mound for serving alongside rich food.",
+    "why": "It teaches you to preserve a fresh texture by draining lightly and grating close to serving.",
+    "idea": "Keep the fresh juice",
+    "tier": "drafted"
+  },
   "how": [
     "Peel the daikon, or leave the skin on if it is tender, and cut it into a piece that is easy to hold.",
     "Grate it with firm, even strokes on the finest side of the grater, in one direction.",
@@ -17,6 +23,48 @@
   "mistakes": [
     {"mistake": "Grating long ahead, so that it turns bitter and watery.", "fix": "Grate it just before serving."},
     {"mistake": "Squeezing it dry, which leaves it harsh.", "fix": "Drain it lightly only."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture should this grated daikon retain?",
+      "choices": ["A tightly squeezed dry mass.", "A soft, juicy mound.", "Long, coarse dry shreds."],
+      "answer": 1,
+      "because": "Light draining preserves the wet, light texture of finely grated daikon.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you drain it?",
+      "choices": [
+        "Twist it hard in a cloth until dry.",
+        "Leave it soaking in its juice for a long time.",
+        "Let some juice run through a sieve without pressing it dry."
+      ],
+      "answer": 2,
+      "because": "Gentle draining removes a little juice while keeping the mound fresh and juicy.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches this preparation?",
+      "choices": ["A soft, wet, white mound.", "A compact dry block.", "Broad ribbons that keep their shape."],
+      "answer": 0,
+      "because": "Fine grating produces a soft snowy mound, rather than coarse ribbons.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The daikon became bitter and watery after waiting. What would you change next time?",
+      "choices": [
+        "Grate it further ahead to drain longer.",
+        "Grate it just before serving.",
+        "Squeeze it completely dry before storing."
+      ],
+      "answer": 1,
+      "because": "Grating long ahead can spoil the fresh taste and texture; prepare it close to serving.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "ingredient/daikon", "tier": "drafted"}

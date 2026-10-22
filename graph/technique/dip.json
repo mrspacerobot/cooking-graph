@@ -4,6 +4,12 @@
   "names": {"en": "Dip"},
   "aliases": {"en": ["dip in coffee", "dip the biscuits"]},
   "does": "Passes a dry, absorbent biscuit or slice through a liquid for a moment only, so that the outside takes up flavour and softens while the centre stays dry enough to hold the dish together.",
+  "intro": {
+    "what": "An absorbent biscuit or slice passes through flavouring liquid without becoming saturated.",
+    "why": "The surface takes up flavour while enough firmness remains to support the assembled dish. Dipping is different from leaving the piece to soak.",
+    "idea": "Flavour with retained structure",
+    "tier": "drafted"
+  },
   "how": [
     "Pour the liquid into a shallow dish wide enough to take a whole piece, and let it cool if it is hot.",
     "Hold each piece flat and pass it through the liquid in one quick motion, turning it once.",
@@ -22,6 +28,52 @@
     {
       "mistake": "Dipping into a hot liquid, which soaks the biscuit before it can be lifted.",
       "fix": "Let the liquid cool first."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why lift the biscuit before it becomes soaked throughout?",
+      "choices": [
+        "It needs to soften until it cannot be lifted intact.",
+        "It needs enough firmness to hold the dish together.",
+        "It should absorb liquid equally through the centre before assembly."
+      ],
+      "answer": 1,
+      "because": "The method aims for a flavoured surface while retaining a supporting centre.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen to hot dipping liquid before use?",
+      "choices": ["Keep it hot to speed absorption.", "Rewarm it before dipping each piece.", "Let it cool."],
+      "answer": 2,
+      "because": "Hot liquid soaks the absorbent piece too quickly for the intended controlled dip.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should a dipped piece feel like?",
+      "choices": [
+        "Damp outside but still firm when pressed.",
+        "Limp and unable to hold its shape.",
+        "Wet through to the centre and bending under its own weight."
+      ],
+      "answer": 0,
+      "because": "Retained firmness distinguishes a controlled dip from saturation.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The biscuit became mush while sitting in the liquid. What should change?",
+      "choices": [
+        "Leave the next biscuit submerged longer.",
+        "Pass it through and lift it straight into the dish.",
+        "Press the next biscuit firmly into the liquid."
+      ],
+      "answer": 1,
+      "because": "Prompt lifting limits how much liquid the absorbent piece takes up.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

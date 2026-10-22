@@ -4,6 +4,12 @@
   "names": {"en": "Stuff under the skin", "fr": "Glisser sous la peau"},
   "aliases": {"en": ["slide under the skin", "stuff beneath the skin"], "fr": ["farcir sous la peau"]},
   "does": "Slides a flavouring, such as slices of truffle or a soft herb butter, between the skin and the flesh of a bird, so that it seasons the meat directly and keeps the breast moist as it cooks.",
+  "intro": {
+    "what": "This method lays flavouring between a bird’s skin and flesh without tearing the skin.",
+    "why": "It teaches you to separate a delicate layer gently and distribute flavouring without lumps.",
+    "idea": "Lift gently, spread evenly",
+    "tier": "drafted"
+  },
   "how": [
     "Dry the bird well. Start at the neck end and work a finger gently between the skin and the breast, then loosen the skin over the whole breast and a little way down the legs, without tearing it.",
     "Season the flesh under the skin.",
@@ -23,6 +29,56 @@
     {
       "mistake": "Pushing in a lumpy filling that leaves gaps and slides about.",
       "fix": "Use thin flat slices, or a soft smooth butter spread evenly."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Where does the flavouring go in this method?",
+      "choices": [
+        "Only inside the bird’s cavity.",
+        "Between the skin and flesh.",
+        "Only on the outer surface of the skin."
+      ],
+      "answer": 1,
+      "because": "The loosened space places flavouring directly against the flesh beneath the skin.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the skin be loosened?",
+      "choices": [
+        "Pull sharply with a fingernail.",
+        "Cut deep parallel slits through the flesh.",
+        "Work a finger gently under it without tearing."
+      ],
+      "answer": 2,
+      "because": "Slow fingertip work separates the layers while preserving a covering for the filling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests even placement?",
+      "choices": [
+        "A flat pattern of flavouring without bare patches.",
+        "A large lump at the neck with empty areas below.",
+        "Loose filling protruding through skin tears."
+      ],
+      "answer": 0,
+      "because": "Even coverage distributes the flavouring rather than concentrating it in a moving lump.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Lumpy filling slides around beneath the skin. What should change?",
+      "choices": [
+        "Push in larger hard pieces.",
+        "Use thin flat slices or soft butter spread evenly.",
+        "Leave the lumps near the opening."
+      ],
+      "answer": 1,
+      "because": "A flat smooth filling makes closer contact and is easier to retain under the skin.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

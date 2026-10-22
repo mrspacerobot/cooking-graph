@@ -4,6 +4,12 @@
   "names": {"en": "Grind sesame"},
   "aliases": {"en": ["grind sesame seeds", "grind toasted sesame", "suribachi grind"]},
   "does": "Toasts sesame seeds until they are fragrant, then grinds them in a ridged bowl to a rough, oily paste with some seeds left half whole, ready to coat vegetables or to thicken a dressing.",
+  "intro": {
+    "what": "This method toasts sesame and grinds it into a rough, oily paste for dressings and vegetables.",
+    "why": "It shows how to develop a nutty scent while retaining some seed texture instead of making a greasy paste.",
+    "idea": "Stop before a smooth paste",
+    "tier": "drafted"
+  },
   "how": [
     "Toast the seeds in a dry pan, shaking them, until they smell nutty and begin to pop.",
     "Tip them into the ridged bowl while they are still warm.",
@@ -19,6 +25,56 @@
     {
       "mistake": "Grinding too long, which turns the paste greasy and pasty.",
       "fix": "Stop while the seeds are still half whole."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why toast sesame before grinding it here?",
+      "choices": [
+        "To keep the seeds pale and raw-tasting.",
+        "To develop a nutty scent and fuller taste.",
+        "To dry out all the oil in the seeds."
+      ],
+      "answer": 1,
+      "because": "Toasting brings out the nutty scent missing from raw ground seeds.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you work the seeds in the ridged bowl?",
+      "choices": [
+        "Tap lightly without pressing against the ridges.",
+        "Wait until cold and stir without crushing.",
+        "Press and grind in circles while they are still warm."
+      ],
+      "answer": 2,
+      "because": "Pressing against the ridges breaks the toasted seeds into a rough paste.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which texture should remain in the ground sesame?",
+      "choices": [
+        "A damp, oily paste with some seeds still partly whole.",
+        "A completely smooth, greasy paste.",
+        "Loose dry seeds without any crushed paste."
+      ],
+      "answer": 0,
+      "because": "This method stops with a rough texture and some visible seeds, rather than grinding everything smooth.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The paste has become greasy and pasty. What would you change next time?",
+      "choices": [
+        "Grind longer to absorb the oil.",
+        "Stop grinding while some seeds remain partly whole.",
+        "Skip toasting and grind until smooth."
+      ],
+      "answer": 1,
+      "because": "Overgrinding loses the intended rough seed texture and makes the paste greasy.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

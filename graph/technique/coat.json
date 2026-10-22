@@ -7,6 +7,12 @@
     "fr": ["enrober de chapelure"]
   },
   "does": "Covers a piece of meat in a layer of breadcrumbs over a sticky coat of mustard or beaten egg, which turns into a crisp crust when the piece is cooked.",
+  "intro": {
+    "what": "A thin layer of mustard or egg holds breadcrumbs around a piece of meat.",
+    "why": "The surface must support the crumbs without becoming slippery. This makes preparation as important as pressing the coating on.",
+    "idea": "A binder beneath crumbs",
+    "tier": "drafted"
+  },
   "how": [
     "Pat the pieces dry and season them.",
     "Brush a thin, even layer of mustard or beaten egg over every side, so that the crumbs have something to hold to.",
@@ -23,6 +29,48 @@
       "fix": "Brush on a thin, even layer."
     },
     {"mistake": "Coating wet meat, so that the crumbs go soggy and fall off.", "fix": "Pat the meat dry first."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does the mustard or egg layer do here?",
+      "choices": [
+        "Gives the breadcrumbs a surface to cling to.",
+        "Keeps the crumbs dry by preventing any adhesion.",
+        "Makes the crumbs slide freely over the meat."
+      ],
+      "answer": 0,
+      "because": "The sticky film connects the dry crumbs to the prepared surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What comes before applying the binder?",
+      "choices": ["Wet the pieces thoroughly.", "Pat the pieces dry.", "Pack crumbs onto the unprepared surface."],
+      "answer": 1,
+      "because": "A dry starting surface helps the binder and crumbs adhere.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should happen when the coated piece is lifted?",
+      "choices": [
+        "The coating slides away in a wet sheet.",
+        "Most crumbs fall from bare patches.",
+        "The crumbs stay attached."
+      ],
+      "answer": 2,
+      "because": "Clinging crumbs show that the binder and coating have made contact.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A thick mustard layer slides off with the crumbs. What should change?",
+      "choices": ["Apply a thinner even film.", "Add a thicker mustard layer.", "Wet the meat before brushing."],
+      "answer": 0,
+      "because": "Excess binder becomes a slippery layer rather than an adhesive film.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "ingredient/pork-shoulder", "tier": "drafted"},

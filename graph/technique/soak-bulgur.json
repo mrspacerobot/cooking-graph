@@ -4,6 +4,12 @@
   "names": {"en": "Soak bulgur", "fr": "Faire gonfler le boulgour"},
   "aliases": {"en": ["soak the bulgur", "soak fine bulgur", "hydrate bulgur"], "fr": ["tremper le boulgour"]},
   "does": "Leaves fine bulgur in just enough cool liquid for the grains to swell and turn tender, with no cooking at all. The liquid can be water, lemon juice or the juice of tomatoes, and it flavours the grain as it goes in.",
+  "intro": {
+    "what": "Fine bulgur softens by absorbing cool water or flavourful vegetable juices.",
+    "why": "It teaches you how grain size and measured moisture change texture without simmering.",
+    "idea": "Fine grain, gentle absorption",
+    "tier": "drafted"
+  },
   "how": [
     "Rinse the bulgur in a sieve and let the water run off. Tip it into a bowl.",
     "Pour over cool water, or lemon juice or tomato juice, to just cover the grains. They take up the liquid as they swell.",
@@ -22,6 +28,52 @@
     {
       "mistake": "Soaking coarse bulgur the same way, which leaves it hard.",
       "fix": "Coarse grades are simmered. Only the fine grades are soaked."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Which bulgur suits this cool-soaking method?",
+      "choices": ["Fine bulgur.", "Coarse bulgur used without further cooking.", "Any grade treated identically."],
+      "answer": 0,
+      "because": "Fine grains soften by this method, whereas coarse grades need a different cooking approach.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should liquid be added?",
+      "choices": [
+        "Drown the grains and serve them with the excess.",
+        "Use enough to cover the grains, then press out any remaining liquid.",
+        "Add no liquid until after mixing the salad."
+      ],
+      "answer": 1,
+      "because": "Controlled liquid absorption avoids leaving the final dish watery.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which bite suggests fine bulgur has softened?",
+      "choices": [
+        "Soft outside with a hard dry centre.",
+        "A soggy paste without separate grains.",
+        "Tender with a slight chew and no dry core."
+      ],
+      "answer": 2,
+      "because": "A slight chew preserves texture while the dry core should have hydrated.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The bulgur makes the salad watery. What should change?",
+      "choices": [
+        "Use less soaking liquid and drain and press the grains.",
+        "Add more liquid to loosen them further.",
+        "Mix the salad before any absorption occurs."
+      ],
+      "answer": 0,
+      "because": "Limiting free liquid prevents hydrated grains from carrying a puddle into the salad.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Coat in starch"},
   "aliases": {"en": ["dust with starch", "coat in potato starch", "dredge in starch"]},
   "does": "Dusts a piece of food, often after it has been marinated, in a thin layer of potato starch or cornstarch just before frying. It fries to a crisp, light, pale crust.",
+  "intro": {
+    "what": "Food receives a thin dry starch coating immediately before frying.",
+    "why": "The amount and timing of coating matter: loose starch or absorbed moisture can turn a light crust heavy and gluey.",
+    "idea": "A thin dry starch film",
+    "tier": "drafted"
+  },
   "how": [
     "Pat the food dry and shake off any marinade that is dripping.",
     "Tip the starch into a tray and turn each piece in it, pressing lightly.",
@@ -17,6 +23,52 @@
   "mistakes": [
     {"mistake": "Coating too thickly, which turns gluey and heavy.", "fix": "Shake off the loose starch."},
     {"mistake": "Coating long before frying, so that the starch gets wet.", "fix": "Coat right before the oil."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What crust is this coating intended to produce?",
+      "choices": ["A thick gluey layer.", "A soft soaked paste.", "A light crisp crust."],
+      "answer": 2,
+      "because": "A thin starch film fries differently from a heavy damp coating.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What should happen after turning the food in starch?",
+      "choices": [
+        "Tap away loose starch and fry promptly.",
+        "Pile on more starch and leave it standing.",
+        "Soak the coated food before frying."
+      ],
+      "answer": 0,
+      "because": "Removing excess and frying promptly help keep the coating thin and dry.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended coating?",
+      "choices": [
+        "Thick ridges with damp clumps.",
+        "Thin, dry and even without wet patches.",
+        "A glossy paste sliding off the food."
+      ],
+      "answer": 1,
+      "because": "A dry even film shows the starch has not become a heavy wet layer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The starch turned wet while waiting. What should change?",
+      "choices": [
+        "Coat earlier so it absorbs more moisture.",
+        "Leave the pieces pressed together after coating.",
+        "Coat closer to frying."
+      ],
+      "answer": 2,
+      "because": "Moisture reaches the starch as it waits, so timing the coating near frying preserves its texture.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/lean-fish", "tier": "drafted"},

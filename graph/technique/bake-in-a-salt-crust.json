@@ -4,6 +4,12 @@
   "names": {"en": "Bake in a salt crust", "fr": "Cuire en croûte de sel"},
   "aliases": {"en": ["salt-bake", "bake in salt", "cook in a salt crust"]},
   "does": "Seals food inside a shell of damp salt, so that it cooks in its own steam and is seasoned gently through its skin.",
+  "intro": {
+    "what": "Damp salt forms a firm shell around food with its skin left on.",
+    "why": "The shell contains steam. Understanding the barrier helps you distinguish the crust around the food from a coating meant to be eaten.",
+    "idea": "Containing steam",
+    "tier": "drafted"
+  },
   "how": [
     "Mix coarse salt with enough egg white or water for it to feel like wet sand.",
     "Spread a bed of the salt on a tray, lay the food on it with its skin on, and pack the rest of the salt over it until nothing shows.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Leaving a gap in the crust, so that the steam escapes and the food dries.",
       "fix": "Patch every crack with more damp salt before it goes into the oven."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the salt shell intended to contain?",
+      "choices": [
+        "Hot dry air circulating directly over exposed flesh.",
+        "Steam from the food inside.",
+        "Extra salt intended to mix through the whole filling."
+      ],
+      "answer": 1,
+      "because": "The enclosing shell keeps steam around the food instead of letting it escape freely.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the damp salt be packed before baking?",
+      "choices": [
+        "Only beneath the food as a loose bed.",
+        "In scattered patches over exposed flesh.",
+        "Around the food with no exposed gaps."
+      ],
+      "answer": 2,
+      "because": "A continuous shell provides the enclosure this method relies on.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What tells you that the shell itself has hardened?",
+      "choices": [
+        "It looks dry and sounds hollow when tapped.",
+        "It still feels like loose damp sand.",
+        "It stays pliable and bends without cracking."
+      ],
+      "answer": 0,
+      "because": "A hollow sound and a dry surface are cues about the texture of the salt shell.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A gap is visible before the tray enters the oven. What should you do?",
+      "choices": [
+        "Leave it open as a steam vent.",
+        "Patch it with damp salt.",
+        "Brush the gap with oil instead of closing it."
+      ],
+      "answer": 1,
+      "because": "Closing gaps preserves the steam-containing shell.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

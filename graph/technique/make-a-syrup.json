@@ -4,6 +4,12 @@
   "names": {"en": "Make a syrup"},
   "aliases": {"en": ["make syrup", "boil a syrup", "make a sugar syrup"]},
   "does": "Dissolves sugar in water over heat and simmers it briefly to a clear, lightly thick liquid, which soaks into pastry, sweetens fruit and drinks, or glazes a cake.",
+  "intro": {
+    "what": "This syrup method dissolves sugar in water and lightly thickens it while keeping it clear.",
+    "why": "It teaches you to distinguish a pale syrup from caramel and anticipate thickening as it cools.",
+    "idea": "Keep it clear",
+    "tier": "drafted"
+  },
   "how": [
     "Put the sugar and the water in a saucepan, with a strip of lemon peel or a stick of cinnamon if the syrup is to be flavoured.",
     "Stir over a gentle heat until every grain has dissolved, then stop stirring.",
@@ -24,6 +30,56 @@
     {
       "mistake": "Boiling on until the syrup browns, which makes a caramel and not a syrup.",
       "fix": "Take it off the heat while it is still clear and pale."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What distinguishes this syrup from caramel?",
+      "choices": [
+        "It stays clear and pale instead of browning.",
+        "It develops a deep amber colour.",
+        "It has a deliberately toasted, bitter flavour."
+      ],
+      "answer": 0,
+      "because": "This syrup is taken off the heat while pale; browning would turn it towards caramel.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should you stop stirring the sugar and water?",
+      "choices": [
+        "Only after the syrup has browned.",
+        "Once every grain has dissolved.",
+        "Keep stirring throughout the boiling stage."
+      ],
+      "answer": 1,
+      "because": "Stirring after boiling can throw sugar onto the sides and encourage crystallisation.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What appearance shows the sugar has dissolved?",
+      "choices": [
+        "White grains remaining beneath the liquid.",
+        "A cloudy mass of sugar crystals.",
+        "Clear liquid without grains at the bottom."
+      ],
+      "answer": 2,
+      "because": "Clear liquid without grains shows the sugar has dissolved rather than remaining crystalline.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The syrup has become too thick after cooling. What would you change next time?",
+      "choices": [
+        "Stop heating while it is still lightly thickened.",
+        "Boil until it is very thick while hot.",
+        "Wait for amber colour before stopping."
+      ],
+      "answer": 0,
+      "because": "Syrup thickens further as it cools, so leave room for that change.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -4,6 +4,12 @@
   "names": {"en": "Cook a paratha"},
   "aliases": {"en": ["cook paratha on a tava", "fry a paratha on the plate"]},
   "does": "Cooks a folded and lightly rolled round of atta dough on a hot iron plate, spooning a little ghee over one face and then the other, until each face is golden in spots and the layers inside have set apart, flaky and soft. The bread stays on the plate from start to end.",
+  "intro": {
+    "what": "Folded atta dough cooks on a hot plate with ghee applied as its faces turn.",
+    "why": "Gentle pressure and fat preserve the layered structure, so the finished bread can separate into soft flaky layers.",
+    "idea": "Cooking distinct bread layers",
+    "tier": "drafted"
+  },
   "how": [
     "Heat the iron plate until a sprinkle of flour dropped on it browns slowly.",
     "Lay the bread on the plate and cook until the first face is dry in spots and the bread has turned pale and a little puffy.",
@@ -24,6 +30,56 @@
     {
       "mistake": "Pressing hard on the bread, which squeezes the layers together.",
       "fix": "Press only gently at the edges, and crush it lightly after cooking."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What texture should the folded layers retain?",
+      "choices": [
+        "They should separate rather than compress into a dense sheet.",
+        "They should merge into a stiff solid centre.",
+        "They should remain coated in dry flour."
+      ],
+      "answer": 0,
+      "because": "The folding and fat create layers that cooking should preserve.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where is pressure applied while the paratha cooks?",
+      "choices": [
+        "Hard across the whole centre.",
+        "Gently at the edges.",
+        "Firmly across both faces after every turn."
+      ],
+      "answer": 1,
+      "because": "Gentle edge pressure helps contact without squeezing the layers together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which cue shows the layers have remained distinct?",
+      "choices": [
+        "The bread is flat and leathery with sealed edges.",
+        "The faces remain pale and wet.",
+        "They lift at the edges and spring apart when pressed."
+      ],
+      "answer": 2,
+      "because": "Lifting edges and separating layers match the intended flaky structure.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The layers became dense after hard pressing. What would you change next time?",
+      "choices": [
+        "Use gentler edge pressure.",
+        "Press harder across the centre.",
+        "Flatten the bread firmly after every turn."
+      ],
+      "answer": 0,
+      "because": "Heavy pressure compresses the structure the folded dough was meant to retain.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

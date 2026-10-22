@@ -4,6 +4,12 @@
   "names": {"en": "Pan-fry", "fr": "Poêler"},
   "aliases": {"en": ["fry", "shallow-fry", "fry in a pan"]},
   "does": "Cooks a flat piece of food in a thin layer of hot fat, turning it once.",
+  "intro": {
+    "what": "Pan-frying cooks a flat piece in a thin layer of hot fat.",
+    "why": "It teaches you to leave the surface in contact with the pan long enough to develop colour before turning.",
+    "idea": "Let the surface colour",
+    "tier": "drafted"
+  },
   "how": [
     "Heat a film of fat in the pan over medium heat.",
     "Lay the food in, away from you, and leave it alone.",
@@ -18,6 +24,52 @@
     {
       "mistake": "Turning the food again and again, so that it never browns.",
       "fix": "Turn it once. If it sticks, it is not ready to turn."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why leave a flat piece undisturbed at first when pan-frying?",
+      "choices": [
+        "To give the underside time to brown.",
+        "To keep the underside pale.",
+        "To let the underside absorb as much fat as possible."
+      ],
+      "answer": 0,
+      "because": "Steady pan contact lets the underside develop colour before it is turned.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How is the pan prepared for this method?",
+      "choices": [
+        "Fill it deeply enough to submerge the food.",
+        "Heat a thin film of fat over medium heat.",
+        "Start with a dry cold pan and no fat."
+      ],
+      "answer": 1,
+      "because": "A film of hot fat supports shallow surface cooking rather than deep-frying.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which sound suits gentle pan-frying?",
+      "choices": ["Loud irregular spitting.", "Complete silence around wet food.", "A steady gentle sizzle."],
+      "answer": 2,
+      "because": "A gentle sizzle fits the intended moderate heat; spitting can point to excess heat or surface water.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Repeated turning is interrupting browning. What should change?",
+      "choices": [
+        "Let the underside colour before turning.",
+        "Turn even more frequently.",
+        "Keep lifting and pressing the piece."
+      ],
+      "answer": 0,
+      "because": "Giving the surface uninterrupted pan contact allows colour to develop instead of repeatedly disturbing it.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

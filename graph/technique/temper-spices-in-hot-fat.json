@@ -18,6 +18,12 @@
     ]
   },
   "does": "Fries whole seeds, dried chillies and leaves in a little very hot fat until they crackle, darken a shade and give up their scent, then pours the scented fat and the spices over the food. Done at the start it is the base that onions and vegetables cook in. Done at the end it is a last layer of flavour poured over a finished dish.",
+  "intro": {
+    "what": "Spice tempering releases the aroma of seeds and other aromatics into hot fat.",
+    "why": "It teaches you to stagger ingredients by how quickly they colour and carry their flavour into a dish.",
+    "idea": "Scent the fat in stages",
+    "tier": "drafted"
+  },
   "how": [
     "Heat a small amount of ghee or oil in a small pan until it shimmers and a single seed dropped in sizzles at once.",
     "Add the slowest seeds first: mustard seed, which will crackle and jump, and any split lentils that should turn golden. Cover the pan with a lid if they leap out.",
@@ -53,6 +59,52 @@
     {
       "mistake": "Dropping wet curry leaves into the fat, which makes it spit.",
       "fix": "Pat the leaves dry first and stand back as they go in."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why temper spices in fat?",
+      "choices": [
+        "To soften the spices mainly by absorbing water.",
+        "To keep the scented fat separate and discard it before serving.",
+        "To carry their released aroma into the dish."
+      ],
+      "answer": 2,
+      "because": "The fragrant fat and spices are added together as a flavour base or finishing layer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should fast-burning ingredients such as asafoetida be added?",
+      "choices": [
+        "Late, when the slower seeds have had their turn.",
+        "Before all the whole seeds over strong heat.",
+        "At the start and left while seeds finish."
+      ],
+      "answer": 0,
+      "because": "Staggering the additions avoids burning delicate ingredients while tougher seeds heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which smell signals that tempering has gone too far?",
+      "choices": ["A warm nutty aroma.", "A sharp acrid smell.", "A rising fragrant spice scent."],
+      "answer": 1,
+      "because": "Acrid aromas indicate scorched spices rather than the intended fragrant bloom.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The seeds darkened and turned bitter in the pan. What would you change next time?",
+      "choices": [
+        "Leave the spices in the hot pan after removing heat.",
+        "Keep heating until the popping becomes stronger.",
+        "Remove the pan promptly and pour out the fragrant fat."
+      ],
+      "answer": 2,
+      "because": "Both direct heat and retained pan heat can push coloured spices into scorching.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

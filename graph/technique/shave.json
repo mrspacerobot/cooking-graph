@@ -4,6 +4,12 @@
   "names": {"en": "Shave"},
   "aliases": {"en": ["sasagaki", "shave into slivers"]},
   "does": "Whittles a long root into thin, curled slivers, turning it against the knife as a pencil is sharpened. The slivers cook fast and keep a crunch.",
+  "intro": {
+    "what": "This root-shaving method whittles thin curled slivers while turning the root.",
+    "why": "It teaches you to control thickness and protect freshly cut surfaces from browning.",
+    "idea": "Thin curled slivers",
+    "tier": "drafted"
+  },
   "how": [
     "Scrub the root and scrape off the skin, but not too hard, as most of the taste lies just under it.",
     "Hold the root at a slant and turn it against the knife, taking thin slivers as it turns.",
@@ -20,6 +26,48 @@
       "fix": "Let them fall into water as they are cut."
     },
     {"mistake": "Cutting thick slivers, which stay hard.", "fix": "Shave them thin."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What cut does this root-shaving method aim for?",
+      "choices": ["Thick square chunks.", "Thin slightly curled slivers.", "Wide flat slabs of uneven thickness."],
+      "answer": 1,
+      "because": "Turning the angled root against the knife creates fine curled pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Where should fresh slivers fall as they are cut?",
+      "choices": ["Onto a dry board to wait.", "Into a tightly packed dry pile.", "Into cold water."],
+      "answer": 2,
+      "because": "Water limits the browning that develops on exposed cut surfaces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suits the intended cut?",
+      "choices": [
+        "Thin curled slivers of similar length.",
+        "Thick wedges with broad ends.",
+        "Crushed fragments mixed with large pieces."
+      ],
+      "answer": 0,
+      "because": "Consistent thin slivers provide the quick-cooking texture sought from this cut.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The slivers remain hard during cooking. What should change next time?",
+      "choices": [
+        "Cut thicker pieces for more weight.",
+        "Shave them more thinly.",
+        "Cut the same thick slivers into shorter lengths."
+      ],
+      "answer": 1,
+      "because": "Thinner slivers respond to heat more readily than thick pieces.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "ingredient/burdock", "tier": "drafted"},

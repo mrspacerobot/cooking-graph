@@ -4,6 +4,12 @@
   "names": {"en": "Glaze", "fr": "Glacer"},
   "aliases": {"en": ["glaze vegetables", "glaze in butter"]},
   "does": "Cooks small vegetables in a little water, butter and sugar until the water has gone and they are left tender and coated in a shiny syrup.",
+  "intro": {
+    "what": "This vegetable glaze reduces water, butter and sugar into a shiny coating around small vegetables.",
+    "why": "It connects tenderness with evaporation, so you can form a glaze without continuing to soften the vegetables too far.",
+    "idea": "Reduce to a coating",
+    "tier": "drafted"
+  },
   "how": [
     "Put the vegetables in a wide pan in a single layer.",
     "Add water to come half way up them, with butter, a little sugar and salt.",
@@ -21,6 +27,56 @@
       "fix": "Use less, and pour some off if they are tender before the glaze forms."
     },
     {"mistake": "Walking away at the end, when the syrup burns.", "fix": "Stay, and keep them rolling."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What turns the cooking liquid into a glaze?",
+      "choices": [
+        "Evaporating the water until a shiny syrup coats the vegetables.",
+        "Keeping plenty of watery liquid around them.",
+        "Adding flour to make an opaque sauce."
+      ],
+      "answer": 0,
+      "because": "As water leaves, the remaining syrup becomes a shiny film around the pieces.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What do you do as the last liquid boils away?",
+      "choices": [
+        "Leave them still against the pan.",
+        "Roll the vegetables in the forming syrup.",
+        "Cover them again to trap the steam."
+      ],
+      "answer": 1,
+      "because": "Rolling coats the vegetables in the syrup as it forms and keeps you attending to the final stage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What sound marks the last of the water leaving?",
+      "choices": [
+        "A sizzle becomes a quiet simmer.",
+        "The pan stays full of gently bubbling water.",
+        "Bubbling changes to a sizzle."
+      ],
+      "answer": 2,
+      "because": "The sound shifts to a sizzle when little water remains and the glaze coats the pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The vegetables are tender but too much liquid remains. What would you do?",
+      "choices": [
+        "Pour some liquid off rather than waiting for all of it to boil away.",
+        "Keep simmering until the vegetables break down.",
+        "Add more water to delay glazing."
+      ],
+      "answer": 0,
+      "because": "Too much starting water can soften vegetables too far before the glaze forms.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "group/root-vegetables", "tier": "drafted"},

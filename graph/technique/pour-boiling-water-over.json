@@ -6,6 +6,12 @@
     "en": ["pour boiling water over tofu", "scald with boiling water", "abura nuki", "remove oil with boiling water"]
   },
   "does": "Pours boiling water over a ready-made food, to wash off the surface oil or the smell from the making before it goes into a pot or a dish. The food is not cooked, only scalded.",
+  "intro": {
+    "what": "This preparation scalds a ready-made food by pouring boiling water across its surface.",
+    "why": "It teaches you to remove surface oil without immersing the food in a prolonged boil.",
+    "idea": "Scald the surface",
+    "tier": "drafted"
+  },
   "how": [
     "Put the food in a colander or a heatproof bowl.",
     "Pour boiling water over it, slowly and evenly, so that every surface is touched.",
@@ -24,6 +30,56 @@
     {
       "mistake": "Skipping the scald before simmering, so that the broth turns greasy.",
       "fix": "Scald it first, every time."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is the purpose of this pouring step?",
+      "choices": [
+        "To hydrate the food deeply before further cooking.",
+        "To soften the whole piece before it reaches the pan.",
+        "To carry off surface oil before further preparation."
+      ],
+      "answer": 2,
+      "because": "A brief surface rinse can remove oil without the prolonged immersion that waterlogs the food.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the water contact the food?",
+      "choices": [
+        "Pour slowly and evenly across all surfaces.",
+        "Leave the food submerged at a rolling boil.",
+        "Wet only the centre and leave the edges untouched."
+      ],
+      "answer": 0,
+      "because": "Even pouring treats the surface while keeping this a scalding step rather than a long boil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which visible change suggests surface oil has been washed away?",
+      "choices": [
+        "The sheen remains on the surface after draining.",
+        "The oily sheen runs off with the water.",
+        "Water gathers without carrying a visible sheen."
+      ],
+      "answer": 1,
+      "because": "Oil carried away in the runoff leaves less free oil on the surface.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The food became soft and waterlogged. What would you change next time?",
+      "choices": [
+        "Boil it longer to even out the texture.",
+        "Leave it soaking after the pour.",
+        "Pour the water over and drain instead of boiling it in the pot."
+      ],
+      "answer": 2,
+      "because": "Limiting water contact preserves structure while removing the surface residue.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

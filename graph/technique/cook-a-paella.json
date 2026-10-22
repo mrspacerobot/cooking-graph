@@ -4,6 +4,12 @@
   "names": {"en": "Cook a paella"},
   "aliases": {"en": ["make a paella", "cook rice in a paella pan"]},
   "does": "Cooks short-grain rice in a thin, even layer in a wide, shallow pan, in a well-flavoured broth, with no lid and no stirring, until the rice has taken the broth up and a thin toasted crust, the socarrat, forms on the bottom.",
+  "intro": {
+    "what": "Rice absorbs broth in a wide shallow pan without stirring, with a toasted socarrat underneath.",
+    "why": "Leaving the grains undisturbed preserves a loose texture; the sound and aroma at the end help distinguish toasting from burning.",
+    "idea": "Loose grains and socarrat",
+    "tier": "drafted"
+  },
   "how": [
     "Bring the flavoured broth, which has already simmered with its meat and vegetables, to a lively boil in the paella pan. Taste it: it should taste a little strong, as the rice will soften it.",
     "Scatter the rice evenly over the pan in one layer and stir once to spread it. Do not stir again.",
@@ -31,6 +37,56 @@
     {
       "mistake": "Toasting the bottom too long, so that the crust burns.",
       "fix": "Listen for the crackle, smell the pan, and take it off the heat when it smells toasty."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why leave the rice unstirred after spreading it?",
+      "choices": [
+        "To encourage a thick risotto-like sauce.",
+        "To keep all the rice above the broth.",
+        "To avoid making the rice creamy with released starch."
+      ],
+      "answer": 2,
+      "because": "Repeated stirring releases starch, which changes the texture away from this paella method.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the rice sit in the pan?",
+      "choices": [
+        "Spread evenly in a shallow layer.",
+        "Piled deeply in the centre.",
+        "Packed into separate tall mounds."
+      ],
+      "answer": 0,
+      "because": "An even shallow layer helps the rice cook consistently across the broad pan.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What sound signals the bottom beginning to toast?",
+      "choices": [
+        "A continuous loud splashing sound.",
+        "Bubbling changes to a faint crackle.",
+        "Silence while broth remains deep."
+      ],
+      "answer": 1,
+      "because": "The change reflects liquid disappearing and the base beginning to toast.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A burnt smell replaces the nutty aroma. What should happen?",
+      "choices": [
+        "Keep toasting to make the crust darker.",
+        "Stir the burnt base through the rice.",
+        "Take the pan off the heat."
+      ],
+      "answer": 2,
+      "because": "Socarrat should be toasted; a burnt smell warns that the base has gone beyond that flavour.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

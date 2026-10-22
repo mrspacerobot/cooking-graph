@@ -4,6 +4,12 @@
   "names": {"en": "Make a tomato sauce", "fr": "Faire une sauce tomate"},
   "aliases": {"en": ["make a quick tomato sauce", "make salsa di pomodoro"]},
   "does": "Cooks tomatoes in olive oil, with garlic or chilli, until they break down into a thick, bright sauce, with no cream or flour. A quick sauce is done in the time the pasta takes to boil, and a slow one grows deeper and sweeter.",
+  "intro": {
+    "what": "This tomato sauce gently scents olive oil, then simmers tomatoes into a thick sauce.",
+    "why": "It teaches you to develop tomato flavour through reduction and add basil without cooking away its fresh finish.",
+    "idea": "Thicken the tomatoes",
+    "tier": "drafted"
+  },
   "how": [
     "Warm olive oil gently with whole garlic, or with chilli, until the oil smells of it. Do not let the garlic brown.",
     "Add the tomatoes, crushed or chopped, with a little salt, and bring to a bubble.",
@@ -29,6 +35,56 @@
     {
       "mistake": "Cooking it too hard, so that it catches on the pan and tastes burnt.",
       "fix": "Stir and lower the heat."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What thickens this tomato sauce?",
+      "choices": [
+        "Whisking in a flour paste.",
+        "Adding cream until it coats a spoon.",
+        "Cooking the tomatoes down as their liquid reduces."
+      ],
+      "answer": 2,
+      "because": "This method relies on the tomatoes cooking down rather than a separate flour or cream thickener.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should basil go in?",
+      "choices": [
+        "At the end, off the heat.",
+        "With the garlic at the start of heating.",
+        "Before the tomatoes begin their simmer."
+      ],
+      "answer": 0,
+      "because": "Basil is a final addition after the sauce has developed.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance suggests the sauce has thickened?",
+      "choices": [
+        "Loose watery liquid without a lasting trail.",
+        "A spoon trail with a sheen of oil at the edge.",
+        "Separate firm tomato pieces in clear water."
+      ],
+      "answer": 1,
+      "because": "A trail and oil sheen accompany the developed thick sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Garlic browning makes the sauce bitter. What would you change next time?",
+      "choices": [
+        "Brown the garlic further before adding tomato.",
+        "Keep frying the garlic while reducing the sauce.",
+        "Warm the oil gently and add tomato when the garlic smells sweet."
+      ],
+      "answer": 2,
+      "because": "Gentle scenting avoids letting the garlic brown into bitterness.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

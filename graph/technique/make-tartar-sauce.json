@@ -4,6 +4,12 @@
   "names": {"en": "Make tartar sauce"},
   "aliases": {"en": ["make tartare sauce"]},
   "does": "Folds finely chopped pickles, boiled egg and onion into mayonnaise, to make a thick, creamy sauce with a sharp bite for fried food.",
+  "intro": {
+    "what": "This tartar sauce folds finely chopped pickles, boiled egg and onion into mayonnaise.",
+    "why": "It teaches you to balance creamy body with sharp chopped additions without making the sauce coarse or watery.",
+    "idea": "Fine pieces, thick sauce",
+    "tier": "drafted"
+  },
   "how": [
     "Chop the pickles, the boiled egg and a little onion small. Squeeze the onion dry in a cloth if it is strong.",
     "Put the mayonnaise in a bowl and fold in the chopped pieces.",
@@ -17,6 +23,56 @@
   "mistakes": [
     {"mistake": "Chopping the pickles too coarsely, so that the sauce is lumpy.", "fix": "Chop them small."},
     {"mistake": "Leaving the pickles wet, which thins the sauce.", "fix": "Pat them dry before they go in."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What contrast should this sauce bring to fried food?",
+      "choices": [
+        "Creaminess followed by a sharp bite.",
+        "A sweet creamy coating without much acidity.",
+        "A warm reduced sauce that soaks into the crust."
+      ],
+      "answer": 0,
+      "because": "Mayonnaise gives body while the chopped pickles and lemon supply a sharp contrast.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the chopped additions be combined with mayonnaise?",
+      "choices": [
+        "Blend them until no texture remains.",
+        "Fold them in after chopping them small.",
+        "Stir in large pieces before adjusting the lemon."
+      ],
+      "answer": 1,
+      "because": "Fine chopping and folding retain small flecks in a thick creamy sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which appearance matches the intended sauce?",
+      "choices": [
+        "Large lumps surrounded by thin liquid.",
+        "A completely smooth hot purée.",
+        "Thick with small flecks and no running liquid."
+      ],
+      "answer": 2,
+      "because": "Small pieces give texture without turning the sauce coarse or watery.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Wet pickles have thinned the sauce. What would you change next time?",
+      "choices": [
+        "Pat the pickles dry before mixing.",
+        "Add their liquid before the mayonnaise.",
+        "Chop them larger to keep more liquid inside."
+      ],
+      "answer": 0,
+      "because": "Removing surface liquid keeps the chopped additions from thinning the mayonnaise.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "preparation/mayonnaise", "tier": "drafted"},

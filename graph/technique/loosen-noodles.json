@@ -4,6 +4,12 @@
   "names": {"en": "Loosen noodles"},
   "aliases": {"en": ["separate the noodles", "loosen the noodles"]},
   "does": "Pulls apart a clump of steamed, oiled noodles, with a splash of water or a short warming in the pan, until each strand is free and ready to be stir-fried.",
+  "intro": {
+    "what": "Loosening separates a clump of steamed, oiled noodles before stir-frying.",
+    "why": "It teaches you to relax the strands gently with a little warmth and water rather than tearing them apart cold.",
+    "idea": "Relax before separating",
+    "tier": "drafted"
+  },
   "how": [
     "Put the clump in a hot pan or in a bowl, and add a splash of water.",
     "Cover for a very short time to steam, so that the strands relax.",
@@ -20,6 +26,56 @@
       "fix": "Warm it first so that it relaxes."
     },
     {"mistake": "Adding too much water, so that the noodles are soggy.", "fix": "Use only a splash."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why loosen noodles before stir-frying?",
+      "choices": [
+        "To soften them into a single thick mass.",
+        "To separate strands without tearing them in the pan.",
+        "To wash away every trace of surface oil."
+      ],
+      "answer": 1,
+      "because": "Separate strands are ready for stir-frying instead of being pulled forcefully from a cold clump.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should you work through the clump?",
+      "choices": [
+        "Pull hard through the cold centre first.",
+        "Cover it completely with water and leave it soaking.",
+        "Warm it briefly, then separate gently from the edge inward."
+      ],
+      "answer": 2,
+      "because": "Brief warmth relaxes the strands, and gentle work from the edge avoids tearing.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which feel suggests the noodles have loosened?",
+      "choices": [
+        "Strands slide apart without tearing.",
+        "The clump resists and strands snap.",
+        "The noodles have become soggy and swollen."
+      ],
+      "answer": 0,
+      "because": "Freely separating strands show the clump has relaxed enough to handle gently.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The noodles became soggy while loosening. What would you change for the next batch?",
+      "choices": [
+        "Add more water to separate them further.",
+        "Use only a little water and drain it off.",
+        "Leave them sitting in the water before frying."
+      ],
+      "answer": 1,
+      "because": "Too much water makes the noodles soggy instead of simply loosening them.",
+      "tier": "drafted"
+    }
   ],
   "works_on": [
     {"thing": "ingredient/yakisoba-noodle", "tier": "drafted"},

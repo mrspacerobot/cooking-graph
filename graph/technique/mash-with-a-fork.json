@@ -4,6 +4,12 @@
   "names": {"en": "Mash with a fork"},
   "aliases": {"en": ["fork-mash"]},
   "does": "Breaks soft, cooked flesh into a rough, stringy mash with a fork, so that some texture is left and the smoky taste of the food is not lost to a machine.",
+  "intro": {
+    "what": "Fork mashing breaks soft cooked flesh into rough strands and small lumps.",
+    "why": "It teaches you to preserve a deliberate texture instead of processing every mash into a smooth purée.",
+    "idea": "Keep some texture",
+    "tier": "drafted"
+  },
   "how": [
     "Make sure the flesh is completely soft, and let any bitter juice drain off.",
     "Put the flesh in a bowl and press and drag a fork through it until it falls into strands and small soft lumps.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Mashing flesh that is not soft all the way, which leaves hard bits.",
       "fix": "Keep it on the heat until it has collapsed completely."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use a fork for this mash?",
+      "choices": [
+        "To keep strands and small soft lumps.",
+        "To make the smoothest possible liquid purée.",
+        "To leave firm uncooked chunks for crunch."
+      ],
+      "answer": 0,
+      "because": "The rough fork-made texture is intentional rather than a failure to blend smoothly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you work the soft flesh?",
+      "choices": [
+        "Run a blender until completely uniform.",
+        "Press and drag the fork through it.",
+        "Chop firm flesh finely before it softens."
+      ],
+      "answer": 1,
+      "because": "Pressing and dragging breaks soft flesh into strands without turning it into a smooth paste.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should remain visible?",
+      "choices": [
+        "A completely smooth paste without strands.",
+        "Large firm pieces that resist the fork.",
+        "Rough strands and small soft lumps."
+      ],
+      "answer": 2,
+      "because": "Stop with some soft texture still showing rather than blending it away.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Firm bits remain under the fork. What would you change?",
+      "choices": [
+        "Soften the flesh further with heat before mashing.",
+        "Blend the firm pieces hard into the rest.",
+        "Add more dressing without softening them."
+      ],
+      "answer": 0,
+      "because": "The flesh must be soft before fork mashing; extra pressing alone leaves hard bits.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

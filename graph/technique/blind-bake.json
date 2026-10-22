@@ -4,6 +4,12 @@
   "names": {"en": "Blind bake", "fr": "Cuire à blanc"},
   "aliases": {"en": ["bake blind", "pre-bake"]},
   "does": "Bakes an empty pastry case, so that a wet filling does not leave the base raw and soggy.",
+  "intro": {
+    "what": "An empty pastry case is baked before its wet filling is added.",
+    "why": "Giving the pastry a dry structure first helps explain why a filling can otherwise leave the base soggy.",
+    "idea": "Preparing a pastry base",
+    "tier": "drafted"
+  },
   "how": [
     "Line the tin with the pastry and chill it until firm.",
     "Prick the base with a fork, cover it with paper and fill it with baking beans.",
@@ -21,6 +27,56 @@
     {
       "mistake": "Taking the beans out too soon, so that the base puffs up.",
       "fix": "Wait until the edges hold their shape."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why bake the empty case before adding a wet filling?",
+      "choices": [
+        "To establish a dry pastry base.",
+        "To keep the base soft and damp.",
+        "To keep the pastry flexible enough to soak up the filling."
+      ],
+      "answer": 0,
+      "because": "Prebaking gives the pastry structure before moisture from the filling reaches it.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should the paper and baking beans be lifted out?",
+      "choices": [
+        "As soon as the tin enters the oven.",
+        "After the pastry edges have set.",
+        "Before the chilled pastry has begun baking."
+      ],
+      "answer": 1,
+      "because": "The weights support the pastry until it can hold its shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which base is the intended result?",
+      "choices": [
+        "Grey and greasy with wet patches.",
+        "Puffed into a large central mound.",
+        "Dry and matt with pale golden edges."
+      ],
+      "answer": 2,
+      "because": "A dry matt surface is the cue that the empty base has baked beyond its damp stage.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pastry shrank down the tin. What should change next time?",
+      "choices": [
+        "Chill the lined case until firm before baking.",
+        "Skip chilling to keep the pastry soft.",
+        "Remove the weights before the edges set."
+      ],
+      "answer": 0,
+      "because": "Resting the lined tin in the fridge helps the pastry retain its shape during baking.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

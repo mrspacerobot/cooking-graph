@@ -4,6 +4,12 @@
   "names": {"en": "Rest and fluff"},
   "aliases": {"en": ["rest the rice", "fluff the rice", "rest and fluff the rice"]},
   "does": "Leaves cooked rice covered off the heat for a while, so that the steam spreads evenly through the grains, then cuts through it with a paddle to let the steam out and loosen the grains.",
+  "intro": {
+    "what": "Resting covered rice redistributes steam before a paddle loosens the grains.",
+    "why": "It teaches you to finish rice texture with retained steam and gentle movement rather than more stirring.",
+    "idea": "Rest, then separate",
+    "tier": "drafted"
+  },
   "how": [
     "As soon as the rice is cooked, take it off the heat and keep the lid on.",
     "Leave it to rest, undisturbed, so that the grains finish steaming.",
@@ -22,6 +28,56 @@
     {
       "mistake": "Stirring the rice, which crushes the grains and makes it pasty.",
       "fix": "Cut and fold with a wet paddle."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why leave cooked rice covered off the heat?",
+      "choices": [
+        "To dry it immediately in moving air.",
+        "To build a crust on the pan base.",
+        "To let retained steam spread through the grains."
+      ],
+      "answer": 2,
+      "because": "The covered rest holds steam around the rice while its moisture becomes more even.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the paddle move when fluffing rice?",
+      "choices": [
+        "Cut and fold with a wet paddle.",
+        "Stir hard in circles.",
+        "Press the grains firmly against the pot."
+      ],
+      "answer": 0,
+      "because": "Cutting and folding loosens grains while limiting crushing and sticking to the paddle.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which surface matches rice after this rest?",
+      "choices": [
+        "A wet puddle covering the surface.",
+        "Dry and shiny without wet patches.",
+        "A broken, pasty surface."
+      ],
+      "answer": 1,
+      "because": "An even surface without wet patches is consistent with moisture spreading through the rice.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Fluffing turned the rice pasty. What would you change next time?",
+      "choices": [
+        "Stir more quickly to separate the paste.",
+        "Mash the rice before turning it over.",
+        "Use a slicing and folding motion instead of stirring."
+      ],
+      "answer": 2,
+      "because": "Stirring crushes grains; a paddle used to cut and fold keeps more of their structure.",
+      "tier": "drafted"
     }
   ],
   "works_on": [

@@ -33,7 +33,7 @@
       "technique": "technique/mince",
       "works_on": ["ingredient/onion", "ingredient/garlic", "ingredient/parsley", "ingredient/coriander-leaf"],
       "with": [],
-      "text": "Mince the onion, the garlic, the parsley and the coriander very fine.",
+      "text": "Mince the {onion}, the {garlic}, the {parsley} and the {coriander} very fine.",
       "time": null,
       "temperature": null,
       "safety_points": [],
@@ -46,7 +46,7 @@
         "ingredient/onion", "ingredient/parsley", "ingredient/coriander-leaf", "ingredient/cumin",
         "ingredient/black-pepper", "ingredient/salt"
       ],
-      "text": "Work the lamb in a bowl with the onion, half of the herbs, half of the cumin, the pepper and half of the salt, squeezing it with the hands until it is sticky and holds together.",
+      "text": "Work the lamb in a bowl with the {onion}, half of the herbs, half of the {cumin}, the {pepper} and half of the {salt}, squeezing it with the hands until it is sticky and holds together.",
       "time": null,
       "temperature": null,
       "safety_points": [],
@@ -68,7 +68,7 @@
       "with": [
         "ingredient/olive-oil", "ingredient/garlic", "ingredient/paprika", "ingredient/cumin", "ingredient/salt"
       ],
-      "text": "Warm the oil in a wide pan with the garlic, the paprika and the rest of the cumin for a moment, then add the tomatoes and the rest of the salt and cook them down until they make a thick, bright sauce.",
+      "text": "Warm the {olive-oil} in a wide pan with the {garlic}, the {paprika} and the rest of the {cumin} for a moment, then add the {tomato} and the rest of the {salt} and cook them down until they make a thick, bright sauce.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
@@ -88,7 +88,7 @@
       "technique": "technique/poach",
       "works_on": ["ingredient/egg"],
       "with": ["preparation/tomato-sauce"],
-      "text": "Make small hollows between the meatballs and break an egg into each. Cover the pan and let the eggs poach gently in the sauce until the whites are set and the yolks are as soft as you like. Scatter with the herbs that were kept back.",
+      "text": "Make small hollows between the meatballs and break an {egg} into each. Cover the pan and let the {egg} poach gently in the sauce until the whites are set and the yolks are as soft as you like. Scatter with the herbs that were kept back.",
       "time": {"from": 5, "to": 8, "unit": "minute"},
       "temperature": null,
       "safety_points": ["raw-or-lightly-cooked-egg"],

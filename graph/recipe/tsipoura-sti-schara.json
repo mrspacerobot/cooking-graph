@@ -51,7 +51,7 @@
       "with": [
         "ingredient/salt", "ingredient/black-pepper", "ingredient/lemon", "ingredient/oregano", "ingredient/olive-oil"
       ],
-      "text": "Season the fish inside and out with the salt and the pepper. Put a slice of lemon and a little oregano inside each, and rub the skin with a little of the olive oil.",
+      "text": "Season the fish inside and out with the {salt} and the {pepper}. Put a slice of {lemon} and a little {oregano} inside each, and rub the skin with a little of the {oil}.",
       "time": null,
       "temperature": null,
       "safety_points": [],
@@ -71,7 +71,7 @@
       "technique": "technique/chop",
       "works_on": ["ingredient/parsley"],
       "with": [],
-      "text": "Chop the parsley.",
+      "text": "Chop the {parsley}.",
       "time": null,
       "temperature": null,
       "safety_points": [],
@@ -81,7 +81,7 @@
       "technique": "technique/garnish",
       "works_on": ["ingredient/sea-bream"],
       "with": ["preparation/ladolemono", "ingredient/parsley"],
-      "text": "Lift the fish onto a warm platter. Whisk the ladolemono again and spoon it over, then scatter with parsley.",
+      "text": "Lift the fish onto a warm platter. Whisk the {dressing} again and spoon it over, then scatter with {parsley}.",
       "time": null,
       "temperature": null,
       "safety_points": [],

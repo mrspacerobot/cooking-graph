@@ -92,7 +92,7 @@ class ManifestTest(KitchenCase):
 
     def test_it_names_the_version_the_commit_the_channel_and_the_hash(self):
         manifest, encoded = self.manifest()
-        self.assertEqual(2, manifest["artifactSchemaVersion"])
+        self.assertEqual(3, manifest["artifactSchemaVersion"])
         self.assertEqual("2026.10.11-1102817", manifest["graphVersion"])
         self.assertEqual(SOURCE.commit, manifest["sourceCommit"])
         self.assertEqual("draft", manifest["channel"])

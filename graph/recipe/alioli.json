@@ -16,7 +16,7 @@
       "technique": "technique/make-alioli",
       "works_on": ["ingredient/garlic", "ingredient/olive-oil"],
       "with": ["ingredient/salt"],
-      "text": "Pound the garlic with the salt in the mortar to a smooth paste. Turn the pestle in one direction only and work in the oil a drop at a time, then in a thin thread as the sauce thickens and turns pale, until it stands up on the pestle.",
+      "text": "Pound the {garlic} with the {salt} in the mortar to a smooth paste. Turn the pestle in one direction only and work in the {oil} a drop at a time, then in a thin thread as the sauce thickens and turns pale, until it stands up on the pestle.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

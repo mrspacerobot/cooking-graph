@@ -75,3 +75,16 @@ class StepRuleTest(unittest.TestCase):
     def test_broken_brackets_are_rejected(self):
         self.assertIn("step-text-malformed", self.rules_for("Soften the {onion in the {roux}."))
         self.assertIn("step-text-malformed", self.rules_for("Soften the {onion} in the {roux}]."))
+
+    def test_a_plural_placeholder_of_a_countable_food_is_valid(self):
+        self.assertEqual(set(), self.rules_for("Soften the {onion:plural} in the {roux}."))
+
+    def test_a_plural_of_an_uncountable_food_is_rejected(self):
+        self.assertIn("step-plural-of-uncountable", self.rules_for("Soften the {onion} in the {roux:plural}."))
+
+    def test_an_article_before_a_plural_is_rejected(self):
+        self.assertIn("step-article-before-plural", self.rules_for("Soften a {onion:plural} in the {roux}."))
+
+    def test_a_singular_verb_after_a_plural_is_rejected(self):
+        self.assertIn("step-number-disagrees", self.rules_for("Soften the {onion:plural} until the {onion:plural} is soft in the {roux}."))
+        self.assertEqual(set(), self.rules_for("Soften the {onion:plural} until the {onion:plural} are soft in the {roux}."))

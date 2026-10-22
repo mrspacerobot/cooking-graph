@@ -164,3 +164,27 @@ class StepTextCasesTest(unittest.TestCase):
 
     def test_the_artifact_schema_is_version_three(self):
         self.assertEqual(3, release.ARTIFACT_SCHEMA_VERSION)
+
+
+class PluralCasesTest(unittest.TestCase):
+    def setUp(self):
+        self.things = kitchen()
+        self.recipe_id = "recipe/buttered-onions"
+        self.things[self.recipe_id].data["steps"][0]["text"] = "Soften the {onion:plural} in the {butter:plural}."
+
+    def cases(self):
+        return [one for one in serving.vectors_of(self.things)["step_text_cases"] if one["recipe"] == self.recipe_id]
+
+    def test_a_plural_placeholder_prints_the_plural_of_a_countable_food(self):
+        self.assertEqual("Soften the onions in the butter.", self.cases()[0]["steps"][0]["text"])
+
+    def test_a_plural_placeholder_of_an_uncountable_stand_in_prints_its_name(self):
+        swapped = [one for one in self.cases() if one["swaps"]]
+        self.assertTrue(swapped)
+        self.assertEqual("Soften the onions in the oil.", swapped[-1]["steps"][0]["text"])
+
+    def test_a_countable_stand_in_prints_its_plural(self):
+        self.things["ingredient/oil"].data["uncountable"] = False
+        self.things["ingredient/oil"].data["plurals"] = {"en": "Oils"}
+        swapped = [one for one in self.cases() if one["swaps"]]
+        self.assertEqual("Soften the onions in the oils.", swapped[0]["steps"][0]["text"])

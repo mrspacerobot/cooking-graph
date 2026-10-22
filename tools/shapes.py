@@ -197,6 +197,15 @@ class ShapeCheck:
             if needs_twin and tag + ROMANIZED not in value:
                 self.report(place, "romanization-missing", "needs its romanization as '%s%s'" % (tag, ROMANIZED))
 
+    def check_plurals(self, value, rule, where):
+        """The plural of the name in each language. May be empty: the food is then uncountable (see tools/plural_rules.py)."""
+        if not self.is_a(value, dict, where, "plurals by language"):
+            return
+        for tag, plural in value.items():
+            place = join(where, tag)
+            self.check_language(tag, place)
+            self.check_label(plural, {}, place)
+
     def check_aliases(self, value, rule, where):
         """Other names by language, each language with at least one."""
         if not self.is_a(value, dict, where, "aliases by language"):

@@ -78,3 +78,32 @@ class RenderingTest(unittest.TestCase):
         self.assertEqual("Put in the egg, butter and cream now.", written(text))
         self.assertEqual("Put in the egg and cream now.", written(text, left_out=["butter"]))
         self.assertEqual("Put in the egg, butter now.", written(text, left_out=["cream"]))
+
+
+class PluralTest(unittest.TestCase):
+    def plural_name(self, mention):
+        names = {"egg": ("Egg", "Eggs"), "butter": ("Butter", "Butter")}
+        single, plural = names[mention.part]
+        return plural if mention.plural else single
+
+    def written(self, text):
+        pieces, problems = step_text.parse(text)
+        self.assertEqual([], problems)
+        return step_text.render(pieces, self.plural_name, [], step_text.PROPER_NAME_WORDS)
+
+    def test_a_plural_placeholder_reads_with_a_colon(self):
+        pieces, problems = step_text.parse("Crack the {egg:plural} and the {egg.sunny:plural}.")
+        self.assertEqual([], problems)
+        self.assertEqual([(True, None), (True, "sunny")], [(one.plural, one.slug) for one, _ in step_text.mentions_of(pieces)])
+
+    def test_another_word_after_the_colon_is_a_problem(self):
+        self.assertTrue(step_text.parse("Crack the {egg:many}.")[1])
+
+    def test_the_plural_is_written_for_a_plural_placeholder(self):
+        self.assertEqual("While the eggs still look wet, stir in the butter.", self.written("While the {egg:plural} still look wet, stir in the {butter}."))
+
+    def test_the_plural_keeps_the_capital_at_the_start_of_a_sentence(self):
+        self.assertEqual("Done. Eggs go in.", self.written("Done. {egg:plural} go in."))
+
+    def test_an_uncountable_food_asked_in_plural_prints_its_name(self):
+        self.assertEqual("Add the butter.", self.written("Add the {butter:plural}."))

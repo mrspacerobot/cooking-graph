@@ -16,13 +16,13 @@ PROPER_NAME_WORDS = ("Arborio", "Basmati", "Dijon", "Gruyère", "Kashmiri", "Mar
 
 # `{part}` or `{part.slug}`; `[part: ` opens a clause, `]` closes it; any other bracket is a mistake.
 TOKEN = re.compile(r"\{(?P<body>[^{}\[\]]*)\}|\[(?P<part>[a-z0-9-]+): |(?P<close>\])|(?P<stray>[{}\[])")
-MENTION_BODY = re.compile(r"^(?P<part>[a-z0-9-]+)(?:\.(?P<slug>[a-z0-9-]+))?$")
+MENTION_BODY = re.compile(r"^(?P<part>[a-z0-9-]+)(?:\.(?P<slug>[a-z0-9-]+))?(?P<plural>:plural)?$")
 SENTENCE_START = re.compile(r"(^|[.!?]\s+)$")
 ARTICLE_BEFORE = re.compile(r"(^|[^A-Za-z])(?P<article>[Aa]n?)(?P<space>\s+)$")
 VOWELS = "aeiouAEIOU"
 
-# `slug` is None when the part holds one food and the part alone names it.
-Mention = namedtuple("Mention", ["part", "slug"])
+# `slug` is None when the part holds one food and the part alone names it. `plural` asks for the plural of its name.
+Mention = namedtuple("Mention", ["part", "slug", "plural"])
 
 
 class Clause:
@@ -56,9 +56,9 @@ class Reading:
     def add_mention(self, body):
         found = MENTION_BODY.match(body)
         if found is None:
-            self.problems.append("'{%s}' is no placeholder: write {part} or {part.ingredient}" % body)
+            self.problems.append("'{%s}' is no placeholder: write {part}, {part.ingredient} or either with :plural" % body)
             return
-        self.inside().append(Mention(found.group("part"), found.group("slug")))
+        self.inside().append(Mention(found.group("part"), found.group("slug"), found.group("plural") is not None))
 
     def open_clause(self, part):
         if self.clause is not None:

@@ -6,14 +6,18 @@ clause of a part left out, so a step that names a food in plain words, or leaves
 say the original food after the swap.
 """
 
+import re
 from collections import namedtuple
 
 from tools import plain_mentions, step_text
 from tools.reading import Issue
 from tools.rules import of_kind
 
+ARTICLE_BEFORE = re.compile(r"(^|[^A-Za-z])[Aa]n?\s+$")
+SINGULAR_VERB = re.compile(r"^\s+(is|has|was|does)\b")
+
 # `lines` maps a part to the foods of the recipe's lines that fill it; `foods` is all of them.
-Context = namedtuple("Context", ["lines", "optional", "foods", "vocabulary"])
+Context = namedtuple("Context", ["lines", "optional", "foods", "vocabulary", "uncountable"])
 Problem = namedtuple("Problem", ["rule", "message"])
 
 
@@ -27,7 +31,8 @@ def context_of(things, recipe, vocabulary):
         lines.setdefault(line["part"], []).append(line["thing"])
     optional = {part["id"] for part in things[recipe["makes"]].data["parts"] if part["optional"]}
     foods = {line["thing"] for line in recipe["ingredients"]}
-    return Context(lines, optional, foods, vocabulary)
+    uncountable = {food for food in foods if food in things and things[food].data["uncountable"]}
+    return Context(lines, optional, foods, vocabulary, uncountable)
 
 
 def foods_named(context, mention):
@@ -52,6 +57,33 @@ def placeholder_problems(context, pieces):
         _, problem = foods_named(context, mention)
         if problem is not None:
             problems.append(problem)
+    return problems
+
+
+def plural_problems(context, pieces):
+    """A plural of a food that has none, `a` before a plural, and a singular verb straight after a plural."""
+    problems = []
+    for mention, _ in step_text.mentions_of(pieces):
+        if not mention.plural:
+            continue
+        foods, problem = foods_named(context, mention)
+        if problem is None and foods & context.uncountable:
+            message = "{%s:plural} asks for the plural of an uncountable food: write {%s}" % (mention.part, mention.part)
+            problems.append(Problem("step-plural-of-uncountable", message))
+    return problems + article_and_verb_problems(pieces)
+
+
+def article_and_verb_problems(pieces):
+    problems = []
+    for index, piece in enumerate(pieces[:-1]):
+        following = pieces[index + 1]
+        if isinstance(piece, str) and isinstance(following, step_text.Mention) and following.plural:
+            if ARTICLE_BEFORE.search(piece):
+                problems.append(Problem("step-article-before-plural", "'a' or 'an' stands before a plural: write 'the' or leave it out"))
+        if isinstance(piece, step_text.Mention) and piece.plural and isinstance(following, str) and SINGULAR_VERB.match(following):
+            problems.append(Problem("step-number-disagrees", "a singular verb follows {%s:plural}" % piece.part))
+    for clause in step_text.clauses_of(pieces):
+        problems.extend(article_and_verb_problems(clause.pieces))
     return problems
 
 
@@ -95,6 +127,7 @@ def problems_in(text, context):
     problems.extend(clause_problems(context, pieces))
     problems.extend(unmarked_problems(context, pieces))
     problems.extend(plain_problems(context, pieces))
+    problems.extend(plural_problems(context, pieces))
     return problems
 
 

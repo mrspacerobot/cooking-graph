@@ -29,7 +29,7 @@
       "allows": true,
       "when": ["dish/sole-meuniere"],
       "not_when": [],
-      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
+      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "Add it at the finish. Its delicate anise flavour differs from parsley and fades under prolonged heat.",
       "tier": "drafted"
     }

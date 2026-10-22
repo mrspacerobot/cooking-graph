@@ -33,7 +33,7 @@
       "allows": true,
       "when": ["dish/spinach-and-cheese-omelette"],
       "not_when": ["technique/mount-with-butter", "technique/make-brown-butter"],
-      "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
+      "ratio": {"stand_in": 1, "original": 1, "by": "weight"},
       "caveat": "Oil supplies frying fat but has no butter aroma. It cannot provide the cold-butter emulsion of a mounted sauce.",
       "tier": "drafted"
     },

@@ -86,7 +86,7 @@
       "technique": "technique/deglaze",
       "works_on": ["preparation/fond"],
       "with": ["ingredient/white-wine", "ingredient/water"],
-      "text": "Set the pot over the heat. Add the {white-wine} and scrape it clean, then the {water}, and boil it down by about half. Strain it, pressing on the {onion}.",
+      "text": "Set the pot over the heat. Add the {white-wine} and scrape it clean, then the {water}, and boil it down by about half. Strain it, pressing on the {onion:plural}.",
       "time": {"from": 5, "to": 6, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

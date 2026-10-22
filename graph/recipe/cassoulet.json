@@ -43,7 +43,7 @@
       "technique": "technique/soak",
       "works_on": ["ingredient/white-beans"],
       "with": ["ingredient/water"],
-      "text": "Cover the {beans} generously with cold {water} and leave them overnight. Drain and rinse them.",
+      "text": "Cover the {beans:plural} generously with cold {water} and leave them overnight. Drain and rinse them.",
       "time": {"from": 8, "to": 12, "unit": "hour"},
       "temperature": null,
       "safety_points": [],
@@ -55,7 +55,7 @@
       "with": [
         "ingredient/water", "ingredient/onion", "ingredient/clove", "preparation/bouquet-garni", "ingredient/salt"
       ],
-      "text": "Put the {beans} in a large pot with fresh {water}, one {onion} stuck with the {clove} and the bundle of herbs. Bring to a boil, then simmer gently, without {salt}, until the {beans} are tender but still hold their shape. Add the {salt} near the end. Keep the cooking {water}.",
+      "text": "Put the {beans:plural} in a large pot with fresh {water}, one {onion} stuck with the {clove:plural} and the bundle of herbs. Bring to a boil, then simmer gently, without {salt}, until the {beans:plural} are tender but still hold their shape. Add the {salt} near the end. Keep the cooking {water}.",
       "time": {"from": 60, "to": 90, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
@@ -137,7 +137,7 @@
         "ingredient/white-beans", "ingredient/pork-shoulder", "ingredient/pork-sausage", "ingredient/duck-confit"
       ],
       "with": [],
-      "text": "Spread half of the drained {beans} over the base of a deep earthenware pot. Lay the pork, the sausage and the confit on top and cover with the rest of the {beans}. Pour over the pork sauce and enough bean cooking {water} to come just below the top of the {beans}.",
+      "text": "Spread half of the drained {beans:plural} over the base of a deep earthenware pot. Lay the pork, the sausage and the confit on top and cover with the rest of the {beans:plural}. Pour over the pork sauce and enough bean cooking {water} to come just below the top of the {beans:plural}.",
       "time": null,
       "temperature": null,
       "safety_points": [],

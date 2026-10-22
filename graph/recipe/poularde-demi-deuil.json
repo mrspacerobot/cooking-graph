@@ -53,7 +53,7 @@
       "technique": "technique/poach",
       "works_on": ["ingredient/chicken", "ingredient/carrot", "ingredient/leek"],
       "with": ["preparation/white-chicken-stock"],
-      "text": "Lower the bird into the hot {stock}, breast up, with the {carrot} and the {leek}. Poach at a bare tremble and never let the {stock} boil, until the leg moves freely in its joint. Check the thickest part of the thigh against a trusted guide to doneness.",
+      "text": "Lower the bird into the hot {stock}, breast up, with the {carrot:plural} and the {leek:plural}. Poach at a bare tremble and never let the {stock} boil, until the leg moves freely in its joint. Check the thickest part of the thigh against a trusted guide to doneness.",
       "time": {"from": 60, "to": 75, "unit": "minute"},
       "temperature": null,
       "safety_points": ["doneness"],

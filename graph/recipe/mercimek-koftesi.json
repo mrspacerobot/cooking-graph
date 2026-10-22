@@ -105,7 +105,7 @@
       "technique": "technique/mince",
       "works_on": ["ingredient/spring-onion", "ingredient/parsley"],
       "with": [],
-      "text": "[onion: Mince the {onion}.] [herb: Mince the {herb}.]",
+      "text": "[onion: Mince the {onion:plural}.] [herb: Mince the {herb}.]",
       "time": null,
       "temperature": null,
       "safety_points": [],

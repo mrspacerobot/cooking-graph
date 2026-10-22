@@ -57,7 +57,7 @@
       "technique": "technique/stir-fry",
       "works_on": ["ingredient/pork-belly", "ingredient/carrot", "ingredient/cabbage"],
       "with": ["ingredient/oil", "ingredient/onion", "ingredient/bean-sprout"],
-      "text": "Heat the {oil} in a wok or a wide pan until it is very hot. Stir-fry the pork until its surface is gold, then add the {carrot} and the {onion}, then the {cabbage} and the {sprouts}, and keep everything moving. Check a piece of the pork against a trusted guide to doneness.",
+      "text": "Heat the {oil} in a wok or a wide pan until it is very hot. Stir-fry the pork until its surface is gold, then add the {carrot} and the {onion}, then the {cabbage} and the {sprouts:plural}, and keep everything moving. Check a piece of the pork against a trusted guide to doneness.",
       "time": {"from": 4, "to": 6, "unit": "minute"},
       "temperature": null,
       "safety_points": ["doneness"],

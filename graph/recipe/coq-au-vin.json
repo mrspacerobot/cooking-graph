@@ -91,7 +91,7 @@
       "technique": "technique/saute",
       "works_on": ["ingredient/pearl-onion", "ingredient/mushroom"],
       "with": ["ingredient/butter"],
-      "text": "Brown the {pearl-onion}, then the {mushroom}, in the {butter} in a frying pan. Keep them aside for the end.",
+      "text": "Brown the {pearl-onion:plural}, then the {mushroom:plural}, in the {butter} in a frying pan. Keep them aside for the end.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
@@ -154,7 +154,7 @@
         "ingredient/mushroom"
       ],
       "with": ["ingredient/black-pepper", "ingredient/salt"],
-      "text": "Taste and season. Put the {main} back with the lardons, the {onion} and the {mushroom}, and warm it all gently in the sauce.",
+      "text": "Taste and season. Put the {main} back with the lardons, the {onion:plural} and the {mushroom:plural}, and warm it all gently in the sauce.",
       "time": null,
       "temperature": null,
       "safety_points": [],

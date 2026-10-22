@@ -53,7 +53,7 @@
       "technique": "technique/sweat",
       "works_on": ["ingredient/onion", "ingredient/garlic"],
       "with": [],
-      "text": "Lower the heat. Put the {onion} into the fat left in the pan with a little {salt} and soften them, stirring now and then, until they are glossy and soft. Add the {garlic} for the last moments.",
+      "text": "Lower the heat. Put the {onion:plural} into the fat left in the pan with a little {salt} and soften them, stirring now and then, until they are glossy and soft. Add the {garlic} for the last moments.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
@@ -66,7 +66,7 @@
         "ingredient/water", "ingredient/ginger", "ingredient/turmeric", "ingredient/cumin", "ingredient/black-pepper",
         "ingredient/saffron"
       ],
-      "text": "Stir the {ginger}, the {turmeric}, the {cumin}, the {black-pepper} [saffron: and the {saffron}] into the {onion} for a moment, then pour in the {water} and scrape the pan clean.",
+      "text": "Stir the {ginger}, the {turmeric}, the {cumin}, the {black-pepper} [saffron: and the {saffron}] into the {onion:plural} for a moment, then pour in the {water} and scrape the pan clean.",
       "time": {"from": 1, "to": 2, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

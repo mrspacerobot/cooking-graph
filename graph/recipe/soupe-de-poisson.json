@@ -52,7 +52,7 @@
       "technique": "technique/simmer",
       "works_on": ["ingredient/rockfish", "ingredient/tomato"],
       "with": ["ingredient/water", "ingredient/saffron", "ingredient/salt"],
-      "text": "Add the fish, cut in pieces with their heads and bones, and stir over the heat until the flesh starts to fall apart. Add the {tomato}, the {saffron}, the {water} and the {salt}, bring to the boil and simmer briskly.",
+      "text": "Add the fish, cut in pieces with their heads and bones, and stir over the heat until the flesh starts to fall apart. Add the {tomato:plural}, the {saffron}, the {water} and the {salt}, bring to the boil and simmer briskly.",
       "time": {"from": 20, "to": 25, "unit": "minute"},
       "temperature": null,
       "safety_points": ["raw-meat-or-fish"],

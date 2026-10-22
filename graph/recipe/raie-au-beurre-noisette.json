@@ -45,7 +45,7 @@
       "technique": "technique/plate",
       "works_on": ["ingredient/skate"],
       "with": ["ingredient/salt", "ingredient/capers", "ingredient/parsley"],
-      "text": "Lift the wings out, drain them well and scrape off the skin. Set them on hot plates, season them lightly with the {salt} and scatter with the {capers} [parsley: and the {parsley}].",
+      "text": "Lift the wings out, drain them well and scrape off the skin. Set them on hot plates, season them lightly with the {salt} and scatter with the {capers:plural} [parsley: and the {parsley}].",
       "time": null,
       "temperature": null,
       "safety_points": [],

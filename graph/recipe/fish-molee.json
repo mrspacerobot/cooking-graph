@@ -78,7 +78,7 @@
       "technique": "technique/temper-spices-in-hot-fat",
       "works_on": ["ingredient/curry-leaf"],
       "with": ["ingredient/coconut-oil"],
-      "text": "Heat the {coconut-oil} in a wide pan over a medium heat and add the {curry-leaf}. Let them crackle for a moment.",
+      "text": "Heat the {coconut-oil} in a wide pan over a medium heat and add the {curry-leaf:plural}. Let them crackle for a moment.",
       "time": {"from": 30, "to": 60, "unit": "second"},
       "temperature": null,
       "safety_points": [],

@@ -33,7 +33,7 @@
       "technique": "technique/slice",
       "works_on": ["ingredient/potato"],
       "with": [],
-      "text": "Slice the {potato} thinly and evenly. Do not rinse the slices: their starch thickens the {cream}.",
+      "text": "Slice the {potato:plural} thinly and evenly. Do not rinse the slices: their starch thickens the {cream}.",
       "time": null,
       "temperature": null,
       "safety_points": [],

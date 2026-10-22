@@ -58,7 +58,7 @@
         "ingredient/mustard-seed", "ingredient/black-gram", "ingredient/curry-leaf", "ingredient/dried-red-chilli"
       ],
       "with": ["ingredient/coconut-oil"],
-      "text": "Heat the {tempering-fat} in a small pan until a {mustard-seed} sizzles at once. Add the {mustard-seed} and wait for them to pop, then the {urad} until it turns golden, then the dried chilli and the {curry-leaf}. Pour the hot {tempering-fat} and the spices at once over the chutney and stir them in.",
+      "text": "Heat the {tempering-fat} in a small pan until a {mustard-seed} sizzles at once. Add the {mustard-seed:plural} and wait for them to pop, then the {urad} until it turns golden, then the dried chilli and the {curry-leaf:plural}. Pour the hot {tempering-fat} and the spices at once over the chutney and stir them in.",
       "time": {"from": 1, "to": 2, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

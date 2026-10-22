@@ -34,7 +34,7 @@
       "technique": "technique/temper",
       "works_on": ["ingredient/egg"],
       "with": ["ingredient/milk", "ingredient/semolina", "ingredient/sugar", "ingredient/vanilla", "ingredient/butter"],
-      "text": "Beat the {custard.egg} in a bowl. Whisk in a ladle of the hot {custard.semolina}, then another, until the bowl feels warm, then stir the {custard.egg} back into the pan with a spoonful of the {butter}. Take out the {custard.vanilla} pod and leave the custard to cool a little.",
+      "text": "Beat the {custard.egg:plural} in a bowl. Whisk in a ladle of the hot {custard.semolina}, then another, until the bowl feels warm, then stir the {custard.egg} back into the pan with a spoonful of the {butter}. Take out the {custard.vanilla} pod and leave the custard to cool a little.",
       "time": null,
       "temperature": null,
       "safety_points": [],

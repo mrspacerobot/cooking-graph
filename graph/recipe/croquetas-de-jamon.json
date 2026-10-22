@@ -42,7 +42,7 @@
       "technique": "technique/whisk",
       "works_on": ["ingredient/egg"],
       "with": [],
-      "text": "Beat the {egg} in a shallow dish.",
+      "text": "Beat the {egg:plural} in a shallow dish.",
       "time": null,
       "temperature": null,
       "safety_points": [],

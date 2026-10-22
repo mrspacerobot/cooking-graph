@@ -81,7 +81,7 @@
       "technique": "technique/sizzle-chilli-butter",
       "works_on": ["ingredient/butter", "ingredient/chili-flakes"],
       "with": [],
-      "text": "Melt the rest of the {butter.butter} in a small pan until it foams, take it off the heat and stir in the {butter.chili-flakes} until the {butter.butter} turns bright red.",
+      "text": "Melt the rest of the {butter.butter} in a small pan until it foams, take it off the heat and stir in the {butter.chili-flakes:plural} until the {butter.butter} turns bright red.",
       "time": {"from": 1, "to": 2, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

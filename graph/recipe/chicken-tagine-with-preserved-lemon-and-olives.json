@@ -35,7 +35,7 @@
       "technique": "technique/rinse",
       "works_on": ["preparation/preserved-lemon", "ingredient/green-olive"],
       "with": ["ingredient/water"],
-      "text": "Rinse the {preserved-lemon} and the olives under cold {water} to take off some of the brine. Quarter the lemons, scrape away the pulp and keep the rind.",
+      "text": "Rinse the {preserved-lemon:plural} and the olives under cold {water} to take off some of the brine. Quarter the lemons, scrape away the pulp and keep the rind.",
       "time": null,
       "temperature": null,
       "safety_points": [],

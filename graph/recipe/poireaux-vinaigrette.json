@@ -30,7 +30,7 @@
       "technique": "technique/boil",
       "works_on": ["ingredient/leek"],
       "with": ["ingredient/salt"],
-      "text": "Trim the {leek} to their white and pale green parts, split the tops and wash out the grit. Tie them in a bundle. Boil them in well-salted water until the tip of a knife meets no resistance at all.",
+      "text": "Trim the {leek:plural} to their white and pale green parts, split the tops and wash out the grit. Tie them in a bundle. Boil them in well-salted water until the tip of a knife meets no resistance at all.",
       "time": {"from": 12, "to": 15, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

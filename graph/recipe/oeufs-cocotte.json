@@ -49,7 +49,7 @@
       "technique": "technique/plate",
       "works_on": ["ingredient/egg"],
       "with": ["ingredient/chives"],
-      "text": "Lift the ramekins out of the water[chives: , scatter with the {chives}] and serve at once.",
+      "text": "Lift the ramekins out of the water[chives: , scatter with the {chives:plural}] and serve at once.",
       "time": null,
       "temperature": null,
       "safety_points": [],

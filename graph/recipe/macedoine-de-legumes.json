@@ -32,7 +32,7 @@
       "technique": "technique/dice",
       "works_on": ["ingredient/carrot", "ingredient/turnip", "ingredient/green-beans"],
       "with": [],
-      "text": "Cut the {carrot} and the {turnip} into small, even dice, the size of a {peas}. Top and tail the {green-beans} and cut them across to match. Keep each vegetable apart.",
+      "text": "Cut the {carrot:plural} and the {turnip:plural} into small, even dice, the size of {peas:plural}. Top and tail the {green-beans:plural} and cut them across to match. Keep each vegetable apart.",
       "time": null,
       "temperature": null,
       "safety_points": [],

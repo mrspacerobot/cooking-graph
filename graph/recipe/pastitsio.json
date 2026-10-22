@@ -49,7 +49,7 @@
       "technique": "technique/sweat",
       "works_on": ["ingredient/onion", "ingredient/garlic"],
       "with": ["ingredient/olive-oil"],
-      "text": "Dice the {kima.onion} and mince the {kima.garlic}, then soften them together in the {kima.olive-oil} in a wide pan without letting them colour.",
+      "text": "Dice the {kima.onion:plural} and mince the {kima.garlic}, then soften them together in the {kima.olive-oil} in a wide pan without letting them colour.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

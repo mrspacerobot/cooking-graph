@@ -87,7 +87,7 @@
       "technique": "technique/whisk",
       "works_on": ["ingredient/egg"],
       "with": ["ingredient/cream", "ingredient/milk", "ingredient/nutmeg", "ingredient/salt"],
-      "text": "Whisk the {egg} with the {custard}, the {milk} and the {nutmeg} until smooth. Season with a little {salt}, going lightly because the {bacon} is salty.",
+      "text": "Whisk the {egg:plural} with the {custard}, the {milk} and the {nutmeg} until smooth. Season with a little {salt}, going lightly because the {bacon} is salty.",
       "time": null,
       "temperature": null,
       "safety_points": ["raw-or-lightly-cooked-egg"],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Tuna", "fr": "Thon"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "White wine", "fr": "Vin blanc", "es": "vino blanco", "it": "vino bianco", "tr": "beyaz şarap"},
   "aliases": {"en": ["dry white wine"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

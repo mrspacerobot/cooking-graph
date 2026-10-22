@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cavolo nero", "fr": "Chou palmier"},
   "aliases": {"en": ["Tuscan kale", "lacinato kale", "dinosaur kale"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

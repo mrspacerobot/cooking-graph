@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Okra", "fr": "Gombo"},
   "aliases": {"en": ["ladies' fingers", "bhindi", "bamia", "bamieh", "bamya"]},
+  "plurals": {"en": "Okra", "fr": "Gombos"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

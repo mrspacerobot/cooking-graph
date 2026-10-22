@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Brown butter", "fr": "Beurre noisette"},
   "aliases": {"en": ["nut-brown butter"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Butter cooked until its milk solids turn nut-brown and it smells of hazelnuts.",
   "parts": [
     {"id": "butter", "role": "main", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"}

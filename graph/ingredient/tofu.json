@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Tofu"},
   "aliases": {"en": ["bean curd", "soft tofu"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

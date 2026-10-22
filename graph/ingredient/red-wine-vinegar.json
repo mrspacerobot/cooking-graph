@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Red wine vinegar", "fr": "Vinaigre de vin rouge"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

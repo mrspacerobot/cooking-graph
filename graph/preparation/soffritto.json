@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Soffritto", "fr": "Soffritto"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "The Italian flavour base: onion, carrot and celery chopped very fine and cooked slowly in olive oil until they melt into a soft, sweet, golden mass. It starts soups, sauces, ragus and braises.",
   "parts": [
     {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},

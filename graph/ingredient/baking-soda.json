@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Baking soda"},
   "aliases": {"en": ["bicarbonate of soda", "sodium bicarbonate"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

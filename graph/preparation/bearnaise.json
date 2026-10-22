@@ -9,6 +9,8 @@
     "tr": "Béarnaise sosu"
   },
   "aliases": {"en": ["bearnaise sauce", "béarnaise sauce", "sauce bearnaise"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A warm, thick sauce of egg yolk and butter, sharpened with a reduction of vinegar, wine, shallot and tarragon, and finished with fresh tarragon. It is spooned beside grilled or seared beef.",
   "parts": [
     {"id": "egg-yolk", "role": "emulsifier", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},

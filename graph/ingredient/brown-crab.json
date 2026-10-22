@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Brown crab", "fr": "Tourteau"},
   "aliases": {"en": ["crab", "edible crab"]},
+  "plurals": {"en": "Brown crab", "fr": "Tourteaux"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

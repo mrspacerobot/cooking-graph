@@ -9,6 +9,8 @@
     "tr": "Tart hamuru"
   },
   "aliases": {"en": ["shortcrust", "pie pastry"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A crisp, crumbly pastry of flour rubbed with cold butter and bound with a little water or egg.",
   "parts": [
     {"id": "flour", "role": "main", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Olive", "fr": "Olive", "es": "oliva", "it": "oliva", "tr": "zeytin"},
   "aliases": {},
+  "plurals": {"en": "Olives", "fr": "Olives", "es": "olivas", "it": "olive", "tr": "zeytinler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

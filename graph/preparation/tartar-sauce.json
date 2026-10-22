@@ -9,6 +9,8 @@
     "fr": "sauce tartare"
   },
   "aliases": {"en": ["tartare sauce"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick, creamy sauce of mayonnaise with chopped pickles, chopped boiled egg and onion. It goes with fried food, where its sharpness cuts through the oil.",
   "parts": [
     {"id": "mayonnaise", "role": "base", "options": ["preparation/mayonnaise"], "optional": false, "tier": "drafted"},

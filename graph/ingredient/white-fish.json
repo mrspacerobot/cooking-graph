@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "White fish", "fr": "Poisson blanc"},
   "aliases": {"en": ["white fish fillet", "white-fleshed fish"]},
+  "plurals": {"en": "White fish", "fr": "Poissons blancs"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

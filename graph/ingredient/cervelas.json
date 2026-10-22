@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cervelas", "fr": "Cervelas"},
   "aliases": {"en": ["cervelas sausage"]},
+  "plurals": {"en": "Cervelases", "fr": "Cervelas"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

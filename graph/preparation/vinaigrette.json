@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Vinaigrette", "fr": "Vinaigrette", "es": "vinagreta"},
   "aliases": {"en": ["French dressing", "mustard vinaigrette"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Oil whisked into vinegar and mustard until they hold together for a while: the dressing of French salads.",
   "parts": [
     {

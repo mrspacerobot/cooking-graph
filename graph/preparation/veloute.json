@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Velouté", "fr": "Velouté"},
   "aliases": {"en": ["velouté sauce"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A white stock thickened with a blond roux and simmered until smooth and velvety, the base of the cream sauces for poultry, veal and fish.",
   "parts": [
     {"id": "roux", "role": "thickener", "options": ["preparation/roux"], "optional": false, "tier": "drafted"},

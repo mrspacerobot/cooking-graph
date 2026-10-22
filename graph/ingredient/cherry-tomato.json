@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cherry tomato", "fr": "Tomate cerise", "it": "pomodoro ciliegino", "tr": "çeri domates"},
   "aliases": {},
+  "plurals": {"en": "Cherry tomatoes", "fr": "Tomates cerises", "it": "pomodori ciliegini", "tr": "çeri domatesler"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/tomato", "tier": "drafted"}
   ],

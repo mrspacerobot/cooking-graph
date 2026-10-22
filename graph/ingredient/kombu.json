@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Kombu"},
   "aliases": {"en": ["dried kelp", "dashi kombu"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

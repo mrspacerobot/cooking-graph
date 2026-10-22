@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lamb shoulder", "fr": "Épaule d'agneau", "es": "paletilla de cordero"},
   "aliases": {"en": ["stewing lamb"]},
+  "plurals": {"en": "Lamb shoulders", "fr": "Épaules d'agneau", "es": "paletillas de cordero"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

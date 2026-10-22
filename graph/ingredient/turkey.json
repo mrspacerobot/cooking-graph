@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Turkey", "fr": "Dinde"},
   "aliases": {},
+  "plurals": {"en": "Turkeys", "fr": "Dindes"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

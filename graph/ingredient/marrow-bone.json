@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Marrow bone", "fr": "Os à moelle"},
   "aliases": {"en": ["beef marrow bone"]},
+  "plurals": {"en": "Marrow bones", "fr": "Os à moelle"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

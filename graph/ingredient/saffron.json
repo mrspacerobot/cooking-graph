@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Saffron", "fr": "Safran", "es": "azafrán", "it": "zafferano"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

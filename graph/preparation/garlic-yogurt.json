@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Garlic yogurt"},
   "aliases": {"en": ["sarimsakli yogurt"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Thick yogurt stirred with crushed, salted garlic, kept cold and spooned under or over hot and cold food.",
   "parts": [
     {

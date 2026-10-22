@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Nori"},
   "aliases": {"en": ["laver", "dried seaweed sheets"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

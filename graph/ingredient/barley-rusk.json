@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Barley rusk"},
   "aliases": {"en": ["paximadi"]},
+  "plurals": {"en": "Barley rusks"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

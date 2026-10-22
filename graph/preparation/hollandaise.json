@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Hollandaise", "fr": "Sauce hollandaise", "es": "salsa holandesa", "it": "Salsa olandese"},
   "aliases": {"en": ["hollandaise sauce"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A warm sauce of butter whisked into egg yolks that have been cooked to a foam, sharpened with lemon.",
   "parts": [
     {"id": "egg-yolk", "role": "emulsifier", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},

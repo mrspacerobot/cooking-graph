@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Kidney bean", "fr": "Haricot rouge", "es": "frijol rojo"},
   "aliases": {"en": ["rajma", "red kidney bean"]},
+  "plurals": {"en": "Kidney beans", "fr": "Haricots rouges", "es": "frijoles rojos"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

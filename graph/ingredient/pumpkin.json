@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pumpkin", "fr": "Potiron", "it": "zucca"},
   "aliases": {"en": ["winter squash"], "fr": ["citrouille"]},
+  "plurals": {"en": "Pumpkins", "fr": "Potirons", "it": "zucche"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

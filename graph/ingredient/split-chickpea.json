@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Split chickpea"},
   "aliases": {"en": ["chana dal"]},
+  "plurals": {"en": "Split chickpeas"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

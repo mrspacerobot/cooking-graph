@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Red pepper", "fr": "Poivron rouge"},
   "aliases": {"en": ["red bell pepper"]},
+  "plurals": {"en": "Red peppers", "fr": "Poivrons rouges"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/bell-pepper", "tier": "drafted"}
   ],

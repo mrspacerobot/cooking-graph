@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Leg of lamb", "fr": "Gigot d'agneau"},
   "aliases": {},
+  "plurals": {"en": "Legs of lamb", "fr": "Gigots d'agneau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

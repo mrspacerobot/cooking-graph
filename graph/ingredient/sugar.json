@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sugar", "fr": "Sucre", "es": "azúcar", "it": "zuccheri", "tr": "şeker"},
   "aliases": {"en": ["white sugar", "caster sugar", "granulated sugar"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Ras el hanout", "es": "Ras el hanut"},
   "aliases": {"en": ["ras al hanout"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A blend of many ground spices, which differs from cook to cook and from shop to shop. It is warm, floral and gently hot, and it is stirred into a dish early or rubbed onto meat.",
   "parts": [
     {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},

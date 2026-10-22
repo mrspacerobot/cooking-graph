@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pork loin", "fr": "Longe de porc", "es": "Lomo de cerdo", "it": "lonza di maiale"},
   "aliases": {"en": ["loin of pork", "pork roasting joint"]},
+  "plurals": {"en": "Pork loins", "fr": "Longes de porc", "es": "Lomos de cerdo", "it": "lonze di maiale"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

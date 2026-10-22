@@ -9,6 +9,8 @@
     "tr": "Kahverengi şeker"
   },
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/sugar", "tier": "drafted"}
   ],

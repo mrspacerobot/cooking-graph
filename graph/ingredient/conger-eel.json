@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Conger eel", "fr": "Congre"},
   "aliases": {"en": ["conger"]},
+  "plurals": {"en": "Conger eels", "fr": "Congres"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

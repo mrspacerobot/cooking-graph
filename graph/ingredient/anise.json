@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Anise", "fr": "Anis", "es": "semilla de anís", "it": "seme di anice verde"},
   "aliases": {"en": ["aniseed", "anise seed"], "fr": ["graine d’anis"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

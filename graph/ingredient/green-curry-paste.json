@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Green curry paste", "fr": "Pâte de curry vert"},
   "aliases": {"en": ["Thai green curry paste"], "es": ["pasta de curry verde"], "it": ["pasta di curry verde"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

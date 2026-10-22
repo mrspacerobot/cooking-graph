@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Kashmiri red chilli powder"},
   "aliases": {"en": ["kashmiri red chili powder", "kashmiri chilli powder", "kashmiri mirch"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/red-chilli-powder", "tier": "drafted"}
   ],

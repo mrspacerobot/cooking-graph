@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Guindilla"},
   "aliases": {"en": ["guindilla pepper"]},
+  "plurals": {"en": "Guindillas"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/chilli", "tier": "drafted"}
   ],

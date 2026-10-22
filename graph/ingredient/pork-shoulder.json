@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pork shoulder", "fr": "Épaule de porc", "es": "paleta de cerdo"},
   "aliases": {},
+  "plurals": {"en": "Pork shoulders", "fr": "Épaules de porc", "es": "paletas de cerdo"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

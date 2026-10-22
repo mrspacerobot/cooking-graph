@@ -7,7 +7,7 @@ cook when its food or one of its swaps is safe for what they avoid; a recipe is 
 unsafe for, and never make the recipe unsafe.
 """
 
-from tools import queries, query_safety
+from tools import queries, query_safety, recipe_text, step_text
 
 
 def facts_in(things):
@@ -66,7 +66,8 @@ def offered(entry, avoided):
 def serving_of(things):
     facts = facts_in(things)
     recipes = sorted(thing_id for thing_id, thing in things.items() if thing.kind == "recipe")
-    return {"facts": facts, "recipes": {recipe_id: recipe_entry(things, recipe_id, facts) for recipe_id in recipes}}
+    return {"facts": facts, "step_text": {"proper_name_words": list(step_text.PROPER_NAME_WORDS)},
+            "recipes": {recipe_id: recipe_entry(things, recipe_id, facts) for recipe_id in recipes}}
 
 
 def avoid_sets(facts):
@@ -86,4 +87,46 @@ def vectors_of(things):
     for avoid in avoid_sets(facts_in(things)):
         offered = [recipe for recipe in recipes if queries.can_make(things, recipe, avoid)["status"] == "ok"]
         cases.append({"avoid": avoid, "offered": offered})
-    return {"cases": cases}
+    return {"cases": cases, "step_text_cases": step_text_cases(things, recipes)}
+
+
+def first_swaps(things, recipe_id, uncountable_only=False):
+    """Every line that has a swap, replaced by its first swap: {(part, food): stand-in}. With `uncountable_only`, only
+    swaps to an uncountable food count, and a line takes the first of those."""
+    swaps = {}
+    for line in queries.stand_ins(things, recipe_id)["lines"]:
+        options = [one["thing"] for one in line["options"]]
+        if uncountable_only:
+            options = [thing_id for thing_id in options if things[thing_id].data["uncountable"]]
+        if options:
+            swaps[(line["part"], line["original"])] = options[0]
+    return swaps
+
+
+def step_text_case(things, recipe_id, swaps, left_out):
+    recipe = things[recipe_id].data
+    steps = recipe_text.rendered_steps(things, recipe, swaps, left_out)
+    return {"recipe": recipe_id, "left_out": sorted(left_out),
+            "swaps": [{"part": part, "thing": food, "instead": instead} for (part, food), instead in sorted(swaps.items())],
+            "steps": [{"step": number, "text": text} for number, text in steps]}
+
+
+def step_text_cases(things, recipes):
+    """What a server must render for each recipe: as written, with each optional part left out, with every
+    line that has a swap swapped, and with every line swapped to an uncountable stand-in (a plural placeholder then
+    prints the name). Written by the reference (`recipe_text`), so a server that renders the same
+    text is proven against it."""
+    cases = []
+    for recipe_id in recipes:
+        recipe = things[recipe_id].data
+        optional = sorted({part["id"] for part in things[recipe["makes"]].data["parts"] if part["optional"]})
+        cases.append(step_text_case(things, recipe_id, {}, []))
+        cases.extend(step_text_case(things, recipe_id, {}, [part]) for part in optional
+                     if any(line["part"] == part for line in recipe["ingredients"]))
+        swaps = first_swaps(things, recipe_id)
+        if swaps:
+            cases.append(step_text_case(things, recipe_id, swaps, []))
+        uncountable = first_swaps(things, recipe_id, uncountable_only=True)
+        if uncountable and uncountable != swaps:
+            cases.append(step_text_case(things, recipe_id, uncountable, []))
+    return cases

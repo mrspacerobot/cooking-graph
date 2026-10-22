@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Veal shoulder", "fr": "Épaule de veau"},
   "aliases": {"en": ["stewing veal"]},
+  "plurals": {"en": "Veal shoulders", "fr": "Épaules de veau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

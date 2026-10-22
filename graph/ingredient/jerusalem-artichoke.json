@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Jerusalem artichoke", "fr": "Topinambour", "es": "alcachofa de Jerusalén", "it": "topinambur"},
   "aliases": {"en": ["sunchoke"]},
+  "plurals": {"en": "Jerusalem artichokes", "fr": "Topinambours", "es": "alcachofas de Jerusalén", "it": "topinambur"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

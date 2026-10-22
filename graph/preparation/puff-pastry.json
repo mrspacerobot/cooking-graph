@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Puff pastry", "fr": "Pâte feuilletée", "es": "hojaldre", "it": "pasta sfoglia", "tr": "milföy"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "A pastry of thin layers of dough and butter, folded many times, which rise apart into crisp leaves in the oven.",
   "parts": [
     {"id": "flour", "role": "main", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},

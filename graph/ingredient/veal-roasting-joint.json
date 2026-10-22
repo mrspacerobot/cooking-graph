@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Veal roasting joint", "fr": "Rôti de veau"},
   "aliases": {"en": ["veal roast", "roasting joint of veal"]},
+  "plurals": {"en": "Veal roasting joints", "fr": "Rôtis de veau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

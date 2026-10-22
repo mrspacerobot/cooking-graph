@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Rib steak", "fr": "Entrecôte", "es": "Costilla de ternera"},
   "aliases": {"en": ["ribeye", "entrecote"], "fr": ["côte de bœuf"]},
+  "plurals": {"en": "Rib steaks", "fr": "Entrecôtes", "es": "Costillas de ternera"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/beef-steak", "tier": "drafted"}
   ],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Bay leaf", "fr": "Laurier", "es": "laurel", "it": "alloro", "tr": "Akdeniz Defnesi"},
   "aliases": {"en": ["bay", "laurel leaf"], "fr": ["feuille de laurier"]},
+  "plurals": {"en": "Bay leaves", "fr": "Lauriers", "es": "laureles", "it": "allori", "tr": "Akdeniz defneleri"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

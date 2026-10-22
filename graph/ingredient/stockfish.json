@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Stockfish", "fr": "Stockfisch", "es": "Pescado seco"},
   "aliases": {"en": ["stoccafisso"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

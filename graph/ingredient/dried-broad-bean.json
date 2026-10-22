@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Dried broad bean"},
   "aliases": {"en": ["dried broad beans", "dried fava bean", "dried fava beans", "kuru bakla"]},
+  "plurals": {"en": "Dried broad beans"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

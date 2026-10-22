@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Foie gras", "fr": "Foie gras"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

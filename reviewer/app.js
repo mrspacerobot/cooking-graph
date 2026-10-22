@@ -197,7 +197,7 @@ function recipeBody(record) {
     section("Ingredients", `<ul class="plain-list">${record.ingredients.map(row => `<li>${escapeText(measure(row.amount))} <strong>${link(row.thing)}</strong>${row.forms.length ? `, ${escapeText(row.forms.map(nameOf).join(", "))}` : ""}</li>`).join("")}</ul>`) +
     section("Substitutions to review", recipeSubstitutions(record)) +
     section("Equipment", links(record.equipment)) +
-    section("Method to review", `<ol>${record.steps.map(step => `<li><strong>${link(step.technique)}</strong><p>${escapeText(step.text)}</p><p class="step-meta">${[
+    section("Method to review", `<ol>${record.steps.map(step => `<li><strong>${link(step.technique)}</strong><p>${escapeText(step.text_as_read)}</p><p class="step-meta">${[
       measure(step.time), measure(step.temperature),
       step.works_on.length ? "Works on: " + step.works_on.map(nameOf).join(", ") : "",
       step.with.length ? "With: " + step.with.map(nameOf).join(", ") : "",

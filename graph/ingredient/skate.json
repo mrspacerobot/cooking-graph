@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Skate", "fr": "Raie"},
   "aliases": {"en": ["skate wing", "ray"]},
+  "plurals": {"en": "Skate", "fr": "Raies"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],

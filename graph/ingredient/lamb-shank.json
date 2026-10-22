@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lamb shank", "fr": "Souris d'agneau"},
   "aliases": {},
+  "plurals": {"en": "Lamb shanks", "fr": "Souris d'agneau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

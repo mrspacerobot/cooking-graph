@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Oil", "fr": "Huile", "es": "aceite vegetal", "it": "olio vegetale", "tr": "Bitkisel yağ"},
   "aliases": {"en": ["cooking oil", "vegetable oil", "neutral oil"], "fr": ["huile végétale"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

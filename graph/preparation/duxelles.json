@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Duxelles", "fr": "Duxelles", "es": "Salsa Duxelle"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "A dry, dark paste of finely minced mushrooms and shallot cooked in butter until their water is gone. It is spread, stuffed or folded into a filling.",
   "parts": [
     {"id": "mushroom", "role": "main", "options": ["ingredient/mushroom"], "optional": false, "tier": "drafted"},

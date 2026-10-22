@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Porcini mushroom", "fr": "Cèpe"},
   "aliases": {"en": ["porcini", "cep"]},
+  "plurals": {"en": "Porcini mushrooms", "fr": "Cèpes"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lettuce", "fr": "Laitue", "es": "Lechuga", "it": "lattuga"},
   "aliases": {"en": ["butterhead lettuce"]},
+  "plurals": {"en": "Lettuces", "fr": "Laitues", "es": "Lechugas", "it": "lattughe"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

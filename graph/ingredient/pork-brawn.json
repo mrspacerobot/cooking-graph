@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pork brawn", "fr": "Fromage de tête"},
   "aliases": {},
+  "plurals": {"en": "Pork brawns", "fr": "Fromages de tête"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

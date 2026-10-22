@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Dried mint", "fr": "Menthe séchée"},
   "aliases": {"en": ["dry mint"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

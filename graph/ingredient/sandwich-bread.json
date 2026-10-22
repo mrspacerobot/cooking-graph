@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sandwich bread", "fr": "Pain de mie", "es": "pan de molde"},
   "aliases": {"en": ["white sandwich loaf"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/bread", "tier": "drafted"}
   ],

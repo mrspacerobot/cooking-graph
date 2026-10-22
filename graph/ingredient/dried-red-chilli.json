@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Dried red chilli", "fr": "Piment rouge séché"},
   "aliases": {"en": ["dried red chili", "whole dried red chilli", "sukhi lal mirch"]},
+  "plurals": {"en": "Dried red chillis", "fr": "Piments rouges séchés"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/chilli", "tier": "drafted"}
   ],

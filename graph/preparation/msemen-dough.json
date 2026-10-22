@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Msemen dough"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "A soft, wet dough of wheat flour and fine semolina, worked smooth and rested, then rolled out thin, brushed with fat and folded in layers, ready to be flattened and cooked on a griddle.",
   "parts": [
     {"id": "flour", "role": "main", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},

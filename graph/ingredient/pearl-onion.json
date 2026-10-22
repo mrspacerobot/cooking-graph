@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pearl onion", "fr": "Oignon grelot"},
   "aliases": {"en": ["pearl onions", "button onion"]},
+  "plurals": {"en": "Pearl onions", "fr": "Oignons grelots"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

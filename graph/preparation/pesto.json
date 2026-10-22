@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pesto", "fr": "Pesto"},
   "aliases": {"en": ["pesto alla genovese", "basil pesto"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A raw, thick, green sauce of Liguria, pounded from basil, garlic, pine nuts, grated hard cheese and olive oil. It is stirred into hot pasta off the heat.",
   "parts": [
     {"id": "basil", "role": "main", "options": ["ingredient/basil"], "optional": false, "tier": "drafted"},

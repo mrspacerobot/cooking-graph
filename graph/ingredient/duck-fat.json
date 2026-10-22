@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Duck fat", "fr": "Graisse de canard", "es": "grasa de pato", "it": "grasso d'anatra"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -7,6 +7,8 @@
     "es": ["pimentón ahumado", "pimentón de la Vera"],
     "it": ["paprica affumicata"]
   },
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

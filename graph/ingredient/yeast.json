@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Yeast", "fr": "Levure de boulanger", "es": "levadura", "it": "lievito", "tr": "maya"},
   "aliases": {"en": ["baker's yeast", "fresh yeast"], "fr": ["levure"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

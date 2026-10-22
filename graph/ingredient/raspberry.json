@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Raspberry", "fr": "Framboise", "es": "frambuesa", "it": "lampone", "tr": "ahududu"},
   "aliases": {"en": ["raspberries"]},
+  "plurals": {"en": "Raspberries", "fr": "Framboises", "es": "frambuesas", "it": "lamponi", "tr": "ahududular"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

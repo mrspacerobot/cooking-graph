@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Guinea fowl", "fr": "Pintade"},
   "aliases": {"en": ["guineafowl"]},
+  "plurals": {"en": "Guinea fowl", "fr": "Pintades"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

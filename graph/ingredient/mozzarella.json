@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Mozzarella", "fr": "Mozzarella"},
   "aliases": {"en": ["fresh mozzarella"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

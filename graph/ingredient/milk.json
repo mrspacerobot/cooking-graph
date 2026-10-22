@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Milk", "fr": "Lait", "es": "leche", "it": "latte", "tr": "süt"},
   "aliases": {"en": ["whole milk"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

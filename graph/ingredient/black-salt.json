@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Black salt", "fr": "Sel noir"},
   "aliases": {"en": ["kala namak", "kala namak salt"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Shrimp", "fr": "Crevette", "it": "gamberetto", "tr": "karides"},
   "aliases": {"en": ["prawn", "garides", "gamba"]},
+  "plurals": {"en": "Shrimp", "fr": "Crevettes", "it": "gamberetti", "tr": "karidesler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

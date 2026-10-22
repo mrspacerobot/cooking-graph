@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Salt cod", "fr": "Morue"},
   "aliases": {"en": ["salted cod"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

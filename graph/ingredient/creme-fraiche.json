@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Crème fraîche", "fr": "Crème fraîche", "tr": "Krem fraîche"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

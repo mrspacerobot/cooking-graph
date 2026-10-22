@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Duck confit", "fr": "Confit de canard", "es": "Confit de pato", "tr": "Ördek konfi"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

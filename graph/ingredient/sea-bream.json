@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sea bream", "fr": "Daurade"},
   "aliases": {"en": ["gilthead bream", "orata"], "fr": ["dorade"]},
+  "plurals": {"en": "Sea bream", "fr": "Daurades"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],

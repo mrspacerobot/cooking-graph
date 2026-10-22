@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Alioli"},
   "aliases": {"en": ["allioli"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick, pale, glossy sauce of garlic pounded with salt and olive oil worked in drop by drop, made without egg.",
   "parts": [
     {"id": "garlic", "role": "base", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},

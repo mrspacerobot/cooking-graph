@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Coconut milk", "fr": "Lait de coco"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Orzo", "tr": "Arpa şehriye"},
   "aliases": {"en": ["kritharaki", "risoni"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/pasta", "tier": "drafted"}
   ],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Duck gizzard", "fr": "Gésier de canard"},
   "aliases": {},
+  "plurals": {"en": "Duck gizzards", "fr": "Gésiers de canard"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

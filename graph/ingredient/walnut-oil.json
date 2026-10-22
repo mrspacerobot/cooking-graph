@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Walnut oil", "fr": "Huile de noix", "es": "aceite de nuez", "it": "olio di noci"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

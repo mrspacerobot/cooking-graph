@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "White vinegar", "fr": "Vinaigre blanc"},
   "aliases": {"en": ["distilled white vinegar", "spirit vinegar"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/vinegar", "tier": "drafted"}
   ],

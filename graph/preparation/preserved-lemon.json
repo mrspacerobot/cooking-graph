@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Preserved lemon", "fr": "Citron confit", "es": "Limón encurtido"},
   "aliases": {"en": ["preserved lemons", "salt-preserved lemon"], "fr": ["Citron confit au sel"]},
+  "plurals": {"en": "Preserved lemons", "fr": "Citrons confits", "es": "Limones encurtidos"},
+  "uncountable": false,
   "is": "Whole lemons cut in quarters but left joined at the stem end, packed in salt and their own juice, and left to soften until the rind is tender and fragrant and the pith has lost its bitterness. Mostly the rind is used, rinsed, and the pulp is scraped away or kept for a sauce.",
   "parts": [
     {"id": "lemon", "role": "main", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},

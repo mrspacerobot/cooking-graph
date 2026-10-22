@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chorizo", "fr": "Chorizo", "tr": "çorizo"},
   "aliases": {"en": ["Spanish chorizo"]},
+  "plurals": {"en": "Chorizos", "fr": "Chorizos", "tr": "çorizolar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

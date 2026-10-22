@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Mayonnaise", "fr": "Mayonnaise", "es": "mayonesa", "it": "maionese", "tr": "mayonez"},
   "aliases": {"en": ["mayo"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick, cold sauce of oil whisked drop by drop into egg yolk, sharpened with mustard and vinegar or lemon.",
   "parts": [
     {"id": "egg-yolk", "role": "emulsifier", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pan sauce"},
   "aliases": {"en": ["deglazed pan juices"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "The sauce a pan makes for itself: its fond dissolved in a liquid, boiled down, and often finished with butter or cream.",
   "parts": [],
   "groups": [

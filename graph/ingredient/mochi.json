@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Mochi"},
   "aliases": {"en": ["rice cake"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

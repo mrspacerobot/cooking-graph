@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Kima"},
   "aliases": {"en": ["Greek meat sauce"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick, moist, mildly spiced sauce of minced meat, onion, tomato and a little red wine, scented with cinnamon, allspice and a bay leaf. It is the meat layer of moussaka and fills baked pasta.",
   "parts": [
     {

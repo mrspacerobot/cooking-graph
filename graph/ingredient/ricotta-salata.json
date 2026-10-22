@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Ricotta salata", "fr": "Ricotta salée", "it": "ricotta secca"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Radish", "fr": "Radis"},
   "aliases": {"en": ["radishes"]},
+  "plurals": {"en": "Radishes", "fr": "Radis"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

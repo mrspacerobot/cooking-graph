@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Salted salmon"},
   "aliases": {"en": ["shiozake"]},
+  "plurals": {"en": "Salted salmons"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

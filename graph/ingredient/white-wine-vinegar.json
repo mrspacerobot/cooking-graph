@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "White wine vinegar", "fr": "Vinaigre de vin blanc"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

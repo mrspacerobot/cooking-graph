@@ -3,6 +3,14 @@
   "tier": "drafted",
   "names": {"en": "Green beans", "fr": "Haricots verts", "es": "judía verde", "it": "fagiolino", "tr": "Yeşil fasulye"},
   "aliases": {"en": ["French beans", "green bean"], "fr": ["haricot vert"]},
+  "plurals": {
+    "en": "Green beans",
+    "fr": "Haricots verts",
+    "es": "judías verdes",
+    "it": "fagiolini",
+    "tr": "Yeşil fasulyeler"
+  },
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

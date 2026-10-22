@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Caul fat", "fr": "Crépine", "it": "omento"},
   "aliases": {"en": ["caul"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

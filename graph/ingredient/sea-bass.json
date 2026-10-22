@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sea bass", "fr": "Bar"},
   "aliases": {"en": ["bass", "European sea bass"], "fr": ["loup"]},
+  "plurals": {"en": "Sea bass", "fr": "Bars"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],

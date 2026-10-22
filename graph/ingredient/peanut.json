@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Peanut", "fr": "Cacahuète", "es": "maní", "it": "arachide"},
   "aliases": {"en": ["groundnut", "peanuts"]},
+  "plurals": {"en": "Peanuts", "fr": "Cacahuètes", "es": "maníes", "it": "arachidi"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

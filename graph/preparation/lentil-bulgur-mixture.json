@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lentil and bulgur mixture"},
   "aliases": {"en": ["mercimek koftesi mixture"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Red lentils and fine bulgur swollen together in the heat, kneaded with softened onion, paste and spice into a soft mixture that holds when squeezed.",
   "parts": [
     {"id": "lentil", "role": "main", "options": ["ingredient/red-lentil"], "optional": false, "tier": "drafted"},

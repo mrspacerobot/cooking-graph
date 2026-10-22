@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Tonkatsu sauce"},
   "aliases": {"en": ["katsu sauce"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beef bones", "fr": "Os de bœuf"},
   "aliases": {},
+  "plurals": {"en": "Beef bones", "fr": "Os de bœuf"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

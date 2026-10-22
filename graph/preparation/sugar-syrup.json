@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sugar syrup", "fr": "sirop de sucre"},
   "aliases": {"en": ["simple syrup"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Sugar dissolved in water and simmered until it is clear and lightly thick. It soaks into pastry, sweetens fruit and drinks, and glazes cakes.",
   "parts": [
     {

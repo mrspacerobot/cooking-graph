@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pork sausage", "fr": "Saucisse"},
   "aliases": {"en": ["fresh pork sausage", "Toulouse sausage"]},
+  "plurals": {"en": "Pork sausages", "fr": "Saucisses"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

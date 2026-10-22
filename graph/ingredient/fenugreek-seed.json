@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fenugreek seed", "fr": "Fenugrec", "es": "semilla de alholva", "it": "seme di fieno greco"},
   "aliases": {"en": ["methi seed", "methi dana"], "fr": ["graine de fenugrec"]},
+  "plurals": {"en": "Fenugreek seeds", "fr": "Fenugrecs", "es": "semillas de alholva", "it": "semi di fieno greco"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

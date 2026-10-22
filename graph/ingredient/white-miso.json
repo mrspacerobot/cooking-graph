@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "White miso", "fr": "Miso blanc"},
   "aliases": {"en": ["shiro miso"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/miso", "tier": "drafted"}
   ],

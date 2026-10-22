@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Squid", "fr": "Calmar"},
   "aliases": {"en": ["calamar"]},
+  "plurals": {"en": "Squid", "fr": "Calmars"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

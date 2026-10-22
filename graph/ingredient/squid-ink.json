@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Squid ink", "fr": "Encre de calmar"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

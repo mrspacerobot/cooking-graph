@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Crepe", "fr": "Crêpe"},
   "aliases": {"en": ["crepes", "French pancake"], "fr": ["crêpes"]},
+  "plurals": {"en": "Crepes", "fr": "Crêpes"},
+  "uncountable": false,
   "is": "A thin pancake of runny batter of flour, egg and milk, cooked in a hot buttered pan. It is served flat, folded, or rolled round a sweet or savoury filling.",
   "parts": [
     {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},

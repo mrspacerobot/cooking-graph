@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pomegranate seed", "fr": "Graine de grenade"},
   "aliases": {"en": ["pomegranate seeds", "pomegranate arils"]},
+  "plurals": {"en": "Pomegranate seeds", "fr": "Graines de grenade"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

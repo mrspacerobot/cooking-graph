@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cider", "fr": "Cidre", "es": "sidra", "it": "sidro", "tr": "elma şarabı"},
   "aliases": {"en": ["dry cider", "hard cider"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

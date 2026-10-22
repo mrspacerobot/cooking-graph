@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Duck", "fr": "Canard"},
   "aliases": {"en": ["whole duck"]},
+  "plurals": {"en": "Ducks", "fr": "Canards"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

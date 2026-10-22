@@ -47,7 +47,7 @@
         "ingredient/water", "ingredient/turmeric", "ingredient/ginger", "ingredient/tomato", "ingredient/green-chilli",
         "ingredient/salt"
       ],
-      "text": "Rinse the lentils in a colander under cold water, turning them with your fingers, until the water is nearly clear, and drain them well. Put them in a saucepan with the water, the turmeric, the ginger, the tomato and the green chilli. Bring to a boil, skim off the foam, and then simmer gently, stirring now and then, until the lentils have fallen apart into a soft porridge. Add a splash of hot water if it thickens too much. Stir in the salt, beat the dal with a wooden spoon for a moment to make it smooth, and taste.",
+      "text": "Rinse the lentils in a colander under cold {water}, turning them with your fingers, until the {water} is nearly clear, and drain them well. Put them in a saucepan with the {water}, the {turmeric}, the {ginger}, the {tomato} and the {green-chilli}. Bring to a boil, skim off the foam, and then simmer gently, stirring now and then, until the lentils have fallen apart into a soft porridge. Add a splash of hot {water} if it thickens too much. Stir in the {salt}, beat the dal with a wooden spoon for a moment to make it smooth, and taste.",
       "time": {"from": 20, "to": 25, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
@@ -60,7 +60,7 @@
         "ingredient/ghee", "ingredient/garlic", "ingredient/red-lentil", "ingredient/lemon-juice",
         "ingredient/coriander-leaf"
       ],
-      "text": "Heat the ghee in a small pan until a cumin seed sizzles at once. Add the cumin, the dried chillies and the asafoetida, then the garlic, and cook just until the garlic turns pale gold and the scent rises. Pour the sizzling ghee and spices over the dal at once and stir once. Sharpen with the lemon juice, scatter the coriander over the top and serve it hot.",
+      "text": "Heat the {tempering-fat} in a small pan until a {cumin} seed sizzles at once. Add the {cumin}, the dried chillies [asafoetida: and the {asafoetida}], then the {garlic}, and cook just until the {garlic} turns pale gold and the scent rises. Pour the sizzling {tempering-fat} and spices over the dal at once and stir once. [lemon-juice: Sharpen with the {lemon-juice}.] Scatter the {coriander} over the top and serve it hot.",
       "time": {"from": 1, "to": 2, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

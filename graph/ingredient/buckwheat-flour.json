@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Buckwheat flour", "fr": "Farine de sarrasin", "es": "harina de sarraceno"},
   "aliases": {"en": ["farina di grano saraceno"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

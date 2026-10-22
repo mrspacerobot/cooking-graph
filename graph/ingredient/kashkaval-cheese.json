@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Kashkaval cheese", "tr": "kaşkaval"},
   "aliases": {"en": ["kashkaval", "kasar", "kasar peyniri"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

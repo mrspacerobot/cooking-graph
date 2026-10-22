@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Capon", "fr": "Chapon"},
   "aliases": {},
+  "plurals": {"en": "Capons", "fr": "Chapons"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/chicken", "tier": "drafted"}
   ],

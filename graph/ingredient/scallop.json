@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Scallop", "fr": "Noix de Saint-Jacques", "es": "vieira", "it": "capasanta"},
   "aliases": {"en": ["sea scallop", "scallops"], "fr": ["pétoncle"]},
+  "plurals": {"en": "Scallops", "fr": "Noix de Saint-Jacques", "es": "vieiras", "it": "capasante"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

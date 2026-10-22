@@ -23,6 +23,7 @@ def kitchen():
     recipe["ingredients"] = [
         {"thing": "ingredient/onion", "part": "onion", "amount": {"value": 1, "unit": "piece"}, "forms": []},
         {"thing": "ingredient/butter", "part": "butter", "amount": {"value": 10, "unit": "gram"}, "forms": []}]
+    recipe["steps"][0]["text"] = "Soften the {onion} in the {butter} over low heat."
     recipe["steps"][0]["works_on"] = ["ingredient/onion"]
     recipe["steps"][0]["with"] = ["ingredient/butter"]
     oil = ingredient("oil", "Oil", [], ["fact/dairy", "fact/gluten"])

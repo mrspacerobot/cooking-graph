@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Vinegar", "fr": "Vinaigre", "es": "vinagre", "it": "aceto", "tr": "sirke"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Octopus", "fr": "Poulpe"},
   "aliases": {"en": ["pulpo"]},
+  "plurals": {"en": "Octopuses", "fr": "Poulpes"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

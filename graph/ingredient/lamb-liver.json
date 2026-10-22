@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lamb liver", "fr": "Foie d'agneau"},
   "aliases": {"en": ["lamb's liver"]},
+  "plurals": {"en": "Lamb livers", "fr": "Foies d'agneau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Semolina custard"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick custard of milk cooked with semolina and sugar, scented with vanilla and finished with egg and butter. It is the filling of the Greek custard pie.",
   "parts": [
     {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},

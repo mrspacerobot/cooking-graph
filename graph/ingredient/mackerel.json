@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Mackerel", "fr": "Maquereau", "es": "verdel"},
   "aliases": {"en": ["saba"]},
+  "plurals": {"en": "Mackerel", "fr": "Maquereaux", "es": "verdeles"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

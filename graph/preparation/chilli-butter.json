@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chilli butter"},
   "aliases": {"en": ["red butter", "kizdirilmis tereyagi"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Melted butter with dried chilli flakes or paprika sizzled into it until it turns red, spooned over food as a last touch.",
   "parts": [
     {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},

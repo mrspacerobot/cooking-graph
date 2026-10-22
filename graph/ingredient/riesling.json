@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Riesling", "fr": "Riesling"},
   "aliases": {"en": ["Riesling wine"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/white-wine", "tier": "drafted"}
   ],

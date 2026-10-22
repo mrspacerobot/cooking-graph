@@ -9,6 +9,14 @@
     "tr": "kerevit"
   },
   "aliases": {"en": ["freshwater crayfish", "crawfish"]},
+  "plurals": {
+    "en": "Crayfishes",
+    "fr": "Écrevisses",
+    "es": "cangrejos de río",
+    "it": "gamberi d'acqua dolce",
+    "tr": "kerevitler"
+  },
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

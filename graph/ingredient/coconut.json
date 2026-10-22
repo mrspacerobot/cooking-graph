@@ -3,6 +3,14 @@
   "tier": "drafted",
   "names": {"en": "Coconut", "fr": "Noix de coco", "es": "coco", "it": "noce di cocco", "tr": "hindistan cevizi"},
   "aliases": {"en": ["fresh coconut", "nariyal"]},
+  "plurals": {
+    "en": "Coconuts",
+    "fr": "Noix de coco",
+    "es": "cocos",
+    "it": "noci di cocco",
+    "tr": "hindistan cevizleri"
+  },
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

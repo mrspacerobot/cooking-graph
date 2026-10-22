@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Green olive", "fr": "Olive verte", "es": "olivas verdes", "it": "olive verdi"},
   "aliases": {},
+  "plurals": {"en": "Green olives", "fr": "Olives vertes", "es": "olivas verdes", "it": "olive verdi"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/olive", "tier": "drafted"}
   ],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Noodle dipping sauce"},
   "aliases": {"en": ["tsuyu", "mentsuyu", "soba dipping sauce"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A cold or warm sauce of dashi, soy sauce and mirin, thin and salty-sweet, into which cold noodles are dipped a little at a time.",
   "parts": [
     {"id": "dashi", "role": "liquid", "options": ["preparation/dashi"], "optional": false, "tier": "drafted"},

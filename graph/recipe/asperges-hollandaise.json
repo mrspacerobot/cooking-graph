@@ -36,7 +36,7 @@
       "technique": "technique/plate",
       "works_on": ["ingredient/asparagus", "preparation/hollandaise"],
       "with": [],
-      "text": "Drain them on a cloth and serve them warm, with the hollandaise beside them.",
+      "text": "Drain them on a cloth and serve them warm, with the {hollandaise} beside them.",
       "time": null,
       "temperature": null,
       "safety_points": ["raw-or-lightly-cooked-egg"],

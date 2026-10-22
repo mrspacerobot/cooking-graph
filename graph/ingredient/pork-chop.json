@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pork chop", "fr": "Côte de porc", "es": "chuleta de cerdo", "it": "costoletta di maiale"},
   "aliases": {"fr": ["côtelette de porc"], "en": ["pork loin chop"]},
+  "plurals": {"en": "Pork chops", "fr": "Côtes de porc", "es": "chuletas de cerdo", "it": "costolette di maiale"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Truffle", "fr": "Truffe", "es": "trufa", "it": "tartufo", "tr": "Trüf mantarı"},
   "aliases": {"en": ["black truffle"]},
+  "plurals": {"en": "Truffles", "fr": "Truffes", "es": "trufas", "it": "tartufi", "tr": "Trüf mantarları"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

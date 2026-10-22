@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Strained yogurt", "es": "Yogur colado", "it": "Labaneh", "fr": "labné"},
   "aliases": {"en": ["suzme yogurt", "suzme yoghurt", "strained yoghurt", "labneh"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/plain-yogurt", "tier": "drafted"}
   ],

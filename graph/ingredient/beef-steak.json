@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beef steak", "fr": "Steak", "es": "filete", "it": "bistecca"},
   "aliases": {"en": ["steak", "sirloin steak", "rump steak"]},
+  "plurals": {"en": "Beef steaks", "fr": "Steaks", "es": "filetes", "it": "bistecche"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

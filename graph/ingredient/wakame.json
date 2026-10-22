@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Wakame"},
   "aliases": {"en": ["wakame seaweed"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Braising liquid"},
   "aliases": {"en": ["braising juices"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "The liquid a braise leaves: wine or stock that has taken the flavour and the body of what cooked in it. Skimmed and boiled down, it is the sauce.",
   "parts": [],
   "groups": [

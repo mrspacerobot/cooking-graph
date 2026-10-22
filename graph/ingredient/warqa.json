@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Warqa"},
   "aliases": {"en": ["warka", "ouarka"]},
+  "plurals": {"en": "Warqa"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

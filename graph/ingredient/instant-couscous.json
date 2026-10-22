@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Instant couscous", "fr": "Couscous précuit"},
   "aliases": {"en": ["precooked couscous", "quick-cook couscous"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/couscous", "tier": "drafted"}
   ],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Greek yogurt", "fr": "Yaourt grec"},
   "aliases": {"en": ["greek yoghurt"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/strained-yogurt", "tier": "drafted"}
   ],

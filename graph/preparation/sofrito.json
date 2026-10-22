@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sofrito"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "A base of onion, garlic and ripe tomato cooked slowly in olive oil until the water has gone and the mixture is a dark, sweet, jammy paste. Rice dishes, stews and sauces are built on it.",
   "parts": [
     {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},

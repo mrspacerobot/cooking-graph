@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Salmon", "fr": "Saumon", "it": "salmone", "tr": "somon"},
   "aliases": {"en": ["salmon fillet"]},
+  "plurals": {"en": "Salmon", "fr": "Saumons", "it": "salmoni", "tr": "somonlar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

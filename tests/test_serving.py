@@ -140,3 +140,51 @@ class RealGraphTest(unittest.TestCase):
         as_written = [one for one, entry in section["recipes"].items() if not avoided & set(entry["unsafe_for"])]
         with_swaps = [one for one, entry in section["recipes"].items() if serving.offered(entry, avoided)]
         self.assertGreater(len(with_swaps), len(as_written))
+
+
+class StepTextCasesTest(unittest.TestCase):
+    def setUp(self):
+        self.things = kitchen()
+        self.recipe_id = "recipe/buttered-onions"
+
+    def cases(self):
+        return serving.vectors_of(self.things)["step_text_cases"]
+
+    def test_a_recipe_has_a_case_as_written(self):
+        written = [one for one in self.cases() if one["recipe"] == self.recipe_id and not one["left_out"] and not one["swaps"]]
+        self.assertEqual("Soften the onion in the butter over low heat.", written[0]["steps"][0]["text"])
+
+    def test_a_swap_case_writes_the_name_of_the_stand_in(self):
+        swapped = [one for one in self.cases() if one["recipe"] == self.recipe_id and one["swaps"]]
+        self.assertEqual("ingredient/oil", swapped[0]["swaps"][0]["instead"])
+        self.assertIn("oil", swapped[0]["steps"][0]["text"])
+
+    def test_the_section_carries_the_capital_list(self):
+        self.assertIn("Dijon", serving.serving_of(self.things)["step_text"]["proper_name_words"])
+
+    def test_the_artifact_schema_is_version_three(self):
+        self.assertEqual(3, release.ARTIFACT_SCHEMA_VERSION)
+
+
+class PluralCasesTest(unittest.TestCase):
+    def setUp(self):
+        self.things = kitchen()
+        self.recipe_id = "recipe/buttered-onions"
+        self.things[self.recipe_id].data["steps"][0]["text"] = "Soften the {onion:plural} in the {butter:plural}."
+
+    def cases(self):
+        return [one for one in serving.vectors_of(self.things)["step_text_cases"] if one["recipe"] == self.recipe_id]
+
+    def test_a_plural_placeholder_prints_the_plural_of_a_countable_food(self):
+        self.assertEqual("Soften the onions in the butter.", self.cases()[0]["steps"][0]["text"])
+
+    def test_a_plural_placeholder_of_an_uncountable_stand_in_prints_its_name(self):
+        swapped = [one for one in self.cases() if one["swaps"]]
+        self.assertTrue(swapped)
+        self.assertEqual("Soften the onions in the oil.", swapped[-1]["steps"][0]["text"])
+
+    def test_a_countable_stand_in_prints_its_plural(self):
+        self.things["ingredient/oil"].data["uncountable"] = False
+        self.things["ingredient/oil"].data["plurals"] = {"en": "Oils"}
+        swapped = [one for one in self.cases() if one["swaps"]]
+        self.assertEqual("Soften the onions in the oils.", swapped[0]["steps"][0]["text"])

@@ -60,7 +60,7 @@ class SafetyRecords(unittest.TestCase):
             drafting.safety(self.kitchen.root, [("fact/mustard", "It is mustard.", True)])
 
     def test_a_drafted_thing_is_written_and_passes_the_check(self):
-        cream = drafting.thing("ingredient/cream", "Cream", fr="Crème")
+        cream = drafting.counting(drafting.thing("ingredient/cream", "Cream", fr="Crème"), None)
         cream["is_a"] = []
         cream["part_of"] = []
         cream["groups"] = []
@@ -129,9 +129,9 @@ class OneOfEachKind(unittest.TestCase):
                 ingredients=[drafting.line("i/leek", 2, "piece", "f/diced", part="leeks"), drafting.line("i/butter", 20, "gram", part="leeks")],
                 equipment=["e/pan"],
                 steps=[
-                    drafting.step("t/dice", ["i/leek"], "Cut the leeks into even cubes."),
+                    drafting.step("t/dice", ["i/leek"], "Cut the {leeks.leek} into even cubes."),
                     drafting.step(
-                        "t/sweat", ["i/leek"], "Soften the leeks in the butter.", using=["i/butter"],
+                        "t/sweat", ["i/leek"], "Soften the {leeks.leek} in the {leeks.butter}.", using=["i/butter"],
                         time=drafting.span(8, 10, "minute"), safety=["cooling-and-keeping"], makes=["p/roux"],
                     ),
                 ],

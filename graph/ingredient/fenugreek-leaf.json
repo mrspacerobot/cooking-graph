@@ -8,6 +8,13 @@
     "it": "foglie di trigonella"
   },
   "aliases": {"en": ["methi leaf"]},
+  "plurals": {
+    "en": "Fenugreek leaves",
+    "fr": "Feuilles de fenugrec",
+    "es": "hojas de fenegreco",
+    "it": "foglie di trigonella"
+  },
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Japanese short-grain rice", "fr": "Riz japonais à grains ronds"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/short-grain-rice", "tier": "drafted"}
   ],

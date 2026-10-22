@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Khoya dough"},
   "aliases": {"en": ["gulab jamun dough"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A soft, smooth dough of crumbled khoya, a little flour and milk, rolled into small balls with no cracks, to be fried slowly and soaked in syrup.",
   "parts": [
     {"id": "khoya", "role": "main", "options": ["ingredient/khoya"], "optional": false, "tier": "drafted"},

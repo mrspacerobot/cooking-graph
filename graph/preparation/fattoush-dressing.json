@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fattoush dressing"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "A sharp dressing of lemon juice, olive oil and pomegranate molasses, with crushed garlic, dried mint and sumac, made for the salad of toasted pita.",
   "parts": [
     {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},

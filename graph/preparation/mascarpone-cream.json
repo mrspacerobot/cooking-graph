@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Mascarpone cream", "fr": "Crème au mascarpone"},
   "aliases": {"en": ["tiramisu cream"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A smooth, thick, cold cream of mascarpone loosened with a sweet egg-yolk foam that is flavoured with Marsala. It is the cream between the layers of tiramisu.",
   "parts": [
     {"id": "mascarpone", "role": "main", "options": ["ingredient/mascarpone"], "optional": false, "tier": "drafted"},

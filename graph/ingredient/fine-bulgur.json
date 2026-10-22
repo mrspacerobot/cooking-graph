@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fine bulgur", "fr": "Boulgour fin"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/bulgur", "tier": "drafted"}
   ],

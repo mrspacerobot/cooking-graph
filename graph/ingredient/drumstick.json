@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Drumstick"},
   "aliases": {"en": ["moringa pod", "murungakkai"]},
+  "plurals": {"en": "Drumsticks"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

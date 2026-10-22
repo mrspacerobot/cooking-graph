@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lemon", "fr": "Citron", "es": "limón", "it": "limone", "tr": "Limon"},
   "aliases": {},
+  "plurals": {"en": "Lemons", "fr": "Citrons", "es": "limones", "it": "limoni", "tr": "Limonlar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

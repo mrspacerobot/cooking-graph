@@ -9,6 +9,8 @@
     "fr": "huile de sésame"
   },
   "aliases": {"en": ["toasted sesame oil"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

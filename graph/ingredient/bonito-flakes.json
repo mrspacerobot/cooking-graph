@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Bonito flakes"},
   "aliases": {"en": ["katsuobushi", "dried bonito flakes", "dried bonito"]},
+  "plurals": {"en": "Bonito flakes"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

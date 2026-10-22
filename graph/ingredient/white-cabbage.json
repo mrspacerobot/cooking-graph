@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "White cabbage", "fr": "Chou blanc", "tr": "Beyaz lahana"},
   "aliases": {},
+  "plurals": {"en": "White cabbages", "fr": "Choux blancs", "tr": "Beyaz lahanalar"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/cabbage", "tier": "drafted"}
   ],

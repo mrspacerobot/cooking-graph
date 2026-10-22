@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Whole wheat flour", "fr": "Farine complète"},
   "aliases": {"en": ["wholemeal flour", "atta"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/flour", "tier": "drafted"}
   ],

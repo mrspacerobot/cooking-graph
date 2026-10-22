@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Jus", "fr": "Jus"},
   "aliases": {"en": ["roasting juices", "pan juices"], "fr": ["jus de rôti"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "The juices of a roast, loosened from the tin with a little liquid and boiled until they taste strong.",
   "parts": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cucumber", "fr": "Concombre", "es": "pepino", "it": "cetriolo"},
   "aliases": {},
+  "plurals": {"en": "Cucumbers", "fr": "Concombres", "es": "pepinos", "it": "cetrioli"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

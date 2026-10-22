@@ -5,7 +5,7 @@ import json
 import sys
 from pathlib import Path
 
-from tools import approval_site, check, queries
+from tools import approval_site, check, queries, recipe_text
 from tools.viewer import metadata
 
 REPOSITORY = 'mrspacerobot/cooking-graph'
@@ -78,6 +78,12 @@ def recipe_substitutions(graph, recipe_id, claims):
     return lines
 
 
+def steps_as_read(graph, recipe):
+    """Each step with `text_as_read`: the step text as written for the recipe's own foods, so a reviewer reads words."""
+    texts = dict(recipe_text.rendered_steps(graph, recipe))
+    return [dict(step, text_as_read=texts[number]) for number, step in enumerate(recipe['steps'], start=1)]
+
+
 def payload(things, commit):
     graph = {identifier: thing for identifier, thing in sorted(things.items()) if thing.path.startswith('graph/')}
     entries = {row['id']: row for row in substitutions(graph)}
@@ -89,6 +95,7 @@ def payload(things, commit):
             data = dict(thing.data)
             if thing.kind == 'recipe':
                 data['substitutions'] = recipe_substitutions(graph, data['id'], claims)
+                data['steps'] = steps_as_read(graph, data)
             elif thing.kind == 'technique':
                 data['recipes'] = queries.recipes(graph, data['id'])['recipes']
                 data['variants'] = [dict(row, thing=other.data['id'])

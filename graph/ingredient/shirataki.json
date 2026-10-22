@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Shirataki"},
   "aliases": {"en": ["konjac noodles"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/konnyaku", "tier": "drafted"}
   ],

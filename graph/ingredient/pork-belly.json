@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pork belly", "fr": "Poitrine de porc", "es": "panza de cerdo", "tr": "Domuz göbeği"},
   "aliases": {"en": ["belly of pork"], "fr": ["ventre de porc"]},
+  "plurals": {"en": "Pork bellies", "fr": "Poitrines de porc", "es": "panzas de cerdo", "tr": "Domuz göbekleri"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/pork", "tier": "drafted"}

@@ -88,3 +88,8 @@ class StepRuleTest(unittest.TestCase):
     def test_a_singular_verb_after_a_plural_is_rejected(self):
         self.assertIn("step-number-disagrees", self.rules_for("Soften the {onion:plural} until the {onion:plural} is soft in the {roux}."))
         self.assertEqual(set(), self.rules_for("Soften the {onion:plural} until the {onion:plural} are soft in the {roux}."))
+
+    def test_a_food_named_as_a_size_or_a_shape_is_not_an_ingredient(self):
+        self.assertEqual(set(), self.rules_for("Dice the {onion} the size of an onion in the {roux}."))
+        self.assertEqual(set(), self.rules_for("Cut the {onion} into onion-sized pieces in the {roux}."))
+        self.assertIn("step-plain-ingredient", self.rules_for("Dice the {onion} and the onion in the {roux}."))

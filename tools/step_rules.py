@@ -14,6 +14,8 @@ from tools.reading import Issue
 from tools.rules import of_kind
 
 ARTICLE_BEFORE = re.compile(r"(^|[^A-Za-z])[Aa]n?\s+$")
+# A food named only to say how big or what shape something is ("the size of a pea", "walnut-sized") is not an ingredient.
+COMPARISON = re.compile(r"\b(?:size|shape) of (?:an? |the )?(?:[A-Za-z']+ ?){1,2}|\b[A-Za-z']+-sized\b", re.IGNORECASE)
 SINGULAR_VERB = re.compile(r"^\s+(is|has|was|does)\b")
 
 # `lines` maps a part to the foods of the recipe's lines that fill it; `foods` is all of them.
@@ -111,6 +113,7 @@ def unmarked_problems(context, pieces):
 def plain_problems(context, pieces):
     problems = []
     for stretch in step_text.plain_pieces(pieces):
+        stretch = COMPARISON.sub(" ", stretch)
         for words, owners in context.vocabulary.foods_named_in(stretch):
             if owners & context.foods:
                 message = "names '%s' in plain words: use the placeholder of its part" % words

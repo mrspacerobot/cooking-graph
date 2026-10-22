@@ -23,6 +23,7 @@ Rules of the format:
 - **A part with several different foods needs `{part.ingredient}`.** A roux part that holds butter and flour is `{roux.butter}` and
   `{roux.flour}`. A part whose lines are all one food (two water lines) is just `{part}`. The same food in two parts
   (salt for the pasta water, salt for the sauce) is told apart by the part.
+- **A size or shape comparison stays plain words.** "The size of a pea" and "walnut-sized" do not mention the recipe's peas or walnuts, so the check lets `size of a ...` and `...-sized` through. Anything else naming a food of the lines is still rejected.
 - **Only optional parts have clauses.** The dish says which parts are `optional`. A clause on a required part is rejected, since a
   required part is never left out.
 - **A placeholder of an optional part stands only inside a clause of that part.** Anything else would stay in the text after

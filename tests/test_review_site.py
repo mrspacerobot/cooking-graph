@@ -19,6 +19,15 @@ class ReviewSiteTest(unittest.TestCase):
     def setUp(self):
         self.things = kitchen()
 
+    def test_cloud_page_adds_shared_saving_without_approval_page(self):
+        data = review_site.payload(self.things, 'abc123')
+        page = review_site.page(REPOSITORY, data, cloud={'projectId': 'test-project'})
+        self.assertIn('window.notebookCloudEnabled = true', page)
+        self.assertIn('cloud.js', page)
+        self.assertIn('test-project', page)
+        self.assertNotIn('href="approvals.html"', page)
+        self.assertNotIn('__REVIEW_', page)
+
     def test_only_graph_records_are_included_and_safety_is_not_exported(self):
         self.things['dish-probe/hidden'] = Thing('probes/dish-probe/hidden.json', 'dish-probe',
                                                 {'id': 'dish-probe/hidden', 'secret': 'hidden words'})
@@ -192,6 +201,27 @@ class ReviewSiteTest(unittest.TestCase):
                 with contextlib.redirect_stderr(io.StringIO()):
                     self.assertEqual(1, review_site.main(root, assets=REPOSITORY))
             self.assertFalse(Path(root, 'out/site/index.html').exists())
+
+    def test_cloud_build_writes_notebook_assets_only(self):
+        with tempfile.TemporaryDirectory() as root:
+            config = Path(root, 'config.json')
+            config.write_text(json.dumps({'email': 'a@b.example', 'firebase': {'apiKey': 'k', 'projectId': 'p'}}))
+            with patch.object(review_site.check, 'read_repository', return_value=(self.things, [])):
+                with patch.object(review_site, 'metadata', return_value={'commit': 'abc123'}):
+                    with contextlib.redirect_stdout(io.StringIO()):
+                        self.assertEqual(0, review_site.main(root, assets=REPOSITORY, cloud_config=config))
+            self.assertEqual(['cloud.js', 'index.html'], sorted(p.name for p in Path(root, 'out/cloud').iterdir()))
+            self.assertFalse(Path(root, 'out/site').exists())
+
+    def test_cloud_build_refuses_a_bad_config(self):
+        with tempfile.TemporaryDirectory() as root:
+            config = Path(root, 'config.json')
+            config.write_text('{}')
+            with patch.object(review_site.check, 'read_repository', return_value=(self.things, [])):
+                with patch.object(review_site, 'metadata', return_value={'commit': 'abc123'}):
+                    with contextlib.redirect_stderr(io.StringIO()):
+                        self.assertEqual(1, review_site.main(root, assets=REPOSITORY, cloud_config=config))
+            self.assertFalse(Path(root, 'out/cloud/index.html').exists())
 
     def test_build_writes_only_site_and_nojekyll(self):
         with tempfile.TemporaryDirectory() as root:

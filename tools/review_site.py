@@ -117,7 +117,7 @@ def payload(things, commit):
     return {'entries': entries, 'names': labels, 'commit': commit, 'repository': REPOSITORY}
 
 
-def page(root, data):
+def page(root, data, cloud=None):
     assets = Path(root, 'reviewer')
     text = (assets / 'index.html').read_text(encoding='utf-8')
     encoded = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
@@ -129,19 +129,44 @@ def page(root, data):
         ('__REVIEW_SCRIPT__', (assets / 'app.js').read_text(encoding='utf-8')),
     ):
         text = text.replace(marker, content)
+    if cloud is not None:
+        config = json.dumps(cloud, separators=(',', ':')).replace('<', '\\u003c')
+        script = '<script>window.notebookCloudEnabled = true; window.notebookCloudConfig = ' + config + ';</script>'
+        text = text.replace('<script>"use strict";', script + '<script>"use strict";', 1)
+        text = text.replace('</body>', '<script type="module" src="cloud.js"></script></body>')
+        text = text.replace('<a href="approvals.html">Approvals page</a>', '')
     return text
 
 
-def main(root, assets=None):
+def main(root, assets=None, cloud_config=None):
     things, issues = check.read_repository(root)
     if issues:
         print('review-site: graph has %d issues; run ./check' % len(issues), file=sys.stderr)
         return 1
     data = payload(things, metadata(root)['commit'])
+    if cloud_config is not None:
+        return build_cloud(root, assets or root, data, cloud_config)
     destination = Path(root, 'out', 'site')
     destination.mkdir(parents=True, exist_ok=True)
     (destination / 'index.html').write_text(page(assets or root, data), encoding='utf-8')
     (destination / 'approvals.html').write_text(approval_site.page(assets or root, approval_site.payload(things, data['commit'])), encoding='utf-8')
     (destination / '.nojekyll').touch()
     print('Built %d review entries: %s' % (len(data['entries']), (destination / 'index.html').resolve()))
+    return 0
+
+
+def build_cloud(root, assets, data, cloud_config):
+    """The shared copy holds notebook assets only: no approvals page, no safety facts."""
+    try:
+        cloud = json.loads(Path(cloud_config).read_text(encoding='utf-8'))
+        cloud['email']
+        cloud['firebase']['apiKey']
+    except (OSError, ValueError, KeyError, TypeError) as error:
+        print('review-site: cloud config unreadable (%s)' % error, file=sys.stderr)
+        return 1
+    destination = Path(root, 'out', 'cloud')
+    destination.mkdir(parents=True, exist_ok=True)
+    (destination / 'index.html').write_text(page(assets, data, cloud=cloud), encoding='utf-8')
+    (destination / 'cloud.js').write_text(Path(assets, 'reviewer', 'cloud.js').read_text(encoding='utf-8'), encoding='utf-8')
+    print('Built %d shared review entries: %s' % (len(data['entries']), (destination / 'index.html').resolve()))
     return 0

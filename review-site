@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Build the GitHub Pages editorial review site from this checkout."""
+"""Build the GitHub Pages editorial review site from this checkout.
+
+With --cloud CONFIG, build the shared-saving copy in out/cloud instead."""
 
 import sys
 from pathlib import Path
 
 from tools import review_site
 
-sys.exit(review_site.main(Path(__file__).resolve().parent))
+arguments = sys.argv[1:]
+config = arguments[arguments.index('--cloud') + 1] if '--cloud' in arguments[:-1] else None
+sys.exit(review_site.main(Path(__file__).resolve().parent, cloud_config=config))

@@ -156,3 +156,20 @@ Discuss and make corrections in pull requests. A suggestion, rating or resolved
 issue never raises a tier. Formal culinary approval still needs the review record
 in `docs/review-record.md`; safety verification remains a separate human process.
 No graph content or safety state is changed by the website.
+
+## Shared copy with saving (Firebase)
+
+`./review-site --cloud cloud/config.json` builds `out/cloud/` for one shared
+notebook where notes, scores, quiz answers and progress save across devices.
+The config holds the public Firebase web settings and the shared login email
+(copy `cloud/config.example.json`; the file with the real key stays out of git).
+
+- Everyone shares one login and one set of answers. Each item saves on its own;
+  for one item the latest save wins, so two people editing the same note can
+  overwrite each other. Quiz answers are kept per question, not per version of it.
+- `cloud/firestore.rules` lets only the shared account read or write, and nothing
+  else. Sign-up must stay disabled in Authentication.
+- The page files are public downloads even with the login: the login protects the
+  saved answers, not the page text. The shared copy omits the approvals page and
+  every ingredient safety fact.
+- Saving never raises a tier or verifies safety.

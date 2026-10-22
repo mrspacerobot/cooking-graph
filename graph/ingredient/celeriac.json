@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Celeriac", "fr": "Céleri-rave"},
   "aliases": {"en": ["celery root"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

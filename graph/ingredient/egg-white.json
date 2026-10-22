@@ -3,6 +3,14 @@
   "tier": "drafted",
   "names": {"en": "Egg white", "fr": "Blanc d'œuf", "es": "clara de huevo", "it": "albume", "tr": "yumurta akı"},
   "aliases": {},
+  "plurals": {
+    "en": "Egg whites",
+    "fr": "Blancs d'œuf",
+    "es": "claras de huevo",
+    "it": "albumi",
+    "tr": "yumurta akları"
+  },
+  "uncountable": false,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/egg", "tier": "drafted"}

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Redcurrant jelly", "fr": "Gelée de groseille"},
   "aliases": {"en": ["red currant jelly"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

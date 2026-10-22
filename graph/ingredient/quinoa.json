@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Quinoa", "fr": "Quinoa"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

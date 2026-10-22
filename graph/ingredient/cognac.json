@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cognac", "fr": "Cognac", "es": "coñac", "tr": "konyak"},
   "aliases": {"en": ["brandy"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

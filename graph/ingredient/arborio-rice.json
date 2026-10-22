@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Arborio rice", "fr": "Riz arborio"},
   "aliases": {"en": ["arborio"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/rice", "tier": "drafted"}
   ],

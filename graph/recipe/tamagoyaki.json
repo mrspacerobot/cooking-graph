@@ -24,7 +24,7 @@
       "technique": "technique/whisk",
       "works_on": ["ingredient/egg"],
       "with": ["preparation/dashi", "ingredient/mirin", "ingredient/sugar", "ingredient/soy-sauce"],
-      "text": "Beat the {egg} with the {dashi}, the {mirin}, the {sugar} and the {soy}, cutting through the whites with a whisk or chopsticks and not whipping in air, until the mixture runs smooth.",
+      "text": "Beat the {egg:plural} with the {dashi}, the {mirin}, the {sugar} and the {soy}, cutting through the whites with a whisk or chopsticks and not whipping in air, until the mixture runs smooth.",
       "time": null,
       "temperature": null,
       "safety_points": [],

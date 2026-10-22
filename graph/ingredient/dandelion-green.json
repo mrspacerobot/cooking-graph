@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Dandelion green", "fr": "Pissenlit"},
   "aliases": {"en": ["dandelion greens", "dandelion leaves"]},
+  "plurals": {"en": "Dandelion greens", "fr": "Pissenlits"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

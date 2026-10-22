@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Anchovy", "fr": "Anchois"},
   "aliases": {"en": ["anchovy fillet", "anchovies"]},
+  "plurals": {"en": "Anchovies", "fr": "Anchois"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beef tongue", "fr": "Langue de bœuf", "es": "Lengua de res", "tr": "Dil"},
   "aliases": {"en": ["ox tongue"]},
+  "plurals": {"en": "Beef tongues", "fr": "Langues de bœuf", "es": "Lenguas de res", "tr": "Diller"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

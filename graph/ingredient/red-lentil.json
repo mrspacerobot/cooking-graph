@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Red lentil"},
   "aliases": {"en": ["red lentils", "split red lentils", "kirmizi mercimek"]},
+  "plurals": {"en": "Red lentils"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/lentil", "tier": "drafted"}
   ],

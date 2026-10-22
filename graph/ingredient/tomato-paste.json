@@ -9,6 +9,8 @@
     "tr": "domates salçası"
   },
   "aliases": {"en": ["tomato purée", "tomato concentrate"], "fr": ["double concentré de tomates"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/tomato", "tier": "drafted"}
   ],

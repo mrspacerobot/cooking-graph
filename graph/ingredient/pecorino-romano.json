@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pecorino Romano", "fr": "Pecorino romano"},
   "aliases": {"en": ["romano"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/pecorino", "tier": "drafted"}
   ],

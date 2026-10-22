@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Daikon"},
   "aliases": {"en": ["Japanese radish", "white radish", "mooli"]},
+  "plurals": {"en": "Daikon"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

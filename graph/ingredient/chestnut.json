@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chestnut", "fr": "Marron", "es": "castaña", "it": "castagna", "tr": "kestane"},
   "aliases": {"en": ["sweet chestnut"], "fr": ["châtaigne"]},
+  "plurals": {"en": "Chestnuts", "fr": "Marrons", "es": "castañas", "it": "castagne", "tr": "kestaneler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

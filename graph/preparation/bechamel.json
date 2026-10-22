@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Béchamel", "fr": "Béchamel", "it": "Besciamella", "tr": "Beşamel sos"},
   "aliases": {"en": ["white sauce", "béchamel sauce"], "fr": ["sauce béchamel"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Milk thickened with a pale roux and simmered until smooth, the white sauce behind gratins and cheese sauces.",
   "parts": [
     {"id": "roux", "role": "thickener", "options": ["preparation/roux"], "optional": false, "tier": "drafted"},

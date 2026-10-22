@@ -41,7 +41,7 @@
       "technique": "technique/slice",
       "works_on": ["ingredient/spring-onion"],
       "with": [],
-      "text": "Slice the {onion} thin.",
+      "text": "Slice the {onion:plural} thin.",
       "time": null,
       "temperature": null,
       "safety_points": [],

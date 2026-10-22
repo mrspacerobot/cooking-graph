@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Udon noodle"},
   "aliases": {"en": ["udon", "udon noodles"]},
+  "plurals": {"en": "Udon noodles"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

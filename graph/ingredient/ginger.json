@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Ginger", "fr": "Gingembre", "es": "jengibre", "it": "zenzero"},
   "aliases": {"en": ["fresh ginger", "root ginger"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

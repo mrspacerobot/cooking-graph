@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pastis", "fr": "Pastis"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

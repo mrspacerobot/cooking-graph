@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Trout", "fr": "Truite", "es": "trucha", "it": "trota", "tr": "Alabalık"},
   "aliases": {},
+  "plurals": {"en": "Trout", "fr": "Truites", "es": "truchas", "it": "trote", "tr": "Alabalıklar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

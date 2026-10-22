@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cornstarch", "fr": "Fécule de maïs"},
   "aliases": {"en": ["cornflour", "maize starch"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

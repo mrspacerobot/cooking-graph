@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cornmeal", "fr": "semoule de maïs"},
   "aliases": {"en": ["maize meal", "corn meal", "misir unu"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

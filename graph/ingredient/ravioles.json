@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Ravioles", "fr": "Ravioles"},
   "aliases": {"en": ["Dauphiné ravioli", "ravioles du Dauphiné"]},
+  "plurals": {"en": "Ravioles", "fr": "Ravioles"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

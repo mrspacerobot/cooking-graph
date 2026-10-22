@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fresh pasta dough", "fr": "Pâte à pâtes fraîches"},
   "aliases": {"en": ["pasta dough", "pasta fresca dough"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A firm, smooth dough of flour with egg or with water, kneaded and rested, then rolled thin and cut. Egg doughs are rich and silky. Doughs of buckwheat and wheat flour with water, such as the pizzoccheri of the Valtellina, are short and tender.",
   "parts": [
     {

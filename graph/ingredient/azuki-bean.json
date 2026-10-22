@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Azuki bean"},
   "aliases": {"en": ["adzuki bean", "aduki bean"]},
+  "plurals": {"en": "Azuki beans"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -11,6 +11,7 @@ So a step's `text` is written in a small format that code can read. `./check` en
 |---|---|
 | `{part}` | The food of the recipe line that fills `part`. The server writes the name of the food in use here |
 | `{part.ingredient}` | The same, for a part that holds several different foods. `ingredient` is the slug of the food's id (`butter` for `ingredient/butter`) |
+| `{part:plural}` | The plural of the food's name: `{part.ingredient:plural}` for a part with several foods. Use it where the original words are plural: `the {egg:plural} still look wet` |
 | `[part: text]` | A clause: text that belongs only to the optional `part`. It stays when the part is kept and goes when it is left out |
 
 Rules of the format:
@@ -22,6 +23,7 @@ Rules of the format:
 - **A part with several different foods needs `{part.ingredient}`.** A roux part that holds butter and flour is `{roux.butter}` and
   `{roux.flour}`. A part whose lines are all one food (two water lines) is just `{part}`. The same food in two parts
   (salt for the pasta water, salt for the sauce) is told apart by the part.
+- **A size or shape comparison stays plain words.** "The size of a pea" and "walnut-sized" do not mention the recipe's peas or walnuts, so the check lets `size of a ...` and `...-sized` through. Anything else naming a food of the lines is still rejected.
 - **Only optional parts have clauses.** The dish says which parts are `optional`. A clause on a required part is rejected, since a
   required part is never left out.
 - **A placeholder of an optional part stands only inside a clause of that part.** Anything else would stay in the text after
@@ -38,16 +40,26 @@ Rules of the format:
 - **No other `{`, `}`, `[` or `]`** may appear in a text. The check rejects stray and unclosed brackets.
 - Numbers, units and temperatures still never go in the text. Amounts are in the line, scaled by the server.
 
+### Number
+
+Every ingredient and preparation is either **uncountable** (butter, salt, rice, flour: `uncountable: true`, no plurals) or has a
+**plural** of its name in each language it is named in (`plurals`: `{"en": "Eggs"}`). `./check` rejects a food that is neither.
+
+- Write `{part}` where the sentence is about one or about a mass, `{part:plural}` where it is about several. "Crack the eggs" is
+  `Crack the {egg:plural}`, "stir in the cold butter" is `stir in the cold {butter}`.
+- With a swap the stand-in's own plural is printed. If the stand-in is uncountable, `{part:plural}` prints its name ("the eggs" becomes "the tofu").
+  Write the sentence so that its verb reads for both: prefer "until the {egg:plural} set" over "until the {egg:plural} are firm".
+- A plural placeholder of a line whose own food is uncountable is rejected (`step-plural-of-uncountable`): there is nothing to make plural.
+- `a` or `an` before a plural placeholder is rejected (`step-article-before-plural`). Write `the` or nothing.
+- A plural placeholder directly followed by `is`, `has`, `was` or `does` is rejected (`step-number-disagrees`). The reverse (a singular
+  placeholder followed by `are`) is not checked, because "the {onion} and the {carrot} are tender" is right.
+- Names that the graph writes in the plural (Peas, Capers, White beans) have the same plural. Use `{peas:plural}` there and `are` after it.
+
 ### Write so that it reads for any food
 
-The name of a food is its English name as the graph gives it, singular or plural as the graph writes it.
-So:
-
 - Do not use a food as a verb: `Season them with the {salt}`, not `{salt} them`; `Rub the dish with the {butter}`, not `{butter} the dish`.
-- Prefer sentences that read for one food or several: `Pour in the {egg} and stir`. Avoid verbs and pronouns that must agree with it
-  where a rewording does the job.
 - Keep a modifier next to the placeholder when it matters: `cold {butter}`, `thin {thin-milk}`.
-- Do not describe what the food is: `the {bay-leaf} leaves` renders "bay leaf leaves". Write `the {bay-leaf}`.
+- Do not describe what the food is: `the {bay-leaf} leaves` renders "bay leaf leaves". Write `the {bay-leaf:plural}` or `the {bay-leaf}`.
 - Reserved water ("the cooking water", "the soaking water") is a mention of the water line if the recipe has one: write `{water}`
   or the part that holds it, and do not call a mention of the tomato's own moisture "water".
 - When a list holds an optional food, put the separator in the clause: `{onion}[carrot: , {carrot}] [celery: and {celery}]`.
@@ -65,7 +77,7 @@ While the eggs still look wet and loose, take the pan off the heat and stir in t
 After:
 
 ```
-While the {egg} still looks wet and loose, take the pan off the heat and stir in the cold {butter} and the {enrichment} to stop the cooking. Serve at once on warm plates.
+While the {egg:plural} still look wet and loose, take the pan off the heat and stir in the cold {butter} and the {enrichment} to stop the cooking. Serve at once on warm plates.
 ```
 
 With cream swapped for creme fraiche the server renders "...stir in the cold butter and the creme fraiche to stop the cooking...".
@@ -82,7 +94,7 @@ step goes when `egg` is left out, and the tail of the finishing step:
 1. Parse the text: `{...}` placeholders, `[part: ...]` clauses, everything else is literal.
 2. For each clause whose part is left out, delete it and the whitespace right before it. For a kept clause, remove only the brackets and the header `part: `.
 3. For each placeholder, find the recipe line(s) of the part (and the ingredient slug, if given). Take the food the cook uses for that line:
-   the original, or its stand-in. Write its English name, with the capital and article rules above.
+   the original, or its stand-in. Write its English name, or its English plural for `:plural` when the food is countable (an uncountable food prints its name), with the capital and article rules above.
 4. If a step's text is now empty, drop the step.
 5. Scale each line's amount by the swap ratio (the amounts are in the lines, never in the text) and check the whole recipe against the cook's
    diet and avoid list again before showing it.
@@ -101,9 +113,11 @@ part left out, and with every swappable line swapped. A server that renders the 
 | `step-ingredient-unknown` | `{roux.cream}` when no line of `roux` is cream |
 | `step-ingredient-ambiguous` | `{roux}` when the part holds butter and flour: write `{roux.butter}` |
 | `step-plain-ingredient` | `stir in the cream` when a line holds cream: write `{enrichment}` |
+| `step-plural-of-uncountable` | `{butter:plural}` when butter is uncountable: write `{butter}` |
+| `step-article-before-plural` | `a {egg:plural}` |
+| `step-number-disagrees` | `the {egg:plural} is firm`: write `are` |
 | `step-optional-unmarked` | `scatter the {parsley}` when `parsley` is optional: write `[parsley: scatter the {parsley}]` |
 | `step-clause-on-required-part` | `[enrichment: and the {enrichment}]` when `enrichment` is required |
 
 Known limits: only names and aliases of a food are looked for, so a short form ("the oil" for olive oil, "the pepper" for black
-pepper, "the paste") is not caught. Write it as a placeholder anyway. The English of a swapped food is its name, with no plural
-or mass-noun agreement.
+pepper, "the paste") is not caught. Write it as a placeholder anyway. The plurals in French, Spanish, Italian and Turkish were drafted by rule and are not reviewed by a native speaker.

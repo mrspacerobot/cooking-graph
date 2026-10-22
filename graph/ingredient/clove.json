@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Clove", "fr": "Clou de girofle", "es": "clavos de olor", "it": "chiodo di garofano"},
   "aliases": {"en": ["cloves", "whole clove"], "fr": ["girofle"]},
+  "plurals": {"en": "Cloves", "fr": "Clous de girofle", "es": "clavos de olor", "it": "chiodi di garofano"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

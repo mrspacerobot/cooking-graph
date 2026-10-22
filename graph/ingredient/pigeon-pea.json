@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pigeon pea", "fr": "Pois d'Angole", "it": "legume caiano"},
   "aliases": {"en": ["toor dal", "arhar dal"]},
+  "plurals": {"en": "Pigeon peas", "fr": "Pois d'Angole", "it": "legumi caiani"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

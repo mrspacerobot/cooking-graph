@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Carnaroli rice", "fr": "Riz carnaroli"},
   "aliases": {"en": ["carnaroli"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/rice", "tier": "drafted"}
   ],

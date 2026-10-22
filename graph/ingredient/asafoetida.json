@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Asafoetida", "fr": "Asa fœtida"},
   "aliases": {"en": ["hing", "asafetida"], "fr": ["ase fétide"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

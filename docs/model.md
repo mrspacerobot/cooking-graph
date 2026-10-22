@@ -119,6 +119,8 @@ Something a cook starts from. It may stand for a class: stock, bread, white fish
 
 | Field | What it holds |
 |---|---|
+| `plurals` | The plural of its name in each language it is named in, such as `{"en": "Eggs"}`. Empty when the food is uncountable. A step prints it where it writes `{part:plural}` |
+| `uncountable` | True for a food that has no plural in a cook's sentence (butter, salt, rice, flour). Every ingredient and preparation answers: it is uncountable and has no plurals, or it has a plural for each language of its names. A plural placeholder of an uncountable food prints its name |
 | `is_a` | The classes it is a kind of. Statement |
 | `part_of` | The ingredient it is a part or a cut of: a yolk of an egg, a thigh of a chicken. Statement |
 | `groups` | The groups it is in. Statement |
@@ -151,6 +153,8 @@ A building block made on the way to a dish: a stock, a roux, a vinaigrette. A pr
 
 | Field | What it holds |
 |---|---|
+| `plurals` | As on an ingredient |
+| `uncountable` | As on an ingredient |
 | `is` | A sentence that says what it is |
 | `parts` | What it is made of. Statement. Each row has an `id` that is its own within this preparation or dish, a `role`, its `options` (the ingredients or preparations a cook may choose), and whether it is `optional`. Empty for a by-product |
 | `groups` | The groups it is in, where it behaves like one. Statement |
@@ -575,6 +579,13 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 - **What did not fit:** `text` was free prose, so a swap or a left-out part could only be shown beside an untouched recipe.
 - **Now:** the shape of `text` is unchanged (it stays a text), but its content has a format: `{part}` or `{part.ingredient}` names the food of a recipe line through the `part` it fills, and `[part: text]` marks text that belongs to an optional part. `./check` rejects a step that names a food of its lines in plain words (`step-plain-ingredient`), a placeholder for a part the recipe has no line for (`step-part-unknown`), an ingredient the part lacks (`step-ingredient-unknown`), a bare part that holds several foods (`step-ingredient-ambiguous`), text of an optional part outside a clause (`step-optional-unmarked`), a clause on a required part (`step-clause-on-required-part`) and bad brackets (`step-text-malformed`). All 197 recipes were rewritten. The artifact schema version goes from 2 to 3: `serving.step_text.proper_name_words` is new and `serving-vectors.json` has `step_text_cases`. `./compose` writes each step for the foods the cook uses. The format is in `docs/recipe-steps.md`.
 - **Not yet:** number agreement (a swapped food is written in the singular or plural the graph names it), and short forms of a name ("the oil" for olive oil) are not found by the check.
+
+### 36. The plural of a food's name (issue 22)
+
+- **Example:** "While the eggs still look wet" was written `{egg}` and rendered "the egg still look wet" for five eggs. The graph had one name per food and no plural.
+- **What did not fit:** a placeholder could print only a singular name, so a step could not keep the number of the original wording, and a swap could not say whether the stand-in has a plural.
+- **Now:** an ingredient and a preparation have `plurals` (the plural of the name in each language it is named in) and `uncountable`. A food is either uncountable with no plurals, or countable with a plural for every language of its names. `./check` rejects a food that is neither (`plural-missing`, `uncountable-with-plural`, `plural-without-name`). A step writes `{part:plural}` or `{part.ingredient:plural}` for the plural; for a swap the stand-in's plural is printed, and an uncountable stand-in prints its name. The check also rejects the plural of an uncountable line (`step-plural-of-uncountable`), `a` or `an` before a plural (`step-article-before-plural`) and a singular verb straight after a plural (`step-number-disagrees`). `serving-vectors.json` has cases for plurals and for a swap to an uncountable food. The artifact schema version stays 3 (not yet released).
+- **Not yet:** the plurals in French, Spanish, Italian and Turkish were drafted by rule with a few fixes and have no native review. A singular placeholder followed by a plural verb is not checked, because a list ("the {a} and the {b} are") is correct.
 
 ## Decisions where the starting model was silent
 

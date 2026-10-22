@@ -56,7 +56,7 @@
       "technique": "technique/sweat",
       "works_on": ["ingredient/shallot"],
       "with": [],
-      "text": "Lift the sausages out and pour off all but a film of fat. Soften the {shallot} in it.",
+      "text": "Lift the sausages out and pour off all but a film of fat. Soften the {shallot:plural} in it.",
       "time": {"from": 1, "to": 2, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

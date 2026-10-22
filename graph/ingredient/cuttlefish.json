@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cuttlefish", "fr": "Seiche"},
   "aliases": {},
+  "plurals": {"en": "Cuttlefish", "fr": "Seiches"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

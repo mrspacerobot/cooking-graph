@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Spinach", "fr": "Épinards", "it": "spinaci"},
   "aliases": {"fr": ["feuilles d'épinard"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

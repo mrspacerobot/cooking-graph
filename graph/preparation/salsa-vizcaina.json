@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Salsa vizcaina"},
   "aliases": {"en": ["Vizcaina sauce", "Biscay sauce", "salsa vizcaína"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick, smooth, sweet, brick-red sauce of onion cooked down very slowly in olive oil and the pulp of dried choricero peppers, rubbed through a sieve. It is the sauce of salt cod from the Basque country.",
   "parts": [
     {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},

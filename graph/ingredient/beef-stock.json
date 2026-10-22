@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beef stock", "fr": "Bouillon de bœuf", "es": "Caldo de carne de vaca", "it": "brodo di manzo"},
   "aliases": {"en": ["beef broth"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/stock", "tier": "drafted"}
   ],

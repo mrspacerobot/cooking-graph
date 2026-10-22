@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Dry vermouth", "fr": "Vermouth sec"},
   "aliases": {"en": ["French vermouth", "extra-dry vermouth"], "es": ["vermut seco"], "it": ["vermut secco"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

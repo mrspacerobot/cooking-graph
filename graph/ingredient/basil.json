@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Basil", "fr": "Basilic", "es": "albahaca", "tr": "fesleğen"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

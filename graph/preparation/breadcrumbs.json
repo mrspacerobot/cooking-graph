@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Breadcrumbs", "fr": "Chapelure"},
   "aliases": {"en": ["dried breadcrumbs", "breadcrumb", "fine dry breadcrumbs"]},
+  "plurals": {"en": "Breadcrumbs", "fr": "Chapelures"},
+  "uncountable": false,
   "is": "Stale bread dried and crushed to fine crumbs, which brown to a crisp crust.",
   "parts": [
     {

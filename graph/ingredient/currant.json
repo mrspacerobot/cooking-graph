@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Currant"},
   "aliases": {"en": ["currants", "dried currants", "Zante currants"]},
+  "plurals": {"en": "Currants"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

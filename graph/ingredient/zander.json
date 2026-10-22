@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Zander", "fr": "Sandre", "tr": "Sudak balığı"},
   "aliases": {"en": ["pike-perch", "pikeperch"]},
+  "plurals": {"en": "Zander", "fr": "Sandres", "tr": "Sudak balıkları"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],

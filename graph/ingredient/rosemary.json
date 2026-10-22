@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Rosemary", "fr": "Romarin", "es": "romero", "it": "rosmarino"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

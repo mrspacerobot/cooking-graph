@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Vine leaf", "fr": "Feuille de vigne"},
   "aliases": {"en": ["grape leaf"]},
+  "plurals": {"en": "Vine leaves", "fr": "Feuilles de vigne"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

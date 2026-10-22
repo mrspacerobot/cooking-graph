@@ -93,7 +93,7 @@
       "technique": "technique/simmer",
       "works_on": ["ingredient/peas"],
       "with": ["preparation/ragu"],
-      "text": "Warm the {ragu} in a small pan[peas: , add the {peas}] and let it cook gently until [peas: the {peas} are tender and] the {ragu} is thick enough to hold on a spoon. Leave it to go cold.",
+      "text": "Warm the {ragu} in a small pan[peas: , add the {peas:plural}] and let it cook gently until [peas: the {peas:plural} are tender and] the {ragu} is thick enough to hold on a spoon. Leave it to go cold.",
       "time": {"from": 5, "to": 8, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
@@ -106,7 +106,7 @@
         "preparation/ragu", "ingredient/peas", "ingredient/mozzarella", "ingredient/flour", "ingredient/egg",
         "preparation/breadcrumbs"
       ],
-      "text": "Spread the risotto thin on a tray, let it cool right down and chill it until it is stiff. With wet hands, press a handful of rice into the palm, set a spoon of the cold {ragu} [peas: and {peas}] and a piece of {centre} in the middle and close the rice over it, into a ball or a cone. Roll each in {flour}, turn it through the beaten {egg} and cover it in crumbs. Lay them on a tray and chill them for a short while.",
+      "text": "Spread the risotto thin on a tray, let it cool right down and chill it until it is stiff. With wet hands, press a handful of rice into the palm, set a spoon of the cold {ragu} [peas: and {peas:plural}] and a piece of {centre} in the middle and close the rice over it, into a ball or a cone. Roll each in {flour}, turn it through the beaten {egg} and cover it in crumbs. Lay them on a tray and chill them for a short while.",
       "time": null,
       "temperature": null,
       "safety_points": ["cooling-and-keeping"],

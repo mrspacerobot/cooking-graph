@@ -30,7 +30,7 @@
       "technique": "technique/make-choux-pastry",
       "works_on": ["ingredient/flour"],
       "with": ["ingredient/water", "ingredient/butter", "ingredient/salt", "ingredient/egg"],
-      "text": "Bring the {choux.water}, the {choux.butter} and a little {choux.salt} to a boil. Take the pan off the heat and tip in the {choux.flour} all at once, then beat hard. Cook the paste over a low heat until it forms a ball and leaves the sides of the pan. Let it cool a little, then beat in the {choux.egg} a little at a time, until the paste is glossy and falls from the spoon in a thick ribbon.",
+      "text": "Bring the {choux.water}, the {choux.butter} and a little {choux.salt} to a boil. Take the pan off the heat and tip in the {choux.flour} all at once, then beat hard. Cook the paste over a low heat until it forms a ball and leaves the sides of the pan. Let it cool a little, then beat in the {choux.egg:plural} a little at a time, until the paste is glossy and falls from the spoon in a thick ribbon.",
       "time": null,
       "temperature": null,
       "safety_points": [],

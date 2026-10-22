@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Green chilli", "fr": "Piment vert"},
   "aliases": {"en": ["green chili", "hari mirch"]},
+  "plurals": {"en": "Green chillis", "fr": "Piments verts"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/chilli", "tier": "drafted"}
   ],

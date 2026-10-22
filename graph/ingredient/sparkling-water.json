@@ -9,6 +9,8 @@
     "tr": "soda"
   },
   "aliases": {"en": ["fizzy water", "carbonated water"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

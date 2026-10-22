@@ -68,7 +68,7 @@
       "with": [
         "ingredient/olive-oil", "ingredient/garlic", "ingredient/paprika", "ingredient/cumin", "ingredient/salt"
       ],
-      "text": "Warm the {olive-oil} in a wide pan with the {garlic}, the {paprika} and the rest of the {cumin} for a moment, then add the {tomato} and the rest of the {salt} and cook them down until they make a thick, bright sauce.",
+      "text": "Warm the {olive-oil} in a wide pan with the {garlic}, the {paprika} and the rest of the {cumin} for a moment, then add the {tomato:plural} and the rest of the {salt} and cook them down until they make a thick, bright sauce.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
@@ -88,7 +88,7 @@
       "technique": "technique/poach",
       "works_on": ["ingredient/egg"],
       "with": ["preparation/tomato-sauce"],
-      "text": "Make small hollows between the meatballs and break an {egg} into each. Cover the pan and let the {egg} poach gently in the sauce until the whites are set and the yolks are as soft as you like. Scatter with the herbs that were kept back.",
+      "text": "Make small hollows between the meatballs and break an {egg} into each. Cover the pan and let the {egg:plural} poach gently in the sauce until the whites are set and the yolks are as soft as you like. Scatter with the herbs that were kept back.",
       "time": {"from": 5, "to": 8, "unit": "minute"},
       "temperature": null,
       "safety_points": ["raw-or-lightly-cooked-egg"],

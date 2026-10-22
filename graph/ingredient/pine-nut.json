@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pine nut", "fr": "Pignon de pin", "es": "Piñón", "it": "pinolo", "tr": "Çam fıstığı"},
   "aliases": {"en": ["pine kernel", "pignoli", "pinoli", "pine nuts"]},
+  "plurals": {"en": "Pine nuts", "fr": "Pignons de pin", "es": "Piñones", "it": "pinoli", "tr": "Çam fıstıkları"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

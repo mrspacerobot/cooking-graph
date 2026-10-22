@@ -9,6 +9,8 @@
     "tr": "bitter çikolata"
   },
   "aliases": {"en": ["plain chocolate", "bittersweet chocolate"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

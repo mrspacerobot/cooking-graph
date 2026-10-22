@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Egg", "fr": "Œuf", "it": "uovo intero"},
   "aliases": {"en": ["whole egg", "hen's egg", "eggs"]},
+  "plurals": {"en": "Eggs", "fr": "Œufs", "it": "uova intere"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Parmesan", "fr": "Parmesan", "es": "queso parmesano", "tr": "Parmesan peyniri"},
   "aliases": {"en": ["Parmigiano Reggiano"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

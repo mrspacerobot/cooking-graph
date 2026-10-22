@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cardamom", "fr": "Cardamome", "es": "cardamomo", "it": "cardamomo", "tr": "kakule"},
   "aliases": {"en": ["elaichi", "green cardamom"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

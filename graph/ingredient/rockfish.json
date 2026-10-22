@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Rockfish", "fr": "Rascasse"},
   "aliases": {"en": ["scorpionfish"]},
+  "plurals": {"en": "Rockfish", "fr": "Rascasses"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Jute leaf", "fr": "Corète potagère"},
   "aliases": {"en": ["molokhia", "mulukhiyah", "Jew's mallow", "jute mallow"]},
+  "plurals": {"en": "Jute leaves", "fr": "Corètes potagères"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

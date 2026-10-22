@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chard", "fr": "Blette", "it": "bietola"},
   "aliases": {"en": ["Swiss chard"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

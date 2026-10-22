@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Flattened rice"},
   "aliases": {"en": ["poha", "beaten rice"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

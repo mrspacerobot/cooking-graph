@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fennel", "fr": "Fenouil", "it": "finocchio"},
   "aliases": {"en": ["fennel bulb"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -35,7 +35,7 @@
       "technique": "technique/saute",
       "works_on": ["ingredient/mushroom"],
       "with": ["ingredient/sunflower-oil"],
-      "text": "Heat a wide pan over high heat, then the {fat} until it shimmers. Add the {mushroom} in a single layer, in batches if the pan is small, and leave them a moment before the first toss. They give up their water. Keep going until it has cooked off and they brown.",
+      "text": "Heat a wide pan over high heat, then the {fat} until it shimmers. Add the {mushroom:plural} in a single layer, in batches if the pan is small, and leave them a moment before the first toss. They give up their water. Keep going until it has cooked off and they brown.",
       "time": {"from": 6, "to": 8, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

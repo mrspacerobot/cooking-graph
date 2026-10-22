@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Bouquet garni", "fr": "Bouquet garni", "tr": "buke garni"},
   "aliases": {"en": ["herb bundle"]},
+  "plurals": {"en": "Bouquets garnis", "fr": "Bouquets garnis", "tr": "buke garniler"},
+  "uncountable": false,
   "is": "A small bundle of herbs tied with string, so that it can flavour a pot and be lifted out whole.",
   "parts": [
     {"id": "thyme", "role": "aromatic", "options": ["ingredient/thyme"], "optional": false, "tier": "drafted"},

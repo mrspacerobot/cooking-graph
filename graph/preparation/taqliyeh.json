@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Taqliyeh"},
   "aliases": {"en": ["taqliye", "tuqliyeh"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A sizzling mix of crushed garlic and fresh coriander fried briefly in hot fat and stirred into stews, soups and dishes of pulses at the end, for a sharp, fresh scent.",
   "parts": [
     {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},

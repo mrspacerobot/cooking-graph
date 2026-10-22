@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Stale bread", "fr": "Pain rassis"},
   "aliases": {"en": ["day-old bread"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/bread", "tier": "drafted"}
   ],

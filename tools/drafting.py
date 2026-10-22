@@ -134,9 +134,19 @@ def group(slug, english, shares, fr=None, also=None, within=None, stands_alone=N
     return kind
 
 
+def counting(food, plurals):
+    """The plural of a food's name in each language it is named in, or none when it is uncountable (butter, salt, rice).
+
+    A countable food needs one plural per name. `./check` rejects a food that is neither. The plural stands where a
+    step writes `{part:plural}`."""
+    food["plurals"] = dict(plurals or {})
+    food["uncountable"] = not plurals
+    return food
+
+
 def ingredient(root, slug, english, behaviour, fr=None, also=None, contains=(), note=None,
-               is_a=(), part_of=(), groups=(), forms=(), stands=(), pantry=()):
-    food = thing("ingredient/" + slug, english, fr=fr, also=also)
+               is_a=(), part_of=(), groups=(), forms=(), stands=(), pantry=(), plurals=None):
+    food = counting(thing("ingredient/" + slug, english, fr=fr, also=also), plurals)
     food["is_a"] = full_links(is_a)
     food["part_of"] = full_links(part_of)
     food["groups"] = full_links(groups)
@@ -167,8 +177,9 @@ def technique(slug, english, does, how, cues, mistakes, fr=None, also=None, work
     return move
 
 
-def preparation(slug, english, what_it_is, parts, fr=None, also=None, groups=(), teaches=(), stands=(), belongs_to=()):
-    block = thing("preparation/" + slug, english, fr=fr, also=also)
+def preparation(slug, english, what_it_is, parts, fr=None, also=None, groups=(), teaches=(), stands=(), belongs_to=(),
+                plurals=None):
+    block = counting(thing("preparation/" + slug, english, fr=fr, also=also), plurals)
     block["is"] = what_it_is
     block["parts"] = list(parts)
     block["groups"] = full_links(groups)

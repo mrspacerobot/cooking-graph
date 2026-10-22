@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Tahini", "fr": "Tahini"},
   "aliases": {"en": ["tahina", "tahini paste"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

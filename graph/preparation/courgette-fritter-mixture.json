@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Courgette fritter mixture"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick mixture of salted, pressed courgette, crumbled feta, egg, spring onion, mint and dill, bound with a little flour. It is dropped by the spoonful into hot oil.",
   "parts": [
     {"id": "courgette", "role": "main", "options": ["ingredient/courgette"], "optional": false, "tier": "drafted"},

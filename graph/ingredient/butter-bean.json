@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Butter bean", "fr": "Haricot de Lima", "it": "fagiolo di Lima"},
   "aliases": {"en": ["lima bean"]},
+  "plurals": {"en": "Butter beans", "fr": "Haricots de Lima", "it": "fagioli di Lima"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beef tripe", "fr": "Tripes de bœuf"},
   "aliases": {"en": ["ox tripe"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

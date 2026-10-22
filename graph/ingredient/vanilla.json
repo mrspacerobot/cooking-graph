@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Vanilla", "fr": "Vanille", "es": "vainilla", "it": "vaniglia", "tr": "vanilya"},
   "aliases": {"en": ["vanilla pod", "vanilla bean"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

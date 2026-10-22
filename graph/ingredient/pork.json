@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pork", "fr": "Porc", "es": "carne de cerdo", "it": "carne di maiale", "tr": "domuz eti"},
   "aliases": {"fr": ["viande de porc"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

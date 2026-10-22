@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lentil", "fr": "Lentille", "es": "lenteja", "it": "lenticchia"},
   "aliases": {"fr": ["lentile"]},
+  "plurals": {"en": "Lentils", "fr": "Lentilles", "es": "lentejas", "it": "lenticchie"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

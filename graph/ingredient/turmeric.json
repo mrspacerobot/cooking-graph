@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Turmeric", "fr": "Curcuma"},
   "aliases": {"en": ["haldi"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

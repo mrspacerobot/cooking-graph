@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beer", "fr": "Bière", "es": "cerveza", "it": "birra", "tr": "bira"},
   "aliases": {"en": ["ale"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

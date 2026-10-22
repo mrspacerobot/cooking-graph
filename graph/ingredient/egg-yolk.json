@@ -3,6 +3,14 @@
   "tier": "drafted",
   "names": {"en": "Egg yolk", "fr": "Jaune d'œuf", "es": "yema de huevo", "it": "tuorlo", "tr": "Yumurta sarısı"},
   "aliases": {"en": ["egg yolks"]},
+  "plurals": {
+    "en": "Egg yolks",
+    "fr": "Jaunes d'œuf",
+    "es": "yemas de huevo",
+    "it": "tuorli",
+    "tr": "Yumurta sarıları"
+  },
+  "uncountable": false,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/egg", "tier": "drafted"}

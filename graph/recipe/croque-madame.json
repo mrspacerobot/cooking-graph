@@ -62,7 +62,7 @@
       "technique": "technique/pan-fry",
       "works_on": ["ingredient/egg"],
       "with": ["ingredient/butter"],
-      "text": "While the sandwiches brown, melt the rest of the {butter} in a frying pan over medium heat. Break in the {egg} and fry them gently, without turning, until the whites are set and the yolks are still soft.",
+      "text": "While the sandwiches brown, melt the rest of the {butter} in a frying pan over medium heat. Break in the {egg:plural} and fry them gently, without turning, until the whites are set and the yolks are still soft.",
       "time": {"from": 2, "to": 3, "unit": "minute"},
       "temperature": null,
       "safety_points": ["raw-or-lightly-cooked-egg"],

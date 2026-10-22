@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Macaroni", "fr": "Macaronis", "es": "macarrón", "it": "maccheroni"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/pasta", "tier": "drafted"}
   ],

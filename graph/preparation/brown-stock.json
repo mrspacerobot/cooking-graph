@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Brown stock", "fr": "Fond brun", "es": "Fondo oscuro"},
   "aliases": {"en": ["brown veal stock", "brown beef stock"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A dark, full-bodied stock made from bones and vegetables that are roasted until deeply browned before they are simmered.",
   "parts": [
     {

@@ -9,6 +9,8 @@
     "fr": "fécule de pomme de terre"
   },
   "aliases": {"en": ["katakuriko", "potato flour starch"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

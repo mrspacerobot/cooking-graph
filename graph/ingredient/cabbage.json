@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cabbage", "fr": "Chou", "es": "col", "it": "cavolo", "tr": "Lahana"},
   "aliases": {"en": ["green cabbage", "savoy cabbage"]},
+  "plurals": {"en": "Cabbages", "fr": "Choux", "es": "coles", "it": "cavoli", "tr": "Lahanalar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

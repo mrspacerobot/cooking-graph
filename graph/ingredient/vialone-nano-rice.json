@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Vialone nano rice", "fr": "Riz vialone nano"},
   "aliases": {"en": ["vialone nano"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/rice", "tier": "drafted"}
   ],

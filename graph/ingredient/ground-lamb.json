@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Ground lamb", "fr": "Agneau haché"},
   "aliases": {"en": ["minced lamb", "lamb mince"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "White chicken stock", "fr": "Fond blanc de volaille"},
   "aliases": {"en": ["homemade chicken stock", "white stock"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A pale, clear stock made by simmering chicken bones and vegetables in water without browning anything, skimming as it goes.",
   "parts": [
     {

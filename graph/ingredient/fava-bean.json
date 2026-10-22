@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fava bean", "fr": "Fève"},
   "aliases": {"en": ["broad bean", "broad beans", "fava beans", "faba bean"]},
+  "plurals": {"en": "Fava beans", "fr": "Fèves"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

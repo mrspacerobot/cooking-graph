@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lyon sausage", "fr": "Saucisson de Lyon"},
   "aliases": {"en": ["Lyon saucisson"], "fr": ["saucisson lyonnais"]},
+  "plurals": {"en": "Lyon sausages", "fr": "Saucissons de Lyon"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

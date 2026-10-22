@@ -40,7 +40,7 @@
       "technique": "technique/soak",
       "works_on": ["ingredient/chickpea"],
       "with": ["ingredient/water"],
-      "text": "Cover the dried {chickpea} with plenty of cold {water} and leave them to soak overnight. Drain them.",
+      "text": "Cover the dried {chickpea:plural} with plenty of cold {water} and leave them to soak overnight. Drain them.",
       "time": {"from": 8, "to": 12, "unit": "hour"},
       "temperature": null,
       "safety_points": [],
@@ -73,7 +73,7 @@
         "ingredient/water", "ingredient/ginger", "ingredient/turmeric", "ingredient/black-pepper",
         "ingredient/cinnamon", "ingredient/saffron"
       ],
-      "text": "Add the lamb cut in small pieces, the {chickpea}, the {lentil}, the {tomato}, the {ginger}, the {turmeric}, the {pepper}, the {cinnamon} [saffron: and the {saffron}], and pour in most of the {water}. Bring to a boil, then lower the heat and simmer, with the lid ajar, until the {chickpea} and the lamb are tender. Check a piece of lamb against a trusted guide to doneness.",
+      "text": "Add the lamb cut in small pieces, the {chickpea:plural}, the {lentil:plural}, the {tomato:plural}, the {ginger}, the {turmeric}, the {pepper}, the {cinnamon} [saffron: and the {saffron}], and pour in most of the {water}. Bring to a boil, then lower the heat and simmer, with the lid ajar, until the {chickpea:plural} and the lamb are tender. Check a piece of lamb against a trusted guide to doneness.",
       "time": {"from": 75, "to": 100, "unit": "minute"},
       "temperature": null,
       "safety_points": ["doneness"],

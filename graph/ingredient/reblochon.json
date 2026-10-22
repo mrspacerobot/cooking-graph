@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Reblochon", "fr": "Reblochon"},
   "aliases": {},
+  "plurals": {"en": "Reblochons", "fr": "Reblochons"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

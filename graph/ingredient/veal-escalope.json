@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Veal escalope", "fr": "Escalope de veau"},
   "aliases": {"en": ["veal cutlet"]},
+  "plurals": {"en": "Veal escalopes", "fr": "Escalopes de veau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

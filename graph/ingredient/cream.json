@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cream", "fr": "Crème liquide", "es": "crema de leche", "it": "panna", "tr": "krema"},
   "aliases": {"en": ["heavy cream", "double cream", "whipping cream"], "fr": ["crème"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

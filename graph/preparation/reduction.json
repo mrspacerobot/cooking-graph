@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Reduction", "fr": "Réduction"},
   "aliases": {"en": ["shallot reduction"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Wine or vinegar boiled down with shallots until only a sharp, syrupy spoonful is left: the base a butter sauce is mounted on.",
   "parts": [],
   "groups": [

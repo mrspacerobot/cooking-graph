@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Mint", "fr": "Menthe", "it": "mentina"},
   "aliases": {"en": ["fresh mint"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

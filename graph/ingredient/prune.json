@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Prune", "fr": "Pruneau", "es": "ciruela pasa", "it": "prugna secca"},
   "aliases": {"en": ["prunes", "dried plum"]},
+  "plurals": {"en": "Prunes", "fr": "Pruneaux", "es": "ciruelas pasas", "it": "prugne secche"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

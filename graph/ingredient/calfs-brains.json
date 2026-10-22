@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Calf's brains", "fr": "Cervelle de veau"},
   "aliases": {"en": ["veal brains"]},
+  "plurals": {"en": "Calf's brains", "fr": "Cervelles de veau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

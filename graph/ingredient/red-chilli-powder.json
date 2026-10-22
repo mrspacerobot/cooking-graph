@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Red chilli powder", "fr": "Piment rouge en poudre"},
   "aliases": {"en": ["red chili powder", "lal mirch", "lal mirch powder"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

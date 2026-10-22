@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Courgette", "fr": "Courgette", "it": "zucchina", "tr": "sakız kabağı"},
   "aliases": {"en": ["zucchini"]},
+  "plurals": {"en": "Courgettes", "fr": "Courgettes", "it": "zucchine", "tr": "sakız kabakları"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Monkfish", "fr": "Lotte"},
   "aliases": {"en": ["anglerfish"], "fr": ["baudroie"]},
+  "plurals": {"en": "Monkfish", "fr": "Lottes"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],

@@ -46,7 +46,7 @@
       "technique": "technique/soak",
       "works_on": ["ingredient/chickpea"],
       "with": ["ingredient/water"],
-      "text": "Cover the dried {chickpea} with cold {water} and leave them to soak overnight. Drain them.",
+      "text": "Cover the dried {chickpea:plural} with cold {water} and leave them to soak overnight. Drain them.",
       "time": {"from": 8, "to": 12, "unit": "hour"},
       "temperature": null,
       "safety_points": [],
@@ -56,7 +56,7 @@
       "technique": "technique/sweat",
       "works_on": ["ingredient/onion"],
       "with": ["ingredient/smen"],
-      "text": "Melt half of the {fat} in the base of the couscoussier and soften the {onion} over a low heat until they are glossy and soft.",
+      "text": "Melt half of the {fat} in the base of the couscoussier and soften the {onion:plural} over a low heat until they are glossy and soft.",
       "time": {"from": 8, "to": 10, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
@@ -68,7 +68,7 @@
       "with": [
         "ingredient/water", "ingredient/ginger", "ingredient/turmeric", "ingredient/black-pepper", "ingredient/saffron"
       ],
-      "text": "Add the lamb, the {chickpea}, the {tomato}, the {ginger}, the {turmeric}, the {pepper} [saffron: and the {saffron}], and pour in the {water}. Bring to a boil, skim, then lower the heat and simmer until the lamb is nearly tender. Check a piece against a trusted guide to doneness.",
+      "text": "Add the lamb, the {chickpea:plural}, the {tomato:plural}, the {ginger}, the {turmeric}, the {pepper} [saffron: and the {saffron}], and pour in the {water}. Bring to a boil, skim, then lower the heat and simmer until the lamb is nearly tender. Check a piece against a trusted guide to doneness.",
       "time": {"from": 60, "to": 75, "unit": "minute"},
       "temperature": null,
       "safety_points": ["doneness"],
@@ -80,7 +80,7 @@
         "ingredient/carrot", "ingredient/turnip", "ingredient/cabbage", "ingredient/pumpkin", "ingredient/courgette"
       ],
       "with": ["preparation/broth"],
-      "text": "Add the {carrot} and the {turnip} first, then the {cabbage}, and the {pumpkin} and the {courgette} last, so that all of them turn tender together. Simmer until a knife slips into the {pumpkin}.",
+      "text": "Add the {carrot:plural} and the {turnip:plural} first, then the {cabbage}, and the {pumpkin} and the {courgette:plural} last, so that all of them turn tender together. Simmer until a knife slips into the {pumpkin}.",
       "time": {"from": 30, "to": 40, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

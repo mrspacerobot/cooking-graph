@@ -64,8 +64,15 @@ def group(slug, english, within=None, stands_alone=None):
     return thing
 
 
-def ingredient(slug, english, contains, free_of, is_a=(), part_of=(), groups=()):
-    thing = head("ingredient/" + slug, english)
+def counting(thing, plural):
+    """A food with a plural is countable; a food with none is uncountable."""
+    thing["plurals"] = {} if plural is None else {"en": plural}
+    thing["uncountable"] = plural is None
+    return thing
+
+
+def ingredient(slug, english, contains, free_of, is_a=(), part_of=(), groups=(), plural=None):
+    thing = counting(head("ingredient/" + slug, english), plural)
     thing["is_a"] = [link(parent) for parent in is_a]
     thing["part_of"] = [link(whole) for whole in part_of]
     thing["groups"] = [link(one) for one in groups]
@@ -120,7 +127,7 @@ def dish():
 
 
 def preparation():
-    thing = head("preparation/roux", "Roux")
+    thing = counting(head("preparation/roux", "Roux"), None)
     thing["is"] = "Flour cooked in butter."
     thing["parts"] = [part("butter", "fat", ["ingredient/butter"]), part("flour", "main", ["ingredient/flour"], optional=True)]
     thing["groups"] = []
@@ -135,7 +142,7 @@ def preparation():
 
 def by_product():
     """A preparation with no parts of its own: it is whatever a step leaves behind."""
-    thing = head("preparation/onion-juices", "Onion juices")
+    thing = counting(head("preparation/onion-juices", "Onion juices"), None)
     thing["is"] = "The sweet liquid onions leave in the pan."
     thing["parts"] = []
     thing["groups"] = [link("group/alliums")]
@@ -264,7 +271,8 @@ def graph_files():
         group("vegetables", "Vegetables"),
         group("alliums", "Alliums", within="group/vegetables"),
         ingredient("allium", "Allium", [], ["fact/dairy", "fact/gluten"], groups=["group/alliums"]),
-        ingredient("onion", "Onion", [], ["fact/dairy", "fact/gluten"], is_a=["ingredient/allium"], groups=["group/alliums"]),
+        ingredient("onion", "Onion", [], ["fact/dairy", "fact/gluten"], is_a=["ingredient/allium"], groups=["group/alliums"],
+                   plural="Onions"),
         ingredient("onion-skin", "Onion skin", [], ["fact/dairy", "fact/gluten"], part_of=["ingredient/onion"]),
         ingredient("butter", "Butter", ["fact/dairy"], ["fact/gluten"]),
         ingredient("flour", "Flour", ["fact/gluten"], ["fact/dairy"]),

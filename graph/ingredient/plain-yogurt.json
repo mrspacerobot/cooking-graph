@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Plain yogurt", "fr": "Yaourt nature", "es": "yogur"},
   "aliases": {"en": ["plain yoghurt", "yogurt", "yoghurt"], "fr": ["yaourt"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

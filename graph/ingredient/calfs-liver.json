@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Calf's liver", "fr": "Foie de veau"},
   "aliases": {"en": ["veal liver", "calf liver"]},
+  "plurals": {"en": "Calves' livers", "fr": "Foies de veau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

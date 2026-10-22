@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cornichons", "fr": "Cornichons", "tr": "Kornişon"},
   "aliases": {"en": ["gherkins", "cornichon"]},
+  "plurals": {"en": "Cornichons", "fr": "Cornichons", "tr": "Kornişonlar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

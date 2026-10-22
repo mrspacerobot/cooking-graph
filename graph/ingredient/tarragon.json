@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Tarragon", "fr": "Estragon", "es": "dragón", "it": "dragoncello"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

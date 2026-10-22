@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chicken", "fr": "Poulet"},
   "aliases": {"en": ["whole chicken", "hen", "boiling fowl"]},
+  "plurals": {"en": "Chickens", "fr": "Poulets"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

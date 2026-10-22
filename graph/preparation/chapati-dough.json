@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chapati dough"},
   "aliases": {"en": ["roti dough", "atta dough"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A soft dough of whole wheat flour and water, with no yeast, rested and then divided into small balls to roll into thin rounds.",
   "parts": [
     {"id": "flour", "role": "base", "options": ["ingredient/whole-wheat-flour"], "optional": false, "tier": "drafted"},

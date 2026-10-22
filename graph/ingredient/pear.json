@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pear", "fr": "Poire", "es": "pera", "it": "pera", "tr": "armut"},
   "aliases": {},
+  "plurals": {"en": "Pears", "fr": "Poires", "es": "peras", "it": "pere", "tr": "armutlar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

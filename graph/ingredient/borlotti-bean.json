@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Borlotti bean", "fr": "Haricot borlotti", "es": "Alubia pinta", "it": "fagiolo borlotto"},
   "aliases": {"en": ["borlotti", "cranberry bean"], "fr": ["haricot marbré"]},
+  "plurals": {"en": "Borlotti beans", "fr": "Haricots borlotti", "es": "Alubias pintas", "it": "fagioli borlotti"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

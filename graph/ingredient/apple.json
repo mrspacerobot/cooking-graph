@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Apple", "fr": "Pomme", "es": "manzana", "it": "mela", "tr": "elma"},
   "aliases": {},
+  "plurals": {"en": "Apples", "fr": "Pommes", "es": "manzanas", "it": "mele", "tr": "elmalar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Aubergine", "fr": "Aubergine", "es": "berenjena", "it": "melanzana"},
   "aliases": {"en": ["eggplant"]},
+  "plurals": {"en": "Aubergines", "fr": "Aubergines", "es": "berenjenas", "it": "melanzane"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

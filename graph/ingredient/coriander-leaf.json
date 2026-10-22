@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Coriander leaf", "fr": "Coriandre", "it": "foglie di coriandolo", "tr": "Kişniş"},
   "aliases": {"en": ["coriander", "cilantro", "fresh coriander"], "fr": ["feuille de coriandre"]},
+  "plurals": {"en": "Coriander leaves", "fr": "Coriandres", "it": "foglie di coriandolo", "tr": "Kişnişler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Yam", "fr": "Igname", "es": "ñame"},
   "aliases": {},
+  "plurals": {"en": "Yams", "fr": "Ignames", "es": "ñames"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

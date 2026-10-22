@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pike", "fr": "Brochet"},
   "aliases": {},
+  "plurals": {"en": "Pike", "fr": "Brochets"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],

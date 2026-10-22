@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Gruyère", "fr": "Gruyère", "es": "gruyer", "it": "groviera", "tr": "Gravyer peyniri"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

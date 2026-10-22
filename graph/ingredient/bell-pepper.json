@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Bell pepper", "fr": "Poivron", "es": "morrón", "it": "peperone", "tr": "Dolma biber"},
   "aliases": {"en": ["sweet pepper", "capsicum"]},
+  "plurals": {"en": "Bell peppers", "fr": "Poivrons", "es": "morrones", "it": "peperoni", "tr": "Dolma biberler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

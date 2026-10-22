@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Almond", "fr": "Amande", "es": "almendra", "it": "mandorla"},
   "aliases": {"en": ["almonds"]},
+  "plurals": {"en": "Almonds", "fr": "Amandes", "es": "almendras", "it": "mandorle"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

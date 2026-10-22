@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Green pepper", "fr": "Poivron vert", "es": "pimienta verde", "it": "pepe verde"},
   "aliases": {"en": ["sivri biber", "pimiento verde", "green bell pepper"]},
+  "plurals": {"en": "Green peppers", "fr": "Poivrons verts", "es": "pimientas verdes", "it": "pepi verdi"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

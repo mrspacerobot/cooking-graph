@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Dried fenugreek leaf"},
   "aliases": {"en": ["kasuri methi", "dried methi leaf"]},
+  "plurals": {"en": "Dried fenugreek leaves"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/fenugreek-leaf", "tier": "drafted"}
   ],

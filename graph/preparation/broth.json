@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Broth", "fr": "Bouillon", "it": "brodo", "tr": "et suyu"},
   "aliases": {"en": ["cooking broth"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "The liquid left when meat, poultry or vegetables have simmered in water: the stock a dish makes for itself.",
   "parts": [],
   "groups": [

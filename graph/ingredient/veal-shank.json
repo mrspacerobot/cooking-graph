@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Veal shank", "fr": "Jarret de veau"},
   "aliases": {"en": ["veal shin"]},
+  "plurals": {"en": "Veal shanks", "fr": "Jarrets de veau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

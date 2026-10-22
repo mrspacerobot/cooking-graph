@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Split peas", "fr": "Pois cassés"},
   "aliases": {"en": ["dried split peas", "green split peas"]},
+  "plurals": {"en": "Split peas", "fr": "Pois cassés"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

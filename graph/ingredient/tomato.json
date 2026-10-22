@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Tomato", "fr": "Tomate", "it": "pomodoro", "tr": "domates"},
   "aliases": {},
+  "plurals": {"en": "Tomatoes", "fr": "Tomates", "it": "pomodori", "tr": "domatesler"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

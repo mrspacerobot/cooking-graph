@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Shichimi"},
   "aliases": {"en": ["shichimi togarashi", "seven-spice powder"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

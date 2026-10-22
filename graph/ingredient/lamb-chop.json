@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lamb chop", "fr": "Côtelette d'agneau"},
   "aliases": {},
+  "plurals": {"en": "Lamb chops", "fr": "Côtelettes d'agneau"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [
     {"thing": "ingredient/lamb", "tier": "drafted"}

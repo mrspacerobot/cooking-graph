@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Chickpea flour", "fr": "Farine de pois chiche", "es": "Harina de garbanzo", "it": "farina di ceci"},
   "aliases": {"en": ["besan", "gram flour"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

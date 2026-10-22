@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Bread", "fr": "Pain", "es": "pan", "it": "pane", "tr": "ekmek"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

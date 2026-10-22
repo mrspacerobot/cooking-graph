@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beef roasting joint", "fr": "Rôti de bœuf"},
   "aliases": {"en": ["roasting beef", "beef topside"]},
+  "plurals": {"en": "Beef roasting joints", "fr": "Rôtis de bœuf"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

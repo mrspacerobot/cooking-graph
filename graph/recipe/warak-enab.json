@@ -37,7 +37,7 @@
       "technique": "technique/mince",
       "works_on": ["ingredient/onion", "ingredient/parsley", "ingredient/mint"],
       "with": [],
-      "text": "Mince the {onion}, the {parsley} and the {mint} fine.",
+      "text": "Mince the {onion:plural}, the {parsley} and the {mint} fine.",
       "time": null,
       "temperature": null,
       "safety_points": [],
@@ -47,7 +47,7 @@
       "technique": "technique/dice",
       "works_on": ["ingredient/tomato"],
       "with": [],
-      "text": "Dice about half the {tomato} small for the filling and slice the rest for lining the pot.",
+      "text": "Dice about half the {tomato:plural} small for the filling and slice the rest for lining the pot.",
       "time": null,
       "temperature": null,
       "safety_points": [],
@@ -60,7 +60,7 @@
         "ingredient/parsley", "ingredient/mint", "ingredient/allspice", "ingredient/salt", "ingredient/olive-oil",
         "ingredient/lemon-juice"
       ],
-      "text": "Mix the drained {rice}, the diced {tomato} and the {onion} with the {parsley}, the {mint}, the {allspice}, half the {salt}, half the {oil} and a little of the {lemon}.",
+      "text": "Mix the drained {rice}, the diced {tomato:plural} and the {onion:plural} with the {parsley}, the {mint}, the {allspice}, half the {salt}, half the {oil} and a little of the {lemon}.",
       "time": null,
       "temperature": null,
       "safety_points": [],
@@ -92,7 +92,7 @@
       "with": [
         "ingredient/olive-oil", "ingredient/lemon-juice", "ingredient/water", "ingredient/salt", "ingredient/tomato"
       ],
-      "text": "Line a wide pot with the sliced {tomato}, pack the rolls on top seam down, and pour over the rest of the {oil}, the rest of the {lemon} and the {water}, with the rest of the {salt}. Set a plate on the rolls, cover the pot and simmer on a low heat until the leaves and the {rice} is tender. Leave the rolls to cool in the pot.",
+      "text": "Line a wide pot with the sliced {tomato:plural}, pack the rolls on top seam down, and pour over the rest of the {oil}, the rest of the {lemon} and the {water}, with the rest of the {salt}. Set a plate on the rolls, cover the pot and simmer on a low heat until the leaves and the {rice} is tender. Leave the rolls to cool in the pot.",
       "time": {"from": 45, "to": 60, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Carrot", "fr": "Carotte", "es": "zanahoria", "it": "carota", "tr": "havuç"},
   "aliases": {},
+  "plurals": {"en": "Carrots", "fr": "Carottes", "es": "zanahorias", "it": "carote", "tr": "havuçlar"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

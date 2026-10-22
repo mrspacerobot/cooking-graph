@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Rouille", "fr": "Rouille"},
   "aliases": {},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick, rust-coloured sauce of garlic, chilli and saffron bound with olive oil, spread on toasts and stirred into a fish soup.",
   "parts": [
     {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},

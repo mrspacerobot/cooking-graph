@@ -9,6 +9,8 @@
     "tr": "Patates püresi"
   },
   "aliases": {"en": ["mashed potato", "mashed potatoes", "mash"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Boiled potatoes crushed while hot and beaten smooth with butter and hot milk.",
   "parts": [
     {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},

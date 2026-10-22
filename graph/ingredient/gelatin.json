@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Gelatin", "fr": "Gélatine"},
   "aliases": {"en": ["gelatine", "gelatin sheets", "leaf gelatin"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

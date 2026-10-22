@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Hot paprika", "fr": "Paprika fort"},
   "aliases": {"en": ["pimentón picante"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/paprika", "tier": "drafted"}
   ],

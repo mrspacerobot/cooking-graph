@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sauerkraut", "fr": "Choucroute", "es": "Chucrut", "it": "crauti"},
   "aliases": {"en": ["fermented cabbage"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

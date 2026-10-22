@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Lime", "fr": "Citron vert", "es": "lima", "it": "limetta", "tr": "Misket limonu"},
   "aliases": {"en": ["limes"]},
+  "plurals": {"en": "Limes", "fr": "Citrons verts", "es": "limas", "it": "limette", "tr": "Misket limonları"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

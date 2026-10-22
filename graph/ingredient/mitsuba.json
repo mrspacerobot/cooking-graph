@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Mitsuba"},
   "aliases": {"en": ["Japanese honeywort", "Japanese parsley"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

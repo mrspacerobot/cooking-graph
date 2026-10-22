@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Vegetable stock", "fr": "Bouillon de légumes"},
   "aliases": {"en": ["homemade vegetable stock"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A light, clear stock made by simmering sweated vegetables and herbs in water, then straining them out.",
   "parts": [
     {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},

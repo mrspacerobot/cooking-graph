@@ -9,6 +9,8 @@
     "tr": "Zeytinyağı"
   },
   "aliases": {"en": ["extra virgin olive oil"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

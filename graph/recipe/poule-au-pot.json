@@ -49,7 +49,7 @@
         "ingredient/onion", "ingredient/clove", "ingredient/celery", "preparation/bouquet-garni",
         "ingredient/black-pepper"
       ],
-      "text": "Stick the {clove} into the {onion} and add it with the {celery}, the {bouquet-garni} and the {black-pepper}. Poach at a bare tremble, lid ajar. The {water} must never boil.",
+      "text": "Stick the {clove:plural} into the {onion} and add it with the {celery}, the {bouquet-garni} and the {black-pepper}. Poach at a bare tremble, lid ajar. The {water} must never boil.",
       "time": {"value": 45, "unit": "minute"},
       "temperature": null,
       "safety_points": [],
@@ -59,7 +59,7 @@
       "technique": "technique/poach",
       "works_on": ["ingredient/chicken", "ingredient/carrot", "ingredient/turnip", "ingredient/leek"],
       "with": [],
-      "text": "Add the {carrot}, the {turnip} and the {leek} tied in a bundle. Go on poaching until the vegetables are tender and the leg moves freely in its joint. Check the thickest part of the thigh against a trusted guide to doneness.",
+      "text": "Add the {carrot:plural}, the {turnip:plural} and the {leek:plural} tied in a bundle. Go on poaching until the vegetables are tender and the leg moves freely in its joint. Check the thickest part of the thigh against a trusted guide to doneness.",
       "time": {"from": 35, "to": 45, "unit": "minute"},
       "temperature": null,
       "safety_points": ["doneness"],

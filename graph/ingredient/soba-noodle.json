@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Soba noodle"},
   "aliases": {"en": ["soba", "buckwheat noodle"]},
+  "plurals": {"en": "Soba noodles"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Short-grain rice", "fr": "Riz à grains ronds"},
   "aliases": {"en": ["round-grain rice"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/rice", "tier": "drafted"}
   ],

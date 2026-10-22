@@ -22,13 +22,20 @@ def foods_named(recipe, mention):
     return foods
 
 
+def english_name(food, plural):
+    """The name of a food, or its plural when it is asked for and the food has one. An uncountable food has only its name."""
+    if plural and not food.data["uncountable"]:
+        return food.data["plurals"]["en"]
+    return food.data["names"]["en"]
+
+
 def name_in_use(things, recipe, swaps):
     """A function from a mention to the English name of the food in use. `swaps` maps (part, food) to its stand-in."""
 
     def name_of(mention):
         food = foods_named(recipe, mention)[0]
         instead = swaps.get((mention.part, food), food)
-        return things[instead].data["names"]["en"]
+        return english_name(things[instead], mention.plural)
 
     return name_of
 

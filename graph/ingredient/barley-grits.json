@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Barley grits", "fr": "Gruau d'orge"},
   "aliases": {"en": ["cracked barley"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

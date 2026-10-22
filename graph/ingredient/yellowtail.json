@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Yellowtail"},
   "aliases": {"en": ["buri", "hamachi", "amberjack"]},
+  "plurals": {"en": "Yellowtail"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

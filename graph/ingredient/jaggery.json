@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Jaggery"},
   "aliases": {"en": ["gur", "gud"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

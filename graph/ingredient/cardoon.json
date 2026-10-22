@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Cardoon", "fr": "Cardon", "es": "cardo", "it": "cardi"},
   "aliases": {},
+  "plurals": {"en": "Cardoons", "fr": "Cardons", "es": "cardos", "it": "cardi"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

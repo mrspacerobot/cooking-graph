@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Fresh anchovy", "fr": "Anchois frais"},
   "aliases": {"en": ["boquerón"]},
+  "plurals": {"en": "Fresh anchovies", "fr": "Anchois frais"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

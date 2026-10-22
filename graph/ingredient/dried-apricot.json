@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Dried apricot", "fr": "Abricot sec"},
   "aliases": {"en": ["dried apricots"]},
+  "plurals": {"en": "Dried apricots", "fr": "Abricots secs"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

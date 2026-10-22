@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Flour", "fr": "Farine", "es": "harina", "it": "farina", "tr": "un"},
   "aliases": {"en": ["plain flour", "all-purpose flour", "wheat flour"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

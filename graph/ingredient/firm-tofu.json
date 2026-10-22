@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Firm tofu"},
   "aliases": {"en": ["momen tofu", "cotton tofu"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/tofu", "tier": "drafted"}
   ],

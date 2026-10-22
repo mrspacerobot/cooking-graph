@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Black gram"},
   "aliases": {"en": ["urad", "urad dal"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Nora pepper", "fr": "Piment nora"},
   "aliases": {"en": ["nora peppers", "nora", "ñora", "ñora pepper", "ñoras"]},
+  "plurals": {"en": "Nora peppers", "fr": "Piments nora"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

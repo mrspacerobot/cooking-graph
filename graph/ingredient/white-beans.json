@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "White beans", "fr": "Haricots blancs"},
   "aliases": {"en": ["haricot beans", "cannellini beans", "white bean", "cannellini bean"]},
+  "plurals": {"en": "White beans", "fr": "Haricots blancs"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

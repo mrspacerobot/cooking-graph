@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Frisée", "fr": "Frisée"},
   "aliases": {"en": ["curly endive"]},
+  "plurals": {"en": "Frisées", "fr": "Frisées"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

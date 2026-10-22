@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Mizithra"},
   "aliases": {"en": ["myzithra", "mizythra"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Smoked duck breast", "fr": "Magret fumé"},
   "aliases": {"en": ["smoked magret"], "fr": ["magret de canard fumé"]},
+  "plurals": {"en": "Smoked duck breasts", "fr": "Magrets fumés"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

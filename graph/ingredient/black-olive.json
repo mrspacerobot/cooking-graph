@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Black olive", "fr": "Olive noire", "es": "aceituna negra", "it": "olive nere"},
   "aliases": {"en": ["black olives", "niçoise olive"]},
+  "plurals": {"en": "Black olives", "fr": "Olives noires", "es": "aceitunas negras", "it": "olive nere"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

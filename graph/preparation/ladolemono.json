@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Ladolemono"},
   "aliases": {"en": ["Greek lemon and oil dressing"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A loose dressing of olive oil whisked with lemon juice, oregano and salt. It is spooned over grilled fish and meat, used to marinate small pieces of meat, and poured over boiled greens and vegetables.",
   "parts": [
     {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},

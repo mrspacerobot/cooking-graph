@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Red mullet", "fr": "Rouget", "it": "triglia"},
   "aliases": {"fr": ["rouget barbet"]},
+  "plurals": {"en": "Red mullet", "fr": "Rougets", "it": "triglie"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [

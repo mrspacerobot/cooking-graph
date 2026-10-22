@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Sole", "fr": "Sole", "es": "lenguado", "it": "sogliola"},
   "aliases": {"en": ["Dover sole"]},
+  "plurals": {"en": "Sole", "fr": "Soles", "es": "lenguados", "it": "sogliole"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/white-fish", "tier": "drafted"}
   ],

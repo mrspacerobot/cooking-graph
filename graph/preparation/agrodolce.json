@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Agrodolce", "fr": "Aigre-doux à l'italienne"},
   "aliases": {"en": ["Italian sweet-sour syrup"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A glossy sweet-sour syrup of sugar melted into hot vinegar and cooked down a little, never to colour. It dresses fried vegetables, fish and meat, and is best known in Sicilian caponata.",
   "parts": [
     {

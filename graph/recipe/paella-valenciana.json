@@ -78,7 +78,7 @@
       "technique": "technique/saute",
       "works_on": ["ingredient/green-beans"],
       "with": ["ingredient/olive-oil"],
-      "text": "Add the {green-beans} to the pan and turn them in the {olive-oil} until they take a little colour. Push them to the edge with the {chicken}.",
+      "text": "Add the {green-beans:plural} to the pan and turn them in the {olive-oil} until they take a little colour. Push them to the edge with the {chicken}.",
       "time": {"from": 4, "to": 5, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

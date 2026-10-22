@@ -71,7 +71,7 @@
       "technique": "technique/simmer",
       "works_on": ["ingredient/tomato"],
       "with": ["ingredient/green-olive", "ingredient/capers"],
-      "text": "Add the {tomato}, the olives and the {caper}, and let them simmer gently until the {tomato} has broken down into a thick sauce.",
+      "text": "Add the {tomato:plural}, the olives and the {caper:plural}, and let them simmer gently until the {tomato:plural} have broken down into a thick sauce.",
       "time": {"from": 10, "to": 15, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

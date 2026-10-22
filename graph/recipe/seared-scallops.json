@@ -23,7 +23,7 @@
       "technique": "technique/sear",
       "works_on": ["ingredient/scallop"],
       "with": ["ingredient/salt", "ingredient/sunflower-oil"],
-      "text": "Dry the {scallop} very well on paper and {salt} them. Heat the {sunflower-oil} in a heavy pan until it just begins to smoke. Set the {scallop} in, flat side down and well apart, and do not touch them until a deep brown crust has formed.",
+      "text": "Dry the {scallop:plural} very well on paper and {salt} them. Heat the {sunflower-oil} in a heavy pan until it just begins to smoke. Set the {scallop:plural} in, flat side down and well apart, and do not touch them until a deep brown crust has formed.",
       "time": {"from": 90, "to": 120, "unit": "second"},
       "temperature": null,
       "safety_points": [],

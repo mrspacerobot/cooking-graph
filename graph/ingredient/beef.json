@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Beef", "fr": "Bœuf", "es": "carne de res", "it": "manzo", "tr": "dana eti"},
   "aliases": {"fr": ["viande bovine"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

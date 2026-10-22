@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Aonori"},
   "aliases": {"en": ["green laver flakes"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

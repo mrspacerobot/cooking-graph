@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Crème anglaise", "fr": "Crème anglaise", "it": "crema inglese", "tr": "İngiliz kreması"},
   "aliases": {"en": ["custard sauce", "pouring custard", "custard"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A pouring custard: sweetened milk thickened gently with egg yolks until it coats a spoon.",
   "parts": [
     {"id": "egg-yolk", "role": "thickener", "options": ["ingredient/egg-yolk"], "optional": false, "tier": "drafted"},

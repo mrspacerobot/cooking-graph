@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Taro"},
   "aliases": {"en": ["satoimo"]},
+  "plurals": {"en": "Taros"},
+  "uncountable": false,
   "is_a": [],
   "part_of": [],
   "groups": [],

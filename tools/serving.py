@@ -90,10 +90,17 @@ def vectors_of(things):
     return {"cases": cases, "step_text_cases": step_text_cases(things, recipes)}
 
 
-def first_swaps(things, recipe_id):
-    """Every line that has a swap, replaced by its first swap: {(part, food): stand-in}."""
-    lines = queries.stand_ins(things, recipe_id)["lines"]
-    return {(line["part"], line["original"]): line["options"][0]["thing"] for line in lines if line["options"]}
+def first_swaps(things, recipe_id, uncountable_only=False):
+    """Every line that has a swap, replaced by its first swap: {(part, food): stand-in}. With `uncountable_only`, only
+    swaps to an uncountable food count, and a line takes the first of those."""
+    swaps = {}
+    for line in queries.stand_ins(things, recipe_id)["lines"]:
+        options = [one["thing"] for one in line["options"]]
+        if uncountable_only:
+            options = [thing_id for thing_id in options if things[thing_id].data["uncountable"]]
+        if options:
+            swaps[(line["part"], line["original"])] = options[0]
+    return swaps
 
 
 def step_text_case(things, recipe_id, swaps, left_out):
@@ -105,8 +112,9 @@ def step_text_case(things, recipe_id, swaps, left_out):
 
 
 def step_text_cases(things, recipes):
-    """What a server must render for each recipe: as written, with each optional part left out, and with every
-    line that has a swap swapped. Written by the reference (`recipe_text`), so a server that renders the same
+    """What a server must render for each recipe: as written, with each optional part left out, with every
+    line that has a swap swapped, and with every line swapped to an uncountable stand-in (a plural placeholder then
+    prints the name). Written by the reference (`recipe_text`), so a server that renders the same
     text is proven against it."""
     cases = []
     for recipe_id in recipes:
@@ -118,4 +126,7 @@ def step_text_cases(things, recipes):
         swaps = first_swaps(things, recipe_id)
         if swaps:
             cases.append(step_text_case(things, recipe_id, swaps, []))
+        uncountable = first_swaps(things, recipe_id, uncountable_only=True)
+        if uncountable and uncountable != swaps:
+            cases.append(step_text_case(things, recipe_id, uncountable, []))
     return cases

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Serrano ham", "fr": "Jambon serrano"},
   "aliases": {"en": ["jamón serrano"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Pancake batter"},
   "aliases": {"en": ["griddle batter"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "A thick, pourable batter of flour, egg and a liquid, which is cooked in rounds on a griddle or a pan.",
   "parts": [
     {"id": "flour", "role": "base", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},

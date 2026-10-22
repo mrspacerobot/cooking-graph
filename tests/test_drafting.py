@@ -60,7 +60,7 @@ class SafetyRecords(unittest.TestCase):
             drafting.safety(self.kitchen.root, [("fact/mustard", "It is mustard.", True)])
 
     def test_a_drafted_thing_is_written_and_passes_the_check(self):
-        cream = drafting.thing("ingredient/cream", "Cream", fr="Crème")
+        cream = drafting.counting(drafting.thing("ingredient/cream", "Cream", fr="Crème"), None)
         cream["is_a"] = []
         cream["part_of"] = []
         cream["groups"] = []

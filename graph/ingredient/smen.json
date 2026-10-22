@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Smen"},
   "aliases": {"en": ["Moroccan preserved butter"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [
     {"thing": "ingredient/butter", "tier": "drafted"}
   ],

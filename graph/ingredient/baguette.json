@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Baguette", "fr": "Baguette", "tr": "francala"},
   "aliases": {},
+  "plurals": {"en": "Baguettes", "fr": "Baguettes", "tr": "francalalar"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/bread", "tier": "drafted"}
   ],

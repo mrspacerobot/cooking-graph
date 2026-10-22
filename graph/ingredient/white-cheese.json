@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "White cheese", "es": "queso blanco", "it": "formaggio bianco"},
   "aliases": {"en": ["beyaz peynir", "Turkish white cheese"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [],

@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Japanese yam"},
   "aliases": {"en": ["nagaimo", "yamaimo", "mountain yam"]},
+  "plurals": {"en": "Japanese yams"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/yam", "tier": "drafted"}
   ],

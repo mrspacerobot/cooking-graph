@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Ham", "fr": "Jambon", "es": "jamón", "it": "prosciutto"},
   "aliases": {"en": ["cooked ham", "jambon blanc"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

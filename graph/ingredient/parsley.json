@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Parsley", "fr": "Persil", "es": "perejil", "it": "prezzemolo", "tr": "maydanoz"},
   "aliases": {"en": ["flat-leaf parsley"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

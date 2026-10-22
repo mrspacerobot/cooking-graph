@@ -67,7 +67,7 @@
       "technique": "technique/char",
       "works_on": ["ingredient/aubergine"],
       "with": [],
-      "text": "Set the {cream.aubergine} straight on a gas flame and turn them until the skin is black and the flesh has collapsed. Cover them in a bowl to cool, then pull away the skin and drain off the juice.",
+      "text": "Set the {cream.aubergine:plural} straight on a gas flame and turn them until the skin is black and the flesh has collapsed. Cover them in a bowl to cool, then pull away the skin and drain off the juice.",
       "time": {"from": 15, "to": 20, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

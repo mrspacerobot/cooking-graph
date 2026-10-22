@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Naan dough"},
   "aliases": {"en": ["yogurt dough for naan"]},
+  "plurals": {},
+  "uncountable": true,
   "is": "Flour, yeast, yogurt, milk, sugar, salt and a little oil kneaded to a soft, slightly sticky dough and left to rise.",
   "parts": [
     {"id": "flour", "role": "main", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},

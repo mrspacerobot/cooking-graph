@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Tinned tomatoes", "fr": "Tomates en conserve"},
   "aliases": {"en": ["canned tomatoes", "tinned plum tomatoes"]},
+  "plurals": {"en": "Tinned tomatoes", "fr": "Tomates en conserve"},
+  "uncountable": false,
   "is_a": [
     {"thing": "ingredient/tomato", "tier": "drafted"}
   ],

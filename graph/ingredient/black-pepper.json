@@ -3,6 +3,8 @@
   "tier": "drafted",
   "names": {"en": "Black pepper", "fr": "Poivre noir", "es": "pimienta negra", "it": "pepe nero", "tr": "karabiber"},
   "aliases": {"en": ["black peppercorns"]},
+  "plurals": {},
+  "uncountable": true,
   "is_a": [],
   "part_of": [],
   "groups": [

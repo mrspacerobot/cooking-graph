@@ -74,7 +74,7 @@
       "technique": "technique/slice",
       "works_on": ["ingredient/tomato", "ingredient/onion"],
       "with": [],
-      "text": "Slice the {tomato} and slice the {onion} thin.",
+      "text": "Slice the {tomato:plural} and slice the {onion} thin.",
       "time": null,
       "temperature": null,
       "safety_points": [],

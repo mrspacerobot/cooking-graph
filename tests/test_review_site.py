@@ -28,6 +28,18 @@ class ReviewSiteTest(unittest.TestCase):
         self.assertNotIn('href="approvals.html"', page)
         self.assertNotIn('__REVIEW_', page)
 
+    def test_photo_review_link_only_appears_in_configured_shared_notebook(self):
+        data = review_site.payload(self.things, 'abc123')
+        url = 'https://photo-review.example.com/'
+        self.assertIn('href="' + url + '"', review_site.page(REPOSITORY, data, {'photoReviewUrl': url}))
+        self.assertNotIn('Review dish photos', review_site.page(REPOSITORY, data))
+        self.assertNotIn('Review dish photos', review_site.page(REPOSITORY, data, {}))
+
+    def test_photo_review_link_rejects_insecure_destination(self):
+        url = 'http://photo-review.example.com/'
+        with self.assertRaises(ValueError):
+            review_site.page(REPOSITORY, {}, {'photoReviewUrl': url})
+
     def test_only_graph_records_are_included_and_safety_is_not_exported(self):
         self.things['dish-probe/hidden'] = Thing('probes/dish-probe/hidden.json', 'dish-probe',
                                                 {'id': 'dish-probe/hidden', 'secret': 'hidden words'})

@@ -173,3 +173,8 @@ The config holds the public Firebase web settings and the shared login email
   saved answers, not the page text. The shared copy omits the approvals page and
   every ingredient safety fact.
 - Saving never raises a tier or verifies safety.
+
+Set optional `photoReviewUrl` in the cloud config to the HTTPS address of the
+Tomi dish-photo reviewer. The shared notebook then links to it. Its separate
+sign-in uses the same notebook account, and its image decisions apply only to
+Tomi's photos.

@@ -1,9 +1,11 @@
 """Build a static editorial review site, separate from the production export."""
 
 import hashlib
+import html
 import json
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from tools import approval_site, check, queries, recipe_text
 from tools.viewer import metadata
@@ -117,6 +119,19 @@ def payload(things, commit):
     return {'entries': entries, 'names': labels, 'commit': commit, 'repository': REPOSITORY}
 
 
+def photo_review_link(cloud):
+    url = cloud.get('photoReviewUrl')
+    if url is None:
+        return ''
+    if not isinstance(url, str):
+        raise ValueError('photoReviewUrl must be an HTTPS URL')
+    parsed = urlsplit(url)
+    if (parsed.scheme != 'https' or not parsed.hostname
+            or parsed.username is not None or parsed.query or parsed.fragment):
+        raise ValueError('photoReviewUrl must be an HTTPS URL without credentials, query or fragment')
+    return '<a href="' + html.escape(url, quote=True) + '">Review dish photos</a>'
+
+
 def page(root, data, cloud=None):
     assets = Path(root, 'reviewer')
     text = (assets / 'index.html').read_text(encoding='utf-8')
@@ -134,7 +149,7 @@ def page(root, data, cloud=None):
         script = '<script>window.notebookCloudEnabled = true; window.notebookCloudConfig = ' + config + ';</script>'
         text = text.replace('<script>"use strict";', script + '<script>"use strict";', 1)
         text = text.replace('</body>', '<script type="module" src="cloud.js"></script></body>')
-        text = text.replace('<a href="approvals.html">Approvals page</a>', '')
+        text = text.replace('<a href="approvals.html">Approvals page</a>', photo_review_link(cloud))
     return text
 
 
@@ -161,12 +176,13 @@ def build_cloud(root, assets, data, cloud_config):
         cloud = json.loads(Path(cloud_config).read_text(encoding='utf-8'))
         cloud['email']
         cloud['firebase']['apiKey']
+        rendered = page(assets, data, cloud=cloud)
     except (OSError, ValueError, KeyError, TypeError) as error:
         print('review-site: cloud config unreadable (%s)' % error, file=sys.stderr)
         return 1
     destination = Path(root, 'out', 'cloud')
     destination.mkdir(parents=True, exist_ok=True)
-    (destination / 'index.html').write_text(page(assets, data, cloud=cloud), encoding='utf-8')
+    (destination / 'index.html').write_text(rendered, encoding='utf-8')
     (destination / 'cloud.js').write_text(Path(assets, 'reviewer', 'cloud.js').read_text(encoding='utf-8'), encoding='utf-8')
     print('Built %d shared review entries: %s' % (len(data['entries']), (destination / 'index.html').resolve()))
     return 0

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/maroulosalata",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "salad",
+  "dish": "Maroulosalata",
+  "also_called": ["greek lettuce salad", "lettuce and dill salad"],
+  "techniques": ["shred", "dress"],
+  "ingredients": ["romaine lettuce", "spring onion", "dill", "olive oil", "lemon", "red wine vinegar"]
+}

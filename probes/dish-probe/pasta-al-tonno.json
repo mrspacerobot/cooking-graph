@@ -1,0 +1,19 @@
+{
+  "id": "dish-probe/pasta-al-tonno",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Spaghetti al tonno",
+  "also_called": ["pasta with tuna", "tuna pasta", "tuna and tomato spaghetti"],
+  "techniques": [
+    "sauté garlic in olive oil",
+    "simmer tomato sauce",
+    "stir in canned tuna",
+    "boil pasta",
+    "finish pasta in its sauce"
+  ],
+  "ingredients": ["spaghetti", "canned tuna", "canned tomato", "garlic", "caper", "olive oil", "parsley"]
+}

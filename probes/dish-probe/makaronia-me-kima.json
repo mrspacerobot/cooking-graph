@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/makaronia-me-kima",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "braising",
+  "dish": "Makaronia me kima",
+  "also_called": ["greek spaghetti with meat sauce", "spaghetti me kima", "greek bolognese"],
+  "techniques": ["brown minced meat", "simmer", "boil pasta", "grate cheese"],
+  "ingredients": [
+    "spaghetti",
+    "minced beef",
+    "onion",
+    "garlic",
+    "canned tomato",
+    "tomato paste",
+    "cinnamon",
+    "bay leaf",
+    "red wine",
+    "kefalotyri"
+  ]
+}

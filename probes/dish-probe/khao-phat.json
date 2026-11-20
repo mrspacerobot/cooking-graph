@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/khao-phat",
+  "tier": "drafted",
+  "batch": "home-thai-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "thai",
+  "written_for": "rice",
+  "dish": "Khao phat",
+  "also_called": ["thai fried rice", "khao pad"],
+  "techniques": ["stir fry", "scramble egg", "toss"],
+  "ingredients": ["cooked jasmine rice", "chicken breast", "egg", "onion", "garlic", "fish sauce", "soy sauce", "lime"]
+}

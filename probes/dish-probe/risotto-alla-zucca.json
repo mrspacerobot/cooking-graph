@@ -1,0 +1,20 @@
+{
+  "id": "dish-probe/risotto-alla-zucca",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "rice",
+  "dish": "Risotto alla zucca",
+  "also_called": ["pumpkin risotto", "butternut squash risotto"],
+  "techniques": [
+    "soften onion",
+    "toast rice",
+    "deglaze with white wine",
+    "add hot stock gradually",
+    "stir",
+    "finish with butter and cheese"
+  ],
+  "ingredients": ["arborio rice", "butternut squash", "onion", "white wine", "vegetable stock", "butter", "parmesan"]
+}

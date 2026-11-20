@@ -1,0 +1,25 @@
+{
+  "id": "dish-probe/mercimek-koftesi",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "pulses",
+  "dish": "Mercimek köftesi",
+  "also_called": ["red lentil balls", "turkish lentil kofte", "mercimekli köfte"],
+  "techniques": ["simmer lentils", "soak bulgur", "knead", "shape"],
+  "ingredients": [
+    "red lentil",
+    "fine bulgur",
+    "onion",
+    "tomato paste",
+    "red pepper paste",
+    "spring onion",
+    "parsley",
+    "lemon",
+    "lettuce",
+    "olive oil",
+    "cumin"
+  ]
+}

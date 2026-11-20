@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/domates-corbasi",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "soup",
+  "dish": "Domates çorbası",
+  "also_called": ["turkish tomato soup", "creamy tomato soup with cheese"],
+  "techniques": ["make roux", "simmer", "blend"],
+  "ingredients": ["tomato", "tomato paste", "butter", "flour", "milk", "kaşar"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/enchiladas-verdes",
+  "tier": "drafted",
+  "batch": "home-mexican-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "mexican",
+  "written_for": "baking",
+  "dish": "Enchiladas verdes",
+  "also_called": ["green enchiladas", "chicken enchiladas with salsa verde"],
+  "techniques": ["shred chicken", "roll", "pour sauce", "bake"],
+  "ingredients": ["corn tortilla", "cooked chicken", "salsa verde", "sour cream", "cheese", "onion", "coriander"]
+}

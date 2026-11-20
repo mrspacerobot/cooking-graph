@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bazlama",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "baking",
+  "dish": "Bazlama",
+  "also_called": ["turkish flatbread", "pan-cooked flatbread", "village bread"],
+  "techniques": ["knead", "prove", "roll", "griddle"],
+  "ingredients": ["flour", "yeast", "yogurt", "water", "salt"]
+}

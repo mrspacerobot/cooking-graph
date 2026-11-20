@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kritharoto",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "rice",
+  "dish": "Kritharoto",
+  "also_called": ["orzo risotto", "greek orzo with tomato and feta", "kritharaki risotto"],
+  "techniques": ["sweat onion", "toast orzo", "simmer", "stir in cheese"],
+  "ingredients": ["orzo", "onion", "garlic", "canned tomato", "vegetable stock", "feta", "olive oil", "basil"]
+}

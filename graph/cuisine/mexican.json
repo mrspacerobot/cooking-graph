@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/mexican",
+  "tier": "drafted",
+  "names": {"en": "Mexican", "fr": "Mexicaine"},
+  "aliases": {"en": ["Mexican cooking", "Mexican cuisine"]},
+  "within": null
+}

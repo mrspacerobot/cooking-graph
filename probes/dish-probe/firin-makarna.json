@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/firin-makarna",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "baking",
+  "dish": "Fırın makarna",
+  "also_called": ["turkish baked pasta", "baked macaroni with bechamel"],
+  "techniques": ["boil pasta", "make bechamel", "layer", "bake"],
+  "ingredients": ["penne", "butter", "flour", "milk", "egg", "kaşar", "white cheese"]
+}

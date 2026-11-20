@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/kotopoulo-me-kritharaki",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "baking",
+  "dish": "Kotopoulo me kritharaki",
+  "also_called": ["greek chicken with orzo", "chicken giouvetsi", "baked chicken and orzo"],
+  "techniques": ["brown chicken", "simmer sauce", "bake"],
+  "ingredients": [
+    "chicken thigh",
+    "orzo",
+    "onion",
+    "garlic",
+    "canned tomato",
+    "cinnamon",
+    "chicken stock",
+    "kefalotyri",
+    "olive oil"
+  ]
+}

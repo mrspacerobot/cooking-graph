@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kare-raisu",
+  "tier": "drafted",
+  "batch": "home-japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "curry",
+  "dish": "Karē raisu",
+  "also_called": ["japanese curry rice", "japanese curry", "curry rice"],
+  "techniques": ["fry onion", "brown", "simmer", "melt in curry roux", "cook rice"],
+  "ingredients": ["japanese curry roux", "chicken thigh", "onion", "carrot", "potato", "rice"]
+}

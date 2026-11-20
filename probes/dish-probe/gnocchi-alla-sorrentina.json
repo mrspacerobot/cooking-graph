@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/gnocchi-alla-sorrentina",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "baking",
+  "dish": "Gnocchi alla sorrentina",
+  "also_called": ["baked gnocchi", "gnocchi sorrento style"],
+  "techniques": ["simmer tomato sauce", "boil gnocchi", "layer with cheese", "bake until melted"],
+  "ingredients": ["potato gnocchi", "canned tomato", "mozzarella", "parmesan", "basil", "garlic", "olive oil"]
+}

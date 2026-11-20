@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/chilaquiles-rojos",
+  "tier": "drafted",
+  "batch": "home-mexican-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "mexican",
+  "written_for": "frying",
+  "dish": "Chilaquiles rojos",
+  "also_called": ["red chilaquiles", "chilaquiles"],
+  "techniques": ["blend sauce", "simmer", "toss chips", "fry egg"],
+  "ingredients": ["tortilla chip", "canned tomato", "dried chilli", "onion", "garlic", "egg", "feta", "sour cream"]
+}

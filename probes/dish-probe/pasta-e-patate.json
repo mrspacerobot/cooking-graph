@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/pasta-e-patate",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "soup",
+  "dish": "Pasta e patate",
+  "also_called": ["pasta and potatoes", "neapolitan pasta and potato"],
+  "techniques": ["soften soffritto", "simmer potato", "cook pasta in the soup", "stir in cheese"],
+  "ingredients": [
+    "mixed pasta",
+    "potato",
+    "onion",
+    "carrot",
+    "celery",
+    "pancetta",
+    "tomato paste",
+    "parmesan",
+    "rind of parmesan",
+    "olive oil"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/arroz-con-pollo",
+  "tier": "drafted",
+  "batch": "home-spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "rice",
+  "dish": "Arroz con pollo",
+  "also_called": ["spanish chicken and rice"],
+  "techniques": ["brown", "fry the sofrito", "simmer rice"],
+  "ingredients": [
+    "chicken thigh",
+    "paella rice",
+    "onion",
+    "bell pepper",
+    "garlic",
+    "canned tomato",
+    "smoked paprika",
+    "chicken stock",
+    "pea"
+  ]
+}

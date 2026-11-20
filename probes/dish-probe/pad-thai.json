@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/pad-thai",
+  "tier": "drafted",
+  "batch": "home-thai-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "thai",
+  "written_for": "noodles",
+  "dish": "Phat thai",
+  "also_called": ["pad thai"],
+  "techniques": ["soak noodles", "stir fry", "toss"],
+  "ingredients": [
+    "rice noodle",
+    "prawn",
+    "egg",
+    "tofu",
+    "tamarind paste",
+    "fish sauce",
+    "bean sprout",
+    "peanut",
+    "lime"
+  ]
+}

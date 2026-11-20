@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/chicken-pot-pie",
+  "tier": "drafted",
+  "batch": "home-american-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "american",
+  "written_for": "baking",
+  "dish": "Chicken pot pie",
+  "also_called": ["chicken pot pie"],
+  "techniques": ["poach", "make white sauce", "fill", "cover with pastry", "bake"],
+  "ingredients": [
+    "chicken",
+    "carrot",
+    "pea",
+    "onion",
+    "celery",
+    "butter",
+    "flour",
+    "chicken stock",
+    "milk",
+    "puff pastry"
+  ]
+}

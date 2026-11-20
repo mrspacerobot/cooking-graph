@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/strapatsada",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "eggs",
+  "dish": "Strapatsada",
+  "also_called": ["kagianas", "greek scrambled eggs with tomato and feta", "kayianas"],
+  "techniques": ["grate tomato", "reduce", "scramble"],
+  "ingredients": ["egg", "tomato", "feta", "olive oil", "dried oregano", "bread"]
+}

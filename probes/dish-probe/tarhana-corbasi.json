@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tarhana-corbasi",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "soup",
+  "dish": "Tarhana çorbası",
+  "also_called": ["tarhana soup", "turkish fermented grain soup"],
+  "techniques": ["sweat", "whisk", "simmer"],
+  "ingredients": ["tarhana", "tomato paste", "butter", "dried mint", "water", "chili flake"]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/sopa-de-tortilla",
+  "tier": "drafted",
+  "batch": "home-mexican-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "mexican",
+  "written_for": "simmering",
+  "dish": "Sopa de tortilla",
+  "also_called": ["tortilla soup", "sopa azteca"],
+  "techniques": ["blend", "fry the base", "simmer", "fry tortilla strips"],
+  "ingredients": [
+    "corn tortilla",
+    "canned tomato",
+    "onion",
+    "garlic",
+    "chicken stock",
+    "dried chilli",
+    "avocado",
+    "cheese",
+    "lime"
+  ]
+}

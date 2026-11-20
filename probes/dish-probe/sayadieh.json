@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sayadieh",
+  "tier": "drafted",
+  "batch": "home-lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "rice",
+  "dish": "Sayadieh",
+  "also_called": ["fish and rice", "sayadiyeh"],
+  "techniques": ["caramelise onion", "fry fish", "cook rice", "toast nuts"],
+  "ingredients": ["white fish", "long-grain rice", "onion", "cumin", "pine nut", "lemon", "olive oil"]
+}

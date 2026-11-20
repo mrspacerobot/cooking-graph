@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pasta-alla-gricia",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Pasta alla gricia",
+  "also_called": ["gricia", "rigatoni alla gricia", "pasta with guanciale and pecorino"],
+  "techniques": ["render cured pork", "boil pasta", "emulsify fat with pasta water", "toss pasta with cheese"],
+  "ingredients": ["rigatoni", "guanciale", "pecorino romano", "black pepper"]
+}

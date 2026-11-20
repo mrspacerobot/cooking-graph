@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/turlu",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "braising",
+  "dish": "Türlü",
+  "also_called": ["turkish vegetable stew", "türlü güveç"],
+  "techniques": ["dice", "braise", "bake"],
+  "ingredients": [
+    "aubergine",
+    "courgette",
+    "green bean",
+    "potato",
+    "green pepper",
+    "onion",
+    "tomato",
+    "tomato paste",
+    "beef",
+    "olive oil"
+  ]
+}

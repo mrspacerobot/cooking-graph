@@ -1,0 +1,31 @@
+{
+  "id": "dish-probe/polpette-al-sugo",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "braising",
+  "dish": "Polpette al sugo",
+  "also_called": ["italian meatballs", "meatballs in tomato sauce", "polpette"],
+  "techniques": [
+    "soak bread in milk",
+    "mix meatball mixture",
+    "shape meatballs",
+    "brown meatballs",
+    "simmer in tomato sauce"
+  ],
+  "ingredients": [
+    "beef mince",
+    "pork mince",
+    "bread",
+    "milk",
+    "egg",
+    "parmesan",
+    "garlic",
+    "parsley",
+    "canned tomato",
+    "onion",
+    "olive oil"
+  ]
+}

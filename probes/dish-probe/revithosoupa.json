@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/revithosoupa",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "pulses",
+  "dish": "Revithosoupa",
+  "also_called": ["greek chickpea soup", "revithia soupa", "lemony chickpea soup"],
+  "techniques": ["sweat onion", "simmer", "finish with lemon"],
+  "ingredients": ["canned chickpea", "onion", "olive oil", "lemon", "bay leaf", "rosemary"]
+}

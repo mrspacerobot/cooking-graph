@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/toad-in-the-hole",
+  "tier": "drafted",
+  "batch": "home-british-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "british",
+  "written_for": "baking",
+  "dish": "Toad in the hole",
+  "also_called": ["toad in the hole", "sausage in batter"],
+  "techniques": ["whisk batter", "brown sausages", "bake"],
+  "ingredients": ["pork sausage", "flour", "egg", "milk", "vegetable oil", "onion"]
+}

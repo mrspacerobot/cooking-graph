@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pastina-in-brodo",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "soup",
+  "dish": "Pastina in brodo",
+  "also_called": ["pastina soup", "little pasta in broth", "italian penicillin"],
+  "techniques": ["simmer broth", "cook small pasta in broth", "stir in butter and cheese"],
+  "ingredients": ["stelline pasta", "chicken stock", "butter", "parmesan"]
+}

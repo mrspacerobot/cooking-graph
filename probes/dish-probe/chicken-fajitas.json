@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/chicken-fajitas",
+  "tier": "drafted",
+  "batch": "home-mexican-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "mexican",
+  "written_for": "stir-frying",
+  "dish": "Fajitas de pollo",
+  "also_called": ["chicken fajitas", "fajitas"],
+  "techniques": ["slice", "marinate", "fry over high heat", "warm tortillas"],
+  "ingredients": [
+    "chicken breast",
+    "bell pepper",
+    "onion",
+    "lime",
+    "chili powder",
+    "cumin",
+    "flour tortilla",
+    "sour cream"
+  ]
+}

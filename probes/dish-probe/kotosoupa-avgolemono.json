@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kotosoupa-avgolemono",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "soup",
+  "dish": "Kotosoupa avgolemono",
+  "also_called": ["greek egg-lemon chicken soup", "avgolemono soup", "chicken avgolemono"],
+  "techniques": ["poach chicken", "simmer rice", "temper egg", "thicken with egg and lemon", "shred"],
+  "ingredients": ["chicken", "rice", "egg", "lemon", "onion", "carrot", "celery"]
+}

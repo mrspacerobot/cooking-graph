@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/american",
+  "tier": "drafted",
+  "names": {"en": "American", "fr": "Américaine"},
+  "aliases": {"en": ["American cooking", "American cuisine"]},
+  "within": null
+}

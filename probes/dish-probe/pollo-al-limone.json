@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pollo-al-limone",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pan-frying",
+  "dish": "Pollo al limone",
+  "also_called": ["lemon chicken", "italian lemon chicken", "petto di pollo al limone"],
+  "techniques": ["slice chicken thin", "dredge in flour", "pan-fry", "deglaze with lemon juice", "reduce sauce"],
+  "ingredients": ["chicken breast", "flour", "lemon", "butter", "olive oil", "chicken stock", "parsley"]
+}

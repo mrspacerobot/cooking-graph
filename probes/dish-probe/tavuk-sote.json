@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/tavuk-sote",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "sauteing",
+  "dish": "Tavuk sote",
+  "also_called": ["turkish chicken saute", "chicken saute with peppers"],
+  "techniques": ["dice", "saute", "simmer"],
+  "ingredients": [
+    "chicken breast",
+    "onion",
+    "green pepper",
+    "tomato",
+    "tomato paste",
+    "red pepper paste",
+    "garlic",
+    "olive oil"
+  ]
+}

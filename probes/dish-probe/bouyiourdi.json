@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bouyiourdi",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "baking",
+  "dish": "Bouyiourdi",
+  "also_called": ["baked feta with tomatoes and peppers", "bougiourdi", "feta psiti"],
+  "techniques": ["layer", "bake"],
+  "ingredients": ["feta", "tomato", "green pepper", "chili flake", "dried oregano", "olive oil"]
+}

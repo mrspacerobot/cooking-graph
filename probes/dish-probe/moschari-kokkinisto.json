@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/moschari-kokkinisto",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "braising",
+  "dish": "Moschari kokkinisto",
+  "also_called": ["greek beef in tomato sauce", "kokkinisto", "beef kokkinisto with pasta"],
+  "techniques": ["brown meat", "deglaze with wine", "braise", "boil pasta"],
+  "ingredients": [
+    "beef chuck",
+    "onion",
+    "garlic",
+    "canned tomato",
+    "tomato paste",
+    "red wine",
+    "cinnamon",
+    "bay leaf",
+    "pasta"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/salmon-fishcakes",
+  "tier": "drafted",
+  "batch": "home-british-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "british",
+  "written_for": "frying",
+  "dish": "Salmon fishcakes",
+  "also_called": ["fish cakes", "salmon fish cakes"],
+  "techniques": ["mash potato", "flake fish", "shape", "coat in breadcrumbs", "shallow fry"],
+  "ingredients": ["salmon", "potato", "spring onion", "egg", "breadcrumbs", "flour", "lemon"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "dish-probe/gyros-pita-kotopoulo",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "grilling",
+  "dish": "Gyros pita kotopoulo",
+  "also_called": ["homemade chicken gyros", "chicken gyros pita", "greek chicken gyro wrap"],
+  "techniques": ["marinate", "pan fry", "slice", "warm flatbread", "wrap"],
+  "ingredients": [
+    "chicken thigh",
+    "greek yogurt",
+    "garlic",
+    "paprika",
+    "dried oregano",
+    "lemon",
+    "pita bread",
+    "tomato",
+    "red onion",
+    "potato",
+    "cucumber"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/sulu-kofte",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "soup",
+  "dish": "Sulu köfte",
+  "also_called": ["turkish meatballs in broth", "sulu köfte with potatoes", "ekşili köfte"],
+  "techniques": ["mix minced meat", "shape meatball", "simmer", "temper egg"],
+  "ingredients": [
+    "minced beef",
+    "rice",
+    "onion",
+    "potato",
+    "carrot",
+    "tomato paste",
+    "egg",
+    "lemon",
+    "flour",
+    "dried mint"
+  ]
+}

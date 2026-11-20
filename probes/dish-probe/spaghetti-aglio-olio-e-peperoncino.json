@@ -1,0 +1,18 @@
+{
+  "id": "dish-probe/spaghetti-aglio-olio-e-peperoncino",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Spaghetti aglio, olio e peperoncino",
+  "also_called": ["aglio e olio", "spaghetti with garlic and oil", "garlic chilli spaghetti"],
+  "techniques": [
+    "boil pasta",
+    "gently fry garlic in olive oil",
+    "emulsify with pasta water",
+    "toss pasta in its sauce"
+  ],
+  "ingredients": ["spaghetti", "garlic", "olive oil", "dried chilli", "parsley", "salt"]
+}

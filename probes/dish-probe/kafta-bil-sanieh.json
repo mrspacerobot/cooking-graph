@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kafta-bil-sanieh",
+  "tier": "drafted",
+  "batch": "home-lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "baking",
+  "dish": "Kafta bil sanieh",
+  "also_called": ["kafta and potato traybake", "kofta tray bake"],
+  "techniques": ["mix", "shape", "layer", "bake"],
+  "ingredients": ["minced beef", "onion", "parsley", "seven spice", "potato", "tomato", "tomato puree"]
+}

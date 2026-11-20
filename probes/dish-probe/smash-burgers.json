@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/smash-burgers",
+  "tier": "drafted",
+  "batch": "home-american-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "american",
+  "written_for": "grilling",
+  "dish": "Smash burgers",
+  "also_called": ["smash burger", "smashed burgers", "cheeseburgers"],
+  "techniques": ["shape", "smash on a hot pan", "sear", "melt cheese"],
+  "ingredients": ["minced beef", "burger bun", "american cheese", "onion", "pickle", "lettuce", "ketchup", "mustard"]
+}

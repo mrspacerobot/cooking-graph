@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/chicken-parmesan",
+  "tier": "drafted",
+  "batch": "home-american-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "american",
+  "written_for": "frying",
+  "dish": "Chicken parmesan",
+  "also_called": ["chicken parm", "chicken parmigiana"],
+  "techniques": ["pound flat", "coat in breadcrumbs", "shallow fry", "top with sauce and cheese", "bake"],
+  "ingredients": [
+    "chicken breast",
+    "breadcrumbs",
+    "egg",
+    "flour",
+    "parmesan",
+    "mozzarella",
+    "tomato sauce",
+    "spaghetti"
+  ]
+}

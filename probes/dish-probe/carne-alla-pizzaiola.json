@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/carne-alla-pizzaiola",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "braising",
+  "dish": "Carne alla pizzaiola",
+  "also_called": ["steak pizzaiola", "beef pizzaiola", "pizzaiola"],
+  "techniques": ["sear beef", "simmer in tomato sauce", "season with oregano"],
+  "ingredients": ["beef steak", "canned tomato", "garlic", "oregano", "olive oil", "black olive"]
+}

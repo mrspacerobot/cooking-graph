@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/firinda-kofte-patates",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "roasting",
+  "dish": "Fırında köfte patates",
+  "also_called": ["baked meatballs and potatoes", "turkish kofte traybake", "izmir köfte"],
+  "techniques": ["mix minced meat", "shape", "shallow fry", "layer", "bake"],
+  "ingredients": ["minced beef", "breadcrumb", "onion", "potato", "green pepper", "tomato", "tomato paste", "cumin"]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/sloppy-joes",
+  "tier": "drafted",
+  "batch": "home-american-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "american",
+  "written_for": "simmering",
+  "dish": "Sloppy joes",
+  "also_called": ["sloppy joe", "sloppy joe sandwiches"],
+  "techniques": ["brown minced meat", "simmer", "toast buns"],
+  "ingredients": [
+    "minced beef",
+    "onion",
+    "bell pepper",
+    "ketchup",
+    "worcestershire sauce",
+    "brown sugar",
+    "mustard",
+    "burger bun"
+  ]
+}

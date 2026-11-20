@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/palak-paneer",
+  "tier": "drafted",
+  "batch": "home-indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "curry",
+  "dish": "Palak paneer",
+  "also_called": ["spinach paneer", "saag paneer"],
+  "techniques": ["wilt spinach", "blend", "fry the spices", "simmer"],
+  "ingredients": ["spinach", "paneer", "onion", "garlic", "ginger", "tomato", "garam masala", "cumin", "cream"]
+}

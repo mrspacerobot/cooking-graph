@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kiymali-bezelye",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "braising",
+  "dish": "Kıymalı bezelye",
+  "also_called": ["peas with minced meat", "turkish pea stew"],
+  "techniques": ["brown minced meat", "braise"],
+  "ingredients": ["frozen pea", "minced beef", "onion", "carrot", "potato", "tomato paste", "olive oil"]
+}

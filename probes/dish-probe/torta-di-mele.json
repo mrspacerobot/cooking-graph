@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/torta-di-mele",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "baking",
+  "dish": "Torta di mele",
+  "also_called": ["italian apple cake", "apple cake"],
+  "techniques": ["whisk eggs and sugar", "fold in flour", "slice apple", "bake"],
+  "ingredients": ["apple", "flour", "sugar", "egg", "butter", "milk", "baking powder", "lemon"]
+}

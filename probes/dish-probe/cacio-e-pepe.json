@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/cacio-e-pepe",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Cacio e pepe",
+  "also_called": ["spaghetti cacio e pepe", "tonnarelli cacio e pepe", "cheese and pepper pasta"],
+  "techniques": ["toast black pepper", "boil pasta", "make a cheese cream with pasta water", "toss pasta in its sauce"],
+  "ingredients": ["spaghetti", "pecorino romano", "black pepper", "salt"]
+}

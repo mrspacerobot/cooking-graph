@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/saganaki",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "frying",
+  "dish": "Saganaki",
+  "also_called": ["greek fried cheese", "pan-fried kefalograviera", "cheese saganaki"],
+  "techniques": ["dredge in flour", "shallow fry", "finish with lemon"],
+  "ingredients": ["kefalograviera", "flour", "olive oil", "lemon"]
+}

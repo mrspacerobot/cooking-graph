@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pasta-al-forno",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "baking",
+  "dish": "Pasta al forno",
+  "also_called": ["baked pasta", "baked ziti", "italian pasta bake"],
+  "techniques": ["simmer tomato sauce", "boil pasta", "mix pasta with sauce and cheese", "layer", "bake"],
+  "ingredients": ["rigatoni", "canned tomato", "beef mince", "mozzarella", "parmesan", "onion", "olive oil", "basil"]
+}

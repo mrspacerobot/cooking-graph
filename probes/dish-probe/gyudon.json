@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/gyudon",
+  "tier": "drafted",
+  "batch": "home-japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "simmering",
+  "dish": "Gyūdon",
+  "also_called": ["beef bowl", "gyudon"],
+  "techniques": ["simmer", "cook rice"],
+  "ingredients": ["thinly sliced beef", "onion", "dashi", "soy sauce", "mirin", "sugar", "rice", "pickled ginger"]
+}

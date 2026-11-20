@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/shawarma-djej",
+  "tier": "drafted",
+  "batch": "home-lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "grilling",
+  "dish": "Shawarma djej",
+  "also_called": ["homemade chicken shawarma", "chicken shawarma"],
+  "techniques": ["marinate", "grill", "slice", "wrap"],
+  "ingredients": [
+    "chicken thigh",
+    "yogurt",
+    "garlic",
+    "lemon",
+    "seven spice",
+    "flatbread",
+    "pickle",
+    "tomato",
+    "garlic sauce"
+  ]
+}

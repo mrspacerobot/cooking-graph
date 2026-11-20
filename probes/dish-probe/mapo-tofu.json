@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/mapo-tofu",
+  "tier": "drafted",
+  "batch": "home-chinese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "chinese",
+  "written_for": "braising",
+  "dish": "Mápó dòufu",
+  "also_called": ["mapo tofu", "ma po tofu"],
+  "techniques": ["blanch tofu", "brown minced meat", "fry the paste", "simmer", "thicken with starch"],
+  "ingredients": [
+    "silken tofu",
+    "minced pork",
+    "doubanjiang",
+    "sichuan pepper",
+    "garlic",
+    "ginger",
+    "spring onion",
+    "cornflour"
+  ]
+}

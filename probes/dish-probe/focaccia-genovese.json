@@ -1,0 +1,21 @@
+{
+  "id": "dish-probe/focaccia-genovese",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "baking",
+  "dish": "Focaccia genovese",
+  "also_called": ["focaccia", "ligurian focaccia", "italian focaccia"],
+  "techniques": [
+    "mix dough",
+    "knead",
+    "let dough rise",
+    "stretch into a pan",
+    "dimple dough",
+    "brush with brine",
+    "bake"
+  ],
+  "ingredients": ["bread flour", "yeast", "water", "olive oil", "salt", "flaky salt"]
+}

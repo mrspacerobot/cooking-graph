@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/spanakorizo",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "rice",
+  "dish": "Spanakorizo",
+  "also_called": ["greek spinach rice", "spinach and rice"],
+  "techniques": ["sweat onion", "wilt greens", "simmer"],
+  "ingredients": ["spinach", "rice", "spring onion", "onion", "dill", "lemon", "olive oil", "feta"]
+}

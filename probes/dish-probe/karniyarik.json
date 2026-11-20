@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/karniyarik",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "stuffing",
+  "dish": "Karnıyarık",
+  "also_called": ["split belly aubergines", "turkish stuffed eggplant with meat"],
+  "techniques": ["peel in stripes", "shallow fry", "brown minced meat", "stuff", "bake"],
+  "ingredients": [
+    "aubergine",
+    "minced beef",
+    "onion",
+    "garlic",
+    "tomato",
+    "green pepper",
+    "tomato paste",
+    "parsley",
+    "sunflower oil"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/egg-fried-rice",
+  "tier": "drafted",
+  "batch": "home-chinese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "chinese",
+  "written_for": "rice",
+  "dish": "Dàn chǎofàn",
+  "also_called": ["egg fried rice", "fried rice with egg"],
+  "techniques": ["cook rice", "scramble egg", "stir fry", "toss"],
+  "ingredients": ["cooked rice", "egg", "spring onion", "soy sauce", "vegetable oil", "pea"]
+}

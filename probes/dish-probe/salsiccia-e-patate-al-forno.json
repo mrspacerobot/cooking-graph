@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/salsiccia-e-patate-al-forno",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "roasting",
+  "dish": "Salsiccia e patate al forno",
+  "also_called": ["roasted sausage and potatoes", "sausage and potato traybake"],
+  "techniques": ["cut potato", "toss with oil and herbs", "roast"],
+  "ingredients": ["italian sausage", "potato", "onion", "rosemary", "garlic", "olive oil"]
+}

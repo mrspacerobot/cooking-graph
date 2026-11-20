@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sucuklu-yumurta",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "eggs",
+  "dish": "Sucuklu yumurta",
+  "also_called": ["eggs with sucuk", "turkish sausage and eggs"],
+  "techniques": ["slice", "pan fry", "fry eggs"],
+  "ingredients": ["egg", "sucuk", "butter", "bread"]
+}

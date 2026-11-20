@@ -1,0 +1,20 @@
+{
+  "id": "dish-probe/pasta-salsiccia-e-funghi",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Pasta salsiccia e funghi",
+  "also_called": ["pasta with sausage and mushrooms", "sausage mushroom pasta"],
+  "techniques": [
+    "crumble and brown sausage",
+    "sauté mushroom",
+    "deglaze with white wine",
+    "add cream",
+    "boil pasta",
+    "finish pasta in its sauce"
+  ],
+  "ingredients": ["penne", "italian sausage", "mushroom", "onion", "white wine", "cream", "parmesan", "parsley"]
+}

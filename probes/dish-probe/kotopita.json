@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kotopita",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "baking",
+  "dish": "Kotopita",
+  "also_called": ["greek chicken pie", "chicken filo pie"],
+  "techniques": ["poach chicken", "shred", "make bechamel", "layer filo", "brush with butter", "bake"],
+  "ingredients": ["chicken breast", "filo pastry", "onion", "butter", "flour", "milk", "egg", "kefalotyri", "feta"]
+}

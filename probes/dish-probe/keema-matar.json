@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/keema-matar",
+  "tier": "drafted",
+  "batch": "home-indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "curry",
+  "dish": "Keema matar",
+  "also_called": ["keema peas", "minced lamb curry with peas", "kheema"],
+  "techniques": ["fry onion", "fry the spices", "brown minced meat", "simmer"],
+  "ingredients": [
+    "minced lamb",
+    "pea",
+    "onion",
+    "garlic",
+    "ginger",
+    "canned tomato",
+    "garam masala",
+    "cumin",
+    "turmeric"
+  ]
+}

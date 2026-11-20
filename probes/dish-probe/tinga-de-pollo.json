@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tinga-de-pollo",
+  "tier": "drafted",
+  "batch": "home-mexican-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "mexican",
+  "written_for": "braising",
+  "dish": "Tinga de pollo",
+  "also_called": ["chicken tinga", "chipotle shredded chicken"],
+  "techniques": ["poach", "shred", "fry onion", "blend sauce", "simmer"],
+  "ingredients": ["chicken breast", "onion", "garlic", "canned tomato", "chipotle in adobo", "corn tortilla"]
+}

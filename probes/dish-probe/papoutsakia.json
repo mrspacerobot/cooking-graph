@@ -1,0 +1,25 @@
+{
+  "id": "dish-probe/papoutsakia",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "baking",
+  "dish": "Papoutsakia",
+  "also_called": ["greek stuffed aubergines", "little shoes", "stuffed eggplant with bechamel"],
+  "techniques": ["halve", "roast", "brown minced meat", "simmer", "make bechamel", "stuff", "bake"],
+  "ingredients": [
+    "aubergine",
+    "minced beef",
+    "onion",
+    "garlic",
+    "canned tomato",
+    "cinnamon",
+    "butter",
+    "flour",
+    "milk",
+    "egg",
+    "kefalotyri"
+  ]
+}

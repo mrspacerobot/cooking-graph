@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kotopoulo-lemonato-me-patates",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "roasting",
+  "dish": "Kotopoulo lemonato me patates",
+  "also_called": ["greek lemon chicken with potatoes", "lemon chicken and potatoes traybake", "kotopoulo lemonato"],
+  "techniques": ["season", "roast", "baste"],
+  "ingredients": ["chicken thigh", "potato", "lemon", "garlic", "dried oregano", "olive oil", "chicken stock"]
+}

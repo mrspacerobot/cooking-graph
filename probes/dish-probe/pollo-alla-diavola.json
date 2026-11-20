@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pollo-alla-diavola",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "roasting",
+  "dish": "Pollo alla diavola",
+  "also_called": ["devil's chicken", "spatchcocked chicken", "chicken diavola"],
+  "techniques": ["spatchcock chicken", "marinate", "press and grill", "roast"],
+  "ingredients": ["whole chicken", "lemon", "dried chilli", "black pepper", "garlic", "rosemary", "olive oil"]
+}

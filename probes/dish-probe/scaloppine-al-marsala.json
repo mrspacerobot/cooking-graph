@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/scaloppine-al-marsala",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pan-frying",
+  "dish": "Scaloppine al marsala",
+  "also_called": ["veal marsala", "chicken marsala", "pollo al marsala"],
+  "techniques": ["pound meat thin", "dredge in flour", "pan-fry", "deglaze with marsala", "mount sauce with butter"],
+  "ingredients": ["veal escalope", "flour", "marsala", "butter", "mushroom", "beef stock"]
+}

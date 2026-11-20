@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/arakas-latheros",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "braising",
+  "dish": "Arakas latheros",
+  "also_called": ["greek peas in tomato sauce", "arakas me patates", "braised peas with potatoes"],
+  "techniques": ["sweat onion", "braise", "simmer"],
+  "ingredients": ["frozen pea", "potato", "carrot", "onion", "canned tomato", "dill", "olive oil"]
+}

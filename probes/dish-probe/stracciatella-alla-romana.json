@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/stracciatella-alla-romana",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "soup",
+  "dish": "Stracciatella alla romana",
+  "also_called": ["stracciatella soup", "italian egg drop soup"],
+  "techniques": ["heat broth", "whisk eggs with cheese", "drizzle egg into simmering broth"],
+  "ingredients": ["chicken stock", "egg", "parmesan", "semolina", "nutmeg", "parsley"]
+}

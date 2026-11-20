@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pepper-pork-strips",
+  "tier": "drafted",
+  "batch": "home-chinese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "chinese",
+  "written_for": "stir-frying",
+  "dish": "Qīngjiāo ròusī",
+  "also_called": ["shredded pork with green pepper", "pork and green pepper stir-fry"],
+  "techniques": ["slice thinly", "marinate", "stir fry"],
+  "ingredients": ["pork loin", "green pepper", "garlic", "soy sauce", "shaoxing wine", "cornflour"]
+}

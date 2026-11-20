@@ -1,0 +1,27 @@
+{
+  "id": "dish-probe/lasagne-alla-bolognese",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "baking",
+  "dish": "Lasagne alla bolognese",
+  "also_called": ["lasagna", "lasagne", "beef lasagna", "classic lasagna"],
+  "techniques": ["soften soffritto", "brown minced meat", "simmer ragu", "make bechamel", "layer", "bake"],
+  "ingredients": [
+    "lasagne sheet",
+    "beef mince",
+    "pork mince",
+    "onion",
+    "carrot",
+    "celery",
+    "canned tomato",
+    "red wine",
+    "milk",
+    "butter",
+    "flour",
+    "parmesan",
+    "nutmeg"
+  ]
+}

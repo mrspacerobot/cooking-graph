@@ -1,0 +1,116 @@
+{
+  "id": "recipe/piyaz",
+  "tier": "drafted",
+  "names": {"en": "Piyaz", "tr": "Piyaz"},
+  "aliases": {},
+  "makes": "dish/piyaz",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/white-beans", "amount": {"value": 480, "unit": "gram"}, "forms": [], "part": "white-beans"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/parsley", "amount": {"value": 10, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/sumac", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "sumac"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/tahini", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "tahini"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"}
+  ],
+  "equipment": [
+    "equipment/colander", "equipment/saucepan", "equipment/stovetop", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/mixing-bowl", "equipment/whisk"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/white-beans"],
+      "with": [],
+      "text": "Drain the tinned {white-beans:plural}, rinse them and leave them to drain well.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil-an-egg",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "[egg: Lower the {egg:plural} into boiling water and boil until the yolks are firm, then cool them under the cold tap and peel them.]",
+      "time": {"from": 9, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Halve the {onion} and slice it into thin half-moons.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/sumac", "ingredient/salt"],
+      "text": "Rub the {onion} with the {sumac} and a little of the {salt} until it softens and turns pink.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "Chop the {parsley}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/tomato"],
+      "with": [],
+      "text": "Dice the {tomato:plural}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/beat-tahini-sauce",
+      "works_on": ["ingredient/tahini"],
+      "with": ["ingredient/lemon"],
+      "text": "[tahini: Beat the {tahini} with half of the juice of the {lemon} and enough cold water to make a pourable sauce.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tahini-sauce"]
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/white-beans", "ingredient/onion"],
+      "with": ["ingredient/parsley", "ingredient/lemon", "ingredient/olive-oil", "ingredient/salt"],
+      "text": "Toss the {white-beans:plural} gently with the {onion}, the {parsley}, the rest of the juice of the {lemon}, the {oil} and the rest of the {salt}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/white-beans"],
+      "with": ["ingredient/tomato", "ingredient/egg", "ingredient/tahini"],
+      "text": "Pile the salad on a platter and scatter over the {tomato:plural}. [tahini: Spoon over the {tahini} sauce.] [egg: Lay the {egg:plural} on top, cut in quarters.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

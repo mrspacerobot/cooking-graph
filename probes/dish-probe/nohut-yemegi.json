@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/nohut-yemegi",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "pulses",
+  "dish": "Nohut yemeği",
+  "also_called": ["turkish chickpea stew", "etli nohut"],
+  "techniques": ["sweat onion", "simmer"],
+  "ingredients": ["canned chickpea", "onion", "tomato paste", "red pepper paste", "butter", "beef", "chili flake"]
+}

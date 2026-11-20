@@ -1,0 +1,68 @@
+{
+  "id": "dish/shawarma-djej",
+  "tier": "drafted",
+  "names": {"en": "Shawarma djej", "fr": "Chawarma au poulet", "ar": "شاورما دجاج", "ar-Latn": "Shawarma djej"},
+  "aliases": {"en": ["homemade chicken shawarma", "chicken shawarma", "shawarma", "chicken shawarma wrap"]},
+  "is": "Home chicken shawarma: chicken thighs marinated in yogurt, garlic, lemon and baharat, roasted hot until charred at the edges, sliced thin and rolled in flatbread with toum, tomato and pickles.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken-breast"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "yogurt",
+      "role": "enrichment",
+      "options": ["ingredient/plain-yogurt", "ingredient/greek-yogurt"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon", "ingredient/lemon-juice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "spice", "role": "seasoning", "options": ["preparation/seven-spice"], "optional": false, "tier": "drafted"},
+    {
+      "id": "paprika",
+      "role": "seasoning",
+      "options": ["ingredient/paprika", "ingredient/smoked-paprika"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "bread", "role": "base", "options": ["ingredient/pita-bread"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sauce",
+      "role": "sauce",
+      "options": ["preparation/toum", "preparation/garlic-yogurt"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "tomato", "role": "side", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pickles",
+      "role": "side",
+      "options": ["ingredient/pickled-cucumber", "ingredient/cornichons"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "turnip", "role": "side", "options": ["ingredient/pickled-turnip"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/marinate", "tier": "drafted"},
+    {"thing": "technique/make-toum", "tier": "drafted"},
+    {"thing": "technique/roast", "tier": "drafted"},
+    {"thing": "technique/sandwich", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

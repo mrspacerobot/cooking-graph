@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/dashi-granules",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/gyudon"],
+      "ratio": null,
+      "caveat": "The shavings do not dissolve like granules. They need steeping and straining and do not supply the kelp flavour on their own.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],

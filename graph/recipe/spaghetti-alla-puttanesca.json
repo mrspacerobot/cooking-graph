@@ -1,0 +1,107 @@
+{
+  "id": "recipe/spaghetti-alla-puttanesca",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti alla puttanesca", "it": "spaghetti alla puttanesca"},
+  "aliases": {},
+  "makes": "dish/spaghetti-alla-puttanesca",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/spaghetti", "amount": {"value": 360, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {
+      "thing": "ingredient/black-olive",
+      "amount": {"value": 100, "unit": "gram"},
+      "forms": ["form/halved"],
+      "part": "olives"
+    },
+    {"thing": "ingredient/capers", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "capers"},
+    {"thing": "ingredient/anchovy", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "anchovy"},
+    {
+      "thing": "ingredient/garlic",
+      "amount": {"value": 2, "unit": "clove"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "garlic"
+    },
+    {"thing": "ingredient/dried-red-chilli", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/parsley", "amount": {"value": 1, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/saute-pan", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/tongs", "equipment/colander"
+  ],
+  "steps": [
+    {
+      "technique": "technique/fry-garlic-gently",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/olive-oil", "ingredient/dried-red-chilli"],
+      "text": "Put the {oil}, the sliced {garlic} and the crumbled {chilli} in a wide pan and warm them over low heat until the {garlic} is pale gold.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/melt-anchovies",
+      "works_on": ["ingredient/anchovy"],
+      "with": ["ingredient/olive-oil"],
+      "text": "[anchovy: Add the {anchovy:plural} and press them with a wooden spoon until they melt into the {oil}.]",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/black-olive", "ingredient/capers", "ingredient/olive-oil", "ingredient/garlic"],
+      "text": "Add the {tomato:plural}, the {olives} and the {capers:plural}, crushing the {tomato:plural} with the spoon. Simmer briskly, stirring now and then, until the sauce is thick. Taste before adding any {salt}: the sauce is salty already.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Bring a large pot of {water} to a rolling boil and season it well with the {salt}. Cook the {pasta} until it is tender with a firm bite at the centre. Scoop out a mug of the cooking {water} before draining.",
+      "time": {"from": 9, "to": 11, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "[parsley: Chop the leaves of the {parsley} finely.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss-pasta-with-sauce",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["preparation/tomato-sauce", "ingredient/water"],
+      "text": "Lift the {pasta} into the sauce with a splash of the cooking {water} and toss over the heat until the sauce clings to every strand.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/parsley"],
+      "text": "Serve in warm bowls[parsley: , scattered with the {parsley}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

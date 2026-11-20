@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/fish-fragrant-aubergine",
+  "tier": "drafted",
+  "batch": "home-chinese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "chinese",
+  "written_for": "stir-frying",
+  "dish": "Yúxiāng qiézi",
+  "also_called": ["fish-fragrant aubergine", "yu xiang eggplant", "sichuan eggplant"],
+  "techniques": ["cut", "fry aubergine", "fry the paste", "simmer in sauce"],
+  "ingredients": [
+    "aubergine",
+    "doubanjiang",
+    "garlic",
+    "ginger",
+    "spring onion",
+    "soy sauce",
+    "black vinegar",
+    "sugar"
+  ]
+}

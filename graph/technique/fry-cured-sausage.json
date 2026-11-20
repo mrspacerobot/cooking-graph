@@ -1,0 +1,88 @@
+{
+  "id": "technique/fry-cured-sausage",
+  "tier": "drafted",
+  "names": {"en": "Fry a cured sausage", "tr": "Sucuk kızartmak"},
+  "aliases": {"en": ["fry sucuk", "fry chorizo slices", "fry sliced chorizo"]},
+  "does": "Cuts a cured, spiced sausage into thin rounds and fries them briefly over medium heat, until the fat runs red and the edges curl and crisp, without letting them harden.",
+  "intro": {
+    "what": "Frying a cured sausage cooks thin rounds briefly until their spiced fat runs.",
+    "why": "It teaches that cured meat needs only a short heat to release its fat and flavour.",
+    "idea": "Short heat, running fat",
+    "tier": "drafted"
+  },
+  "how": [
+    "Peel off the casing if it is tough.",
+    "Cut the sausage into thin rounds of one thickness.",
+    "Warm a pan over medium heat with very little fat, or none.",
+    "Lay in the rounds and fry, turning once, until the fat runs and the edges curl.",
+    "Take the pan off the heat as soon as they are done, or cook the next thing in the red fat."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The fat runs red into the pan and the edges of the rounds curl up."},
+    {"sense": "smell", "text": "A warm smell of garlic and spice, with no sharp, burnt note."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying the rounds over high heat or for too long, so that they turn hard and bitter.",
+      "fix": "Keep the heat medium and take them off as soon as the edges curl."
+    },
+    {
+      "mistake": "Cutting thick, uneven rounds, so that some burn while others are still soft.",
+      "fix": "Cut thin rounds of one thickness."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why fry a cured sausage only briefly?",
+      "choices": ["It is already cured, and long frying makes it hard and bitter.", "To keep it raw.", "To save oil."],
+      "answer": 0,
+      "because": "The sausage only needs its fat to run and its edges to crisp.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How much fat goes in the pan?",
+      "choices": ["A deep layer.", "Very little or none, since the sausage gives its own.", "Enough to cover."],
+      "answer": 1,
+      "because": "The sausage gives off plenty of fat of its own.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which sign says the rounds are done?",
+      "choices": ["They are black at the edges.", "They look just the same.", "The fat runs red and the edges curl."],
+      "answer": 2,
+      "because": "Running fat and curled edges show they are ready.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The rounds turned hard and bitter. What should change?",
+      "choices": ["Lower the heat and take them off sooner.", "Cut them thicker.", "Add water."],
+      "answer": 0,
+      "because": "A medium heat for a short time keeps them tender.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/sucuk", "tier": "drafted"},
+    {"thing": "ingredient/chorizo", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/non-stick-pan"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/render",
+      "differs": "A cured, ready-spiced sausage in thin rounds gives up its fat within moments over medium heat, so it is fried briefly, not melted slowly like a fatty cut.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"},
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

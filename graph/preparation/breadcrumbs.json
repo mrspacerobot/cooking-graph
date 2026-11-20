@@ -19,7 +19,17 @@
     {"thing": "group/breads", "tier": "drafted"}
   ],
   "teaches": [],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/toasted-rice-powder",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/larb-gai"],
+      "ratio": null,
+      "caveat": "Breadcrumbs readily soften in the dressing and do not give the toasted rice flavour or sandy crunch.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [],
   "same_as": []
 }

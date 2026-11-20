@@ -1,0 +1,20 @@
+{
+  "id": "dish-probe/pizza-margherita",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "baking",
+  "dish": "Pizza margherita",
+  "also_called": ["margherita pizza", "homemade pizza", "pizza"],
+  "techniques": [
+    "mix dough",
+    "knead",
+    "let dough rise",
+    "stretch dough",
+    "top with sauce and cheese",
+    "bake at high heat"
+  ],
+  "ingredients": ["bread flour", "yeast", "water", "salt", "olive oil", "canned tomato", "mozzarella", "basil"]
+}

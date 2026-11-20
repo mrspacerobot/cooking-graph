@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/merluzzo-alla-livornese",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "braising",
+  "dish": "Merluzzo alla livornese",
+  "also_called": ["cod livornese", "fish livornese style", "cod in tomato sauce with olives"],
+  "techniques": ["simmer tomato sauce", "poach fish in sauce"],
+  "ingredients": ["cod fillet", "canned tomato", "black olive", "caper", "garlic", "olive oil", "parsley"]
+}

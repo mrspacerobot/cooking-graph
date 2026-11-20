@@ -1,0 +1,55 @@
+{
+  "id": "technique/melt-in-curry-roux",
+  "tier": "drafted",
+  "names": {"en": "Melt in curry roux"},
+  "aliases": {"en": ["add the curry roux", "thicken with curry roux", "melt the curry blocks"]},
+  "does": "Takes a pot of tender simmered meat and vegetables off the heat, breaks in blocks of Japanese curry roux and stirs until they melt, then simmers it again gently, so that the broth thickens to a smooth curry sauce.",
+  "intro": null,
+  "how": [
+    "Make sure the vegetables are tender first. They cook very little once the roux is in.",
+    "Take the pot off the heat, so that the roux melts without lumps.",
+    "Break the blocks into pieces and stir them in until no lumps are left.",
+    "Put the pot back on a low heat and simmer, stirring often and scraping the bottom, until the sauce thickens."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A smooth, glossy brown sauce with no lumps, thick enough to coat the back of a spoon."},
+    {"sense": "feel", "text": "The spoon drags a little on the bottom of the pot as the sauce thickens."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Dropping the roux into a boiling pot, so that it forms lumps.",
+      "fix": "Take the pot off the heat first."
+    },
+    {
+      "mistake": "Leaving the thickened sauce on the heat without stirring, so that it catches and burns on the bottom.",
+      "fix": "Keep the heat low and scrape the bottom often."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/japanese-curry-roux", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/ladle"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/simmer",
+      "why": "The meat and vegetables are simmered tender before the roux goes in.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/thicken",
+      "differs": "The thickener is a ready-made block of fat, flour and spices that also seasons the dish, and it is melted in off the heat rather than stirred in as a slurry.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

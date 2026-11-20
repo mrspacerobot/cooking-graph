@@ -1,0 +1,41 @@
+{
+  "id": "ingredient/cod",
+  "tier": "drafted",
+  "names": {"en": "Cod", "fr": "Cabillaud", "it": "merluzzo"},
+  "aliases": {"en": ["cod fillet", "fresh cod", "Atlantic cod"]},
+  "plurals": {"en": "Cod", "fr": "Cabillauds", "it": "merluzzi"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "group/round-fish", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Lean white flesh in large, moist flakes that firms and turns opaque quickly over gentle heat and falls apart if it is cooked hard or moved too much.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "It is a fish.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/smoked-haddock",
+      "allows": true,
+      "when": ["dish/fish-pie"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use a firm white fillet and lift it out gently before it flakes apart. The pie will lose the smoked flavour.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
+}

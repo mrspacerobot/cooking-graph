@@ -2,7 +2,7 @@
   "id": "technique/make-a-bechamel",
   "tier": "drafted",
   "names": {"en": "Make a béchamel"},
-  "aliases": {"en": ["make bechamel", "make a white sauce"]},
+  "aliases": {"en": ["make bechamel", "make a white sauce", "make white sauce"]},
   "does": "Cooks a pale roux, whisks warm milk into it a little at a time and simmers it to a smooth white sauce seasoned with nutmeg. Thin, it coats food. Thick, it holds a baked dish together.",
   "intro": {
     "what": "Béchamel joins milk to a pale roux and simmers it into a smooth white sauce.",

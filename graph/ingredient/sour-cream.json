@@ -1,0 +1,45 @@
+{
+  "id": "ingredient/sour-cream",
+  "tier": "drafted",
+  "names": {"en": "Sour cream"},
+  "aliases": {"en": ["soured cream"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/creams", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Cream soured with a culture until thick and tangy. It cools a hot dish and is spooned on at the end, since it splits if it boils.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is soured cream.", "certain": true},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Recorded strictly: some lighter ones are set with gelatine.",
+        "certain": false
+      },
+      {
+        "fact": "fact/pork",
+        "basis": "Recorded strictly: the gelatine in some lighter ones may come from pigs.",
+        "certain": false
+      },
+      {
+        "fact": "fact/meat",
+        "basis": "Recorded strictly: the gelatine in some lighter ones may come from pigs.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame",
+      "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

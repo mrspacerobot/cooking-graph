@@ -1,0 +1,39 @@
+{
+  "id": "ingredient/burger-bun",
+  "tier": "drafted",
+  "names": {"en": "Burger bun"},
+  "aliases": {"en": ["hamburger bun", "soft bun"]},
+  "plurals": {"en": "Burger buns"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/breads", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A soft, round white bread roll, often topped with sesame seeds. Cut and toasted, its face crisps and holds back a wet filling for a while.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Made of wheat flour.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Made of wheat flour.", "certain": true},
+      {
+        "fact": "fact/milk",
+        "basis": "Recorded strictly: many buns are enriched with milk or butter.",
+        "certain": false
+      },
+      {"fact": "fact/egg", "basis": "Recorded strictly: many buns hold egg.", "certain": false},
+      {"fact": "fact/soy", "basis": "Recorded strictly: many bought buns hold soy flour.", "certain": false},
+      {"fact": "fact/sesame", "basis": "Recorded strictly: many buns are topped with sesame seeds.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/slaughter-product",
+      "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

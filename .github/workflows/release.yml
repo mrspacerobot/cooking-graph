@@ -21,7 +21,7 @@ permissions:
 jobs:
   release:
     if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       CHANNEL: ${{ inputs.channel || 'draft' }}
       GH_TOKEN: ${{ github.token }}

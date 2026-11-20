@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/larb-gai",
+  "tier": "drafted",
+  "batch": "home-thai-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "thai",
+  "written_for": "salad",
+  "dish": "Lap kai",
+  "also_called": ["larb gai", "laab", "thai minced chicken salad"],
+  "techniques": ["toast rice", "poach minced meat", "toss"],
+  "ingredients": ["minced chicken", "fish sauce", "lime", "shallot", "mint", "coriander", "dried chilli", "rice"]
+}

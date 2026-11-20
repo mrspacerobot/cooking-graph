@@ -1,0 +1,47 @@
+{
+  "id": "ingredient/pickled-cucumber",
+  "tier": "drafted",
+  "names": {"en": "Pickled cucumber", "fr": "Concombre mariné"},
+  "aliases": {"en": ["pickle", "pickles", "pickled cucumbers", "khiyar mkhallal"]},
+  "plurals": {"en": "Pickled cucumbers", "fr": "Concombres marinés"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pickles", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Small cucumbers kept whole or sliced in salted, sour brine or vinegar. Sharp, salty and crisp, they cut through fat in a wrap or beside grilled meat.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/sulphites",
+        "basis": "Some pickles are made with wine vinegar or kept with sulphites.",
+        "certain": false
+      },
+      {"fact": "fact/mustard", "basis": "Some pickles are spiced with mustard seed.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/pickled-turnip",
+      "allows": true,
+      "when": ["dish/shawarma-djej"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use sour, firm pickles cut into thin strips. They give a similar tang with no turnip bite or colour.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

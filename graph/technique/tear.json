@@ -1,0 +1,82 @@
+{
+  "id": "technique/tear",
+  "tier": "drafted",
+  "names": {"en": "Tear"},
+  "aliases": {"en": ["tear basil", "tear by hand", "tear the leaves"]},
+  "does": "Pulls soft herb leaves apart with the fingers instead of cutting them, just before they are used, so that the edges stay green and the leaves keep their scent.",
+  "intro": {
+    "what": "Soft herbs are torn by hand right before they go into a dish.",
+    "why": "Tearing bruises soft leaves less than a blunt knife and keeps them fresh and fragrant.",
+    "idea": "Tear at the last moment",
+    "tier": "drafted"
+  },
+  "how": [
+    "Wait until the dish is nearly ready.",
+    "Pick the leaves from the stems and tear them into pieces with your fingers.",
+    "Add them straight away, off the heat or at the very end."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "A strong, fresh scent as the leaves tear."},
+    {"sense": "see", "text": "Bright green leaves with clean edges, not dark and bruised."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Chopping soft leaves long before they are needed, so that they turn black.",
+      "fix": "Tear them just before they go in."
+    },
+    {
+      "mistake": "Cooking the torn leaves for a long time, so that their scent is lost.",
+      "fix": "Add them at the end or off the heat."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why tear soft herbs by hand?",
+      "choices": [
+        "To bruise them as much as possible.",
+        "To keep their edges green and their scent fresh.",
+        "To make them cook faster."
+      ],
+      "answer": 1,
+      "because": "Tearing does less damage than a blunt knife.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should you tear the leaves?",
+      "choices": ["Just before they go in.", "The day before.", "At the start of cooking."],
+      "answer": 0,
+      "because": "Torn leaves darken as they wait.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How should the torn leaves look?",
+      "choices": ["Dark and wet.", "Dry and brown.", "Bright green with clean edges."],
+      "answer": 2,
+      "because": "Fresh green leaves show they were not bruised.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The basil turned black and lost its smell. What would you change next time?",
+      "choices": [
+        "Tear it earlier and cook it longer.",
+        "Tear it at the last moment and add it at the end.",
+        "Chop it finely in advance."
+      ],
+      "answer": 1,
+      "because": "Late tearing and little heat keep basil fresh.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

@@ -1,0 +1,108 @@
+{
+  "id": "recipe/shawarma-djej",
+  "tier": "drafted",
+  "names": {"en": "Shawarma djej", "ar": "شاورما دجاج", "ar-Latn": "Shawarma djej"},
+  "aliases": {},
+  "makes": "dish/shawarma-djej",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/plain-yogurt", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "yogurt"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "preparation/seven-spice", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "spice"},
+    {"thing": "ingredient/paprika", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "paprika"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/garlic", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/pita-bread", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "bread"},
+    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/pickled-cucumber", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "pickles"},
+    {"thing": "ingredient/pickled-turnip", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "turnip"}
+  ],
+  "equipment": [
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/oven", "equipment/baking-sheet",
+    "equipment/mixing-bowl", "equipment/blender", "equipment/mortar-and-pestle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/crush",
+      "works_on": ["ingredient/garlic"],
+      "with": [],
+      "text": "Crush the {garlic} to a paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/marinate",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [
+        "ingredient/lemon", "ingredient/plain-yogurt", "ingredient/garlic", "preparation/seven-spice",
+        "ingredient/paprika", "ingredient/olive-oil", "ingredient/salt"
+      ],
+      "text": "Squeeze the juice of the {lemon} into a bowl and stir in the {yogurt}, the {garlic}, the {spice},[paprika: the {paprika},] the {oil} and the {salt}. Turn the boneless {chicken} in it until coated, cover, and leave it in the fridge.",
+      "time": {"from": 1, "to": 12, "unit": "hour"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-toum",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/salt", "ingredient/lemon-juice", "ingredient/sunflower-oil"],
+      "text": "Peel the {sauce.garlic} and take out any green germ. Blend it with the {sauce.salt} to a fine paste. With the machine running, pour in the {sauce.sunflower-oil} in the thinnest thread, adding a spoonful of the {sauce.lemon-juice} now and then, until the sauce is white, thick and fluffy. Keep what is left in a closed jar in the fridge.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/toum"]
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Spread the {chicken} flat on a lined baking sheet and roast it in a very hot oven until it is cooked and charred at the edges. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": {"value": 220, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/carve",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Let it rest briefly, then slice it thin across the grain.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/tomato"],
+      "with": [],
+      "text": "Slice the {tomato:plural}, and cut the {pickles} into strips.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sandwich",
+      "works_on": ["ingredient/pita-bread"],
+      "with": [
+        "preparation/toum", "ingredient/chicken-thigh", "ingredient/tomato", "ingredient/pickled-cucumber",
+        "ingredient/pickled-turnip"
+      ],
+      "text": "Warm the {bread:plural}. Spread each with a spoonful of the toum, lay the {chicken} down the middle with the {tomato} slices, the {pickles}[turnip: and the {turnip:plural}], and roll it up tightly.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

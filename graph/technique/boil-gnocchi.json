@@ -1,0 +1,96 @@
+{
+  "id": "technique/boil-gnocchi",
+  "tier": "drafted",
+  "names": {"en": "Boil gnocchi", "it": "cuocere gli gnocchi"},
+  "aliases": {"en": ["cook gnocchi", "poach gnocchi"]},
+  "does": "Drops potato gnocchi into a large pot of salted water at a gentle boil and lifts them out as soon as they float, since they are done in moments and turn gluey if they boil on.",
+  "intro": {
+    "what": "Gnocchi are cooked in boiling salted water and lifted out as they rise.",
+    "why": "Gnocchi cook far faster than dried pasta. Rising to the top is the sign they are ready.",
+    "idea": "They are done when they float",
+    "tier": "drafted"
+  },
+  "how": [
+    "Bring a large pot of water to the boil and salt it well.",
+    "Lower the heat so that the water bubbles gently, and drop in the gnocchi in batches if the pot is small.",
+    "Lift them out with a slotted spoon as soon as they float, and drain them well."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The gnocchi rise and bob on the surface."},
+    {"sense": "feel", "text": "A gnocchetto is soft and light when pressed, not sticky."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Tipping them into a colander after a long boil, so that they turn gluey and fall apart.",
+      "fix": "Lift them out with a slotted spoon as they float."
+    },
+    {
+      "mistake": "Crowding the pot, so that the water stops boiling and they stick together.",
+      "fix": "Use plenty of water and cook them in batches."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What tells you gnocchi are ready?",
+      "choices": ["They sink to the bottom.", "They float to the top.", "The water turns clear."],
+      "answer": 1,
+      "because": "Rising to the surface is the sign they are cooked.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you take them out?",
+      "choices": [
+        "With a slotted spoon as they rise.",
+        "By boiling them on and draining them later.",
+        "By rinsing them under cold water."
+      ],
+      "answer": 0,
+      "because": "Lifting them out keeps them whole and light.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How should a cooked gnocchetto feel?",
+      "choices": ["Hard in the middle.", "Wet and falling apart.", "Soft and light."],
+      "answer": 2,
+      "because": "Soft and light means it is done and not overcooked.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The gnocchi turned gluey. What would you change next time?",
+      "choices": [
+        "Boil them longer.",
+        "Lift them out as soon as they float.",
+        "Use less water and more gnocchi at once."
+      ],
+      "answer": 1,
+      "because": "Overcooking makes them gluey.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/potato-gnocchi", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/stockpot", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "seasoning", "options": ["ingredient/salt"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/boil-pasta",
+      "differs": "Gnocchi cook in moments and are lifted out with a slotted spoon as soon as they float. There is no tasting for bite, and they are never drained in a colander after a long boil.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

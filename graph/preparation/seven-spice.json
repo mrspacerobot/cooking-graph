@@ -1,0 +1,45 @@
+{
+  "id": "preparation/seven-spice",
+  "tier": "drafted",
+  "names": {"en": "Seven spice"},
+  "aliases": {"en": ["Lebanese seven spice", "baharat", "sabaa baharat", "seven spices", "7 spice"]},
+  "plurals": {},
+  "uncountable": true,
+  "is": "The Lebanese everyday spice blend: allspice, black pepper, cinnamon, clove, nutmeg, coriander and ginger or cumin, ground together. Warm and sweet rather than hot, it seasons minced meat, chicken and rice. It is bought ready-mixed or ground at home.",
+  "parts": [
+    {"id": "allspice", "role": "seasoning", "options": ["ingredient/allspice"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cinnamon", "role": "seasoning", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"},
+    {"id": "clove", "role": "seasoning", "options": ["ingredient/clove"], "optional": false, "tier": "drafted"},
+    {"id": "nutmeg", "role": "seasoning", "options": ["ingredient/nutmeg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander-seed",
+      "role": "seasoning",
+      "options": ["ingredient/coriander-seed"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "ginger",
+      "role": "seasoning",
+      "options": ["ingredient/ginger", "ingredient/cumin"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/grind", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

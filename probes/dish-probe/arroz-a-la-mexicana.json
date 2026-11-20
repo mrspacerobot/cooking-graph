@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/arroz-a-la-mexicana",
+  "tier": "drafted",
+  "batch": "home-mexican-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "mexican",
+  "written_for": "rice",
+  "dish": "Arroz a la mexicana",
+  "also_called": ["mexican rice", "arroz rojo", "red rice"],
+  "techniques": ["toast rice", "blend tomato", "simmer", "rest covered"],
+  "ingredients": ["long-grain rice", "canned tomato", "onion", "garlic", "chicken stock", "carrot", "pea"]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "dish/firin-makarna",
+  "tier": "drafted",
+  "names": {"en": "Firin makarna", "tr": "Fırın makarna"},
+  "aliases": {"en": ["Turkish baked pasta", "baked macaroni with bechamel", "baked penne with bechamel"]},
+  "is": "Short pasta boiled a little short of tender, folded with a béchamel enriched with egg, layered with crumbled white cheese, topped with melting cheese and baked until golden, then cut into squares.",
+  "parts": [
+    {
+      "id": "pasta",
+      "role": "main",
+      "options": ["ingredient/penne", "ingredient/macaroni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "topping",
+      "options": ["ingredient/kashkaval-cheese", "ingredient/cheddar", "ingredient/mozzarella"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "white-cheese",
+      "role": "filling",
+      "options": ["ingredient/white-cheese", "ingredient/feta"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/boil-pasta", "tier": "drafted"},
+    {"thing": "technique/make-a-roux", "tier": "drafted"},
+    {"thing": "technique/make-a-bechamel", "tier": "drafted"},
+    {"thing": "technique/temper", "tier": "drafted"},
+    {"thing": "technique/layer", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/orman-kebabi",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "braising",
+  "dish": "Orman kebabı",
+  "also_called": ["forest kebab", "turkish lamb and vegetable stew"],
+  "techniques": ["brown meat", "braise"],
+  "ingredients": ["lamb", "potato", "carrot", "pea", "onion", "tomato", "tomato paste", "butter", "thyme"]
+}

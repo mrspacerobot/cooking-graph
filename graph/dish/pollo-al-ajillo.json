@@ -1,0 +1,44 @@
+{
+  "id": "dish/pollo-al-ajillo",
+  "tier": "drafted",
+  "names": {"en": "Pollo al ajillo", "fr": "Poulet à l'ail"},
+  "aliases": {"en": ["garlic chicken", "spanish garlic chicken", "chicken with garlic"]},
+  "is": "Spanish garlic chicken: pieces of chicken browned slowly in olive oil with whole cloves of garlic and bay, splashed with white wine and simmered until tender, and finished with parsley.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "bay-leaf", "role": "seasoning", "options": ["ingredient/bay-leaf"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli",
+      "role": "seasoning",
+      "options": ["ingredient/guindilla", "ingredient/dried-red-chilli"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {
+      "id": "wine",
+      "role": "liquid",
+      "options": ["ingredient/white-wine", "ingredient/dry-sherry"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-garlic", "tier": "drafted"},
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

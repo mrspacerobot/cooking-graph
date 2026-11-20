@@ -30,7 +30,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/potato-gnocchi",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/gnocchi-alla-sorrentina", "technique/boil-gnocchi"],
+      "ratio": null,
+      "caveat": "Pasta does not use floating as a cue and will not give the same soft potato bite.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q178", "tier": "sourced"}

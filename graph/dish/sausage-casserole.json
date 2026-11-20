@@ -1,0 +1,75 @@
+{
+  "id": "dish/sausage-casserole",
+  "tier": "drafted",
+  "names": {"en": "Sausage casserole"},
+  "aliases": {"en": ["sausage and bean casserole", "sausage stew", "sausage and bean stew"]},
+  "is": "Browned pork sausages simmered with onion, carrot, smoked paprika, tomatoes and white beans into a thick, smoky stew.",
+  "parts": [
+    {"id": "sausages", "role": "main", "options": ["ingredient/pork-sausage"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "paprika",
+      "role": "seasoning",
+      "options": ["ingredient/smoked-paprika"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "tomato-paste",
+      "role": "seasoning",
+      "options": ["ingredient/tomato-paste"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {
+      "id": "tomatoes",
+      "role": "sauce",
+      "options": ["ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "beans",
+      "role": "main",
+      "options": ["ingredient/white-beans", "ingredient/butter-bean"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock", "ingredient/stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "herbs", "role": "seasoning", "options": ["ingredient/thyme"], "optional": true, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/fry-sausages", "tier": "drafted"},
+    {"thing": "technique/fry-onions-golden", "tier": "drafted"},
+    {"thing": "technique/bloom-ground-spices", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"}
+  ],
+  "same_as": []
+}

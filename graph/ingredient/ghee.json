@@ -57,7 +57,7 @@
     {
       "thing": "ingredient/olive-oil",
       "allows": true,
-      "when": ["dish/mloukhieh", "preparation/taqliyeh"],
+      "when": ["preparation/taqliyeh"],
       "not_when": [],
       "ratio": null,
       "caveat": "It is nutty and buttery instead of fruity.",

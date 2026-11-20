@@ -1,0 +1,106 @@
+{
+  "id": "recipe/gnocchi-alla-sorrentina",
+  "tier": "drafted",
+  "names": {"en": "Gnocchi alla sorrentina", "it": "gnocchi alla sorrentina"},
+  "aliases": {},
+  "makes": "dish/gnocchi-alla-sorrentina",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/potato-gnocchi", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "gnocchi"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/peeled"], "part": "garlic"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/mozzarella",
+      "amount": {"value": 250, "unit": "gram"},
+      "forms": ["form/diced"],
+      "part": "mozzarella"
+    },
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 50, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/basil", "amount": {"value": 10, "unit": "leaf"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/stockpot", "equipment/saute-pan", "equipment/wooden-spoon",
+    "equipment/slotted-spoon", "equipment/baking-dish"
+  ],
+  "steps": [
+    {
+      "technique": "technique/fry-garlic-gently",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Crush the {garlic} lightly with the flat of a knife. Warm it in the {oil} in a wide pan over low heat until it is pale gold.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/salt", "ingredient/basil", "ingredient/olive-oil", "ingredient/garlic"],
+      "text": "Add the {tomato:plural}, crush them with a spoon and season with a little of the {salt}. Simmer, stirring now and then, until the sauce has thickened but is still loose. Lift out the {garlic} and tear in half of the {basil}.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/boil-gnocchi",
+      "works_on": ["ingredient/potato-gnocchi"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Bring a large pot of {water} to the boil and season it with the {salt}. Drop in the {gnocchi} and lift them out with a slotted spoon as soon as they float.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/potato-gnocchi"],
+      "with": ["preparation/tomato-sauce"],
+      "text": "Fold the {gnocchi} gently into the sauce until they are all coated.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/potato-gnocchi"],
+      "with": ["ingredient/mozzarella", "ingredient/parmesan", "ingredient/basil"],
+      "text": "Spoon half of the {gnocchi} and their sauce into a baking dish and scatter with half of the {mozzarella} and the rest of the {basil}, torn. Add the rest of the {gnocchi} and top with the remaining {mozzarella} and the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-pasta-al-forno",
+      "works_on": ["ingredient/potato-gnocchi"],
+      "with": ["ingredient/mozzarella", "ingredient/parmesan"],
+      "text": "Bake in a hot oven until the {mozzarella} has melted and bubbles, golden in spots.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/potato-gnocchi"],
+      "with": [],
+      "text": "Serve hot, straight from the dish.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

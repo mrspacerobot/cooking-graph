@@ -37,6 +37,24 @@
       "ratio": null,
       "caveat": "The round rods hold the sauce less well than flat ribbons, so toss them well.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/bucatini",
+      "allows": true,
+      "when": ["technique/toss-pasta-with-sauce"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "Use the same weight of dry pasta and check its own cooking time. Spaghetti is solid and a little less substantial.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/trofie",
+      "allows": true,
+      "when": ["dish/trofie-al-pesto-genovese"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use dried spaghetti and judge the boil by its bite. The strands are smoother, so the pesto will coat them more lightly.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

@@ -1,0 +1,108 @@
+{
+  "id": "recipe/thai-green-curry",
+  "tier": "drafted",
+  "names": {"en": "Thai green curry", "th": "แกงเขียวหวานไก่", "th-Latn": "Kaeng khiao wan kai"},
+  "aliases": {},
+  "makes": "dish/thai-green-curry",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/aubergine", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "aubergine"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/coconut-milk",
+      "amount": {"value": 800, "unit": "millilitre"},
+      "forms": [],
+      "part": "coconut-milk"
+    },
+    {
+      "thing": "ingredient/green-curry-paste",
+      "amount": {"value": 4, "unit": "tablespoon"},
+      "forms": [],
+      "part": "paste"
+    },
+    {"thing": "ingredient/makrut-lime-leaf", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "lime-leaf"},
+    {"thing": "ingredient/fish-sauce", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "fish-sauce"},
+    {"thing": "ingredient/palm-sugar", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/thai-basil", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/birds-eye-chilli", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/jasmine-rice", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/water", "amount": {"value": 450, "unit": "millilitre"}, "forms": [], "part": "rice-water"}
+  ],
+  "equipment": [
+    "equipment/wok", "equipment/saucepan", "equipment/wooden-spoon", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cook-rice",
+      "works_on": [],
+      "with": ["ingredient/jasmine-rice", "ingredient/water"],
+      "text": "Rinse the {rice} well in a sieve, drain it, and put it in a pan with the {rice-water}. Bring it to a boil, cover, turn the heat to its lowest and cook until the {rice-water} is taken up. Leave it covered off the heat until you serve.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-small-pieces",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Cut the {chicken} into bite-sized pieces.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/aubergine"],
+      "with": [],
+      "text": "Cut the {aubergine} into large dice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-the-paste",
+      "works_on": ["ingredient/green-curry-paste"],
+      "with": ["ingredient/oil", "ingredient/coconut-milk"],
+      "text": "Heat the {oil} with the thick cream from the top of the {coconut-milk} in a wok and let it bubble until it starts to split and look oily. Add the {paste} and fry, stirring, until it smells strongly fragrant. Most home cooks use a bought {paste}; brands vary in heat, so start with less and add more.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/aubergine"],
+      "with": ["ingredient/coconut-milk", "ingredient/makrut-lime-leaf"],
+      "text": "Add the {chicken} and stir to coat, then pour in the rest of the {coconut-milk} [lime-leaf: and add the torn {lime-leaf:plural}]. Bring to a simmer, add the {aubergine} and cook gently until the vegetables are soft and the {chicken} is tender. Check a piece of {chicken} against a trusted guide to doneness.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/fish-sauce", "ingredient/palm-sugar"],
+      "text": "Season with the {fish-sauce} and the {sugar}, tasting as you go: it should be hot, salty and only a little sweet.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/thai-basil", "ingredient/birds-eye-chilli", "ingredient/jasmine-rice"],
+      "text": "Take the pan off the heat and stir in the {basil}[chilli: , then scatter over the sliced {chilli}]. Serve with the {rice}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

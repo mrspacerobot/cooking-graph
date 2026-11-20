@@ -1,0 +1,60 @@
+{
+  "id": "dish/arroz-a-la-mexicana",
+  "tier": "drafted",
+  "names": {"en": "Arroz a la mexicana", "es": "Arroz a la mexicana"},
+  "aliases": {"en": ["Mexican rice", "arroz rojo", "red rice"]},
+  "is": "Mexican red rice: long-grain rice fried in oil until golden, then simmered in a blended sauce of tomato, onion and garlic with stock, carrot and peas, and left to steam until fluffy.",
+  "parts": [
+    {
+      "id": "rice",
+      "role": "base",
+      "options": ["ingredient/long-grain-rice", "ingredient/rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "tomato",
+      "role": "sauce",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "carrot", "role": "side", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "peas", "role": "side", "options": ["ingredient/peas"], "optional": false, "tier": "drafted"},
+    {"id": "chilli", "role": "seasoning", "options": ["ingredient/green-chilli"], "optional": true, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-rice-golden", "tier": "drafted"},
+    {"thing": "technique/puree", "tier": "drafted"},
+    {"thing": "technique/fry-the-sauce", "tier": "drafted"},
+    {"thing": "technique/cover-with-a-lid", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ],
+  "same_as": []
+}

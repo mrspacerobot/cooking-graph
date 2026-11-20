@@ -1,0 +1,89 @@
+{
+  "id": "technique/stir-in-cream",
+  "tier": "drafted",
+  "names": {"en": "Stir in cream"},
+  "aliases": {"en": ["add cream", "finish with cream", "enrich with cream"]},
+  "does": "Adds cream to a hot sauce over low heat and keeps it at a gentle bubble, so that the sauce turns smooth, pale and rich without splitting or boiling hard.",
+  "intro": {
+    "what": "Cream is stirred into a sauce at the end over low heat.",
+    "why": "Cream softens an acid or sharp sauce and gives it body, as long as the heat is kept gentle.",
+    "idea": "Gentle heat for cream",
+    "tier": "drafted"
+  },
+  "how": [
+    "Turn the heat down before the cream goes in.",
+    "Pour in the cream and stir until the sauce is one even colour.",
+    "Let it bubble gently until it coats a spoon. Do not let it boil hard."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sauce is one smooth, even colour and coats the back of a spoon."},
+    {"sense": "see", "text": "Small lazy bubbles, never a rolling boil."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring cream into a fiercely boiling, acid sauce, so that it splits into grainy flecks.",
+      "fix": "Lower the heat first and keep it at a gentle bubble."
+    },
+    {
+      "mistake": "Using thin cream, which splits easily in a hot sauce.",
+      "fix": "Use double cream or another cream with plenty of fat."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does cream do to a sauce?",
+      "choices": [
+        "Makes it sharper and thinner.",
+        "Makes it smooth and rich, and softens sharp tastes.",
+        "Makes it clear."
+      ],
+      "answer": 1,
+      "because": "The fat in cream softens and enriches the sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What do you do before adding the cream?",
+      "choices": ["Turn the heat down.", "Turn the heat up to high.", "Take all liquid out of the pan."],
+      "answer": 0,
+      "because": "A gentle heat keeps the cream from splitting.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How should the sauce look once the cream is in?",
+      "choices": ["Grainy, with flecks.", "Boiling hard.", "Smooth and of one colour, coating a spoon."],
+      "answer": 2,
+      "because": "A smooth, even sauce shows the cream has blended in.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce turned grainy after the cream went in. What would you change next time?",
+      "choices": [
+        "Boil it harder.",
+        "Add the cream over lower heat and use a richer cream.",
+        "Add the cream earlier and boil it longer."
+      ],
+      "answer": 1,
+      "because": "Fierce heat and thin cream are what make it split.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/creams", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/frying-pan", "equipment/saute-pan", "equipment/saucepan"],
+      "tier": "drafted"
+    },
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

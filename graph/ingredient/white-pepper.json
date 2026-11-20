@@ -1,0 +1,29 @@
+{
+  "id": "ingredient/white-pepper",
+  "tier": "drafted",
+  "names": {"en": "White pepper"},
+  "aliases": {"en": ["ground white pepper"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/ground-spices", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Ground pepper berries with the dark skin taken off. It is hotter and mustier than black pepper and gives the heat in a hot and sour soup.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

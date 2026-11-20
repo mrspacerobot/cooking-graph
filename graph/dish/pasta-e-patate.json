@@ -1,0 +1,53 @@
+{
+  "id": "dish/pasta-e-patate",
+  "tier": "drafted",
+  "names": {"en": "Pasta e patate", "it": "pasta e patate"},
+  "aliases": {"en": ["pasta and potatoes", "neapolitan pasta and potato", "pasta e patate alla napoletana"]},
+  "is": "A Neapolitan dish between a soup and a pasta: potatoes simmered with a soffritto, a little tomato and a Parmesan rind until they collapse, then mixed pasta cooked in the pot and finished with grated cheese into a thick, creamy whole.",
+  "parts": [
+    {
+      "id": "pasta",
+      "role": "main",
+      "options": ["ingredient/mixed-pasta", "ingredient/small-pasta", "ingredient/ditalini"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "soffritto", "role": "aromatic", "options": ["preparation/soffritto"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pork",
+      "role": "aromatic",
+      "options": ["ingredient/pancetta", "ingredient/bacon"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "tomato", "role": "base", "options": ["ingredient/tomato-paste"], "optional": false, "tier": "drafted"},
+    {"id": "rind", "role": "aromatic", "options": ["ingredient/parmesan-rind"], "optional": true, "tier": "drafted"},
+    {
+      "id": "liquid",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "cheese",
+      "role": "enrichment",
+      "options": ["ingredient/parmesan", "ingredient/pecorino-romano"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-a-soffritto", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/cook-pasta-in-the-soup", "tier": "drafted"},
+    {"thing": "technique/emulsify-off-the-heat", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

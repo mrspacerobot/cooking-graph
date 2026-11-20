@@ -1,0 +1,43 @@
+{
+  "id": "dish/papoutsakia",
+  "tier": "drafted",
+  "names": {"en": "Papoutsakia", "el": "Παπουτσάκια", "el-Latn": "Papoutsakia"},
+  "aliases": {
+    "en": [
+      "greek stuffed aubergines",
+      "little shoes",
+      "stuffed eggplant with bechamel",
+      "papoutsakia melitzanes",
+      "stuffed aubergine boats"
+    ]
+  },
+  "is": "Aubergine halves baked until soft, filled with a meat sauce scented with cinnamon, topped with a thick white sauce and grated cheese, and baked again until golden. The name means little shoes, after their shape.",
+  "parts": [
+    {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "kima", "role": "filling", "options": ["preparation/kima"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "topping",
+      "options": ["ingredient/kefalotyri", "ingredient/parmesan", "ingredient/pecorino"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/halve", "tier": "drafted"},
+    {"thing": "technique/brush", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"},
+    {"thing": "technique/brown-mince", "tier": "drafted"},
+    {"thing": "technique/make-a-kima", "tier": "drafted"},
+    {"thing": "technique/make-a-bechamel", "tier": "drafted"},
+    {"thing": "technique/stuff", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

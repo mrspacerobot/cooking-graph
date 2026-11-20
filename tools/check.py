@@ -75,6 +75,7 @@ def read_repository(root):
     for rule in rules.BASE_RULES + group_rules.RULES + part_rules.RULES + probe_rules.RULES + stand_in_rules.RULES + quiz_rules.RULES + review_rules.RULES + step_rules.RULES + plural_rules.RULES:
         issues.extend(rule(sound))
     issues.extend(rules.foods_share_no_name(sound, reading.read_buy_or_make(root)))
+    issues.extend(rules.retired_ids_stay_unused(sound, reading.read_retired(root)))
     issues.extend(rules.model_document(root, model))
     if not issues:  # a written document is compared only with files that are sound
         issues.extend(written_documents.behind(root, sound))

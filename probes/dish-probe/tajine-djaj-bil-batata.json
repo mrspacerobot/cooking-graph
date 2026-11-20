@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tajine-djaj-bil-batata",
+  "tier": "drafted",
+  "batch": "home-moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "braising",
+  "dish": "Tajine djaj bil batata",
+  "also_called": ["chicken and potato tagine", "moroccan chicken with potatoes"],
+  "techniques": ["fry onion", "fry the spices", "braise"],
+  "ingredients": ["chicken thigh", "potato", "onion", "garlic", "ginger", "turmeric", "paprika", "olive", "coriander"]
+}

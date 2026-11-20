@@ -1,0 +1,46 @@
+{
+  "id": "dish/carne-alla-pizzaiola",
+  "tier": "drafted",
+  "names": {"en": "Carne alla pizzaiola", "it": "Carne alla pizzaiola"},
+  "aliases": {"en": ["steak pizzaiola", "beef pizzaiola", "pizzaiola"]},
+  "is": "A Neapolitan weeknight dish of thin beef steaks seared fast, then finished briefly in a quick sauce of tomato, garlic and dried oregano, the flavours of a pizza. It is eaten with plenty of bread for the sauce.",
+  "parts": [
+    {"id": "beef", "role": "main", "options": ["ingredient/beef-steak"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "sauce",
+      "options": ["ingredient/tinned-tomatoes", "ingredient/tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oregano", "role": "seasoning", "options": ["ingredient/oregano"], "optional": false, "tier": "drafted"},
+    {
+      "id": "olives",
+      "role": "garnish",
+      "options": ["ingredient/black-olive", "ingredient/green-olive"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "capers", "role": "garnish", "options": ["ingredient/capers"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/make-a-tomato-sauce", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/season", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

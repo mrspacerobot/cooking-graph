@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/british",
+  "tier": "drafted",
+  "names": {"en": "British", "fr": "Britannique"},
+  "aliases": {"en": ["British cooking", "British cuisine"]},
+  "within": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/chicken-teriyaki",
+  "tier": "drafted",
+  "batch": "home-japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "frying",
+  "dish": "Tori no teriyaki",
+  "also_called": ["teriyaki chicken", "chicken teriyaki"],
+  "techniques": ["pan fry skin side down", "glaze", "cook rice"],
+  "ingredients": ["chicken thigh", "soy sauce", "mirin", "sake", "sugar", "rice"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/hot-and-sour-soup",
+  "tier": "drafted",
+  "batch": "home-chinese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "chinese",
+  "written_for": "simmering",
+  "dish": "Suānlà tāng",
+  "also_called": ["hot and sour soup"],
+  "techniques": ["simmer", "thicken with starch", "drizzle egg"],
+  "ingredients": ["tofu", "mushroom", "chicken stock", "egg", "soy sauce", "rice vinegar", "white pepper", "cornflour"]
+}

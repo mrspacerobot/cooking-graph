@@ -1,0 +1,50 @@
+{
+  "id": "ingredient/rice-noodle",
+  "tier": "drafted",
+  "names": {"en": "Rice noodle"},
+  "aliases": {"en": ["rice stick noodle", "rice sticks", "sen lek", "pad thai noodle"]},
+  "plurals": {"en": "Rice noodles"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/rice-noodles", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A flat, narrow dried noodle of rice flour, often called a rice stick. Soaked in warm water until bendy, it finishes cooking in the wok, turning sticky and broken if it is soaked too long.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/wide-rice-noodle",
+      "allows": true,
+      "when": ["dish/pad-see-ew", "technique/soak-rice-noodles"],
+      "not_when": ["technique/char-noodles"],
+      "ratio": null,
+      "caveat": "Choose the broadest flat noodle available. Narrower ribbons soften faster and give less broad surface for charring.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/trofie",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/trofie-al-pesto-genovese"],
+      "ratio": null,
+      "caveat": "The dried rice sticks are normally soaked and softened briefly. A full pasta boil can make them sticky and fragile before they are tossed.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

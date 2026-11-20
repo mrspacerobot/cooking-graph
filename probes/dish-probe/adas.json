@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/adas",
+  "tier": "drafted",
+  "batch": "home-moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "simmering",
+  "dish": "Adas",
+  "also_called": ["moroccan lentils", "lentil stew"],
+  "techniques": ["fry onion", "simmer"],
+  "ingredients": ["green lentil", "onion", "garlic", "canned tomato", "cumin", "paprika", "olive oil", "coriander"]
+}

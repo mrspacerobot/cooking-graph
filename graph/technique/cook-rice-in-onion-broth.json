@@ -1,0 +1,54 @@
+{
+  "id": "technique/cook-rice-in-onion-broth",
+  "tier": "drafted",
+  "names": {"en": "Cook rice in onion broth"},
+  "aliases": {"en": ["sayadieh rice", "cook rice in caramelised onion stock"]},
+  "does": "Simmers deeply browned onions in water with cumin to make a dark, sweet broth, then cooks washed long-grain rice in the strained broth under a lid until it is taken up, so that the grains come out brown and full of the taste of the onions.",
+  "intro": null,
+  "how": [
+    "Fry the onions dark first and keep the oil they leave.",
+    "Simmer most of the onions in water with cumin and salt, then strain or blend the broth.",
+    "Coat the washed rice in a spoonful of the onion oil.",
+    "Pour in the measured hot broth, bring it to a boil, cover and cook on the lowest heat until the broth is taken up.",
+    "Leave it covered off the heat, then fluff it with a fork."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The broth is a deep amber brown, and the cooked rice is evenly brown."},
+    {"sense": "taste", "text": "The rice tastes sweet and deep of browned onion, not burnt."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using onions that were only golden, so that the broth and the rice stay pale and flat.",
+      "fix": "Take the onions to a deep brown."
+    },
+    {
+      "mistake": "Lifting the lid while the rice cooks, so that the steam escapes and the grains stay hard.",
+      "fix": "Keep the lid on until the end."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/rice", "tier": "drafted"},
+    {"thing": "ingredient/long-grain-rice", "tier": "drafted"},
+    {"thing": "ingredient/basmati-rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water", "ingredient/fish-stock"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/fry-onions-dark", "why": "The broth is made from onions fried dark.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/cook-pilaf",
+      "differs": "The rice is cooked in a broth made from deeply fried onions, which turns it brown and sweet, rather than with sweated onion in stock.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

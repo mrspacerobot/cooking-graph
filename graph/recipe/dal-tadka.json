@@ -84,7 +84,7 @@
       "technique": "technique/temper-spices-in-hot-fat",
       "works_on": ["ingredient/dried-red-chilli"],
       "with": ["ingredient/ghee", "ingredient/cumin"],
-      "text": "Heat the rest of the {tempering-fat} in a small pan until a {cumin} seed sizzles at once. Add the {cumin} and let it darken a shade, then add the dried chillies and take the pan off the heat the moment the scent rises.",
+      "text": "Heat the rest of the {tempering-fat} in a small pan until a {cumin} seed sizzles at once. Add the {cumin} and let it darken a shade, then add the {dried-chilli:plural} and take the pan off the heat the moment the scent rises.",
       "time": {"from": 1, "to": 2, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

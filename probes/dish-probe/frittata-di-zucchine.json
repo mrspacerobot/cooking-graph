@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/frittata-di-zucchine",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "eggs",
+  "dish": "Frittata di zucchine",
+  "also_called": ["zucchini frittata", "courgette frittata"],
+  "techniques": ["sauté zucchini", "beat eggs with cheese", "cook egg slowly in a pan", "flip frittata"],
+  "ingredients": ["egg", "zucchini", "onion", "parmesan", "olive oil", "basil"]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "dish/meatloaf",
+  "tier": "drafted",
+  "names": {"en": "Meatloaf"},
+  "aliases": {"en": ["meat loaf", "glazed meatloaf", "classic meatloaf"]},
+  "is": "Minced beef mixed with softened onion, breadcrumbs soaked in milk, egg and Worcestershire sauce, shaped into a loaf and baked under a sweet ketchup glaze.",
+  "parts": [
+    {"id": "beef", "role": "main", "options": ["ingredient/minced-beef"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/butter"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": true, "tier": "drafted"},
+    {
+      "id": "breadcrumbs",
+      "role": "thickener",
+      "options": ["preparation/breadcrumbs"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "worcestershire",
+      "role": "seasoning",
+      "options": ["ingredient/worcestershire-sauce"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"},
+    {"id": "ketchup", "role": "topping", "options": ["ingredient/ketchup"], "optional": false, "tier": "drafted"},
+    {
+      "id": "brown-sugar",
+      "role": "sweetener",
+      "options": ["ingredient/brown-sugar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "mustard",
+      "role": "seasoning",
+      "options": ["ingredient/yellow-mustard", "ingredient/dijon-mustard"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/shape", "tier": "drafted"},
+    {"thing": "technique/brush-on-a-glaze", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/american", "tier": "drafted"}
+  ],
+  "same_as": []
+}

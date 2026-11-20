@@ -1,0 +1,37 @@
+{
+  "id": "dish/makaronia-me-kima",
+  "tier": "drafted",
+  "names": {"en": "Makaronia me kima", "el": "Μακαρόνια με κιμά", "el-Latn": "Makaronia me kima"},
+  "aliases": {"en": ["greek spaghetti with meat sauce", "spaghetti me kima", "greek bolognese", "spaghetti with kima"]},
+  "is": "Spaghetti under a Greek meat sauce: minced beef browned and simmered with onion, garlic, red wine, tomato, cinnamon and bay until thick, served with plenty of grated kefalotyri. A weeknight staple of Greek homes.",
+  "parts": [
+    {
+      "id": "pasta",
+      "role": "main",
+      "options": ["ingredient/spaghetti", "ingredient/pasta"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "kima", "role": "sauce", "options": ["preparation/kima"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "topping",
+      "options": ["ingredient/kefalotyri", "ingredient/pecorino", "ingredient/parmesan"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/brown-mince", "tier": "drafted"},
+    {"thing": "technique/make-a-kima", "tier": "drafted"},
+    {"thing": "technique/boil-pasta", "tier": "drafted"},
+    {"thing": "technique/grate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

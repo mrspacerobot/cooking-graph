@@ -1,0 +1,62 @@
+{
+  "id": "dish/khao-pad",
+  "tier": "drafted",
+  "names": {"en": "Khao pad", "th": "ข้าวผัด", "th-Latn": "Khao phat"},
+  "aliases": {"en": ["Khao phat", "Khao pad gai", "Thai fried rice", "khao pad kai"]},
+  "is": "Thai fried rice: cold cooked jasmine rice stir-fried with garlic, onion, chicken and egg, seasoned with fish sauce and a little soy sauce, and served with lime, cucumber and spring onion.",
+  "parts": [
+    {
+      "id": "rice",
+      "role": "base",
+      "options": ["ingredient/jasmine-rice", "ingredient/rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken-breast", "ingredient/shrimp"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "fish-sauce",
+      "role": "seasoning",
+      "options": ["ingredient/fish-sauce"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "side", "options": ["ingredient/tomato"], "optional": true, "tier": "drafted"},
+    {
+      "id": "spring-onion",
+      "role": "garnish",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lime", "role": "acid", "options": ["ingredient/lime"], "optional": false, "tier": "drafted"},
+    {"id": "cucumber", "role": "side", "options": ["ingredient/cucumber"], "optional": true, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/stir-fry", "tier": "drafted"},
+    {"thing": "technique/wok-scramble", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

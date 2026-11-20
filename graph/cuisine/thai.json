@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/thai",
+  "tier": "drafted",
+  "names": {"en": "Thai", "fr": "Thaïlandaise"},
+  "aliases": {"en": ["Thai cooking", "Thai cuisine"]},
+  "within": null
+}

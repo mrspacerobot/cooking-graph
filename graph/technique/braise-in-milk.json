@@ -1,0 +1,99 @@
+{
+  "id": "technique/braise-in-milk",
+  "tier": "drafted",
+  "names": {"en": "Braise in milk", "it": "al latte"},
+  "aliases": {"en": ["cook in milk", "pot-roast in milk"]},
+  "does": "Cooks a browned joint slowly in milk in a covered pot, so that the meat turns tender and the milk splits and reduces into golden, nutty curds that become the sauce.",
+  "intro": {
+    "what": "Milk is the braising liquid and splits on purpose.",
+    "why": "The lemon and the long heat split the milk; its sugars brown into a nutty sauce while the gentle heat keeps lean pork moist.",
+    "idea": "Split, then brown",
+    "tier": "drafted"
+  },
+  "how": [
+    "Brown the meat well in butter and pour off most of the fat.",
+    "Add aromatics such as garlic, sage and strips of lemon peel, then warm milk to come about half way up the meat.",
+    "Bring it to a bare simmer, set the lid ajar and cook very gently, turning the meat now and then.",
+    "When the meat is tender and the milk has split into golden curds, lift the meat out and boil the curds down until brown."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The milk splits into small golden-brown curds in a little fat."},
+    {"sense": "smell", "text": "Sweet, nutty caramel and sage."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling the milk hard, so it catches and burns on the bottom.",
+      "fix": "Keep it at a bare simmer and scrape the bottom now and then."
+    },
+    {
+      "mistake": "Thinking the split milk has gone wrong and throwing it away.",
+      "fix": "The curds are the point: brown them and serve them as the sauce."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What happens to the milk as it cooks?",
+      "choices": [
+        "It splits into curds that brown into the sauce.",
+        "It stays smooth and white.",
+        "It is drained off and thrown away."
+      ],
+      "answer": 0,
+      "because": "The curds are the sauce.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How hard should the pot bubble?",
+      "choices": ["A rolling boil.", "A bare simmer.", "Not at all."],
+      "answer": 1,
+      "because": "Gentle heat stops the milk catching.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the finished sauce look like?",
+      "choices": ["Thin and white.", "Golden-brown curds in a little fat.", "Clear and glossy."],
+      "answer": 1,
+      "because": "Brown curds, nutty and sweet.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The milk caught and burned on the bottom. What would you change?",
+      "choices": [
+        "Keep it at a bare simmer and scrape the bottom now and then.",
+        "Use less milk.",
+        "Boil it harder at the start."
+      ],
+      "answer": 0,
+      "because": "Low heat and scraping prevent burning.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/pork-loin", "tier": "drafted"},
+    {"thing": "ingredient/pork-shoulder", "tier": "drafted"},
+    {"thing": "ingredient/veal-roasting-joint", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/milk"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/sear", "why": "The meat is browned before the milk goes in.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/braise",
+      "differs": "The liquid is milk, which splits and browns into curds that become the sauce; the meat is a leaner joint, cooked gently with the lid ajar.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

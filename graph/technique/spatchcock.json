@@ -1,0 +1,97 @@
+{
+  "id": "technique/spatchcock",
+  "tier": "drafted",
+  "names": {"en": "Spatchcock", "it": "aprire a libro"},
+  "aliases": {"en": ["spatchcock chicken", "spatchcock a chicken", "butterfly a chicken"]},
+  "does": "Cuts the backbone out of a whole bird and presses it flat, so that it cooks quickly and evenly and all of its skin faces the heat.",
+  "intro": {
+    "what": "Spatchcocking takes out the backbone of a whole bird and flattens it.",
+    "why": "A flat bird cooks in about half the time, the legs and breast finish together, and every part of the skin can crisp.",
+    "idea": "Flat means even",
+    "tier": "drafted"
+  },
+  "how": [
+    "Set the bird breast side down on a board, with the tail towards you.",
+    "Cut along both sides of the backbone with strong kitchen scissors and lift it out. Keep it for stock.",
+    "Turn the bird over, open it out like a book and press hard on the breastbone with the heel of your hand until it cracks and the bird lies flat.",
+    "Tuck the wing tips behind the breast so that they do not burn."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "The breastbone gives with a dull crack when you press on it."},
+    {"sense": "see", "text": "The bird lies flat, legs splayed out, with the thighs and breast at an even height."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Cutting with a knife and slipping on the bones.",
+      "fix": "Use strong kitchen scissors and cut close to the backbone."
+    },
+    {
+      "mistake": "Leaving the bird arched, so the breast cooks faster than the legs.",
+      "fix": "Press on the breastbone until it lies truly flat."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why is a bird spatchcocked before it is grilled or roasted?",
+      "choices": [
+        "So that it cooks faster and more evenly, with all the skin facing the heat.",
+        "So that it holds a stuffing.",
+        "So that it can be cooked from frozen."
+      ],
+      "answer": 0,
+      "because": "Flat, the bird is an even thickness and its whole skin side meets the heat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Which side of the backbone do you cut?",
+      "choices": [
+        "Only the left side.",
+        "Both sides, so that the backbone comes out.",
+        "Neither: you cut through the breast."
+      ],
+      "answer": 1,
+      "because": "The backbone is cut out along both sides; the breastbone stays and is pressed flat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What tells you the bird has been pressed flat enough?",
+      "choices": ["It still rocks on the board.", "The breastbone cracks and the bird lies flat.", "The skin tears."],
+      "answer": 1,
+      "because": "A dull crack and a level bird show the breastbone has given way.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Your bird browned well at the breast but the thighs lagged behind. What would you change?",
+      "choices": [
+        "Press it flatter before cooking so the legs and breast sit level.",
+        "Cook it breast side down only.",
+        "Cut the breast off first."
+      ],
+      "answer": 0,
+      "because": "A bird left arched cooks unevenly; pressing it flat evens the thickness.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/chicken", "tier": "drafted"},
+    {"thing": "ingredient/guinea-fowl", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/kitchen-scissors"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/butterfly",
+      "differs": "It opens a whole bird, cut along the back with scissors and pressed flat on the breastbone, where butterflying opens a small fish along the belly with a knife.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

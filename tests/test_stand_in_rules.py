@@ -42,8 +42,8 @@ class RatioMeasureTest(unittest.TestCase):
         self.kitchen = SmallKitchen()
         self.addCleanup(self.kitchen.close)
 
-    def found(self, ratio):
-        row = {"thing": "ingredient/butter", "allows": True, "when": ["technique/sweat"], "not_when": [],
+    def found(self, ratio, technique="technique/sweat"):
+        row = {"thing": "ingredient/butter", "allows": True, "when": [technique], "not_when": [],
                "ratio": ratio, "caveat": "It is not a fat.", "tier": "drafted"}
         self.kitchen.change(FLOUR, lambda data: data["stands_in_for"].append(row))
         return {issue.rule for issue in check.check_repository(self.kitchen.root) if issue.path == FLOUR}
@@ -59,3 +59,23 @@ class RatioMeasureTest(unittest.TestCase):
 
     def test_no_ratio_is_valid(self):
         self.assertEqual(set(), self.found(None))
+
+    def test_a_ratio_in_an_unrelated_context_is_ignored(self):
+        ratio = {"stand_in": 2, "original": 1, "by": "volume"}
+        self.assertEqual(set(), self.found(ratio, technique="technique/mince"))
+
+
+class UnsoundOptionTest(unittest.TestCase):
+    """A broken file is reported by its own rule. The rules that read sound things must not stumble over its absence."""
+
+    def setUp(self):
+        self.kitchen = SmallKitchen()
+        self.addCleanup(self.kitchen.close)
+
+    def test_a_part_option_with_a_broken_file_is_reported_and_the_checker_goes_on(self):
+        def two_fats(dish):
+            dish["parts"][1]["options"] = ["ingredient/butter", "ingredient/flour"]
+        self.kitchen.change("graph/dish/buttered-onions.json", two_fats)
+        self.kitchen.change(FLOUR, lambda flour: flour.update(unknown_field=1))
+        rules_broken = {issue.rule for issue in check.check_repository(self.kitchen.root)}
+        self.assertIn("unknown-field", rules_broken)

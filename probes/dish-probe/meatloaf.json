@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/meatloaf",
+  "tier": "drafted",
+  "batch": "home-american-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "american",
+  "written_for": "baking",
+  "dish": "Meatloaf",
+  "also_called": ["meat loaf", "glazed meatloaf"],
+  "techniques": ["mix", "shape", "glaze", "bake"],
+  "ingredients": [
+    "minced beef",
+    "onion",
+    "breadcrumbs",
+    "egg",
+    "milk",
+    "ketchup",
+    "brown sugar",
+    "worcestershire sauce"
+  ]
+}

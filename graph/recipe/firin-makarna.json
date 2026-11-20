@@ -1,0 +1,116 @@
+{
+  "id": "recipe/firin-makarna",
+  "tier": "drafted",
+  "names": {"en": "Firin makarna", "tr": "Fırın makarna"},
+  "aliases": {},
+  "makes": "dish/firin-makarna",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/penne", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/butter", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/flour", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/milk", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "milk"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {
+      "thing": "ingredient/kashkaval-cheese",
+      "amount": {"value": 150, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/white-cheese", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "white-cheese"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/colander", "equipment/saucepan", "equipment/whisk",
+    "equipment/mixing-bowl", "equipment/grater", "equipment/baking-dish", "equipment/oven"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/penne"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Boil the {pasta} in plenty of {water} seasoned with the {salt} until it is still a little firm in the middle, since it softens again in the oven. Drain it well.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the {butter} in a saucepan over medium heat. Stir in the {flour} and cook it, stirring, until it froths and smells of biscuit without taking colour.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/make-a-bechamel",
+      "works_on": ["preparation/roux", "ingredient/milk"],
+      "with": ["ingredient/black-pepper"],
+      "text": "Pour in the {milk} a little at a time, whisking all the while, and simmer gently, whisking, until the sauce is smooth and coats a spoon. Season it with the {black-pepper}.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/bechamel"]
+    },
+    {
+      "technique": "technique/temper",
+      "works_on": ["ingredient/egg"],
+      "with": ["preparation/bechamel"],
+      "text": "Take the sauce off the heat and let it cool a little. Beat the {egg:plural} in a bowl, whisk in a ladle of the sauce, then whisk the mixture back into the pan.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/penne"],
+      "with": ["preparation/bechamel", "ingredient/kashkaval-cheese"],
+      "text": "Fold half of the sauce and half of the {cheese} through the drained {pasta}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/penne", "preparation/bechamel"],
+      "with": ["ingredient/white-cheese", "ingredient/kashkaval-cheese"],
+      "text": "Spread half of the {pasta} in a baking dish, crumble over the {white-cheese} and cover with the rest of the {pasta}. Pour the rest of the sauce over the top and scatter with the rest of the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["preparation/bechamel"],
+      "with": ["ingredient/kashkaval-cheese"],
+      "text": "Bake on a high shelf of a hot oven until the top is deep golden and bubbling at the edges.",
+      "time": {"from": 30, "to": 35, "unit": "minute"},
+      "temperature": {"value": 190, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/penne"],
+      "with": [],
+      "text": "Leave it to settle so that it firms, then cut it into squares.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

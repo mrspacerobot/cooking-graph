@@ -1,0 +1,69 @@
+{
+  "id": "recipe/uova-in-purgatorio",
+  "tier": "drafted",
+  "names": {"en": "Uova in purgatorio", "it": "Uova in purgatorio"},
+  "aliases": {},
+  "makes": "dish/uova-in-purgatorio",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/sliced"], "part": "garlic"},
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/basil", "amount": {"value": 8, "unit": "leaf"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/bread", "amount": {"value": 4, "unit": "slice"}, "forms": [], "part": "bread"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 30, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/wooden-spoon", "equipment/spoon", "equipment/grater"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/olive-oil", "ingredient/garlic", "ingredient/chili-flakes", "ingredient/salt"],
+      "text": "Warm the {oil} in a wide skillet with a lid. Let the {garlic} and the {chilli} sizzle gently until the {garlic} is pale gold, then add the {tomato:plural}, crush them with a spoon, season with the {salt} and simmer until thick.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/poach-in-sauce",
+      "works_on": ["ingredient/egg"],
+      "with": ["preparation/tomato-sauce"],
+      "text": "Make hollows in the sauce with the back of a spoon and crack an {egg} into each. Cover and cook over low heat until the whites are set and the yolks are as soft as you like them.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/bread"],
+      "with": [],
+      "text": "Meanwhile, toast the {bread} until crisp and golden.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/basil", "ingredient/parmesan", "ingredient/bread"],
+      "text": "Tear the {basil} over the top[cheese: and scatter with the {cheese}]. Serve straight away, with the toast for dipping.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "dish-probe/penne-alla-vodka",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Penne alla vodka",
+  "also_called": ["vodka pasta", "pasta alla vodka", "penne with vodka sauce"],
+  "techniques": [
+    "soften onion",
+    "cook down tomato paste",
+    "deglaze with vodka",
+    "add cream",
+    "boil pasta",
+    "finish pasta in its sauce"
+  ],
+  "ingredients": ["penne", "tomato paste", "vodka", "cream", "onion", "butter", "parmesan", "dried chilli"]
+}

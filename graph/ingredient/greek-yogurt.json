@@ -24,7 +24,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/sour-cream",
+      "allows": true,
+      "when": ["technique/plate", "dish/quesadillas-de-pollo"],
+      "not_when": ["technique/fry-the-sauce"],
+      "ratio": null,
+      "caveat": "Serve it cold as a dip or spoon it on when serving. It tastes tangier and has a firmer set.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/greek", "tier": "drafted"}
   ],

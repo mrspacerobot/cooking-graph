@@ -1,0 +1,25 @@
+{
+  "id": "preparation/pudding-batter",
+  "tier": "drafted",
+  "names": {"en": "Pudding batter"},
+  "aliases": {"en": ["batter pudding batter", "egg and milk batter"]},
+  "plurals": {},
+  "uncountable": true,
+  "is": "A thin pouring batter of plain flour, plenty of egg and milk, which puffs high and crisp when it is poured into smoking hot fat in a very hot oven.",
+  "parts": [
+    {"id": "flour", "role": "base", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "enrichment", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/whisk-a-batter", "tier": "drafted"},
+    {"thing": "technique/bake-a-batter-pudding", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"}
+  ],
+  "same_as": []
+}

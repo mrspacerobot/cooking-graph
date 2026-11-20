@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sigara-boregi",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "frying",
+  "dish": "Sigara böreği",
+  "also_called": ["cheese cigar rolls", "turkish cheese rolls", "fried yufka rolls"],
+  "techniques": ["roll", "shallow fry"],
+  "ingredients": ["yufka", "white cheese", "parsley", "egg", "sunflower oil"]
+}

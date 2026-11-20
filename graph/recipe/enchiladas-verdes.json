@@ -1,0 +1,99 @@
+{
+  "id": "recipe/enchiladas-verdes",
+  "tier": "drafted",
+  "names": {"en": "Enchiladas verdes"},
+  "aliases": {},
+  "makes": "dish/enchiladas-verdes",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/cooked-chicken", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/salsa-verde", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "salsa"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/sour-cream", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/corn-tortilla", "amount": {"value": 12, "unit": "piece"}, "forms": [], "part": "tortillas"},
+    {
+      "thing": "ingredient/monterey-jack",
+      "amount": {"value": 150, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/onion", "amount": {"value": 0.5, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 6, "unit": "sprig"}, "forms": [], "part": "coriander"}
+  ],
+  "equipment": [
+    "equipment/baking-dish", "equipment/oven", "equipment/saucepan", "equipment/frying-pan", "equipment/tongs",
+    "equipment/grater", "equipment/chefs-knife", "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/shred-meat",
+      "works_on": ["ingredient/cooked-chicken"],
+      "with": [],
+      "text": "Pull the {chicken} into thin shreds with your fingers or a pair of forks, leaving out any skin and bone.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-the-sauce",
+      "works_on": ["ingredient/salsa-verde"],
+      "with": ["ingredient/oil", "ingredient/sour-cream"],
+      "text": "Heat a spoonful of the {oil} in a saucepan, pour in the {salsa} and let it bubble, stirring, until it darkens slightly. A jar of {salsa} is what most home cooks use. Take it off the heat and stir in half the {cream}.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pan-fry",
+      "works_on": ["ingredient/corn-tortilla"],
+      "with": ["ingredient/oil"],
+      "text": "Heat the rest of the {oil} in a frying pan and pass each {tortillas} through it for a moment on each side, just to soften it. Drain on kitchen paper.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roll",
+      "works_on": [],
+      "with": ["ingredient/corn-tortilla", "ingredient/cooked-chicken", "ingredient/salsa-verde"],
+      "text": "Dip each softened {tortillas} in the warm sauce, lay a line of {chicken} along it, roll it up and set it seam side down in a baking dish.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pour-over",
+      "works_on": ["ingredient/salsa-verde"],
+      "with": [],
+      "text": "Pour the rest of the sauce over the rolls so that they are covered to the ends.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/corn-tortilla"],
+      "with": ["ingredient/monterey-jack"],
+      "text": "Scatter over the {cheese} and bake until the sauce bubbles at the edges and the {cheese} has melted.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/corn-tortilla"],
+      "with": ["ingredient/sour-cream", "ingredient/onion", "ingredient/coriander-leaf"],
+      "text": "Spoon the rest of the {cream} over and scatter with the thinly sliced {onion} and the chopped {coriander}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "dish/kafta-bil-sanieh",
+  "tier": "drafted",
+  "names": {"en": "Kafta bil sanieh", "fr": "Kafta au four", "ar": "كفتة بالصينية", "ar-Latn": "Kafta bil sanieh"},
+  "aliases": {
+    "en": ["kafta and potato traybake", "kofta tray bake", "kafta bil saniyeh", "kafta with potatoes and tomatoes"]
+  },
+  "is": "A Lebanese tray bake of kafta patties, minced meat kneaded with onion, parsley and baharat, laid in a tray between slices of potato and tomato and baked in a thin tomato sauce until the potatoes are soft.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "spice", "role": "seasoning", "options": ["preparation/seven-spice"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "side", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "side", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {"id": "paste", "role": "sauce", "options": ["ingredient/tomato-paste"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/oil"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/knead", "tier": "drafted"},
+    {"thing": "technique/shape", "tier": "drafted"},
+    {"thing": "technique/layer", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

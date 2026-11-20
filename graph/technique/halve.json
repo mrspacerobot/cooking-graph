@@ -1,0 +1,69 @@
+{
+  "id": "technique/halve",
+  "tier": "drafted",
+  "names": {"en": "Halve"},
+  "aliases": {"en": ["cut in half", "halve lengthways", "cut in half lengthways"]},
+  "does": "Cuts a vegetable into equal halves with one clean cut, usually lengthways through the stem, so that each half lies flat and can be roasted, scooped or filled.",
+  "intro": {
+    "what": "One clean cut splits a vegetable into equal halves that lie flat.",
+    "why": "Halves cook evenly and make a boat for a filling.",
+    "idea": "Equal boats",
+    "tier": "drafted"
+  },
+  "how": [
+    "Lay the vegetable on a board and steady it with your flat hand on top.",
+    "Cut down through the middle from end to end with a large sharp knife, through the stem if it has one.",
+    "Lay the halves cut side up. Score the flesh or scoop it out if the dish asks for it."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The halves are the same size and lie flat without rocking."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Sawing at the vegetable, which tears the flesh and gives uneven halves.",
+      "fix": "Use a large, sharp knife and one long cut."
+    },
+    {
+      "mistake": "Cutting off the stem, so that the halves fall apart when filled.",
+      "fix": "Leave the stem on and cut through it."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "method",
+      "question": "Why cut through the stem and leave it on?",
+      "choices": [
+        "It holds each half together as it cooks and is filled.",
+        "It makes the vegetable sweeter.",
+        "It stops it from browning."
+      ],
+      "answer": 0,
+      "because": "The stem keeps the halves whole.",
+      "tier": "drafted"
+    },
+    {
+      "id": "result",
+      "question": "What makes a good half for filling?",
+      "choices": [
+        "A small piece cut from the side.",
+        "A half that lies flat and matches the other.",
+        "A half with the skin peeled off."
+      ],
+      "answer": 1,
+      "because": "Even halves cook in the same time and hold a filling.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/watery-vegetables", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/halved", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/chefs-knife", "equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

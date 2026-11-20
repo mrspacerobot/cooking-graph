@@ -1,0 +1,49 @@
+{
+  "id": "ingredient/wide-rice-noodle",
+  "tier": "drafted",
+  "names": {"en": "Wide rice noodle"},
+  "aliases": {"en": ["sen yai", "ho fun", "flat rice noodle"]},
+  "plurals": {"en": "Wide rice noodles"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/rice-noodles", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A broad, flat ribbon of rice noodle, fresh and soft from the chiller or dried. It chars in spots in a very hot wok and tears if it is tossed too hard.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/wheat",
+        "basis": "Recorded strictly: some fresh sheets are made with wheat starch.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Recorded strictly: some fresh sheets are made with wheat starch.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/rice-noodle",
+      "allows": true,
+      "when": ["dish/pad-thai"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Choose moderately wide flat noodles and soak until they bend. Broad ribbons give a softer, less springy result.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
+}

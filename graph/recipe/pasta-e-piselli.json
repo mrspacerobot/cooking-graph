@@ -1,0 +1,95 @@
+{
+  "id": "recipe/pasta-e-piselli",
+  "tier": "drafted",
+  "names": {"en": "Pasta e piselli", "it": "pasta e piselli"},
+  "aliases": {},
+  "makes": "dish/pasta-e-piselli",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/ditalini", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/peas", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "peas"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "onion"
+    },
+    {"thing": "ingredient/pancetta", "amount": {"value": 80, "unit": "gram"}, "forms": ["form/diced"], "part": "pork"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/vegetable-stock", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "liquid"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 50, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/saucepan", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/grater", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil", "ingredient/pancetta"],
+      "text": "Warm the {oil} in a heavy pot over medium-low heat. Add the {onion} [pork: and the {pork}] and cook gently, stirring, until the {onion} is soft and pale.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/peas"],
+      "with": ["ingredient/vegetable-stock", "ingredient/salt"],
+      "text": "Heat the {liquid} in a saucepan. Stir the {peas:plural} into the pot, frozen ones straight from the bag, with a ladle of the hot {liquid} and a little of the {salt}. Simmer until the {peas:plural} are tender and sweet.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-pasta-in-the-soup",
+      "works_on": ["ingredient/ditalini"],
+      "with": ["ingredient/vegetable-stock"],
+      "text": "Pour in most of the remaining {liquid} and bring to a boil. Add the {pasta} and cook it in the pot, stirring often, until it is tender and the soup has thickened to a loose cream. Add the last of the {liquid} if it gets too thick.",
+      "time": {"from": 9, "to": 11, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/emulsify-off-the-heat",
+      "works_on": ["ingredient/parmesan"],
+      "with": ["ingredient/vegetable-stock"],
+      "text": "Take the pot off the heat and stir in the {cheese} until the soup turns creamy.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/ditalini"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Taste and adjust the {salt}[pepper: , and grind in the {pepper}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/ditalini"],
+      "with": [],
+      "text": "Let it settle briefly, then serve in warm bowls.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

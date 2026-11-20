@@ -1,0 +1,110 @@
+{
+  "id": "recipe/sheet-pan-lemon-garlic-chicken",
+  "tier": "drafted",
+  "names": {"en": "Sheet-pan lemon garlic chicken"},
+  "aliases": {},
+  "makes": "dish/sheet-pan-lemon-garlic-chicken",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/chicken-thigh",
+      "amount": {"value": 8, "unit": "piece"},
+      "forms": ["form/skin-on"],
+      "part": "chicken"
+    },
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 700, "unit": "gram"},
+      "forms": ["form/large-pieces"],
+      "part": "potato"
+    },
+    {"thing": "ingredient/broccoli", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "broccoli"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/oregano", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "chilli"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/baking-sheet", "equipment/mixing-bowl", "equipment/grater", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/tongs"
+  ],
+  "steps": [
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [
+        "ingredient/lemon", "ingredient/garlic", "ingredient/olive-oil", "ingredient/oregano",
+        "ingredient/chili-flakes", "ingredient/salt", "ingredient/black-pepper"
+      ],
+      "text": "Grate the zest of the {lemon} into a bowl and squeeze in half of its juice. Stir in the {garlic}, half of the {oil}, the {oregano}[chilli: , the {chilli}], {salt} and {black-pepper}. Turn the {chicken:plural} in this until coated.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Toss the {potato:plural} on a sheet pan with some of the rest of the {oil} and a little {salt}, and spread them out.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/potato"],
+      "with": [],
+      "text": "Nestle the {chicken:plural} among the {potato:plural}, skin side up, and roast in a hot oven.",
+      "time": {"value": 20, "unit": "minute"},
+      "temperature": {"value": 220, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/broccoli"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Cut the {broccoli} into florets and toss them with the last of the {oil} and a little {salt}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/potato"],
+      "with": ["ingredient/broccoli"],
+      "text": "Scatter the {broccoli} into the gaps and roast until the skin is crisp and golden, the {potato:plural} are tender and the {broccoli} is charred at the tips. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": {"value": 220, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/potato"],
+      "with": ["ingredient/lemon", "ingredient/parsley"],
+      "text": "Squeeze the rest of the {lemon} over everything[parsley: , scatter with the {parsley}] and serve from the pan.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

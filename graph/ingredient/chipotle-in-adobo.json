@@ -1,0 +1,39 @@
+{
+  "id": "ingredient/chipotle-in-adobo",
+  "tier": "drafted",
+  "names": {"en": "Chipotle in adobo", "es": "Chile chipotle en adobo"},
+  "aliases": {"en": ["chipotles in adobo sauce", "chipotle chillies in adobo", "canned chipotles"]},
+  "plurals": {"en": "Chipotles in adobo", "es": "Chiles chipotles en adobo"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Smoked, dried jalapeño chillies canned in a dark, tangy, sweet tomato and vinegar sauce. A little gives smoke and heat to a sauce; the sauce in the tin is used too.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/wheat",
+        "basis": "Recorded strictly: some tins thicken the sauce with wheat flour.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Recorded strictly: some tins thicken the sauce with wheat flour.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ],
+  "same_as": []
+}

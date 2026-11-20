@@ -1,0 +1,31 @@
+{
+  "id": "preparation/toum",
+  "tier": "drafted",
+  "names": {"en": "Toum"},
+  "aliases": {"en": ["garlic sauce", "Lebanese garlic sauce", "toumya", "toum sauce"]},
+  "plurals": {},
+  "uncountable": true,
+  "is": "A thick, fluffy white garlic sauce from Lebanon: raw garlic and salt blended with lemon juice while neutral oil goes in drop by drop, until it holds like a mayonnaise. It holds no egg. Fierce when fresh, it mellows in the fridge.",
+  "parts": [
+    {"id": "garlic", "role": "main", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lemon-juice", "role": "acid", "options": ["ingredient/lemon-juice"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": true, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-toum", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

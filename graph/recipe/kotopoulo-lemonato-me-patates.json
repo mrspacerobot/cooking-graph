@@ -1,0 +1,107 @@
+{
+  "id": "recipe/kotopoulo-lemonato-me-patates",
+  "tier": "drafted",
+  "names": {
+    "en": "Kotopoulo lemonato me patates",
+    "el": "Κοτόπουλο λεμονάτο με πατάτες",
+    "el-Latn": "Kotopoulo lemonato me patates"
+  },
+  "aliases": {},
+  "makes": "dish/kotopoulo-lemonato-me-patates",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/chicken-thigh",
+      "amount": {"value": 8, "unit": "piece"},
+      "forms": ["form/skin-on"],
+      "part": "chicken"
+    },
+    {"thing": "ingredient/potato", "amount": {"value": 1.2, "unit": "kilogram"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/lemon", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/garlic", "amount": {"value": 5, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/oregano", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oregano"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/roasting-tin", "equipment/mixing-bowl", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/vegetable-peeler", "equipment/spoon", "equipment/tongs"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cut-into-chunks",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Peel the {potato:plural} and cut them lengthways into thick wedges.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush",
+      "works_on": ["ingredient/garlic"],
+      "with": [],
+      "text": "Crush the {garlic}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/potato"],
+      "with": [
+        "ingredient/lemon", "ingredient/garlic", "ingredient/oregano", "ingredient/olive-oil", "ingredient/salt",
+        "ingredient/black-pepper"
+      ],
+      "text": "Squeeze the juice of the {lemon:plural} into a large bowl and mix in the {oil}, the {garlic}, the {oregano}, the {salt} and the {pepper}. Turn the {chicken:plural} and the {potato:plural} in it until every piece is coated.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/potato"],
+      "with": ["ingredient/chicken-stock"],
+      "text": "Spread the {potato:plural} in a roasting tin and set the {chicken:plural} on top, skin side up. Pour what is left in the bowl and the {stock} around them and roast.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/baste",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Turn the {potato:plural} over and spoon the juices from the tin over the {chicken:plural}. Add a splash of {stock} if the tin is drying out.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/potato"],
+      "with": [],
+      "text": "Roast on until the skin is crisp and deep gold and the {potato:plural} are soft inside and browned at the edges, with only a little sauce left. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 35, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/potato"],
+      "with": [],
+      "text": "Serve from the tin, with the juices spooned over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

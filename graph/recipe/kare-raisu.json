@@ -1,0 +1,135 @@
+{
+  "id": "recipe/kare-raisu",
+  "tier": "drafted",
+  "names": {"en": "Karē raisu", "ja": "カレーライス", "ja-Latn": "Karē raisu"},
+  "aliases": {},
+  "makes": "dish/kare-raisu",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/carrot", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"], "part": "carrot"},
+    {"thing": "ingredient/potato", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/peeled"], "part": "potato"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/water", "amount": {"value": 800, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/japanese-curry-roux", "amount": {"value": 110, "unit": "gram"}, "forms": [], "part": "roux"},
+    {"thing": "ingredient/short-grain-rice", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/water", "amount": {"value": 480, "unit": "millilitre"}, "forms": [], "part": "rice-water"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/fine-sieve", "equipment/rice-paddle", "equipment/dutch-oven",
+    "equipment/wooden-spoon", "equipment/chefs-knife", "equipment/cutting-board", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/wash-rice",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": [],
+      "text": "Wash the {rice} in a bowl under the cold tap, rubbing it gently and pouring off the cloudy rinse, until it runs much less cloudy. Drain it in a sieve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-rice",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": ["ingredient/water"],
+      "text": "Put the {rice} in a heavy pot with its measured {rice-water}, bring it to a boil, cover, and cook on the lowest heat until the {rice-water} is taken up. A rice cooker does this step by itself.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/rest-and-fluff",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": [],
+      "text": "Leave the pot covered off the heat, then cut through the {rice} with a wet paddle to loosen the grains.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-small-pieces",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Cut the {chicken} into bite-sized pieces.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-chunks",
+      "works_on": ["ingredient/carrot", "ingredient/potato"],
+      "with": [],
+      "text": "Cut the {carrot} into rolling chunks and the {potato:plural} into large chunks, a little bigger than the meat.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Halve the {onion:plural} and slice them into thin half-moons.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-onions-golden",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/oil"],
+      "text": "Heat the {oil} in a heavy pot over a medium heat and fry the {onion:plural}, stirring now and then, until they are soft and golden.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Add the {chicken} and cook, turning, until it has browned in places on the outside.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken-thigh", "ingredient/carrot", "ingredient/potato"],
+      "with": ["ingredient/water"],
+      "text": "Add the {carrot} and the {potato:plural}, pour in the {water} and bring it to a boil. Skim off the foam, then simmer gently, partly covered, until the {potato:plural} are tender to a knife. Check a piece of {chicken} against a trusted guide to doneness.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/melt-in-curry-roux",
+      "works_on": ["ingredient/japanese-curry-roux"],
+      "with": [],
+      "text": "Take the pot off the heat, break in the {roux} and stir until it has melted. Put it back on a low heat and simmer, stirring and scraping the bottom often, until the sauce is thick and glossy.",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/short-grain-rice", "ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Put the {rice} on one side of each plate and ladle the curry beside it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

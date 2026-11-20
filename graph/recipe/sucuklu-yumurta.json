@@ -1,0 +1,47 @@
+{
+  "id": "recipe/sucuklu-yumurta",
+  "tier": "drafted",
+  "names": {"en": "Sucuklu yumurta", "tr": "Sucuklu yumurta"},
+  "aliases": {},
+  "makes": "dish/sucuklu-yumurta",
+  "yields": {"value": 2, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/sucuk", "amount": {"value": 120, "unit": "gram"}, "forms": [], "part": "sucuk"},
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/butter", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/bread", "amount": {"value": 4, "unit": "slice"}, "forms": [], "part": "bread"}
+  ],
+  "equipment": ["equipment/stovetop", "equipment/frying-pan", "equipment/chefs-knife", "equipment/cutting-board"],
+  "steps": [
+    {
+      "technique": "technique/fry-cured-sausage",
+      "works_on": ["ingredient/sucuk"],
+      "with": ["ingredient/butter"],
+      "text": "Peel off the casing of the {sucuk} if it is tough and cut it into thin rounds. Melt the {butter} in a small skillet over medium heat, lay in the rounds and fry, turning once, until the fat runs red and the edges curl.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-eggs",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Crack the {egg:plural} into the skillet between the rounds, cover and cook gently until the whites have set and the yolks are still soft.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/bread"],
+      "text": "Serve at once in the skillet, with the {bread} to dip.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pork-ginger",
+  "tier": "drafted",
+  "batch": "home-japanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "japanese",
+  "written_for": "frying",
+  "dish": "Butaniku no shōgayaki",
+  "also_called": ["shogayaki", "ginger pork"],
+  "techniques": ["marinate", "pan fry", "glaze"],
+  "ingredients": ["thinly sliced pork", "ginger", "soy sauce", "mirin", "sake", "onion", "cabbage", "rice"]
+}

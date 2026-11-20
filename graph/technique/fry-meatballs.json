@@ -1,0 +1,56 @@
+{
+  "id": "technique/fry-meatballs",
+  "tier": "drafted",
+  "names": {"en": "Fry meatballs"},
+  "aliases": {"en": ["brown meatballs", "fry the albondigas", "brown the meatballs"]},
+  "does": "Rolls shaped meatballs lightly in flour and fries them in a shallow layer of oil, turning them, until they are browned on every side. They are then finished in a sauce, where they finish cooking and the flour thickens it a little.",
+  "intro": null,
+  "how": [
+    "Roll each ball in flour and tap off the excess.",
+    "Heat a finger's depth of oil in a frying pan until a little flour sizzles at once.",
+    "Put the balls in with room between them, and leave them until the underside is brown.",
+    "Turn them with spoons or tongs until they are browned all over, then lift them out.",
+    "Fry in batches rather than crowd the pan."
+  ],
+  "cues": [
+    {"sense": "see", "text": "An even brown crust on every side, with the round shape kept."},
+    {"sense": "hear", "text": "A steady sizzle when each ball goes in."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Turning the balls too early, so that the crust tears and they break.",
+      "fix": "Wait until the underside is brown and lets go of the pan."
+    },
+    {
+      "mistake": "Crowding the pan, so that the oil cools and the meatballs go pale and greasy.",
+      "fix": "Fry a few at a time."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs", "equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil", "ingredient/oil"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/flour"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/shape-meatballs",
+      "why": "The balls must be shaped evenly before they are fried.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "The food is round and floured, and it is turned on every side to brown, not once, and is not cooked to the centre in the pan.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

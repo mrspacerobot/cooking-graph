@@ -1,0 +1,47 @@
+{
+  "id": "technique/fry-onions-golden",
+  "tier": "drafted",
+  "names": {"en": "Fry onions until golden"},
+  "aliases": {"en": ["fry onion", "fry the onion", "fry onions", "fry the onions", "fry onions until soft and golden"]},
+  "does": "Cooks sliced or chopped onions in fat over a medium heat until they are soft and lightly golden, so that they are sweet with a little browned depth.",
+  "intro": null,
+  "how": [
+    "Heat a little fat in a wide pan over a medium heat.",
+    "Add the onions with a little salt and stir to coat them.",
+    "Cook, stirring now and then, until they are soft and turn golden at the edges. Lower the heat if they brown faster than they soften."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Soft, slumped onions, golden with a few browner edges."},
+    {"sense": "smell", "text": "A sweet, toasty onion smell, never a sharp or burnt one."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Turning up the heat to save time, so that the onions scorch outside while they are still crisp.",
+      "fix": "Keep the heat medium and give them the time they need."
+    },
+    {"mistake": "Crowding them into a small pan, so that they steam pale.", "fix": "Spread them out in a wide pan."}
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/alliums", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/frying-pan", "equipment/saute-pan", "equipment/dutch-oven"],
+      "tier": "drafted"
+    },
+    {"role": "fat", "options": ["ingredient/butter", "ingredient/oil", "ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/sweat",
+      "differs": "The heat is a little higher and the onions are allowed to take a light golden colour, rather than kept pale.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

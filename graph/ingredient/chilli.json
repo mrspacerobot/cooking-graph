@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/birds-eye-chilli",
+      "allows": true,
+      "when": ["dish/thai-green-curry"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Choose a hot fresh chilli and pound it with the garlic. The heat can vary greatly by variety.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"},
     {"thing": "cuisine/japanese", "tier": "drafted"},

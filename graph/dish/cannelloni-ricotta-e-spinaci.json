@@ -1,0 +1,30 @@
+{
+  "id": "dish/cannelloni-ricotta-e-spinaci",
+  "tier": "drafted",
+  "names": {"en": "Cannelloni ricotta e spinaci", "it": "cannelloni ricotta e spinaci"},
+  "aliases": {"en": ["spinach and ricotta cannelloni", "cannelloni", "ricotta and spinach cannelloni"]},
+  "is": "Pasta tubes filled with ricotta, spinach, Parmesan and nutmeg, laid on a simple tomato sauce, buried in béchamel and baked until golden.",
+  "parts": [
+    {"id": "pasta", "role": "main", "options": ["ingredient/cannelloni"], "optional": false, "tier": "drafted"},
+    {"id": "ricotta", "role": "filling", "options": ["ingredient/ricotta"], "optional": false, "tier": "drafted"},
+    {"id": "spinach", "role": "filling", "options": ["ingredient/spinach"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "filling", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "nutmeg", "role": "seasoning", "options": ["ingredient/nutmeg"], "optional": false, "tier": "drafted"},
+    {"id": "cheese", "role": "topping", "options": ["ingredient/parmesan"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "sauce", "options": ["ingredient/tinned-tomatoes"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/wilt", "tier": "drafted"},
+    {"thing": "technique/bind-a-filling", "tier": "drafted"},
+    {"thing": "technique/make-a-bechamel", "tier": "drafted"},
+    {"thing": "technique/fill-pasta-tubes", "tier": "drafted"},
+    {"thing": "technique/bake-pasta-al-forno", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

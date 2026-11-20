@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/chili-powder",
+  "tier": "drafted",
+  "names": {"en": "Chili powder"},
+  "aliases": {"en": ["chili seasoning", "chili powder blend", "American chili powder"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/ground-spices", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A blend of ground dried chillies with cumin, oregano and garlic, milder than plain ground chilli. Fried briefly in the fat its flavour deepens, and too long a fry turns it bitter.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/celery", "basis": "Recorded strictly: some spice blends hold celery seed.", "certain": false},
+      {"fact": "fact/mustard", "basis": "Recorded strictly: some spice blends hold mustard.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/american", "tier": "drafted"}
+  ],
+  "same_as": []
+}

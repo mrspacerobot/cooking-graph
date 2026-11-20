@@ -2,7 +2,16 @@
   "id": "technique/sweat",
   "tier": "drafted",
   "names": {"en": "Sweat", "fr": "Suer"},
-  "aliases": {"en": ["sweat without colour", "soften without colour", "cook until translucent"]},
+  "aliases": {
+    "en": [
+      "sweat without colour",
+      "soften without colour",
+      "cook until translucent",
+      "soften onion",
+      "sweat onion",
+      "sweat the onion"
+    ]
+  },
   "does": "Softens cut vegetables in a little fat over low heat, so that they give up their water and turn sweet without browning.",
   "intro": {
     "what": "Sweating softens cut vegetables gently in a little fat without browning them.",

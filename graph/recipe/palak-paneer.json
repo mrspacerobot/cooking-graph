@@ -94,7 +94,7 @@
         "ingredient/ginger", "ingredient/garlic", "ingredient/green-chilli", "ingredient/turmeric",
         "ingredient/red-chilli-powder", "ingredient/ghee"
       ],
-      "text": "Add the {onion} and cook until golden. Stir in the {ginger}, the {garlic} and the {green-chilli}, then the {turmeric} and the chilli powder for a moment, then the {tomato}. Cook, mashing it down, until the fat shows at the edge of the paste.",
+      "text": "Add the {onion} and cook until golden. Stir in the {ginger}, the {garlic} and the {green-chilli}, then the {turmeric} and the {chilli-powder} for a moment, then the {tomato}. Cook, mashing it down, until the fat shows at the edge of the paste.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

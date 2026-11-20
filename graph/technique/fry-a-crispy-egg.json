@@ -1,0 +1,50 @@
+{
+  "id": "technique/fry-a-crispy-egg",
+  "tier": "drafted",
+  "names": {"en": "Fry a crispy egg"},
+  "aliases": {"en": ["khai dao", "Thai fried egg", "crispy fried egg"]},
+  "does": "Fries an egg in a good depth of very hot oil, spooning the oil over, so that the white puffs with brown, lacy, crisp edges and the yolk stays runny.",
+  "intro": null,
+  "how": [
+    "Heat a good depth of oil in a wok until it shimmers.",
+    "Crack the egg into a small bowl, then slide it into the oil.",
+    "Spoon hot oil over the white as it puffs and bubbles.",
+    "Lift it out when the edges are brown and crisp and the yolk is still soft, and drain it."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A loud, spitting sizzle."},
+    {"sense": "see", "text": "A puffed white with brown, lacy edges around a glossy yolk."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using too little oil or a cool wok, which gives a flat, pale egg.",
+      "fix": "Use plenty of oil and heat it well first."
+    },
+    {
+      "mistake": "Cracking the egg straight from the shell over hot oil.",
+      "fix": "Crack it into a small bowl first and slide it in, standing back."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/wok", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spoon", "equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/fry-eggs",
+      "differs": "A good depth of very hot oil makes the white puff and crisp at the edges.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ]
+}

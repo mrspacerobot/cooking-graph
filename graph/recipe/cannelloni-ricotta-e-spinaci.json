@@ -1,0 +1,140 @@
+{
+  "id": "recipe/cannelloni-ricotta-e-spinaci",
+  "tier": "drafted",
+  "names": {"en": "Cannelloni ricotta e spinaci", "it": "cannelloni ricotta e spinaci"},
+  "aliases": {},
+  "makes": "dish/cannelloni-ricotta-e-spinaci",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/cannelloni", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/ricotta", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "ricotta"},
+    {"thing": "ingredient/spinach", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "spinach"},
+    {"thing": "ingredient/egg", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "nutmeg"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 80, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/flour", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {
+      "thing": "ingredient/milk",
+      "amount": {"value": 700, "unit": "millilitre"},
+      "forms": ["form/cold"],
+      "part": "bechamel"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "bechamel"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/saute-pan", "equipment/saucepan", "equipment/colander",
+    "equipment/mixing-bowl", "equipment/wooden-spoon", "equipment/whisk", "equipment/baking-dish",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/wilt",
+      "works_on": ["ingredient/spinach"],
+      "with": [],
+      "text": "Wash the {spinach} and put it in a large pan with only the water that clings to it. Cover and cook over medium heat, turning it once, until it has collapsed.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/squeeze",
+      "works_on": ["ingredient/spinach"],
+      "with": [],
+      "text": "Tip the {spinach} into a colander and leave it to cool. Squeeze it hard by the handful until no more liquid runs out, then chop it finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bind-a-filling",
+      "works_on": ["ingredient/ricotta", "ingredient/spinach"],
+      "with": ["ingredient/egg", "ingredient/parmesan", "ingredient/nutmeg", "ingredient/salt"],
+      "text": "In a bowl, mix the {ricotta} with the {spinach}, half of the {cheese}, the {nutmeg} and a little of the {salt}. Taste, then beat in the {egg} until the filling is evenly green and holds its shape.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Simmer the {tomato:plural} with the {oil} and a little of the {salt} in a pan, crushing them with a spoon, until the sauce has thickened slightly but still runs.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the {bechamel.butter} in a saucepan over medium-low heat, add the {bechamel.flour} all at once and stir until smooth. Cook it, stirring, until it froths, keeping it pale.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/make-a-bechamel",
+      "works_on": ["preparation/roux", "ingredient/milk"],
+      "with": ["ingredient/salt"],
+      "text": "Take the pan off the heat and whisk in the cold {bechamel.milk} a little at a time. Bring it back to a simmer, whisking, and cook gently until it coats a spoon but still pours easily. Season with the {bechamel.salt}.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/bechamel"]
+    },
+    {
+      "technique": "technique/fill-pasta-tubes",
+      "works_on": ["ingredient/cannelloni"],
+      "with": ["ingredient/ricotta"],
+      "text": "Spoon the filling into a piping bag, or a strong food bag with a corner snipped off, and pipe it into each of the {pasta} from both ends until full.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/cannelloni", "preparation/bechamel", "ingredient/parmesan"],
+      "with": ["preparation/tomato-sauce"],
+      "text": "Spread the tomato sauce over the bottom of a baking dish and lay the filled {pasta} on it side by side. Pour over the béchamel so that every tube is buried, and scatter with the rest of the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-pasta-al-forno",
+      "works_on": ["ingredient/cannelloni"],
+      "with": ["preparation/bechamel", "ingredient/parmesan"],
+      "text": "Bake in a moderate oven until the top is golden in spots and a knife slides easily through the {pasta}.",
+      "time": {"from": 35, "to": 40, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/cannelloni"],
+      "with": [],
+      "text": "Leave the dish to settle for a while, then serve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

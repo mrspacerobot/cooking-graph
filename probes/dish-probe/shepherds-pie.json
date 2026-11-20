@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/shepherds-pie",
+  "tier": "drafted",
+  "batch": "home-british-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "british",
+  "written_for": "baking",
+  "dish": "Shepherd's pie",
+  "also_called": ["shepherd's pie"],
+  "techniques": ["brown minced meat", "simmer", "mash potato", "bake"],
+  "ingredients": [
+    "minced lamb",
+    "onion",
+    "carrot",
+    "pea",
+    "tomato puree",
+    "stock",
+    "worcestershire sauce",
+    "potato",
+    "butter"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "dish/red-braised-pork-belly",
+  "tier": "drafted",
+  "names": {"en": "Red-braised pork belly", "zh": "红烧肉", "zh-Latn": "Hóngshāo ròu"},
+  "aliases": {"en": ["Hóngshāo ròu", "Hong shao rou", "red braised pork", "red cooked pork", "Chairman Mao's pork"]},
+  "is": "Hóngshāo ròu: cubes of pork belly blanched, browned in caramel, then cooked slowly with Shaoxing wine, soy sauce, ginger and star anise until the fat is soft and the sauce is boiled down to a dark, sticky glaze.",
+  "parts": [
+    {"id": "pork", "role": "main", "options": ["ingredient/pork-belly"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sugar",
+      "role": "sweetener",
+      "options": ["ingredient/sugar", "ingredient/brown-sugar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "wine",
+      "role": "seasoning",
+      "options": ["ingredient/shaoxing-wine", "ingredient/dry-sherry"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dark-soy",
+      "role": "seasoning",
+      "options": ["ingredient/dark-soy-sauce"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {
+      "id": "star-anise",
+      "role": "seasoning",
+      "options": ["ingredient/star-anise"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cinnamon", "role": "seasoning", "options": ["ingredient/cinnamon"], "optional": true, "tier": "drafted"},
+    {
+      "id": "spring-onion",
+      "role": "aromatic",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/blanch", "tier": "drafted"},
+    {"thing": "technique/make-a-caramel", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

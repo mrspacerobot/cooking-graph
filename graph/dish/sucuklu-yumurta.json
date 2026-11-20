@@ -1,0 +1,33 @@
+{
+  "id": "dish/sucuklu-yumurta",
+  "tier": "drafted",
+  "names": {"en": "Sucuklu yumurta", "tr": "Sucuklu yumurta"},
+  "aliases": {"en": ["eggs with sucuk", "Turkish sausage and eggs", "sujuk and eggs"]},
+  "is": "A Turkish breakfast of thin rounds of sucuk fried in a little butter until their spiced fat runs, with eggs cracked between them and cooked until the whites set. It is eaten from the pan with bread.",
+  "parts": [
+    {
+      "id": "sucuk",
+      "role": "main",
+      "options": ["ingredient/sucuk", "ingredient/chorizo"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "bread",
+      "role": "side",
+      "options": ["ingredient/bread", "ingredient/pita-bread"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/fry-cured-sausage", "tier": "drafted"},
+    {"thing": "technique/fry-eggs", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "recipe/toad-in-the-hole",
+  "tier": "drafted",
+  "names": {"en": "Toad in the hole"},
+  "aliases": {},
+  "makes": "dish/toad-in-the-hole",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/flour", "amount": {"value": 140, "unit": "gram"}, "forms": [], "part": "batter"},
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "batter"},
+    {"thing": "ingredient/milk", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "batter"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/pork-sausage", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "sausages"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "gravy"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "gravy"},
+    {"thing": "ingredient/flour", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "gravy"},
+    {"thing": "ingredient/beef-stock", "amount": {"value": 400, "unit": "millilitre"}, "forms": [], "part": "gravy"}
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/stovetop", "equipment/roasting-tin", "equipment/mixing-bowl", "equipment/whisk",
+    "equipment/frying-pan", "equipment/tongs", "equipment/saucepan", "equipment/wooden-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/whisk-a-batter",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/egg", "ingredient/milk", "ingredient/salt"],
+      "text": "Put the {batter.flour} and half of the {salt} in a bowl and make a well in the middle. Break in the {batter.egg:plural} and whisk, drawing in the {batter.flour} little by little, then whisk in the {batter.milk} until the batter is smooth and pours like thin cream. Leave it to stand while the oven heats.",
+      "time": {"value": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pudding-batter"]
+    },
+    {
+      "technique": "technique/fry-sausages",
+      "works_on": ["ingredient/pork-sausage"],
+      "with": ["ingredient/oil"],
+      "text": "Heat a little of the {oil} in a frying pan and brown the {sausages:plural} all over, turning them often. They need only colour here.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-a-batter-pudding",
+      "works_on": ["preparation/pudding-batter"],
+      "with": ["ingredient/pork-sausage", "ingredient/oil"],
+      "text": "Put the rest of the {oil} in a roasting tin and heat it in a very hot oven until it smokes. Working quickly, set the {sausages:plural} in the tin and pour the batter around them; it should sizzle. Bake without opening the door until the batter is puffed, crisp and deep golden. Check the {sausages:plural} against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 35, "unit": "minute"},
+      "temperature": {"value": 220, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-onions-golden",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter"],
+      "text": "[gravy: While it bakes, melt the {gravy.butter} in a pan and fry the {gravy.onion:plural} gently, stirring now and then, until soft and golden.]",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-gravy",
+      "works_on": ["ingredient/beef-stock"],
+      "with": ["ingredient/flour", "ingredient/onion", "ingredient/salt"],
+      "text": "[gravy: Stir the {gravy.flour} into the {gravy.onion:plural} and cook for a moment. Pour in the hot {gravy.beef-stock} a little at a time, stirring, and let it bubble until it thickens to a pouring gravy. Season with the rest of the {salt}.]",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/onion-gravy"]
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pork-sausage"],
+      "with": [],
+      "text": "Cut into portions and serve at once[gravy: , with the gravy poured over].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

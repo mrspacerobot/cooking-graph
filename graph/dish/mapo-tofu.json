@@ -1,0 +1,75 @@
+{
+  "id": "dish/mapo-tofu",
+  "tier": "drafted",
+  "names": {"en": "Mapo tofu", "zh": "麻婆豆腐", "zh-Latn": "Mápó dòufu"},
+  "aliases": {"en": ["Mápó dòufu", "Mapo doufu", "ma po tofu", "mapo bean curd"]},
+  "is": "A Sichuan dish of soft tofu simmered in a red, oily sauce of chilli bean paste and browned minced meat, thickened to a gloss and finished with toasted, ground Sichuan pepper.",
+  "parts": [
+    {
+      "id": "tofu",
+      "role": "main",
+      "options": ["ingredient/tofu", "ingredient/silken-tofu", "ingredient/firm-tofu"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/ground-pork", "ingredient/minced-beef"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "doubanjiang",
+      "role": "seasoning",
+      "options": ["ingredient/doubanjiang"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "chilli", "role": "seasoning", "options": ["ingredient/chili-flakes"], "optional": true, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cornflour",
+      "role": "thickener",
+      "options": ["ingredient/cornstarch"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "sichuan-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/sichuan-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "spring-onion",
+      "role": "garnish",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/brown-mince", "tier": "drafted"},
+    {"thing": "technique/fry-the-paste", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/thicken", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

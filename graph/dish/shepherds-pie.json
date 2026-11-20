@@ -1,0 +1,70 @@
+{
+  "id": "dish/shepherds-pie",
+  "tier": "drafted",
+  "names": {"en": "Shepherd's pie"},
+  "aliases": {"en": ["shepherds pie", "lamb shepherd's pie"]},
+  "is": "Minced lamb simmered with onion, carrot, tomato purée, Worcestershire sauce and stock, under a crust of mashed potato baked golden. Made with beef it is a cottage pie.",
+  "parts": [
+    {"id": "lamb", "role": "main", "options": ["ingredient/ground-lamb"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": true, "tier": "drafted"},
+    {
+      "id": "tomato-paste",
+      "role": "seasoning",
+      "options": ["ingredient/tomato-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": true, "tier": "drafted"},
+    {
+      "id": "worcestershire",
+      "role": "seasoning",
+      "options": ["ingredient/worcestershire-sauce"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/beef-stock", "ingredient/chicken-stock", "ingredient/stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "herbs",
+      "role": "seasoning",
+      "options": ["ingredient/thyme", "ingredient/rosemary"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "peas", "role": "filling", "options": ["ingredient/peas"], "optional": true, "tier": "drafted"},
+    {"id": "mash", "role": "topping", "options": ["preparation/mashed-potato"], "optional": false, "tier": "drafted"},
+    {"id": "cheese", "role": "topping", "options": ["ingredient/cheddar"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/brown-mince", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/mash", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"}
+  ],
+  "same_as": []
+}

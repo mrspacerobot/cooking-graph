@@ -58,7 +58,7 @@
     {
       "thing": "ingredient/ghee",
       "allows": true,
-      "when": ["dish/mloukhieh", "preparation/taqliyeh"],
+      "when": ["preparation/taqliyeh"],
       "not_when": [],
       "ratio": null,
       "caveat": "It is fruity instead of nutty and buttery.",

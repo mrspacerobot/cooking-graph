@@ -1,0 +1,91 @@
+{
+  "id": "recipe/sayadieh",
+  "tier": "drafted",
+  "names": {"en": "Sayadieh", "ar": "صيادية", "ar-Latn": "Sayadieh"},
+  "aliases": {},
+  "makes": "dish/sayadieh",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/white-fish", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "fish"},
+    {"thing": "ingredient/long-grain-rice", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/onion", "amount": {"value": 3, "unit": "piece"}, "forms": ["form/sliced"], "part": "onion"},
+    {
+      "thing": "ingredient/sunflower-oil",
+      "amount": {"value": 100, "unit": "millilitre"},
+      "forms": [],
+      "part": "frying-oil"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 700, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/cumin", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/pine-nut", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "pine-nut"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"}
+  ],
+  "equipment": [
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/stovetop", "equipment/frying-pan",
+    "equipment/saucepan", "equipment/slotted-spoon", "equipment/blender", "equipment/fish-slice"
+  ],
+  "steps": [
+    {
+      "technique": "technique/fry-onions-dark",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Heat the {frying-oil} in a wide pan and fry the thinly sliced {onion:plural}, stirring, until they are a deep, even brown. Lift them out with a slotted spoon and keep the oil. Set a handful aside for the top.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/water", "ingredient/cumin", "ingredient/salt"],
+      "text": "Put the rest of the {onion:plural} in a saucepan with the {water}, half the {cumin} and half the {salt}, and simmer until the liquid is dark amber. Blend it smooth.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-rice-in-onion-broth",
+      "works_on": ["ingredient/long-grain-rice"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Rinse the {rice} until the rinse runs clearer, and drain it. Coat it in a spoonful of the kept {frying-oil} in the saucepan, pour in the hot broth, bring it to a boil, cover and cook on the lowest heat until the broth is taken up. Leave it covered off the heat, then fluff it.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pan-fry",
+      "works_on": ["ingredient/white-fish"],
+      "with": ["ingredient/cumin", "ingredient/salt", "ingredient/olive-oil"],
+      "text": "Cut the {fish} into large pieces, pat them dry and season with the rest of the {cumin} and {salt}. Heat the {oil} in a frying pan and fry them, turning once, until golden and just flaking. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-nuts-golden",
+      "works_on": ["ingredient/pine-nut"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Fry the {pine-nut:plural} in a spoonful of the kept {frying-oil}, stirring, until gold, and lift them out at once.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/long-grain-rice", "ingredient/white-fish"],
+      "with": ["ingredient/onion", "ingredient/pine-nut", "ingredient/lemon"],
+      "text": "Heap the {rice} on a dish, lay the {fish} on top and scatter with the kept fried {onion:plural} and the {pine-nut:plural}. Serve with the {lemon} cut in wedges.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "dish/revithosoupa",
+  "tier": "drafted",
+  "names": {"en": "Revithosoupa", "el": "Ρεβιθόσουπα", "el-Latn": "Revithosoupa"},
+  "aliases": {
+    "en": [
+      "greek chickpea soup",
+      "revithia soupa",
+      "lemony chickpea soup",
+      "revithia",
+      "greek chickpea soup with lemon"
+    ]
+  },
+  "is": "A thick soup of chickpeas simmered slowly with onion, bay, rosemary and plenty of olive oil until creamy, sharpened at the end with lemon juice. The old way starts from dried chickpeas soaked overnight; tinned chickpeas make it a weeknight soup.",
+  "parts": [
+    {
+      "id": "chickpeas",
+      "role": "main",
+      "options": ["ingredient/tinned-chickpeas"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "bay", "role": "aromatic", "options": ["ingredient/bay-leaf"], "optional": false, "tier": "drafted"},
+    {"id": "rosemary", "role": "aromatic", "options": ["ingredient/rosemary"], "optional": true, "tier": "drafted"},
+    {
+      "id": "water",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon", "ingredient/lemon-juice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/crush-some-of-the-beans", "tier": "drafted"},
+    {"thing": "technique/finish-with-lemon", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

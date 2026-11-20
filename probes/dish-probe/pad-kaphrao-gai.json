@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/pad-kaphrao-gai",
+  "tier": "drafted",
+  "batch": "home-thai-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "thai",
+  "written_for": "stir-frying",
+  "dish": "Phat kaphrao kai",
+  "also_called": ["pad kra pao", "thai basil chicken", "pad krapow"],
+  "techniques": ["pound garlic and chilli", "stir fry", "fry egg", "cook rice"],
+  "ingredients": [
+    "minced chicken",
+    "holy basil",
+    "garlic",
+    "bird's eye chilli",
+    "oyster sauce",
+    "fish sauce",
+    "egg",
+    "jasmine rice"
+  ]
+}

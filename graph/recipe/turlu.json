@@ -1,0 +1,110 @@
+{
+  "id": "recipe/turlu",
+  "tier": "drafted",
+  "names": {"en": "Turlu", "tr": "Türlü"},
+  "aliases": {},
+  "makes": "dish/turlu",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/aubergine", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "aubergine"},
+    {"thing": "ingredient/courgette", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "courgette"},
+    {"thing": "ingredient/green-beans", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "green-beans"},
+    {"thing": "ingredient/potato", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/green-pepper", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "green-pepper"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/tomato", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/stewing-beef", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 5, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/water", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/baking-dish", "equipment/oven", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/wooden-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": [
+        "ingredient/aubergine", "ingredient/courgette", "ingredient/potato", "ingredient/green-pepper",
+        "ingredient/onion", "ingredient/tomato", "ingredient/green-beans"
+      ],
+      "with": [],
+      "text": "Cut the {aubergine}, the {courgette:plural} and the {potato:plural} into large cubes, dice the {onion}, the {green-pepper:plural} and the {tomato:plural} smaller, and cut the {green-beans:plural} into short lengths.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/olive-oil"],
+      "text": "[meat: Heat part of the {oil} in a heavy pot over high heat and brown the {meat} in it on every side.]",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/green-pepper"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Soften the {onion} and the {green-pepper:plural} in the {oil} in the pot over medium heat.",
+      "time": {"from": 5, "to": 7, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-tomato-paste",
+      "works_on": ["ingredient/tomato-paste"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Stir in the {paste} and fry it, stirring, until it darkens a shade.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/water"],
+      "text": "[meat: Pour in half of the {water}, cover and cook gently until the {meat} is nearly tender.]",
+      "time": {"from": 45, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/potato", "ingredient/green-beans", "ingredient/aubergine", "ingredient/courgette"],
+      "with": [
+        "ingredient/salt", "ingredient/black-pepper", "ingredient/tomato", "ingredient/water", "ingredient/onion",
+        "ingredient/stewing-beef"
+      ],
+      "text": "Spread the {potato:plural} and the {green-beans:plural} in a baking dish, then the {aubergine} and the {courgette:plural}. Season with the {salt} and the {black-pepper}, spoon over what is in the pot, scatter over the {tomato:plural} and pour in the {water}[meat: that is left].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/aubergine", "ingredient/courgette", "ingredient/potato", "ingredient/green-beans"],
+      "with": [],
+      "text": "Cover the dish and bake until the vegetables are very soft, then uncover it and bake on until the top takes a little colour[meat: . Check the {meat} against a trusted guide to doneness].",
+      "time": {"from": 70, "to": 85, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

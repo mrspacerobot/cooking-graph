@@ -1,0 +1,100 @@
+{
+  "id": "recipe/gyudon",
+  "tier": "drafted",
+  "names": {"en": "Gyūdon", "ja": "牛丼", "ja-Latn": "Gyūdon"},
+  "aliases": {},
+  "makes": "dish/gyudon",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/thin-sliced-beef", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "beef"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/dashi-granules", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "dashi"},
+    {"thing": "ingredient/water", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "dashi"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/mirin", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "mirin"},
+    {"thing": "ingredient/sake", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "sake"},
+    {"thing": "ingredient/sugar", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/short-grain-rice", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/water", "amount": {"value": 480, "unit": "millilitre"}, "forms": [], "part": "rice-water"},
+    {"thing": "ingredient/pickled-ginger", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "ginger"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/fine-sieve", "equipment/rice-paddle", "equipment/frying-pan",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/wash-rice",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": [],
+      "text": "Wash the {rice} in a bowl under the cold tap, rubbing it gently and pouring off the cloudy rinse, until it runs much less cloudy. Drain it in a sieve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-rice",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": ["ingredient/water"],
+      "text": "Put the {rice} in a heavy pot with its measured {rice-water}, bring it to a boil, cover, and cook on the lowest heat until the {rice-water} is taken up. A rice cooker does this step by itself.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/rest-and-fluff",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": [],
+      "text": "Leave the pot covered off the heat, then cut through the {rice} with a wet paddle to loosen the grains.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Halve the {onion} and cut it into thin half-moons.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/onion"],
+      "with": [
+        "ingredient/dashi-granules", "ingredient/water", "ingredient/soy-sauce", "ingredient/mirin", "ingredient/sake",
+        "ingredient/sugar"
+      ],
+      "text": "Stir the {dashi.dashi-granules} into the {dashi.water} in a wide pan with the {soy}, the {mirin}, the {sake} and the {sugar}. Bring it to a boil, add the {onion} and simmer until it is soft and sweet.",
+      "time": {"from": 5, "to": 7, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/thin-sliced-beef"],
+      "with": [],
+      "text": "Add the {beef}, pulling the slices apart in the broth, and simmer, skimming off the grey foam, just until the meat has changed colour all over. Do not cook it on, or it turns tough. Check a slice against a trusted guide to doneness.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/thin-sliced-beef", "ingredient/short-grain-rice"],
+      "with": ["ingredient/onion", "ingredient/pickled-ginger"],
+      "text": "Fill deep bowls with hot {rice}, and ladle the {beef} and {onion} over it with a little of the broth.[ginger: Top each bowl with a little {ginger}.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

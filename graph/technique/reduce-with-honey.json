@@ -1,0 +1,49 @@
+{
+  "id": "technique/reduce-with-honey",
+  "tier": "drafted",
+  "names": {"en": "Reduce with honey"},
+  "aliases": {"en": ["reduce the sauce with honey", "make a honeyed sauce", "massel"]},
+  "does": "Stirs honey and cinnamon into the sauce of a tagine once the meat is tender, and boils it down in the open pot until the onions melt into a dark, sticky, sweet sauce that coats the meat, the way of a Moroccan mʿassel.",
+  "intro": null,
+  "how": [
+    "Lift the meat out first if the pot is crowded, so that the sauce can boil freely.",
+    "Stir in the honey and the cinnamon with any fruit.",
+    "Boil gently with the lid off, stirring and scraping the bottom, as the sauce thickens.",
+    "Stop when the sauce is dark and glossy and holds a line drawn across the pot with a spoon.",
+    "Put the meat back and turn it in the sauce."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A dark, shiny sauce that holds a track drawn with a spoon."},
+    {"sense": "smell", "text": "Warm honey and cinnamon. A bitter burnt sugar smell means it has caught."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling too hard at the end, so that the honey catches on the bottom and burns.",
+      "fix": "Lower the heat as the sauce thickens and scrape the bottom often."
+    },
+    {
+      "mistake": "Adding the honey at the start, so that it burns or turns flat during the long cooking.",
+      "fix": "Add it only once the meat is tender."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "preparation/braising-liquid", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/tagine"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/reduce",
+      "differs": "Honey and cinnamon are stirred in and the sauce is boiled down until sticky and nearly caramel, not only until it is stronger.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

@@ -41,6 +41,15 @@
       "ratio": null,
       "caveat": "The dough is softer and the pasta less firm to the bite.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tarhana",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/cook-tarhana"],
+      "ratio": null,
+      "caveat": "Plain flour can thicken the water but cannot make the sour, savoury broth without the fermented mixture.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

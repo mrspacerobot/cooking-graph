@@ -1,0 +1,89 @@
+{
+  "id": "technique/warm-through",
+  "tier": "drafted",
+  "names": {"en": "Warm through"},
+  "aliases": {"en": ["heat through", "warm in the sauce", "stir in canned tuna"]},
+  "does": "Stirs a food that is already cooked into a hot sauce and leaves it only until it is hot, so that it stays moist and whole instead of cooking further.",
+  "intro": {
+    "what": "An already cooked food is stirred into a hot sauce just long enough to heat it.",
+    "why": "Canned fish and cooked meats are ready to eat. More cooking only dries them or breaks them up.",
+    "idea": "Heat, do not cook",
+    "tier": "drafted"
+  },
+  "how": [
+    "Have the sauce hot and ready.",
+    "Add the cooked food in large pieces and fold it in gently.",
+    "Leave it only until it is hot, then go on at once."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The pieces are hot and moist and still hold their shape."},
+    {"sense": "feel", "text": "A piece pressed with a spoon is warm through and still tender."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Simmering the food in the sauce for a long time, so that it turns dry and stringy.",
+      "fix": "Add it at the end and leave it only until hot."
+    },
+    {"mistake": "Stirring hard, so that it breaks into shreds.", "fix": "Fold it in gently in large pieces."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why is canned tuna only warmed in the sauce?",
+      "choices": [
+        "It is already cooked, and more cooking dries it.",
+        "It needs a long time to cook.",
+        "So that it dissolves."
+      ],
+      "answer": 0,
+      "because": "Cooked food only needs heat, not more cooking.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When does the cooked food go in?",
+      "choices": ["At the very start.", "At the end, into the hot sauce.", "After the dish is served."],
+      "answer": 1,
+      "because": "Going in at the end keeps it moist.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How should the pieces look when ready?",
+      "choices": ["Shredded and dry.", "Cold in the middle.", "Hot, moist and still in pieces."],
+      "answer": 2,
+      "because": "They should be heated but not broken down.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The tuna turned dry and stringy. What would you change next time?",
+      "choices": ["Add it earlier.", "Add it at the end and heat it only briefly.", "Boil it in the sauce."],
+      "answer": 1,
+      "because": "Short heating keeps it moist.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/canned-tuna", "tier": "drafted"},
+    {"thing": "group/cooked-meats", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/frying-pan", "equipment/saute-pan", "equipment/saucepan"],
+      "tier": "drafted"
+    },
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/reheat",
+      "differs": "The food is not brought back to the boil on its own: it is only heated in a sauce that is already hot, for as short a time as possible.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

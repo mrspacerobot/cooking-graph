@@ -23,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/thai-basil",
+      "allows": true,
+      "when": ["dish/thai-green-curry"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Fold it in off the heat. Sweet basil gives a fresh aroma with much less anise.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q65522654", "tier": "sourced"}

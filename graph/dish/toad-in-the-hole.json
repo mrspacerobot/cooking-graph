@@ -1,0 +1,30 @@
+{
+  "id": "dish/toad-in-the-hole",
+  "tier": "drafted",
+  "names": {"en": "Toad in the hole"},
+  "aliases": {"en": ["sausage in batter", "toad-in-the-hole", "sausage toad"]},
+  "is": "Browned pork sausages baked in a tin of smoking hot fat with an egg batter poured around them, which puffs up crisp and golden. It is served with onion gravy.",
+  "parts": [
+    {"id": "sausages", "role": "main", "options": ["ingredient/pork-sausage"], "optional": false, "tier": "drafted"},
+    {"id": "batter", "role": "base", "options": ["preparation/pudding-batter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "gravy", "role": "sauce", "options": ["preparation/onion-gravy"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/whisk-a-batter", "tier": "drafted"},
+    {"thing": "technique/bake-a-batter-pudding", "tier": "drafted"},
+    {"thing": "technique/fry-sausages", "tier": "drafted"},
+    {"thing": "technique/make-gravy", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"}
+  ],
+  "same_as": []
+}

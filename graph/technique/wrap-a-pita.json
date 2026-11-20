@@ -1,0 +1,66 @@
+{
+  "id": "technique/wrap-a-pita",
+  "tier": "drafted",
+  "names": {"en": "Wrap a pita"},
+  "aliases": {"en": ["wrap a gyros", "roll a gyros pita", "wrap a flatbread", "fold a pita wrap"]},
+  "does": "Lays a warm, soft flatbread flat, spreads it with sauce, piles the filling in a line down the middle and folds the sides up into a cone, held tight in a sheet of paper so that it can be eaten in the hand.",
+  "intro": {
+    "what": "A warm flatbread is folded around a cooked filling into a cone and held in paper.",
+    "why": "A tight wrap keeps the filling and sauce in the bread while it is eaten.",
+    "idea": "A cone in paper",
+    "tier": "drafted"
+  },
+  "how": [
+    "Warm the flatbread so that it bends without cracking.",
+    "Lay it on a sheet of baking paper and spread the sauce down the middle.",
+    "Pile the filling in a line along the middle, leaving the edges clear.",
+    "Fold up the bottom, then roll the sides around the filling into a cone and wrap the paper tightly around the lower half."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The bread bends around the filling without cracking."},
+    {"sense": "see", "text": "A firm cone with nothing falling out of the bottom."}
+  ],
+  "mistakes": [
+    {"mistake": "Using cold bread, which cracks as it folds.", "fix": "Warm it just before wrapping."},
+    {
+      "mistake": "Overfilling, so that the bread splits and the sauce runs out.",
+      "fix": "Keep the filling to a narrow line down the middle."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "method",
+      "question": "Why is the bread warmed first?",
+      "choices": ["So that it bends without cracking.", "To make it crisp like a cracker.", "To dry it out."],
+      "answer": 0,
+      "because": "Warm bread is soft and folds easily.",
+      "tier": "drafted"
+    },
+    {
+      "id": "filling",
+      "question": "Where does the filling go?",
+      "choices": ["All over the bread to the edges.", "In a narrow line down the middle.", "Only on one edge."],
+      "answer": 1,
+      "because": "Clear edges let the bread close around it.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/pita-bread", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/parchment-paper"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/wrap",
+      "differs": "The wrapper is a warm, cooked flatbread folded around a cooked filling to be eaten at once, not a raw wrapper cooked after it is closed.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/brasato-al-vino-rosso",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "braising",
+  "dish": "Brasato al vino rosso",
+  "also_called": ["braised beef in red wine", "brasato al barolo", "italian pot roast"],
+  "techniques": ["marinate in wine", "brown meat", "soften soffritto", "braise", "blend sauce", "slice"],
+  "ingredients": [
+    "beef chuck",
+    "red wine",
+    "onion",
+    "carrot",
+    "celery",
+    "garlic",
+    "bay leaf",
+    "rosemary",
+    "beef stock",
+    "olive oil"
+  ]
+}

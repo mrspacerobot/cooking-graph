@@ -1,0 +1,85 @@
+{
+  "id": "technique/fry-tomato-paste",
+  "tier": "drafted",
+  "names": {"en": "Fry tomato paste", "it": "tostare il concentrato"},
+  "aliases": {"en": ["cook down tomato paste", "toast tomato paste", "cook out tomato paste", "fry pepper paste"]},
+  "does": "Fries tomato or red pepper paste in hot fat until it darkens and begins to catch on the pan. This softens the raw edge before the liquid goes in.",
+  "intro": {
+    "what": "Tomato paste is fried in fat until it darkens and begins to stick.",
+    "why": "Frying the paste turns a sharp, tinny taste into a deep sweet one, and what sticks to the pan can be lifted with a splash of liquid.",
+    "idea": "Darken the paste",
+    "tier": "drafted"
+  },
+  "how": [
+    "Have the fat hot and any onion already soft.",
+    "Add the paste and spread it over the bottom of the pan, stirring all the time.",
+    "Cook until it turns a deep brick red and starts to stick, then add the liquid straight away."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The paste turns from bright red to a deep brick red and leaves a coat on the pan."},
+    {"sense": "smell", "text": "The sharp smell turns sweet and toasty."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the liquid as soon as the paste goes in, so that the sauce tastes raw and tinny.",
+      "fix": "Fry the paste in the fat first until it darkens."
+    },
+    {
+      "mistake": "Leaving it too long over high heat, so that it turns black and bitter.",
+      "fix": "Stir all the time and add the liquid as soon as it sticks."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why fry tomato paste before adding liquid?",
+      "choices": ["To make it raw-tasting and sharp.", "To turn its tinny taste sweet and rich.", "To thin it out."],
+      "answer": 1,
+      "because": "Frying in fat changes the taste of the paste.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What do you do while the paste fries?",
+      "choices": ["Stir all the time.", "Leave it alone until it smokes.", "Cover the pan."],
+      "answer": 0,
+      "because": "Stirring keeps it from burning as it darkens.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What colour tells you it is ready?",
+      "choices": ["Bright red.", "Black.", "Deep brick red."],
+      "answer": 2,
+      "because": "Brick red means it has cooked without burning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce tastes tinny and sharp. What would you change next time?",
+      "choices": ["Add the liquid sooner.", "Fry the paste longer in the fat before adding liquid.", "Use less fat."],
+      "answer": 1,
+      "because": "A tinny taste means the paste was not cooked long enough.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/tomato-paste", "tier": "drafted"},
+    {"thing": "ingredient/red-pepper-paste", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/fond", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/frying-pan", "equipment/saute-pan", "equipment/dutch-oven"],
+      "tier": "drafted"
+    },
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

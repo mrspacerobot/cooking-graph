@@ -1,0 +1,64 @@
+{
+  "id": "dish/karniyarik",
+  "tier": "drafted",
+  "names": {"en": "Karniyarik", "tr": "Karnıyarık"},
+  "aliases": {
+    "en": ["split belly aubergines", "Turkish stuffed aubergines with meat", "stuffed eggplant with ground beef"]
+  },
+  "is": "Whole aubergines peeled in stripes, fried soft, slit down the middle and filled with minced beef browned with onion, pepper and tomato, then topped with tomato and green pepper and baked in a little tomato sauce.",
+  "parts": [
+    {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "meat",
+      "role": "filling",
+      "options": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "base", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "green-pepper",
+      "role": "aromatic",
+      "options": ["ingredient/green-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "paste",
+      "role": "seasoning",
+      "options": ["ingredient/tomato-paste", "ingredient/red-pepper-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/peel-in-stripes", "tier": "drafted"},
+    {"thing": "technique/shallow-fry-vegetables", "tier": "drafted"},
+    {"thing": "technique/brown-mince", "tier": "drafted"},
+    {"thing": "technique/stuff", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -2,7 +2,7 @@
   "id": "technique/deglaze",
   "tier": "drafted",
   "names": {"en": "Deglaze", "fr": "Déglacer"},
-  "aliases": {"en": ["deglaze the pan", "deglaze the fond"]},
+  "aliases": {"en": ["deglaze the pan", "deglaze the fond", "deglaze with wine"]},
   "does": "Dissolves the browned layer stuck to a hot pan with a splash of liquid, turning it into the base of a sauce.",
   "intro": {
     "what": "Deglazing loosens the browned layer on a pan with liquid and a spoon.",

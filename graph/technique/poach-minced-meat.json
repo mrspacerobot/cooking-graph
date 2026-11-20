@@ -1,0 +1,45 @@
+{
+  "id": "technique/poach-minced-meat",
+  "tier": "drafted",
+  "names": {"en": "Poach minced meat"},
+  "aliases": {"en": ["cook mince in a little water"]},
+  "does": "Cooks minced meat in a splash of water or stock in a pan, stirring and breaking it up, so that it stays tender and fine instead of browning.",
+  "intro": null,
+  "how": [
+    "Put the mince in a pan with a splash of water or stock.",
+    "Set it over medium heat and stir, breaking the meat into fine crumbs.",
+    "Keep stirring until it has changed colour all through and nearly all the liquid has gone."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Fine, even, pale crumbs with only a little liquid left."},
+    {"sense": "feel", "text": "The crumbs are tender, not hard or dry."}
+  ],
+  "mistakes": [
+    {"mistake": "Leaving the mince in lumps.", "fix": "Break it up as soon as it goes in, and keep stirring."},
+    {
+      "mistake": "Cooking on until it is dry and grainy.",
+      "fix": "Take it off as soon as it is done and a little liquid is left."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/poach",
+      "differs": "Only a splash of liquid is used, and the meat is stirred and broken up until it is nearly gone.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ]
+}

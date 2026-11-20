@@ -246,8 +246,7 @@
               ],
               "through": [
                 {"thing": "preparation/court-bouillon", "tier": "drafted"},
-                {"thing": "dish/cold-poached-salmon", "tier": "drafted"},
-                {"thing": "dish/raie-au-beurre-noisette", "tier": "drafted"}
+                {"thing": "dish/cold-poached-salmon", "tier": "drafted"}
               ]
             },
             {
@@ -284,8 +283,7 @@
               ],
               "through": [
                 {"thing": "preparation/bechamel", "tier": "drafted"},
-                {"thing": "dish/croque-monsieur", "tier": "drafted"},
-                {"thing": "dish/oeufs-a-la-tripe", "tier": "drafted"}
+                {"thing": "dish/croque-monsieur", "tier": "drafted"}
               ]
             },
             {
@@ -405,8 +403,7 @@
                 {"thing": "technique/mount-with-butter", "tier": "drafted"}
               ],
               "through": [
-                {"thing": "preparation/beurre-blanc", "tier": "drafted"},
-                {"thing": "dish/brochet-au-beurre-blanc", "tier": "drafted"}
+                {"thing": "preparation/beurre-blanc", "tier": "drafted"}
               ]
             }
           ]

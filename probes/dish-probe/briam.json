@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/briam",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "roasting",
+  "dish": "Briam",
+  "also_called": ["briami", "greek roasted vegetables", "greek ratatouille traybake"],
+  "techniques": ["slice", "roast", "layer"],
+  "ingredients": [
+    "courgette",
+    "aubergine",
+    "potato",
+    "red onion",
+    "green pepper",
+    "tomato",
+    "garlic",
+    "olive oil",
+    "parsley",
+    "dried oregano"
+  ]
+}

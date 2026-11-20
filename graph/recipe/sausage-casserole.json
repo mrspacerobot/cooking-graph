@@ -1,0 +1,115 @@
+{
+  "id": "recipe/sausage-casserole",
+  "tier": "drafted",
+  "names": {"en": "Sausage casserole"},
+  "aliases": {},
+  "makes": "dish/sausage-casserole",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-sausage", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "sausages"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "onion"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "carrot"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/smoked-paprika", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "paprika"},
+    {
+      "thing": "ingredient/tomato-paste",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "tomato-paste"
+    },
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomatoes"},
+    {"thing": "ingredient/white-beans", "amount": {"value": 240, "unit": "gram"}, "forms": [], "part": "beans"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/thyme", "amount": {"value": 3, "unit": "sprig"}, "forms": [], "part": "herbs"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": ["equipment/stovetop", "equipment/dutch-oven", "equipment/tongs", "equipment/wooden-spoon"],
+  "steps": [
+    {
+      "technique": "technique/fry-sausages",
+      "works_on": ["ingredient/pork-sausage"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Heat the {oil} in a wide casserole over a medium heat and brown the {sausages:plural} all over, turning them often. They need only colour here, as they finish in the sauce. Lift them out onto a plate.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-onions-golden",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Fry the {onion:plural} in the fat left in the pan, stirring now and then, until soft and golden.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/carrot", "ingredient/garlic"],
+      "with": [],
+      "text": "Add the {carrot:plural} and the {garlic} and cook gently until the {carrot:plural} begin to soften.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bloom-ground-spices",
+      "works_on": ["ingredient/smoked-paprika"],
+      "with": ["ingredient/tomato-paste"],
+      "text": "Stir in the {paprika} [tomato-paste: and the {tomato-paste}] and fry for a moment, stirring, until it smells smoky. Do not let it catch.",
+      "time": {"value": 1, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/pork-sausage", "ingredient/white-beans"],
+      "with": [
+        "ingredient/tinned-tomatoes", "ingredient/chicken-stock", "ingredient/thyme", "ingredient/salt",
+        "ingredient/black-pepper"
+      ],
+      "text": "Pour in the {tomatoes} and the {stock}[herbs: , add the {herbs}] and bring to a simmer. Return the {sausages:plural} to the pan with the drained {beans:plural}. Cover and simmer gently, stirring now and then, until the sauce has thickened. Season with {salt} and {black-pepper}. Check the {sausages:plural} against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/pork-sausage"],
+      "with": ["ingredient/parsley"],
+      "text": "[parsley: Scatter with the {parsley}.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

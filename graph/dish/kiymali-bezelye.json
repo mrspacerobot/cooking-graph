@@ -1,0 +1,52 @@
+{
+  "id": "dish/kiymali-bezelye",
+  "tier": "drafted",
+  "names": {"en": "Kiymali bezelye", "tr": "Kıymalı bezelye"},
+  "aliases": {"en": ["peas with minced meat", "Turkish pea stew with mince", "pea and mince stew"]},
+  "is": "A Turkish everyday stew of peas, carrot and potato cooked gently in a little liquid with minced meat browned with onion and tomato paste, until the vegetables are tender and the juices thick. It is eaten with rice or bread.",
+  "parts": [
+    {"id": "peas", "role": "main", "options": ["ingredient/peas"], "optional": false, "tier": "drafted"},
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "main", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "paste",
+      "role": "seasoning",
+      "options": ["ingredient/tomato-paste", "ingredient/red-pepper-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/brown-mince", "tier": "drafted"},
+    {"thing": "technique/fry-tomato-paste", "tier": "drafted"},
+    {"thing": "technique/braise", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

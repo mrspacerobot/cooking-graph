@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/baked-ziti",
+  "tier": "drafted",
+  "batch": "home-american-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "american",
+  "written_for": "baking",
+  "dish": "Baked ziti",
+  "also_called": ["baked ziti", "baked pasta with sausage"],
+  "techniques": ["boil pasta", "brown minced meat", "simmer sauce", "layer", "bake"],
+  "ingredients": ["ziti", "italian sausage", "tomato sauce", "ricotta", "mozzarella", "parmesan", "garlic", "basil"]
+}

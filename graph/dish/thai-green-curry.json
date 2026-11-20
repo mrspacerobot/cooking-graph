@@ -1,0 +1,90 @@
+{
+  "id": "dish/thai-green-curry",
+  "tier": "drafted",
+  "names": {"en": "Thai green curry", "th": "แกงเขียวหวานไก่", "th-Latn": "Kaeng khiao wan kai"},
+  "aliases": {"en": ["Kaeng khiao wan kai", "gaeng keow wan", "green chicken curry", "Thai green chicken curry"]},
+  "is": "Kaeng khiao wan kai: chicken and aubergine simmered in coconut milk with green curry paste fried in the coconut cream, seasoned with fish sauce and palm sugar and finished with Thai basil, served with jasmine rice. Home cooks use a bought paste.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken-breast"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coconut-milk",
+      "role": "liquid",
+      "options": ["ingredient/coconut-milk"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "paste",
+      "role": "seasoning",
+      "options": ["ingredient/green-curry-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "aubergine",
+      "role": "side",
+      "options": ["ingredient/aubergine", "ingredient/green-beans"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "lime-leaf",
+      "role": "seasoning",
+      "options": ["ingredient/makrut-lime-leaf"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {
+      "id": "fish-sauce",
+      "role": "seasoning",
+      "options": ["ingredient/fish-sauce"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "sugar",
+      "role": "sweetener",
+      "options": ["ingredient/palm-sugar", "ingredient/brown-sugar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "basil",
+      "role": "garnish",
+      "options": ["ingredient/thai-basil", "ingredient/basil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "chilli",
+      "role": "garnish",
+      "options": ["ingredient/birds-eye-chilli", "ingredient/chilli"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {
+      "id": "rice",
+      "role": "side",
+      "options": ["ingredient/jasmine-rice", "ingredient/rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "rice-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-the-paste", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/cook-rice", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

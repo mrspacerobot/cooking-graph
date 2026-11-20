@@ -1,0 +1,51 @@
+{
+  "id": "dish/kotopita",
+  "tier": "drafted",
+  "names": {"en": "Kotopita", "el": "Κοτόπιτα", "el-Latn": "Kotopita"},
+  "aliases": {"en": ["greek chicken pie", "chicken filo pie", "kotopitta", "chicken phyllo pie"]},
+  "is": "A pie of crisp filo layers around a filling of poached, shredded chicken, softened onion, a thick white sauce, eggs, feta and a hard grating cheese, baked until golden and cut into squares.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-breast", "ingredient/chicken-thigh"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "thickener", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "feta", "role": "filling", "options": ["ingredient/feta"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "filling",
+      "options": ["ingredient/kefalotyri", "ingredient/parmesan", "ingredient/pecorino"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "pastry", "role": "base", "options": ["ingredient/phyllo"], "optional": false, "tier": "drafted"},
+    {
+      "id": "butter",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/shred-meat", "tier": "drafted"},
+    {"thing": "technique/make-a-roux", "tier": "drafted"},
+    {"thing": "technique/make-a-bechamel", "tier": "drafted"},
+    {"thing": "technique/layer-phyllo", "tier": "drafted"},
+    {"thing": "technique/bake-a-phyllo-pie", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

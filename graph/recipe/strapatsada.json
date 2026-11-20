@@ -1,0 +1,64 @@
+{
+  "id": "recipe/strapatsada",
+  "tier": "drafted",
+  "names": {"en": "Strapatsada", "el": "Στραπατσάδα", "el-Latn": "Strapatsada"},
+  "aliases": {},
+  "makes": "dish/strapatsada",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/tomato", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/feta", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "feta"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/oregano", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/bread", "amount": {"value": 4, "unit": "slice"}, "forms": [], "part": "bread"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/grater", "equipment/mixing-bowl", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/grate-tomato",
+      "works_on": ["ingredient/tomato"],
+      "with": [],
+      "text": "Halve the {tomato:plural} across the middle and grate the cut sides on the large holes of a grater into a bowl. Throw away the skins.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Warm the {oil} in a large skillet, add the grated {tomato} and the {salt}, and let it bubble, stirring now and then, until the juice has cooked away and the pulp is thick and glossy with oil.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/scramble",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/feta", "ingredient/oregano", "ingredient/black-pepper"],
+      "text": "Beat the {egg:plural} lightly and pour them into the skillet. Lower the heat and stir slowly, folding the {egg:plural} through the {tomato}, until they set in soft, moist curds. Crumble in the {feta}, add the {oregano} and the {pepper}, and take the skillet off the heat while the {egg:plural} still look a little wet.",
+      "time": {"from": 2, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-or-lightly-cooked-egg"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/bread"],
+      "text": "Serve at once from the skillet, with the {bread} for the juices.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

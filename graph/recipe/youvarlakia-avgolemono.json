@@ -1,0 +1,100 @@
+{
+  "id": "recipe/youvarlakia-avgolemono",
+  "tier": "drafted",
+  "names": {"en": "Youvarlakia avgolemono", "el": "Γιουβαρλάκια αυγολέμονο", "el-Latn": "Giouvarlakia avgolemono"},
+  "aliases": {},
+  "makes": "dish/youvarlakia-avgolemono",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/minced-beef", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/rice", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/parsley", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/dill", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "dill"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/beef-stock", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/lemon", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/mixing-bowl", "equipment/whisk", "equipment/ladle",
+    "equipment/grater", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/onion", "ingredient/parsley", "ingredient/dill"],
+      "with": [],
+      "text": "Grate or mince the {onion} very finely and chop the {parsley} and the {dill}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [
+        "ingredient/rice", "ingredient/onion", "ingredient/parsley", "ingredient/dill", "ingredient/olive-oil",
+        "ingredient/salt", "ingredient/black-pepper"
+      ],
+      "text": "Put the {meat} in a bowl with the {rice}, the {onion}, the {parsley}, the {dill}, the {oil}, half of the {salt} and the {pepper}. Knead it with your hand until it is evenly mixed and feels sticky.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape-meatballs",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [],
+      "text": "With wet hands, roll the mixture into walnut-sized balls and lay them on a plate.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["ingredient/beef-stock", "ingredient/salt"],
+      "text": "Bring the {stock} to a boil in a wide pot with the rest of the {salt}. Lower the meatballs in one at a time, cover and simmer gently until the {rice} inside them is tender. Check a meatball against a trusted guide to doneness.",
+      "time": {"from": 35, "to": 40, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/broth"]
+    },
+    {
+      "technique": "technique/temper",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/lemon", "preparation/broth"],
+      "text": "Take the pot off the heat. In a bowl, whisk the {egg:plural} until frothy, then whisk in the juice of the {lemon:plural}. Whisking all the time, add ladles of the hot broth one at a time until the mixture is warm.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-avgolemono",
+      "works_on": ["preparation/broth"],
+      "with": ["ingredient/egg", "ingredient/lemon"],
+      "text": "Pour the mixture back into the pot and shake it gently so that it spreads through the soup without breaking the meatballs. Warm it over the lowest heat for a moment, until the soup turns silky, and do not let it boil.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/avgolemono"]
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["preparation/avgolemono"],
+      "text": "Taste, add more {salt} or {pepper} if needed, and serve at once in warm bowls.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

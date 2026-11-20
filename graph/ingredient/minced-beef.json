@@ -2,7 +2,7 @@
   "id": "ingredient/minced-beef",
   "tier": "drafted",
   "names": {"en": "Minced beef", "fr": "Bœuf haché"},
-  "aliases": {"en": ["ground beef"]},
+  "aliases": {"en": ["ground beef", "beef mince"]},
   "plurals": {},
   "uncountable": true,
   "is_a": [],
@@ -60,6 +60,15 @@
       "not_when": [],
       "ratio": null,
       "caveat": "It is leaner and plain, so add salt, fat and spices to match.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/thin-sliced-beef",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/gyudon"],
+      "ratio": null,
+      "caveat": "Mince breaks into granules in the broth. The recipe depends on thin slices that can be separated and ladled over the rice.",
       "tier": "drafted"
     }
   ],

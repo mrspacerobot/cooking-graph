@@ -7,7 +7,9 @@
   "uncountable": true,
   "is_a": [],
   "part_of": [],
-  "groups": [],
+  "groups": [
+    {"thing": "group/ground-spices", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A brick-red powder of dried ground peppers, mild, sweet and earthy. The smoked and hot kinds are bought by name. It burns and turns bitter in hot fat within moments, so it is stirred into oil off the heat, or straight into liquid.",
   "safety": {

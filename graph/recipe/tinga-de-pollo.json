@@ -1,0 +1,121 @@
+{
+  "id": "recipe/tinga-de-pollo",
+  "tier": "drafted",
+  "names": {"en": "Tinga de pollo"},
+  "aliases": {},
+  "makes": "dish/tinga-de-pollo",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-breast", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/water", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/chipotle-in-adobo", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "chipotle"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/oregano", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {"thing": "ingredient/corn-tortilla", "amount": {"value": 12, "unit": "piece"}, "forms": [], "part": "tortillas"},
+    {"thing": "ingredient/sour-cream", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/avocado", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "avocado"}
+  ],
+  "equipment": [
+    "equipment/saucepan", "equipment/saute-pan", "equipment/blender", "equipment/frying-pan", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/wooden-spoon", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Put the {chicken} in a pan, cover with cold {water}, add a little of the {salt} and bring to a bare simmer. Poach gently until the meat is just firm. Check the thickest piece against a trusted guide to doneness. Keep the poaching liquid.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/poaching-liquid"]
+    },
+    {
+      "technique": "technique/shred-meat",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": [],
+      "text": "Let it cool a little, then pull it into shreds with a pair of forks.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Halve the {onion:plural} and slice them thinly.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/oil"],
+      "text": "Heat the {oil} in a wide pan and fry the {onion:plural} over medium heat until soft and golden at the edges.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/garlic"],
+      "with": [
+        "ingredient/tinned-tomatoes", "ingredient/chipotle-in-adobo", "ingredient/oregano",
+        "preparation/poaching-liquid"
+      ],
+      "text": "Blend the {tomato}, the {chipotle:plural} with a spoonful of the sauce from their tin, the {garlic}[oregano: , the {oregano}] and a ladle of the poaching liquid until smooth.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-the-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": [],
+      "text": "Pour the sauce over the {onion:plural}, standing back as it spits, and let it bubble and darken, stirring.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": ["preparation/poaching-liquid", "ingredient/salt"],
+      "text": "Stir in the {chicken}, add a little more poaching liquid if it looks dry, and simmer until the sauce clings to the shreds. Taste and adjust the {salt}.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/griddle",
+      "works_on": ["ingredient/corn-tortilla"],
+      "with": [],
+      "text": "Warm the {tortillas:plural} one at a time in a hot dry pan until soft and spotted.",
+      "time": {"from": 30, "to": 60, "unit": "second"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chicken-breast", "ingredient/corn-tortilla"],
+      "with": ["ingredient/sour-cream", "ingredient/avocado"],
+      "text": "Pile the tinga onto the {tortillas:plural}. [cream: Top with the {cream}.] [avocado: Add slices of {avocado}.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

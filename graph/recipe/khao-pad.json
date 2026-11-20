@@ -1,0 +1,106 @@
+{
+  "id": "recipe/khao-pad",
+  "tier": "drafted",
+  "names": {"en": "Khao pad", "th": "ข้าวผัด", "th-Latn": "Khao phat"},
+  "aliases": {},
+  "makes": "dish/khao-pad",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/jasmine-rice",
+      "amount": {"value": 700, "unit": "gram"},
+      "forms": ["form/cooked-and-cooled"],
+      "part": "rice"
+    },
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/egg", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/fish-sauce", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "fish-sauce"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/sugar", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/tomato", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {"thing": "ingredient/lime", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lime"},
+    {"thing": "ingredient/cucumber", "amount": {"value": 0.5, "unit": "piece"}, "forms": [], "part": "cucumber"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 4, "unit": "sprig"}, "forms": [], "part": "coriander"}
+  ],
+  "equipment": [
+    "equipment/wok", "equipment/spatula", "equipment/chefs-knife", "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cut-into-small-pieces",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Cut the {chicken} into small, thin pieces.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/onion", "ingredient/spring-onion"],
+      "with": [],
+      "text": "Slice the {onion} thinly and cut the {spring-onion:plural} into short lengths.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/garlic"],
+      "with": [],
+      "text": "Finely chop the {garlic}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": [],
+      "with": [
+        "ingredient/oil", "ingredient/garlic", "ingredient/chicken-thigh", "ingredient/onion", "ingredient/tomato"
+      ],
+      "text": "Heat the {oil} in a wok over high heat. Fry the {garlic} for a moment until fragrant, add the {chicken} and the {onion} and stir-fry until the {chicken} is cooked and the {onion} softened[tomato: , adding the {tomato} cut in wedges for the last moment]. Check a piece of {chicken} against a trusted guide to doneness.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/wok-scramble",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Push everything to one side, crack the {egg:plural} into the gap and let them puff, then scramble them into large soft curds.",
+      "time": {"value": 1, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/jasmine-rice", "ingredient/egg"],
+      "with": ["ingredient/fish-sauce", "ingredient/soy-sauce", "ingredient/sugar", "ingredient/spring-onion"],
+      "text": "Add the {rice}, breaking up the clumps, then the {fish-sauce}, the {soy} and the {sugar}. Toss over high heat until every grain is hot, coated and separate, then toss in the {spring-onion:plural}. Day-old {rice} from the fridge fries best.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/jasmine-rice"],
+      "with": ["ingredient/lime", "ingredient/cucumber", "ingredient/coriander-leaf"],
+      "text": "Serve with the {lime} cut in wedges for squeezing over[cucumber: , with slices of {cucumber} on the side][coriander: , scattered with the {coriander}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

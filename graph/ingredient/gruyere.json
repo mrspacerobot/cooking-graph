@@ -47,7 +47,7 @@
     {
       "thing": "ingredient/parmesan",
       "allows": true,
-      "when": ["dish/homard-thermidor", "dish/soupe-de-poisson"],
+      "when": ["dish/soupe-de-poisson"],
       "not_when": [],
       "ratio": null,
       "caveat": "It melts into a golden crust instead of a dry one, and tastes milder and less salty.",

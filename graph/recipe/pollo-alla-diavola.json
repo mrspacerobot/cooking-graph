@@ -1,0 +1,82 @@
+{
+  "id": "recipe/pollo-alla-diavola",
+  "tier": "drafted",
+  "names": {"en": "Pollo alla diavola", "it": "Pollo alla diavola"},
+  "aliases": {},
+  "makes": "dish/pollo-alla-diavola",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "chilli"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/rosemary", "amount": {"value": 2, "unit": "sprig"}, "forms": [], "part": "rosemary"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/kitchen-scissors", "equipment/cutting-board", "equipment/mixing-bowl", "equipment/frying-pan",
+    "equipment/stovetop", "equipment/oven", "equipment/tongs", "equipment/chefs-knife"
+  ],
+  "steps": [
+    {
+      "technique": "technique/spatchcock",
+      "works_on": ["ingredient/chicken"],
+      "with": [],
+      "text": "Set the {chicken} breast side down and cut along both sides of the backbone with kitchen scissors. Turn it over, open it out and press hard on the breastbone until it lies flat.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/marinate",
+      "works_on": ["ingredient/chicken"],
+      "with": [
+        "ingredient/olive-oil", "ingredient/lemon", "ingredient/garlic", "ingredient/chili-flakes",
+        "ingredient/black-pepper", "ingredient/rosemary"
+      ],
+      "text": "Mix the {oil} with the juice of the {lemon}, the {garlic}, the {chilli}, the {black-pepper} and the leaves of the {rosemary}, chopped. Rub it all over the {chicken}, cover and leave it in the fridge.",
+      "time": {"from": 1, "to": 12, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-under-a-weight",
+      "works_on": ["ingredient/chicken"],
+      "with": ["ingredient/salt"],
+      "text": "Heat the oven. Heat a large, heavy ovenproof frying pan over medium heat. Season the {chicken} with the {salt} and lay it skin side down. Set a heavy pan on top, weigh it down with a few tins and cook, without moving it, until the skin is deep golden and crisp.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/chicken"],
+      "with": [],
+      "text": "Take off the weight, turn the {chicken} skin side up and finish it in the hot oven until the thighs are tender. Check the thickest part of a thigh against a trusted guide to doneness.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": {"value": 220, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/rest",
+      "works_on": ["ingredient/chicken"],
+      "with": [],
+      "text": "Let it rest for a few moments, then cut it into pieces with the scissors and pour the pan juices over it.",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

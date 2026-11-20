@@ -1,0 +1,128 @@
+{
+  "id": "recipe/gyros-pita-kotopoulo",
+  "tier": "drafted",
+  "names": {"en": "Gyros pita kotopoulo", "el": "Γύρος πίτα κοτόπουλο", "el-Latn": "Gyros pita kotopoulo"},
+  "aliases": {},
+  "makes": "dish/gyros-pita-kotopoulo",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/greek-yogurt", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "marinade"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/paprika", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "paprika"},
+    {"thing": "ingredient/oregano", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {"thing": "ingredient/pita-bread", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "pita"},
+    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/red-onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/potato", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "chips"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/frying-pan", "equipment/baking-sheet", "equipment/mixing-bowl",
+    "equipment/grater", "equipment/chefs-knife", "equipment/cutting-board", "equipment/tongs", "equipment/pastry-brush",
+    "equipment/parchment-paper"
+  ],
+  "steps": [
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/garlic"],
+      "with": [],
+      "text": "Mince the {garlic}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/marinate-in-yogurt",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [
+        "ingredient/greek-yogurt", "ingredient/garlic", "ingredient/paprika", "ingredient/oregano", "ingredient/lemon",
+        "ingredient/olive-oil", "ingredient/salt", "ingredient/black-pepper"
+      ],
+      "text": "Mix the {marinade} with the {garlic}, the {paprika}, the {oregano}, the juice of the {lemon}, half of the {oil}, the {salt} and the {black-pepper}. Turn the {chicken:plural} in it until every piece is coated, cover and keep it in the fridge.",
+      "time": {"from": 30, "to": 240, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-batons",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "[chips: Cut the {chips:plural} into thin batons and pat them dry.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "[chips: Toss the batons with a little of the {oil} and the {salt}, spread them on a lined sheet and roast, turning once, until golden and crisp.]",
+      "time": {"from": 30, "to": 35, "unit": "minute"},
+      "temperature": {"value": 220, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Heat the rest of the {oil} in a heavy frying pan. Shake the excess marinade off the {chicken:plural} and cook them over a high heat, turning once, until deep brown with charred edges. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/carve",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Let the {chicken:plural} rest on a board for a little while, then slice them into thin strips.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/tomato", "ingredient/red-onion"],
+      "with": [],
+      "text": "Slice the {tomato:plural} into thin wedges and the {onion} into thin rings.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/griddle",
+      "works_on": ["ingredient/pita-bread"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Brush the {pita:plural} with a little {oil} and warm them in a hot dry pan for a moment on each side, until soft and lightly speckled.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/wrap-a-pita",
+      "works_on": ["ingredient/pita-bread"],
+      "with": ["ingredient/chicken-thigh", "ingredient/tomato", "ingredient/red-onion", "ingredient/potato"],
+      "text": "Lay each {pita} on a sheet of baking paper. Pile the {chicken}, the {tomato:plural} and the {onion} down the middle[chips: , tuck in a few of the {chips:plural}], fold the bread into a cone and wrap the paper tightly around it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

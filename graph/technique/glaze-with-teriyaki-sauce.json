@@ -1,0 +1,52 @@
+{
+  "id": "technique/glaze-with-teriyaki-sauce",
+  "tier": "drafted",
+  "names": {"en": "Glaze with teriyaki sauce"},
+  "aliases": {"en": ["teriyaki", "make teriyaki", "glaze in soy and mirin"]},
+  "does": "Pours a mixture of soy sauce, mirin, sake and sugar over meat that has just been fried, and boils it down in the hot pan while turning the meat, until the sauce is thick, glossy and clings to every piece.",
+  "intro": null,
+  "how": [
+    "Mix the sauce before you start, so that it goes in all at once.",
+    "Wipe out most of the fat from the pan first, or the sauce will not cling.",
+    "Pour the sauce over the meat and let it bubble hard.",
+    "Turn the pieces and spoon the sauce over them as it thickens.",
+    "Stop when the bubbles turn large and slow and the sauce coats the meat in a shiny layer."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The bubbles grow large and slow, and the meat is coated in a dark, shiny layer."},
+    {"sense": "smell", "text": "A sweet, caramel smell. A sharp burnt smell means the sugar has gone too far."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the fat in the pan, so that the sauce stays thin and slides off.",
+      "fix": "Wipe the pan with kitchen paper before the sauce goes in."
+    },
+    {
+      "mistake": "Reducing too far, so that the sugar burns and turns bitter.",
+      "fix": "Take the pan off as soon as the sauce coats a spoon."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/thin-sliced-meat", "tier": "drafted"},
+    {"thing": "ingredient/salmon", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/soy-sauce", "ingredient/mirin", "ingredient/sake"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/glaze",
+      "differs": "The meat is fried first and the glaze is a salty-sweet soy and mirin sauce boiled down in the pan, not water, butter and sugar cooked with vegetables.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ]
+}

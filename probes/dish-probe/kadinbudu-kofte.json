@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kadinbudu-kofte",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "frying",
+  "dish": "Kadınbudu köfte",
+  "also_called": ["lady's thigh meatballs", "rice and meat croquette"],
+  "techniques": ["cook rice", "mix minced meat", "shape", "dip in egg", "shallow fry"],
+  "ingredients": ["minced beef", "rice", "onion", "egg", "flour", "kaşar", "sunflower oil", "cumin"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/tomato-and-egg-stir-fry",
+  "tier": "drafted",
+  "batch": "home-chinese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "chinese",
+  "written_for": "stir-frying",
+  "dish": "Xīhóngshì chǎo jīdàn",
+  "also_called": ["tomato and egg stir-fry", "tomato egg", "stir-fried tomato and eggs"],
+  "techniques": ["scramble egg", "stir fry", "simmer briefly"],
+  "ingredients": ["egg", "tomato", "spring onion", "sugar", "salt", "vegetable oil"]
+}

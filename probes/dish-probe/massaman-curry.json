@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/massaman-curry",
+  "tier": "drafted",
+  "batch": "home-thai-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "thai",
+  "written_for": "curry",
+  "dish": "Kaeng matsaman",
+  "also_called": ["massaman curry", "beef massaman"],
+  "techniques": ["fry the paste", "brown", "simmer"],
+  "ingredients": [
+    "massaman curry paste",
+    "coconut milk",
+    "beef",
+    "potato",
+    "onion",
+    "peanut",
+    "tamarind paste",
+    "fish sauce",
+    "palm sugar"
+  ]
+}

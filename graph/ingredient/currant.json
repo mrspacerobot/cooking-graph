@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/raisin",
+      "allows": true,
+      "when": ["dish/mrouzia", "technique/reduce-with-honey"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Dried currants give small sweet bursts. They are smaller and tend to soften into the sauce sooner.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],

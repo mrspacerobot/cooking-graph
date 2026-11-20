@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/youvarlakia-avgolemono",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "soup",
+  "dish": "Youvarlakia avgolemono",
+  "also_called": ["giouvarlakia", "greek meatball soup with egg-lemon", "meatball and rice soup"],
+  "techniques": ["mix minced meat", "shape meatball", "simmer", "temper egg", "thicken with egg and lemon"],
+  "ingredients": ["minced beef", "rice", "onion", "parsley", "dill", "egg", "lemon", "beef stock"]
+}

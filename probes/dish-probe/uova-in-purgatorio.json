@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/uova-in-purgatorio",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "eggs",
+  "dish": "Uova in purgatorio",
+  "also_called": ["eggs in purgatory", "italian eggs in tomato sauce"],
+  "techniques": ["simmer tomato sauce", "poach eggs in sauce", "toast bread"],
+  "ingredients": ["egg", "canned tomato", "garlic", "dried chilli", "olive oil", "basil", "bread", "parmesan"]
+}

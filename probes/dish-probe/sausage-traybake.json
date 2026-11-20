@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sausage-traybake",
+  "tier": "drafted",
+  "batch": "home-british-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "british",
+  "written_for": "roasting",
+  "dish": "Sausage traybake",
+  "also_called": ["sausage tray bake", "sausage and vegetable traybake"],
+  "techniques": ["chop", "toss in oil", "roast"],
+  "ingredients": ["pork sausage", "potato", "red onion", "bell pepper", "olive oil", "rosemary"]
+}

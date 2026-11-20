@@ -1,0 +1,88 @@
+{
+  "id": "technique/turn-with-a-plate",
+  "tier": "drafted",
+  "names": {"en": "Turn with a plate"},
+  "aliases": {"en": ["flip frittata", "flip a frittata", "turn a frittata", "invert onto a plate"]},
+  "does": "Turns a thick, soft cake of egg over by inverting it onto a plate and sliding it back into the pan, so that the second side cooks without the cake breaking.",
+  "intro": {
+    "what": "A plate lets you turn a cake too soft for a spatula.",
+    "why": "The cake rests on the plate while the pan is lifted away, so it turns whole and the soft side meets the heat.",
+    "idea": "One quick move",
+    "tier": "drafted"
+  },
+  "how": [
+    "Loosen the edge and the base with a spatula and shake the pan so the cake slides freely.",
+    "Lay a flat plate, wider than the pan, upside down over it.",
+    "Hold the plate firmly and turn pan and plate over together in one quick move.",
+    "Slide the cake back into the pan, cooked side up, and tuck in the edges."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The cake slides freely when the pan is shaken."},
+    {"sense": "see", "text": "The turned side is golden and the cake is whole."}
+  ],
+  "mistakes": [
+    {"mistake": "Turning slowly or hesitating, so the cake breaks or spills.", "fix": "Turn in one quick, firm move."},
+    {"mistake": "Turning before the cake slides freely, so part sticks to the pan.", "fix": "Loosen it fully first."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why use a plate instead of a spatula?",
+      "choices": [
+        "The cake is too soft and wide to turn on a spatula without breaking.",
+        "To keep it warm.",
+        "To drain the oil."
+      ],
+      "answer": 0,
+      "because": "The plate holds the whole cake.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you turn pan and plate?",
+      "choices": ["Slowly, in stages.", "Together, in one quick, firm move.", "Plate first, then the pan."],
+      "answer": 1,
+      "because": "A quick move keeps it whole.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should you check before turning?",
+      "choices": ["That the cake slides freely in the pan.", "That the top is fully set.", "That the pan is cold."],
+      "answer": 0,
+      "because": "A stuck cake tears.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Half your frittata stayed in the pan. What would you change?",
+      "choices": ["Loosen it fully and shake the pan before turning.", "Turn it more slowly.", "Use a smaller plate."],
+      "answer": 0,
+      "because": "It must slide freely first.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/flat-plate"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/non-stick-pan", "equipment/frying-pan"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/cook-a-frittata",
+      "why": "The base must be set before the cake can be turned.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/flip",
+      "differs": "The food is too soft and wide for a spatula, so it is turned out onto a plate and slid back into the pan.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

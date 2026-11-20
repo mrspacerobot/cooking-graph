@@ -1,0 +1,59 @@
+{
+  "id": "recipe/insalata-caprese",
+  "tier": "drafted",
+  "names": {"en": "Insalata caprese", "it": "Insalata caprese"},
+  "aliases": {},
+  "makes": "dish/insalata-caprese",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/tomato", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/mozzarella", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "mozzarella"},
+    {"thing": "ingredient/basil", "amount": {"value": 12, "unit": "leaf"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": ["equipment/chefs-knife", "equipment/cutting-board"],
+  "steps": [
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/mozzarella"],
+      "text": "Slice the {tomato:plural} and the {mozzarella} into rounds of about the same thickness. Leave the {mozzarella} on a plate for a few moments to drain.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/mozzarella", "ingredient/basil"],
+      "text": "Arrange the slices of {tomato} and {mozzarella} on a wide plate, overlapping and alternating, and tuck a leaf of {basil} between each pair.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Season with the {salt}[pepper: and the {pepper}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drizzle",
+      "works_on": ["ingredient/tomato", "ingredient/mozzarella"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Just before serving, pour a thin thread of {oil} over everything. Eat it at room temperature, with bread for the juices.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

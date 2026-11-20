@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/bruschetta-al-pomodoro",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "assembling",
+  "dish": "Bruschetta al pomodoro",
+  "also_called": ["tomato bruschetta", "bruschetta"],
+  "techniques": ["dice tomato", "toast bread", "rub with garlic", "top bread"],
+  "ingredients": ["bread", "tomato", "garlic", "basil", "olive oil", "salt"]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "recipe/pasta-alla-gricia",
+  "tier": "drafted",
+  "names": {"en": "Pasta alla gricia", "it": "pasta alla gricia"},
+  "aliases": {},
+  "makes": "dish/pasta-alla-gricia",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/rigatoni", "amount": {"value": 360, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {
+      "thing": "ingredient/guanciale",
+      "amount": {"value": 150, "unit": "gram"},
+      "forms": ["form/lardons"],
+      "part": "pork"
+    },
+    {
+      "thing": "ingredient/pecorino-romano",
+      "amount": {"value": 80, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/black-pepper", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/frying-pan", "equipment/wooden-spoon", "equipment/grater",
+    "equipment/colander"
+  ],
+  "steps": [
+    {
+      "technique": "technique/render",
+      "works_on": ["ingredient/guanciale"],
+      "with": [],
+      "text": "Put the {pork} in a cold, wide frying pan over low heat. Let the fat melt out slowly, stirring now and then, until the pieces are golden and crisp at the edges and sit in clear fat. Take the pan off the heat.",
+      "time": {"from": 8, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/rendered-fat"]
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/rigatoni"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Bring a large pot of {water} to a rolling boil and season it with the {salt}, a little less than usual since the {cheese} is salty. Cook the {pasta} until it is just short of tender. Scoop out a mug of the cooking {water} before draining.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss-pasta-with-sauce",
+      "works_on": ["ingredient/rigatoni"],
+      "with": ["ingredient/guanciale", "preparation/rendered-fat", "ingredient/black-pepper", "ingredient/water"],
+      "text": "Lift the {pasta} into the pan with the {pork} and its fat, add a ladle of the cooking {water} and plenty of freshly ground {pepper}, and toss over medium heat until the {pasta} is glossy and just tender.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/emulsify-off-the-heat",
+      "works_on": ["ingredient/pecorino-romano"],
+      "with": ["ingredient/water", "preparation/rendered-fat"],
+      "text": "Take the pan off the heat and let it stop sizzling. Scatter in most of the {cheese} with another splash of the cooking {water} and toss hard until the {cheese} melts into a smooth, creamy sauce that clings. Add more {water} a little at a time if it tightens.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/rigatoni"],
+      "with": ["ingredient/pecorino-romano", "ingredient/black-pepper"],
+      "text": "Serve at once in warm bowls with the rest of the {cheese} and a little more {pepper} over the top.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

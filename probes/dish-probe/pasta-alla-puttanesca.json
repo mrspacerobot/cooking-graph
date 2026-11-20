@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/pasta-alla-puttanesca",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Spaghetti alla puttanesca",
+  "also_called": ["puttanesca", "pasta puttanesca", "spaghetti with olives and capers"],
+  "techniques": ["melt anchovy in olive oil", "simmer tomato sauce", "boil pasta", "finish pasta in its sauce"],
+  "ingredients": [
+    "spaghetti",
+    "canned tomato",
+    "black olive",
+    "caper",
+    "anchovy",
+    "garlic",
+    "dried chilli",
+    "olive oil",
+    "parsley"
+  ]
+}

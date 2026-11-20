@@ -1,0 +1,37 @@
+{
+  "id": "dish/bangers-and-mash",
+  "tier": "drafted",
+  "names": {"en": "Bangers and mash"},
+  "aliases": {"en": ["sausage and mash", "sausages and mash", "bangers and mash with onion gravy"]},
+  "is": "Pork sausages fried slowly until brown all over, served on soft buttery mashed potato with onion gravy poured over.",
+  "parts": [
+    {"id": "sausages", "role": "main", "options": ["ingredient/pork-sausage"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "mash", "role": "topping", "options": ["preparation/mashed-potato"], "optional": false, "tier": "drafted"},
+    {"id": "gravy", "role": "sauce", "options": ["preparation/onion-gravy"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/fry-sausages", "tier": "drafted"},
+    {"thing": "technique/mash", "tier": "drafted"},
+    {"thing": "technique/make-gravy", "tier": "drafted"},
+    {"thing": "technique/fry-onions-golden", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"}
+  ],
+  "same_as": []
+}

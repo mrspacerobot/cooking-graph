@@ -2,7 +2,7 @@
   "id": "technique/wilt",
   "tier": "drafted",
   "names": {"en": "Wilt", "fr": "Tomber"},
-  "aliases": {"en": ["wilt down"]},
+  "aliases": {"en": ["wilt down", "wilt greens"]},
   "does": "Collapses tender leaves with brief heat, so that they turn soft and dark and lose most of their bulk.",
   "intro": {
     "what": "Wilting briefly heats tender leaves until they collapse and lose bulk.",

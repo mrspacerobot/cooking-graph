@@ -1,0 +1,48 @@
+{
+  "id": "dish/spaghetti-alla-puttanesca",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti alla puttanesca", "it": "spaghetti alla puttanesca"},
+  "aliases": {"en": ["puttanesca", "pasta puttanesca", "spaghetti puttanesca", "spaghetti with olives and capers"]},
+  "is": "Spaghetti in a bold, salty tomato sauce of black olives, capers, garlic and chilli, often deepened with anchovies melted into the oil. A Neapolitan dish made from the store cupboard.",
+  "parts": [
+    {"id": "pasta", "role": "main", "options": ["ingredient/spaghetti"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tinned-tomatoes", "ingredient/cherry-tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "olives",
+      "role": "seasoning",
+      "options": ["ingredient/black-olive", "ingredient/olive"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "capers", "role": "seasoning", "options": ["ingredient/capers"], "optional": false, "tier": "drafted"},
+    {"id": "anchovy", "role": "seasoning", "options": ["ingredient/anchovy"], "optional": true, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli",
+      "role": "seasoning",
+      "options": ["ingredient/dried-red-chilli", "ingredient/chili-flakes", "ingredient/chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-garlic-gently", "tier": "drafted"},
+    {"thing": "technique/melt-anchovies", "tier": "drafted"},
+    {"thing": "technique/make-a-tomato-sauce", "tier": "drafted"},
+    {"thing": "technique/toss-pasta-with-sauce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

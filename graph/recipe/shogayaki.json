@@ -1,0 +1,110 @@
+{
+  "id": "recipe/shogayaki",
+  "tier": "drafted",
+  "names": {"en": "Butaniku no shōgayaki", "ja": "生姜焼き", "ja-Latn": "Shōgayaki"},
+  "aliases": {},
+  "makes": "dish/shogayaki",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/thin-sliced-pork", "amount": {"value": 450, "unit": "gram"}, "forms": [], "part": "pork"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/ginger", "amount": {"value": 20, "unit": "gram"}, "forms": ["form/grated"], "part": "ginger"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/mirin", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "mirin"},
+    {"thing": "ingredient/sake", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "sake"},
+    {"thing": "ingredient/sugar", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/cabbage", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "cabbage"},
+    {"thing": "ingredient/short-grain-rice", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/water", "amount": {"value": 480, "unit": "millilitre"}, "forms": [], "part": "rice-water"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/fine-sieve", "equipment/rice-paddle", "equipment/frying-pan",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/grater", "equipment/mixing-bowl", "equipment/tongs"
+  ],
+  "steps": [
+    {
+      "technique": "technique/wash-rice",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": [],
+      "text": "Wash the {rice} in a bowl under the cold tap, rubbing it gently and pouring off the cloudy rinse, until it runs much less cloudy. Drain it in a sieve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-rice",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": ["ingredient/water"],
+      "text": "Put the {rice} in a heavy pot with its measured {rice-water}, bring it to a boil, cover, and cook on the lowest heat until the {rice-water} is taken up. A rice cooker does this step by itself.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/rest-and-fluff",
+      "works_on": ["ingredient/short-grain-rice"],
+      "with": [],
+      "text": "Leave the pot covered off the heat, then cut through the {rice} with a wet paddle to loosen the grains.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shred-cabbage",
+      "works_on": ["ingredient/cabbage"],
+      "with": [],
+      "text": "Shred the {cabbage} as finely as you can, and keep it cold until serving.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grate",
+      "works_on": ["ingredient/ginger"],
+      "with": ["ingredient/soy-sauce", "ingredient/mirin", "ingredient/sake", "ingredient/sugar"],
+      "text": "Peel the {ginger} with the edge of a spoon and grate it finely, keeping its juice. Stir it into the {soy}, the {mirin}, the {sake} and the {sugar}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Halve the {onion} and cut it into thin half-moons.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/glaze-with-teriyaki-sauce",
+      "works_on": ["ingredient/thin-sliced-pork"],
+      "with": [
+        "ingredient/oil", "ingredient/onion", "ingredient/ginger", "ingredient/soy-sauce", "ingredient/mirin",
+        "ingredient/sake", "ingredient/sugar"
+      ],
+      "text": "Heat the {oil} in a wide frying pan over a high heat. Lay in the {pork} slices flat, in batches, and fry them until they colour on both sides, then fry the {onion} until it softens. Put all the {pork} back, pour in the sauce and toss until it boils down to a glossy coat. Check a slice against a trusted guide to doneness.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/thin-sliced-pork", "ingredient/cabbage", "ingredient/short-grain-rice"],
+      "with": ["ingredient/onion"],
+      "text": "Pile the {pork} and {onion} on plates beside a heap of the {cabbage}, spoon the pan juices over the meat, and serve with bowls of {rice}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -2,7 +2,10 @@
   "id": "technique/toss",
   "tier": "drafted",
   "names": {"en": "Toss", "fr": "Mélanger"},
-  "aliases": {"en": ["toss a salad", "dress", "bind", "mix", "combine", "toss in sauce"], "fr": ["fatiguer la salade"]},
+  "aliases": {
+    "en": ["toss a salad", "dress", "bind", "mix", "combine", "toss in sauce", "toss in oil"],
+    "fr": ["fatiguer la salade"]
+  },
   "does": "Coats every piece evenly with a dressing or a sauce by lifting and turning.",
   "intro": {
     "what": "Tossing lifts and turns food so dressing coats the pieces lightly and evenly.",

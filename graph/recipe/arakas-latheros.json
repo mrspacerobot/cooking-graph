@@ -1,0 +1,97 @@
+{
+  "id": "recipe/arakas-latheros",
+  "tier": "drafted",
+  "names": {"en": "Arakas latheros", "el": "Αρακάς λαδερός", "el-Latn": "Arakas laderos"},
+  "aliases": {},
+  "makes": "dish/arakas-latheros",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/peas", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "peas"},
+    {"thing": "ingredient/potato", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/carrot", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "carrot"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/water", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/dill", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "dill"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/feta", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "feta"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/wooden-spoon", "equipment/vegetable-peeler"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the {onion}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-chunks",
+      "works_on": ["ingredient/potato", "ingredient/carrot"],
+      "with": [],
+      "text": "Peel the {potato:plural} and cut them into large chunks. Peel the {carrot:plural} and cut them into thick rounds.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Warm the {oil} in a wide pan over a gentle heat and soften the {onion} in it without letting it colour.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-lathero",
+      "works_on": ["ingredient/potato", "ingredient/carrot"],
+      "with": ["ingredient/tinned-tomatoes", "ingredient/water", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Add the {potato:plural} and the {carrot:plural} and turn them in the {oil} until they shine. Add the {tomato}, the {water}, the {salt} and the {pepper}, cover and cook over a low heat.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-lathero",
+      "works_on": ["ingredient/peas"],
+      "with": ["ingredient/potato", "ingredient/carrot"],
+      "text": "Stir in the {peas:plural} straight from the freezer, cover again and cook gently, shaking the pan now and then, until the {potato:plural} are very soft and the sauce is thick and glossy with oil. Uncover for the last stretch if it is still watery.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/dill"],
+      "with": [],
+      "text": "Chop the {dill}, stir it into the pot, and leave it to rest off the heat for a little while.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/peas"],
+      "with": ["ingredient/feta"],
+      "text": "Serve warm in deep plates[feta: , with a slab of {feta} on the side] and bread for the sauce.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

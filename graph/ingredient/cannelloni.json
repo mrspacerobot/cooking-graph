@@ -1,0 +1,46 @@
+{
+  "id": "ingredient/cannelloni",
+  "tier": "drafted",
+  "names": {"en": "Cannelloni", "it": "cannelloni"},
+  "aliases": {"en": ["cannelloni tubes"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [
+    {"thing": "ingredient/pasta", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Large, wide tubes of dried pasta made to be filled and baked. The kind sold in supermarkets goes into the oven raw and softens in the sauce around it, so it needs plenty of loose sauce.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/egg", "basis": "Dried cannelloni are often made with egg.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/lasagne-sheet",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/lasagne-alla-bolognese"],
+      "ratio": null,
+      "caveat": "The hollow tubes leave gaps instead of forming flat layers under the ragù and béchamel. Cannelloni need a filling and a different arrangement in the dish.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

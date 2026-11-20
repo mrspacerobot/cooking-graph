@@ -1,0 +1,42 @@
+{
+  "id": "recipe/saganaki",
+  "tier": "drafted",
+  "names": {"en": "Saganaki", "el": "Σαγανάκι", "el-Latn": "Saganaki"},
+  "aliases": {},
+  "makes": "dish/saganaki",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/kefalograviera", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "cheese"},
+    {"thing": "ingredient/water", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/flour", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/spatula", "equipment/chefs-knife",
+    "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/fry-cheese",
+      "works_on": ["ingredient/kefalograviera"],
+      "with": ["ingredient/water", "ingredient/flour", "ingredient/olive-oil"],
+      "text": "Cut the {cheese} into thick slabs. Dip each one in the cold {water}, then turn it in the {flour} and shake off the excess. Heat the {oil} in a small heavy pan until very hot and fry the slabs until a deep golden crust forms, then turn them once and fry the other side until the middle is soft.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/finish-with-lemon",
+      "works_on": ["ingredient/kefalograviera"],
+      "with": ["ingredient/lemon", "ingredient/black-pepper"],
+      "text": "Bring the cheese to the table at once, in the pan if you can. Squeeze over the juice of half the {lemon}[pepper: , grind over the {pepper}] and serve the rest of the {lemon} in wedges.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

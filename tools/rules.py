@@ -240,6 +240,15 @@ def names_once_per_kind(things):
 FOOD_KINDS = ("ingredient", "preparation")  # the probes and the recipes look both up as one thing a cook buys or makes
 
 
+def retired_ids_stay_unused(things, retired):
+    """An id is permanent: once retired, nothing may carry it again, or old links and reviews would point at a new thing."""
+    issues = []
+    for thing_id in sorted(set(retired) & set(things)):
+        message = "the id '%s' was retired and may never be used again: see schema/retired.json" % thing_id
+        issues.append(Issue(things[thing_id].path, "id", "retired-id", message))
+    return issues
+
+
 def foods_share_no_name(things, known_pairs=()):
     """An ingredient and a preparation never share a name. A recipe line and a probe word would not know which is meant.
 

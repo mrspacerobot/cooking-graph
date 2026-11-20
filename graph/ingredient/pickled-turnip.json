@@ -1,0 +1,46 @@
+{
+  "id": "ingredient/pickled-turnip",
+  "tier": "drafted",
+  "names": {"en": "Pickled turnip", "fr": "Navet mariné"},
+  "aliases": {"en": ["pink pickled turnip", "kabees lift", "lebanese pink pickles"]},
+  "plurals": {"en": "Pickled turnips", "fr": "Navets marinés"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pickles", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Batons of turnip kept in salted vinegar brine with a slice of beetroot, which dyes them bright pink. Crunchy, sour and salty, they go in a wrap or on a mezze plate.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/sulphites",
+        "basis": "Some pickles are made with wine vinegar or kept with sulphites.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/pickled-cucumber",
+      "allows": true,
+      "when": ["dish/shawarma-djej"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Cut it into thin strips. It will give a firmer crunch and may colour the filling if pickled with beetroot.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

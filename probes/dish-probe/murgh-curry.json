@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/murgh-curry",
+  "tier": "drafted",
+  "batch": "home-indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "curry",
+  "dish": "Murgh curry",
+  "also_called": ["simple chicken curry", "home-style chicken curry", "chicken curry"],
+  "techniques": ["fry the spices", "fry onion", "brown", "simmer"],
+  "ingredients": [
+    "chicken thigh",
+    "onion",
+    "garlic",
+    "ginger",
+    "canned tomato",
+    "garam masala",
+    "turmeric",
+    "cumin",
+    "chilli powder",
+    "coriander"
+  ]
+}

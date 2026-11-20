@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/chili-con-carne",
+  "tier": "drafted",
+  "batch": "home-american-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "american",
+  "written_for": "simmering",
+  "dish": "Chili con carne",
+  "also_called": ["chili", "beef chili", "chilli"],
+  "techniques": ["brown minced meat", "fry the spices", "simmer"],
+  "ingredients": [
+    "minced beef",
+    "onion",
+    "garlic",
+    "canned tomato",
+    "kidney bean",
+    "chili powder",
+    "cumin",
+    "bell pepper"
+  ]
+}

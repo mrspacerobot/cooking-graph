@@ -66,6 +66,15 @@
       "ratio": null,
       "caveat": "Its sea flavour takes over and clashes with the dish.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/dashi-granules",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/gyudon"],
+      "ratio": null,
+      "caveat": "Liquid fish stock is too dilute at the granule amount. Adding enough to taste would change the amount of broth.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

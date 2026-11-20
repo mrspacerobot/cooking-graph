@@ -1,0 +1,37 @@
+{
+  "id": "ingredient/ziti",
+  "tier": "drafted",
+  "names": {"en": "Ziti", "it": "Ziti"},
+  "aliases": {"en": ["ziti pasta", "ziti tagliati"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [
+    {"thing": "ingredient/pasta", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Long, smooth tubes of dried durum wheat pasta, often sold cut short. The wide hollow fills with sauce, and the tubes hold their shape when they are baked after boiling.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/egg", "basis": "Some pasta is made with egg.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"},
+    {"thing": "cuisine/american", "tier": "drafted"}
+  ],
+  "same_as": []
+}

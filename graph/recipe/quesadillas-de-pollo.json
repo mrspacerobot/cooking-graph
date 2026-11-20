@@ -1,0 +1,108 @@
+{
+  "id": "recipe/quesadillas-de-pollo",
+  "tier": "drafted",
+  "names": {"en": "Quesadillas de pollo"},
+  "aliases": {},
+  "makes": "dish/quesadillas-de-pollo",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/cooked-chicken", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/bell-pepper", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/cheddar", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "cheese"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 4, "unit": "sprig"}, "forms": [], "part": "coriander"},
+    {"thing": "ingredient/flour-tortilla", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "tortillas"},
+    {"thing": "ingredient/tomato-salsa", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "salsa"},
+    {"thing": "ingredient/sour-cream", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "sour-cream"}
+  ],
+  "equipment": [
+    "equipment/frying-pan", "equipment/fish-slice", "equipment/grater", "equipment/mixing-bowl",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/shred-meat",
+      "works_on": ["ingredient/cooked-chicken"],
+      "with": [],
+      "text": "Pull the {chicken} into shreds, leaving out any skin and bone.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/bell-pepper", "ingredient/spring-onion"],
+      "with": [],
+      "text": "Seed the {pepper} and slice it into thin strips. Slice the {spring-onion:plural}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/bell-pepper"],
+      "with": ["ingredient/oil"],
+      "text": "Soften the {pepper} in the {oil} in a frying pan over medium heat until just tender. Tip it into a bowl and wipe out the pan.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grate",
+      "works_on": ["ingredient/cheddar"],
+      "with": [],
+      "text": "Grate the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sandwich",
+      "works_on": ["ingredient/flour-tortilla"],
+      "with": [
+        "ingredient/cheddar", "ingredient/cooked-chicken", "ingredient/bell-pepper", "ingredient/spring-onion",
+        "ingredient/coriander-leaf"
+      ],
+      "text": "Scatter half of each {tortillas} with some of the {cheese}, then the {chicken}, the {pepper}, the {spring-onion:plural}[coriander: , a little chopped {coriander}] and a last layer of {cheese}. Fold the bare half over and press down.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/griddle",
+      "works_on": ["ingredient/flour-tortilla"],
+      "with": [],
+      "text": "Heat the dry frying pan over medium heat. Cook the quesadillas one at a time until the underside is golden and spotted and the {cheese} starts to melt.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/flip",
+      "works_on": ["ingredient/flour-tortilla"],
+      "with": [],
+      "text": "Turn each one with a wide spatula and cook the other side until golden and the {cheese} has melted.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/flour-tortilla"],
+      "with": ["ingredient/tomato-salsa", "ingredient/sour-cream"],
+      "text": "Cut into wedges and serve with the {salsa} [sour-cream: and the {sour-cream}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

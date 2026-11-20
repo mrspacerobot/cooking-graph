@@ -1,0 +1,77 @@
+{
+  "id": "dish/murgh-curry",
+  "tier": "drafted",
+  "names": {"en": "Murgh curry"},
+  "aliases": {
+    "en": ["simple chicken curry", "home-style chicken curry", "chicken curry", "murgh ka salan", "murg curry"]
+  },
+  "is": "Everyday home chicken curry: pieces of chicken cooked in a gravy of onion fried golden, ginger, garlic, ground spices and tomato cooked down until the oil separates, then simmered with a little water and finished with garam masala and fresh coriander.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/ghee", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli-powder",
+      "role": "seasoning",
+      "options": ["ingredient/red-chilli-powder", "ingredient/kashmiri-red-chilli-powder"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "ground-coriander",
+      "role": "seasoning",
+      "options": ["ingredient/coriander-seed"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "tomato",
+      "role": "sauce",
+      "options": ["ingredient/tinned-tomatoes", "ingredient/tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "garam-masala",
+      "role": "seasoning",
+      "options": ["preparation/garam-masala"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/fry-onions-golden", "tier": "drafted"},
+    {"thing": "technique/bloom-ground-spices", "tier": "drafted"},
+    {"thing": "technique/fry-masala-base", "tier": "drafted"},
+    {"thing": "technique/cook-in-masala-gravy", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,58 @@
+{
+  "id": "dish/kare-raisu",
+  "tier": "drafted",
+  "names": {"en": "Karē raisu", "ja": "カレーライス", "ja-Latn": "Karē raisu"},
+  "aliases": {"en": ["japanese curry rice", "japanese curry", "curry rice", "kare raisu", "curry raisu"]},
+  "is": "Japanese home curry: chicken, onion, carrot and potato simmered in water until tender, then thickened with bought curry roux blocks into a mild, smooth, slightly sweet sauce and served beside plain rice.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken-breast"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "side", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "side", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "water",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "roux",
+      "role": "thickener",
+      "options": ["ingredient/japanese-curry-roux"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "rice",
+      "role": "base",
+      "options": ["ingredient/short-grain-rice", "ingredient/rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "rice-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/melt-in-curry-roux", "tier": "drafted"},
+    {"thing": "technique/fry-onions-golden", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/cook-rice", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

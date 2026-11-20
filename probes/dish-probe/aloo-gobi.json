@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/aloo-gobi",
+  "tier": "drafted",
+  "batch": "home-indian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "indian",
+  "written_for": "curry",
+  "dish": "Aloo gobi",
+  "also_called": ["potato and cauliflower curry", "aloo gobhi"],
+  "techniques": ["temper spices", "fry", "cover and steam"],
+  "ingredients": [
+    "potato",
+    "cauliflower",
+    "onion",
+    "tomato",
+    "cumin seed",
+    "turmeric",
+    "garam masala",
+    "ginger",
+    "coriander"
+  ]
+}

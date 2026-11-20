@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/insalata-caprese",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "assembling",
+  "dish": "Insalata caprese",
+  "also_called": ["caprese salad", "tomato mozzarella salad", "caprese"],
+  "techniques": ["slice tomato", "slice mozzarella", "arrange", "dress with olive oil"],
+  "ingredients": ["tomato", "mozzarella", "basil", "olive oil", "salt"]
+}

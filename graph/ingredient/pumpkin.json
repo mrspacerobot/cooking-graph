@@ -32,6 +32,15 @@
       "ratio": null,
       "caveat": "It is wetter and less sweet, and its skin should be peeled away.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/butternut-squash",
+      "allows": true,
+      "when": ["dish/risotto-alla-zucca"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Choose a firm-fleshed pumpkin and dice it small. A wetter pumpkin breaks down sooner and loosens the risotto.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

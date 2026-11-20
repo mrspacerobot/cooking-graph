@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pasta-e-piselli",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "soup",
+  "dish": "Pasta e piselli",
+  "also_called": ["pasta with peas", "pasta and peas"],
+  "techniques": ["soften onion", "simmer pea", "cook pasta in the soup", "stir in cheese"],
+  "ingredients": ["ditalini", "frozen pea", "onion", "pancetta", "olive oil", "parmesan", "vegetable stock"]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "recipe/albondigas-en-salsa",
+  "tier": "drafted",
+  "names": {"en": "Albóndigas en salsa"},
+  "aliases": {},
+  "makes": "dish/albondigas-en-salsa",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/ground-pork", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "pork"},
+    {"thing": "ingredient/minced-beef", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "beef"},
+    {"thing": "preparation/breadcrumbs", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "crumbs"},
+    {"thing": "ingredient/egg", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/parsley", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/flour", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 5, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/chopped"], "part": "onion"},
+    {"thing": "ingredient/white-wine", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "water"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon",
+    "equipment/frying-pan", "equipment/saute-pan", "equipment/mixing-bowl", "equipment/tongs", "equipment/blender"
+  ],
+  "steps": [
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/garlic", "ingredient/parsley"],
+      "with": [],
+      "text": "Mince the {garlic} and chop the {parsley} fine.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/ground-pork", "ingredient/minced-beef"],
+      "with": [
+        "preparation/breadcrumbs", "ingredient/egg", "ingredient/garlic", "ingredient/parsley",
+        "ingredient/black-pepper", "ingredient/salt"
+      ],
+      "text": "In a bowl, mix the {pork} and the {beef} with the {crumbs}, the {egg}, most of the {garlic}, the {parsley}, the {pepper} and most of the {salt}. Work it with your hands until it holds together.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape-meatballs",
+      "works_on": ["ingredient/ground-pork", "ingredient/minced-beef"],
+      "with": [],
+      "text": "With wet hands, roll the mixture into walnut-sized balls of the same size.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-meatballs",
+      "works_on": ["ingredient/ground-pork", "ingredient/minced-beef"],
+      "with": ["ingredient/flour", "ingredient/olive-oil"],
+      "text": "Roll the balls in the {flour}. Heat the {oil} in a frying pan and fry them in batches, turning them, until browned all over. Lift them out. They finish cooking in the sauce.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/fry-onions-golden",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/garlic"],
+      "text": "Pour off all but a thin layer of the fat, add the {onion} and the rest of the {garlic} and fry gently until soft and golden.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine"],
+      "text": "Pour in the {wine} and scrape up the browned bits from the pan, then let it bubble until it has nearly gone.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Add the {tomato} and the {water} with the rest of the {salt}, and simmer until it thickens a little. Blend it smooth if you like a fine sauce.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/ground-pork", "ingredient/minced-beef"],
+      "with": [],
+      "text": "Put the meatballs into the sauce, cover and simmer gently, turning them once, until they are tender and the sauce coats them. Cut one open and check it against a trusted guide to doneness.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "ingredient/italian-sausage",
+  "tier": "drafted",
+  "names": {"en": "Italian sausage"},
+  "aliases": {"en": ["Italian-style sausage", "sweet Italian sausage", "hot Italian sausage", "Italian pork sausage"]},
+  "plurals": {"en": "Italian sausages"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Coarse pork in a skin, seasoned with fennel seed and garlic, and with chilli in the hot kind. Out of its skin it browns and breaks into crumbs like mince and seasons a sauce from within.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is made of pork.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is made of pork.", "certain": true},
+      {
+        "fact": "fact/gluten",
+        "basis": "Recorded strictly: some sausages are bound with breadcrumbs.",
+        "certain": false
+      },
+      {"fact": "fact/wheat", "basis": "Recorded strictly: some sausages are bound with breadcrumbs.", "certain": false},
+      {"fact": "fact/milk", "basis": "Recorded strictly: some sausages hold cheese or milk powder.", "certain": false},
+      {"fact": "fact/soy", "basis": "Recorded strictly: some sausages hold soy protein.", "certain": false},
+      {"fact": "fact/alcohol", "basis": "Recorded strictly: some are seasoned with wine.", "certain": false},
+      {
+        "fact": "fact/sulphites",
+        "basis": "Recorded strictly: some fresh sausages are kept with sulphites.",
+        "certain": false
+      },
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Recorded strictly: the skin may be made of collagen from hide.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg", "fact/fish", "fact/lupin",
+      "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/american", "tier": "drafted"}
+  ],
+  "same_as": []
+}

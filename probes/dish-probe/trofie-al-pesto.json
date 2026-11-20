@@ -1,0 +1,18 @@
+{
+  "id": "dish-probe/trofie-al-pesto",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Trofie al pesto genovese",
+  "also_called": ["pasta al pesto", "pesto pasta", "pesto alla genovese"],
+  "techniques": [
+    "pound or blend pesto",
+    "boil pasta",
+    "boil potato and green bean with the pasta",
+    "toss pasta with pesto off the heat"
+  ],
+  "ingredients": ["trofie", "basil", "pine nut", "garlic", "parmesan", "pecorino", "olive oil", "potato", "green bean"]
+}

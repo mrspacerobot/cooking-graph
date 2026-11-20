@@ -1,0 +1,84 @@
+{
+  "id": "technique/cook-lathero",
+  "tier": "drafted",
+  "names": {"en": "Cook lathero", "el": "Λαδερά", "el-Latn": "Ladera"},
+  "aliases": {"en": ["lathera", "ladera", "cook vegetables lathera style", "greek olive oil braise"]},
+  "does": "Cooks vegetables slowly in a generous amount of olive oil with tomato and a little water, often with potatoes in the pot, until they are very soft and the oil, tomato and juices have become a thick red sauce. Fresh herbs go in at the end, and the dish is eaten warm as a main course with bread and feta.",
+  "intro": {
+    "what": "Greek lathera are vegetables cooked gently in plenty of olive oil and tomato until the sauce is mostly oil and juice.",
+    "why": "It turns humble vegetables into a full meal. The oil is meant to stay, so the sauce is rich and is mopped up with bread.",
+    "idea": "Oil, tomato and patience",
+    "tier": "drafted"
+  },
+  "how": [
+    "Soften the onion in the olive oil over a gentle heat without letting it colour.",
+    "Add the firm vegetables first, such as potato and carrot, and turn them in the oil until they shine.",
+    "Add the tomato and only a little water, season with salt, cover and cook over a low heat.",
+    "Add quick-cooking vegetables, such as peas or courgette, when the firm ones are half done.",
+    "Cook until everything is very soft and the sauce has thickened. Uncover for the last stretch if much water is left.",
+    "Stir in the chopped fresh herbs at the end, and let the pot rest off the heat before serving warm."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The sauce is thick and red and a layer of glossy oil sits on top of it."},
+    {"sense": "feel", "text": "A piece of potato gives way under the back of a spoon."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding too much water, which gives a thin soup in place of a thick oily sauce.",
+      "fix": "Add only a little at first. The vegetables and tomato give off water of their own."
+    },
+    {
+      "mistake": "Cutting back on the oil, so that the dish tastes thin and catches on the pan.",
+      "fix": "Use a generous amount. It is part of the sauce."
+    },
+    {
+      "mistake": "Putting soft vegetables in with the potatoes, so that they turn to mush.",
+      "fix": "Add peas and other quick vegetables later."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What should the sauce of a lathero be like at the end?",
+      "choices": ["Thin and watery, like a broth.", "Thick, red and glossy with oil.", "Dry, with no sauce left."],
+      "answer": 1,
+      "because": "The oil, tomato and vegetable juices cook down together into a rich sauce for bread.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When do quick vegetables such as peas go in?",
+      "choices": [
+        "When the firm vegetables are half done.",
+        "At the very start, with the onion.",
+        "After the pot is off the heat."
+      ],
+      "answer": 0,
+      "because": "Added later, they soften without falling apart while the potatoes finish.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/green-vegetables", "tier": "drafted"},
+    {"thing": "group/root-vegetables", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan", "equipment/dutch-oven"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/sweat", "why": "The onion is softened in the oil first.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/braise-in-olive-oil",
+      "differs": "Tomato is part of the sauce, potatoes often go in the pot, no sugar is added, and fresh dill or parsley is stirred in at the end. The dish is eaten warm as a main course with feta and bread, not cold as a side.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kedgeree",
+  "tier": "drafted",
+  "batch": "home-british-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "british",
+  "written_for": "rice",
+  "dish": "Kedgeree",
+  "also_called": ["kedgeree", "smoked haddock kedgeree"],
+  "techniques": ["poach", "fry onion", "cook rice", "boil eggs", "fold"],
+  "ingredients": ["smoked haddock", "basmati rice", "egg", "onion", "curry powder", "butter", "parsley"]
+}

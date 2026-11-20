@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/maiale-al-latte",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "braising",
+  "dish": "Arista di maiale al latte",
+  "also_called": ["pork braised in milk", "maiale al latte", "pork loin in milk"],
+  "techniques": ["brown meat", "braise in milk", "reduce sauce", "slice"],
+  "ingredients": ["pork loin", "milk", "butter", "garlic", "sage", "lemon peel"]
+}

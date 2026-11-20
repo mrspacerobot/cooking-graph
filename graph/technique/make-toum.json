@@ -1,0 +1,53 @@
+{
+  "id": "technique/make-toum",
+  "tier": "drafted",
+  "names": {"en": "Make toum"},
+  "aliases": {"en": ["make garlic sauce", "make Lebanese garlic sauce"]},
+  "does": "Blends peeled garlic with salt and a little lemon juice to a paste, then pours in neutral oil very slowly, a thread at a time, alternating with more lemon juice, until the sauce turns white, thick and fluffy like a mayonnaise without egg.",
+  "intro": null,
+  "how": [
+    "Take the green germ out of the garlic cloves if they have one. It makes the sauce bitter.",
+    "Blend the garlic and salt to a fine paste, scraping down the sides.",
+    "With the machine running, pour in the oil in the thinnest thread.",
+    "Every so often stop the oil and add a spoonful of lemon juice, then go on with the oil.",
+    "Stop when the sauce is white and holds its shape. Keep it in the fridge in a closed jar."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A white, fluffy sauce that holds a peak on a spoon."},
+    {"sense": "feel", "text": "Thick and light, like a mayonnaise."},
+    {"sense": "taste", "text": "Fierce raw garlic, salty and sharp."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring the oil too fast, so that the sauce splits into thin garlic oil.",
+      "fix": "Pour a thread at a time. To rescue a split sauce, start again with a fresh clove of garlic and add the split sauce slowly."
+    },
+    {
+      "mistake": "Making it in a large blender jug with too little garlic, so that the blades cannot reach it.",
+      "fix": "Use a small bowl or a narrow jug, or make a bigger batch."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/garlic", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/toum", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/blender"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/oil"], "tier": "drafted"},
+    {"role": "acid", "options": ["ingredient/lemon-juice"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/make-alioli",
+      "differs": "It is made with neutral oil and lemon juice in a blender, beaten to a white, fluffy sauce, not pounded with olive oil in a mortar.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ]
+}

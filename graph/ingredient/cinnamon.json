@@ -23,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/star-anise",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/red-braised-pork-belly"],
+      "ratio": null,
+      "caveat": "Extra cinnamon adds warmth but does not provide the liquorice aroma of star anise.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q28165", "tier": "sourced"}

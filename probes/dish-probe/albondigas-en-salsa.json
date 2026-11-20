@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/albondigas-en-salsa",
+  "tier": "drafted",
+  "batch": "home-spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "simmering",
+  "dish": "Albóndigas en salsa",
+  "also_called": ["spanish meatballs", "meatballs in tomato sauce", "albondigas"],
+  "techniques": ["mix", "shape", "brown", "simmer"],
+  "ingredients": [
+    "minced pork",
+    "minced beef",
+    "breadcrumbs",
+    "egg",
+    "garlic",
+    "onion",
+    "canned tomato",
+    "white wine",
+    "parsley"
+  ]
+}

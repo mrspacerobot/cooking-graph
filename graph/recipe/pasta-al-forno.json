@@ -1,0 +1,123 @@
+{
+  "id": "recipe/pasta-al-forno",
+  "tier": "drafted",
+  "names": {"en": "Pasta al forno", "it": "pasta al forno"},
+  "aliases": {},
+  "makes": "dish/pasta-al-forno",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/rigatoni", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/minced-beef", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "onion"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/mozzarella",
+      "amount": {"value": 250, "unit": "gram"},
+      "forms": ["form/diced"],
+      "part": "mozzarella"
+    },
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 60, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/basil", "amount": {"value": 8, "unit": "leaf"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/stockpot", "equipment/saute-pan", "equipment/wooden-spoon",
+    "equipment/colander", "equipment/mixing-bowl", "equipment/baking-dish", "equipment/chefs-knife",
+    "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Warm the {oil} in a wide pan over medium-low heat and soften the {onion} in it, stirring, without letting it colour.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["ingredient/onion"],
+      "text": "Raise the heat, add the {meat} and fry it, breaking it up with the spoon, until it has lost its raw colour and browns in places.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/minced-beef", "ingredient/salt", "ingredient/basil"],
+      "text": "Add the {tomato:plural}, crushing them, with a little of the {salt} [basil: and half of the {basil}]. Simmer gently, half covered and stirring now and then, until the sauce is rich but still loose. Check the meat against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 40, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/rigatoni"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Bring a large pot of {water} to a rolling boil and season it well with the {salt}. Cook the {pasta} for well short of the time on the packet, so that it is still quite firm: it will finish softening in the oven. Drain it.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/rigatoni"],
+      "with": ["preparation/tomato-sauce", "ingredient/parmesan"],
+      "text": "In a large bowl, mix the {pasta} with most of the sauce and half of the {cheese} until every piece is coated.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/rigatoni"],
+      "with": ["ingredient/mozzarella", "ingredient/parmesan", "preparation/tomato-sauce"],
+      "text": "Spread half of the {pasta} in a baking dish and scatter over half of the {mozzarella}. Cover with the rest of the {pasta}, spoon over the remaining sauce so that no piece is left bare, then scatter with the rest of the {mozzarella} and the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-pasta-al-forno",
+      "works_on": ["ingredient/rigatoni"],
+      "with": ["ingredient/mozzarella", "ingredient/parmesan"],
+      "text": "Bake in a hot oven until the sauce bubbles at the edges and the top is golden in places.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/rigatoni"],
+      "with": ["ingredient/basil"],
+      "text": "Leave it to settle for a while so that it holds together when cut, then serve in squares[basil: , with the rest of the {basil} torn over].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "ingredient/potato-gnocchi",
+  "tier": "drafted",
+  "names": {"en": "Potato gnocchi", "it": "gnocchi di patate"},
+  "aliases": {"en": ["gnocchi", "fresh gnocchi"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/starches", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Small soft dumplings of potato bound with flour, bought fresh in packets. They cook in a couple of moments in boiling water, rising to the top when they are done, and turn gluey if they boil on.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Bound with wheat flour.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Bound with wheat flour.", "certain": true},
+      {"fact": "fact/egg", "basis": "Some are bound with egg.", "certain": false},
+      {"fact": "fact/milk", "basis": "Recorded strictly: some bought gnocchi hold milk or cheese.", "certain": false},
+      {
+        "fact": "fact/sulphites",
+        "basis": "Bought gnocchi made from dried potato may be kept with sulphites.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/trofie",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/trofie-al-pesto-genovese"],
+      "ratio": null,
+      "caveat": "Potato gnocchi are soft dumplings that are lifted out as they float. The pasta boil would give a softer, potentially gluey result.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

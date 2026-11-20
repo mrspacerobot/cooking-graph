@@ -1,0 +1,51 @@
+{
+  "id": "technique/crisp-in-its-own-fat",
+  "tier": "drafted",
+  "names": {"en": "Crisp in its own fat"},
+  "aliases": {"en": ["fry until crisp", "crisp the carnitas", "fry in rendered fat"]},
+  "does": "Cooks fatty pork in a little liquid until the liquid boils away and the rendered fat is left, then fries the tender meat in that fat until brown and crisp at the edges.",
+  "intro": null,
+  "how": [
+    "Cook chunks of a fatty cut in a little liquid, uncovered, until tender.",
+    "Keep cooking as the liquid boils away; the fat that has melted out stays in the pot.",
+    "Once the pot sizzles instead of bubbling, let the chunks fry, turning them only now and then.",
+    "Stop when they are deep brown and crisp at the edges and still soft inside."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "The soft bubbling of liquid turns into the crackle of frying."},
+    {"sense": "see", "text": "Brown, crisp edges on soft, juicy meat."},
+    {"sense": "feel", "text": "The pieces crunch at the edge under a spoon."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stirring constantly, which breaks the meat up before it browns.",
+      "fix": "Leave it still to brown, and turn it only now and then."
+    },
+    {
+      "mistake": "Letting the pot run dry before the meat is tender.",
+      "fix": "Add a splash of water and keep going until it is tender, then let it boil away."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "group/fatty-cuts", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/dutch-oven", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs", "equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/braise",
+      "differs": "The pot is left uncovered so that the liquid boils away, and the meat ends by frying in its own rendered fat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ]
+}

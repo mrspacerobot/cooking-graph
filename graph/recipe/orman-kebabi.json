@@ -1,0 +1,93 @@
+{
+  "id": "recipe/orman-kebabi",
+  "tier": "drafted",
+  "names": {"en": "Orman kebabi", "tr": "Orman kebabı"},
+  "aliases": {},
+  "makes": "dish/orman-kebabi",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/lamb-shoulder", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/potato", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/carrot", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "carrot"},
+    {"thing": "ingredient/peas", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "peas"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/thyme", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "thyme"},
+    {"thing": "ingredient/water", "amount": {"value": 600, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/wooden-spoon", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/vegetable-peeler"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion", "ingredient/tomato", "ingredient/carrot", "ingredient/potato"],
+      "with": [],
+      "text": "Dice the {onion:plural} and the {tomato:plural}, cut the {carrot:plural} into thick rounds and the {potato:plural} into large cubes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the {butter} in a heavy pot over high heat and brown the {meat} in it in small lots, until deep brown on every side.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter"],
+      "text": "Lower the heat, add the {onion:plural} and soften them, scraping up the brown bits from the bottom.",
+      "time": {"from": 5, "to": 7, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-tomato-paste",
+      "works_on": ["ingredient/tomato-paste"],
+      "with": ["ingredient/butter"],
+      "text": "Stir in the {paste} and fry it, stirring, until it darkens a shade.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["ingredient/tomato", "ingredient/thyme", "ingredient/water"],
+      "text": "Add the {tomato:plural}, the {thyme} and the hot {water}. Cover and cook gently until the {meat} is nearly tender.",
+      "time": {"from": 50, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/carrot", "ingredient/potato"],
+      "with": ["ingredient/peas", "ingredient/salt", "ingredient/black-pepper", "ingredient/lamb-shoulder"],
+      "text": "Add the {carrot:plural} and the {potato:plural}, season with the {salt} and the {black-pepper}, cover and cook on until the vegetables are tender. Stir in the {peas:plural} and cook until they are hot. Check the {meat} against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

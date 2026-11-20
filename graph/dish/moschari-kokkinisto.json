@@ -1,0 +1,66 @@
+{
+  "id": "dish/moschari-kokkinisto",
+  "tier": "drafted",
+  "names": {"en": "Moschari kokkinisto", "el": "Μοσχάρι κοκκινιστό", "el-Latn": "Moschari kokkinisto"},
+  "aliases": {
+    "en": [
+      "greek beef in tomato sauce",
+      "kokkinisto",
+      "beef kokkinisto with pasta",
+      "mosxari kokkinisto",
+      "moschari kokkinisto me makaronia"
+    ]
+  },
+  "is": "Chunks of beef browned in olive oil, splashed with red wine and braised slowly in tomato with cinnamon, allspice and bay until tender in a thick red sauce. Kokkinisto means reddened. It is served over pasta, rice or mashed potato.",
+  "parts": [
+    {"id": "beef", "role": "main", "options": ["ingredient/stewing-beef"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "wine", "role": "liquid", "options": ["ingredient/red-wine"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato-paste",
+      "role": "base",
+      "options": ["ingredient/tomato-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tinned-tomatoes", "ingredient/tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cinnamon", "role": "seasoning", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"},
+    {"id": "allspice", "role": "seasoning", "options": ["ingredient/allspice"], "optional": true, "tier": "drafted"},
+    {"id": "bay", "role": "aromatic", "options": ["ingredient/bay-leaf"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pasta",
+      "role": "side",
+      "options": ["ingredient/spaghetti", "ingredient/pasta", "ingredient/macaroni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "cheese",
+      "role": "topping",
+      "options": ["ingredient/kefalotyri", "ingredient/pecorino", "ingredient/parmesan"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/braise", "tier": "drafted"},
+    {"thing": "technique/boil-pasta", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

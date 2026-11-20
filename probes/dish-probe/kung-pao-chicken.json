@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/kung-pao-chicken",
+  "tier": "drafted",
+  "batch": "home-chinese-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "chinese",
+  "written_for": "stir-frying",
+  "dish": "Gōngbǎo jīdīng",
+  "also_called": ["kung pao chicken", "gong bao chicken"],
+  "techniques": ["dice", "marinate", "fry dried chilli", "stir fry", "toss in sauce"],
+  "ingredients": [
+    "chicken thigh",
+    "peanut",
+    "dried chilli",
+    "sichuan pepper",
+    "spring onion",
+    "soy sauce",
+    "rice vinegar",
+    "sugar",
+    "cornflour"
+  ]
+}

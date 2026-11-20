@@ -1,0 +1,48 @@
+{
+  "id": "dish/merluzzo-alla-livornese",
+  "tier": "drafted",
+  "names": {"en": "Merluzzo alla livornese", "it": "Merluzzo alla livornese"},
+  "aliases": {
+    "en": ["cod livornese", "fish livornese style", "cod in tomato sauce with olives", "pesce alla livornese"]
+  },
+  "is": "A Tuscan coastal dish of white fish fillets cooked gently in a quick tomato sauce with garlic, black olives and capers, finished with parsley and served from the pan with bread.",
+  "parts": [
+    {
+      "id": "fish",
+      "role": "main",
+      "options": ["ingredient/cod", "ingredient/hake", "ingredient/white-fish"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "tomato",
+      "role": "sauce",
+      "options": ["ingredient/tinned-tomatoes", "ingredient/tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "olives", "role": "seasoning", "options": ["ingredient/black-olive"], "optional": false, "tier": "drafted"},
+    {"id": "capers", "role": "seasoning", "options": ["ingredient/capers"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli",
+      "role": "seasoning",
+      "options": ["ingredient/chili-flakes", "ingredient/dried-red-chilli"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/chop", "tier": "drafted"},
+    {"thing": "technique/make-a-tomato-sauce", "tier": "drafted"},
+    {"thing": "technique/poach-in-sauce", "tier": "drafted"},
+    {"thing": "technique/garnish", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/magro-con-tomate",
+  "tier": "drafted",
+  "batch": "home-spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "braising",
+  "dish": "Magro con tomate",
+  "also_called": ["pork with tomato", "aragonese pork in tomato sauce"],
+  "techniques": ["brown", "fry onion", "simmer"],
+  "ingredients": ["pork shoulder", "canned tomato", "onion", "garlic", "olive oil", "bay leaf"]
+}

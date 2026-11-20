@@ -1,0 +1,41 @@
+{
+  "id": "ingredient/holy-basil",
+  "tier": "drafted",
+  "names": {"en": "Holy basil"},
+  "aliases": {"en": ["kaphrao", "kra pao", "hot basil"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A Thai basil with soft, slightly furry leaves and a peppery, clove-like taste. It is thrown in at the very end of a stir-fry and wilts at once.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/thai-basil",
+      "allows": true,
+      "when": ["dish/thai-green-curry"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Fold it in off the heat. The curry will taste more peppery and less sweet.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

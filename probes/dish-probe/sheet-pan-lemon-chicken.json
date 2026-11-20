@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sheet-pan-lemon-chicken",
+  "tier": "drafted",
+  "batch": "home-american-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "american",
+  "written_for": "roasting",
+  "dish": "Sheet-pan lemon garlic chicken",
+  "also_called": ["sheet pan chicken and vegetables", "one-pan chicken traybake"],
+  "techniques": ["season", "toss in oil", "roast"],
+  "ingredients": ["chicken thigh", "potato", "broccoli", "lemon", "garlic", "olive oil", "oregano"]
+}

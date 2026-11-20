@@ -1,0 +1,51 @@
+{
+  "id": "technique/fry-garlic",
+  "tier": "drafted",
+  "names": {"en": "Fry garlic"},
+  "aliases": {"en": ["fry the garlic", "fry garlic cloves", "fry sliced garlic"]},
+  "does": "Cooks sliced or whole crushed cloves of garlic in olive oil over a gentle heat until they turn pale gold, so that they soften and sweeten and their scent passes into the oil.",
+  "intro": null,
+  "how": [
+    "Start the garlic in oil that is warm, not smoking hot, or start it in cold oil.",
+    "Keep the heat medium-low and move the pieces now and then.",
+    "Lift the pan off the heat or add the next thing as soon as the garlic is pale gold.",
+    "Garlic goes from gold to bitter brown in moments, so do not walk away."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Pale gold edges and a few gold faces, with no dark brown."},
+    {"sense": "smell", "text": "A sweet, nutty garlic smell. A sharp, acrid smell means it has burnt."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying garlic in very hot oil, so that it browns at once and turns bitter.",
+      "fix": "Keep the heat gentle."
+    },
+    {
+      "mistake": "Cooking burnt garlic on into the dish, so that the bitterness spreads.",
+      "fix": "Throw it away, wipe the pan and start again."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/garlic", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/frying-pan", "equipment/saute-pan", "equipment/cazuela"],
+      "tier": "drafted"
+    },
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/saute",
+      "differs": "The garlic is kept at a gentle heat and taken only to pale gold, to flavour the oil, not browned fast.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

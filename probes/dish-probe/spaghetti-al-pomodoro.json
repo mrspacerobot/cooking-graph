@@ -1,0 +1,19 @@
+{
+  "id": "dish-probe/spaghetti-al-pomodoro",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Spaghetti al pomodoro e basilico",
+  "also_called": ["spaghetti with tomato sauce", "pasta al pomodoro", "tomato and basil pasta"],
+  "techniques": [
+    "soften garlic in olive oil",
+    "simmer tomato sauce",
+    "boil pasta",
+    "finish pasta in its sauce",
+    "tear basil"
+  ],
+  "ingredients": ["spaghetti", "canned tomato", "garlic", "olive oil", "basil", "parmesan", "salt"]
+}

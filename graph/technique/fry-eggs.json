@@ -2,7 +2,7 @@
   "id": "technique/fry-eggs",
   "tier": "drafted",
   "names": {"en": "Fry eggs"},
-  "aliases": {"en": ["fry an egg", "huevos fritos"]},
+  "aliases": {"en": ["fry an egg", "huevos fritos", "fry egg"]},
   "does": "Cooks eggs in a generous depth of hot olive oil, so that the whites puff, bubble and turn lacy and crisp at the edges while the yolks stay soft.",
   "intro": {
     "what": "This olive-oil method fries eggs with puffed whites and lacy, crisp edges.",

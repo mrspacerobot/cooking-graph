@@ -1,0 +1,47 @@
+{
+  "id": "technique/cover-with-pastry",
+  "tier": "drafted",
+  "names": {"en": "Cover with pastry"},
+  "aliases": {"en": ["cover with a pastry lid", "top with pastry", "put a pastry lid on", "cover a pie with pastry"]},
+  "does": "Lays a sheet of pastry over a filled dish, seals it to the rim and cuts a vent, so that the pastry bakes into a crisp lid while the filling steams underneath.",
+  "intro": null,
+  "how": [
+    "Let the filling cool a little, so that it does not melt the pastry before it reaches the oven.",
+    "Lay the pastry over the dish and press it onto the rim.",
+    "Trim the overhang and press the edge with a fork to seal it.",
+    "Cut a small slit in the middle for steam, and brush the top with beaten egg if you like."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A lid sealed all round the rim, with a clear vent in the middle."},
+    {"sense": "feel", "text": "Cool, firm pastry that does not stick to the fingers."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Laying pastry over a piping hot filling, so that it sags and turns soggy.",
+      "fix": "Let the filling cool for a while first."
+    },
+    {
+      "mistake": "Forgetting the vent, so that steam bursts the lid or makes it soggy.",
+      "fix": "Always cut a slit in the middle."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/pastry", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/paring-knife"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/pastry-brush"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/roll-out",
+      "why": "Home-made pastry is rolled out before it covers a dish.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "technique/fry-cheese",
+  "tier": "drafted",
+  "names": {"en": "Fry cheese"},
+  "aliases": {"en": ["fry hard cheese", "pan-fry cheese", "fry floured cheese"]},
+  "does": "Wets a thick slice of firm cheese, coats it in flour and fries it in hot oil until a golden crust forms on both sides and the inside turns soft and molten, then serves it at once in the pan.",
+  "intro": {
+    "what": "A slice of firm cheese is floured and fried hot and fast until crusty outside and soft inside.",
+    "why": "The crust holds the soft cheese together. Too slow, and the cheese melts into the pan before the crust forms.",
+    "idea": "Crust first, then melt",
+    "tier": "drafted"
+  },
+  "how": [
+    "Cut the cheese into thick slices and dip each one in cold water.",
+    "Turn the wet slices in flour and shake off the excess.",
+    "Heat a little oil in a small heavy pan until it is very hot.",
+    "Fry the slices until a deep golden crust forms underneath, turn them once with a spatula, and fry the other side.",
+    "Serve at once, in the pan if you can, while the inside is soft."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A loud sizzle the moment the cheese touches the oil."},
+    {"sense": "see", "text": "A deep golden, blistered crust and soft cheese bulging at the sides."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Oil that is not hot enough, so that the cheese melts and spreads before a crust forms.",
+      "fix": "Wait until the oil is very hot."
+    },
+    {"mistake": "Thin slices, which melt right through and lose their shape.", "fix": "Cut the slices thick."},
+    {
+      "mistake": "Leaving it to wait, so that the cheese turns rubbery.",
+      "fix": "Eat it as soon as it comes out of the pan."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "method",
+      "question": "Why must the oil be very hot?",
+      "choices": [
+        "So that a crust forms before the cheese melts away.",
+        "To melt the cheese faster.",
+        "To burn off the flour."
+      ],
+      "answer": 0,
+      "because": "The crust holds the cheese together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "coating",
+      "question": "Why dip the cheese in water first?",
+      "choices": ["To wash off the salt.", "So that the flour sticks in an even coat.", "To cool the pan."],
+      "answer": 1,
+      "because": "A wet surface holds a thin, even layer of flour.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/kefalograviera", "tier": "drafted"},
+    {"thing": "ingredient/kefalotyri", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/flour"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "The food is firm cheese, wetted and floured, fried very hot and fast only until a crust forms, and served at once, in the pan in which it was fried.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "recipe/kotopita",
+  "tier": "drafted",
+  "names": {"en": "Kotopita", "el": "Κοτόπιτα", "el-Latn": "Kotopita"},
+  "aliases": {},
+  "makes": "dish/kotopita",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-breast", "amount": {"value": 700, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/water", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/flour", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/milk", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/feta", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "feta"},
+    {"thing": "ingredient/kefalotyri", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "cheese"},
+    {"thing": "ingredient/phyllo", "amount": {"value": 450, "unit": "gram"}, "forms": [], "part": "pastry"},
+    {"thing": "ingredient/butter", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/saucepan", "equipment/saute-pan", "equipment/baking-dish",
+    "equipment/whisk", "equipment/wooden-spoon", "equipment/mixing-bowl", "equipment/grater", "equipment/pastry-brush",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Put the {chicken:plural} in a pan with the {water} and half of the {salt}, bring it slowly to a simmer and keep it barely trembling until the meat is done. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/shred-meat",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": [],
+      "text": "Lift out the {chicken:plural} and, once they are cool enough to handle, pull them into strands.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the {onion:plural} finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Soften the {onion:plural} in the {oil} over a gentle heat until sweet and glassy.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the {bechamel.butter} in a saucepan, stir in the {bechamel.flour} and cook it for a moment without letting it colour.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/make-a-bechamel",
+      "works_on": ["preparation/roux", "ingredient/milk"],
+      "with": [],
+      "text": "Whisk in the {bechamel.milk} a little at a time and cook, stirring, until the sauce is thick and smooth. Leave it to cool a little.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/bechamel"]
+    },
+    {
+      "technique": "technique/grate",
+      "works_on": ["ingredient/kefalotyri"],
+      "with": [],
+      "text": "Grate the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": [
+        "ingredient/onion", "preparation/bechamel", "ingredient/egg", "ingredient/feta", "ingredient/kefalotyri",
+        "ingredient/salt", "ingredient/black-pepper"
+      ],
+      "text": "Beat the {egg:plural} in a large bowl. Mix in the {chicken:plural}, the {onion:plural}, the sauce, the {feta} crumbled, the {cheese}, the {pepper} and the rest of the {salt} to taste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer-phyllo",
+      "works_on": ["ingredient/phyllo"],
+      "with": ["ingredient/butter", "ingredient/chicken-breast"],
+      "text": "Melt the {butter}. Brush a baking dish with it and lay in half of the {pastry} sheet by sheet, brushing each one and letting the edges hang over. Spread the filling over, fold the edges in, and cover with the rest of the sheets, brushing each one. Score the top into squares with a sharp knife.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-a-phyllo-pie",
+      "works_on": ["ingredient/phyllo"],
+      "with": [],
+      "text": "Sprinkle the top with a little {water} and bake until the {pastry} is deep golden and crisp.",
+      "time": {"from": 45, "to": 50, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": [],
+      "text": "Let the pie settle for a while, then cut it along the scored lines and serve warm.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

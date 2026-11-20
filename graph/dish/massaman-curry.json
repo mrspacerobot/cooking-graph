@@ -1,0 +1,73 @@
+{
+  "id": "dish/massaman-curry",
+  "tier": "drafted",
+  "names": {"en": "Massaman curry", "th": "แกงมัสมั่น", "th-Latn": "Kaeng matsaman"},
+  "aliases": {"en": ["Kaeng matsaman", "gaeng massaman", "beef massaman", "matsaman curry"]},
+  "is": "Kaeng matsaman, a mild, rich Thai curry of beef slow-cooked in coconut milk with massaman curry paste, potato, onion and peanuts, balanced with tamarind, fish sauce and palm sugar. Home cooks use a bought paste.",
+  "parts": [
+    {
+      "id": "beef",
+      "role": "main",
+      "options": ["ingredient/stewing-beef", "ingredient/chicken-thigh"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "paste",
+      "role": "seasoning",
+      "options": ["ingredient/massaman-curry-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "coconut-milk",
+      "role": "liquid",
+      "options": ["ingredient/coconut-milk"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tamarind",
+      "role": "acid",
+      "options": ["ingredient/tamarind-paste", "ingredient/tamarind"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fish-sauce",
+      "role": "seasoning",
+      "options": ["ingredient/fish-sauce"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "sugar",
+      "role": "sweetener",
+      "options": ["ingredient/palm-sugar", "ingredient/brown-sugar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "peanut", "role": "garnish", "options": ["ingredient/peanut"], "optional": false, "tier": "drafted"},
+    {
+      "id": "rice",
+      "role": "side",
+      "options": ["ingredient/jasmine-rice", "ingredient/rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "rice-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/fry-the-paste", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,66 @@
+{
+  "id": "dish/fish-fragrant-aubergine",
+  "tier": "drafted",
+  "names": {"en": "Fish-fragrant aubergine", "zh": "鱼香茄子", "zh-Latn": "Yúxiāng qiézi"},
+  "aliases": {
+    "en": ["Yúxiāng qiézi", "Yu xiang qie zi", "yu xiang eggplant", "Sichuan eggplant", "fish-fragrant eggplant"]
+  },
+  "is": "A Sichuan home dish of aubergine fried soft and simmered in a sweet, sour and hot sauce of chilli bean paste, garlic, ginger, spring onion, soy sauce and black vinegar. It holds no fish: the name comes from seasonings once used for fish.",
+  "parts": [
+    {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {"id": "pork", "role": "main", "options": ["ingredient/ground-pork"], "optional": true, "tier": "drafted"},
+    {
+      "id": "doubanjiang",
+      "role": "seasoning",
+      "options": ["ingredient/doubanjiang"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {
+      "id": "spring-onion",
+      "role": "aromatic",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {
+      "id": "vinegar",
+      "role": "acid",
+      "options": ["ingredient/black-vinegar", "ingredient/rice-vinegar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "cornflour",
+      "role": "thickener",
+      "options": ["ingredient/cornstarch"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/salt-and-drain", "tier": "drafted"},
+    {"thing": "technique/stir-fry", "tier": "drafted"},
+    {"thing": "technique/fry-the-paste", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/thicken", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

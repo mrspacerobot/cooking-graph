@@ -1,0 +1,39 @@
+{
+  "id": "ingredient/salsa-verde",
+  "tier": "drafted",
+  "names": {"en": "Mexican salsa verde", "es": "Salsa verde"},
+  "aliases": {"en": ["salsa verde", "green salsa", "tomatillo salsa"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/sauces", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A tart green sauce of tomatillos, green chilli, onion and coriander, sold in jars. It is poured over enchiladas or fried briefly in hot fat to deepen it.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/tomato-salsa",
+      "allows": true,
+      "when": ["dish/carnitas", "dish/quesadillas-de-pollo"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Serve alongside or spoon onto the tacos. Tomatillo salsa gives a tarter finish than a red salsa.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
+}

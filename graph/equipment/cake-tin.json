@@ -1,0 +1,7 @@
+{
+  "id": "equipment/cake-tin",
+  "tier": "drafted",
+  "names": {"en": "Cake tin", "fr": "Moule à gâteau"},
+  "aliases": {"en": ["cake pan", "springform tin", "round cake tin"]},
+  "use": "A deep round tin, often with a side that clips open, that holds a cake batter while it bakes and lets the cake out whole."
+}

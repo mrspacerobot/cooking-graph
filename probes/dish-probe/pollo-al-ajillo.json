@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/pollo-al-ajillo",
+  "tier": "drafted",
+  "batch": "home-spanish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "spanish",
+  "written_for": "frying",
+  "dish": "Pollo al ajillo",
+  "also_called": ["garlic chicken", "spanish garlic chicken"],
+  "techniques": ["brown", "fry garlic", "deglaze with wine", "simmer"],
+  "ingredients": ["chicken thigh", "garlic", "olive oil", "white wine", "bay leaf", "parsley"]
+}

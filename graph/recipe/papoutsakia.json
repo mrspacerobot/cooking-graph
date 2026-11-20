@@ -1,0 +1,167 @@
+{
+  "id": "recipe/papoutsakia",
+  "tier": "drafted",
+  "names": {"en": "Papoutsakia", "el": "Παπουτσάκια", "el-Latn": "Papoutsakia"},
+  "aliases": {},
+  "makes": "dish/papoutsakia",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/aubergine", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "aubergine"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/minced-beef", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "kima"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/parsley", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/flour", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/milk", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/egg", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/kefalotyri", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "cheese"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/baking-dish", "equipment/saute-pan", "equipment/saucepan",
+    "equipment/whisk", "equipment/wooden-spoon", "equipment/spoon", "equipment/pastry-brush", "equipment/grater",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/halve",
+      "works_on": ["ingredient/aubergine"],
+      "with": [],
+      "text": "Cut the {aubergine:plural} in half lengthways through the stem. Score the cut flesh deeply in a criss-cross, without piercing the skin.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brush",
+      "works_on": ["ingredient/aubergine"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Lay them cut side up in a baking dish, brush the flesh generously with the {oil} and sprinkle with the {salt}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/aubergine"],
+      "with": [],
+      "text": "Bake until the flesh is very soft and lightly browned.",
+      "time": {"from": 30, "to": 35, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the {kima.onion} finely and chop the {kima.parsley}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/garlic"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Soften the {kima.onion} in the {kima.olive-oil}, then add the {kima.garlic} for a moment.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [],
+      "text": "Add the {kima.minced-beef}, break it up and fry until its juices have boiled away and the crumbs are brown.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-kima",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [
+        "ingredient/tinned-tomatoes", "ingredient/cinnamon", "ingredient/salt", "ingredient/parsley",
+        "ingredient/aubergine"
+      ],
+      "text": "Press the soft flesh of each {aubergine} flat with a spoon to make a hollow, scooping out a little and chopping it into the meat. Stir in the {kima.tinned-tomatoes}, the {kima.cinnamon} and the {kima.salt} and simmer until thick and nearly dry. Stir in the {kima.parsley}. Check the meat against a trusted guide to doneness.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/kima"]
+    },
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the {bechamel.butter} in a saucepan and stir in the {bechamel.flour} for a moment without letting it colour.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/make-a-bechamel",
+      "works_on": ["preparation/roux", "ingredient/milk"],
+      "with": ["ingredient/nutmeg"],
+      "text": "Whisk in the {bechamel.milk} a little at a time and cook, stirring, until the sauce is thick enough to hold a trail. Grate in the {bechamel.nutmeg}.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/bechamel"]
+    },
+    {
+      "technique": "technique/grate",
+      "works_on": ["ingredient/kefalotyri"],
+      "with": [],
+      "text": "Grate the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/thicken-with-egg-yolk",
+      "works_on": ["preparation/bechamel"],
+      "with": ["ingredient/egg", "ingredient/kefalotyri"],
+      "text": "Take the sauce off the heat and let it cool for a moment. Beat the {egg} and whisk it in quickly, then stir in half of the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stuff",
+      "works_on": ["ingredient/aubergine"],
+      "with": ["preparation/kima", "preparation/bechamel"],
+      "text": "Fill each {aubergine} half with the meat sauce, pressing it in. Spoon the white sauce over the top to cover the meat and scatter with the rest of the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/aubergine"],
+      "with": ["preparation/bechamel", "ingredient/kefalotyri"],
+      "text": "Bake until the top is puffed and golden. Let them rest for a while before serving.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": {"value": 190, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

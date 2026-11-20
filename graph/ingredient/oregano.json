@@ -2,7 +2,7 @@
   "id": "ingredient/oregano",
   "tier": "drafted",
   "names": {"en": "Oregano", "fr": "Origan", "it": "origano"},
-  "aliases": {"en": ["rigani"]},
+  "aliases": {"en": ["rigani", "dried oregano"]},
   "plurals": {},
   "uncountable": true,
   "is_a": [],

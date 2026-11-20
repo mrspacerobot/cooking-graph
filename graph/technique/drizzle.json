@@ -1,0 +1,78 @@
+{
+  "id": "technique/drizzle",
+  "tier": "drafted",
+  "names": {"en": "Drizzle"},
+  "aliases": {
+    "en": ["dress with olive oil", "drizzle with olive oil", "drizzle with oil", "finish with a thread of oil"]
+  },
+  "does": "Pours a thin thread of oil or dressing over a finished dish just before it is served, so that every part gets a little and the oil keeps its fresh taste.",
+  "intro": {
+    "what": "Drizzling lays a thin thread of oil over a plated dish.",
+    "why": "Raw oil added last keeps its fresh scent and coats everything lightly without making it soggy.",
+    "idea": "A thin thread, last",
+    "tier": "drafted"
+  },
+  "how": [
+    "Arrange the food first.",
+    "Hold the bottle or a spoon above the dish and pour in a thin, moving thread, back and forth.",
+    "Do it at the last moment, at the table if you can."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A fine, glossy thread over every part, with no pool at the bottom."},
+    {"sense": "smell", "text": "The fresh, green smell of the oil."}
+  ],
+  "mistakes": [
+    {"mistake": "Pouring in a puddle, so some parts swim and others stay dry.", "fix": "Pour a thin, moving thread."},
+    {"mistake": "Dressing too early, so the salad turns watery.", "fix": "Dress just before serving."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why is the oil added at the last moment?",
+      "choices": ["So it keeps its fresh scent and the food stays crisp.", "So it cooks.", "So it soaks in fully."],
+      "answer": 0,
+      "because": "Fresh oil added last tastes brightest.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you pour?",
+      "choices": [
+        "In one puddle in the middle.",
+        "In a thin thread moved over the whole dish.",
+        "Over the plate before the food."
+      ],
+      "answer": 1,
+      "because": "A moving thread spreads it evenly.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should you see?",
+      "choices": ["A pool of oil on the plate.", "A fine glossy thread over every part.", "Dry patches."],
+      "answer": 1,
+      "because": "Every part gets a little.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The plate ended up swimming in oil. What would you change?",
+      "choices": ["Pour a thinner thread and less of it.", "Use more oil.", "Pour it on earlier."],
+      "answer": 0,
+      "because": "A thin thread is enough.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "ingredient/mozzarella", "tier": "drafted"},
+    {"thing": "group/breads", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

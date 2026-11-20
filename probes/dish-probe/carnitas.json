@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/carnitas",
+  "tier": "drafted",
+  "batch": "home-mexican-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "mexican",
+  "written_for": "braising",
+  "dish": "Carnitas",
+  "also_called": ["pork carnitas", "mexican pulled pork"],
+  "techniques": ["cut into chunks", "simmer", "fry until crisp", "shred"],
+  "ingredients": ["pork shoulder", "orange", "onion", "garlic", "cumin", "oregano", "bay leaf", "corn tortilla"]
+}

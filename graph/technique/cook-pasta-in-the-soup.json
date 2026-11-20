@@ -1,0 +1,109 @@
+{
+  "id": "technique/cook-pasta-in-the-soup",
+  "tier": "drafted",
+  "names": {"en": "Cook pasta in the soup", "it": "cuocere la pasta nella minestra"},
+  "aliases": {"en": ["cook pasta in the pot", "pasta risottata", "cook pasta risotto style"]},
+  "does": "Cooks small pasta in a thick soup instead of in a separate pot of water, adding hot liquid a little at a time, so that the starch it lets go thickens the soup into a creamy whole.",
+  "intro": {
+    "what": "Small pasta is cooked in the soup itself, with hot liquid added as it is drunk up.",
+    "why": "The starch stays in the pot and binds pasta and broth together, the way home cooks in Naples make pasta with beans, potatoes or peas.",
+    "idea": "Let the starch thicken the soup",
+    "tier": "drafted"
+  },
+  "how": [
+    "Bring the soup to a lively simmer and keep a pan of hot liquid at hand.",
+    "Add the pasta and stir often, scraping the bottom, since the soup is thick and catches.",
+    "Add a little hot liquid whenever the pot looks dry.",
+    "Stop when the pasta is tender with a little bite and the soup is dense but still pours. It thickens as it stands."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The soup is creamy and dense, and slowly settles when spooned."},
+    {"sense": "feel", "text": "The pasta is tender with a little bite at the centre."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the pot unstirred, so that the pasta sticks and burns on the bottom.",
+      "fix": "Stir often and scrape the bottom of the pot."
+    },
+    {
+      "mistake": "Adding cold liquid, which stops the cooking and makes the pasta soft outside and hard inside.",
+      "fix": "Keep the liquid hot."
+    },
+    {
+      "mistake": "Cooking it until it is thick enough to stand, so that it turns to paste on the plate.",
+      "fix": "Stop while it still pours; it thickens as it rests."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why cook the pasta in the soup rather than in water?",
+      "choices": [
+        "So that its starch thickens the soup.",
+        "So that the soup stays thin and clear.",
+        "So that the pasta cooks faster."
+      ],
+      "answer": 0,
+      "because": "The starch stays in the pot and binds the soup.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What liquid do you add as the pasta drinks up the soup?",
+      "choices": ["Cold water.", "Hot liquid, a little at a time.", "None at all."],
+      "answer": 1,
+      "because": "Hot liquid keeps the pot at a simmer.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "When is it ready?",
+      "choices": [
+        "When the soup stands in a lump.",
+        "When the pasta is still hard.",
+        "When the pasta has a little bite and the soup still pours."
+      ],
+      "answer": 2,
+      "because": "It thickens more as it stands.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pasta stuck and burnt on the bottom. What would you change next time?",
+      "choices": [
+        "Stir more often and add hot liquid when it looks dry.",
+        "Cook it over higher heat.",
+        "Add the pasta to cold soup."
+      ],
+      "answer": 0,
+      "because": "A thick soup needs stirring and liquid to keep from catching.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/dutch-oven", "equipment/saucepan", "equipment/stockpot"],
+      "tier": "drafted"
+    },
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/boil-pasta", "why": "Knowing when pasta is al dente comes first.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/boil-pasta",
+      "differs": "The pasta is cooked in a small amount of thick soup that it absorbs, with hot liquid added as it goes and the starch kept in the pot, not in a large pot of salted water that is drained away.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

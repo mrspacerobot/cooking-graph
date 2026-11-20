@@ -1,0 +1,47 @@
+{
+  "id": "dish/penne-alla-vodka",
+  "tier": "drafted",
+  "names": {"en": "Penne alla vodka", "it": "penne alla vodka"},
+  "aliases": {"en": ["pasta alla vodka", "vodka pasta", "penne with vodka sauce"]},
+  "is": "Penne in a smooth orange-pink sauce of tomato paste fried in butter with onion and a little chilli, loosened with vodka and finished with cream and Parmesan.",
+  "parts": [
+    {
+      "id": "pasta",
+      "role": "main",
+      "options": ["ingredient/penne", "ingredient/rigatoni"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "onion",
+      "role": "aromatic",
+      "options": ["ingredient/onion", "ingredient/shallot"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "tomato", "role": "base", "options": ["ingredient/tomato-paste"], "optional": false, "tier": "drafted"},
+    {"id": "vodka", "role": "liquid", "options": ["ingredient/vodka"], "optional": false, "tier": "drafted"},
+    {"id": "cream", "role": "enrichment", "options": ["ingredient/cream"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli",
+      "role": "seasoning",
+      "options": ["ingredient/chili-flakes", "ingredient/dried-red-chilli"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "cheese", "role": "topping", "options": ["ingredient/parmesan"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-tomato-paste", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/stir-in-cream", "tier": "drafted"},
+    {"thing": "technique/toss-pasta-with-sauce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

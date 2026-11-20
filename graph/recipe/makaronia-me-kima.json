@@ -1,0 +1,103 @@
+{
+  "id": "recipe/makaronia-me-kima",
+  "tier": "drafted",
+  "names": {"en": "Makaronia me kima", "el": "Μακαρόνια με κιμά", "el-Latn": "Makaronia me kima"},
+  "aliases": {},
+  "makes": "dish/makaronia-me-kima",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/minced-beef", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "kima"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/red-wine", "amount": {"value": 125, "unit": "millilitre"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/bay-leaf", "amount": {"value": 1, "unit": "leaf"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "kima"},
+    {"thing": "ingredient/spaghetti", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/kefalotyri", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "cheese"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/stockpot", "equipment/colander", "equipment/wooden-spoon",
+    "equipment/grater", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the {kima.onion} finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/garlic"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Soften the {kima.onion} in the {kima.olive-oil} in a wide pan, then add the {kima.garlic} for a moment.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [],
+      "text": "Turn up the heat, add the {kima.minced-beef} and break it up with a wooden spoon. Fry it until its juices have boiled away and the crumbs are brown.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-kima",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [
+        "ingredient/red-wine", "ingredient/tomato-paste", "ingredient/tinned-tomatoes", "ingredient/cinnamon",
+        "ingredient/bay-leaf", "ingredient/salt"
+      ],
+      "text": "Pour in the {kima.red-wine} and let it bubble away. Stir in the {kima.tomato-paste}, the {kima.tinned-tomatoes}, the {kima.cinnamon}, the {kima.bay-leaf} and the {kima.salt}, with a splash of the {water} if it looks dry, and simmer gently, stirring now and then, until the sauce is thick. Take out the {kima.cinnamon} and the {kima.bay-leaf}. Check the meat against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 40, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/kima"]
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Boil the {pasta} in plenty of {water} salted with the {salt} until it still has a little bite, and drain it.",
+      "time": {"from": 9, "to": 11, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/grate",
+      "works_on": ["ingredient/kefalotyri"],
+      "with": [],
+      "text": "Grate the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["preparation/kima", "ingredient/kefalotyri"],
+      "text": "Toss the {pasta} with a little of the {cheese}, heap it on plates and spoon the meat sauce over the top. Scatter with the rest of the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

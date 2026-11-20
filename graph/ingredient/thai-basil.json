@@ -1,0 +1,41 @@
+{
+  "id": "ingredient/thai-basil",
+  "tier": "drafted",
+  "names": {"en": "Thai basil"},
+  "aliases": {"en": ["horapha", "Asian basil"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/tender-herbs", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A basil with purple stems and a sweet, aniseed taste. It holds up a little better in heat than sweet basil and is stirred into a curry off the heat.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/holy-basil",
+      "allows": true,
+      "when": ["dish/pad-kaphrao-gai"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Add it at the end and wilt it briefly. Thai basil is sweeter and more anise-scented.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

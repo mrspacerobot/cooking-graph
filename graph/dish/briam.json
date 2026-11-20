@@ -1,0 +1,53 @@
+{
+  "id": "dish/briam",
+  "tier": "drafted",
+  "names": {"en": "Briam", "el": "Μπριάμ", "el-Latn": "Briam"},
+  "aliases": {
+    "en": ["briami", "greek roasted vegetables", "greek ratatouille traybake", "greek oven-baked vegetables"]
+  },
+  "is": "Summer vegetables and potatoes sliced, tossed with plenty of olive oil, garlic, herbs and tomato, and baked slowly in a tin until soft and sweet with browned edges. It is eaten warm or at room temperature, with feta and bread.",
+  "parts": [
+    {"id": "courgette", "role": "main", "options": ["ingredient/courgette"], "optional": false, "tier": "drafted"},
+    {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "onion",
+      "role": "aromatic",
+      "options": ["ingredient/red-onion", "ingredient/onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "pepper",
+      "role": "main",
+      "options": ["ingredient/green-pepper", "ingredient/bell-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "tomato", "role": "base", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "oregano", "role": "seasoning", "options": ["ingredient/oregano"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "feta", "role": "side", "options": ["ingredient/feta"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/slice", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"},
+    {"thing": "technique/layer", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

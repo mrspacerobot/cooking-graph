@@ -1,0 +1,59 @@
+{
+  "id": "technique/make-gravy",
+  "tier": "drafted",
+  "names": {"en": "Make gravy"},
+  "aliases": {"en": ["make onion gravy", "make a gravy", "make a pan gravy", "make gravy with stock"]},
+  "does": "Turns the fat and the softened onions or the browned bits left in a pan into a smooth pouring sauce: flour is cooked straight into the fat, and hot stock is stirred in little by little and simmered until it thickens.",
+  "intro": null,
+  "how": [
+    "Leave a little fat in the pan with the onions or the browned bits.",
+    "Stir in a spoonful of flour and cook it for a moment, so that it loses its raw taste.",
+    "Pour in hot stock a little at a time, stirring hard after each addition to keep it smooth.",
+    "Simmer until the gravy coats a spoon but still pours, and season it at the end."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A glossy gravy that coats the back of a spoon and runs off it in a steady stream."},
+    {"sense": "taste", "text": "Savoury and rounded, with no floury taste."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring in all the stock at once, so that the flour forms lumps.",
+      "fix": "Add it a little at a time and stir until smooth before adding more."
+    },
+    {
+      "mistake": "Boiling it down too far, so that it turns thick and gluey.",
+      "fix": "Loosen it with a splash more stock or water."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/stocks", "tier": "drafted"},
+    {"thing": "group/cooking-liquors", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/onion-gravy", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/whisk"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/fry-onions-golden",
+      "why": "Onion gravy starts from onions fried soft and golden in the pan.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/make-a-sauce",
+      "differs": "The flour is cooked straight into the fat and onions in the pan, not made as a separate roux, and the sauce is kept loose enough to pour and soak into mash.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"},
+    {"thing": "cuisine/american", "tier": "drafted"}
+  ]
+}

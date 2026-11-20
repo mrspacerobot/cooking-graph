@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/cannelloni-ricotta-e-spinaci",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "baking",
+  "dish": "Cannelloni ricotta e spinaci",
+  "also_called": ["spinach and ricotta cannelloni", "cannelloni"],
+  "techniques": ["wilt spinach", "mix filling", "make bechamel", "fill pasta tubes", "layer", "bake"],
+  "ingredients": [
+    "cannelloni",
+    "ricotta",
+    "spinach",
+    "parmesan",
+    "nutmeg",
+    "egg",
+    "milk",
+    "butter",
+    "flour",
+    "canned tomato"
+  ]
+}

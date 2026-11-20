@@ -1,0 +1,52 @@
+{
+  "id": "preparation/chermoula",
+  "tier": "drafted",
+  "names": {"en": "Chermoula"},
+  "aliases": {"en": ["charmoula", "chermoula marinade", "moroccan herb marinade"]},
+  "plurals": {},
+  "uncountable": true,
+  "is": "A Moroccan marinade and sauce of chopped coriander and parsley, garlic, cumin, paprika, lemon juice and olive oil. Fish is turned in it before cooking, and the rest is spooned over vegetables in the pot.",
+  "parts": [
+    {
+      "id": "herbs",
+      "role": "main",
+      "options": ["ingredient/coriander-leaf", "ingredient/parsley"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {
+      "id": "paprika",
+      "role": "seasoning",
+      "options": ["ingredient/paprika", "ingredient/smoked-paprika"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "chilli",
+      "role": "seasoning",
+      "options": ["ingredient/cayenne-pepper", "ingredient/chili-flakes"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon-juice", "preparation/preserved-lemon"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [],
+  "teaches": [
+    {"thing": "technique/make-chermoula", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": []
+}

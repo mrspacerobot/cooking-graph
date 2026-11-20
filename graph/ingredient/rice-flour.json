@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/toasted-rice-powder",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/larb-gai"],
+      "ratio": null,
+      "caveat": "Fine raw rice flour lacks the roasted aroma and grainy texture. It can turn pasty in the dressing.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],

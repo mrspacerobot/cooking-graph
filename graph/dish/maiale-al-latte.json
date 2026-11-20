@@ -1,0 +1,53 @@
+{
+  "id": "dish/maiale-al-latte",
+  "tier": "drafted",
+  "names": {"en": "Maiale al latte", "it": "Maiale al latte"},
+  "aliases": {"en": ["Arista di maiale al latte", "pork braised in milk", "pork loin in milk", "arista al latte"]},
+  "is": "A boneless pork loin browned in butter and cooked slowly in milk with garlic, sage and lemon peel. The milk splits into golden, nutty curds that are boiled down into the sauce, and the meat is served in thin slices.",
+  "parts": [
+    {
+      "id": "pork",
+      "role": "main",
+      "options": ["ingredient/pork-loin", "ingredient/pork-shoulder"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sage",
+      "role": "seasoning",
+      "options": ["ingredient/sage", "ingredient/rosemary"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "lemon-zest",
+      "role": "seasoning",
+      "options": ["ingredient/lemon-zest"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/braise-in-milk", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"},
+    {"thing": "technique/reduce", "tier": "drafted"},
+    {"thing": "technique/carve", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

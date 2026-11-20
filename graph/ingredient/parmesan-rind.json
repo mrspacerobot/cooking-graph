@@ -2,7 +2,7 @@
   "id": "ingredient/parmesan-rind",
   "tier": "drafted",
   "names": {"en": "Parmesan rind", "fr": "Croûte de parmesan"},
-  "aliases": {"en": ["Parmigiano Reggiano rind"]},
+  "aliases": {"en": ["Parmigiano Reggiano rind", "rind of parmesan"]},
   "plurals": {},
   "uncountable": true,
   "is_a": [],

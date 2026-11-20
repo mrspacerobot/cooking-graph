@@ -1,0 +1,53 @@
+{
+  "id": "technique/fry-sausages",
+  "tier": "drafted",
+  "names": {"en": "Fry sausages"},
+  "aliases": {
+    "en": ["fry the sausages", "brown sausages", "brown the sausages", "pan-fry sausages", "cook sausages in a pan"]
+  },
+  "does": "Cooks sausages in a little fat over a moderate heat, turning them often, so that the skin browns evenly all round while the inside cooks without the skin bursting.",
+  "intro": null,
+  "how": [
+    "Heat a little oil in a frying pan over a medium-low heat.",
+    "Lay the sausages in with space between them. Do not prick them.",
+    "Turn them every so often, so that each side browns in turn.",
+    "To brown them only, for a dish that finishes them in a sauce or the oven, stop once they are coloured all over."
+  ],
+  "cues": [
+    {"sense": "see", "text": "An even, deep brown skin all round, sticky and glossy, with no pale stripes."},
+    {"sense": "hear", "text": "A gentle, steady sizzle, never a fierce spitting."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying over a high heat, so that the skins split and burn before the middle is done.",
+      "fix": "Keep the heat moderate and give them time."
+    },
+    {
+      "mistake": "Pricking the skins, so that the fat and juice run out and the sausages turn dry.",
+      "fix": "Leave the skins whole; a moderate heat keeps them from bursting."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/pork-sausage", "tier": "drafted"},
+    {"thing": "ingredient/italian-sausage", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/tongs"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil", "ingredient/sunflower-oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "The sausages are round, so they are turned many times over a long, moderate fry rather than once, and the skin is kept whole.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"}
+  ]
+}

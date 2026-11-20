@@ -1,0 +1,117 @@
+{
+  "id": "recipe/pasta-e-patate",
+  "tier": "drafted",
+  "names": {"en": "Pasta e patate", "it": "pasta e patate"},
+  "aliases": {},
+  "makes": "dish/pasta-e-patate",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/mixed-pasta", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 600, "unit": "gram"},
+      "forms": ["form/peeled", "form/diced"],
+      "part": "potato"
+    },
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "soffritto"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "soffritto"
+    },
+    {
+      "thing": "ingredient/celery",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/minced"],
+      "part": "soffritto"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "soffritto"},
+    {"thing": "ingredient/pancetta", "amount": {"value": 80, "unit": "gram"}, "forms": ["form/diced"], "part": "pork"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/parmesan-rind", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "rind"},
+    {"thing": "ingredient/water", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "liquid"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 50, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/saucepan", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/grater", "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-a-soffritto",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": ["ingredient/olive-oil", "ingredient/pancetta", "ingredient/salt"],
+      "text": "Warm the {soffritto.olive-oil} in a heavy pot over low heat. Add the {soffritto.onion}, the {soffritto.carrot} and the {soffritto.celery}, all chopped very fine, [pork: with the {pork},] and cook gently, stirring often, until soft and pale gold.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/soffritto"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/potato"],
+      "with": [
+        "ingredient/tomato-paste", "ingredient/parmesan-rind", "ingredient/water", "ingredient/salt",
+        "preparation/soffritto"
+      ],
+      "text": "Heat the {liquid} in a saucepan. Stir the {tomato} and the {potato:plural} into the pot and turn them in the soffritto briefly. Pour in enough of the hot {liquid} to just cover them, add [rind: the {rind} and] a little of the {salt}, and simmer until the {potato:plural} are soft and starting to fall apart at the edges.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-pasta-in-the-soup",
+      "works_on": ["ingredient/mixed-pasta"],
+      "with": ["ingredient/water"],
+      "text": "Add the {pasta} straight to the pot and cook it in the soup, stirring often and adding a little more hot {liquid} whenever it looks dry, until the {pasta} is tender and the {potato:plural} have melted into a thick, creamy sauce. [rind: Lift out the {rind}.]",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/emulsify-off-the-heat",
+      "works_on": ["ingredient/parmesan"],
+      "with": ["ingredient/water"],
+      "text": "Take the pot off the heat and stir in the {cheese} hard until it melts into the starchy sauce and turns it creamy.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/mixed-pasta"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Taste and adjust the {salt}[pepper: , and grind in the {pepper}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/mixed-pasta"],
+      "with": [],
+      "text": "Leave it to settle briefly, then serve in warm bowls.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

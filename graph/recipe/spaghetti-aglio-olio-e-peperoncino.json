@@ -1,0 +1,78 @@
+{
+  "id": "recipe/spaghetti-aglio-olio-e-peperoncino",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti aglio, olio e peperoncino", "it": "spaghetti aglio, olio e peperoncino"},
+  "aliases": {},
+  "makes": "dish/spaghetti-aglio-olio-e-peperoncino",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/spaghetti", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {
+      "thing": "ingredient/garlic",
+      "amount": {"value": 4, "unit": "clove"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "garlic"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 6, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/dried-red-chilli", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/parsley", "amount": {"value": 1, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/frying-pan", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/tongs", "equipment/colander"
+  ],
+  "steps": [
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "[parsley: Pick the leaves of the {parsley} and chop them finely.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Bring a large pot of {water} to a rolling boil and season it well with the {salt}. Cook the {pasta} until it is tender with a firm bite at the centre. Scoop out a mug of the cooking {water} before draining.",
+      "time": {"from": 9, "to": 11, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-garlic-gently",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/olive-oil", "ingredient/dried-red-chilli"],
+      "text": "Meanwhile, put the {oil} and the sliced {garlic} in a cold, wide frying pan and set it over low heat. Let the {garlic} sizzle gently until it is pale gold at the edges, then crumble in the {chilli} and take the pan off the heat.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss-pasta-with-sauce",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/olive-oil", "ingredient/garlic", "ingredient/dried-red-chilli", "ingredient/water"],
+      "text": "Lift the {pasta} straight into the pan with a ladle of the cooking {water} and set it over high heat. Toss and stir hard until the {oil} and the {water} turn into a cloudy, creamy sauce that clings to every strand. Add more {water} a splash at a time if it looks dry.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/parsley"],
+      "text": "[parsley: Toss in the {parsley}.] Serve at once in warm bowls.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

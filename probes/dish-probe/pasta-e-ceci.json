@@ -1,0 +1,24 @@
+{
+  "id": "dish-probe/pasta-e-ceci",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "soup",
+  "dish": "Pasta e ceci",
+  "also_called": ["pasta and chickpeas", "chickpea pasta soup"],
+  "techniques": ["soften soffritto", "simmer chickpea", "blend part of the chickpea", "cook pasta in the soup"],
+  "ingredients": [
+    "ditalini",
+    "canned chickpea",
+    "onion",
+    "carrot",
+    "celery",
+    "garlic",
+    "rosemary",
+    "tomato paste",
+    "olive oil",
+    "vegetable stock"
+  ]
+}

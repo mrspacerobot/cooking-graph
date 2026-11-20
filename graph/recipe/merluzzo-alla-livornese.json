@@ -1,0 +1,70 @@
+{
+  "id": "recipe/merluzzo-alla-livornese",
+  "tier": "drafted",
+  "names": {"en": "Merluzzo alla livornese", "it": "Merluzzo alla livornese"},
+  "aliases": {},
+  "makes": "dish/merluzzo-alla-livornese",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/cod", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "fish"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/black-olive", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "olives"},
+    {"thing": "ingredient/capers", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "capers"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/sliced"], "part": "garlic"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 10, "unit": "gram"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 0.25, "unit": "teaspoon"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/fish-slice", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "Chop the {parsley} and keep it for the end.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/olive-oil", "ingredient/garlic", "ingredient/chili-flakes", "ingredient/salt"],
+      "text": "Warm the {oil} in a wide pan with a lid and let the {garlic}[chilli: and the {chilli}] sizzle gently until the {garlic} is pale gold. Add the {tomato:plural}, crush them with a spoon, season with a little {salt} and simmer until the sauce has thickened.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/poach-in-sauce",
+      "works_on": ["ingredient/cod"],
+      "with": ["preparation/tomato-sauce", "ingredient/black-olive", "ingredient/capers", "ingredient/salt"],
+      "text": "Stir the {olives:plural} and the {capers:plural} into the sauce. Season the {fish} lightly with {salt}, lay the pieces in the sauce in a single layer and spoon a little over them. Cover and cook at a gentle simmer until the flesh is opaque and flakes when pressed. Check against a trusted guide to doneness.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/cod"],
+      "with": ["ingredient/parsley"],
+      "text": "Scatter the {parsley} over the top and serve from the pan, with bread for the sauce.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

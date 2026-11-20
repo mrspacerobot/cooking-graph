@@ -1,0 +1,44 @@
+{
+  "id": "ingredient/thin-sliced-beef",
+  "tier": "drafted",
+  "names": {"en": "Thinly sliced beef"},
+  "aliases": {"en": ["shabu-shabu beef", "sukiyaki beef", "beef for gyudon", "usugiri beef"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [
+    {"thing": "ingredient/beef", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/thin-sliced-meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Beef, usually from a marbled cut such as chuck, rib or brisket, cut paper thin. The slices separate easily when they are cold, cook in moments in a simmering broth or a hot pan, and stay tender only if they are not cooked on.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is meat.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/thin-sliced-pork",
+      "allows": true,
+      "when": ["dish/shogayaki"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "Use the same weight of paper-thin beef. It takes the same glaze and gives the dish a deeper meat flavour.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

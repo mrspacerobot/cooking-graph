@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/kiymali-ispanak",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "braising",
+  "dish": "Kıymalı ıspanak",
+  "also_called": ["spinach with minced meat", "turkish spinach stew with mince"],
+  "techniques": ["brown minced meat", "wilt greens", "simmer"],
+  "ingredients": ["spinach", "minced beef", "onion", "rice", "tomato paste", "olive oil", "yogurt"]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/tom-kha-gai",
+  "tier": "drafted",
+  "batch": "home-thai-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "thai",
+  "written_for": "simmering",
+  "dish": "Tom kha kai",
+  "also_called": ["tom kha gai", "thai coconut chicken soup"],
+  "techniques": ["bruise aromatics", "simmer"],
+  "ingredients": [
+    "coconut milk",
+    "chicken breast",
+    "galangal",
+    "lemongrass",
+    "lime leaf",
+    "mushroom",
+    "fish sauce",
+    "lime"
+  ]
+}

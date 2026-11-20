@@ -1,0 +1,95 @@
+{
+  "id": "recipe/sopa-de-tortilla",
+  "tier": "drafted",
+  "names": {"en": "Sopa de tortilla"},
+  "aliases": {},
+  "makes": "dish/sopa-de-tortilla",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/guajillo-chilli", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/corn-tortilla", "amount": {"value": 6, "unit": "piece"}, "forms": [], "part": "tortillas"},
+    {"thing": "ingredient/oil", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/tomato", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/onion", "amount": {"value": 0.5, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/cooked-chicken", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/avocado", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "avocado"},
+    {"thing": "ingredient/feta", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "cheese"},
+    {"thing": "ingredient/sour-cream", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 4, "unit": "sprig"}, "forms": [], "part": "coriander"},
+    {"thing": "ingredient/lime", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lime"}
+  ],
+  "equipment": [
+    "equipment/frying-pan", "equipment/saucepan", "equipment/blender", "equipment/slotted-spoon",
+    "equipment/kitchen-scissors", "equipment/ladle", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/guajillo-chilli"],
+      "with": ["ingredient/chicken-stock"],
+      "text": "Snip the stems off the {chilli:plural}, shake out the seeds and toast them briefly in a dry pan until they smell toasty, without letting them blacken. Soak them in a ladle of hot {stock}.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-tortilla-strips",
+      "works_on": ["ingredient/corn-tortilla"],
+      "with": ["ingredient/oil", "ingredient/salt"],
+      "text": "Cut the {tortillas:plural} into thin strips. Heat the frying {oil} in a deep frying pan and fry the strips in small batches until golden and crisp. Drain them on kitchen paper and sprinkle with a little of the {salt}. A handful of plain bought tortilla chips is the quick way.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/tomato", "ingredient/onion", "ingredient/garlic"],
+      "with": ["ingredient/guajillo-chilli", "ingredient/chicken-stock"],
+      "text": "Blend the {tomato:plural}, the {onion}, the {garlic} and the soaked {chilli:plural} with their {stock} until very smooth.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-the-sauce",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/oil"],
+      "text": "Heat a spoonful of the {oil} in a saucepan over medium-high heat. Pour in the purée, standing back as it spits, and fry it, stirring, until it darkens and thickens.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken-stock"],
+      "with": ["ingredient/salt", "ingredient/cooked-chicken"],
+      "text": "Pour in the rest of the {stock}, season with the rest of the {salt} and simmer gently.[chicken: Add the {chicken} at the end and let it warm in the soup.]",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chicken-stock"],
+      "with": [
+        "ingredient/corn-tortilla", "ingredient/avocado", "ingredient/feta", "ingredient/sour-cream",
+        "ingredient/coriander-leaf", "ingredient/lime"
+      ],
+      "text": "Ladle the soup into bowls. Top with the tortilla strips, the diced {avocado}, the crumbled {cheese}[cream: , a spoonful of {cream}] and the chopped {coriander}, and serve the {lime} in wedges on the side.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

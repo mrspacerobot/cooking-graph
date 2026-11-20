@@ -2,7 +2,7 @@
   "id": "ingredient/chili-flakes",
   "tier": "drafted",
   "names": {"en": "Chili flakes"},
-  "aliases": {"en": ["chilli flakes", "red pepper flakes", "crushed red pepper"]},
+  "aliases": {"en": ["chilli flakes", "red pepper flakes", "crushed red pepper", "chili flake"]},
   "plurals": {"en": "Chili flakes"},
   "uncountable": false,
   "is_a": [],

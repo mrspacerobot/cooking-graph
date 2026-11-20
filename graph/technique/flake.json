@@ -1,0 +1,45 @@
+{
+  "id": "technique/flake",
+  "tier": "drafted",
+  "names": {"en": "Flake"},
+  "aliases": {"en": ["flake fish", "flake the fish", "break into flakes", "flake cooked fish"]},
+  "does": "Breaks cooked fish along its natural layers into large, tender pieces, taking out the skin and the bones as it goes.",
+  "intro": null,
+  "how": [
+    "Let the cooked fish cool enough to handle.",
+    "Peel away the skin and lift out any bones you can see or feel.",
+    "Press gently with a fork or your fingers so that the flesh parts along its layers, and stop while the flakes are still large."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The flesh parts easily into layers under light pressure."},
+    {"sense": "see", "text": "Large, moist flakes, not a paste."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Mashing the fish to shreds, so that it disappears into a sauce or a mixture.",
+      "fix": "Break it once into big pieces and leave them; they break further when mixed."
+    },
+    {
+      "mistake": "Missing small pin bones.",
+      "fix": "Run your fingertips over every piece before it goes into the dish."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "group/round-fish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/poach",
+      "why": "Fish is flaked once it is cooked, and poaching is the gentlest way to cook it for flaking.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": []
+}

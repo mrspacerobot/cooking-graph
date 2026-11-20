@@ -1,0 +1,27 @@
+{
+  "id": "dish-probe/bucatini-allamatriciana",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Bucatini all'amatriciana",
+  "also_called": ["amatriciana", "pasta amatriciana", "matriciana"],
+  "techniques": [
+    "render cured pork",
+    "deglaze with white wine",
+    "simmer tomato sauce",
+    "boil pasta",
+    "finish pasta in its sauce"
+  ],
+  "ingredients": [
+    "bucatini",
+    "guanciale",
+    "canned tomato",
+    "pecorino romano",
+    "white wine",
+    "dried chilli",
+    "black pepper"
+  ]
+}

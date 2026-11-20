@@ -1,0 +1,82 @@
+{
+  "id": "technique/mix-a-meatball-mixture",
+  "tier": "drafted",
+  "names": {"en": "Mix a meatball mixture"},
+  "aliases": {"en": ["mix meatball mixture", "mix the meatballs", "make a meatball mixture"]},
+  "does": "Mixes minced meat lightly by hand with soaked bread, egg, cheese and seasoning, only until even, so that the meatballs stay soft and tender.",
+  "intro": {
+    "what": "A meatball mixture is mixed, not kneaded.",
+    "why": "The soaked bread keeps the meatballs soft, and light handling stops the meat from binding into a tight, rubbery ball.",
+    "idea": "Light hands, soft meatballs",
+    "tier": "drafted"
+  },
+  "how": [
+    "Squeeze the soaked bread so that it is moist but not dripping.",
+    "Put the meat, the bread, the egg, the cheese, the herbs and the seasoning in a large bowl.",
+    "Mix lightly with your fingers, lifting and turning, only until it is evenly combined.",
+    "Fry a small piece to taste the seasoning before shaping, if you like."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The mixture is soft and moist and just holds together when pressed."},
+    {"sense": "see", "text": "No streaks of bread or lumps of meat are left."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Working the mixture hard, so the meatballs turn dense and springy.",
+      "fix": "Mix lightly and stop as soon as it is even."
+    },
+    {"mistake": "Leaving the bread dripping, so the mixture is too wet to shape.", "fix": "Squeeze the bread first."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why is soaked bread added?",
+      "choices": ["It keeps the meatballs soft and moist.", "It makes them crisp.", "It replaces the egg."],
+      "answer": 0,
+      "because": "The bread holds moisture in the meat.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How long do you mix?",
+      "choices": ["Until sticky and stretchy.", "Only until evenly combined.", "As long as possible."],
+      "answer": 1,
+      "because": "Overmixing makes dense meatballs.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should the mixture feel like?",
+      "choices": ["Soft, moist and just holding together.", "Firm and rubbery.", "Wet and runny."],
+      "answer": 0,
+      "because": "Soft, but it holds a shape.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Your meatballs were tight and springy. What would you change?",
+      "choices": ["Mix more lightly and stop sooner.", "Knead it longer.", "Leave out the bread."],
+      "answer": 0,
+      "because": "Light mixing keeps them tender.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/soak", "why": "The bread is soaked in milk first.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/knead",
+      "differs": "The meat is mixed lightly only until even, with soaked bread for softness, where kneading works the meat into a sticky paste that holds tight on a skewer.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

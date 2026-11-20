@@ -75,7 +75,7 @@
         "ingredient/ginger", "ingredient/green-chilli", "ingredient/turmeric", "ingredient/red-chilli-powder",
         "ingredient/oil"
       ],
-      "text": "Add the {onion}, the {ginger} and the {green-chilli} and cook until the {onion} is golden. Stir in the {turmeric} and the chilli powder for a moment, then add the {tomato} and cook, mashing it down, until the fat shows at the edge of the paste.",
+      "text": "Add the {onion}, the {ginger} and the {green-chilli} and cook until the {onion} is golden. Stir in the {turmeric} and the {chilli-powder} for a moment, then add the {tomato} and cook, mashing it down, until the fat shows at the edge of the paste.",
       "time": {"from": 10, "to": 12, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

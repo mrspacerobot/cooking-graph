@@ -1,0 +1,96 @@
+{
+  "id": "recipe/kotopoulo-me-kritharaki",
+  "tier": "drafted",
+  "names": {"en": "Kotopoulo me kritharaki", "el": "Κοτόπουλο με κριθαράκι", "el-Latn": "Kotopoulo me kritharaki"},
+  "aliases": {},
+  "makes": "dish/kotopoulo-me-kritharaki",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/chicken-thigh",
+      "amount": {"value": 8, "unit": "piece"},
+      "forms": ["form/skin-on"],
+      "part": "chicken"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/diced"], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "cinnamon"},
+    {"thing": "ingredient/bay-leaf", "amount": {"value": 1, "unit": "leaf"}, "forms": [], "part": "bay"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/orzo", "amount": {"value": 350, "unit": "gram"}, "forms": [], "part": "orzo"},
+    {"thing": "ingredient/kefalotyri", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "cheese"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/saute-pan", "equipment/saucepan", "equipment/baking-dish",
+    "equipment/tongs", "equipment/wooden-spoon", "equipment/grater", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/olive-oil", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Season the {chicken:plural} with half of the {salt} and the {pepper}. Brown them skin side down in the {oil} in a wide pan until the skin is deep gold, turn them, colour the other side and lift them out.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/garlic"],
+      "with": [],
+      "text": "Soften the {onion} in the fat left in the pan, then add the {garlic} for a moment.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [
+        "ingredient/tinned-tomatoes", "ingredient/cinnamon", "ingredient/bay-leaf", "ingredient/chicken-stock",
+        "ingredient/salt", "preparation/fond"
+      ],
+      "text": "Stir in the {tomato}, the {cinnamon}[bay: , the {bay}], the rest of the {salt} and a ladle of the {stock}, scraping up the brown bits. Put the {chicken:plural} back, cover and simmer gently.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-orzo-in-sauce",
+      "works_on": ["ingredient/orzo"],
+      "with": ["ingredient/chicken-thigh", "ingredient/chicken-stock"],
+      "text": "Bring the rest of the {stock} to a boil. Tip the sauce into a baking dish, stir in the {orzo} and the hot {stock}, and set the {chicken:plural} on top, skin side up. Bake uncovered, stirring the {orzo} once halfway, until it is tender and has taken up most of the liquid. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 35, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/grate",
+      "works_on": ["ingredient/kefalotyri"],
+      "with": [],
+      "text": "[cheese: Grate the {cheese} and scatter it over the dish as it comes out of the oven.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/orzo", "ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Take out the {cinnamon} [bay: and the {bay}]. Let the dish stand for a little while, so that the {orzo} settles, and serve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

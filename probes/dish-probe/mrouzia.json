@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/mrouzia",
+  "tier": "drafted",
+  "batch": "home-moroccan-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "moroccan",
+  "written_for": "braising",
+  "dish": "Mrouzia",
+  "also_called": ["lamb tagine with raisins and honey"],
+  "techniques": ["fry the spices", "braise", "reduce with honey"],
+  "ingredients": ["lamb shoulder", "raisin", "honey", "almond", "ras el hanout", "onion", "cinnamon"]
+}

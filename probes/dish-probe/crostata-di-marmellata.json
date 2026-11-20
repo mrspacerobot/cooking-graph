@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/crostata-di-marmellata",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "baking",
+  "dish": "Crostata di marmellata",
+  "also_called": ["jam tart", "italian jam crostata", "crostata"],
+  "techniques": ["make shortcrust pastry", "rest dough", "line tart pan", "spread jam", "make lattice top", "bake"],
+  "ingredients": ["flour", "butter", "sugar", "egg", "lemon zest", "jam", "baking powder"]
+}

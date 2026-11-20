@@ -14,7 +14,17 @@
   "teaches": [
     {"thing": "technique/make-a-roux", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/japanese-curry-roux",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/melt-in-curry-roux"],
+      "ratio": null,
+      "caveat": "Plain roux thickens, but the block also provides curry spices and seasoning. Plain roux alone makes a bland sauce.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

@@ -1,0 +1,101 @@
+{
+  "id": "recipe/kafta-bil-sanieh",
+  "tier": "drafted",
+  "names": {"en": "Kafta bil sanieh", "ar": "كفتة بالصينية", "ar-Latn": "Kafta bil sanieh"},
+  "aliases": {},
+  "makes": "dish/kafta-bil-sanieh",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/minced-beef", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/parsley", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "parsley"},
+    {"thing": "preparation/seven-spice", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "spice"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 600, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "potato"
+    },
+    {"thing": "ingredient/tomato", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/water", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/oven", "equipment/baking-dish",
+    "equipment/mixing-bowl", "equipment/parchment-paper"
+  ],
+  "steps": [
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/onion", "ingredient/parsley"],
+      "with": [],
+      "text": "Grate or mince the {onion} very fine and squeeze out its juice. Chop the {parsley} fine.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["ingredient/onion", "ingredient/parsley", "preparation/seven-spice", "ingredient/salt"],
+      "text": "Mix the {meat} with the {onion}, the {parsley}, the {spice} and most of the {salt}, and knead it with your hands until it is sticky and holds together.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [],
+      "text": "With wet hands, press the mixture into flat oval patties about as thick as a finger.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/potato", "ingredient/tomato"],
+      "with": [],
+      "text": "Slice the {potato:plural} into thin rounds and the {tomato:plural} into thick rounds.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Toss the {potato:plural} with the {oil} and a little of the {salt}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/potato", "ingredient/tomato", "ingredient/minced-beef"],
+      "with": [],
+      "text": "In a large baking dish, stand the patties, the {potato} slices and the {tomato} slices in rows, alternating them and overlapping them a little.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/potato", "ingredient/tomato"],
+      "with": ["ingredient/tomato-paste", "ingredient/water", "ingredient/salt", "ingredient/minced-beef"],
+      "text": "Whisk the {paste} into the {water} with the last of the {salt} and pour it over the dish. Cover with foil and bake until the {potato:plural} are nearly soft, then uncover and bake on until they are tender and browned at the edges and the sauce has thickened. Check a patty against a trusted guide to doneness.",
+      "time": {"from": 45, "to": 55, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

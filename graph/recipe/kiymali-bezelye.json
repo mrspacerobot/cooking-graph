@@ -1,0 +1,73 @@
+{
+  "id": "recipe/kiymali-bezelye",
+  "tier": "drafted",
+  "names": {"en": "Kiymali bezelye", "tr": "Kıymalı bezelye"},
+  "aliases": {},
+  "makes": "dish/kiymali-bezelye",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/peas", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "peas"},
+    {"thing": "ingredient/minced-beef", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/carrot", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "carrot"},
+    {"thing": "ingredient/potato", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1.5, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/water", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/wooden-spoon", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/vegetable-peeler"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/potato"],
+      "with": [],
+      "text": "Dice the {onion}, the {carrot:plural} and the {potato:plural} small and of one size.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["ingredient/olive-oil", "ingredient/onion"],
+      "text": "Warm the {oil} in a wide pot and soften the {onion} in it. Add the meat and fry it, breaking it up, until its liquid has cooked away and it browns.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-tomato-paste",
+      "works_on": ["ingredient/tomato-paste"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Stir in the {paste} and fry it with the meat, stirring, until it darkens a shade and smells sweet.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/carrot", "ingredient/potato"],
+      "with": [
+        "ingredient/peas", "ingredient/minced-beef", "ingredient/water", "ingredient/salt", "ingredient/black-pepper"
+      ],
+      "text": "Add the {carrot:plural}, the {potato:plural} and the {peas:plural}, pour in the hot {water} to come just below the top of the vegetables, and season with the {salt} and the {black-pepper}. Cover and cook over low heat until the {potato:plural} are tender and the juices have thickened. Check the meat against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

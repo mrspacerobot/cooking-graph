@@ -1,0 +1,46 @@
+{
+  "id": "ingredient/bucatini",
+  "tier": "drafted",
+  "names": {"en": "Bucatini", "it": "bucatini"},
+  "aliases": {"en": ["perciatelli"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [
+    {"thing": "ingredient/pasta", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/pasta", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Thick rods of dried durum-wheat pasta with a thin hole running through the middle. They take a little longer to cook than spaghetti and hold a rich, oily sauce inside and out.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Made of wheat.", "certain": true},
+      {"fact": "fact/egg", "basis": "Some pasta is made with egg.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/fish",
+      "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/spaghetti",
+      "allows": true,
+      "when": ["technique/toss-pasta-with-sauce"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "Use the same weight of dry pasta and check its own cooking time. The thicker hollow strands have a firmer bite.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

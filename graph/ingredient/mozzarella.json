@@ -23,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/monterey-jack",
+      "allows": true,
+      "when": ["dish/enchiladas-verdes"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use low-moisture mozzarella and grate it. It melts well and tastes milder, with longer strands.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],

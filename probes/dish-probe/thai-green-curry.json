@@ -1,0 +1,22 @@
+{
+  "id": "dish-probe/thai-green-curry",
+  "tier": "drafted",
+  "batch": "home-thai-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "thai",
+  "written_for": "curry",
+  "dish": "Kaeng khiao wan kai",
+  "also_called": ["thai green curry", "green chicken curry", "gaeng keow wan"],
+  "techniques": ["fry the paste", "simmer", "cook rice"],
+  "ingredients": [
+    "green curry paste",
+    "coconut milk",
+    "chicken thigh",
+    "aubergine",
+    "fish sauce",
+    "palm sugar",
+    "thai basil",
+    "jasmine rice"
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "technique/mash",
   "tier": "drafted",
   "names": {"en": "Mash", "fr": "Écraser"},
-  "aliases": {"en": ["mash potatoes", "make a potato purée"]},
+  "aliases": {"en": ["mash potatoes", "make a potato purée", "mash potato"]},
   "does": "Crushes boiled potatoes while they are hot and dry, then beats in butter and hot milk to make a smooth purée.",
   "intro": {
     "what": "This potato mash crushes hot, steam-dried potatoes, then incorporates butter and hot milk.",

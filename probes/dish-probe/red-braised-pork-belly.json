@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/red-braised-pork-belly",
+  "tier": "drafted",
+  "batch": "home-chinese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "chinese",
+  "written_for": "braising",
+  "dish": "Hóngshāo ròu",
+  "also_called": ["red braised pork belly", "red cooked pork"],
+  "techniques": ["blanch", "caramelise sugar", "brown", "braise", "reduce"],
+  "ingredients": ["pork belly", "sugar", "soy sauce", "shaoxing wine", "ginger", "star anise", "spring onion"]
+}

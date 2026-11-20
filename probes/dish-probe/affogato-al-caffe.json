@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/affogato-al-caffe",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "assembling",
+  "dish": "Affogato al caffè",
+  "also_called": ["affogato", "ice cream with espresso"],
+  "techniques": ["brew espresso", "pour hot espresso over ice cream"],
+  "ingredients": ["vanilla ice cream", "espresso"]
+}

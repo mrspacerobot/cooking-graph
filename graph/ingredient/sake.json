@@ -34,6 +34,15 @@
       "ratio": null,
       "caveat": "It has no sweetness or gloss, so add a little sugar.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/shaoxing-wine",
+      "allows": true,
+      "when": ["technique/velvet"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use dry sake. Its flavour is cleaner and less nutty in the marinade.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

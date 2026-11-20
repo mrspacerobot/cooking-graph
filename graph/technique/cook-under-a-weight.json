@@ -1,0 +1,101 @@
+{
+  "id": "technique/cook-under-a-weight",
+  "tier": "drafted",
+  "names": {"en": "Cook under a weight", "it": "al mattone"},
+  "aliases": {"en": ["press and grill", "cook al mattone", "cook under a brick"]},
+  "does": "Cooks a flattened bird or flat pieces of meat skin side down on a hot pan or grill with a heavy weight on top, so that the whole skin stays pressed to the heat and turns evenly crisp.",
+  "intro": {
+    "what": "The weight keeps every part of the skin pressed against the hot metal.",
+    "why": "Even contact gives an even, crisp skin and quick cooking, which a bird left loose on a grill never gets.",
+    "idea": "Contact makes crust",
+    "tier": "drafted"
+  },
+  "how": [
+    "Flatten the food first so it lies level.",
+    "Heat a heavy frying pan, ridged pan or grill to a steady medium heat.",
+    "Lay the food skin side down and set a second heavy pan on top, weighed down with tins or a stone.",
+    "Leave it alone until the skin is deep gold and crisp, then lift the weight, turn the food and finish it, often in the oven."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A steady, even sizzle, not a fierce spit."},
+    {"sense": "see", "text": "The skin is an even deep gold all over, with no pale patches."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Too high a heat, so the skin burns before the meat below has cooked.",
+      "fix": "Use a medium heat and finish the meat in the oven."
+    },
+    {
+      "mistake": "Lifting the weight often to look, so the skin loses contact and colours in patches.",
+      "fix": "Leave it in place until the skin has crisped."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What does the weight on top do?",
+      "choices": [
+        "It keeps the whole skin pressed to the heat so it crisps evenly.",
+        "It squeezes the juices out on purpose.",
+        "It stops the pan from smoking."
+      ],
+      "answer": 0,
+      "because": "The point is even contact between skin and hot metal.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Which side goes down first?",
+      "choices": ["The bone side.", "The skin side.", "It does not matter."],
+      "answer": 1,
+      "because": "The skin side goes down under the weight, so that it crisps.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What should you see before you turn the food?",
+      "choices": ["Pale skin with a few dark spots.", "An even deep gold, crisp skin.", "Juice pooling on top."],
+      "answer": 1,
+      "because": "Turn only when the whole skin is an even deep gold.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The skin was black before the meat was done. What would you change?",
+      "choices": [
+        "Use a medium heat and finish the meat in the oven.",
+        "Use a heavier weight.",
+        "Cook it skin side up."
+      ],
+      "answer": 0,
+      "because": "Moderate heat lets the skin colour while the oven finishes the meat.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/poultry", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/griddle"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/spatchcock",
+      "why": "A bird must lie flat before a weight can press all of its skin to the heat.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/grill",
+      "differs": "The food lies flat on a hot pan or grill with a weight on top, so all the skin stays pressed to the heat, where a plain grill leaves the food loose on the bars.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

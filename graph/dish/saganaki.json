@@ -1,0 +1,35 @@
+{
+  "id": "dish/saganaki",
+  "tier": "drafted",
+  "names": {"en": "Saganaki", "el": "Σαγανάκι", "el-Latn": "Saganaki"},
+  "aliases": {"en": ["greek fried cheese", "pan-fried kefalograviera", "cheese saganaki", "fried cheese saganaki"]},
+  "is": "A thick slice of firm, salty cheese, dipped in water and flour and fried hot in olive oil until it has a golden crust and a soft, molten middle, then brought to the table in its small pan with lemon. It is named after that pan, the sagani.",
+  "parts": [
+    {
+      "id": "cheese",
+      "role": "main",
+      "options": ["ingredient/kefalograviera", "ingredient/kefalotyri"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon", "ingredient/lemon-juice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-cheese", "tier": "drafted"},
+    {"thing": "technique/finish-with-lemon", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

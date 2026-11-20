@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/sausage-casserole",
+  "tier": "drafted",
+  "batch": "home-british-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "british",
+  "written_for": "braising",
+  "dish": "Sausage casserole",
+  "also_called": ["sausage and bean casserole"],
+  "techniques": ["brown sausages", "fry onion", "simmer"],
+  "ingredients": ["pork sausage", "onion", "carrot", "canned tomato", "cannellini bean", "smoked paprika", "stock"]
+}

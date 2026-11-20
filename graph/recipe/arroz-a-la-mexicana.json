@@ -1,0 +1,97 @@
+{
+  "id": "recipe/arroz-a-la-mexicana",
+  "tier": "drafted",
+  "names": {"en": "Arroz a la mexicana"},
+  "aliases": {},
+  "makes": "dish/arroz-a-la-mexicana",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/long-grain-rice", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/tomato", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/onion", "amount": {"value": 0.5, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/carrot", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/peeled"], "part": "carrot"},
+    {"thing": "ingredient/peas", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "peas"},
+    {"thing": "ingredient/green-chilli", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 4, "unit": "sprig"}, "forms": [], "part": "coriander"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/blender", "equipment/saucepan", "equipment/fine-sieve", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/wooden-spoon", "equipment/stovetop", "equipment/vegetable-peeler"
+  ],
+  "steps": [
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/tomato", "ingredient/onion", "ingredient/garlic"],
+      "with": [],
+      "text": "Roughly chop the {tomato:plural} and the {onion} and blend them with the {garlic} until smooth.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/carrot"],
+      "with": [],
+      "text": "Cut the {carrot} into small dice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-rice-golden",
+      "works_on": ["ingredient/long-grain-rice"],
+      "with": ["ingredient/oil"],
+      "text": "Rinse the {rice} in a sieve and shake it as dry as you can. Heat the {oil} in a wide pan over medium heat, add the {rice} and fry it, stirring often, until the grains turn opaque, then pale gold, and smell toasty.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-the-sauce",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/long-grain-rice"],
+      "text": "Pour the purée into the pan, standing back as it spits. Fry it with the {rice}, stirring, until it darkens to a deep red and most of its liquid has cooked off.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken-stock", "ingredient/carrot"],
+      "with": ["ingredient/long-grain-rice", "ingredient/green-chilli", "ingredient/salt"],
+      "text": "Pour in the hot {stock} and add the {carrot}[chilli: , the whole {chilli}] and the {salt}. Bring it to a boil and stir once, then turn the heat to its lowest, cover tightly and cook without lifting the lid.",
+      "time": {"value": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cover-with-a-lid",
+      "works_on": ["ingredient/peas", "ingredient/long-grain-rice"],
+      "with": [],
+      "text": "Scatter the {peas:plural} over the top, cover again at once and cook until the {rice} has taken up all the liquid and small holes show on the surface.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/rest-and-fluff",
+      "works_on": [],
+      "with": ["ingredient/long-grain-rice", "ingredient/coriander-leaf"],
+      "text": "Take the pan off the heat and leave it covered to steam. Then fluff the grains gently with a fork[coriander: and scatter over the chopped {coriander}].",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

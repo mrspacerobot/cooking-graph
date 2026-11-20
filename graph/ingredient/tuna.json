@@ -22,7 +22,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/canned-tuna",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/spaghetti-al-tonno", "technique/warm-through"],
+      "ratio": null,
+      "caveat": "Raw tuna cannot be drained, flaked and heated briefly like the preserved tuna the sauce uses.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": [
     {"source": "source/wikidata", "id": "Q139820999", "tier": "sourced"}

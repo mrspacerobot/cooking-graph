@@ -1,0 +1,157 @@
+{
+  "id": "recipe/brasato-al-vino-rosso",
+  "tier": "drafted",
+  "names": {"en": "Brasato al vino rosso", "it": "Brasato al vino rosso"},
+  "aliases": {},
+  "makes": "dish/brasato-al-vino-rosso",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/stewing-beef", "amount": {"value": 1, "unit": "kilogram"}, "forms": [], "part": "beef"},
+    {"thing": "ingredient/red-wine", "amount": {"value": 750, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/chopped"], "part": "onion"},
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/chopped"],
+      "part": "carrot"
+    },
+    {
+      "thing": "ingredient/celery",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/chopped"],
+      "part": "celery"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/peeled"], "part": "garlic"},
+    {"thing": "ingredient/bay-leaf", "amount": {"value": 2, "unit": "leaf"}, "forms": [], "part": "bay-leaf"},
+    {"thing": "ingredient/rosemary", "amount": {"value": 1, "unit": "sprig"}, "forms": [], "part": "rosemary"},
+    {"thing": "ingredient/clove", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "clove"},
+    {"thing": "ingredient/beef-stock", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/dutch-oven", "equipment/mixing-bowl", "equipment/fine-sieve",
+    "equipment/blender", "equipment/tongs", "equipment/wooden-spoon", "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": [],
+      "text": "Cut the {onion}, the {carrot} and the {celery} into rough pieces of about the same size.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/marinate",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": [
+        "ingredient/red-wine", "ingredient/onion", "ingredient/carrot", "ingredient/celery", "ingredient/garlic",
+        "ingredient/bay-leaf", "ingredient/rosemary", "ingredient/clove"
+      ],
+      "text": "Tie the {beef} into a neat shape if it is loose and put it in a snug bowl with the {onion}, the {carrot}, the {celery}, the {garlic}, the {bay-leaf:plural}[clove: , the {clove:plural}] and the {rosemary}. Pour over the {wine} to cover, then cover the bowl and leave it in the fridge, turning the meat once.",
+      "time": {"from": 12, "to": 24, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/strain",
+      "works_on": [],
+      "with": ["ingredient/stewing-beef", "ingredient/red-wine"],
+      "text": "Lift out the {beef} and pat it dry. Pour the {wine} through a sieve into a jug and keep it, and keep the vegetables and herbs apart.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/olive-oil", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Season the {beef} with {salt} and {black-pepper}. Heat the {oil} in a heavy casserole and brown the meat well on every side. Lift it out.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/make-a-soffritto",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": ["ingredient/garlic", "ingredient/bay-leaf", "ingredient/rosemary"],
+      "text": "Lower the heat and soften the drained vegetables and herbs in the fat left in the pot, stirring, until soft and lightly golden.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/soffritto"]
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/red-wine"],
+      "text": "Pour in the strained {wine}, scrape the bottom of the pot clean and let it bubble until the sharp smell has gone.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pan-sauce"]
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/beef-stock", "preparation/pan-sauce"],
+      "text": "Put the {beef} back with the {stock}. Bring it to a bare simmer, cover, and cook in a low oven, turning the meat now and then, until a fork slides in with no resistance. Check against a trusted guide to doneness.",
+      "time": {"from": 2.5, "to": 3, "unit": "hour"},
+      "temperature": {"value": 150, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/rest",
+      "works_on": [],
+      "with": ["ingredient/stewing-beef"],
+      "text": "Lift the meat onto a board, cover it loosely and let it rest. Take out the {bay-leaf:plural} and the stalk of the {rosemary}.",
+      "time": {"value": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/puree",
+      "works_on": ["ingredient/onion", "ingredient/carrot"],
+      "with": ["preparation/braising-liquid"],
+      "text": "Blend the vegetables with the cooking liquid until smooth. If the sauce is thin, boil it down in the open pot until it coats a spoon.",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/braising-liquid"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Taste the sauce and adjust the {salt} and the {black-pepper}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/carve",
+      "works_on": [],
+      "with": ["ingredient/stewing-beef", "preparation/braising-liquid"],
+      "text": "Remove any string and cut the meat across the grain into thick slices. Lay them on a warm dish and pour the hot sauce over them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

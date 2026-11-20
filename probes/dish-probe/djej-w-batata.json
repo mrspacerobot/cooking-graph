@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/djej-w-batata",
+  "tier": "drafted",
+  "batch": "home-lebanese-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "lebanese",
+  "written_for": "roasting",
+  "dish": "Djej w batata bil forn",
+  "also_called": ["lebanese garlic lemon chicken and potatoes", "chicken and potato traybake"],
+  "techniques": ["marinate", "toss in oil", "roast"],
+  "ingredients": ["chicken thigh", "potato", "garlic", "lemon", "olive oil", "seven spice"]
+}

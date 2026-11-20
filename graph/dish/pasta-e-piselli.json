@@ -1,0 +1,46 @@
+{
+  "id": "dish/pasta-e-piselli",
+  "tier": "drafted",
+  "names": {"en": "Pasta e piselli", "it": "pasta e piselli"},
+  "aliases": {"en": ["pasta with peas", "pasta and peas", "pasta e piselli alla napoletana"]},
+  "is": "A thick, comforting Neapolitan pasta soup of sweet peas cooked with onion, and often pancetta, in olive oil, with small pasta cooked in the pot and Parmesan stirred in at the end.",
+  "parts": [
+    {
+      "id": "pasta",
+      "role": "main",
+      "options": ["ingredient/ditalini", "ingredient/small-pasta", "ingredient/mixed-pasta"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "peas", "role": "main", "options": ["ingredient/peas"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pork",
+      "role": "aromatic",
+      "options": ["ingredient/pancetta", "ingredient/bacon"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "liquid",
+      "role": "liquid",
+      "options": ["ingredient/vegetable-stock", "ingredient/chicken-stock", "ingredient/water"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cheese", "role": "enrichment", "options": ["ingredient/parmesan"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/cook-pasta-in-the-soup", "tier": "drafted"},
+    {"thing": "technique/emulsify-off-the-heat", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

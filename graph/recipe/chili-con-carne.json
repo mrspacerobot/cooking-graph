@@ -1,0 +1,114 @@
+{
+  "id": "recipe/chili-con-carne",
+  "tier": "drafted",
+  "names": {"en": "Chili con carne"},
+  "aliases": {},
+  "makes": "dish/chili-con-carne",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/minced-beef", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "beef"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/diced"],
+      "part": "onion"
+    },
+    {
+      "thing": "ingredient/bell-pepper",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/diced"],
+      "part": "bell-pepper"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {
+      "thing": "ingredient/chili-powder",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "chili-powder"
+    },
+    {"thing": "ingredient/cumin", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/oregano", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {
+      "thing": "ingredient/tomato-paste",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "tomato-paste"
+    },
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomatoes"},
+    {"thing": "ingredient/kidney-bean", "amount": {"value": 480, "unit": "gram"}, "forms": [], "part": "beans"},
+    {"thing": "ingredient/beef-stock", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {
+      "thing": "ingredient/cheddar",
+      "amount": {"value": 80, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {
+      "thing": "ingredient/spring-onion",
+      "amount": {"value": 3, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "spring-onion"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": ["equipment/stovetop", "equipment/dutch-oven", "equipment/wooden-spoon", "equipment/ladle"],
+  "steps": [
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["ingredient/oil"],
+      "text": "Heat the {oil} in a wide pan over a high heat. Add the {beef}, break it up with a wooden spoon and fry, stirring only now and then, until the liquid has cooked off and the meat is well browned. Spoon off most of the fat.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/bell-pepper", "ingredient/garlic"],
+      "with": [],
+      "text": "Lower the heat, add the {onion} and the {bell-pepper} and cook until soft, adding the {garlic} at the end.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bloom-ground-spices",
+      "works_on": ["ingredient/chili-powder", "ingredient/cumin"],
+      "with": ["ingredient/oregano", "ingredient/tomato-paste"],
+      "text": "Stir in the {chili-powder}, the ground {cumin}[oregano: , the {oregano}] and the {tomato-paste} and fry, stirring, for a moment until the spices smell toasty and darken a little.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/minced-beef", "ingredient/kidney-bean"],
+      "with": ["ingredient/tinned-tomatoes", "ingredient/beef-stock", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Add the {tomatoes} and the {stock}, season with {salt} and {black-pepper} and bring to a simmer. Cover partly and simmer gently, stirring now and then, until thick and rich. Stir in the drained {beans:plural} for the last stretch so that they heat without breaking. Check against a trusted guide to doneness.",
+      "time": {"from": 40, "to": 50, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["ingredient/cheddar", "ingredient/spring-onion"],
+      "text": "Serve in bowls[cheese: , topped with the {cheese}][spring-onion: , with the {spring-onion:plural} scattered over].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

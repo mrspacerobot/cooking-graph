@@ -2,7 +2,7 @@
   "id": "technique/make-a-caramel",
   "tier": "drafted",
   "names": {"en": "Make a caramel", "fr": "Faire un caramel"},
-  "aliases": {"en": ["caramelize sugar", "cook sugar to caramel", "caramel"]},
+  "aliases": {"en": ["caramelize sugar", "cook sugar to caramel", "caramel", "caramelise sugar"]},
   "does": "Cooks sugar until it melts and browns to an amber syrup with a bittersweet taste.",
   "intro": {
     "what": "Making caramel heats sugar until it melts and turns into an amber, bittersweet syrup.",

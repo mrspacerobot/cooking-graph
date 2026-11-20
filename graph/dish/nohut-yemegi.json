@@ -1,0 +1,52 @@
+{
+  "id": "dish/nohut-yemegi",
+  "tier": "drafted",
+  "names": {"en": "Nohut yemegi", "tr": "Nohut yemeği"},
+  "aliases": {"en": ["Turkish chickpea stew", "etli nohut", "chickpea stew with beef"]},
+  "is": "Chickpeas simmered in a red sauce of onion softened in butter with tomato and pepper paste, often with small pieces of beef cooked tender first. It is eaten with rice pilaf or bread.",
+  "parts": [
+    {"id": "chickpea", "role": "main", "options": ["ingredient/chickpea"], "optional": false, "tier": "drafted"},
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/stewing-beef", "ingredient/beef", "ingredient/lamb-shoulder"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "butter",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "paste", "role": "seasoning", "options": ["ingredient/tomato-paste"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pepper-paste",
+      "role": "seasoning",
+      "options": ["ingredient/red-pepper-paste"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "chilli", "role": "garnish", "options": ["ingredient/chili-flakes"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/fry-tomato-paste", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

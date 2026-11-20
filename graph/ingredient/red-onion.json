@@ -1,0 +1,32 @@
+{
+  "id": "ingredient/red-onion",
+  "tier": "drafted",
+  "names": {"en": "Red onion", "fr": "Oignon rouge", "it": "Cipolla rossa", "es": "cebolla morada"},
+  "aliases": {"en": ["purple onion"]},
+  "plurals": {"en": "Red onions", "fr": "Oignons rouges", "it": "Cipolle rosse", "es": "cebollas moradas"},
+  "uncountable": false,
+  "is_a": [
+    {"thing": "ingredient/onion", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/alliums", "tier": "drafted"},
+    {"thing": "group/aromatic-vegetables", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A milder, sweeter onion with purple layers. Roasted in wedges it softens and chars at the tips, and raw it is sharp enough to eat in a salad.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

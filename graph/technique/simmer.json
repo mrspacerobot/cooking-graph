@@ -2,7 +2,17 @@
   "id": "technique/simmer",
   "tier": "drafted",
   "names": {"en": "Simmer", "fr": "Mijoter"},
-  "aliases": {"en": ["simmer gently", "cook at a simmer", "gentle simmer", "simmer slowly"]},
+  "aliases": {
+    "en": [
+      "simmer gently",
+      "cook at a simmer",
+      "gentle simmer",
+      "simmer slowly",
+      "simmer sauce",
+      "simmer a sauce",
+      "simmer the sauce"
+    ]
+  },
   "does": "Cooks food in liquid that is kept just below a boil, so that it turns tender without being knocked about.",
   "intro": {
     "what": "Simmering keeps food in liquid that moves gently below a rolling boil.",

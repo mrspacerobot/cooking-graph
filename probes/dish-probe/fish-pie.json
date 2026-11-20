@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/fish-pie",
+  "tier": "drafted",
+  "batch": "home-british-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "british",
+  "written_for": "baking",
+  "dish": "Fish pie",
+  "also_called": ["fish pie", "fisherman's pie"],
+  "techniques": ["poach", "make white sauce", "mash potato", "bake"],
+  "ingredients": ["smoked haddock", "salmon", "prawn", "milk", "butter", "flour", "potato", "egg", "parsley"]
+}

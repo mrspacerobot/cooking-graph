@@ -1,0 +1,51 @@
+{
+  "id": "recipe/sigara-boregi",
+  "tier": "drafted",
+  "names": {"en": "Sigara boregi", "tr": "Sigara böreği"},
+  "aliases": {},
+  "makes": "dish/sigara-boregi",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/phyllo", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "pastry"},
+    {"thing": "ingredient/white-cheese", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "cheese"},
+    {"thing": "ingredient/parsley", "amount": {"value": 8, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/egg", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/mixing-bowl", "equipment/frying-pan",
+    "equipment/stovetop", "equipment/slotted-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": ["ingredient/white-cheese", "ingredient/egg"],
+      "text": "Chop the {parsley} finely and mix it in a bowl with the crumbled {cheese} and the beaten {egg}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roll-a-cigar-borek",
+      "works_on": ["ingredient/phyllo"],
+      "with": ["ingredient/white-cheese", "ingredient/parsley", "ingredient/egg"],
+      "text": "Keep the {pastry} under a damp cloth. Cut it into long triangles. Lay a thin finger of the filling along the wide end, roll once, fold in both sides and roll up tightly towards the point. Dab the point with water and press it shut.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-borek",
+      "works_on": ["ingredient/phyllo"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Heat the {oil} in a frying pan to the depth of a finger. Fry the rolls a few at a time, seam side down first, turning them until golden all over. Drain them on paper and serve warm.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

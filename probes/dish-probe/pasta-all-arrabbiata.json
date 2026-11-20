@@ -1,0 +1,18 @@
+{
+  "id": "dish-probe/pasta-all-arrabbiata",
+  "tier": "drafted",
+  "batch": "home-italian-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "italian",
+  "written_for": "pasta",
+  "dish": "Pasta all'arrabbiata",
+  "also_called": ["penne arrabbiata", "arrabbiata pasta", "spicy tomato pasta"],
+  "techniques": [
+    "sauté garlic and chilli in olive oil",
+    "simmer tomato sauce",
+    "boil pasta",
+    "finish pasta in its sauce"
+  ],
+  "ingredients": ["penne", "canned tomato", "garlic", "dried chilli", "olive oil", "parsley", "salt"]
+}

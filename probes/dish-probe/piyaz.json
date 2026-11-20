@@ -1,0 +1,13 @@
+{
+  "id": "dish-probe/piyaz",
+  "tier": "drafted",
+  "batch": "home-turkish-1",
+  "set": "growing",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "turkish",
+  "written_for": "salad",
+  "dish": "Piyaz",
+  "also_called": ["turkish white bean salad", "bean salad with tahini", "antalya piyazı"],
+  "techniques": ["slice onion", "dress"],
+  "ingredients": ["canned white bean", "onion", "parsley", "tomato", "egg", "lemon", "olive oil", "sumac", "tahini"]
+}

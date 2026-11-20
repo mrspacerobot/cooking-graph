@@ -1,0 +1,69 @@
+{
+  "id": "dish/sopa-de-tortilla",
+  "tier": "drafted",
+  "names": {"en": "Sopa de tortilla", "es": "Sopa de tortilla"},
+  "aliases": {"en": ["tortilla soup", "sopa azteca", "Mexican tortilla soup"]},
+  "is": "A tomato and dried chilli soup from central Mexico: a blended base of tomato, onion, garlic and chilli fried in hot oil, simmered with stock, and served over crisp fried tortilla strips with avocado, fresh cheese, coriander and lime.",
+  "parts": [
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli",
+      "role": "seasoning",
+      "options": ["ingredient/guajillo-chilli", "ingredient/dried-red-chilli", "ingredient/chipotle-in-adobo"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "tortillas",
+      "role": "topping",
+      "options": ["ingredient/corn-tortilla"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "chicken", "role": "main", "options": ["ingredient/cooked-chicken"], "optional": true, "tier": "drafted"},
+    {"id": "avocado", "role": "garnish", "options": ["ingredient/avocado"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "garnish",
+      "options": ["ingredient/feta", "ingredient/monterey-jack"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cream", "role": "garnish", "options": ["ingredient/sour-cream"], "optional": true, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lime", "role": "acid", "options": ["ingredient/lime"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-tortilla-strips", "tier": "drafted"},
+    {"thing": "technique/puree", "tier": "drafted"},
+    {"thing": "technique/fry-the-sauce", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ],
+  "same_as": []
+}

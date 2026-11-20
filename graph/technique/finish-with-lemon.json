@@ -1,0 +1,76 @@
+{
+  "id": "technique/finish-with-lemon",
+  "tier": "drafted",
+  "names": {"en": "Finish with lemon"},
+  "aliases": {"en": ["squeeze over lemon", "add lemon juice at the end", "brighten with lemon"]},
+  "does": "Adds fresh lemon juice at the very end, off the heat or at the table, so that its sharp, fresh taste lifts a rich soup, a dish of pulses or a piece of fried food without being cooked away.",
+  "intro": {
+    "what": "Lemon juice goes in at the end, off the heat or at the table.",
+    "why": "Heat dulls lemon juice, so adding it last keeps its fresh sharpness to cut through oil and richness.",
+    "idea": "Fresh acid last",
+    "tier": "drafted"
+  },
+  "how": [
+    "Cook the dish until it is ready and take it off the heat.",
+    "Squeeze in the lemon juice a little at a time, stir and taste after each addition.",
+    "Stop when the dish tastes bright but not sour, and put lemon wedges on the table for those who want more."
+  ],
+  "cues": [
+    {"sense": "taste", "text": "The dish tastes brighter and lighter, and the oil no longer feels heavy."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the lemon early and boiling it, so that it tastes flat and a little bitter.",
+      "fix": "Add it off the heat at the end."
+    },
+    {
+      "mistake": "Pouring in all the juice at once, so that the dish turns sour.",
+      "fix": "Add it a little at a time and taste."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "timing",
+      "question": "When does the lemon juice go in?",
+      "choices": ["At the start, with the onion.", "At the end, off the heat.", "Halfway through the cooking."],
+      "answer": 1,
+      "because": "Heat dulls the fresh taste of the juice.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How much juice should go in?",
+      "choices": [
+        "Enough to taste bright, added a little at a time.",
+        "As much as possible.",
+        "None until the dish is cold."
+      ],
+      "answer": 0,
+      "because": "Tasting as you go keeps the dish from turning sour.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pulses", "tier": "drafted"},
+    {"thing": "group/vegetables", "tier": "drafted"},
+    {"thing": "group/fish-and-shellfish", "tier": "drafted"},
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "ingredient/kefalograviera", "tier": "drafted"},
+    {"thing": "ingredient/kefalotyri", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "acid", "options": ["ingredient/lemon", "ingredient/lemon-juice"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/season",
+      "differs": "Only lemon juice is added, and only at the very end, so that its fresh taste is not cooked away.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

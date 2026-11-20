@@ -46,6 +46,17 @@
       "ratio": null,
       "caveat": "The long dry grains do not cling or take up the broth the way a round rice does.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/long-grain-rice",
+      "allows": true,
+      "when": [
+        "dish/arroz-a-la-mexicana", "dish/sayadieh", "technique/cook-rice-in-onion-broth", "technique/fry-rice-golden"
+      ],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use the same dry weight and adjust the broth for the variety. The grains will be longer and more aromatic.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

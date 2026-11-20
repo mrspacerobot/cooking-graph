@@ -1,0 +1,7 @@
+{
+  "id": "cuisine/chinese",
+  "tier": "drafted",
+  "names": {"en": "Chinese", "fr": "Chinoise"},
+  "aliases": {"en": ["Chinese cooking", "Chinese cuisine"]},
+  "within": null
+}

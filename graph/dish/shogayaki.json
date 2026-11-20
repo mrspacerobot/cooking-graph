@@ -1,0 +1,47 @@
+{
+  "id": "dish/shogayaki",
+  "tier": "drafted",
+  "names": {"en": "Butaniku no shōgayaki", "ja": "生姜焼き", "ja-Latn": "Shōgayaki"},
+  "aliases": {"en": ["shogayaki", "ginger pork", "pork shogayaki", "buta no shogayaki"]},
+  "is": "Ginger pork: thin slices of pork fried fast with onion and glazed in a sauce of grated ginger, soy sauce, mirin and sake, served with a heap of raw shredded cabbage and plain rice.",
+  "parts": [
+    {"id": "pork", "role": "main", "options": ["ingredient/thin-sliced-pork"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "seasoning", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "mirin", "role": "sweetener", "options": ["ingredient/mirin"], "optional": false, "tier": "drafted"},
+    {"id": "sake", "role": "seasoning", "options": ["ingredient/sake"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "cabbage",
+      "role": "side",
+      "options": ["ingredient/cabbage", "ingredient/white-cabbage"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "rice",
+      "role": "base",
+      "options": ["ingredient/short-grain-rice", "ingredient/rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "rice-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/glaze-with-teriyaki-sauce", "tier": "drafted"},
+    {"thing": "technique/shred-cabbage", "tier": "drafted"},
+    {"thing": "technique/cook-rice", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

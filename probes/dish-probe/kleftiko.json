@@ -1,0 +1,23 @@
+{
+  "id": "dish-probe/kleftiko",
+  "tier": "drafted",
+  "batch": "home-greek-1",
+  "set": "held-back",
+  "written_by": "claude-fable-5-1",
+  "cuisine": "greek",
+  "written_for": "roasting",
+  "dish": "Kleftiko",
+  "also_called": ["lamb kleftiko", "greek slow-roasted lamb in parchment", "arni kleftiko"],
+  "techniques": ["marinate", "wrap in parchment", "slow roast"],
+  "ingredients": [
+    "lamb shoulder",
+    "potato",
+    "garlic",
+    "lemon",
+    "dried oregano",
+    "onion",
+    "green pepper",
+    "feta",
+    "olive oil"
+  ]
+}

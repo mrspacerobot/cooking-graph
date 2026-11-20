@@ -31,7 +31,7 @@
     {
       "thing": "ingredient/pike",
       "allows": true,
-      "when": ["technique/poach", "dish/brochet-au-beurre-blanc"],
+      "when": ["technique/poach"],
       "not_when": [],
       "ratio": null,
       "caveat": "Both are lean river fish; pike has more small bones to pick out.",

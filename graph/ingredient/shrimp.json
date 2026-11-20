@@ -33,15 +33,6 @@
       "ratio": null,
       "caveat": "Shrimp have a lighter, more watery taste and a less firm bite.",
       "tier": "drafted"
-    },
-    {
-      "thing": "ingredient/lobster",
-      "allows": true,
-      "when": ["dish/bisque-de-homard"],
-      "not_when": ["dish/homard-thermidor"],
-      "ratio": null,
-      "caveat": "The flesh is less rich and cooks much sooner, and thin shells give a lighter stock.",
-      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

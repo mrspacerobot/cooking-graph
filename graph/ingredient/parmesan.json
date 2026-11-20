@@ -47,7 +47,7 @@
     {
       "thing": "ingredient/gruyere",
       "allows": true,
-      "when": ["dish/homard-thermidor", "dish/soupe-de-poisson"],
+      "when": ["dish/soupe-de-poisson"],
       "not_when": [],
       "ratio": null,
       "caveat": "It is saltier and sharper, and browns to a dry crust instead of melting smoothly.",

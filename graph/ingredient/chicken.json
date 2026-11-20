@@ -46,7 +46,7 @@
     {
       "thing": "ingredient/chicken-thigh",
       "allows": true,
-      "when": ["dish/mloukhieh", "dish/weeknight-chicken-with-couscous"],
+      "when": ["dish/weeknight-chicken-with-couscous"],
       "not_when": ["dish/karaage"],
       "ratio": null,
       "caveat": "Breast pieces dry out sooner than thigh, so take them out of the pot earlier.",

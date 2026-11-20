@@ -37,6 +37,8 @@ def ratios_fit_their_lines(things):
         for line in recipe.data["ingredients"]:
             if line["part"] not in parts:
                 continue
+            if any(option not in things for option in parts[line["part"]]["options"]):
+                continue  # a broken option is reported by its own rule; there is nothing sound to weigh it against
             measure = queries.MEASURE_OF_UNIT.get(line["amount"]["unit"])
             for option in queries.line_answer(things, recipe.data, line, parts[line["part"]], [])["options"]:
                 ratio = option.get("ratio")

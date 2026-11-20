@@ -2,6 +2,8 @@
 
 Generated from the graph on 8 October 2026 by a script, so it reads exactly what the files say. Everything in it is tier `drafted`: a model wrote it, nobody has cooked it and no person has approved it. **Every amount, time and temperature below is a guess.** Your job is to say where a guess is wrong.
 
+**Skip R1, R8 and R9** (homard thermidor, bisque de homard and œufs à la tripe). They were taken out of the graph in issue 31 as dishes a home cook rarely makes, and their ids are retired.
+
 French has the most recipes of any cuisine (82 of 197). This packet holds the 10 technique cards the French recipes use most, and 10 French recipes that between them exercise those cards.
 
 ## What you are asked to do

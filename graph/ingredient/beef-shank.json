@@ -35,15 +35,6 @@
       "ratio": null,
       "caveat": "It gives a richer, stickier sauce, and the bone and marrow must be dealt with.",
       "tier": "drafted"
-    },
-    {
-      "thing": "ingredient/lamb-shank",
-      "allows": true,
-      "when": ["dish/tangia-marrakchia"],
-      "not_when": [],
-      "ratio": null,
-      "caveat": "Beef is milder and needs longer in the pot to soften.",
-      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

@@ -33,15 +33,6 @@
       "ratio": null,
       "caveat": "The bone and sinew give a stickier sauce, and the meat is leaner.",
       "tier": "drafted"
-    },
-    {
-      "thing": "ingredient/beef-shank",
-      "allows": true,
-      "when": ["dish/tangia-marrakchia"],
-      "not_when": [],
-      "ratio": null,
-      "caveat": "Lamb tastes stronger and gamier, and it softens sooner.",
-      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

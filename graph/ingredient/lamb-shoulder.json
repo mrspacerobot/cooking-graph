@@ -33,15 +33,6 @@
       "ratio": null,
       "caveat": "It is fattier and has no bone, so the sauce is less sticky.",
       "tier": "drafted"
-    },
-    {
-      "thing": "ingredient/beef-shank",
-      "allows": true,
-      "when": ["dish/tangia-marrakchia"],
-      "not_when": [],
-      "ratio": null,
-      "caveat": "Lamb tastes stronger and is fattier, and the stew becomes less sticky.",
-      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

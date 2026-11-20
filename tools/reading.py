@@ -39,6 +39,12 @@ def read_buy_or_make(root):
     return read_json(path) if os.path.exists(path) else []
 
 
+def read_retired(root):
+    """The ids that were retired and may never be used again. Absent means none."""
+    path = os.path.join(root, "schema", "retired.json")
+    return [row["id"] for row in read_json(path)] if os.path.exists(path) else []
+
+
 def read_schema(root):
     """The model and the closed word lists the files are checked against."""
     model = read_json(os.path.join(root, "schema", "model.json"))

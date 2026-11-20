@@ -46,7 +46,7 @@
       "thing": "preparation/mayonnaise",
       "allows": false,
       "when": [],
-      "not_when": ["dish/celeri-remoulade", "dish/oeufs-mayonnaise", "dish/tourteau-mayonnaise"],
+      "not_when": ["dish/celeri-remoulade", "dish/oeufs-mayonnaise"],
       "ratio": null,
       "caveat": "Hollandaise is warm and runny and melts on a cold dish, and it turns greasy when it cools.",
       "tier": "drafted"

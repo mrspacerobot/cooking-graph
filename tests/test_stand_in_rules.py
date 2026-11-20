@@ -59,3 +59,19 @@ class RatioMeasureTest(unittest.TestCase):
 
     def test_no_ratio_is_valid(self):
         self.assertEqual(set(), self.found(None))
+
+
+class UnsoundOptionTest(unittest.TestCase):
+    """A broken file is reported by its own rule. The rules that read sound things must not stumble over its absence."""
+
+    def setUp(self):
+        self.kitchen = SmallKitchen()
+        self.addCleanup(self.kitchen.close)
+
+    def test_a_part_option_with_a_broken_file_is_reported_and_the_checker_goes_on(self):
+        def two_fats(dish):
+            dish["parts"][1]["options"] = ["ingredient/butter", "ingredient/flour"]
+        self.kitchen.change("graph/dish/buttered-onions.json", two_fats)
+        self.kitchen.change(FLOUR, lambda flour: flour.update(unknown_field=1))
+        rules_broken = {issue.rule for issue in check.check_repository(self.kitchen.root)}
+        self.assertIn("unknown-field", rules_broken)

@@ -1,0 +1,9 @@
+{
+  "id": "group/rice-noodles",
+  "tier": "drafted",
+  "names": {"en": "Rice noodles"},
+  "aliases": {"en": ["rice noodle group"]},
+  "shares": "Strands and ribbons of rice flour and water. They soften in warm water rather than a rolling boil, finish cooking in the pan, and break or clump into a sticky mass when they are overcooked or stirred too hard.",
+  "within": {"thing": "group/starches", "tier": "drafted"},
+  "stands_alone": null
+}

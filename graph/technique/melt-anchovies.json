@@ -1,0 +1,100 @@
+{
+  "id": "technique/melt-anchovies",
+  "tier": "drafted",
+  "names": {"en": "Melt anchovies in oil", "it": "sciogliere le acciughe"},
+  "aliases": {"en": ["melt anchovy in olive oil", "dissolve anchovies in oil", "melt anchovies"]},
+  "does": "Stirs anchovy fillets into warm oil over low heat and presses them with a spoon until they fall apart and vanish into it. They leave a deep savoury taste rather than a fishy one.",
+  "intro": {
+    "what": "Anchovy fillets are pressed into warm oil until they dissolve.",
+    "why": "Melted anchovy gives a sauce depth and salt without any visible fish, a base used across southern Italian cooking.",
+    "idea": "Dissolve, do not fry",
+    "tier": "drafted"
+  },
+  "how": [
+    "Warm the oil over low heat, with any garlic already in it.",
+    "Add the drained fillets and press them against the pan with a wooden spoon.",
+    "Keep stirring until no pieces are left and the oil is cloudy, then go on with the sauce."
+  ],
+  "cues": [
+    {"sense": "see", "text": "No pieces of fillet are left; the oil looks cloudy and slightly brown."},
+    {"sense": "hear", "text": "A soft sizzle, not spitting."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying the fillets in very hot oil, so that they crisp and taste harsh.",
+      "fix": "Keep the heat low and press them so that they melt."
+    },
+    {
+      "mistake": "Adding salt before the anchovy has gone in.",
+      "fix": "Taste the finished sauce first: anchovy brings plenty of salt."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What do melted anchovies give a sauce?",
+      "choices": ["Crisp pieces of fish.", "A deep savoury taste with no visible fish.", "A sweet taste."],
+      "answer": 1,
+      "because": "Once dissolved they disappear into the oil and add depth and salt.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do you help the fillets melt?",
+      "choices": ["Press them with a spoon in warm oil.", "Boil them in water first.", "Fry them hard until crisp."],
+      "answer": 0,
+      "because": "Gentle heat and pressure break them down into the oil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How do you know they have melted?",
+      "choices": [
+        "The fillets are crisp and brown.",
+        "The oil is clear and the fillets are whole.",
+        "No pieces remain and the oil is cloudy."
+      ],
+      "answer": 2,
+      "because": "Fully melted anchovy leaves no pieces behind.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The sauce came out too salty. What would you change next time?",
+      "choices": [
+        "Salt before adding the anchovies.",
+        "Taste after the anchovies have melted before adding any salt.",
+        "Use more anchovies."
+      ],
+      "answer": 1,
+      "because": "Anchovies are salty, so salt is judged only after they are in.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/anchovy", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/fry-garlic-gently",
+      "why": "The anchovies usually go into oil already flavoured with garlic.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/melt",
+      "differs": "Heat alone does not melt the fillets: they are pressed in warm oil until they break down and vanish into it.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

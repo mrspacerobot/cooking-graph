@@ -1,0 +1,42 @@
+{
+  "id": "dish/pasta-alla-gricia",
+  "tier": "drafted",
+  "names": {"en": "Pasta alla gricia", "it": "pasta alla gricia"},
+  "aliases": {"en": ["gricia", "rigatoni alla gricia", "pasta with guanciale and pecorino"]},
+  "is": "A Roman pasta of crisp guanciale, its rendered fat and grated Pecorino Romano, bound with starchy cooking water into a creamy sauce and finished with plenty of black pepper. Amatriciana without the tomato.",
+  "parts": [
+    {
+      "id": "pasta",
+      "role": "main",
+      "options": ["ingredient/rigatoni", "ingredient/spaghetti", "ingredient/pasta"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "pork",
+      "role": "main",
+      "options": ["ingredient/guanciale", "ingredient/pancetta"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "cheese",
+      "role": "sauce",
+      "options": ["ingredient/pecorino-romano", "ingredient/pecorino"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/render", "tier": "drafted"},
+    {"thing": "technique/boil-pasta", "tier": "drafted"},
+    {"thing": "technique/emulsify-off-the-heat", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

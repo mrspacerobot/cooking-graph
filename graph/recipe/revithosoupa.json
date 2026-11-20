@@ -1,0 +1,90 @@
+{
+  "id": "recipe/revithosoupa",
+  "tier": "drafted",
+  "names": {"en": "Revithosoupa", "el": "Ρεβιθόσουπα", "el-Latn": "Revithosoupa"},
+  "aliases": {},
+  "makes": "dish/revithosoupa",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/tinned-chickpeas",
+      "amount": {"value": 720, "unit": "gram"},
+      "forms": [],
+      "part": "chickpeas"
+    },
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/bay-leaf", "amount": {"value": 2, "unit": "leaf"}, "forms": [], "part": "bay"},
+    {"thing": "ingredient/rosemary", "amount": {"value": 1, "unit": "sprig"}, "forms": [], "part": "rosemary"},
+    {"thing": "ingredient/water", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/lemon", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/colander", "equipment/wooden-spoon", "equipment/ladle",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/tinned-chickpeas"],
+      "with": [],
+      "text": "Tip the {chickpeas:plural} into a colander and rinse them well under the cold tap.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the {onion:plural} finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Soften the {onion:plural} in half of the {oil} in a large pan over a gentle heat, without letting them colour.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/tinned-chickpeas"],
+      "with": ["ingredient/water", "ingredient/bay-leaf", "ingredient/rosemary", "ingredient/salt"],
+      "text": "Add the {chickpeas:plural}, the {water}, the {bay:plural}[rosemary: , the {rosemary}] and the {salt}. Bring to a boil, then lower the heat and simmer gently, half covered, until the {chickpeas:plural} are very soft.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush-some-of-the-beans",
+      "works_on": ["ingredient/tinned-chickpeas"],
+      "with": [],
+      "text": "Take out the {bay:plural} [rosemary: and the {rosemary}]. Lift out a ladle of the {chickpeas:plural} with a little liquid, crush them to a paste and stir them back in, so that the soup thickens. Pour in the rest of the {oil} and simmer for a moment more.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/finish-with-lemon",
+      "works_on": ["ingredient/tinned-chickpeas"],
+      "with": ["ingredient/lemon", "ingredient/black-pepper"],
+      "text": "Off the heat, squeeze in the juice of a {lemon} a little at a time, tasting as you go, and grind over the {pepper}. Serve with the other {lemon} cut in wedges.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

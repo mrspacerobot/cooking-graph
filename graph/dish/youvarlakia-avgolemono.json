@@ -1,0 +1,69 @@
+{
+  "id": "dish/youvarlakia-avgolemono",
+  "tier": "drafted",
+  "names": {"en": "Youvarlakia avgolemono", "el": "Γιουβαρλάκια αυγολέμονο", "el-Latn": "Giouvarlakia avgolemono"},
+  "aliases": {
+    "en": [
+      "giouvarlakia",
+      "greek meatball soup with egg-lemon",
+      "meatball and rice soup",
+      "youvarlakia",
+      "giouvarlakia avgolemono"
+    ]
+  },
+  "is": "Soft meatballs of minced meat, rice, onion and herbs simmered in stock until the rice inside them is tender, then the broth is thickened with beaten eggs and lemon juice into a silky, sharp avgolemono.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/minced-beef", "ingredient/ground-pork"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "rice",
+      "role": "thickener",
+      "options": ["ingredient/rice", "ingredient/short-grain-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dill",
+      "role": "aromatic",
+      "options": ["ingredient/dill", "ingredient/mint"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/beef-stock", "ingredient/chicken-stock", "ingredient/water"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg", "role": "thickener", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon", "ingredient/lemon-juice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/knead", "tier": "drafted"},
+    {"thing": "technique/shape-meatballs", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/temper", "tier": "drafted"},
+    {"thing": "technique/make-avgolemono", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

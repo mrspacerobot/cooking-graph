@@ -56,6 +56,15 @@
       "ratio": null,
       "caveat": "It gives a bright, citrus sourness instead of a winey one.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tamarind-paste",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/pad-thai"],
+      "ratio": null,
+      "caveat": "The same volume of lemon juice adds a sharp citrus sourness, leaves the sauce thinner and loses the fruity tamarind flavour.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

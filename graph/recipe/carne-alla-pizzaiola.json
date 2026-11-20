@@ -1,0 +1,70 @@
+{
+  "id": "recipe/carne-alla-pizzaiola",
+  "tier": "drafted",
+  "names": {"en": "Carne alla pizzaiola", "it": "Carne alla pizzaiola"},
+  "aliases": {},
+  "makes": "dish/carne-alla-pizzaiola",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/beef-steak", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "beef"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/sliced"], "part": "garlic"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/oregano", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {"thing": "ingredient/black-olive", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "olives"},
+    {"thing": "ingredient/capers", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "capers"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/frying-pan", "equipment/tongs", "equipment/wooden-spoon", "equipment/chefs-knife",
+    "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/beef-steak"],
+      "with": ["ingredient/olive-oil", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Pat the {beef:plural} dry and season them with {salt} and {black-pepper}. Heat half the {oil} in a wide frying pan until it shimmers and brown the meat quickly on both sides. Lift it onto a plate.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/olive-oil", "ingredient/garlic", "ingredient/oregano", "ingredient/salt"],
+      "text": "Lower the heat, add the rest of the {oil} and the {garlic} and let it sizzle gently until pale gold. Tip in the {tomato:plural}, crush them with a spoon, add most of the {oregano} and a little {salt}, and simmer until the sauce has thickened a little.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/beef-steak"],
+      "with": ["preparation/tomato-sauce", "ingredient/black-olive", "ingredient/capers"],
+      "text": "Slip the meat and its juices back into the sauce[olives: with the {olives:plural}][capers: and the {capers:plural}] and spoon the sauce over it. Simmer gently, uncovered, only until the meat is hot and done to your liking. Check against a trusted guide to doneness.",
+      "time": {"from": 2, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/beef-steak"],
+      "with": ["ingredient/salt", "ingredient/oregano", "preparation/tomato-sauce"],
+      "text": "Taste the sauce and adjust the {salt}. Crumble the rest of the {oregano} over the top and serve at once, with bread for the sauce.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

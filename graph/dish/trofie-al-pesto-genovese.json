@@ -1,0 +1,23 @@
+{
+  "id": "dish/trofie-al-pesto-genovese",
+  "tier": "drafted",
+  "names": {"en": "Trofie al pesto genovese", "it": "Trofie al pesto genovese"},
+  "aliases": {"en": ["trofie al pesto", "trofie with pesto"]},
+  "is": "Short Ligurian pasta twists tossed with basil pesto off the heat, with green beans and slices of potato boiled in the pasta pot.",
+  "parts": [
+    {"id": "pasta", "role": "main", "options": ["ingredient/trofie"], "optional": false, "tier": "drafted"},
+    {"id": "pesto", "role": "sauce", "options": ["preparation/pesto"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "side", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "beans", "role": "side", "options": ["ingredient/green-beans"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/boil-pasta", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

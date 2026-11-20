@@ -42,6 +42,15 @@
       "ratio": null,
       "caveat": "It is sharper and sweeter, and needs a little longer to soften.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/red-onion",
+      "allows": true,
+      "when": ["dish/gyros-pita-kotopoulo", "dish/sausage-traybake", "technique/roast"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Cut it into similarly sized wedges. Yellow onion roasts to a similar sweetness without the purple colour.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

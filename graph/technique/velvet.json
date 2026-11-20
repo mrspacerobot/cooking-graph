@@ -1,0 +1,47 @@
+{
+  "id": "technique/velvet",
+  "tier": "drafted",
+  "names": {"en": "Velvet"},
+  "aliases": {"en": ["velvet meat", "velveting", "coat meat in cornflour"]},
+  "does": "Coats thin strips of meat in a mix of soy, wine and starch and a little oil before a fast stir-fry, so that they stay silky and juicy.",
+  "intro": null,
+  "how": [
+    "Cut the meat across the grain into thin slices, then thin strips.",
+    "Mix it with a little soy sauce and rice wine until the liquid is taken up.",
+    "Stir in a little cornflour until each strip is lightly coated, then a little oil to keep the strips apart.",
+    "Leave it a short while, then stir-fry it fast in hot oil."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The strips feel slick and lightly coated, with no pool of liquid."},
+    {"sense": "see", "text": "The cooked strips look smooth and glossy, not shrunken and grey."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding too much starch, which turns into a gummy coat.",
+      "fix": "Use just enough to coat each strip thinly."
+    },
+    {"mistake": "Leaving out the oil, so the strips clump in the wok.", "fix": "Stir in a little oil last."}
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "ingredient/pork-loin", "tier": "drafted"},
+    {"thing": "ingredient/pork-tenderloin", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/cornstarch"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/marinate",
+      "differs": "The marinade is short and holds starch and oil, which form a thin coat that keeps fast-cooked strips silky.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"}
+  ]
+}

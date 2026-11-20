@@ -1,0 +1,120 @@
+{
+  "id": "recipe/pasta-e-ceci",
+  "tier": "drafted",
+  "names": {"en": "Pasta e ceci", "it": "pasta e ceci"},
+  "aliases": {},
+  "makes": "dish/pasta-e-ceci",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/tinned-chickpeas",
+      "amount": {"value": 480, "unit": "gram"},
+      "forms": [],
+      "part": "chickpeas"
+    },
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "soffritto"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "soffritto"
+    },
+    {
+      "thing": "ingredient/celery",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/minced"],
+      "part": "soffritto"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "soffritto"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/peeled"], "part": "garlic"},
+    {"thing": "ingredient/rosemary", "amount": {"value": 1, "unit": "sprig"}, "forms": [], "part": "herb"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/vegetable-stock", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "liquid"},
+    {"thing": "ingredient/water", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "liquid"},
+    {"thing": "ingredient/ditalini", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/saucepan", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/blender", "equipment/ladle", "equipment/colander"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-a-soffritto",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Warm the {soffritto.olive-oil} in a heavy pot over low heat. Add the {soffritto.onion}, the {soffritto.carrot} and the {soffritto.celery}, all chopped very fine, with a little of the {salt}, and cook gently, stirring often, until soft and pale gold.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/soffritto"]
+    },
+    {
+      "technique": "technique/fry-tomato-paste",
+      "works_on": ["ingredient/tomato-paste"],
+      "with": ["ingredient/garlic", "ingredient/rosemary", "preparation/soffritto"],
+      "text": "Add the lightly crushed {garlic}, the {herb} and the {tomato}, and stir until the {tomato} darkens a little and smells sweet.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/tinned-chickpeas"],
+      "with": ["ingredient/vegetable-stock", "preparation/soffritto"],
+      "text": "Drain and rinse the {chickpeas:plural} and add them with the {liquid.vegetable-stock}. Bring to a boil, then lower the heat and simmer, half covered, until the {chickpeas:plural} are very soft and the broth tastes of them.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crush-some-of-the-beans",
+      "works_on": ["ingredient/tinned-chickpeas"],
+      "with": [],
+      "text": "Lift out the {herb} and the {garlic}. Blend about a third of the {chickpeas:plural} with some of the broth until smooth, then stir the purée back into the pot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-pasta-in-the-soup",
+      "works_on": ["ingredient/ditalini"],
+      "with": ["ingredient/water"],
+      "text": "Heat the {liquid.water} in a small pan. Bring the soup back to a boil and add the {pasta}. Cook it in the soup, stirring often so that it does not stick, until it is tender with a little bite. Add the hot {liquid.water} a ladle at a time if the soup gets too thick: it should be dense but still pour.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/ditalini"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Taste and adjust the {salt}[pepper: , and grind in the {pepper}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/ditalini"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Let the soup settle briefly, then ladle it into warm bowls and finish each with a thread of the {oil}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "ingredient/avocado",
+  "tier": "drafted",
+  "names": {"en": "Avocado", "es": "Aguacate"},
+  "aliases": {},
+  "plurals": {"en": "Avocados", "es": "Aguacates"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A rich, buttery fruit eaten raw. Its cut flesh browns in the air, so it is cut at the last moment or rubbed with lime.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/sour-cream",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/enchiladas-verdes"],
+      "ratio": null,
+      "caveat": "Avocado can top the baked rolls, but pieces of avocado will not stir into the warm salsa or spoon over the rolls like sour cream.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
+}

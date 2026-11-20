@@ -1,0 +1,141 @@
+{
+  "id": "recipe/salmon-fishcakes",
+  "tier": "drafted",
+  "names": {"en": "Salmon fishcakes"},
+  "aliases": {},
+  "makes": "dish/salmon-fishcakes",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/salmon", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "salmon"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "litre"}, "forms": [], "part": "water"},
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 500, "unit": "gram"},
+      "forms": ["form/peeled", "form/large-pieces"],
+      "part": "potato"
+    },
+    {
+      "thing": "ingredient/spring-onion",
+      "amount": {"value": 4, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "spring-onion"
+    },
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "herbs"
+    },
+    {"thing": "ingredient/flour", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "preparation/breadcrumbs", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "breadcrumbs"},
+    {"thing": "ingredient/oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/saute-pan", "equipment/colander", "equipment/potato-masher",
+    "equipment/mixing-bowl", "equipment/grater", "equipment/frying-pan", "equipment/fish-slice", "equipment/wire-rack"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/salt", "ingredient/water"],
+      "text": "Put the {potato:plural} in a pan of cold {water} with a little {salt}, bring to the boil and simmer until a knife slides in easily. Drain them and leave them to steam dry.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/salmon"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Lay the {salmon} in a pan, cover it with cold {water}, add a little {salt} and bring it slowly to a simmer. Poach gently until the flesh just flakes, then lift it out and let it cool.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mash",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/salt"],
+      "text": "Mash the dry {potato:plural} until smooth, with no butter or milk, so that the cakes hold their shape. Leave the mash to cool.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/mashed-potato"]
+    },
+    {
+      "technique": "technique/flake",
+      "works_on": ["ingredient/salmon"],
+      "with": [],
+      "text": "Remove the skin and any bones and break the {salmon} into large flakes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["preparation/mashed-potato", "ingredient/salmon"],
+      "with": [
+        "ingredient/spring-onion", "ingredient/lemon", "ingredient/parsley", "ingredient/salt",
+        "ingredient/black-pepper"
+      ],
+      "text": "Grate the zest of the {lemon} over the mash and add the {spring-onion:plural}[herbs: , the {herbs}], {salt} and {black-pepper}. Mix well, then fold in the {salmon} gently, keeping some large flakes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape",
+      "works_on": ["preparation/mashed-potato"],
+      "with": [],
+      "text": "With wet hands, shape the mixture into even cakes about the width of your palm. Chill them until firm.",
+      "time": {"value": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/coat",
+      "works_on": [],
+      "with": ["ingredient/flour", "ingredient/egg", "preparation/breadcrumbs"],
+      "text": "Beat the {egg:plural} in a shallow dish. Dust each cake in {flour}, dip it in the {egg:plural} and press it into the {breadcrumbs:plural} all over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pan-fry",
+      "works_on": [],
+      "with": ["ingredient/oil"],
+      "text": "Heat the {oil} in a large frying pan over a medium heat. Fry the cakes, turning once, until golden and crisp on both sides and hot in the middle. Drain them on a rack.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/salmon"],
+      "with": ["ingredient/lemon"],
+      "text": "Serve the fishcakes hot, with the rest of the {lemon} cut into wedges.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

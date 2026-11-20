@@ -1,0 +1,62 @@
+{
+  "id": "dish/kadinbudu-kofte",
+  "tier": "drafted",
+  "names": {"en": "Kadinbudu kofte", "tr": "Kadınbudu köfte"},
+  "aliases": {"en": ["lady's thigh meatballs", "lady's thigh kofte", "rice and meat croquettes"]},
+  "is": "Soft Turkish köfte of minced beef, half of it browned first, worked with soft-cooked rice, cheese and cumin, shaped into plump ovals, coated in flour and egg and fried golden.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "rice",
+      "role": "thickener",
+      "options": ["ingredient/rice", "ingredient/short-grain-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "filling",
+      "options": ["ingredient/kashkaval-cheese", "ingredient/cheddar"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"},
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "coating", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/oil"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/cook-rice", "tier": "drafted"},
+    {"thing": "technique/brown-mince", "tier": "drafted"},
+    {"thing": "technique/knead", "tier": "drafted"},
+    {"thing": "technique/shape", "tier": "drafted"},
+    {"thing": "technique/fry-in-an-egg-coat", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

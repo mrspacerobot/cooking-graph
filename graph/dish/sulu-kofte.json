@@ -1,0 +1,66 @@
+{
+  "id": "dish/sulu-kofte",
+  "tier": "drafted",
+  "names": {"en": "Sulu kofte", "tr": "Sulu köfte"},
+  "aliases": {
+    "en": ["Turkish meatballs in broth", "sulu kofte with potatoes", "eksili kofte", "Turkish meatball soup"]
+  },
+  "is": "Small meatballs of minced beef and raw rice, rolled in flour and simmered with potato and carrot in a tomato broth, then thickened with egg and lemon and finished with dried mint. The egg and lemon finish makes it ekşili köfte.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "rice",
+      "role": "thickener",
+      "options": ["ingredient/rice", "ingredient/short-grain-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "coating", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "main", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {
+      "id": "paste",
+      "role": "seasoning",
+      "options": ["ingredient/tomato-paste", "ingredient/red-pepper-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "butter",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "thickener", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "thickener", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "mint", "role": "seasoning", "options": ["ingredient/dried-mint"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/knead", "tier": "drafted"},
+    {"thing": "technique/shape-meatballs", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/temper", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

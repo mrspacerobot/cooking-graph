@@ -1,0 +1,106 @@
+{
+  "id": "recipe/penne-alla-vodka",
+  "tier": "drafted",
+  "names": {"en": "Penne alla vodka", "it": "penne alla vodka"},
+  "aliases": {},
+  "makes": "dish/penne-alla-vodka",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/penne", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "butter"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "onion"
+    },
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/vodka", "amount": {"value": 60, "unit": "millilitre"}, "forms": [], "part": "vodka"},
+    {"thing": "ingredient/cream", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "cream"},
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "chilli"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 50, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/saute-pan", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/grater", "equipment/colander"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the {butter} in a wide pan over medium-low heat and soften the {onion} in it, stirring, without letting it colour.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-tomato-paste",
+      "works_on": ["ingredient/tomato-paste"],
+      "with": ["ingredient/chili-flakes"],
+      "text": "Stir in the {tomato} [chilli: and the {chilli}] and cook, stirring all the time, until the {tomato} turns a deep brick red and starts to catch on the bottom of the pan.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/vodka"],
+      "text": "Pour in the {vodka} and scrape up everything stuck to the pan. Let it bubble until the sharp smell of alcohol has faded and the pan is nearly dry.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-in-cream",
+      "works_on": ["ingredient/cream"],
+      "with": ["ingredient/tomato-paste"],
+      "text": "Lower the heat and stir in the {cream} until the sauce is smooth and a deep orange-pink. Let it bubble very gently while the pasta cooks, and season with a little of the {salt}.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/penne"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Bring a large pot of {water} to a rolling boil and season it well with the {salt}. Cook the {pasta} until it is tender with a firm bite at the centre. Scoop out a mug of the cooking {water} before draining.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss-pasta-with-sauce",
+      "works_on": ["ingredient/penne"],
+      "with": ["ingredient/cream", "ingredient/parmesan", "ingredient/water"],
+      "text": "Lift the {pasta} into the sauce with a splash of the cooking {water} and toss over low heat. Take the pan off the heat and stir in half of the {cheese} until the sauce is glossy and clings.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/penne"],
+      "with": ["ingredient/parmesan"],
+      "text": "Serve in warm bowls with the rest of the {cheese} over the top.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

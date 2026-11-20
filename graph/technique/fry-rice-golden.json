@@ -1,0 +1,52 @@
+{
+  "id": "technique/fry-rice-golden",
+  "tier": "drafted",
+  "names": {"en": "Fry rice until golden"},
+  "aliases": {"en": ["brown the rice", "fry the rice before adding liquid"], "es": ["sofreír el arroz"]},
+  "does": "Fries raw, well-drained long-grain rice in hot fat until the grains turn opaque and then pale gold, before any liquid goes in.",
+  "intro": null,
+  "how": [
+    "Rinse the rice and drain it well, shaking off as much water as you can, so that it fries instead of steaming.",
+    "Heat a thin layer of oil in a wide pan over medium heat and add the rice.",
+    "Stir often, scraping the bottom, as the grains turn chalky white and then pale gold.",
+    "Add the sauce or liquid as soon as the rice smells toasty, before it browns further."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The grains turn opaque, then the colour of pale straw, and slide freely in the pan."},
+    {"sense": "smell", "text": "A toasty smell like popcorn."},
+    {"sense": "hear", "text": "A dry, sandy rustle as you stir."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying wet rice, which clumps and steams.",
+      "fix": "Drain it well, and let it sit in the sieve a while before frying."
+    },
+    {
+      "mistake": "Taking the rice dark brown, which makes it bitter and hard.",
+      "fix": "Stop at pale gold and add the liquid at once."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/long-grain-rice", "tier": "drafted"},
+    {"thing": "ingredient/rice", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/toast-rice",
+      "differs": "The rice is taken further, to pale gold, in more fat, and a blended tomato sauce follows instead of wine and stock.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ]
+}

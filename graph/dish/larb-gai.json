@@ -1,0 +1,72 @@
+{
+  "id": "dish/larb-gai",
+  "tier": "drafted",
+  "names": {"en": "Larb gai", "th": "ลาบไก่", "th-Latn": "Lap kai"},
+  "aliases": {"en": ["Lap kai", "laab gai", "laab", "larb", "Thai minced chicken salad"]},
+  "is": "Lap kai, a minced chicken salad of Isan and Laos: chicken cooked in a splash of water, dressed warm with fish sauce, lime and dried chilli, and tossed with shallot, mint, coriander and toasted rice powder.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/minced-chicken", "ingredient/ground-pork"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "rice",
+      "role": "seasoning",
+      "options": ["ingredient/jasmine-rice", "ingredient/rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fish-sauce",
+      "role": "seasoning",
+      "options": ["ingredient/fish-sauce"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lime", "role": "acid", "options": ["ingredient/lime"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli",
+      "role": "seasoning",
+      "options": ["ingredient/chili-flakes", "ingredient/dried-red-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": true, "tier": "drafted"},
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "mint", "role": "garnish", "options": ["ingredient/mint"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "spring-onion",
+      "role": "garnish",
+      "options": ["ingredient/spring-onion"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {
+      "id": "lettuce",
+      "role": "side",
+      "options": ["ingredient/lettuce", "ingredient/cabbage"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/make-toasted-rice-powder", "tier": "drafted"},
+    {"thing": "technique/poach-minced-meat", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

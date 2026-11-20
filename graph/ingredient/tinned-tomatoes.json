@@ -2,7 +2,7 @@
   "id": "ingredient/tinned-tomatoes",
   "tier": "drafted",
   "names": {"en": "Tinned tomatoes", "fr": "Tomates en conserve"},
-  "aliases": {"en": ["canned tomatoes", "tinned plum tomatoes"]},
+  "aliases": {"en": ["canned tomatoes", "tinned plum tomatoes", "canned tomato", "tinned tomato"]},
   "plurals": {"en": "Tinned tomatoes", "fr": "Tomates en conserve"},
   "uncountable": false,
   "is_a": [

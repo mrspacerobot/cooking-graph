@@ -1,0 +1,118 @@
+{
+  "id": "recipe/pad-see-ew",
+  "tier": "drafted",
+  "names": {"en": "Pad see ew", "th": "ผัดซีอิ๊ว", "th-Latn": "Phat si-io"},
+  "aliases": {},
+  "makes": "dish/pad-see-ew",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/wide-rice-noodle", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "noodles"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/broccoli", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "greens"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {
+      "thing": "ingredient/dark-soy-sauce",
+      "amount": {"value": 1.5, "unit": "tablespoon"},
+      "forms": [],
+      "part": "dark-soy"
+    },
+    {
+      "thing": "ingredient/oyster-sauce",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "oyster-sauce"
+    },
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/sugar", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/white-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "white-pepper"}
+  ],
+  "equipment": [
+    "equipment/wok", "equipment/spatula", "equipment/mixing-bowl", "equipment/colander", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak-rice-noodles",
+      "works_on": ["ingredient/wide-rice-noodle"],
+      "with": ["ingredient/water", "ingredient/oil"],
+      "text": "Cover the dried {noodles:plural} with warm {water} and leave them until soft and bendy but still a little firm at the core. Drain well and toss with a little of the {oil} so that they do not stick. Fresh {noodles:plural} from the chiller only need pulling apart.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-small-pieces",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Cut the {chicken} into thin, bite-sized slices.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": [],
+      "with": ["ingredient/broccoli"],
+      "text": "Cut the {greens} into bite-sized pieces, keeping the stems and the leaves or florets apart.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/garlic"],
+      "with": [],
+      "text": "Finely chop the {garlic}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": ["ingredient/broccoli"],
+      "with": ["ingredient/oil", "ingredient/garlic", "ingredient/chicken-thigh"],
+      "text": "Heat the rest of the {oil} in a wok over high heat. Fry the {garlic} for a moment, add the {chicken} and stir-fry until it is opaque all over, then add the {greens} stems and toss until bright green. Check a piece of {chicken} against a trusted guide to doneness.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/char-noodles",
+      "works_on": ["ingredient/wide-rice-noodle"],
+      "with": ["ingredient/dark-soy-sauce", "ingredient/oyster-sauce", "ingredient/soy-sauce", "ingredient/sugar"],
+      "text": "Add the {noodles:plural} with the {dark-soy}, the {oyster-sauce}, the {soy} and the {sugar} and toss once to coat. Spread them out and leave them still against the hot wok until they catch dark, smoky spots, then turn them. Repeat once or twice.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/wok-scramble",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/broccoli"],
+      "text": "Push the {noodles:plural} aside, crack the {egg:plural} into the gap, let them set a little, then scramble them and fold them through with the rest of the {greens}.",
+      "time": {"value": 1, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/wide-rice-noodle"],
+      "with": ["ingredient/white-pepper"],
+      "text": "Serve at once[white-pepper: , dusted with the {white-pepper}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

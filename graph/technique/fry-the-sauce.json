@@ -1,0 +1,59 @@
+{
+  "id": "technique/fry-the-sauce",
+  "tier": "drafted",
+  "names": {"en": "Fry the sauce"},
+  "aliases": {
+    "en": ["fry the base", "fry the salsa", "season the sauce in hot oil"],
+    "es": ["sazonar la salsa", "freír la salsa"]
+  },
+  "does": "Pours a blended tomato or chilli sauce into very hot fat and fries it, stirring, until it darkens, thickens and loses its raw taste.",
+  "intro": null,
+  "how": [
+    "Blend the sauce smooth first.",
+    "Heat a little fat in a wide pan until it shimmers.",
+    "Pour in the sauce all at once and stand back, as it spits hard.",
+    "Stir as it bubbles until it turns a shade darker, thickens and the fat starts to show at the edges."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A loud sizzle as the sauce hits the fat."},
+    {
+      "sense": "see",
+      "text": "The sauce darkens and thickens, and the colour deepens from bright to brick red or olive green."
+    },
+    {"sense": "smell", "text": "The raw smell of onion and garlic turns sweet and cooked."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the sauce to fat that is not hot enough, so it only warms through.",
+      "fix": "Wait until the fat shimmers; the sauce should sizzle hard."
+    },
+    {
+      "mistake": "Leaving it unstirred, so it catches and burns on the bottom.",
+      "fix": "Stir and scrape the bottom as it bubbles."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/tomato", "tier": "drafted"},
+    {"thing": "ingredient/tinned-tomatoes", "tier": "drafted"},
+    {"thing": "ingredient/salsa-verde", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saute-pan", "equipment/frying-pan", "equipment/saucepan"],
+      "tier": "drafted"
+    },
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil", "ingredient/lard"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/puree", "why": "The sauce is blended before it is fried.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ]
+}

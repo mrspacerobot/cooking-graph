@@ -46,6 +46,33 @@
       "ratio": null,
       "caveat": "The shapes are chunkier and need longer in the broth.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/mixed-pasta",
+      "allows": true,
+      "when": ["technique/cook-pasta-in-the-soup"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Choose small shapes and judge the time by tasting one. Uniform pieces cook more evenly.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/stelline",
+      "allows": true,
+      "when": ["technique/cook-pasta-in-broth"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Choose a tiny soup shape and stop just before tender. Larger shapes take longer and change the balance of pasta to broth.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/trofie",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/trofie-al-pesto-genovese"],
+      "ratio": null,
+      "caveat": "Tiny soup shapes soften much sooner and give the mixture a fine, crowded texture beside the potatoes and beans.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

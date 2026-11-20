@@ -23,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/star-anise",
+      "allows": true,
+      "when": ["dish/red-braised-pork-belly"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Infuse a small amount of the seeds in the sauce and strain them out if needed. The liquorice note is softer and sweeter.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/moroccan", "tier": "drafted"}
   ],

@@ -1,0 +1,48 @@
+{
+  "id": "technique/whisk-a-batter",
+  "tier": "drafted",
+  "names": {"en": "Whisk a batter"},
+  "aliases": {"en": ["whisk batter", "whisk the batter", "make a pouring batter", "mix a pudding batter"]},
+  "does": "Whisks flour with eggs and milk into a smooth, thin, lump-free batter, by working the liquid into the flour a little at a time.",
+  "intro": null,
+  "how": [
+    "Put the flour and salt in a bowl and make a well in the middle.",
+    "Break the eggs into the well and whisk them, drawing in flour from the sides.",
+    "Add the milk a little at a time, whisking, until the batter is smooth and pours like thin cream.",
+    "Leave it to stand while the oven and the fat heat."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "A smooth, shiny batter with no lumps, that runs off the whisk in a ribbon that sinks at once."
+    },
+    {"sense": "feel", "text": "No grit of dry flour against the side of the bowl."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Tipping in all the milk at the start, so that the flour forms lumps that never whisk out.",
+      "fix": "Make a thick paste first and thin it slowly."
+    },
+    {"mistake": "A batter that is too thick, so that it bakes heavy.", "fix": "Thin it with a little more milk."}
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/flour", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/pudding-batter", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/whisk",
+      "differs": "Flour is drawn into the eggs and milk a little at a time to make a smooth batter, rather than eggs or cream beaten on their own.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

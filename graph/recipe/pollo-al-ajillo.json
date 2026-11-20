@@ -1,0 +1,84 @@
+{
+  "id": "recipe/pollo-al-ajillo",
+  "tier": "drafted",
+  "names": {"en": "Pollo al ajillo"},
+  "aliases": {},
+  "makes": "dish/pollo-al-ajillo",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/chicken-thigh",
+      "amount": {"value": 8, "unit": "piece"},
+      "forms": ["form/skin-on"],
+      "part": "chicken"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 6, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/garlic", "amount": {"value": 12, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/bay-leaf", "amount": {"value": 2, "unit": "leaf"}, "forms": [], "part": "bay-leaf"},
+    {"thing": "ingredient/guindilla", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/white-wine", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon",
+    "equipment/saute-pan", "equipment/cazuela", "equipment/tongs", "equipment/slotted-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/fry-garlic",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/olive-oil", "ingredient/guindilla"],
+      "text": "Crush the cloves of {garlic} lightly with the flat of a knife, leaving the skins on. Warm the {oil} in a wide pan over a medium-low heat and fry the {garlic} until pale gold[chilli: with the {chilli}]. Lift it out with a slotted spoon.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/salt"],
+      "text": "Season the {chicken} with the {salt}. Turn up the heat and brown it in the scented oil, skin side first, turning it until it is deep gold all over.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/white-wine", "ingredient/garlic", "ingredient/bay-leaf"],
+      "text": "Put the {garlic} back with the {bay-leaf:plural}, pour in the {wine} and scrape the bottom of the pan as it bubbles.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Cover and simmer gently, turning the pieces once, until the {chicken} is tender and the juices have reduced to a little glossy sauce. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/parsley"],
+      "text": "Scatter with the {parsley} and serve with bread to mop up the oil.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

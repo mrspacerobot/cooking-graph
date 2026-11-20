@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/chili-powder",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/chili-con-carne", "technique/bloom-ground-spices"],
+      "ratio": null,
+      "caveat": "Replacing the blend directly with cayenne can make the pot much hotter and leaves out the other seasonings.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

@@ -2,7 +2,7 @@
   "id": "technique/shape-meatballs",
   "tier": "drafted",
   "names": {"en": "Shape meatballs"},
-  "aliases": {"en": ["roll meatballs", "form meatballs"]},
+  "aliases": {"en": ["roll meatballs", "form meatballs", "shape meatball"]},
   "does": "Rolls seasoned minced meat between wet palms into round balls of an even size, so that they hold together and cook at the same pace.",
   "intro": {
     "what": "Meatball shaping turns a cohesive mince mixture into lightly rolled portions of similar size.",

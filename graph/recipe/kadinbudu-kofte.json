@@ -1,0 +1,111 @@
+{
+  "id": "recipe/kadinbudu-kofte",
+  "tier": "drafted",
+  "names": {"en": "Kadinbudu kofte", "tr": "Kadınbudu köfte"},
+  "aliases": {},
+  "makes": "dish/kadinbudu-kofte",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/minced-beef", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/rice", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/water", "amount": {"value": 300, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {
+      "thing": "ingredient/kashkaval-cheese",
+      "amount": {"value": 60, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/parsley", "amount": {"value": 5, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/flour", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/egg", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/frying-pan", "equipment/mixing-bowl", "equipment/grater",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon", "equipment/tongs"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cook-rice",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/water"],
+      "text": "Rinse the {rice}, then cook it in the {water} until it is very soft and has taken up all the {water}. Spread it out to cool.",
+      "time": {"from": 15, "to": 18, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the {onion} finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["ingredient/onion"],
+      "text": "Put half of the meat and the {onion} in a dry pan over medium heat. Break the meat up with a spoon and fry it until its liquid has cooked away and it browns. Let it cool.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "[parsley: Chop the {parsley} finely.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/knead",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [
+        "ingredient/rice", "ingredient/kashkaval-cheese", "ingredient/parsley", "ingredient/cumin",
+        "ingredient/black-pepper", "ingredient/salt"
+      ],
+      "text": "In a bowl, work the browned meat with the raw half, the {rice}[cheese: , the {cheese}][parsley: , the {parsley}], the {cumin}, the {black-pepper} and the {salt}, until the mixture is sticky and holds together.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [],
+      "text": "With damp hands, shape the mixture into plump ovals the length of a finger and set them on a tray.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-in-an-egg-coat",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["ingredient/flour", "ingredient/egg", "ingredient/sunflower-oil"],
+      "text": "Heat the {oil} in a wide pan to the depth of a finger. Beat the {egg:plural} in a shallow bowl. Roll each oval in the {flour}, dip it in the {egg:plural} and lay it straight in the hot {oil}. Fry, turning, until golden on every side, then drain on paper. Check one against a trusted guide to doneness.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish", "doneness"],
+      "makes": []
+    }
+  ]
+}

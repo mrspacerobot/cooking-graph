@@ -1,0 +1,98 @@
+{
+  "id": "technique/cook-pasta-in-broth",
+  "tier": "drafted",
+  "names": {"en": "Cook pasta in broth"},
+  "aliases": {"en": ["cook small pasta in broth", "cook pastina in broth", "cook pasta in stock"]},
+  "does": "Cooks small pasta straight in the broth it will be served in, without draining, so that the broth takes up a little starch and the pasta takes up the flavour of the broth.",
+  "intro": {
+    "what": "The broth is both the cooking water and the soup.",
+    "why": "The pasta's starch thickens the broth a little, and nothing is drained or lost.",
+    "idea": "Nothing is drained",
+    "tier": "drafted"
+  },
+  "how": [
+    "Bring a well-flavoured broth to a simmer and taste it for salt; there is no extra salted water.",
+    "Pour in the small pasta and stir so it does not stick.",
+    "Keep it at a gentle simmer, stirring now and then, until the pasta is just tender.",
+    "Take it off the heat a little early: it goes on softening and soaking up broth in the bowl."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The pasta swells and the broth turns slightly cloudy."},
+    {"sense": "taste", "text": "The pasta is tender with no hard centre."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling it too long, so the pasta swells to mush and drinks the broth.",
+      "fix": "Stop just before it is done and serve at once."
+    },
+    {
+      "mistake": "Salting as for pasta water, so the broth is too salty.",
+      "fix": "Taste the broth and salt it as a soup."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why is the pasta cooked in the broth and not in water?",
+      "choices": [
+        "So it takes up the flavour and the starch thickens the broth.",
+        "So it cooks faster.",
+        "So it stays white."
+      ],
+      "answer": 0,
+      "because": "Nothing is drained; flavour and starch stay in the bowl.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the broth be salted?",
+      "choices": ["Heavily, like pasta water.", "Like a soup, to taste.", "Not at all."],
+      "answer": 1,
+      "because": "It is eaten, so it is salted as a soup.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "When do you take it off the heat?",
+      "choices": [
+        "A little before the pasta is done.",
+        "When the pasta is soft and swollen.",
+        "When the broth has gone."
+      ],
+      "answer": 0,
+      "because": "It keeps softening in the bowl.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pasta had swollen and drunk most of the broth. What would you change?",
+      "choices": ["Cook it a little less and serve it at once.", "Cook it longer.", "Use bigger pasta."],
+      "answer": 0,
+      "because": "Small pasta keeps soaking after the heat is off.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/small-pasta", "tier": "drafted"},
+    {"thing": "ingredient/stelline", "tier": "drafted"},
+    {"thing": "ingredient/orzo", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock", "ingredient/stock"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/boil-pasta",
+      "differs": "The pasta cooks in the seasoned broth it is served in, salted as a soup and never drained, where boiled pasta cooks in plenty of salted water that is poured away.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

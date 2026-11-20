@@ -1,0 +1,54 @@
+{
+  "id": "technique/wok-scramble",
+  "tier": "drafted",
+  "names": {"en": "Scramble egg in a wok"},
+  "aliases": {"en": ["scramble egg", "wok-fry eggs", "stir-fry eggs"]},
+  "does": "Pours beaten egg into very hot oil in a wok so that it puffs at once, then pushes it into large, soft, fluffy curds that are taken out while still a little wet.",
+  "intro": null,
+  "how": [
+    "Beat the eggs with a little salt.",
+    "Heat the wok until it smokes, then add a good spoonful of oil and swirl it.",
+    "Pour in the eggs; they puff and bubble at the edges at once.",
+    "Push the set edges into the middle with a spatula so that the runny egg flows out, in a few large folds.",
+    "Take the curds out while they are still glossy and a little runny, and return them at the end."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A loud sizzle as the egg hits the oil."},
+    {"sense": "see", "text": "Large, puffy, golden-edged curds, still glossy in places."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring the eggs into a wok that is not hot enough, so they turn flat and rubbery.",
+      "fix": "Heat the wok and the oil until they shimmer."
+    },
+    {
+      "mistake": "Cooking the eggs dry before taking them out.",
+      "fix": "Take them out while still a little runny; they cook again when they go back in."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/wok", "equipment/non-stick-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/whisk", "why": "The eggs are beaten first.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/scramble",
+      "differs": "High heat and plenty of oil make large, fluffy curds in moments, instead of small creamy ones over low heat.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"},
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ]
+}

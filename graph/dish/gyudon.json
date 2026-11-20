@@ -1,0 +1,39 @@
+{
+  "id": "dish/gyudon",
+  "tier": "drafted",
+  "names": {"en": "Gyūdon", "ja": "牛丼", "ja-Latn": "Gyūdon"},
+  "aliases": {"en": ["beef bowl", "gyudon", "gyu don", "beef rice bowl"]},
+  "is": "A quick rice bowl: thinly sliced beef and onion simmered briefly in dashi sweetened with mirin and sugar and seasoned with soy sauce, ladled with some of the broth over hot rice and topped with red pickled ginger.",
+  "parts": [
+    {"id": "beef", "role": "main", "options": ["ingredient/thin-sliced-beef"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dashi",
+      "role": "liquid",
+      "options": ["preparation/dashi", "ingredient/dashi-granules"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "mirin", "role": "sweetener", "options": ["ingredient/mirin"], "optional": false, "tier": "drafted"},
+    {"id": "sake", "role": "seasoning", "options": ["ingredient/sake"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {
+      "id": "rice",
+      "role": "base",
+      "options": ["ingredient/short-grain-rice", "ingredient/rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "rice-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "garnish", "options": ["ingredient/pickled-ginger"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/cook-rice", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -27,7 +27,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/ricotta",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/bind-a-filling", "technique/fill-pasta-tubes"],
+      "ratio": null,
+      "caveat": "Dry salted ricotta salata cannot provide the moist base that holds the spinach and egg filling together.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],

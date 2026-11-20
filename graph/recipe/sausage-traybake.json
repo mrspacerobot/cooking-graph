@@ -1,0 +1,94 @@
+{
+  "id": "recipe/sausage-traybake",
+  "tier": "drafted",
+  "names": {"en": "Sausage traybake"},
+  "aliases": {},
+  "makes": "dish/sausage-traybake",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-sausage", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "sausages"},
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 800, "unit": "gram"},
+      "forms": ["form/large-pieces"],
+      "part": "potato"
+    },
+    {
+      "thing": "ingredient/red-onion",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/large-pieces"],
+      "part": "red-onion"
+    },
+    {
+      "thing": "ingredient/bell-pepper",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/large-pieces"],
+      "part": "bell-pepper"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/rosemary", "amount": {"value": 3, "unit": "sprig"}, "forms": [], "part": "rosemary"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/roasting-tin", "equipment/chefs-knife", "equipment/cutting-board", "equipment/tongs"
+  ],
+  "steps": [
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/olive-oil", "ingredient/salt", "ingredient/rosemary"],
+      "text": "Toss the {potato:plural} in a large roasting tin with half of the {oil}, a little {salt} and the {rosemary}, and spread them out in one layer.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Roast the {potato:plural} on their own for a head start, until they begin to colour at the edges.",
+      "time": {"value": 20, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/red-onion", "ingredient/bell-pepper", "ingredient/pork-sausage"],
+      "with": ["ingredient/olive-oil", "ingredient/garlic", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Add the {red-onion:plural}, the {bell-pepper:plural}[garlic: , the {garlic}] and the {sausages:plural} to the tin. Drizzle over the rest of the {oil}, season with {black-pepper} and turn everything over so that it is coated.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/potato", "ingredient/red-onion"],
+      "with": ["ingredient/pork-sausage", "ingredient/bell-pepper"],
+      "text": "Roast, turning everything once, until the {sausages:plural} are brown all over and the {potato:plural} are crisp at the edges. Check the {sausages:plural} against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 35, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pork-sausage", "ingredient/potato"],
+      "with": [],
+      "text": "Serve straight from the tin, with the juices spooned over.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

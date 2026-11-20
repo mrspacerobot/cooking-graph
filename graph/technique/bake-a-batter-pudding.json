@@ -1,0 +1,50 @@
+{
+  "id": "technique/bake-a-batter-pudding",
+  "tier": "drafted",
+  "names": {"en": "Bake a batter pudding"},
+  "aliases": {"en": ["bake a batter in hot fat", "bake a pudding batter"]},
+  "does": "Pours a thin egg batter into fat that is already smoking hot in a very hot oven, so that it sets and puffs at once into a crisp, golden, hollow pudding.",
+  "intro": null,
+  "how": [
+    "Heat a thin layer of fat in a metal tin in a very hot oven until it smokes.",
+    "Work fast: pull the tin out, pour in the batter, and it should sizzle at once.",
+    "Shut the door and do not open it until the pudding has risen and turned deep golden and crisp."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A loud sizzle the moment the batter meets the fat."},
+    {"sense": "see", "text": "Puffed, deep golden edges that stand high above the tin."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring the batter into fat that is only warm, so that it soaks in and stays flat and greasy.",
+      "fix": "Wait until the fat is smoking before the batter goes in."
+    },
+    {
+      "mistake": "Opening the oven early, so that the pudding sinks.",
+      "fix": "Keep the door shut until it is well risen and brown."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "preparation/pudding-batter", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/roasting-tin"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil", "ingredient/sunflower-oil"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/whisk-a-batter", "why": "The pudding needs a smooth, rested batter.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/bake",
+      "differs": "The batter goes into fat that is already smoking hot in a very hot oven and the door stays shut, so it puffs at once instead of baking slowly.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"}
+  ]
+}

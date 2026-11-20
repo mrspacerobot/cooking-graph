@@ -1,0 +1,82 @@
+{
+  "id": "recipe/tomato-and-egg-stir-fry",
+  "tier": "drafted",
+  "names": {"en": "Tomato and egg stir-fry", "zh": "西红柿炒鸡蛋", "zh-Latn": "Xīhóngshì chǎo jīdàn"},
+  "aliases": {},
+  "makes": "dish/tomato-and-egg-stir-fry",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/tomato", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {"thing": "ingredient/sugar", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/wok", "equipment/spatula", "equipment/mixing-bowl", "equipment/whisk", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/tomato", "ingredient/spring-onion"],
+      "with": [],
+      "text": "Cut the {tomato:plural} into wedges. Slice the {spring-onion:plural} and keep the white and green parts apart.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/salt"],
+      "text": "Beat the {egg:plural} with half the {salt} until frothy.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/wok-scramble",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/oil"],
+      "text": "Heat most of the {oil} in a wok over high heat until very hot. Pour in the {egg:plural}; they puff at once. Push them gently around until they set in large, soft curds that are still a little runny, then tip them onto a plate.",
+      "time": {"from": 30, "to": 60, "unit": "second"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/oil", "ingredient/spring-onion"],
+      "text": "Add the rest of the {oil} and the white parts of the {spring-onion:plural}, then the {tomato:plural}, and stir-fry until they soften and start to give up their juice.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/tomato"],
+      "with": ["ingredient/sugar", "ingredient/salt"],
+      "text": "Add the {sugar} and the rest of the {salt} and let it bubble briefly until the {tomato:plural} slump into a loose sauce.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/egg", "ingredient/tomato"],
+      "with": ["ingredient/spring-onion"],
+      "text": "Return the {egg:plural} and fold them through gently, just until coated. Scatter with the green parts of the {spring-onion:plural} and serve with rice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

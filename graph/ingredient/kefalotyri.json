@@ -43,6 +43,15 @@
       "ratio": null,
       "caveat": "It is saltier and sharper, and browns well on top.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/kefalograviera",
+      "allows": true,
+      "when": ["technique/fry-cheese"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Cut it into thick slabs. It holds its shape in the pan but tends to be saltier and sharper.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

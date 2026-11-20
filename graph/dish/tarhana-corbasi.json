@@ -1,0 +1,43 @@
+{
+  "id": "dish/tarhana-corbasi",
+  "tier": "drafted",
+  "names": {"en": "Tarhana corbasi", "tr": "Tarhana çorbası"},
+  "aliases": {"en": ["tarhana soup", "Turkish fermented grain soup"]},
+  "is": "A thick, sour winter soup of dried tarhana soaked and whisked smooth, simmered with tomato paste fried in butter, and finished with butter sizzled with dried mint and chilli.",
+  "parts": [
+    {"id": "tarhana", "role": "main", "options": ["ingredient/tarhana"], "optional": false, "tier": "drafted"},
+    {
+      "id": "paste",
+      "role": "seasoning",
+      "options": ["ingredient/tomato-paste", "ingredient/red-pepper-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "butter",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "water",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/chicken-stock", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "mint", "role": "garnish", "options": ["ingredient/dried-mint"], "optional": false, "tier": "drafted"},
+    {"id": "chilli", "role": "garnish", "options": ["ingredient/chili-flakes"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/cook-tarhana", "tier": "drafted"},
+    {"thing": "technique/fry-tomato-paste", "tier": "drafted"},
+    {"thing": "technique/sizzle-chilli-butter", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

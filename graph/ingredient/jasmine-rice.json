@@ -1,0 +1,43 @@
+{
+  "id": "ingredient/jasmine-rice",
+  "tier": "drafted",
+  "names": {"en": "Jasmine rice"},
+  "aliases": {"en": ["Thai fragrant rice", "Thai jasmine rice", "hom mali rice"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [
+    {"thing": "ingredient/rice", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/starches", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A long-grain Thai rice with a floral smell. It cooks soft and slightly clingy by absorption and, cooked a day ahead and chilled, fries into separate grains.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/long-grain-rice",
+      "allows": true,
+      "when": ["dish/sayadieh", "technique/cook-rice-in-onion-broth", "technique/fry-rice-golden"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Adjust the broth to suit the rice and fluff it gently. Jasmine rice makes a softer, more fragrant bed for the fish.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

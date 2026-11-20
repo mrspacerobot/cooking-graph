@@ -37,6 +37,15 @@
       "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
       "caveat": "The flat ribbons hold more sauce and have a little more chew.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/trofie",
+      "allows": true,
+      "when": ["dish/trofie-al-pesto-genovese"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use dried trenette and boil until it still has bite. The long flat ribbons carry the pesto with a less chewy bite than the twists.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

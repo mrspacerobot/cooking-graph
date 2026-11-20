@@ -1,0 +1,72 @@
+{
+  "id": "dish/risotto-alla-zucca",
+  "tier": "drafted",
+  "names": {"en": "Risotto alla zucca", "it": "Risotto alla zucca"},
+  "aliases": {"en": ["pumpkin risotto", "butternut squash risotto", "squash risotto"]},
+  "is": "An autumn risotto from the north of Italy in which small dice of squash are softened with the onion and then melt into the rice as the stock goes in, turning it golden and creamy before it is finished with butter and cheese.",
+  "parts": [
+    {
+      "id": "rice",
+      "role": "base",
+      "options": ["ingredient/arborio-rice", "ingredient/carnaroli-rice", "ingredient/vialone-nano-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "squash",
+      "role": "main",
+      "options": ["ingredient/butternut-squash", "ingredient/pumpkin", "ingredient/kabocha"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "onion",
+      "role": "aromatic",
+      "options": ["ingredient/onion", "ingredient/shallot"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "wine",
+      "role": "liquid",
+      "options": ["ingredient/white-wine", "ingredient/dry-vermouth"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/vegetable-stock", "ingredient/chicken-stock", "ingredient/stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/olive-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "finish", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "seasoning",
+      "options": ["ingredient/parmesan", "ingredient/vegetarian-hard-cheese"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/dice", "tier": "drafted"},
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/toast-rice", "tier": "drafted"},
+    {"thing": "technique/add-stock-gradually", "tier": "drafted"},
+    {"thing": "technique/stir", "tier": "drafted"},
+    {"thing": "technique/mantecare", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

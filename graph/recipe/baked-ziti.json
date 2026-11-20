@@ -1,0 +1,124 @@
+{
+  "id": "recipe/baked-ziti",
+  "tier": "drafted",
+  "names": {"en": "Baked ziti"},
+  "aliases": {},
+  "makes": "dish/baked-ziti",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/ziti", "amount": {"value": 450, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/italian-sausage", "amount": {"value": 450, "unit": "gram"}, "forms": [], "part": "sausage"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "tomatoes"},
+    {"thing": "ingredient/oregano", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {"thing": "ingredient/ricotta", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "ricotta"},
+    {
+      "thing": "ingredient/mozzarella",
+      "amount": {"value": 250, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "mozzarella"
+    },
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 50, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "parmesan"
+    },
+    {"thing": "ingredient/basil", "amount": {"value": 10, "unit": "leaf"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/saute-pan", "equipment/stockpot", "equipment/colander",
+    "equipment/wooden-spoon", "equipment/baking-dish", "equipment/grater"
+  ],
+  "steps": [
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/italian-sausage"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Squeeze the {sausage} out of its skins, if it has any. Heat the {oil} in a wide pan over a medium-high heat, add the meat and break it into small pieces with a wooden spoon. Fry until browned, then spoon off most of the fat.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/chili-flakes"],
+      "text": "Lower the heat, add the {garlic} [chilli: and the {chilli}] and stir for a moment until fragrant.",
+      "time": {"value": 1, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/italian-sausage"],
+      "with": ["ingredient/tinned-tomatoes", "ingredient/oregano", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Pour in the {tomatoes}, crushing them with the spoon[oregano: , add the {oregano}], and season with a little {salt} and {black-pepper}. Simmer gently, stirring now and then, until the sauce has thickened. Check against a trusted guide to doneness.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/ziti"],
+      "with": ["ingredient/salt"],
+      "text": "Meanwhile boil the {pasta} in plenty of water with the rest of the {salt} until it is still firm in the middle, a little short of the time on the packet. Drain it.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss-pasta-with-sauce",
+      "works_on": ["ingredient/ziti"],
+      "with": ["ingredient/italian-sausage", "ingredient/tinned-tomatoes"],
+      "text": "Toss the {pasta} with most of the sauce.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/ziti", "ingredient/parmesan"],
+      "with": ["ingredient/ricotta", "ingredient/mozzarella"],
+      "text": "Spread half of the {pasta} in a baking dish. Dot with spoonfuls of the {ricotta} and scatter over half of the {mozzarella}. Cover with the rest of the {pasta}, spoon over the remaining sauce and finish with the rest of the {mozzarella} and the {parmesan}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["ingredient/parmesan"],
+      "with": ["ingredient/mozzarella"],
+      "text": "Cover the dish with foil and bake in a hot oven until hot all through, then uncover it and bake until the cheese is melted, bubbling and browned in spots.",
+      "time": {"from": 30, "to": 35, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/ziti"],
+      "with": ["ingredient/basil"],
+      "text": "Leave it to settle for a moment, then tear over the {basil} and serve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

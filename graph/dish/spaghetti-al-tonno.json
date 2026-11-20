@@ -1,0 +1,34 @@
+{
+  "id": "dish/spaghetti-al-tonno",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti al tonno", "it": "spaghetti al tonno"},
+  "aliases": {"en": ["pasta al tonno", "pasta with tuna", "tuna pasta", "tuna and tomato spaghetti"]},
+  "is": "Spaghetti in a quick tomato sauce started with garlic in olive oil, with capers, and canned tuna stirred in at the end only to warm. Italians serve it without cheese.",
+  "parts": [
+    {"id": "pasta", "role": "main", "options": ["ingredient/spaghetti"], "optional": false, "tier": "drafted"},
+    {"id": "tuna", "role": "main", "options": ["ingredient/canned-tuna"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tinned-tomatoes", "ingredient/cherry-tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "capers", "role": "seasoning", "options": ["ingredient/capers"], "optional": true, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-garlic-gently", "tier": "drafted"},
+    {"thing": "technique/make-a-tomato-sauce", "tier": "drafted"},
+    {"thing": "technique/warm-through", "tier": "drafted"},
+    {"thing": "technique/toss-pasta-with-sauce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,162 @@
+{
+  "id": "recipe/fish-pie",
+  "tier": "drafted",
+  "names": {"en": "Fish pie"},
+  "aliases": {},
+  "makes": "dish/fish-pie",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 1, "unit": "kilogram"},
+      "forms": ["form/peeled", "form/large-pieces"],
+      "part": "mash"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "mash"},
+    {"thing": "ingredient/milk", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "mash"},
+    {
+      "thing": "ingredient/smoked-haddock",
+      "amount": {"value": 300, "unit": "gram"},
+      "forms": [],
+      "part": "smoked-fish"
+    },
+    {"thing": "ingredient/salmon", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "fish"},
+    {
+      "thing": "ingredient/shrimp",
+      "amount": {"value": 200, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "prawns"
+    },
+    {"thing": "ingredient/egg", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/milk", "amount": {"value": 600, "unit": "millilitre"}, "forms": [], "part": "milk"},
+    {"thing": "ingredient/bay-leaf", "amount": {"value": 1, "unit": "leaf"}, "forms": [], "part": "bay-leaf"},
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/flour", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "flour"},
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 3, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {
+      "thing": "ingredient/cheddar",
+      "amount": {"value": 50, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/saucepan", "equipment/saute-pan", "equipment/colander",
+    "equipment/potato-masher", "equipment/whisk", "equipment/baking-dish", "equipment/slotted-spoon",
+    "equipment/fine-sieve"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/salt"],
+      "text": "Put the {mash.potato:plural} in a pan of cold water with a little {salt}, bring to the boil and simmer until a knife slides in easily. Drain them and leave them to steam dry.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil-an-egg",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "[egg: Lower the {egg:plural} into boiling water and boil them until hard. Cool them in cold water.]",
+      "time": {"from": 9, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/peel",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "[egg: Peel the {egg:plural} and cut them into quarters.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/smoked-haddock", "ingredient/salmon"],
+      "with": ["ingredient/milk", "ingredient/bay-leaf"],
+      "text": "Lay the {smoked-fish} and the {fish} in a wide pan and pour over the {milk}[bay-leaf: , add the {bay-leaf}] and bring just to a simmer. Poach gently until the flesh just flakes, then lift the fish out. Strain the {milk} and keep it.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/poaching-liquid"]
+    },
+    {
+      "technique": "technique/flake",
+      "works_on": ["ingredient/smoked-haddock", "ingredient/salmon"],
+      "with": ["ingredient/shrimp", "ingredient/egg"],
+      "text": "Pull off the skin and any bones and break the {smoked-fish} and the {fish} into large flakes. Spread them in a baking dish [prawns: with the raw {prawns:plural}] [egg: and the {egg:plural}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the {butter} in a saucepan, stir in the {flour} and cook gently, stirring, without letting it colour.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/make-a-bechamel",
+      "works_on": ["preparation/roux"],
+      "with": ["preparation/poaching-liquid", "ingredient/parsley", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Take the pan off the heat and whisk in the warm {milk} the fish was poached in, a little at a time. Return it to the heat and simmer, stirring, until thick and smooth. Stir in the {parsley} and season with {salt} and {black-pepper}.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/bechamel"]
+    },
+    {
+      "technique": "technique/mash",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/butter", "ingredient/milk", "ingredient/salt"],
+      "text": "Warm the {mash.milk} with the {mash.butter}. Mash the hot {mash.potato:plural} until no lumps are left, then beat in the warm {mash.milk} until smooth and soft. Season with {salt}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/mashed-potato"]
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["preparation/bechamel", "preparation/mashed-potato"],
+      "with": ["ingredient/smoked-haddock", "ingredient/salmon", "ingredient/cheddar"],
+      "text": "Pour the sauce over the fish and leave it to cool a little. Spoon the mash over the top, starting at the edges, and rough it up with a fork[cheese: , then scatter over the {cheese}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["preparation/mashed-potato"],
+      "with": [],
+      "text": "Bake in a hot oven until the top is golden and the sauce bubbles at the edges. Check the middle of the pie against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 35, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

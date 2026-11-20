@@ -34,7 +34,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/japanese-curry-roux",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/kare-raisu", "technique/melt-in-curry-roux"],
+      "ratio": null,
+      "caveat": "Thai green curry paste is a different seasoning and does not thicken like a Japanese curry block.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/massaman-curry-paste",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/massaman-curry"],
+      "ratio": null,
+      "caveat": "Green curry paste fries in much the same way but gives a different curry without the warm, toasted spice character of massaman.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

@@ -1,0 +1,48 @@
+{
+  "id": "preparation/onion-gravy",
+  "tier": "drafted",
+  "names": {"en": "Onion gravy"},
+  "aliases": {"en": ["gravy", "brown onion gravy"]},
+  "plurals": {},
+  "uncountable": true,
+  "is": "A pouring sauce of onions fried soft and golden in fat, thickened with a little flour and loosened with stock.",
+  "parts": [
+    {
+      "id": "onion",
+      "role": "aromatic",
+      "options": ["ingredient/onion", "ingredient/red-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fat",
+      "role": "fat",
+      "options": ["ingredient/butter", "ingredient/oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": [
+        "ingredient/beef-stock", "ingredient/chicken-stock", "ingredient/vegetable-stock", "ingredient/stock"
+      ],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "groups": [
+    {"thing": "group/sauces", "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-gravy", "tier": "drafted"},
+    {"thing": "technique/fry-onions-golden", "tier": "drafted"}
+  ],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"}
+  ],
+  "same_as": []
+}

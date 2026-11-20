@@ -1,0 +1,8 @@
+{
+  "id": "form/cooked-and-cooled",
+  "tier": "drafted",
+  "names": {"en": "Cooked and cooled"},
+  "aliases": {"en": ["day-old", "leftover", "cold cooked"]},
+  "looks_like": "Cooked earlier, spread out to cool and kept cold, so that the grains are firm, a little dry and fall apart instead of sticking together.",
+  "size": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "dish/lasagne-alla-bolognese",
+  "tier": "drafted",
+  "names": {"en": "Lasagne alla bolognese", "it": "lasagne alla bolognese"},
+  "aliases": {"en": ["lasagna", "lasagne", "beef lasagna", "classic lasagna", "lasagna bolognese"]},
+  "is": "Sheets of pasta layered with a slow-cooked ragù of beef and pork, béchamel and Parmesan, and baked until the top is golden and bubbling. The Emilian classic as a home cook makes it, with sheets that need no boiling.",
+  "parts": [
+    {"id": "pasta", "role": "main", "options": ["ingredient/lasagne-sheet"], "optional": false, "tier": "drafted"},
+    {"id": "ragu", "role": "filling", "options": ["preparation/ragu"], "optional": false, "tier": "drafted"},
+    {"id": "bechamel", "role": "sauce", "options": ["preparation/bechamel"], "optional": false, "tier": "drafted"},
+    {"id": "cheese", "role": "topping", "options": ["ingredient/parmesan"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-a-soffritto", "tier": "drafted"},
+    {"thing": "technique/make-a-ragu", "tier": "drafted"},
+    {"thing": "technique/make-a-bechamel", "tier": "drafted"},
+    {"thing": "technique/layer", "tier": "drafted"},
+    {"thing": "technique/bake-pasta-al-forno", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

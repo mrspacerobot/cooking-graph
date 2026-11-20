@@ -1,0 +1,73 @@
+{
+  "id": "dish/hot-and-sour-soup",
+  "tier": "drafted",
+  "names": {"en": "Hot and sour soup", "zh": "酸辣汤", "zh-Latn": "Suānlà tāng"},
+  "aliases": {"en": ["Suānlà tāng", "Suan la tang", "hot sour soup"]},
+  "is": "A thickened chicken broth with mushroom and tofu, drizzled with egg ribbons, made hot with white pepper and sour with vinegar at the end.",
+  "parts": [
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "mushroom",
+      "role": "main",
+      "options": ["ingredient/shiitake", "ingredient/mushroom"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "tofu",
+      "role": "main",
+      "options": ["ingredient/tofu", "ingredient/firm-tofu"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cornflour",
+      "role": "thickener",
+      "options": ["ingredient/cornstarch"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "vinegar",
+      "role": "acid",
+      "options": ["ingredient/rice-vinegar", "ingredient/black-vinegar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "white-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/white-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "spring-onion",
+      "role": "garnish",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "sesame-oil", "role": "garnish", "options": ["ingredient/sesame-oil"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/thicken", "tier": "drafted"},
+    {"thing": "technique/drizzle-egg", "tier": "drafted"},
+    {"thing": "technique/season", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

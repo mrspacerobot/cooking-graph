@@ -1,0 +1,98 @@
+{
+  "id": "technique/shallow-fry-vegetables",
+  "tier": "drafted",
+  "names": {"en": "Shallow-fry vegetables"},
+  "aliases": {"en": ["fry vegetables in shallow oil", "shallow fry aubergines", "kizartma"]},
+  "does": "Fries soft vegetables, whole or in thick pieces, in a layer of hot oil that comes part way up their sides, turning them until they are soft right to the middle and golden all over, then drains them on paper.",
+  "intro": {
+    "what": "Shallow-frying vegetables cooks whole or thick pieces in a layer of hot oil, turned on every side.",
+    "why": "It teaches you to balance colour on the outside with softness in the middle.",
+    "idea": "Colour and softness together",
+    "tier": "drafted"
+  },
+  "how": [
+    "Dry the vegetables well. Wet ones spit and do not colour.",
+    "Heat oil in a wide pan to come about a third of the way up the pieces, until a piece dropped in sizzles at once.",
+    "Lay the pieces in with room between them.",
+    "Turn them as each side goes golden, until every side is coloured and a knife meets no resistance.",
+    "Lift them out onto paper to drain."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A lively sizzle as each piece goes in."},
+    {"sense": "feel", "text": "The piece is soft and gives all the way through when it is pressed with a spoon."},
+    {"sense": "see", "text": "Golden on every side, with the oil still clear."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying in oil that is not hot, so that the vegetable drinks the oil and turns greasy.",
+      "fix": "Wait until a test piece sizzles at once."
+    },
+    {
+      "mistake": "Taking the pieces out when they are coloured but still firm in the middle.",
+      "fix": "Turn the heat down a little and keep turning until they are soft through."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why must the oil be hot before the vegetables go in?",
+      "choices": [
+        "So they colour and seal instead of drinking oil.",
+        "So they stay raw inside.",
+        "So the oil lasts longer."
+      ],
+      "answer": 0,
+      "because": "In oil that is not hot enough, soft vegetables soak it up and turn greasy.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How deep should the oil be?",
+      "choices": ["Just a film.", "Part way up the sides of the pieces.", "Enough to cover them."],
+      "answer": 1,
+      "because": "Shallow-frying uses a layer that reaches part way up, and the pieces are turned.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "When is a piece ready?",
+      "choices": [
+        "When one side is golden.",
+        "When the skin wrinkles.",
+        "When it is golden all over and soft to the middle."
+      ],
+      "answer": 2,
+      "because": "Both colour and softness right through are needed.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pieces are golden but hard in the middle. What should change?",
+      "choices": ["Lower the heat a little and keep turning them.", "Raise the heat.", "Take them out at once."],
+      "answer": 0,
+      "because": "A gentler heat gives the middle time to soften before the outside darkens.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/watery-vegetables", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/oil", "ingredient/olive-oil"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "Soft vegetables, whole or in thick pieces, lie in a deeper layer of oil and are turned on every side until soft right to the middle, then drained on paper.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

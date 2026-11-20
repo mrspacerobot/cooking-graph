@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/oyster-sauce",
+  "tier": "drafted",
+  "names": {"en": "Oyster sauce"},
+  "aliases": {},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A thick, glossy, savoury-sweet brown sauce made from oyster extract. It goes in late in a stir-fry and coats the food with a shine.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/molluscs", "basis": "It is made from oyster extract.", "certain": true},
+      {"fact": "fact/wheat", "basis": "Recorded strictly: many brands thicken it with wheat flour.", "certain": false},
+      {"fact": "fact/gluten", "basis": "Recorded strictly: many brands thicken it with wheat flour.", "certain": false},
+      {"fact": "fact/soy", "basis": "Recorded strictly: some brands hold soy sauce.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/mustard", "fact/peanuts", "fact/pork", "fact/sesame",
+      "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

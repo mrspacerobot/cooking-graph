@@ -1,0 +1,59 @@
+{
+  "id": "dish/sayadieh",
+  "tier": "drafted",
+  "names": {"en": "Sayadieh", "fr": "Sayadiyé", "ar": "صيادية", "ar-Latn": "Sayadieh"},
+  "aliases": {"en": ["fish and rice", "sayadiyeh", "sayyadiyeh", "lebanese fish with rice"]},
+  "is": "The fisherman's dish of the Lebanese coast: rice cooked in a dark broth of deeply fried onions and cumin, so that it comes out brown and sweet, served with pan-fried white fish, more fried onion and golden pine nuts, with lemon on the side.",
+  "parts": [
+    {
+      "id": "fish",
+      "role": "main",
+      "options": ["ingredient/white-fish", "ingredient/sea-bass", "ingredient/hake"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "rice",
+      "role": "base",
+      "options": ["ingredient/long-grain-rice", "ingredient/basmati-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "frying-oil",
+      "role": "fat",
+      "options": ["ingredient/sunflower-oil", "ingredient/oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "water",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/fish-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pine-nut",
+      "role": "garnish",
+      "options": ["ingredient/pine-nut", "ingredient/almond"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-onions-dark", "tier": "drafted"},
+    {"thing": "technique/cook-rice-in-onion-broth", "tier": "drafted"},
+    {"thing": "technique/pan-fry", "tier": "drafted"},
+    {"thing": "technique/fry-nuts-golden", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

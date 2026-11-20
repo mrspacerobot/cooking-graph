@@ -1,0 +1,94 @@
+{
+  "id": "technique/fry-in-an-egg-coat",
+  "tier": "drafted",
+  "names": {"en": "Fry in an egg coat", "tr": "Yumurtaya bulayıp kızartmak"},
+  "aliases": {"en": ["dip in flour and egg and fry", "egg-coat and fry", "fry in flour and egg"]},
+  "does": "Rolls shaped pieces of meat mixture in flour, dips them in beaten egg and fries them at once in a layer of hot oil, turning them, until the egg coat is set and golden on every side.",
+  "intro": {
+    "what": "Frying in an egg coat dips floured pieces in beaten egg and fries them in a layer of hot oil.",
+    "why": "It teaches how flour lets an egg coat cling and how a set coat protects a soft mixture.",
+    "idea": "Flour then egg",
+    "tier": "drafted"
+  },
+  "how": [
+    "Heat oil in a wide pan to about the depth of a finger.",
+    "Beat the eggs in a shallow bowl and spread flour on a plate.",
+    "Roll a piece in the flour and tap off the excess, so the egg has something to hold on to.",
+    "Dip it in the egg, let the extra drip off, and lay it straight into the hot oil.",
+    "Fry it, turning, until the coat is golden on every side, then drain it on paper."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A steady sizzle as each piece goes in."},
+    {"sense": "see", "text": "A thin, even, golden coat that clings to the piece with no bare patches."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Dipping in egg without flour first, so that the egg slides off in the pan.",
+      "fix": "Roll the piece in flour first and tap off the excess."
+    },
+    {
+      "mistake": "Coating the pieces long before they are fried, so that the coat turns soggy and patchy.",
+      "fix": "Coat each piece just before it goes in the oil."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why roll the piece in flour before the egg?",
+      "choices": ["So the egg has something to cling to.", "To make it sweeter.", "To keep the oil cool."],
+      "answer": 0,
+      "because": "A dry flour layer gives the wet egg a surface to hold.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "When should a piece be coated?",
+      "choices": ["Well ahead of time.", "Just before it goes in the oil.", "After it is fried."],
+      "answer": 1,
+      "because": "A coat left waiting turns soggy and falls away.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What does a good coat look like?",
+      "choices": ["Thick and pale.", "Patchy with bare spots.", "Thin, even and golden all round."],
+      "answer": 2,
+      "because": "An even golden coat shows the egg clung and set.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The egg coat slides off in the pan. What should change?",
+      "choices": ["Flour the pieces first and tap off the excess.", "Use colder oil.", "Use more egg."],
+      "answer": 0,
+      "because": "Flour gives the egg a grip.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "coating", "options": ["ingredient/flour", "ingredient/egg"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/oil"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/shape",
+      "why": "The mixture is shaped into pieces of one size before it is coated.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "The pieces are of a soft meat mixture, rolled in flour and dipped in beaten egg just before they go in, and turned in a deeper layer of oil until the egg coat is set and golden.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

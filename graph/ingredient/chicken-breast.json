@@ -26,7 +26,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cooked-chicken",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/enchiladas-verdes", "dish/quesadillas-de-pollo"],
+      "ratio": null,
+      "caveat": "Raw chicken breast needs cooking before it can be pulled into shreds. These steps start with meat ready to shred and use as a filling.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

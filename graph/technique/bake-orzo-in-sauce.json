@@ -1,0 +1,87 @@
+{
+  "id": "technique/bake-orzo-in-sauce",
+  "tier": "drafted",
+  "names": {"en": "Bake orzo in sauce"},
+  "aliases": {"en": ["giouvetsi", "youvetsi", "bake orzo giouvetsi style", "oven-bake orzo"]},
+  "does": "Stirs raw orzo into a hot tomato sauce and stock, usually around braised meat, and bakes it uncovered in the oven until the pasta has taken up the liquid and is tender, with a slightly crisp top. The Greek name for the dish and its clay pot is giouvetsi.",
+  "intro": {
+    "what": "Raw orzo cooks in the oven in the sauce of the meat and takes it up as it swells.",
+    "why": "The pasta tastes of the sauce all the way through, and the whole meal comes out of one dish.",
+    "idea": "The pasta drinks the sauce",
+    "tier": "drafted"
+  },
+  "how": [
+    "Have the meat and its sauce hot and the stock boiling.",
+    "Tip the sauce and the meat into a baking dish, stir in the raw orzo and pour in the hot stock.",
+    "Bake uncovered, stirring once halfway so that the grains on top do not dry out.",
+    "Take it out when the orzo is tender and most of the liquid is gone. It thickens as it stands."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The liquid has sunk below the grains and the top has small golden patches."},
+    {"sense": "taste", "text": "A grain is soft right through with no chalky centre."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using cold stock, so that the orzo sits soaking and turns soft outside while the centre stays hard.",
+      "fix": "Pour the stock in boiling."
+    },
+    {
+      "mistake": "Too little liquid, so that the dish dries before the pasta is tender.",
+      "fix": "Keep a little hot stock or water to add halfway if it looks dry."
+    },
+    {
+      "mistake": "Baking until no liquid is left at all, so that the dish turns stodgy as it stands.",
+      "fix": "Stop while it is still a little loose."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "method",
+      "question": "Why is the stock poured in hot?",
+      "choices": [
+        "So that the orzo starts to cook at once and evenly.",
+        "To make the oven hotter.",
+        "To melt the cheese."
+      ],
+      "answer": 0,
+      "because": "Cold liquid leaves the pasta soaking before it cooks.",
+      "tier": "drafted"
+    },
+    {
+      "id": "cue",
+      "question": "When does the dish come out of the oven?",
+      "choices": [
+        "When it is completely dry.",
+        "When the orzo is tender and a little loose liquid is left.",
+        "As soon as the top browns."
+      ],
+      "answer": 1,
+      "because": "The pasta goes on taking up liquid as the dish stands.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/orzo", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish", "equipment/roasting-tin"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"},
+    {
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/beef-stock", "ingredient/water"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/bake",
+      "differs": "The pasta goes into the dish raw with a hot sauce and stock and cooks in the oven by taking them up. It is not boiled first and baked after.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

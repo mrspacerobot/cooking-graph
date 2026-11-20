@@ -1,0 +1,81 @@
+{
+  "id": "recipe/adas",
+  "tier": "drafted",
+  "names": {"en": "Adas", "ar": "عدس", "ar-Latn": "Adas"},
+  "aliases": {},
+  "makes": "dish/adas",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/green-lentils", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "lentils"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/chopped"], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/paprika", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "paprika"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/water", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/coriander-leaf",
+      "amount": {"value": 6, "unit": "sprig"},
+      "forms": ["form/chopped"],
+      "part": "coriander"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon",
+    "equipment/dutch-oven", "equipment/fine-sieve"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/green-lentils"],
+      "with": [],
+      "text": "Pick over the {lentils} for grit and rinse them in a sieve under the tap.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-onions-golden",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil", "ingredient/garlic"],
+      "text": "Heat most of the {oil} in a heavy pot and fry the {onion} until soft and golden, adding the {garlic} for the last moments.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bloom-ground-spices",
+      "works_on": ["ingredient/paprika"],
+      "with": ["ingredient/cumin", "ingredient/tinned-tomatoes"],
+      "text": "Lower the heat, stir in the {cumin} and the {paprika} for a few moments, then add the {tomato}.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/green-lentils"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Add the {lentils} and the {water}, bring to a boil, then simmer partly covered, stirring now and then, until the {lentils} are soft and the sauce is thick. Add a splash more {water} if it dries before they are done. Season with the {salt} near the end.",
+      "time": {"from": 35, "to": 45, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/green-lentils"],
+      "with": ["ingredient/coriander-leaf", "ingredient/olive-oil"],
+      "text": "Stir in most of the {coriander}, and serve with the rest scattered on top and a thread of the last of the {oil}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

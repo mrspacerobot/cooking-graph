@@ -1,0 +1,50 @@
+{
+  "id": "dish/tinga-de-pollo",
+  "tier": "drafted",
+  "names": {"en": "Tinga de pollo", "es": "Tinga de pollo"},
+  "aliases": {"en": ["chicken tinga", "chipotle shredded chicken", "tinga poblana"]},
+  "is": "Poached chicken pulled into shreds and simmered in a smoky sauce of fried onion, tomato and chipotle in adobo, piled onto warm corn tortillas or crisp tostadas.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-breast", "ingredient/chicken-thigh"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "sauce",
+      "options": ["ingredient/tinned-tomatoes", "ingredient/tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "chipotle",
+      "role": "seasoning",
+      "options": ["ingredient/chipotle-in-adobo"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oregano", "role": "seasoning", "options": ["ingredient/oregano"], "optional": true, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {"id": "tortillas", "role": "base", "options": ["ingredient/corn-tortilla"], "optional": false, "tier": "drafted"},
+    {"id": "cream", "role": "garnish", "options": ["ingredient/sour-cream"], "optional": true, "tier": "drafted"},
+    {"id": "avocado", "role": "garnish", "options": ["ingredient/avocado"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/shred-meat", "tier": "drafted"},
+    {"thing": "technique/saute", "tier": "drafted"},
+    {"thing": "technique/fry-the-sauce", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ],
+  "same_as": []
+}

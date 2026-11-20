@@ -1,0 +1,48 @@
+{
+  "id": "technique/char-noodles",
+  "tier": "drafted",
+  "names": {"en": "Char noodles"},
+  "aliases": {"en": ["char the noodles", "sear noodles in a wok"]},
+  "does": "Leaves sauced wide rice noodles still against a very hot wok so that they catch dark, smoky spots before they are turned.",
+  "intro": null,
+  "how": [
+    "Heat the wok until it smokes.",
+    "Add the noodles with their dark sauce and toss once to coat.",
+    "Spread them out and leave them still until the underside catches dark spots.",
+    "Turn them and repeat, tossing gently so that they do not tear."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "A smoky, caramel smell."},
+    {"sense": "see", "text": "Dark brown, almost black spots on glossy noodles."},
+    {"sense": "hear", "text": "A steady crackle."}
+  ],
+  "mistakes": [
+    {"mistake": "Tossing all the time, so the noodles never char.", "fix": "Leave them still between turns."},
+    {
+      "mistake": "Crowding the wok, which cools it so the noodles steam.",
+      "fix": "Cook no more than a few portions at once."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/rice-noodles", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/wok"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/spatula"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/stir-fry",
+      "differs": "The noodles are left still against the hot wok between turns, so that they char rather than only heat through.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ]
+}

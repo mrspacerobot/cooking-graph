@@ -1,0 +1,33 @@
+{
+  "id": "ingredient/dashi-granules",
+  "tier": "drafted",
+  "names": {"en": "Dashi granules"},
+  "aliases": {"en": ["instant dashi", "dashi powder", "hondashi", "dashi stock powder"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Instant dashi: dried, powdered bonito and kelp extract with salt and often sugar and flavour enhancer. Dissolved in hot water it gives a quick, salty, smoky stock, saltier than a homemade dashi, so the seasoning is cut back.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/fish", "basis": "It is made from dried bonito.", "certain": true},
+      {"fact": "fact/soy", "basis": "Some brands hold soy.", "certain": false},
+      {"fact": "fact/wheat", "basis": "Some brands hold wheat.", "certain": false},
+      {"fact": "fact/gluten", "basis": "Some brands hold wheat.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

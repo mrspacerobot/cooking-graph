@@ -1,0 +1,41 @@
+{
+  "id": "dish/pastina-in-brodo",
+  "tier": "drafted",
+  "names": {"en": "Pastina in brodo", "it": "Pastina in brodo"},
+  "aliases": {"en": ["pastina soup", "little pasta in broth", "Italian penicillin", "pastina"]},
+  "is": "The simplest Italian comfort soup: tiny pasta stars cooked straight in hot chicken broth and finished with a knob of butter and grated cheese. It is what Italian families make for children and anyone feeling unwell.",
+  "parts": [
+    {
+      "id": "pasta",
+      "role": "main",
+      "options": ["ingredient/stelline", "ingredient/small-pasta", "ingredient/orzo"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock", "ingredient/stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "butter", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "seasoning",
+      "options": ["ingredient/parmesan", "ingredient/vegetarian-hard-cheese"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/cook-pasta-in-broth", "tier": "drafted"},
+    {"thing": "technique/mantecare", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

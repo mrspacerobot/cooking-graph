@@ -41,6 +41,15 @@
       "ratio": null,
       "caveat": "It tastes of caramel, colours the syrup dark and browns sooner.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/palm-sugar",
+      "allows": true,
+      "when": ["dish/massaman-curry"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Start with a similar weight and taste for balance when it dissolves. Brown sugar may taste more of molasses.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

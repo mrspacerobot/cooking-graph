@@ -1,0 +1,45 @@
+{
+  "id": "technique/fry-tortilla-strips",
+  "tier": "drafted",
+  "names": {"en": "Fry tortilla strips"},
+  "aliases": {"en": ["make totopos", "fry tortilla chips", "fry tortilla wedges"]},
+  "does": "Cuts corn tortillas into strips or wedges and shallow-fries them in hot oil until rigid, golden and crisp.",
+  "intro": null,
+  "how": [
+    "Cut the tortillas into thin strips or wedges. Slightly stale ones fry crisper.",
+    "Heat a finger's depth of oil in a deep pan until a strip sizzles at once.",
+    "Fry in small batches, turning, until golden and the bubbling slows.",
+    "Lift out onto kitchen paper and salt them while hot."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "The fierce bubbling quietens as the water leaves the strips."},
+    {"sense": "see", "text": "Golden, stiff strips."},
+    {"sense": "feel", "text": "They snap instead of bending once cool."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Crowding the pan, which cools the oil and leaves the strips greasy and limp.",
+      "fix": "Fry a small handful at a time."
+    },
+    {
+      "mistake": "Taking them too dark, which turns them bitter.",
+      "fix": "Lift them out at golden; they darken a little as they cool."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/corn-tortilla", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon", "equipment/tongs"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil", "ingredient/lard"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ]
+}

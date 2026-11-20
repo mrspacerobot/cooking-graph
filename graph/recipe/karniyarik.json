@@ -1,0 +1,107 @@
+{
+  "id": "recipe/karniyarik",
+  "tier": "drafted",
+  "names": {"en": "Karniyarik", "tr": "Karnıyarık"},
+  "aliases": {},
+  "makes": "dish/karniyarik",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/aubergine", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "aubergine"},
+    {"thing": "ingredient/minced-beef", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/tomato", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/green-pepper", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "green-pepper"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/parsley", "amount": {"value": 5, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/sunflower-oil", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "water"}
+  ],
+  "equipment": [
+    "equipment/vegetable-peeler", "equipment/frying-pan", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/wooden-spoon", "equipment/baking-dish", "equipment/oven", "equipment/stovetop", "equipment/spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/peel-in-stripes",
+      "works_on": ["ingredient/aubergine"],
+      "with": [],
+      "text": "Peel the {aubergine:plural} lengthways in stripes, leaving a stripe of skin between each peeled strip and keeping the stalks on.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shallow-fry-vegetables",
+      "works_on": ["ingredient/aubergine"],
+      "with": ["ingredient/sunflower-oil"],
+      "text": "Heat most of the {oil} in a wide pan. Pat the {aubergine:plural} dry and fry them whole, turning, until soft and golden on every side. Drain them on paper.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion", "ingredient/tomato", "ingredient/green-pepper"],
+      "with": [],
+      "text": "Dice the {onion}, one of the {tomato:plural} and one of the {green-pepper:plural} small. Slice the other {tomato} into rounds and cut the other {green-pepper:plural} into strips for the top.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/garlic", "ingredient/parsley"],
+      "with": [],
+      "text": "Mince the {garlic} and the {parsley}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [
+        "ingredient/onion", "ingredient/sunflower-oil", "ingredient/garlic", "ingredient/green-pepper",
+        "ingredient/tomato", "ingredient/tomato-paste", "ingredient/salt", "ingredient/black-pepper",
+        "ingredient/parsley"
+      ],
+      "text": "Soften the diced {onion} in a spoonful of the {oil}. Add the meat and fry it, breaking it up, until its liquid has cooked away and it browns. Stir in the {garlic}, the diced {green-pepper}, the diced {tomato} and half of the {paste}, cook until the {tomato} softens, then season with the {salt} and the {black-pepper} and stir in the {parsley}.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/stuff",
+      "works_on": ["ingredient/aubergine"],
+      "with": ["ingredient/minced-beef"],
+      "text": "Lay the {aubergine:plural} side by side in a baking dish. Slit each down its length without cutting through the ends or the base, press the cut open with a spoon to make a pocket and fill it with the meat.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/aubergine"],
+      "with": ["ingredient/tomato", "ingredient/green-pepper", "ingredient/tomato-paste", "ingredient/water"],
+      "text": "Top each with a round of {tomato} and a strip of {green-pepper}. Stir the rest of the {paste} into the hot {water}, pour it around them and bake until the {aubergine:plural} are very soft and the tops are browned. Check the filling against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 35, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

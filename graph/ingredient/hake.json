@@ -63,6 +63,15 @@
       "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
       "caveat": "Both are soft and flake easily, so handle the fillet gently.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/cod",
+      "allows": true,
+      "when": ["technique/poach-in-sauce"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use pieces of similar thickness and handle them gently. Hake may flake apart sooner.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

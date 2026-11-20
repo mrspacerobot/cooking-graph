@@ -1,0 +1,91 @@
+{
+  "id": "recipe/larb-gai",
+  "tier": "drafted",
+  "names": {"en": "Larb gai", "th": "ลาบไก่", "th-Latn": "Lap kai"},
+  "aliases": {},
+  "makes": "dish/larb-gai",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/jasmine-rice", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/shallot", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "shallot"},
+    {"thing": "ingredient/mint", "amount": {"value": 20, "unit": "leaf"}, "forms": [], "part": "mint"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 6, "unit": "sprig"}, "forms": [], "part": "coriander"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {"thing": "ingredient/minced-chicken", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/fish-sauce", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "fish-sauce"},
+    {"thing": "ingredient/lime", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "lime"},
+    {"thing": "ingredient/sugar", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/lettuce", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lettuce"}
+  ],
+  "equipment": [
+    "equipment/frying-pan", "equipment/mortar-and-pestle", "equipment/mixing-bowl", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/wooden-spoon", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-toasted-rice-powder",
+      "works_on": ["ingredient/jasmine-rice"],
+      "with": [],
+      "text": "Toast the raw {rice} in a dry pan over medium heat, shaking it often, until the grains are deep golden and smell of popcorn. Let them cool, then grind them to a coarse powder in a mortar.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/toasted-rice-powder"]
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/shallot", "ingredient/spring-onion"],
+      "with": [],
+      "text": "Slice the {shallot:plural} thinly[spring-onion: and the {spring-onion:plural} into short lengths].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/mint", "ingredient/coriander-leaf"],
+      "with": [],
+      "text": "Roughly chop the {mint} and the {coriander}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/poach-minced-meat",
+      "works_on": ["ingredient/minced-chicken"],
+      "with": ["ingredient/water"],
+      "text": "Put the {chicken} and the {water} in the pan over medium heat and stir, breaking the meat into fine crumbs, until it has changed colour all through and the liquid has almost gone. Check it against a trusted guide to doneness.",
+      "time": {"from": 5, "to": 7, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/minced-chicken"],
+      "with": [
+        "ingredient/fish-sauce", "ingredient/lime", "ingredient/sugar", "ingredient/chili-flakes", "ingredient/shallot",
+        "preparation/toasted-rice-powder", "ingredient/mint", "ingredient/coriander-leaf", "ingredient/spring-onion"
+      ],
+      "text": "Take the pan off the heat. Stir in the {fish-sauce}, the juice of the {lime:plural}[sugar: , the {sugar}] and the {chilli}, then fold in the {shallot:plural}, most of the toasted powder, the {mint} and the {coriander}[spring-onion: , and the {spring-onion:plural}]. Taste: it should be sour, salty and hot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/minced-chicken"],
+      "with": ["preparation/toasted-rice-powder", "ingredient/lettuce"],
+      "text": "Scatter over the rest of the powder and serve warm or at room temperature. [lettuce: Serve with leaves of {lettuce} to scoop it up.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

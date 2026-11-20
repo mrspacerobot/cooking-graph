@@ -1,0 +1,101 @@
+{
+  "id": "recipe/spaghetti-al-tonno",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti al tonno", "it": "spaghetti al tonno"},
+  "aliases": {},
+  "makes": "dish/spaghetti-al-tonno",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/spaghetti", "amount": {"value": 360, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/canned-tuna", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "tuna"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {
+      "thing": "ingredient/garlic",
+      "amount": {"value": 2, "unit": "clove"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "garlic"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/capers", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "capers"},
+    {"thing": "ingredient/parsley", "amount": {"value": 1, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/stockpot", "equipment/saute-pan", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/tongs", "equipment/colander"
+  ],
+  "steps": [
+    {
+      "technique": "technique/fry-garlic-gently",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Warm the {oil} and the sliced {garlic} in a wide pan over low heat until the {garlic} is pale gold.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/capers", "ingredient/salt", "ingredient/olive-oil", "ingredient/garlic"],
+      "text": "Add the {tomato:plural} [capers: and the {capers:plural}] with a little of the {salt}, crushing the {tomato:plural} with a spoon. Simmer, stirring now and then, until the sauce has thickened.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Bring a large pot of {water} to a rolling boil and season it well with the {salt}. Cook the {pasta} until it is tender with a firm bite at the centre. Scoop out a mug of the cooking {water} before draining.",
+      "time": {"from": 9, "to": 11, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/warm-through",
+      "works_on": ["ingredient/canned-tuna"],
+      "with": ["preparation/tomato-sauce"],
+      "text": "Drain the {tuna}, break it into large flakes and stir it gently into the sauce. Leave it only until it is hot, so that it stays moist.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "[parsley: Chop the leaves of the {parsley} finely.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss-pasta-with-sauce",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["preparation/tomato-sauce", "ingredient/canned-tuna", "ingredient/water"],
+      "text": "Lift the {pasta} into the sauce with a splash of the cooking {water} and toss over the heat until the sauce clings.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/parsley"],
+      "text": "Serve in warm bowls[parsley: , scattered with the {parsley}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

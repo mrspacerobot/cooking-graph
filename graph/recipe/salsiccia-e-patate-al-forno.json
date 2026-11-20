@@ -1,0 +1,91 @@
+{
+  "id": "recipe/salsiccia-e-patate-al-forno",
+  "tier": "drafted",
+  "names": {"en": "Salsiccia e patate al forno", "it": "Salsiccia e patate al forno"},
+  "aliases": {},
+  "makes": "dish/salsiccia-e-patate-al-forno",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/italian-sausage", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "sausage"},
+    {"thing": "ingredient/potato", "amount": {"value": 1, "unit": "kilogram"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/rosemary", "amount": {"value": 3, "unit": "sprig"}, "forms": [], "part": "rosemary"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/roasting-tin", "equipment/chefs-knife", "equipment/cutting-board", "equipment/tongs",
+    "equipment/spatula"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cut-into-chunks",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Heat the oven. Peel the {potato:plural}, or leave the skins on if they are thin, and cut them into chunks about the size of a walnut.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Cut the {onion:plural} into thick slices.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/potato", "ingredient/onion"],
+      "with": [
+        "ingredient/olive-oil", "ingredient/rosemary", "ingredient/garlic", "ingredient/salt", "ingredient/black-pepper"
+      ],
+      "text": "In a large roasting tin, toss the {potato:plural} and the {onion:plural} with most of the {oil}, the {rosemary}, the {garlic} cloves, lightly crushed in their skins, the {salt} and the {black-pepper}. Spread them out in a single layer.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/potato", "ingredient/onion"],
+      "with": [],
+      "text": "Roast until the vegetables begin to colour.",
+      "time": {"value": 20, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roast",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/italian-sausage", "ingredient/olive-oil"],
+      "text": "Tuck the {sausage:plural} in among the {potato:plural}, brush them with the last of the {oil} and roast, turning everything once, until the {sausage:plural} are browned and the {potato:plural} are tender and crisp at the edges. Check the middle of the thickest {sausage} against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/italian-sausage", "ingredient/garlic"],
+      "text": "Serve straight from the tin, squeezing the soft {garlic} out of its skin over each plate.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "technique/marinate-in-chermoula",
+  "tier": "drafted",
+  "names": {"en": "Marinate in chermoula"},
+  "aliases": {"en": ["marinate fish in chermoula", "chermoula marinade"]},
+  "does": "Turns pieces of fish in chermoula and leaves them in the fridge for a short while, so that the herbs, garlic, spices and lemon flavour the surface before the fish is cooked.",
+  "intro": null,
+  "how": [
+    "Pat the fish dry so that the marinade clings.",
+    "Spread the chermoula over every face of the pieces.",
+    "Cover and keep them in the fridge, not on the counter.",
+    "Leave them only for a short while. The lemon starts to turn the surface of the fish opaque if it is left much longer."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Every piece is coated green, with no bare patches."},
+    {"sense": "feel", "text": "The fish stays firm and springy. Soft, chalky edges mean it was left too long."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the fish overnight, so that the lemon turns its surface soft and mushy.",
+      "fix": "Keep the time short."
+    },
+    {"mistake": "Marinating on the counter in a warm kitchen.", "fix": "Cover the dish and keep it in the fridge."}
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/lean-fish", "tier": "drafted"},
+    {"thing": "ingredient/salmon", "tier": "drafted"},
+    {"thing": "ingredient/shrimp", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl", "equipment/baking-dish"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/make-chermoula", "why": "The chermoula is made first.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/marinate",
+      "differs": "The marinade is a thick herb paste rather than a liquid, and fish is left in it only briefly because of the lemon.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

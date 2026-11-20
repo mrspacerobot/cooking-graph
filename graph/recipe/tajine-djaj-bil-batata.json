@@ -1,0 +1,105 @@
+{
+  "id": "recipe/tajine-djaj-bil-batata",
+  "tier": "drafted",
+  "names": {"en": "Tajine djaj bil batata", "ar": "طاجين الدجاج بالبطاطا", "ar-Latn": "Tajine djaj bil batata"},
+  "aliases": {},
+  "makes": "dish/tajine-djaj-bil-batata",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "chicken"},
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 600, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "potato"
+    },
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/chopped"], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/ginger", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "ginger"},
+    {"thing": "ingredient/turmeric", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "turmeric"},
+    {"thing": "ingredient/paprika", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "paprika"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/water", "amount": {"value": 400, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/green-olive", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "olives"},
+    {
+      "thing": "ingredient/coriander-leaf",
+      "amount": {"value": 6, "unit": "sprig"},
+      "forms": ["form/chopped"],
+      "part": "herbs"
+    },
+    {
+      "thing": "preparation/preserved-lemon",
+      "amount": {"value": 0.5, "unit": "piece"},
+      "forms": [],
+      "part": "preserved-lemon"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon",
+    "equipment/dutch-oven", "equipment/tagine"
+  ],
+  "steps": [
+    {
+      "technique": "technique/fry-onions-golden",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil", "ingredient/garlic"],
+      "text": "Heat the {oil} in a wide heavy pot or a tagine and fry the {onion:plural} until soft and golden, adding the {garlic} for the last moments.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bloom-ground-spices",
+      "works_on": ["ingredient/turmeric", "ingredient/paprika"],
+      "with": ["ingredient/ginger", "ingredient/black-pepper"],
+      "text": "Lower the heat and stir in the {ginger}, the {turmeric}, the {paprika} and the {pepper} for a few moments.",
+      "time": {"from": 30, "to": 60, "unit": "second"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/salt", "ingredient/water"],
+      "text": "Season the skinless {chicken} with the {salt} and turn it in the spiced {onion:plural} until coated. Pour in the {water}, bring to a simmer, cover and cook gently.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/cut-into-chunks",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Meanwhile cut the {potato:plural} into thick wedges.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/potato", "ingredient/chicken-thigh"],
+      "with": ["preparation/braising-liquid"],
+      "text": "Tuck the {potato:plural} in around the {chicken}, spoon the sauce over them, cover and cook on until the {potato:plural} are tender and the {chicken} comes away from the bone. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["ingredient/green-olive", "preparation/preserved-lemon", "ingredient/coriander-leaf"],
+      "text": "Scatter over the {olives}[preserved-lemon: and the {preserved-lemon} rind cut in strips] and let them warm through for a few moments with the lid on. Finish with the {herbs}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "ingredient/raisin",
+  "tier": "drafted",
+  "names": {"en": "Raisins", "fr": "Raisins secs"},
+  "aliases": {"en": ["sultanas", "dried grapes", "seedless raisins"]},
+  "plurals": {"en": "Raisins", "fr": "Raisins secs"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A dried grape, sweet and chewy. Soaked or simmered in a sauce it plumps and gives up sweetness, and in a dry hot pan it puffs and scorches quickly.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/sulphites",
+        "basis": "Dried fruit is often kept with sulphites, golden raisins most of all.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": []
+}

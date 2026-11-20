@@ -1,0 +1,46 @@
+{
+  "id": "dish/shredded-pork-with-green-pepper",
+  "tier": "drafted",
+  "names": {"en": "Shredded pork with green pepper", "zh": "青椒肉丝", "zh-Latn": "Qīngjiāo ròusī"},
+  "aliases": {
+    "en": ["Qīngjiāo ròusī", "Qing jiao rou si", "pork and green pepper stir-fry", "stir-fried pork with green pepper"]
+  },
+  "is": "A quick Chinese home stir-fry of thin strips of velveted pork and green pepper, cooked fast in a very hot wok and finished with soy sauce.",
+  "parts": [
+    {
+      "id": "pork",
+      "role": "main",
+      "options": ["ingredient/pork-loin", "ingredient/pork-tenderloin"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {
+      "id": "wine",
+      "role": "seasoning",
+      "options": ["ingredient/shaoxing-wine", "ingredient/dry-sherry"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cornflour", "role": "coating", "options": ["ingredient/cornstarch"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pepper",
+      "role": "main",
+      "options": ["ingredient/green-pepper", "ingredient/bell-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/velvet", "tier": "drafted"},
+    {"thing": "technique/stir-fry", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

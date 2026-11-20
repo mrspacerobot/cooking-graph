@@ -1,0 +1,65 @@
+{
+  "id": "dish/pad-thai",
+  "tier": "drafted",
+  "names": {"en": "Pad thai", "th": "ผัดไทย", "th-Latn": "Phat thai"},
+  "aliases": {"en": ["Phat thai", "pad thai noodles", "pad thai goong", "pad thai with prawns"]},
+  "is": "Phat thai: soaked rice noodles stir-fried with prawns, tofu and egg in a sour, salty and sweet sauce of tamarind, fish sauce and palm sugar, tossed with bean sprouts and spring onion and served with peanuts and lime. A bought pad thai sauce is a common home shortcut.",
+  "parts": [
+    {"id": "noodles", "role": "base", "options": ["ingredient/rice-noodle"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tamarind",
+      "role": "acid",
+      "options": ["ingredient/tamarind-paste", "ingredient/tamarind"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fish-sauce",
+      "role": "seasoning",
+      "options": ["ingredient/fish-sauce"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "sugar",
+      "role": "sweetener",
+      "options": ["ingredient/palm-sugar", "ingredient/brown-sugar", "ingredient/sugar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "prawns",
+      "role": "main",
+      "options": ["ingredient/shrimp", "ingredient/chicken-thigh"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "tofu", "role": "main", "options": ["ingredient/firm-tofu"], "optional": true, "tier": "drafted"},
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "shallot", "role": "aromatic", "options": ["ingredient/shallot"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {"id": "bean-sprout", "role": "side", "options": ["ingredient/bean-sprout"], "optional": false, "tier": "drafted"},
+    {
+      "id": "spring-onion",
+      "role": "garnish",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "peanut", "role": "garnish", "options": ["ingredient/peanut"], "optional": false, "tier": "drafted"},
+    {"id": "lime", "role": "acid", "options": ["ingredient/lime"], "optional": false, "tier": "drafted"},
+    {"id": "chilli", "role": "seasoning", "options": ["ingredient/chili-flakes"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/soak-rice-noodles", "tier": "drafted"},
+    {"thing": "technique/stir-fry", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"},
+    {"thing": "technique/wok-scramble", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

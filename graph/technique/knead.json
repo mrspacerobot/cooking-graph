@@ -2,7 +2,10 @@
   "id": "technique/knead",
   "tier": "drafted",
   "names": {"en": "Knead", "fr": "Pétrir"},
-  "aliases": {"en": ["knead the dough", "knead by hand", "work the dough", "knead dough"], "fr": ["pétrir la pâte"]},
+  "aliases": {
+    "en": ["knead the dough", "knead by hand", "work the dough", "knead dough", "mix minced meat", "mix the mince"],
+    "fr": ["pétrir la pâte"]
+  },
   "does": "Works a dough, or a loose mixture such as minced meat or soaked bulgur, with the heels of the hands, pressing and turning it until it comes together and holds its shape. In a dough this builds the stretch that gives bread its chew. In a mixture it binds the pieces so that they do not fall apart in the pan.",
   "intro": {
     "what": "Kneading presses and turns dough or a binding mixture until it holds together.",

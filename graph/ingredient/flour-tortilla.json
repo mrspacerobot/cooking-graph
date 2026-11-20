@@ -1,0 +1,53 @@
+{
+  "id": "ingredient/flour-tortilla",
+  "tier": "drafted",
+  "names": {"en": "Flour tortilla", "es": "Tortilla de harina"},
+  "aliases": {"en": ["wheat tortilla", "tortilla wrap"]},
+  "plurals": {"en": "Flour tortillas", "es": "Tortillas de harina"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/breads", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A soft, thin round of wheat dough with a little fat. It browns in spots on a dry pan, stays pliable, and crisps at the edges when it is filled and cooked flat.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/wheat", "basis": "It is made from wheat flour.", "certain": true},
+      {"fact": "fact/gluten", "basis": "It is made from wheat flour.", "certain": true},
+      {
+        "fact": "fact/pork",
+        "basis": "Recorded strictly: traditional flour tortillas are made with lard.",
+        "certain": false
+      },
+      {
+        "fact": "fact/meat",
+        "basis": "Recorded strictly: traditional flour tortillas are made with lard.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/sesame",
+      "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/corn-tortilla",
+      "allows": true,
+      "when": ["dish/carnitas", "dish/tinga-de-pollo"],
+      "not_when": ["dish/enchiladas-verdes", "technique/fry-tortilla-strips"],
+      "ratio": null,
+      "caveat": "Choose small tortillas and warm them briefly. They will wrap the filling but taste softer and wheaty. Flour tortillas can be fried, but they blister and give a different strip from the crisp corn garnish intended here.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ],
+  "same_as": []
+}

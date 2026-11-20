@@ -30,7 +30,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/italian-sausage",
+      "allows": true,
+      "when": ["dish/salsiccia-e-patate-al-forno"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Choose fresh, coarse pork sausages of a similar size. The seasoning may be simpler and they may brown at a different pace.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

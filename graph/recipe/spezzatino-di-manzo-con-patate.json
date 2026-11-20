@@ -1,0 +1,128 @@
+{
+  "id": "recipe/spezzatino-di-manzo-con-patate",
+  "tier": "drafted",
+  "names": {"en": "Spezzatino di manzo con patate", "it": "Spezzatino di manzo con patate"},
+  "aliases": {},
+  "makes": "dish/spezzatino-di-manzo-con-patate",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/stewing-beef", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "beef"},
+    {"thing": "ingredient/potato", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/carrot", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "carrot"},
+    {"thing": "ingredient/celery", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "celery"},
+    {"thing": "ingredient/red-wine", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {
+      "thing": "ingredient/tomato-paste",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "tomato-paste"
+    },
+    {"thing": "ingredient/beef-stock", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/rosemary", "amount": {"value": 1, "unit": "sprig"}, "forms": [], "part": "rosemary"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/wooden-spoon", "equipment/tongs", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/vegetable-peeler"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cut-into-chunks",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/stewing-beef"],
+      "text": "Cut the {beef} into even chunks, trimming off any thick pieces of fat. Peel the {potato:plural} and cut them into chunks a little bigger than the meat; keep them in cold water.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": [],
+      "text": "Chop the {onion}, the {carrot} and the {celery} finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/olive-oil", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Season the {beef} with {salt} and {black-pepper}. Heat the {oil} in a heavy casserole and brown the meat in batches, so the pieces do not touch, until well browned on every side. Lift it out.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/fond"]
+    },
+    {
+      "technique": "technique/make-a-soffritto",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": ["ingredient/rosemary"],
+      "text": "Lower the heat and soften the {onion}, the {carrot} and the {celery} in the same pot with the {rosemary}, stirring, until soft and lightly golden.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/soffritto"]
+    },
+    {
+      "technique": "technique/deglaze",
+      "works_on": ["preparation/fond"],
+      "with": ["ingredient/tomato-paste", "ingredient/red-wine"],
+      "text": "Stir in the {tomato-paste} for a moment, then pour in the {wine} and scrape the bottom of the pot clean. Let it bubble until the sharp smell has gone.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/pan-sauce"]
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/beef-stock", "preparation/pan-sauce"],
+      "text": "Return the {beef} and its juices and pour in the {stock} until the meat is just covered. Cover and simmer very gently, stirring now and then, until the meat is nearly tender.",
+      "time": {"value": 1.5, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/potato"],
+      "with": ["preparation/braising-liquid"],
+      "text": "Drain the {potato:plural} and add them, pushing them under the liquid. Keep cooking, partly covered, until they are soft and the meat breaks apart with a spoon. Check the meat against a trusted guide to doneness.",
+      "time": {"from": 30, "to": 40, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["preparation/braising-liquid"],
+      "with": ["ingredient/rosemary", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Fish out the {rosemary}, then taste and adjust the {salt} and the {black-pepper}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/stewing-beef", "ingredient/potato"],
+      "with": ["preparation/braising-liquid"],
+      "text": "Serve hot in deep plates, with bread for the sauce.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

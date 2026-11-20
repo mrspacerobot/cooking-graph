@@ -1,0 +1,51 @@
+{
+  "id": "ingredient/corn-tortilla",
+  "tier": "drafted",
+  "names": {"en": "Corn tortilla", "es": "Tortilla de maíz"},
+  "aliases": {"en": ["maize tortilla", "soft corn tortilla"]},
+  "plurals": {"en": "Corn tortillas", "es": "Tortillas de maíz"},
+  "uncountable": false,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/breads", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A thin round of masa, maize dough cooked with lime. It cracks when cold and turns soft and pliable once warmed on a hot dry pan or passed through hot fat, and fries crisp when cut and fried.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {
+        "fact": "fact/wheat",
+        "basis": "Recorded strictly: many supermarket corn tortillas are part wheat flour.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Recorded strictly: many supermarket corn tortillas are part wheat flour.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/flour-tortilla",
+      "allows": true,
+      "when": ["dish/quesadillas-de-pollo"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Warm the tortillas before folding so they bend. Use less filling if the corn tortillas are smaller.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ],
+  "same_as": []
+}

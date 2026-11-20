@@ -35,6 +35,15 @@
       "ratio": null,
       "caveat": "It is sweeter and smokier, with a pepper note.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/doubanjiang",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/mapo-tofu", "technique/fry-the-paste"],
+      "ratio": null,
+      "caveat": "The pepper paste alone lacks the salty fermented broad bean character that seasons the sauce.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

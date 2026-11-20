@@ -1,0 +1,134 @@
+{
+  "id": "recipe/lasagne-alla-bolognese",
+  "tier": "drafted",
+  "names": {"en": "Lasagne alla bolognese", "it": "lasagne alla bolognese"},
+  "aliases": {},
+  "makes": "dish/lasagne-alla-bolognese",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/lasagne-sheet", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "pasta"},
+    {"thing": "ingredient/minced-beef", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "ragu"},
+    {"thing": "ingredient/ground-pork", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "ragu"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "ragu"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/minced"],
+      "part": "ragu"
+    },
+    {"thing": "ingredient/celery", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/minced"], "part": "ragu"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "ragu"},
+    {"thing": "ingredient/red-wine", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "ragu"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "ragu"},
+    {"thing": "ingredient/milk", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "ragu"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "ragu"},
+    {"thing": "ingredient/butter", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/flour", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "bechamel"},
+    {
+      "thing": "ingredient/milk",
+      "amount": {"value": 900, "unit": "millilitre"},
+      "forms": ["form/cold"],
+      "part": "bechamel"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "bechamel"},
+    {"thing": "ingredient/nutmeg", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "bechamel"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 100, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/dutch-oven", "equipment/saucepan", "equipment/wooden-spoon",
+    "equipment/whisk", "equipment/baking-dish", "equipment/chefs-knife", "equipment/cutting-board", "equipment/grater",
+    "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-a-soffritto",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Warm the {ragu.olive-oil} in a heavy pot over low heat. Add the {ragu.onion}, the {ragu.carrot} and the {ragu.celery}, all chopped very fine, with a little of the {ragu.salt}, and cook slowly, stirring often, until soft and golden.",
+      "time": {"from": 12, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/soffritto"]
+    },
+    {
+      "technique": "technique/make-a-ragu",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-pork"],
+      "with": ["preparation/soffritto", "ingredient/red-wine"],
+      "text": "Raise the heat a little and add the {ragu.minced-beef} and the {ragu.ground-pork} in small lots, breaking them up with the spoon and letting each lot take colour. Pour in the {ragu.red-wine} and let it bubble away almost completely.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-pork"],
+      "with": ["ingredient/tinned-tomatoes", "ingredient/milk", "ingredient/salt"],
+      "text": "Stir in the {ragu.tinned-tomatoes:plural}, crushed, and the {ragu.milk}, with the rest of the {ragu.salt}. Turn the heat low and cook with the lid ajar, stirring now and then and adding a splash of water if it catches, until the sauce is thick and glossy and the fat shows at the edge. Check the meat against a trusted guide to doneness.",
+      "time": {"from": 90, "to": 120, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/ragu"]
+    },
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the {bechamel.butter} in a saucepan over medium-low heat, add the {bechamel.flour} all at once and stir until smooth. Cook it, stirring, until it froths and smells of biscuit, keeping it pale.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/make-a-bechamel",
+      "works_on": ["preparation/roux", "ingredient/milk"],
+      "with": ["ingredient/salt", "ingredient/nutmeg"],
+      "text": "Take the pan off the heat and whisk in the cold {bechamel.milk} a little at a time, smoothing each addition before the next. Bring it back to a simmer, whisking, and cook gently until it coats a spoon but still pours. Season with the {bechamel.salt} and the {bechamel.nutmeg}.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/bechamel"]
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/lasagne-sheet", "preparation/bechamel", "ingredient/parmesan"],
+      "with": ["preparation/ragu"],
+      "text": "Spread a little ragù and béchamel over the bottom of a deep baking dish. Cover with a single layer of {pasta:plural}, then a layer of ragù, a layer of béchamel and a scattering of the {cheese}. Repeat until everything is used, finishing with béchamel and {cheese}, and make sure every sheet is covered.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake-pasta-al-forno",
+      "works_on": ["ingredient/lasagne-sheet"],
+      "with": ["preparation/bechamel", "ingredient/parmesan"],
+      "text": "Cover the dish with foil and bake in a moderate oven, then uncover it for the last part of the time and bake until the top is golden and bubbling and a knife slides easily through the layers.",
+      "time": {"from": 40, "to": 50, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/lasagne-sheet"],
+      "with": [],
+      "text": "Leave the lasagne to settle for a good while before cutting, so that the layers hold, then serve in squares.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

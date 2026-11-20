@@ -1,0 +1,60 @@
+{
+  "id": "ingredient/cooked-chicken",
+  "tier": "drafted",
+  "names": {"en": "Cooked chicken"},
+  "aliases": {"en": ["leftover chicken", "rotisserie chicken", "shredded cooked chicken", "leftover roast chicken"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/cooked-meats", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Chicken meat that is already cooked, from a roast, a poached breast or a bought roast chicken. It only needs warming, dries out when it is heated for long, and pulls apart into shreds along the grain.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is chicken meat.", "certain": true},
+      {
+        "fact": "fact/wheat",
+        "basis": "Recorded strictly: a bought roast chicken may be seasoned with a mix that holds wheat.",
+        "certain": false
+      },
+      {
+        "fact": "fact/gluten",
+        "basis": "Recorded strictly: a bought roast chicken may be seasoned with a mix that holds wheat.",
+        "certain": false
+      },
+      {
+        "fact": "fact/milk",
+        "basis": "Recorded strictly: a bought roast chicken may be basted with butter or a mix that holds milk.",
+        "certain": false
+      },
+      {
+        "fact": "fact/celery",
+        "basis": "Recorded strictly: a bought roast chicken may be seasoned with celery salt.",
+        "certain": false
+      },
+      {
+        "fact": "fact/mustard",
+        "basis": "Recorded strictly: a bought roast chicken may be seasoned with a mix that holds mustard.",
+        "certain": false
+      },
+      {
+        "fact": "fact/soy",
+        "basis": "Recorded strictly: a bought roast chicken may be seasoned with a mix that holds soy.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/lupin", "fact/molluscs", "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product",
+      "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

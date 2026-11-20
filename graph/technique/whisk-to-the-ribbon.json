@@ -1,0 +1,91 @@
+{
+  "id": "technique/whisk-to-the-ribbon",
+  "tier": "drafted",
+  "names": {"en": "Whisk to the ribbon"},
+  "aliases": {"en": ["whisk eggs and sugar", "beat eggs and sugar until pale", "whisk to ribbon stage"]},
+  "does": "Whisks whole eggs with sugar for a long time until the mixture is pale, thick and much bigger, so that it holds air to lift a cake.",
+  "intro": {
+    "what": "Eggs and sugar are whisked until they hold a ribbon.",
+    "why": "The air beaten in is much of what makes the cake rise and keeps its crumb light.",
+    "idea": "Air is the lift",
+    "tier": "drafted"
+  },
+  "how": [
+    "Put the eggs and the sugar in a wide bowl; eggs at room temperature take up air faster.",
+    "Whisk hard, with an electric whisk if you have one, for a long while.",
+    "Stop when the mixture is pale, thick and has grown a lot, and a trail falling from the whisk sits on the surface for a moment before sinking.",
+    "Fold in the dry ingredients gently, so as not to lose the air."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A ribbon of mixture falling from the whisk rests on the surface before it sinks."},
+    {"sense": "feel", "text": "The mixture is thick and light, like softly whipped cream."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Stopping too soon, so the cake is flat and dense.",
+      "fix": "Keep whisking until the mixture forms a ribbon."
+    },
+    {"mistake": "Stirring the flour in hard afterwards, so the air is lost.", "fix": "Fold it in gently."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "What is whisking to the ribbon for?",
+      "choices": ["To beat in air that helps the cake rise.", "To dissolve the sugar only.", "To cook the eggs."],
+      "answer": 0,
+      "because": "The trapped air lifts the cake.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How do eggs whip best?",
+      "choices": ["Straight from the fridge.", "At room temperature.", "Warmed in a pan."],
+      "answer": 1,
+      "because": "Room-temperature eggs take up air faster.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What is the ribbon?",
+      "choices": [
+        "A trail from the whisk that sits on the surface a moment before sinking.",
+        "Stiff peaks.",
+        "Streaks of yolk."
+      ],
+      "answer": 0,
+      "because": "That trail shows the mixture is thick enough.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "Your cake came out flat and dense. What would you change?",
+      "choices": [
+        "Whisk the eggs and sugar longer and fold the flour in gently.",
+        "Add more flour.",
+        "Bake it hotter."
+      ],
+      "answer": 0,
+      "because": "More air and gentle folding give a lighter cake.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/ribbon", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/whisk",
+      "differs": "Whole eggs and sugar are whisked for a long time until thick and pale and able to hold a ribbon, where an ordinary whisk only mixes.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

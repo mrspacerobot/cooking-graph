@@ -1,0 +1,54 @@
+{
+  "id": "technique/fry-nuts-golden",
+  "tier": "drafted",
+  "names": {"en": "Fry nuts until golden"},
+  "aliases": {"en": ["fry pine nuts", "fry almonds", "toast nuts in oil", "fry the nuts"]},
+  "does": "Fries pine nuts or blanched almonds in a little hot oil or ghee, stirring, until they turn an even gold, then lifts them out to drain. They are scattered over rice and meat at the end for crunch.",
+  "intro": null,
+  "how": [
+    "Use a small pan and a thin layer of oil, ghee or butter.",
+    "Heat it over a medium heat and add the nuts in one layer.",
+    "Stir all the time, since nuts colour unevenly and fast.",
+    "Lift them out a shade paler than you want them, since they keep darkening off the heat.",
+    "Drain them on paper."
+  ],
+  "cues": [
+    {"sense": "see", "text": "An even gold, with no dark brown nuts."},
+    {"sense": "smell", "text": "A rich, toasty smell. Bitterness means they have gone too far."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Walking away from the pan, so that the nuts burn in the last moments.",
+      "fix": "Stay by the pan and stir."
+    },
+    {"mistake": "Leaving the fried nuts in the hot pan, so that they keep darkening.", "fix": "Lift them out at once."}
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/pine-nut", "tier": "drafted"},
+    {"thing": "ingredient/almond", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/slotted-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"},
+    {
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/olive-oil", "ingredient/ghee", "ingredient/butter"],
+      "tier": "drafted"
+    }
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/toast",
+      "differs": "The nuts are fried in a little fat rather than browned in a dry pan, which makes them richer and more evenly gold.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"},
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

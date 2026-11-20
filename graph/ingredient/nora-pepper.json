@@ -7,7 +7,9 @@
   "uncountable": false,
   "is_a": [],
   "part_of": [],
-  "groups": [],
+  "groups": [
+    {"thing": "group/whole-spices", "tier": "drafted"}
+  ],
   "forms": [],
   "behaviour": "A small, round, dried red pepper of eastern Spain, sweet and mild with a deep, earthy taste. It is soaked in hot water until soft and its pulp is scraped from the skin, or it is toasted and crumbled, to give rice and stews a rich red colour.",
   "safety": {
@@ -21,7 +23,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/guajillo-chilli",
+      "allows": true,
+      "when": ["dish/sopa-de-tortilla"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Soak and blend the dried pepper into the soup. It can bring mild fruity flavour, though the soup will taste sweeter and less sharp.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],

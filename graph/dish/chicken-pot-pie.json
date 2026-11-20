@@ -1,0 +1,63 @@
+{
+  "id": "dish/chicken-pot-pie",
+  "tier": "drafted",
+  "names": {"en": "Chicken pot pie"},
+  "aliases": {"en": ["pot pie", "chicken pot pie with puff pastry"]},
+  "is": "Poached chicken and vegetables in a creamy sauce made from the poaching stock and milk, baked under a crisp pastry lid.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-breast", "ingredient/chicken-thigh"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "preparation/white-chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "herbs", "role": "seasoning", "options": ["ingredient/thyme"], "optional": true, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "celery", "role": "aromatic", "options": ["ingredient/celery"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {
+      "id": "milk",
+      "role": "enrichment",
+      "options": ["ingredient/milk", "ingredient/cream"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "peas", "role": "filling", "options": ["ingredient/peas"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pastry",
+      "role": "topping",
+      "options": ["preparation/puff-pastry", "preparation/shortcrust-pastry"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg", "role": "coating", "options": ["ingredient/egg"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/make-a-sauce", "tier": "drafted"},
+    {"thing": "technique/cover-with-pastry", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/american", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ingredient/dark-soy-sauce",
+  "tier": "drafted",
+  "names": {"en": "Dark soy sauce"},
+  "aliases": {"en": ["dark soy"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [
+    {"thing": "ingredient/soy-sauce", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/seasoning-liquids", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A thicker, darker, less salty soy sauce aged longer and often sweetened with molasses. It is used mostly for colour, giving braises and noodles a deep mahogany shade.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/soy", "basis": "It is brewed from soybeans.", "certain": true},
+      {"fact": "fact/gluten", "basis": "Most soy sauce is brewed with wheat.", "certain": false},
+      {"fact": "fact/wheat", "basis": "Most soy sauce is brewed with wheat.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/soy-sauce",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/pad-see-ew", "dish/red-braised-pork-belly"],
+      "ratio": null,
+      "caveat": "The dish already uses dark soy for colour. Extra dark soy alone cannot give the sharper salinity of the other soy sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
+}

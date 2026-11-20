@@ -1,0 +1,93 @@
+{
+  "id": "technique/peel-in-stripes",
+  "tier": "drafted",
+  "names": {"en": "Peel in stripes", "tr": "Alaca soymak"},
+  "aliases": {"en": ["stripe-peel", "zebra peel", "peel in alternate strips"]},
+  "does": "Takes strips of skin off a long vegetable from end to end, leaving stripes of skin between them, so that it holds its shape when it is fried or stuffed but softens and takes up flavour where it is bare.",
+  "intro": {
+    "what": "Peeling in stripes takes off alternate strips of skin along a vegetable.",
+    "why": "It teaches you how skin holds a soft vegetable together while bare flesh lets heat and flavour in.",
+    "idea": "Skin as a frame",
+    "tier": "drafted"
+  },
+  "how": [
+    "Hold the vegetable by its stalk end on the board.",
+    "Run a peeler from the stalk to the tip to take off one strip of skin.",
+    "Turn the vegetable and leave a strip of skin of the same width before you peel the next.",
+    "Go all the way round, so that bare and skinned stripes alternate. Leave the stalk on."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Even stripes of skin and pale flesh, running the whole length."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Peeling it bare, so that it falls apart in the oil or when it is slit for stuffing.",
+      "fix": "Leave a stripe of skin between each peeled strip."
+    },
+    {
+      "mistake": "Cutting off the stalk, so that the vegetable has nothing to hold it together.",
+      "fix": "Keep the stalk on."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why leave stripes of skin on?",
+      "choices": [
+        "So the vegetable holds its shape when fried or stuffed.",
+        "So it cooks faster.",
+        "To make it bitter."
+      ],
+      "answer": 0,
+      "because": "The skin is the frame that keeps the soft flesh together.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Which way do the stripes run?",
+      "choices": ["Round the middle.", "From the stalk to the tip.", "In a spiral."],
+      "answer": 1,
+      "because": "Long stripes keep the vegetable whole along its length.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What does a well-striped vegetable look like?",
+      "choices": [
+        "Bare all over.",
+        "Patches of skin here and there.",
+        "Even stripes of skin and flesh along its length."
+      ],
+      "answer": 2,
+      "because": "Even stripes give even cooking and an even frame.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "A peeled aubergine split in the pan. What should change next time?",
+      "choices": ["Peel it in stripes and keep the stalk on.", "Peel it bare.", "Cut it in half first."],
+      "answer": 0,
+      "because": "The skin left in stripes and the stalk keep it whole.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/aubergine", "tier": "drafted"},
+    {"thing": "ingredient/courgette", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/vegetable-peeler", "equipment/paring-knife"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/peel",
+      "differs": "Only alternate strips of skin are taken off, along the length, and the stalk stays on, so the vegetable keeps a frame of skin.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

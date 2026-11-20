@@ -1,0 +1,38 @@
+{
+  "id": "dish/tomato-and-egg-stir-fry",
+  "tier": "drafted",
+  "names": {"en": "Tomato and egg stir-fry", "zh": "西红柿炒鸡蛋", "zh-Latn": "Xīhóngshì chǎo jīdàn"},
+  "aliases": {
+    "en": [
+      "Xīhóngshì chǎo jīdàn",
+      "Xihongshi chao jidan",
+      "tomato egg",
+      "stir-fried tomato and eggs",
+      "tomato and egg"
+    ]
+  },
+  "is": "Xīhóngshì chǎo jīdàn, one of the first dishes a Chinese home cook learns: fluffy wok-scrambled eggs folded into tomatoes cooked down to a sweet, juicy sauce.",
+  "parts": [
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "main", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "spring-onion",
+      "role": "aromatic",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/wok-scramble", "tier": "drafted"},
+    {"thing": "technique/stir-fry", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

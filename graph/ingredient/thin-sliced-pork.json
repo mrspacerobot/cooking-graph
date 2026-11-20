@@ -1,0 +1,45 @@
+{
+  "id": "ingredient/thin-sliced-pork",
+  "tier": "drafted",
+  "names": {"en": "Thinly sliced pork"},
+  "aliases": {"en": ["shabu-shabu pork", "pork for shogayaki", "usugiri pork"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [
+    {"thing": "ingredient/pork", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/thin-sliced-meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Pork loin, shoulder or belly cut paper thin, sold as loose layered sheets. It browns in moments in a hot pan, takes up a glaze quickly, and curls and toughens when it is cooked on.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is meat.", "certain": true},
+      {"fact": "fact/pork", "basis": "It is pork.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/thin-sliced-beef",
+      "allows": true,
+      "when": ["dish/gyudon"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "Use the same weight of paper-thin pork. It will simmer quickly and give a sweeter, fattier rice bowl.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

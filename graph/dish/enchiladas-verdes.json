@@ -1,0 +1,58 @@
+{
+  "id": "dish/enchiladas-verdes",
+  "tier": "drafted",
+  "names": {"en": "Enchiladas verdes", "es": "Enchiladas verdes"},
+  "aliases": {"en": ["green enchiladas", "chicken enchiladas with salsa verde", "enchiladas suizas"]},
+  "is": "Corn tortillas softened in hot oil, dipped in green tomatillo salsa, rolled around shredded chicken, covered with more salsa and cheese and baked, then finished with cream, raw onion and coriander. Most home cooks use a jar of salsa verde.",
+  "parts": [
+    {
+      "id": "tortillas",
+      "role": "base",
+      "options": ["ingredient/corn-tortilla", "ingredient/flour-tortilla"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "chicken",
+      "role": "filling",
+      "options": ["ingredient/cooked-chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salsa", "role": "sauce", "options": ["ingredient/salsa-verde"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cream",
+      "role": "enrichment",
+      "options": ["ingredient/sour-cream", "ingredient/creme-fraiche"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "cheese",
+      "role": "topping",
+      "options": ["ingredient/monterey-jack", "ingredient/cheddar", "ingredient/mozzarella"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "garnish", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/shred-meat", "tier": "drafted"},
+    {"thing": "technique/fry-the-sauce", "tier": "drafted"},
+    {"thing": "technique/roll", "tier": "drafted"},
+    {"thing": "technique/pour-over", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ],
+  "same_as": []
+}

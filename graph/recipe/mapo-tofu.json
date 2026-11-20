@@ -1,0 +1,131 @@
+{
+  "id": "recipe/mapo-tofu",
+  "tier": "drafted",
+  "names": {"en": "Mapo tofu", "zh": "麻婆豆腐", "zh-Latn": "Mápó dòufu"},
+  "aliases": {},
+  "makes": "dish/mapo-tofu",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/sichuan-pepper",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "sichuan-pepper"
+    },
+    {"thing": "ingredient/tofu", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tofu"},
+    {"thing": "ingredient/water", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/water", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/ginger", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "ginger"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/ground-pork", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "meat"},
+    {
+      "thing": "ingredient/doubanjiang",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "doubanjiang"
+    },
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/cornstarch", "amount": {"value": 8, "unit": "gram"}, "forms": [], "part": "cornflour"}
+  ],
+  "equipment": [
+    "equipment/wok", "equipment/saucepan", "equipment/mortar-and-pestle", "equipment/slotted-spoon",
+    "equipment/mixing-bowl", "equipment/chefs-knife", "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/toast",
+      "works_on": ["ingredient/sichuan-pepper"],
+      "with": [],
+      "text": "Toast the {sichuan-pepper} in a dry wok over low heat until fragrant, then grind it in a mortar and set it aside.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cube-tofu",
+      "works_on": ["ingredient/tofu"],
+      "with": [],
+      "text": "Cut the {tofu} into bite-sized cubes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/blanch",
+      "works_on": [],
+      "with": ["ingredient/tofu", "ingredient/water", "ingredient/salt"],
+      "text": "Bring the {water} to a simmer in a saucepan with the {salt}, slide in the {tofu} and leave it in the barely moving {water} while you start the sauce. It firms a little and is seasoned through.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/garlic", "ingredient/ginger", "ingredient/spring-onion"],
+      "with": [],
+      "text": "Finely chop the {garlic} and the {ginger}, and slice the {spring-onion:plural} thinly.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/ground-pork"],
+      "with": ["ingredient/oil"],
+      "text": "Heat the {oil} in the wok over high heat and fry the {meat}, breaking it up, until it is browned and a little crisp.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-the-paste",
+      "works_on": ["ingredient/doubanjiang"],
+      "with": ["ingredient/garlic", "ingredient/ginger", "ingredient/chili-flakes"],
+      "text": "Turn the heat to medium-low, add the {doubanjiang} and fry until the fat turns red and fragrant. Add the {garlic} and the {ginger} [chilli: and the {chilli}] and fry a moment longer.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken-stock"],
+      "with": ["ingredient/soy-sauce", "ingredient/tofu"],
+      "text": "Pour in the {stock} and the {soy}. Lift the {tofu} out of its {water} with a slotted spoon, slide it in and simmer gently, pushing it with the back of a spoon rather than stirring, so that the cubes stay whole.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/thicken",
+      "works_on": ["ingredient/chicken-stock"],
+      "with": ["ingredient/cornstarch", "ingredient/water"],
+      "text": "Mix the {cornflour} with a little cold {water} and pour it in, in stages, swirling the wok, until the sauce clings to the {tofu} with a glossy coat.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/chicken-stock"],
+      "with": ["ingredient/sichuan-pepper", "ingredient/spring-onion"],
+      "text": "Scatter with the ground {sichuan-pepper} and the {spring-onion:plural} and serve with rice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

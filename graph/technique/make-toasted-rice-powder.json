@@ -1,0 +1,43 @@
+{
+  "id": "technique/make-toasted-rice-powder",
+  "tier": "drafted",
+  "names": {"en": "Make toasted rice powder"},
+  "aliases": {"en": ["khao khua", "toast and grind rice"]},
+  "does": "Toasts raw rice in a dry pan until deep gold and grinds it coarse, for a nutty, crunchy seasoning.",
+  "intro": null,
+  "how": [
+    "Put raw rice in a dry pan over medium heat.",
+    "Shake and stir it often as it turns from white to golden to deep gold.",
+    "Tip it out to cool, then grind it coarse in a mortar or a spice grinder."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "A nutty smell like popcorn."},
+    {"sense": "see", "text": "Evenly deep golden grains."},
+    {"sense": "feel", "text": "A coarse, sandy powder."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Toasting over high heat, so the outside burns and the inside stays raw.",
+      "fix": "Keep the heat medium and keep the grains moving."
+    },
+    {"mistake": "Grinding it to a fine flour.", "fix": "Stop while it is still a little gritty."}
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/jasmine-rice", "tier": "drafted"},
+    {"thing": "ingredient/rice", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/toasted-rice-powder", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/mortar-and-pestle"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ]
+}

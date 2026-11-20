@@ -1,0 +1,75 @@
+{
+  "id": "dish/keema-matar",
+  "tier": "drafted",
+  "names": {"en": "Keema matar"},
+  "aliases": {"en": ["keema peas", "minced lamb curry with peas", "kheema", "keema mattar", "mince and peas curry"]},
+  "is": "Minced lamb browned with onion, ginger, garlic and ground spices, cooked down with tomato until the oil shows, then simmered with green peas and finished with garam masala. It is eaten with chapati, paratha or rice.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/ground-lamb", "ingredient/minced-beef"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "peas", "role": "side", "options": ["ingredient/peas"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/ghee", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "aromatic", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {
+      "id": "green-chilli",
+      "role": "seasoning",
+      "options": ["ingredient/green-chilli"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli-powder",
+      "role": "seasoning",
+      "options": ["ingredient/red-chilli-powder", "ingredient/kashmiri-red-chilli-powder"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "tomato",
+      "role": "sauce",
+      "options": ["ingredient/tinned-tomatoes", "ingredient/tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "garam-masala",
+      "role": "seasoning",
+      "options": ["preparation/garam-masala"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/brown-mince", "tier": "drafted"},
+    {"thing": "technique/bloom-ground-spices", "tier": "drafted"},
+    {"thing": "technique/fry-masala-base", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/indian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

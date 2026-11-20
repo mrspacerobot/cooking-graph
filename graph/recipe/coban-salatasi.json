@@ -1,0 +1,52 @@
+{
+  "id": "recipe/coban-salatasi",
+  "tier": "drafted",
+  "names": {"en": "Coban salatasi", "tr": "Çoban salatası"},
+  "aliases": {},
+  "makes": "dish/coban-salatasi",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/tomato", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/cucumber", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "cucumber"},
+    {"thing": "ingredient/green-pepper", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "green-pepper"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/parsley", "amount": {"value": 10, "unit": "sprig"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/sumac", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sumac"}
+  ],
+  "equipment": ["equipment/chefs-knife", "equipment/cutting-board", "equipment/mixing-bowl"],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/tomato", "ingredient/green-pepper", "ingredient/onion"],
+      "with": ["ingredient/cucumber"],
+      "text": "Dice the {tomato:plural}, the {cucumber:plural}, the {green-pepper:plural} and the {onion} small and of one size.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "Chop the {parsley} finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/tomato", "ingredient/cucumber", "ingredient/green-pepper", "ingredient/onion"],
+      "with": ["ingredient/parsley", "ingredient/lemon", "ingredient/olive-oil", "ingredient/salt", "ingredient/sumac"],
+      "text": "Just before serving, put the vegetables in a bowl with the {parsley}, squeeze over the {lemon}, add the {oil} and the {salt} and toss well[sumac: , then scatter over the {sumac}]. Serve at once.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -43,6 +43,15 @@
       "ratio": null,
       "caveat": "It is fattier along the edge, so it tastes richer but is less tender.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/thin-sliced-pork",
+      "allows": true,
+      "when": ["dish/shogayaki"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Slice it thinly across the grain before frying. Lean loin may brown quickly and needs a brief toss in the glaze.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

@@ -1,0 +1,64 @@
+{
+  "id": "dish/kiymali-ispanak",
+  "tier": "drafted",
+  "names": {"en": "Kiymali ispanak", "tr": "Kıymalı ıspanak"},
+  "aliases": {"en": ["spinach with minced meat", "Turkish spinach with mince", "spinach and mince stew"]},
+  "is": "Spinach wilted into minced meat browned with onion and tomato paste, simmered briefly with a little rice to bind the juices, and served warm with yogurt.",
+  "parts": [
+    {"id": "spinach", "role": "main", "options": ["ingredient/spinach"], "optional": false, "tier": "drafted"},
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/minced-beef", "ingredient/ground-lamb"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "rice",
+      "role": "thickener",
+      "options": ["ingredient/rice", "ingredient/short-grain-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "paste",
+      "role": "seasoning",
+      "options": ["ingredient/tomato-paste", "ingredient/red-pepper-paste"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "yogurt",
+      "role": "garnish",
+      "options": ["ingredient/plain-yogurt", "ingredient/strained-yogurt"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/brown-mince", "tier": "drafted"},
+    {"thing": "technique/wilt", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

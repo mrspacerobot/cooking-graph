@@ -1,0 +1,103 @@
+{
+  "id": "recipe/hot-and-sour-soup",
+  "tier": "drafted",
+  "names": {"en": "Hot and sour soup", "zh": "酸辣汤", "zh-Latn": "Suānlà tāng"},
+  "aliases": {},
+  "makes": "dish/hot-and-sour-soup",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/shiitake", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "mushroom"},
+    {"thing": "ingredient/tofu", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "tofu"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/cornstarch", "amount": {"value": 25, "unit": "gram"}, "forms": [], "part": "cornflour"},
+    {"thing": "ingredient/water", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/rice-vinegar", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "vinegar"},
+    {
+      "thing": "ingredient/white-pepper",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "white-pepper"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/sesame-oil", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sesame-oil"}
+  ],
+  "equipment": [
+    "equipment/saucepan", "equipment/ladle", "equipment/whisk", "equipment/mixing-bowl", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/shiitake", "ingredient/spring-onion"],
+      "with": [],
+      "text": "Slice the {mushroom:plural} thinly, and the {spring-onion:plural} into thin rings.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cube-tofu",
+      "works_on": ["ingredient/tofu"],
+      "with": [],
+      "text": "Cut the {tofu} into thin strips or small cubes.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chicken-stock", "ingredient/shiitake"],
+      "with": ["ingredient/soy-sauce", "ingredient/tofu"],
+      "text": "Bring the {stock} to a boil, add the {mushroom:plural} and the {soy} and simmer until the {mushroom:plural} are tender. Slide in the {tofu} and let it warm through.",
+      "time": {"from": 4, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/thicken",
+      "works_on": ["ingredient/chicken-stock"],
+      "with": ["ingredient/cornstarch", "ingredient/water"],
+      "text": "Mix the {cornflour} with the cold {water}. Stir the soup so that it swirls, pour in the mixture and keep stirring until it thickens and turns glossy.",
+      "time": {"value": 1, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/drizzle-egg",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Beat the {egg:plural}. Turn the heat down so that the soup barely bubbles, stir it in a slow circle and pour in the {egg:plural} in a thin stream from a little height, so that they set in fine ribbons. Leave it still for a moment before stirring.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/chicken-stock"],
+      "with": ["ingredient/rice-vinegar", "ingredient/white-pepper", "ingredient/salt"],
+      "text": "Off the heat, stir in the {vinegar} and the {white-pepper}, then taste and adjust with the {salt}. The soup should be sharp and peppery.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/chicken-stock"],
+      "with": ["ingredient/spring-onion", "ingredient/sesame-oil"],
+      "text": "Ladle into bowls and scatter with the {spring-onion:plural}[sesame-oil: , then add a few drops of {sesame-oil}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

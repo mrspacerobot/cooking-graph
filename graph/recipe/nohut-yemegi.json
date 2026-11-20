@@ -1,0 +1,116 @@
+{
+  "id": "recipe/nohut-yemegi",
+  "tier": "drafted",
+  "names": {"en": "Nohut yemegi", "tr": "Nohut yemeği"},
+  "aliases": {},
+  "makes": "dish/nohut-yemegi",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chickpea", "amount": {"value": 480, "unit": "gram"}, "forms": [], "part": "chickpea"},
+    {"thing": "ingredient/stewing-beef", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/butter", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {
+      "thing": "ingredient/red-pepper-paste",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "pepper-paste"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 800, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "chilli"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/colander", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/chickpea"],
+      "with": [],
+      "text": "Drain the tinned {chickpea:plural} and rinse them.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the {onion}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/butter"],
+      "text": "[meat: Melt the {butter} in a heavy pot over high heat and brown the {meat} in it in small pieces, until well browned on every side.]",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter"],
+      "text": "Put the {onion} in the pot with the {butter} and soften it over medium heat.",
+      "time": {"from": 5, "to": 7, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-tomato-paste",
+      "works_on": ["ingredient/tomato-paste", "ingredient/red-pepper-paste"],
+      "with": ["ingredient/butter"],
+      "text": "Stir in the {paste}[pepper-paste: and the {pepper-paste}] and fry, stirring, until it darkens a shade and smells sweet.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/water"],
+      "text": "[meat: Pour in the {water}, cover and simmer gently until the {meat} is tender, topping up with a little hot from the kettle if it runs low. Check the {meat} against a trusted guide to doneness.]",
+      "time": {"from": 60, "to": 75, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/chickpea"],
+      "with": ["ingredient/water", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Add the {chickpea:plural}, the {salt} and the {black-pepper}, and pour in the {water} to just cover them. Simmer, uncovered, until the sauce has thickened a little.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chickpea"],
+      "with": ["ingredient/chili-flakes"],
+      "text": "Serve hot[chilli: , scattered with the {chilli}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

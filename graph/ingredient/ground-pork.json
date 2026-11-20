@@ -35,6 +35,15 @@
       "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
       "caveat": "It is milder and fattier, so the dish is softer and less deep in taste.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/minced-chicken",
+      "allows": true,
+      "when": ["technique/poach-minced-meat"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use fine mince that breaks into small pieces and skim excess fat if it collects. The finished meat will taste richer.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

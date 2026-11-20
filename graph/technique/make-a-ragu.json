@@ -2,7 +2,7 @@
   "id": "technique/make-a-ragu",
   "tier": "drafted",
   "names": {"en": "Make a ragu", "fr": "Ragù"},
-  "aliases": {"en": ["make a ragù", "make ragu", "make a meat ragu"]},
+  "aliases": {"en": ["make a ragù", "make ragu", "make a meat ragu", "simmer ragu"]},
   "does": "Cooks minced meat very slowly with a soffritto, wine and tomato until it turns into a thick, rich sauce that clings to pasta or fills a rice ball. Every region has its own ragu, and this card holds the common method.",
   "intro": {
     "what": "This minced-meat ragù method slowly cooks browned meat with soffritto, wine and tomato.",

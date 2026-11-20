@@ -1,0 +1,111 @@
+{
+  "id": "recipe/tajine-hout",
+  "tier": "drafted",
+  "names": {"en": "Tajine hout", "ar": "طاجين الحوت", "ar-Latn": "Tajine hout"},
+  "aliases": {},
+  "makes": "dish/tajine-hout",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/white-fish", "amount": {"value": 700, "unit": "gram"}, "forms": [], "part": "fish"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "chermoula"},
+    {"thing": "ingredient/parsley", "amount": {"value": 15, "unit": "gram"}, "forms": [], "part": "chermoula"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": [], "part": "chermoula"},
+    {"thing": "ingredient/cumin", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "chermoula"},
+    {"thing": "ingredient/paprika", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "chermoula"},
+    {"thing": "ingredient/lemon-juice", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "chermoula"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 6, "unit": "tablespoon"}, "forms": [], "part": "chermoula"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "chermoula"},
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 500, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "potato"
+    },
+    {"thing": "ingredient/tomato", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/bell-pepper", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/green-olive", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "olives"},
+    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/water", "amount": {"value": 1, "unit": "litre"}, "forms": [], "part": "potato-water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon",
+    "equipment/dutch-oven", "equipment/tagine", "equipment/mixing-bowl", "equipment/saucepan"
+  ],
+  "steps": [
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/coriander-leaf", "ingredient/parsley", "ingredient/garlic"],
+      "with": [],
+      "text": "Chop the {chermoula.coriander-leaf} and the {chermoula.parsley} fine, stalks and all, and crush the {chermoula.garlic}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-chermoula",
+      "works_on": ["ingredient/coriander-leaf", "ingredient/parsley"],
+      "with": [
+        "ingredient/garlic", "ingredient/cumin", "ingredient/paprika", "ingredient/lemon-juice", "ingredient/olive-oil",
+        "ingredient/salt"
+      ],
+      "text": "Stir the herbs and the {chermoula.garlic} with the {chermoula.cumin}, the {chermoula.paprika}, the {chermoula.lemon-juice}, the {chermoula.olive-oil} and the {chermoula.salt} into a loose green paste.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/chermoula"]
+    },
+    {
+      "technique": "technique/marinate-in-chermoula",
+      "works_on": ["ingredient/white-fish"],
+      "with": ["preparation/chermoula"],
+      "text": "Cut the {fish} into large pieces, pat them dry and turn them in half the chermoula. Cover and keep them in the fridge.",
+      "time": {"from": 30, "to": 60, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/potato", "ingredient/tomato", "ingredient/bell-pepper"],
+      "with": [],
+      "text": "Slice the {potato:plural} and the {tomato:plural} into thin rounds and the {pepper} into strips.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Boil the {potato} slices in the {potato-water} with the {salt} until just tender at the edge, and drain them.",
+      "time": {"from": 5, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/potato", "ingredient/tomato", "ingredient/bell-pepper"],
+      "with": ["preparation/chermoula", "ingredient/white-fish", "ingredient/green-olive", "ingredient/lemon"],
+      "text": "Spread the {potato} slices over the base of a tagine or a wide heavy pan and spread them with the rest of the chermoula. Lay the {tomato} slices over them, then the {fish}, then the {pepper} strips[olives: , and scatter over the {olives}]. Top with the {lemon} cut in thin slices.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/water", "ingredient/white-fish"],
+      "text": "Pour the {water} in at the side, cover and cook over a low heat until the vegetables are tender and the {fish} is opaque and flakes. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "dish/pad-see-ew",
+  "tier": "drafted",
+  "names": {"en": "Pad see ew", "th": "ผัดซีอิ๊ว", "th-Latn": "Phat si-io"},
+  "aliases": {"en": ["Phat si-io", "pad siew", "pad see ew gai", "stir-fried wide noodles with soy sauce"]},
+  "is": "Phat si-io: wide rice noodles stir-fried in a very hot wok with dark soy sauce until charred in spots, with chicken, Chinese broccoli and egg.",
+  "parts": [
+    {"id": "noodles", "role": "base", "options": ["ingredient/wide-rice-noodle"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken-breast", "ingredient/firm-tofu"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "greens",
+      "role": "side",
+      "options": ["ingredient/broccoli", "ingredient/chinese-broccoli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "dark-soy",
+      "role": "seasoning",
+      "options": ["ingredient/dark-soy-sauce"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "oyster-sauce",
+      "role": "seasoning",
+      "options": ["ingredient/oyster-sauce"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {
+      "id": "sugar",
+      "role": "sweetener",
+      "options": ["ingredient/sugar", "ingredient/palm-sugar"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "white-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/white-pepper"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/soak-rice-noodles", "tier": "drafted"},
+    {"thing": "technique/stir-fry", "tier": "drafted"},
+    {"thing": "technique/char-noodles", "tier": "drafted"},
+    {"thing": "technique/wok-scramble", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

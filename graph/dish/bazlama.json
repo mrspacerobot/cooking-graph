@@ -1,0 +1,30 @@
+{
+  "id": "dish/bazlama",
+  "tier": "drafted",
+  "names": {"en": "Bazlama", "tr": "Bazlama"},
+  "aliases": {"en": ["Turkish flatbread", "pan-cooked flatbread", "village bread", "Turkish yogurt flatbread"]},
+  "is": "A thick, soft Turkish flatbread of yeast dough made with yogurt, rolled into rounds and cooked in a dry pan or on a griddle until it puffs and is spotted brown on both sides.",
+  "parts": [
+    {"id": "flour", "role": "main", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "yeast", "role": "base", "options": ["ingredient/yeast"], "optional": false, "tier": "drafted"},
+    {
+      "id": "yogurt",
+      "role": "enrichment",
+      "options": ["ingredient/plain-yogurt", "ingredient/strained-yogurt"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/knead", "tier": "drafted"},
+    {"thing": "technique/proof", "tier": "drafted"},
+    {"thing": "technique/roll-out", "tier": "drafted"},
+    {"thing": "technique/griddle", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

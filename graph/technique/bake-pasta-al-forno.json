@@ -1,0 +1,109 @@
+{
+  "id": "technique/bake-pasta-al-forno",
+  "tier": "drafted",
+  "names": {"en": "Bake pasta al forno", "it": "cuocere la pasta al forno"},
+  "aliases": {"en": ["bake a pasta dish", "bake pasta", "bake until melted", "bake until bubbling"]},
+  "does": "Bakes pasta, or gnocchi, already boiled short or still dry, buried in plenty of sauce and cheese in a hot oven, until it finishes softening and the top bubbles and colours. It rests before it is cut.",
+  "intro": {
+    "what": "Pasta goes into the oven with plenty of sauce, often underdone or raw, and finishes cooking there.",
+    "why": "Pasta drinks sauce as it bakes. Knowing that, a cook boils it short and makes the sauce loose, so that the bake comes out tender and moist rather than dry.",
+    "idea": "Pasta keeps drinking in the oven",
+    "tier": "drafted"
+  },
+  "how": [
+    "Boil the pasta well short of done, or use dry sheets or tubes made to bake raw.",
+    "Make the sauce looser than you would for the plate, since the pasta will soak much of it up.",
+    "Cover every piece of pasta with sauce or cheese, so that no edge dries in the heat.",
+    "Bake in a hot oven until the sauce bubbles at the edges and the top colours. Cover with foil if the top colours before the inside is done.",
+    "Leave it to settle before cutting, so that it holds together."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The sauce bubbles at the edges and the cheese on top has melted and turned golden in spots."
+    },
+    {"sense": "feel", "text": "A knife slides through the pasta in the middle without resistance."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Boiling the pasta fully before baking, so that it turns soft and mushy.",
+      "fix": "Boil it well short of done; it finishes in the oven."
+    },
+    {
+      "mistake": "Making the sauce as thick as for the plate, so that the bake comes out dry.",
+      "fix": "Keep the sauce loose and use plenty."
+    },
+    {
+      "mistake": "Leaving pasta edges uncovered, so that they turn hard and crisp.",
+      "fix": "Bury every piece in sauce or cheese."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why is the pasta boiled short before baking?",
+      "choices": [
+        "Because it keeps cooking in the oven.",
+        "Because raw pasta is softer.",
+        "Because the oven cannot cook pasta."
+      ],
+      "answer": 0,
+      "because": "The pasta goes on softening as it drinks sauce in the oven.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How should the sauce be for a pasta bake?",
+      "choices": ["Very thick and dry.", "Looser than for the plate, and plentiful.", "Left out altogether."],
+      "answer": 1,
+      "because": "The pasta soaks up liquid as it bakes.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What tells you the bake is ready?",
+      "choices": [
+        "The top is pale and the edges are dry.",
+        "The sauce has stopped moving.",
+        "The sauce bubbles at the edges and the top is golden in spots."
+      ],
+      "answer": 2,
+      "because": "Bubbling edges and a coloured top show heat has reached through.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The bake came out dry with hard edges. What would you change next time?",
+      "choices": [
+        "Use more, looser sauce and cover every piece.",
+        "Bake it longer uncovered.",
+        "Boil the pasta less and use less sauce."
+      ],
+      "answer": 0,
+      "because": "Dry edges come from too little sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/pasta", "tier": "drafted"},
+    {"thing": "ingredient/potato-gnocchi", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/baking-dish"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/boil-pasta", "why": "The pasta is boiled short before it is baked.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/bake",
+      "differs": "The pasta goes in underdone and keeps cooking by drinking the sauce, so the sauce is made loose and plentiful and every piece is covered. It rests before it is cut.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

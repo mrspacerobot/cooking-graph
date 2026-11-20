@@ -1,0 +1,65 @@
+{
+  "id": "technique/shred-meat",
+  "tier": "drafted",
+  "names": {"en": "Shred cooked meat"},
+  "aliases": {"en": ["shred chicken", "pull meat", "shred with forks", "pull apart with forks"]},
+  "does": "Pulls cooked, tender meat apart along its grain into rough strands, with forks or with the fingers, so that it mixes evenly into a filling or a sauce.",
+  "intro": {
+    "what": "Cooked meat is pulled apart along its grain into strands.",
+    "why": "Strands mix through a filling and hold its sauce better than neat cubes.",
+    "idea": "Follow the grain",
+    "tier": "drafted"
+  },
+  "how": [
+    "Let the cooked meat cool until it can be handled.",
+    "Take off and throw away any skin, bone and gristle.",
+    "Hold a piece with a fork and pull it apart along its grain with a second fork, or tear it with your fingers, into bite-sized strands."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The meat comes apart easily along its grain."},
+    {"sense": "see", "text": "Long, rough strands with no skin or bone among them."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Shredding it while it is too hot, which burns the fingers and turns the meat to mush.",
+      "fix": "Let it cool a little first."
+    },
+    {"mistake": "Tearing across the grain, which gives short, dry crumbs.", "fix": "Pull along the grain."}
+  ],
+  "quiz": [
+    {
+      "id": "method",
+      "question": "Which way do you pull the meat?",
+      "choices": ["Across the grain.", "Along the grain.", "In circles."],
+      "answer": 1,
+      "because": "The meat parts easily along its grain into strands.",
+      "tier": "drafted"
+    },
+    {
+      "id": "cue",
+      "question": "When is the meat ready to shred?",
+      "choices": [
+        "When it is cooked, tender and cool enough to handle.",
+        "When it is still raw.",
+        "When it is frozen."
+      ],
+      "answer": 0,
+      "because": "Tender, cooked meat parts easily.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "group/poultry", "tier": "drafted"},
+    {"thing": "group/braising-cuts", "tier": "drafted"},
+    {"thing": "ingredient/cooked-chicken", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/shredded", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/cutting-board"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": []
+}

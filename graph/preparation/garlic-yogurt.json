@@ -21,7 +21,17 @@
   "teaches": [
     {"thing": "technique/make-garlic-yogurt", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/toum",
+      "allows": true,
+      "when": ["dish/shawarma-djej"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use a thick garlic yogurt so the flatbread stays easy to wrap. The filling will taste tangier and less intensely garlicky.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/turkish", "tier": "drafted"}
   ],

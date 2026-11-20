@@ -1,0 +1,143 @@
+{
+  "id": "recipe/polpette-al-sugo",
+  "tier": "drafted",
+  "names": {"en": "Polpette al sugo", "it": "Polpette al sugo"},
+  "aliases": {},
+  "makes": "dish/polpette-al-sugo",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/minced-beef", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "beef"},
+    {"thing": "ingredient/ground-pork", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "pork"},
+    {"thing": "ingredient/stale-bread", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "bread"},
+    {"thing": "ingredient/milk", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "milk"},
+    {"thing": "ingredient/egg", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "egg"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 40, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 1, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/parsley", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/chopped"], "part": "onion"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/basil", "amount": {"value": 6, "unit": "leaf"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/mixing-bowl", "equipment/stovetop", "equipment/saute-pan", "equipment/wooden-spoon", "equipment/tongs",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/grater"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak",
+      "works_on": ["ingredient/stale-bread"],
+      "with": ["ingredient/milk"],
+      "text": "Tear the {bread} into small pieces, pour over the {milk} and leave it until soft. Squeeze out most of the {milk}.",
+      "time": {"from": 5, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/parsley"],
+      "with": [],
+      "text": "Chop the {parsley} fine.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/garlic"],
+      "with": [],
+      "text": "Mince the {garlic}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mix-a-meatball-mixture",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-pork"],
+      "with": [
+        "ingredient/stale-bread", "ingredient/egg", "ingredient/parmesan", "ingredient/garlic", "ingredient/parsley",
+        "ingredient/salt", "ingredient/black-pepper"
+      ],
+      "text": "Put the {beef} and the {pork} in a bowl with the soaked {bread}, the {egg}, the {cheese}, the {garlic}, the {parsley}, a good amount of {salt} and the {black-pepper}. Mix lightly with your fingers only until evenly combined.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape-meatballs",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-pork"],
+      "with": [],
+      "text": "With wet hands, roll the mixture into walnut-sized balls and set them on a plate.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pan-fry",
+      "works_on": [],
+      "with": ["ingredient/minced-beef", "ingredient/ground-pork", "ingredient/olive-oil"],
+      "text": "Heat half the {oil} in a wide pan and brown the meatballs in batches, turning them, until coloured all over. Lift them out: they finish cooking in the sauce.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Add the rest of the {oil} to the pan and soften the {onion} over low heat until soft and glassy.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/onion", "ingredient/salt"],
+      "text": "Add the {tomato:plural}, crush them with a spoon, season with a little {salt} and bring to a simmer.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-pork"],
+      "with": ["preparation/tomato-sauce", "ingredient/basil"],
+      "text": "Put the meatballs back into the sauce[basil: with the {basil}], cover and simmer gently, turning them once, until they are tender and the sauce has thickened. Check the middle of a meatball against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/minced-beef", "ingredient/ground-pork"],
+      "with": ["preparation/tomato-sauce", "ingredient/salt"],
+      "text": "Taste the sauce for {salt} and serve the meatballs with their sauce and bread.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

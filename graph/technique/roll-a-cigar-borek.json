@@ -1,0 +1,91 @@
+{
+  "id": "technique/roll-a-cigar-borek",
+  "tier": "drafted",
+  "names": {"en": "Roll a cigar borek", "tr": "Sigara böreği sarmak"},
+  "aliases": {"en": ["roll sigara boregi", "roll cheese cigars", "roll yufka cigars"]},
+  "does": "Rolls a long wedge of thin pastry sheet tightly round a finger of filling into a thin cigar, folding in the sides after the first turn and sealing the point, so that nothing leaks out in the hot oil.",
+  "intro": {
+    "what": "Rolling a cigar börek wraps a thin pastry sheet tightly round a little filling.",
+    "why": "It teaches how a tight, sealed parcel keeps a soft filling in while the outside crisps.",
+    "idea": "A tight seal",
+    "tier": "drafted"
+  },
+  "how": [
+    "Keep the sheets under a damp cloth, so that they do not dry and crack.",
+    "Cut the sheets into long triangles, or long strips if they are rectangular.",
+    "Lay a thin finger of filling along the wide end, a little in from the edge.",
+    "Roll once over the filling, fold in both long sides, and roll on tightly towards the point.",
+    "Wet the point with water and press it down, and lay the roll seam side down."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Thin, even rolls, the width of a finger, closed at both ends, with the point stuck down."
+    },
+    {"sense": "feel", "text": "The roll is firm and does not unwind when lifted."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Rolling loosely, so that oil gets in and the filling leaks out.",
+      "fix": "Roll tightly from the first turn."
+    },
+    {
+      "mistake": "Leaving the sides open, so that the filling runs out at the ends.",
+      "fix": "Fold in both sides after the first turn."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why fold in the sides after the first turn?",
+      "choices": ["To close the ends so the filling stays in.", "To make the roll longer.", "To let steam out."],
+      "answer": 0,
+      "because": "Open ends let melting filling run out in the oil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How much filling goes on each piece?",
+      "choices": ["A heaped spoonful in the middle.", "A thin finger along the wide end.", "None until it is fried."],
+      "answer": 1,
+      "because": "Little filling keeps the roll thin and tight.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "Which roll is ready to fry?",
+      "choices": [
+        "A loose roll with open ends.",
+        "A fat roll with filling showing.",
+        "A thin, tight roll with the point stuck down."
+      ],
+      "answer": 2,
+      "because": "A tight, closed roll holds together in the oil.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The pastry cracks as you roll. What should change?",
+      "choices": ["Keep the sheets covered with a damp cloth.", "Dry the sheets in the air.", "Use more filling."],
+      "answer": 0,
+      "because": "Thin sheets dry and crack within moments in the open air.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/phyllo", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/roll",
+      "differs": "A wedge of paper-thin pastry is rolled thin and tight from its wide end round a finger of filling, with the sides folded in after the first turn and the point sealed with water.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

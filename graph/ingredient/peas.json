@@ -2,7 +2,7 @@
   "id": "ingredient/peas",
   "tier": "drafted",
   "names": {"en": "Peas", "fr": "Petits pois", "es": "guisante", "it": "pisello"},
-  "aliases": {"en": ["green peas", "garden peas", "pea", "green pea"], "fr": ["pois"]},
+  "aliases": {"en": ["green peas", "garden peas", "pea", "green pea", "frozen pea", "frozen peas"], "fr": ["pois"]},
   "plurals": {"en": "Peas", "fr": "Petits pois", "es": "guisantes", "it": "piselli"},
   "uncountable": false,
   "is_a": [],

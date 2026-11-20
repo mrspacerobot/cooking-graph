@@ -1,0 +1,49 @@
+{
+  "id": "dish/scaloppine-al-marsala",
+  "tier": "drafted",
+  "names": {"en": "Scaloppine al marsala", "it": "Scaloppine al marsala"},
+  "aliases": {"en": ["veal marsala", "chicken marsala", "pollo al marsala", "veal scaloppine with marsala"]},
+  "is": "Thin escalopes of veal, or chicken breast at home, beaten out, dusted with flour and fried fast in butter, then served in a glossy pan sauce of sweet Marsala wine and stock finished with cold butter. Mushrooms are a common addition.",
+  "parts": [
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/veal-escalope", "ingredient/chicken-breast", "ingredient/pork-tenderloin"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "fat", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "mushrooms", "role": "side", "options": ["ingredient/mushroom"], "optional": true, "tier": "drafted"},
+    {"id": "marsala", "role": "liquid", "options": ["ingredient/marsala"], "optional": false, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/beef-stock", "ingredient/chicken-stock", "ingredient/stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "finish", "role": "enrichment", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "garnish", "options": ["ingredient/parsley"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/flatten", "tier": "drafted"},
+    {"thing": "technique/dredge", "tier": "drafted"},
+    {"thing": "technique/pan-fry", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/mount-with-butter", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

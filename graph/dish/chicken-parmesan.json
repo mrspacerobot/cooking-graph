@@ -1,0 +1,49 @@
+{
+  "id": "dish/chicken-parmesan",
+  "tier": "drafted",
+  "names": {"en": "Chicken parmesan"},
+  "aliases": {"en": ["chicken parm", "chicken parmigiana", "chicken parmesan with spaghetti"]},
+  "is": "Chicken breasts pounded thin, coated in flour, egg and breadcrumbs with Parmesan, shallow-fried until crisp, then topped with tomato sauce and mozzarella and baked until the cheese melts. It is often served with spaghetti.",
+  "parts": [
+    {"id": "chicken", "role": "main", "options": ["ingredient/chicken-breast"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "coating", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "breadcrumbs",
+      "role": "coating",
+      "options": ["preparation/breadcrumbs", "ingredient/panko"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parmesan", "role": "topping", "options": ["ingredient/parmesan"], "optional": false, "tier": "drafted"},
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/olive-oil", "ingredient/oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "sauce", "role": "sauce", "options": ["preparation/tomato-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "mozzarella", "role": "topping", "options": ["ingredient/mozzarella"], "optional": false, "tier": "drafted"},
+    {"id": "basil", "role": "garnish", "options": ["ingredient/basil"], "optional": true, "tier": "drafted"},
+    {"id": "spaghetti", "role": "side", "options": ["ingredient/spaghetti"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/flatten", "tier": "drafted"},
+    {"thing": "technique/coat", "tier": "drafted"},
+    {"thing": "technique/pan-fry", "tier": "drafted"},
+    {"thing": "technique/gratinate", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/american", "tier": "drafted"}
+  ],
+  "same_as": []
+}

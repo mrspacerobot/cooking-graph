@@ -1,0 +1,114 @@
+{
+  "id": "recipe/briam",
+  "tier": "drafted",
+  "names": {"en": "Briam", "el": "Μπριάμ", "el-Latn": "Briam"},
+  "aliases": {},
+  "makes": "dish/briam",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/courgette", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "courgette"},
+    {"thing": "ingredient/aubergine", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "aubergine"},
+    {"thing": "ingredient/potato", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "potato"},
+    {"thing": "ingredient/red-onion", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/green-pepper", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/tomato", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "tomato"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 120, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/parsley", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "parsley"},
+    {"thing": "ingredient/oregano", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {"thing": "ingredient/water", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {"thing": "ingredient/feta", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "feta"}
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/roasting-tin", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/mixing-bowl", "equipment/vegetable-peeler"
+  ],
+  "steps": [
+    {
+      "technique": "technique/slice",
+      "works_on": [
+        "ingredient/courgette", "ingredient/aubergine", "ingredient/potato", "ingredient/red-onion",
+        "ingredient/green-pepper", "ingredient/tomato"
+      ],
+      "with": [],
+      "text": "Peel the {potato:plural} and slice them thinly, since they take longest. Slice the {courgette:plural} and the {aubergine} into thick rounds, the {onion:plural} into thick half-moons, and the {pepper:plural} into strips. Slice the {tomato:plural} into rounds and keep them apart.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/garlic", "ingredient/parsley"],
+      "with": [],
+      "text": "Mince the {garlic} and chop the {parsley}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": [
+        "ingredient/courgette", "ingredient/aubergine", "ingredient/potato", "ingredient/red-onion",
+        "ingredient/green-pepper"
+      ],
+      "with": [
+        "ingredient/olive-oil", "ingredient/garlic", "ingredient/parsley", "ingredient/oregano", "ingredient/salt",
+        "ingredient/black-pepper"
+      ],
+      "text": "In a large bowl, toss the cut vegetables, except the {tomato:plural}, with most of the {oil}, the {garlic}, the {parsley}, the {oregano}, the {salt} and the {black-pepper} until every piece is coated.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/courgette", "ingredient/tomato"],
+      "with": ["ingredient/water", "ingredient/olive-oil"],
+      "text": "Spread the vegetables in a roasting tin, with the {potato:plural} towards the edges where the heat is strongest. Lay the {tomato:plural} over the top, pour the {water} into a corner and drizzle over the rest of the {oil}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/courgette", "ingredient/potato"],
+      "with": [],
+      "text": "Cover the tin with foil and bake until the {potato:plural} are nearly tender.",
+      "time": {"from": 40, "to": 45, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["ingredient/courgette", "ingredient/potato"],
+      "with": [],
+      "text": "Uncover, stir gently, and bake on until the vegetables are soft and browned at the edges and most of the liquid has turned to oil and juice.",
+      "time": {"from": 30, "to": 40, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/courgette"],
+      "with": ["ingredient/feta"],
+      "text": "Let it settle for a while and serve warm[feta: , with the {feta} crumbled over or on the side].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

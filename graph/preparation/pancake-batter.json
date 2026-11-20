@@ -30,7 +30,17 @@
     {"thing": "technique/batter", "tier": "drafted"},
     {"thing": "technique/rest-batter", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/pudding-batter",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/bake-a-batter-pudding"],
+      "ratio": null,
+      "caveat": "A typical thick pancake batter rises and sets differently and may turn heavy around the sausages.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [],
   "same_as": []
 }

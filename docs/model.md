@@ -597,6 +597,10 @@ New ids: `fact/wheat`, `fact/celery`, `fact/mustard`, `fact/sulphites`, `fact/lu
 - **Boundaries:** the graph holds culinary explanations and a reusable question catalogue. Programs retain teaching sequence and cuisine scope. Tomi supplies narration, when to ask, selections, attempts, scores and progress. Quiz performance is not culinary review or safety evidence. New generated explanations and questions remain drafted. No questions here are evaluation probes.
 - **Rules:** `quiz-answer-out-of-range`, `quiz-too-many-choices`, `quiz-without-intro` and `quiz-id-twice` supplement strict schema validation. Existing prose rules reject numeric quantities in sentences and unsupported safety or doneness claims.
 
+## Home cooking names (issue 31)
+
+Egg fried rice and mapo tofu carry 蛋炒饭 and 麻婆豆腐. The closed language list now includes Greek, Chinese, Thai, Japanese and Arabic, and a name in those scripts carries a romanization. Name lookup retains letters and marks in the original script. Latin lookup keeps its accent folding.
+
 ## Decisions where the starting model was silent
 
 These are not changes. The starting model names kinds and statements, not files, so the first files had to settle them.

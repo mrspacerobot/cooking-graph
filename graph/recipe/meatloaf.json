@@ -1,0 +1,118 @@
+{
+  "id": "recipe/meatloaf",
+  "tier": "drafted",
+  "names": {"en": "Meatloaf"},
+  "aliases": {},
+  "makes": "dish/meatloaf",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/minced-beef", "amount": {"value": 900, "unit": "gram"}, "forms": [], "part": "beef"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/small-dice"],
+      "part": "onion"
+    },
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "preparation/breadcrumbs", "amount": {"value": 60, "unit": "gram"}, "forms": [], "part": "breadcrumbs"},
+    {"thing": "ingredient/milk", "amount": {"value": 120, "unit": "millilitre"}, "forms": [], "part": "milk"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {
+      "thing": "ingredient/worcestershire-sauce",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "worcestershire"
+    },
+    {
+      "thing": "ingredient/parsley",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": ["form/chopped"],
+      "part": "parsley"
+    },
+    {"thing": "ingredient/ketchup", "amount": {"value": 120, "unit": "millilitre"}, "forms": [], "part": "ketchup"},
+    {
+      "thing": "ingredient/brown-sugar",
+      "amount": {"value": 2, "unit": "tablespoon"},
+      "forms": [],
+      "part": "brown-sugar"
+    },
+    {"thing": "ingredient/yellow-mustard", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "mustard"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/frying-pan", "equipment/mixing-bowl", "equipment/baking-sheet",
+    "equipment/parchment-paper", "equipment/spoon", "equipment/thermometer"
+  ],
+  "steps": [
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/garlic"],
+      "with": ["ingredient/oil"],
+      "text": "Cook the {onion} gently in the {oil} until soft[garlic: , adding the {garlic} for the last moment]. Let it cool.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/soak",
+      "works_on": ["preparation/breadcrumbs"],
+      "with": ["ingredient/milk"],
+      "text": "In a large bowl, stir the {breadcrumbs:plural} into the {milk} and leave them to soften.",
+      "time": {"value": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [
+        "preparation/breadcrumbs", "ingredient/egg", "ingredient/onion", "ingredient/worcestershire-sauce",
+        "ingredient/parsley", "ingredient/salt", "ingredient/black-pepper"
+      ],
+      "text": "Add the {beef}, the {egg:plural}, the cooled {onion}, the {worcestershire}[parsley: , the {parsley}], {salt} and {black-pepper}. Mix gently with your hands until just combined, as overworking makes the loaf dense.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/shape",
+      "works_on": ["ingredient/minced-beef"],
+      "with": [],
+      "text": "Shape the mixture into an even loaf on a lined baking sheet and pat it firm.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": [],
+      "with": [],
+      "text": "Bake in a moderate oven until the loaf is firm and starting to brown.",
+      "time": {"value": 40, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brush-on-a-glaze",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["ingredient/ketchup", "ingredient/brown-sugar", "ingredient/yellow-mustard"],
+      "text": "Stir the {ketchup} with the {brown-sugar} [mustard: and the {mustard}]. Spread it over the top and sides of the loaf and bake until the glaze is sticky and dark at the edges. Check the middle against a trusted guide to doneness, then rest the loaf before slicing.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

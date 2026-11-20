@@ -65,6 +65,15 @@
       "ratio": null,
       "caveat": "It is nuttier and more potent, so use a smaller splash and boil it down well.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/shaoxing-wine",
+      "allows": true,
+      "when": ["dish/red-braised-pork-belly", "technique/velvet"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use dry rather than sweet sherry. It supplies a similar nutty note with less of the rice wine flavour.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

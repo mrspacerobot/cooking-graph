@@ -105,6 +105,15 @@
       "ratio": null,
       "caveat": "Water adds no acid or brightness, so the dish or dressing turns flat.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/vodka",
+      "allows": true,
+      "when": ["dish/penne-alla-vodka"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "It lifts the browned bits for a tomato and cream sauce. The finished sauce will lack the vodka aroma.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

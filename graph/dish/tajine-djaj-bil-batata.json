@@ -1,0 +1,74 @@
+{
+  "id": "dish/tajine-djaj-bil-batata",
+  "tier": "drafted",
+  "names": {
+    "en": "Tajine djaj bil batata",
+    "fr": "Tajine de poulet aux pommes de terre",
+    "ar": "طاجين الدجاج بالبطاطا",
+    "ar-Latn": "Tajine djaj bil batata"
+  },
+  "aliases": {
+    "en": [
+      "chicken and potato tagine",
+      "moroccan chicken with potatoes",
+      "tagine djaj bel batata",
+      "chicken tagine with potatoes"
+    ]
+  },
+  "is": "An everyday Moroccan chicken and potato tagine: chicken pieces cooked with onion fried golden, garlic, ginger, turmeric and paprika, with potato wedges added to cook in the sauce, finished with olives and chopped coriander and parsley.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "potato", "role": "side", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "ginger", "role": "seasoning", "options": ["ingredient/ginger"], "optional": false, "tier": "drafted"},
+    {"id": "turmeric", "role": "seasoning", "options": ["ingredient/turmeric"], "optional": false, "tier": "drafted"},
+    {"id": "paprika", "role": "seasoning", "options": ["ingredient/paprika"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "water",
+      "role": "liquid",
+      "options": ["ingredient/water", "ingredient/chicken-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "olives",
+      "role": "garnish",
+      "options": ["ingredient/green-olive", "ingredient/olive", "ingredient/black-olive"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "herbs",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf", "ingredient/parsley"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "preserved-lemon",
+      "role": "acid",
+      "options": ["preparation/preserved-lemon"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/fry-onions-golden", "tier": "drafted"},
+    {"thing": "technique/bloom-ground-spices", "tier": "drafted"},
+    {"thing": "technique/braise", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": []
+}

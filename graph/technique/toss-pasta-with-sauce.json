@@ -2,7 +2,16 @@
   "id": "technique/toss-pasta-with-sauce",
   "tier": "drafted",
   "names": {"en": "Toss pasta with sauce"},
-  "aliases": {"en": ["finish pasta in the sauce", "toss the pasta", "saltare la pasta", "ripassare la pasta"]},
+  "aliases": {
+    "en": [
+      "finish pasta in the sauce",
+      "toss the pasta",
+      "saltare la pasta",
+      "ripassare la pasta",
+      "finish pasta in its sauce",
+      "toss pasta in its sauce"
+    ]
+  },
   "does": "Moves just-drained pasta into the sauce and tosses it over the heat with a splash of the starchy cooking water, so that sauce and water bind into a glossy coat that clings to every piece. The pasta is dressed in the pan and not on the plate.",
   "intro": {
     "what": "Finishing pasta in its sauce brings them together with a little starchy cooking water.",

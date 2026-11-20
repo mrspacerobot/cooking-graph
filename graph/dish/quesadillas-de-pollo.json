@@ -1,0 +1,70 @@
+{
+  "id": "dish/quesadillas-de-pollo",
+  "tier": "drafted",
+  "names": {"en": "Quesadillas de pollo", "es": "Quesadillas de pollo"},
+  "aliases": {"en": ["chicken quesadillas", "quesadilla", "chicken quesadilla"]},
+  "is": "Flour tortillas filled with melting cheese, shredded cooked chicken, softened pepper and spring onion, folded and cooked in a dry pan until golden and melted, cut into wedges and served with salsa.",
+  "parts": [
+    {
+      "id": "tortillas",
+      "role": "base",
+      "options": ["ingredient/flour-tortilla", "ingredient/corn-tortilla"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "chicken",
+      "role": "filling",
+      "options": ["ingredient/cooked-chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "cheese",
+      "role": "filling",
+      "options": ["ingredient/cheddar", "ingredient/monterey-jack", "ingredient/mozzarella"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "pepper",
+      "role": "filling",
+      "options": ["ingredient/bell-pepper", "ingredient/red-pepper", "ingredient/green-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "spring-onion",
+      "role": "filling",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "filling",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {
+      "id": "salsa",
+      "role": "sauce",
+      "options": ["ingredient/tomato-salsa", "ingredient/salsa-verde"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "sour-cream", "role": "garnish", "options": ["ingredient/sour-cream"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/shred-meat", "tier": "drafted"},
+    {"thing": "technique/sandwich", "tier": "drafted"},
+    {"thing": "technique/griddle", "tier": "drafted"},
+    {"thing": "technique/flip", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ],
+  "same_as": []
+}

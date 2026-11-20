@@ -1,0 +1,48 @@
+{
+  "id": "technique/brush-on-a-glaze",
+  "tier": "drafted",
+  "names": {"en": "Brush on a glaze"},
+  "aliases": {"en": ["glaze a meatloaf", "glaze with ketchup", "spread on a glaze"]},
+  "does": "Spreads a thick sweet and sharp sauce over meat that has partly baked, and bakes it on until it turns sticky and dark at the edges.",
+  "intro": null,
+  "how": [
+    "Stir the glaze together until the sugar is mixed through.",
+    "Bake the meat first, so that the glaze goes on for the last part only.",
+    "Spread or brush the glaze over the top and sides.",
+    "Return it to the oven until the glaze is sticky and dark at the edges."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A shiny, sticky glaze, darker at the edges but not black."},
+    {"sense": "smell", "text": "Caramel and tomato, with no burnt smell."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Putting the glaze on at the start, so that the sugar burns before the meat is done.",
+      "fix": "Add it for the last part of the baking only."
+    },
+    {"mistake": "Spreading it too thick, so that it stays wet.", "fix": "Use a thin, even layer."}
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/pastry-brush", "equipment/spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/oven"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-sheet", "equipment/baking-dish"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/shape", "why": "A glaze is spread on a shaped loaf.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/glaze",
+      "differs": "A thick sweet sauce is spread over meat in the oven and baked on until sticky, rather than small vegetables cooked on the hob in butter, sugar and water until coated.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/american", "tier": "drafted"}
+  ]
+}

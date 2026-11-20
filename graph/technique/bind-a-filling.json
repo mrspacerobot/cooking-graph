@@ -1,0 +1,87 @@
+{
+  "id": "technique/bind-a-filling",
+  "tier": "drafted",
+  "names": {"en": "Bind a filling", "it": "preparare il ripieno"},
+  "aliases": {"en": ["mix filling", "mix the filling", "make a ricotta filling"]},
+  "does": "Mixes soft cheese with well-squeezed greens, grated hard cheese and egg into a thick, even filling that holds its shape and sets lightly in the oven.",
+  "intro": {
+    "what": "Soft cheese, drained greens, hard cheese and egg are mixed into a filling that holds together.",
+    "why": "A filling that is too wet runs out of the pasta and makes the dish watery. Squeezing the greens and binding with egg keep it firm.",
+    "idea": "A dry, bound filling",
+    "tier": "drafted"
+  },
+  "how": [
+    "Squeeze the cooked greens hard so that no more water runs from them, and chop them fine.",
+    "Drain any liquid from the soft cheese.",
+    "Mix the cheese, the greens, the grated hard cheese and the egg with the seasoning until evenly coloured.",
+    "Taste and season before the egg goes in, then mix it in."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "The filling holds its shape on a spoon and does not run."},
+    {"sense": "see", "text": "It is one even colour with no streaks of white cheese."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving water in the greens, so that the filling runs and the dish is watery.",
+      "fix": "Squeeze the greens hard by the handful."
+    },
+    {
+      "mistake": "Leaving out the egg, so that the filling falls out when it is cut.",
+      "fix": "Bind it with egg, which sets in the oven."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why is the filling bound with egg?",
+      "choices": ["So that it sets in the oven and holds together.", "So that it stays runny.", "So that it browns."],
+      "answer": 0,
+      "because": "The egg sets with heat and binds the filling.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What must be done to the greens first?",
+      "choices": ["Leave them wet.", "Squeeze them hard and chop them.", "Fry them until crisp."],
+      "answer": 1,
+      "because": "Water left in the greens makes the filling runny.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How should a good filling behave on a spoon?",
+      "choices": ["It runs off.", "It is streaky white.", "It holds its shape and is one colour."],
+      "answer": 2,
+      "because": "A thick, even filling stays in the pasta.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The baked dish was watery and the filling ran. What would you change next time?",
+      "choices": ["Squeeze the greens harder and drain the cheese.", "Add more water.", "Leave out the egg."],
+      "answer": 0,
+      "because": "Water from the greens and the cheese is the cause.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/ricotta", "tier": "drafted"},
+    {"thing": "group/leafy-greens", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/spatula"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/squeeze",
+      "why": "The greens are squeezed dry before they go into the filling.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

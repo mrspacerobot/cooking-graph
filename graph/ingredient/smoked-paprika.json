@@ -45,6 +45,15 @@
       "ratio": null,
       "caveat": "It has far less heat and brings a smoky taste that the paste should not have.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/chipotle-in-adobo",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/tinga-de-pollo"],
+      "ratio": null,
+      "caveat": "Dry smoked paprika alone supplies neither the pepper flesh nor the heat and tangy sauce that go into the purée.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

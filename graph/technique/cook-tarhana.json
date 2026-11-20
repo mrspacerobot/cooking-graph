@@ -1,0 +1,78 @@
+{
+  "id": "technique/cook-tarhana",
+  "tier": "drafted",
+  "names": {"en": "Cook tarhana", "tr": "Tarhana pişirmek"},
+  "aliases": {"en": ["dissolve tarhana", "whisk tarhana", "make tarhana soup"]},
+  "does": "Soaks dried tarhana in cold liquid and whisks it smooth, then whisks it into the pot and simmers it, stirring, until it thickens into a smooth, sour soup.",
+  "intro": {
+    "what": "Cooking tarhana soaks the dried mix cold, then simmers it to thicken a soup.",
+    "why": "It teaches why a starchy thickener is mixed cold before it meets heat.",
+    "idea": "Mix cold, then heat",
+    "tier": "drafted"
+  },
+  "how": [
+    "Stir the tarhana into some of the cold liquid and leave it to soften.",
+    "Whisk it until it is smooth and free of lumps.",
+    "Whisk it into the pot of liquid before it boils, so that it thickens evenly.",
+    "Bring it up to a gentle simmer, stirring often, because it catches on the bottom.",
+    "Simmer until it is smooth and coats a spoon, and loosen it with hot liquid if it grows too thick."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A smooth, even soup that coats the back of a spoon, with no lumps."},
+    {"sense": "smell", "text": "A pleasant sour smell, like yogurt and tomato."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Dropping dry tarhana into hot liquid, so that it forms lumps that do not soften.",
+      "fix": "Soak it in cold liquid and whisk it smooth first."
+    },
+    {"mistake": "Leaving it to simmer unstirred, so that it catches and burns on the bottom.", "fix": "Stir it often."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why soak tarhana in cold liquid first?",
+      "choices": ["So it softens and whisks smooth without lumps.", "To make it sweeter.", "To keep it crunchy."],
+      "answer": 0,
+      "because": "In hot liquid the outside sets before the inside softens, and lumps form.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What must you do while it simmers?",
+      "choices": ["Leave it alone.", "Stir it often so it does not catch.", "Cover it tightly."],
+      "answer": 1,
+      "because": "Tarhana thickens and catches on the bottom of the pot.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "When is the soup ready?",
+      "choices": ["When it is thin and watery.", "When it has lumps.", "When it is smooth and coats a spoon."],
+      "answer": 2,
+      "because": "A smooth soup that coats a spoon is fully thickened.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The soup is lumpy. What should change next time?",
+      "choices": ["Soak and whisk the tarhana cold first.", "Add it dry to boiling liquid.", "Boil it harder."],
+      "answer": 0,
+      "because": "Cold soaking and whisking prevents lumps.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/tarhana", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan", "equipment/stockpot"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

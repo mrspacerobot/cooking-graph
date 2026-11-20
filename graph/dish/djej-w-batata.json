@@ -1,0 +1,49 @@
+{
+  "id": "dish/djej-w-batata",
+  "tier": "drafted",
+  "names": {
+    "en": "Djej w batata bil forn",
+    "fr": "Poulet et pommes de terre au four",
+    "ar": "دجاج وبطاطا",
+    "ar-Latn": "Djej w batata"
+  },
+  "aliases": {
+    "en": [
+      "lebanese garlic lemon chicken and potatoes",
+      "chicken and potato traybake",
+      "djej w batata",
+      "lebanese chicken and potatoes"
+    ]
+  },
+  "is": "A Lebanese family traybake: chicken pieces marinated in garlic, lemon, olive oil and baharat, the Lebanese spice blend, roasted on a tray of potato chunks tossed in the same oil, until the skin is golden and the potatoes are crisp at the edges and soaked in the juices.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "potato", "role": "side", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lemon",
+      "role": "acid",
+      "options": ["ingredient/lemon", "ingredient/lemon-juice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "spice", "role": "seasoning", "options": ["preparation/seven-spice"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/marinate", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"},
+    {"thing": "technique/roast", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/lebanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

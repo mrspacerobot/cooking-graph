@@ -1,0 +1,17 @@
+{
+  "id": "preparation/toasted-rice-powder",
+  "tier": "drafted",
+  "names": {"en": "Toasted rice powder"},
+  "aliases": {"en": ["khao khua", "roasted rice powder"]},
+  "plurals": {},
+  "uncountable": true,
+  "is": "Raw rice toasted in a dry pan until deep gold and ground coarse. It gives a Lao and Thai minced meat salad its nutty smell and a light crunch, and soaks up the dressing.",
+  "parts": [],
+  "groups": [],
+  "teaches": [],
+  "stands_in_for": [],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

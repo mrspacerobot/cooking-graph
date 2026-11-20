@@ -2,7 +2,7 @@
   "id": "ingredient/dried-red-chilli",
   "tier": "drafted",
   "names": {"en": "Dried red chilli", "fr": "Piment rouge séché"},
-  "aliases": {"en": ["dried red chili", "whole dried red chilli", "sukhi lal mirch"]},
+  "aliases": {"en": ["dried red chili", "whole dried red chilli", "sukhi lal mirch", "dried chilli", "dried chili"]},
   "plurals": {"en": "Dried red chillis", "fr": "Piments rouges séchés"},
   "uncountable": false,
   "is_a": [
@@ -25,7 +25,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/guajillo-chilli",
+      "allows": true,
+      "when": ["dish/sopa-de-tortilla"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Choose a mild, fleshy dried chilli and soak it before blending. Small hot chillies can overwhelm the soup.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],

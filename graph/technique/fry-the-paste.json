@@ -1,0 +1,47 @@
+{
+  "id": "technique/fry-the-paste",
+  "tier": "drafted",
+  "names": {"en": "Fry the paste"},
+  "aliases": {"en": ["fry curry paste", "fry the curry paste", "fry the bean paste", "crack the coconut cream"]},
+  "does": "Fries a thick seasoning paste, such as a chilli bean paste or a curry paste, slowly in fat until it smells rich and the fat takes its colour, before any liquid goes in.",
+  "intro": null,
+  "how": [
+    "Heat a little oil, or the thick cream from the top of a tin of coconut milk, over medium heat.",
+    "For coconut cream, let it bubble until it starts to split and look oily.",
+    "Add the paste and fry it, stirring and scraping, over a gentle heat.",
+    "Stop when it smells rich and the fat around it has turned red, then add the liquid."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "The raw, sharp smell turns deep and fragrant."},
+    {"sense": "see", "text": "The fat separates and turns red around the paste."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying the paste over high heat, so it burns before it gives up its flavour.",
+      "fix": "Keep the heat medium or low and keep stirring."
+    },
+    {
+      "mistake": "Adding the liquid at once, which leaves a raw, flat taste.",
+      "fix": "Fry the paste until the fat is red first."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/doubanjiang", "tier": "drafted"},
+    {"thing": "ingredient/massaman-curry-paste", "tier": "drafted"},
+    {"thing": "ingredient/green-curry-paste", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/wok", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon", "equipment/spatula"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/oil", "ingredient/coconut-milk"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"},
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ]
+}

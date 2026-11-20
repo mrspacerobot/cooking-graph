@@ -42,7 +42,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/yellow-mustard",
+      "allows": true,
+      "when": ["dish/sloppy-joes"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use a little in the glaze, then taste. Dijon is sharper and less bright yellow.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

@@ -2,7 +2,10 @@
   "id": "technique/toast",
   "tier": "drafted",
   "names": {"en": "Toast", "fr": "Toaster"},
-  "aliases": {"en": ["toast the bread", "dry-roast", "toast nuts", "toast sesame"], "fr": ["torréfier"]},
+  "aliases": {
+    "en": ["toast the bread", "dry-roast", "toast nuts", "toast sesame", "toast buns", "toast the buns"],
+    "fr": ["torréfier"]
+  },
   "does": "Dries and browns bread, nuts or spices in dry heat, which makes them crisp and wakes their scent.",
   "intro": {
     "what": "Toasting uses dry heat to crisp bread or develop the scent of nuts and spices.",

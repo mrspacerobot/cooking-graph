@@ -15,7 +15,17 @@
   "teaches": [
     {"thing": "technique/make-a-gremolata", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/chermoula",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/marinate-in-chermoula"],
+      "ratio": null,
+      "caveat": "Gremolata has parsley, garlic and citrus, but lacks the oil, acid and warm spices of the fish marinade.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/italian", "tier": "drafted"}
   ],

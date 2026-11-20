@@ -32,6 +32,15 @@
       "ratio": null,
       "caveat": "Bay leaf is mild and does not give the piney, resinous note rosemary brings.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/makrut-lime-leaf",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/thai-green-curry"],
+      "ratio": null,
+      "caveat": "Bay leaf adds a woody note when simmered and will not perfume the curry with lime.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

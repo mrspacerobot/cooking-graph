@@ -1,0 +1,107 @@
+{
+  "id": "technique/fry-garlic-gently",
+  "tier": "drafted",
+  "names": {"en": "Fry garlic gently in olive oil", "it": "soffriggere l'aglio"},
+  "aliases": {
+    "en": [
+      "gently fry garlic in olive oil",
+      "soften garlic in olive oil",
+      "saute garlic in olive oil",
+      "fry garlic in oil"
+    ]
+  },
+  "does": "Warms sliced or crushed garlic in olive oil from cold over low heat, until it turns pale gold and its taste has passed into the oil. The oil, not the garlic, is what flavours the sauce.",
+  "intro": {
+    "what": "Garlic is started in cold oil and warmed slowly until it is pale gold.",
+    "why": "Many Italian pasta sauces start this way. The slow heat draws the garlic's taste into the oil without the bitterness of burnt garlic.",
+    "idea": "Flavour the oil, not the garlic",
+    "tier": "drafted"
+  },
+  "how": [
+    "Put the oil and the garlic in the pan together, before the heat goes on.",
+    "Set the pan over low heat and let the garlic sizzle quietly, tilting the pan so that it sits in the oil.",
+    "Stop when the garlic is pale gold at the edges and the kitchen smells sweet of it.",
+    "Add the next thing at once, or take the pan off the heat, since the garlic keeps colouring in the hot oil."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A gentle, steady sizzle, never a loud crackle."},
+    {"sense": "see", "text": "The slices turn pale gold, with no dark brown edges."},
+    {"sense": "smell", "text": "A sweet, nutty smell of garlic, not a sharp or acrid one."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Dropping the garlic into very hot oil, so that it browns in moments and turns bitter.",
+      "fix": "Start it in cold oil over low heat."
+    },
+    {
+      "mistake": "Walking away while it colours, so that it goes from gold to brown.",
+      "fix": "Stay at the pan and stop at pale gold. Throw away burnt garlic and start again."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why is the garlic started in cold oil?",
+      "choices": [
+        "So that it warms slowly and flavours the oil without burning.",
+        "So that it browns quickly and deeply.",
+        "So that the oil stays raw in taste."
+      ],
+      "answer": 0,
+      "because": "Slow heat lets the garlic's taste pass into the oil before it can colour too far.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How hot should the pan be while the garlic cooks?",
+      "choices": [
+        "As hot as the stove goes.",
+        "Low, with a quiet sizzle.",
+        "Just warm enough that nothing sizzles at all."
+      ],
+      "answer": 1,
+      "because": "A low heat with a gentle sizzle cooks the garlic evenly and keeps it from burning.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "What colour tells you to move on?",
+      "choices": ["Dark brown at the edges.", "Still white and raw-looking.", "Pale gold."],
+      "answer": 2,
+      "because": "Pale gold garlic is sweet; brown garlic is already bitter.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The garlic turned dark brown and the oil smells acrid. What should you do?",
+      "choices": [
+        "Carry on, the sauce will hide it.",
+        "Throw it away and start again over lower heat.",
+        "Add more garlic on top."
+      ],
+      "answer": 1,
+      "because": "The bitter taste is in the oil now and will run through the whole sauce.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/garlic", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/saute",
+      "differs": "The garlic starts in cold oil over low heat, and the aim is to flavour the oil, not to brown the garlic in a hot pan.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

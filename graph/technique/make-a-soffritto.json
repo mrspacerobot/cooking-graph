@@ -2,7 +2,7 @@
   "id": "technique/make-a-soffritto",
   "tier": "drafted",
   "names": {"en": "Make a soffritto"},
-  "aliases": {"en": ["soffritto", "cook a soffritto", "fare il soffritto"]},
+  "aliases": {"en": ["soffritto", "cook a soffritto", "fare il soffritto", "soften soffritto"]},
   "does": "Cooks very finely chopped onion, carrot and celery slowly in olive oil, until they melt together into a soft, sweet, golden base on which the rest of the dish is built.",
   "intro": {
     "what": "This soffritto slowly softens finely chopped onion, carrot and celery in olive oil.",

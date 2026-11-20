@@ -1,0 +1,40 @@
+{
+  "id": "technique/drizzle-egg",
+  "tier": "drafted",
+  "names": {"en": "Drizzle in egg"},
+  "aliases": {"en": ["drizzle egg", "egg drop", "make egg ribbons", "egg flower"]},
+  "does": "Pours beaten egg in a thin stream into a gently moving hot soup so that it sets in fine, silky ribbons.",
+  "intro": null,
+  "how": [
+    "Thicken the soup a little first; the ribbons hang better in it.",
+    "Beat the eggs well, without froth.",
+    "Bring the soup to a bare simmer and stir it in a slow circle.",
+    "Pour the egg in a thin stream from a little height, along the swirl.",
+    "Leave the soup still for a moment before stirring, so the ribbons set."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Fine, pale yellow ribbons and flowers floating through the soup."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pouring the egg into a soup that is boiling hard, which breaks it into grainy bits.",
+      "fix": "Lower the heat until it barely bubbles."
+    },
+    {"mistake": "Stirring as soon as the egg goes in.", "fix": "Wait a moment for the ribbons to set before you stir."}
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saucepan"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/whisk", "equipment/ladle"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"}
+  ]
+}

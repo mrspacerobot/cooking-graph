@@ -1,0 +1,61 @@
+{
+  "id": "dish/salmon-fishcakes",
+  "tier": "drafted",
+  "names": {"en": "Salmon fishcakes"},
+  "aliases": {"en": ["fish cakes", "salmon fish cakes", "fishcakes"]},
+  "is": "Flaked salmon folded into dry mashed potato with spring onion and lemon, shaped into cakes, crumbed and fried until crisp.",
+  "parts": [
+    {"id": "salmon", "role": "main", "options": ["ingredient/salmon"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "base", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "spring-onion",
+      "role": "aromatic",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "herbs",
+      "role": "aromatic",
+      "options": ["ingredient/parsley", "ingredient/dill"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "coating", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "coating", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {
+      "id": "breadcrumbs",
+      "role": "coating",
+      "options": ["preparation/breadcrumbs", "ingredient/panko"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "oil",
+      "role": "fat",
+      "options": ["ingredient/oil", "ingredient/sunflower-oil"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/flake", "tier": "drafted"},
+    {"thing": "technique/shape", "tier": "drafted"},
+    {"thing": "technique/coat", "tier": "drafted"},
+    {"thing": "technique/pan-fry", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -60,7 +60,7 @@
         "ingredient/ghee", "ingredient/garlic", "ingredient/red-lentil", "ingredient/lemon-juice",
         "ingredient/coriander-leaf"
       ],
-      "text": "Heat the {tempering-fat} in a small pan until a {cumin} seed sizzles at once. Add the {cumin}, the dried chillies [asafoetida: and the {asafoetida}], then the {garlic}, and cook just until the {garlic} turns pale gold and the scent rises. Pour the sizzling {tempering-fat} and spices over the dal at once and stir once. [lemon-juice: Sharpen with the {lemon-juice}.] Scatter the {coriander} over the top and serve it hot.",
+      "text": "Heat the {tempering-fat} in a small pan until a {cumin} seed sizzles at once. Add the {cumin}, the {dried-chilli:plural} [asafoetida: and the {asafoetida}], then the {garlic}, and cook just until the {garlic} turns pale gold and the scent rises. Pour the sizzling {tempering-fat} and spices over the dal at once and stir once. [lemon-juice: Sharpen with the {lemon-juice}.] Scatter the {coriander} over the top and serve it hot.",
       "time": {"from": 1, "to": 2, "unit": "minute"},
       "temperature": null,
       "safety_points": [],

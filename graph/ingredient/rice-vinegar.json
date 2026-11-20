@@ -40,6 +40,15 @@
       "ratio": null,
       "caveat": "Vinegar is sour and not sweet, so it ruins the balance of the simmering liquid.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/black-vinegar",
+      "allows": true,
+      "when": ["dish/fish-fragrant-aubergine"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use unseasoned rice vinegar and add it gradually. Its brighter acidity will lack the dark vinegar's malty depth.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

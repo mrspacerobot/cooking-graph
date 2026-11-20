@@ -1,0 +1,30 @@
+{
+  "id": "ingredient/minced-chicken",
+  "tier": "drafted",
+  "names": {"en": "Minced chicken"},
+  "aliases": {"en": ["ground chicken", "chicken mince"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/minced-meat", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "Chicken ground fine. It is lean, cooks fast, turns dry and grainy when it is overcooked, and clumps unless it is broken up as it cooks.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/meat", "basis": "It is chicken meat.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

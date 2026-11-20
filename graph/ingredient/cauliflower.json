@@ -32,6 +32,15 @@
       "ratio": null,
       "caveat": "Its firm florets and brassica flavour do not give the same soft summer-vegetable result. Treat it as another dish.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/broccoli",
+      "allows": true,
+      "when": ["dish/sheet-pan-lemon-garlic-chicken", "technique/roast"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Cut into small florets and roast until the edges brown. The florets may need a head start if left large.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

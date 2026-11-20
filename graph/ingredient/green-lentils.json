@@ -2,7 +2,7 @@
   "id": "ingredient/green-lentils",
   "tier": "drafted",
   "names": {"en": "Green lentils", "fr": "Lentilles vertes"},
-  "aliases": {"en": ["Puy lentils", "French lentils"]},
+  "aliases": {"en": ["Puy lentils", "French lentils", "green lentil"]},
   "plurals": {"en": "Green lentils", "fr": "Lentilles vertes"},
   "uncountable": false,
   "is_a": [],

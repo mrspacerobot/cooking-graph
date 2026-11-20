@@ -1,0 +1,58 @@
+{
+  "id": "dish/carnitas",
+  "tier": "drafted",
+  "names": {"en": "Carnitas", "es": "Carnitas"},
+  "aliases": {"en": ["pork carnitas", "Mexican pulled pork"]},
+  "is": "Michoacán-style pork: chunks of pork shoulder simmered with orange, onion, garlic and spices until the liquid boils away, then fried in their own fat until crisp at the edges, pulled apart and eaten in warm corn tortillas.",
+  "parts": [
+    {"id": "pork", "role": "main", "options": ["ingredient/pork-shoulder"], "optional": false, "tier": "drafted"},
+    {
+      "id": "lard",
+      "role": "fat",
+      "options": ["ingredient/lard", "ingredient/oil"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "orange", "role": "acid", "options": ["ingredient/orange"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "cumin", "role": "seasoning", "options": ["ingredient/cumin"], "optional": false, "tier": "drafted"},
+    {"id": "oregano", "role": "seasoning", "options": ["ingredient/oregano"], "optional": false, "tier": "drafted"},
+    {"id": "bay-leaf", "role": "seasoning", "options": ["ingredient/bay-leaf"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tortillas",
+      "role": "base",
+      "options": ["ingredient/corn-tortilla", "ingredient/flour-tortilla"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "serving-onion", "role": "garnish", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "coriander",
+      "role": "garnish",
+      "options": ["ingredient/coriander-leaf"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lime", "role": "acid", "options": ["ingredient/lime"], "optional": false, "tier": "drafted"},
+    {
+      "id": "salsa",
+      "role": "sauce",
+      "options": ["ingredient/tomato-salsa", "ingredient/salsa-verde"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/crisp-in-its-own-fat", "tier": "drafted"},
+    {"thing": "technique/shred-meat", "tier": "drafted"},
+    {"thing": "technique/griddle", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/mexican", "tier": "drafted"}
+  ],
+  "same_as": []
+}

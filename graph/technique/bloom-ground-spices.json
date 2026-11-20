@@ -1,0 +1,54 @@
+{
+  "id": "technique/bloom-ground-spices",
+  "tier": "drafted",
+  "names": {"en": "Bloom ground spices"},
+  "aliases": {
+    "en": ["fry the spices", "bloom the spices", "fry ground spices", "toast spices in the fat", "cook out the spices"]
+  },
+  "does": "Stirs ground spices into the hot fat already in the pan, with the meat or onions, for a short moment before the liquid goes in, which deepens their flavour and takes away their raw, dusty taste.",
+  "intro": null,
+  "how": [
+    "Make sure there is a little fat in the pan, and lower the heat to medium.",
+    "Scatter in the ground spices and stir so that they coat everything.",
+    "Fry for a moment, stirring, until they smell toasty and darken a shade.",
+    "Add the liquid before they can scorch."
+  ],
+  "cues": [
+    {"sense": "smell", "text": "A warm, toasty scent that fills the kitchen."},
+    {"sense": "see", "text": "The spices darken a shade and coat the meat or onions evenly."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying them over a high heat or for too long, so that they scorch and turn bitter.",
+      "fix": "Lower the heat first and add the liquid as soon as they smell toasty."
+    },
+    {
+      "mistake": "Adding them with the liquid, so that they taste raw and dusty.",
+      "fix": "Give them their moment in the fat first."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/ground-spices", "tier": "drafted"},
+    {"thing": "ingredient/cumin", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/saute-pan", "equipment/dutch-oven", "equipment/frying-pan"],
+      "tier": "drafted"
+    },
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/temper-spices-in-hot-fat",
+      "differs": "Ground spices are stirred into the fat already in the pan with the meat or onions at a moderate heat, rather than whole seeds sizzled in a separate spoonful of very hot fat and poured over.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

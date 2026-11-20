@@ -11,7 +11,17 @@
     {"thing": "group/cooking-liquors", "tier": "drafted"}
   ],
   "teaches": [],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/onion-gravy",
+      "allows": true,
+      "when": ["dish/bangers-and-mash"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Choose a savoury pan sauce thick enough to coat the mash. It will lack the sweet softened onions.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

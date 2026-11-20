@@ -32,6 +32,15 @@
       "ratio": null,
       "caveat": "They are larger and creamier and can fall apart if cooked hard.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tinned-chickpeas",
+      "allows": true,
+      "when": ["dish/pasta-e-ceci"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "Choose butter beans that are already cooked and tinned. The same drained weight will thicken the soup when crushed, with a softer bite.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

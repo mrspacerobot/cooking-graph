@@ -1,0 +1,31 @@
+{
+  "id": "ingredient/birds-eye-chilli",
+  "tier": "drafted",
+  "names": {"en": "Bird's eye chilli"},
+  "aliases": {"en": ["bird's eye chili", "Thai chilli", "prik kee noo"]},
+  "plurals": {"en": "Bird's eye chillies"},
+  "uncountable": false,
+  "is_a": [
+    {"thing": "ingredient/chilli", "tier": "drafted"}
+  ],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A small, very hot fresh chilli. It is pounded with garlic or sliced thin, and a little goes a long way.",
+  "safety": {
+    "state": "unverified",
+    "contains": [],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/milk", "fact/molluscs", "fact/mustard",
+      "fact/peanuts", "fact/pork", "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites",
+      "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": "recipe/bazlama",
+  "tier": "drafted",
+  "names": {"en": "Bazlama", "tr": "Bazlama"},
+  "aliases": {},
+  "makes": "dish/bazlama",
+  "yields": {"value": 6, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/flour", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/yeast", "amount": {"value": 7, "unit": "gram"}, "forms": [], "part": "yeast"},
+    {"thing": "ingredient/plain-yogurt", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "yogurt"},
+    {"thing": "ingredient/water", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": ["equipment/mixing-bowl", "equipment/rolling-pin", "equipment/frying-pan", "equipment/stovetop"],
+  "steps": [
+    {
+      "technique": "technique/knead",
+      "works_on": ["preparation/bread-dough"],
+      "with": [
+        "ingredient/flour", "ingredient/yeast", "ingredient/plain-yogurt", "ingredient/water", "ingredient/salt"
+      ],
+      "text": "Stir the {yeast} into the lukewarm {water}. Mix the {flour} and the {salt} in a bowl, pour in the {water} and the {yogurt}, and knead until the dough is soft, smooth and only a little tacky.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/bread-dough"]
+    },
+    {
+      "technique": "technique/proof",
+      "works_on": ["preparation/bread-dough"],
+      "with": [],
+      "text": "Cover the bowl and leave the dough in a warm place until it has doubled and is light and puffy.",
+      "time": {"from": 60, "to": 90, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/roll-out",
+      "works_on": ["preparation/bread-dough"],
+      "with": ["ingredient/flour"],
+      "text": "Divide the dough into pieces of one size, shape each into a ball and rest them under a cloth. Roll each out on a board dusted with {flour} into a round about as thick as a finger.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/griddle",
+      "works_on": ["preparation/bread-dough"],
+      "with": [],
+      "text": "Heat a heavy dry pan over medium heat. Cook each round until the top puffs and the underside is spotted brown, then turn it and cook the other side. Wrap the breads in a cloth to keep them soft.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

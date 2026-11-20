@@ -1,0 +1,101 @@
+{
+  "id": "recipe/kiymali-ispanak",
+  "tier": "drafted",
+  "names": {"en": "Kiymali ispanak", "tr": "Kıymalı ıspanak"},
+  "aliases": {},
+  "makes": "dish/kiymali-ispanak",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/spinach", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "spinach"},
+    {"thing": "ingredient/minced-beef", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/rice", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/water", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    },
+    {"thing": "ingredient/plain-yogurt", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "yogurt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/dutch-oven", "equipment/colander", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/rinse",
+      "works_on": ["ingredient/spinach"],
+      "with": [],
+      "text": "Wash the {spinach} well and leave it to drain in a colander.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the {onion} finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/minced-beef"],
+      "with": ["ingredient/olive-oil", "ingredient/onion"],
+      "text": "Warm the {oil} in a large pot and soften the {onion} in it. Add the meat and fry it, breaking it up, until its liquid has cooked away and it browns.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["raw-meat-or-fish"],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-tomato-paste",
+      "works_on": ["ingredient/tomato-paste"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Stir in the {paste} and fry it, stirring, until it darkens a shade and smells sweet.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/wilt",
+      "works_on": ["ingredient/spinach"],
+      "with": [],
+      "text": "Add the {spinach} by handfuls, turning it until each lot wilts down and makes room for the next.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/spinach", "ingredient/minced-beef"],
+      "with": ["ingredient/rice", "ingredient/water", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Stir in the {rice}, the {water}, the {salt} and the {black-pepper}. Cover and simmer gently until the {rice} is tender. Check the meat against a trusted guide to doneness.",
+      "time": {"from": 18, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/spinach"],
+      "with": ["ingredient/plain-yogurt"],
+      "text": "Leave it to rest off the heat for a little while, then serve it warm[yogurt: with a spoonful of the {yogurt} on each plate].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

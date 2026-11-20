@@ -32,6 +32,15 @@
       "ratio": null,
       "caveat": "The fritter is paler and nuttier, and is ground from the soaked seed.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tinned-chickpeas",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/pasta-e-ceci", "dish/revithosoupa"],
+      "ratio": null,
+      "caveat": "Dried chickpeas need soaking and a longer simmer. Rinsing them like tinned ones will leave hard beans in the soup.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

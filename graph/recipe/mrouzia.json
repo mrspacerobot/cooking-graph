@@ -1,0 +1,89 @@
+{
+  "id": "recipe/mrouzia",
+  "tier": "drafted",
+  "names": {"en": "Mrouzia", "ar": "المروزية", "ar-Latn": "Mrouzia"},
+  "aliases": {},
+  "makes": "dish/mrouzia",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/lamb-shoulder",
+      "amount": {"value": 1000, "unit": "gram"},
+      "forms": ["form/large-pieces"],
+      "part": "lamb"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/grated"], "part": "onion"},
+    {
+      "thing": "preparation/ras-el-hanout",
+      "amount": {"value": 2, "unit": "teaspoon"},
+      "forms": [],
+      "part": "ras-el-hanout"
+    },
+    {"thing": "ingredient/ginger", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "ginger"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "cinnamon"},
+    {"thing": "ingredient/saffron", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "saffron"},
+    {"thing": "ingredient/water", "amount": {"value": 600, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/raisin", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "raisin"},
+    {"thing": "ingredient/honey", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "honey"},
+    {"thing": "ingredient/almond", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "almond"},
+    {"thing": "ingredient/oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon",
+    "equipment/dutch-oven", "equipment/tagine", "equipment/frying-pan", "equipment/slotted-spoon", "equipment/grater"
+  ],
+  "steps": [
+    {
+      "technique": "technique/bloom-ground-spices",
+      "works_on": ["preparation/ras-el-hanout"],
+      "with": ["ingredient/butter", "ingredient/ginger", "ingredient/cinnamon"],
+      "text": "Melt the {fat} in a heavy pot over a medium heat. Stir in the {ras-el-hanout}, the {ginger} and half the {cinnamon} for a few moments until they smell warm.",
+      "time": {"from": 30, "to": 60, "unit": "second"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/braise",
+      "works_on": ["ingredient/lamb-shoulder", "ingredient/onion"],
+      "with": ["ingredient/saffron", "ingredient/salt", "ingredient/water"],
+      "text": "Add the {lamb} and the {onion}[saffron: with the {saffron}] and the {salt}, and turn them in the spiced fat until coated. Pour in the {water}, bring to a simmer, cover and cook very gently, turning the meat now and then and adding a little more {water} if the pot dries, until the {lamb} is very tender. Check a piece against a trusted guide to doneness.",
+      "time": {"from": 105, "to": 120, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/reduce-with-honey",
+      "works_on": ["preparation/braising-liquid"],
+      "with": ["ingredient/raisin", "ingredient/honey", "ingredient/cinnamon", "ingredient/lamb-shoulder"],
+      "text": "Lift out the {lamb}. Stir the {raisin:plural}, the {honey} and the rest of the {cinnamon} into the sauce and boil it gently with the lid off, scraping the bottom, until the {raisin:plural} are plump and the sauce is dark, thick and sticky. Put the {lamb} back and turn it in the sauce.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-nuts-golden",
+      "works_on": ["ingredient/almond"],
+      "with": ["ingredient/oil"],
+      "text": "Fry the blanched {almond:plural} in the {oil}, stirring all the time, until gold, then drain them on paper.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/lamb-shoulder"],
+      "with": ["ingredient/almond"],
+      "text": "Serve the {lamb} in its sauce, scattered with the {almond:plural}, with bread.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

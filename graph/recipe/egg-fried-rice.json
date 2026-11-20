@@ -1,0 +1,90 @@
+{
+  "id": "recipe/egg-fried-rice",
+  "tier": "drafted",
+  "names": {"en": "Egg fried rice", "zh": "蛋炒饭", "zh-Latn": "Dàn chǎofàn"},
+  "aliases": {},
+  "makes": "dish/egg-fried-rice",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/rice",
+      "amount": {"value": 750, "unit": "gram"},
+      "forms": ["form/cooked-and-cooled"],
+      "part": "rice"
+    },
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/peas", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "peas"},
+    {"thing": "ingredient/white-pepper", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "white-pepper"},
+    {"thing": "ingredient/sesame-oil", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sesame-oil"}
+  ],
+  "equipment": [
+    "equipment/wok", "equipment/spatula", "equipment/mixing-bowl", "equipment/whisk", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/spring-onion"],
+      "with": [],
+      "text": "Slice the {spring-onion:plural} thinly and keep the white and green parts apart.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/salt"],
+      "text": "Beat the {egg:plural} with a little of the {salt}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/wok-scramble",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/oil"],
+      "text": "Heat the wok over high heat until it smokes, add half the {oil} and pour in the {egg:plural}. Let them puff, then push them around until they set in large, soft curds that are still a little wet. Tip them onto a plate.",
+      "time": {"from": 30, "to": 60, "unit": "second"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": ["ingredient/rice", "ingredient/peas"],
+      "with": ["ingredient/oil", "ingredient/spring-onion"],
+      "text": "Add the rest of the {oil}, the white parts of the {spring-onion:plural} and the {rice}[peas: , then the {peas:plural}]. Stir-fry, breaking up the clumps, until every grain is hot and separate and starts to jump in the wok. Day-old {rice} from the fridge fries best; freshly cooked {rice} turns sticky.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/rice"],
+      "with": ["ingredient/soy-sauce", "ingredient/salt", "ingredient/white-pepper"],
+      "text": "Drizzle the {soy} around the hot sides of the wok rather than onto the {rice}, toss, and season with the rest of the {salt} [white-pepper: and the {white-pepper}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/rice", "ingredient/egg"],
+      "with": ["ingredient/spring-onion", "ingredient/sesame-oil"],
+      "text": "Return the {egg:plural}, breaking them into pieces, add the green parts of the {spring-onion:plural} and toss once more. [sesame-oil: Finish with a few drops of {sesame-oil}.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

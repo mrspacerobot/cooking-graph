@@ -1,0 +1,36 @@
+{
+  "id": "ingredient/tarhana",
+  "tier": "drafted",
+  "names": {"en": "Tarhana", "tr": "Tarhana"},
+  "aliases": {"en": ["tarhana powder", "dried tarhana"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "A dried, fermented mix of wheat flour and yogurt with tomato, pepper and onion, crumbled or ground to a coarse powder and kept for the winter. Soaked in cold liquid and whisked smooth, it thickens a soup and gives it a sour, savoury depth. Dropped dry into hot liquid it forms lumps that do not soften.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/wheat", "basis": "It is made with wheat flour.", "certain": true},
+      {"fact": "fact/gluten", "basis": "It is made with wheat flour.", "certain": true},
+      {
+        "fact": "fact/milk",
+        "basis": "Most tarhana is made with yogurt, though a few regional kinds are not.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts", "fact/pork",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

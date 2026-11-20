@@ -1,0 +1,55 @@
+{
+  "id": "dish/turlu",
+  "tier": "drafted",
+  "names": {"en": "Turlu", "tr": "Türlü"},
+  "aliases": {"en": ["Turkish vegetable stew", "turlu guvec", "Turkish baked vegetable stew"]},
+  "is": "A summer stew of many vegetables, aubergine, courgette, green beans, potato and pepper, layered with onion and tomato and baked slowly in olive oil until soft and melting, sometimes with pieces of beef braised tender first.",
+  "parts": [
+    {"id": "aubergine", "role": "main", "options": ["ingredient/aubergine"], "optional": false, "tier": "drafted"},
+    {"id": "courgette", "role": "main", "options": ["ingredient/courgette"], "optional": false, "tier": "drafted"},
+    {"id": "green-beans", "role": "main", "options": ["ingredient/green-beans"], "optional": false, "tier": "drafted"},
+    {"id": "potato", "role": "main", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "green-pepper",
+      "role": "main",
+      "options": ["ingredient/green-pepper", "ingredient/bell-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tomato", "ingredient/tinned-tomatoes"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "paste", "role": "seasoning", "options": ["ingredient/tomato-paste"], "optional": false, "tier": "drafted"},
+    {
+      "id": "meat",
+      "role": "main",
+      "options": ["ingredient/stewing-beef", "ingredient/lamb-shoulder"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/dice", "tier": "drafted"},
+    {"thing": "technique/braise", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,9 @@
+{
+  "id": "group/thin-sliced-meat",
+  "tier": "drafted",
+  "names": {"en": "Thinly sliced meats"},
+  "aliases": {},
+  "shares": "Raw meat cut paper thin across the grain, sold in loose layered sheets. It cooks in moments in a pan or a simmering broth, and turns grey and tough when it is cooked on.",
+  "within": {"thing": "group/meat", "tier": "drafted"},
+  "stands_alone": null
+}

@@ -28,7 +28,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/doubanjiang",
+      "allows": false,
+      "when": [],
+      "not_when": ["technique/fry-the-paste"],
+      "ratio": null,
+      "caveat": "Red miso alone gives fermented bean flavour but neither the chilli heat nor the red oil the paste contributes.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],

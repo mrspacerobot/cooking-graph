@@ -1,0 +1,37 @@
+{
+  "id": "ingredient/japanese-curry-roux",
+  "tier": "drafted",
+  "names": {"en": "Japanese curry roux"},
+  "aliases": {"en": ["curry roux", "Japanese curry blocks", "curry roux blocks", "kare roux"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Hard blocks of fat, flour, curry powder and seasoning, sold in a tray. Broken in off the heat, they melt into a simmering broth and thicken it to a smooth, mild, slightly sweet curry sauce. The sauce catches on the bottom of the pot easily once it has thickened.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/gluten", "basis": "The roux is thickened with wheat flour.", "certain": true},
+      {"fact": "fact/wheat", "basis": "The roux is thickened with wheat flour.", "certain": true},
+      {"fact": "fact/milk", "basis": "Many brands hold milk powder or butter.", "certain": false},
+      {"fact": "fact/soy", "basis": "Many brands hold soy.", "certain": false},
+      {"fact": "fact/meat", "basis": "Some brands hold beef, pork or chicken extract.", "certain": false},
+      {"fact": "fact/pork", "basis": "Some brands are made with lard or pork extract.", "certain": false},
+      {"fact": "fact/sesame", "basis": "Some brands hold sesame.", "certain": false},
+      {"fact": "fact/celery", "basis": "Some curry powders hold celery seed.", "certain": false},
+      {"fact": "fact/mustard", "basis": "Some curry powders hold mustard.", "certain": false}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/crustaceans", "fact/egg", "fact/fish",
+      "fact/lupin", "fact/molluscs", "fact/peanuts", "fact/slaughter-product", "fact/sulphites", "fact/tree-nuts"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [
+    {"thing": "cuisine/japanese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

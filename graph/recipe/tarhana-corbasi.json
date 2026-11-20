@@ -1,0 +1,63 @@
+{
+  "id": "recipe/tarhana-corbasi",
+  "tier": "drafted",
+  "names": {"en": "Tarhana corbasi", "tr": "Tarhana çorbası"},
+  "aliases": {},
+  "makes": "dish/tarhana-corbasi",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/tarhana", "amount": {"value": 80, "unit": "gram"}, "forms": [], "part": "tarhana"},
+    {"thing": "ingredient/tomato-paste", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "paste"},
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "butter"},
+    {"thing": "ingredient/water", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/dried-mint", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "mint"},
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/mixing-bowl", "equipment/whisk", "equipment/wooden-spoon",
+    "equipment/ladle"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cook-tarhana",
+      "works_on": ["ingredient/tarhana"],
+      "with": ["ingredient/water"],
+      "text": "Stir the {tarhana} into a bowl with part of the cold {water} and leave it to soften, then whisk it until smooth with no lumps.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-tomato-paste",
+      "works_on": ["ingredient/tomato-paste"],
+      "with": ["ingredient/butter"],
+      "text": "Melt half of the {butter} in a pot over medium heat and fry the {paste} in it, stirring, until it darkens a shade and smells sweet.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-tarhana",
+      "works_on": ["ingredient/tarhana"],
+      "with": ["ingredient/water", "ingredient/salt"],
+      "text": "Pour in the rest of the {water} and whisk in the softened {tarhana} before it boils. Bring it up to a simmer, stirring all the time so that it does not catch, then simmer gently, stirring often, until it is smooth and coats a spoon. Season with the {salt}.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sizzle-chilli-butter",
+      "works_on": ["ingredient/butter", "ingredient/chili-flakes"],
+      "with": ["ingredient/dried-mint"],
+      "text": "Melt the rest of the {butter} in a small pan until it foams, then take it off the heat and stir in the {mint}[chilli: and the {chilli}]. Pour it over the soup in the bowls and serve.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

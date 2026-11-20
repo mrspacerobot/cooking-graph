@@ -1,0 +1,91 @@
+{
+  "id": "recipe/kritharoto",
+  "tier": "drafted",
+  "names": {"en": "Kritharoto", "el": "Κριθαρότο", "el-Latn": "Kritharoto"},
+  "aliases": {},
+  "makes": "dish/kritharoto",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/orzo", "amount": {"value": 350, "unit": "gram"}, "forms": [], "part": "orzo"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {
+      "thing": "ingredient/vegetable-stock",
+      "amount": {"value": 900, "unit": "millilitre"},
+      "forms": [],
+      "part": "stock"
+    },
+    {"thing": "ingredient/feta", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "feta"},
+    {"thing": "ingredient/basil", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/black-pepper", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "pepper"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/saucepan", "equipment/ladle", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the {onion} finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/garlic"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Soften the {onion} in the {oil} in a wide pan over a gentle heat, then add the {garlic} for a moment.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast-orzo",
+      "works_on": ["ingredient/orzo"],
+      "with": ["ingredient/olive-oil"],
+      "text": "Tip in the {orzo} and stir until the grains are pale gold and smell nutty.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/orzo"],
+      "with": ["ingredient/tinned-tomatoes", "ingredient/vegetable-stock", "ingredient/salt"],
+      "text": "Keep the {stock} hot in a small pan. Stir the {tomato} and the {salt} into the {orzo}, then add the {stock} a ladle at a time, stirring often and adding more as it is taken up, until the {orzo} is tender with a little bite and the sauce is loose and creamy.",
+      "time": {"from": 15, "to": 18, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/orzo"],
+      "with": ["ingredient/feta", "ingredient/black-pepper"],
+      "text": "Take the pan off the heat, crumble in most of the {feta}, add the {pepper} and stir until the cheese half melts into the sauce. Add a splash of {stock} if it is too thick.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/orzo"],
+      "with": ["ingredient/feta", "ingredient/basil"],
+      "text": "Spoon it into warm bowls, crumble over the rest of the {feta} and tear the {basil} over the top.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

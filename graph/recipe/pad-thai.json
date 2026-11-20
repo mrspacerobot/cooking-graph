@@ -1,0 +1,144 @@
+{
+  "id": "recipe/pad-thai",
+  "tier": "drafted",
+  "names": {"en": "Pad thai", "th": "ผัดไทย", "th-Latn": "Phat thai"},
+  "aliases": {},
+  "makes": "dish/pad-thai",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/rice-noodle", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "noodles"},
+    {"thing": "ingredient/water", "amount": {"value": 2, "unit": "litre"}, "forms": [], "part": "water"},
+    {
+      "thing": "ingredient/tamarind-paste",
+      "amount": {"value": 3, "unit": "tablespoon"},
+      "forms": [],
+      "part": "tamarind"
+    },
+    {"thing": "ingredient/fish-sauce", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "fish-sauce"},
+    {"thing": "ingredient/palm-sugar", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/firm-tofu", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "tofu"},
+    {"thing": "ingredient/garlic", "amount": {"value": 3, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/shallot", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "shallot"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/shrimp",
+      "amount": {"value": 250, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "prawns"
+    },
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/bean-sprout", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "bean-sprout"},
+    {"thing": "ingredient/peanut", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "peanut"},
+    {"thing": "ingredient/lime", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lime"},
+    {"thing": "ingredient/chili-flakes", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "chilli"}
+  ],
+  "equipment": [
+    "equipment/wok", "equipment/spatula", "equipment/saucepan", "equipment/mixing-bowl", "equipment/colander",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/soak-rice-noodles",
+      "works_on": ["ingredient/rice-noodle"],
+      "with": ["ingredient/water"],
+      "text": "Cover the {noodles:plural} with warm {water} and leave them until they bend easily but are still white and firm at the core: they finish cooking in the wok. Drain them.",
+      "time": {"from": 20, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-sauce",
+      "works_on": [],
+      "with": ["ingredient/tamarind-paste", "ingredient/fish-sauce", "ingredient/palm-sugar"],
+      "text": "Warm the {tamarind}, the {fish-sauce} and the {sugar} together in a small pan, stirring, until the {sugar} dissolves. Taste: it should be sour, salty and sweet at once. A jar of ready-made pad thai sauce is the shortcut many home cooks use instead.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/press-tofu",
+      "works_on": ["ingredient/firm-tofu"],
+      "with": [],
+      "text": "[tofu: Press the {tofu} between kitchen paper, then cut it into small cubes.]",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/shallot", "ingredient/spring-onion"],
+      "with": [],
+      "text": "Slice the {shallot:plural} thinly and cut the {spring-onion:plural} into short lengths.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/garlic"],
+      "with": [],
+      "text": "Finely chop the {garlic}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": [],
+      "with": [
+        "ingredient/oil", "ingredient/garlic", "ingredient/shallot", "ingredient/firm-tofu", "ingredient/shrimp"
+      ],
+      "text": "Heat the {oil} in a wok over high heat. Fry the {garlic} and the {shallot:plural} until fragrant[tofu: , add the {tofu} and fry until golden], then add the {prawns:plural} and toss until they have just turned opaque. Check one against a trusted guide to doneness.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/rice-noodle"],
+      "with": ["ingredient/water"],
+      "text": "Add the {noodles:plural} and the sauce and toss until the {noodles:plural} soak it up and turn soft and chewy. Add a splash of {water} if they stick or are still firm.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/wok-scramble",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Push everything aside, crack in the {egg:plural}, let them set a little, then scramble them and fold them through.",
+      "time": {"value": 1, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/spring-onion"],
+      "with": ["ingredient/bean-sprout"],
+      "text": "Add most of the {bean-sprout:plural} and the {spring-onion:plural}, toss once and take the wok off the heat.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/rice-noodle"],
+      "with": ["ingredient/bean-sprout", "ingredient/peanut", "ingredient/lime", "ingredient/chili-flakes"],
+      "text": "Serve with the rest of the {bean-sprout:plural}, the roughly chopped {peanut:plural} and the {lime} in wedges [chilli: and the {chilli} for each person to add].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

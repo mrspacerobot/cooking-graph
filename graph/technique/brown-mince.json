@@ -1,0 +1,54 @@
+{
+  "id": "technique/brown-mince",
+  "tier": "drafted",
+  "names": {"en": "Brown mince"},
+  "aliases": {
+    "en": ["brown minced meat", "brown the mince", "brown ground beef", "brown ground meat", "brown the meat"]
+  },
+  "does": "Fries minced meat over a high heat, broken into small crumbs, until the water it sheds has cooked away and the crumbs turn brown. The browning gives a sauce, a pie filling or a chili its deep, meaty base.",
+  "intro": null,
+  "how": [
+    "Heat a little oil in a wide, heavy pan until it shimmers.",
+    "Add the mince and press it flat. Leave it to colour underneath before you break it up.",
+    "Break it into small crumbs with a wooden spoon and stir only now and then, so that it browns and does not stew.",
+    "Keep frying after the liquid has bubbled away, until the crumbs are brown and crisp at the edges. Spoon off excess fat."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A wet bubbling at first that turns into a dry, steady sizzle once the liquid is gone."},
+    {"sense": "see", "text": "Brown crumbs with darker edges, and no grey liquid left in the pan."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Tipping a large amount of mince into a small or cool pan, so that it stews grey in its own juice.",
+      "fix": "Use the widest pan you have, heat it well, and brown in batches if the pan is crowded."
+    },
+    {
+      "mistake": "Stirring all the time, so that no side ever touches the pan long enough to brown.",
+      "fix": "Let the meat sit, then turn it, then let it sit again."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/minced-meat", "tier": "drafted"},
+    {"thing": "ingredient/italian-sausage", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {
+      "role": "vessel",
+      "options": ["equipment/frying-pan", "equipment/saute-pan", "equipment/dutch-oven"],
+      "tier": "drafted"
+    },
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/sear",
+      "differs": "The meat is in small crumbs that are broken up and moved now and then, and the liquid it sheds must cook off before it browns, rather than a whole piece left still in a hot pan.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

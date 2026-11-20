@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/dashi-granules",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/gyudon"],
+      "ratio": null,
+      "caveat": "A piece of kombu must be steeped and removed. It cannot dissolve into the broth and will not give the smoky bonito flavour.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/japanese", "tier": "drafted"}
   ],

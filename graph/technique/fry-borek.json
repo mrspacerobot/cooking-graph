@@ -1,0 +1,93 @@
+{
+  "id": "technique/fry-borek",
+  "tier": "drafted",
+  "names": {"en": "Fry borek", "tr": "Börek kızartmak"},
+  "aliases": {"en": ["fry sigara boregi", "fry cigar borek", "fry pastry rolls"]},
+  "does": "Fries rolls or parcels of thin pastry in a layer of hot oil, seam side down first, turning them until they are evenly golden and crisp, then drains them on paper.",
+  "intro": {
+    "what": "Frying börek cooks thin-pastry rolls in a layer of hot oil until crisp and golden.",
+    "why": "It teaches how thin pastry crisps fast in hot oil and burns just as fast.",
+    "idea": "Fast crisp pastry",
+    "tier": "drafted"
+  },
+  "how": [
+    "Heat oil in a frying pan to about the depth of a finger, until a scrap of pastry sizzles at once.",
+    "Lay the rolls in seam side down, so that the seam sets first and stays shut.",
+    "Fry a few at a time, turning them until golden on every side.",
+    "Lift them out onto paper to drain, and serve them warm."
+  ],
+  "cues": [
+    {"sense": "hear", "text": "A brisk sizzle the moment a roll goes in."},
+    {"sense": "see", "text": "An even, pale gold colour all round, with no dark ends."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Frying in oil that is not hot, so that the pastry drinks oil and turns greasy.",
+      "fix": "Test with a scrap of pastry first."
+    },
+    {"mistake": "Crowding the pan, so that the oil cools and the rolls stick together.", "fix": "Fry a few at a time."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why put the rolls in seam side down?",
+      "choices": ["So the seam sets first and stays shut.", "So they cook faster.", "So they soak up less oil."],
+      "answer": 0,
+      "because": "The seam sets in the hot oil and holds the roll closed.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How many rolls go in at once?",
+      "choices": ["All of them.", "A few, with room between them.", "Only one."],
+      "answer": 1,
+      "because": "A crowded pan cools the oil and the rolls stick.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "When is a roll done?",
+      "choices": [
+        "When it is pale and soft.",
+        "When the ends are black.",
+        "When it is evenly golden and crisp all round."
+      ],
+      "answer": 2,
+      "because": "Thin pastry is done once it is golden and crisp.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The rolls come out greasy. What should change?",
+      "choices": ["Heat the oil until a scrap sizzles at once.", "Lower the heat.", "Fry them longer."],
+      "answer": 0,
+      "because": "Hot oil seals the pastry fast so it does not soak.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/phyllo", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/sunflower-oil", "ingredient/oil"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/roll-a-cigar-borek",
+      "why": "The rolls are shaped and sealed before they meet the oil.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/pan-fry",
+      "differs": "Rolls of thin pastry go seam side down into a deeper layer of oil and are turned until evenly golden. Only the pastry needs to crisp and the filling to melt.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ]
+}

@@ -23,7 +23,26 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/sichuan-pepper",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/mapo-tofu"],
+      "ratio": null,
+      "caveat": "Black pepper is pungent but gives neither the citrus aroma nor the tingling sensation of Sichuan pepper.",
+      "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/white-pepper",
+      "allows": true,
+      "when": ["dish/egg-fried-rice"],
+      "not_when": ["dish/hot-and-sour-soup"],
+      "ratio": null,
+      "caveat": "Finely ground black pepper gives a woodier heat and leaves dark flecks.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/french", "tier": "drafted"}
   ],

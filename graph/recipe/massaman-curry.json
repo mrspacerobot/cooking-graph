@@ -1,0 +1,152 @@
+{
+  "id": "recipe/massaman-curry",
+  "tier": "drafted",
+  "names": {"en": "Massaman curry", "th": "แกงมัสมั่น", "th-Latn": "Kaeng matsaman"},
+  "aliases": {},
+  "makes": "dish/massaman-curry",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/stewing-beef", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "beef"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/coconut-milk",
+      "amount": {"value": 800, "unit": "millilitre"},
+      "forms": [],
+      "part": "coconut-milk"
+    },
+    {
+      "thing": "ingredient/massaman-curry-paste",
+      "amount": {"value": 4, "unit": "tablespoon"},
+      "forms": [],
+      "part": "paste"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {
+      "thing": "ingredient/tamarind-paste",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "tamarind"
+    },
+    {"thing": "ingredient/fish-sauce", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "fish-sauce"},
+    {"thing": "ingredient/palm-sugar", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "sugar"},
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 500, "unit": "gram"},
+      "forms": ["form/peeled"],
+      "part": "potato"
+    },
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "onion"},
+    {"thing": "ingredient/peanut", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "peanut"},
+    {"thing": "ingredient/jasmine-rice", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/water", "amount": {"value": 450, "unit": "millilitre"}, "forms": [], "part": "rice-water"}
+  ],
+  "equipment": [
+    "equipment/dutch-oven", "equipment/saucepan", "equipment/wooden-spoon", "equipment/chefs-knife",
+    "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/trim",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": [],
+      "text": "Trim the {beef} of hard fat and cut it into large chunks.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sear",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/oil"],
+      "text": "Heat the {oil} in a heavy pot and brown the {beef} in batches until coloured on all sides. Lift it out.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-the-paste",
+      "works_on": ["ingredient/massaman-curry-paste"],
+      "with": ["ingredient/coconut-milk"],
+      "text": "Spoon the thick cream from the top of the {coconut-milk} into the pot and let it bubble until it starts to split and look oily. Stir in the {paste} and fry, stirring, until it smells rich and the fat turns red. Nearly every home cook uses a bought {paste}; strength varies from brand to brand, so taste before adding more.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": [
+        "ingredient/coconut-milk", "ingredient/water", "ingredient/tamarind-paste", "ingredient/fish-sauce",
+        "ingredient/palm-sugar"
+      ],
+      "text": "Return the {beef}, pour in the rest of the {coconut-milk} and the {water}, and add the {tamarind}, the {fish-sauce} and the {sugar}. Cover and simmer gently until the {beef} is nearly tender.",
+      "time": {"from": 1, "to": 1.5, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cut-into-chunks",
+      "works_on": ["ingredient/potato"],
+      "with": [],
+      "text": "Cut the {potato:plural} into large chunks.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Cut the {onion} into thick wedges.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/potato", "ingredient/onion", "ingredient/stewing-beef"],
+      "with": ["ingredient/peanut"],
+      "text": "Add the {potato:plural}, the {onion} and half the {peanut:plural}, and simmer uncovered until the {potato:plural} are tender and the sauce has thickened. Check the {beef} against a trusted guide to doneness.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-rice",
+      "works_on": [],
+      "with": ["ingredient/jasmine-rice", "ingredient/water"],
+      "text": "Rinse the {rice} well in a sieve, drain it, and put it in a pan with the {rice-water}. Bring it to a boil, cover, turn the heat to its lowest and cook until the {rice-water} is taken up. Leave it covered off the heat until you serve.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/stewing-beef"],
+      "with": ["ingredient/fish-sauce", "ingredient/palm-sugar", "ingredient/tamarind-paste"],
+      "text": "Taste and balance with a little more {fish-sauce}, {sugar} or {tamarind}: it should be sweet, salty and gently sour.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/stewing-beef", "ingredient/jasmine-rice"],
+      "with": ["ingredient/peanut"],
+      "text": "Serve with the {rice}, scattered with the rest of the {peanut:plural}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

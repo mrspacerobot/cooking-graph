@@ -1,0 +1,63 @@
+{
+  "id": "dish/kotopoulo-me-kritharaki",
+  "tier": "drafted",
+  "names": {"en": "Kotopoulo me kritharaki", "el": "Κοτόπουλο με κριθαράκι", "el-Latn": "Kotopoulo me kritharaki"},
+  "aliases": {
+    "en": [
+      "greek chicken with orzo",
+      "chicken giouvetsi",
+      "baked chicken and orzo",
+      "kotopoulo giouvetsi",
+      "chicken youvetsi"
+    ]
+  },
+  "is": "Chicken browned and simmered in a tomato sauce warm with cinnamon, then baked in the oven with orzo stirred into the sauce and hot stock, until the pasta has taken up the liquid. It is finished with grated hard cheese.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken-thigh", "ingredient/chicken"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "orzo", "role": "base", "options": ["ingredient/orzo"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tinned-tomatoes", "ingredient/tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "cinnamon", "role": "seasoning", "options": ["ingredient/cinnamon"], "optional": false, "tier": "drafted"},
+    {"id": "bay", "role": "aromatic", "options": ["ingredient/bay-leaf"], "optional": true, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/chicken-stock", "ingredient/vegetable-stock", "ingredient/water"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "cheese",
+      "role": "topping",
+      "options": ["ingredient/kefalotyri", "ingredient/parmesan", "ingredient/pecorino"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "pepper", "role": "seasoning", "options": ["ingredient/black-pepper"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/sweat", "tier": "drafted"},
+    {"thing": "technique/simmer", "tier": "drafted"},
+    {"thing": "technique/bake-orzo-in-sauce", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ],
+  "same_as": []
+}

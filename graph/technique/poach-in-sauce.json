@@ -1,0 +1,102 @@
+{
+  "id": "technique/poach-in-sauce",
+  "tier": "drafted",
+  "names": {"en": "Poach in sauce"},
+  "aliases": {"en": ["poach fish in sauce", "poach eggs in sauce", "cook in the sauce"]},
+  "does": "Lays delicate raw food, such as fish fillets or whole eggs, into a gently simmering sauce and covers the pan, so that it cooks gently in the sauce it is served with.",
+  "intro": {
+    "what": "The sauce is the poaching liquid and is served with the food.",
+    "why": "The lid traps steam that cooks the top while the gentle sauce cooks the base, and the juices flavour the sauce.",
+    "idea": "Gentle heat, lid on",
+    "tier": "drafted"
+  },
+  "how": [
+    "Bring the sauce to a gentle simmer in a wide pan with a lid; it should be thick enough to hold its shape.",
+    "Make room for the food: lay fillets in a single layer, or make hollows with a spoon for eggs.",
+    "Spoon a little sauce over, cover, and keep the heat low so the sauce only blips.",
+    "Take it off the heat as soon as the food is just set."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "Fish turns opaque and flakes when pressed; egg whites turn white and set while the yolks stay soft."
+    },
+    {"sense": "hear", "text": "The sauce only blips under the lid, never boils hard."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "A hard boil, so fish breaks up and eggs turn rubbery.",
+      "fix": "Keep the heat low and the sauce barely bubbling."
+    },
+    {
+      "mistake": "A thin sauce, so the food stews in liquid.",
+      "fix": "Simmer the sauce until thick before the food goes in."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why is the pan covered?",
+      "choices": ["The steam cooks the top of the food.", "To keep the sauce red.", "To stop it from thickening."],
+      "answer": 0,
+      "because": "The food sits half in the sauce; steam cooks the top.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "How hard should the sauce bubble?",
+      "choices": ["A rolling boil.", "Only a gentle blip.", "Not at all: it should be cold."],
+      "answer": 1,
+      "because": "Gentle heat keeps fish whole and eggs soft.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "When are eggs done?",
+      "choices": [
+        "When the whites are set and the yolks still soft, or as firm as you like.",
+        "When the yolks are hard and grey.",
+        "When the whites are still clear."
+      ],
+      "answer": 0,
+      "because": "Take them off once the whites set.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The fish fell apart in the pan. What would you change?",
+      "choices": [
+        "Keep the heat lower and move the fish less.",
+        "Boil the sauce harder.",
+        "Stir the fish into the sauce."
+      ],
+      "answer": 0,
+      "because": "Gentle heat and little handling keep fillets whole.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"},
+    {"thing": "group/lean-fish", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/frying-pan", "equipment/saute-pan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {
+      "thing": "technique/make-a-tomato-sauce",
+      "why": "The sauce is made and thickened before the food goes in.",
+      "tier": "drafted"
+    }
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/poach",
+      "differs": "The liquid is a thick sauce that is served with the food; the food sits half in it and the lid's steam cooks the top.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": []
+}

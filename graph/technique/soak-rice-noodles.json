@@ -1,0 +1,45 @@
+{
+  "id": "technique/soak-rice-noodles",
+  "tier": "drafted",
+  "names": {"en": "Soak rice noodles"},
+  "aliases": {"en": ["soak noodles", "soften rice noodles"]},
+  "does": "Softens dried rice noodles in warm water until they bend but are still firm at the core, so that they finish cooking in the wok.",
+  "intro": null,
+  "how": [
+    "Put the noodles in a large bowl and cover with warm water from the tap, not boiling.",
+    "Leave them until they are soft and bendy but still white and firm in the middle.",
+    "Drain them well and toss with a little oil so that they do not stick."
+  ],
+  "cues": [
+    {"sense": "feel", "text": "A noodle bends around your finger but still has a firm core when bitten."},
+    {"sense": "see", "text": "The strands turn from glassy to opaque white."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Soaking in boiling water or for too long, so the noodles turn mushy and break in the wok.",
+      "fix": "Use warm water and drain while they are still firm."
+    },
+    {"mistake": "Leaving drained noodles to sit, so they glue together.", "fix": "Toss them with a little oil."}
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/rice-noodles", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"},
+    {"role": "liquid", "options": ["ingredient/water"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/colander"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/soak",
+      "differs": "The soak is short and in warm water, and stops while the noodles are still firm so that the wok finishes them.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/thai", "tier": "drafted"}
+  ]
+}

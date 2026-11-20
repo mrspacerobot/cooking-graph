@@ -21,7 +21,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/makrut-lime-leaf",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/thai-green-curry"],
+      "ratio": null,
+      "caveat": "Curry leaves have a savoury, nutty aroma and do not give the floral lime fragrance called for in this curry.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/indian", "tier": "drafted"}
   ],

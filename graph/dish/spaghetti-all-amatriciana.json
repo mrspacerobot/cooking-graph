@@ -2,10 +2,24 @@
   "id": "dish/spaghetti-all-amatriciana",
   "tier": "drafted",
   "names": {"en": "Spaghetti all'amatriciana", "fr": "Spaghetti à l'amatriciana"},
-  "aliases": {"en": ["spaghetti amatriciana", "pasta all'amatriciana"]},
+  "aliases": {
+    "en": [
+      "spaghetti amatriciana",
+      "pasta all'amatriciana",
+      "bucatini all'amatriciana",
+      "amatriciana",
+      "pasta amatriciana"
+    ]
+  },
   "is": "Spaghetti in a sauce from the hills of Amatrice: cured pork jowl rendered until its fat runs, then a quick tomato sauce with a little chilli cooked in that fat, and sharp grated sheep's cheese over the top.",
   "parts": [
-    {"id": "pasta", "role": "main", "options": ["ingredient/spaghetti"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pasta",
+      "role": "main",
+      "options": ["ingredient/spaghetti", "ingredient/bucatini"],
+      "optional": false,
+      "tier": "drafted"
+    },
     {"id": "guanciale", "role": "filling", "options": ["ingredient/guanciale"], "optional": false, "tier": "drafted"},
     {"id": "sauce", "role": "sauce", "options": ["preparation/tomato-sauce"], "optional": false, "tier": "drafted"},
     {"id": "cheese", "role": "topping", "options": ["ingredient/pecorino"], "optional": false, "tier": "drafted"},

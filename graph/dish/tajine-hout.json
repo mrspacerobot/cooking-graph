@@ -1,0 +1,53 @@
+{
+  "id": "dish/tajine-hout",
+  "tier": "drafted",
+  "names": {"en": "Tajine hout", "fr": "Tajine de poisson", "ar": "طاجين الحوت", "ar-Latn": "Tajine hout"},
+  "aliases": {"en": ["moroccan fish tagine", "fish tagine with chermoula", "tagine hout", "fish tagine"]},
+  "is": "A Moroccan fish tagine: thick pieces of white fish marinated in chermoula, laid on a bed of sliced potato, tomato and pepper spread with more chermoula, and cooked covered in a little water until the vegetables are tender and the fish flakes.",
+  "parts": [
+    {
+      "id": "fish",
+      "role": "main",
+      "options": ["ingredient/white-fish", "ingredient/hake", "ingredient/sea-bass"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "chermoula",
+      "role": "seasoning",
+      "options": ["preparation/chermoula"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "potato", "role": "side", "options": ["ingredient/potato"], "optional": false, "tier": "drafted"},
+    {"id": "tomato", "role": "side", "options": ["ingredient/tomato"], "optional": false, "tier": "drafted"},
+    {
+      "id": "pepper",
+      "role": "side",
+      "options": ["ingredient/bell-pepper", "ingredient/red-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lemon", "role": "garnish", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "olives",
+      "role": "garnish",
+      "options": ["ingredient/green-olive", "ingredient/olive"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "potato-water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/make-chermoula", "tier": "drafted"},
+    {"thing": "technique/marinate-in-chermoula", "tier": "drafted"},
+    {"thing": "technique/layer", "tier": "drafted"},
+    {"thing": "technique/braise", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ],
+  "same_as": []
+}

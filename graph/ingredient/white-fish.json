@@ -24,7 +24,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/cod",
+      "allows": true,
+      "when": ["dish/merluzzo-alla-livornese", "technique/poach-in-sauce"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Choose a mild, firm white fish in thick portions and check it against a trusted guide to doneness.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

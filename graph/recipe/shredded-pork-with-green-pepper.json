@@ -1,0 +1,85 @@
+{
+  "id": "recipe/shredded-pork-with-green-pepper",
+  "tier": "drafted",
+  "names": {"en": "Shredded pork with green pepper", "zh": "青椒肉丝", "zh-Latn": "Qīngjiāo ròusī"},
+  "aliases": {},
+  "makes": "dish/shredded-pork-with-green-pepper",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-loin", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "pork"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 1.5, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/shaoxing-wine", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "wine"},
+    {"thing": "ingredient/cornstarch", "amount": {"value": 6, "unit": "gram"}, "forms": [], "part": "cornflour"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/green-pepper", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "pepper"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/ginger", "amount": {"value": 10, "unit": "gram"}, "forms": [], "part": "ginger"},
+    {"thing": "ingredient/salt", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/wok", "equipment/spatula", "equipment/mixing-bowl", "equipment/chefs-knife", "equipment/cutting-board",
+    "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/velvet",
+      "works_on": ["ingredient/pork-loin"],
+      "with": ["ingredient/soy-sauce", "ingredient/shaoxing-wine", "ingredient/cornstarch", "ingredient/oil"],
+      "text": "Cut the {pork} into thin slices, then into thin strips. Mix it with half the {soy}, the {wine} and the {cornflour}, then stir in a little of the {oil} to keep the strips apart. Leave it while you prepare the rest.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/green-pepper"],
+      "with": [],
+      "text": "Seed the {pepper:plural} and cut them into strips as thin as the meat.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mince",
+      "works_on": ["ingredient/garlic", "ingredient/ginger"],
+      "with": [],
+      "text": "Slice the {garlic} thinly[ginger: and cut the {ginger} into fine shreds].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": [],
+      "with": ["ingredient/pork-loin", "ingredient/oil"],
+      "text": "Heat most of the {oil} in a wok until it shimmers. Add the {pork} and stir-fry, separating the strips, until they turn pale all over. Tip them onto a plate.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": ["ingredient/green-pepper"],
+      "with": ["ingredient/oil", "ingredient/garlic", "ingredient/ginger", "ingredient/salt"],
+      "text": "Add the rest of the {oil}, then the {garlic}[ginger: and the {ginger}] and, a moment later, the {pepper:plural} with the {salt}. Stir-fry until they are bright and just tender but still crisp.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/pork-loin", "ingredient/green-pepper"],
+      "with": ["ingredient/soy-sauce"],
+      "text": "Return the {pork}, add the rest of the {soy} and toss over high heat until everything is glossy and hot. Check a strip against a trusted guide to doneness, and serve with rice.",
+      "time": null,
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    }
+  ]
+}

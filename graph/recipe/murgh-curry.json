@@ -1,0 +1,115 @@
+{
+  "id": "recipe/murgh-curry",
+  "tier": "drafted",
+  "names": {"en": "Murgh curry"},
+  "aliases": {},
+  "makes": "dish/murgh-curry",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-thigh", "amount": {"value": 800, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/chopped"], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 5, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/ginger", "amount": {"value": 25, "unit": "gram"}, "forms": ["form/grated"], "part": "ginger"},
+    {"thing": "ingredient/turmeric", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "turmeric"},
+    {
+      "thing": "ingredient/red-chilli-powder",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "chilli-powder"
+    },
+    {
+      "thing": "ingredient/coriander-seed",
+      "amount": {"value": 2, "unit": "teaspoon"},
+      "forms": [],
+      "part": "ground-coriander"
+    },
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {
+      "thing": "preparation/garam-masala",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "garam-masala"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 250, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1.5, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 6, "unit": "sprig"}, "forms": [], "part": "coriander"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon",
+    "equipment/dutch-oven", "equipment/grater"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cut-into-small-pieces",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Cut the skinless {chicken} into large bite-sized pieces.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/temper-spices-in-hot-fat",
+      "works_on": ["ingredient/cumin"],
+      "with": ["ingredient/oil"],
+      "text": "Heat the {oil} in a heavy pot over a medium-high heat and add the {cumin}. Let it crackle and darken a shade.",
+      "time": {"from": 30, "to": 45, "unit": "second"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-onions-golden",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Add the {onion} and fry, stirring now and then, until it is soft and a deep gold.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bloom-ground-spices",
+      "works_on": ["ingredient/turmeric", "ingredient/red-chilli-powder"],
+      "with": ["ingredient/garlic", "ingredient/ginger", "ingredient/coriander-seed", "ingredient/water"],
+      "text": "Stir in the {garlic} and the {ginger} and cook until the raw smell goes. Lower the heat, add the {turmeric}, the {chilli-powder} and the ground {ground-coriander}, and stir for a few moments. Add a splash of the {water} if they catch.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-masala-base",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/tinned-tomatoes", "ingredient/salt", "ingredient/oil"],
+      "text": "Add the {tomato} and the {salt}, mash them down and cook, stirring often, until the masala is a thick paste and the {oil} separates at its edge.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-in-masala-gravy",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": [],
+      "text": "Add the {chicken} and turn it in the masala over a high heat until every piece is coated and has lost its raw look. Pour in the rest of the {water}, bring it to a simmer, cover and cook gently, stirring now and then, until the {chicken} is tender and the gravy has thickened. Check the thickest piece against a trusted guide to doneness.",
+      "time": {"from": 20, "to": 25, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/garnish",
+      "works_on": ["ingredient/chicken-thigh"],
+      "with": ["preparation/garam-masala", "ingredient/coriander-leaf"],
+      "text": "Stir in the {garam-masala}, taste for {salt}, and scatter with the chopped {coriander}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

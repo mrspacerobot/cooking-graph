@@ -1,0 +1,87 @@
+{
+  "id": "technique/cook-a-frittata",
+  "tier": "drafted",
+  "names": {"en": "Cook a frittata", "it": "cuocere la frittata"},
+  "aliases": {"en": ["cook egg slowly in a pan", "make a frittata", "cook a flat omelette"]},
+  "does": "Sets beaten egg mixed with cooked vegetables or cheese slowly in a frying pan over low heat, without stirring, into a thick flat cake that is turned once.",
+  "intro": {
+    "what": "A frittata is set slowly, flat, and never stirred.",
+    "why": "Low heat sets the thick cake right through while the base turns just golden, not brown and rubbery.",
+    "idea": "Low and slow, no stirring",
+    "tier": "drafted"
+  },
+  "how": [
+    "Have the filling cooked and spread evenly in an oiled pan.",
+    "Pour in the beaten egg and turn the heat to low.",
+    "Leave it alone. Run a spatula round the edge now and then and tilt the pan so a little loose egg runs under.",
+    "When the base and the edges are set and only the top is runny, turn it over with a plate, or finish the top under a grill."
+  ],
+  "cues": [
+    {
+      "sense": "see",
+      "text": "The edges are set and pulling away from the pan and only a thin layer on top still shines."
+    },
+    {"sense": "smell", "text": "A gentle smell of browning egg, never of burning."}
+  ],
+  "mistakes": [
+    {"mistake": "Too high a heat, so the base burns before the middle sets.", "fix": "Cook it slowly, on low."},
+    {"mistake": "Stirring the egg, so it turns into scrambled egg.", "fix": "Leave it to set in one piece."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why is a frittata cooked on low heat?",
+      "choices": [
+        "So the middle sets before the base burns.",
+        "So it rises like a soufflé.",
+        "So the cheese does not melt."
+      ],
+      "answer": 0,
+      "because": "A thick egg cake needs time to set through.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What do you do while it cooks?",
+      "choices": ["Stir it often.", "Leave it, loosening the edge now and then.", "Cover it with water."],
+      "answer": 1,
+      "because": "Stirring makes scrambled egg.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "When is it ready to turn?",
+      "choices": [
+        "When it is still liquid all through.",
+        "When the edges and base are set and only the top is runny.",
+        "When the top is brown."
+      ],
+      "answer": 1,
+      "because": "Turn it when only the top is still loose.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The base was dark and the middle still raw. What would you change?",
+      "choices": ["Cook it on a lower heat for longer.", "Stir it more.", "Use more oil."],
+      "answer": 0,
+      "because": "Slow heat evens out the cooking.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/egg", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/non-stick-pan", "equipment/frying-pan"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/whisk", "why": "The eggs are beaten before they go into the pan.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "recipe/pad-kaphrao-gai",
+  "tier": "drafted",
+  "names": {"en": "Pad kaphrao gai", "th": "ผัดกะเพราไก่", "th-Latn": "Phat kaphrao kai"},
+  "aliases": {},
+  "makes": "dish/pad-kaphrao-gai",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/garlic", "amount": {"value": 5, "unit": "clove"}, "forms": [], "part": "garlic"},
+    {"thing": "ingredient/birds-eye-chilli", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "chilli"},
+    {"thing": "ingredient/oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/oil", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/minced-chicken", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {
+      "thing": "ingredient/oyster-sauce",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "oyster-sauce"
+    },
+    {"thing": "ingredient/fish-sauce", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "fish-sauce"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "soy"},
+    {"thing": "ingredient/dark-soy-sauce", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "dark-soy"},
+    {"thing": "ingredient/sugar", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/water", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/holy-basil", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/egg", "amount": {"value": 4, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/jasmine-rice", "amount": {"value": 300, "unit": "gram"}, "forms": [], "part": "rice"},
+    {"thing": "ingredient/water", "amount": {"value": 450, "unit": "millilitre"}, "forms": [], "part": "rice-water"}
+  ],
+  "equipment": [
+    "equipment/wok", "equipment/spatula", "equipment/mortar-and-pestle", "equipment/saucepan",
+    "equipment/slotted-spoon", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/cook-rice",
+      "works_on": [],
+      "with": ["ingredient/jasmine-rice", "ingredient/water"],
+      "text": "Rinse the {rice} well in a sieve, drain it, and put it in a pan with the {rice-water}. Bring it to a boil, cover, turn the heat to its lowest and cook until the {rice-water} is taken up. Leave it covered off the heat until you serve.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pound",
+      "works_on": ["ingredient/garlic"],
+      "with": ["ingredient/birds-eye-chilli"],
+      "text": "Pound the {garlic} and the {chilli:plural} to a coarse paste in a mortar.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/minced-chicken"],
+      "with": ["ingredient/oil", "ingredient/garlic", "ingredient/birds-eye-chilli"],
+      "text": "Heat the smaller amount of {oil} in a wok over high heat. Fry the pounded paste for a moment until fragrant, then add the {chicken} and fry, breaking it up, until it is browned in places. Check it against a trusted guide to doneness.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": [],
+      "with": [
+        "ingredient/minced-chicken", "ingredient/oyster-sauce", "ingredient/fish-sauce", "ingredient/soy-sauce",
+        "ingredient/dark-soy-sauce", "ingredient/sugar", "ingredient/water", "ingredient/holy-basil"
+      ],
+      "text": "Add the {oyster-sauce}, the {fish-sauce}, the {soy}[dark-soy: , the {dark-soy}] and the {sugar} with the {water}, and toss until the meat is glossy and the wok nearly dry. Throw in the {basil}, toss just until it wilts, and take the wok off the heat. When it cannot be found, Thai basil is the usual stand-in and tastes sweeter.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-a-crispy-egg",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/oil"],
+      "text": "[egg: In a clean wok heat the larger amount of {oil} until it shimmers. Crack an {egg} into a small bowl, slide it in and spoon the hot fat over it until the edges are brown, lacy and crisp but the yolk is still runny. Lift it out to drain and fry the rest the same way.]",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/minced-chicken", "ingredient/jasmine-rice"],
+      "with": ["ingredient/egg"],
+      "text": "Serve the stir-fry over the {rice}[egg: , each plate topped with a crisp {egg}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

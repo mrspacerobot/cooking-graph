@@ -37,6 +37,15 @@
       "ratio": null,
       "caveat": "The little tubes stay firm in a thick soup and hold broth inside.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/mixed-pasta",
+      "allows": true,
+      "when": ["dish/pasta-e-patate", "technique/cook-pasta-in-the-soup"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "Use the same dry weight. The pieces will cook more evenly and there will be less variety in the bite.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

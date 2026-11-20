@@ -33,6 +33,15 @@
       "ratio": {"stand_in": 1, "original": 1, "by": "volume"},
       "caveat": "A little sour, and thicker from the start. Unlike cream, it can boil with wine or mustard without splitting.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/sour-cream",
+      "allows": true,
+      "when": ["dish/enchiladas-verdes"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Stir it into the sauce off the heat and spoon the rest over at the end. It is richer and less sharp.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

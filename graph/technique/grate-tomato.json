@@ -1,0 +1,72 @@
+{
+  "id": "technique/grate-tomato",
+  "tier": "drafted",
+  "names": {"en": "Grate tomato"},
+  "aliases": {"en": ["grate a tomato", "grate tomatoes", "grated tomato pulp"]},
+  "does": "Rubs a halved ripe tomato, cut side down, over the large holes of a box grater until only the flat skin is left in the hand. The pulp falls through as a loose, fresh sauce with no skin to pick out, ready to cook down or to spread on bread.",
+  "intro": {
+    "what": "A ripe tomato is rubbed cut side down on a grater, so the pulp falls through and the skin stays behind.",
+    "why": "It gives a smooth fresh tomato pulp in moments without peeling or a blender.",
+    "idea": "Pulp through, skin behind",
+    "tier": "drafted"
+  },
+  "how": [
+    "Cut the ripe tomatoes in half across their middle.",
+    "Hold a half by its skin and rub the cut side over the large holes of a grater set in a bowl.",
+    "Stop when only the flat skin is left in your hand, and throw the skin away."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A loose red pulp collects in the bowl and a thin flat skin is left in the hand."},
+    {"sense": "feel", "text": "The flesh gives easily against the grater. A hard tomato resists."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using hard, pale tomatoes, which give little pulp and a sour taste.",
+      "fix": "Use ripe, soft, deep red tomatoes."
+    },
+    {
+      "mistake": "Grating on the fine holes, which tears the skin into the pulp.",
+      "fix": "Use the large holes and keep the skin flat against your palm."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "method",
+      "question": "Which side of the tomato meets the grater?",
+      "choices": ["The skin side.", "The cut side.", "The stem end."],
+      "answer": 1,
+      "because": "The flesh grates through and the skin stays behind as a sheet.",
+      "tier": "drafted"
+    },
+    {
+      "id": "choice",
+      "question": "Which tomatoes grate best?",
+      "choices": ["Ripe, soft and deep red.", "Hard and pale.", "Green and unripe."],
+      "answer": 0,
+      "because": "Ripe tomatoes give plenty of sweet pulp.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/tomato", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "form/grated", "tier": "drafted"}
+  ],
+  "needs": [
+    {"role": "tool", "options": ["equipment/grater"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/grate",
+      "differs": "Only the soft flesh is grated, from a cut half held by its skin, and the skin is left behind and thrown away. The result is a pulp, not shreds.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"},
+    {"thing": "cuisine/spanish", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "dish/brasato-al-vino-rosso",
+  "tier": "drafted",
+  "names": {"en": "Brasato al vino rosso", "it": "Brasato al vino rosso"},
+  "aliases": {"en": ["braised beef in red wine", "brasato al barolo", "Italian pot roast", "brasato"]},
+  "is": "A whole piece of beef chuck marinated overnight in red wine with vegetables and herbs, browned, then braised slowly in the strained wine until it can be cut with a spoon. The vegetables are blended into the liquid to make a smooth sauce, and the meat is served in thick slices, a Piedmontese Sunday dish.",
+  "parts": [
+    {
+      "id": "beef",
+      "role": "main",
+      "options": ["ingredient/stewing-beef", "ingredient/beef-shank"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "wine", "role": "liquid", "options": ["ingredient/red-wine"], "optional": false, "tier": "drafted"},
+    {"id": "onion", "role": "aromatic", "options": ["ingredient/onion"], "optional": false, "tier": "drafted"},
+    {"id": "carrot", "role": "aromatic", "options": ["ingredient/carrot"], "optional": false, "tier": "drafted"},
+    {"id": "celery", "role": "aromatic", "options": ["ingredient/celery"], "optional": false, "tier": "drafted"},
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "bay-leaf", "role": "seasoning", "options": ["ingredient/bay-leaf"], "optional": false, "tier": "drafted"},
+    {
+      "id": "rosemary",
+      "role": "seasoning",
+      "options": ["ingredient/rosemary", "ingredient/thyme"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "clove", "role": "seasoning", "options": ["ingredient/clove"], "optional": true, "tier": "drafted"},
+    {
+      "id": "stock",
+      "role": "liquid",
+      "options": ["ingredient/beef-stock", "ingredient/stock", "ingredient/vegetable-stock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/marinate", "tier": "drafted"},
+    {"thing": "technique/sear", "tier": "drafted"},
+    {"thing": "technique/make-a-soffritto", "tier": "drafted"},
+    {"thing": "technique/deglaze", "tier": "drafted"},
+    {"thing": "technique/braise", "tier": "drafted"},
+    {"thing": "technique/puree", "tier": "drafted"},
+    {"thing": "technique/carve", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

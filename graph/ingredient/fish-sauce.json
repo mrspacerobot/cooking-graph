@@ -44,7 +44,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/oyster-sauce",
+      "allows": false,
+      "when": [],
+      "not_when": ["dish/pad-see-ew", "technique/char-noodles", "technique/stir-fry"],
+      "ratio": null,
+      "caveat": "An equal addition makes the noodles saltier and leaves out the sweet, thick part of the seasoning.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [],
   "same_as": []
 }

@@ -1,0 +1,39 @@
+{
+  "id": "ingredient/lard",
+  "tier": "drafted",
+  "names": {"en": "Lard", "es": "Manteca de cerdo"},
+  "aliases": {},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [],
+  "forms": [],
+  "behaviour": "Rendered pork fat, soft and white. It fries hot without burning and gives a savoury taste.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/pork", "basis": "It is pork fat.", "certain": true},
+      {"fact": "fact/meat", "basis": "It is pork fat.", "certain": true}
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/milk", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/sesame", "fact/slaughter-product", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [
+    {
+      "thing": "ingredient/oil",
+      "allows": true,
+      "when": ["dish/enchiladas-verdes"],
+      "not_when": ["dish/enchiladas-verdes"],
+      "ratio": null,
+      "caveat": "Use plain rendered lard where a little pork flavour suits the other ingredients.",
+      "tier": "drafted"
+    }
+  ],
+  "in_pantry_of": [],
+  "same_as": []
+}

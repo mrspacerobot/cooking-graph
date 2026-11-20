@@ -1,0 +1,115 @@
+{
+  "id": "recipe/risotto-alla-zucca",
+  "tier": "drafted",
+  "names": {"en": "Risotto alla zucca", "it": "Risotto alla zucca"},
+  "aliases": {},
+  "makes": "dish/risotto-alla-zucca",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/arborio-rice", "amount": {"value": 320, "unit": "gram"}, "forms": [], "part": "rice"},
+    {
+      "thing": "ingredient/butternut-squash",
+      "amount": {"value": 600, "unit": "gram"},
+      "forms": ["form/peeled", "form/small-dice"],
+      "part": "squash"
+    },
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/minced"], "part": "onion"},
+    {"thing": "ingredient/white-wine", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "wine"},
+    {"thing": "ingredient/vegetable-stock", "amount": {"value": 1.2, "unit": "litre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": [], "part": "fat"},
+    {"thing": "ingredient/butter", "amount": {"value": 30, "unit": "gram"}, "forms": ["form/cold"], "part": "finish"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 50, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saute-pan", "equipment/saucepan", "equipment/ladle", "equipment/wooden-spoon",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/vegetable-peeler", "equipment/grater"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/butternut-squash", "ingredient/onion"],
+      "with": [],
+      "text": "Peel the {squash}, scrape out the seeds and cut the flesh into small dice. Chop the {onion} finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/vegetable-stock"],
+      "with": [],
+      "text": "Bring the {stock} to a bare simmer in a saucepan and keep it hot beside the risotto pan.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/butternut-squash"],
+      "with": ["ingredient/butter", "ingredient/salt"],
+      "text": "Melt the {fat} in a wide, heavy pan and soften the {onion} gently with a little {salt} until glassy. Add the {squash} and cook, stirring, until it starts to soften at the edges.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toast-rice",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": ["ingredient/white-wine"],
+      "text": "Tip in the {rice} and stir until the grains are hot and turn translucent at the edges. Pour in the {wine} and stir until it has been taken up and the sharp smell has gone.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/add-stock-gradually",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": ["ingredient/vegetable-stock"],
+      "text": "Add the hot {stock} a ladle at a time, stirring often, and let each ladle be taken up before the next. Stop when the rice is tender with a small bite at the centre, the {squash} has melted into it and the risotto flows loosely.",
+      "time": {"from": 18, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/mantecare",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": ["ingredient/butter", "ingredient/parmesan"],
+      "text": "Take the pan off the heat, add the cold {finish} in pieces and most of the {cheese}, and beat hard until glossy and creamy. Cover and leave it for a moment.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": ["ingredient/salt"],
+      "text": "Taste, and adjust the {salt}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/arborio-rice"],
+      "with": ["ingredient/parmesan"],
+      "text": "Spoon into warm, shallow bowls and scatter over the rest of the {cheese}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "technique/fill-pasta-tubes",
+  "tier": "drafted",
+  "names": {"en": "Fill pasta tubes", "it": "farcire i cannelloni"},
+  "aliases": {"en": ["fill cannelloni", "stuff cannelloni", "pipe filling into pasta tubes"]},
+  "does": "Pipes or spoons a thick filling into large dried pasta tubes from both ends until they are full, ready to be laid in sauce and baked.",
+  "intro": {
+    "what": "A thick filling is piped into dried pasta tubes from each end.",
+    "why": "A well-filled tube holds its shape in the oven and every bite has filling in it.",
+    "idea": "Fill from both ends",
+    "tier": "drafted"
+  },
+  "how": [
+    "Make the filling thick enough to hold its shape, and put it in a piping bag or a strong food bag with a corner cut off.",
+    "Hold a tube upright and pipe the filling in from one end until it is half full.",
+    "Turn the tube over and fill it from the other end, so that there is no air pocket in the middle.",
+    "Lay each filled tube straight into the sauce in the dish."
+  ],
+  "cues": [
+    {"sense": "see", "text": "Filling shows at both ends and the tube looks evenly full."},
+    {"sense": "feel", "text": "The tube feels heavy and firm, with no hollow middle."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Pushing the filling in with a small spoon from one end only, so that the middle stays empty.",
+      "fix": "Use a bag and fill from both ends."
+    },
+    {"mistake": "Pressing too hard on dry tubes, so that they crack.", "fix": "Pipe gently and hold the tube loosely."}
+  ],
+  "quiz": [
+    {
+      "id": "purpose",
+      "question": "Why fill the tube from both ends?",
+      "choices": [
+        "To leave an air pocket in the middle.",
+        "So that it is full right through.",
+        "So that it cooks faster."
+      ],
+      "answer": 1,
+      "because": "Filling from both ends leaves no hollow.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "What makes filling the tubes easiest?",
+      "choices": ["A piping bag or a food bag with a corner cut off.", "A fork.", "Pouring a thin filling in."],
+      "answer": 0,
+      "because": "A bag pushes the filling deep into the tube.",
+      "tier": "drafted"
+    },
+    {
+      "id": "observation",
+      "question": "How do you know a tube is full?",
+      "choices": ["It is light and hollow.", "It is cracked.", "Filling shows at both ends and it feels heavy."],
+      "answer": 2,
+      "because": "A full tube is firm and heavy.",
+      "tier": "drafted"
+    },
+    {
+      "id": "correction",
+      "question": "The tubes cracked as you filled them. What would you change next time?",
+      "choices": ["Press harder.", "Pipe more gently and hold them loosely.", "Boil them in the oven empty first."],
+      "answer": 1,
+      "because": "Dry tubes break under force.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/cannelloni", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "tool", "options": ["equipment/spoon"], "tier": "drafted"},
+    {"role": "vessel", "options": ["equipment/baking-dish"], "tier": "drafted"}
+  ],
+  "comes_after": [],
+  "variant_of": [
+    {
+      "thing": "technique/stuff",
+      "differs": "The food filled is a dry pasta tube, not meat or a vegetable, and it is filled through both open ends with a piping bag.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ]
+}

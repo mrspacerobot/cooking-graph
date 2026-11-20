@@ -2,7 +2,17 @@
   "id": "ingredient/white-beans",
   "tier": "drafted",
   "names": {"en": "White beans", "fr": "Haricots blancs"},
-  "aliases": {"en": ["haricot beans", "cannellini beans", "white bean", "cannellini bean"]},
+  "aliases": {
+    "en": [
+      "haricot beans",
+      "cannellini beans",
+      "white bean",
+      "cannellini bean",
+      "canned white beans",
+      "tinned white beans",
+      "canned white bean"
+    ]
+  },
   "plurals": {"en": "White beans", "fr": "Haricots blancs"},
   "uncountable": false,
   "is_a": [],

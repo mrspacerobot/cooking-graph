@@ -1,0 +1,41 @@
+{
+  "id": "dish/piyaz",
+  "tier": "drafted",
+  "names": {"en": "Piyaz", "tr": "Piyaz"},
+  "aliases": {"en": ["Turkish white bean salad", "bean salad with tahini", "Antalya piyazi"]},
+  "is": "A Turkish salad of white beans with onion rubbed with sumac, parsley, tomato, lemon and olive oil. In the Antalya way it is dressed with a tahini sauce and topped with boiled egg.",
+  "parts": [
+    {"id": "white-beans", "role": "main", "options": ["ingredient/white-beans"], "optional": false, "tier": "drafted"},
+    {
+      "id": "onion",
+      "role": "aromatic",
+      "options": ["ingredient/onion", "ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "garnish",
+      "options": ["ingredient/tomato", "ingredient/cherry-tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "sumac", "role": "seasoning", "options": ["ingredient/sumac"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "tahini", "role": "sauce", "options": ["ingredient/tahini"], "optional": true, "tier": "drafted"},
+    {"id": "egg", "role": "garnish", "options": ["ingredient/egg"], "optional": true, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/slice", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"},
+    {"thing": "technique/beat-tahini-sauce", "tier": "drafted"},
+    {"thing": "technique/boil-an-egg", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/turkish", "tier": "drafted"}
+  ],
+  "same_as": []
+}

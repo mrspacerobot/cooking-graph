@@ -1,0 +1,115 @@
+{
+  "id": "recipe/chicken-pot-pie",
+  "tier": "drafted",
+  "names": {"en": "Chicken pot pie"},
+  "aliases": {},
+  "makes": "dish/chicken-pot-pie",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/chicken-breast", "amount": {"value": 600, "unit": "gram"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/chicken-stock", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "stock"},
+    {"thing": "ingredient/thyme", "amount": {"value": 3, "unit": "sprig"}, "forms": [], "part": "herbs"},
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "butter"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 1, "unit": "piece"},
+      "forms": ["form/peeled", "form/diced"],
+      "part": "onion"
+    },
+    {
+      "thing": "ingredient/carrot",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/diced"],
+      "part": "carrot"
+    },
+    {"thing": "ingredient/celery", "amount": {"value": 100, "unit": "gram"}, "forms": ["form/diced"], "part": "celery"},
+    {"thing": "ingredient/flour", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/milk", "amount": {"value": 200, "unit": "millilitre"}, "forms": [], "part": "milk"},
+    {"thing": "ingredient/peas", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "peas"},
+    {"thing": "preparation/puff-pastry", "amount": {"value": 320, "unit": "gram"}, "forms": [], "part": "pastry"},
+    {"thing": "ingredient/egg", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.5, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/saucepan", "equipment/saute-pan", "equipment/wooden-spoon",
+    "equipment/baking-dish", "equipment/paring-knife", "equipment/pastry-brush"
+  ],
+  "steps": [
+    {
+      "technique": "technique/poach",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": ["ingredient/chicken-stock", "ingredient/thyme"],
+      "text": "Put the {chicken} in a saucepan with the {stock} [herbs: and the {herbs}], bring to a bare simmer and poach gently until the meat is tender. Check it against a trusted guide to doneness. Lift it out and keep the {stock}.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/poaching-liquid"]
+    },
+    {
+      "technique": "technique/sweat",
+      "works_on": ["ingredient/onion", "ingredient/carrot", "ingredient/celery"],
+      "with": ["ingredient/butter"],
+      "text": "Melt the {butter} in a wide pan and cook the {onion}, the {carrot:plural} and the {celery} gently until soft but not coloured.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-roux",
+      "works_on": ["ingredient/flour"],
+      "with": ["ingredient/butter"],
+      "text": "Stir the {flour} into the vegetables and cook, stirring, for a moment so that it loses its raw taste.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/roux"]
+    },
+    {
+      "technique": "technique/make-a-sauce",
+      "works_on": ["preparation/roux"],
+      "with": ["preparation/poaching-liquid", "ingredient/milk", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Pour in the hot {stock} a little at a time, stirring, then the {milk}. Simmer, stirring, until thick enough to coat the back of a spoon. Season with {salt} and {black-pepper}.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/toss",
+      "works_on": ["ingredient/chicken-breast", "ingredient/peas"],
+      "with": [],
+      "text": "Cut or pull the {chicken} into bite-sized pieces and stir it into the sauce with the {peas:plural}. Pour the filling into a pie dish and let it cool a little.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cover-with-pastry",
+      "works_on": ["preparation/puff-pastry"],
+      "with": ["ingredient/egg"],
+      "text": "Lay the {pastry} over the dish, press it onto the rim and trim the edge. Cut a small slit in the middle for steam [egg: and brush the top with the beaten {egg}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": ["preparation/puff-pastry"],
+      "with": [],
+      "text": "Bake in a hot oven until the pastry is puffed and deep golden and the filling bubbles. Leave it to settle for a moment before serving.",
+      "time": {"from": 25, "to": 30, "unit": "minute"},
+      "temperature": {"value": 200, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

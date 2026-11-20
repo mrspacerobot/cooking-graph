@@ -1,0 +1,121 @@
+{
+  "id": "recipe/keema-matar",
+  "tier": "drafted",
+  "names": {"en": "Keema matar"},
+  "aliases": {},
+  "makes": "dish/keema-matar",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/ground-lamb", "amount": {"value": 500, "unit": "gram"}, "forms": [], "part": "meat"},
+    {"thing": "ingredient/peas", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "peas"},
+    {"thing": "ingredient/oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/onion", "amount": {"value": 2, "unit": "piece"}, "forms": ["form/chopped"], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": ["form/minced"], "part": "garlic"},
+    {"thing": "ingredient/ginger", "amount": {"value": 20, "unit": "gram"}, "forms": ["form/grated"], "part": "ginger"},
+    {"thing": "ingredient/green-chilli", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "green-chilli"},
+    {"thing": "ingredient/turmeric", "amount": {"value": 0.5, "unit": "teaspoon"}, "forms": [], "part": "turmeric"},
+    {
+      "thing": "ingredient/red-chilli-powder",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "chilli-powder"
+    },
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 200, "unit": "gram"}, "forms": [], "part": "tomato"},
+    {
+      "thing": "preparation/garam-masala",
+      "amount": {"value": 1, "unit": "teaspoon"},
+      "forms": [],
+      "part": "garam-masala"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 150, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 4, "unit": "sprig"}, "forms": [], "part": "coriander"}
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/chefs-knife", "equipment/cutting-board", "equipment/wooden-spoon",
+    "equipment/saute-pan", "equipment/grater"
+  ],
+  "steps": [
+    {
+      "technique": "technique/temper-spices-in-hot-fat",
+      "works_on": ["ingredient/cumin"],
+      "with": ["ingredient/oil"],
+      "text": "Heat the {oil} in a wide, heavy pan over a medium-high heat and add the {cumin}. Let it crackle and darken a shade.",
+      "time": {"from": 30, "to": 45, "unit": "second"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-onions-golden",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Add the {onion} and fry it, stirring now and then, until it is soft and golden.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bloom-ground-spices",
+      "works_on": ["ingredient/turmeric", "ingredient/red-chilli-powder"],
+      "with": ["ingredient/garlic", "ingredient/ginger", "ingredient/green-chilli"],
+      "text": "Stir in the {garlic}, the {ginger}[green-chilli: , the {green-chilli} slit lengthways,] and cook until the raw smell goes. Lower the heat, add the {turmeric} and the {chilli-powder} and stir for a few moments.",
+      "time": {"from": 1, "to": 2, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/brown-mince",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": [],
+      "text": "Turn the heat up, add the {meat} and break it up with the spoon. Leave it between stirs until its juices have boiled away and the crumbs brown in places.",
+      "time": {"from": 8, "to": 10, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-masala-base",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/tinned-tomatoes", "ingredient/salt", "ingredient/ground-lamb", "ingredient/oil"],
+      "text": "Add the {tomato} and the {salt} and cook, stirring and scraping, until the sauce thickens and the {oil} shines at the edge of the pan.",
+      "time": {"from": 6, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": ["ingredient/water"],
+      "text": "Pour in the {water}, cover and simmer gently, stirring now and then, until the meat is tender. Check it against a trusted guide to doneness.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/peas"],
+      "with": ["preparation/garam-masala"],
+      "text": "Stir in the {peas:plural} and the {garam-masala} and simmer uncovered until the {peas:plural} are tender and the keema is moist but not wet. Taste for {salt}.",
+      "time": {"from": 4, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/ground-lamb"],
+      "with": ["ingredient/coriander-leaf"],
+      "text": "Serve hot[coriander: , scattered with the chopped {coriander}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

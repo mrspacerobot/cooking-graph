@@ -1,0 +1,35 @@
+{
+  "id": "ingredient/monterey-jack",
+  "tier": "drafted",
+  "names": {"en": "Monterey Jack"},
+  "aliases": {"en": ["Monterey Jack cheese", "jack cheese"]},
+  "plurals": {},
+  "uncountable": true,
+  "is_a": [],
+  "part_of": [],
+  "groups": [
+    {"thing": "group/grating-cheeses", "tier": "drafted"}
+  ],
+  "forms": [],
+  "behaviour": "A mild, semi-firm cow's milk cheese that grates easily and melts smooth and stretchy without turning greasy.",
+  "safety": {
+    "state": "unverified",
+    "contains": [
+      {"fact": "fact/milk", "basis": "It is a cheese made from milk.", "certain": true},
+      {
+        "fact": "fact/slaughter-product",
+        "basis": "Recorded strictly: cheese is often set with animal rennet.",
+        "certain": false
+      }
+    ],
+    "free_of": [
+      "fact/alcohol", "fact/animal-product", "fact/buckwheat", "fact/celery", "fact/crustaceans", "fact/egg",
+      "fact/fish", "fact/gluten", "fact/lupin", "fact/meat", "fact/molluscs", "fact/mustard", "fact/peanuts",
+      "fact/pork", "fact/sesame", "fact/soy", "fact/sulphites", "fact/tree-nuts", "fact/wheat"
+    ],
+    "note": null
+  },
+  "stands_in_for": [],
+  "in_pantry_of": [],
+  "same_as": []
+}

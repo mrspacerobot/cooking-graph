@@ -1,0 +1,136 @@
+{
+  "id": "recipe/chicken-parmesan",
+  "tier": "drafted",
+  "names": {"en": "Chicken parmesan"},
+  "aliases": {},
+  "makes": "dish/chicken-parmesan",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/tinned-tomatoes", "amount": {"value": 400, "unit": "gram"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/olive-oil", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "sauce"},
+    {"thing": "ingredient/garlic", "amount": {"value": 2, "unit": "clove"}, "forms": ["form/minced"], "part": "sauce"},
+    {"thing": "ingredient/chicken-breast", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "chicken"},
+    {"thing": "ingredient/flour", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/egg", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "egg"},
+    {"thing": "preparation/breadcrumbs", "amount": {"value": 100, "unit": "gram"}, "forms": [], "part": "breadcrumbs"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 50, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "parmesan"
+    },
+    {"thing": "ingredient/oil", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/mozzarella",
+      "amount": {"value": 200, "unit": "gram"},
+      "forms": ["form/sliced"],
+      "part": "mozzarella"
+    },
+    {"thing": "ingredient/basil", "amount": {"value": 6, "unit": "leaf"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/spaghetti", "amount": {"value": 350, "unit": "gram"}, "forms": [], "part": "spaghetti"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/oven", "equipment/saucepan", "equipment/frying-pan", "equipment/stockpot",
+    "equipment/colander", "equipment/parchment-paper", "equipment/mixing-bowl", "equipment/wire-rack",
+    "equipment/baking-dish", "equipment/fish-slice"
+  ],
+  "steps": [
+    {
+      "technique": "technique/make-a-tomato-sauce",
+      "works_on": ["ingredient/tinned-tomatoes"],
+      "with": ["ingredient/olive-oil", "ingredient/garlic", "ingredient/salt"],
+      "text": "Warm the {sauce.olive-oil} in a saucepan, add the {sauce.garlic} and let it sizzle gently without colouring. Add the {sauce.tinned-tomatoes}, crush them with a spoon, season with a little {salt} and simmer until thick.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/tomato-sauce"]
+    },
+    {
+      "technique": "technique/flatten",
+      "works_on": [],
+      "with": [],
+      "text": "Cut each {chicken} in half through its thickness. Lay the pieces between sheets of baking paper and pound them with a heavy pan to an even, thin cutlet.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/season",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": ["ingredient/salt", "ingredient/black-pepper"],
+      "text": "Season the cutlets on both sides with {salt} and {black-pepper}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/coat",
+      "works_on": [],
+      "with": ["ingredient/flour", "ingredient/egg", "preparation/breadcrumbs", "ingredient/parmesan"],
+      "text": "Mix the {breadcrumbs:plural} with half of the {parmesan}. Beat the {egg:plural} in a shallow dish. Dust each cutlet in {flour}, dip it in the {egg:plural} and press it firmly into the crumbs on both sides.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/pan-fry",
+      "works_on": [],
+      "with": ["ingredient/oil"],
+      "text": "Heat a thin layer of {oil} in a large frying pan over a medium-high heat. Fry the cutlets in batches, turning once, until golden and crisp on both sides. Drain them on a rack.",
+      "time": {"from": 5, "to": 6, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": ["preparation/tomato-sauce", "ingredient/mozzarella", "ingredient/parmesan"],
+      "text": "Lay the cutlets in a baking dish. Spoon some of the sauce over the middle of each, leaving the edges crisp, and top with the {mozzarella} and the rest of the {parmesan}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/gratinate",
+      "works_on": ["ingredient/parmesan"],
+      "with": ["ingredient/mozzarella"],
+      "text": "Bake in a hot oven until the cheese has melted and browned in spots. Check the thickest cutlet against a trusted guide to doneness.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": {"value": 220, "unit": "celsius"},
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/boil-pasta",
+      "works_on": ["ingredient/spaghetti"],
+      "with": ["ingredient/salt", "preparation/tomato-sauce"],
+      "text": "[spaghetti: Meanwhile boil the {spaghetti} in plenty of water with the rest of the {salt} until just tender, drain it and toss it with the rest of the sauce.]",
+      "time": {"from": 9, "to": 11, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/chicken-breast"],
+      "with": ["ingredient/basil", "ingredient/spaghetti"],
+      "text": "Serve the cutlets hot [spaghetti: beside the {spaghetti}][basil: , scattered with torn {basil}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

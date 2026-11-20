@@ -35,6 +35,15 @@
       "ratio": null,
       "caveat": "Chop them small. They are crunchier and less floral.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/pickled-cucumber",
+      "allows": true,
+      "when": ["dish/shawarma-djej", "technique/sandwich"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Slice them lengthways. Choose sour rather than sweet pickles and use less if very sharp.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

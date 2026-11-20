@@ -53,6 +53,15 @@
       "ratio": null,
       "caveat": "It is already seasoned and fatty, so less salt is needed and the sauce is richer.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/italian-sausage",
+      "allows": true,
+      "when": ["dish/baked-ziti", "technique/brown-mince"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use fresh coarse sausage meat, and taste the sauce once seasoned. It may lack the fennel or chilli of the original sausage.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [],

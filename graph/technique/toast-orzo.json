@@ -1,0 +1,78 @@
+{
+  "id": "technique/toast-orzo",
+  "tier": "drafted",
+  "names": {"en": "Toast orzo"},
+  "aliases": {"en": ["toast the orzo", "toast orzo in oil"]},
+  "does": "Stirs dry orzo in hot oil in the pan it will cook in, until the grains turn a pale gold and smell nutty, before any liquid goes in. The grains then keep their shape and give a deeper taste to the dish.",
+  "intro": {
+    "what": "Dry orzo is stirred in hot oil until pale gold before the liquid is added.",
+    "why": "Toasting gives the pasta a nutty taste and helps the grains stay separate in a creamy dish.",
+    "idea": "Pale gold, not brown",
+    "tier": "drafted"
+  },
+  "how": [
+    "Soften the onion and garlic in oil first in a wide pan.",
+    "Tip in the dry orzo and stir over a medium heat so that every grain is coated.",
+    "Keep stirring until the grains turn pale gold and smell nutty, then add the liquid at once."
+  ],
+  "cues": [
+    {"sense": "see", "text": "The grains turn from cream to pale gold."},
+    {"sense": "smell", "text": "A nutty smell like toasted bread rises from the pan."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Leaving the pan alone, so that the grains on the bottom scorch.",
+      "fix": "Stir all the time while the orzo toasts."
+    },
+    {"mistake": "Taking it to dark brown, so the dish tastes bitter.", "fix": "Stop at pale gold and add the liquid."}
+  ],
+  "quiz": [
+    {
+      "id": "cue",
+      "question": "When is the orzo toasted enough?",
+      "choices": [
+        "When it is pale gold and smells nutty.",
+        "When it is dark brown all over.",
+        "As soon as it touches the oil."
+      ],
+      "answer": 0,
+      "because": "Pale gold gives a nutty taste without bitterness.",
+      "tier": "drafted"
+    },
+    {
+      "id": "method",
+      "question": "Why stir the whole time?",
+      "choices": [
+        "To wash off the starch.",
+        "So that no grains scorch on the bottom of the pan.",
+        "To cool the pan down."
+      ],
+      "answer": 1,
+      "because": "Small grains brown fast where they touch the hot pan.",
+      "tier": "drafted"
+    }
+  ],
+  "works_on": [
+    {"thing": "ingredient/orzo", "tier": "drafted"}
+  ],
+  "makes": [],
+  "needs": [
+    {"role": "vessel", "options": ["equipment/saute-pan"], "tier": "drafted"},
+    {"role": "fat", "options": ["ingredient/olive-oil"], "tier": "drafted"},
+    {"role": "tool", "options": ["equipment/wooden-spoon"], "tier": "drafted"},
+    {"role": "heat", "options": ["equipment/stovetop"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/sweat", "why": "The orzo goes into onion that has been softened in oil.", "tier": "drafted"}
+  ],
+  "variant_of": [
+    {
+      "thing": "technique/toast",
+      "differs": "The pasta is stirred in hot oil in the pan it will cook in, not dried alone in dry heat, and it is taken only to pale gold.",
+      "tier": "drafted"
+    }
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/greek", "tier": "drafted"}
+  ]
+}

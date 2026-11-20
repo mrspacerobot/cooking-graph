@@ -1,0 +1,132 @@
+{
+  "id": "recipe/torta-di-mele",
+  "tier": "drafted",
+  "names": {"en": "Torta di mele", "it": "Torta di mele"},
+  "aliases": {},
+  "makes": "dish/torta-di-mele",
+  "yields": {"value": 8, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/apple", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "apple"},
+    {"thing": "ingredient/flour", "amount": {"value": 250, "unit": "gram"}, "forms": [], "part": "flour"},
+    {"thing": "ingredient/sugar", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "sugar"},
+    {
+      "thing": "ingredient/egg",
+      "amount": {"value": 3, "unit": "piece"},
+      "forms": ["form/room-temperature"],
+      "part": "egg"
+    },
+    {
+      "thing": "ingredient/butter",
+      "amount": {"value": 100, "unit": "gram"},
+      "forms": ["form/melted"],
+      "part": "butter"
+    },
+    {"thing": "ingredient/milk", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "milk"},
+    {
+      "thing": "ingredient/baking-powder",
+      "amount": {"value": 2, "unit": "teaspoon"},
+      "forms": [],
+      "part": "baking-powder"
+    },
+    {"thing": "ingredient/lemon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "lemon"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "pinch"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/sugar", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "topping"}
+  ],
+  "equipment": [
+    "equipment/oven", "equipment/cake-tin", "equipment/parchment-paper", "equipment/mixing-bowl", "equipment/whisk",
+    "equipment/spatula", "equipment/pastry-brush", "equipment/grater", "equipment/paring-knife",
+    "equipment/cutting-board", "equipment/skewer", "equipment/wire-rack"
+  ],
+  "steps": [
+    {
+      "technique": "technique/melt",
+      "works_on": ["ingredient/butter"],
+      "with": [],
+      "text": "Heat the oven. Melt the {butter} and let it cool a little. Brush a little of it round a cake tin and line the base with baking paper.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/core",
+      "works_on": ["ingredient/apple"],
+      "with": [],
+      "text": "Peel the {apple:plural}, cut them into quarters and cut out the cores.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": [],
+      "with": ["ingredient/apple", "ingredient/lemon"],
+      "text": "Cut the quarters into thin slices and turn them in a little juice from the {lemon} so they stay pale.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk-to-the-ribbon",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/sugar", "ingredient/salt", "ingredient/lemon"],
+      "text": "Whisk the {egg:plural} with the {sugar}, the {salt} and the grated zest of the {lemon} until pale, thick and greatly increased, so the mixture falls from the whisk in a ribbon.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir",
+      "works_on": ["ingredient/milk"],
+      "with": ["ingredient/butter"],
+      "text": "Stir in the {milk} and the melted {butter} gently.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fold",
+      "works_on": [],
+      "with": ["ingredient/flour", "ingredient/baking-powder"],
+      "text": "Sift the {flour} with the {baking-powder} over the mixture and fold it in gently with a spatula until no dry streaks are left.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/layer",
+      "works_on": [],
+      "with": ["ingredient/apple", "ingredient/sugar"],
+      "text": "Fold about half the {apple:plural} into the batter and pour it into the tin. Arrange the rest in overlapping circles on top[topping: and scatter over the {topping}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/bake",
+      "works_on": [],
+      "with": [],
+      "text": "Bake in the middle of the oven until risen and golden and a skewer pushed into the middle comes out clean.",
+      "time": {"from": 45, "to": 50, "unit": "minute"},
+      "temperature": {"value": 180, "unit": "celsius"},
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/apple"],
+      "with": [],
+      "text": "Leave the cake to cool in the tin for a while, then turn it out onto a rack. Serve warm or cold.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

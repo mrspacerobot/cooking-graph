@@ -1,0 +1,114 @@
+{
+  "id": "recipe/carnitas",
+  "tier": "drafted",
+  "names": {"en": "Carnitas"},
+  "aliases": {},
+  "makes": "dish/carnitas",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-shoulder", "amount": {"value": 1.5, "unit": "kilogram"}, "forms": [], "part": "pork"},
+    {"thing": "ingredient/lard", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "lard"},
+    {"thing": "ingredient/orange", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "orange"},
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/halved"], "part": "onion"},
+    {"thing": "ingredient/garlic", "amount": {"value": 4, "unit": "clove"}, "forms": ["form/peeled"], "part": "garlic"},
+    {"thing": "ingredient/cumin", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "cumin"},
+    {"thing": "ingredient/oregano", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "oregano"},
+    {"thing": "ingredient/bay-leaf", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "bay-leaf"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {"thing": "ingredient/water", "amount": {"value": 500, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/corn-tortilla", "amount": {"value": 12, "unit": "piece"}, "forms": [], "part": "tortillas"},
+    {"thing": "ingredient/onion", "amount": {"value": 0.5, "unit": "piece"}, "forms": [], "part": "serving-onion"},
+    {"thing": "ingredient/coriander-leaf", "amount": {"value": 6, "unit": "sprig"}, "forms": [], "part": "coriander"},
+    {"thing": "ingredient/lime", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "lime"},
+    {"thing": "ingredient/tomato-salsa", "amount": {"value": 150, "unit": "gram"}, "forms": [], "part": "salsa"}
+  ],
+  "equipment": [
+    "equipment/dutch-oven", "equipment/chefs-knife", "equipment/cutting-board", "equipment/tongs",
+    "equipment/frying-pan", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/trim",
+      "works_on": ["ingredient/pork-shoulder"],
+      "with": [],
+      "text": "Trim off any skin and the thickest fat on the outside, then cut the {pork} into large chunks, keeping the fat that runs through it.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/pork-shoulder"],
+      "with": [
+        "ingredient/lard", "ingredient/water", "ingredient/orange", "ingredient/onion", "ingredient/garlic",
+        "ingredient/cumin", "ingredient/oregano", "ingredient/bay-leaf", "ingredient/salt"
+      ],
+      "text": "Put the {pork} in a wide, heavy pot [lard: with the {lard}] and pour in the {water}. Squeeze in the juice of the {orange} and drop in the squeezed halves. Add the {onion}, the {garlic}, the {cumin}, the {oregano}, the {bay-leaf:plural} and the {salt}. Bring to a boil, then simmer uncovered, turning the pieces now and then, until the meat is very tender and most of the liquid has boiled away.",
+      "time": {"from": 2, "to": 2.5, "unit": "hour"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/crisp-in-its-own-fat",
+      "works_on": ["ingredient/pork-shoulder"],
+      "with": [],
+      "text": "Lift out the {orange} halves, the {onion} and the {bay-leaf:plural}. Keep the pot over medium-high heat as the last liquid goes and only the melted fat is left. Let the chunks fry in it, turning them only now and then, until they are browned and crisp at the edges. Check a piece against a trusted guide to doneness.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/shred-meat",
+      "works_on": ["ingredient/pork-shoulder"],
+      "with": [],
+      "text": "Pull the chunks into rough shreds with a pair of forks, leaving some crisp pieces whole, and turn them in the fat in the pot.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/onion"],
+      "with": [],
+      "text": "Dice the {serving-onion} finely.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/chop",
+      "works_on": ["ingredient/coriander-leaf"],
+      "with": [],
+      "text": "Chop the {coriander}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/griddle",
+      "works_on": ["ingredient/corn-tortilla"],
+      "with": [],
+      "text": "Warm the {tortillas:plural} one at a time in a hot dry pan until soft and spotted, and keep them wrapped in a clean cloth.",
+      "time": {"from": 30, "to": 60, "unit": "second"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pork-shoulder", "ingredient/corn-tortilla"],
+      "with": ["ingredient/onion", "ingredient/coriander-leaf", "ingredient/lime", "ingredient/tomato-salsa"],
+      "text": "Pile the meat into the warm {tortillas:plural} and top with the {serving-onion} and the {coriander}. Serve with the {lime:plural} cut in wedges [salsa: and the {salsa}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

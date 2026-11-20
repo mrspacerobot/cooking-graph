@@ -44,7 +44,9 @@
       "tier": "drafted"
     }
   ],
-  "groups": [],
+  "groups": [
+    {"thing": "group/ground-spices", "tier": "drafted"}
+  ],
   "teaches": [
     {"thing": "technique/grind", "tier": "drafted"},
     {"thing": "technique/toast", "tier": "drafted"}

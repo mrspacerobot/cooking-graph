@@ -1,0 +1,52 @@
+{
+  "id": "technique/make-chermoula",
+  "tier": "drafted",
+  "names": {"en": "Make chermoula"},
+  "aliases": {"en": ["make charmoula", "prepare chermoula"]},
+  "does": "Chops coriander and parsley fine and stirs them with crushed garlic, cumin, paprika, lemon juice, olive oil and salt into a thick, loose green paste that is used to marinate fish and to season the vegetables it cooks on.",
+  "intro": null,
+  "how": [
+    "Wash and dry the herbs well, so that the paste is not watery.",
+    "Chop the herbs fine, stalks and all for coriander, since the thin stalks hold much of the taste.",
+    "Crush the garlic with a little salt.",
+    "Stir everything together with the spices, the lemon juice and the oil.",
+    "Taste: it should be sharp, salty and strong, since it seasons the whole dish."
+  ],
+  "cues": [
+    {"sense": "see", "text": "A loose, bright green paste flecked red with paprika."},
+    {"sense": "taste", "text": "Sharp, salty and strongly herby, with the warmth of cumin."}
+  ],
+  "mistakes": [
+    {
+      "mistake": "Chopping the herbs wet, so that the paste turns watery and bruised.",
+      "fix": "Dry the herbs well before chopping."
+    },
+    {
+      "mistake": "Seasoning it timidly, so that the finished dish tastes flat.",
+      "fix": "Make it stronger than seems right. It is spread over a lot of fish and vegetables."
+    }
+  ],
+  "quiz": [],
+  "works_on": [
+    {"thing": "group/tender-herbs", "tier": "drafted"},
+    {"thing": "ingredient/garlic", "tier": "drafted"}
+  ],
+  "makes": [
+    {"thing": "preparation/chermoula", "tier": "drafted"}
+  ],
+  "needs": [
+    {
+      "role": "tool",
+      "options": ["equipment/chefs-knife", "equipment/mortar-and-pestle", "equipment/blender"],
+      "tier": "drafted"
+    },
+    {"role": "vessel", "options": ["equipment/mixing-bowl"], "tier": "drafted"}
+  ],
+  "comes_after": [
+    {"thing": "technique/mince", "why": "The herbs and the garlic must be cut fine first.", "tier": "drafted"}
+  ],
+  "variant_of": [],
+  "belongs_to": [
+    {"thing": "cuisine/moroccan", "tier": "drafted"}
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "recipe/frittata-di-zucchine",
+  "tier": "drafted",
+  "names": {"en": "Frittata di zucchine", "it": "Frittata di zucchine"},
+  "aliases": {},
+  "makes": "dish/frittata-di-zucchine",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/egg", "amount": {"value": 6, "unit": "piece"}, "forms": [], "part": "egg"},
+    {
+      "thing": "ingredient/courgette",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/sliced"],
+      "part": "courgette"
+    },
+    {"thing": "ingredient/onion", "amount": {"value": 1, "unit": "piece"}, "forms": ["form/sliced"], "part": "onion"},
+    {
+      "thing": "ingredient/parmesan",
+      "amount": {"value": 40, "unit": "gram"},
+      "forms": ["form/grated"],
+      "part": "cheese"
+    },
+    {"thing": "ingredient/olive-oil", "amount": {"value": 3, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/basil", "amount": {"value": 6, "unit": "leaf"}, "forms": [], "part": "basil"},
+    {"thing": "ingredient/salt", "amount": {"value": 1, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/non-stick-pan", "equipment/mixing-bowl", "equipment/whisk", "equipment/spatula",
+    "equipment/flat-plate", "equipment/chefs-knife", "equipment/cutting-board", "equipment/grater"
+  ],
+  "steps": [
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/courgette", "ingredient/onion"],
+      "with": [],
+      "text": "Slice the {courgette:plural} into thin rounds and the {onion} into thin half-moons.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/saute",
+      "works_on": ["ingredient/courgette", "ingredient/onion"],
+      "with": ["ingredient/olive-oil", "ingredient/salt"],
+      "text": "Heat the {oil} in a non-stick frying pan and cook the {onion} gently until soft. Turn up the heat, add the {courgette:plural} and a little {salt}, and sauté, tossing now and then, until they are golden in places and tender. Spread them evenly in the pan and let them cool a little.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/whisk",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/parmesan", "ingredient/salt", "ingredient/black-pepper", "ingredient/basil"],
+      "text": "Beat the {egg:plural} in a bowl with the {cheese}, a little {salt} and the {black-pepper}[basil: , and tear in the {basil}].",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/cook-a-frittata",
+      "works_on": ["ingredient/egg"],
+      "with": ["ingredient/courgette"],
+      "text": "Pour the {egg:plural} over the {courgette:plural} and turn the heat to low. Cook without stirring, loosening the edge now and then, until the base and the sides are set and only the top is still runny.",
+      "time": {"from": 10, "to": 12, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/turn-with-a-plate",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Shake the pan to check the frittata slides freely. Cover it with a flat plate, turn it over in one quick move and slide it back into the pan, soft side down. Cook until the underside is set and golden.",
+      "time": {"from": 3, "to": 4, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/egg"],
+      "with": [],
+      "text": "Slide it onto a board and leave it for a few moments before cutting it into wedges. Serve warm or at room temperature.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "recipe/bangers-and-mash",
+  "tier": "drafted",
+  "names": {"en": "Bangers and mash"},
+  "aliases": {},
+  "makes": "dish/bangers-and-mash",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {"thing": "ingredient/pork-sausage", "amount": {"value": 8, "unit": "piece"}, "forms": [], "part": "sausages"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {
+      "thing": "ingredient/potato",
+      "amount": {"value": 1, "unit": "kilogram"},
+      "forms": ["form/peeled", "form/large-pieces"],
+      "part": "mash"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 50, "unit": "gram"}, "forms": [], "part": "mash"},
+    {"thing": "ingredient/milk", "amount": {"value": 100, "unit": "millilitre"}, "forms": [], "part": "mash"},
+    {
+      "thing": "ingredient/onion",
+      "amount": {"value": 2, "unit": "piece"},
+      "forms": ["form/peeled", "form/sliced"],
+      "part": "gravy"
+    },
+    {"thing": "ingredient/butter", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "gravy"},
+    {"thing": "ingredient/flour", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "gravy"},
+    {"thing": "ingredient/beef-stock", "amount": {"value": 400, "unit": "millilitre"}, "forms": [], "part": "gravy"},
+    {"thing": "ingredient/salt", "amount": {"value": 2, "unit": "teaspoon"}, "forms": [], "part": "salt"},
+    {
+      "thing": "ingredient/black-pepper",
+      "amount": {"value": 0.25, "unit": "teaspoon"},
+      "forms": [],
+      "part": "black-pepper"
+    }
+  ],
+  "equipment": [
+    "equipment/stovetop", "equipment/saucepan", "equipment/frying-pan", "equipment/colander", "equipment/potato-masher",
+    "equipment/tongs", "equipment/wooden-spoon"
+  ],
+  "steps": [
+    {
+      "technique": "technique/boil",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/salt"],
+      "text": "Put the {mash.potato:plural} in a pan of cold water with a little {salt}, bring to the boil and simmer until a knife slides in easily. Drain them and leave them to steam dry.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-sausages",
+      "works_on": ["ingredient/pork-sausage"],
+      "with": ["ingredient/oil"],
+      "text": "Meanwhile heat the {oil} in a frying pan over a medium-low heat. Add the {sausages:plural} and fry them slowly, turning them often, until they are brown all over and firm. Do not prick them. Check one against a trusted guide to doneness.",
+      "time": {"from": 15, "to": 20, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": []
+    },
+    {
+      "technique": "technique/fry-onions-golden",
+      "works_on": ["ingredient/onion"],
+      "with": ["ingredient/butter"],
+      "text": "Lift the {sausages:plural} onto a warm plate. Melt the {gravy.butter} in the same pan, add the {gravy.onion:plural} and fry them over a medium heat, stirring now and then, until soft and golden.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-gravy",
+      "works_on": ["ingredient/beef-stock"],
+      "with": ["ingredient/flour", "ingredient/onion", "ingredient/salt", "ingredient/black-pepper"],
+      "text": "Stir the {gravy.flour} into the {gravy.onion:plural} and cook for a moment. Pour in the hot {gravy.beef-stock} a little at a time, stirring, and let it bubble until it thickens to a pouring gravy. Season with {salt} and {black-pepper}.",
+      "time": {"from": 5, "to": 8, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/onion-gravy"]
+    },
+    {
+      "technique": "technique/mash",
+      "works_on": ["ingredient/potato"],
+      "with": ["ingredient/butter", "ingredient/milk", "ingredient/salt"],
+      "text": "Warm the {mash.milk} with the {mash.butter}. Mash the hot {mash.potato:plural} until no lumps are left, then beat in the warm {mash.milk} until smooth and soft. Season with {salt}.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": ["preparation/mashed-potato"]
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["preparation/mashed-potato", "ingredient/pork-sausage", "preparation/onion-gravy"],
+      "with": [],
+      "text": "Spoon the mash onto warm plates, set the {sausages:plural} on top and pour over the gravy.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -32,6 +32,15 @@
       "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
       "caveat": "It is creamier and milder.",
       "tier": "drafted"
+    },
+    {
+      "thing": "ingredient/tinned-chickpeas",
+      "allows": true,
+      "when": ["dish/pasta-e-ceci"],
+      "not_when": [],
+      "ratio": {"stand_in": 1.0, "original": 1, "by": "weight"},
+      "caveat": "Choose cooked, tinned borlotti beans. They can be crushed to thicken the broth and give it a pinker colour and a nuttier taste.",
+      "tier": "drafted"
     }
   ],
   "in_pantry_of": [

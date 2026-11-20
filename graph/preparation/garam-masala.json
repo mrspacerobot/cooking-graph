@@ -46,6 +46,15 @@
       "ratio": null,
       "caveat": "Garam masala is a warm, sweet-spiced blend and does not bring the heat of chilli.",
       "tier": "drafted"
+    },
+    {
+      "thing": "preparation/seven-spice",
+      "allows": true,
+      "when": ["dish/kafta-bil-sanieh", "dish/shawarma-djej"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Choose a mild blend and add it gradually. It seasons the mince with warm spices, often with more cumin or cardamom.",
+      "tier": "drafted"
     }
   ],
   "belongs_to": [

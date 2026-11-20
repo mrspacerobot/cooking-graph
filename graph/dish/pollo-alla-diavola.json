@@ -1,0 +1,46 @@
+{
+  "id": "dish/pollo-alla-diavola",
+  "tier": "drafted",
+  "names": {"en": "Pollo alla diavola", "it": "Pollo alla diavola"},
+  "aliases": {"en": ["devil's chicken", "chicken diavola", "devilled chicken Italian style"]},
+  "is": "A whole chicken opened flat, rubbed with olive oil, lemon, garlic, rosemary, plenty of black pepper and chilli, then cooked skin side down under a weight until crisp and finished in the oven. The heat of the pepper and chilli gives it its devilish name.",
+  "parts": [
+    {
+      "id": "chicken",
+      "role": "main",
+      "options": ["ingredient/chicken", "ingredient/guinea-fowl"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lemon", "role": "acid", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {
+      "id": "chilli",
+      "role": "seasoning",
+      "options": ["ingredient/chili-flakes", "ingredient/dried-red-chilli"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "rosemary", "role": "seasoning", "options": ["ingredient/rosemary"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/spatchcock", "tier": "drafted"},
+    {"thing": "technique/marinate", "tier": "drafted"},
+    {"thing": "technique/cook-under-a-weight", "tier": "drafted"},
+    {"thing": "technique/roast", "tier": "drafted"},
+    {"thing": "technique/rest", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

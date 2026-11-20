@@ -1,0 +1,42 @@
+{
+  "id": "dish/torta-di-mele",
+  "tier": "drafted",
+  "names": {"en": "Torta di mele", "it": "Torta di mele"},
+  "aliases": {"en": ["Italian apple cake", "apple cake", "torta di mele della nonna"]},
+  "is": "A plain, moist Italian home cake: eggs and sugar whisked until pale and thick, with milk, melted butter, flour and lemon zest, packed with thin apple slices and more fanned over the top. It is eaten at breakfast or with coffee.",
+  "parts": [
+    {"id": "apple", "role": "main", "options": ["ingredient/apple"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "base", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "sugar", "role": "sweetener", "options": ["ingredient/sugar"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "base", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {
+      "id": "baking-powder",
+      "role": "base",
+      "options": ["ingredient/baking-powder"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "lemon", "role": "seasoning", "options": ["ingredient/lemon"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "topping",
+      "role": "topping",
+      "options": ["ingredient/sugar", "ingredient/brown-sugar"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/core", "tier": "drafted"},
+    {"thing": "technique/slice", "tier": "drafted"},
+    {"thing": "technique/whisk-to-the-ribbon", "tier": "drafted"},
+    {"thing": "technique/fold", "tier": "drafted"},
+    {"thing": "technique/bake", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "dish/egg-fried-rice",
+  "tier": "drafted",
+  "names": {"en": "Egg fried rice", "zh": "蛋炒饭", "zh-Latn": "Dàn chǎofàn"},
+  "aliases": {"en": ["Dàn chǎofàn", "Dan chao fan", "fried rice with egg", "egg fried rice Chinese style"]},
+  "is": "Chinese home-style fried rice: cold cooked rice tossed in a very hot wok with large, soft curds of egg, spring onion and peas, seasoned lightly with soy sauce.",
+  "parts": [
+    {
+      "id": "rice",
+      "role": "base",
+      "options": ["ingredient/rice", "ingredient/jasmine-rice", "ingredient/long-grain-rice"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "egg", "role": "main", "options": ["ingredient/egg"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/oil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "spring-onion",
+      "role": "aromatic",
+      "options": ["ingredient/spring-onion"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "soy", "role": "seasoning", "options": ["ingredient/soy-sauce"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {"id": "peas", "role": "side", "options": ["ingredient/peas"], "optional": true, "tier": "drafted"},
+    {
+      "id": "white-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/white-pepper"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {
+      "id": "sesame-oil",
+      "role": "seasoning",
+      "options": ["ingredient/sesame-oil"],
+      "optional": true,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/wok-scramble", "tier": "drafted"},
+    {"thing": "technique/stir-fry", "tier": "drafted"},
+    {"thing": "technique/toss", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/chinese", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -28,7 +28,17 @@
     ],
     "note": null
   },
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "ingredient/sucuk",
+      "allows": true,
+      "when": ["technique/fry-cured-sausage"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "Use a firm cured chorizo that can be sliced. It will release red fat but tastes more of smoked paprika than garlic and cumin.",
+      "tier": "drafted"
+    }
+  ],
   "in_pantry_of": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],

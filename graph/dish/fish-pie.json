@@ -1,0 +1,50 @@
+{
+  "id": "dish/fish-pie",
+  "tier": "drafted",
+  "names": {"en": "Fish pie"},
+  "aliases": {"en": ["fisherman's pie", "smoked haddock fish pie", "fish pie with mash"]},
+  "is": "Smoked haddock and salmon poached in milk, bound in a parsley white sauce made from that milk, and baked under a crust of mashed potato.",
+  "parts": [
+    {
+      "id": "smoked-fish",
+      "role": "main",
+      "options": ["ingredient/smoked-haddock"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {
+      "id": "fish",
+      "role": "main",
+      "options": ["ingredient/salmon", "ingredient/white-fish"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "prawns", "role": "main", "options": ["ingredient/shrimp"], "optional": true, "tier": "drafted"},
+    {"id": "milk", "role": "liquid", "options": ["ingredient/milk"], "optional": false, "tier": "drafted"},
+    {"id": "bay-leaf", "role": "seasoning", "options": ["ingredient/bay-leaf"], "optional": true, "tier": "drafted"},
+    {"id": "butter", "role": "fat", "options": ["ingredient/butter"], "optional": false, "tier": "drafted"},
+    {"id": "flour", "role": "thickener", "options": ["ingredient/flour"], "optional": false, "tier": "drafted"},
+    {"id": "parsley", "role": "aromatic", "options": ["ingredient/parsley"], "optional": false, "tier": "drafted"},
+    {"id": "egg", "role": "filling", "options": ["ingredient/egg"], "optional": true, "tier": "drafted"},
+    {"id": "mash", "role": "topping", "options": ["preparation/mashed-potato"], "optional": false, "tier": "drafted"},
+    {"id": "cheese", "role": "topping", "options": ["ingredient/cheddar"], "optional": true, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"},
+    {
+      "id": "black-pepper",
+      "role": "seasoning",
+      "options": ["ingredient/black-pepper"],
+      "optional": false,
+      "tier": "drafted"
+    }
+  ],
+  "teaches": [
+    {"thing": "technique/poach", "tier": "drafted"},
+    {"thing": "technique/flake", "tier": "drafted"},
+    {"thing": "technique/make-a-bechamel", "tier": "drafted"},
+    {"thing": "technique/mash", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/british", "tier": "drafted"}
+  ],
+  "same_as": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "dish/spaghetti-al-pomodoro",
+  "tier": "drafted",
+  "names": {"en": "Spaghetti al pomodoro e basilico", "it": "spaghetti al pomodoro e basilico"},
+  "aliases": {
+    "en": ["spaghetti al pomodoro", "spaghetti with tomato sauce", "pasta al pomodoro", "tomato and basil pasta"]
+  },
+  "is": "Spaghetti finished in a simple tomato sauce: tinned tomatoes simmered in olive oil scented with garlic until thick and sweet, with torn basil stirred in at the end.",
+  "parts": [
+    {"id": "pasta", "role": "main", "options": ["ingredient/spaghetti"], "optional": false, "tier": "drafted"},
+    {
+      "id": "tomato",
+      "role": "base",
+      "options": ["ingredient/tinned-tomatoes", "ingredient/tomato", "ingredient/cherry-tomato"],
+      "optional": false,
+      "tier": "drafted"
+    },
+    {"id": "garlic", "role": "aromatic", "options": ["ingredient/garlic"], "optional": false, "tier": "drafted"},
+    {"id": "oil", "role": "fat", "options": ["ingredient/olive-oil"], "optional": false, "tier": "drafted"},
+    {"id": "basil", "role": "garnish", "options": ["ingredient/basil"], "optional": false, "tier": "drafted"},
+    {
+      "id": "cheese",
+      "role": "topping",
+      "options": ["ingredient/parmesan", "ingredient/pecorino-romano"],
+      "optional": true,
+      "tier": "drafted"
+    },
+    {"id": "water", "role": "liquid", "options": ["ingredient/water"], "optional": false, "tier": "drafted"},
+    {"id": "salt", "role": "seasoning", "options": ["ingredient/salt"], "optional": false, "tier": "drafted"}
+  ],
+  "teaches": [
+    {"thing": "technique/fry-garlic-gently", "tier": "drafted"},
+    {"thing": "technique/make-a-tomato-sauce", "tier": "drafted"},
+    {"thing": "technique/toss-pasta-with-sauce", "tier": "drafted"},
+    {"thing": "technique/tear", "tier": "drafted"}
+  ],
+  "belongs_to": [
+    {"thing": "cuisine/italian", "tier": "drafted"}
+  ],
+  "same_as": []
+}

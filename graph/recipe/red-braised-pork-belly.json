@@ -1,0 +1,121 @@
+{
+  "id": "recipe/red-braised-pork-belly",
+  "tier": "drafted",
+  "names": {"en": "Red-braised pork belly", "zh": "红烧肉", "zh-Latn": "Hóngshāo ròu"},
+  "aliases": {},
+  "makes": "dish/red-braised-pork-belly",
+  "yields": {"value": 4, "unit": "serving"},
+  "ingredients": [
+    {
+      "thing": "ingredient/pork-belly",
+      "amount": {"value": 800, "unit": "gram"},
+      "forms": ["form/skin-on"],
+      "part": "pork"
+    },
+    {"thing": "ingredient/water", "amount": {"value": 1.5, "unit": "litre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/water", "amount": {"value": 600, "unit": "millilitre"}, "forms": [], "part": "water"},
+    {"thing": "ingredient/ginger", "amount": {"value": 20, "unit": "gram"}, "forms": [], "part": "ginger"},
+    {"thing": "ingredient/spring-onion", "amount": {"value": 3, "unit": "piece"}, "forms": [], "part": "spring-onion"},
+    {"thing": "ingredient/oil", "amount": {"value": 1, "unit": "tablespoon"}, "forms": [], "part": "oil"},
+    {"thing": "ingredient/sugar", "amount": {"value": 40, "unit": "gram"}, "forms": [], "part": "sugar"},
+    {"thing": "ingredient/shaoxing-wine", "amount": {"value": 4, "unit": "tablespoon"}, "forms": [], "part": "wine"},
+    {"thing": "ingredient/soy-sauce", "amount": {"value": 2, "unit": "tablespoon"}, "forms": [], "part": "soy"},
+    {
+      "thing": "ingredient/dark-soy-sauce",
+      "amount": {"value": 1, "unit": "tablespoon"},
+      "forms": [],
+      "part": "dark-soy"
+    },
+    {"thing": "ingredient/star-anise", "amount": {"value": 2, "unit": "piece"}, "forms": [], "part": "star-anise"},
+    {"thing": "ingredient/cinnamon", "amount": {"value": 1, "unit": "piece"}, "forms": [], "part": "cinnamon"}
+  ],
+  "equipment": [
+    "equipment/wok", "equipment/saucepan", "equipment/dutch-oven", "equipment/colander", "equipment/spatula",
+    "equipment/chefs-knife", "equipment/cutting-board", "equipment/stovetop"
+  ],
+  "steps": [
+    {
+      "technique": "technique/dice",
+      "works_on": ["ingredient/pork-belly"],
+      "with": [],
+      "text": "Cut the {pork} into large cubes, each with skin, fat and lean.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/blanch",
+      "works_on": ["ingredient/pork-belly"],
+      "with": ["ingredient/water"],
+      "text": "Put the cubes in a pan of cold {water}, bring it to a boil and boil until grey scum rises. Drain and rinse off the scum.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/slice",
+      "works_on": ["ingredient/spring-onion"],
+      "with": ["ingredient/ginger"],
+      "text": "Cut the {ginger} into thick slices and the {spring-onion:plural} into long lengths.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/make-a-caramel",
+      "works_on": ["ingredient/sugar"],
+      "with": ["ingredient/oil"],
+      "text": "Warm the {oil} and the {sugar} in a wok over low heat, stirring, until the {sugar} melts and turns the colour of dark amber, with small bubbles.",
+      "time": {"from": 3, "to": 5, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/stir-fry",
+      "works_on": ["ingredient/pork-belly"],
+      "with": [],
+      "text": "Add the drained {pork} at once, standing back as it spits, and stir-fry until every cube is coated in the caramel and lightly browned.",
+      "time": {"from": 2, "to": 3, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/simmer",
+      "works_on": ["ingredient/pork-belly"],
+      "with": [
+        "ingredient/shaoxing-wine", "ingredient/soy-sauce", "ingredient/dark-soy-sauce", "ingredient/ginger",
+        "ingredient/star-anise", "ingredient/cinnamon", "ingredient/spring-onion", "ingredient/water"
+      ],
+      "text": "Pour in the {wine} and let it sizzle, then add the {soy}, the {dark-soy}, the {ginger}, the {star-anise}[cinnamon: , the {cinnamon}] and the {spring-onion:plural}. Add enough hot {water} to just cover the {pork}, bring it to a boil, then cover and simmer very gently until the fat is soft and wobbly and the lean is tender. Check a cube against a trusted guide to doneness.",
+      "time": {"from": 60, "to": 90, "unit": "minute"},
+      "temperature": null,
+      "safety_points": ["doneness"],
+      "makes": ["preparation/braising-liquid"]
+    },
+    {
+      "technique": "technique/reduce",
+      "works_on": ["preparation/braising-liquid"],
+      "with": ["ingredient/pork-belly"],
+      "text": "Take off the lid and lift out the {ginger}, the {spring-onion:plural} and the whole spices. Turn up the heat and boil, turning the {pork} often, until the sauce is thick, dark and sticky and coats each cube.",
+      "time": {"from": 10, "to": 15, "unit": "minute"},
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    },
+    {
+      "technique": "technique/plate",
+      "works_on": ["ingredient/pork-belly"],
+      "with": [],
+      "text": "Serve with plain rice and a green vegetable.",
+      "time": null,
+      "temperature": null,
+      "safety_points": [],
+      "makes": []
+    }
+  ]
+}

@@ -16,7 +16,17 @@
     {"thing": "technique/make-alioli", "tier": "drafted"},
     {"thing": "technique/pound", "tier": "drafted"}
   ],
-  "stands_in_for": [],
+  "stands_in_for": [
+    {
+      "thing": "preparation/toum",
+      "allows": true,
+      "when": ["dish/shawarma-djej"],
+      "not_when": [],
+      "ratio": null,
+      "caveat": "A garlic-heavy eggless alioli will spread on the bread. Olive oil gives a stronger flavour and a less fluffy texture.",
+      "tier": "drafted"
+    }
+  ],
   "belongs_to": [
     {"thing": "cuisine/spanish", "tier": "drafted"}
   ],
